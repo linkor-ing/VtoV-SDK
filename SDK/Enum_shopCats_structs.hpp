@@ -15,7 +15,7 @@ namespace SDK
 {
 
 // UserDefinedEnum enum_shopCats.enum_shopCats
-// NumValues: 0x0008
+// NumValues: 0x000A
 enum class Enum_shopCats : uint8
 {
 	NewEnumerator2                           = 0,
@@ -25,7 +25,9 @@ enum class Enum_shopCats : uint8
 	NewEnumerator4                           = 4,
 	NewEnumerator5                           = 5,
 	NewEnumerator6                           = 6,
-	Enum_MAX                                 = 7,
+	NewEnumerator8                           = 7,
+	NewEnumerator9                           = 8,
+	Enum_MAX                                 = 9,
 };
 
 }

@@ -57,26 +57,6 @@ void AProp_welder_C::ReceiveTick(float DeltaSeconds)
 }
 
 
-// Function prop_welder.prop_welder_C.playerHandRelease_LMB
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_welder_C::PlayerHandRelease_LMB(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_welder_C", "playerHandRelease_LMB");
-
-	Params::Prop_welder_C_PlayerHandRelease_LMB Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function prop_welder.prop_welder_C.playerHandUse_LMB
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -90,6 +70,26 @@ void AProp_welder_C::PlayerHandUse_LMB(class AMainPlayer_C* Player)
 		Func = Class->GetFunction("prop_welder_C", "playerHandUse_LMB");
 
 	Params::Prop_welder_C_PlayerHandUse_LMB Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_welder.prop_welder_C.playerHandRelease_LMB
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_welder_C::PlayerHandRelease_LMB(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_welder_C", "playerHandRelease_LMB");
+
+	Params::Prop_welder_C_PlayerHandRelease_LMB Parms{};
 
 	Parms.Player = Player;
 

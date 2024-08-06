@@ -17,15 +17,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_coffeeBag.prop_coffeeBag_C
-// 0x0000 (0x0368 - 0x0368)
+// 0x0008 (0x0380 - 0x0378)
 class AProp_coffeeBag_C final : public AProp_C
 {
 public:
-	uint8                                         Pad_3B2D[0x3];                                     // 0x0361(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Amounts;                                           // 0x0364(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Amounts;                                           // 0x0378(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
 
@@ -40,8 +39,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_coffeeBag_C) == 0x000008, "Wrong alignment on AProp_coffeeBag_C");
-static_assert(sizeof(AProp_coffeeBag_C) == 0x000368, "Wrong size on AProp_coffeeBag_C");
-static_assert(offsetof(AProp_coffeeBag_C, Amounts) == 0x000364, "Member 'AProp_coffeeBag_C::Amounts' has a wrong offset!");
+static_assert(sizeof(AProp_coffeeBag_C) == 0x000380, "Wrong size on AProp_coffeeBag_C");
+static_assert(offsetof(AProp_coffeeBag_C, Amounts) == 0x000378, "Member 'AProp_coffeeBag_C::Amounts' has a wrong offset!");
 
 }
 

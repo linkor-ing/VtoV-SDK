@@ -34,11 +34,11 @@ public:
 	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_4;            // 0x006C(0x0010)(ZeroConstructor, NoDestructor)
 	class FName                                   Temp_name_Variable;                                // 0x007C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0084(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2486[0x3];                                     // 0x0085(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_85[0x3];                                       // 0x0085(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   Temp_name_Variable_1;                              // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Temp_name_Variable_2;                              // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2487[0x4];                                     // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          CallFunc_getMainPlayer_AsMain_Player;              // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AMainPlayer_C*                          CallFunc_getMainPlayer_AsMain_Player_1;            // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X;                            // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -46,7 +46,7 @@ public:
 	float                                         CallFunc_BreakVector_Z;                            // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x00BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x00BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2488[0x2];                                     // 0x00BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BE[0x2];                                       // 0x00BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -54,9 +54,9 @@ public:
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x00DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2489[0x3];                                     // 0x00E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetActorUpVector_ReturnValue;             // 0x00EC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorUpVector_ReturnValue;             // 0x00E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F5[0x3];                                       // 0x00F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FMax_ReturnValue;                         // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x0100(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -98,8 +98,8 @@ static_assert(offsetof(Prop_umbrella_C_ExecuteUbergraph_prop_umbrella, CallFunc_
 static_assert(offsetof(Prop_umbrella_C_ExecuteUbergraph_prop_umbrella, K2Node_Event_player) == 0x0000D0, "Member 'Prop_umbrella_C_ExecuteUbergraph_prop_umbrella::K2Node_Event_player' has a wrong offset!");
 static_assert(offsetof(Prop_umbrella_C_ExecuteUbergraph_prop_umbrella, CallFunc_SelectFloat_ReturnValue) == 0x0000D8, "Member 'Prop_umbrella_C_ExecuteUbergraph_prop_umbrella::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_umbrella_C_ExecuteUbergraph_prop_umbrella, CallFunc_MakeVector_ReturnValue) == 0x0000DC, "Member 'Prop_umbrella_C_ExecuteUbergraph_prop_umbrella::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_umbrella_C_ExecuteUbergraph_prop_umbrella, CallFunc_Not_PreBool_ReturnValue) == 0x0000E8, "Member 'Prop_umbrella_C_ExecuteUbergraph_prop_umbrella::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_umbrella_C_ExecuteUbergraph_prop_umbrella, CallFunc_GetActorUpVector_ReturnValue) == 0x0000EC, "Member 'Prop_umbrella_C_ExecuteUbergraph_prop_umbrella::CallFunc_GetActorUpVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_umbrella_C_ExecuteUbergraph_prop_umbrella, CallFunc_GetActorUpVector_ReturnValue) == 0x0000E8, "Member 'Prop_umbrella_C_ExecuteUbergraph_prop_umbrella::CallFunc_GetActorUpVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_umbrella_C_ExecuteUbergraph_prop_umbrella, CallFunc_Not_PreBool_ReturnValue) == 0x0000F4, "Member 'Prop_umbrella_C_ExecuteUbergraph_prop_umbrella::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_umbrella_C_ExecuteUbergraph_prop_umbrella, CallFunc_Dot_VectorVector_ReturnValue) == 0x0000F8, "Member 'Prop_umbrella_C_ExecuteUbergraph_prop_umbrella::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_umbrella_C_ExecuteUbergraph_prop_umbrella, CallFunc_FMax_ReturnValue) == 0x0000FC, "Member 'Prop_umbrella_C_ExecuteUbergraph_prop_umbrella::CallFunc_FMax_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_umbrella_C_ExecuteUbergraph_prop_umbrella, CallFunc_VLerp_ReturnValue) == 0x000100, "Member 'Prop_umbrella_C_ExecuteUbergraph_prop_umbrella::CallFunc_VLerp_ReturnValue' has a wrong offset!");

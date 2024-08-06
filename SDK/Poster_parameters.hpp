@@ -10,118 +10,167 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
+#include "Struct_settings_structs.hpp"
 #include "Struct_save_structs.hpp"
+#include "Engine_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "Struct_mInt_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Enum_interactionActions_structs.hpp"
-#include "Struct_settings_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function poster.poster_c.ExecuteUbergraph_poster
-// 0x03F0 (0x03F0 - 0x0000)
+// 0x0440 (0x0440 - 0x0000)
 struct Poster_c_ExecuteUbergraph_poster final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E4A[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FKey                                   K2Node_Event_key;                                  // 0x0010(0x0018)(HasGetValueTypeHash)
 	bool                                          K2Node_Event_pressed;                              // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E4B[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           K2Node_Event_color;                                // 0x002C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E4C[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_2;                                // 0x0048(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          K2Node_Event_kick;                                 // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E4D[0x3];                                     // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_Event_name;                                 // 0x00D4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E4E[0x4];                                     // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_1;                                // 0x00F0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x0180(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x020C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x020D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E4F[0x2];                                     // 0x020E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x0210(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x021C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E50[0x8];                                     // 0x0228(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0230(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UTexture2D*>                     K2Node_LowEntry_LocalVariable_Value__Object;       // 0x0270(0x0010)(ReferenceParm)
-	class AProp_poster_C*                         CallFunc_FinishSpawningActor_ReturnValue;          // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0288(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_MakeHitResult_ReturnValue;                // 0x028C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         CallFunc_VictoryIntPlusEquals_IntOut;              // 0x0314(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0318(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x031C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E51[0x3];                                     // 0x031D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0320(0x00CC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUmg_texturePicker_C*                   K2Node_Event_picker;                               // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_Event_texture;                              // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_index;                                // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_2;                                // 0x0060(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          K2Node_Event_kick;                                 // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_E9[0x3];                                       // 0x00E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_Event_name;                                 // 0x00EC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F4[0x4];                                       // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_1;                                // 0x0108(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         K2Node_Event_damage;                               // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_194[0x4];                                      // 0x0194(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x01B8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0241(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_242[0x2];                                      // 0x0242(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x0244(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0250(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25C[0x4];                                      // 0x025C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0260(0x0030)(IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0298(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UTexture2D*>                     K2Node_LowEntry_LocalVariable_Value__Object;       // 0x02A0(0x0010)(ReferenceParm)
+	class AProp_poster_C*                         CallFunc_FinishSpawningActor_ReturnValue;          // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x02B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_MakeHitResult_ReturnValue;                // 0x02BC(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         CallFunc_VictoryIntPlusEquals_IntOut;              // 0x0344(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0348(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x034C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34D[0x3];                                      // 0x034D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0350(0x00F0)(HasGetValueTypeHash)
 };
 static_assert(alignof(Poster_c_ExecuteUbergraph_poster) == 0x000010, "Wrong alignment on Poster_c_ExecuteUbergraph_poster");
-static_assert(sizeof(Poster_c_ExecuteUbergraph_poster) == 0x0003F0, "Wrong size on Poster_c_ExecuteUbergraph_poster");
+static_assert(sizeof(Poster_c_ExecuteUbergraph_poster) == 0x000440, "Wrong size on Poster_c_ExecuteUbergraph_poster");
 static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, EntryPoint) == 0x000000, "Member 'Poster_c_ExecuteUbergraph_poster::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_gamemode) == 0x000008, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_gamemode' has a wrong offset!");
 static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_key) == 0x000010, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_key' has a wrong offset!");
 static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_pressed) == 0x000028, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_pressed' has a wrong offset!");
 static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_color) == 0x00002C, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_color' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_player_3) == 0x000040, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_player_3' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_hit_2) == 0x000048, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_hit_2' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_kick) == 0x0000D0, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_kick' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_name) == 0x0000D4, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_name' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_player_2) == 0x0000E0, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_player_2' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_player_1) == 0x0000E8, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_hit_1) == 0x0000F0, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_hit_1' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_player) == 0x000178, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_hit) == 0x000180, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_index) == 0x000208, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_action) == 0x00020C, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_SwitchEnum_CmpSuccess) == 0x00020D, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, CallFunc_K2_GetActorRotation_ReturnValue) == 0x000210, "Member 'Poster_c_ExecuteUbergraph_poster::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00021C, "Member 'Poster_c_ExecuteUbergraph_poster::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, CallFunc_MakeTransform_ReturnValue) == 0x000230, "Member 'Poster_c_ExecuteUbergraph_poster::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000260, "Member 'Poster_c_ExecuteUbergraph_poster::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000268, "Member 'Poster_c_ExecuteUbergraph_poster::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_LowEntry_LocalVariable_Value__Object) == 0x000270, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_LowEntry_LocalVariable_Value__Object' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, CallFunc_FinishSpawningActor_ReturnValue) == 0x000280, "Member 'Poster_c_ExecuteUbergraph_poster::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, CallFunc_Array_Length_ReturnValue) == 0x000288, "Member 'Poster_c_ExecuteUbergraph_poster::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, CallFunc_MakeHitResult_ReturnValue) == 0x00028C, "Member 'Poster_c_ExecuteUbergraph_poster::CallFunc_MakeHitResult_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, CallFunc_VictoryIntPlusEquals_IntOut) == 0x000314, "Member 'Poster_c_ExecuteUbergraph_poster::CallFunc_VictoryIntPlusEquals_IntOut' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, CallFunc_Percent_IntInt_ReturnValue) == 0x000318, "Member 'Poster_c_ExecuteUbergraph_poster::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00031C, "Member 'Poster_c_ExecuteUbergraph_poster::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_settings) == 0x000320, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_settings' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_picker) == 0x000040, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_picker' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_texture) == 0x000048, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_texture' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_index) == 0x000050, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_player_6) == 0x000058, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_player_6' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_hit_2) == 0x000060, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_hit_2' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_kick) == 0x0000E8, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_kick' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_name) == 0x0000EC, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_name' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_player_5) == 0x0000F8, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_player_5' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_player_4) == 0x000100, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_player_4' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_hit_1) == 0x000108, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_hit_1' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_damage) == 0x000190, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_damage' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_player_3) == 0x000198, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_player_3' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_player_2) == 0x0001A0, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_player_2' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_player_1) == 0x0001A8, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_player) == 0x0001B0, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_hit) == 0x0001B8, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_action) == 0x000240, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_SwitchEnum_CmpSuccess) == 0x000241, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, CallFunc_K2_GetActorRotation_ReturnValue) == 0x000244, "Member 'Poster_c_ExecuteUbergraph_poster::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000250, "Member 'Poster_c_ExecuteUbergraph_poster::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, CallFunc_MakeTransform_ReturnValue) == 0x000260, "Member 'Poster_c_ExecuteUbergraph_poster::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000290, "Member 'Poster_c_ExecuteUbergraph_poster::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000298, "Member 'Poster_c_ExecuteUbergraph_poster::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_LowEntry_LocalVariable_Value__Object) == 0x0002A0, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_LowEntry_LocalVariable_Value__Object' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, CallFunc_FinishSpawningActor_ReturnValue) == 0x0002B0, "Member 'Poster_c_ExecuteUbergraph_poster::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, CallFunc_Array_Length_ReturnValue) == 0x0002B8, "Member 'Poster_c_ExecuteUbergraph_poster::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, CallFunc_MakeHitResult_ReturnValue) == 0x0002BC, "Member 'Poster_c_ExecuteUbergraph_poster::CallFunc_MakeHitResult_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, CallFunc_VictoryIntPlusEquals_IntOut) == 0x000344, "Member 'Poster_c_ExecuteUbergraph_poster::CallFunc_VictoryIntPlusEquals_IntOut' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, CallFunc_Percent_IntInt_ReturnValue) == 0x000348, "Member 'Poster_c_ExecuteUbergraph_poster::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00034C, "Member 'Poster_c_ExecuteUbergraph_poster::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Poster_c_ExecuteUbergraph_poster, K2Node_Event_settings) == 0x000350, "Member 'Poster_c_ExecuteUbergraph_poster::K2Node_Event_settings' has a wrong offset!");
 
 // Function poster.poster_c.settingsApplied
-// 0x00CC (0x00CC - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct Poster_c_SettingsApplied final
 {
 public:
-	struct FStruct_settings                       Settings;                                          // 0x0000(0x00CC)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       Settings;                                          // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(Poster_c_SettingsApplied) == 0x000004, "Wrong alignment on Poster_c_SettingsApplied");
-static_assert(sizeof(Poster_c_SettingsApplied) == 0x0000CC, "Wrong size on Poster_c_SettingsApplied");
+static_assert(alignof(Poster_c_SettingsApplied) == 0x000008, "Wrong alignment on Poster_c_SettingsApplied");
+static_assert(sizeof(Poster_c_SettingsApplied) == 0x0000F0, "Wrong size on Poster_c_SettingsApplied");
 static_assert(offsetof(Poster_c_SettingsApplied, Settings) == 0x000000, "Member 'Poster_c_SettingsApplied::Settings' has a wrong offset!");
 
+// Function poster.poster_c.playerR
+// 0x0008 (0x0008 - 0x0000)
+struct Poster_c_PlayerR final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Poster_c_PlayerR) == 0x000008, "Wrong alignment on Poster_c_PlayerR");
+static_assert(sizeof(Poster_c_PlayerR) == 0x000008, "Wrong size on Poster_c_PlayerR");
+static_assert(offsetof(Poster_c_PlayerR, Player) == 0x000000, "Member 'Poster_c_PlayerR::Player' has a wrong offset!");
+
+// Function poster.poster_c.playerHold
+// 0x0008 (0x0008 - 0x0000)
+struct Poster_c_PlayerHold final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Poster_c_PlayerHold) == 0x000008, "Wrong alignment on Poster_c_PlayerHold");
+static_assert(sizeof(Poster_c_PlayerHold) == 0x000008, "Wrong size on Poster_c_PlayerHold");
+static_assert(offsetof(Poster_c_PlayerHold, Player) == 0x000000, "Member 'Poster_c_PlayerHold::Player' has a wrong offset!");
+
+// Function poster.poster_c.playerUnequip
+// 0x0008 (0x0008 - 0x0000)
+struct Poster_c_PlayerUnequip final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Poster_c_PlayerUnequip) == 0x000008, "Wrong alignment on Poster_c_PlayerUnequip");
+static_assert(sizeof(Poster_c_PlayerUnequip) == 0x000008, "Wrong size on Poster_c_PlayerUnequip");
+static_assert(offsetof(Poster_c_PlayerUnequip, Player) == 0x000000, "Member 'Poster_c_PlayerUnequip::Player' has a wrong offset!");
+
 // Function poster.poster_c.damageByPlayer
-// 0x0090 (0x0090 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct Poster_c_DamageByPlayer final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         Damage;                                            // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Poster_c_DamageByPlayer) == 0x000008, "Wrong alignment on Poster_c_DamageByPlayer");
-static_assert(sizeof(Poster_c_DamageByPlayer) == 0x000090, "Wrong size on Poster_c_DamageByPlayer");
+static_assert(sizeof(Poster_c_DamageByPlayer) == 0x000098, "Wrong size on Poster_c_DamageByPlayer");
 static_assert(offsetof(Poster_c_DamageByPlayer, Player) == 0x000000, "Member 'Poster_c_DamageByPlayer::Player' has a wrong offset!");
 static_assert(offsetof(Poster_c_DamageByPlayer, Hit) == 0x000008, "Member 'Poster_c_DamageByPlayer::Hit' has a wrong offset!");
+static_assert(offsetof(Poster_c_DamageByPlayer, Damage) == 0x000090, "Member 'Poster_c_DamageByPlayer::Damage' has a wrong offset!");
 
 // Function poster.poster_c.thrown
 // 0x0008 (0x0008 - 0x0000)
@@ -169,6 +218,21 @@ static_assert(sizeof(Poster_c_Player_use) == 0x000090, "Wrong size on Poster_c_P
 static_assert(offsetof(Poster_c_Player_use, Player) == 0x000000, "Member 'Poster_c_Player_use::Player' has a wrong offset!");
 static_assert(offsetof(Poster_c_Player_use, Hit) == 0x000008, "Member 'Poster_c_Player_use::Hit' has a wrong offset!");
 
+// Function poster.poster_c.texturePickerApply
+// 0x0018 (0x0018 - 0x0000)
+struct Poster_c_TexturePickerApply final
+{
+public:
+	class UUmg_texturePicker_C*                   Picker;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Param_Index;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Poster_c_TexturePickerApply) == 0x000008, "Wrong alignment on Poster_c_TexturePickerApply");
+static_assert(sizeof(Poster_c_TexturePickerApply) == 0x000018, "Wrong size on Poster_c_TexturePickerApply");
+static_assert(offsetof(Poster_c_TexturePickerApply, Picker) == 0x000000, "Member 'Poster_c_TexturePickerApply::Picker' has a wrong offset!");
+static_assert(offsetof(Poster_c_TexturePickerApply, Texture) == 0x000008, "Member 'Poster_c_TexturePickerApply::Texture' has a wrong offset!");
+static_assert(offsetof(Poster_c_TexturePickerApply, Param_Index) == 0x000010, "Member 'Poster_c_TexturePickerApply::Param_Index' has a wrong offset!");
+
 // Function poster.poster_c.applyColor
 // 0x0010 (0x0010 - 0x0000)
 struct Poster_c_ApplyColor final
@@ -213,7 +277,7 @@ public:
 	class UTexture2D*                             CallFunc_getPosters_Output;                        // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E52[0x6];                                     // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -273,24 +337,26 @@ static_assert(offsetof(Poster_c_NoRespawn, Param_NoRespawn) == 0x000000, "Member
 static_assert(offsetof(Poster_c_NoRespawn, Return) == 0x000001, "Member 'Poster_c_NoRespawn::Return' has a wrong offset!");
 
 // Function poster.poster_c.lookAt
-// 0x00B0 (0x00B0 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct Poster_c_LookAt final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E53[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Poster_c_LookAt) == 0x000008, "Wrong alignment on Poster_c_LookAt");
-static_assert(sizeof(Poster_c_LookAt) == 0x0000B0, "Wrong size on Poster_c_LookAt");
+static_assert(sizeof(Poster_c_LookAt) == 0x0000B8, "Wrong size on Poster_c_LookAt");
 static_assert(offsetof(Poster_c_LookAt, Player) == 0x000000, "Member 'Poster_c_LookAt::Player' has a wrong offset!");
 static_assert(offsetof(Poster_c_LookAt, Hit) == 0x000008, "Member 'Poster_c_LookAt::Hit' has a wrong offset!");
 static_assert(offsetof(Poster_c_LookAt, Return) == 0x000090, "Member 'Poster_c_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(Poster_c_LookAt, Text) == 0x000098, "Member 'Poster_c_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(Poster_c_LookAt, boundObjectReplace) == 0x0000A8, "Member 'Poster_c_LookAt::boundObjectReplace' has a wrong offset!");
+static_assert(offsetof(Poster_c_LookAt, Number) == 0x0000B0, "Member 'Poster_c_LookAt::Number' has a wrong offset!");
 
 // Function poster.poster_c.isButtonUsed
 // 0x0001 (0x0001 - 0x0000)
@@ -302,6 +368,34 @@ public:
 static_assert(alignof(Poster_c_IsButtonUsed) == 0x000001, "Wrong alignment on Poster_c_IsButtonUsed");
 static_assert(sizeof(Poster_c_IsButtonUsed) == 0x000001, "Wrong size on Poster_c_IsButtonUsed");
 static_assert(offsetof(Poster_c_IsButtonUsed, Failed) == 0x000000, "Member 'Poster_c_IsButtonUsed::Failed' has a wrong offset!");
+
+// Function poster.poster_c.actionOptionIndex
+// 0x0098 (0x0098 - 0x0000)
+struct Poster_c_ActionOptionIndex final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Poster_c_ActionOptionIndex) == 0x000008, "Wrong alignment on Poster_c_ActionOptionIndex");
+static_assert(sizeof(Poster_c_ActionOptionIndex) == 0x000098, "Wrong size on Poster_c_ActionOptionIndex");
+static_assert(offsetof(Poster_c_ActionOptionIndex, Player) == 0x000000, "Member 'Poster_c_ActionOptionIndex::Player' has a wrong offset!");
+static_assert(offsetof(Poster_c_ActionOptionIndex, Hit) == 0x000008, "Member 'Poster_c_ActionOptionIndex::Hit' has a wrong offset!");
+static_assert(offsetof(Poster_c_ActionOptionIndex, Action) == 0x000090, "Member 'Poster_c_ActionOptionIndex::Action' has a wrong offset!");
+
+// Function poster.poster_c.landedOn
+// 0x0010 (0x0010 - 0x0000)
+struct Poster_c_LandedOn final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IgnoreFallDamage;                                  // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Poster_c_LandedOn) == 0x000008, "Wrong alignment on Poster_c_LandedOn");
+static_assert(sizeof(Poster_c_LandedOn) == 0x000010, "Wrong size on Poster_c_LandedOn");
+static_assert(offsetof(Poster_c_LandedOn, Player) == 0x000000, "Member 'Poster_c_LandedOn::Player' has a wrong offset!");
+static_assert(offsetof(Poster_c_LandedOn, IgnoreFallDamage) == 0x000008, "Member 'Poster_c_LandedOn::IgnoreFallDamage' has a wrong offset!");
 
 // Function poster.poster_c.dreamInv
 // 0x0018 (0x0018 - 0x0000)
@@ -316,23 +410,6 @@ static_assert(sizeof(Poster_c_DreamInv) == 0x000018, "Wrong size on Poster_c_Dre
 static_assert(offsetof(Poster_c_DreamInv, Invv) == 0x000000, "Member 'Poster_c_DreamInv::Invv' has a wrong offset!");
 static_assert(offsetof(Poster_c_DreamInv, Base) == 0x000010, "Member 'Poster_c_DreamInv::Base' has a wrong offset!");
 
-// Function poster.poster_c.actionOptionIndex
-// 0x0098 (0x0098 - 0x0000)
-struct Poster_c_ActionOptionIndex final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Poster_c_ActionOptionIndex) == 0x000008, "Wrong alignment on Poster_c_ActionOptionIndex");
-static_assert(sizeof(Poster_c_ActionOptionIndex) == 0x000098, "Wrong size on Poster_c_ActionOptionIndex");
-static_assert(offsetof(Poster_c_ActionOptionIndex, Player) == 0x000000, "Member 'Poster_c_ActionOptionIndex::Player' has a wrong offset!");
-static_assert(offsetof(Poster_c_ActionOptionIndex, Hit) == 0x000008, "Member 'Poster_c_ActionOptionIndex::Hit' has a wrong offset!");
-static_assert(offsetof(Poster_c_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Poster_c_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(Poster_c_ActionOptionIndex, Action) == 0x000094, "Member 'Poster_c_ActionOptionIndex::Action' has a wrong offset!");
-
 // Function poster.poster_c.UserConstructionScript
 // 0x0028 (0x0028 - 0x0000)
 struct Poster_c_UserConstructionScript final
@@ -340,7 +417,7 @@ struct Poster_c_UserConstructionScript final
 public:
 	class UTexture2D*                             CallFunc_getPosters_Output;                        // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E54[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -361,7 +438,7 @@ public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadData_return;                          // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E55[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mInt                           CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Get_Item_2;                         // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -407,12 +484,13 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	bool                                          Temp_bool_Variable;                                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E56[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
 	TArray<Enum_interactionActions>               K2Node_MakeArray_Array_1;                          // 0x0060(0x0010)(ReferenceParm)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E57[0x7];                                     // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<Enum_interactionActions>               K2Node_Select_Default;                             // 0x0078(0x0010)(ReferenceParm)
 };
 static_assert(alignof(Poster_c_GetActionOptions) == 0x000008, "Wrong alignment on Poster_c_GetActionOptions");
@@ -423,7 +501,8 @@ static_assert(offsetof(Poster_c_GetActionOptions, Actor) == 0x000010, "Member 'P
 static_assert(offsetof(Poster_c_GetActionOptions, Options) == 0x000018, "Member 'Poster_c_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Poster_c_GetActionOptions, Options_enum) == 0x000028, "Member 'Poster_c_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Poster_c_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Poster_c_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Poster_c_GetActionOptions, Temp_bool_Variable) == 0x000048, "Member 'Poster_c_GetActionOptions::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(Poster_c_GetActionOptions, Number) == 0x000048, "Member 'Poster_c_GetActionOptions::Number' has a wrong offset!");
+static_assert(offsetof(Poster_c_GetActionOptions, Temp_bool_Variable) == 0x000049, "Member 'Poster_c_GetActionOptions::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(Poster_c_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Poster_c_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(Poster_c_GetActionOptions, K2Node_MakeArray_Array_1) == 0x000060, "Member 'Poster_c_GetActionOptions::K2Node_MakeArray_Array_1' has a wrong offset!");
 static_assert(offsetof(Poster_c_GetActionOptions, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000070, "Member 'Poster_c_GetActionOptions::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");

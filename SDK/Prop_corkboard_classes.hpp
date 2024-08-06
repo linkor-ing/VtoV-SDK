@@ -10,46 +10,45 @@
 
 #include "Basic.hpp"
 
-#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Prop_classes.hpp"
+#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass prop_corkboard.prop_corkboard_C
-// 0x0098 (0x0400 - 0x0368)
+// 0x0098 (0x0410 - 0x0378)
 class AProp_corkboard_C final : public AProp_C
 {
 public:
-	uint8                                         Pad_1E37[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_corkboard_C;                   // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UArrowComponent*                        Stick;                                             // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         A_a_0C95CFB441D955AF7CC2D191C83BEBBB;              // 0x0378(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            A__Direction_0C95CFB441D955AF7CC2D191C83BEBBB;     // 0x037C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E38[0x3];                                     // 0x037D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     A;                                                 // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E39[0x8];                                     // 0x0388(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Tr_B;                                              // 0x0390(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	struct FTransform                             Tr_A;                                              // 0x03C0(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	class UMaterialInstanceDynamic*               Dynmat;                                            // 0x03F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Table;                                             // 0x03F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          DoStick;                                           // 0x03F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_corkboard_C;                   // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UArrowComponent*                        Stick;                                             // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         A_a_0C95CFB441D955AF7CC2D191C83BEBBB;              // 0x0388(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            A__Direction_0C95CFB441D955AF7CC2D191C83BEBBB;     // 0x038C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_38D[0x3];                                      // 0x038D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     A;                                                 // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_398[0x8];                                      // 0x0398(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             Tr_B;                                              // 0x03A0(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FTransform                             Tr_A;                                              // 0x03D0(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class UMaterialInstanceDynamic*               Dynmat;                                            // 0x0400(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Table;                                             // 0x0408(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          DoStick;                                           // 0x0409(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_prop_corkboard(int32 EntryPoint);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
-	void SetPropProps(bool Param_Static, bool Param_Frozen, bool Active);
 	void ForceStick();
 	void Sticking();
-	void ReceiveBeginPlay();
 	void A__UpdateFunc();
 	void A__FinishedFunc();
 	void TryStick(struct FHitResult* OutHit);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
+	void SetPropProps(bool Param_Static, bool Param_Frozen, bool Active);
+	void ReceiveBeginPlay();
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 
 public:
 	static class UClass* StaticClass()
@@ -62,17 +61,17 @@ public:
 	}
 };
 static_assert(alignof(AProp_corkboard_C) == 0x000010, "Wrong alignment on AProp_corkboard_C");
-static_assert(sizeof(AProp_corkboard_C) == 0x000400, "Wrong size on AProp_corkboard_C");
-static_assert(offsetof(AProp_corkboard_C, UberGraphFrame_Prop_corkboard_C) == 0x000368, "Member 'AProp_corkboard_C::UberGraphFrame_Prop_corkboard_C' has a wrong offset!");
-static_assert(offsetof(AProp_corkboard_C, Stick) == 0x000370, "Member 'AProp_corkboard_C::Stick' has a wrong offset!");
-static_assert(offsetof(AProp_corkboard_C, A_a_0C95CFB441D955AF7CC2D191C83BEBBB) == 0x000378, "Member 'AProp_corkboard_C::A_a_0C95CFB441D955AF7CC2D191C83BEBBB' has a wrong offset!");
-static_assert(offsetof(AProp_corkboard_C, A__Direction_0C95CFB441D955AF7CC2D191C83BEBBB) == 0x00037C, "Member 'AProp_corkboard_C::A__Direction_0C95CFB441D955AF7CC2D191C83BEBBB' has a wrong offset!");
-static_assert(offsetof(AProp_corkboard_C, A) == 0x000380, "Member 'AProp_corkboard_C::A' has a wrong offset!");
-static_assert(offsetof(AProp_corkboard_C, Tr_B) == 0x000390, "Member 'AProp_corkboard_C::Tr_B' has a wrong offset!");
-static_assert(offsetof(AProp_corkboard_C, Tr_A) == 0x0003C0, "Member 'AProp_corkboard_C::Tr_A' has a wrong offset!");
-static_assert(offsetof(AProp_corkboard_C, Dynmat) == 0x0003F0, "Member 'AProp_corkboard_C::Dynmat' has a wrong offset!");
-static_assert(offsetof(AProp_corkboard_C, Table) == 0x0003F8, "Member 'AProp_corkboard_C::Table' has a wrong offset!");
-static_assert(offsetof(AProp_corkboard_C, DoStick) == 0x0003F9, "Member 'AProp_corkboard_C::DoStick' has a wrong offset!");
+static_assert(sizeof(AProp_corkboard_C) == 0x000410, "Wrong size on AProp_corkboard_C");
+static_assert(offsetof(AProp_corkboard_C, UberGraphFrame_Prop_corkboard_C) == 0x000378, "Member 'AProp_corkboard_C::UberGraphFrame_Prop_corkboard_C' has a wrong offset!");
+static_assert(offsetof(AProp_corkboard_C, Stick) == 0x000380, "Member 'AProp_corkboard_C::Stick' has a wrong offset!");
+static_assert(offsetof(AProp_corkboard_C, A_a_0C95CFB441D955AF7CC2D191C83BEBBB) == 0x000388, "Member 'AProp_corkboard_C::A_a_0C95CFB441D955AF7CC2D191C83BEBBB' has a wrong offset!");
+static_assert(offsetof(AProp_corkboard_C, A__Direction_0C95CFB441D955AF7CC2D191C83BEBBB) == 0x00038C, "Member 'AProp_corkboard_C::A__Direction_0C95CFB441D955AF7CC2D191C83BEBBB' has a wrong offset!");
+static_assert(offsetof(AProp_corkboard_C, A) == 0x000390, "Member 'AProp_corkboard_C::A' has a wrong offset!");
+static_assert(offsetof(AProp_corkboard_C, Tr_B) == 0x0003A0, "Member 'AProp_corkboard_C::Tr_B' has a wrong offset!");
+static_assert(offsetof(AProp_corkboard_C, Tr_A) == 0x0003D0, "Member 'AProp_corkboard_C::Tr_A' has a wrong offset!");
+static_assert(offsetof(AProp_corkboard_C, Dynmat) == 0x000400, "Member 'AProp_corkboard_C::Dynmat' has a wrong offset!");
+static_assert(offsetof(AProp_corkboard_C, Table) == 0x000408, "Member 'AProp_corkboard_C::Table' has a wrong offset!");
+static_assert(offsetof(AProp_corkboard_C, DoStick) == 0x000409, "Member 'AProp_corkboard_C::DoStick' has a wrong offset!");
 
 }
 

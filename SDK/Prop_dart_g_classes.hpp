@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_dart_g.prop_dart_g_C
-// 0x0000 (0x0380 - 0x0380)
+// 0x0000 (0x0390 - 0x0390)
 class AProp_dart_g_C final : public AProp_dart_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_dart_g_C) == 0x000008, "Wrong alignment on AProp_dart_g_C");
-static_assert(sizeof(AProp_dart_g_C) == 0x000380, "Wrong size on AProp_dart_g_C");
+static_assert(sizeof(AProp_dart_g_C) == 0x000390, "Wrong size on AProp_dart_g_C");
 
 }
 

@@ -71,20 +71,6 @@ void AProp_argbl_C::Setmats()
 }
 
 
-// Function prop_argbl.prop_argbl_C.propRenderer_finishProps
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AProp_argbl_C::PropRenderer_finishProps()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_argbl_C", "propRenderer_finishProps");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_argbl.prop_argbl_C.gamemodeBeginPlay
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -94,6 +80,20 @@ void AProp_argbl_C::GamemodeBeginPlay()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("prop_argbl_C", "gamemodeBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function prop_argbl.prop_argbl_C.propRenderer_finishProps
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AProp_argbl_C::PropRenderer_finishProps()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_argbl_C", "propRenderer_finishProps");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

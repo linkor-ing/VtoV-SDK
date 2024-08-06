@@ -12,24 +12,33 @@
 
 #include "Engine_structs.hpp"
 #include "Prop_food_classes.hpp"
+#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass prop_food_shrimp.prop_food_shrimp_C
-// 0x0008 (0x03C8 - 0x03C0)
+// 0x0018 (0x03E8 - 0x03D0)
 class AProp_food_shrimp_C final : public AProp_food_C
 {
 public:
-	uint8                                         Pad_3F9C[0x4];                                     // 0x03BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_food_shrimp_C;                 // 0x03C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_food_shrimp_C;                 // 0x03D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UInstancedStaticMeshComponent*          InstancedStaticMesh;                               // 0x03D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	int32                                         Shrimps;                                           // 0x03E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_food_shrimp(int32 EntryPoint);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
+	void Upd();
+	void UserConstructionScript();
+	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
 	void ReceiveDestroyed();
 	void ReceiveBeginPlay();
-	void Eaten();
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
+	void LoadData(const struct FStruct_save& Data, bool* Return);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void GetData(struct FStruct_save* Data);
 
 public:
 	static class UClass* StaticClass()
@@ -42,8 +51,10 @@ public:
 	}
 };
 static_assert(alignof(AProp_food_shrimp_C) == 0x000008, "Wrong alignment on AProp_food_shrimp_C");
-static_assert(sizeof(AProp_food_shrimp_C) == 0x0003C8, "Wrong size on AProp_food_shrimp_C");
-static_assert(offsetof(AProp_food_shrimp_C, UberGraphFrame_Prop_food_shrimp_C) == 0x0003C0, "Member 'AProp_food_shrimp_C::UberGraphFrame_Prop_food_shrimp_C' has a wrong offset!");
+static_assert(sizeof(AProp_food_shrimp_C) == 0x0003E8, "Wrong size on AProp_food_shrimp_C");
+static_assert(offsetof(AProp_food_shrimp_C, UberGraphFrame_Prop_food_shrimp_C) == 0x0003D0, "Member 'AProp_food_shrimp_C::UberGraphFrame_Prop_food_shrimp_C' has a wrong offset!");
+static_assert(offsetof(AProp_food_shrimp_C, InstancedStaticMesh) == 0x0003D8, "Member 'AProp_food_shrimp_C::InstancedStaticMesh' has a wrong offset!");
+static_assert(offsetof(AProp_food_shrimp_C, Shrimps) == 0x0003E0, "Member 'AProp_food_shrimp_C::Shrimps' has a wrong offset!");
 
 }
 

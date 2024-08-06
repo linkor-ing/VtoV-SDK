@@ -10,40 +10,39 @@
 
 #include "Basic.hpp"
 
-#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Prop_classes.hpp"
+#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass prop_vending.prop_vending_C
-// 0x0150 (0x04B8 - 0x0368)
+// 0x0150 (0x04C8 - 0x0378)
 class AProp_vending_C : public AProp_C
 {
 public:
-	uint8                                         Pad_396C[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_vending_C;                     // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class URectLightComponent*                    RectLight;                                         // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        Audio;                                             // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Snacks_candy1;                                     // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UArrowComponent*                        Spawn;                                             // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          Menubox;                                           // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class FString                                 VendingMsg;                                        // 0x0398(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	int32                                         Select;                                            // 0x03A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_396D[0x4];                                     // 0x03AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FName, int32>                      Items;                                             // 0x03B0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          Working;                                           // 0x0400(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_396E[0x3];                                     // 0x0401(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CurrName;                                          // 0x0404(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrPts;                                           // 0x040C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Condition;                                         // 0x0410(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_396F[0x7];                                     // 0x0411(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 A;                                                 // 0x0418(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                V;                                                 // 0x0420(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             H;                                                 // 0x042C(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_vending_C;                     // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class URectLightComponent*                    RectLight;                                         // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        Audio;                                             // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Snacks_candy1;                                     // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        Spawn;                                             // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Menubox;                                           // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class FString                                 VendingMsg;                                        // 0x03A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	int32                                         Select;                                            // 0x03B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3BC[0x4];                                      // 0x03BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FName, int32>                      Items;                                             // 0x03C0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          Working;                                           // 0x0410(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_411[0x3];                                      // 0x0411(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CurrName;                                          // 0x0414(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrPts;                                           // 0x041C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Condition;                                         // 0x0420(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_421[0x7];                                      // 0x0421(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 A;                                                 // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                V;                                                 // 0x0430(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             H;                                                 // 0x043C(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
 public:
 	void ExecuteUbergraph_prop_vending(int32 EntryPoint);
@@ -53,8 +52,8 @@ public:
 	void UpdMsg();
 	void ActionName(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, const class FString& Param_Name);
 	void UserConstructionScript();
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 
 public:
 	static class UClass* StaticClass()
@@ -67,23 +66,23 @@ public:
 	}
 };
 static_assert(alignof(AProp_vending_C) == 0x000008, "Wrong alignment on AProp_vending_C");
-static_assert(sizeof(AProp_vending_C) == 0x0004B8, "Wrong size on AProp_vending_C");
-static_assert(offsetof(AProp_vending_C, UberGraphFrame_Prop_vending_C) == 0x000368, "Member 'AProp_vending_C::UberGraphFrame_Prop_vending_C' has a wrong offset!");
-static_assert(offsetof(AProp_vending_C, RectLight) == 0x000370, "Member 'AProp_vending_C::RectLight' has a wrong offset!");
-static_assert(offsetof(AProp_vending_C, Audio) == 0x000378, "Member 'AProp_vending_C::Audio' has a wrong offset!");
-static_assert(offsetof(AProp_vending_C, Snacks_candy1) == 0x000380, "Member 'AProp_vending_C::Snacks_candy1' has a wrong offset!");
-static_assert(offsetof(AProp_vending_C, Spawn) == 0x000388, "Member 'AProp_vending_C::Spawn' has a wrong offset!");
-static_assert(offsetof(AProp_vending_C, Menubox) == 0x000390, "Member 'AProp_vending_C::Menubox' has a wrong offset!");
-static_assert(offsetof(AProp_vending_C, VendingMsg) == 0x000398, "Member 'AProp_vending_C::VendingMsg' has a wrong offset!");
-static_assert(offsetof(AProp_vending_C, Select) == 0x0003A8, "Member 'AProp_vending_C::Select' has a wrong offset!");
-static_assert(offsetof(AProp_vending_C, Items) == 0x0003B0, "Member 'AProp_vending_C::Items' has a wrong offset!");
-static_assert(offsetof(AProp_vending_C, Working) == 0x000400, "Member 'AProp_vending_C::Working' has a wrong offset!");
-static_assert(offsetof(AProp_vending_C, CurrName) == 0x000404, "Member 'AProp_vending_C::CurrName' has a wrong offset!");
-static_assert(offsetof(AProp_vending_C, CurrPts) == 0x00040C, "Member 'AProp_vending_C::CurrPts' has a wrong offset!");
-static_assert(offsetof(AProp_vending_C, Condition) == 0x000410, "Member 'AProp_vending_C::Condition' has a wrong offset!");
-static_assert(offsetof(AProp_vending_C, A) == 0x000418, "Member 'AProp_vending_C::A' has a wrong offset!");
-static_assert(offsetof(AProp_vending_C, V) == 0x000420, "Member 'AProp_vending_C::V' has a wrong offset!");
-static_assert(offsetof(AProp_vending_C, H) == 0x00042C, "Member 'AProp_vending_C::H' has a wrong offset!");
+static_assert(sizeof(AProp_vending_C) == 0x0004C8, "Wrong size on AProp_vending_C");
+static_assert(offsetof(AProp_vending_C, UberGraphFrame_Prop_vending_C) == 0x000378, "Member 'AProp_vending_C::UberGraphFrame_Prop_vending_C' has a wrong offset!");
+static_assert(offsetof(AProp_vending_C, RectLight) == 0x000380, "Member 'AProp_vending_C::RectLight' has a wrong offset!");
+static_assert(offsetof(AProp_vending_C, Audio) == 0x000388, "Member 'AProp_vending_C::Audio' has a wrong offset!");
+static_assert(offsetof(AProp_vending_C, Snacks_candy1) == 0x000390, "Member 'AProp_vending_C::Snacks_candy1' has a wrong offset!");
+static_assert(offsetof(AProp_vending_C, Spawn) == 0x000398, "Member 'AProp_vending_C::Spawn' has a wrong offset!");
+static_assert(offsetof(AProp_vending_C, Menubox) == 0x0003A0, "Member 'AProp_vending_C::Menubox' has a wrong offset!");
+static_assert(offsetof(AProp_vending_C, VendingMsg) == 0x0003A8, "Member 'AProp_vending_C::VendingMsg' has a wrong offset!");
+static_assert(offsetof(AProp_vending_C, Select) == 0x0003B8, "Member 'AProp_vending_C::Select' has a wrong offset!");
+static_assert(offsetof(AProp_vending_C, Items) == 0x0003C0, "Member 'AProp_vending_C::Items' has a wrong offset!");
+static_assert(offsetof(AProp_vending_C, Working) == 0x000410, "Member 'AProp_vending_C::Working' has a wrong offset!");
+static_assert(offsetof(AProp_vending_C, CurrName) == 0x000414, "Member 'AProp_vending_C::CurrName' has a wrong offset!");
+static_assert(offsetof(AProp_vending_C, CurrPts) == 0x00041C, "Member 'AProp_vending_C::CurrPts' has a wrong offset!");
+static_assert(offsetof(AProp_vending_C, Condition) == 0x000420, "Member 'AProp_vending_C::Condition' has a wrong offset!");
+static_assert(offsetof(AProp_vending_C, A) == 0x000428, "Member 'AProp_vending_C::A' has a wrong offset!");
+static_assert(offsetof(AProp_vending_C, V) == 0x000430, "Member 'AProp_vending_C::V' has a wrong offset!");
+static_assert(offsetof(AProp_vending_C, H) == 0x00043C, "Member 'AProp_vending_C::H' has a wrong offset!");
 
 }
 

@@ -23,7 +23,7 @@ class URuntimeFilesDownloaderLibrary : public UObject
 {
 public:
 	FMulticastInlineDelegateProperty_             OnDownloadProgress;                                // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F68[0x18];                                     // 0x0038(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_38[0x18];                                      // 0x0038(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class FString BytesToString(const TArray<uint8>& bytes);
@@ -55,7 +55,7 @@ class UFileToMemoryDownloader final : public URuntimeFilesDownloaderLibrary
 {
 public:
 	FMulticastInlineDelegateProperty_             OnDownloadComplete;                                // 0x0050(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F6D[0x10];                                     // 0x0060(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_60[0x10];                                      // 0x0060(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static void BP_DownloadFileToMemory(const class FString& URL, float Timeout, const class FString& ContentType, const TDelegate<void(int32 BytesReceived, int32 ContentLength)>& OnProgress, const TDelegate<void(TArray<uint8>& DownloadedContent, EDownloadToMemoryResult Result)>& OnComplete);
@@ -80,7 +80,7 @@ class UFileToStorageDownloader final : public URuntimeFilesDownloaderLibrary
 {
 public:
 	FMulticastInlineDelegateProperty_             OnDownloadComplete;                                // 0x0050(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F6F[0x20];                                     // 0x0060(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_60[0x20];                                      // 0x0060(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UFileToStorageDownloader* BP_DownloadFileToStorage(const class FString& URL, const class FString& SavePath, float Timeout, const class FString& ContentType, const TDelegate<void(int32 BytesReceived, int32 ContentLength)>& OnProgress, const TDelegate<void(EDownloadToStorageResult Result)>& OnComplete);

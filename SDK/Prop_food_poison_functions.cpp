@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function prop_food_poison.prop_food_poison_C.ExecuteUbergraph_prop_food_poison
-// (Final, UbergraphFunction, HasDefaults)
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

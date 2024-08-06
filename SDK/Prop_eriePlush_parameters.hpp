@@ -10,226 +10,207 @@
 
 #include "Basic.hpp"
 
-#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function prop_eriePlush.prop_eriePlush_C.ExecuteUbergraph_prop_eriePlush
-// 0x0430 (0x0430 - 0x0000)
+// 0x0420 (0x0420 - 0x0000)
 struct Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorScale3D_ReturnValue;              // 0x0004(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x001C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RandomUnitVector_ReturnValue;             // 0x0028(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x003C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0048(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_393C[0x4];                                     // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_HitComponent;           // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_ComponentBoundEvent_NormalImpulse;          // 0x0070(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_ComponentBoundEvent_Hit;                    // 0x007C(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_393D[0x4];                                     // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAudioComponent*                        CallFunc_SpawnSoundAtLocation_ReturnValue;         // 0x0108(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_C*                                K2Node_DynamicCast_AsProp;                         // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_393E[0x7];                                     // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AProp_C*                                K2Node_DynamicCast_AsProp_1;                       // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_393F[0x7];                                     // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 K2Node_ClassDynamicCast_AsProp_Pencil;             // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ClassDynamicCast_bSuccess;                  // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3940[0x7];                                     // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 K2Node_ClassDynamicCast_AsProp_Clipboard_Paper;    // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ClassDynamicCast_bSuccess_1;                // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3941[0x2];                                     // 0x0152(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0154(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0160(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0170(0x0030)(IsPlainOldData, NoDestructor)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x01A0(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_clipboard_paper_C*                CallFunc_FinishSpawningActor_ReturnValue;          // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_pencil_C*                         CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x01F8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3942[0x4];                                     // 0x0204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_nameToDisplayName_displayName;            // 0x0210(0x0018)()
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x0228(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3943[0x4];                                     // 0x0234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0238(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0248(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3944[0x4];                                     // 0x0254(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         K2Node_MakeArray_Array;                            // 0x0258(0x0010)(ReferenceParm)
-	struct FVector                                CallFunc_SetVectorLength_ReturnValue;              // 0x0268(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0274(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0275(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue_1;              // 0x0276(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue_1;        // 0x0277(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue_2;              // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3945[0x3];                                     // 0x0279(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_VictoryIntMinusEquals_IntOut;             // 0x027C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0284(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x0288(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3946[0x4];                                     // 0x028C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x0298(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x0320(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x0324(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3947[0x3];                                     // 0x0325(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Lerp_ReturnValue;                         // 0x0328(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x032C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_1;                               // 0x0330(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x0334(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FMax_ReturnValue;                         // 0x0338(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x033C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3948[0x3];                                     // 0x033D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0340(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0344(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue_1;            // 0x0348(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_2;          // 0x034C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue_1;                       // 0x0350(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0354(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3949[0x3];                                     // 0x0355(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_1;    // 0x0358(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_394A[0xC];                                     // 0x0364(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_2;              // 0x0370(0x0030)(IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x03A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_394B[0x7];                                     // 0x03A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x03A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AExplosion_C*                           CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x03B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x03B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_3;         // 0x03BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x03C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_394C[0x3];                                     // 0x03C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_4;         // 0x03C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_3;        // 0x03C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x03D4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0010(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RandomUnitVector_ReturnValue;             // 0x001C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0030(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x003C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_HitComponent;           // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_ComponentBoundEvent_NormalImpulse;          // 0x0060(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_ComponentBoundEvent_Hit;                    // 0x006C(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_F4[0x4];                                       // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAudioComponent*                        CallFunc_SpawnSoundAtLocation_ReturnValue;         // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_C*                                K2Node_DynamicCast_AsProp;                         // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AProp_C*                                K2Node_DynamicCast_AsProp_1;                       // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 K2Node_ClassDynamicCast_AsProp_Pencil;             // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ClassDynamicCast_bSuccess;                  // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 K2Node_ClassDynamicCast_AsProp_Clipboard_Paper;    // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ClassDynamicCast_bSuccess_1;                // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0141(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_142[0x2];                                      // 0x0142(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0144(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0150(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0160(0x0030)(IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x0190(0x0030)(IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_clipboard_paper_C*                CallFunc_FinishSpawningActor_ReturnValue;          // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_pencil_C*                         CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x01E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1F4[0x4];                                      // 0x01F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_nameToDisplayName_displayName;            // 0x0200(0x0018)()
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x0218(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_224[0x4];                                      // 0x0224(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0228(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0238(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_244[0x4];                                      // 0x0244(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         K2Node_MakeArray_Array;                            // 0x0248(0x0010)(ReferenceParm)
+	struct FVector                                CallFunc_SetVectorLength_ReturnValue;              // 0x0258(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0264(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0265(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue_1;              // 0x0266(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue_1;        // 0x0267(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue_2;              // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_269[0x3];                                      // 0x0269(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_VictoryIntMinusEquals_IntOut;             // 0x026C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0270(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0274(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_27C[0x4];                                      // 0x027C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x0288(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x0310(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_311[0x3];                                      // 0x0311(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Lerp_ReturnValue;                         // 0x0314(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x0318(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x031C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x0320(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FMax_ReturnValue;                         // 0x0324(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0328(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_329[0x3];                                      // 0x0329(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x032C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0330(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue_1;            // 0x0334(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_2;          // 0x0338(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue_1;                       // 0x033C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0340(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_341[0x3];                                      // 0x0341(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_1;    // 0x0344(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue_2;              // 0x0350(0x0030)(IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0380(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_381[0x7];                                      // 0x0381(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x0388(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AExplosion_C*                           CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x0390(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0398(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_3;         // 0x039C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x03A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3A1[0x3];                                      // 0x03A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_4;         // 0x03A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_3;        // 0x03A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x03B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x03C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x03C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3C5[0x3];                                      // 0x03C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetActorScale3D_ReturnValue;              // 0x03C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3D4[0xC];                                      // 0x03D4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue_3;              // 0x03E0(0x0030)(IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3; // 0x0410(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AEriePlushLive_C*                       CallFunc_FinishSpawningActor_ReturnValue_3;        // 0x0418(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x0420(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x0424(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush) == 0x000010, "Wrong alignment on Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush");
-static_assert(sizeof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush) == 0x000430, "Wrong size on Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush");
+static_assert(sizeof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush) == 0x000420, "Wrong size on Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush");
 static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, EntryPoint) == 0x000000, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_GetActorScale3D_ReturnValue) == 0x000004, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, Temp_int_Variable) == 0x000010, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_Event_DeltaSeconds) == 0x000018, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00001C, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_RandomUnitVector_ReturnValue) == 0x000028, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_RandomUnitVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_RandomFloatInRange_ReturnValue) == 0x000034, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000038, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x00003C, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Add_VectorVector_ReturnValue) == 0x000048, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_ComponentBoundEvent_HitComponent) == 0x000058, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_ComponentBoundEvent_HitComponent' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_ComponentBoundEvent_OtherActor) == 0x000060, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_ComponentBoundEvent_OtherComp) == 0x000068, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_ComponentBoundEvent_NormalImpulse) == 0x000070, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_ComponentBoundEvent_NormalImpulse' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_ComponentBoundEvent_Hit) == 0x00007C, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_ComponentBoundEvent_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_SpawnSoundAtLocation_ReturnValue) == 0x000108, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_SpawnSoundAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_DynamicCast_AsProp) == 0x000110, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_DynamicCast_AsProp' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_DynamicCast_bSuccess) == 0x000118, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_DynamicCast_AsProp_1) == 0x000120, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_DynamicCast_AsProp_1' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_DynamicCast_bSuccess_1) == 0x000128, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_GetObjectClass_ReturnValue) == 0x000130, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_GetObjectClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_ClassDynamicCast_AsProp_Pencil) == 0x000138, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_ClassDynamicCast_AsProp_Pencil' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_ClassDynamicCast_bSuccess) == 0x000140, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_ClassDynamicCast_AsProp_Clipboard_Paper) == 0x000148, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_ClassDynamicCast_AsProp_Clipboard_Paper' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_ClassDynamicCast_bSuccess_1) == 0x000150, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_ClassDynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_BooleanAND_ReturnValue) == 0x000151, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000154, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Conv_NameToString_ReturnValue) == 0x000160, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_MakeTransform_ReturnValue) == 0x000170, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_MakeTransform_ReturnValue_1) == 0x0001A0, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0001D0, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x0001D8, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_FinishSpawningActor_ReturnValue) == 0x0001E0, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x0001E8, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x0001F0, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x0001F8, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000208, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_nameToDisplayName_displayName) == 0x000210, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_nameToDisplayName_displayName' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x000228, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Conv_TextToString_ReturnValue) == 0x000238, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000248, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_MakeArray_Array) == 0x000258, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_SetVectorLength_ReturnValue) == 0x000268, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_SetVectorLength_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000274, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_SetStaticMesh_ReturnValue) == 0x000275, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_SetStaticMesh_ReturnValue_1) == 0x000276, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_SetStaticMesh_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_EqualEqual_NameName_ReturnValue_1) == 0x000277, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_EqualEqual_NameName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_SetStaticMesh_ReturnValue_2) == 0x000278, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_SetStaticMesh_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_VictoryIntMinusEquals_IntOut) == 0x00027C, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_VictoryIntMinusEquals_IntOut' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000280, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000284, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x000288, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_Event_player) == 0x000290, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_Event_hit) == 0x000298, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_Event_index) == 0x000320, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_Event_action) == 0x000324, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Lerp_ReturnValue) == 0x000328, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x00032C, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, Temp_int_Variable_1) == 0x000330, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x000334, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_FMax_ReturnValue) == 0x000338, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00033C, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Add_FloatFloat_ReturnValue) == 0x000340, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Add_IntInt_ReturnValue_1) == 0x000344, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x000348, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Divide_FloatFloat_ReturnValue_2) == 0x00034C, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Lerp_ReturnValue_1) == 0x000350, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Lerp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Less_IntInt_ReturnValue) == 0x000354, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x000358, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_MakeTransform_ReturnValue_2) == 0x000370, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_MakeTransform_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Less_IntInt_ReturnValue_1) == 0x0003A0, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x0003A8, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x0003B0, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_RandomIntegerInRange_ReturnValue) == 0x0003B8, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_RandomFloatInRange_ReturnValue_3) == 0x0003BC, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_RandomFloatInRange_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x0003C0, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_RandomFloatInRange_ReturnValue_4) == 0x0003C4, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_RandomFloatInRange_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_K2_GetActorLocation_ReturnValue_3) == 0x0003C8, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_K2_GetActorLocation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Add_VectorVector_ReturnValue_1) == 0x0003D4, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, Temp_int_Variable) == 0x000004, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_Event_DeltaSeconds) == 0x00000C, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000010, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_RandomUnitVector_ReturnValue) == 0x00001C, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_RandomUnitVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_RandomFloatInRange_ReturnValue) == 0x000028, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x00002C, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000030, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Add_VectorVector_ReturnValue) == 0x00003C, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_ComponentBoundEvent_HitComponent) == 0x000048, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_ComponentBoundEvent_HitComponent' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_ComponentBoundEvent_OtherActor) == 0x000050, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_ComponentBoundEvent_OtherComp) == 0x000058, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_ComponentBoundEvent_NormalImpulse) == 0x000060, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_ComponentBoundEvent_NormalImpulse' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_ComponentBoundEvent_Hit) == 0x00006C, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_ComponentBoundEvent_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_SpawnSoundAtLocation_ReturnValue) == 0x0000F8, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_SpawnSoundAtLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_DynamicCast_AsProp) == 0x000100, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_DynamicCast_AsProp' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_DynamicCast_bSuccess) == 0x000108, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_DynamicCast_AsProp_1) == 0x000110, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_DynamicCast_AsProp_1' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_DynamicCast_bSuccess_1) == 0x000118, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_GetObjectClass_ReturnValue) == 0x000120, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_GetObjectClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_ClassDynamicCast_AsProp_Pencil) == 0x000128, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_ClassDynamicCast_AsProp_Pencil' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_ClassDynamicCast_bSuccess) == 0x000130, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_ClassDynamicCast_AsProp_Clipboard_Paper) == 0x000138, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_ClassDynamicCast_AsProp_Clipboard_Paper' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_ClassDynamicCast_bSuccess_1) == 0x000140, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_ClassDynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_BooleanAND_ReturnValue) == 0x000141, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000144, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Conv_NameToString_ReturnValue) == 0x000150, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_MakeTransform_ReturnValue) == 0x000160, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_MakeTransform_ReturnValue_1) == 0x000190, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0001C0, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x0001C8, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_FinishSpawningActor_ReturnValue) == 0x0001D0, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x0001D8, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x0001E0, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x0001E8, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x0001F8, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_nameToDisplayName_displayName) == 0x000200, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_nameToDisplayName_displayName' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x000218, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Conv_TextToString_ReturnValue) == 0x000228, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000238, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_MakeArray_Array) == 0x000248, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_SetVectorLength_ReturnValue) == 0x000258, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_SetVectorLength_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000264, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_SetStaticMesh_ReturnValue) == 0x000265, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_SetStaticMesh_ReturnValue_1) == 0x000266, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_SetStaticMesh_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_EqualEqual_NameName_ReturnValue_1) == 0x000267, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_EqualEqual_NameName_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_SetStaticMesh_ReturnValue_2) == 0x000268, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_SetStaticMesh_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_VictoryIntMinusEquals_IntOut) == 0x00026C, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_VictoryIntMinusEquals_IntOut' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000270, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000274, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x000278, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_Event_player) == 0x000280, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_Event_hit) == 0x000288, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, K2Node_Event_action) == 0x000310, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Lerp_ReturnValue) == 0x000314, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Lerp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x000318, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, Temp_int_Variable_1) == 0x00031C, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::Temp_int_Variable_1' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x000320, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_FMax_ReturnValue) == 0x000324, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_FMax_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000328, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Add_FloatFloat_ReturnValue) == 0x00032C, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Add_IntInt_ReturnValue_1) == 0x000330, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x000334, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Divide_FloatFloat_ReturnValue_2) == 0x000338, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Lerp_ReturnValue_1) == 0x00033C, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Lerp_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Less_IntInt_ReturnValue) == 0x000340, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x000344, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_MakeTransform_ReturnValue_2) == 0x000350, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_MakeTransform_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Less_IntInt_ReturnValue_1) == 0x000380, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x000388, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x000390, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_RandomIntegerInRange_ReturnValue) == 0x000398, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_RandomFloatInRange_ReturnValue_3) == 0x00039C, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_RandomFloatInRange_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x0003A0, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_RandomFloatInRange_ReturnValue_4) == 0x0003A4, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_RandomFloatInRange_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_K2_GetActorLocation_ReturnValue_3) == 0x0003A8, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_K2_GetActorLocation_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_Add_VectorVector_ReturnValue_1) == 0x0003B4, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x0003C0, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x0003C4, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_GetActorScale3D_ReturnValue) == 0x0003C8, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_MakeTransform_ReturnValue_3) == 0x0003E0, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_MakeTransform_ReturnValue_3' has a wrong offset!");
 static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3) == 0x000410, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3' has a wrong offset!");
 static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_FinishSpawningActor_ReturnValue_3) == 0x000418, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_FinishSpawningActor_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x000420, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x000424, "Member 'Prop_eriePlush_C_ExecuteUbergraph_prop_eriePlush::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
-
-// Function prop_eriePlush.prop_eriePlush_C.actionOptionIndex
-// 0x0098 (0x0098 - 0x0000)
-struct Prop_eriePlush_C_ActionOptionIndex final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_eriePlush_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_eriePlush_C_ActionOptionIndex");
-static_assert(sizeof(Prop_eriePlush_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_eriePlush_C_ActionOptionIndex");
-static_assert(offsetof(Prop_eriePlush_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_eriePlush_C_ActionOptionIndex::Player' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_eriePlush_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_eriePlush_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(Prop_eriePlush_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_eriePlush_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function prop_eriePlush.prop_eriePlush_C.BndEvt__prop_eriePlush_StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature
 // 0x00B0 (0x00B0 - 0x0000)
@@ -288,6 +269,21 @@ public:
 static_assert(alignof(Prop_eriePlush_C_Munch) == 0x000004, "Wrong alignment on Prop_eriePlush_C_Munch");
 static_assert(sizeof(Prop_eriePlush_C_Munch) == 0x00000C, "Wrong size on Prop_eriePlush_C_Munch");
 static_assert(offsetof(Prop_eriePlush_C_Munch, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000000, "Member 'Prop_eriePlush_C_Munch::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+
+// Function prop_eriePlush.prop_eriePlush_C.actionOptionIndex
+// 0x0098 (0x0098 - 0x0000)
+struct Prop_eriePlush_C_ActionOptionIndex final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_eriePlush_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_eriePlush_C_ActionOptionIndex");
+static_assert(sizeof(Prop_eriePlush_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_eriePlush_C_ActionOptionIndex");
+static_assert(offsetof(Prop_eriePlush_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_eriePlush_C_ActionOptionIndex::Player' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_eriePlush_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_eriePlush_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_eriePlush_C_ActionOptionIndex::Action' has a wrong offset!");
 
 }
 

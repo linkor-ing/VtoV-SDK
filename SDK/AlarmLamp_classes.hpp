@@ -18,17 +18,18 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass alarmLamp.alarmLamp_C
-// 0x0038 (0x0280 - 0x0248)
+// 0x0040 (0x0288 - 0x0248)
 class AAlarmLamp_C final : public AActor_save_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_AlarmLamp_C;                        // 0x0248(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USpotLightComponent*                    Sp2;                                               // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USpotLightComponent*                    Sp1;                                               // 0x0258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPointLightComponent*                   Point;                                             // 0x0260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UArrowComponent*                        Speen;                                             // 0x0268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Cube;                                              // 0x0270(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          Active;                                            // 0x0278(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class UBillboardComponent*                    Pivot;                                             // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        Speen;                                             // 0x0258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USpotLightComponent*                    Sp2;                                               // 0x0260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USpotLightComponent*                    Sp1;                                               // 0x0268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPointLightComponent*                   Point;                                             // 0x0270(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Cube;                                              // 0x0278(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          Active;                                            // 0x0280(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_alarmLamp(int32 EntryPoint);
@@ -36,6 +37,7 @@ public:
 	void ReceiveTick(float DeltaSeconds);
 	void SetActive(bool Visibility);
 	void UserConstructionScript();
+	void GatherDataFromKey(bool* Gather);
 
 public:
 	static class UClass* StaticClass()
@@ -48,14 +50,15 @@ public:
 	}
 };
 static_assert(alignof(AAlarmLamp_C) == 0x000008, "Wrong alignment on AAlarmLamp_C");
-static_assert(sizeof(AAlarmLamp_C) == 0x000280, "Wrong size on AAlarmLamp_C");
+static_assert(sizeof(AAlarmLamp_C) == 0x000288, "Wrong size on AAlarmLamp_C");
 static_assert(offsetof(AAlarmLamp_C, UberGraphFrame_AlarmLamp_C) == 0x000248, "Member 'AAlarmLamp_C::UberGraphFrame_AlarmLamp_C' has a wrong offset!");
-static_assert(offsetof(AAlarmLamp_C, Sp2) == 0x000250, "Member 'AAlarmLamp_C::Sp2' has a wrong offset!");
-static_assert(offsetof(AAlarmLamp_C, Sp1) == 0x000258, "Member 'AAlarmLamp_C::Sp1' has a wrong offset!");
-static_assert(offsetof(AAlarmLamp_C, Point) == 0x000260, "Member 'AAlarmLamp_C::Point' has a wrong offset!");
-static_assert(offsetof(AAlarmLamp_C, Speen) == 0x000268, "Member 'AAlarmLamp_C::Speen' has a wrong offset!");
-static_assert(offsetof(AAlarmLamp_C, Cube) == 0x000270, "Member 'AAlarmLamp_C::Cube' has a wrong offset!");
-static_assert(offsetof(AAlarmLamp_C, Active) == 0x000278, "Member 'AAlarmLamp_C::Active' has a wrong offset!");
+static_assert(offsetof(AAlarmLamp_C, Pivot) == 0x000250, "Member 'AAlarmLamp_C::Pivot' has a wrong offset!");
+static_assert(offsetof(AAlarmLamp_C, Speen) == 0x000258, "Member 'AAlarmLamp_C::Speen' has a wrong offset!");
+static_assert(offsetof(AAlarmLamp_C, Sp2) == 0x000260, "Member 'AAlarmLamp_C::Sp2' has a wrong offset!");
+static_assert(offsetof(AAlarmLamp_C, Sp1) == 0x000268, "Member 'AAlarmLamp_C::Sp1' has a wrong offset!");
+static_assert(offsetof(AAlarmLamp_C, Point) == 0x000270, "Member 'AAlarmLamp_C::Point' has a wrong offset!");
+static_assert(offsetof(AAlarmLamp_C, Cube) == 0x000278, "Member 'AAlarmLamp_C::Cube' has a wrong offset!");
+static_assert(offsetof(AAlarmLamp_C, Active) == 0x000280, "Member 'AAlarmLamp_C::Active' has a wrong offset!");
 
 }
 

@@ -17,12 +17,9 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass kerfurOmega_erie.kerfurOmega_erie_C
-// 0x0000 (0x0800 - 0x0800)
+// 0x0000 (0x0830 - 0x0830)
 class AKerfurOmega_erie_C final : public AKerfurOmega_C
 {
-public:
-	void MakeFace();
-
 public:
 	static class UClass* StaticClass()
 	{
@@ -34,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AKerfurOmega_erie_C) == 0x000010, "Wrong alignment on AKerfurOmega_erie_C");
-static_assert(sizeof(AKerfurOmega_erie_C) == 0x000800, "Wrong size on AKerfurOmega_erie_C");
+static_assert(sizeof(AKerfurOmega_erie_C) == 0x000830, "Wrong size on AKerfurOmega_erie_C");
 
 }
 

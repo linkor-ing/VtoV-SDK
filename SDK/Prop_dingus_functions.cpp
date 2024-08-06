@@ -37,15 +37,34 @@ void AProp_dingus_C::ExecuteUbergraph_prop_dingus(int32 EntryPoint)
 }
 
 
+// Function prop_dingus.prop_dingus_C.fireDamage
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_dingus_C::FireDamage(float Damage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_dingus_C", "fireDamage");
+
+	Params::Prop_dingus_C_FireDamage Parms{};
+
+	Parms.Damage = Damage;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function prop_dingus.prop_dingus_C.actionOptionIndex
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_dingus_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action)
+void AProp_dingus_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -56,22 +75,21 @@ void AProp_dingus_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct
 
 	Parms.Player = Player;
 	Parms.Param_Hit = std::move(Param_Hit);
-	Parms.Param_Index = Param_Index;
 	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function prop_dingus.prop_dingus_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function prop_dingus.prop_dingus_C.broken
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void AProp_dingus_C::ReceiveBeginPlay()
+void AProp_dingus_C::broken()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("prop_dingus_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("prop_dingus_C", "broken");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,39 +135,17 @@ void AProp_dingus_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
 }
 
 
-// Function prop_dingus.prop_dingus_C.getActionOptions
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class FString>                   Options                                                (Parm, OutParm)
-// TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
-// TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// Function prop_dingus.prop_dingus_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void AProp_dingus_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
+void AProp_dingus_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("prop_dingus_C", "getActionOptions");
+		Func = Class->GetFunction("prop_dingus_C", "ReceiveBeginPlay");
 
-	Params::Prop_dingus_C_GetActionOptions Parms{};
-
-	Parms.Player = Player;
-	Parms.Component = Component;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Options != nullptr)
-		*Options = std::move(Parms.Options);
-
-	if (Options_enum != nullptr)
-		*Options_enum = std::move(Parms.Options_enum);
-
-	if (OptionsNamesOverlay != nullptr)
-		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -161,8 +157,9 @@ void AProp_dingus_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimit
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_dingus_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
+void AProp_dingus_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -184,27 +181,9 @@ void AProp_dingus_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
-}
 
-
-// Function prop_dingus.prop_dingus_C.getData
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FStruct_save                     Data                                                   (Parm, OutParm, HasGetValueTypeHash)
-
-void AProp_dingus_C::GetData(struct FStruct_save* Data)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_dingus_C", "getData");
-
-	Params::Prop_dingus_C_GetData Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Data != nullptr)
-		*Data = std::move(Parms.Data);
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -229,6 +208,67 @@ void AProp_dingus_C::LoadData(const struct FStruct_save& Data, bool* Return)
 
 	if (Return != nullptr)
 		*Return = Parms.Return;
+}
+
+
+// Function prop_dingus.prop_dingus_C.getActionOptions
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class FString>                   Options                                                (Parm, OutParm)
+// TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
+// TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_dingus_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_dingus_C", "getActionOptions");
+
+	Params::Prop_dingus_C_GetActionOptions Parms{};
+
+	Parms.Player = Player;
+	Parms.Component = Component;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Options != nullptr)
+		*Options = std::move(Parms.Options);
+
+	if (Options_enum != nullptr)
+		*Options_enum = std::move(Parms.Options_enum);
+
+	if (OptionsNamesOverlay != nullptr)
+		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
+}
+
+
+// Function prop_dingus.prop_dingus_C.getData
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FStruct_save                     Data                                                   (Parm, OutParm, HasGetValueTypeHash)
+
+void AProp_dingus_C::GetData(struct FStruct_save* Data)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_dingus_C", "getData");
+
+	Params::Prop_dingus_C_GetData Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Data != nullptr)
+		*Data = std::move(Parms.Data);
 }
 
 }

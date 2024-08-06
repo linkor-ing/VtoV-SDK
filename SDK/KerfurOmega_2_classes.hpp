@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass kerfurOmega_2.kerfurOmega_2_C
-// 0x0000 (0x0800 - 0x0800)
+// 0x0000 (0x0830 - 0x0830)
 class AKerfurOmega_2_C final : public AKerfurOmega_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AKerfurOmega_2_C) == 0x000010, "Wrong alignment on AKerfurOmega_2_C");
-static_assert(sizeof(AKerfurOmega_2_C) == 0x000800, "Wrong size on AKerfurOmega_2_C");
+static_assert(sizeof(AKerfurOmega_2_C) == 0x000830, "Wrong size on AKerfurOmega_2_C");
 
 }
 

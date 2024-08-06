@@ -19,19 +19,18 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_burger.prop_burger_C
-// 0x0010 (0x0378 - 0x0368)
+// 0x0010 (0x0388 - 0x0378)
 class AProp_burger_C final : public AProp_C
 {
 public:
-	uint8                                         Pad_3322[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_burger_C;                      // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	bool                                          Used_0;                                            // 0x0370(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_burger_C;                      // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	bool                                          Used_0;                                            // 0x0380(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void GetData(struct FStruct_save* Data);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void ReceiveBeginPlay();
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
 	void ExecuteUbergraph_prop_burger(int32 EntryPoint);
 
 public:
@@ -45,9 +44,9 @@ public:
 	}
 };
 static_assert(alignof(AProp_burger_C) == 0x000008, "Wrong alignment on AProp_burger_C");
-static_assert(sizeof(AProp_burger_C) == 0x000378, "Wrong size on AProp_burger_C");
-static_assert(offsetof(AProp_burger_C, UberGraphFrame_Prop_burger_C) == 0x000368, "Member 'AProp_burger_C::UberGraphFrame_Prop_burger_C' has a wrong offset!");
-static_assert(offsetof(AProp_burger_C, Used_0) == 0x000370, "Member 'AProp_burger_C::Used_0' has a wrong offset!");
+static_assert(sizeof(AProp_burger_C) == 0x000388, "Wrong size on AProp_burger_C");
+static_assert(offsetof(AProp_burger_C, UberGraphFrame_Prop_burger_C) == 0x000378, "Member 'AProp_burger_C::UberGraphFrame_Prop_burger_C' has a wrong offset!");
+static_assert(offsetof(AProp_burger_C, Used_0) == 0x000380, "Member 'AProp_burger_C::Used_0' has a wrong offset!");
 
 }
 

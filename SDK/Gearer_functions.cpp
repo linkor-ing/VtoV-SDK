@@ -51,28 +51,6 @@ void AGearer_C::ReceiveBeginPlay()
 }
 
 
-// Function gearer.gearer_C.runTrigger
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Param_Owner                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AGearer_C::RunTrigger(class AActor* Param_Owner, int32 Param_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("gearer_C", "runTrigger");
-
-	Params::Gearer_C_RunTrigger Parms{};
-
-	Parms.Param_Owner = Param_Owner;
-	Parms.Param_Index = Param_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function gearer.gearer_C.gen_gear
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -108,6 +86,28 @@ void AGearer_C::CheckDist(const struct FVector& V2, bool* Overlap)
 
 	if (Overlap != nullptr)
 		*Overlap = Parms.Overlap;
+}
+
+
+// Function gearer.gearer_C.runTrigger
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Param_Owner                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AGearer_C::RunTrigger(class AActor* Param_Owner, int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("gearer_C", "runTrigger");
+
+	Params::Gearer_C_RunTrigger Parms{};
+
+	Parms.Param_Owner = Param_Owner;
+	Parms.Param_Index = Param_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

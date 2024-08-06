@@ -104,8 +104,9 @@ void AGrunge_C::SetMat()
 // Parameters:
 // class AProp_sponge_C*                   Sponge                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   Sub                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    NoSound                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AGrunge_C::Clean(class AProp_sponge_C* Sponge, float Sub)
+void AGrunge_C::Clean(class AProp_sponge_C* Sponge, float Sub, bool NoSound)
 {
 	static class UFunction* Func = nullptr;
 
@@ -116,6 +117,7 @@ void AGrunge_C::Clean(class AProp_sponge_C* Sponge, float Sub)
 
 	Parms.Sponge = Sponge;
 	Parms.Sub = Sub;
+	Parms.NoSound = NoSound;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -205,6 +207,27 @@ void AGrunge_C::GetData(struct FStruct_save* Data)
 
 	if (Data != nullptr)
 		*Data = std::move(Parms.Data);
+}
+
+
+// Function grunge.grunge_C.gatherDataFromKey
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AGrunge_C::GatherDataFromKey(bool* Gather)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("grunge_C", "gatherDataFromKey");
+
+	Params::Grunge_C_GatherDataFromKey Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Gather != nullptr)
+		*Gather = Parms.Gather;
 }
 
 }

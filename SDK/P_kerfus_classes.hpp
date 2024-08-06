@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Prop_classes.hpp"
+#include "Enum_interactionActions_structs.hpp"
 #include "AIModule_structs.hpp"
 
 
@@ -21,73 +21,75 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass p_kerfus.p_kerfus_C
-// 0x0110 (0x0478 - 0x0368)
+// 0x0130 (0x04A8 - 0x0378)
 class AP_kerfus_C : public AProp_C
 {
 public:
-	uint8                                         Pad_3DCD[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_P_kerfus_C;                         // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBillboardComponent*                    CordRoot;                                          // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   Cam;                                               // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UArrowComponent*                        DoorStuck;                                         // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   Wheel;                                             // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 SkeletalMesh;                                      // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        Roll;                                              // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        Meow;                                              // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBillboardComponent*                    Billboard;                                         // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPhysicsConstraintComponent*            PhysicsConstraint;                                 // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    bodyCOmponent;                                     // 0x03B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Target_0;                                          // 0x03C0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DCE[0x4];                                     // 0x03CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimitiveComponent*                    WheelComponent;                                    // 0x03D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         P;                                                 // 0x03D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         S;                                                 // 0x03DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Dirr;                                              // 0x03E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DCF[0x4];                                     // 0x03E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 MoveTo;                                            // 0x03E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          DoingTask;                                         // 0x03F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3DD0[0x7];                                     // 0x03F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AServerBox_C*                           ServFix;                                           // 0x03F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Active;                                            // 0x0400(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3DD1[0x3];                                     // 0x0401(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         PowUpright;                                        // 0x0404(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Wall;                                              // 0x0408(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3DD2[0x7];                                     // 0x0409(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AKerfusPawn_C*                          Pawn;                                              // 0x0410(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Searching;                                         // 0x0418(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3DD3[0x7];                                     // 0x0419(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AKerfusFace_C*                          Face;                                              // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                WheelTorque;                                       // 0x0428(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DD4[0x4];                                     // 0x0434(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AProp_camera_good_C*                    Camera;                                            // 0x0438(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Type;                                              // 0x0440(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                PossessLoc;                                        // 0x0444(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Pets;                                              // 0x0450(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         MeowPitch;                                         // 0x0454(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ACord_C*                                ObjCord;                                           // 0x0458(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Energy;                                            // 0x0460(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Charging;                                          // 0x0464(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          RemoteControl;                                     // 0x0465(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3DD5[0x2];                                     // 0x0466(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                RC_vector;                                         // 0x0468(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_P_kerfus_C;                         // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UNavigationInvokerComponent*            NavigationInvoker;                                 // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    CordRoot;                                          // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   Cam;                                               // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        DoorStuck;                                         // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   Wheel;                                             // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 SkeletalMesh;                                      // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        Roll;                                              // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        Meow;                                              // 0x03B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    Billboard;                                         // 0x03C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPhysicsConstraintComponent*            PhysicsConstraint;                                 // 0x03C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    bodyCOmponent;                                     // 0x03D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Target_0;                                          // 0x03D8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E4[0x4];                                      // 0x03E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPrimitiveComponent*                    WheelComponent;                                    // 0x03E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         P;                                                 // 0x03F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         S;                                                 // 0x03F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Dirr;                                              // 0x03F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3FC[0x4];                                      // 0x03FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 MoveTo;                                            // 0x0400(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          DoingTask;                                         // 0x0408(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_409[0x7];                                      // 0x0409(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AServerBox_C*                           ServFix;                                           // 0x0410(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Active;                                            // 0x0418(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_419[0x3];                                      // 0x0419(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         PowUpright;                                        // 0x041C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Wall;                                              // 0x0420(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_421[0x7];                                      // 0x0421(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AKerfusPawn_C*                          Pawn;                                              // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Searching;                                         // 0x0430(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_431[0x7];                                      // 0x0431(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AKerfusFace_C*                          Face;                                              // 0x0438(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                WheelTorque;                                       // 0x0440(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44C[0x4];                                      // 0x044C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AProp_camera_good_C*                    Camera;                                            // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Type;                                              // 0x0458(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                PossessLoc;                                        // 0x045C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Pets;                                              // 0x0468(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         MeowPitch;                                         // 0x046C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ACord_C*                                ObjCord;                                           // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Energy;                                            // 0x0478(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Charging;                                          // 0x047C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          RemoteControl;                                     // 0x047D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_47E[0x2];                                      // 0x047E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                RC_vector;                                         // 0x0480(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          backup;                                            // 0x048C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_48D[0x3];                                      // 0x048D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         WheelSpeed;                                        // 0x0490(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Jump_h;                                            // 0x0494(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Jump_f;                                            // 0x04A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsJumping;                                         // 0x04A4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_p_kerfus(int32 EntryPoint);
+	void CheckJump();
+	void Jump();
 	void PossessTimer();
 	void CordUnplugged(class ACord_C* Cord, class ACordSocket_C* Socket);
-	void SettingsApplied(const struct FStruct_settings& Settings);
-	void ActionName(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, const class FString& Param_Name);
 	void CordPlugged(class ACord_C* Cord, class ACordSocket_C* Socket);
 	void MeowAnim();
 	void RunTrigger(class AActor* Param_Owner, int32 Param_Index);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
-	void ReceiveDestroyed();
 	void Set_ignoreSave_trigger(bool NewParam);
 	void SetActiveTrigger(class AActor* SentFrom, bool Param_Active);
 	void ReceiveTick(float DeltaSeconds);
-	void GamemodeBeginPlay();
 	void Task();
-	void ReceiveBeginPlay();
 	void OnCompleted_B4D86F6844FB2B9300F777A94A2F493A(class FName NotifyName);
 	void OnBlendOut_B4D86F6844FB2B9300F777A94A2F493A(class FName NotifyName);
 	void OnInterrupted_B4D86F6844FB2B9300F777A94A2F493A(class FName NotifyName);
@@ -98,11 +100,24 @@ public:
 	class AActor* TargetActor(struct FVector* Param_PossessLoc);
 	void FindBrokenServer();
 	void Upd(bool SkipFace);
+	void Possess(const struct FVector& Param_PossessLoc);
+	struct FVector Loccccccc();
+	void IgnoreSave_trigger(bool* Ignore);
+	void LoadTriggerData(const struct FStruct_triggerSave& Data, bool* Return);
+	void GetTriggerData(struct FStruct_triggerSave* Data);
+	void GatherDataFromKeyT(bool* Gather);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
+	void SettingsApplied(const struct FStruct_settings& Settings);
+	void ReceiveDestroyed();
+	void GamemodeBeginPlay();
+	void ReceiveBeginPlay();
+	void Crafted();
+	void ActionName(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, const class FString& Param_Name);
 	void CanBePutInContainer(bool* Return);
 	void AsProp(class AProp_C** Return);
 	void CanPickup(bool* Return);
 	void NoRespawn(bool Param_NoRespawn, bool* Return);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
 	void IsButtonUsed(bool* Failed);
 	void CanBeUsedHold(bool* Return);
 	void GetKey(class FString* Param_Key);
@@ -111,12 +126,7 @@ public:
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
 	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base);
-	void Possess(const struct FVector& Param_PossessLoc);
-	struct FVector Loccccccc();
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
-	void IgnoreSave_trigger(bool* Ignore);
-	void LoadTriggerData(const struct FStruct_triggerSave& Data, bool* Return);
-	void GetTriggerData(struct FStruct_triggerSave* Data);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 
 public:
 	static class UClass* StaticClass()
@@ -129,43 +139,49 @@ public:
 	}
 };
 static_assert(alignof(AP_kerfus_C) == 0x000008, "Wrong alignment on AP_kerfus_C");
-static_assert(sizeof(AP_kerfus_C) == 0x000478, "Wrong size on AP_kerfus_C");
-static_assert(offsetof(AP_kerfus_C, UberGraphFrame_P_kerfus_C) == 0x000368, "Member 'AP_kerfus_C::UberGraphFrame_P_kerfus_C' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, CordRoot) == 0x000370, "Member 'AP_kerfus_C::CordRoot' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, Cam) == 0x000378, "Member 'AP_kerfus_C::Cam' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, DoorStuck) == 0x000380, "Member 'AP_kerfus_C::DoorStuck' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, Wheel) == 0x000388, "Member 'AP_kerfus_C::Wheel' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, SkeletalMesh) == 0x000390, "Member 'AP_kerfus_C::SkeletalMesh' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, Roll) == 0x000398, "Member 'AP_kerfus_C::Roll' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, Meow) == 0x0003A0, "Member 'AP_kerfus_C::Meow' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, Billboard) == 0x0003A8, "Member 'AP_kerfus_C::Billboard' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, PhysicsConstraint) == 0x0003B0, "Member 'AP_kerfus_C::PhysicsConstraint' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, bodyCOmponent) == 0x0003B8, "Member 'AP_kerfus_C::bodyCOmponent' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, Target_0) == 0x0003C0, "Member 'AP_kerfus_C::Target_0' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, WheelComponent) == 0x0003D0, "Member 'AP_kerfus_C::WheelComponent' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, P) == 0x0003D8, "Member 'AP_kerfus_C::P' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, S) == 0x0003DC, "Member 'AP_kerfus_C::S' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, Dirr) == 0x0003E0, "Member 'AP_kerfus_C::Dirr' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, MoveTo) == 0x0003E8, "Member 'AP_kerfus_C::MoveTo' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, DoingTask) == 0x0003F0, "Member 'AP_kerfus_C::DoingTask' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, ServFix) == 0x0003F8, "Member 'AP_kerfus_C::ServFix' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, Active) == 0x000400, "Member 'AP_kerfus_C::Active' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, PowUpright) == 0x000404, "Member 'AP_kerfus_C::PowUpright' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, Wall) == 0x000408, "Member 'AP_kerfus_C::Wall' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, Pawn) == 0x000410, "Member 'AP_kerfus_C::Pawn' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, Searching) == 0x000418, "Member 'AP_kerfus_C::Searching' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, Face) == 0x000420, "Member 'AP_kerfus_C::Face' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, WheelTorque) == 0x000428, "Member 'AP_kerfus_C::WheelTorque' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, Camera) == 0x000438, "Member 'AP_kerfus_C::Camera' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, Type) == 0x000440, "Member 'AP_kerfus_C::Type' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, PossessLoc) == 0x000444, "Member 'AP_kerfus_C::PossessLoc' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, Pets) == 0x000450, "Member 'AP_kerfus_C::Pets' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, MeowPitch) == 0x000454, "Member 'AP_kerfus_C::MeowPitch' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, ObjCord) == 0x000458, "Member 'AP_kerfus_C::ObjCord' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, Energy) == 0x000460, "Member 'AP_kerfus_C::Energy' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, Charging) == 0x000464, "Member 'AP_kerfus_C::Charging' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, RemoteControl) == 0x000465, "Member 'AP_kerfus_C::RemoteControl' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_C, RC_vector) == 0x000468, "Member 'AP_kerfus_C::RC_vector' has a wrong offset!");
+static_assert(sizeof(AP_kerfus_C) == 0x0004A8, "Wrong size on AP_kerfus_C");
+static_assert(offsetof(AP_kerfus_C, UberGraphFrame_P_kerfus_C) == 0x000378, "Member 'AP_kerfus_C::UberGraphFrame_P_kerfus_C' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, NavigationInvoker) == 0x000380, "Member 'AP_kerfus_C::NavigationInvoker' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, CordRoot) == 0x000388, "Member 'AP_kerfus_C::CordRoot' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, Cam) == 0x000390, "Member 'AP_kerfus_C::Cam' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, DoorStuck) == 0x000398, "Member 'AP_kerfus_C::DoorStuck' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, Wheel) == 0x0003A0, "Member 'AP_kerfus_C::Wheel' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, SkeletalMesh) == 0x0003A8, "Member 'AP_kerfus_C::SkeletalMesh' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, Roll) == 0x0003B0, "Member 'AP_kerfus_C::Roll' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, Meow) == 0x0003B8, "Member 'AP_kerfus_C::Meow' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, Billboard) == 0x0003C0, "Member 'AP_kerfus_C::Billboard' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, PhysicsConstraint) == 0x0003C8, "Member 'AP_kerfus_C::PhysicsConstraint' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, bodyCOmponent) == 0x0003D0, "Member 'AP_kerfus_C::bodyCOmponent' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, Target_0) == 0x0003D8, "Member 'AP_kerfus_C::Target_0' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, WheelComponent) == 0x0003E8, "Member 'AP_kerfus_C::WheelComponent' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, P) == 0x0003F0, "Member 'AP_kerfus_C::P' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, S) == 0x0003F4, "Member 'AP_kerfus_C::S' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, Dirr) == 0x0003F8, "Member 'AP_kerfus_C::Dirr' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, MoveTo) == 0x000400, "Member 'AP_kerfus_C::MoveTo' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, DoingTask) == 0x000408, "Member 'AP_kerfus_C::DoingTask' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, ServFix) == 0x000410, "Member 'AP_kerfus_C::ServFix' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, Active) == 0x000418, "Member 'AP_kerfus_C::Active' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, PowUpright) == 0x00041C, "Member 'AP_kerfus_C::PowUpright' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, Wall) == 0x000420, "Member 'AP_kerfus_C::Wall' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, Pawn) == 0x000428, "Member 'AP_kerfus_C::Pawn' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, Searching) == 0x000430, "Member 'AP_kerfus_C::Searching' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, Face) == 0x000438, "Member 'AP_kerfus_C::Face' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, WheelTorque) == 0x000440, "Member 'AP_kerfus_C::WheelTorque' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, Camera) == 0x000450, "Member 'AP_kerfus_C::Camera' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, Type) == 0x000458, "Member 'AP_kerfus_C::Type' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, PossessLoc) == 0x00045C, "Member 'AP_kerfus_C::PossessLoc' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, Pets) == 0x000468, "Member 'AP_kerfus_C::Pets' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, MeowPitch) == 0x00046C, "Member 'AP_kerfus_C::MeowPitch' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, ObjCord) == 0x000470, "Member 'AP_kerfus_C::ObjCord' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, Energy) == 0x000478, "Member 'AP_kerfus_C::Energy' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, Charging) == 0x00047C, "Member 'AP_kerfus_C::Charging' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, RemoteControl) == 0x00047D, "Member 'AP_kerfus_C::RemoteControl' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, RC_vector) == 0x000480, "Member 'AP_kerfus_C::RC_vector' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, backup) == 0x00048C, "Member 'AP_kerfus_C::backup' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, WheelSpeed) == 0x000490, "Member 'AP_kerfus_C::WheelSpeed' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, Jump_h) == 0x000494, "Member 'AP_kerfus_C::Jump_h' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, Jump_f) == 0x0004A0, "Member 'AP_kerfus_C::Jump_f' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_C, IsJumping) == 0x0004A4, "Member 'AP_kerfus_C::IsJumping' has a wrong offset!");
 
 }
 

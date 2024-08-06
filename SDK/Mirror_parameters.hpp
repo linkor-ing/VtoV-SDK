@@ -10,71 +10,75 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
+#include "Struct_settings_structs.hpp"
 #include "Struct_save_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "InputCore_structs.hpp"
-#include "Struct_settings_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function mirror.mirror_C.ExecuteUbergraph_mirror
-// 0x03B0 (0x03B0 - 0x0000)
+// 0x03F0 (0x03F0 - 0x0000)
 struct Mirror_C_ExecuteUbergraph_mirror final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsChildActor_ReturnValue;                 // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_22F2[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FKey                                   K2Node_Event_key;                                  // 0x0010(0x0018)(HasGetValueTypeHash)
 	bool                                          K2Node_Event_pressed;                              // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_22F3[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           K2Node_Event_color;                                // 0x002C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0048(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x0054(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0060(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x006C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0078(0x00CC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_22F4[0x4];                                     // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0150(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0180(0x0030)(IsPlainOldData, NoDestructor)
-	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue_1;     // 0x01B0(0x0030)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x01E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x01EC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x01F8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x0204(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue_1;     // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_22F5[0x8];                                     // 0x0218(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0220(0x0030)(IsPlainOldData, NoDestructor)
-	float                                         CallFunc_GetFOVAngle_ReturnValue;                  // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_22F6[0xC];                                     // 0x0254(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeRelativeTransform_ReturnValue;        // 0x0260(0x0030)(IsPlainOldData, NoDestructor)
-	struct FTransform                             CallFunc_ComposeTransforms_ReturnValue;            // 0x0290(0x0030)(IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_SetWorldTransform_SweepHitResult;      // 0x02C0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue_2;     // 0x0348(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetForwardVector_ReturnValue_1;           // 0x0350(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x035C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0368(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue_1;      // 0x0374(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x0380(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x038C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0390(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_WasRecentlyRendered_ReturnValue;          // 0x0391(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_22F7[0x6];                                     // 0x0392(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_GetParentActor_ReturnValue;               // 0x0398(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_WasRecentlyRendered_ReturnValue_1;        // 0x03A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Select_Default;                             // 0x03A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x03A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUmg_texturePicker_C*                   K2Node_Event_picker;                               // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_Event_texture;                              // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_index;                                // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0060(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x006C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0078(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0084(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0090(0x00F0)(HasGetValueTypeHash)
+	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_188[0x8];                                      // 0x0188(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0190(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x01C0(0x0030)(IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue_1;     // 0x01F0(0x0030)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0220(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x022C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0238(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x0244(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue_1;     // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_258[0x8];                                      // 0x0258(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0260(0x0030)(IsPlainOldData, NoDestructor)
+	float                                         CallFunc_GetFOVAngle_ReturnValue;                  // 0x0290(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_294[0xC];                                      // 0x0294(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeRelativeTransform_ReturnValue;        // 0x02A0(0x0030)(IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_ComposeTransforms_ReturnValue;            // 0x02D0(0x0030)(IsPlainOldData, NoDestructor)
+	struct FHitResult                             CallFunc_K2_SetWorldTransform_SweepHitResult;      // 0x0300(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue_2;     // 0x0388(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetForwardVector_ReturnValue_1;           // 0x0390(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x039C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x03A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue_1;      // 0x03B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x03C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x03CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x03D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_WasRecentlyRendered_ReturnValue;          // 0x03D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3D2[0x6];                                      // 0x03D2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_GetParentActor_ReturnValue;               // 0x03D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_WasRecentlyRendered_ReturnValue_1;        // 0x03E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Select_Default;                             // 0x03E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x03E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Mirror_C_ExecuteUbergraph_mirror) == 0x000010, "Wrong alignment on Mirror_C_ExecuteUbergraph_mirror");
-static_assert(sizeof(Mirror_C_ExecuteUbergraph_mirror) == 0x0003B0, "Wrong size on Mirror_C_ExecuteUbergraph_mirror");
+static_assert(sizeof(Mirror_C_ExecuteUbergraph_mirror) == 0x0003F0, "Wrong size on Mirror_C_ExecuteUbergraph_mirror");
 static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, EntryPoint) == 0x000000, "Member 'Mirror_C_ExecuteUbergraph_mirror::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_IsChildActor_ReturnValue) == 0x000004, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_IsChildActor_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, Temp_bool_Variable) == 0x000005, "Member 'Mirror_C_ExecuteUbergraph_mirror::Temp_bool_Variable' has a wrong offset!");
@@ -82,50 +86,53 @@ static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, K2Node_Event_gamemode) 
 static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, K2Node_Event_key) == 0x000010, "Member 'Mirror_C_ExecuteUbergraph_mirror::K2Node_Event_key' has a wrong offset!");
 static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, K2Node_Event_pressed) == 0x000028, "Member 'Mirror_C_ExecuteUbergraph_mirror::K2Node_Event_pressed' has a wrong offset!");
 static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, K2Node_Event_color) == 0x00002C, "Member 'Mirror_C_ExecuteUbergraph_mirror::K2Node_Event_color' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, K2Node_Event_DeltaSeconds) == 0x00003C, "Member 'Mirror_C_ExecuteUbergraph_mirror::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000040, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000048, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_GetForwardVector_ReturnValue) == 0x000054, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000060, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_Subtract_VectorVector_ReturnValue) == 0x00006C, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, K2Node_Event_settings) == 0x000078, "Member 'Mirror_C_ExecuteUbergraph_mirror::K2Node_Event_settings' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000148, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_GetTransform_ReturnValue) == 0x000150, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x000180, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_K2_GetComponentToWorld_ReturnValue_1) == 0x0001B0, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_K2_GetComponentToWorld_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_BreakTransform_Location) == 0x0001E0, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_BreakTransform_Rotation) == 0x0001EC, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_BreakTransform_Scale) == 0x0001F8, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_Multiply_VectorVector_ReturnValue) == 0x000204, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_GetPlayerCameraManager_ReturnValue_1) == 0x000210, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_GetPlayerCameraManager_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_MakeTransform_ReturnValue) == 0x000220, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_GetFOVAngle_ReturnValue) == 0x000250, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_GetFOVAngle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_MakeRelativeTransform_ReturnValue) == 0x000260, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_MakeRelativeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_ComposeTransforms_ReturnValue) == 0x000290, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_ComposeTransforms_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_K2_SetWorldTransform_SweepHitResult) == 0x0002C0, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_K2_SetWorldTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_GetPlayerCameraManager_ReturnValue_2) == 0x000348, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_GetPlayerCameraManager_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_GetForwardVector_ReturnValue_1) == 0x000350, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_GetForwardVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00035C, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000368, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_Subtract_VectorVector_ReturnValue_1) == 0x000374, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_Subtract_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_Normal_ReturnValue) == 0x000380, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_Normal_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_Dot_VectorVector_ReturnValue) == 0x00038C, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_Less_FloatFloat_ReturnValue) == 0x000390, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_WasRecentlyRendered_ReturnValue) == 0x000391, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_WasRecentlyRendered_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_GetParentActor_ReturnValue) == 0x000398, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_GetParentActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_WasRecentlyRendered_ReturnValue_1) == 0x0003A0, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_WasRecentlyRendered_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, K2Node_Select_Default) == 0x0003A1, "Member 'Mirror_C_ExecuteUbergraph_mirror::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_BooleanAND_ReturnValue) == 0x0003A2, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, K2Node_Event_picker) == 0x000040, "Member 'Mirror_C_ExecuteUbergraph_mirror::K2Node_Event_picker' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, K2Node_Event_texture) == 0x000048, "Member 'Mirror_C_ExecuteUbergraph_mirror::K2Node_Event_texture' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, K2Node_Event_index) == 0x000050, "Member 'Mirror_C_ExecuteUbergraph_mirror::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, K2Node_Event_DeltaSeconds) == 0x000054, "Member 'Mirror_C_ExecuteUbergraph_mirror::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000058, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000060, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_GetForwardVector_ReturnValue) == 0x00006C, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000078, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000084, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, K2Node_Event_settings) == 0x000090, "Member 'Mirror_C_ExecuteUbergraph_mirror::K2Node_Event_settings' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000180, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_GetTransform_ReturnValue) == 0x000190, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x0001C0, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_K2_GetComponentToWorld_ReturnValue_1) == 0x0001F0, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_K2_GetComponentToWorld_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_BreakTransform_Location) == 0x000220, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_BreakTransform_Location' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_BreakTransform_Rotation) == 0x00022C, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_BreakTransform_Rotation' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_BreakTransform_Scale) == 0x000238, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_BreakTransform_Scale' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_Multiply_VectorVector_ReturnValue) == 0x000244, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_GetPlayerCameraManager_ReturnValue_1) == 0x000250, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_GetPlayerCameraManager_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_MakeTransform_ReturnValue) == 0x000260, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_GetFOVAngle_ReturnValue) == 0x000290, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_GetFOVAngle_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_MakeRelativeTransform_ReturnValue) == 0x0002A0, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_MakeRelativeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_ComposeTransforms_ReturnValue) == 0x0002D0, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_ComposeTransforms_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_K2_SetWorldTransform_SweepHitResult) == 0x000300, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_K2_SetWorldTransform_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_GetPlayerCameraManager_ReturnValue_2) == 0x000388, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_GetPlayerCameraManager_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_GetForwardVector_ReturnValue_1) == 0x000390, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_GetForwardVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00039C, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x0003A8, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_Subtract_VectorVector_ReturnValue_1) == 0x0003B4, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_Subtract_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_Normal_ReturnValue) == 0x0003C0, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_Normal_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_Dot_VectorVector_ReturnValue) == 0x0003CC, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_Less_FloatFloat_ReturnValue) == 0x0003D0, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_WasRecentlyRendered_ReturnValue) == 0x0003D1, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_WasRecentlyRendered_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_GetParentActor_ReturnValue) == 0x0003D8, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_GetParentActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_WasRecentlyRendered_ReturnValue_1) == 0x0003E0, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_WasRecentlyRendered_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, K2Node_Select_Default) == 0x0003E1, "Member 'Mirror_C_ExecuteUbergraph_mirror::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(Mirror_C_ExecuteUbergraph_mirror, CallFunc_BooleanAND_ReturnValue) == 0x0003E2, "Member 'Mirror_C_ExecuteUbergraph_mirror::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function mirror.mirror_C.settingsApplied
-// 0x00CC (0x00CC - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct Mirror_C_SettingsApplied final
 {
 public:
-	struct FStruct_settings                       Settings;                                          // 0x0000(0x00CC)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       Settings;                                          // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(Mirror_C_SettingsApplied) == 0x000004, "Wrong alignment on Mirror_C_SettingsApplied");
-static_assert(sizeof(Mirror_C_SettingsApplied) == 0x0000CC, "Wrong size on Mirror_C_SettingsApplied");
+static_assert(alignof(Mirror_C_SettingsApplied) == 0x000008, "Wrong alignment on Mirror_C_SettingsApplied");
+static_assert(sizeof(Mirror_C_SettingsApplied) == 0x0000F0, "Wrong size on Mirror_C_SettingsApplied");
 static_assert(offsetof(Mirror_C_SettingsApplied, Settings) == 0x000000, "Member 'Mirror_C_SettingsApplied::Settings' has a wrong offset!");
 
 // Function mirror.mirror_C.ReceiveTick
@@ -138,6 +145,21 @@ public:
 static_assert(alignof(Mirror_C_ReceiveTick) == 0x000004, "Wrong alignment on Mirror_C_ReceiveTick");
 static_assert(sizeof(Mirror_C_ReceiveTick) == 0x000004, "Wrong size on Mirror_C_ReceiveTick");
 static_assert(offsetof(Mirror_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'Mirror_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+
+// Function mirror.mirror_C.texturePickerApply
+// 0x0018 (0x0018 - 0x0000)
+struct Mirror_C_TexturePickerApply final
+{
+public:
+	class UUmg_texturePicker_C*                   Picker;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Param_Index;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Mirror_C_TexturePickerApply) == 0x000008, "Wrong alignment on Mirror_C_TexturePickerApply");
+static_assert(sizeof(Mirror_C_TexturePickerApply) == 0x000018, "Wrong size on Mirror_C_TexturePickerApply");
+static_assert(offsetof(Mirror_C_TexturePickerApply, Picker) == 0x000000, "Member 'Mirror_C_TexturePickerApply::Picker' has a wrong offset!");
+static_assert(offsetof(Mirror_C_TexturePickerApply, Texture) == 0x000008, "Member 'Mirror_C_TexturePickerApply::Texture' has a wrong offset!");
+static_assert(offsetof(Mirror_C_TexturePickerApply, Param_Index) == 0x000010, "Member 'Mirror_C_TexturePickerApply::Param_Index' has a wrong offset!");
 
 // Function mirror.mirror_C.applyColor
 // 0x0010 (0x0010 - 0x0000)

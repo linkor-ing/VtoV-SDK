@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_batts_acc.prop_batts_acc_C
-// 0x0000 (0x0378 - 0x0378)
+// 0x0000 (0x0388 - 0x0388)
 class AProp_batts_acc_C final : public AProp_batts_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_batts_acc_C) == 0x000008, "Wrong alignment on AProp_batts_acc_C");
-static_assert(sizeof(AProp_batts_acc_C) == 0x000378, "Wrong size on AProp_batts_acc_C");
+static_assert(sizeof(AProp_batts_acc_C) == 0x000388, "Wrong size on AProp_batts_acc_C");
 
 }
 

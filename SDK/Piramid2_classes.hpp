@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass piramid2.piramid2_C
-// 0x01C8 (0x03E8 - 0x0220)
+// 0x01D0 (0x03F0 - 0x0220)
 class APiramid2_C final : public AActor
 {
 public:
@@ -28,7 +28,7 @@ public:
 	class UParticleSystemComponent*               EffStomp_2;                                        // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               EffStomp_1;                                        // 0x0238(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               EffStomp_3;                                        // 0x0240(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class URadarPointComponent_C*                 RadarPoint;                                        // 0x0248(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UComp_radarPoint_C*                     RadarPoint;                                        // 0x0248(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UBillboardComponent*                    LookAt;                                            // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UArrowComponent*                        LookDir;                                           // 0x0258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UBillboardComponent*                    S2;                                                // 0x0260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -61,24 +61,24 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         Timeline_2_a_6EB357EC4165A0F1446A689D73F99FAF;     // 0x0340(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            Timeline_2__Direction_6EB357EC4165A0F1446A689D73F99FAF; // 0x0344(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2431[0x3];                                     // 0x0345(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_345[0x3];                                      // 0x0345(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     Timeline_2;                                        // 0x0348(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Timeline_1_a_3D36FA1C440809EE47C216BBA1FDB55F;     // 0x0350(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            Timeline_1__Direction_3D36FA1C440809EE47C216BBA1FDB55F; // 0x0354(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2432[0x3];                                     // 0x0355(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_355[0x3];                                      // 0x0355(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     Timeline_1;                                        // 0x0358(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Timeline_0_a_3924903B40A2EBE05EF8A4B26BDDD7D8;     // 0x0360(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            Timeline_0__Direction_3924903B40A2EBE05EF8A4B26BDDD7D8; // 0x0364(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2433[0x3];                                     // 0x0365(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_365[0x3];                                      // 0x0365(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     Timeline_0;                                        // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Mov_a_E610030647E148C24D167D943C31B122;            // 0x0370(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            Mov__Direction_E610030647E148C24D167D943C31B122;   // 0x0374(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2434[0x3];                                     // 0x0375(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_375[0x3];                                      // 0x0375(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     Mov;                                               // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPiramid_sk_prot_Skeleton_AnimBlueprint_C* Anim;                                              // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Speed;                                             // 0x0388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsWalking;                                         // 0x038C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2435[0x3];                                     // 0x038D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_38D[0x3];                                      // 0x038D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                WalkSpot;                                          // 0x0390(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         MultiplyWalk;                                      // 0x039C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 WalkActor;                                         // 0x03A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -86,12 +86,13 @@ public:
 	struct FVector                                RelLook;                                           // 0x03B0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          WispGathered;                                      // 0x03BC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Gathering;                                         // 0x03BD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2436[0x2];                                     // 0x03BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BE[0x2];                                      // 0x03BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         P;                                                 // 0x03C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Suc;                                               // 0x03C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APiramidSpawner_C*                      Spawner;                                           // 0x03C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class AInstancedFoliageActor*                 Foliage;                                           // 0x03D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class AActor*>                         Ignore;                                            // 0x03D8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	float                                         Speed_modify;                                      // 0x03E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_piramid2(int32 EntryPoint);
@@ -134,7 +135,7 @@ public:
 	}
 };
 static_assert(alignof(APiramid2_C) == 0x000008, "Wrong alignment on APiramid2_C");
-static_assert(sizeof(APiramid2_C) == 0x0003E8, "Wrong size on APiramid2_C");
+static_assert(sizeof(APiramid2_C) == 0x0003F0, "Wrong size on APiramid2_C");
 static_assert(offsetof(APiramid2_C, UberGraphFrame) == 0x000220, "Member 'APiramid2_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(APiramid2_C, EffPing) == 0x000228, "Member 'APiramid2_C::EffPing' has a wrong offset!");
 static_assert(offsetof(APiramid2_C, EffStomp_2) == 0x000230, "Member 'APiramid2_C::EffStomp_2' has a wrong offset!");
@@ -198,6 +199,7 @@ static_assert(offsetof(APiramid2_C, Suc) == 0x0003C4, "Member 'APiramid2_C::Suc'
 static_assert(offsetof(APiramid2_C, Spawner) == 0x0003C8, "Member 'APiramid2_C::Spawner' has a wrong offset!");
 static_assert(offsetof(APiramid2_C, Foliage) == 0x0003D0, "Member 'APiramid2_C::Foliage' has a wrong offset!");
 static_assert(offsetof(APiramid2_C, Ignore) == 0x0003D8, "Member 'APiramid2_C::Ignore' has a wrong offset!");
+static_assert(offsetof(APiramid2_C, Speed_modify) == 0x0003E8, "Member 'APiramid2_C::Speed_modify' has a wrong offset!");
 
 }
 

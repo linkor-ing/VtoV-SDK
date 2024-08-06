@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Enum_interactionActions_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 
 
@@ -19,85 +19,65 @@ namespace SDK::Params
 {
 
 // Function prop_arirPhone.prop_arirPhone_C.ExecuteUbergraph_prop_arirPhone
-// 0x01D8 (0x01D8 - 0x0000)
+// 0x01D0 (0x01D0 - 0x0000)
 struct Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3951[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit;                                  // 0x0010(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3952[0x3];                                     // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue;              // 0x00A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x00B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3953[0x4];                                     // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_HitComponent;           // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_ComponentBoundEvent_NormalImpulse;          // 0x00E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_ComponentBoundEvent_Hit;                    // 0x00EC(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_3954[0x4];                                     // 0x0174(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          CallFunc_getMainPlayer_AsMain_Player;              // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_CustomEvent_InputPin;                       // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3955[0x6];                                     // 0x018A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorRightVector_ReturnValue;          // 0x0198(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x01A4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue_1;            // 0x01B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue_2;            // 0x01BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x01C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue;              // 0x00A4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x00B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_HitComponent;           // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x00D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_ComponentBoundEvent_NormalImpulse;          // 0x00D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_ComponentBoundEvent_Hit;                    // 0x00E4(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_16C[0x4];                                      // 0x016C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          CallFunc_getMainPlayer_AsMain_Player;              // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_CustomEvent_InputPin;                       // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0181(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_182[0x6];                                      // 0x0182(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorRightVector_ReturnValue;          // 0x0190(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x019C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue_1;            // 0x01A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue_2;            // 0x01B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x01C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone) == 0x000008, "Wrong alignment on Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone");
-static_assert(sizeof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone) == 0x0001D8, "Wrong size on Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone");
+static_assert(sizeof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone) == 0x0001D0, "Wrong size on Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone");
 static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, EntryPoint) == 0x000000, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, K2Node_Event_player) == 0x000008, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::K2Node_Event_player' has a wrong offset!");
 static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, K2Node_Event_hit) == 0x000010, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, K2Node_Event_index) == 0x000098, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, K2Node_Event_action) == 0x00009C, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_RandomFloatInRange_ReturnValue) == 0x0000A0, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x0000A4, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_RotateAngleAxis_ReturnValue) == 0x0000A8, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_RotateAngleAxis_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x0000B4, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_Add_VectorVector_ReturnValue) == 0x0000B8, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, K2Node_ComponentBoundEvent_HitComponent) == 0x0000C8, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::K2Node_ComponentBoundEvent_HitComponent' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, K2Node_ComponentBoundEvent_OtherActor) == 0x0000D0, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, K2Node_ComponentBoundEvent_OtherComp) == 0x0000D8, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, K2Node_ComponentBoundEvent_NormalImpulse) == 0x0000E0, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::K2Node_ComponentBoundEvent_NormalImpulse' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, K2Node_ComponentBoundEvent_Hit) == 0x0000EC, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::K2Node_ComponentBoundEvent_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_getMainPlayer_AsMain_Player) == 0x000178, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_getMainPlayer_AsMain_Player' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, K2Node_CustomEvent_InputPin) == 0x000180, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::K2Node_CustomEvent_InputPin' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_IsValid_ReturnValue) == 0x000188, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000189, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_GetPlayerController_ReturnValue) == 0x000190, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_GetActorRightVector_ReturnValue) == 0x000198, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_GetActorRightVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_GetActorForwardVector_ReturnValue) == 0x0001A4, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_RotateAngleAxis_ReturnValue_1) == 0x0001B0, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_RotateAngleAxis_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_RotateAngleAxis_ReturnValue_2) == 0x0001BC, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_RotateAngleAxis_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x0001C8, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
-
-// Function prop_arirPhone.prop_arirPhone_C.actionOptionIndex
-// 0x0098 (0x0098 - 0x0000)
-struct Prop_arirPhone_C_ActionOptionIndex final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_arirPhone_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_arirPhone_C_ActionOptionIndex");
-static_assert(sizeof(Prop_arirPhone_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_arirPhone_C_ActionOptionIndex");
-static_assert(offsetof(Prop_arirPhone_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_arirPhone_C_ActionOptionIndex::Player' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_arirPhone_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_arirPhone_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_arirPhone_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, K2Node_Event_action) == 0x000098, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_RandomFloatInRange_ReturnValue) == 0x00009C, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x0000A0, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_RotateAngleAxis_ReturnValue) == 0x0000A4, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_RotateAngleAxis_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x0000B0, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_Add_VectorVector_ReturnValue) == 0x0000B4, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, K2Node_ComponentBoundEvent_HitComponent) == 0x0000C0, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::K2Node_ComponentBoundEvent_HitComponent' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, K2Node_ComponentBoundEvent_OtherActor) == 0x0000C8, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, K2Node_ComponentBoundEvent_OtherComp) == 0x0000D0, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, K2Node_ComponentBoundEvent_NormalImpulse) == 0x0000D8, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::K2Node_ComponentBoundEvent_NormalImpulse' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, K2Node_ComponentBoundEvent_Hit) == 0x0000E4, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::K2Node_ComponentBoundEvent_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_getMainPlayer_AsMain_Player) == 0x000170, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_getMainPlayer_AsMain_Player' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, K2Node_CustomEvent_InputPin) == 0x000178, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::K2Node_CustomEvent_InputPin' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_IsValid_ReturnValue) == 0x000180, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000181, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_GetPlayerController_ReturnValue) == 0x000188, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_GetActorRightVector_ReturnValue) == 0x000190, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_GetActorRightVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_GetActorForwardVector_ReturnValue) == 0x00019C, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_RotateAngleAxis_ReturnValue_1) == 0x0001A8, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_RotateAngleAxis_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_RotateAngleAxis_ReturnValue_2) == 0x0001B4, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_RotateAngleAxis_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x0001C0, "Member 'Prop_arirPhone_C_ExecuteUbergraph_prop_arirPhone::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
 
 // Function prop_arirPhone.prop_arirPhone_C.shock
 // 0x0008 (0x0008 - 0x0000)
@@ -129,8 +109,23 @@ static_assert(offsetof(Prop_arirPhone_C_BndEvt__StaticMesh_K2Node_ComponentBound
 static_assert(offsetof(Prop_arirPhone_C_BndEvt__StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature, NormalImpulse) == 0x000018, "Member 'Prop_arirPhone_C_BndEvt__StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature::NormalImpulse' has a wrong offset!");
 static_assert(offsetof(Prop_arirPhone_C_BndEvt__StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature, Param_Hit) == 0x000024, "Member 'Prop_arirPhone_C_BndEvt__StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature::Param_Hit' has a wrong offset!");
 
+// Function prop_arirPhone.prop_arirPhone_C.actionOptionIndex
+// 0x0098 (0x0098 - 0x0000)
+struct Prop_arirPhone_C_ActionOptionIndex final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_arirPhone_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_arirPhone_C_ActionOptionIndex");
+static_assert(sizeof(Prop_arirPhone_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_arirPhone_C_ActionOptionIndex");
+static_assert(offsetof(Prop_arirPhone_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_arirPhone_C_ActionOptionIndex::Player' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_arirPhone_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_arirPhone_C_ActionOptionIndex::Action' has a wrong offset!");
+
 // Function prop_arirPhone.prop_arirPhone_C.getActionOptions
-// 0x0058 (0x0058 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct Prop_arirPhone_C_GetActionOptions final
 {
 public:
@@ -140,17 +135,20 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
 };
 static_assert(alignof(Prop_arirPhone_C_GetActionOptions) == 0x000008, "Wrong alignment on Prop_arirPhone_C_GetActionOptions");
-static_assert(sizeof(Prop_arirPhone_C_GetActionOptions) == 0x000058, "Wrong size on Prop_arirPhone_C_GetActionOptions");
+static_assert(sizeof(Prop_arirPhone_C_GetActionOptions) == 0x000060, "Wrong size on Prop_arirPhone_C_GetActionOptions");
 static_assert(offsetof(Prop_arirPhone_C_GetActionOptions, Player) == 0x000000, "Member 'Prop_arirPhone_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Prop_arirPhone_C_GetActionOptions, Component) == 0x000008, "Member 'Prop_arirPhone_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Prop_arirPhone_C_GetActionOptions, Actor) == 0x000010, "Member 'Prop_arirPhone_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Prop_arirPhone_C_GetActionOptions, Options) == 0x000018, "Member 'Prop_arirPhone_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Prop_arirPhone_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Prop_arirPhone_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Prop_arirPhone_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Prop_arirPhone_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Prop_arirPhone_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'Prop_arirPhone_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_GetActionOptions, Number) == 0x000048, "Member 'Prop_arirPhone_C_GetActionOptions::Number' has a wrong offset!");
+static_assert(offsetof(Prop_arirPhone_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Prop_arirPhone_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 }
 

@@ -22,10 +22,10 @@ namespace SDK
 class UGeometryCache final : public UObject
 {
 public:
-	uint8                                         Pad_1780[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UMaterialInterface*>             Materials;                                         // 0x0030(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<class UGeometryCacheTrack*>            Tracks;                                            // 0x0040(0x0010)(Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1781[0x10];                                    // 0x0050(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_50[0x10];                                      // 0x0050(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         StartFrame;                                        // 0x0060(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         EndFrame;                                          // 0x0064(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint64                                        Hash;                                              // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -99,7 +99,7 @@ class UGeometryCacheCodecRaw final : public UGeometryCacheCodecBase
 {
 public:
 	int32                                         DummyProperty;                                     // 0x0038(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1782[0x4];                                     // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -120,7 +120,7 @@ static_assert(offsetof(UGeometryCacheCodecRaw, DummyProperty) == 0x000038, "Memb
 class UGeometryCacheCodecV1 final : public UGeometryCacheCodecBase
 {
 public:
-	uint8                                         Pad_1783[0x8];                                     // 0x0038(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -144,16 +144,16 @@ public:
 	bool                                          bRunning;                                          // 0x0480(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bLooping;                                          // 0x0481(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bExtrapolateFrames;                                // 0x0482(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1784[0x1];                                     // 0x0483(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_483[0x1];                                      // 0x0483(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         StartTimeOffset;                                   // 0x0484(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         PlaybackSpeed;                                     // 0x0488(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         MotionVectorScale;                                 // 0x048C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         NumTracks;                                         // 0x0490(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         ElapsedTime;                                       // 0x0494(0x0004)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1785[0x34];                                    // 0x0498(0x0034)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_498[0x34];                                     // 0x0498(0x0034)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Duration;                                          // 0x04CC(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bManualTick;                                       // 0x04D0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1786[0xF];                                     // 0x04D1(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4D1[0xF];                                      // 0x04D1(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void Pause();
@@ -212,7 +212,7 @@ class UGeometryCacheTrack : public UObject
 {
 public:
 	float                                         Duration;                                          // 0x0028(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1789[0x2C];                                    // 0x002C(0x002C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C[0x2C];                                      // 0x002C(0x002C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -234,7 +234,7 @@ class UGeometryCacheTrack_FlipbookAnimation final : public UGeometryCacheTrack
 {
 public:
 	uint32                                        NumMeshSamples;                                    // 0x0058(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_178A[0x24];                                    // 0x005C(0x0024)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5C[0x24];                                      // 0x005C(0x0024)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AddMeshSample(const struct FGeometryCacheMeshData& MeshData, const float SampleTime);
@@ -259,9 +259,9 @@ class UGeometryCacheTrackStreamable final : public UGeometryCacheTrack
 {
 public:
 	class UGeometryCacheCodecBase*                Codec;                                             // 0x0058(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_178C[0x68];                                    // 0x0060(0x0068)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_60[0x68];                                      // 0x0060(0x0068)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         StartSampleTime;                                   // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_178D[0xC];                                     // 0x00CC(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_CC[0xC];                                       // 0x00CC(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -283,7 +283,7 @@ static_assert(offsetof(UGeometryCacheTrackStreamable, StartSampleTime) == 0x0000
 class UGeometryCacheTrack_TransformAnimation final : public UGeometryCacheTrack
 {
 public:
-	uint8                                         Pad_178E[0xB0];                                    // 0x0058(0x00B0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_58[0xB0];                                      // 0x0058(0x00B0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SetMesh(const struct FGeometryCacheMeshData& NewMeshData);
@@ -306,7 +306,7 @@ static_assert(sizeof(UGeometryCacheTrack_TransformAnimation) == 0x000108, "Wrong
 class UGeometryCacheTrack_TransformGroupAnimation final : public UGeometryCacheTrack
 {
 public:
-	uint8                                         Pad_178F[0xB0];                                    // 0x0058(0x00B0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_58[0xB0];                                      // 0x0058(0x00B0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SetMesh(const struct FGeometryCacheMeshData& NewMeshData);

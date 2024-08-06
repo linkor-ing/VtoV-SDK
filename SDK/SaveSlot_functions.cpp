@@ -114,10 +114,11 @@ int32 USaveSlot_C::Conv(const struct FIntVector& IntVector)
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             InputPin                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    DisablePopup                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                                    Finished                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FName                             Param_Name                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USaveSlot_C::PrAdvanc(const class FName& InputPin, bool* Finished, class FName* Param_Name)
+void USaveSlot_C::PrAdvanc(const class FName& InputPin, bool DisablePopup, bool* Finished, class FName* Param_Name)
 {
 	static class UFunction* Func = nullptr;
 
@@ -127,6 +128,7 @@ void USaveSlot_C::PrAdvanc(const class FName& InputPin, bool* Finished, class FN
 	Params::SaveSlot_C_PrAdvanc Parms{};
 
 	Parms.InputPin = InputPin;
+	Parms.DisablePopup = DisablePopup;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -344,6 +346,80 @@ void USaveSlot_C::CleanGrime()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("saveSlot_C", "cleanGrime");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function saveSlot.saveSlot_C.setGameinst
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UGameInst_C*                      Param_GameInst                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void USaveSlot_C::SetGameinst(class UGameInst_C* Param_GameInst)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("saveSlot_C", "setGameinst");
+
+	Params::SaveSlot_C_SetGameinst Parms{};
+
+	Parms.Param_GameInst = Param_GameInst;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function saveSlot.saveSlot_C.regenerate
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                           InputName                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void USaveSlot_C::Regenerate(const class FString& InputName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("saveSlot_C", "regenerate");
+
+	Params::SaveSlot_C_Regenerate Parms{};
+
+	Parms.InputName = std::move(InputName);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function saveSlot.saveSlot_C.Duplicate
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                           Param_Name                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void USaveSlot_C::Duplicate(const class FString& Param_Name)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("saveSlot_C", "Duplicate");
+
+	Params::SaveSlot_C_Duplicate Parms{};
+
+	Parms.Param_Name = std::move(Param_Name);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function saveSlot.saveSlot_C.savePlayerOnly
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void USaveSlot_C::SavePlayerOnly()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("saveSlot_C", "savePlayerOnly");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

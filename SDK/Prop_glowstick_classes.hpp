@@ -10,50 +10,49 @@
 
 #include "Basic.hpp"
 
-#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Prop_classes.hpp"
+#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass prop_glowstick.prop_glowstick_C
-// 0x0088 (0x03F0 - 0x0368)
+// 0x0088 (0x0400 - 0x0378)
 class AProp_glowstick_C : public AProp_C
 {
 public:
-	uint8                                         Pad_3C19[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_glowstick_C;                   // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UArrowComponent*                        Sticking;                                          // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Hook;                                              // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPhysicsConstraintComponent*            PhysicsConstraint;                                 // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPointLightComponent*                   PointLight;                                        // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          Stick;                                             // 0x0390(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Sticked;                                           // 0x0391(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3C1A[0x2];                                     // 0x0392(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                Loc;                                               // 0x0394(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                RelLoc;                                            // 0x03A0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C1B[0x4];                                     // 0x03AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Transform;                                         // 0x03B0(0x0030)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor)
-	int32                                         Type;                                              // 0x03E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C1C[0x4];                                     // 0x03E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimitiveComponent*                    StickComp;                                         // 0x03E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_glowstick_C;                   // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UArrowComponent*                        Sticking;                                          // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Hook;                                              // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPhysicsConstraintComponent*            PhysicsConstraint;                                 // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPointLightComponent*                   PointLight;                                        // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          Stick;                                             // 0x03A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Sticked;                                           // 0x03A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3A2[0x2];                                      // 0x03A2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                Loc;                                               // 0x03A4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                RelLoc;                                            // 0x03B0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3BC[0x4];                                      // 0x03BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             Transform;                                         // 0x03C0(0x0030)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor)
+	int32                                         Type;                                              // 0x03F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3F4[0x4];                                      // 0x03F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPrimitiveComponent*                    StickComp;                                         // 0x03F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_glowstick(int32 EntryPoint);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
 	void ReceiveTick(float DeltaSeconds);
-	void ReceiveBeginPlay();
 	bool Ray(struct FHitResult* OutHit);
 	void GetType();
 	void StickTo(const struct FHitResult& Param_Hit);
 	void Obj(const TArray<EObjectTypeQuery>* OutputPin);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
 	void GamemodeBeginPlay();
+	void ReceiveBeginPlay();
+	void Init();
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
-	void Init();
 
 public:
 	static class UClass* StaticClass()
@@ -66,19 +65,19 @@ public:
 	}
 };
 static_assert(alignof(AProp_glowstick_C) == 0x000010, "Wrong alignment on AProp_glowstick_C");
-static_assert(sizeof(AProp_glowstick_C) == 0x0003F0, "Wrong size on AProp_glowstick_C");
-static_assert(offsetof(AProp_glowstick_C, UberGraphFrame_Prop_glowstick_C) == 0x000368, "Member 'AProp_glowstick_C::UberGraphFrame_Prop_glowstick_C' has a wrong offset!");
-static_assert(offsetof(AProp_glowstick_C, Sticking) == 0x000370, "Member 'AProp_glowstick_C::Sticking' has a wrong offset!");
-static_assert(offsetof(AProp_glowstick_C, Hook) == 0x000378, "Member 'AProp_glowstick_C::Hook' has a wrong offset!");
-static_assert(offsetof(AProp_glowstick_C, PhysicsConstraint) == 0x000380, "Member 'AProp_glowstick_C::PhysicsConstraint' has a wrong offset!");
-static_assert(offsetof(AProp_glowstick_C, PointLight) == 0x000388, "Member 'AProp_glowstick_C::PointLight' has a wrong offset!");
-static_assert(offsetof(AProp_glowstick_C, Stick) == 0x000390, "Member 'AProp_glowstick_C::Stick' has a wrong offset!");
-static_assert(offsetof(AProp_glowstick_C, Sticked) == 0x000391, "Member 'AProp_glowstick_C::Sticked' has a wrong offset!");
-static_assert(offsetof(AProp_glowstick_C, Loc) == 0x000394, "Member 'AProp_glowstick_C::Loc' has a wrong offset!");
-static_assert(offsetof(AProp_glowstick_C, RelLoc) == 0x0003A0, "Member 'AProp_glowstick_C::RelLoc' has a wrong offset!");
-static_assert(offsetof(AProp_glowstick_C, Transform) == 0x0003B0, "Member 'AProp_glowstick_C::Transform' has a wrong offset!");
-static_assert(offsetof(AProp_glowstick_C, Type) == 0x0003E0, "Member 'AProp_glowstick_C::Type' has a wrong offset!");
-static_assert(offsetof(AProp_glowstick_C, StickComp) == 0x0003E8, "Member 'AProp_glowstick_C::StickComp' has a wrong offset!");
+static_assert(sizeof(AProp_glowstick_C) == 0x000400, "Wrong size on AProp_glowstick_C");
+static_assert(offsetof(AProp_glowstick_C, UberGraphFrame_Prop_glowstick_C) == 0x000378, "Member 'AProp_glowstick_C::UberGraphFrame_Prop_glowstick_C' has a wrong offset!");
+static_assert(offsetof(AProp_glowstick_C, Sticking) == 0x000380, "Member 'AProp_glowstick_C::Sticking' has a wrong offset!");
+static_assert(offsetof(AProp_glowstick_C, Hook) == 0x000388, "Member 'AProp_glowstick_C::Hook' has a wrong offset!");
+static_assert(offsetof(AProp_glowstick_C, PhysicsConstraint) == 0x000390, "Member 'AProp_glowstick_C::PhysicsConstraint' has a wrong offset!");
+static_assert(offsetof(AProp_glowstick_C, PointLight) == 0x000398, "Member 'AProp_glowstick_C::PointLight' has a wrong offset!");
+static_assert(offsetof(AProp_glowstick_C, Stick) == 0x0003A0, "Member 'AProp_glowstick_C::Stick' has a wrong offset!");
+static_assert(offsetof(AProp_glowstick_C, Sticked) == 0x0003A1, "Member 'AProp_glowstick_C::Sticked' has a wrong offset!");
+static_assert(offsetof(AProp_glowstick_C, Loc) == 0x0003A4, "Member 'AProp_glowstick_C::Loc' has a wrong offset!");
+static_assert(offsetof(AProp_glowstick_C, RelLoc) == 0x0003B0, "Member 'AProp_glowstick_C::RelLoc' has a wrong offset!");
+static_assert(offsetof(AProp_glowstick_C, Transform) == 0x0003C0, "Member 'AProp_glowstick_C::Transform' has a wrong offset!");
+static_assert(offsetof(AProp_glowstick_C, Type) == 0x0003F0, "Member 'AProp_glowstick_C::Type' has a wrong offset!");
+static_assert(offsetof(AProp_glowstick_C, StickComp) == 0x0003F8, "Member 'AProp_glowstick_C::StickComp' has a wrong offset!");
 
 }
 

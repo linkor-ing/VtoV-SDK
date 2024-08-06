@@ -57,7 +57,7 @@ void AProp_glue_C::ReceiveTick(float DeltaSeconds)
 }
 
 
-// Function prop_glue.prop_glue_C.Obj
+// Function prop_glue.prop_glue_C.obj
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // TArray<EObjectTypeQuery>                OutputPin                                              (ConstParm, Parm, OutParm)
@@ -67,7 +67,7 @@ void AProp_glue_C::Obj(const TArray<EObjectTypeQuery>* OutputPin)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("prop_glue_C", "Obj");
+		Func = Class->GetFunction("prop_glue_C", "obj");
 
 	Params::Prop_glue_C_Obj Parms{};
 

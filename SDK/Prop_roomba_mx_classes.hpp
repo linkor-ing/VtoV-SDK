@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_roomba_mx.prop_roomba_mx_C
-// 0x0008 (0x04A8 - 0x04A0)
+// 0x0008 (0x04B8 - 0x04B0)
 class AProp_roomba_mx_C final : public AProp_roomba_C
 {
 public:
-	class UStaticMeshComponent*                   StaticMesh1;                                       // 0x04A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh1;                                       // 0x04B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +34,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_roomba_mx_C) == 0x000008, "Wrong alignment on AProp_roomba_mx_C");
-static_assert(sizeof(AProp_roomba_mx_C) == 0x0004A8, "Wrong size on AProp_roomba_mx_C");
-static_assert(offsetof(AProp_roomba_mx_C, StaticMesh1) == 0x0004A0, "Member 'AProp_roomba_mx_C::StaticMesh1' has a wrong offset!");
+static_assert(sizeof(AProp_roomba_mx_C) == 0x0004B8, "Wrong size on AProp_roomba_mx_C");
+static_assert(offsetof(AProp_roomba_mx_C, StaticMesh1) == 0x0004B0, "Member 'AProp_roomba_mx_C::StaticMesh1' has a wrong offset!");
 
 }
 

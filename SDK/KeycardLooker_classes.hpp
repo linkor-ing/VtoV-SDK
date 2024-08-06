@@ -40,6 +40,7 @@ public:
 	void GamemodeMakeKeys();
 	void PropRenderer_finishProps();
 	void ApplyColor(const struct FLinearColor& Color);
+	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void GamemodeBeginPlay();
 	void ReceiveTick(float DeltaSeconds);
 	void ExecuteUbergraph_keycardLooker(int32 EntryPoint);

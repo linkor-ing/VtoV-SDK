@@ -114,5 +114,16 @@ static_assert(sizeof(Int_ttrigger_C_SetActiveTrigger) == 0x000010, "Wrong size o
 static_assert(offsetof(Int_ttrigger_C_SetActiveTrigger, SentFrom) == 0x000000, "Member 'Int_ttrigger_C_SetActiveTrigger::SentFrom' has a wrong offset!");
 static_assert(offsetof(Int_ttrigger_C_SetActiveTrigger, Active) == 0x000008, "Member 'Int_ttrigger_C_SetActiveTrigger::Active' has a wrong offset!");
 
+// Function int_ttrigger.int_ttrigger_C.gatherDataFromKeyT
+// 0x0001 (0x0001 - 0x0000)
+struct Int_ttrigger_C_GatherDataFromKeyT final
+{
+public:
+	bool                                          Gather;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Int_ttrigger_C_GatherDataFromKeyT) == 0x000001, "Wrong alignment on Int_ttrigger_C_GatherDataFromKeyT");
+static_assert(sizeof(Int_ttrigger_C_GatherDataFromKeyT) == 0x000001, "Wrong size on Int_ttrigger_C_GatherDataFromKeyT");
+static_assert(offsetof(Int_ttrigger_C_GatherDataFromKeyT, Gather) == 0x000000, "Member 'Int_ttrigger_C_GatherDataFromKeyT::Gather' has a wrong offset!");
+
 }
 

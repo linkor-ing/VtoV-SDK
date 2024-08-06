@@ -72,7 +72,7 @@ void AEffect_foodPoison_C::ReceiveTick(float DeltaSeconds)
 
 
 // Function effect_foodPoison.effect_foodPoison_C.loadData
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FStruct_save                     Data                                                   (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -92,27 +92,6 @@ void AEffect_foodPoison_C::LoadData(const struct FStruct_save& Data, bool* Retur
 
 	if (Return != nullptr)
 		*Return = Parms.Return;
-}
-
-
-// Function effect_foodPoison.effect_foodPoison_C.getData
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FStruct_save                     Data                                                   (Parm, OutParm, HasGetValueTypeHash)
-
-void AEffect_foodPoison_C::GetData(struct FStruct_save* Data)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("effect_foodPoison_C", "getData");
-
-	Params::Effect_foodPoison_C_GetData Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Data != nullptr)
-		*Data = std::move(Parms.Data);
 }
 
 }

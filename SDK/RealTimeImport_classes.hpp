@@ -24,7 +24,7 @@ namespace SDK
 class UFileFunctionsRealTimeImport final : public UObject
 {
 public:
-	uint8                                         Pad_F81[0x18];                                     // 0x0028(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x18];                                      // 0x0028(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static void AddBytesToFile(ERTIDirectoryType DirectoryType, const class FString& FilePath, const TArray<uint8>& bytes, bool* Success);
@@ -73,7 +73,7 @@ class URealTimeImportAsyncNodeLoadMesh final : public UBlueprintAsyncActionBase
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFail;                                            // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_FA8[0x8];                                      // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_50[0x8];                                       // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class URealTimeImportAsyncNodeLoadMesh* LoadMeshFileAsyncNode(ERTIMeshType FileType, ERTIDirectoryType DirectoryType, const class FString& FilePath, ERTICoordinateSystem CoordinateSystem, bool AutoDetectionNormalMap, bool UseSRGB, bool CreateMipMaps, ERTIERGBFormat RgbFormat);
@@ -102,7 +102,7 @@ class URealTimeImportAsyncNodeLoadFile final : public UBlueprintAsyncActionBase
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFail;                                            // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_FAB[0x8];                                      // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_50[0x8];                                       // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class URealTimeImportAsyncNodeLoadFile* LoadFileAsyncNode(ERTIDirectoryType DirectoryType, const class FString& FilePath);
@@ -131,7 +131,7 @@ class URealTimeImportAsyncNodeSaveFile final : public UBlueprintAsyncActionBase
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFail;                                            // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_FAE[0x8];                                      // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_50[0x8];                                       // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class URealTimeImportAsyncNodeSaveFile* SaveFileAsyncNode(ERTIDirectoryType DirectoryType, const class FString& FilePath, const TArray<uint8>& bytes, bool CreateDirectories, bool OverwriteFile);
@@ -160,7 +160,7 @@ class URealTimeImportAsyncNodeLoadAllFilesFromDirectory final : public UBlueprin
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFail;                                            // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_FB2[0x8];                                      // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_50[0x8];                                       // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class URealTimeImportAsyncNodeLoadAllFilesFromDirectory* LoadAllFilesFromDirectoryAsyncNode(ERTIDirectoryType DirectoryType, ERTIFileType FileType, const class FString& DirPath, bool RecursiveSearch);
@@ -189,7 +189,7 @@ class URealTimeImportAsyncNodeCreateSoundWaveFromFile final : public UBlueprintA
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFail;                                            // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_FB6[0x8];                                      // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_50[0x8];                                       // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class URealTimeImportAsyncNodeCreateSoundWaveFromFile* CreateSoundWaveFromFileAsyncNode(ERTIDirectoryType DirectoryType, const class FString& FilePath, float MaxFileSize, ERTISoundFileType SoundFileType);
@@ -218,7 +218,7 @@ class URealTimeImportAsyncNodeCreateSoundWaveFromBytes final : public UBlueprint
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFail;                                            // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_FBA[0x8];                                      // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_50[0x8];                                       // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class URealTimeImportAsyncNodeCreateSoundWaveFromBytes* CreateSoundWaveFromBytesAsyncNode(const class FString& Param_Name, const TArray<uint8>& bytes, float MaxFileSize, ERTISoundFileType SoundFileType);
@@ -247,7 +247,7 @@ class URealTimeImportAsyncNodeLoadImageFile final : public UBlueprintAsyncAction
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFail;                                            // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_FBD[0x8];                                      // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_50[0x8];                                       // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class URealTimeImportAsyncNodeLoadImageFile* LoadImageFileAsyncNode(ERTIDirectoryType DirectoryType, const class FString& FilePath, ETextureCompressionSettings CompressionSettings, bool SRGB, bool CreateMipMaps, ERTIERGBFormat RgbFormat);
@@ -276,7 +276,7 @@ class URealTimeImportAsyncNodeLoadImageBytes final : public UBlueprintAsyncActio
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFail;                                            // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_FC1[0x8];                                      // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_50[0x8];                                       // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class URealTimeImportAsyncNodeLoadImageBytes* LoadImageBytesAsyncNode(const class FString& Param_Name, const TArray<uint8>& bytes, ETextureCompressionSettings CompressionSettings, bool SRGB, bool CreateMipMaps, ERTIERGBFormat RgbFormat);
@@ -314,7 +314,7 @@ public:
 	FMulticastInlineDelegateProperty_             OnStopSoundEventDelegate;                          // 0x00A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnLoadImageFileEventDelegate;                      // 0x00B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnLoadImageBytesEventDelegate;                     // 0x00C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_FC4[0x8];                                      // 0x00D8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D8[0x8];                                       // 0x00D8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static void breakMaterialStruct(const struct FRTIMaterialStruct& MaterialData, bool* HasTexture, class FString* MaterialName, class FString* TextureName, TArray<struct FRTITextureStruct>* Textures, struct FColor* Ambient, struct FColor* Diffuse, struct FColor* Specular, float* SpecularExponent, float* Dissolved, float* DissolvedInverted);
@@ -410,7 +410,7 @@ static_assert(offsetof(URealTimeImportBPLibrary, OnLoadImageBytesEventDelegate) 
 class URealTimeImportImage final : public UObject
 {
 public:
-	uint8                                         Pad_1010[0x68];                                    // 0x0028(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x68];                                      // 0x0028(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static TArray<struct FColor> GetImageColors(const TArray<uint8>& ImageBytes);
@@ -514,7 +514,7 @@ static_assert(sizeof(URealTimeImportMeshSTL) == 0x000028, "Wrong size on URealTi
 class URealTimeImportSound final : public UObject
 {
 public:
-	uint8                                         Pad_1011[0x1A0];                                   // 0x0028(0x01A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x1A0];                                     // 0x0028(0x01A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class URealTimeImportSound* GetRealTimeImportSound();

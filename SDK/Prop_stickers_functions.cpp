@@ -51,26 +51,6 @@ void AProp_stickers_C::ReceiveBeginPlay()
 }
 
 
-// Function prop_stickers.prop_stickers_C.playerHandUse_RMB
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_stickers_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_stickers_C", "playerHandUse_RMB");
-
-	Params::Prop_stickers_C_PlayerHandUse_RMB Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function prop_stickers.prop_stickers_C.playerHandUse_LMB
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -84,6 +64,26 @@ void AProp_stickers_C::PlayerHandUse_LMB(class AMainPlayer_C* Player)
 		Func = Class->GetFunction("prop_stickers_C", "playerHandUse_LMB");
 
 	Params::Prop_stickers_C_PlayerHandUse_LMB Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_stickers.prop_stickers_C.playerHandUse_RMB
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_stickers_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_stickers_C", "playerHandUse_RMB");
+
+	Params::Prop_stickers_C_PlayerHandUse_RMB Parms{};
 
 	Parms.Player = Player;
 

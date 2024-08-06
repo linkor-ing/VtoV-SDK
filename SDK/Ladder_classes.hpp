@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "InputCore_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "InputCore_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK
@@ -42,19 +42,20 @@ public:
 	struct FVector                                Loc;                                               // 0x0290(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Dist;                                              // 0x029C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Snd;                                               // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_33A6[0x4];                                     // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A4[0x4];                                      // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<EObjectTypeQuery>                      Obj;                                               // 0x02A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          NoTop;                                             // 0x02B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_ladder(int32 EntryPoint);
-	void ActionOptionIndex(class AMainPlayer_C* Param_Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
+	void ActionOptionIndex(class AMainPlayer_C* Param_Player, const struct FHitResult& Hit, Enum_interactionActions Action);
 	void ImpactDamage(float Damage, const struct FHitResult& Hit, class AActor* Actor, const struct FVector& Impact);
 	void EnterWater(class AWaterVolume_C* Water);
 	void LeaveWater(class AWaterVolume_C* Water);
 	void EnterWaterOrigin(class AWaterVolume_C* Water);
 	void ReceiveTick(float DeltaSeconds);
 	void AnyKey(const struct FKey& Param_Key, bool Pressed);
+	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void ApplyColor(const struct FLinearColor& Color);
 	void PropRenderer_finishProps();
 	void GamemodeMakeKeys();
@@ -66,8 +67,11 @@ public:
 	void GamemodeBeginPlay();
 	void SignalSaved();
 	void SignalDeleted();
+	void PlayerR(class AMainPlayer_C* Param_Player);
+	void PlayerHold(class AMainPlayer_C* Param_Player);
+	void PlayerUnequip(class AMainPlayer_C* Param_Player);
 	void UpdateStrAgl();
-	void DamageByPlayer(class AMainPlayer_C* Param_Player, const struct FHitResult& Hit);
+	void DamageByPlayer(class AMainPlayer_C* Param_Player, const struct FHitResult& Hit, float Damage);
 	void Thrown(class AMainPlayer_C* Param_Player);
 	void broken_fire();
 	void broken();
@@ -75,6 +79,9 @@ public:
 	void Kicked(bool Kick);
 	void Player_use(class AMainPlayer_C* Param_Player, const struct FHitResult& Hit);
 	void DriveDetached();
+	void HookTension(class AHook_C* Hook);
+	void CleanSponge(float Clean, class AMainPlayer_C* Param_Player);
+	void Crafted();
 	void Hooked(class AHook_C* Hook);
 	void AttemptIgnite();
 	void PlayerUsedOn(class AMainPlayer_C* Param_Player, const struct FHitResult& Hit);
@@ -96,7 +103,7 @@ public:
 	void Exploded(float Damage, const struct FVector& Location);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Param_Player);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Param_Player);
-	void ReceivedPhyiscsDamage();
+	void ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot);
 	void Microwave();
 	void Ignite(float Fuel);
 	void FireDamage(float Damage);
@@ -120,9 +127,10 @@ public:
 	void AsProp(class AProp_C** Return);
 	void CanPickup(bool* Return);
 	void NoRespawn(bool Param_NoRespawn, bool* Return);
-	void LookAt(class AMainPlayer_C* Param_Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void LookAt(class AMainPlayer_C* Param_Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
 	void IsButtonUsed(bool* Failed);
-	void GetActionOptions(class AMainPlayer_C* Param_Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void LandedOn(class AMainPlayer_C* Param_Player, bool* IgnoreFallDamage);
+	void GetActionOptions(class AMainPlayer_C* Param_Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 	void SetPath(const TArray<struct FVector>& Path, bool* Return);
 	void GetOnlyKey(class FString* Param_Key);
 	void ProcessKeys(bool* Return);
@@ -131,6 +139,7 @@ public:
 	void ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return);
 	void GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled);
 	void SkipRadial(bool* Skip);
+	void GetPriceMultiplier(float* PriceMult);
 
 public:
 	static class UClass* StaticClass()

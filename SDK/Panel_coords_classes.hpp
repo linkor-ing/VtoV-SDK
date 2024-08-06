@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PanelBase_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PanelBase_classes.hpp"
 #include "Enum_interactionActions_structs.hpp"
 
 
@@ -32,15 +32,15 @@ public:
 public:
 	void ExecuteUbergraph_panel_coords(int32 EntryPoint);
 	void ReceiveTick(float DeltaSeconds);
-	void ReceiveBeginPlay();
 	void SignalFound();
 	void PressedPanel();
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
+	void ReceiveBeginPlay();
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
 	void GamemodeBeginPlay();
 	void IsButtonUsed(bool* Failed);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 
 public:
 	static class UClass* StaticClass()

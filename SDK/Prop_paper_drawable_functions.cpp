@@ -37,20 +37,6 @@ void AProp_paper_drawable_C::ExecuteUbergraph_prop_paper_drawable(int32 EntryPoi
 }
 
 
-// Function prop_paper_drawable.prop_paper_drawable_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_paper_drawable_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_paper_drawable_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_paper_drawable.prop_paper_drawable_C.setRT
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -74,6 +60,20 @@ void AProp_paper_drawable_C::InitDraw()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("prop_paper_drawable_C", "initDraw");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function prop_paper_drawable.prop_paper_drawable_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_paper_drawable_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_paper_drawable_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

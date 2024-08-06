@@ -37,6 +37,26 @@ void AErieDrag_C::ExecuteUbergraph_erieDrag(int32 EntryPoint)
 }
 
 
+// Function erieDrag.erieDrag_C.playerR
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AErieDrag_C::PlayerR(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("erieDrag_C", "playerR");
+
+	Params::ErieDrag_C_PlayerR Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function erieDrag.erieDrag_C.BndEvt__erieDrag_Sphere_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -62,6 +82,96 @@ void AErieDrag_C::BndEvt__erieDrag_Sphere_K2Node_ComponentBoundEvent_0_Component
 	Parms.Hit = std::move(Hit);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function erieDrag.erieDrag_C.player_use
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+
+void AErieDrag_C::Player_use(class AMainPlayer_C* Player, const struct FHitResult& Hit)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("erieDrag_C", "player_use");
+
+	Params::ErieDrag_C_Player_use Parms{};
+
+	Parms.Player = Player;
+	Parms.Hit = std::move(Hit);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function erieDrag.erieDrag_C.kicked
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Kick                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AErieDrag_C::Kicked(bool Kick)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("erieDrag_C", "kicked");
+
+	Params::ErieDrag_C_Kicked Parms{};
+
+	Parms.Kick = Kick;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function erieDrag.erieDrag_C.sendName
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             Param_Name                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AErieDrag_C::SendName(class FName Param_Name)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("erieDrag_C", "sendName");
+
+	Params::ErieDrag_C_SendName Parms{};
+
+	Parms.Param_Name = Param_Name;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function erieDrag.erieDrag_C.driveDetached
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AErieDrag_C::DriveDetached()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("erieDrag_C", "driveDetached");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function erieDrag.erieDrag_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AErieDrag_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("erieDrag_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -105,15 +215,127 @@ void AErieDrag_C::SetIgnoreSave(bool Ignore)
 }
 
 
-// Function erieDrag.erieDrag_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function erieDrag.erieDrag_C.playerHold
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AErieDrag_C::ReceiveBeginPlay()
+void AErieDrag_C::PlayerHold(class AMainPlayer_C* Player)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("erieDrag_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("erieDrag_C", "playerHold");
+
+	Params::ErieDrag_C_PlayerHold Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function erieDrag.erieDrag_C.playerUnequip
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AErieDrag_C::PlayerUnequip(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("erieDrag_C", "playerUnequip");
+
+	Params::ErieDrag_C_PlayerUnequip Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function erieDrag.erieDrag_C.updateStrAgl
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AErieDrag_C::UpdateStrAgl()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("erieDrag_C", "updateStrAgl");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function erieDrag.erieDrag_C.damageByPlayer
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AErieDrag_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("erieDrag_C", "damageByPlayer");
+
+	Params::ErieDrag_C_DamageByPlayer Parms{};
+
+	Parms.Player = Player;
+	Parms.Hit = std::move(Hit);
+	Parms.Damage = Damage;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function erieDrag.erieDrag_C.thrown
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AErieDrag_C::Thrown(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("erieDrag_C", "thrown");
+
+	Params::ErieDrag_C_Thrown Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function erieDrag.erieDrag_C.broken_fire
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AErieDrag_C::broken_fire()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("erieDrag_C", "broken_fire");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function erieDrag.erieDrag_C.broken
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AErieDrag_C::broken()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("erieDrag_C", "broken");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -223,6 +445,197 @@ void AErieDrag_C::GetData(struct FStruct_save* Data)
 
 	if (Data != nullptr)
 		*Data = std::move(Parms.Data);
+}
+
+
+// Function erieDrag.erieDrag_C.gatherDataFromKey
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AErieDrag_C::GatherDataFromKey(bool* Gather)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("erieDrag_C", "gatherDataFromKey");
+
+	Params::ErieDrag_C_GatherDataFromKey Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Gather != nullptr)
+		*Gather = Parms.Gather;
+}
+
+
+// Function erieDrag.erieDrag_C.canBePutInContainer
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AErieDrag_C::CanBePutInContainer(bool* Return)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("erieDrag_C", "canBePutInContainer");
+
+	Params::ErieDrag_C_CanBePutInContainer Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return != nullptr)
+		*Return = Parms.Return;
+}
+
+
+// Function erieDrag.erieDrag_C.asProp
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AProp_C*                          Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AErieDrag_C::AsProp(class AProp_C** Return)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("erieDrag_C", "asProp");
+
+	Params::ErieDrag_C_AsProp Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return != nullptr)
+		*Return = Parms.Return;
+}
+
+
+// Function erieDrag.erieDrag_C.canPickup
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AErieDrag_C::CanPickup(bool* Return)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("erieDrag_C", "canPickup");
+
+	Params::ErieDrag_C_CanPickup Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return != nullptr)
+		*Return = Parms.Return;
+}
+
+
+// Function erieDrag.erieDrag_C.noRespawn
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Param_NoRespawn                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AErieDrag_C::NoRespawn(bool Param_NoRespawn, bool* Return)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("erieDrag_C", "noRespawn");
+
+	Params::ErieDrag_C_NoRespawn Parms{};
+
+	Parms.Param_NoRespawn = Param_NoRespawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return != nullptr)
+		*Return = Parms.Return;
+}
+
+
+// Function erieDrag.erieDrag_C.lookAt
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AErieDrag_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("erieDrag_C", "lookAt");
+
+	Params::ErieDrag_C_LookAt Parms{};
+
+	Parms.Player = Player;
+	Parms.Hit = std::move(Hit);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return != nullptr)
+		*Return = Parms.Return;
+
+	if (Text != nullptr)
+		*Text = std::move(Parms.Text);
+
+	if (boundObjectReplace != nullptr)
+		*boundObjectReplace = Parms.boundObjectReplace;
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
+}
+
+
+// Function erieDrag.erieDrag_C.isButtonUsed
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Failed                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AErieDrag_C::IsButtonUsed(bool* Failed)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("erieDrag_C", "isButtonUsed");
+
+	Params::ErieDrag_C_IsButtonUsed Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Failed != nullptr)
+		*Failed = Parms.Failed;
+}
+
+
+// Function erieDrag.erieDrag_C.landedOn
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IgnoreFallDamage                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AErieDrag_C::LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("erieDrag_C", "landedOn");
+
+	Params::ErieDrag_C_LandedOn Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IgnoreFallDamage != nullptr)
+		*IgnoreFallDamage = Parms.IgnoreFallDamage;
 }
 
 }

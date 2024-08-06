@@ -10,29 +10,29 @@
 
 #include "Basic.hpp"
 
-#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
 #include "Prop_glowstick_classes.hpp"
+#include "Engine_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass prop_glowstick_col.prop_glowstick_col_C
-// 0x0020 (0x0410 - 0x03F0)
+// 0x0020 (0x0420 - 0x0400)
 class AProp_glowstick_col_C final : public AProp_glowstick_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_glowstick_col_C;               // 0x03F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FVector                                HSV;                                               // 0x03F8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_glowstick_col_C;               // 0x0400(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FVector                                HSV;                                               // 0x0408(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_glowstick_col(int32 EntryPoint);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
 	void ReceiveBeginPlay();
 	void ApplyColor(const struct FLinearColor& Color);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 
 public:
 	static class UClass* StaticClass()
@@ -45,9 +45,9 @@ public:
 	}
 };
 static_assert(alignof(AProp_glowstick_col_C) == 0x000010, "Wrong alignment on AProp_glowstick_col_C");
-static_assert(sizeof(AProp_glowstick_col_C) == 0x000410, "Wrong size on AProp_glowstick_col_C");
-static_assert(offsetof(AProp_glowstick_col_C, UberGraphFrame_Prop_glowstick_col_C) == 0x0003F0, "Member 'AProp_glowstick_col_C::UberGraphFrame_Prop_glowstick_col_C' has a wrong offset!");
-static_assert(offsetof(AProp_glowstick_col_C, HSV) == 0x0003F8, "Member 'AProp_glowstick_col_C::HSV' has a wrong offset!");
+static_assert(sizeof(AProp_glowstick_col_C) == 0x000420, "Wrong size on AProp_glowstick_col_C");
+static_assert(offsetof(AProp_glowstick_col_C, UberGraphFrame_Prop_glowstick_col_C) == 0x000400, "Member 'AProp_glowstick_col_C::UberGraphFrame_Prop_glowstick_col_C' has a wrong offset!");
+static_assert(offsetof(AProp_glowstick_col_C, HSV) == 0x000408, "Member 'AProp_glowstick_col_C::HSV' has a wrong offset!");
 
 }
 

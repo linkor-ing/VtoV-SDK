@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function prop_bombBarrel.prop_bombBarrel_C.ExecuteUbergraph_prop_bombBarrel
-// 0x0100 (0x0100 - 0x0000)
+// 0x01B0 (0x01B0 - 0x0000)
 struct Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel final
 {
 public:
@@ -30,12 +30,19 @@ public:
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                K2Node_ComponentBoundEvent_NormalImpulse;          // 0x0058(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_ComponentBoundEvent_Hit;                    // 0x0064(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_3EBB[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EC[0x4];                                       // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AExplosion_C*                           CallFunc_FinishSpawningActor_ReturnValue;          // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_1;                             // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_104[0x4];                                      // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Event_actor;                                // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage;                               // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x0114(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                K2Node_Event_impact;                               // 0x019C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_skipSetting;                          // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel) == 0x000010, "Wrong alignment on Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel");
-static_assert(sizeof(Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel) == 0x000100, "Wrong size on Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel");
+static_assert(sizeof(Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel) == 0x0001B0, "Wrong size on Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel");
 static_assert(offsetof(Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel, EntryPoint) == 0x000000, "Member 'Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel, CallFunc_GetCenterOfMass_ReturnValue) == 0x000004, "Member 'Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel::CallFunc_GetCenterOfMass_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel, CallFunc_MakeTransform_ReturnValue) == 0x000010, "Member 'Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
@@ -46,6 +53,12 @@ static_assert(offsetof(Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel, K2Nod
 static_assert(offsetof(Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel, K2Node_ComponentBoundEvent_Hit) == 0x000064, "Member 'Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel::K2Node_ComponentBoundEvent_Hit' has a wrong offset!");
 static_assert(offsetof(Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0000F0, "Member 'Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel, CallFunc_FinishSpawningActor_ReturnValue) == 0x0000F8, "Member 'Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel, K2Node_Event_damage_1) == 0x000100, "Member 'Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel::K2Node_Event_damage_1' has a wrong offset!");
+static_assert(offsetof(Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel, K2Node_Event_actor) == 0x000108, "Member 'Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel::K2Node_Event_actor' has a wrong offset!");
+static_assert(offsetof(Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel, K2Node_Event_damage) == 0x000110, "Member 'Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel::K2Node_Event_damage' has a wrong offset!");
+static_assert(offsetof(Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel, K2Node_Event_hit) == 0x000114, "Member 'Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel, K2Node_Event_impact) == 0x00019C, "Member 'Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel::K2Node_Event_impact' has a wrong offset!");
+static_assert(offsetof(Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel, K2Node_Event_skipSetting) == 0x0001A8, "Member 'Prop_bombBarrel_C_ExecuteUbergraph_prop_bombBarrel::K2Node_Event_skipSetting' has a wrong offset!");
 
 // Function prop_bombBarrel.prop_bombBarrel_C.BndEvt__prop_bombBarrel_StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature
 // 0x00B0 (0x00B0 - 0x0000)
@@ -65,6 +78,36 @@ static_assert(offsetof(Prop_bombBarrel_C_BndEvt__prop_bombBarrel_StaticMesh_K2No
 static_assert(offsetof(Prop_bombBarrel_C_BndEvt__prop_bombBarrel_StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'Prop_bombBarrel_C_BndEvt__prop_bombBarrel_StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature::OtherComp' has a wrong offset!");
 static_assert(offsetof(Prop_bombBarrel_C_BndEvt__prop_bombBarrel_StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature, NormalImpulse) == 0x000018, "Member 'Prop_bombBarrel_C_BndEvt__prop_bombBarrel_StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature::NormalImpulse' has a wrong offset!");
 static_assert(offsetof(Prop_bombBarrel_C_BndEvt__prop_bombBarrel_StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature, Param_Hit) == 0x000024, "Member 'Prop_bombBarrel_C_BndEvt__prop_bombBarrel_StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature::Param_Hit' has a wrong offset!");
+
+// Function prop_bombBarrel.prop_bombBarrel_C.addDamage
+// 0x00A8 (0x00A8 - 0x0000)
+struct Prop_bombBarrel_C_AddDamage final
+{
+public:
+	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Damage;                                            // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Param_Hit;                                         // 0x000C(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                Param_Impact;                                      // 0x0094(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          SkipSetting;                                       // 0x00A0(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Prop_bombBarrel_C_AddDamage) == 0x000008, "Wrong alignment on Prop_bombBarrel_C_AddDamage");
+static_assert(sizeof(Prop_bombBarrel_C_AddDamage) == 0x0000A8, "Wrong size on Prop_bombBarrel_C_AddDamage");
+static_assert(offsetof(Prop_bombBarrel_C_AddDamage, Actor) == 0x000000, "Member 'Prop_bombBarrel_C_AddDamage::Actor' has a wrong offset!");
+static_assert(offsetof(Prop_bombBarrel_C_AddDamage, Damage) == 0x000008, "Member 'Prop_bombBarrel_C_AddDamage::Damage' has a wrong offset!");
+static_assert(offsetof(Prop_bombBarrel_C_AddDamage, Param_Hit) == 0x00000C, "Member 'Prop_bombBarrel_C_AddDamage::Param_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_bombBarrel_C_AddDamage, Param_Impact) == 0x000094, "Member 'Prop_bombBarrel_C_AddDamage::Param_Impact' has a wrong offset!");
+static_assert(offsetof(Prop_bombBarrel_C_AddDamage, SkipSetting) == 0x0000A0, "Member 'Prop_bombBarrel_C_AddDamage::SkipSetting' has a wrong offset!");
+
+// Function prop_bombBarrel.prop_bombBarrel_C.fireDamage
+// 0x0004 (0x0004 - 0x0000)
+struct Prop_bombBarrel_C_FireDamage final
+{
+public:
+	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_bombBarrel_C_FireDamage) == 0x000004, "Wrong alignment on Prop_bombBarrel_C_FireDamage");
+static_assert(sizeof(Prop_bombBarrel_C_FireDamage) == 0x000004, "Wrong size on Prop_bombBarrel_C_FireDamage");
+static_assert(offsetof(Prop_bombBarrel_C_FireDamage, Damage) == 0x000000, "Member 'Prop_bombBarrel_C_FireDamage::Damage' has a wrong offset!");
 
 }
 

@@ -37,6 +37,64 @@ void AProp_container_C::ExecuteUbergraph_prop_container(int32 EntryPoint)
 }
 
 
+// Function prop_container.prop_container_C.actionOptionIndex
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_container_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_container_C", "actionOptionIndex");
+
+	Params::Prop_container_C_ActionOptionIndex Parms{};
+
+	Parms.Player = Player;
+	Parms.Param_Hit = std::move(Param_Hit);
+	Parms.Action = Action;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_container.prop_container_C.dingus
+// (BlueprintCallable, BlueprintEvent)
+
+void AProp_container_C::Dingus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_container_C", "dingus");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function prop_container.prop_container_C.playerHandUse_RMB
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_container_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_container_C", "playerHandUse_RMB");
+
+	Params::Prop_container_C_PlayerHandUse_RMB Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function prop_container.prop_container_C.propRenderer_finishProps
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -65,32 +123,6 @@ void AProp_container_C::broken_fire()
 }
 
 
-// Function prop_container.prop_container_C.actionOptionIndex
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_container_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_container_C", "actionOptionIndex");
-
-	Params::Prop_container_C_ActionOptionIndex Parms{};
-
-	Parms.Player = Player;
-	Parms.Param_Hit = std::move(Param_Hit);
-	Parms.Param_Index = Param_Index;
-	Parms.Action = Action;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function prop_container.prop_container_C.ReceiveDestroyed
 // (Event, Public, BlueprintEvent)
 
@@ -100,20 +132,6 @@ void AProp_container_C::ReceiveDestroyed()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("prop_container_C", "ReceiveDestroyed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop_container.prop_container_C.dingus
-// (BlueprintCallable, BlueprintEvent)
-
-void AProp_container_C::Dingus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_container_C", "dingus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -203,102 +221,6 @@ void AProp_container_C::ReceiveBeginPlay()
 }
 
 
-// Function prop_container.prop_container_C.extract
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_container_C::Extract(int32 Param_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_container_C", "extract");
-
-	Params::Prop_container_C_Extract Parms{};
-
-	Parms.Param_Index = Param_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop_container.prop_container_C.spawned
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AProp_container_C::Spawned()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_container_C", "spawned");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop_container.prop_container_C.getObject
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    CustomLoc                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                          Loc                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OutputPin                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_container_C::GetObject(int32 Param_Index, bool CustomLoc, const struct FVector& Loc, class AActor** OutputPin)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_container_C", "getObject");
-
-	Params::Prop_container_C_GetObject Parms{};
-
-	Parms.Param_Index = Param_Index;
-	Parms.CustomLoc = CustomLoc;
-	Parms.Loc = std::move(Loc);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutputPin != nullptr)
-		*OutputPin = Parms.OutputPin;
-}
-
-
-// Function prop_container.prop_container_C.updateVolumesAndMass
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AProp_container_C::UpdateVolumesAndMass()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_container_C", "updateVolumesAndMass");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop_container.prop_container_C.playerHandUse_RMB
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_container_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_container_C", "playerHandUse_RMB");
-
-	Params::Prop_container_C_PlayerHandUse_RMB Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function prop_container.prop_container_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
@@ -337,6 +259,26 @@ void AProp_container_C::LoadData(const struct FStruct_save& Data, bool* Return)
 }
 
 
+// Function prop_container.prop_container_C.extract
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_container_C::Extract(int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_container_C", "extract");
+
+	Params::Prop_container_C_Extract Parms{};
+
+	Parms.Param_Index = Param_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function prop_container.prop_container_C.lookAt
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -345,8 +287,9 @@ void AProp_container_C::LoadData(const struct FStruct_save& Data, bool* Return)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_container_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
+void AProp_container_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -368,6 +311,23 @@ void AProp_container_C::LookAt(class AMainPlayer_C* Player, const struct FHitRes
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
+}
+
+
+// Function prop_container.prop_container_C.spawned
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AProp_container_C::Spawned()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_container_C", "spawned");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -392,6 +352,34 @@ void AProp_container_C::GetData(struct FStruct_save* Data)
 }
 
 
+// Function prop_container.prop_container_C.getObject
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    CustomLoc                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FVector                          Loc                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OutputPin                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_container_C::GetObject(int32 Param_Index, bool CustomLoc, const struct FVector& Loc, class AActor** OutputPin)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_container_C", "getObject");
+
+	Params::Prop_container_C_GetObject Parms{};
+
+	Parms.Param_Index = Param_Index;
+	Parms.CustomLoc = CustomLoc;
+	Parms.Loc = std::move(Loc);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutputPin != nullptr)
+		*OutputPin = Parms.OutputPin;
+}
+
+
 // Function prop_container.prop_container_C.getActionOptions
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -401,8 +389,9 @@ void AProp_container_C::GetData(struct FStruct_save* Data)
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_container_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
+void AProp_container_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -425,6 +414,23 @@ void AProp_container_C::GetActionOptions(class AMainPlayer_C* Player, class UPri
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
+}
+
+
+// Function prop_container.prop_container_C.updateVolumesAndMass
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AProp_container_C::UpdateVolumesAndMass()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_container_C", "updateVolumesAndMass");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

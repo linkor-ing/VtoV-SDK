@@ -10,34 +10,34 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Struct_save_structs.hpp"
 #include "Struct_mFloat_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function prop_waterShooter.prop_waterShooter_C.ExecuteUbergraph_prop_waterShooter
-// 0x0230 (0x0230 - 0x0000)
+// 0x0240 (0x0240 - 0x0000)
 struct Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D7E[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_arm_start;                                // 0x0010(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_arm_end;                                  // 0x001C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0028(0x0010)(ConstParm, ReferenceParm)
 	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit;         // 0x0038(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue;    // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3D7F[0x3];                                     // 0x00C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C1[0x3];                                       // 0x00C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_RandomUnitVector_ReturnValue;             // 0x00C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x00D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x00DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x00DD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3D80[0x2];                                     // 0x00DE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_DE[0x2];                                       // 0x00DE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x00E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -53,34 +53,36 @@ public:
 	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0144(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0150(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D81[0x4];                                     // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15C[0x4];                                      // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3D82[0x7];                                     // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_169[0x7];                                      // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 K2Node_ClassDynamicCast_AsWater_Volume;            // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ClassDynamicCast_bSuccess;                  // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3D83[0x3];                                     // 0x0179(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_179[0x3];                                      // 0x0179(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatMinusEquals_FloatOut;         // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x0194(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x01A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x01AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetForwardVector_ReturnValue_1;           // 0x01B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x01C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x01D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3D84[0x4];                                     // 0x01DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x01E0(0x0030)(IsPlainOldData, NoDestructor)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D85[0x4];                                     // 0x0214(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3D86[0x7];                                     // 0x0221(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AProp_sponge_p_C*                       CallFunc_FinishSpawningActor_ReturnValue;          // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_18C[0x4];                                      // 0x018C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatMinusEquals_FloatOut;         // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x019C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x01A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x01B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetForwardVector_ReturnValue_1;           // 0x01C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x01CC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x01D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1E4[0xC];                                      // 0x01E4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x01F0(0x0030)(IsPlainOldData, NoDestructor)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_224[0x4];                                      // 0x0224(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_231[0x7];                                      // 0x0231(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AProp_sponge_p_C*                       CallFunc_FinishSpawningActor_ReturnValue;          // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter) == 0x000010, "Wrong alignment on Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter");
-static_assert(sizeof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter) == 0x000230, "Wrong size on Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter");
+static_assert(sizeof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter) == 0x000240, "Wrong size on Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter");
 static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, EntryPoint) == 0x000000, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, K2Node_Event_player_2) == 0x000008, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::K2Node_Event_player_2' has a wrong offset!");
 static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_arm_start) == 0x000010, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_arm_start' has a wrong offset!");
@@ -113,19 +115,20 @@ static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, K
 static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, K2Node_ClassDynamicCast_bSuccess) == 0x000178, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, K2Node_Event_DeltaSeconds) == 0x00017C, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::K2Node_Event_DeltaSeconds' has a wrong offset!");
 static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, K2Node_Event_player_1) == 0x000180, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, K2Node_Event_player) == 0x000188, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_VictoryFloatMinusEquals_FloatOut) == 0x000190, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_VictoryFloatMinusEquals_FloatOut' has a wrong offset!");
-static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_GetForwardVector_ReturnValue) == 0x000194, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0001A0, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x0001AC, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_GetForwardVector_ReturnValue_1) == 0x0001B8, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_GetForwardVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_Add_VectorVector_ReturnValue) == 0x0001C4, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x0001D0, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_MakeTransform_ReturnValue) == 0x0001E0, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x000210, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
-static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000218, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_Greater_FloatFloat_ReturnValue_1) == 0x000220, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_FinishSpawningActor_ReturnValue) == 0x000228, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000188, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, K2Node_Event_player) == 0x000190, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_VictoryFloatMinusEquals_FloatOut) == 0x000198, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_VictoryFloatMinusEquals_FloatOut' has a wrong offset!");
+static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_GetForwardVector_ReturnValue) == 0x00019C, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0001A8, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x0001B4, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_GetForwardVector_ReturnValue_1) == 0x0001C0, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_GetForwardVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_Add_VectorVector_ReturnValue) == 0x0001CC, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x0001D8, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_MakeTransform_ReturnValue) == 0x0001F0, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x000220, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
+static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000228, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_Greater_FloatFloat_ReturnValue_1) == 0x000230, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter, CallFunc_FinishSpawningActor_ReturnValue) == 0x000238, "Member 'Prop_waterShooter_C_ExecuteUbergraph_prop_waterShooter::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
 
 // Function prop_waterShooter.prop_waterShooter_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -157,17 +160,6 @@ static_assert(offsetof(Prop_waterShooter_C_Get, CallFunc_Divide_FloatFloat_Retur
 static_assert(offsetof(Prop_waterShooter_C_Get, CallFunc_VictoryFloatMinusEquals_FloatOut) == 0x00000C, "Member 'Prop_waterShooter_C_Get::CallFunc_VictoryFloatMinusEquals_FloatOut' has a wrong offset!");
 static_assert(offsetof(Prop_waterShooter_C_Get, CallFunc_Conv_FloatToString_ReturnValue) == 0x000010, "Member 'Prop_waterShooter_C_Get::CallFunc_Conv_FloatToString_ReturnValue' has a wrong offset!");
 
-// Function prop_waterShooter.prop_waterShooter_C.playerHandRelease_LMB
-// 0x0008 (0x0008 - 0x0000)
-struct Prop_waterShooter_C_PlayerHandRelease_LMB final
-{
-public:
-	class AMainPlayer_C*                          Param_Player;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_waterShooter_C_PlayerHandRelease_LMB) == 0x000008, "Wrong alignment on Prop_waterShooter_C_PlayerHandRelease_LMB");
-static_assert(sizeof(Prop_waterShooter_C_PlayerHandRelease_LMB) == 0x000008, "Wrong size on Prop_waterShooter_C_PlayerHandRelease_LMB");
-static_assert(offsetof(Prop_waterShooter_C_PlayerHandRelease_LMB, Param_Player) == 0x000000, "Member 'Prop_waterShooter_C_PlayerHandRelease_LMB::Param_Player' has a wrong offset!");
-
 // Function prop_waterShooter.prop_waterShooter_C.playerHandUse_LMB
 // 0x0008 (0x0008 - 0x0000)
 struct Prop_waterShooter_C_PlayerHandUse_LMB final
@@ -178,6 +170,17 @@ public:
 static_assert(alignof(Prop_waterShooter_C_PlayerHandUse_LMB) == 0x000008, "Wrong alignment on Prop_waterShooter_C_PlayerHandUse_LMB");
 static_assert(sizeof(Prop_waterShooter_C_PlayerHandUse_LMB) == 0x000008, "Wrong size on Prop_waterShooter_C_PlayerHandUse_LMB");
 static_assert(offsetof(Prop_waterShooter_C_PlayerHandUse_LMB, Param_Player) == 0x000000, "Member 'Prop_waterShooter_C_PlayerHandUse_LMB::Param_Player' has a wrong offset!");
+
+// Function prop_waterShooter.prop_waterShooter_C.playerHandRelease_LMB
+// 0x0008 (0x0008 - 0x0000)
+struct Prop_waterShooter_C_PlayerHandRelease_LMB final
+{
+public:
+	class AMainPlayer_C*                          Param_Player;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_waterShooter_C_PlayerHandRelease_LMB) == 0x000008, "Wrong alignment on Prop_waterShooter_C_PlayerHandRelease_LMB");
+static_assert(sizeof(Prop_waterShooter_C_PlayerHandRelease_LMB) == 0x000008, "Wrong size on Prop_waterShooter_C_PlayerHandRelease_LMB");
+static_assert(offsetof(Prop_waterShooter_C_PlayerHandRelease_LMB, Param_Player) == 0x000000, "Member 'Prop_waterShooter_C_PlayerHandRelease_LMB::Param_Player' has a wrong offset!");
 
 // Function prop_waterShooter.prop_waterShooter_C.playerHandUse_RMB
 // 0x0008 (0x0008 - 0x0000)
@@ -197,7 +200,7 @@ struct Prop_waterShooter_C_LoadData final
 public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3D87[0x7];                                     // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mFloat                         CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	float                                         CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

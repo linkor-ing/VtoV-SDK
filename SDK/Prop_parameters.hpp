@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
+#include "Struct_mFloat_structs.hpp"
 #include "Enum_interactionActions_structs.hpp"
+#include "Struct_mBool_structs.hpp"
 #include "Struct_propDynamic_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Struct_save_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Struct_mString_structs.hpp"
-#include "Struct_mFloat_structs.hpp"
-#include "Struct_mBool_structs.hpp"
 #include "Struct_prop_structs.hpp"
 #include "Struct_dangerProp_structs.hpp"
 #include "InputCore_structs.hpp"
@@ -39,231 +39,249 @@ static_assert(sizeof(Prop_C_TakenByPlayer__DelegateSignature) == 0x000008, "Wron
 static_assert(offsetof(Prop_C_TakenByPlayer__DelegateSignature, Prop) == 0x000000, "Member 'Prop_C_TakenByPlayer__DelegateSignature::Prop' has a wrong offset!");
 
 // Function prop.prop_C.ExecuteUbergraph_prop
-// 0x0950 (0x0950 - 0x0000)
+// 0x0A10 (0x0A10 - 0x0000)
 struct Prop_C_ExecuteUbergraph_prop final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3732[0xC];                                     // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0xC];                                        // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Temp_struct_Variable;                              // 0x0010(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	struct FTransform                             Temp_struct_Variable_1;                            // 0x0040(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	class UFlammable_C*                           CallFunc_AddComponent_ReturnValue;                 // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFlammable_C*                           CallFunc_AddComponent_ReturnValue_1;               // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_Event_component;                            // 0x0080(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_5;                             // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_8;                                // 0x008C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_3733[0x4];                                     // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Event_actor_2;                              // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_impact_2;                             // 0x0120(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3734[0x4];                                     // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AWaterVolume_C*                         K2Node_Event_water_3;                              // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water_2;                              // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water_1;                              // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water;                                // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_activate;                             // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3735[0x7];                                     // 0x0151(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_14;                            // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_7;                                // 0x0160(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AMainPlayer_C*                          K2Node_Event_player_13;                            // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_12;                            // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_4;                             // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_location_1;                           // 0x01FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_11;                            // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_10;                            // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_9;                             // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_wheelDelta;                           // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3736[0x4];                                     // 0x0224(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_8;                             // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              K2Node_Event_mouse;                                // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_7;                             // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   K2Node_Event_key_2;                                // 0x0240(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed_1;                            // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3737[0x3];                                     // 0x0259(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_temperature_1;                        // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_temperature;                          // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_speed;                                // 0x0264(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_6;                                // 0x0270(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class FString                                 K2Node_Event_name_1;                               // 0x02F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_volume;                               // 0x0308(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3738[0x4];                                     // 0x030C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_location;                             // 0x0318(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_3;                             // 0x0324(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_clean;                                // 0x0328(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3739[0x7];                                     // 0x0329(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_5;                                // 0x0338(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AHook_C*                                K2Node_Event_hook;                                 // 0x03C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x03C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   K2Node_Event_key_1;                                // 0x03D0(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed;                              // 0x03E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_373A[0x3];                                     // 0x03E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Event_color;                                // 0x03EC(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_373B[0x4];                                     // 0x03FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0400(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_4;                                // 0x0408(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          K2Node_Event_kick;                                 // 0x0490(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_373C[0x3];                                     // 0x0491(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_Event_name;                                 // 0x0494(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_373D[0x4];                                     // 0x049C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x04A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x04A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_3;                                // 0x04B0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0538(0x00CC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, struct FHitResult& Hit)> K2Node_CreateDelegate_OutputDelegate;              // 0x0604(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_373E[0x4];                                     // 0x0614(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0618(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0620(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_373F[0x3];                                     // 0x0621(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0624(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x0628(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_static;                               // 0x0630(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_frozen;                               // 0x0631(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_active;                               // 0x0632(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0633(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3740[0x4];                                     // 0x0634(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Event_actor_1;                              // 0x0638(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_2;                             // 0x0640(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_2;                                // 0x0644(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                K2Node_Event_impact_1;                             // 0x06CC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_skipSetting;                          // 0x06D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3741[0x3];                                     // 0x06D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue;           // 0x06DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_ignore;                               // 0x06E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3742[0x7];                                     // 0x06E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IInt_objects_C>        CallFunc_impactDamage_self_CastInput;              // 0x06F0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	class FString                                 K2Node_Event_key;                                  // 0x0700(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_CustomEvent_SelfActor;                      // 0x0710(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_CustomEvent_OtherActor;                     // 0x0718(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_CustomEvent_NormalImpulse;                  // 0x0720(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_CustomEvent_Hit;                            // 0x072C(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x07B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3743[0x3];                                     // 0x07B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_damage_1;                             // 0x07B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_fuel;                                 // 0x07BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IInt_objects_C>        CallFunc_fireDamage_self_CastInput;                // 0x07C0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x07D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3744[0x7];                                     // 0x07D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x07D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_1;                                // 0x07E0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x0868(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x086C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3745[0x3];                                     // 0x086D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     CallFunc_GetMaterial_ReturnValue;                  // 0x0870(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0878(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3746[0x7];                                     // 0x0879(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPhysicalMaterial*                      CallFunc_GetPhysicalMaterial_ReturnValue;          // 0x0880(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0888(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0889(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3747[0x2];                                     // 0x088A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_damage;                               // 0x088C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x0890(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AActor*                                 K2Node_Event_actor;                                // 0x0918(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_impact;                               // 0x0920(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue_1;         // 0x092C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IInt_objects_C>        CallFunc_impactDamage_self_CastInput_1;            // 0x0938(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_damage_7;                             // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_8;                                // 0x0044(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Event_actor_2;                              // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_impact_2;                             // 0x00D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFlammable_C*                           CallFunc_AddComponent_ReturnValue;                 // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterVolume_C*                         K2Node_Event_water_3;                              // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterVolume_C*                         K2Node_Event_water_2;                              // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterVolume_C*                         K2Node_Event_water_1;                              // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterVolume_C*                         K2Node_Event_water;                                // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_activate;                             // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_18;                            // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_7;                                // 0x0120(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         K2Node_Event_damage_6;                             // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hot;                                  // 0x01AC(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_234[0x4];                                      // 0x0234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_17;                            // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_16;                            // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_5;                             // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_location_1;                           // 0x024C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_15;                            // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_14;                            // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_13;                            // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_wheelDelta;                           // 0x0270(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_274[0x4];                                      // 0x0274(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_12;                            // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_Event_mouse;                                // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_11;                            // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   K2Node_Event_key_2;                                // 0x0290(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed_1;                            // 0x02A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2A9[0x3];                                      // 0x02A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_temperature_1;                        // 0x02AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_temperature;                          // 0x02B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_speed;                                // 0x02B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_10;                            // 0x02B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_6;                                // 0x02C0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class FString                                 K2Node_Event_name_1;                               // 0x0348(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_volume;                               // 0x0358(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_35C[0x4];                                      // 0x035C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_9;                             // 0x0360(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_location;                             // 0x0368(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_4;                             // 0x0374(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_clean_1;                              // 0x0378(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_379[0x7];                                      // 0x0379(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_8;                             // 0x0380(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_5;                                // 0x0388(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AHook_C*                                K2Node_Event_hook_1;                               // 0x0410(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_clean;                                // 0x0418(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41C[0x4];                                      // 0x041C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_7;                             // 0x0420(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AHook_C*                                K2Node_Event_hook;                                 // 0x0428(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x0430(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   K2Node_Event_key_1;                                // 0x0438(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed;                              // 0x0450(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_451[0x3];                                      // 0x0451(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           K2Node_Event_color;                                // 0x0454(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_464[0x4];                                      // 0x0464(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUmg_texturePicker_C*                   K2Node_Event_picker;                               // 0x0468(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_Event_texture;                              // 0x0470(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_index;                                // 0x0478(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_47C[0x4];                                      // 0x047C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x0480(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_4;                                // 0x0488(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          K2Node_Event_kick;                                 // 0x0510(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_511[0x3];                                      // 0x0511(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_Event_name;                                 // 0x0514(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51C[0x4];                                      // 0x051C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x0520(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x0528(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_3;                                // 0x0530(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         K2Node_Event_damage_3;                             // 0x05B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5BC[0x4];                                      // 0x05BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x05C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x05C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x05D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       K2Node_Event_settings;                             // 0x05D8(0x00F0)(HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x06C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6C9[0x7];                                      // 0x06C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x06D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x06D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6DC[0x4];                                      // 0x06DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x06E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_static;                               // 0x06E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_frozen;                               // 0x06E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_active;                               // 0x06EA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x06EB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6EC[0x4];                                      // 0x06EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Event_actor_1;                              // 0x06F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_2;                             // 0x06F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_2;                                // 0x06FC(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                K2Node_Event_impact_1;                             // 0x0784(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_skipSetting;                          // 0x0790(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_791[0x3];                                      // 0x0791(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue;           // 0x0794(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_Event_component;                            // 0x07A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IInt_objects_C>        CallFunc_impactDamage_self_CastInput;              // 0x07A8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_ignore;                               // 0x07B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_7B9[0x7];                                      // 0x07B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 K2Node_Event_key;                                  // 0x07C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_CustomEvent_SelfActor;                      // 0x07D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_CustomEvent_OtherActor;                     // 0x07D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_NormalImpulse;                  // 0x07E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_CustomEvent_Hit;                            // 0x07EC(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0874(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_875[0x3];                                      // 0x0875(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_damage_1;                             // 0x0878(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_fuel;                                 // 0x087C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IInt_objects_C>        CallFunc_fireDamage_self_CastInput;                // 0x0880(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0890(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_891[0x7];                                      // 0x0891(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0898(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_1;                                // 0x08A0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x0928(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_929[0x3];                                      // 0x0929(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, struct FHitResult& Hit)> K2Node_CreateDelegate_OutputDelegate;              // 0x092C(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x093C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_93D[0x3];                                      // 0x093D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_damage;                               // 0x0940(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x0944(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_9CC[0x4];                                      // 0x09CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Event_actor;                                // 0x09D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_impact;                               // 0x09D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x09E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9E5[0x3];                                      // 0x09E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue_1;         // 0x09E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9F4[0x4];                                      // 0x09F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IInt_objects_C>        CallFunc_impactDamage_self_CastInput_1;            // 0x09F8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Prop_C_ExecuteUbergraph_prop) == 0x000010, "Wrong alignment on Prop_C_ExecuteUbergraph_prop");
-static_assert(sizeof(Prop_C_ExecuteUbergraph_prop) == 0x000950, "Wrong size on Prop_C_ExecuteUbergraph_prop");
+static_assert(sizeof(Prop_C_ExecuteUbergraph_prop) == 0x000A10, "Wrong size on Prop_C_ExecuteUbergraph_prop");
 static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, EntryPoint) == 0x000000, "Member 'Prop_C_ExecuteUbergraph_prop::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, Temp_struct_Variable) == 0x000010, "Member 'Prop_C_ExecuteUbergraph_prop::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, Temp_struct_Variable_1) == 0x000040, "Member 'Prop_C_ExecuteUbergraph_prop::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_AddComponent_ReturnValue) == 0x000070, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_AddComponent_ReturnValue_1) == 0x000078, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_AddComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_component) == 0x000080, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_component' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_damage_5) == 0x000088, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_damage_5' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_hit_8) == 0x00008C, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_hit_8' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_actor_2) == 0x000118, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_actor_2' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_impact_2) == 0x000120, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_impact_2' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_water_3) == 0x000130, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_water_3' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_water_2) == 0x000138, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_water_2' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_water_1) == 0x000140, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_water_1' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_water) == 0x000148, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_water' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_activate) == 0x000150, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_activate' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_14) == 0x000158, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_14' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_hit_7) == 0x000160, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_hit_7' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_13) == 0x0001E8, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_13' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_12) == 0x0001F0, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_12' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_damage_4) == 0x0001F8, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_damage_4' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_location_1) == 0x0001FC, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_location_1' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_11) == 0x000208, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_11' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_10) == 0x000210, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_10' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_9) == 0x000218, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_9' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_wheelDelta) == 0x000220, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_wheelDelta' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_8) == 0x000228, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_8' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_mouse) == 0x000230, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_mouse' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_7) == 0x000238, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_7' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_key_2) == 0x000240, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_key_2' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_pressed_1) == 0x000258, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_pressed_1' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_temperature_1) == 0x00025C, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_temperature_1' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_temperature) == 0x000260, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_temperature' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_speed) == 0x000264, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_speed' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_6) == 0x000268, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_6' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_hit_6) == 0x000270, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_hit_6' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_name_1) == 0x0002F8, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_name_1' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_volume) == 0x000308, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_volume' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_5) == 0x000310, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_5' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_location) == 0x000318, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_location' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_damage_3) == 0x000324, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_damage_3' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_clean) == 0x000328, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_clean' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_4) == 0x000330, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_4' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_hit_5) == 0x000338, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_hit_5' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_hook) == 0x0003C0, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_hook' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_gamemode) == 0x0003C8, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_gamemode' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_key_1) == 0x0003D0, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_key_1' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_pressed) == 0x0003E8, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_pressed' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_color) == 0x0003EC, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_color' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_3) == 0x000400, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_3' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_hit_4) == 0x000408, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_hit_4' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_kick) == 0x000490, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_kick' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_name) == 0x000494, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_name' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_2) == 0x0004A0, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_2' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_1) == 0x0004A8, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_hit_3) == 0x0004B0, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_hit_3' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_settings) == 0x000538, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_settings' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_CreateDelegate_OutputDelegate) == 0x000604, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000618, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_IsValid_ReturnValue) == 0x000620, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_Array_Add_ReturnValue) == 0x000624, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x000628, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_static) == 0x000630, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_static' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_frozen) == 0x000631, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_frozen' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_active) == 0x000632, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_active' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_Array_RemoveItem_ReturnValue) == 0x000633, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_actor_1) == 0x000638, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_actor_1' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_damage_2) == 0x000640, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_damage_2' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_hit_2) == 0x000644, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_hit_2' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_impact_1) == 0x0006CC, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_impact_1' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_skipSetting) == 0x0006D8, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_skipSetting' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_Divide_VectorFloat_ReturnValue) == 0x0006DC, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_Divide_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_ignore) == 0x0006E8, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_ignore' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_impactDamage_self_CastInput) == 0x0006F0, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_impactDamage_self_CastInput' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_key) == 0x000700, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_key' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_CustomEvent_SelfActor) == 0x000710, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_CustomEvent_SelfActor' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_CustomEvent_OtherActor) == 0x000718, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_CustomEvent_OtherActor' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_CustomEvent_NormalImpulse) == 0x000720, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_CustomEvent_NormalImpulse' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_CustomEvent_Hit) == 0x00072C, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_CustomEvent_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_BooleanOR_ReturnValue) == 0x0007B4, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_damage_1) == 0x0007B8, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_damage_1' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_fuel) == 0x0007BC, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_fuel' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_fireDamage_self_CastInput) == 0x0007C0, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_fireDamage_self_CastInput' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_IsValid_ReturnValue_1) == 0x0007D0, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player) == 0x0007D8, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_hit_1) == 0x0007E0, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_hit_1' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_index) == 0x000868, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_action) == 0x00086C, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_GetMaterial_ReturnValue) == 0x000870, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_SwitchEnum_CmpSuccess) == 0x000878, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_GetPhysicalMaterial_ReturnValue) == 0x000880, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_GetPhysicalMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000888, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_IsValid_ReturnValue_2) == 0x000889, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_damage) == 0x00088C, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_damage' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_hit) == 0x000890, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_actor) == 0x000918, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_actor' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_impact) == 0x000920, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_impact' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_Divide_VectorFloat_ReturnValue_1) == 0x00092C, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_Divide_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_impactDamage_self_CastInput_1) == 0x000938, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_impactDamage_self_CastInput_1' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_damage_7) == 0x000040, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_damage_7' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_hit_8) == 0x000044, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_hit_8' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_actor_2) == 0x0000D0, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_actor_2' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_impact_2) == 0x0000D8, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_impact_2' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_AddComponent_ReturnValue) == 0x0000E8, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_water_3) == 0x0000F0, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_water_3' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_water_2) == 0x0000F8, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_water_2' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_water_1) == 0x000100, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_water_1' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_water) == 0x000108, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_water' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_activate) == 0x000110, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_activate' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_18) == 0x000118, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_18' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_hit_7) == 0x000120, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_hit_7' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_damage_6) == 0x0001A8, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_damage_6' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_hot) == 0x0001AC, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_hot' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_17) == 0x000238, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_17' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_16) == 0x000240, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_16' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_damage_5) == 0x000248, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_damage_5' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_location_1) == 0x00024C, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_location_1' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_15) == 0x000258, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_15' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_14) == 0x000260, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_14' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_13) == 0x000268, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_13' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_wheelDelta) == 0x000270, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_wheelDelta' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_12) == 0x000278, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_12' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_mouse) == 0x000280, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_mouse' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_11) == 0x000288, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_11' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_key_2) == 0x000290, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_key_2' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_pressed_1) == 0x0002A8, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_pressed_1' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_temperature_1) == 0x0002AC, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_temperature_1' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_temperature) == 0x0002B0, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_temperature' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_speed) == 0x0002B4, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_speed' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_10) == 0x0002B8, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_10' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_hit_6) == 0x0002C0, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_hit_6' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_name_1) == 0x000348, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_name_1' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_volume) == 0x000358, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_volume' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_9) == 0x000360, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_9' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_location) == 0x000368, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_location' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_damage_4) == 0x000374, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_damage_4' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_clean_1) == 0x000378, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_clean_1' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_8) == 0x000380, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_8' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_hit_5) == 0x000388, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_hit_5' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_hook_1) == 0x000410, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_hook_1' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_clean) == 0x000418, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_clean' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_7) == 0x000420, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_7' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_hook) == 0x000428, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_hook' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_gamemode) == 0x000430, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_gamemode' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_key_1) == 0x000438, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_key_1' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_pressed) == 0x000450, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_pressed' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_color) == 0x000454, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_color' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_picker) == 0x000468, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_picker' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_texture) == 0x000470, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_texture' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_index) == 0x000478, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_6) == 0x000480, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_6' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_hit_4) == 0x000488, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_hit_4' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_kick) == 0x000510, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_kick' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_name) == 0x000514, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_name' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_5) == 0x000520, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_5' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_4) == 0x000528, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_4' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_hit_3) == 0x000530, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_hit_3' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_damage_3) == 0x0005B8, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_damage_3' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_3) == 0x0005C0, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_3' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_2) == 0x0005C8, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_2' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player_1) == 0x0005D0, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_settings) == 0x0005D8, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_settings' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_IsValid_ReturnValue) == 0x0006C8, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x0006D0, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_Array_Add_ReturnValue) == 0x0006D8, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x0006E0, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_static) == 0x0006E8, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_static' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_frozen) == 0x0006E9, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_frozen' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_active) == 0x0006EA, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_active' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_Array_RemoveItem_ReturnValue) == 0x0006EB, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_actor_1) == 0x0006F0, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_actor_1' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_damage_2) == 0x0006F8, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_damage_2' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_hit_2) == 0x0006FC, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_hit_2' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_impact_1) == 0x000784, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_impact_1' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_skipSetting) == 0x000790, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_skipSetting' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_Divide_VectorFloat_ReturnValue) == 0x000794, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_Divide_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_component) == 0x0007A0, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_component' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_impactDamage_self_CastInput) == 0x0007A8, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_impactDamage_self_CastInput' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_ignore) == 0x0007B8, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_ignore' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_key) == 0x0007C0, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_key' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_CustomEvent_SelfActor) == 0x0007D0, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_CustomEvent_SelfActor' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_CustomEvent_OtherActor) == 0x0007D8, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_CustomEvent_OtherActor' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_CustomEvent_NormalImpulse) == 0x0007E0, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_CustomEvent_NormalImpulse' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_CustomEvent_Hit) == 0x0007EC, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_CustomEvent_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_BooleanOR_ReturnValue) == 0x000874, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_damage_1) == 0x000878, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_damage_1' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_fuel) == 0x00087C, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_fuel' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_fireDamage_self_CastInput) == 0x000880, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_fireDamage_self_CastInput' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_IsValid_ReturnValue_1) == 0x000890, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_player) == 0x000898, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_hit_1) == 0x0008A0, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_hit_1' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_action) == 0x000928, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_CreateDelegate_OutputDelegate) == 0x00092C, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_SwitchEnum_CmpSuccess) == 0x00093C, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_damage) == 0x000940, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_damage' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_hit) == 0x000944, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_actor) == 0x0009D0, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_actor' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, K2Node_Event_impact) == 0x0009D8, "Member 'Prop_C_ExecuteUbergraph_prop::K2Node_Event_impact' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_IsValid_ReturnValue_2) == 0x0009E4, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_Divide_VectorFloat_ReturnValue_1) == 0x0009E8, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_Divide_VectorFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_C_ExecuteUbergraph_prop, CallFunc_impactDamage_self_CastInput_1) == 0x0009F8, "Member 'Prop_C_ExecuteUbergraph_prop::CallFunc_impactDamage_self_CastInput_1' has a wrong offset!");
 
 // Function prop.prop_C.impactDamageCPP
 // 0x00A8 (0x00A8 - 0x0000)
@@ -272,7 +290,7 @@ struct Prop_C_ImpactDamageCPP final
 public:
 	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_3748[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0090(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Impact;                                            // 0x0098(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -290,15 +308,13 @@ struct Prop_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_C_ActionOptionIndex");
 static_assert(sizeof(Prop_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_C_ActionOptionIndex");
 static_assert(offsetof(Prop_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(Prop_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(Prop_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(Prop_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function prop.prop_C.ignite
 // 0x0004 (0x0004 - 0x0000)
@@ -361,6 +377,17 @@ static_assert(alignof(Prop_C_SetIgnoreSave) == 0x000001, "Wrong alignment on Pro
 static_assert(sizeof(Prop_C_SetIgnoreSave) == 0x000001, "Wrong size on Prop_C_SetIgnoreSave");
 static_assert(offsetof(Prop_C_SetIgnoreSave, Ignore) == 0x000000, "Member 'Prop_C_SetIgnoreSave::Ignore' has a wrong offset!");
 
+// Function prop.prop_C.impactSquishCPP
+// 0x0008 (0x0008 - 0x0000)
+struct Prop_C_ImpactSquishCPP final
+{
+public:
+	class UPrimitiveComponent*                    Component;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_C_ImpactSquishCPP) == 0x000008, "Wrong alignment on Prop_C_ImpactSquishCPP");
+static_assert(sizeof(Prop_C_ImpactSquishCPP) == 0x000008, "Wrong size on Prop_C_ImpactSquishCPP");
+static_assert(offsetof(Prop_C_ImpactSquishCPP, Component) == 0x000000, "Member 'Prop_C_ImpactSquishCPP::Component' has a wrong offset!");
+
 // Function prop.prop_C.addDamage
 // 0x00A8 (0x00A8 - 0x0000)
 struct Prop_C_AddDamage final
@@ -396,28 +423,63 @@ static_assert(offsetof(Prop_C_SetPropProps, Param_Frozen) == 0x000001, "Member '
 static_assert(offsetof(Prop_C_SetPropProps, Active) == 0x000002, "Member 'Prop_C_SetPropProps::Active' has a wrong offset!");
 
 // Function prop.prop_C.settingsApplied
-// 0x00CC (0x00CC - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct Prop_C_SettingsApplied final
 {
 public:
-	struct FStruct_settings                       Settings;                                          // 0x0000(0x00CC)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       Settings;                                          // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(Prop_C_SettingsApplied) == 0x000004, "Wrong alignment on Prop_C_SettingsApplied");
-static_assert(sizeof(Prop_C_SettingsApplied) == 0x0000CC, "Wrong size on Prop_C_SettingsApplied");
+static_assert(alignof(Prop_C_SettingsApplied) == 0x000008, "Wrong alignment on Prop_C_SettingsApplied");
+static_assert(sizeof(Prop_C_SettingsApplied) == 0x0000F0, "Wrong size on Prop_C_SettingsApplied");
 static_assert(offsetof(Prop_C_SettingsApplied, Settings) == 0x000000, "Member 'Prop_C_SettingsApplied::Settings' has a wrong offset!");
 
+// Function prop.prop_C.playerR
+// 0x0008 (0x0008 - 0x0000)
+struct Prop_C_PlayerR final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_C_PlayerR) == 0x000008, "Wrong alignment on Prop_C_PlayerR");
+static_assert(sizeof(Prop_C_PlayerR) == 0x000008, "Wrong size on Prop_C_PlayerR");
+static_assert(offsetof(Prop_C_PlayerR, Player) == 0x000000, "Member 'Prop_C_PlayerR::Player' has a wrong offset!");
+
+// Function prop.prop_C.playerHold
+// 0x0008 (0x0008 - 0x0000)
+struct Prop_C_PlayerHold final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_C_PlayerHold) == 0x000008, "Wrong alignment on Prop_C_PlayerHold");
+static_assert(sizeof(Prop_C_PlayerHold) == 0x000008, "Wrong size on Prop_C_PlayerHold");
+static_assert(offsetof(Prop_C_PlayerHold, Player) == 0x000000, "Member 'Prop_C_PlayerHold::Player' has a wrong offset!");
+
+// Function prop.prop_C.playerUnequip
+// 0x0008 (0x0008 - 0x0000)
+struct Prop_C_PlayerUnequip final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_C_PlayerUnequip) == 0x000008, "Wrong alignment on Prop_C_PlayerUnequip");
+static_assert(sizeof(Prop_C_PlayerUnequip) == 0x000008, "Wrong size on Prop_C_PlayerUnequip");
+static_assert(offsetof(Prop_C_PlayerUnequip, Player) == 0x000000, "Member 'Prop_C_PlayerUnequip::Player' has a wrong offset!");
+
 // Function prop.prop_C.damageByPlayer
-// 0x0090 (0x0090 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct Prop_C_DamageByPlayer final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         Damage;                                            // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_C_DamageByPlayer) == 0x000008, "Wrong alignment on Prop_C_DamageByPlayer");
-static_assert(sizeof(Prop_C_DamageByPlayer) == 0x000090, "Wrong size on Prop_C_DamageByPlayer");
+static_assert(sizeof(Prop_C_DamageByPlayer) == 0x000098, "Wrong size on Prop_C_DamageByPlayer");
 static_assert(offsetof(Prop_C_DamageByPlayer, Player) == 0x000000, "Member 'Prop_C_DamageByPlayer::Player' has a wrong offset!");
 static_assert(offsetof(Prop_C_DamageByPlayer, Param_Hit) == 0x000008, "Member 'Prop_C_DamageByPlayer::Param_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_C_DamageByPlayer, Damage) == 0x000090, "Member 'Prop_C_DamageByPlayer::Damage' has a wrong offset!");
 
 // Function prop.prop_C.thrown
 // 0x0008 (0x0008 - 0x0000)
@@ -465,6 +527,21 @@ static_assert(sizeof(Prop_C_Player_use) == 0x000090, "Wrong size on Prop_C_Playe
 static_assert(offsetof(Prop_C_Player_use, Player) == 0x000000, "Member 'Prop_C_Player_use::Player' has a wrong offset!");
 static_assert(offsetof(Prop_C_Player_use, Param_Hit) == 0x000008, "Member 'Prop_C_Player_use::Param_Hit' has a wrong offset!");
 
+// Function prop.prop_C.texturePickerApply
+// 0x0018 (0x0018 - 0x0000)
+struct Prop_C_TexturePickerApply final
+{
+public:
+	class UUmg_texturePicker_C*                   Picker;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Param_Index;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_C_TexturePickerApply) == 0x000008, "Wrong alignment on Prop_C_TexturePickerApply");
+static_assert(sizeof(Prop_C_TexturePickerApply) == 0x000018, "Wrong size on Prop_C_TexturePickerApply");
+static_assert(offsetof(Prop_C_TexturePickerApply, Picker) == 0x000000, "Member 'Prop_C_TexturePickerApply::Picker' has a wrong offset!");
+static_assert(offsetof(Prop_C_TexturePickerApply, Texture) == 0x000008, "Member 'Prop_C_TexturePickerApply::Texture' has a wrong offset!");
+static_assert(offsetof(Prop_C_TexturePickerApply, Param_Index) == 0x000010, "Member 'Prop_C_TexturePickerApply::Param_Index' has a wrong offset!");
+
 // Function prop.prop_C.applyColor
 // 0x0010 (0x0010 - 0x0000)
 struct Prop_C_ApplyColor final
@@ -499,6 +576,31 @@ public:
 static_assert(alignof(Prop_C_StuffUpgraded) == 0x000008, "Wrong alignment on Prop_C_StuffUpgraded");
 static_assert(sizeof(Prop_C_StuffUpgraded) == 0x000008, "Wrong size on Prop_C_StuffUpgraded");
 static_assert(offsetof(Prop_C_StuffUpgraded, GameMode) == 0x000000, "Member 'Prop_C_StuffUpgraded::GameMode' has a wrong offset!");
+
+// Function prop.prop_C.hookTension
+// 0x0008 (0x0008 - 0x0000)
+struct Prop_C_HookTension final
+{
+public:
+	class AHook_C*                                Hook;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_C_HookTension) == 0x000008, "Wrong alignment on Prop_C_HookTension");
+static_assert(sizeof(Prop_C_HookTension) == 0x000008, "Wrong size on Prop_C_HookTension");
+static_assert(offsetof(Prop_C_HookTension, Hook) == 0x000000, "Member 'Prop_C_HookTension::Hook' has a wrong offset!");
+
+// Function prop.prop_C.cleanSponge
+// 0x0010 (0x0010 - 0x0000)
+struct Prop_C_CleanSponge final
+{
+public:
+	float                                         Clean;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          Player;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_C_CleanSponge) == 0x000008, "Wrong alignment on Prop_C_CleanSponge");
+static_assert(sizeof(Prop_C_CleanSponge) == 0x000010, "Wrong size on Prop_C_CleanSponge");
+static_assert(offsetof(Prop_C_CleanSponge, Clean) == 0x000000, "Member 'Prop_C_CleanSponge::Clean' has a wrong offset!");
+static_assert(offsetof(Prop_C_CleanSponge, Player) == 0x000008, "Member 'Prop_C_CleanSponge::Player' has a wrong offset!");
 
 // Function prop.prop_C.hooked
 // 0x0008 (0x0008 - 0x0000)
@@ -707,6 +809,19 @@ static_assert(alignof(Prop_C_PlayerHandUse_RMB) == 0x000008, "Wrong alignment on
 static_assert(sizeof(Prop_C_PlayerHandUse_RMB) == 0x000008, "Wrong size on Prop_C_PlayerHandUse_RMB");
 static_assert(offsetof(Prop_C_PlayerHandUse_RMB, Player) == 0x000000, "Member 'Prop_C_PlayerHandUse_RMB::Player' has a wrong offset!");
 
+// Function prop.prop_C.receivedPhyiscsDamage
+// 0x008C (0x008C - 0x0000)
+struct Prop_C_ReceivedPhyiscsDamage final
+{
+public:
+	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hot;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+static_assert(alignof(Prop_C_ReceivedPhyiscsDamage) == 0x000004, "Wrong alignment on Prop_C_ReceivedPhyiscsDamage");
+static_assert(sizeof(Prop_C_ReceivedPhyiscsDamage) == 0x00008C, "Wrong size on Prop_C_ReceivedPhyiscsDamage");
+static_assert(offsetof(Prop_C_ReceivedPhyiscsDamage, Damage) == 0x000000, "Member 'Prop_C_ReceivedPhyiscsDamage::Damage' has a wrong offset!");
+static_assert(offsetof(Prop_C_ReceivedPhyiscsDamage, Hot) == 0x000004, "Member 'Prop_C_ReceivedPhyiscsDamage::Hot' has a wrong offset!");
+
 // Function prop.prop_C.steppedOn
 // 0x0090 (0x0090 - 0x0000)
 struct Prop_C_SteppedOn final
@@ -782,7 +897,7 @@ struct Prop_C_ImpactDamage final
 public:
 	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_3749[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0090(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Impact;                                            // 0x0098(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -793,34 +908,23 @@ static_assert(offsetof(Prop_C_ImpactDamage, Param_Hit) == 0x000004, "Member 'Pro
 static_assert(offsetof(Prop_C_ImpactDamage, Actor) == 0x000090, "Member 'Prop_C_ImpactDamage::Actor' has a wrong offset!");
 static_assert(offsetof(Prop_C_ImpactDamage, Impact) == 0x000098, "Member 'Prop_C_ImpactDamage::Impact' has a wrong offset!");
 
-// Function prop.prop_C.impactSquishCPP
-// 0x0008 (0x0008 - 0x0000)
-struct Prop_C_ImpactSquishCPP final
-{
-public:
-	class UPrimitiveComponent*                    Component;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_C_ImpactSquishCPP) == 0x000008, "Wrong alignment on Prop_C_ImpactSquishCPP");
-static_assert(sizeof(Prop_C_ImpactSquishCPP) == 0x000008, "Wrong size on Prop_C_ImpactSquishCPP");
-static_assert(offsetof(Prop_C_ImpactSquishCPP, Component) == 0x000000, "Member 'Prop_C_ImpactSquishCPP::Component' has a wrong offset!");
-
 // Function prop.prop_C.Init
 // 0x0178 (0x0178 - 0x0000)
 struct Prop_C_Init final
 {
 public:
 	ECollisionChannel                             Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_374A[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FStruct_propDynamic                    K2Node_MakeStruct_struct_propDynamic;              // 0x0010(0x0028)(HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_374B[0x5];                                     // 0x003B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B[0x5];                                       // 0x003B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_getKey_key;                               // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_SetStaticMesh_ReturnValue_1;              // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_374C[0x6];                                     // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_prop                           CallFunc_GetDataTableRowFromName_OutRow;           // 0x0058(0x0080)(HasGetValueTypeHash)
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ECollisionChannel                             Temp_byte_Variable_1;                              // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -877,9 +981,9 @@ struct Prop_C_SetNametag final
 {
 public:
 	struct FTransform                             Temp_struct_Variable;                              // 0x0000(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	class UNametagComponent_C*                    CallFunc_AddComponent_ReturnValue;                 // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UComp_nametag_C*                        CallFunc_AddComponent_ReturnValue;                 // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FBoxSphereBounds                       CallFunc_GetBounds_ReturnValue;                    // 0x0038(0x001C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_374D[0xC];                                     // 0x0054(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_54[0xC];                                       // 0x0054(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_Conv_VectorToTransform_ReturnValue;       // 0x0060(0x0030)(IsPlainOldData, NoDestructor)
 	class USphereComponent*                       CallFunc_AddComponent_ReturnValue_1;               // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -902,14 +1006,14 @@ struct Prop_C_GetData final
 public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(Parm, OutParm, HasGetValueTypeHash)
 	float                                         CallFunc_GetLifeSpan_ReturnValue;                  // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_374E[0x4];                                     // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mString                        K2Node_MakeStruct_struct_mString;                  // 0x00C8(0x0010)(HasGetValueTypeHash)
 	TArray<float>                                 K2Node_MakeArray_Array;                            // 0x00D8(0x0010)(ReferenceParm)
 	struct FStruct_mFloat                         K2Node_MakeStruct_struct_mFloat;                   // 0x00E8(0x0010)(HasGetValueTypeHash)
 	TArray<struct FStruct_mFloat>                 K2Node_MakeArray_Array_1;                          // 0x00F8(0x0010)(ReferenceParm)
 	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0108(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	TArray<bool>                                  K2Node_MakeArray_Array_2;                          // 0x0118(0x0010)(ReferenceParm)
-	uint8                                         Pad_374F[0x8];                                     // 0x0128(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_128[0x8];                                      // 0x0128(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0130(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	struct FStruct_mBool                          K2Node_MakeStruct_struct_mBool;                    // 0x0160(0x0010)(HasGetValueTypeHash)
 	TArray<struct FStruct_mBool>                  K2Node_MakeArray_Array_3;                          // 0x0170(0x0010)(ReferenceParm)
@@ -917,7 +1021,7 @@ public:
 	TArray<class FString>                         K2Node_MakeArray_Array_4;                          // 0x0188(0x0010)(ReferenceParm)
 	struct FStruct_mString                        K2Node_MakeStruct_struct_mString_1;                // 0x0198(0x0010)(HasGetValueTypeHash)
 	TArray<struct FStruct_mString>                K2Node_MakeArray_Array_5;                          // 0x01A8(0x0010)(ReferenceParm)
-	uint8                                         Pad_3750[0x8];                                     // 0x01B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B8[0x8];                                      // 0x01B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           K2Node_MakeStruct_struct_save;                     // 0x01C0(0x00C0)(HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_C_GetData) == 0x000010, "Wrong alignment on Prop_C_GetData");
@@ -946,7 +1050,7 @@ struct Prop_C_LoadData final
 public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3751[0x7];                                     // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mString                        CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	struct FStruct_mString                        CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0010)(HasGetValueTypeHash)
 	struct FStruct_propDynamic                    K2Node_MakeStruct_struct_propDynamic;              // 0x00E8(0x0028)(HasGetValueTypeHash)
@@ -955,7 +1059,7 @@ public:
 	struct FStruct_mFloat                         CallFunc_Array_Get_Item_4;                         // 0x0130(0x0010)(HasGetValueTypeHash)
 	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Array_Get_Item_5;                         // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3752[0x4];                                     // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mBool                          CallFunc_Array_Get_Item_6;                         // 0x0150(0x0010)(HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Get_Item_7;                         // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_Get_Item_8;                         // 0x0161(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -1012,6 +1116,17 @@ static_assert(alignof(Prop_C_SkipPreDelete) == 0x000001, "Wrong alignment on Pro
 static_assert(sizeof(Prop_C_SkipPreDelete) == 0x000001, "Wrong size on Prop_C_SkipPreDelete");
 static_assert(offsetof(Prop_C_SkipPreDelete, Skip) == 0x000000, "Member 'Prop_C_SkipPreDelete::Skip' has a wrong offset!");
 
+// Function prop.prop_C.gatherDataFromKey
+// 0x0001 (0x0001 - 0x0000)
+struct Prop_C_GatherDataFromKey final
+{
+public:
+	bool                                          Gather;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Prop_C_GatherDataFromKey) == 0x000001, "Wrong alignment on Prop_C_GatherDataFromKey");
+static_assert(sizeof(Prop_C_GatherDataFromKey) == 0x000001, "Wrong size on Prop_C_GatherDataFromKey");
+static_assert(offsetof(Prop_C_GatherDataFromKey, Gather) == 0x000000, "Member 'Prop_C_GatherDataFromKey::Gather' has a wrong offset!");
+
 // Function prop.prop_C.lookAt
 // 0x00C8 (0x00C8 - 0x0000)
 struct Prop_C_LookAt final
@@ -1020,11 +1135,12 @@ public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3753[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsSimulatingPhysics_ReturnValue;          // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3754[0x7];                                     // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsSimulatingPhysics_ReturnValue;          // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B2[0x6];                                       // 0x00B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetAttachParentActor_ReturnValue;         // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -1040,7 +1156,8 @@ static_assert(offsetof(Prop_C_LookAt, Param_Hit) == 0x000008, "Member 'Prop_C_Lo
 static_assert(offsetof(Prop_C_LookAt, Return) == 0x000090, "Member 'Prop_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(Prop_C_LookAt, Text) == 0x000098, "Member 'Prop_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(Prop_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'Prop_C_LookAt::boundObjectReplace' has a wrong offset!");
-static_assert(offsetof(Prop_C_LookAt, CallFunc_IsSimulatingPhysics_ReturnValue) == 0x0000B0, "Member 'Prop_C_LookAt::CallFunc_IsSimulatingPhysics_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_C_LookAt, Number) == 0x0000B0, "Member 'Prop_C_LookAt::Number' has a wrong offset!");
+static_assert(offsetof(Prop_C_LookAt, CallFunc_IsSimulatingPhysics_ReturnValue) == 0x0000B1, "Member 'Prop_C_LookAt::CallFunc_IsSimulatingPhysics_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_C_LookAt, CallFunc_GetAttachParentActor_ReturnValue) == 0x0000B8, "Member 'Prop_C_LookAt::CallFunc_GetAttachParentActor_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_C_LookAt, CallFunc_IsValid_ReturnValue) == 0x0000C0, "Member 'Prop_C_LookAt::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_C_LookAt, CallFunc_BooleanOR_ReturnValue) == 0x0000C1, "Member 'Prop_C_LookAt::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
@@ -1118,6 +1235,19 @@ static_assert(offsetof(Prop_C_CanBePutInContainer, CallFunc_BooleanAND_ReturnVal
 static_assert(offsetof(Prop_C_CanBePutInContainer, CallFunc_BooleanAND_ReturnValue_1) == 0x000005, "Member 'Prop_C_CanBePutInContainer::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(Prop_C_CanBePutInContainer, CallFunc_BooleanAND_ReturnValue_2) == 0x000006, "Member 'Prop_C_CanBePutInContainer::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
 
+// Function prop.prop_C.landedOn
+// 0x0010 (0x0010 - 0x0000)
+struct Prop_C_LandedOn final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IgnoreFallDamage;                                  // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Prop_C_LandedOn) == 0x000008, "Wrong alignment on Prop_C_LandedOn");
+static_assert(sizeof(Prop_C_LandedOn) == 0x000010, "Wrong size on Prop_C_LandedOn");
+static_assert(offsetof(Prop_C_LandedOn, Player) == 0x000000, "Member 'Prop_C_LandedOn::Player' has a wrong offset!");
+static_assert(offsetof(Prop_C_LandedOn, IgnoreFallDamage) == 0x000008, "Member 'Prop_C_LandedOn::IgnoreFallDamage' has a wrong offset!");
+
 // Function prop.prop_C.dreamInv
 // 0x0018 (0x0018 - 0x0000)
 struct Prop_C_DreamInv final
@@ -1132,31 +1262,19 @@ static_assert(offsetof(Prop_C_DreamInv, Invv) == 0x000000, "Member 'Prop_C_Dream
 static_assert(offsetof(Prop_C_DreamInv, Base) == 0x000010, "Member 'Prop_C_DreamInv::Base' has a wrong offset!");
 
 // Function prop.prop_C.GetKey
-// 0x0048 (0x0048 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct Prop_C_GetKey final
 {
 public:
 	class FString                                 Param_Key;                                         // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<uint8>                                 CallFunc_GenerateRandomBytes_ByteArray;            // 0x0018(0x0010)(ReferenceParm)
-	class FString                                 CallFunc_BytesToBase64Url_ReturnValue;             // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	const class AActor*                           Temp_object_Variable;                              // 0x0010(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_generateKey_keyOut;                       // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_C_GetKey) == 0x000008, "Wrong alignment on Prop_C_GetKey");
-static_assert(sizeof(Prop_C_GetKey) == 0x000048, "Wrong size on Prop_C_GetKey");
+static_assert(sizeof(Prop_C_GetKey) == 0x000028, "Wrong size on Prop_C_GetKey");
 static_assert(offsetof(Prop_C_GetKey, Param_Key) == 0x000000, "Member 'Prop_C_GetKey::Param_Key' has a wrong offset!");
-static_assert(offsetof(Prop_C_GetKey, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000010, "Member 'Prop_C_GetKey::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(Prop_C_GetKey, CallFunc_GenerateRandomBytes_ByteArray) == 0x000018, "Member 'Prop_C_GetKey::CallFunc_GenerateRandomBytes_ByteArray' has a wrong offset!");
-static_assert(offsetof(Prop_C_GetKey, CallFunc_BytesToBase64Url_ReturnValue) == 0x000028, "Member 'Prop_C_GetKey::CallFunc_BytesToBase64Url_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_C_GetKey, CallFunc_Array_Add_ReturnValue) == 0x000038, "Member 'Prop_C_GetKey::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_C_GetKey, CallFunc_Array_Add_ReturnValue_1) == 0x00003C, "Member 'Prop_C_GetKey::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_C_GetKey, CallFunc_Array_Find_ReturnValue) == 0x000040, "Member 'Prop_C_GetKey::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_C_GetKey, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000044, "Member 'Prop_C_GetKey::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_C_GetKey, CallFunc_IsEmpty_ReturnValue) == 0x000045, "Member 'Prop_C_GetKey::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_C_GetKey, Temp_object_Variable) == 0x000010, "Member 'Prop_C_GetKey::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_C_GetKey, CallFunc_generateKey_keyOut) == 0x000018, "Member 'Prop_C_GetKey::CallFunc_generateKey_keyOut' has a wrong offset!");
 
 // Function prop.prop_C.toolboxFix
 // 0x0010 (0x0010 - 0x0000)
@@ -1218,7 +1336,7 @@ static_assert(offsetof(Prop_C_SetPath, Path) == 0x000000, "Member 'Prop_C_SetPat
 static_assert(offsetof(Prop_C_SetPath, Return) == 0x000010, "Member 'Prop_C_SetPath::Return' has a wrong offset!");
 
 // Function prop.prop_C.getActionOptions
-// 0x00A8 (0x00A8 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct Prop_C_GetActionOptions final
 {
 public:
@@ -1228,31 +1346,34 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	TArray<class FString>                         Actions;                                           // 0x0048(0x0010)(Edit, BlueprintVisible)
-	bool                                          Temp_bool_Variable;                                // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3755[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         K2Node_MakeArray_Array;                            // 0x0060(0x0010)(ReferenceParm)
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array_1;                          // 0x0070(0x0010)(ReferenceParm)
-	bool                                          CallFunc_IsChildActor_ReturnValue;                 // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3756[0x7];                                     // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array_2;                          // 0x0088(0x0010)(ReferenceParm)
-	TArray<Enum_interactionActions>               K2Node_Select_Default;                             // 0x0098(0x0010)(ReferenceParm)
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         Actions;                                           // 0x0050(0x0010)(Edit, BlueprintVisible)
+	bool                                          Temp_bool_Variable;                                // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         K2Node_MakeArray_Array;                            // 0x0068(0x0010)(ReferenceParm)
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array_1;                          // 0x0078(0x0010)(ReferenceParm)
+	bool                                          CallFunc_IsChildActor_ReturnValue;                 // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array_2;                          // 0x0090(0x0010)(ReferenceParm)
+	TArray<Enum_interactionActions>               K2Node_Select_Default;                             // 0x00A0(0x0010)(ReferenceParm)
 };
 static_assert(alignof(Prop_C_GetActionOptions) == 0x000008, "Wrong alignment on Prop_C_GetActionOptions");
-static_assert(sizeof(Prop_C_GetActionOptions) == 0x0000A8, "Wrong size on Prop_C_GetActionOptions");
+static_assert(sizeof(Prop_C_GetActionOptions) == 0x0000B0, "Wrong size on Prop_C_GetActionOptions");
 static_assert(offsetof(Prop_C_GetActionOptions, Player) == 0x000000, "Member 'Prop_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Prop_C_GetActionOptions, Component) == 0x000008, "Member 'Prop_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Prop_C_GetActionOptions, Actor) == 0x000010, "Member 'Prop_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Prop_C_GetActionOptions, Options) == 0x000018, "Member 'Prop_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Prop_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Prop_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Prop_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Prop_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Prop_C_GetActionOptions, Actions) == 0x000048, "Member 'Prop_C_GetActionOptions::Actions' has a wrong offset!");
-static_assert(offsetof(Prop_C_GetActionOptions, Temp_bool_Variable) == 0x000058, "Member 'Prop_C_GetActionOptions::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000060, "Member 'Prop_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Prop_C_GetActionOptions, K2Node_MakeArray_Array_1) == 0x000070, "Member 'Prop_C_GetActionOptions::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(Prop_C_GetActionOptions, CallFunc_IsChildActor_ReturnValue) == 0x000080, "Member 'Prop_C_GetActionOptions::CallFunc_IsChildActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_C_GetActionOptions, K2Node_MakeArray_Array_2) == 0x000088, "Member 'Prop_C_GetActionOptions::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(Prop_C_GetActionOptions, K2Node_Select_Default) == 0x000098, "Member 'Prop_C_GetActionOptions::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(Prop_C_GetActionOptions, Number) == 0x000048, "Member 'Prop_C_GetActionOptions::Number' has a wrong offset!");
+static_assert(offsetof(Prop_C_GetActionOptions, Actions) == 0x000050, "Member 'Prop_C_GetActionOptions::Actions' has a wrong offset!");
+static_assert(offsetof(Prop_C_GetActionOptions, Temp_bool_Variable) == 0x000060, "Member 'Prop_C_GetActionOptions::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000068, "Member 'Prop_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Prop_C_GetActionOptions, K2Node_MakeArray_Array_1) == 0x000078, "Member 'Prop_C_GetActionOptions::K2Node_MakeArray_Array_1' has a wrong offset!");
+static_assert(offsetof(Prop_C_GetActionOptions, CallFunc_IsChildActor_ReturnValue) == 0x000088, "Member 'Prop_C_GetActionOptions::CallFunc_IsChildActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_C_GetActionOptions, K2Node_MakeArray_Array_2) == 0x000090, "Member 'Prop_C_GetActionOptions::K2Node_MakeArray_Array_2' has a wrong offset!");
+static_assert(offsetof(Prop_C_GetActionOptions, K2Node_Select_Default) == 0x0000A0, "Member 'Prop_C_GetActionOptions::K2Node_Select_Default' has a wrong offset!");
 
 // Function prop.prop_C.gascanFuel
 // 0x0010 (0x0010 - 0x0000)
@@ -1277,6 +1398,17 @@ public:
 static_assert(alignof(Prop_C_SkipRadial) == 0x000001, "Wrong alignment on Prop_C_SkipRadial");
 static_assert(sizeof(Prop_C_SkipRadial) == 0x000001, "Wrong size on Prop_C_SkipRadial");
 static_assert(offsetof(Prop_C_SkipRadial, Skip) == 0x000000, "Member 'Prop_C_SkipRadial::Skip' has a wrong offset!");
+
+// Function prop.prop_C.getPriceMultiplier
+// 0x0004 (0x0004 - 0x0000)
+struct Prop_C_GetPriceMultiplier final
+{
+public:
+	float                                         PriceMult;                                         // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_C_GetPriceMultiplier) == 0x000004, "Wrong alignment on Prop_C_GetPriceMultiplier");
+static_assert(sizeof(Prop_C_GetPriceMultiplier) == 0x000004, "Wrong size on Prop_C_GetPriceMultiplier");
+static_assert(offsetof(Prop_C_GetPriceMultiplier, PriceMult) == 0x000000, "Member 'Prop_C_GetPriceMultiplier::PriceMult' has a wrong offset!");
 
 }
 

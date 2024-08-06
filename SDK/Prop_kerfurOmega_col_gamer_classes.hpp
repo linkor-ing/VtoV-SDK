@@ -11,24 +11,24 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Prop_kerfurOmega_col_classes.hpp"
 #include "Enum_interactionActions_structs.hpp"
+#include "Prop_kerfurOmega_col_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass prop_kerfurOmega_col_gamer.prop_kerfurOmega_col_gamer_C
-// 0x0008 (0x03A0 - 0x0398)
+// 0x0008 (0x03C0 - 0x03B8)
 class AProp_kerfurOmega_col_gamer_C final : public AProp_kerfurOmega_col_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_kerfurOmega_col_gamer_C;       // 0x0398(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_kerfurOmega_col_gamer_C;       // 0x03B8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_prop_kerfurOmega_col_gamer(int32 EntryPoint);
 	void ReceiveTick(float DeltaSeconds);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
 
 public:
 	static class UClass* StaticClass()
@@ -41,8 +41,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_kerfurOmega_col_gamer_C) == 0x000008, "Wrong alignment on AProp_kerfurOmega_col_gamer_C");
-static_assert(sizeof(AProp_kerfurOmega_col_gamer_C) == 0x0003A0, "Wrong size on AProp_kerfurOmega_col_gamer_C");
-static_assert(offsetof(AProp_kerfurOmega_col_gamer_C, UberGraphFrame_Prop_kerfurOmega_col_gamer_C) == 0x000398, "Member 'AProp_kerfurOmega_col_gamer_C::UberGraphFrame_Prop_kerfurOmega_col_gamer_C' has a wrong offset!");
+static_assert(sizeof(AProp_kerfurOmega_col_gamer_C) == 0x0003C0, "Wrong size on AProp_kerfurOmega_col_gamer_C");
+static_assert(offsetof(AProp_kerfurOmega_col_gamer_C, UberGraphFrame_Prop_kerfurOmega_col_gamer_C) == 0x0003B8, "Member 'AProp_kerfurOmega_col_gamer_C::UberGraphFrame_Prop_kerfurOmega_col_gamer_C' has a wrong offset!");
 
 }
 

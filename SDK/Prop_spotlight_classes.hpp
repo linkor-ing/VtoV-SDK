@@ -18,15 +18,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_spotlight.prop_spotlight_C
-// 0x0020 (0x0388 - 0x0368)
+// 0x0020 (0x0398 - 0x0378)
 class AProp_spotlight_C final : public AProp_C
 {
 public:
-	uint8                                         Pad_3A65[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_spotlight_C;                   // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UChildActorComponent*                   Head;                                              // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPhysicsConstraintComponent*            PhysicsConstraint;                                 // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class AProp_spotlightHead_C*                  LighHead;                                          // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_spotlight_C;                   // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UChildActorComponent*                   Head;                                              // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPhysicsConstraintComponent*            PhysicsConstraint;                                 // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class AProp_spotlightHead_C*                  LighHead;                                          // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_spotlight(int32 EntryPoint);
@@ -45,11 +44,11 @@ public:
 	}
 };
 static_assert(alignof(AProp_spotlight_C) == 0x000008, "Wrong alignment on AProp_spotlight_C");
-static_assert(sizeof(AProp_spotlight_C) == 0x000388, "Wrong size on AProp_spotlight_C");
-static_assert(offsetof(AProp_spotlight_C, UberGraphFrame_Prop_spotlight_C) == 0x000368, "Member 'AProp_spotlight_C::UberGraphFrame_Prop_spotlight_C' has a wrong offset!");
-static_assert(offsetof(AProp_spotlight_C, Head) == 0x000370, "Member 'AProp_spotlight_C::Head' has a wrong offset!");
-static_assert(offsetof(AProp_spotlight_C, PhysicsConstraint) == 0x000378, "Member 'AProp_spotlight_C::PhysicsConstraint' has a wrong offset!");
-static_assert(offsetof(AProp_spotlight_C, LighHead) == 0x000380, "Member 'AProp_spotlight_C::LighHead' has a wrong offset!");
+static_assert(sizeof(AProp_spotlight_C) == 0x000398, "Wrong size on AProp_spotlight_C");
+static_assert(offsetof(AProp_spotlight_C, UberGraphFrame_Prop_spotlight_C) == 0x000378, "Member 'AProp_spotlight_C::UberGraphFrame_Prop_spotlight_C' has a wrong offset!");
+static_assert(offsetof(AProp_spotlight_C, Head) == 0x000380, "Member 'AProp_spotlight_C::Head' has a wrong offset!");
+static_assert(offsetof(AProp_spotlight_C, PhysicsConstraint) == 0x000388, "Member 'AProp_spotlight_C::PhysicsConstraint' has a wrong offset!");
+static_assert(offsetof(AProp_spotlight_C, LighHead) == 0x000390, "Member 'AProp_spotlight_C::LighHead' has a wrong offset!");
 
 }
 

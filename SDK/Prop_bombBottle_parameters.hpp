@@ -11,29 +11,99 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function prop_bombBottle.prop_bombBottle_C.ExecuteUbergraph_prop_bombBottle
-// 0x0050 (0x0050 - 0x0000)
+// 0x0250 (0x0250 - 0x0000)
 struct Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetCenterOfMass_ReturnValue;              // 0x0004(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0010(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AExplosion_C*                           CallFunc_FinishSpawningActor_ReturnValue;          // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0004(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0010(0x0010)(ConstParm, ReferenceParm)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0020(0x0030)(IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AExplosion_C*                           CallFunc_FinishSpawningActor_ReturnValue;          // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0060(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EObjectTypeQuery>                      CallFunc_obj_static_obj;                           // 0x0070(0x0010)(ReferenceParm)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0080(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x008C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Temp_struct_Variable;                              // 0x0098(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_SphereTraceSingleForObjects_OutHit;       // 0x00A4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_SphereTraceSingleForObjects_ReturnValue;  // 0x012C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x012D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x012E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_12F[0x1];                                      // 0x012F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0138(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0144(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0150(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x015C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0178(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0194(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x01A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Temp_struct_Variable_1;                            // 0x01AC(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x01B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C4[0xC];                                      // 0x01C4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x01D0(0x0030)(IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue_2;              // 0x0200(0x0030)(IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFire_C*                                CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFire_C*                                CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle) == 0x000010, "Wrong alignment on Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle");
-static_assert(sizeof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle) == 0x000050, "Wrong size on Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle");
+static_assert(sizeof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle) == 0x000250, "Wrong size on Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle");
 static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, EntryPoint) == 0x000000, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_GetCenterOfMass_ReturnValue) == 0x000004, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_GetCenterOfMass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_MakeTransform_ReturnValue) == 0x000010, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000040, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_FinishSpawningActor_ReturnValue) == 0x000048, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000004, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, Temp_object_Variable) == 0x000010, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_MakeTransform_ReturnValue) == 0x000020, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000050, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_FinishSpawningActor_ReturnValue) == 0x000058, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000060, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_obj_static_obj) == 0x000070, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_obj_static_obj' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000080, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_Add_VectorVector_ReturnValue) == 0x00008C, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, Temp_struct_Variable) == 0x000098, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_SphereTraceSingleForObjects_OutHit) == 0x0000A4, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_SphereTraceSingleForObjects_OutHit' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_SphereTraceSingleForObjects_ReturnValue) == 0x00012C, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_SphereTraceSingleForObjects_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_BreakHitResult_bBlockingHit) == 0x00012D, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_BreakHitResult_bInitialOverlap) == 0x00012E, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_BreakHitResult_Time) == 0x000130, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_BreakHitResult_Distance) == 0x000134, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_BreakHitResult_Location) == 0x000138, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_BreakHitResult_ImpactPoint) == 0x000144, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_BreakHitResult_Normal) == 0x000150, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_BreakHitResult_ImpactNormal) == 0x00015C, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_BreakHitResult_PhysMat) == 0x000168, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_BreakHitResult_HitActor) == 0x000170, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_BreakHitResult_HitComponent) == 0x000178, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_BreakHitResult_HitBoneName) == 0x000180, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_BreakHitResult_HitItem) == 0x000188, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_BreakHitResult_ElementIndex) == 0x00018C, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_BreakHitResult_FaceIndex) == 0x000190, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_BreakHitResult_TraceStart) == 0x000194, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_BreakHitResult_TraceEnd) == 0x0001A0, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, Temp_struct_Variable_1) == 0x0001AC, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::Temp_struct_Variable_1' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_Add_VectorVector_ReturnValue_1) == 0x0001B8, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_MakeTransform_ReturnValue_1) == 0x0001D0, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_MakeTransform_ReturnValue_2) == 0x000200, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_MakeTransform_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000230, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x000238, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000240, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x000248, "Member 'Prop_bombBottle_C_ExecuteUbergraph_prop_bombBottle::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
 
 }
 

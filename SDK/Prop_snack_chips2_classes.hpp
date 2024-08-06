@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_snack_chips2.prop_snack_chips2_C
-// 0x0000 (0x0388 - 0x0388)
+// 0x0000 (0x0398 - 0x0398)
 class AProp_snack_chips2_C final : public AProp_snack_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_snack_chips2_C) == 0x000008, "Wrong alignment on AProp_snack_chips2_C");
-static_assert(sizeof(AProp_snack_chips2_C) == 0x000388, "Wrong size on AProp_snack_chips2_C");
+static_assert(sizeof(AProp_snack_chips2_C) == 0x000398, "Wrong size on AProp_snack_chips2_C");
 
 }
 

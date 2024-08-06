@@ -10,68 +10,65 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Enum_interactionActions_structs.hpp"
-#include "Engine_structs.hpp"
 #include "Struct_save_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Struct_mBool_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function prop_arirLamp.prop_arirLamp_C.ExecuteUbergraph_prop_arirLamp
-// 0x0208 (0x0208 - 0x0000)
+// 0x0200 (0x0200 - 0x0000)
 struct Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1318[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit;                                  // 0x0010(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x009D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1319[0x2];                                     // 0x009E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Lerp_ReturnValue;                         // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x00A4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_VLerp_ReturnValue_1;                      // 0x00B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_131A[0x4];                                     // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue_1;        // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component;          // 0x00D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_131B[0x7];                                     // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component_1;        // 0x00E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_131C[0x3];                                     // 0x00E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetActorRelativeLocation_SweepHitResult; // 0x00EC(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                             CallFunc_K2_SetActorRelativeLocation_SweepHitResult_1; // 0x0174(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x01FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_131D[0x3];                                     // 0x01FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9A[0x2];                                       // 0x009A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Lerp_ReturnValue;                         // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x00A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_VLerp_ReturnValue_1;                      // 0x00AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue_1;        // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component;          // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component_1;        // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_E1[0x3];                                       // 0x00E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_K2_SetActorRelativeLocation_SweepHitResult; // 0x00E4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetActorRelativeLocation_SweepHitResult_1; // 0x016C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x01F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1F5[0x3];                                      // 0x01F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp) == 0x000008, "Wrong alignment on Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp");
-static_assert(sizeof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp) == 0x000208, "Wrong size on Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp");
+static_assert(sizeof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp) == 0x000200, "Wrong size on Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp");
 static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, EntryPoint) == 0x000000, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, K2Node_Event_player) == 0x000008, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::K2Node_Event_player' has a wrong offset!");
 static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, K2Node_Event_hit) == 0x000010, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, K2Node_Event_index) == 0x000098, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, K2Node_Event_action) == 0x00009C, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, K2Node_SwitchEnum_CmpSuccess) == 0x00009D, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, CallFunc_Lerp_ReturnValue) == 0x0000A0, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, CallFunc_VLerp_ReturnValue) == 0x0000A4, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::CallFunc_VLerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, CallFunc_VLerp_ReturnValue_1) == 0x0000B0, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::CallFunc_VLerp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, CallFunc_K2_GetRootComponent_ReturnValue) == 0x0000C0, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, CallFunc_K2_GetRootComponent_ReturnValue_1) == 0x0000C8, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::CallFunc_K2_GetRootComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, K2Node_DynamicCast_AsPrimitive_Component) == 0x0000D0, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::K2Node_DynamicCast_AsPrimitive_Component' has a wrong offset!");
-static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, K2Node_DynamicCast_bSuccess) == 0x0000D8, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, K2Node_DynamicCast_AsPrimitive_Component_1) == 0x0000E0, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::K2Node_DynamicCast_AsPrimitive_Component_1' has a wrong offset!");
-static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, K2Node_DynamicCast_bSuccess_1) == 0x0000E8, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, CallFunc_K2_SetActorRelativeLocation_SweepHitResult) == 0x0000EC, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::CallFunc_K2_SetActorRelativeLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, CallFunc_K2_SetActorRelativeLocation_SweepHitResult_1) == 0x000174, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::CallFunc_K2_SetActorRelativeLocation_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, CallFunc_Not_PreBool_ReturnValue) == 0x0001FC, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, CallFunc_SelectFloat_ReturnValue) == 0x000200, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, K2Node_Event_action) == 0x000098, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, K2Node_SwitchEnum_CmpSuccess) == 0x000099, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, CallFunc_Lerp_ReturnValue) == 0x00009C, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::CallFunc_Lerp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, CallFunc_VLerp_ReturnValue) == 0x0000A0, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::CallFunc_VLerp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, CallFunc_VLerp_ReturnValue_1) == 0x0000AC, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::CallFunc_VLerp_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, CallFunc_K2_GetRootComponent_ReturnValue) == 0x0000B8, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, CallFunc_K2_GetRootComponent_ReturnValue_1) == 0x0000C0, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::CallFunc_K2_GetRootComponent_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, K2Node_DynamicCast_AsPrimitive_Component) == 0x0000C8, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::K2Node_DynamicCast_AsPrimitive_Component' has a wrong offset!");
+static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, K2Node_DynamicCast_bSuccess) == 0x0000D0, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, K2Node_DynamicCast_AsPrimitive_Component_1) == 0x0000D8, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::K2Node_DynamicCast_AsPrimitive_Component_1' has a wrong offset!");
+static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, K2Node_DynamicCast_bSuccess_1) == 0x0000E0, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, CallFunc_K2_SetActorRelativeLocation_SweepHitResult) == 0x0000E4, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::CallFunc_K2_SetActorRelativeLocation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, CallFunc_K2_SetActorRelativeLocation_SweepHitResult_1) == 0x00016C, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::CallFunc_K2_SetActorRelativeLocation_SweepHitResult_1' has a wrong offset!");
+static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, CallFunc_Not_PreBool_ReturnValue) == 0x0001F4, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp, CallFunc_SelectFloat_ReturnValue) == 0x0001F8, "Member 'Prop_arirLamp_C_ExecuteUbergraph_prop_arirLamp::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
 
 // Function prop_arirLamp.prop_arirLamp_C.actionOptionIndex
 // 0x0098 (0x0098 - 0x0000)
@@ -80,15 +77,13 @@ struct Prop_arirLamp_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_arirLamp_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_arirLamp_C_ActionOptionIndex");
 static_assert(sizeof(Prop_arirLamp_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_arirLamp_C_ActionOptionIndex");
 static_assert(offsetof(Prop_arirLamp_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_arirLamp_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(Prop_arirLamp_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_arirLamp_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_arirLamp_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_arirLamp_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(Prop_arirLamp_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_arirLamp_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(Prop_arirLamp_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_arirLamp_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function prop_arirLamp.prop_arirLamp_C.loadData
 // 0x00E0 (0x00E0 - 0x0000)
@@ -98,7 +93,7 @@ public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadData_return;                          // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_131E[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mBool                          CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -134,7 +129,7 @@ static_assert(offsetof(Prop_arirLamp_C_GetData, K2Node_MakeArray_Array_1) == 0x0
 static_assert(offsetof(Prop_arirLamp_C_GetData, K2Node_SetFieldsInStruct_StructOut) == 0x0001C0, "Member 'Prop_arirLamp_C_GetData::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
 
 // Function prop_arirLamp.prop_arirLamp_C.getActionOptions
-// 0x0058 (0x0058 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct Prop_arirLamp_C_GetActionOptions final
 {
 public:
@@ -144,17 +139,20 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
 };
 static_assert(alignof(Prop_arirLamp_C_GetActionOptions) == 0x000008, "Wrong alignment on Prop_arirLamp_C_GetActionOptions");
-static_assert(sizeof(Prop_arirLamp_C_GetActionOptions) == 0x000058, "Wrong size on Prop_arirLamp_C_GetActionOptions");
+static_assert(sizeof(Prop_arirLamp_C_GetActionOptions) == 0x000060, "Wrong size on Prop_arirLamp_C_GetActionOptions");
 static_assert(offsetof(Prop_arirLamp_C_GetActionOptions, Player) == 0x000000, "Member 'Prop_arirLamp_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Prop_arirLamp_C_GetActionOptions, Component) == 0x000008, "Member 'Prop_arirLamp_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Prop_arirLamp_C_GetActionOptions, Actor) == 0x000010, "Member 'Prop_arirLamp_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Prop_arirLamp_C_GetActionOptions, Options) == 0x000018, "Member 'Prop_arirLamp_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Prop_arirLamp_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Prop_arirLamp_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Prop_arirLamp_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Prop_arirLamp_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Prop_arirLamp_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'Prop_arirLamp_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Prop_arirLamp_C_GetActionOptions, Number) == 0x000048, "Member 'Prop_arirLamp_C_GetActionOptions::Number' has a wrong offset!");
+static_assert(offsetof(Prop_arirLamp_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Prop_arirLamp_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 }
 

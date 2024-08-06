@@ -19,32 +19,31 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_varg.prop_varg_C
-// 0x0028 (0x0390 - 0x0368)
+// 0x0028 (0x03A0 - 0x0378)
 class AProp_varg_C final : public AProp_C
 {
 public:
-	uint8                                         Pad_347E[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_varg_C;                        // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UAudioComponent*                        Domerr;                                            // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        JoleMonkeMode;                                     // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        Mushrooms;                                         // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          CanIgnite;                                         // 0x0388(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Spwn;                                              // 0x0389(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_varg_C;                        // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UAudioComponent*                        Domerr;                                            // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        JoleMonkeMode;                                     // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        Mushrooms;                                         // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          CanIgnite;                                         // 0x0398(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Spwn;                                              // 0x0399(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_prop_varg(int32 EntryPoint);
 	void BndEvt__prop_varg_domerr_K2Node_ComponentBoundEvent_1_OnAudioFinished__DelegateSignature();
-	void ReceiveBeginPlay();
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
 	void BndEvt__prop_varg_joleMonkeMode_K2Node_ComponentBoundEvent_0_OnAudioFinished__DelegateSignature();
+	void EnteredTheWater();
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
 	void Ignite(float Fuel);
+	void ReceiveBeginPlay();
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
 	void Microwave();
-	void EnteredTheWater();
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 
 public:
 	static class UClass* StaticClass()
@@ -57,13 +56,13 @@ public:
 	}
 };
 static_assert(alignof(AProp_varg_C) == 0x000008, "Wrong alignment on AProp_varg_C");
-static_assert(sizeof(AProp_varg_C) == 0x000390, "Wrong size on AProp_varg_C");
-static_assert(offsetof(AProp_varg_C, UberGraphFrame_Prop_varg_C) == 0x000368, "Member 'AProp_varg_C::UberGraphFrame_Prop_varg_C' has a wrong offset!");
-static_assert(offsetof(AProp_varg_C, Domerr) == 0x000370, "Member 'AProp_varg_C::Domerr' has a wrong offset!");
-static_assert(offsetof(AProp_varg_C, JoleMonkeMode) == 0x000378, "Member 'AProp_varg_C::JoleMonkeMode' has a wrong offset!");
-static_assert(offsetof(AProp_varg_C, Mushrooms) == 0x000380, "Member 'AProp_varg_C::Mushrooms' has a wrong offset!");
-static_assert(offsetof(AProp_varg_C, CanIgnite) == 0x000388, "Member 'AProp_varg_C::CanIgnite' has a wrong offset!");
-static_assert(offsetof(AProp_varg_C, Spwn) == 0x000389, "Member 'AProp_varg_C::Spwn' has a wrong offset!");
+static_assert(sizeof(AProp_varg_C) == 0x0003A0, "Wrong size on AProp_varg_C");
+static_assert(offsetof(AProp_varg_C, UberGraphFrame_Prop_varg_C) == 0x000378, "Member 'AProp_varg_C::UberGraphFrame_Prop_varg_C' has a wrong offset!");
+static_assert(offsetof(AProp_varg_C, Domerr) == 0x000380, "Member 'AProp_varg_C::Domerr' has a wrong offset!");
+static_assert(offsetof(AProp_varg_C, JoleMonkeMode) == 0x000388, "Member 'AProp_varg_C::JoleMonkeMode' has a wrong offset!");
+static_assert(offsetof(AProp_varg_C, Mushrooms) == 0x000390, "Member 'AProp_varg_C::Mushrooms' has a wrong offset!");
+static_assert(offsetof(AProp_varg_C, CanIgnite) == 0x000398, "Member 'AProp_varg_C::CanIgnite' has a wrong offset!");
+static_assert(offsetof(AProp_varg_C, Spwn) == 0x000399, "Member 'AProp_varg_C::Spwn' has a wrong offset!");
 
 }
 

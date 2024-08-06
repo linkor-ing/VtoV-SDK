@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "Struct_save_structs.hpp"
-#include "Enum_interactionActions_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Enum_kerfurCommand_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
 #include "AIModule_structs.hpp"
 
 
@@ -23,93 +23,103 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass kerfurOmega.kerfurOmega_C
-// 0x0340 (0x0800 - 0x04C0)
-#pragma pack(push, 0x1)
-class alignas(0x10) AKerfurOmega_C : public ACharacter
+// 0x0370 (0x0830 - 0x04C0)
+class AKerfurOmega_C : public ACharacter
 {
 public:
-	uint8                                         Pad_289B[0x8];                                     // 0x04B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B8[0x8];                                      // 0x04B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UParticleSystemComponent*               Eff_lifeBelly;                                     // 0x04C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPointLightComponent*                   LifeLight;                                         // 0x04D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               Eff_lifeNeck;                                      // 0x04D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               Eff_lifeFoot_L;                                    // 0x04E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               Eff_lifeFoot_R;                                    // 0x04E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               Eff_lifeLeg_L;                                     // 0x04F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               Eff_lifeLeg_R;                                     // 0x04F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               Eff_lifeThigh_L;                                   // 0x0500(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               Eff_lifeThigh_R;                                   // 0x0508(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               Eff_lifeHand_L;                                    // 0x0510(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               Eff_lifeHand_R;                                    // 0x0518(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               Eff_lifeArm_L;                                     // 0x0520(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               Eff_lifeArm_R;                                     // 0x0528(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               Eff_lifeShoulder_L;                                // 0x0530(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               Eff_lifeShoulder_R;                                // 0x0538(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UArrowComponent*                        Forward;                                           // 0x0540(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBillboardComponent*                    GrabPivot;                                         // 0x0548(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBillboardComponent*                    GrabPivot2;                                        // 0x0550(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBillboardComponent*                    GrabPivot1;                                        // 0x0558(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh1;                                       // 0x0560(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0568(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UArrowComponent*                        MeshForw;                                          // 0x0570(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USpringArmComponent*                    MeshLag;                                           // 0x0578(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   Cam;                                               // 0x0580(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        KerfurEXE;                                         // 0x0588(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        Audio;                                             // 0x0590(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         GrabAnim_a_703BB32846D7713E5E4213947B567208;       // 0x0598(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            GrabAnim__Direction_703BB32846D7713E5E4213947B567208; // 0x059C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_289C[0x3];                                     // 0x059D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     GrabAnim;                                          // 0x05A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_kerfurCommand                            State;                                             // 0x05A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_289D[0x7];                                     // 0x05A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                MoveTo;                                            // 0x05B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AServerBox_C*                           Server;                                            // 0x05B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Kill;                                              // 0x05C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_289E[0x7];                                     // 0x05C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         DoneDishes;                                        // 0x05C8(0x0010)(Edit, BlueprintVisible)
-	class ADish_C*                                Task;                                              // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FString>                         Hashes;                                            // 0x05E0(0x0010)(Edit, BlueprintVisible)
-	class FString                                 CurrHash;                                          // 0x05F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CurrDIsh;                                          // 0x0600(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 Report;                                            // 0x0610(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	class AProp_camera_good_C*                    Camera;                                            // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGenerator_C*                           Transformer;                                       // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                TargetLoc;                                         // 0x0630(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_289F[0x4];                                     // 0x063C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 TargetActor;                                       // 0x0640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                LastMeshLoc;                                       // 0x0648(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                MeshVel;                                           // 0x0654(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Lean;                                              // 0x0660(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               Floor;                                             // 0x0664(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Animation;                                         // 0x0670(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_28A0[0x7];                                     // 0x0671(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 HoldObject;                                        // 0x0678(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UKerfurOmegaV1_Skeleton_AnimBlueprint_C* Anim;                                              // 0x0680(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_28A1[0x8];                                     // 0x0688(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_save                           HoldObjectData;                                    // 0x0690(0x00C0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	class FString                                 StartMsg;                                          // 0x0750(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	int32                                         Type;                                              // 0x0760(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	bool                                          RemoteControl;                                     // 0x0764(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_28A2[0x3];                                     // 0x0765(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                RC_vector;                                         // 0x0768(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               Floor_lerp;                                        // 0x0774(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	class AKerfusFace_C*                          Face;                                              // 0x0780(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               Dynmat;                                            // 0x0788(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Sentient;                                          // 0x0790(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_28A3[0x7];                                     // 0x0791(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FName>                           Drip;                                              // 0x0798(0x0010)(Edit, BlueprintVisible)
-	TArray<class UStaticMeshComponent*>           DripArray;                                         // 0x07A8(0x0010)(Edit, BlueprintVisible, ContainsInstancedReference)
-	TArray<class FName>                           DripBones;                                         // 0x07B8(0x0010)(Edit, BlueprintVisible)
-	int32                                         SelectMode;                                        // 0x07C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	bool                                          HasPaper;                                          // 0x07CC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_28A4[0x3];                                     // 0x07CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FName>                           Gibs;                                              // 0x07D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	float                                         Meow;                                              // 0x07E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_28A5[0x4];                                     // 0x07E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AServerBox_C*>                   ServerIgnores;                                     // 0x07E8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	class UComp_radarPoint_C*                     Comp_radarPoint;                                   // 0x04C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNavigationInvokerComponent*            NavigationInvoker;                                 // 0x04D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Eff_lifeBelly;                                     // 0x04D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPointLightComponent*                   LifeLight;                                         // 0x04E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Eff_lifeNeck;                                      // 0x04E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Eff_lifeFoot_L;                                    // 0x04F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Eff_lifeFoot_R;                                    // 0x04F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Eff_lifeLeg_L;                                     // 0x0500(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Eff_lifeLeg_R;                                     // 0x0508(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Eff_lifeThigh_L;                                   // 0x0510(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Eff_lifeThigh_R;                                   // 0x0518(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Eff_lifeHand_L;                                    // 0x0520(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Eff_lifeHand_R;                                    // 0x0528(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Eff_lifeArm_L;                                     // 0x0530(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Eff_lifeArm_R;                                     // 0x0538(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Eff_lifeShoulder_L;                                // 0x0540(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Eff_lifeShoulder_R;                                // 0x0548(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        Forward;                                           // 0x0550(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    GrabPivot;                                         // 0x0558(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    GrabPivot2;                                        // 0x0560(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    GrabPivot1;                                        // 0x0568(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh1;                                       // 0x0570(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0578(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        MeshForw;                                          // 0x0580(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USpringArmComponent*                    MeshLag;                                           // 0x0588(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   Cam;                                               // 0x0590(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        KerfurEXE;                                         // 0x0598(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        Audio;                                             // 0x05A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         GrabAnim_a_703BB32846D7713E5E4213947B567208;       // 0x05A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            GrabAnim__Direction_703BB32846D7713E5E4213947B567208; // 0x05AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5AD[0x3];                                      // 0x05AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     GrabAnim;                                          // 0x05B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_kerfurCommand                            State;                                             // 0x05B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5B9[0x7];                                      // 0x05B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                MoveTo;                                            // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AServerBox_C*                           Server;                                            // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Kill;                                              // 0x05D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5D1[0x7];                                      // 0x05D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         DoneDishes;                                        // 0x05D8(0x0010)(Edit, BlueprintVisible)
+	class ADish_C*                                Task;                                              // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FString>                         Hashes;                                            // 0x05F0(0x0010)(Edit, BlueprintVisible)
+	class FString                                 CurrHash;                                          // 0x0600(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CurrDIsh;                                          // 0x0610(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 Report;                                            // 0x0620(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	class AProp_camera_good_C*                    Camera;                                            // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGenerator_C*                           Transformer;                                       // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                TargetLoc;                                         // 0x0640(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_64C[0x4];                                      // 0x064C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 TargetActor;                                       // 0x0650(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                LastMeshLoc;                                       // 0x0658(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                MeshVel;                                           // 0x0664(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Lean;                                              // 0x0670(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               Floor;                                             // 0x0674(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Animation;                                         // 0x0680(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_681[0x7];                                      // 0x0681(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 HoldObject;                                        // 0x0688(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UKerfurOmegaV1_Skeleton_AnimBlueprint_C* Anim;                                              // 0x0690(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_698[0x8];                                      // 0x0698(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_save                           HoldObjectData;                                    // 0x06A0(0x00C0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	class FString                                 StartMsg;                                          // 0x0760(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	int32                                         Type;                                              // 0x0770(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	bool                                          RemoteControl;                                     // 0x0774(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_775[0x3];                                      // 0x0775(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                RC_vector;                                         // 0x0778(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               Floor_lerp;                                        // 0x0784(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class AKerfusFace_C*                          Face;                                              // 0x0790(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               Dynmat;                                            // 0x0798(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Sentient;                                          // 0x07A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	uint8                                         Pad_7A1[0x7];                                      // 0x07A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FName>                           Drip;                                              // 0x07A8(0x0010)(Edit, BlueprintVisible)
+	TArray<class UStaticMeshComponent*>           DripArray;                                         // 0x07B8(0x0010)(Edit, BlueprintVisible, ContainsInstancedReference)
+	TArray<class FName>                           DripBones;                                         // 0x07C8(0x0010)(Edit, BlueprintVisible)
+	int32                                         SelectMode;                                        // 0x07D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	bool                                          HasPaper;                                          // 0x07DC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_7DD[0x3];                                      // 0x07DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FName>                           Gibs;                                              // 0x07E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	float                                         Meow;                                              // 0x07F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7F4[0x4];                                      // 0x07F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AServerBox_C*>                   ServerIgnores;                                     // 0x07F8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	class ACar1_C*                                OccupyCar;                                         // 0x0808(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          SkipFaceAssign;                                    // 0x0810(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_811[0x7];                                      // 0x0811(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 DropProp;                                          // 0x0818(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             FootstepSound;                                     // 0x0820(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMesh*                          SkinMesh;                                          // 0x0828(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_kerfurOmega(int32 EntryPoint);
+	void AttemptIgnite();
+	void Ignite(float Fuel);
+	void Step();
 	void ReachedByExplosion(const struct FVector& Location, float Damage);
 	void AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Hit, const struct FVector& Impact, bool SkipSetting);
 	void MakeMeow();
@@ -128,8 +138,11 @@ public:
 	void FindServer();
 	void MoveToServ();
 	void Move(bool MoveServ);
+	void PlayerR(class AMainPlayer_C* Player);
+	void PlayerHold(class AMainPlayer_C* Player);
+	void PlayerUnequip(class AMainPlayer_C* Player);
 	void UpdateStrAgl();
-	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit);
+	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage);
 	void Thrown(class AMainPlayer_C* Player);
 	void broken_fire();
 	void broken();
@@ -137,8 +150,10 @@ public:
 	void Kicked(bool Kick);
 	void Player_use(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void DriveDetached();
+	void HookTension(class AHook_C* Hook);
+	void CleanSponge(float Clean, class AMainPlayer_C* Player);
+	void Crafted();
 	void Hooked(class AHook_C* Hook);
-	void AttemptIgnite();
 	void PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void Slice(bool Clean);
 	void bitten();
@@ -155,10 +170,9 @@ public:
 	void Exploded(float Damage, const struct FVector& Location);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
-	void ReceivedPhyiscsDamage();
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
+	void ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot);
 	void Microwave();
-	void Ignite(float Fuel);
 	void FireDamage(float Damage);
 	void SteppedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void Unhook();
@@ -175,6 +189,7 @@ public:
 	void EnterWater(class AWaterVolume_C* Water);
 	void ImpactDamage(float Damage, const struct FHitResult& Hit, class AActor* Actor, const struct FVector& Impact);
 	void SetIgnoreSave(bool Ignore);
+	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void ApplyColor(const struct FLinearColor& Color);
 	void PropRenderer_finishProps();
 	void GamemodeMakeKeys();
@@ -186,6 +201,8 @@ public:
 	void GamemodeBeginPlay();
 	void SignalSaved();
 	void SignalDeleted();
+	void OnSuccess_89CA73914C05883F3C2B2BBD3C9C7709(EPathFollowingResult MovementResult);
+	void OnFail_89CA73914C05883F3C2B2BBD3C9C7709(EPathFollowingResult MovementResult);
 	void OnCompleted_E6FBFE3B4BFD80CBCAB060AEEECBDEA7(class FName NotifyName);
 	void OnBlendOut_E6FBFE3B4BFD80CBCAB060AEEECBDEA7(class FName NotifyName);
 	void OnInterrupted_E6FBFE3B4BFD80CBCAB060AEEECBDEA7(class FName NotifyName);
@@ -244,13 +261,19 @@ public:
 	void MakeSentient();
 	void MakeFace();
 	void UpdateDrip();
+	void TryToOccupyCar(class ACar1_C* Car);
+	void FailCar();
+	void SitOnCar(class ACar1_C* Param_OccupyCar);
+	void GetOffCar(bool Param_Kill);
+	void AttemptMurerfur();
 	void CanBePutInContainer(bool* Return);
 	void AsProp(class AProp_C** Return);
 	void CanPickup(bool* Return);
 	void NoRespawn(bool Param_NoRespawn, bool* Return);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
 	void IsButtonUsed(bool* Failed);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 	void SetPath(const TArray<struct FVector>& Path, bool* Return);
 	void GetOnlyKey(class FString* Key);
 	void ProcessKeys(bool* Return);
@@ -259,10 +282,12 @@ public:
 	void ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return);
 	void GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled);
 	void SkipRadial(bool* Skip);
+	void GetPriceMultiplier(float* PriceMult);
 	void SkipPreDelete(bool* Skip);
 	void IgnoreSave(bool* Param_IgnoreSave);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
+	void GatherDataFromKey(bool* Gather);
 	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base);
 
 public:
@@ -275,77 +300,83 @@ public:
 		return GetDefaultObjImpl<AKerfurOmega_C>();
 	}
 };
-#pragma pack(pop)
 static_assert(alignof(AKerfurOmega_C) == 0x000010, "Wrong alignment on AKerfurOmega_C");
-static_assert(sizeof(AKerfurOmega_C) == 0x000800, "Wrong size on AKerfurOmega_C");
+static_assert(sizeof(AKerfurOmega_C) == 0x000830, "Wrong size on AKerfurOmega_C");
 static_assert(offsetof(AKerfurOmega_C, UberGraphFrame) == 0x0004C0, "Member 'AKerfurOmega_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Eff_lifeBelly) == 0x0004C8, "Member 'AKerfurOmega_C::Eff_lifeBelly' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, LifeLight) == 0x0004D0, "Member 'AKerfurOmega_C::LifeLight' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Eff_lifeNeck) == 0x0004D8, "Member 'AKerfurOmega_C::Eff_lifeNeck' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Eff_lifeFoot_L) == 0x0004E0, "Member 'AKerfurOmega_C::Eff_lifeFoot_L' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Eff_lifeFoot_R) == 0x0004E8, "Member 'AKerfurOmega_C::Eff_lifeFoot_R' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Eff_lifeLeg_L) == 0x0004F0, "Member 'AKerfurOmega_C::Eff_lifeLeg_L' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Eff_lifeLeg_R) == 0x0004F8, "Member 'AKerfurOmega_C::Eff_lifeLeg_R' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Eff_lifeThigh_L) == 0x000500, "Member 'AKerfurOmega_C::Eff_lifeThigh_L' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Eff_lifeThigh_R) == 0x000508, "Member 'AKerfurOmega_C::Eff_lifeThigh_R' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Eff_lifeHand_L) == 0x000510, "Member 'AKerfurOmega_C::Eff_lifeHand_L' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Eff_lifeHand_R) == 0x000518, "Member 'AKerfurOmega_C::Eff_lifeHand_R' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Eff_lifeArm_L) == 0x000520, "Member 'AKerfurOmega_C::Eff_lifeArm_L' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Eff_lifeArm_R) == 0x000528, "Member 'AKerfurOmega_C::Eff_lifeArm_R' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Eff_lifeShoulder_L) == 0x000530, "Member 'AKerfurOmega_C::Eff_lifeShoulder_L' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Eff_lifeShoulder_R) == 0x000538, "Member 'AKerfurOmega_C::Eff_lifeShoulder_R' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Forward) == 0x000540, "Member 'AKerfurOmega_C::Forward' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, GrabPivot) == 0x000548, "Member 'AKerfurOmega_C::GrabPivot' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, GrabPivot2) == 0x000550, "Member 'AKerfurOmega_C::GrabPivot2' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, GrabPivot1) == 0x000558, "Member 'AKerfurOmega_C::GrabPivot1' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, StaticMesh1) == 0x000560, "Member 'AKerfurOmega_C::StaticMesh1' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, StaticMesh) == 0x000568, "Member 'AKerfurOmega_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, MeshForw) == 0x000570, "Member 'AKerfurOmega_C::MeshForw' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, MeshLag) == 0x000578, "Member 'AKerfurOmega_C::MeshLag' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Cam) == 0x000580, "Member 'AKerfurOmega_C::Cam' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, KerfurEXE) == 0x000588, "Member 'AKerfurOmega_C::KerfurEXE' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Audio) == 0x000590, "Member 'AKerfurOmega_C::Audio' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, GrabAnim_a_703BB32846D7713E5E4213947B567208) == 0x000598, "Member 'AKerfurOmega_C::GrabAnim_a_703BB32846D7713E5E4213947B567208' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, GrabAnim__Direction_703BB32846D7713E5E4213947B567208) == 0x00059C, "Member 'AKerfurOmega_C::GrabAnim__Direction_703BB32846D7713E5E4213947B567208' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, GrabAnim) == 0x0005A0, "Member 'AKerfurOmega_C::GrabAnim' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, State) == 0x0005A8, "Member 'AKerfurOmega_C::State' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, MoveTo) == 0x0005B0, "Member 'AKerfurOmega_C::MoveTo' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Server) == 0x0005B8, "Member 'AKerfurOmega_C::Server' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Kill) == 0x0005C0, "Member 'AKerfurOmega_C::Kill' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, DoneDishes) == 0x0005C8, "Member 'AKerfurOmega_C::DoneDishes' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Task) == 0x0005D8, "Member 'AKerfurOmega_C::Task' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Hashes) == 0x0005E0, "Member 'AKerfurOmega_C::Hashes' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, CurrHash) == 0x0005F0, "Member 'AKerfurOmega_C::CurrHash' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, CurrDIsh) == 0x000600, "Member 'AKerfurOmega_C::CurrDIsh' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Report) == 0x000610, "Member 'AKerfurOmega_C::Report' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Camera) == 0x000620, "Member 'AKerfurOmega_C::Camera' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Transformer) == 0x000628, "Member 'AKerfurOmega_C::Transformer' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, TargetLoc) == 0x000630, "Member 'AKerfurOmega_C::TargetLoc' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, TargetActor) == 0x000640, "Member 'AKerfurOmega_C::TargetActor' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, LastMeshLoc) == 0x000648, "Member 'AKerfurOmega_C::LastMeshLoc' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, MeshVel) == 0x000654, "Member 'AKerfurOmega_C::MeshVel' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Lean) == 0x000660, "Member 'AKerfurOmega_C::Lean' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Floor) == 0x000664, "Member 'AKerfurOmega_C::Floor' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Animation) == 0x000670, "Member 'AKerfurOmega_C::Animation' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, HoldObject) == 0x000678, "Member 'AKerfurOmega_C::HoldObject' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Anim) == 0x000680, "Member 'AKerfurOmega_C::Anim' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, HoldObjectData) == 0x000690, "Member 'AKerfurOmega_C::HoldObjectData' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, StartMsg) == 0x000750, "Member 'AKerfurOmega_C::StartMsg' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Type) == 0x000760, "Member 'AKerfurOmega_C::Type' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, RemoteControl) == 0x000764, "Member 'AKerfurOmega_C::RemoteControl' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, RC_vector) == 0x000768, "Member 'AKerfurOmega_C::RC_vector' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Floor_lerp) == 0x000774, "Member 'AKerfurOmega_C::Floor_lerp' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Face) == 0x000780, "Member 'AKerfurOmega_C::Face' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Dynmat) == 0x000788, "Member 'AKerfurOmega_C::Dynmat' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Sentient) == 0x000790, "Member 'AKerfurOmega_C::Sentient' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Drip) == 0x000798, "Member 'AKerfurOmega_C::Drip' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, DripArray) == 0x0007A8, "Member 'AKerfurOmega_C::DripArray' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, DripBones) == 0x0007B8, "Member 'AKerfurOmega_C::DripBones' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, SelectMode) == 0x0007C8, "Member 'AKerfurOmega_C::SelectMode' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, HasPaper) == 0x0007CC, "Member 'AKerfurOmega_C::HasPaper' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Gibs) == 0x0007D0, "Member 'AKerfurOmega_C::Gibs' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, Meow) == 0x0007E0, "Member 'AKerfurOmega_C::Meow' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_C, ServerIgnores) == 0x0007E8, "Member 'AKerfurOmega_C::ServerIgnores' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Comp_radarPoint) == 0x0004C8, "Member 'AKerfurOmega_C::Comp_radarPoint' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, NavigationInvoker) == 0x0004D0, "Member 'AKerfurOmega_C::NavigationInvoker' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Eff_lifeBelly) == 0x0004D8, "Member 'AKerfurOmega_C::Eff_lifeBelly' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, LifeLight) == 0x0004E0, "Member 'AKerfurOmega_C::LifeLight' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Eff_lifeNeck) == 0x0004E8, "Member 'AKerfurOmega_C::Eff_lifeNeck' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Eff_lifeFoot_L) == 0x0004F0, "Member 'AKerfurOmega_C::Eff_lifeFoot_L' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Eff_lifeFoot_R) == 0x0004F8, "Member 'AKerfurOmega_C::Eff_lifeFoot_R' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Eff_lifeLeg_L) == 0x000500, "Member 'AKerfurOmega_C::Eff_lifeLeg_L' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Eff_lifeLeg_R) == 0x000508, "Member 'AKerfurOmega_C::Eff_lifeLeg_R' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Eff_lifeThigh_L) == 0x000510, "Member 'AKerfurOmega_C::Eff_lifeThigh_L' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Eff_lifeThigh_R) == 0x000518, "Member 'AKerfurOmega_C::Eff_lifeThigh_R' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Eff_lifeHand_L) == 0x000520, "Member 'AKerfurOmega_C::Eff_lifeHand_L' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Eff_lifeHand_R) == 0x000528, "Member 'AKerfurOmega_C::Eff_lifeHand_R' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Eff_lifeArm_L) == 0x000530, "Member 'AKerfurOmega_C::Eff_lifeArm_L' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Eff_lifeArm_R) == 0x000538, "Member 'AKerfurOmega_C::Eff_lifeArm_R' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Eff_lifeShoulder_L) == 0x000540, "Member 'AKerfurOmega_C::Eff_lifeShoulder_L' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Eff_lifeShoulder_R) == 0x000548, "Member 'AKerfurOmega_C::Eff_lifeShoulder_R' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Forward) == 0x000550, "Member 'AKerfurOmega_C::Forward' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, GrabPivot) == 0x000558, "Member 'AKerfurOmega_C::GrabPivot' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, GrabPivot2) == 0x000560, "Member 'AKerfurOmega_C::GrabPivot2' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, GrabPivot1) == 0x000568, "Member 'AKerfurOmega_C::GrabPivot1' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, StaticMesh1) == 0x000570, "Member 'AKerfurOmega_C::StaticMesh1' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, StaticMesh) == 0x000578, "Member 'AKerfurOmega_C::StaticMesh' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, MeshForw) == 0x000580, "Member 'AKerfurOmega_C::MeshForw' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, MeshLag) == 0x000588, "Member 'AKerfurOmega_C::MeshLag' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Cam) == 0x000590, "Member 'AKerfurOmega_C::Cam' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, KerfurEXE) == 0x000598, "Member 'AKerfurOmega_C::KerfurEXE' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Audio) == 0x0005A0, "Member 'AKerfurOmega_C::Audio' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, GrabAnim_a_703BB32846D7713E5E4213947B567208) == 0x0005A8, "Member 'AKerfurOmega_C::GrabAnim_a_703BB32846D7713E5E4213947B567208' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, GrabAnim__Direction_703BB32846D7713E5E4213947B567208) == 0x0005AC, "Member 'AKerfurOmega_C::GrabAnim__Direction_703BB32846D7713E5E4213947B567208' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, GrabAnim) == 0x0005B0, "Member 'AKerfurOmega_C::GrabAnim' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, State) == 0x0005B8, "Member 'AKerfurOmega_C::State' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, MoveTo) == 0x0005C0, "Member 'AKerfurOmega_C::MoveTo' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Server) == 0x0005C8, "Member 'AKerfurOmega_C::Server' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Kill) == 0x0005D0, "Member 'AKerfurOmega_C::Kill' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, DoneDishes) == 0x0005D8, "Member 'AKerfurOmega_C::DoneDishes' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Task) == 0x0005E8, "Member 'AKerfurOmega_C::Task' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Hashes) == 0x0005F0, "Member 'AKerfurOmega_C::Hashes' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, CurrHash) == 0x000600, "Member 'AKerfurOmega_C::CurrHash' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, CurrDIsh) == 0x000610, "Member 'AKerfurOmega_C::CurrDIsh' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Report) == 0x000620, "Member 'AKerfurOmega_C::Report' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Camera) == 0x000630, "Member 'AKerfurOmega_C::Camera' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Transformer) == 0x000638, "Member 'AKerfurOmega_C::Transformer' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, TargetLoc) == 0x000640, "Member 'AKerfurOmega_C::TargetLoc' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, TargetActor) == 0x000650, "Member 'AKerfurOmega_C::TargetActor' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, LastMeshLoc) == 0x000658, "Member 'AKerfurOmega_C::LastMeshLoc' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, MeshVel) == 0x000664, "Member 'AKerfurOmega_C::MeshVel' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Lean) == 0x000670, "Member 'AKerfurOmega_C::Lean' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Floor) == 0x000674, "Member 'AKerfurOmega_C::Floor' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Animation) == 0x000680, "Member 'AKerfurOmega_C::Animation' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, HoldObject) == 0x000688, "Member 'AKerfurOmega_C::HoldObject' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Anim) == 0x000690, "Member 'AKerfurOmega_C::Anim' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, HoldObjectData) == 0x0006A0, "Member 'AKerfurOmega_C::HoldObjectData' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, StartMsg) == 0x000760, "Member 'AKerfurOmega_C::StartMsg' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Type) == 0x000770, "Member 'AKerfurOmega_C::Type' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, RemoteControl) == 0x000774, "Member 'AKerfurOmega_C::RemoteControl' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, RC_vector) == 0x000778, "Member 'AKerfurOmega_C::RC_vector' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Floor_lerp) == 0x000784, "Member 'AKerfurOmega_C::Floor_lerp' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Face) == 0x000790, "Member 'AKerfurOmega_C::Face' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Dynmat) == 0x000798, "Member 'AKerfurOmega_C::Dynmat' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Sentient) == 0x0007A0, "Member 'AKerfurOmega_C::Sentient' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Drip) == 0x0007A8, "Member 'AKerfurOmega_C::Drip' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, DripArray) == 0x0007B8, "Member 'AKerfurOmega_C::DripArray' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, DripBones) == 0x0007C8, "Member 'AKerfurOmega_C::DripBones' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, SelectMode) == 0x0007D8, "Member 'AKerfurOmega_C::SelectMode' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, HasPaper) == 0x0007DC, "Member 'AKerfurOmega_C::HasPaper' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Gibs) == 0x0007E0, "Member 'AKerfurOmega_C::Gibs' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, Meow) == 0x0007F0, "Member 'AKerfurOmega_C::Meow' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, ServerIgnores) == 0x0007F8, "Member 'AKerfurOmega_C::ServerIgnores' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, OccupyCar) == 0x000808, "Member 'AKerfurOmega_C::OccupyCar' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, SkipFaceAssign) == 0x000810, "Member 'AKerfurOmega_C::SkipFaceAssign' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, DropProp) == 0x000818, "Member 'AKerfurOmega_C::DropProp' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, FootstepSound) == 0x000820, "Member 'AKerfurOmega_C::FootstepSound' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_C, SkinMesh) == 0x000828, "Member 'AKerfurOmega_C::SkinMesh' has a wrong offset!");
 
 }
 

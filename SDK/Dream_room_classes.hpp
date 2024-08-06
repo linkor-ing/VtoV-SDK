@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "DreamBase_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -43,14 +43,14 @@ public:
 	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0300(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         A_a_775C86EB44887BD8F8F0279EED56208A;              // 0x0308(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            A__Direction_775C86EB44887BD8F8F0279EED56208A;     // 0x030C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_33F3[0x3];                                     // 0x030D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30D[0x3];                                      // 0x030D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     A;                                                 // 0x0310(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_dream_room(int32 EntryPoint);
+	void ReceiveBeginPlay();
 	void A__UpdateFunc();
 	void A__FinishedFunc();
-	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

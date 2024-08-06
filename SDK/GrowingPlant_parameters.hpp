@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "Struct_save_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Struct_save_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
 #include "Struct_mFloat_structs.hpp"
 #include "Struct_mString_structs.hpp"
-#include "Struct_food1_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Enum_interactionActions_structs.hpp"
+#include "Struct_food1_structs.hpp"
 #include "Struct_prop_structs.hpp"
 
 
@@ -24,117 +24,124 @@ namespace SDK::Params
 {
 
 // Function growingPlant.growingPlant_C.ExecuteUbergraph_growingPlant
-// 0x0580 (0x0580 - 0x0000)
+// 0x05C0 (0x05C0 - 0x0000)
 struct GrowingPlant_C_ExecuteUbergraph_growingPlant final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E00[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_1;                               // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E01[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_2;                               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_3;                               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_4;                               // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E02[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_5;                               // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_5;                               // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_6;                               // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit_2;                                // 0x0040(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          K2Node_Event_kick;                                 // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E03[0x3];                                     // 0x00C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C9[0x3];                                       // 0x00C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_Event_name;                                 // 0x00CC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E04[0x4];                                     // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit_1;                                // 0x00E8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x017C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E05[0x3];                                     // 0x017D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x0188(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x0214(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0215(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E06[0x2];                                     // 0x0216(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable_7;                               // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_3;           // 0x021C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E07[0x3];                                     // 0x021D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_8;                               // 0x0224(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_4;           // 0x0228(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E08[0x3];                                     // 0x0229(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x022C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0230(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_propToObject_ReturnValue;                 // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E09[0x3];                                     // 0x0239(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_food1                          CallFunc_propToObject_foodData;                    // 0x023C(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E0A[0x4];                                     // 0x0254(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 CallFunc_propToObject_object;                      // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_propToObject_isFood;                      // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E0B[0x7];                                     // 0x0261(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_prop                           CallFunc_propToObject_propData;                    // 0x0268(0x0080)(HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component;          // 0x02E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x02F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E0C[0x3];                                     // 0x02F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_MakeHitResult_ReturnValue;                // 0x02F4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x037C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E0D[0x3];                                     // 0x037D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable_9;                               // 0x0380(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_5;           // 0x0384(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E0E[0x3];                                     // 0x0385(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_5;                 // 0x0388(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E0F[0x4];                                     // 0x038C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0390(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x03C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_propToObject_ReturnValue_1;               // 0x03C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E10[0x3];                                     // 0x03C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_food1                          CallFunc_propToObject_foodData_1;                  // 0x03CC(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E11[0x4];                                     // 0x03E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 CallFunc_propToObject_object_1;                    // 0x03E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_propToObject_isFood_1;                    // 0x03F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E12[0x7];                                     // 0x03F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_prop                           CallFunc_propToObject_propData_1;                  // 0x03F8(0x0080)(HasGetValueTypeHash)
-	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue;          // 0x0478(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x0480(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0490(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E13[0x7];                                     // 0x0491(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AProp_C*                                CallFunc_asProp_return;                            // 0x0498(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidClass_ReturnValue_1;               // 0x04A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E14[0x7];                                     // 0x04A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x04A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_C*                                CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x04B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x04B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetTransform_ReturnValue_1;               // 0x04C0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3; // 0x04F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4; // 0x04F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x0500(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player_1;                 // 0x0508(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0518(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E15[0x7];                                     // 0x0519(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AProp_C*                                CallFunc_FinishSpawningActor_ReturnValue_3;        // 0x0520(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_C*                                CallFunc_asProp_return_1;                          // 0x0528(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_5; // 0x0530(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_food_C*                           CallFunc_FinishSpawningActor_ReturnValue_4;        // 0x0538(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_Select_Default;                             // 0x0540(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects;                  // 0x0548(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0558(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E16[0x7];                                     // 0x0559(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AProp_food_C*                           CallFunc_FinishSpawningActor_ReturnValue_5;        // 0x0560(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsChildActor_ReturnValue;                 // 0x0568(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E17[0x7];                                     // 0x0569(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Select_Default_1;                           // 0x0570(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage;                               // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_174[0x4];                                      // 0x0174(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x019C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_19D[0x3];                                      // 0x019D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x01A8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0231(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_232[0x2];                                      // 0x0232(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable_7;                               // 0x0234(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_3;           // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_239[0x3];                                      // 0x0239(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x023C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_8;                               // 0x0240(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_4;           // 0x0244(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_245[0x3];                                      // 0x0245(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24C[0x4];                                      // 0x024C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0250(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_propToObject_ReturnValue;                 // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_259[0x3];                                      // 0x0259(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_food1                          CallFunc_propToObject_foodData;                    // 0x025C(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_274[0x4];                                      // 0x0274(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_propToObject_object;                      // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_propToObject_isFood;                      // 0x0280(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_281[0x7];                                      // 0x0281(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_prop                           CallFunc_propToObject_propData;                    // 0x0288(0x0080)(HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component;          // 0x0308(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0310(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_311[0x3];                                      // 0x0311(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_MakeHitResult_ReturnValue;                // 0x0314(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x039C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39D[0x3];                                      // 0x039D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable_9;                               // 0x03A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_5;           // 0x03A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3A5[0x3];                                      // 0x03A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_5;                 // 0x03A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3AC[0x4];                                      // 0x03AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x03B0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x03E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_propToObject_ReturnValue_1;               // 0x03E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3E9[0x3];                                      // 0x03E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_food1                          CallFunc_propToObject_foodData_1;                  // 0x03EC(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_404[0x4];                                      // 0x0404(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_propToObject_object_1;                    // 0x0408(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_propToObject_isFood_1;                    // 0x0410(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_411[0x7];                                      // 0x0411(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_prop                           CallFunc_propToObject_propData_1;                  // 0x0418(0x0080)(HasGetValueTypeHash)
+	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue;          // 0x0498(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x04A0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x04B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4B1[0x7];                                      // 0x04B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AProp_C*                                CallFunc_asProp_return;                            // 0x04B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x04C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidClass_ReturnValue_1;               // 0x04D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4D1[0x7];                                      // 0x04D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x04D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_C*                                CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x04E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x04E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetTransform_ReturnValue_1;               // 0x04F0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3; // 0x0520(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4; // 0x0528(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x0530(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player_1;                 // 0x0538(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0548(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_549[0x7];                                      // 0x0549(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AProp_C*                                CallFunc_FinishSpawningActor_ReturnValue_3;        // 0x0550(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_C*                                CallFunc_asProp_return_1;                          // 0x0558(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_5; // 0x0560(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_food_C*                           CallFunc_FinishSpawningActor_ReturnValue_4;        // 0x0568(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_Select_Default;                             // 0x0570(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_NameToString_ReturnValue_1;          // 0x0578(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects;                  // 0x0588(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0598(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_599[0x7];                                      // 0x0599(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AProp_food_C*                           CallFunc_FinishSpawningActor_ReturnValue_5;        // 0x05A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsChildActor_ReturnValue;                 // 0x05A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5A9[0x7];                                      // 0x05A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Select_Default_1;                           // 0x05B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(GrowingPlant_C_ExecuteUbergraph_growingPlant) == 0x000010, "Wrong alignment on GrowingPlant_C_ExecuteUbergraph_growingPlant");
-static_assert(sizeof(GrowingPlant_C_ExecuteUbergraph_growingPlant) == 0x000580, "Wrong size on GrowingPlant_C_ExecuteUbergraph_growingPlant");
+static_assert(sizeof(GrowingPlant_C_ExecuteUbergraph_growingPlant) == 0x0005C0, "Wrong size on GrowingPlant_C_ExecuteUbergraph_growingPlant");
 static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, EntryPoint) == 0x000000, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::EntryPoint' has a wrong offset!");
 static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, Temp_int_Variable) == 0x000004, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000008, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
@@ -145,76 +152,81 @@ static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_Ad
 static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, Temp_int_Variable_2) == 0x00001C, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::Temp_int_Variable_2' has a wrong offset!");
 static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, Temp_int_Variable_3) == 0x000020, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::Temp_int_Variable_3' has a wrong offset!");
 static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, Temp_int_Variable_4) == 0x000024, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x000028, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_Add_IntInt_ReturnValue_2) == 0x00002C, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, Temp_int_Variable_5) == 0x000030, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::Temp_int_Variable_5' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, Temp_int_Variable_5) == 0x000028, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::Temp_int_Variable_5' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x00002C, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_Add_IntInt_ReturnValue_2) == 0x000030, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, Temp_int_Variable_6) == 0x000034, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::Temp_int_Variable_6' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Event_player_3) == 0x000038, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Event_player_3' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Event_player_6) == 0x000038, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Event_player_6' has a wrong offset!");
 static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Event_hit_2) == 0x000040, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Event_hit_2' has a wrong offset!");
 static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Event_kick) == 0x0000C8, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Event_kick' has a wrong offset!");
 static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Event_name) == 0x0000CC, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Event_name' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Event_player_2) == 0x0000D8, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Event_player_2' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Event_player_1) == 0x0000E0, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Event_player_5) == 0x0000D8, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Event_player_5' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Event_player_4) == 0x0000E0, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Event_player_4' has a wrong offset!");
 static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Event_hit_1) == 0x0000E8, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Event_hit_1' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Event_DeltaSeconds) == 0x000170, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000174, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x000178, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x00017C, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Event_player) == 0x000180, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Event_hit) == 0x000188, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Event_index) == 0x000210, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Event_action) == 0x000214, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_SwitchEnum_CmpSuccess) == 0x000215, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, Temp_int_Variable_7) == 0x000218, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::Temp_int_Variable_7' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_LessEqual_IntInt_ReturnValue_3) == 0x00021C, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_LessEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_Add_IntInt_ReturnValue_3) == 0x000220, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, Temp_int_Variable_8) == 0x000224, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::Temp_int_Variable_8' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_LessEqual_IntInt_ReturnValue_4) == 0x000228, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_LessEqual_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_Add_IntInt_ReturnValue_4) == 0x00022C, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000230, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_propToObject_ReturnValue) == 0x000238, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_propToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_propToObject_foodData) == 0x00023C, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_propToObject_foodData' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_propToObject_object) == 0x000258, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_propToObject_object' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_propToObject_isFood) == 0x000260, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_propToObject_isFood' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_propToObject_propData) == 0x000268, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_propToObject_propData' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_DynamicCast_AsPrimitive_Component) == 0x0002E8, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_DynamicCast_AsPrimitive_Component' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_DynamicCast_bSuccess) == 0x0002F0, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_MakeHitResult_ReturnValue) == 0x0002F4, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_MakeHitResult_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_IsValidClass_ReturnValue) == 0x00037C, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, Temp_int_Variable_9) == 0x000380, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::Temp_int_Variable_9' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_LessEqual_IntInt_ReturnValue_5) == 0x000384, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_LessEqual_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_Add_IntInt_ReturnValue_5) == 0x000388, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_GetTransform_ReturnValue) == 0x000390, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0003C0, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_propToObject_ReturnValue_1) == 0x0003C8, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_propToObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_propToObject_foodData_1) == 0x0003CC, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_propToObject_foodData_1' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_propToObject_object_1) == 0x0003E8, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_propToObject_object_1' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_propToObject_isFood_1) == 0x0003F0, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_propToObject_isFood_1' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_propToObject_propData_1) == 0x0003F8, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_propToObject_propData_1' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_FinishSpawningActor_ReturnValue) == 0x000478, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_DynamicCast_AsInt_Player) == 0x000480, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_DynamicCast_AsInt_Player' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_DynamicCast_bSuccess_1) == 0x000490, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_asProp_return) == 0x000498, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_asProp_return' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_IsValidClass_ReturnValue_1) == 0x0004A0, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_IsValidClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x0004A8, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x0004B0, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x0004B8, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_GetTransform_ReturnValue_1) == 0x0004C0, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_GetTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3) == 0x0004F0, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4) == 0x0004F8, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x000500, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_DynamicCast_AsInt_Player_1) == 0x000508, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_DynamicCast_AsInt_Player_1' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_DynamicCast_bSuccess_2) == 0x000518, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_FinishSpawningActor_ReturnValue_3) == 0x000520, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_FinishSpawningActor_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_asProp_return_1) == 0x000528, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_asProp_return_1' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_5) == 0x000530, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_FinishSpawningActor_ReturnValue_4) == 0x000538, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_FinishSpawningActor_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Select_Default) == 0x000540, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_DynamicCast_AsInt_Objects) == 0x000548, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_DynamicCast_AsInt_Objects' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_DynamicCast_bSuccess_3) == 0x000558, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_FinishSpawningActor_ReturnValue_5) == 0x000560, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_FinishSpawningActor_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_IsChildActor_ReturnValue) == 0x000568, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_IsChildActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Select_Default_1) == 0x000570, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Event_damage) == 0x000170, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Event_damage' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Event_player_3) == 0x000178, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Event_player_3' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Event_player_2) == 0x000180, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Event_player_2' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Event_player_1) == 0x000188, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Event_DeltaSeconds) == 0x000190, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000194, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x000198, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x00019C, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Event_player) == 0x0001A0, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Event_hit) == 0x0001A8, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Event_action) == 0x000230, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_SwitchEnum_CmpSuccess) == 0x000231, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, Temp_int_Variable_7) == 0x000234, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::Temp_int_Variable_7' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_LessEqual_IntInt_ReturnValue_3) == 0x000238, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_LessEqual_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_Add_IntInt_ReturnValue_3) == 0x00023C, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, Temp_int_Variable_8) == 0x000240, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::Temp_int_Variable_8' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_LessEqual_IntInt_ReturnValue_4) == 0x000244, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_LessEqual_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_Add_IntInt_ReturnValue_4) == 0x000248, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000250, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_propToObject_ReturnValue) == 0x000258, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_propToObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_propToObject_foodData) == 0x00025C, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_propToObject_foodData' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_propToObject_object) == 0x000278, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_propToObject_object' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_propToObject_isFood) == 0x000280, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_propToObject_isFood' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_propToObject_propData) == 0x000288, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_propToObject_propData' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_DynamicCast_AsPrimitive_Component) == 0x000308, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_DynamicCast_AsPrimitive_Component' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_DynamicCast_bSuccess) == 0x000310, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_MakeHitResult_ReturnValue) == 0x000314, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_MakeHitResult_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_IsValidClass_ReturnValue) == 0x00039C, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, Temp_int_Variable_9) == 0x0003A0, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::Temp_int_Variable_9' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_LessEqual_IntInt_ReturnValue_5) == 0x0003A4, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_LessEqual_IntInt_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_Add_IntInt_ReturnValue_5) == 0x0003A8, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_GetTransform_ReturnValue) == 0x0003B0, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0003E0, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_propToObject_ReturnValue_1) == 0x0003E8, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_propToObject_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_propToObject_foodData_1) == 0x0003EC, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_propToObject_foodData_1' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_propToObject_object_1) == 0x000408, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_propToObject_object_1' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_propToObject_isFood_1) == 0x000410, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_propToObject_isFood_1' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_propToObject_propData_1) == 0x000418, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_propToObject_propData_1' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_FinishSpawningActor_ReturnValue) == 0x000498, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_DynamicCast_AsInt_Player) == 0x0004A0, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_DynamicCast_AsInt_Player' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_DynamicCast_bSuccess_1) == 0x0004B0, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_asProp_return) == 0x0004B8, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_asProp_return' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_Conv_NameToString_ReturnValue) == 0x0004C0, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_IsValidClass_ReturnValue_1) == 0x0004D0, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_IsValidClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x0004D8, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x0004E0, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x0004E8, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_GetTransform_ReturnValue_1) == 0x0004F0, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_GetTransform_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3) == 0x000520, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4) == 0x000528, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x000530, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_DynamicCast_AsInt_Player_1) == 0x000538, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_DynamicCast_AsInt_Player_1' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_DynamicCast_bSuccess_2) == 0x000548, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_FinishSpawningActor_ReturnValue_3) == 0x000550, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_FinishSpawningActor_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_asProp_return_1) == 0x000558, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_asProp_return_1' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_5) == 0x000560, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_FinishSpawningActor_ReturnValue_4) == 0x000568, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_FinishSpawningActor_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Select_Default) == 0x000570, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_Conv_NameToString_ReturnValue_1) == 0x000578, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_Conv_NameToString_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_DynamicCast_AsInt_Objects) == 0x000588, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_DynamicCast_AsInt_Objects' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_DynamicCast_bSuccess_3) == 0x000598, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_FinishSpawningActor_ReturnValue_5) == 0x0005A0, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_FinishSpawningActor_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, CallFunc_IsChildActor_ReturnValue) == 0x0005A8, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::CallFunc_IsChildActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ExecuteUbergraph_growingPlant, K2Node_Select_Default_1) == 0x0005B0, "Member 'GrowingPlant_C_ExecuteUbergraph_growingPlant::K2Node_Select_Default_1' has a wrong offset!");
 
 // Function growingPlant.growingPlant_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -227,18 +239,53 @@ static_assert(alignof(GrowingPlant_C_ReceiveTick) == 0x000004, "Wrong alignment 
 static_assert(sizeof(GrowingPlant_C_ReceiveTick) == 0x000004, "Wrong size on GrowingPlant_C_ReceiveTick");
 static_assert(offsetof(GrowingPlant_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'GrowingPlant_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
+// Function growingPlant.growingPlant_C.playerR
+// 0x0008 (0x0008 - 0x0000)
+struct GrowingPlant_C_PlayerR final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(GrowingPlant_C_PlayerR) == 0x000008, "Wrong alignment on GrowingPlant_C_PlayerR");
+static_assert(sizeof(GrowingPlant_C_PlayerR) == 0x000008, "Wrong size on GrowingPlant_C_PlayerR");
+static_assert(offsetof(GrowingPlant_C_PlayerR, Player) == 0x000000, "Member 'GrowingPlant_C_PlayerR::Player' has a wrong offset!");
+
+// Function growingPlant.growingPlant_C.playerHold
+// 0x0008 (0x0008 - 0x0000)
+struct GrowingPlant_C_PlayerHold final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(GrowingPlant_C_PlayerHold) == 0x000008, "Wrong alignment on GrowingPlant_C_PlayerHold");
+static_assert(sizeof(GrowingPlant_C_PlayerHold) == 0x000008, "Wrong size on GrowingPlant_C_PlayerHold");
+static_assert(offsetof(GrowingPlant_C_PlayerHold, Player) == 0x000000, "Member 'GrowingPlant_C_PlayerHold::Player' has a wrong offset!");
+
+// Function growingPlant.growingPlant_C.playerUnequip
+// 0x0008 (0x0008 - 0x0000)
+struct GrowingPlant_C_PlayerUnequip final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(GrowingPlant_C_PlayerUnequip) == 0x000008, "Wrong alignment on GrowingPlant_C_PlayerUnequip");
+static_assert(sizeof(GrowingPlant_C_PlayerUnequip) == 0x000008, "Wrong size on GrowingPlant_C_PlayerUnequip");
+static_assert(offsetof(GrowingPlant_C_PlayerUnequip, Player) == 0x000000, "Member 'GrowingPlant_C_PlayerUnequip::Player' has a wrong offset!");
+
 // Function growingPlant.growingPlant_C.damageByPlayer
-// 0x0090 (0x0090 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct GrowingPlant_C_DamageByPlayer final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         Damage;                                            // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(GrowingPlant_C_DamageByPlayer) == 0x000008, "Wrong alignment on GrowingPlant_C_DamageByPlayer");
-static_assert(sizeof(GrowingPlant_C_DamageByPlayer) == 0x000090, "Wrong size on GrowingPlant_C_DamageByPlayer");
+static_assert(sizeof(GrowingPlant_C_DamageByPlayer) == 0x000098, "Wrong size on GrowingPlant_C_DamageByPlayer");
 static_assert(offsetof(GrowingPlant_C_DamageByPlayer, Player) == 0x000000, "Member 'GrowingPlant_C_DamageByPlayer::Player' has a wrong offset!");
 static_assert(offsetof(GrowingPlant_C_DamageByPlayer, Hit) == 0x000008, "Member 'GrowingPlant_C_DamageByPlayer::Hit' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_DamageByPlayer, Damage) == 0x000090, "Member 'GrowingPlant_C_DamageByPlayer::Damage' has a wrong offset!");
 
 // Function growingPlant.growingPlant_C.thrown
 // 0x0008 (0x0008 - 0x0000)
@@ -364,24 +411,26 @@ static_assert(offsetof(GrowingPlant_C_NoRespawn, Param_NoRespawn) == 0x000000, "
 static_assert(offsetof(GrowingPlant_C_NoRespawn, Return) == 0x000001, "Member 'GrowingPlant_C_NoRespawn::Return' has a wrong offset!");
 
 // Function growingPlant.growingPlant_C.lookAt
-// 0x00B0 (0x00B0 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct GrowingPlant_C_LookAt final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E18[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(GrowingPlant_C_LookAt) == 0x000008, "Wrong alignment on GrowingPlant_C_LookAt");
-static_assert(sizeof(GrowingPlant_C_LookAt) == 0x0000B0, "Wrong size on GrowingPlant_C_LookAt");
+static_assert(sizeof(GrowingPlant_C_LookAt) == 0x0000B8, "Wrong size on GrowingPlant_C_LookAt");
 static_assert(offsetof(GrowingPlant_C_LookAt, Player) == 0x000000, "Member 'GrowingPlant_C_LookAt::Player' has a wrong offset!");
 static_assert(offsetof(GrowingPlant_C_LookAt, Hit) == 0x000008, "Member 'GrowingPlant_C_LookAt::Hit' has a wrong offset!");
 static_assert(offsetof(GrowingPlant_C_LookAt, Return) == 0x000090, "Member 'GrowingPlant_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(GrowingPlant_C_LookAt, Text) == 0x000098, "Member 'GrowingPlant_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(GrowingPlant_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'GrowingPlant_C_LookAt::boundObjectReplace' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_LookAt, Number) == 0x0000B0, "Member 'GrowingPlant_C_LookAt::Number' has a wrong offset!");
 
 // Function growingPlant.growingPlant_C.isButtonUsed
 // 0x0001 (0x0001 - 0x0000)
@@ -394,6 +443,19 @@ static_assert(alignof(GrowingPlant_C_IsButtonUsed) == 0x000001, "Wrong alignment
 static_assert(sizeof(GrowingPlant_C_IsButtonUsed) == 0x000001, "Wrong size on GrowingPlant_C_IsButtonUsed");
 static_assert(offsetof(GrowingPlant_C_IsButtonUsed, Failed) == 0x000000, "Member 'GrowingPlant_C_IsButtonUsed::Failed' has a wrong offset!");
 
+// Function growingPlant.growingPlant_C.landedOn
+// 0x0010 (0x0010 - 0x0000)
+struct GrowingPlant_C_LandedOn final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IgnoreFallDamage;                                  // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(GrowingPlant_C_LandedOn) == 0x000008, "Wrong alignment on GrowingPlant_C_LandedOn");
+static_assert(sizeof(GrowingPlant_C_LandedOn) == 0x000010, "Wrong size on GrowingPlant_C_LandedOn");
+static_assert(offsetof(GrowingPlant_C_LandedOn, Player) == 0x000000, "Member 'GrowingPlant_C_LandedOn::Player' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_LandedOn, IgnoreFallDamage) == 0x000008, "Member 'GrowingPlant_C_LandedOn::IgnoreFallDamage' has a wrong offset!");
+
 // Function growingPlant.growingPlant_C.actionOptionIndex
 // 0x0098 (0x0098 - 0x0000)
 struct GrowingPlant_C_ActionOptionIndex final
@@ -401,15 +463,13 @@ struct GrowingPlant_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(GrowingPlant_C_ActionOptionIndex) == 0x000008, "Wrong alignment on GrowingPlant_C_ActionOptionIndex");
 static_assert(sizeof(GrowingPlant_C_ActionOptionIndex) == 0x000098, "Wrong size on GrowingPlant_C_ActionOptionIndex");
 static_assert(offsetof(GrowingPlant_C_ActionOptionIndex, Player) == 0x000000, "Member 'GrowingPlant_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(GrowingPlant_C_ActionOptionIndex, Hit) == 0x000008, "Member 'GrowingPlant_C_ActionOptionIndex::Hit' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'GrowingPlant_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_ActionOptionIndex, Action) == 0x000094, "Member 'GrowingPlant_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_ActionOptionIndex, Action) == 0x000090, "Member 'GrowingPlant_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function growingPlant.growingPlant_C.UserConstructionScript
 // 0x0001 (0x0001 - 0x0000)
@@ -430,7 +490,7 @@ public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadData_return;                          // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E19[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mString                        CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	struct FStruct_mFloat                         CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0010)(HasGetValueTypeHash)
 	class FString                                 CallFunc_Array_Get_Item_2;                         // 0x00E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
@@ -486,7 +546,7 @@ static_assert(offsetof(GrowingPlant_C_GetData, K2Node_MakeArray_Array_3) == 0x00
 static_assert(offsetof(GrowingPlant_C_GetData, K2Node_SetFieldsInStruct_StructOut) == 0x000220, "Member 'GrowingPlant_C_GetData::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
 
 // Function growingPlant.growingPlant_C.getActionOptions
-// 0x0058 (0x0058 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct GrowingPlant_C_GetActionOptions final
 {
 public:
@@ -496,17 +556,20 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
 };
 static_assert(alignof(GrowingPlant_C_GetActionOptions) == 0x000008, "Wrong alignment on GrowingPlant_C_GetActionOptions");
-static_assert(sizeof(GrowingPlant_C_GetActionOptions) == 0x000058, "Wrong size on GrowingPlant_C_GetActionOptions");
+static_assert(sizeof(GrowingPlant_C_GetActionOptions) == 0x000060, "Wrong size on GrowingPlant_C_GetActionOptions");
 static_assert(offsetof(GrowingPlant_C_GetActionOptions, Player) == 0x000000, "Member 'GrowingPlant_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(GrowingPlant_C_GetActionOptions, Component) == 0x000008, "Member 'GrowingPlant_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(GrowingPlant_C_GetActionOptions, Actor) == 0x000010, "Member 'GrowingPlant_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(GrowingPlant_C_GetActionOptions, Options) == 0x000018, "Member 'GrowingPlant_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(GrowingPlant_C_GetActionOptions, Options_enum) == 0x000028, "Member 'GrowingPlant_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(GrowingPlant_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'GrowingPlant_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(GrowingPlant_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'GrowingPlant_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_GetActionOptions, Number) == 0x000048, "Member 'GrowingPlant_C_GetActionOptions::Number' has a wrong offset!");
+static_assert(offsetof(GrowingPlant_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'GrowingPlant_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 }
 

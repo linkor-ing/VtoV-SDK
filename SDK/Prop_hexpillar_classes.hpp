@@ -18,12 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_hexpillar.prop_hexpillar_C
-// 0x0008 (0x0370 - 0x0368)
+// 0x0008 (0x0380 - 0x0378)
 class AProp_hexpillar_C final : public AProp_C
 {
 public:
-	uint8                                         Pad_3CAA[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_hexpillar_C;                   // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_hexpillar_C;                   // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void DigUp();
@@ -40,8 +39,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_hexpillar_C) == 0x000008, "Wrong alignment on AProp_hexpillar_C");
-static_assert(sizeof(AProp_hexpillar_C) == 0x000370, "Wrong size on AProp_hexpillar_C");
-static_assert(offsetof(AProp_hexpillar_C, UberGraphFrame_Prop_hexpillar_C) == 0x000368, "Member 'AProp_hexpillar_C::UberGraphFrame_Prop_hexpillar_C' has a wrong offset!");
+static_assert(sizeof(AProp_hexpillar_C) == 0x000380, "Wrong size on AProp_hexpillar_C");
+static_assert(offsetof(AProp_hexpillar_C, UberGraphFrame_Prop_hexpillar_C) == 0x000378, "Member 'AProp_hexpillar_C::UberGraphFrame_Prop_hexpillar_C' has a wrong offset!");
 
 }
 

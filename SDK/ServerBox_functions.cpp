@@ -93,101 +93,53 @@ void AServerBox_C::ReceiveBeginPlay()
 }
 
 
-// Function serverBox.serverBox_C.actionOptionIndex
+// Function serverBox.serverBox_C.gamemodePreLoad
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AServerBox_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action)
+void AServerBox_C::GamemodePreLoad()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "actionOptionIndex");
+		Func = Class->GetFunction("serverBox_C", "gamemodePreLoad");
 
-	Params::ServerBox_C_ActionOptionIndex Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Player = Player;
-	Parms.Hit = std::move(Hit);
-	Parms.Param_Index = Param_Index;
-	Parms.Action = Action;
+
+// Function serverBox.serverBox_C.AnyKey
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FKey                             Param_Key                                              (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// bool                                    Pressed                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AServerBox_C::AnyKey(const struct FKey& Param_Key, bool Pressed)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("serverBox_C", "AnyKey");
+
+	Params::ServerBox_C_AnyKey Parms{};
+
+	Parms.Param_Key = std::move(Param_Key);
+	Parms.Pressed = Pressed;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function serverBox.serverBox_C.virus
+// Function serverBox.serverBox_C.gamemodeMakeKeys
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Activate                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AServerBox_C::Virus(bool Activate)
+void AServerBox_C::GamemodeMakeKeys()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "virus");
+		Func = Class->GetFunction("serverBox_C", "gamemodeMakeKeys");
 
-	Params::ServerBox_C_Virus Parms{};
-
-	Parms.Activate = Activate;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.setPropProps
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Static                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Frozen                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Param_Active                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AServerBox_C::SetPropProps(bool Static, bool Frozen, bool Param_Active)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "setPropProps");
-
-	Params::ServerBox_C_SetPropProps Parms{};
-
-	Parms.Static = Static;
-	Parms.Frozen = Frozen;
-	Parms.Param_Active = Param_Active;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.addDamage
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// struct FVector                          Impact                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    SkipSetting                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AServerBox_C::AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Hit, const struct FVector& Impact, bool SkipSetting)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "addDamage");
-
-	Params::ServerBox_C_AddDamage Parms{};
-
-	Parms.Actor = Actor;
-	Parms.Damage = Damage;
-	Parms.Hit = std::move(Hit);
-	Parms.Impact = std::move(Impact);
-	Parms.SkipSetting = SkipSetting;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -205,37 +157,37 @@ void AServerBox_C::Res()
 }
 
 
-// Function serverBox.serverBox_C.setKey
+// Function serverBox.serverBox_C.propRenderer_finishProps
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                           Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void AServerBox_C::SetKey(const class FString& Key)
+void AServerBox_C::PropRenderer_finishProps()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "setKey");
+		Func = Class->GetFunction("serverBox_C", "propRenderer_finishProps");
 
-	Params::ServerBox_C_SetKey Parms{};
-
-	Parms.Key = std::move(Key);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function serverBox.serverBox_C.physDestroyed
+// Function serverBox.serverBox_C.applyColor
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FLinearColor                     Color                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AServerBox_C::PhysDestroyed()
+void AServerBox_C::ApplyColor(const struct FLinearColor& Color)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "physDestroyed");
+		Func = Class->GetFunction("serverBox_C", "applyColor");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::ServerBox_C_ApplyColor Parms{};
+
+	Parms.Color = std::move(Color);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -269,95 +221,87 @@ void AServerBox_C::BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverla
 }
 
 
-// Function serverBox.serverBox_C.ImpactDamage
+// Function serverBox.serverBox_C.signalDeleted
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          Impact                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AServerBox_C::ImpactDamage(float Damage, const struct FHitResult& Hit, class AActor* Actor, const struct FVector& Impact)
+void AServerBox_C::SignalDeleted()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "ImpactDamage");
-
-	Params::ServerBox_C_ImpactDamage Parms{};
-
-	Parms.Damage = Damage;
-	Parms.Hit = std::move(Hit);
-	Parms.Actor = Actor;
-	Parms.Impact = std::move(Impact);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.enterWater
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AWaterVolume_C*                   Water                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AServerBox_C::EnterWater(class AWaterVolume_C* Water)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "enterWater");
-
-	Params::ServerBox_C_EnterWater Parms{};
-
-	Parms.Water = Water;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.leaveWater
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AWaterVolume_C*                   Water                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AServerBox_C::LeaveWater(class AWaterVolume_C* Water)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "leaveWater");
-
-	Params::ServerBox_C_LeaveWater Parms{};
-
-	Parms.Water = Water;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.physPreDestroyed
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AServerBox_C::PhysPreDestroyed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "physPreDestroyed");
+		Func = Class->GetFunction("serverBox_C", "signalDeleted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function serverBox.serverBox_C.digUp
+// Function serverBox.serverBox_C.signalSaved
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void AServerBox_C::DigUp()
+void AServerBox_C::SignalSaved()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "digUp");
+		Func = Class->GetFunction("serverBox_C", "signalSaved");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function serverBox.serverBox_C.stuffUpgraded
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainGamemode_C*                  GameMode                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AServerBox_C::StuffUpgraded(class AMainGamemode_C* GameMode)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("serverBox_C", "stuffUpgraded");
+
+	Params::ServerBox_C_StuffUpgraded Parms{};
+
+	Parms.GameMode = GameMode;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function serverBox.serverBox_C.texturePickerApply
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AServerBox_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("serverBox_C", "texturePickerApply");
+
+	Params::ServerBox_C_TexturePickerApply Parms{};
+
+	Parms.Picker = Picker;
+	Parms.Texture = Texture;
+	Parms.Param_Index = Param_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function serverBox.serverBox_C.driveDetached
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AServerBox_C::DriveDetached()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("serverBox_C", "driveDetached");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -377,71 +321,133 @@ void AServerBox_C::GamemodeBeginPlay()
 }
 
 
-// Function serverBox.serverBox_C.enterWaterOrigin
+// Function serverBox.serverBox_C.unfoc
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AWaterVolume_C*                   Water                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AServerBox_C::EnterWaterOrigin(class AWaterVolume_C* Water)
+void AServerBox_C::Unfoc()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "enterWaterOrigin");
-
-	Params::ServerBox_C_EnterWaterOrigin Parms{};
-
-	Parms.Water = Water;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.leaveWaterOrigin
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AWaterVolume_C*                   Water                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AServerBox_C::LeaveWaterOrigin(class AWaterVolume_C* Water)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "leaveWaterOrigin");
-
-	Params::ServerBox_C_LeaveWaterOrigin Parms{};
-
-	Parms.Water = Water;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.eaten
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AServerBox_C::Eaten()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "eaten");
+		Func = Class->GetFunction("serverBox_C", "unfoc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function serverBox.serverBox_C.unhook
+// Function serverBox.serverBox_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void AServerBox_C::Unhook()
+void AServerBox_C::SettingsApplied(const struct FStruct_settings& Settings)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "unhook");
+		Func = Class->GetFunction("serverBox_C", "settingsApplied");
+
+	Params::ServerBox_C_SettingsApplied Parms{};
+
+	Parms.Settings = std::move(Settings);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function serverBox.serverBox_C.unfocused
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AServerBox_C::Unfocused()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("serverBox_C", "unfocused");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function serverBox.serverBox_C.player_use
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+
+void AServerBox_C::Player_use(class AMainPlayer_C* Player, const struct FHitResult& Hit)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("serverBox_C", "player_use");
+
+	Params::ServerBox_C_Player_use Parms{};
+
+	Parms.Player = Player;
+	Parms.Hit = std::move(Hit);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function serverBox.serverBox_C.playerR
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AServerBox_C::PlayerR(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("serverBox_C", "playerR");
+
+	Params::ServerBox_C_PlayerR Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function serverBox.serverBox_C.playerHold
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AServerBox_C::PlayerHold(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("serverBox_C", "playerHold");
+
+	Params::ServerBox_C_PlayerHold Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function serverBox.serverBox_C.playerUnequip
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AServerBox_C::PlayerUnequip(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("serverBox_C", "playerUnequip");
+
+	Params::ServerBox_C_PlayerUnequip Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -464,8 +470,9 @@ void AServerBox_C::UpdateStrAgl()
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AServerBox_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit)
+void AServerBox_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage)
 {
 	static class UFunction* Func = nullptr;
 
@@ -476,6 +483,7 @@ void AServerBox_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHit
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
+	Parms.Damage = Damage;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -569,748 +577,6 @@ void AServerBox_C::Kicked(bool Kick)
 }
 
 
-// Function serverBox.serverBox_C.player_use
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-
-void AServerBox_C::Player_use(class AMainPlayer_C* Player, const struct FHitResult& Hit)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "player_use");
-
-	Params::ServerBox_C_Player_use Parms{};
-
-	Parms.Player = Player;
-	Parms.Hit = std::move(Hit);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.driveDetached
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AServerBox_C::DriveDetached()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "driveDetached");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function serverBox.serverBox_C.applyColor
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FLinearColor                     Color                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AServerBox_C::ApplyColor(const struct FLinearColor& Color)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "applyColor");
-
-	Params::ServerBox_C_ApplyColor Parms{};
-
-	Parms.Color = std::move(Color);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.propRenderer_finishProps
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AServerBox_C::PropRenderer_finishProps()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "propRenderer_finishProps");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function serverBox.serverBox_C.gamemodeMakeKeys
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AServerBox_C::GamemodeMakeKeys()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "gamemodeMakeKeys");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function serverBox.serverBox_C.AnyKey
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// bool                                    Pressed                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AServerBox_C::AnyKey(const struct FKey& Key, bool Pressed)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "AnyKey");
-
-	Params::ServerBox_C_AnyKey Parms{};
-
-	Parms.Key = std::move(Key);
-	Parms.Pressed = Pressed;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.gamemodePreLoad
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AServerBox_C::GamemodePreLoad()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "gamemodePreLoad");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function serverBox.serverBox_C.unfocused
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AServerBox_C::Unfocused()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "unfocused");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function serverBox.serverBox_C.settingsApplied
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AServerBox_C::SettingsApplied(const struct FStruct_settings& Settings)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "settingsApplied");
-
-	Params::ServerBox_C_SettingsApplied Parms{};
-
-	Parms.Settings = std::move(Settings);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.unfoc
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AServerBox_C::Unfoc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "unfoc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function serverBox.serverBox_C.stuffUpgraded
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainGamemode_C*                  GameMode                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AServerBox_C::StuffUpgraded(class AMainGamemode_C* GameMode)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "stuffUpgraded");
-
-	Params::ServerBox_C_StuffUpgraded Parms{};
-
-	Parms.GameMode = GameMode;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.signalSaved
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AServerBox_C::SignalSaved()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "signalSaved");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function serverBox.serverBox_C.signalDeleted
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AServerBox_C::SignalDeleted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "signalDeleted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function serverBox.serverBox_C.setIgnoreSave
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Ignore                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AServerBox_C::SetIgnoreSave(bool Ignore)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "setIgnoreSave");
-
-	Params::ServerBox_C_SetIgnoreSave Parms{};
-
-	Parms.Ignore = Ignore;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.hooked
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AHook_C*                          Hook                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AServerBox_C::Hooked(class AHook_C* Hook)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "hooked");
-
-	Params::ServerBox_C_Hooked Parms{};
-
-	Parms.Hook = Hook;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.attemptIgnite
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AServerBox_C::AttemptIgnite()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "attemptIgnite");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function serverBox.serverBox_C.playerUsedOn
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-
-void AServerBox_C::PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "playerUsedOn");
-
-	Params::ServerBox_C_PlayerUsedOn Parms{};
-
-	Parms.Player = Player;
-	Parms.Hit = std::move(Hit);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.slice
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Clean                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AServerBox_C::Slice(bool Clean)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "slice");
-
-	Params::ServerBox_C_Slice Parms{};
-
-	Parms.Clean = Clean;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.bitten
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AServerBox_C::bitten()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "bitten");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function serverBox.serverBox_C.reachedByExplosion
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FVector                          Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AServerBox_C::ReachedByExplosion(const struct FVector& Location, float Damage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "reachedByExplosion");
-
-	Params::ServerBox_C_ReachedByExplosion Parms{};
-
-	Parms.Location = std::move(Location);
-	Parms.Damage = Damage;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.playerLookAway
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AServerBox_C::PlayerLookAway(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "playerLookAway");
-
-	Params::ServerBox_C_PlayerLookAway Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.stepped
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AServerBox_C::Stepped(float Volume)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "stepped");
-
-	Params::ServerBox_C_Stepped Parms{};
-
-	Parms.Volume = Volume;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.ActionName
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// class FString                           Param_Name                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void AServerBox_C::ActionName(class AMainPlayer_C* Player, const struct FHitResult& Hit, const class FString& Param_Name)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "ActionName");
-
-	Params::ServerBox_C_ActionName Parms{};
-
-	Parms.Player = Player;
-	Parms.Hit = std::move(Hit);
-	Parms.Param_Name = std::move(Param_Name);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.accumulateTemperature
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Temperature                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Speed                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AServerBox_C::AccumulateTemperature(float Temperature, float Speed)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "accumulateTemperature");
-
-	Params::ServerBox_C_AccumulateTemperature Parms{};
-
-	Parms.Temperature = Temperature;
-	Parms.Speed = Speed;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.addTemperature
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Temperature                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AServerBox_C::AddTemperature(float Temperature)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "addTemperature");
-
-	Params::ServerBox_C_AddTemperature Parms{};
-
-	Parms.Temperature = Temperature;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.microwaveElec
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AServerBox_C::MicrowaveElec()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "microwaveElec");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function serverBox.serverBox_C.playerHandAnyKey
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// bool                                    Pressed                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AServerBox_C::PlayerHandAnyKey(class AMainPlayer_C* Player, const struct FKey& Key, bool Pressed)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "playerHandAnyKey");
-
-	Params::ServerBox_C_PlayerHandAnyKey Parms{};
-
-	Parms.Player = Player;
-	Parms.Key = std::move(Key);
-	Parms.Pressed = Pressed;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.playerHandMouse
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                        Mouse                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AServerBox_C::PlayerHandMouse(class AMainPlayer_C* Player, const struct FVector2D& Mouse)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "playerHandMouse");
-
-	Params::ServerBox_C_PlayerHandMouse Parms{};
-
-	Parms.Player = Player;
-	Parms.Mouse = std::move(Mouse);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.playerHandMouseWheel
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   WheelDelta                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AServerBox_C::PlayerHandMouseWheel(class AMainPlayer_C* Player, float WheelDelta)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "playerHandMouseWheel");
-
-	Params::ServerBox_C_PlayerHandMouseWheel Parms{};
-
-	Parms.Player = Player;
-	Parms.WheelDelta = WheelDelta;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.playerHandRelease_LMB
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AServerBox_C::PlayerHandRelease_LMB(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "playerHandRelease_LMB");
-
-	Params::ServerBox_C_PlayerHandRelease_LMB Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.playerHandRelease_RMB
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AServerBox_C::PlayerHandRelease_RMB(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "playerHandRelease_RMB");
-
-	Params::ServerBox_C_PlayerHandRelease_RMB Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.extinguishFire
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AServerBox_C::ExtinguishFire()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "extinguishFire");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function serverBox.serverBox_C.exploded
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AServerBox_C::Exploded(float Damage, const struct FVector& Location)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "exploded");
-
-	Params::ServerBox_C_Exploded Parms{};
-
-	Parms.Damage = Damage;
-	Parms.Location = std::move(Location);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.playerHandUse_LMB
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AServerBox_C::PlayerHandUse_LMB(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "playerHandUse_LMB");
-
-	Params::ServerBox_C_PlayerHandUse_LMB Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.playerHandUse_RMB
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AServerBox_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "playerHandUse_RMB");
-
-	Params::ServerBox_C_PlayerHandUse_RMB Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.receivedPhyiscsDamage
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AServerBox_C::ReceivedPhyiscsDamage()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "receivedPhyiscsDamage");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function serverBox.serverBox_C.microwave
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AServerBox_C::Microwave()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "microwave");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function serverBox.serverBox_C.ignite
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Fuel                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AServerBox_C::Ignite(float Fuel)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "ignite");
-
-	Params::ServerBox_C_Ignite Parms{};
-
-	Parms.Fuel = Fuel;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.fireDamage
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AServerBox_C::FireDamage(float Damage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "fireDamage");
-
-	Params::ServerBox_C_FireDamage Parms{};
-
-	Parms.Damage = Damage;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function serverBox.serverBox_C.steppedOn
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-
-void AServerBox_C::SteppedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "steppedOn");
-
-	Params::ServerBox_C_SteppedOn Parms{};
-
-	Parms.Player = Player;
-	Parms.Hit = std::move(Hit);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function serverBox.serverBox_C.Timeline_0__UpdateFunc
 // (BlueprintEvent)
 
@@ -1353,6 +619,30 @@ void AServerBox_C::Move__UpdateFunc()
 }
 
 
+// Function serverBox.serverBox_C.actionOptionIndex
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AServerBox_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("serverBox_C", "actionOptionIndex");
+
+	Params::ServerBox_C_ActionOptionIndex Parms{};
+
+	Parms.Player = Player;
+	Parms.Hit = std::move(Hit);
+	Parms.Action = Action;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function serverBox.serverBox_C.move__FinishedFunc
 // (BlueprintEvent)
 
@@ -1362,20 +652,6 @@ void AServerBox_C::Move__FinishedFunc()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("serverBox_C", "move__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function serverBox.serverBox_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void AServerBox_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1512,8 +788,9 @@ void AServerBox_C::IsButtonUsed(bool* Failed)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AServerBox_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
+void AServerBox_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1535,6 +812,9 @@ void AServerBox_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& 
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -1625,6 +905,30 @@ void AServerBox_C::CanBePutInContainer(bool* Return)
 }
 
 
+// Function serverBox.serverBox_C.landedOn
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IgnoreFallDamage                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AServerBox_C::LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("serverBox_C", "landedOn");
+
+	Params::ServerBox_C_LandedOn Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IgnoreFallDamage != nullptr)
+		*IgnoreFallDamage = Parms.IgnoreFallDamage;
+}
+
+
 // Function serverBox.serverBox_C.dreamInv
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1651,24 +955,17 @@ void AServerBox_C::DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_
 }
 
 
-// Function serverBox.serverBox_C.ignoreSave
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Param_IgnoreSave                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function serverBox.serverBox_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void AServerBox_C::IgnoreSave(bool* Param_IgnoreSave)
+void AServerBox_C::UserConstructionScript()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "ignoreSave");
+		Func = Class->GetFunction("serverBox_C", "UserConstructionScript");
 
-	Params::ServerBox_C_IgnoreSave Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Param_IgnoreSave != nullptr)
-		*Param_IgnoreSave = Parms.Param_IgnoreSave;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -1717,24 +1014,24 @@ void AServerBox_C::GetData(struct FStruct_save* Data)
 }
 
 
-// Function serverBox.serverBox_C.skipPreDelete
+// Function serverBox.serverBox_C.gatherDataFromKey
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Skip                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AServerBox_C::SkipPreDelete(bool* Skip)
+void AServerBox_C::GatherDataFromKey(bool* Gather)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "skipPreDelete");
+		Func = Class->GetFunction("serverBox_C", "gatherDataFromKey");
 
-	Params::ServerBox_C_SkipPreDelete Parms{};
+	Params::ServerBox_C_GatherDataFromKey Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Skip != nullptr)
-		*Skip = Parms.Skip;
+	if (Gather != nullptr)
+		*Gather = Parms.Gather;
 }
 
 
@@ -1747,8 +1044,9 @@ void AServerBox_C::SkipPreDelete(bool* Skip)
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AServerBox_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
+void AServerBox_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1771,183 +1069,9 @@ void AServerBox_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiv
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
-}
 
-
-// Function serverBox.serverBox_C.setPath
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<struct FVector>                  Path                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AServerBox_C::SetPath(const TArray<struct FVector>& Path, bool* Return)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "setPath");
-
-	Params::ServerBox_C_SetPath Parms{};
-
-	Parms.Path = std::move(Path);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Return != nullptr)
-		*Return = Parms.Return;
-}
-
-
-// Function serverBox.serverBox_C.getOnlyKey
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                           Key                                                    (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-
-void AServerBox_C::GetOnlyKey(class FString* Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "getOnlyKey");
-
-	Params::ServerBox_C_GetOnlyKey Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Key != nullptr)
-		*Key = std::move(Parms.Key);
-}
-
-
-// Function serverBox.serverBox_C.processKeys
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AServerBox_C::ProcessKeys(bool* Return)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "processKeys");
-
-	Params::ServerBox_C_ProcessKeys Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Return != nullptr)
-		*Return = Parms.Return;
-}
-
-
-// Function serverBox.serverBox_C.canBeUsedHold
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AServerBox_C::CanBeUsedHold(bool* Return)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "canBeUsedHold");
-
-	Params::ServerBox_C_CanBeUsedHold Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Return != nullptr)
-		*Return = Parms.Return;
-}
-
-
-// Function serverBox.serverBox_C.GetKey
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                           Key                                                    (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-
-void AServerBox_C::GetKey(class FString* Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "GetKey");
-
-	Params::ServerBox_C_GetKey Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Key != nullptr)
-		*Key = std::move(Parms.Key);
-}
-
-
-// Function serverBox.serverBox_C.toolboxFix
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AProp_toolbox_C*                  Toolbox                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AServerBox_C::ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "toolboxFix");
-
-	Params::ServerBox_C_ToolboxFix Parms{};
-
-	Parms.Toolbox = Toolbox;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Return != nullptr)
-		*Return = Parms.Return;
-}
-
-
-// Function serverBox.serverBox_C.gascanFuel
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AProp_gascan_C*                   Gascan                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Fueled                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AServerBox_C::GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "gascanFuel");
-
-	Params::ServerBox_C_GascanFuel Parms{};
-
-	Parms.Gascan = Gascan;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Fueled != nullptr)
-		*Fueled = Parms.Fueled;
-}
-
-
-// Function serverBox.serverBox_C.skipRadial
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Skip                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AServerBox_C::SkipRadial(bool* Skip)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("serverBox_C", "skipRadial");
-
-	Params::ServerBox_C_SkipRadial Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Skip != nullptr)
-		*Skip = Parms.Skip;
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 }

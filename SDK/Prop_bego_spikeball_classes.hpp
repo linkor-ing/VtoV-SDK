@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_bego_spikeball.prop_bego_spikeball_C
-// 0x0000 (0x0378 - 0x0378)
+// 0x0000 (0x0388 - 0x0388)
 class AProp_bego_spikeball_C final : public AProp_bego_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_bego_spikeball_C) == 0x000008, "Wrong alignment on AProp_bego_spikeball_C");
-static_assert(sizeof(AProp_bego_spikeball_C) == 0x000378, "Wrong size on AProp_bego_spikeball_C");
+static_assert(sizeof(AProp_bego_spikeball_C) == 0x000388, "Wrong size on AProp_bego_spikeball_C");
 
 }
 

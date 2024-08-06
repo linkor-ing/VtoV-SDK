@@ -10,285 +10,337 @@
 
 #include "Basic.hpp"
 
-#include "Struct_food1_structs.hpp"
-#include "Enum_interactionActions_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
 #include "Struct_save_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "Struct_prop_structs.hpp"
 #include "Struct_mInt_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
+#include "Engine_structs.hpp"
+#include "Struct_food1_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function actorChipPile.actorChipPile_C.ExecuteUbergraph_actorChipPile
-// 0x0900 (0x0900 - 0x0000)
+// 0x0A40 (0x0A40 - 0x0000)
 struct ActorChipPile_C_ExecuteUbergraph_actorChipPile final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3534[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_14;                            // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_18;                            // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit_7;                                // 0x0010(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         K2Node_Event_damage_4;                             // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_6;                             // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_fuel;                                 // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_13;                            // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_12;                            // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_3;                             // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_location_1;                           // 0x00B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_11;                            // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_10;                            // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_9;                             // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_wheelDelta;                           // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3535[0x4];                                     // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_8;                             // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              K2Node_Event_mouse;                                // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_7;                             // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   K2Node_Event_key_1;                                // 0x00F8(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed;                              // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3536[0x3];                                     // 0x0111(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_temperature_1;                        // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_temperature;                          // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_speed;                                // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_6;                                // 0x0128(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class FString                                 K2Node_Event_name_1;                               // 0x01B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_volume;                               // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3537[0x4];                                     // 0x01C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_location;                             // 0x01D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_2;                             // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_clean;                                // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3538[0x7];                                     // 0x01E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_5;                                // 0x01F0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AHook_C*                                K2Node_Event_hook;                                 // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_4;                                // 0x0288(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          K2Node_Event_kick;                                 // 0x0310(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3539[0x3];                                     // 0x0311(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_Event_name;                                 // 0x0314(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_353A[0x4];                                     // 0x031C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x0320(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_3;                                // 0x0330(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x03B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x03C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x03D0(0x0030)(IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0400(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_353B[0x7];                                     // 0x0401(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0408(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_garbageClump_C*                   CallFunc_FinishSpawningActor_ReturnValue;          // 0x0410(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0418(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0424(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0430(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_353C[0x4];                                     // 0x043C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EObjectTypeQuery>                      CallFunc_obj_static_obj;                           // 0x0440(0x0010)(ReferenceParm)
-	struct FHitResult                             CallFunc_SphereTraceSingleForObjects_OutHit;       // 0x0450(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_SphereTraceSingleForObjects_ReturnValue;  // 0x04D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x04D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x04DA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_353D[0x1];                                     // 0x04DB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x04DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x04E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x04E4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x04F0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x04FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0508(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_353E[0x4];                                     // 0x0514(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0518(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0520(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0528(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0530(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0538(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x053C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0540(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0544(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0550(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x055C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x0560(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_2;           // 0x0568(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_353F[0x4];                                     // 0x0574(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 K2Node_ClassDynamicCast_AsActor_Chip_Pile;         // 0x0578(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ClassDynamicCast_bSuccess;                  // 0x0580(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3540[0x3];                                     // 0x0581(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x0584(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x0590(0x0030)(IsPlainOldData, NoDestructor)
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x05C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_2;                                // 0x05C8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x0650(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x0654(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3541[0x3];                                     // 0x0655(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0658(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit_1;            // 0x0660(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap_1;         // 0x0661(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3542[0x2];                                     // 0x0662(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time_1;                    // 0x0664(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance_1;                // 0x0668(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location_1;                // 0x066C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint_1;             // 0x0678(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal_1;                  // 0x0684(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal_1;            // 0x0690(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3543[0x4];                                     // 0x069C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat_1;                 // 0x06A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor_1;                // 0x06A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent_1;            // 0x06B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName_1;             // 0x06B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem_1;                 // 0x06C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex_1;            // 0x06C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex_1;               // 0x06C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart_1;              // 0x06CC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd_1;                // 0x06D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_MakeHitResult_ReturnValue;                // 0x06E4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_3544[0x4];                                     // 0x076C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGrunge_C*                              CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0770(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 K2Node_Event_key;                                  // 0x0778(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_Event_actor_1;                              // 0x0788(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_1;                             // 0x0790(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_1;                                // 0x0794(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                K2Node_Event_impact_1;                             // 0x081C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_skipSetting;                          // 0x0828(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_static;                               // 0x0829(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_frozen;                               // 0x082A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_active;                               // 0x082B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_activate;                             // 0x082C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3545[0x3];                                     // 0x082D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AWaterVolume_C*                         K2Node_Event_water_3;                              // 0x0830(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water_2;                              // 0x0838(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water_1;                              // 0x0840(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water;                                // 0x0848(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage;                               // 0x0850(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x0854(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_3546[0x4];                                     // 0x08DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Event_actor;                                // 0x08E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_impact;                               // 0x08E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_ignore;                               // 0x08F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3547[0x3];                                     // 0x08F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x08F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_5;                             // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hot;                                  // 0x00A4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_17;                            // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_16;                            // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_4;                             // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_location_1;                           // 0x0144(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_15;                            // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_14;                            // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_13;                            // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_wheelDelta;                           // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_16C[0x4];                                      // 0x016C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_12;                            // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_Event_mouse;                                // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_11;                            // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   K2Node_Event_key_1;                                // 0x0188(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed;                              // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1A1[0x3];                                      // 0x01A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_temperature_1;                        // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_temperature;                          // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_speed;                                // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_10;                            // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_6;                                // 0x01B8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class FString                                 K2Node_Event_name_1;                               // 0x0240(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_volume;                               // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_254[0x4];                                      // 0x0254(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_9;                             // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_location;                             // 0x0260(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_3;                             // 0x026C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_clean_1;                              // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_271[0x7];                                      // 0x0271(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_8;                             // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_5;                                // 0x0280(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AHook_C*                                K2Node_Event_hook_1;                               // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_clean;                                // 0x0310(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_314[0x4];                                      // 0x0314(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_7;                             // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AHook_C*                                K2Node_Event_hook;                                 // 0x0320(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_4;                                // 0x0330(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          K2Node_Event_kick;                                 // 0x03B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3B9[0x3];                                      // 0x03B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_Event_name;                                 // 0x03BC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C4[0x4];                                      // 0x03C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x03C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x03D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_3;                                // 0x03D8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         K2Node_Event_damage_2;                             // 0x0460(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_464[0x4];                                      // 0x0464(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0468(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x0470(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0478(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0480(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x048C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_498[0x8];                                      // 0x0498(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x04A0(0x0030)(IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x04D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4D1[0x3];                                      // 0x04D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x04D4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x04E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x04EC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<EObjectTypeQuery>                      CallFunc_obj_static_obj;                           // 0x04F8(0x0010)(ReferenceParm)
+	struct FHitResult                             CallFunc_SphereTraceSingleForObjects_OutHit;       // 0x0508(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_SphereTraceSingleForObjects_ReturnValue;  // 0x0590(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0591(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0592(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_593[0x1];                                      // 0x0593(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x0594(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0598(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x059C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x05A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x05B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x05C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5CC[0x4];                                      // 0x05CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x05D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x05D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x05E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x05E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x05F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x05F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x05F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x05FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0608(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0614(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x0618(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_2;           // 0x0620(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_62C[0x4];                                      // 0x062C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 K2Node_ClassDynamicCast_AsActor_Chip_Pile;         // 0x0630(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ClassDynamicCast_bSuccess;                  // 0x0638(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_639[0x3];                                      // 0x0639(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x063C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_648[0x8];                                      // 0x0648(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x0650(0x0030)(IsPlainOldData, NoDestructor)
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0680(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_2;                                // 0x0688(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x0710(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_711[0x7];                                      // 0x0711(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0718(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit_1;            // 0x0720(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap_1;         // 0x0721(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_722[0x2];                                      // 0x0722(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time_1;                    // 0x0724(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance_1;                // 0x0728(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location_1;                // 0x072C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint_1;             // 0x0738(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal_1;                  // 0x0744(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal_1;            // 0x0750(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_75C[0x4];                                      // 0x075C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat_1;                 // 0x0760(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor_1;                // 0x0768(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent_1;            // 0x0770(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName_1;             // 0x0778(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem_1;                 // 0x0780(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex_1;            // 0x0784(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex_1;               // 0x0788(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart_1;              // 0x078C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd_1;                // 0x0798(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7A4[0x4];                                      // 0x07A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGrunge_C*                              CallFunc_FinishSpawningActor_ReturnValue;          // 0x07A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 K2Node_Event_key;                                  // 0x07B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_static;                               // 0x07C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_frozen;                               // 0x07C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_active;                               // 0x07C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_activate;                             // 0x07C3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_7C4[0x4];                                      // 0x07C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AWaterVolume_C*                         K2Node_Event_water_3;                              // 0x07C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterVolume_C*                         K2Node_Event_water_2;                              // 0x07D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterVolume_C*                         K2Node_Event_water_1;                              // 0x07D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterVolume_C*                         K2Node_Event_water;                                // 0x07E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_1;                             // 0x07E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_1;                                // 0x07EC(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_874[0x4];                                      // 0x0874(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Event_actor_1;                              // 0x0878(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_impact_1;                             // 0x0880(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_ignore;                               // 0x088C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_88D[0x3];                                      // 0x088D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0890(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_894[0x4];                                      // 0x0894(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Event_actor;                                // 0x0898(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage;                               // 0x08A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x08A4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                K2Node_Event_impact;                               // 0x092C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_skipSetting;                          // 0x0938(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_939[0x3];                                      // 0x0939(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x093C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_3;           // 0x0948(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_954[0xC];                                      // 0x0954(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue_2;              // 0x0960(0x0030)(IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0990(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x0998(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_garbageClump_C*                   CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x09A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_garbageClump_C*                   CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x09A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_MakeHitResult_ReturnValue;                // 0x09B0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 static_assert(alignof(ActorChipPile_C_ExecuteUbergraph_actorChipPile) == 0x000010, "Wrong alignment on ActorChipPile_C_ExecuteUbergraph_actorChipPile");
-static_assert(sizeof(ActorChipPile_C_ExecuteUbergraph_actorChipPile) == 0x000900, "Wrong size on ActorChipPile_C_ExecuteUbergraph_actorChipPile");
+static_assert(sizeof(ActorChipPile_C_ExecuteUbergraph_actorChipPile) == 0x000A40, "Wrong size on ActorChipPile_C_ExecuteUbergraph_actorChipPile");
 static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, EntryPoint) == 0x000000, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_14) == 0x000008, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_14' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_18) == 0x000008, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_18' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_hit_7) == 0x000010, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_hit_7' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_damage_4) == 0x000098, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_damage_4' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_damage_6) == 0x000098, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_damage_6' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_fuel) == 0x00009C, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_fuel' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_13) == 0x0000A0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_13' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_12) == 0x0000A8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_12' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_damage_3) == 0x0000B0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_damage_3' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_location_1) == 0x0000B4, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_location_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_11) == 0x0000C0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_11' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_10) == 0x0000C8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_10' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_9) == 0x0000D0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_9' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_wheelDelta) == 0x0000D8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_wheelDelta' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_8) == 0x0000E0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_8' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_mouse) == 0x0000E8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_mouse' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_7) == 0x0000F0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_7' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_key_1) == 0x0000F8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_key_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_pressed) == 0x000110, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_pressed' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_temperature_1) == 0x000114, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_temperature_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_temperature) == 0x000118, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_temperature' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_speed) == 0x00011C, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_speed' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_6) == 0x000120, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_6' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_hit_6) == 0x000128, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_hit_6' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_name_1) == 0x0001B0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_name_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_volume) == 0x0001C0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_volume' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_5) == 0x0001C8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_5' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_location) == 0x0001D0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_location' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_damage_2) == 0x0001DC, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_damage_2' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_clean) == 0x0001E0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_clean' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_4) == 0x0001E8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_4' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_hit_5) == 0x0001F0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_hit_5' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_hook) == 0x000278, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_hook' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_3) == 0x000280, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_3' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_hit_4) == 0x000288, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_hit_4' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_kick) == 0x000310, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_kick' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_name) == 0x000314, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_name' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_2) == 0x000320, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_2' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_1) == 0x000328, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_hit_3) == 0x000330, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_hit_3' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0003B8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_Add_VectorVector_ReturnValue) == 0x0003C4, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_MakeTransform_ReturnValue) == 0x0003D0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000400, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000408, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_FinishSpawningActor_ReturnValue) == 0x000410, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000418, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000424, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000430, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_obj_static_obj) == 0x000440, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_obj_static_obj' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_SphereTraceSingleForObjects_OutHit) == 0x000450, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_SphereTraceSingleForObjects_OutHit' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_SphereTraceSingleForObjects_ReturnValue) == 0x0004D8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_SphereTraceSingleForObjects_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_bBlockingHit) == 0x0004D9, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_bInitialOverlap) == 0x0004DA, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_Time) == 0x0004DC, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_Distance) == 0x0004E0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_Location) == 0x0004E4, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_ImpactPoint) == 0x0004F0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_Normal) == 0x0004FC, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_ImpactNormal) == 0x000508, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_PhysMat) == 0x000518, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_HitActor) == 0x000520, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_HitComponent) == 0x000528, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_HitBoneName) == 0x000530, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_HitItem) == 0x000538, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_ElementIndex) == 0x00053C, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_FaceIndex) == 0x000540, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_TraceStart) == 0x000544, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_TraceEnd) == 0x000550, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_Array_Add_ReturnValue) == 0x00055C, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_GetObjectClass_ReturnValue) == 0x000560, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_GetObjectClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_Add_VectorVector_ReturnValue_2) == 0x000568, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_Add_VectorVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_ClassDynamicCast_AsActor_Chip_Pile) == 0x000578, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_ClassDynamicCast_AsActor_Chip_Pile' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_ClassDynamicCast_bSuccess) == 0x000580, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x000584, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_MakeTransform_ReturnValue_1) == 0x000590, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player) == 0x0005C0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_hit_2) == 0x0005C8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_hit_2' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_index) == 0x000650, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_action) == 0x000654, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000658, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_bBlockingHit_1) == 0x000660, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_bBlockingHit_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_bInitialOverlap_1) == 0x000661, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_bInitialOverlap_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_Time_1) == 0x000664, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_Time_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_Distance_1) == 0x000668, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_Distance_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_Location_1) == 0x00066C, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_Location_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_ImpactPoint_1) == 0x000678, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_ImpactPoint_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_Normal_1) == 0x000684, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_Normal_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_ImpactNormal_1) == 0x000690, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_ImpactNormal_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_PhysMat_1) == 0x0006A0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_PhysMat_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_HitActor_1) == 0x0006A8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_HitActor_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_HitComponent_1) == 0x0006B0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_HitComponent_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_HitBoneName_1) == 0x0006B8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_HitBoneName_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_HitItem_1) == 0x0006C0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_HitItem_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_ElementIndex_1) == 0x0006C4, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_ElementIndex_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_FaceIndex_1) == 0x0006C8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_FaceIndex_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_TraceStart_1) == 0x0006CC, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_TraceStart_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_TraceEnd_1) == 0x0006D8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_TraceEnd_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_MakeHitResult_ReturnValue) == 0x0006E4, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_MakeHitResult_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000770, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_key) == 0x000778, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_key' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_actor_1) == 0x000788, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_actor_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_damage_1) == 0x000790, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_damage_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_hit_1) == 0x000794, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_hit_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_impact_1) == 0x00081C, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_impact_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_skipSetting) == 0x000828, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_skipSetting' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_static) == 0x000829, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_static' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_frozen) == 0x00082A, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_frozen' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_active) == 0x00082B, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_active' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_activate) == 0x00082C, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_activate' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_water_3) == 0x000830, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_water_3' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_water_2) == 0x000838, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_water_2' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_water_1) == 0x000840, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_water_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_water) == 0x000848, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_water' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_damage) == 0x000850, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_damage' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_hit) == 0x000854, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_actor) == 0x0008E0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_actor' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_impact) == 0x0008E8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_impact' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_ignore) == 0x0008F4, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_ignore' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_Array_Add_ReturnValue_1) == 0x0008F8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_damage_5) == 0x0000A0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_damage_5' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_hot) == 0x0000A4, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_hot' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_17) == 0x000130, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_17' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_16) == 0x000138, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_16' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_damage_4) == 0x000140, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_damage_4' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_location_1) == 0x000144, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_location_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_15) == 0x000150, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_15' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_14) == 0x000158, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_14' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_13) == 0x000160, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_13' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_wheelDelta) == 0x000168, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_wheelDelta' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_12) == 0x000170, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_12' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_mouse) == 0x000178, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_mouse' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_11) == 0x000180, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_11' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_key_1) == 0x000188, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_key_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_pressed) == 0x0001A0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_pressed' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_temperature_1) == 0x0001A4, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_temperature_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_temperature) == 0x0001A8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_temperature' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_speed) == 0x0001AC, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_speed' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_10) == 0x0001B0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_10' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_hit_6) == 0x0001B8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_hit_6' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_name_1) == 0x000240, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_name_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_volume) == 0x000250, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_volume' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_9) == 0x000258, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_9' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_location) == 0x000260, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_location' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_damage_3) == 0x00026C, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_damage_3' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_clean_1) == 0x000270, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_clean_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_8) == 0x000278, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_8' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_hit_5) == 0x000280, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_hit_5' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_hook_1) == 0x000308, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_hook_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_clean) == 0x000310, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_clean' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_7) == 0x000318, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_7' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_hook) == 0x000320, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_hook' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_6) == 0x000328, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_6' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_hit_4) == 0x000330, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_hit_4' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_kick) == 0x0003B8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_kick' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_name) == 0x0003BC, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_name' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_5) == 0x0003C8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_5' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_4) == 0x0003D0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_4' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_hit_3) == 0x0003D8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_hit_3' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_damage_2) == 0x000460, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_damage_2' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_3) == 0x000468, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_3' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_2) == 0x000470, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_2' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player_1) == 0x000478, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000480, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_Add_VectorVector_ReturnValue) == 0x00048C, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_MakeTransform_ReturnValue) == 0x0004A0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0004D0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x0004D4, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0004E0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_Add_VectorVector_ReturnValue_1) == 0x0004EC, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_obj_static_obj) == 0x0004F8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_obj_static_obj' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_SphereTraceSingleForObjects_OutHit) == 0x000508, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_SphereTraceSingleForObjects_OutHit' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_SphereTraceSingleForObjects_ReturnValue) == 0x000590, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_SphereTraceSingleForObjects_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_bBlockingHit) == 0x000591, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_bInitialOverlap) == 0x000592, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_Time) == 0x000594, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_Distance) == 0x000598, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_Location) == 0x00059C, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_ImpactPoint) == 0x0005A8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_Normal) == 0x0005B4, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_ImpactNormal) == 0x0005C0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_PhysMat) == 0x0005D0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_HitActor) == 0x0005D8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_HitComponent) == 0x0005E0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_HitBoneName) == 0x0005E8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_HitItem) == 0x0005F0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_ElementIndex) == 0x0005F4, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_FaceIndex) == 0x0005F8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_TraceStart) == 0x0005FC, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_TraceEnd) == 0x000608, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_Array_Add_ReturnValue) == 0x000614, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_GetObjectClass_ReturnValue) == 0x000618, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_GetObjectClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_Add_VectorVector_ReturnValue_2) == 0x000620, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_Add_VectorVector_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_ClassDynamicCast_AsActor_Chip_Pile) == 0x000630, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_ClassDynamicCast_AsActor_Chip_Pile' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_ClassDynamicCast_bSuccess) == 0x000638, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x00063C, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_MakeTransform_ReturnValue_1) == 0x000650, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_player) == 0x000680, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_hit_2) == 0x000688, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_hit_2' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_action) == 0x000710, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000718, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_bBlockingHit_1) == 0x000720, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_bBlockingHit_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_bInitialOverlap_1) == 0x000721, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_bInitialOverlap_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_Time_1) == 0x000724, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_Time_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_Distance_1) == 0x000728, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_Distance_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_Location_1) == 0x00072C, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_Location_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_ImpactPoint_1) == 0x000738, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_ImpactPoint_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_Normal_1) == 0x000744, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_Normal_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_ImpactNormal_1) == 0x000750, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_ImpactNormal_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_PhysMat_1) == 0x000760, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_PhysMat_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_HitActor_1) == 0x000768, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_HitActor_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_HitComponent_1) == 0x000770, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_HitComponent_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_HitBoneName_1) == 0x000778, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_HitBoneName_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_HitItem_1) == 0x000780, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_HitItem_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_ElementIndex_1) == 0x000784, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_ElementIndex_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_FaceIndex_1) == 0x000788, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_FaceIndex_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_TraceStart_1) == 0x00078C, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_TraceStart_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BreakHitResult_TraceEnd_1) == 0x000798, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BreakHitResult_TraceEnd_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_FinishSpawningActor_ReturnValue) == 0x0007A8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_key) == 0x0007B0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_key' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_static) == 0x0007C0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_static' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_frozen) == 0x0007C1, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_frozen' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_active) == 0x0007C2, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_active' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_activate) == 0x0007C3, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_activate' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_water_3) == 0x0007C8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_water_3' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_water_2) == 0x0007D0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_water_2' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_water_1) == 0x0007D8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_water_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_water) == 0x0007E0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_water' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_damage_1) == 0x0007E8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_damage_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_hit_1) == 0x0007EC, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_hit_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_actor_1) == 0x000878, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_actor_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_impact_1) == 0x000880, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_impact_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_ignore) == 0x00088C, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_ignore' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_Array_Add_ReturnValue_1) == 0x000890, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_actor) == 0x000898, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_actor' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_damage) == 0x0008A0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_damage' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_hit) == 0x0008A4, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_impact) == 0x00092C, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_impact' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, K2Node_Event_skipSetting) == 0x000938, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::K2Node_Event_skipSetting' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x00093C, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_Add_VectorVector_ReturnValue_3) == 0x000948, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_Add_VectorVector_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_MakeTransform_ReturnValue_2) == 0x000960, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_MakeTransform_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000990, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x000998, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x0009A0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x0009A8, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ExecuteUbergraph_actorChipPile, CallFunc_MakeHitResult_ReturnValue) == 0x0009B0, "Member 'ActorChipPile_C_ExecuteUbergraph_actorChipPile::CallFunc_MakeHitResult_ReturnValue' has a wrong offset!");
+
+// Function actorChipPile.actorChipPile_C.addDamage
+// 0x00A8 (0x00A8 - 0x0000)
+struct ActorChipPile_C_AddDamage final
+{
+public:
+	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Damage;                                            // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hit;                                               // 0x000C(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                Impact;                                            // 0x0094(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          SkipSetting;                                       // 0x00A0(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(ActorChipPile_C_AddDamage) == 0x000008, "Wrong alignment on ActorChipPile_C_AddDamage");
+static_assert(sizeof(ActorChipPile_C_AddDamage) == 0x0000A8, "Wrong size on ActorChipPile_C_AddDamage");
+static_assert(offsetof(ActorChipPile_C_AddDamage, Actor) == 0x000000, "Member 'ActorChipPile_C_AddDamage::Actor' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_AddDamage, Damage) == 0x000008, "Member 'ActorChipPile_C_AddDamage::Damage' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_AddDamage, Hit) == 0x00000C, "Member 'ActorChipPile_C_AddDamage::Hit' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_AddDamage, Impact) == 0x000094, "Member 'ActorChipPile_C_AddDamage::Impact' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_AddDamage, SkipSetting) == 0x0000A0, "Member 'ActorChipPile_C_AddDamage::SkipSetting' has a wrong offset!");
 
 // Function actorChipPile.actorChipPile_C.setIgnoreSave
 // 0x0001 (0x0001 - 0x0000)
@@ -308,7 +360,7 @@ struct ActorChipPile_C_ImpactDamage final
 public:
 	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_3548[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0090(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Impact;                                            // 0x0098(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -389,25 +441,6 @@ static_assert(offsetof(ActorChipPile_C_SetPropProps, Static) == 0x000000, "Membe
 static_assert(offsetof(ActorChipPile_C_SetPropProps, Frozen) == 0x000001, "Member 'ActorChipPile_C_SetPropProps::Frozen' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_SetPropProps, Active) == 0x000002, "Member 'ActorChipPile_C_SetPropProps::Active' has a wrong offset!");
 
-// Function actorChipPile.actorChipPile_C.addDamage
-// 0x00A8 (0x00A8 - 0x0000)
-struct ActorChipPile_C_AddDamage final
-{
-public:
-	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Damage;                                            // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Hit;                                               // 0x000C(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                Impact;                                            // 0x0094(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          SkipSetting;                                       // 0x00A0(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(ActorChipPile_C_AddDamage) == 0x000008, "Wrong alignment on ActorChipPile_C_AddDamage");
-static_assert(sizeof(ActorChipPile_C_AddDamage) == 0x0000A8, "Wrong size on ActorChipPile_C_AddDamage");
-static_assert(offsetof(ActorChipPile_C_AddDamage, Actor) == 0x000000, "Member 'ActorChipPile_C_AddDamage::Actor' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_AddDamage, Damage) == 0x000008, "Member 'ActorChipPile_C_AddDamage::Damage' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_AddDamage, Hit) == 0x00000C, "Member 'ActorChipPile_C_AddDamage::Hit' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_AddDamage, Impact) == 0x000094, "Member 'ActorChipPile_C_AddDamage::Impact' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_AddDamage, SkipSetting) == 0x0000A0, "Member 'ActorChipPile_C_AddDamage::SkipSetting' has a wrong offset!");
-
 // Function actorChipPile.actorChipPile_C.setKey
 // 0x0010 (0x0010 - 0x0000)
 struct ActorChipPile_C_SetKey final
@@ -426,28 +459,61 @@ struct ActorChipPile_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ActorChipPile_C_ActionOptionIndex) == 0x000008, "Wrong alignment on ActorChipPile_C_ActionOptionIndex");
 static_assert(sizeof(ActorChipPile_C_ActionOptionIndex) == 0x000098, "Wrong size on ActorChipPile_C_ActionOptionIndex");
 static_assert(offsetof(ActorChipPile_C_ActionOptionIndex, Player) == 0x000000, "Member 'ActorChipPile_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_ActionOptionIndex, Hit) == 0x000008, "Member 'ActorChipPile_C_ActionOptionIndex::Hit' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'ActorChipPile_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_ActionOptionIndex, Action) == 0x000094, "Member 'ActorChipPile_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ActionOptionIndex, Action) == 0x000090, "Member 'ActorChipPile_C_ActionOptionIndex::Action' has a wrong offset!");
+
+// Function actorChipPile.actorChipPile_C.playerR
+// 0x0008 (0x0008 - 0x0000)
+struct ActorChipPile_C_PlayerR final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(ActorChipPile_C_PlayerR) == 0x000008, "Wrong alignment on ActorChipPile_C_PlayerR");
+static_assert(sizeof(ActorChipPile_C_PlayerR) == 0x000008, "Wrong size on ActorChipPile_C_PlayerR");
+static_assert(offsetof(ActorChipPile_C_PlayerR, Player) == 0x000000, "Member 'ActorChipPile_C_PlayerR::Player' has a wrong offset!");
+
+// Function actorChipPile.actorChipPile_C.playerHold
+// 0x0008 (0x0008 - 0x0000)
+struct ActorChipPile_C_PlayerHold final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(ActorChipPile_C_PlayerHold) == 0x000008, "Wrong alignment on ActorChipPile_C_PlayerHold");
+static_assert(sizeof(ActorChipPile_C_PlayerHold) == 0x000008, "Wrong size on ActorChipPile_C_PlayerHold");
+static_assert(offsetof(ActorChipPile_C_PlayerHold, Player) == 0x000000, "Member 'ActorChipPile_C_PlayerHold::Player' has a wrong offset!");
+
+// Function actorChipPile.actorChipPile_C.playerUnequip
+// 0x0008 (0x0008 - 0x0000)
+struct ActorChipPile_C_PlayerUnequip final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(ActorChipPile_C_PlayerUnequip) == 0x000008, "Wrong alignment on ActorChipPile_C_PlayerUnequip");
+static_assert(sizeof(ActorChipPile_C_PlayerUnequip) == 0x000008, "Wrong size on ActorChipPile_C_PlayerUnequip");
+static_assert(offsetof(ActorChipPile_C_PlayerUnequip, Player) == 0x000000, "Member 'ActorChipPile_C_PlayerUnequip::Player' has a wrong offset!");
 
 // Function actorChipPile.actorChipPile_C.damageByPlayer
-// 0x0090 (0x0090 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct ActorChipPile_C_DamageByPlayer final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         Damage;                                            // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ActorChipPile_C_DamageByPlayer) == 0x000008, "Wrong alignment on ActorChipPile_C_DamageByPlayer");
-static_assert(sizeof(ActorChipPile_C_DamageByPlayer) == 0x000090, "Wrong size on ActorChipPile_C_DamageByPlayer");
+static_assert(sizeof(ActorChipPile_C_DamageByPlayer) == 0x000098, "Wrong size on ActorChipPile_C_DamageByPlayer");
 static_assert(offsetof(ActorChipPile_C_DamageByPlayer, Player) == 0x000000, "Member 'ActorChipPile_C_DamageByPlayer::Player' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_DamageByPlayer, Hit) == 0x000008, "Member 'ActorChipPile_C_DamageByPlayer::Hit' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_DamageByPlayer, Damage) == 0x000090, "Member 'ActorChipPile_C_DamageByPlayer::Damage' has a wrong offset!");
 
 // Function actorChipPile.actorChipPile_C.thrown
 // 0x0008 (0x0008 - 0x0000)
@@ -494,6 +560,31 @@ static_assert(alignof(ActorChipPile_C_Player_use) == 0x000008, "Wrong alignment 
 static_assert(sizeof(ActorChipPile_C_Player_use) == 0x000090, "Wrong size on ActorChipPile_C_Player_use");
 static_assert(offsetof(ActorChipPile_C_Player_use, Player) == 0x000000, "Member 'ActorChipPile_C_Player_use::Player' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_Player_use, Hit) == 0x000008, "Member 'ActorChipPile_C_Player_use::Hit' has a wrong offset!");
+
+// Function actorChipPile.actorChipPile_C.hookTension
+// 0x0008 (0x0008 - 0x0000)
+struct ActorChipPile_C_HookTension final
+{
+public:
+	class AHook_C*                                Hook;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(ActorChipPile_C_HookTension) == 0x000008, "Wrong alignment on ActorChipPile_C_HookTension");
+static_assert(sizeof(ActorChipPile_C_HookTension) == 0x000008, "Wrong size on ActorChipPile_C_HookTension");
+static_assert(offsetof(ActorChipPile_C_HookTension, Hook) == 0x000000, "Member 'ActorChipPile_C_HookTension::Hook' has a wrong offset!");
+
+// Function actorChipPile.actorChipPile_C.cleanSponge
+// 0x0010 (0x0010 - 0x0000)
+struct ActorChipPile_C_CleanSponge final
+{
+public:
+	float                                         Clean;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          Player;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(ActorChipPile_C_CleanSponge) == 0x000008, "Wrong alignment on ActorChipPile_C_CleanSponge");
+static_assert(sizeof(ActorChipPile_C_CleanSponge) == 0x000010, "Wrong size on ActorChipPile_C_CleanSponge");
+static_assert(offsetof(ActorChipPile_C_CleanSponge, Clean) == 0x000000, "Member 'ActorChipPile_C_CleanSponge::Clean' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_CleanSponge, Player) == 0x000008, "Member 'ActorChipPile_C_CleanSponge::Player' has a wrong offset!");
 
 // Function actorChipPile.actorChipPile_C.hooked
 // 0x0008 (0x0008 - 0x0000)
@@ -702,6 +793,19 @@ static_assert(alignof(ActorChipPile_C_PlayerHandUse_RMB) == 0x000008, "Wrong ali
 static_assert(sizeof(ActorChipPile_C_PlayerHandUse_RMB) == 0x000008, "Wrong size on ActorChipPile_C_PlayerHandUse_RMB");
 static_assert(offsetof(ActorChipPile_C_PlayerHandUse_RMB, Player) == 0x000000, "Member 'ActorChipPile_C_PlayerHandUse_RMB::Player' has a wrong offset!");
 
+// Function actorChipPile.actorChipPile_C.receivedPhyiscsDamage
+// 0x008C (0x008C - 0x0000)
+struct ActorChipPile_C_ReceivedPhyiscsDamage final
+{
+public:
+	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hot;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+static_assert(alignof(ActorChipPile_C_ReceivedPhyiscsDamage) == 0x000004, "Wrong alignment on ActorChipPile_C_ReceivedPhyiscsDamage");
+static_assert(sizeof(ActorChipPile_C_ReceivedPhyiscsDamage) == 0x00008C, "Wrong size on ActorChipPile_C_ReceivedPhyiscsDamage");
+static_assert(offsetof(ActorChipPile_C_ReceivedPhyiscsDamage, Damage) == 0x000000, "Member 'ActorChipPile_C_ReceivedPhyiscsDamage::Damage' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_ReceivedPhyiscsDamage, Hot) == 0x000004, "Member 'ActorChipPile_C_ReceivedPhyiscsDamage::Hot' has a wrong offset!");
+
 // Function actorChipPile.actorChipPile_C.ignite
 // 0x0004 (0x0004 - 0x0000)
 struct ActorChipPile_C_Ignite final
@@ -738,12 +842,12 @@ static_assert(offsetof(ActorChipPile_C_SteppedOn, Player) == 0x000000, "Member '
 static_assert(offsetof(ActorChipPile_C_SteppedOn, Hit) == 0x000008, "Member 'ActorChipPile_C_SteppedOn::Hit' has a wrong offset!");
 
 // Function actorChipPile.actorChipPile_C.Init
-// 0x01A0 (0x01A0 - 0x0000)
+// 0x0110 (0x0110 - 0x0000)
 struct ActorChipPile_C_Init final
 {
 public:
 	int32                                         Temp_int_Variable;                                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3549[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStaticMesh*                            Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMesh*                            Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMesh*                            Temp_object_Variable_2;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -752,22 +856,19 @@ public:
 	class UStaticMesh*                            Temp_object_Variable_5;                            // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMesh*                            Temp_object_Variable_6;                            // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMesh*                            Temp_object_Variable_7;                            // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x004C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x0058(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x00E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_3;         // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue_1;                // 0x00F8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult_1;  // 0x0104(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_354A[0x4];                                     // 0x018C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UStaticMesh*                            K2Node_Select_Default;                             // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue_1;              // 0x0199(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UStaticMesh*                            Temp_object_Variable_8;                            // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0058(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0068(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x0074(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_FC[0x4];                                       // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UStaticMesh*                            K2Node_Select_Default;                             // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(ActorChipPile_C_Init) == 0x000008, "Wrong alignment on ActorChipPile_C_Init");
-static_assert(sizeof(ActorChipPile_C_Init) == 0x0001A0, "Wrong size on ActorChipPile_C_Init");
+static_assert(sizeof(ActorChipPile_C_Init) == 0x000110, "Wrong size on ActorChipPile_C_Init");
 static_assert(offsetof(ActorChipPile_C_Init, Temp_int_Variable) == 0x000000, "Member 'ActorChipPile_C_Init::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_Init, Temp_object_Variable) == 0x000008, "Member 'ActorChipPile_C_Init::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_Init, Temp_object_Variable_1) == 0x000010, "Member 'ActorChipPile_C_Init::Temp_object_Variable_1' has a wrong offset!");
@@ -777,18 +878,15 @@ static_assert(offsetof(ActorChipPile_C_Init, Temp_object_Variable_4) == 0x000028
 static_assert(offsetof(ActorChipPile_C_Init, Temp_object_Variable_5) == 0x000030, "Member 'ActorChipPile_C_Init::Temp_object_Variable_5' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_Init, Temp_object_Variable_6) == 0x000038, "Member 'ActorChipPile_C_Init::Temp_object_Variable_6' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_Init, Temp_object_Variable_7) == 0x000040, "Member 'ActorChipPile_C_Init::Temp_object_Variable_7' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_Init, CallFunc_RandomFloatInRange_ReturnValue) == 0x000048, "Member 'ActorChipPile_C_Init::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_Init, CallFunc_MakeRotator_ReturnValue) == 0x00004C, "Member 'ActorChipPile_C_Init::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_Init, CallFunc_K2_SetRelativeRotation_SweepHitResult) == 0x000058, "Member 'ActorChipPile_C_Init::CallFunc_K2_SetRelativeRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_Init, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x0000E0, "Member 'ActorChipPile_C_Init::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_Init, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x0000E4, "Member 'ActorChipPile_C_Init::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_Init, CallFunc_MakeVector_ReturnValue) == 0x0000E8, "Member 'ActorChipPile_C_Init::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_Init, CallFunc_RandomFloatInRange_ReturnValue_3) == 0x0000F4, "Member 'ActorChipPile_C_Init::CallFunc_RandomFloatInRange_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_Init, CallFunc_MakeRotator_ReturnValue_1) == 0x0000F8, "Member 'ActorChipPile_C_Init::CallFunc_MakeRotator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_Init, CallFunc_K2_SetRelativeRotation_SweepHitResult_1) == 0x000104, "Member 'ActorChipPile_C_Init::CallFunc_K2_SetRelativeRotation_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_Init, K2Node_Select_Default) == 0x000190, "Member 'ActorChipPile_C_Init::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_Init, CallFunc_SetStaticMesh_ReturnValue) == 0x000198, "Member 'ActorChipPile_C_Init::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_Init, CallFunc_SetStaticMesh_ReturnValue_1) == 0x000199, "Member 'ActorChipPile_C_Init::CallFunc_SetStaticMesh_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_Init, Temp_object_Variable_8) == 0x000048, "Member 'ActorChipPile_C_Init::Temp_object_Variable_8' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_Init, CallFunc_RandomFloatInRange_ReturnValue) == 0x000050, "Member 'ActorChipPile_C_Init::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_Init, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000054, "Member 'ActorChipPile_C_Init::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_Init, CallFunc_MakeVector_ReturnValue) == 0x000058, "Member 'ActorChipPile_C_Init::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_Init, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x000064, "Member 'ActorChipPile_C_Init::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_Init, CallFunc_MakeRotator_ReturnValue) == 0x000068, "Member 'ActorChipPile_C_Init::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_Init, CallFunc_K2_SetRelativeRotation_SweepHitResult) == 0x000074, "Member 'ActorChipPile_C_Init::CallFunc_K2_SetRelativeRotation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_Init, K2Node_Select_Default) == 0x000100, "Member 'ActorChipPile_C_Init::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_Init, CallFunc_SetStaticMesh_ReturnValue) == 0x000108, "Member 'ActorChipPile_C_Init::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
 
 // Function actorChipPile.actorChipPile_C.toClump
 // 0x0060 (0x0060 - 0x0000)
@@ -812,147 +910,155 @@ static_assert(offsetof(ActorChipPile_C_ToClump, CallFunc_BeginDeferredActorSpawn
 static_assert(offsetof(ActorChipPile_C_ToClump, CallFunc_FinishSpawningActor_ReturnValue) == 0x000058, "Member 'ActorChipPile_C_ToClump::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
 
 // Function actorChipPile.actorChipPile_C.turnIntoScrap
-// 0x02F0 (0x02F0 - 0x0000)
+// 0x0320 (0x0320 - 0x0000)
 struct ActorChipPile_C_TurnIntoScrap final
 {
 public:
 	int32                                         Temp_int_Variable;                                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_354B[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable;                                // 0x0004(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_1;                               // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_354C[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_2;                               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_3;                               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_4;                               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_354D[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomInteger_ReturnValue;                // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue_1;       // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_354E[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue_1;           // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue_1;          // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue_2;       // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_RandomInteger_ReturnValue;                // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue_2;           // 0x0090(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue_3;           // 0x00A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x00B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x00C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue_2;          // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue_3;          // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_RandomInteger_ReturnValue_1;              // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_RandomInteger_ReturnValue_2;              // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue_4;           // 0x00E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue_5;           // 0x00F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_4;              // 0x0108(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_5;              // 0x0118(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue_4;          // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue_5;          // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_RandomInteger_ReturnValue_3;              // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_RandomInteger_ReturnValue_4;              // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue_6;           // 0x0140(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue_7;           // 0x0150(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_6;              // 0x0160(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_7;              // 0x0170(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue_6;          // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue_7;          // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0190(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x019C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_354F[0x8];                                     // 0x01A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x01B0(0x0030)(IsPlainOldData, NoDestructor)
-	class FName                                   K2Node_Select_Default;                             // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_propToObject_ReturnValue;                 // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3550[0x3];                                     // 0x01F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_food1                          CallFunc_propToObject_foodData;                    // 0x01F4(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3551[0x4];                                     // 0x020C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 CallFunc_propToObject_object;                      // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_propToObject_isFood;                      // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3552[0x7];                                     // 0x0219(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_prop                           CallFunc_propToObject_propData;                    // 0x0220(0x0080)(HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x02A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x02A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3553[0x7];                                     // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue;          // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x02B8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x02C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3554[0x7];                                     // 0x02C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AProp_C*                                CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x02D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_C*                                CallFunc_asProp_return;                            // 0x02D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_food_C*                           CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x02E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue_1;           // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0060(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue_1;          // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue_1;       // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue_2;           // 0x0088(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0098(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue_2;       // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue_2;          // 0x00AC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue_3;           // 0x00B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomInteger_ReturnValue_1;              // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x00D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue_4;           // 0x00E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue_3;          // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_4;              // 0x00F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_4;                               // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue_4;          // 0x010C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x0114(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_115[0x3];                                      // 0x0115(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomInteger_ReturnValue_2;              // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomInteger_ReturnValue_3;              // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_124[0x4];                                      // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue_5;           // 0x0128(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue_6;           // 0x0138(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_5;              // 0x0148(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_6;              // 0x0158(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue_5;          // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue_6;          // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomInteger_ReturnValue_4;              // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x017C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue_7;           // 0x0188(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0198(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A4[0x4];                                      // 0x01A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_7;              // 0x01A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	uint8                                         Pad_1B8[0x8];                                      // 0x01B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x01C0(0x0030)(IsPlainOldData, NoDestructor)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue_7;          // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_C*                                CallFunc_FinishSpawningActor_ReturnValue;          // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_food_C*                           CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_Select_Default;                             // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_propToObject_ReturnValue;                 // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_221[0x3];                                      // 0x0221(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_food1                          CallFunc_propToObject_foodData;                    // 0x0224(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_23C[0x4];                                      // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_propToObject_object;                      // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_propToObject_isFood;                      // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_249[0x7];                                      // 0x0249(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_prop                           CallFunc_propToObject_propData;                    // 0x0250(0x0080)(HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x02D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x02D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D9[0x7];                                      // 0x02D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x02E8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x02F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F9[0x7];                                      // 0x02F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AProp_C*                                CallFunc_asProp_return;                            // 0x0300(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0308(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ActorChipPile_C_TurnIntoScrap) == 0x000010, "Wrong alignment on ActorChipPile_C_TurnIntoScrap");
-static_assert(sizeof(ActorChipPile_C_TurnIntoScrap) == 0x0002F0, "Wrong size on ActorChipPile_C_TurnIntoScrap");
+static_assert(sizeof(ActorChipPile_C_TurnIntoScrap) == 0x000320, "Wrong size on ActorChipPile_C_TurnIntoScrap");
 static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, Temp_int_Variable) == 0x000000, "Member 'ActorChipPile_C_TurnIntoScrap::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000004, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, Temp_name_Variable) == 0x000004, "Member 'ActorChipPile_C_TurnIntoScrap::Temp_name_Variable' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, Temp_int_Variable_1) == 0x00000C, "Member 'ActorChipPile_C_TurnIntoScrap::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000010, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Add_IntInt_ReturnValue_1) == 0x000014, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000010, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, Temp_int_Variable_2) == 0x000018, "Member 'ActorChipPile_C_TurnIntoScrap::Temp_int_Variable_2' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, Temp_int_Variable_3) == 0x00001C, "Member 'ActorChipPile_C_TurnIntoScrap::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, Temp_int_Variable_4) == 0x000020, "Member 'ActorChipPile_C_TurnIntoScrap::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x000024, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Add_IntInt_ReturnValue_2) == 0x000028, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000020, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Add_IntInt_ReturnValue_1) == 0x000024, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_RandomInteger_ReturnValue) == 0x000028, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_RandomInteger_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_RandomIntegerInRange_ReturnValue) == 0x00002C, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_RandomIntegerInRange_ReturnValue_1) == 0x000030, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_RandomIntegerInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_IntToString_ReturnValue) == 0x000038, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_IntToString_ReturnValue_1) == 0x000048, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_IntToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Concat_StrStr_ReturnValue) == 0x000058, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000068, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_StringToName_ReturnValue) == 0x000078, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_StringToName_ReturnValue_1) == 0x000080, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_StringToName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_RandomIntegerInRange_ReturnValue_2) == 0x000088, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_RandomIntegerInRange_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_RandomInteger_ReturnValue) == 0x00008C, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_RandomInteger_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_IntToString_ReturnValue_2) == 0x000090, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_IntToString_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_IntToString_ReturnValue_3) == 0x0000A0, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_IntToString_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Concat_StrStr_ReturnValue_2) == 0x0000B0, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Concat_StrStr_ReturnValue_3) == 0x0000C0, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_StringToName_ReturnValue_2) == 0x0000D0, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_StringToName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_StringToName_ReturnValue_3) == 0x0000D8, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_StringToName_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_RandomInteger_ReturnValue_1) == 0x0000E0, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_RandomInteger_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_RandomInteger_ReturnValue_2) == 0x0000E4, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_RandomInteger_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_IntToString_ReturnValue_4) == 0x0000E8, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_IntToString_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_IntToString_ReturnValue_5) == 0x0000F8, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_IntToString_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Concat_StrStr_ReturnValue_4) == 0x000108, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Concat_StrStr_ReturnValue_5) == 0x000118, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Concat_StrStr_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_StringToName_ReturnValue_4) == 0x000128, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_StringToName_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_StringToName_ReturnValue_5) == 0x000130, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_StringToName_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_RandomInteger_ReturnValue_3) == 0x000138, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_RandomInteger_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_RandomInteger_ReturnValue_4) == 0x00013C, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_RandomInteger_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_IntToString_ReturnValue_6) == 0x000140, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_IntToString_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_IntToString_ReturnValue_7) == 0x000150, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_IntToString_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Concat_StrStr_ReturnValue_6) == 0x000160, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Concat_StrStr_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Concat_StrStr_ReturnValue_7) == 0x000170, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Concat_StrStr_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_StringToName_ReturnValue_6) == 0x000180, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_StringToName_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_StringToName_ReturnValue_7) == 0x000188, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_StringToName_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000190, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Add_VectorVector_ReturnValue) == 0x00019C, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_MakeTransform_ReturnValue) == 0x0001B0, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, K2Node_Select_Default) == 0x0001E0, "Member 'ActorChipPile_C_TurnIntoScrap::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0001E8, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_propToObject_ReturnValue) == 0x0001F0, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_propToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_propToObject_foodData) == 0x0001F4, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_propToObject_foodData' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_propToObject_object) == 0x000210, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_propToObject_object' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_propToObject_isFood) == 0x000218, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_propToObject_isFood' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_propToObject_propData) == 0x000220, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_propToObject_propData' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x0002A0, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_IsValidClass_ReturnValue) == 0x0002A8, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_FinishSpawningActor_ReturnValue) == 0x0002B0, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, K2Node_DynamicCast_AsInt_Player) == 0x0002B8, "Member 'ActorChipPile_C_TurnIntoScrap::K2Node_DynamicCast_AsInt_Player' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, K2Node_DynamicCast_bSuccess) == 0x0002C8, "Member 'ActorChipPile_C_TurnIntoScrap::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x0002D0, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_asProp_return) == 0x0002D8, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_asProp_return' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x0002E0, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x0002E8, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_IntToString_ReturnValue) == 0x000030, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_IntToString_ReturnValue_1) == 0x000040, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_IntToString_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Concat_StrStr_ReturnValue) == 0x000050, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000060, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_StringToName_ReturnValue) == 0x000070, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_StringToName_ReturnValue_1) == 0x000078, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_StringToName_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_RandomIntegerInRange_ReturnValue_1) == 0x000080, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_RandomIntegerInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_IntToString_ReturnValue_2) == 0x000088, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_IntToString_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000098, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_RandomIntegerInRange_ReturnValue_2) == 0x0000A8, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_RandomIntegerInRange_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_StringToName_ReturnValue_2) == 0x0000AC, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_StringToName_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_IntToString_ReturnValue_3) == 0x0000B8, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_IntToString_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_RandomInteger_ReturnValue_1) == 0x0000C8, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_RandomInteger_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Concat_StrStr_ReturnValue_3) == 0x0000D0, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_IntToString_ReturnValue_4) == 0x0000E0, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_IntToString_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_StringToName_ReturnValue_3) == 0x0000F0, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_StringToName_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Concat_StrStr_ReturnValue_4) == 0x0000F8, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, Temp_int_Variable_4) == 0x000108, "Member 'ActorChipPile_C_TurnIntoScrap::Temp_int_Variable_4' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_StringToName_ReturnValue_4) == 0x00010C, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_StringToName_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x000114, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Add_IntInt_ReturnValue_2) == 0x000118, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_RandomInteger_ReturnValue_2) == 0x00011C, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_RandomInteger_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_RandomInteger_ReturnValue_3) == 0x000120, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_RandomInteger_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_IntToString_ReturnValue_5) == 0x000128, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_IntToString_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_IntToString_ReturnValue_6) == 0x000138, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_IntToString_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Concat_StrStr_ReturnValue_5) == 0x000148, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Concat_StrStr_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Concat_StrStr_ReturnValue_6) == 0x000158, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Concat_StrStr_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_StringToName_ReturnValue_5) == 0x000168, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_StringToName_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_StringToName_ReturnValue_6) == 0x000170, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_StringToName_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_RandomInteger_ReturnValue_4) == 0x000178, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_RandomInteger_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00017C, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_IntToString_ReturnValue_7) == 0x000188, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_IntToString_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Add_VectorVector_ReturnValue) == 0x000198, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Concat_StrStr_ReturnValue_7) == 0x0001A8, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Concat_StrStr_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_MakeTransform_ReturnValue) == 0x0001C0, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_StringToName_ReturnValue_7) == 0x0001F0, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_StringToName_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0001F8, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000200, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_FinishSpawningActor_ReturnValue) == 0x000208, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000210, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, K2Node_Select_Default) == 0x000218, "Member 'ActorChipPile_C_TurnIntoScrap::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_propToObject_ReturnValue) == 0x000220, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_propToObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_propToObject_foodData) == 0x000224, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_propToObject_foodData' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_propToObject_object) == 0x000240, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_propToObject_object' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_propToObject_isFood) == 0x000248, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_propToObject_isFood' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_propToObject_propData) == 0x000250, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_propToObject_propData' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x0002D0, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_IsValidClass_ReturnValue) == 0x0002D8, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x0002E0, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, K2Node_DynamicCast_AsInt_Player) == 0x0002E8, "Member 'ActorChipPile_C_TurnIntoScrap::K2Node_DynamicCast_AsInt_Player' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, K2Node_DynamicCast_bSuccess) == 0x0002F8, "Member 'ActorChipPile_C_TurnIntoScrap::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_asProp_return) == 0x000300, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_asProp_return' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_TurnIntoScrap, CallFunc_Conv_NameToString_ReturnValue) == 0x000308, "Member 'ActorChipPile_C_TurnIntoScrap::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
 
 // Function actorChipPile.actorChipPile_C.canBePutInContainer
 // 0x0001 (0x0001 - 0x0000)
@@ -1001,24 +1107,26 @@ static_assert(offsetof(ActorChipPile_C_NoRespawn, Param_NoRespawn) == 0x000000, 
 static_assert(offsetof(ActorChipPile_C_NoRespawn, Return) == 0x000001, "Member 'ActorChipPile_C_NoRespawn::Return' has a wrong offset!");
 
 // Function actorChipPile.actorChipPile_C.lookAt
-// 0x00B0 (0x00B0 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct ActorChipPile_C_LookAt final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3555[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ActorChipPile_C_LookAt) == 0x000008, "Wrong alignment on ActorChipPile_C_LookAt");
-static_assert(sizeof(ActorChipPile_C_LookAt) == 0x0000B0, "Wrong size on ActorChipPile_C_LookAt");
+static_assert(sizeof(ActorChipPile_C_LookAt) == 0x0000B8, "Wrong size on ActorChipPile_C_LookAt");
 static_assert(offsetof(ActorChipPile_C_LookAt, Player) == 0x000000, "Member 'ActorChipPile_C_LookAt::Player' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_LookAt, Hit) == 0x000008, "Member 'ActorChipPile_C_LookAt::Hit' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_LookAt, Return) == 0x000090, "Member 'ActorChipPile_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_LookAt, Text) == 0x000098, "Member 'ActorChipPile_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'ActorChipPile_C_LookAt::boundObjectReplace' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_LookAt, Number) == 0x0000B0, "Member 'ActorChipPile_C_LookAt::Number' has a wrong offset!");
 
 // Function actorChipPile.actorChipPile_C.isButtonUsed
 // 0x0001 (0x0001 - 0x0000)
@@ -1031,8 +1139,21 @@ static_assert(alignof(ActorChipPile_C_IsButtonUsed) == 0x000001, "Wrong alignmen
 static_assert(sizeof(ActorChipPile_C_IsButtonUsed) == 0x000001, "Wrong size on ActorChipPile_C_IsButtonUsed");
 static_assert(offsetof(ActorChipPile_C_IsButtonUsed, Failed) == 0x000000, "Member 'ActorChipPile_C_IsButtonUsed::Failed' has a wrong offset!");
 
+// Function actorChipPile.actorChipPile_C.landedOn
+// 0x0010 (0x0010 - 0x0000)
+struct ActorChipPile_C_LandedOn final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IgnoreFallDamage;                                  // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(ActorChipPile_C_LandedOn) == 0x000008, "Wrong alignment on ActorChipPile_C_LandedOn");
+static_assert(sizeof(ActorChipPile_C_LandedOn) == 0x000010, "Wrong size on ActorChipPile_C_LandedOn");
+static_assert(offsetof(ActorChipPile_C_LandedOn, Player) == 0x000000, "Member 'ActorChipPile_C_LandedOn::Player' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_LandedOn, IgnoreFallDamage) == 0x000008, "Member 'ActorChipPile_C_LandedOn::IgnoreFallDamage' has a wrong offset!");
+
 // Function actorChipPile.actorChipPile_C.getActionOptions
-// 0x0058 (0x0058 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct ActorChipPile_C_GetActionOptions final
 {
 public:
@@ -1042,17 +1163,20 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
 };
 static_assert(alignof(ActorChipPile_C_GetActionOptions) == 0x000008, "Wrong alignment on ActorChipPile_C_GetActionOptions");
-static_assert(sizeof(ActorChipPile_C_GetActionOptions) == 0x000058, "Wrong size on ActorChipPile_C_GetActionOptions");
+static_assert(sizeof(ActorChipPile_C_GetActionOptions) == 0x000060, "Wrong size on ActorChipPile_C_GetActionOptions");
 static_assert(offsetof(ActorChipPile_C_GetActionOptions, Player) == 0x000000, "Member 'ActorChipPile_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_GetActionOptions, Component) == 0x000008, "Member 'ActorChipPile_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_GetActionOptions, Actor) == 0x000010, "Member 'ActorChipPile_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_GetActionOptions, Options) == 0x000018, "Member 'ActorChipPile_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_GetActionOptions, Options_enum) == 0x000028, "Member 'ActorChipPile_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'ActorChipPile_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(ActorChipPile_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'ActorChipPile_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_GetActionOptions, Number) == 0x000048, "Member 'ActorChipPile_C_GetActionOptions::Number' has a wrong offset!");
+static_assert(offsetof(ActorChipPile_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'ActorChipPile_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 // Function actorChipPile.actorChipPile_C.setPath
 // 0x0018 (0x0018 - 0x0000)
@@ -1148,6 +1272,17 @@ static_assert(alignof(ActorChipPile_C_SkipRadial) == 0x000001, "Wrong alignment 
 static_assert(sizeof(ActorChipPile_C_SkipRadial) == 0x000001, "Wrong size on ActorChipPile_C_SkipRadial");
 static_assert(offsetof(ActorChipPile_C_SkipRadial, Skip) == 0x000000, "Member 'ActorChipPile_C_SkipRadial::Skip' has a wrong offset!");
 
+// Function actorChipPile.actorChipPile_C.getPriceMultiplier
+// 0x0004 (0x0004 - 0x0000)
+struct ActorChipPile_C_GetPriceMultiplier final
+{
+public:
+	float                                         PriceMult;                                         // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(ActorChipPile_C_GetPriceMultiplier) == 0x000004, "Wrong alignment on ActorChipPile_C_GetPriceMultiplier");
+static_assert(sizeof(ActorChipPile_C_GetPriceMultiplier) == 0x000004, "Wrong size on ActorChipPile_C_GetPriceMultiplier");
+static_assert(offsetof(ActorChipPile_C_GetPriceMultiplier, PriceMult) == 0x000000, "Member 'ActorChipPile_C_GetPriceMultiplier::PriceMult' has a wrong offset!");
+
 // Function actorChipPile.actorChipPile_C.skipPreDelete
 // 0x0001 (0x0001 - 0x0000)
 struct ActorChipPile_C_SkipPreDelete final
@@ -1177,7 +1312,7 @@ struct ActorChipPile_C_LoadData final
 public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3556[0x7];                                     // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mInt                           CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -1199,7 +1334,7 @@ public:
 	TArray<int32>                                 K2Node_MakeArray_Array;                            // 0x00F8(0x0010)(ReferenceParm)
 	struct FStruct_mInt                           K2Node_MakeStruct_struct_mInt;                     // 0x0108(0x0010)(HasGetValueTypeHash)
 	TArray<struct FStruct_mInt>                   K2Node_MakeArray_Array_1;                          // 0x0118(0x0010)(ReferenceParm)
-	uint8                                         Pad_3557[0x8];                                     // 0x0128(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_128[0x8];                                      // 0x0128(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           K2Node_MakeStruct_struct_save;                     // 0x0130(0x00C0)(HasGetValueTypeHash)
 };
 static_assert(alignof(ActorChipPile_C_GetData) == 0x000010, "Wrong alignment on ActorChipPile_C_GetData");
@@ -1211,6 +1346,17 @@ static_assert(offsetof(ActorChipPile_C_GetData, K2Node_MakeArray_Array) == 0x000
 static_assert(offsetof(ActorChipPile_C_GetData, K2Node_MakeStruct_struct_mInt) == 0x000108, "Member 'ActorChipPile_C_GetData::K2Node_MakeStruct_struct_mInt' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_GetData, K2Node_MakeArray_Array_1) == 0x000118, "Member 'ActorChipPile_C_GetData::K2Node_MakeArray_Array_1' has a wrong offset!");
 static_assert(offsetof(ActorChipPile_C_GetData, K2Node_MakeStruct_struct_save) == 0x000130, "Member 'ActorChipPile_C_GetData::K2Node_MakeStruct_struct_save' has a wrong offset!");
+
+// Function actorChipPile.actorChipPile_C.gatherDataFromKey
+// 0x0001 (0x0001 - 0x0000)
+struct ActorChipPile_C_GatherDataFromKey final
+{
+public:
+	bool                                          Gather;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(ActorChipPile_C_GatherDataFromKey) == 0x000001, "Wrong alignment on ActorChipPile_C_GatherDataFromKey");
+static_assert(sizeof(ActorChipPile_C_GatherDataFromKey) == 0x000001, "Wrong size on ActorChipPile_C_GatherDataFromKey");
+static_assert(offsetof(ActorChipPile_C_GatherDataFromKey, Gather) == 0x000000, "Member 'ActorChipPile_C_GatherDataFromKey::Gather' has a wrong offset!");
 
 }
 

@@ -37,15 +37,62 @@ void AProp_rug_C::ExecuteUbergraph_prop_rug(int32 EntryPoint)
 }
 
 
+// Function prop_rug.prop_rug_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_rug_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_rug_C", "ReceiveTick");
+
+	Params::Prop_rug_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_rug.prop_rug_C.placeOnGround
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void AProp_rug_C::PlaceOnGround()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_rug_C", "placeOnGround");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function prop_rug.prop_rug_C.placeFromHand
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void AProp_rug_C::PlaceFromHand()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_rug_C", "placeFromHand");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function prop_rug.prop_rug_C.actionOptionIndex
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_rug_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action)
+void AProp_rug_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -56,10 +103,57 @@ void AProp_rug_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FH
 
 	Parms.Player = Player;
 	Parms.Param_Hit = std::move(Param_Hit);
-	Parms.Param_Index = Param_Index;
 	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_rug.prop_rug_C.playerHold
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_rug_C::PlayerHold(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_rug_C", "playerHold");
+
+	Params::Prop_rug_C_PlayerHold Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_rug.prop_rug_C.gamemodeBeginPlay
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AProp_rug_C::GamemodeBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_rug_C", "gamemodeBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function prop_rug.prop_rug_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_rug_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_rug_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -87,20 +181,6 @@ void AProp_rug_C::SetPropProps(bool Param_Static, bool Param_Frozen, bool Active
 }
 
 
-// Function prop_rug.prop_rug_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_rug_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_rug_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_rug.prop_rug_C.sendName
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -121,20 +201,6 @@ void AProp_rug_C::SendName(class FName Param_Name)
 }
 
 
-// Function prop_rug.prop_rug_C.gamemodeBeginPlay
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AProp_rug_C::GamemodeBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_rug_C", "gamemodeBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_rug.prop_rug_C.playerHandUse_RMB
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -148,6 +214,26 @@ void AProp_rug_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
 		Func = Class->GetFunction("prop_rug_C", "playerHandUse_RMB");
 
 	Params::Prop_rug_C_PlayerHandUse_RMB Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_rug.prop_rug_C.playerHandUse_LMB
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_rug_C::PlayerHandUse_LMB(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_rug_C", "playerHandUse_LMB");
+
+	Params::Prop_rug_C_PlayerHandUse_LMB Parms{};
 
 	Parms.Player = Player;
 
@@ -178,8 +264,9 @@ void AProp_rug_C::UserConstructionScript()
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_rug_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
+void AProp_rug_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -202,6 +289,9 @@ void AProp_rug_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitive
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 }

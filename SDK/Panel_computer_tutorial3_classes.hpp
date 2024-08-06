@@ -27,7 +27,6 @@ public:
 
 public:
 	void ExecuteUbergraph_panel_computer_tutorial3(int32 EntryPoint);
-	void ReceiveBeginPlay();
 	void Finish();
 	void RunTrigger(class AActor* Param_Owner, int32 Param_Index);
 	void SetActiveTrigger(class AActor* SentFrom, bool Active);
@@ -37,6 +36,8 @@ public:
 	void IgnoreSave_trigger(bool* Ignore);
 	void LoadTriggerData(const struct FStruct_triggerSave& Data, bool* Return);
 	void GetTriggerData(struct FStruct_triggerSave* Data);
+	void GatherDataFromKeyT(bool* Gather);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

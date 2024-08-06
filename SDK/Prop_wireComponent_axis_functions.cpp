@@ -57,20 +57,6 @@ void AProp_wireComponent_axis_C::WirePass(class AWire_C* Wire)
 }
 
 
-// Function prop_wireComponent_axis.prop_wireComponent_axis_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_wireComponent_axis_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_wireComponent_axis_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_wireComponent_axis.prop_wireComponent_axis_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -108,6 +94,20 @@ void AProp_wireComponent_axis_C::ApplyTorque(class UStaticMeshComponent* InputPi
 	Parms.InputPin = InputPin;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_wireComponent_axis.prop_wireComponent_axis_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_wireComponent_axis_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_wireComponent_axis_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

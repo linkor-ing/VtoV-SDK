@@ -37,6 +37,20 @@ void ANewsky_C::ExecuteUbergraph_newsky(int32 EntryPoint)
 }
 
 
+// Function newsky.newsky_C.setMoonPhase
+// (BlueprintCallable, BlueprintEvent)
+
+void ANewsky_C::SetMoonPhase()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("newsky_C", "setMoonPhase");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function newsky.newsky_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
@@ -46,20 +60,6 @@ void ANewsky_C::ReceiveBeginPlay()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("newsky_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function newsky.newsky_C.tp
-// (BlueprintCallable, BlueprintEvent)
-
-void ANewsky_C::Tp()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("newsky_C", "tp");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -82,6 +82,20 @@ void ANewsky_C::ReceiveTick(float DeltaSeconds)
 	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function newsky.newsky_C.tp
+// (BlueprintCallable, BlueprintEvent)
+
+void ANewsky_C::Tp()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("newsky_C", "tp");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -142,6 +156,40 @@ void ANewsky_C::SkyVisibility(bool bNewHidden)
 	Params::Newsky_C_SkyVisibility Parms{};
 
 	Parms.bNewHidden = bNewHidden;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function newsky.newsky_C.setSunIntensity
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ANewsky_C::SetSunIntensity()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("newsky_C", "setSunIntensity");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function newsky.newsky_C.setEye
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Param_Eye                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ANewsky_C::SetEye(bool Param_Eye)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("newsky_C", "setEye");
+
+	Params::Newsky_C_SetEye Parms{};
+
+	Parms.Param_Eye = Param_Eye;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

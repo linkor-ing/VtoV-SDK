@@ -174,5 +174,19 @@ void AFishingRodString_C::DebugRandom(int32 LastIndex, float Exponent)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function fishingRodString.fishingRodString_C.processDrops
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void AFishingRodString_C::ProcessDrops()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("fishingRodString_C", "processDrops");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
 }
 

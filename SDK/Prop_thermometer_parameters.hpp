@@ -18,82 +18,92 @@ namespace SDK::Params
 {
 
 // Function prop_thermometer.prop_thermometer_C.ExecuteUbergraph_prop_thermometer
-// 0x01C8 (0x01C8 - 0x0000)
+// 0x0238 (0x0238 - 0x0000)
 struct Prop_thermometer_C_ExecuteUbergraph_prop_thermometer final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3A4A[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0008(0x0010)(ConstParm, ReferenceParm)
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<EObjectTypeQuery>                      CallFunc_obj_statDynPhys_obj;                      // 0x0020(0x0010)(ReferenceParm)
-	struct FVector                                CallFunc_arm_start;                                // 0x0030(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_arm_end;                                  // 0x003C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit;         // 0x0048(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue;    // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x00D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3A4B[0x1];                                     // 0x00D3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x00DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x00E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x00F4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0100(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3A4C[0x4];                                     // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0120(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x013C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0148(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3A4D[0x4];                                     // 0x0154(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AProp_food_C*                           K2Node_DynamicCast_AsProp_Food;                    // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3A4E[0x7];                                     // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0168(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0180(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0190(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x01A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot;                     // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x0040)(HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0058(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0068(0x0018)()
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_82[0x2];                                       // 0x0082(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x008C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0098(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x00A4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x00B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x00D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x00EC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x00F8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0104(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_105[0x3];                                      // 0x0105(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UComp_physicsImpact_C*                  CallFunc_GetComponentByClass_ReturnValue;          // 0x0108(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_food_C*                           K2Node_DynamicCast_AsProp_Food;                    // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0120(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0160(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0170(0x0018)()
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0188(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x01A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x01B0(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x01C8(0x0040)(HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_2;                          // 0x0210(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue_2;                     // 0x0220(0x0018)()
 };
 static_assert(alignof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer) == 0x000008, "Wrong alignment on Prop_thermometer_C_ExecuteUbergraph_prop_thermometer");
-static_assert(sizeof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer) == 0x0001C8, "Wrong size on Prop_thermometer_C_ExecuteUbergraph_prop_thermometer");
+static_assert(sizeof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer) == 0x000238, "Wrong size on Prop_thermometer_C_ExecuteUbergraph_prop_thermometer");
 static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, EntryPoint) == 0x000000, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, Temp_object_Variable) == 0x000008, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, K2Node_Event_player) == 0x000018, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_obj_statDynPhys_obj) == 0x000020, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_obj_statDynPhys_obj' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_arm_start) == 0x000030, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_arm_start' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_arm_end) == 0x00003C, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_arm_end' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_LineTraceSingleForObjects_OutHit) == 0x000048, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_LineTraceSingleForObjects_OutHit' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_LineTraceSingleForObjects_ReturnValue) == 0x0000D0, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_LineTraceSingleForObjects_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_bBlockingHit) == 0x0000D1, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_bInitialOverlap) == 0x0000D2, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_Time) == 0x0000D4, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_Distance) == 0x0000D8, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_Location) == 0x0000DC, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_ImpactPoint) == 0x0000E8, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_Normal) == 0x0000F4, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_ImpactNormal) == 0x000100, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_PhysMat) == 0x000110, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_HitActor) == 0x000118, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_HitComponent) == 0x000120, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_HitBoneName) == 0x000128, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_HitItem) == 0x000130, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_ElementIndex) == 0x000134, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_FaceIndex) == 0x000138, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_TraceStart) == 0x00013C, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_TraceEnd) == 0x000148, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, K2Node_DynamicCast_AsProp_Food) == 0x000158, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::K2Node_DynamicCast_AsProp_Food' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, K2Node_DynamicCast_bSuccess) == 0x000160, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_Conv_FloatToText_ReturnValue) == 0x000168, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_Conv_TextToString_ReturnValue) == 0x000180, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_Concat_StrStr_ReturnValue) == 0x000190, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_Concat_StrStr_ReturnValue_1) == 0x0001A0, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_getSaveSlot_saveSlot) == 0x000008, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_getSaveSlot_saveSlot' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, K2Node_MakeStruct_FormatArgumentData) == 0x000010, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, K2Node_Event_player_1) == 0x000050, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, K2Node_MakeArray_Array) == 0x000058, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_Format_ReturnValue) == 0x000068, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_bBlockingHit) == 0x000080, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_bInitialOverlap) == 0x000081, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_Time) == 0x000084, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_Distance) == 0x000088, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_Location) == 0x00008C, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_ImpactPoint) == 0x000098, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_Normal) == 0x0000A4, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_ImpactNormal) == 0x0000B0, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_PhysMat) == 0x0000C0, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_HitActor) == 0x0000C8, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_HitComponent) == 0x0000D0, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_HitBoneName) == 0x0000D8, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_HitItem) == 0x0000E0, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_ElementIndex) == 0x0000E4, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_FaceIndex) == 0x0000E8, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_TraceStart) == 0x0000EC, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_BreakHitResult_TraceEnd) == 0x0000F8, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_IsValid_ReturnValue) == 0x000104, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_GetComponentByClass_ReturnValue) == 0x000108, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, K2Node_DynamicCast_AsProp_Food) == 0x000110, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::K2Node_DynamicCast_AsProp_Food' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, K2Node_DynamicCast_bSuccess) == 0x000118, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, K2Node_MakeStruct_FormatArgumentData_1) == 0x000120, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, K2Node_MakeArray_Array_1) == 0x000160, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::K2Node_MakeArray_Array_1' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_Conv_FloatToText_ReturnValue) == 0x000170, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_Format_ReturnValue_1) == 0x000188, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_Format_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_Conv_TextToString_ReturnValue) == 0x0001A0, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_Conv_StringToText_ReturnValue) == 0x0001B0, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, K2Node_MakeStruct_FormatArgumentData_2) == 0x0001C8, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, K2Node_Event_player) == 0x000208, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, K2Node_MakeArray_Array_2) == 0x000210, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::K2Node_MakeArray_Array_2' has a wrong offset!");
+static_assert(offsetof(Prop_thermometer_C_ExecuteUbergraph_prop_thermometer, CallFunc_Format_ReturnValue_2) == 0x000220, "Member 'Prop_thermometer_C_ExecuteUbergraph_prop_thermometer::CallFunc_Format_ReturnValue_2' has a wrong offset!");
 
 // Function prop_thermometer.prop_thermometer_C.playerHandUse_RMB
 // 0x0008 (0x0008 - 0x0000)
@@ -105,6 +115,17 @@ public:
 static_assert(alignof(Prop_thermometer_C_PlayerHandUse_RMB) == 0x000008, "Wrong alignment on Prop_thermometer_C_PlayerHandUse_RMB");
 static_assert(sizeof(Prop_thermometer_C_PlayerHandUse_RMB) == 0x000008, "Wrong size on Prop_thermometer_C_PlayerHandUse_RMB");
 static_assert(offsetof(Prop_thermometer_C_PlayerHandUse_RMB, Player) == 0x000000, "Member 'Prop_thermometer_C_PlayerHandUse_RMB::Player' has a wrong offset!");
+
+// Function prop_thermometer.prop_thermometer_C.playerHandUse_LMB
+// 0x0008 (0x0008 - 0x0000)
+struct Prop_thermometer_C_PlayerHandUse_LMB final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_thermometer_C_PlayerHandUse_LMB) == 0x000008, "Wrong alignment on Prop_thermometer_C_PlayerHandUse_LMB");
+static_assert(sizeof(Prop_thermometer_C_PlayerHandUse_LMB) == 0x000008, "Wrong size on Prop_thermometer_C_PlayerHandUse_LMB");
+static_assert(offsetof(Prop_thermometer_C_PlayerHandUse_LMB, Player) == 0x000000, "Member 'Prop_thermometer_C_PlayerHandUse_LMB::Player' has a wrong offset!");
 
 }
 

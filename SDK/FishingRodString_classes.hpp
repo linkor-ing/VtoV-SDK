@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass fishingRodString.fishingRodString_C
-// 0x0100 (0x0320 - 0x0220)
+// 0x0150 (0x0370 - 0x0220)
 class AFishingRodString_C final : public AActor
 {
 public:
@@ -35,7 +35,7 @@ public:
 	class UStaticMeshComponent*                   Root;                                              // 0x0268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UBillboardComponent*                    HookEnd;                                           // 0x0270(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Vel;                                               // 0x0278(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_21F4[0x4];                                     // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_284[0x4];                                      // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Catched;                                           // 0x0288(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TMap<class FName, float>                      Drop;                                              // 0x0290(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UPrimitiveComponent*                    buoyComp;                                          // 0x02E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -47,6 +47,8 @@ public:
 	float                                         Luck;                                              // 0x030C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class FName                                   bait;                                              // 0x0310(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	float                                         Eat;                                               // 0x0318(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	uint8                                         Pad_31C[0x4];                                      // 0x031C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FName, float>                      Temp;                                              // 0x0320(0x0050)(Edit, BlueprintVisible)
 
 public:
 	void ExecuteUbergraph_fishingRodString(int32 EntryPoint);
@@ -58,6 +60,7 @@ public:
 	void SetLength(float Len);
 	void SetHookLoc();
 	void DebugRandom(int32 LastIndex, float Exponent);
+	void ProcessDrops();
 
 public:
 	static class UClass* StaticClass()
@@ -70,7 +73,7 @@ public:
 	}
 };
 static_assert(alignof(AFishingRodString_C) == 0x000008, "Wrong alignment on AFishingRodString_C");
-static_assert(sizeof(AFishingRodString_C) == 0x000320, "Wrong size on AFishingRodString_C");
+static_assert(sizeof(AFishingRodString_C) == 0x000370, "Wrong size on AFishingRodString_C");
 static_assert(offsetof(AFishingRodString_C, UberGraphFrame) == 0x000220, "Member 'AFishingRodString_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AFishingRodString_C, baitMesh) == 0x000228, "Member 'AFishingRodString_C::baitMesh' has a wrong offset!");
 static_assert(offsetof(AFishingRodString_C, buoy2hook) == 0x000230, "Member 'AFishingRodString_C::buoy2hook' has a wrong offset!");
@@ -94,6 +97,7 @@ static_assert(offsetof(AFishingRodString_C, Chance) == 0x000308, "Member 'AFishi
 static_assert(offsetof(AFishingRodString_C, Luck) == 0x00030C, "Member 'AFishingRodString_C::Luck' has a wrong offset!");
 static_assert(offsetof(AFishingRodString_C, bait) == 0x000310, "Member 'AFishingRodString_C::bait' has a wrong offset!");
 static_assert(offsetof(AFishingRodString_C, Eat) == 0x000318, "Member 'AFishingRodString_C::Eat' has a wrong offset!");
+static_assert(offsetof(AFishingRodString_C, Temp) == 0x000320, "Member 'AFishingRodString_C::Temp' has a wrong offset!");
 
 }
 

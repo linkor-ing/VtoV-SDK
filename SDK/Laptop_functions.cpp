@@ -37,46 +37,6 @@ void ALaptop_C::ExecuteUbergraph_laptop(int32 EntryPoint)
 }
 
 
-// Function laptop.laptop_C.actionOptionIndex
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ALaptop_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("laptop_C", "actionOptionIndex");
-
-	Params::Laptop_C_ActionOptionIndex Parms{};
-
-	Parms.Player = Player;
-	Parms.Hit = std::move(Hit);
-	Parms.Param_Index = Param_Index;
-	Parms.Action = Action;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function laptop.laptop_C.physDestroyed
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ALaptop_C::PhysDestroyed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("laptop_C", "physDestroyed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function laptop.laptop_C.virus
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -97,6 +57,30 @@ void ALaptop_C::Virus(bool Activate)
 }
 
 
+// Function laptop.laptop_C.actionOptionIndex
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ALaptop_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("laptop_C", "actionOptionIndex");
+
+	Params::Laptop_C_ActionOptionIndex Parms{};
+
+	Parms.Player = Player;
+	Parms.Hit = std::move(Hit);
+	Parms.Action = Action;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function laptop.laptop_C.physPreDestroyed
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -111,10 +95,48 @@ void ALaptop_C::PhysPreDestroyed()
 }
 
 
+// Function laptop.laptop_C.setPropProps
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Static                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Frozen                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ALaptop_C::SetPropProps(bool Static, bool Frozen, bool Active)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("laptop_C", "setPropProps");
+
+	Params::Laptop_C_SetPropProps Parms{};
+
+	Parms.Static = Static;
+	Parms.Frozen = Frozen;
+	Parms.Active = Active;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function laptop.laptop_C.digUp
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ALaptop_C::DigUp()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("laptop_C", "digUp");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function laptop.laptop_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void ALaptop_C::SettingsApplied(const struct FStruct_settings& Settings)
 {
@@ -197,30 +219,6 @@ void ALaptop_C::LeaveWater(class AWaterVolume_C* Water)
 }
 
 
-// Function laptop.laptop_C.setPropProps
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Static                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Frozen                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ALaptop_C::SetPropProps(bool Static, bool Frozen, bool Active)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("laptop_C", "setPropProps");
-
-	Params::Laptop_C_SetPropProps Parms{};
-
-	Parms.Static = Static;
-	Parms.Frozen = Frozen;
-	Parms.Active = Active;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function laptop.laptop_C.addDamage
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -249,17 +247,23 @@ void ALaptop_C::AddDamage(class AActor* Actor, float Damage, const struct FHitRe
 }
 
 
-// Function laptop.laptop_C.digUp
+// Function laptop.laptop_C.setKey
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                           Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void ALaptop_C::DigUp()
+void ALaptop_C::SetKey(const class FString& Key)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("laptop_C", "digUp");
+		Func = Class->GetFunction("laptop_C", "setKey");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::Laptop_C_SetKey Parms{};
+
+	Parms.Key = std::move(Key);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -274,6 +278,28 @@ void ALaptop_C::Unhook()
 		Func = Class->GetFunction("laptop_C", "unhook");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function laptop.laptop_C.steppedOn
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+
+void ALaptop_C::SteppedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("laptop_C", "steppedOn");
+
+	Params::Laptop_C_SteppedOn Parms{};
+
+	Parms.Player = Player;
+	Parms.Hit = std::move(Hit);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -339,23 +365,17 @@ void ALaptop_C::Player_use(class AMainPlayer_C* Player, const struct FHitResult&
 }
 
 
-// Function laptop.laptop_C.setKey
+// Function laptop.laptop_C.physDestroyed
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                           Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void ALaptop_C::SetKey(const class FString& Key)
+void ALaptop_C::PhysDestroyed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("laptop_C", "setKey");
+		Func = Class->GetFunction("laptop_C", "physDestroyed");
 
-	Params::Laptop_C_SetKey Parms{};
-
-	Parms.Key = std::move(Key);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -387,6 +407,66 @@ void ALaptop_C::GamemodeBeginPlay()
 }
 
 
+// Function laptop.laptop_C.playerR
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ALaptop_C::PlayerR(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("laptop_C", "playerR");
+
+	Params::Laptop_C_PlayerR Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function laptop.laptop_C.playerHold
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ALaptop_C::PlayerHold(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("laptop_C", "playerHold");
+
+	Params::Laptop_C_PlayerHold Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function laptop.laptop_C.playerUnequip
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ALaptop_C::PlayerUnequip(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("laptop_C", "playerUnequip");
+
+	Params::Laptop_C_PlayerUnequip Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function laptop.laptop_C.updateStrAgl
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -406,8 +486,9 @@ void ALaptop_C::UpdateStrAgl()
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ALaptop_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit)
+void ALaptop_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage)
 {
 	static class UFunction* Func = nullptr;
 
@@ -418,6 +499,7 @@ void ALaptop_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitRes
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
+	Parms.Damage = Damage;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -522,6 +604,30 @@ void ALaptop_C::DriveDetached()
 		Func = Class->GetFunction("laptop_C", "driveDetached");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function laptop.laptop_C.texturePickerApply
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ALaptop_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("laptop_C", "texturePickerApply");
+
+	Params::Laptop_C_TexturePickerApply Parms{};
+
+	Parms.Picker = Picker;
+	Parms.Texture = Texture;
+	Parms.Param_Index = Param_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -680,6 +786,62 @@ void ALaptop_C::SignalDeleted()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("laptop_C", "signalDeleted");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function laptop.laptop_C.hookTension
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AHook_C*                          Hook                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ALaptop_C::HookTension(class AHook_C* Hook)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("laptop_C", "hookTension");
+
+	Params::Laptop_C_HookTension Parms{};
+
+	Parms.Hook = Hook;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function laptop.laptop_C.cleanSponge
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Clean                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ALaptop_C::CleanSponge(float Clean, class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("laptop_C", "cleanSponge");
+
+	Params::Laptop_C_CleanSponge Parms{};
+
+	Parms.Clean = Clean;
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function laptop.laptop_C.crafted
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ALaptop_C::Crafted()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("laptop_C", "crafted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1103,15 +1265,23 @@ void ALaptop_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
 
 // Function laptop.laptop_C.receivedPhyiscsDamage
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hot                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void ALaptop_C::ReceivedPhyiscsDamage()
+void ALaptop_C::ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("laptop_C", "receivedPhyiscsDamage");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::Laptop_C_ReceivedPhyiscsDamage Parms{};
+
+	Parms.Damage = Damage;
+	Parms.Hot = std::move(Hot);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -1169,28 +1339,6 @@ void ALaptop_C::FireDamage(float Damage)
 }
 
 
-// Function laptop.laptop_C.steppedOn
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-
-void ALaptop_C::SteppedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("laptop_C", "steppedOn");
-
-	Params::Laptop_C_SteppedOn Parms{};
-
-	Parms.Player = Player;
-	Parms.Hit = std::move(Hit);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function laptop.laptop_C.Enter
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1240,8 +1388,9 @@ void ALaptop_C::IsButtonUsed(bool* Failed)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ALaptop_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
+void ALaptop_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1263,6 +1412,9 @@ void ALaptop_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -1353,6 +1505,30 @@ void ALaptop_C::CanBePutInContainer(bool* Return)
 }
 
 
+// Function laptop.laptop_C.landedOn
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IgnoreFallDamage                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ALaptop_C::LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("laptop_C", "landedOn");
+
+	Params::Laptop_C_LandedOn Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IgnoreFallDamage != nullptr)
+		*IgnoreFallDamage = Parms.IgnoreFallDamage;
+}
+
+
 // Function laptop.laptop_C.dreamInv
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1388,8 +1564,9 @@ void ALaptop_C::DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C**
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ALaptop_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
+void ALaptop_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1412,6 +1589,9 @@ void ALaptop_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveCo
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -1589,6 +1769,27 @@ void ALaptop_C::SkipRadial(bool* Skip)
 
 	if (Skip != nullptr)
 		*Skip = Parms.Skip;
+}
+
+
+// Function laptop.laptop_C.getPriceMultiplier
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   PriceMult                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ALaptop_C::GetPriceMultiplier(float* PriceMult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("laptop_C", "getPriceMultiplier");
+
+	Params::Laptop_C_GetPriceMultiplier Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PriceMult != nullptr)
+		*PriceMult = Parms.PriceMult;
 }
 
 }

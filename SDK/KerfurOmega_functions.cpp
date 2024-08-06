@@ -37,6 +37,54 @@ void AKerfurOmega_C::ExecuteUbergraph_kerfurOmega(int32 EntryPoint)
 }
 
 
+// Function kerfurOmega.kerfurOmega_C.attemptIgnite
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AKerfurOmega_C::AttemptIgnite()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kerfurOmega_C", "attemptIgnite");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function kerfurOmega.kerfurOmega_C.ignite
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Fuel                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AKerfurOmega_C::Ignite(float Fuel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kerfurOmega_C", "ignite");
+
+	Params::KerfurOmega_C_Ignite Parms{};
+
+	Parms.Fuel = Fuel;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function kerfurOmega.kerfurOmega_C.step
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AKerfurOmega_C::Step()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kerfurOmega_C", "step");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function kerfurOmega.kerfurOmega_C.reachedByExplosion
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -104,7 +152,7 @@ void AKerfurOmega_C::MakeMeow()
 // Function kerfurOmega.kerfurOmega_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void AKerfurOmega_C::SettingsApplied(const struct FStruct_settings& Settings)
 {
@@ -357,6 +405,66 @@ void AKerfurOmega_C::Move(bool MoveServ)
 }
 
 
+// Function kerfurOmega.kerfurOmega_C.playerR
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AKerfurOmega_C::PlayerR(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kerfurOmega_C", "playerR");
+
+	Params::KerfurOmega_C_PlayerR Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function kerfurOmega.kerfurOmega_C.playerHold
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AKerfurOmega_C::PlayerHold(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kerfurOmega_C", "playerHold");
+
+	Params::KerfurOmega_C_PlayerHold Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function kerfurOmega.kerfurOmega_C.playerUnequip
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AKerfurOmega_C::PlayerUnequip(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kerfurOmega_C", "playerUnequip");
+
+	Params::KerfurOmega_C_PlayerUnequip Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function kerfurOmega.kerfurOmega_C.updateStrAgl
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -376,8 +484,9 @@ void AKerfurOmega_C::UpdateStrAgl()
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AKerfurOmega_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit)
+void AKerfurOmega_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage)
 {
 	static class UFunction* Func = nullptr;
 
@@ -388,6 +497,7 @@ void AKerfurOmega_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FH
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
+	Parms.Damage = Damage;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -517,6 +627,62 @@ void AKerfurOmega_C::DriveDetached()
 }
 
 
+// Function kerfurOmega.kerfurOmega_C.hookTension
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AHook_C*                          Hook                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AKerfurOmega_C::HookTension(class AHook_C* Hook)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kerfurOmega_C", "hookTension");
+
+	Params::KerfurOmega_C_HookTension Parms{};
+
+	Parms.Hook = Hook;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function kerfurOmega.kerfurOmega_C.cleanSponge
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Clean                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AKerfurOmega_C::CleanSponge(float Clean, class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kerfurOmega_C", "cleanSponge");
+
+	Params::KerfurOmega_C_CleanSponge Parms{};
+
+	Parms.Clean = Clean;
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function kerfurOmega.kerfurOmega_C.crafted
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AKerfurOmega_C::Crafted()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kerfurOmega_C", "crafted");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function kerfurOmega.kerfurOmega_C.hooked
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -534,20 +700,6 @@ void AKerfurOmega_C::Hooked(class AHook_C* Hook)
 	Parms.Hook = Hook;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function kerfurOmega.kerfurOmega_C.attemptIgnite
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AKerfurOmega_C::AttemptIgnite()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("kerfurOmega_C", "attemptIgnite");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -872,10 +1024,9 @@ void AKerfurOmega_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AKerfurOmega_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action)
+void AKerfurOmega_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -886,7 +1037,6 @@ void AKerfurOmega_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
-	Parms.Param_Index = Param_Index;
 	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -895,15 +1045,23 @@ void AKerfurOmega_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct
 
 // Function kerfurOmega.kerfurOmega_C.receivedPhyiscsDamage
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hot                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void AKerfurOmega_C::ReceivedPhyiscsDamage()
+void AKerfurOmega_C::ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("kerfurOmega_C", "receivedPhyiscsDamage");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::KerfurOmega_C_ReceivedPhyiscsDamage Parms{};
+
+	Parms.Damage = Damage;
+	Parms.Hot = std::move(Hot);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -918,26 +1076,6 @@ void AKerfurOmega_C::Microwave()
 		Func = Class->GetFunction("kerfurOmega_C", "microwave");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function kerfurOmega.kerfurOmega_C.ignite
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Fuel                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AKerfurOmega_C::Ignite(float Fuel)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("kerfurOmega_C", "ignite");
-
-	Params::KerfurOmega_C_Ignite Parms{};
-
-	Parms.Fuel = Fuel;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -1243,6 +1381,30 @@ void AKerfurOmega_C::SetIgnoreSave(bool Ignore)
 }
 
 
+// Function kerfurOmega.kerfurOmega_C.texturePickerApply
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AKerfurOmega_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kerfurOmega_C", "texturePickerApply");
+
+	Params::KerfurOmega_C_TexturePickerApply Parms{};
+
+	Parms.Picker = Picker;
+	Parms.Texture = Texture;
+	Parms.Param_Index = Param_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function kerfurOmega.kerfurOmega_C.applyColor
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1414,6 +1576,46 @@ void AKerfurOmega_C::SignalDeleted()
 		Func = Class->GetFunction("kerfurOmega_C", "signalDeleted");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function kerfurOmega.kerfurOmega_C.OnSuccess_89CA73914C05883F3C2B2BBD3C9C7709
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPathFollowingResult                    MovementResult                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AKerfurOmega_C::OnSuccess_89CA73914C05883F3C2B2BBD3C9C7709(EPathFollowingResult MovementResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kerfurOmega_C", "OnSuccess_89CA73914C05883F3C2B2BBD3C9C7709");
+
+	Params::KerfurOmega_C_OnSuccess_89CA73914C05883F3C2B2BBD3C9C7709 Parms{};
+
+	Parms.MovementResult = MovementResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function kerfurOmega.kerfurOmega_C.OnFail_89CA73914C05883F3C2B2BBD3C9C7709
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPathFollowingResult                    MovementResult                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AKerfurOmega_C::OnFail_89CA73914C05883F3C2B2BBD3C9C7709(EPathFollowingResult MovementResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kerfurOmega_C", "OnFail_89CA73914C05883F3C2B2BBD3C9C7709");
+
+	Params::KerfurOmega_C_OnFail_89CA73914C05883F3C2B2BBD3C9C7709 Parms{};
+
+	Parms.MovementResult = MovementResult;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -2541,6 +2743,94 @@ void AKerfurOmega_C::UpdateDrip()
 }
 
 
+// Function kerfurOmega.kerfurOmega_C.tryToOccupyCar
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ACar1_C*                          Car                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AKerfurOmega_C::TryToOccupyCar(class ACar1_C* Car)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kerfurOmega_C", "tryToOccupyCar");
+
+	Params::KerfurOmega_C_TryToOccupyCar Parms{};
+
+	Parms.Car = Car;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function kerfurOmega.kerfurOmega_C.failCar
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AKerfurOmega_C::FailCar()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kerfurOmega_C", "failCar");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function kerfurOmega.kerfurOmega_C.sitOnCar
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ACar1_C*                          Param_OccupyCar                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AKerfurOmega_C::SitOnCar(class ACar1_C* Param_OccupyCar)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kerfurOmega_C", "sitOnCar");
+
+	Params::KerfurOmega_C_SitOnCar Parms{};
+
+	Parms.Param_OccupyCar = Param_OccupyCar;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function kerfurOmega.kerfurOmega_C.getOffCar
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Param_Kill                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AKerfurOmega_C::GetOffCar(bool Param_Kill)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kerfurOmega_C", "getOffCar");
+
+	Params::KerfurOmega_C_GetOffCar Parms{};
+
+	Parms.Param_Kill = Param_Kill;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function kerfurOmega.kerfurOmega_C.attemptMurerfur
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void AKerfurOmega_C::AttemptMurerfur()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kerfurOmega_C", "attemptMurerfur");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function kerfurOmega.kerfurOmega_C.canBePutInContainer
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -2636,8 +2926,9 @@ void AKerfurOmega_C::NoRespawn(bool Param_NoRespawn, bool* Return)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AKerfurOmega_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
+void AKerfurOmega_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2659,6 +2950,9 @@ void AKerfurOmega_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -2683,6 +2977,30 @@ void AKerfurOmega_C::IsButtonUsed(bool* Failed)
 }
 
 
+// Function kerfurOmega.kerfurOmega_C.landedOn
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IgnoreFallDamage                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AKerfurOmega_C::LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kerfurOmega_C", "landedOn");
+
+	Params::KerfurOmega_C_LandedOn Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IgnoreFallDamage != nullptr)
+		*IgnoreFallDamage = Parms.IgnoreFallDamage;
+}
+
+
 // Function kerfurOmega.kerfurOmega_C.getActionOptions
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -2692,8 +3010,9 @@ void AKerfurOmega_C::IsButtonUsed(bool* Failed)
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AKerfurOmega_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
+void AKerfurOmega_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2716,6 +3035,9 @@ void AKerfurOmega_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimit
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -2896,6 +3218,27 @@ void AKerfurOmega_C::SkipRadial(bool* Skip)
 }
 
 
+// Function kerfurOmega.kerfurOmega_C.getPriceMultiplier
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   PriceMult                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AKerfurOmega_C::GetPriceMultiplier(float* PriceMult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kerfurOmega_C", "getPriceMultiplier");
+
+	Params::KerfurOmega_C_GetPriceMultiplier Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PriceMult != nullptr)
+		*PriceMult = Parms.PriceMult;
+}
+
+
 // Function kerfurOmega.kerfurOmega_C.skipPreDelete
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -2980,6 +3323,27 @@ void AKerfurOmega_C::GetData(struct FStruct_save* Data)
 
 	if (Data != nullptr)
 		*Data = std::move(Parms.Data);
+}
+
+
+// Function kerfurOmega.kerfurOmega_C.gatherDataFromKey
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AKerfurOmega_C::GatherDataFromKey(bool* Gather)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kerfurOmega_C", "gatherDataFromKey");
+
+	Params::KerfurOmega_C_GatherDataFromKey Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Gather != nullptr)
+		*Gather = Parms.Gather;
 }
 
 

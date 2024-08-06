@@ -95,5 +95,26 @@ void AProp_garbageBag_C::GetData(struct FStruct_save* Data)
 		*Data = std::move(Parms.Data);
 }
 
+
+// Function prop_garbageBag.prop_garbageBag_C.getPriceMultiplier
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   PriceMult                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_garbageBag_C::GetPriceMultiplier(float* PriceMult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_garbageBag_C", "getPriceMultiplier");
+
+	Params::Prop_garbageBag_C_GetPriceMultiplier Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PriceMult != nullptr)
+		*PriceMult = Parms.PriceMult;
+}
+
 }
 

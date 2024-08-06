@@ -37,6 +37,20 @@ void UPiramid_sk_prot_Skeleton_AnimBlueprint_C::ExecuteUbergraph_piramid_sk_prot
 }
 
 
+// Function piramid_sk_prot_Skeleton_AnimBlueprint.piramid_sk_prot_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_piramid_sk_prot_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_DADCE16049230ACE030A2D99B6E77D13
+// (BlueprintEvent)
+
+void UPiramid_sk_prot_Skeleton_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_piramid_sk_prot_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_DADCE16049230ACE030A2D99B6E77D13()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("piramid_sk_prot_Skeleton_AnimBlueprint_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_piramid_sk_prot_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_DADCE16049230ACE030A2D99B6E77D13");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function piramid_sk_prot_Skeleton_AnimBlueprint.piramid_sk_prot_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_piramid_sk_prot_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_CE69DF8A4803BA47CF12368C61163630
 // (BlueprintEvent)
 
@@ -62,6 +76,40 @@ void UPiramid_sk_prot_Skeleton_AnimBlueprint_C::EvaluateGraphExposedInputs_Execu
 		Func = Class->GetFunction("piramid_sk_prot_Skeleton_AnimBlueprint_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_piramid_sk_prot_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_D130DBEB452F1617F91483ADCEE7FB15");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function piramid_sk_prot_Skeleton_AnimBlueprint.piramid_sk_prot_Skeleton_AnimBlueprint_C.BlueprintBeginPlay
+// (Event, Public, BlueprintEvent)
+
+void UPiramid_sk_prot_Skeleton_AnimBlueprint_C::BlueprintBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("piramid_sk_prot_Skeleton_AnimBlueprint_C", "BlueprintBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function piramid_sk_prot_Skeleton_AnimBlueprint.piramid_sk_prot_Skeleton_AnimBlueprint_C.BlueprintUpdateAnimation
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaTimeX                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPiramid_sk_prot_Skeleton_AnimBlueprint_C::BlueprintUpdateAnimation(float DeltaTimeX)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("piramid_sk_prot_Skeleton_AnimBlueprint_C", "BlueprintUpdateAnimation");
+
+	Params::Piramid_sk_prot_Skeleton_AnimBlueprint_C_BlueprintUpdateAnimation Parms{};
+
+	Parms.DeltaTimeX = DeltaTimeX;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -104,40 +152,6 @@ void UPiramid_sk_prot_Skeleton_AnimBlueprint_C::EvaluateGraphExposedInputs_Execu
 		Func = Class->GetFunction("piramid_sk_prot_Skeleton_AnimBlueprint_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_piramid_sk_prot_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_7BC9D3214BE8D20FEDF556A8AC094DB7");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function piramid_sk_prot_Skeleton_AnimBlueprint.piramid_sk_prot_Skeleton_AnimBlueprint_C.BlueprintBeginPlay
-// (Event, Public, BlueprintEvent)
-
-void UPiramid_sk_prot_Skeleton_AnimBlueprint_C::BlueprintBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("piramid_sk_prot_Skeleton_AnimBlueprint_C", "BlueprintBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function piramid_sk_prot_Skeleton_AnimBlueprint.piramid_sk_prot_Skeleton_AnimBlueprint_C.BlueprintUpdateAnimation
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaTimeX                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPiramid_sk_prot_Skeleton_AnimBlueprint_C::BlueprintUpdateAnimation(float DeltaTimeX)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("piramid_sk_prot_Skeleton_AnimBlueprint_C", "BlueprintUpdateAnimation");
-
-	Params::Piramid_sk_prot_Skeleton_AnimBlueprint_C_BlueprintUpdateAnimation Parms{};
-
-	Parms.DeltaTimeX = DeltaTimeX;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -206,20 +220,6 @@ void UPiramid_sk_prot_Skeleton_AnimBlueprint_C::EvaluateGraphExposedInputs_Execu
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("piramid_sk_prot_Skeleton_AnimBlueprint_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_piramid_sk_prot_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_20D59BE742D24C0B36A18E8AE5434722");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function piramid_sk_prot_Skeleton_AnimBlueprint.piramid_sk_prot_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_piramid_sk_prot_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_DADCE16049230ACE030A2D99B6E77D13
-// (BlueprintEvent)
-
-void UPiramid_sk_prot_Skeleton_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_piramid_sk_prot_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_DADCE16049230ACE030A2D99B6E77D13()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("piramid_sk_prot_Skeleton_AnimBlueprint_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_piramid_sk_prot_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_DADCE16049230ACE030A2D99B6E77D13");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

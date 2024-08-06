@@ -281,6 +281,27 @@ void APanel_SATconsole_tutorial3_C::GetTriggerData(struct FStruct_triggerSave* D
 }
 
 
+// Function panel_SATconsole_tutorial3.panel_SATconsole_tutorial3_C.gatherDataFromKeyT
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void APanel_SATconsole_tutorial3_C::GatherDataFromKeyT(bool* Gather)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("panel_SATconsole_tutorial3_C", "gatherDataFromKeyT");
+
+	Params::Panel_SATconsole_tutorial3_C_GatherDataFromKeyT Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Gather != nullptr)
+		*Gather = Parms.Gather;
+}
+
+
 // Function panel_SATconsole_tutorial3.panel_SATconsole_tutorial3_C.gamemodeBeginPlay
 // (Public, BlueprintCallable, BlueprintEvent)
 

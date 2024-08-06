@@ -18,18 +18,17 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_fax.prop_fax_C
-// 0x0020 (0x0388 - 0x0368)
+// 0x0020 (0x0398 - 0x0378)
 class AProp_fax_C final : public AProp_C
 {
 public:
-	uint8                                         Pad_1F08[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_fax_C;                         // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   PrintOut;                                          // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Alpha;                                             // 0x0378(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         PrintPhoto;                                        // 0x037C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Printing;                                          // 0x0380(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F09[0x3];                                     // 0x0381(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Original_Index;                                    // 0x0384(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_fax_C;                         // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UStaticMeshComponent*                   PrintOut;                                          // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Alpha;                                             // 0x0388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         PrintPhoto;                                        // 0x038C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Printing;                                          // 0x0390(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_391[0x3];                                      // 0x0391(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Original_Index;                                    // 0x0394(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_fax(int32 EntryPoint);
@@ -47,13 +46,13 @@ public:
 	}
 };
 static_assert(alignof(AProp_fax_C) == 0x000008, "Wrong alignment on AProp_fax_C");
-static_assert(sizeof(AProp_fax_C) == 0x000388, "Wrong size on AProp_fax_C");
-static_assert(offsetof(AProp_fax_C, UberGraphFrame_Prop_fax_C) == 0x000368, "Member 'AProp_fax_C::UberGraphFrame_Prop_fax_C' has a wrong offset!");
-static_assert(offsetof(AProp_fax_C, PrintOut) == 0x000370, "Member 'AProp_fax_C::PrintOut' has a wrong offset!");
-static_assert(offsetof(AProp_fax_C, Alpha) == 0x000378, "Member 'AProp_fax_C::Alpha' has a wrong offset!");
-static_assert(offsetof(AProp_fax_C, PrintPhoto) == 0x00037C, "Member 'AProp_fax_C::PrintPhoto' has a wrong offset!");
-static_assert(offsetof(AProp_fax_C, Printing) == 0x000380, "Member 'AProp_fax_C::Printing' has a wrong offset!");
-static_assert(offsetof(AProp_fax_C, Original_Index) == 0x000384, "Member 'AProp_fax_C::Original_Index' has a wrong offset!");
+static_assert(sizeof(AProp_fax_C) == 0x000398, "Wrong size on AProp_fax_C");
+static_assert(offsetof(AProp_fax_C, UberGraphFrame_Prop_fax_C) == 0x000378, "Member 'AProp_fax_C::UberGraphFrame_Prop_fax_C' has a wrong offset!");
+static_assert(offsetof(AProp_fax_C, PrintOut) == 0x000380, "Member 'AProp_fax_C::PrintOut' has a wrong offset!");
+static_assert(offsetof(AProp_fax_C, Alpha) == 0x000388, "Member 'AProp_fax_C::Alpha' has a wrong offset!");
+static_assert(offsetof(AProp_fax_C, PrintPhoto) == 0x00038C, "Member 'AProp_fax_C::PrintPhoto' has a wrong offset!");
+static_assert(offsetof(AProp_fax_C, Printing) == 0x000390, "Member 'AProp_fax_C::Printing' has a wrong offset!");
+static_assert(offsetof(AProp_fax_C, Original_Index) == 0x000394, "Member 'AProp_fax_C::Original_Index' has a wrong offset!");
 
 }
 

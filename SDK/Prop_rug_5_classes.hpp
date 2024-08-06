@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_rug_5.prop_rug_5_C
-// 0x0000 (0x0378 - 0x0378)
+// 0x0000 (0x03A0 - 0x03A0)
 class AProp_rug_5_C final : public AProp_rug_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_rug_5_C) == 0x000008, "Wrong alignment on AProp_rug_5_C");
-static_assert(sizeof(AProp_rug_5_C) == 0x000378, "Wrong size on AProp_rug_5_C");
+static_assert(sizeof(AProp_rug_5_C) == 0x0003A0, "Wrong size on AProp_rug_5_C");
 
 }
 

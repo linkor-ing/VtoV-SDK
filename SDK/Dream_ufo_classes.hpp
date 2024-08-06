@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "DreamBase_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -80,22 +80,22 @@ public:
 	class UStaticMeshComponent*                   Plane;                                             // 0x0428(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         FlyTo_a_7321E6604A5B52450D29AB96E4E19D3D;          // 0x0430(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            FlyTo__Direction_7321E6604A5B52450D29AB96E4E19D3D; // 0x0434(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_296C[0x3];                                     // 0x0435(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_435[0x3];                                      // 0x0435(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     FlyTo;                                             // 0x0438(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Light_a_88DC19334F539F9941925A9E9D9E821C;          // 0x0440(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            Light__Direction_88DC19334F539F9941925A9E9D9E821C; // 0x0444(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_296D[0x3];                                     // 0x0445(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_445[0x3];                                      // 0x0445(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     Light;                                             // 0x0448(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         FlyAlpha;                                          // 0x0450(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_dream_ufo(int32 EntryPoint);
+	void ReceiveBeginPlay();
 	void ReceiveTick(float DeltaSeconds);
 	void FlyTo__UpdateFunc();
 	void FlyTo__FinishedFunc();
 	void Light__UpdateFunc();
 	void Light__FinishedFunc();
-	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

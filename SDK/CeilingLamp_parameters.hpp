@@ -10,48 +10,87 @@
 
 #include "Basic.hpp"
 
-#include "Struct_triggerSave_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Struct_triggerSave_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function ceilingLamp.ceilingLamp_C.ExecuteUbergraph_ceilingLamp
-// 0x0040 (0x0040 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct CeilingLamp_C_ExecuteUbergraph_ceilingLamp final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(bool Active_calc, bool Active_downl, bool Active_coords, bool Active_play, bool Active_light)> K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_3026[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_active_calc;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_active_downl;                   // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_active_coords;                  // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_active_play;                    // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_active_light;                   // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3027[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsChildActor_ReturnValue;                 // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsChildActor_ReturnValue_1;               // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3028[0x2];                                     // 0x002E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0030(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0004(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(bool Active_calc, bool Active_downl, bool Active_coords, bool Active_play, bool Active_light)> K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_active_calc;                    // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_active_downl;                   // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_active_coords;                  // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_active_play;                    // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_active_light;                   // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsChildActor_ReturnValue;                 // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsChildActor_ReturnValue_1;               // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_36[0x2];                                       // 0x0036(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_CustomEvent_Weight;                         // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_1;       // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_52[0x2];                                       // 0x0052(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_2;        // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0062(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_63[0x1];                                       // 0x0063(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_1;    // 0x0068(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp) == 0x000008, "Wrong alignment on CeilingLamp_C_ExecuteUbergraph_ceilingLamp");
-static_assert(sizeof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp) == 0x000040, "Wrong size on CeilingLamp_C_ExecuteUbergraph_ceilingLamp");
+static_assert(sizeof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp) == 0x000078, "Wrong size on CeilingLamp_C_ExecuteUbergraph_ceilingLamp");
 static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, EntryPoint) == 0x000000, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::EntryPoint' has a wrong offset!");
-static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000018, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, K2Node_CustomEvent_active_calc) == 0x000020, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::K2Node_CustomEvent_active_calc' has a wrong offset!");
-static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, K2Node_CustomEvent_active_downl) == 0x000021, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::K2Node_CustomEvent_active_downl' has a wrong offset!");
-static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, K2Node_CustomEvent_active_coords) == 0x000022, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::K2Node_CustomEvent_active_coords' has a wrong offset!");
-static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, K2Node_CustomEvent_active_play) == 0x000023, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::K2Node_CustomEvent_active_play' has a wrong offset!");
-static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, K2Node_CustomEvent_active_light) == 0x000024, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::K2Node_CustomEvent_active_light' has a wrong offset!");
-static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, CallFunc_RandomFloatInRange_ReturnValue) == 0x000028, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, CallFunc_IsChildActor_ReturnValue) == 0x00002C, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::CallFunc_IsChildActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, CallFunc_IsChildActor_ReturnValue_1) == 0x00002D, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::CallFunc_IsChildActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000030, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000004, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000020, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, K2Node_CustomEvent_active_calc) == 0x000028, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::K2Node_CustomEvent_active_calc' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, K2Node_CustomEvent_active_downl) == 0x000029, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::K2Node_CustomEvent_active_downl' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, K2Node_CustomEvent_active_coords) == 0x00002A, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::K2Node_CustomEvent_active_coords' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, K2Node_CustomEvent_active_play) == 0x00002B, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::K2Node_CustomEvent_active_play' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, K2Node_CustomEvent_active_light) == 0x00002C, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::K2Node_CustomEvent_active_light' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, CallFunc_RandomFloatInRange_ReturnValue) == 0x000030, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, CallFunc_IsChildActor_ReturnValue) == 0x000034, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::CallFunc_IsChildActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, CallFunc_IsChildActor_ReturnValue_1) == 0x000035, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::CallFunc_IsChildActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, K2Node_CustomEvent_Weight) == 0x000038, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::K2Node_CustomEvent_Weight' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x000040, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000048, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x00004C, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x000050, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, CallFunc_RandomBoolWithWeight_ReturnValue_1) == 0x000051, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::CallFunc_RandomBoolWithWeight_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, CallFunc_Array_Add_ReturnValue) == 0x000054, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, CallFunc_getMainGamemode_AsMain_Gamemode_2) == 0x000058, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::CallFunc_getMainGamemode_AsMain_Gamemode_2' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, CallFunc_Array_RemoveItem_ReturnValue) == 0x000060, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, CallFunc_Not_PreBool_ReturnValue) == 0x000061, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, CallFunc_Not_PreBool_ReturnValue_1) == 0x000062, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000064, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CeilingLamp_C_ExecuteUbergraph_ceilingLamp, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x000068, "Member 'CeilingLamp_C_ExecuteUbergraph_ceilingLamp::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
+
+// Function ceilingLamp.ceilingLamp_C.blink
+// 0x0004 (0x0004 - 0x0000)
+struct CeilingLamp_C_blink final
+{
+public:
+	float                                         Weight;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(CeilingLamp_C_blink) == 0x000004, "Wrong alignment on CeilingLamp_C_blink");
+static_assert(sizeof(CeilingLamp_C_blink) == 0x000004, "Wrong size on CeilingLamp_C_blink");
+static_assert(offsetof(CeilingLamp_C_blink, Weight) == 0x000000, "Member 'CeilingLamp_C_blink::Weight' has a wrong offset!");
 
 // Function ceilingLamp.ceilingLamp_C.powerChanged
 // 0x0005 (0x0005 - 0x0000)
@@ -100,7 +139,7 @@ struct CeilingLamp_C_SetVis final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3029[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInterface*                     Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInterface*                     K2Node_Select_Default;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -131,7 +170,7 @@ public:
 	struct FStruct_triggerSave                    Data;                                              // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00F0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadTriggerData_return;                   // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_302A[0x2];                                     // 0x00F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F2[0x2];                                       // 0x00F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Array_Get_Item;                           // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Array_Get_Item_1;                         // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Get_Item_2;                         // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -163,6 +202,17 @@ static_assert(offsetof(CeilingLamp_C_GetTriggerData, K2Node_MakeArray_Array) == 
 static_assert(offsetof(CeilingLamp_C_GetTriggerData, K2Node_MakeArray_Array_1) == 0x000100, "Member 'CeilingLamp_C_GetTriggerData::K2Node_MakeArray_Array_1' has a wrong offset!");
 static_assert(offsetof(CeilingLamp_C_GetTriggerData, CallFunc_getTriggerData_data) == 0x000110, "Member 'CeilingLamp_C_GetTriggerData::CallFunc_getTriggerData_data' has a wrong offset!");
 static_assert(offsetof(CeilingLamp_C_GetTriggerData, K2Node_SetFieldsInStruct_StructOut) == 0x000200, "Member 'CeilingLamp_C_GetTriggerData::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
+
+// Function ceilingLamp.ceilingLamp_C.gatherDataFromKeyT
+// 0x0001 (0x0001 - 0x0000)
+struct CeilingLamp_C_GatherDataFromKeyT final
+{
+public:
+	bool                                          Gather;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(CeilingLamp_C_GatherDataFromKeyT) == 0x000001, "Wrong alignment on CeilingLamp_C_GatherDataFromKeyT");
+static_assert(sizeof(CeilingLamp_C_GatherDataFromKeyT) == 0x000001, "Wrong size on CeilingLamp_C_GatherDataFromKeyT");
+static_assert(offsetof(CeilingLamp_C_GatherDataFromKeyT, Gather) == 0x000000, "Member 'CeilingLamp_C_GatherDataFromKeyT::Gather' has a wrong offset!");
 
 }
 

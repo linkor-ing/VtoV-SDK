@@ -19,33 +19,32 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_generatorP.prop_generatorP_C
-// 0x0038 (0x03A0 - 0x0368)
+// 0x0038 (0x03B0 - 0x0378)
 class AProp_generatorP_C final : public AProp_C
 {
 public:
-	uint8                                         Pad_30F2[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_generatorP_C;                  // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   FuelIn;                                            // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          FuelVis;                                           // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          Use;                                               // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   Socket1;                                           // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   Socket0;                                           // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Fuel;                                              // 0x0398(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsActive;                                          // 0x039C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_generatorP_C;                  // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UStaticMeshComponent*                   FuelIn;                                            // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          FuelVis;                                           // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Use;                                               // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   Socket1;                                           // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   Socket0;                                           // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Fuel;                                              // 0x03A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsActive;                                          // 0x03AC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_prop_generatorP(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
 	void ReceiveTick(float DeltaSeconds);
 	void BndEvt__prop_generatorP_fuelIn_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 	void TryActivate();
 	void ActivateOutlets();
 	void FuelUp(class AProp_gascan_C* Self2, bool* Fueled);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
+	void ReceiveBeginPlay();
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 	void GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled);
 
 public:
@@ -59,15 +58,15 @@ public:
 	}
 };
 static_assert(alignof(AProp_generatorP_C) == 0x000008, "Wrong alignment on AProp_generatorP_C");
-static_assert(sizeof(AProp_generatorP_C) == 0x0003A0, "Wrong size on AProp_generatorP_C");
-static_assert(offsetof(AProp_generatorP_C, UberGraphFrame_Prop_generatorP_C) == 0x000368, "Member 'AProp_generatorP_C::UberGraphFrame_Prop_generatorP_C' has a wrong offset!");
-static_assert(offsetof(AProp_generatorP_C, FuelIn) == 0x000370, "Member 'AProp_generatorP_C::FuelIn' has a wrong offset!");
-static_assert(offsetof(AProp_generatorP_C, FuelVis) == 0x000378, "Member 'AProp_generatorP_C::FuelVis' has a wrong offset!");
-static_assert(offsetof(AProp_generatorP_C, Use) == 0x000380, "Member 'AProp_generatorP_C::Use' has a wrong offset!");
-static_assert(offsetof(AProp_generatorP_C, Socket1) == 0x000388, "Member 'AProp_generatorP_C::Socket1' has a wrong offset!");
-static_assert(offsetof(AProp_generatorP_C, Socket0) == 0x000390, "Member 'AProp_generatorP_C::Socket0' has a wrong offset!");
-static_assert(offsetof(AProp_generatorP_C, Fuel) == 0x000398, "Member 'AProp_generatorP_C::Fuel' has a wrong offset!");
-static_assert(offsetof(AProp_generatorP_C, IsActive) == 0x00039C, "Member 'AProp_generatorP_C::IsActive' has a wrong offset!");
+static_assert(sizeof(AProp_generatorP_C) == 0x0003B0, "Wrong size on AProp_generatorP_C");
+static_assert(offsetof(AProp_generatorP_C, UberGraphFrame_Prop_generatorP_C) == 0x000378, "Member 'AProp_generatorP_C::UberGraphFrame_Prop_generatorP_C' has a wrong offset!");
+static_assert(offsetof(AProp_generatorP_C, FuelIn) == 0x000380, "Member 'AProp_generatorP_C::FuelIn' has a wrong offset!");
+static_assert(offsetof(AProp_generatorP_C, FuelVis) == 0x000388, "Member 'AProp_generatorP_C::FuelVis' has a wrong offset!");
+static_assert(offsetof(AProp_generatorP_C, Use) == 0x000390, "Member 'AProp_generatorP_C::Use' has a wrong offset!");
+static_assert(offsetof(AProp_generatorP_C, Socket1) == 0x000398, "Member 'AProp_generatorP_C::Socket1' has a wrong offset!");
+static_assert(offsetof(AProp_generatorP_C, Socket0) == 0x0003A0, "Member 'AProp_generatorP_C::Socket0' has a wrong offset!");
+static_assert(offsetof(AProp_generatorP_C, Fuel) == 0x0003A8, "Member 'AProp_generatorP_C::Fuel' has a wrong offset!");
+static_assert(offsetof(AProp_generatorP_C, IsActive) == 0x0003AC, "Member 'AProp_generatorP_C::IsActive' has a wrong offset!");
 
 }
 

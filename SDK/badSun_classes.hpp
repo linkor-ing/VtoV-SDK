@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass badSun.badSun_C
-// 0x0038 (0x0280 - 0x0248)
+// 0x0048 (0x0290 - 0x0248)
 class AbadSun_C final : public AActor_save_C
 {
 public:
@@ -26,16 +26,20 @@ public:
 	class UAudioComponent*                        Audio;                                             // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         A_a_ADF069CE4A49B896D1064B954824CC67;              // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            A__Direction_ADF069CE4A49B896D1064B954824CC67;     // 0x025C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EDF[0x3];                                     // 0x025D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25D[0x3];                                      // 0x025D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     A;                                                 // 0x0260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUmg_badSun_C*                          Widget;                                            // 0x0268(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          EndSiren;                                          // 0x0270(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EE0[0x3];                                     // 0x0271(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_271[0x3];                                      // 0x0271(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Destroy;                                           // 0x0274(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Super;                                             // 0x0278(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	uint8                                         Pad_279[0x7];                                      // 0x0279(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARuntimeVirtualTextureVolume*           Rvt;                                               // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         NewVar_0;                                          // 0x0288(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_badSun(int32 EntryPoint);
+	void UpdateRvt();
 	void Siren();
 	void Remove();
 	void ReceiveBeginPlay();
@@ -53,7 +57,7 @@ public:
 	}
 };
 static_assert(alignof(AbadSun_C) == 0x000008, "Wrong alignment on AbadSun_C");
-static_assert(sizeof(AbadSun_C) == 0x000280, "Wrong size on AbadSun_C");
+static_assert(sizeof(AbadSun_C) == 0x000290, "Wrong size on AbadSun_C");
 static_assert(offsetof(AbadSun_C, UberGraphFrame_badSun_C) == 0x000248, "Member 'AbadSun_C::UberGraphFrame_badSun_C' has a wrong offset!");
 static_assert(offsetof(AbadSun_C, Audio) == 0x000250, "Member 'AbadSun_C::Audio' has a wrong offset!");
 static_assert(offsetof(AbadSun_C, A_a_ADF069CE4A49B896D1064B954824CC67) == 0x000258, "Member 'AbadSun_C::A_a_ADF069CE4A49B896D1064B954824CC67' has a wrong offset!");
@@ -63,6 +67,8 @@ static_assert(offsetof(AbadSun_C, Widget) == 0x000268, "Member 'AbadSun_C::Widge
 static_assert(offsetof(AbadSun_C, EndSiren) == 0x000270, "Member 'AbadSun_C::EndSiren' has a wrong offset!");
 static_assert(offsetof(AbadSun_C, Destroy) == 0x000274, "Member 'AbadSun_C::Destroy' has a wrong offset!");
 static_assert(offsetof(AbadSun_C, Super) == 0x000278, "Member 'AbadSun_C::Super' has a wrong offset!");
+static_assert(offsetof(AbadSun_C, Rvt) == 0x000280, "Member 'AbadSun_C::Rvt' has a wrong offset!");
+static_assert(offsetof(AbadSun_C, NewVar_0) == 0x000288, "Member 'AbadSun_C::NewVar_0' has a wrong offset!");
 
 }
 

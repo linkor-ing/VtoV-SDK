@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -17,29 +18,40 @@ namespace SDK::Params
 {
 
 // Function prop_digcam.prop_digcam_C.ExecuteUbergraph_prop_digcam
-// 0x0080 (0x0080 - 0x0000)
+// 0x0100 (0x0100 - 0x0000)
 struct Prop_digcam_C_ExecuteUbergraph_prop_digcam final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B29[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B2A[0x8];                                     // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0020(0x0030)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0050(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x005C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0068(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_BoolToText_ReturnValue;              // 0x0008(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0020(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0060(0x0010)(ReferenceParm)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0078(0x0018)()
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x00A0(0x0030)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x00D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x00DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x00E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_digcam_C_ExecuteUbergraph_prop_digcam) == 0x000010, "Wrong alignment on Prop_digcam_C_ExecuteUbergraph_prop_digcam");
-static_assert(sizeof(Prop_digcam_C_ExecuteUbergraph_prop_digcam) == 0x000080, "Wrong size on Prop_digcam_C_ExecuteUbergraph_prop_digcam");
+static_assert(sizeof(Prop_digcam_C_ExecuteUbergraph_prop_digcam) == 0x000100, "Wrong size on Prop_digcam_C_ExecuteUbergraph_prop_digcam");
 static_assert(offsetof(Prop_digcam_C_ExecuteUbergraph_prop_digcam, EntryPoint) == 0x000000, "Member 'Prop_digcam_C_ExecuteUbergraph_prop_digcam::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Prop_digcam_C_ExecuteUbergraph_prop_digcam, K2Node_Event_player) == 0x000008, "Member 'Prop_digcam_C_ExecuteUbergraph_prop_digcam::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(Prop_digcam_C_ExecuteUbergraph_prop_digcam, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000010, "Member 'Prop_digcam_C_ExecuteUbergraph_prop_digcam::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(Prop_digcam_C_ExecuteUbergraph_prop_digcam, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x000020, "Member 'Prop_digcam_C_ExecuteUbergraph_prop_digcam::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_digcam_C_ExecuteUbergraph_prop_digcam, CallFunc_BreakTransform_Location) == 0x000050, "Member 'Prop_digcam_C_ExecuteUbergraph_prop_digcam::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(Prop_digcam_C_ExecuteUbergraph_prop_digcam, CallFunc_BreakTransform_Rotation) == 0x00005C, "Member 'Prop_digcam_C_ExecuteUbergraph_prop_digcam::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(Prop_digcam_C_ExecuteUbergraph_prop_digcam, CallFunc_BreakTransform_Scale) == 0x000068, "Member 'Prop_digcam_C_ExecuteUbergraph_prop_digcam::CallFunc_BreakTransform_Scale' has a wrong offset!");
+static_assert(offsetof(Prop_digcam_C_ExecuteUbergraph_prop_digcam, CallFunc_Not_PreBool_ReturnValue) == 0x000004, "Member 'Prop_digcam_C_ExecuteUbergraph_prop_digcam::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_digcam_C_ExecuteUbergraph_prop_digcam, CallFunc_Conv_BoolToText_ReturnValue) == 0x000008, "Member 'Prop_digcam_C_ExecuteUbergraph_prop_digcam::CallFunc_Conv_BoolToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_digcam_C_ExecuteUbergraph_prop_digcam, K2Node_MakeStruct_FormatArgumentData) == 0x000020, "Member 'Prop_digcam_C_ExecuteUbergraph_prop_digcam::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(Prop_digcam_C_ExecuteUbergraph_prop_digcam, K2Node_MakeArray_Array) == 0x000060, "Member 'Prop_digcam_C_ExecuteUbergraph_prop_digcam::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Prop_digcam_C_ExecuteUbergraph_prop_digcam, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000070, "Member 'Prop_digcam_C_ExecuteUbergraph_prop_digcam::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(Prop_digcam_C_ExecuteUbergraph_prop_digcam, CallFunc_Format_ReturnValue) == 0x000078, "Member 'Prop_digcam_C_ExecuteUbergraph_prop_digcam::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_digcam_C_ExecuteUbergraph_prop_digcam, K2Node_Event_player_1) == 0x000090, "Member 'Prop_digcam_C_ExecuteUbergraph_prop_digcam::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(Prop_digcam_C_ExecuteUbergraph_prop_digcam, K2Node_Event_player) == 0x000098, "Member 'Prop_digcam_C_ExecuteUbergraph_prop_digcam::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Prop_digcam_C_ExecuteUbergraph_prop_digcam, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x0000A0, "Member 'Prop_digcam_C_ExecuteUbergraph_prop_digcam::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_digcam_C_ExecuteUbergraph_prop_digcam, CallFunc_BreakTransform_Location) == 0x0000D0, "Member 'Prop_digcam_C_ExecuteUbergraph_prop_digcam::CallFunc_BreakTransform_Location' has a wrong offset!");
+static_assert(offsetof(Prop_digcam_C_ExecuteUbergraph_prop_digcam, CallFunc_BreakTransform_Rotation) == 0x0000DC, "Member 'Prop_digcam_C_ExecuteUbergraph_prop_digcam::CallFunc_BreakTransform_Rotation' has a wrong offset!");
+static_assert(offsetof(Prop_digcam_C_ExecuteUbergraph_prop_digcam, CallFunc_BreakTransform_Scale) == 0x0000E8, "Member 'Prop_digcam_C_ExecuteUbergraph_prop_digcam::CallFunc_BreakTransform_Scale' has a wrong offset!");
 
 // Function prop_digcam.prop_digcam_C.playerHandUse_RMB
 // 0x0008 (0x0008 - 0x0000)
@@ -51,6 +63,17 @@ public:
 static_assert(alignof(Prop_digcam_C_PlayerHandUse_RMB) == 0x000008, "Wrong alignment on Prop_digcam_C_PlayerHandUse_RMB");
 static_assert(sizeof(Prop_digcam_C_PlayerHandUse_RMB) == 0x000008, "Wrong size on Prop_digcam_C_PlayerHandUse_RMB");
 static_assert(offsetof(Prop_digcam_C_PlayerHandUse_RMB, Player) == 0x000000, "Member 'Prop_digcam_C_PlayerHandUse_RMB::Player' has a wrong offset!");
+
+// Function prop_digcam.prop_digcam_C.playerHandUse_LMB
+// 0x0008 (0x0008 - 0x0000)
+struct Prop_digcam_C_PlayerHandUse_LMB final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_digcam_C_PlayerHandUse_LMB) == 0x000008, "Wrong alignment on Prop_digcam_C_PlayerHandUse_LMB");
+static_assert(sizeof(Prop_digcam_C_PlayerHandUse_LMB) == 0x000008, "Wrong size on Prop_digcam_C_PlayerHandUse_LMB");
+static_assert(offsetof(Prop_digcam_C_PlayerHandUse_LMB, Player) == 0x000000, "Member 'Prop_digcam_C_PlayerHandUse_LMB::Player' has a wrong offset!");
 
 }
 

@@ -10,19 +10,19 @@
 
 #include "Basic.hpp"
 
-#include "Prop_container_classes.hpp"
 #include "Engine_structs.hpp"
+#include "Prop_container_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass prop_container_orderbox.prop_container_orderbox_C
-// 0x0008 (0x03F0 - 0x03E8)
+// 0x0008 (0x0400 - 0x03F8)
 class AProp_container_orderbox_C final : public AProp_container_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_container_orderbox_C;          // 0x03E8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_container_orderbox_C;          // 0x03F8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_prop_container_orderbox(int32 EntryPoint);
@@ -41,8 +41,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_container_orderbox_C) == 0x000008, "Wrong alignment on AProp_container_orderbox_C");
-static_assert(sizeof(AProp_container_orderbox_C) == 0x0003F0, "Wrong size on AProp_container_orderbox_C");
-static_assert(offsetof(AProp_container_orderbox_C, UberGraphFrame_Prop_container_orderbox_C) == 0x0003E8, "Member 'AProp_container_orderbox_C::UberGraphFrame_Prop_container_orderbox_C' has a wrong offset!");
+static_assert(sizeof(AProp_container_orderbox_C) == 0x000400, "Wrong size on AProp_container_orderbox_C");
+static_assert(offsetof(AProp_container_orderbox_C, UberGraphFrame_Prop_container_orderbox_C) == 0x0003F8, "Member 'AProp_container_orderbox_C::UberGraphFrame_Prop_container_orderbox_C' has a wrong offset!");
 
 }
 

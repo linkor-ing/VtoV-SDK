@@ -104,10 +104,9 @@ void ACord_C::ReceiveBeginPlay()
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ACord_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action)
+void ACord_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -118,8 +117,67 @@ void ACord_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitRe
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
-	Parms.Param_Index = Param_Index;
 	Parms.Action = Action;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function cord.cord_C.playerR
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACord_C::PlayerR(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("cord_C", "playerR");
+
+	Params::Cord_C_PlayerR Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function cord.cord_C.playerHold
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACord_C::PlayerHold(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("cord_C", "playerHold");
+
+	Params::Cord_C_PlayerHold Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function cord.cord_C.playerUnequip
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACord_C::PlayerUnequip(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("cord_C", "playerUnequip");
+
+	Params::Cord_C_PlayerUnequip Parms{};
+
+	Parms.Player = Player;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -144,8 +202,9 @@ void ACord_C::UpdateStrAgl()
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ACord_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit)
+void ACord_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage)
 {
 	static class UFunction* Func = nullptr;
 
@@ -156,6 +215,7 @@ void ACord_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResul
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
+	Parms.Damage = Damage;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -368,6 +428,62 @@ void ACord_C::GetAttachComponents(class UStaticMeshComponent** C1, class UStatic
 }
 
 
+// Function cord.cord_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ACord_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("cord_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function cord.cord_C.ignoreSave
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Param_IgnoreSave                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ACord_C::IgnoreSave(bool* Param_IgnoreSave)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("cord_C", "ignoreSave");
+
+	Params::Cord_C_IgnoreSave Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Param_IgnoreSave != nullptr)
+		*Param_IgnoreSave = Parms.Param_IgnoreSave;
+}
+
+
+// Function cord.cord_C.skipPreDelete
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Skip                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ACord_C::SkipPreDelete(bool* Skip)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("cord_C", "skipPreDelete");
+
+	Params::Cord_C_SkipPreDelete Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Skip != nullptr)
+		*Skip = Parms.Skip;
+}
+
+
 // Function cord.cord_C.setLen
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -379,6 +495,46 @@ void ACord_C::SetLen()
 		Func = Class->GetFunction("cord_C", "setLen");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function cord.cord_C.getActionOptions
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class FString>                   Options                                                (Parm, OutParm)
+// TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
+// TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACord_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("cord_C", "getActionOptions");
+
+	Params::Cord_C_GetActionOptions Parms{};
+
+	Parms.Player = Player;
+	Parms.Component = Component;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Options != nullptr)
+		*Options = std::move(Parms.Options);
+
+	if (Options_enum != nullptr)
+		*Options_enum = std::move(Parms.Options_enum);
+
+	if (OptionsNamesOverlay != nullptr)
+		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -477,8 +633,9 @@ void ACord_C::NoRespawn(bool Param_NoRespawn, bool* Return)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ACord_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
+void ACord_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -500,6 +657,9 @@ void ACord_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, 
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -524,95 +684,27 @@ void ACord_C::IsButtonUsed(bool* Failed)
 }
 
 
-// Function cord.cord_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ACord_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("cord_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function cord.cord_C.ignoreSave
+// Function cord.cord_C.landedOn
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Param_IgnoreSave                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ACord_C::IgnoreSave(bool* Param_IgnoreSave)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("cord_C", "ignoreSave");
-
-	Params::Cord_C_IgnoreSave Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Param_IgnoreSave != nullptr)
-		*Param_IgnoreSave = Parms.Param_IgnoreSave;
-}
-
-
-// Function cord.cord_C.skipPreDelete
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Skip                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ACord_C::SkipPreDelete(bool* Skip)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("cord_C", "skipPreDelete");
-
-	Params::Cord_C_SkipPreDelete Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Skip != nullptr)
-		*Skip = Parms.Skip;
-}
-
-
-// Function cord.cord_C.getActionOptions
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class FString>                   Options                                                (Parm, OutParm)
-// TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
-// TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// bool                                    IgnoreFallDamage                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ACord_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
+void ACord_C::LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("cord_C", "getActionOptions");
+		Func = Class->GetFunction("cord_C", "landedOn");
 
-	Params::Cord_C_GetActionOptions Parms{};
+	Params::Cord_C_LandedOn Parms{};
 
 	Parms.Player = Player;
-	Parms.Component = Component;
-	Parms.Actor = Actor;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Options != nullptr)
-		*Options = std::move(Parms.Options);
-
-	if (Options_enum != nullptr)
-		*Options_enum = std::move(Parms.Options_enum);
-
-	if (OptionsNamesOverlay != nullptr)
-		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+	if (IgnoreFallDamage != nullptr)
+		*IgnoreFallDamage = Parms.IgnoreFallDamage;
 }
 
 }

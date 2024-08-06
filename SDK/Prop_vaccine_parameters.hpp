@@ -10,48 +10,39 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Struct_save_structs.hpp"
 #include "Struct_mBool_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Enum_interactionActions_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function prop_vaccine.prop_vaccine_C.ExecuteUbergraph_prop_vaccine
-// 0x00F0 (0x00F0 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct Prop_vaccine_C_ExecuteUbergraph_prop_vaccine final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D6E[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          CallFunc_getMainPlayer_AsMain_Player;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0010(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AEffect_ariralVaccine_C*                CallFunc_FinishSpawningActor_ReturnValue;          // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x0058(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00E5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3D6F[0x2];                                     // 0x00E6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x0010(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9A[0x6];                                       // 0x009A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          CallFunc_getMainPlayer_AsMain_Player;              // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Prop_vaccine_C_ExecuteUbergraph_prop_vaccine) == 0x000010, "Wrong alignment on Prop_vaccine_C_ExecuteUbergraph_prop_vaccine");
-static_assert(sizeof(Prop_vaccine_C_ExecuteUbergraph_prop_vaccine) == 0x0000F0, "Wrong size on Prop_vaccine_C_ExecuteUbergraph_prop_vaccine");
+static_assert(alignof(Prop_vaccine_C_ExecuteUbergraph_prop_vaccine) == 0x000008, "Wrong alignment on Prop_vaccine_C_ExecuteUbergraph_prop_vaccine");
+static_assert(sizeof(Prop_vaccine_C_ExecuteUbergraph_prop_vaccine) == 0x0000B0, "Wrong size on Prop_vaccine_C_ExecuteUbergraph_prop_vaccine");
 static_assert(offsetof(Prop_vaccine_C_ExecuteUbergraph_prop_vaccine, EntryPoint) == 0x000000, "Member 'Prop_vaccine_C_ExecuteUbergraph_prop_vaccine::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Prop_vaccine_C_ExecuteUbergraph_prop_vaccine, CallFunc_getMainPlayer_AsMain_Player) == 0x000008, "Member 'Prop_vaccine_C_ExecuteUbergraph_prop_vaccine::CallFunc_getMainPlayer_AsMain_Player' has a wrong offset!");
-static_assert(offsetof(Prop_vaccine_C_ExecuteUbergraph_prop_vaccine, CallFunc_MakeTransform_ReturnValue) == 0x000010, "Member 'Prop_vaccine_C_ExecuteUbergraph_prop_vaccine::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_vaccine_C_ExecuteUbergraph_prop_vaccine, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000040, "Member 'Prop_vaccine_C_ExecuteUbergraph_prop_vaccine::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_vaccine_C_ExecuteUbergraph_prop_vaccine, CallFunc_FinishSpawningActor_ReturnValue) == 0x000048, "Member 'Prop_vaccine_C_ExecuteUbergraph_prop_vaccine::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_vaccine_C_ExecuteUbergraph_prop_vaccine, K2Node_Event_player_1) == 0x000050, "Member 'Prop_vaccine_C_ExecuteUbergraph_prop_vaccine::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(Prop_vaccine_C_ExecuteUbergraph_prop_vaccine, K2Node_Event_hit) == 0x000058, "Member 'Prop_vaccine_C_ExecuteUbergraph_prop_vaccine::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_vaccine_C_ExecuteUbergraph_prop_vaccine, K2Node_Event_index) == 0x0000E0, "Member 'Prop_vaccine_C_ExecuteUbergraph_prop_vaccine::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(Prop_vaccine_C_ExecuteUbergraph_prop_vaccine, K2Node_Event_action) == 0x0000E4, "Member 'Prop_vaccine_C_ExecuteUbergraph_prop_vaccine::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Prop_vaccine_C_ExecuteUbergraph_prop_vaccine, K2Node_SwitchEnum_CmpSuccess) == 0x0000E5, "Member 'Prop_vaccine_C_ExecuteUbergraph_prop_vaccine::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Prop_vaccine_C_ExecuteUbergraph_prop_vaccine, K2Node_Event_player) == 0x0000E8, "Member 'Prop_vaccine_C_ExecuteUbergraph_prop_vaccine::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Prop_vaccine_C_ExecuteUbergraph_prop_vaccine, K2Node_Event_player_1) == 0x000008, "Member 'Prop_vaccine_C_ExecuteUbergraph_prop_vaccine::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(Prop_vaccine_C_ExecuteUbergraph_prop_vaccine, K2Node_Event_hit) == 0x000010, "Member 'Prop_vaccine_C_ExecuteUbergraph_prop_vaccine::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(Prop_vaccine_C_ExecuteUbergraph_prop_vaccine, K2Node_Event_action) == 0x000098, "Member 'Prop_vaccine_C_ExecuteUbergraph_prop_vaccine::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_vaccine_C_ExecuteUbergraph_prop_vaccine, K2Node_SwitchEnum_CmpSuccess) == 0x000099, "Member 'Prop_vaccine_C_ExecuteUbergraph_prop_vaccine::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_vaccine_C_ExecuteUbergraph_prop_vaccine, K2Node_Event_player) == 0x0000A0, "Member 'Prop_vaccine_C_ExecuteUbergraph_prop_vaccine::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Prop_vaccine_C_ExecuteUbergraph_prop_vaccine, CallFunc_getMainPlayer_AsMain_Player) == 0x0000A8, "Member 'Prop_vaccine_C_ExecuteUbergraph_prop_vaccine::CallFunc_getMainPlayer_AsMain_Player' has a wrong offset!");
 
 // Function prop_vaccine.prop_vaccine_C.actionOptionIndex
 // 0x0098 (0x0098 - 0x0000)
@@ -60,15 +51,13 @@ struct Prop_vaccine_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_vaccine_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_vaccine_C_ActionOptionIndex");
 static_assert(sizeof(Prop_vaccine_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_vaccine_C_ActionOptionIndex");
 static_assert(offsetof(Prop_vaccine_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_vaccine_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(Prop_vaccine_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_vaccine_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_vaccine_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_vaccine_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(Prop_vaccine_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_vaccine_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(Prop_vaccine_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_vaccine_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function prop_vaccine.prop_vaccine_C.playerHandUse_RMB
 // 0x0008 (0x0008 - 0x0000)
@@ -87,7 +76,7 @@ struct Prop_vaccine_C_Init final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3D70[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   Temp_name_Variable;                                // 0x0004(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Temp_name_Variable_1;                              // 0x000C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   K2Node_Select_Default;                             // 0x0014(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -107,7 +96,7 @@ public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadData_return;                          // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3D71[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mBool                          CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -143,7 +132,7 @@ static_assert(offsetof(Prop_vaccine_C_GetData, K2Node_MakeArray_Array_1) == 0x00
 static_assert(offsetof(Prop_vaccine_C_GetData, K2Node_SetFieldsInStruct_StructOut) == 0x0001C0, "Member 'Prop_vaccine_C_GetData::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
 
 // Function prop_vaccine.prop_vaccine_C.getActionOptions
-// 0x0058 (0x0058 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct Prop_vaccine_C_GetActionOptions final
 {
 public:
@@ -153,17 +142,20 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
 };
 static_assert(alignof(Prop_vaccine_C_GetActionOptions) == 0x000008, "Wrong alignment on Prop_vaccine_C_GetActionOptions");
-static_assert(sizeof(Prop_vaccine_C_GetActionOptions) == 0x000058, "Wrong size on Prop_vaccine_C_GetActionOptions");
+static_assert(sizeof(Prop_vaccine_C_GetActionOptions) == 0x000060, "Wrong size on Prop_vaccine_C_GetActionOptions");
 static_assert(offsetof(Prop_vaccine_C_GetActionOptions, Player) == 0x000000, "Member 'Prop_vaccine_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Prop_vaccine_C_GetActionOptions, Component) == 0x000008, "Member 'Prop_vaccine_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Prop_vaccine_C_GetActionOptions, Actor) == 0x000010, "Member 'Prop_vaccine_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Prop_vaccine_C_GetActionOptions, Options) == 0x000018, "Member 'Prop_vaccine_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Prop_vaccine_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Prop_vaccine_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Prop_vaccine_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Prop_vaccine_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Prop_vaccine_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'Prop_vaccine_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Prop_vaccine_C_GetActionOptions, Number) == 0x000048, "Member 'Prop_vaccine_C_GetActionOptions::Number' has a wrong offset!");
+static_assert(offsetof(Prop_vaccine_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Prop_vaccine_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 }
 

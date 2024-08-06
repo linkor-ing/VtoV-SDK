@@ -37,6 +37,130 @@ void ACar1_C::ExecuteUbergraph_car1(int32 EntryPoint)
 }
 
 
+// Function car1.car1_C.alarm
+// (BlueprintCallable, BlueprintEvent)
+
+void ACar1_C::Alarm()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "alarm");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function car1.car1_C.airtimeTimer
+// (BlueprintCallable, BlueprintEvent)
+
+void ACar1_C::AirtimeTimer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "airtimeTimer");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function car1.car1_C.BndEvt__car1_backWheelRoot_K2Node_ComponentBoundEvent_2_ComponentHitSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// class UPrimitiveComponent*              HitComponent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          NormalImpulse                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+
+void ACar1_C::BndEvt__car1_backWheelRoot_K2Node_ComponentBoundEvent_2_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "BndEvt__car1_backWheelRoot_K2Node_ComponentBoundEvent_2_ComponentHitSignature__DelegateSignature");
+
+	Params::Car1_C_BndEvt__car1_backWheelRoot_K2Node_ComponentBoundEvent_2_ComponentHitSignature__DelegateSignature Parms{};
+
+	Parms.HitComponent = HitComponent;
+	Parms.OtherActor = OtherActor;
+	Parms.OtherComp = OtherComp;
+	Parms.NormalImpulse = std::move(NormalImpulse);
+	Parms.Hit = std::move(Hit);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function car1.car1_C.addTemperature
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Temperature                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACar1_C::AddTemperature(float Temperature)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "addTemperature");
+
+	Params::Car1_C_AddTemperature Parms{};
+
+	Parms.Temperature = Temperature;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function car1.car1_C.impulse
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector                          Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACar1_C::Impulse(const struct FVector& Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "impulse");
+
+	Params::Car1_C_Impulse Parms{};
+
+	Parms.Value = std::move(Value);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function car1.car1_C.BndEvt__car1_Capsule_K2Node_ComponentBoundEvent_6_ComponentHitSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// class UPrimitiveComponent*              HitComponent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          NormalImpulse                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+
+void ACar1_C::BndEvt__car1_Capsule_K2Node_ComponentBoundEvent_6_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "BndEvt__car1_Capsule_K2Node_ComponentBoundEvent_6_ComponentHitSignature__DelegateSignature");
+
+	Params::Car1_C_BndEvt__car1_Capsule_K2Node_ComponentBoundEvent_6_ComponentHitSignature__DelegateSignature Parms{};
+
+	Parms.HitComponent = HitComponent;
+	Parms.OtherActor = OtherActor;
+	Parms.OtherComp = OtherComp;
+	Parms.NormalImpulse = std::move(NormalImpulse);
+	Parms.Hit = std::move(Hit);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function car1.car1_C.explode
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -169,57 +293,133 @@ void ACar1_C::BndEvt__car1_wheel_FL_K2Node_ComponentBoundEvent_4_ComponentHitSig
 }
 
 
-// Function car1.car1_C.BndEvt__car1_wheel_BL_K2Node_ComponentBoundEvent_3_ComponentHitSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
+// Function car1.car1_C.actionOptionIndex
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPrimitiveComponent*              HitComponent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          NormalImpulse                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ACar1_C::BndEvt__car1_wheel_BL_K2Node_ComponentBoundEvent_3_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
+void ACar1_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "BndEvt__car1_wheel_BL_K2Node_ComponentBoundEvent_3_ComponentHitSignature__DelegateSignature");
+		Func = Class->GetFunction("car1_C", "actionOptionIndex");
 
-	Params::Car1_C_BndEvt__car1_wheel_BL_K2Node_ComponentBoundEvent_3_ComponentHitSignature__DelegateSignature Parms{};
+	Params::Car1_C_ActionOptionIndex Parms{};
 
-	Parms.HitComponent = HitComponent;
-	Parms.OtherActor = OtherActor;
-	Parms.OtherComp = OtherComp;
-	Parms.NormalImpulse = std::move(NormalImpulse);
+	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
+	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function car1.car1_C.BndEvt__car1_wheel_BR_K2Node_ComponentBoundEvent_2_ComponentHitSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// class UPrimitiveComponent*              HitComponent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          NormalImpulse                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// Function car1.car1_C.fainted
+// (BlueprintCallable, BlueprintEvent)
 
-void ACar1_C::BndEvt__car1_wheel_BR_K2Node_ComponentBoundEvent_2_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
+void ACar1_C::Fainted()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "BndEvt__car1_wheel_BR_K2Node_ComponentBoundEvent_2_ComponentHitSignature__DelegateSignature");
+		Func = Class->GetFunction("car1_C", "fainted");
 
-	Params::Car1_C_BndEvt__car1_wheel_BR_K2Node_ComponentBoundEvent_2_ComponentHitSignature__DelegateSignature Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.HitComponent = HitComponent;
-	Parms.OtherActor = OtherActor;
-	Parms.OtherComp = OtherComp;
-	Parms.NormalImpulse = std::move(NormalImpulse);
-	Parms.Hit = std::move(Hit);
+
+// Function car1.car1_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ACar1_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function car1.car1_C.leaveWater
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AWaterVolume_C*                   Water                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACar1_C::LeaveWater(class AWaterVolume_C* Water)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "leaveWater");
+
+	Params::Car1_C_LeaveWater Parms{};
+
+	Parms.Water = Water;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function car1.car1_C.enterWater
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AWaterVolume_C*                   Water                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACar1_C::EnterWater(class AWaterVolume_C* Water)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "enterWater");
+
+	Params::Car1_C_EnterWater Parms{};
+
+	Parms.Water = Water;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function car1.car1_C.leaveWaterOrigin
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AWaterVolume_C*                   Water                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACar1_C::LeaveWaterOrigin(class AWaterVolume_C* Water)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "leaveWaterOrigin");
+
+	Params::Car1_C_LeaveWaterOrigin Parms{};
+
+	Parms.Water = Water;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function car1.car1_C.enterWaterOrigin
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AWaterVolume_C*                   Water                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACar1_C::EnterWaterOrigin(class AWaterVolume_C* Water)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "enterWaterOrigin");
+
+	Params::Car1_C_EnterWaterOrigin Parms{};
+
+	Parms.Water = Water;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -451,140 +651,6 @@ void ACar1_C::PhysPreDestroyed()
 }
 
 
-// Function car1.car1_C.actionOptionIndex
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ACar1_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "actionOptionIndex");
-
-	Params::Car1_C_ActionOptionIndex Parms{};
-
-	Parms.Player = Player;
-	Parms.Hit = std::move(Hit);
-	Parms.Param_Index = Param_Index;
-	Parms.Action = Action;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function car1.car1_C.fainted
-// (BlueprintCallable, BlueprintEvent)
-
-void ACar1_C::Fainted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "fainted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function car1.car1_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ACar1_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function car1.car1_C.leaveWater
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AWaterVolume_C*                   Water                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ACar1_C::LeaveWater(class AWaterVolume_C* Water)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "leaveWater");
-
-	Params::Car1_C_LeaveWater Parms{};
-
-	Parms.Water = Water;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function car1.car1_C.enterWater
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AWaterVolume_C*                   Water                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ACar1_C::EnterWater(class AWaterVolume_C* Water)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "enterWater");
-
-	Params::Car1_C_EnterWater Parms{};
-
-	Parms.Water = Water;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function car1.car1_C.leaveWaterOrigin
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AWaterVolume_C*                   Water                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ACar1_C::LeaveWaterOrigin(class AWaterVolume_C* Water)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "leaveWaterOrigin");
-
-	Params::Car1_C_LeaveWaterOrigin Parms{};
-
-	Parms.Water = Water;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function car1.car1_C.enterWaterOrigin
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AWaterVolume_C*                   Water                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ACar1_C::EnterWaterOrigin(class AWaterVolume_C* Water)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "enterWaterOrigin");
-
-	Params::Car1_C_EnterWaterOrigin Parms{};
-
-	Parms.Water = Water;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function car1.car1_C.digUp
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -655,6 +721,56 @@ void ACar1_C::FireDamage(float Damage)
 }
 
 
+// Function car1.car1_C.gamemodeBeginPlay
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ACar1_C::GamemodeBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "gamemodeBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function car1.car1_C.fireNitro
+// (BlueprintCallable, BlueprintEvent)
+
+void ACar1_C::FireNitro()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "fireNitro");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function car1.car1_C.accumulateTemperature
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Temperature                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Param_Speed                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACar1_C::AccumulateTemperature(float Temperature, float Param_Speed)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "accumulateTemperature");
+
+	Params::Car1_C_AccumulateTemperature Parms{};
+
+	Parms.Temperature = Temperature;
+	Parms.Param_Speed = Param_Speed;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function car1.car1_C.ignite
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -670,6 +786,34 @@ void ACar1_C::Ignite(float Param_Fuel)
 	Params::Car1_C_Ignite Parms{};
 
 	Parms.Param_Fuel = Param_Fuel;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function car1.car1_C.BndEvt__mesh_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// class UPrimitiveComponent*              HitComponent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          NormalImpulse                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+
+void ACar1_C::BndEvt__mesh_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "BndEvt__mesh_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature");
+
+	Params::Car1_C_BndEvt__mesh_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature Parms{};
+
+	Parms.HitComponent = HitComponent;
+	Parms.OtherActor = OtherActor;
+	Parms.OtherComp = OtherComp;
+	Parms.NormalImpulse = std::move(NormalImpulse);
+	Parms.Hit = std::move(Hit);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -691,15 +835,23 @@ void ACar1_C::Microwave()
 
 // Function car1.car1_C.receivedPhyiscsDamage
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hot                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void ACar1_C::ReceivedPhyiscsDamage()
+void ACar1_C::ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("car1_C", "receivedPhyiscsDamage");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::Car1_C_ReceivedPhyiscsDamage Parms{};
+
+	Parms.Damage = Damage;
+	Parms.Hot = std::move(Hot);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -738,254 +890,6 @@ void ACar1_C::PlayerHandUse_LMB(class AMainPlayer_C* Player)
 	Params::Car1_C_PlayerHandUse_LMB Parms{};
 
 	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function car1.car1_C.exploded
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ACar1_C::Exploded(float Damage, const struct FVector& Location)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "exploded");
-
-	Params::Car1_C_Exploded Parms{};
-
-	Parms.Damage = Damage;
-	Parms.Location = std::move(Location);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function car1.car1_C.extinguishFire
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ACar1_C::ExtinguishFire()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "extinguishFire");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function car1.car1_C.playerHandRelease_RMB
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ACar1_C::PlayerHandRelease_RMB(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "playerHandRelease_RMB");
-
-	Params::Car1_C_PlayerHandRelease_RMB Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function car1.car1_C.playerHandRelease_LMB
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ACar1_C::PlayerHandRelease_LMB(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "playerHandRelease_LMB");
-
-	Params::Car1_C_PlayerHandRelease_LMB Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function car1.car1_C.gamemodeBeginPlay
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ACar1_C::GamemodeBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "gamemodeBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function car1.car1_C.fireNitro
-// (BlueprintCallable, BlueprintEvent)
-
-void ACar1_C::FireNitro()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "fireNitro");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function car1.car1_C.attemptIgnite
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ACar1_C::AttemptIgnite()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "attemptIgnite");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function car1.car1_C.playerHandMouseWheel
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   WheelDelta                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ACar1_C::PlayerHandMouseWheel(class AMainPlayer_C* Player, float WheelDelta)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "playerHandMouseWheel");
-
-	Params::Car1_C_PlayerHandMouseWheel Parms{};
-
-	Parms.Player = Player;
-	Parms.WheelDelta = WheelDelta;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function car1.car1_C.BndEvt__mesh_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// class UPrimitiveComponent*              HitComponent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          NormalImpulse                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-
-void ACar1_C::BndEvt__mesh_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "BndEvt__mesh_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature");
-
-	Params::Car1_C_BndEvt__mesh_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature Parms{};
-
-	Parms.HitComponent = HitComponent;
-	Parms.OtherActor = OtherActor;
-	Parms.OtherComp = OtherComp;
-	Parms.NormalImpulse = std::move(NormalImpulse);
-	Parms.Hit = std::move(Hit);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function car1.car1_C.playerHandMouse
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                        Mouse                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ACar1_C::PlayerHandMouse(class AMainPlayer_C* Player, const struct FVector2D& Mouse)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "playerHandMouse");
-
-	Params::Car1_C_PlayerHandMouse Parms{};
-
-	Parms.Player = Player;
-	Parms.Mouse = std::move(Mouse);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function car1.car1_C.playerHandAnyKey
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FKey                             Param_Key                                              (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// bool                                    Pressed                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ACar1_C::PlayerHandAnyKey(class AMainPlayer_C* Player, const struct FKey& Param_Key, bool Pressed)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "playerHandAnyKey");
-
-	Params::Car1_C_PlayerHandAnyKey Parms{};
-
-	Parms.Player = Player;
-	Parms.Param_Key = std::move(Param_Key);
-	Parms.Pressed = Pressed;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function car1.car1_C.microwaveElec
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ACar1_C::MicrowaveElec()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "microwaveElec");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function car1.car1_C.addTemperature
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Temperature                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ACar1_C::AddTemperature(float Temperature)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "addTemperature");
-
-	Params::Car1_C_AddTemperature Parms{};
-
-	Parms.Temperature = Temperature;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -1036,7 +940,7 @@ void ACar1_C::Unzoom()
 // Function car1.car1_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void ACar1_C::SettingsApplied(const struct FStruct_settings& Settings)
 {
@@ -1053,49 +957,39 @@ void ACar1_C::SettingsApplied(const struct FStruct_settings& Settings)
 }
 
 
-// Function car1.car1_C.accumulateTemperature
+// Function car1.car1_C.exploded
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   Temperature                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Param_Speed                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ACar1_C::AccumulateTemperature(float Temperature, float Param_Speed)
+void ACar1_C::Exploded(float Damage, const struct FVector& Location)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "accumulateTemperature");
+		Func = Class->GetFunction("car1_C", "exploded");
 
-	Params::Car1_C_AccumulateTemperature Parms{};
+	Params::Car1_C_Exploded Parms{};
 
-	Parms.Temperature = Temperature;
-	Parms.Param_Speed = Param_Speed;
+	Parms.Damage = Damage;
+	Parms.Location = std::move(Location);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function car1.car1_C.ActionName
+// Function car1.car1_C.extinguishFire
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// class FString                           Param_Name                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void ACar1_C::ActionName(class AMainPlayer_C* Player, const struct FHitResult& Hit, const class FString& Param_Name)
+void ACar1_C::ExtinguishFire()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "ActionName");
+		Func = Class->GetFunction("car1_C", "extinguishFire");
 
-	Params::Car1_C_ActionName Parms{};
-
-	Parms.Player = Player;
-	Parms.Hit = std::move(Hit);
-	Parms.Param_Name = std::move(Param_Name);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -1124,6 +1018,196 @@ void ACar1_C::Unturbo()
 		Func = Class->GetFunction("car1_C", "unturbo");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function car1.car1_C.playerHandRelease_RMB
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACar1_C::PlayerHandRelease_RMB(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "playerHandRelease_RMB");
+
+	Params::Car1_C_PlayerHandRelease_RMB Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function car1.car1_C.playerHandRelease_LMB
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACar1_C::PlayerHandRelease_LMB(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "playerHandRelease_LMB");
+
+	Params::Car1_C_PlayerHandRelease_LMB Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function car1.car1_C.BndEvt__fuelbox_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bFromSweep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FHitResult                       SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+
+void ACar1_C::BndEvt__fuelbox_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "BndEvt__fuelbox_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+
+	Params::Car1_C_BndEvt__fuelbox_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
+
+	Parms.OverlappedComponent = OverlappedComponent;
+	Parms.OtherActor = OtherActor;
+	Parms.OtherComp = OtherComp;
+	Parms.OtherBodyIndex = OtherBodyIndex;
+	Parms.bFromSweep = bFromSweep;
+	Parms.SweepResult = std::move(SweepResult);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function car1.car1_C.playerHandMouseWheel
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   WheelDelta                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACar1_C::PlayerHandMouseWheel(class AMainPlayer_C* Player, float WheelDelta)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "playerHandMouseWheel");
+
+	Params::Car1_C_PlayerHandMouseWheel Parms{};
+
+	Parms.Player = Player;
+	Parms.WheelDelta = WheelDelta;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function car1.car1_C.playerHandMouse
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                        Mouse                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACar1_C::PlayerHandMouse(class AMainPlayer_C* Player, const struct FVector2D& Mouse)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "playerHandMouse");
+
+	Params::Car1_C_PlayerHandMouse Parms{};
+
+	Parms.Player = Player;
+	Parms.Mouse = std::move(Mouse);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function car1.car1_C.sound_drive
+// (BlueprintCallable, BlueprintEvent)
+
+void ACar1_C::Sound_drive()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "sound_drive");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function car1.car1_C.playerHandAnyKey
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FKey                             Param_Key                                              (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// bool                                    Pressed                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ACar1_C::PlayerHandAnyKey(class AMainPlayer_C* Player, const struct FKey& Param_Key, bool Pressed)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "playerHandAnyKey");
+
+	Params::Car1_C_PlayerHandAnyKey Parms{};
+
+	Parms.Player = Player;
+	Parms.Param_Key = std::move(Param_Key);
+	Parms.Pressed = Pressed;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function car1.car1_C.microwaveElec
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ACar1_C::MicrowaveElec()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "microwaveElec");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function car1.car1_C.ActionName
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// class FString                           Param_Name                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void ACar1_C::ActionName(class AMainPlayer_C* Player, const struct FHitResult& Hit, const class FString& Param_Name)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "ActionName");
+
+	Params::Car1_C_ActionName Parms{};
+
+	Parms.Player = Player;
+	Parms.Hit = std::move(Hit);
+	Parms.Param_Name = std::move(Param_Name);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -1164,176 +1248,6 @@ void ACar1_C::PlayerLookAway(class AMainPlayer_C* Player)
 	Parms.Player = Player;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function car1.car1_C.BndEvt__fuelbox_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bFromSweep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FHitResult                       SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-
-void ACar1_C::BndEvt__fuelbox_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "BndEvt__fuelbox_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
-
-	Params::Car1_C_BndEvt__fuelbox_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
-
-	Parms.OverlappedComponent = OverlappedComponent;
-	Parms.OtherActor = OtherActor;
-	Parms.OtherComp = OtherComp;
-	Parms.OtherBodyIndex = OtherBodyIndex;
-	Parms.bFromSweep = bFromSweep;
-	Parms.SweepResult = std::move(SweepResult);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function car1.car1_C.reachedByExplosion
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FVector                          Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ACar1_C::ReachedByExplosion(const struct FVector& Location, float Damage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "reachedByExplosion");
-
-	Params::Car1_C_ReachedByExplosion Parms{};
-
-	Parms.Location = std::move(Location);
-	Parms.Damage = Damage;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function car1.car1_C.bitten
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ACar1_C::bitten()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "bitten");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function car1.car1_C.sound_drive
-// (BlueprintCallable, BlueprintEvent)
-
-void ACar1_C::Sound_drive()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "sound_drive");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function car1.car1_C.slice
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Clean                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ACar1_C::Slice(bool Clean)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "slice");
-
-	Params::Car1_C_Slice Parms{};
-
-	Parms.Clean = Clean;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function car1.car1_C.playerUsedOn
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-
-void ACar1_C::PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "playerUsedOn");
-
-	Params::Car1_C_PlayerUsedOn Parms{};
-
-	Parms.Player = Player;
-	Parms.Hit = std::move(Hit);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function car1.car1_C.hooked
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AHook_C*                          Hook                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ACar1_C::Hooked(class AHook_C* Hook)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "hooked");
-
-	Params::Car1_C_Hooked Parms{};
-
-	Parms.Hook = Hook;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function car1.car1_C.signalDeleted
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ACar1_C::SignalDeleted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "signalDeleted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function car1.car1_C.signalSaved
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ACar1_C::SignalSaved()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "signalSaved");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -1397,6 +1311,66 @@ void ACar1_C::InpAxisEvt_mouseX_K2Node_InputAxisEvent_0(float AxisValue)
 }
 
 
+// Function car1.car1_C.playerR
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACar1_C::PlayerR(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "playerR");
+
+	Params::Car1_C_PlayerR Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function car1.car1_C.playerHold
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACar1_C::PlayerHold(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "playerHold");
+
+	Params::Car1_C_PlayerHold Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function car1.car1_C.playerUnequip
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACar1_C::PlayerUnequip(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "playerUnequip");
+
+	Params::Car1_C_PlayerUnequip Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function car1.car1_C.updateStrAgl
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -1416,8 +1390,9 @@ void ACar1_C::UpdateStrAgl()
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ACar1_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit)
+void ACar1_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1428,6 +1403,7 @@ void ACar1_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResul
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
+	Parms.Damage = Damage;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -1554,6 +1530,30 @@ void ACar1_C::DriveDetached()
 		Func = Class->GetFunction("car1_C", "driveDetached");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function car1.car1_C.texturePickerApply
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACar1_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "texturePickerApply");
+
+	Params::Car1_C_TexturePickerApply Parms{};
+
+	Parms.Picker = Picker;
+	Parms.Texture = Texture;
+	Parms.Param_Index = Param_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -1689,19 +1689,215 @@ void ACar1_C::StuffUpgraded(class AMainGamemode_C* GameMode)
 }
 
 
-// Function car1.car1_C.InpActEvt_jump_K2Node_InputActionEvent_0
-// (BlueprintEvent)
-// Parameters:
-// struct FKey                             Param_Key                                              (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// Function car1.car1_C.signalSaved
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ACar1_C::InpActEvt_jump_K2Node_InputActionEvent_0(const struct FKey& Param_Key)
+void ACar1_C::SignalSaved()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "InpActEvt_jump_K2Node_InputActionEvent_0");
+		Func = Class->GetFunction("car1_C", "signalSaved");
 
-	Params::Car1_C_InpActEvt_jump_K2Node_InputActionEvent_0 Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function car1.car1_C.signalDeleted
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ACar1_C::SignalDeleted()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "signalDeleted");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function car1.car1_C.hookTension
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AHook_C*                          Hook                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACar1_C::HookTension(class AHook_C* Hook)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "hookTension");
+
+	Params::Car1_C_HookTension Parms{};
+
+	Parms.Hook = Hook;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function car1.car1_C.cleanSponge
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Clean                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACar1_C::CleanSponge(float Clean, class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "cleanSponge");
+
+	Params::Car1_C_CleanSponge Parms{};
+
+	Parms.Clean = Clean;
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function car1.car1_C.crafted
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ACar1_C::Crafted()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "crafted");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function car1.car1_C.hooked
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AHook_C*                          Hook                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACar1_C::Hooked(class AHook_C* Hook)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "hooked");
+
+	Params::Car1_C_Hooked Parms{};
+
+	Parms.Hook = Hook;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function car1.car1_C.attemptIgnite
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ACar1_C::AttemptIgnite()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "attemptIgnite");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function car1.car1_C.playerUsedOn
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+
+void ACar1_C::PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "playerUsedOn");
+
+	Params::Car1_C_PlayerUsedOn Parms{};
+
+	Parms.Player = Player;
+	Parms.Hit = std::move(Hit);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function car1.car1_C.slice
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Clean                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ACar1_C::Slice(bool Clean)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "slice");
+
+	Params::Car1_C_Slice Parms{};
+
+	Parms.Clean = Clean;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function car1.car1_C.bitten
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ACar1_C::bitten()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "bitten");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function car1.car1_C.reachedByExplosion
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector                          Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACar1_C::ReachedByExplosion(const struct FVector& Location, float Damage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "reachedByExplosion");
+
+	Params::Car1_C_ReachedByExplosion Parms{};
+
+	Parms.Location = std::move(Location);
+	Parms.Damage = Damage;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function car1.car1_C.InpActEvt_dismount_K2Node_InputActionEvent_0
+// (BlueprintEvent)
+// Parameters:
+// struct FKey                             Param_Key                                              (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+void ACar1_C::InpActEvt_dismount_K2Node_InputActionEvent_0(const struct FKey& Param_Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "InpActEvt_dismount_K2Node_InputActionEvent_0");
+
+	Params::Car1_C_InpActEvt_dismount_K2Node_InputActionEvent_0 Parms{};
 
 	Parms.Param_Key = std::move(Param_Key);
 
@@ -1709,19 +1905,19 @@ void ACar1_C::InpActEvt_jump_K2Node_InputActionEvent_0(const struct FKey& Param_
 }
 
 
-// Function car1.car1_C.InpActEvt_pause_K2Node_InputActionEvent_1
+// Function car1.car1_C.InpActEvt_jump_K2Node_InputActionEvent_1
 // (BlueprintEvent)
 // Parameters:
 // struct FKey                             Param_Key                                              (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void ACar1_C::InpActEvt_pause_K2Node_InputActionEvent_1(const struct FKey& Param_Key)
+void ACar1_C::InpActEvt_jump_K2Node_InputActionEvent_1(const struct FKey& Param_Key)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("car1_C", "InpActEvt_pause_K2Node_InputActionEvent_1");
+		Func = Class->GetFunction("car1_C", "InpActEvt_jump_K2Node_InputActionEvent_1");
 
-	Params::Car1_C_InpActEvt_pause_K2Node_InputActionEvent_1 Parms{};
+	Params::Car1_C_InpActEvt_jump_K2Node_InputActionEvent_1 Parms{};
 
 	Parms.Param_Key = std::move(Param_Key);
 
@@ -2138,7 +2334,7 @@ void ACar1_C::Driven()
 // Function car1.car1_C.setSett
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Sttruct_settings                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FStruct_settings                 Sttruct_settings                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 
 void ACar1_C::SetSett(const struct FStruct_settings& Sttruct_settings)
 {
@@ -2179,6 +2375,70 @@ void ACar1_C::FuelUp(class AProp_gascan_C* InputPin, bool* Fueled)
 }
 
 
+// Function car1.car1_C.applyWheelTorque
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ACar1_C::ApplyWheelTorque()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "applyWheelTorque");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function car1.car1_C.addCamRot
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Pitch                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Yaw                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACar1_C::AddCamRot(float Pitch, float Yaw)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "addCamRot");
+
+	Params::Car1_C_AddCamRot Parms{};
+
+	Parms.Pitch = Pitch;
+	Parms.Yaw = Yaw;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function car1.car1_C.checkAirtime
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ACar1_C::CheckAirtime()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "checkAirtime");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function car1.car1_C.regenConstraints
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ACar1_C::RegenConstraints()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "regenConstraints");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function car1.car1_C.isButtonUsed
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -2208,8 +2468,9 @@ void ACar1_C::IsButtonUsed(bool* Failed)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ACar1_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
+void ACar1_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2231,6 +2492,9 @@ void ACar1_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, 
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -2318,6 +2582,30 @@ void ACar1_C::CanBePutInContainer(bool* Return)
 
 	if (Return != nullptr)
 		*Return = Parms.Return;
+}
+
+
+// Function car1.car1_C.landedOn
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IgnoreFallDamage                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ACar1_C::LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "landedOn");
+
+	Params::Car1_C_LandedOn Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IgnoreFallDamage != nullptr)
+		*IgnoreFallDamage = Parms.IgnoreFallDamage;
 }
 
 
@@ -2488,8 +2776,9 @@ void ACar1_C::SetPath(const TArray<struct FVector>& Path, bool* Return)
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ACar1_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
+void ACar1_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2512,6 +2801,9 @@ void ACar1_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComp
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -2557,6 +2849,27 @@ void ACar1_C::SkipRadial(bool* Skip)
 
 	if (Skip != nullptr)
 		*Skip = Parms.Skip;
+}
+
+
+// Function car1.car1_C.getPriceMultiplier
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   PriceMult                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACar1_C::GetPriceMultiplier(float* PriceMult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "getPriceMultiplier");
+
+	Params::Car1_C_GetPriceMultiplier Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PriceMult != nullptr)
+		*PriceMult = Parms.PriceMult;
 }
 
 
@@ -2644,6 +2957,27 @@ void ACar1_C::GetData(struct FStruct_save* Data)
 
 	if (Data != nullptr)
 		*Data = std::move(Parms.Data);
+}
+
+
+// Function car1.car1_C.gatherDataFromKey
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ACar1_C::GatherDataFromKey(bool* Gather)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("car1_C", "gatherDataFromKey");
+
+	Params::Car1_C_GatherDataFromKey Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Gather != nullptr)
+		*Gather = Parms.Gather;
 }
 
 }

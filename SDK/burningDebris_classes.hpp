@@ -18,14 +18,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass burningDebris.burningDebris_C
-// 0x0010 (0x0378 - 0x0368)
+// 0x0010 (0x0388 - 0x0378)
 class AburningDebris_C final : public AProp_C
 {
 public:
-	uint8                                         Pad_3E2A[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_burningDebris_C;                    // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	float                                         Fuel;                                              // 0x0370(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	float                                         Force;                                             // 0x0374(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_burningDebris_C;                    // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	float                                         Fuel;                                              // 0x0380(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	float                                         Force;                                             // 0x0384(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_burningDebris(int32 EntryPoint);
@@ -42,10 +41,10 @@ public:
 	}
 };
 static_assert(alignof(AburningDebris_C) == 0x000008, "Wrong alignment on AburningDebris_C");
-static_assert(sizeof(AburningDebris_C) == 0x000378, "Wrong size on AburningDebris_C");
-static_assert(offsetof(AburningDebris_C, UberGraphFrame_burningDebris_C) == 0x000368, "Member 'AburningDebris_C::UberGraphFrame_burningDebris_C' has a wrong offset!");
-static_assert(offsetof(AburningDebris_C, Fuel) == 0x000370, "Member 'AburningDebris_C::Fuel' has a wrong offset!");
-static_assert(offsetof(AburningDebris_C, Force) == 0x000374, "Member 'AburningDebris_C::Force' has a wrong offset!");
+static_assert(sizeof(AburningDebris_C) == 0x000388, "Wrong size on AburningDebris_C");
+static_assert(offsetof(AburningDebris_C, UberGraphFrame_burningDebris_C) == 0x000378, "Member 'AburningDebris_C::UberGraphFrame_burningDebris_C' has a wrong offset!");
+static_assert(offsetof(AburningDebris_C, Fuel) == 0x000380, "Member 'AburningDebris_C::Fuel' has a wrong offset!");
+static_assert(offsetof(AburningDebris_C, Force) == 0x000384, "Member 'AburningDebris_C::Force' has a wrong offset!");
 
 }
 

@@ -38,6 +38,7 @@ public:
 	void IgnoreSave_trigger(bool* Ignore);
 	void LoadTriggerData(const struct FStruct_triggerSave& Data, bool* Return);
 	void GetTriggerData(struct FStruct_triggerSave* Data);
+	void GatherDataFromKeyT(bool* Gather);
 	void GamemodeBeginPlay();
 
 public:

@@ -56,8 +56,9 @@ void AProp_radCrystal_C::ReceiveBeginPlay()
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_radCrystal_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit)
+void AProp_radCrystal_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, float Damage)
 {
 	static class UFunction* Func = nullptr;
 
@@ -68,6 +69,7 @@ void AProp_radCrystal_C::DamageByPlayer(class AMainPlayer_C* Player, const struc
 
 	Parms.Player = Player;
 	Parms.Param_Hit = std::move(Param_Hit);
+	Parms.Damage = Damage;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

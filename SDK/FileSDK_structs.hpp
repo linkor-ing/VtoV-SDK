@@ -52,7 +52,7 @@ enum class EFileSDKFileType : uint8
 struct alignas(0x04) FFileSDKDelegatePreInfo final
 {
 public:
-	uint8                                         Pad_C38[0x8];                                      // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FFileSDKDelegatePreInfo) == 0x000004, "Wrong alignment on FFileSDKDelegatePreInfo");
 static_assert(sizeof(FFileSDKDelegatePreInfo) == 0x000008, "Wrong size on FFileSDKDelegatePreInfo");
@@ -71,7 +71,7 @@ public:
 	bool                                          bIsDirectory;                                      // 0x0040(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsReadOnly;                                       // 0x0041(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsValid;                                          // 0x0042(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C39[0x5];                                      // 0x0043(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_43[0x5];                                       // 0x0043(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FFileSDKFileInfo) == 0x000008, "Wrong alignment on FFileSDKFileInfo");
 static_assert(sizeof(FFileSDKFileInfo) == 0x000048, "Wrong size on FFileSDKFileInfo");

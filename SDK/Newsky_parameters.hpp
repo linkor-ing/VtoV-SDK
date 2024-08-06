@@ -18,25 +18,76 @@ namespace SDK::Params
 {
 
 // Function newsky.newsky_C.ExecuteUbergraph_newsky
-// 0x00A4 (0x00A4 - 0x0000)
+// 0x0140 (0x0140 - 0x0000)
 struct Newsky_C_ExecuteUbergraph_newsky final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0010(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_AddRelativeRotation_SweepHitResult;    // 0x001C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue;          // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_R;                             // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_G;                             // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_B;                             // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_A;                             // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot;                     // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0060(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FHitResult                             CallFunc_K2_AddRelativeRotation_SweepHitResult;    // 0x006C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_1;        // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Abs_ReturnValue;                          // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_2;        // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Abs_ReturnValue_1;                        // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_2;        // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_3;        // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot_1;                   // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDateTime                              CallFunc_Now_ReturnValue;                          // 0x0120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimespan                              CallFunc_GetTimeOfDay_ReturnValue;                 // 0x0128(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetTotalHours_ReturnValue;                // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Percent_FloatFloat_ReturnValue;           // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Newsky_C_ExecuteUbergraph_newsky) == 0x000004, "Wrong alignment on Newsky_C_ExecuteUbergraph_newsky");
-static_assert(sizeof(Newsky_C_ExecuteUbergraph_newsky) == 0x0000A4, "Wrong size on Newsky_C_ExecuteUbergraph_newsky");
+static_assert(alignof(Newsky_C_ExecuteUbergraph_newsky) == 0x000008, "Wrong alignment on Newsky_C_ExecuteUbergraph_newsky");
+static_assert(sizeof(Newsky_C_ExecuteUbergraph_newsky) == 0x000140, "Wrong size on Newsky_C_ExecuteUbergraph_newsky");
 static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, EntryPoint) == 0x000000, "Member 'Newsky_C_ExecuteUbergraph_newsky::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, K2Node_Event_DeltaSeconds) == 0x000004, "Member 'Newsky_C_ExecuteUbergraph_newsky::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000008, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00000C, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_MakeRotator_ReturnValue) == 0x000010, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_K2_AddRelativeRotation_SweepHitResult) == 0x00001C, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_K2_AddRelativeRotation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'Newsky_C_ExecuteUbergraph_newsky::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000018, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, K2Node_Event_DeltaSeconds) == 0x000020, "Member 'Newsky_C_ExecuteUbergraph_newsky::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000024, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_GetLinearColorValue_ReturnValue) == 0x000028, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_GetLinearColorValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_BreakColor_R) == 0x000038, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_BreakColor_R' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_BreakColor_G) == 0x00003C, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_BreakColor_G' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_BreakColor_B) == 0x000040, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_BreakColor_B' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_BreakColor_A) == 0x000044, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_BreakColor_A' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000048, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00004C, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000050, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_getSaveSlot_saveSlot) == 0x000058, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_getSaveSlot_saveSlot' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_MakeRotator_ReturnValue) == 0x000060, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_K2_AddRelativeRotation_SweepHitResult) == 0x00006C, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_K2_AddRelativeRotation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x0000F4, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_Abs_ReturnValue) == 0x0000F8, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_Abs_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_Subtract_FloatFloat_ReturnValue_2) == 0x0000FC, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_Subtract_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000100, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_Abs_ReturnValue_1) == 0x000104, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_Abs_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x000108, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x00010C, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x000110, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_getSaveSlot_saveSlot_1) == 0x000118, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_getSaveSlot_saveSlot_1' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_Now_ReturnValue) == 0x000120, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_Now_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_GetTimeOfDay_ReturnValue) == 0x000128, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_GetTimeOfDay_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_GetTotalHours_ReturnValue) == 0x000130, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_GetTotalHours_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x000134, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Newsky_C_ExecuteUbergraph_newsky, CallFunc_Percent_FloatFloat_ReturnValue) == 0x000138, "Member 'Newsky_C_ExecuteUbergraph_newsky::CallFunc_Percent_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function newsky.newsky_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -50,58 +101,53 @@ static_assert(sizeof(Newsky_C_ReceiveTick) == 0x000004, "Wrong size on Newsky_C_
 static_assert(offsetof(Newsky_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'Newsky_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function newsky.newsky_C.upd
-// 0x0134 (0x0134 - 0x0000)
+// 0x0130 (0x0130 - 0x0000)
 struct Newsky_C_Upd final
 {
 public:
-	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x0000(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue;          // 0x000C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_R;                             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_G;                             // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_B;                             // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_A;                             // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_BoolBool_ReturnValue;          // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_280F[0x2];                                     // 0x0032(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x0034(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x0040(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorRightVector_ReturnValue;          // 0x0000(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x000C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x002C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue_1;   // 0x003C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_BoolBool_ReturnValue;          // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4E[0x2];                                       // 0x004E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_GetForwardVector_ReturnValue_1;           // 0x0050(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Dot_VectorVector_ReturnValue_1;           // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x0060(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x005C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_Dot_VectorVector_ReturnValue_1;           // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult;       // 0x0074(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult;       // 0x0070(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue_1;        // 0x0104(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue_2;        // 0x0114(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue_3;        // 0x0124(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue;          // 0x0100(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue_1;        // 0x0110(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue_2;        // 0x0120(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Newsky_C_Upd) == 0x000004, "Wrong alignment on Newsky_C_Upd");
-static_assert(sizeof(Newsky_C_Upd) == 0x000134, "Wrong size on Newsky_C_Upd");
-static_assert(offsetof(Newsky_C_Upd, CallFunc_GetForwardVector_ReturnValue) == 0x000000, "Member 'Newsky_C_Upd::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Newsky_C_Upd, CallFunc_GetLinearColorValue_ReturnValue) == 0x00000C, "Member 'Newsky_C_Upd::CallFunc_GetLinearColorValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Newsky_C_Upd, CallFunc_Dot_VectorVector_ReturnValue) == 0x00001C, "Member 'Newsky_C_Upd::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Newsky_C_Upd, CallFunc_BreakColor_R) == 0x000020, "Member 'Newsky_C_Upd::CallFunc_BreakColor_R' has a wrong offset!");
-static_assert(offsetof(Newsky_C_Upd, CallFunc_BreakColor_G) == 0x000024, "Member 'Newsky_C_Upd::CallFunc_BreakColor_G' has a wrong offset!");
-static_assert(offsetof(Newsky_C_Upd, CallFunc_BreakColor_B) == 0x000028, "Member 'Newsky_C_Upd::CallFunc_BreakColor_B' has a wrong offset!");
-static_assert(offsetof(Newsky_C_Upd, CallFunc_BreakColor_A) == 0x00002C, "Member 'Newsky_C_Upd::CallFunc_BreakColor_A' has a wrong offset!");
-static_assert(offsetof(Newsky_C_Upd, CallFunc_Less_FloatFloat_ReturnValue) == 0x000030, "Member 'Newsky_C_Upd::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Newsky_C_Upd, CallFunc_EqualEqual_BoolBool_ReturnValue) == 0x000031, "Member 'Newsky_C_Upd::CallFunc_EqualEqual_BoolBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Newsky_C_Upd, CallFunc_GetActorForwardVector_ReturnValue) == 0x000034, "Member 'Newsky_C_Upd::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Newsky_C_Upd, CallFunc_Conv_VectorToLinearColor_ReturnValue) == 0x000040, "Member 'Newsky_C_Upd::CallFunc_Conv_VectorToLinearColor_ReturnValue' has a wrong offset!");
+static_assert(sizeof(Newsky_C_Upd) == 0x000130, "Wrong size on Newsky_C_Upd");
+static_assert(offsetof(Newsky_C_Upd, CallFunc_GetActorRightVector_ReturnValue) == 0x000000, "Member 'Newsky_C_Upd::CallFunc_GetActorRightVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_Upd, CallFunc_GetForwardVector_ReturnValue) == 0x00000C, "Member 'Newsky_C_Upd::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_Upd, CallFunc_Conv_VectorToLinearColor_ReturnValue) == 0x000018, "Member 'Newsky_C_Upd::CallFunc_Conv_VectorToLinearColor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_Upd, CallFunc_Dot_VectorVector_ReturnValue) == 0x000028, "Member 'Newsky_C_Upd::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_Upd, CallFunc_GetActorForwardVector_ReturnValue) == 0x00002C, "Member 'Newsky_C_Upd::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_Upd, CallFunc_Less_FloatFloat_ReturnValue) == 0x000038, "Member 'Newsky_C_Upd::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_Upd, CallFunc_Conv_VectorToLinearColor_ReturnValue_1) == 0x00003C, "Member 'Newsky_C_Upd::CallFunc_Conv_VectorToLinearColor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Newsky_C_Upd, CallFunc_Not_PreBool_ReturnValue) == 0x00004C, "Member 'Newsky_C_Upd::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_Upd, CallFunc_EqualEqual_BoolBool_ReturnValue) == 0x00004D, "Member 'Newsky_C_Upd::CallFunc_EqualEqual_BoolBool_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Newsky_C_Upd, CallFunc_GetForwardVector_ReturnValue_1) == 0x000050, "Member 'Newsky_C_Upd::CallFunc_GetForwardVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Newsky_C_Upd, CallFunc_Dot_VectorVector_ReturnValue_1) == 0x00005C, "Member 'Newsky_C_Upd::CallFunc_Dot_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Newsky_C_Upd, CallFunc_K2_GetActorRotation_ReturnValue) == 0x000060, "Member 'Newsky_C_Upd::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_Upd, CallFunc_K2_GetActorRotation_ReturnValue) == 0x00005C, "Member 'Newsky_C_Upd::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_Upd, CallFunc_Dot_VectorVector_ReturnValue_1) == 0x000068, "Member 'Newsky_C_Upd::CallFunc_Dot_VectorVector_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(Newsky_C_Upd, CallFunc_Add_FloatFloat_ReturnValue) == 0x00006C, "Member 'Newsky_C_Upd::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Newsky_C_Upd, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000070, "Member 'Newsky_C_Upd::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Newsky_C_Upd, CallFunc_K2_SetWorldRotation_SweepHitResult) == 0x000074, "Member 'Newsky_C_Upd::CallFunc_K2_SetWorldRotation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(Newsky_C_Upd, CallFunc_K2_SetWorldRotation_SweepHitResult) == 0x000070, "Member 'Newsky_C_Upd::CallFunc_K2_SetWorldRotation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(Newsky_C_Upd, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0000F8, "Member 'Newsky_C_Upd::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Newsky_C_Upd, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x0000FC, "Member 'Newsky_C_Upd::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Newsky_C_Upd, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000100, "Member 'Newsky_C_Upd::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Newsky_C_Upd, CallFunc_GetLinearColorValue_ReturnValue_1) == 0x000104, "Member 'Newsky_C_Upd::CallFunc_GetLinearColorValue_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Newsky_C_Upd, CallFunc_GetLinearColorValue_ReturnValue_2) == 0x000114, "Member 'Newsky_C_Upd::CallFunc_GetLinearColorValue_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Newsky_C_Upd, CallFunc_GetLinearColorValue_ReturnValue_3) == 0x000124, "Member 'Newsky_C_Upd::CallFunc_GetLinearColorValue_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Newsky_C_Upd, CallFunc_GetLinearColorValue_ReturnValue) == 0x000100, "Member 'Newsky_C_Upd::CallFunc_GetLinearColorValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_Upd, CallFunc_GetLinearColorValue_ReturnValue_1) == 0x000110, "Member 'Newsky_C_Upd::CallFunc_GetLinearColorValue_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Newsky_C_Upd, CallFunc_GetLinearColorValue_ReturnValue_2) == 0x000120, "Member 'Newsky_C_Upd::CallFunc_GetLinearColorValue_ReturnValue_2' has a wrong offset!");
 
 // Function newsky.newsky_C.Init
 // 0x0018 (0x0018 - 0x0000)
@@ -111,7 +157,7 @@ public:
 	float                                         CallFunc_RandomFloat_ReturnValue;                  // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloat_ReturnValue_1;                // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloat_ReturnValue_2;                // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2810[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Newsky_C_Init) == 0x000008, "Wrong alignment on Newsky_C_Init");
@@ -127,13 +173,62 @@ struct Newsky_C_SkyVisibility final
 {
 public:
 	bool                                          bNewHidden;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2811[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Newsky_C_SkyVisibility) == 0x000008, "Wrong alignment on Newsky_C_SkyVisibility");
 static_assert(sizeof(Newsky_C_SkyVisibility) == 0x000010, "Wrong size on Newsky_C_SkyVisibility");
 static_assert(offsetof(Newsky_C_SkyVisibility, bNewHidden) == 0x000000, "Member 'Newsky_C_SkyVisibility::bNewHidden' has a wrong offset!");
 static_assert(offsetof(Newsky_C_SkyVisibility, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000008, "Member 'Newsky_C_SkyVisibility::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+
+// Function newsky.newsky_C.setSunIntensity
+// 0x0038 (0x0038 - 0x0000)
+struct Newsky_C_SetSunIntensity final
+{
+public:
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue;          // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_R;                             // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_G;                             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_B;                             // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_A;                             // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Newsky_C_SetSunIntensity) == 0x000008, "Wrong alignment on Newsky_C_SetSunIntensity");
+static_assert(sizeof(Newsky_C_SetSunIntensity) == 0x000038, "Wrong size on Newsky_C_SetSunIntensity");
+static_assert(offsetof(Newsky_C_SetSunIntensity, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000000, "Member 'Newsky_C_SetSunIntensity::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(Newsky_C_SetSunIntensity, CallFunc_GetLinearColorValue_ReturnValue) == 0x000008, "Member 'Newsky_C_SetSunIntensity::CallFunc_GetLinearColorValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_SetSunIntensity, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000018, "Member 'Newsky_C_SetSunIntensity::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_SetSunIntensity, CallFunc_BreakColor_R) == 0x00001C, "Member 'Newsky_C_SetSunIntensity::CallFunc_BreakColor_R' has a wrong offset!");
+static_assert(offsetof(Newsky_C_SetSunIntensity, CallFunc_BreakColor_G) == 0x000020, "Member 'Newsky_C_SetSunIntensity::CallFunc_BreakColor_G' has a wrong offset!");
+static_assert(offsetof(Newsky_C_SetSunIntensity, CallFunc_BreakColor_B) == 0x000024, "Member 'Newsky_C_SetSunIntensity::CallFunc_BreakColor_B' has a wrong offset!");
+static_assert(offsetof(Newsky_C_SetSunIntensity, CallFunc_BreakColor_A) == 0x000028, "Member 'Newsky_C_SetSunIntensity::CallFunc_BreakColor_A' has a wrong offset!");
+static_assert(offsetof(Newsky_C_SetSunIntensity, CallFunc_Add_FloatFloat_ReturnValue) == 0x00002C, "Member 'Newsky_C_SetSunIntensity::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Newsky_C_SetSunIntensity, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000030, "Member 'Newsky_C_SetSunIntensity::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Newsky_C_SetSunIntensity, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000034, "Member 'Newsky_C_SetSunIntensity::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+
+// Function newsky.newsky_C.setEye
+// 0x0020 (0x0020 - 0x0000)
+struct Newsky_C_SetEye final
+{
+public:
+	bool                                          Param_Eye;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture*                               Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture*                               Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture*                               K2Node_Select_Default;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Newsky_C_SetEye) == 0x000008, "Wrong alignment on Newsky_C_SetEye");
+static_assert(sizeof(Newsky_C_SetEye) == 0x000020, "Wrong size on Newsky_C_SetEye");
+static_assert(offsetof(Newsky_C_SetEye, Param_Eye) == 0x000000, "Member 'Newsky_C_SetEye::Param_Eye' has a wrong offset!");
+static_assert(offsetof(Newsky_C_SetEye, Temp_bool_Variable) == 0x000001, "Member 'Newsky_C_SetEye::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(Newsky_C_SetEye, Temp_object_Variable) == 0x000008, "Member 'Newsky_C_SetEye::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(Newsky_C_SetEye, Temp_object_Variable_1) == 0x000010, "Member 'Newsky_C_SetEye::Temp_object_Variable_1' has a wrong offset!");
+static_assert(offsetof(Newsky_C_SetEye, K2Node_Select_Default) == 0x000018, "Member 'Newsky_C_SetEye::K2Node_Select_Default' has a wrong offset!");
 
 }
 

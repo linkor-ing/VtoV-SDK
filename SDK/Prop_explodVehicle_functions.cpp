@@ -37,30 +37,6 @@ void AProp_explodVehicle_C::ExecuteUbergraph_prop_explodVehicle(int32 EntryPoint
 }
 
 
-// Function prop_explodVehicle.prop_explodVehicle_C.setPropProps
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Param_Static                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Param_Frozen                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AProp_explodVehicle_C::SetPropProps(bool Param_Static, bool Param_Frozen, bool Active)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_explodVehicle_C", "setPropProps");
-
-	Params::Prop_explodVehicle_C_SetPropProps Parms{};
-
-	Parms.Param_Static = Param_Static;
-	Parms.Param_Frozen = Param_Frozen;
-	Parms.Active = Active;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function prop_explodVehicle.prop_explodVehicle_C.ReceiveHit
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -95,20 +71,6 @@ void AProp_explodVehicle_C::ReceiveHit(class UPrimitiveComponent* MyComp, class 
 }
 
 
-// Function prop_explodVehicle.prop_explodVehicle_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_explodVehicle_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_explodVehicle_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_explodVehicle.prop_explodVehicle_C.impactDamageCPP
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -132,6 +94,44 @@ void AProp_explodVehicle_C::ImpactDamageCPP(float Damage, const struct FHitResul
 	Parms.Impact = std::move(Impact);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_explodVehicle.prop_explodVehicle_C.setPropProps
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Param_Static                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Param_Frozen                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AProp_explodVehicle_C::SetPropProps(bool Param_Static, bool Param_Frozen, bool Active)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_explodVehicle_C", "setPropProps");
+
+	Params::Prop_explodVehicle_C_SetPropProps Parms{};
+
+	Parms.Param_Static = Param_Static;
+	Parms.Param_Frozen = Param_Frozen;
+	Parms.Active = Active;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_explodVehicle.prop_explodVehicle_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_explodVehicle_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_explodVehicle_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

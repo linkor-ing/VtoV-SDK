@@ -18,16 +18,16 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_thermometer.prop_thermometer_C
-// 0x0008 (0x0370 - 0x0368)
+// 0x0008 (0x0380 - 0x0378)
 class AProp_thermometer_C final : public AProp_C
 {
 public:
-	uint8                                         Pad_3A49[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_thermometer_C;                 // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_thermometer_C;                 // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_prop_thermometer(int32 EntryPoint);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
+	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 
 public:
 	static class UClass* StaticClass()
@@ -40,8 +40,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_thermometer_C) == 0x000008, "Wrong alignment on AProp_thermometer_C");
-static_assert(sizeof(AProp_thermometer_C) == 0x000370, "Wrong size on AProp_thermometer_C");
-static_assert(offsetof(AProp_thermometer_C, UberGraphFrame_Prop_thermometer_C) == 0x000368, "Member 'AProp_thermometer_C::UberGraphFrame_Prop_thermometer_C' has a wrong offset!");
+static_assert(sizeof(AProp_thermometer_C) == 0x000380, "Wrong size on AProp_thermometer_C");
+static_assert(offsetof(AProp_thermometer_C, UberGraphFrame_Prop_thermometer_C) == 0x000378, "Member 'AProp_thermometer_C::UberGraphFrame_Prop_thermometer_C' has a wrong offset!");
 
 }
 

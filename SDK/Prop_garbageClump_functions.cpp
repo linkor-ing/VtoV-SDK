@@ -61,11 +61,11 @@ void AProp_garbageClump_C::SetIgnoreSave(bool Ignore)
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                          Impact                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_garbageClump_C::ImpactDamage(float Damage, const struct FHitResult& Hit, class AActor* Actor, const struct FVector& Impact)
+void AProp_garbageClump_C::ImpactDamage(float Damage, const struct FHitResult& Param_Hit, class AActor* Actor, const struct FVector& Impact)
 {
 	static class UFunction* Func = nullptr;
 
@@ -75,7 +75,7 @@ void AProp_garbageClump_C::ImpactDamage(float Damage, const struct FHitResult& H
 	Params::Prop_garbageClump_C_ImpactDamage Parms{};
 
 	Parms.Damage = Damage;
-	Parms.Hit = std::move(Hit);
+	Parms.Param_Hit = std::move(Param_Hit);
 	Parms.Actor = Actor;
 	Parms.Impact = std::move(Impact);
 
@@ -197,78 +197,6 @@ void AProp_garbageClump_C::Virus(bool Activate)
 }
 
 
-// Function prop_garbageClump.prop_garbageClump_C.setPropProps
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Static                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Frozen                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AProp_garbageClump_C::SetPropProps(bool Static, bool Frozen, bool Active)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_garbageClump_C", "setPropProps");
-
-	Params::Prop_garbageClump_C_SetPropProps Parms{};
-
-	Parms.Static = Static;
-	Parms.Frozen = Frozen;
-	Parms.Active = Active;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop_garbageClump.prop_garbageClump_C.addDamage
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// struct FVector                          Impact                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    SkipSetting                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AProp_garbageClump_C::AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Hit, const struct FVector& Impact, bool SkipSetting)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_garbageClump_C", "addDamage");
-
-	Params::Prop_garbageClump_C_AddDamage Parms{};
-
-	Parms.Actor = Actor;
-	Parms.Damage = Damage;
-	Parms.Hit = std::move(Hit);
-	Parms.Impact = std::move(Impact);
-	Parms.SkipSetting = SkipSetting;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop_garbageClump.prop_garbageClump_C.setKey
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                           Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void AProp_garbageClump_C::SetKey(const class FString& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_garbageClump_C", "setKey");
-
-	Params::Prop_garbageClump_C_SetKey Parms{};
-
-	Parms.Key = std::move(Key);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function prop_garbageClump.prop_garbageClump_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -310,9 +238,9 @@ void AProp_garbageClump_C::ReceiveBeginPlay()
 // class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                          NormalImpulse                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// struct FHitResult                       Param_Hit                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void AProp_garbageClump_C::BndEvt__prop_garbageClump_StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
+void AProp_garbageClump_C::BndEvt__prop_garbageClump_StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Param_Hit)
 {
 	static class UFunction* Func = nullptr;
 
@@ -325,9 +253,65 @@ void AProp_garbageClump_C::BndEvt__prop_garbageClump_StaticMesh_K2Node_Component
 	Parms.OtherActor = OtherActor;
 	Parms.OtherComp = OtherComp;
 	Parms.NormalImpulse = std::move(NormalImpulse);
-	Parms.Hit = std::move(Hit);
+	Parms.Param_Hit = std::move(Param_Hit);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_garbageClump.prop_garbageClump_C.hookTension
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AHook_C*                          Hook                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_garbageClump_C::HookTension(class AHook_C* Hook)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_garbageClump_C", "hookTension");
+
+	Params::Prop_garbageClump_C_HookTension Parms{};
+
+	Parms.Hook = Hook;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_garbageClump.prop_garbageClump_C.cleanSponge
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Clean                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_garbageClump_C::CleanSponge(float Clean, class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_garbageClump_C", "cleanSponge");
+
+	Params::Prop_garbageClump_C_CleanSponge Parms{};
+
+	Parms.Clean = Clean;
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_garbageClump.prop_garbageClump_C.crafted
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AProp_garbageClump_C::Crafted()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_garbageClump_C", "crafted");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -369,9 +353,9 @@ void AProp_garbageClump_C::AttemptIgnite()
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void AProp_garbageClump_C::PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit)
+void AProp_garbageClump_C::PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit)
 {
 	static class UFunction* Func = nullptr;
 
@@ -381,7 +365,7 @@ void AProp_garbageClump_C::PlayerUsedOn(class AMainPlayer_C* Player, const struc
 	Params::Prop_garbageClump_C_PlayerUsedOn Parms{};
 
 	Parms.Player = Player;
-	Parms.Hit = std::move(Hit);
+	Parms.Param_Hit = std::move(Param_Hit);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -487,10 +471,10 @@ void AProp_garbageClump_C::Stepped(float Volume)
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class FString                           Param_Name                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void AProp_garbageClump_C::ActionName(class AMainPlayer_C* Player, const struct FHitResult& Hit, const class FString& Param_Name)
+void AProp_garbageClump_C::ActionName(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, const class FString& Param_Name)
 {
 	static class UFunction* Func = nullptr;
 
@@ -500,7 +484,7 @@ void AProp_garbageClump_C::ActionName(class AMainPlayer_C* Player, const struct 
 	Params::Prop_garbageClump_C_ActionName Parms{};
 
 	Parms.Player = Player;
-	Parms.Hit = std::move(Hit);
+	Parms.Param_Hit = std::move(Param_Hit);
 	Parms.Param_Name = std::move(Param_Name);
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -751,11 +735,10 @@ void AProp_garbageClump_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_garbageClump_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action)
+void AProp_garbageClump_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -765,8 +748,7 @@ void AProp_garbageClump_C::ActionOptionIndex(class AMainPlayer_C* Player, const 
 	Params::Prop_garbageClump_C_ActionOptionIndex Parms{};
 
 	Parms.Player = Player;
-	Parms.Hit = std::move(Hit);
-	Parms.Param_Index = Param_Index;
+	Parms.Param_Hit = std::move(Param_Hit);
 	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -775,15 +757,23 @@ void AProp_garbageClump_C::ActionOptionIndex(class AMainPlayer_C* Player, const 
 
 // Function prop_garbageClump.prop_garbageClump_C.receivedPhyiscsDamage
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hot                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void AProp_garbageClump_C::ReceivedPhyiscsDamage()
+void AProp_garbageClump_C::ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("prop_garbageClump_C", "receivedPhyiscsDamage");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::Prop_garbageClump_C_ReceivedPhyiscsDamage Parms{};
+
+	Parms.Damage = Damage;
+	Parms.Hot = std::move(Hot);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -845,9 +835,9 @@ void AProp_garbageClump_C::FireDamage(float Damage)
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void AProp_garbageClump_C::SteppedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit)
+void AProp_garbageClump_C::SteppedOn(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit)
 {
 	static class UFunction* Func = nullptr;
 
@@ -857,7 +847,7 @@ void AProp_garbageClump_C::SteppedOn(class AMainPlayer_C* Player, const struct F
 	Params::Prop_garbageClump_C_SteppedOn Parms{};
 
 	Parms.Player = Player;
-	Parms.Hit = std::move(Hit);
+	Parms.Param_Hit = std::move(Param_Hit);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -919,6 +909,78 @@ void AProp_garbageClump_C::PhysDestroyed()
 }
 
 
+// Function prop_garbageClump.prop_garbageClump_C.setKey
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                           Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void AProp_garbageClump_C::SetKey(const class FString& Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_garbageClump_C", "setKey");
+
+	Params::Prop_garbageClump_C_SetKey Parms{};
+
+	Parms.Key = std::move(Key);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_garbageClump.prop_garbageClump_C.addDamage
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// struct FVector                          Impact                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    SkipSetting                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AProp_garbageClump_C::AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Param_Hit, const struct FVector& Impact, bool SkipSetting)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_garbageClump_C", "addDamage");
+
+	Params::Prop_garbageClump_C_AddDamage Parms{};
+
+	Parms.Actor = Actor;
+	Parms.Damage = Damage;
+	Parms.Param_Hit = std::move(Param_Hit);
+	Parms.Impact = std::move(Impact);
+	Parms.SkipSetting = SkipSetting;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_garbageClump.prop_garbageClump_C.setPropProps
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Static                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Frozen                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AProp_garbageClump_C::SetPropProps(bool Static, bool Frozen, bool Active)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_garbageClump_C", "setPropProps");
+
+	Params::Prop_garbageClump_C_SetPropProps Parms{};
+
+	Parms.Static = Static;
+	Parms.Frozen = Frozen;
+	Parms.Active = Active;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function prop_garbageClump.prop_garbageClump_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
@@ -970,8 +1032,9 @@ void AProp_garbageClump_C::SetTex()
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_garbageClump_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
+void AProp_garbageClump_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -994,6 +1057,9 @@ void AProp_garbageClump_C::GetActionOptions(class AMainPlayer_C* Player, class U
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -1174,6 +1240,27 @@ void AProp_garbageClump_C::SkipRadial(bool* Skip)
 }
 
 
+// Function prop_garbageClump.prop_garbageClump_C.getPriceMultiplier
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   PriceMult                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_garbageClump_C::GetPriceMultiplier(float* PriceMult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_garbageClump_C", "getPriceMultiplier");
+
+	Params::Prop_garbageClump_C_GetPriceMultiplier Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PriceMult != nullptr)
+		*PriceMult = Parms.PriceMult;
+}
+
+
 // Function prop_garbageClump.prop_garbageClump_C.skipPreDelete
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1258,6 +1345,27 @@ void AProp_garbageClump_C::GetData(struct FStruct_save* Data)
 
 	if (Data != nullptr)
 		*Data = std::move(Parms.Data);
+}
+
+
+// Function prop_garbageClump.prop_garbageClump_C.gatherDataFromKey
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AProp_garbageClump_C::GatherDataFromKey(bool* Gather)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_garbageClump_C", "gatherDataFromKey");
+
+	Params::Prop_garbageClump_C_GatherDataFromKey Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Gather != nullptr)
+		*Gather = Parms.Gather;
 }
 
 }

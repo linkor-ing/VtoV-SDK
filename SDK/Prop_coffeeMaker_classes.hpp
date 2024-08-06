@@ -19,28 +19,25 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_coffeeMaker.prop_coffeeMaker_C
-// 0x0030 (0x0398 - 0x0368)
+// 0x0030 (0x03A8 - 0x0378)
 class AProp_coffeeMaker_C final : public AProp_C
 {
 public:
-	uint8                                         Pad_1A1B[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_coffeeMaker_C;                 // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UChildActorComponent*                   Cord;                                              // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBillboardComponent*                    Pos;                                               // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh1;                                       // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          HasCup;                                            // 0x0388(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          HasCoffee;                                         // 0x0389(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          CoffeeReady;                                       // 0x038A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          HasPower;                                          // 0x038B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A1C[0x4];                                     // 0x038C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ACord_C*                                ObjCord;                                           // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_coffeeMaker_C;                 // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UChildActorComponent*                   Cord;                                              // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    Pos;                                               // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh1;                                       // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          HasCup;                                            // 0x0398(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          HasCoffee;                                         // 0x0399(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          CoffeeReady;                                       // 0x039A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          HasPower;                                          // 0x039B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39C[0x4];                                      // 0x039C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ACord_C*                                ObjCord;                                           // 0x03A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_coffeeMaker(int32 EntryPoint);
 	void CordUnplugged(class ACord_C* Param_Cord, class ACordSocket_C* Socket);
 	void CordPlugged(class ACord_C* Param_Cord, class ACordSocket_C* Socket);
-	void ReceiveBeginPlay();
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
 	void BndEvt__StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Param_Hit);
 	void SetActiveTrigger(class AActor* SentFrom, bool Active);
 	void Set_ignoreSave_trigger(bool NewParam);
@@ -49,10 +46,13 @@ public:
 	void IgnoreSave_trigger(bool* Ignore);
 	void LoadTriggerData(const struct FStruct_triggerSave& Data, bool* Return);
 	void GetTriggerData(struct FStruct_triggerSave* Data);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void GatherDataFromKeyT(bool* Gather);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
+	void ReceiveBeginPlay();
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 
 public:
 	static class UClass* StaticClass()
@@ -65,16 +65,16 @@ public:
 	}
 };
 static_assert(alignof(AProp_coffeeMaker_C) == 0x000008, "Wrong alignment on AProp_coffeeMaker_C");
-static_assert(sizeof(AProp_coffeeMaker_C) == 0x000398, "Wrong size on AProp_coffeeMaker_C");
-static_assert(offsetof(AProp_coffeeMaker_C, UberGraphFrame_Prop_coffeeMaker_C) == 0x000368, "Member 'AProp_coffeeMaker_C::UberGraphFrame_Prop_coffeeMaker_C' has a wrong offset!");
-static_assert(offsetof(AProp_coffeeMaker_C, Cord) == 0x000370, "Member 'AProp_coffeeMaker_C::Cord' has a wrong offset!");
-static_assert(offsetof(AProp_coffeeMaker_C, Pos) == 0x000378, "Member 'AProp_coffeeMaker_C::Pos' has a wrong offset!");
-static_assert(offsetof(AProp_coffeeMaker_C, StaticMesh1) == 0x000380, "Member 'AProp_coffeeMaker_C::StaticMesh1' has a wrong offset!");
-static_assert(offsetof(AProp_coffeeMaker_C, HasCup) == 0x000388, "Member 'AProp_coffeeMaker_C::HasCup' has a wrong offset!");
-static_assert(offsetof(AProp_coffeeMaker_C, HasCoffee) == 0x000389, "Member 'AProp_coffeeMaker_C::HasCoffee' has a wrong offset!");
-static_assert(offsetof(AProp_coffeeMaker_C, CoffeeReady) == 0x00038A, "Member 'AProp_coffeeMaker_C::CoffeeReady' has a wrong offset!");
-static_assert(offsetof(AProp_coffeeMaker_C, HasPower) == 0x00038B, "Member 'AProp_coffeeMaker_C::HasPower' has a wrong offset!");
-static_assert(offsetof(AProp_coffeeMaker_C, ObjCord) == 0x000390, "Member 'AProp_coffeeMaker_C::ObjCord' has a wrong offset!");
+static_assert(sizeof(AProp_coffeeMaker_C) == 0x0003A8, "Wrong size on AProp_coffeeMaker_C");
+static_assert(offsetof(AProp_coffeeMaker_C, UberGraphFrame_Prop_coffeeMaker_C) == 0x000378, "Member 'AProp_coffeeMaker_C::UberGraphFrame_Prop_coffeeMaker_C' has a wrong offset!");
+static_assert(offsetof(AProp_coffeeMaker_C, Cord) == 0x000380, "Member 'AProp_coffeeMaker_C::Cord' has a wrong offset!");
+static_assert(offsetof(AProp_coffeeMaker_C, Pos) == 0x000388, "Member 'AProp_coffeeMaker_C::Pos' has a wrong offset!");
+static_assert(offsetof(AProp_coffeeMaker_C, StaticMesh1) == 0x000390, "Member 'AProp_coffeeMaker_C::StaticMesh1' has a wrong offset!");
+static_assert(offsetof(AProp_coffeeMaker_C, HasCup) == 0x000398, "Member 'AProp_coffeeMaker_C::HasCup' has a wrong offset!");
+static_assert(offsetof(AProp_coffeeMaker_C, HasCoffee) == 0x000399, "Member 'AProp_coffeeMaker_C::HasCoffee' has a wrong offset!");
+static_assert(offsetof(AProp_coffeeMaker_C, CoffeeReady) == 0x00039A, "Member 'AProp_coffeeMaker_C::CoffeeReady' has a wrong offset!");
+static_assert(offsetof(AProp_coffeeMaker_C, HasPower) == 0x00039B, "Member 'AProp_coffeeMaker_C::HasPower' has a wrong offset!");
+static_assert(offsetof(AProp_coffeeMaker_C, ObjCord) == 0x0003A0, "Member 'AProp_coffeeMaker_C::ObjCord' has a wrong offset!");
 
 }
 

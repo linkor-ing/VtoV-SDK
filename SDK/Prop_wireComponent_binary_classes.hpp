@@ -18,16 +18,16 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_wireComponent_binary.prop_wireComponent_binary_C
-// 0x0028 (0x0398 - 0x0370)
+// 0x0028 (0x03A8 - 0x0380)
 class AProp_wireComponent_binary_C final : public AProp_wireComponent_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_wireComponent_binary_C;        // 0x0370(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UParticleSystemComponent*               Light;                                             // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBillboardComponent*                    Billboard;                                         // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          State;                                             // 0x0388(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3D55[0x7];                                     // 0x0389(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AWire_C*                                Wire;                                              // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_wireComponent_binary_C;        // 0x0380(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UParticleSystemComponent*               Light;                                             // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    Billboard;                                         // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          State;                                             // 0x0398(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_399[0x7];                                      // 0x0399(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AWire_C*                                Wire;                                              // 0x03A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_wireComponent_binary(int32 EntryPoint);
@@ -48,12 +48,12 @@ public:
 	}
 };
 static_assert(alignof(AProp_wireComponent_binary_C) == 0x000008, "Wrong alignment on AProp_wireComponent_binary_C");
-static_assert(sizeof(AProp_wireComponent_binary_C) == 0x000398, "Wrong size on AProp_wireComponent_binary_C");
-static_assert(offsetof(AProp_wireComponent_binary_C, UberGraphFrame_Prop_wireComponent_binary_C) == 0x000370, "Member 'AProp_wireComponent_binary_C::UberGraphFrame_Prop_wireComponent_binary_C' has a wrong offset!");
-static_assert(offsetof(AProp_wireComponent_binary_C, Light) == 0x000378, "Member 'AProp_wireComponent_binary_C::Light' has a wrong offset!");
-static_assert(offsetof(AProp_wireComponent_binary_C, Billboard) == 0x000380, "Member 'AProp_wireComponent_binary_C::Billboard' has a wrong offset!");
-static_assert(offsetof(AProp_wireComponent_binary_C, State) == 0x000388, "Member 'AProp_wireComponent_binary_C::State' has a wrong offset!");
-static_assert(offsetof(AProp_wireComponent_binary_C, Wire) == 0x000390, "Member 'AProp_wireComponent_binary_C::Wire' has a wrong offset!");
+static_assert(sizeof(AProp_wireComponent_binary_C) == 0x0003A8, "Wrong size on AProp_wireComponent_binary_C");
+static_assert(offsetof(AProp_wireComponent_binary_C, UberGraphFrame_Prop_wireComponent_binary_C) == 0x000380, "Member 'AProp_wireComponent_binary_C::UberGraphFrame_Prop_wireComponent_binary_C' has a wrong offset!");
+static_assert(offsetof(AProp_wireComponent_binary_C, Light) == 0x000388, "Member 'AProp_wireComponent_binary_C::Light' has a wrong offset!");
+static_assert(offsetof(AProp_wireComponent_binary_C, Billboard) == 0x000390, "Member 'AProp_wireComponent_binary_C::Billboard' has a wrong offset!");
+static_assert(offsetof(AProp_wireComponent_binary_C, State) == 0x000398, "Member 'AProp_wireComponent_binary_C::State' has a wrong offset!");
+static_assert(offsetof(AProp_wireComponent_binary_C, Wire) == 0x0003A0, "Member 'AProp_wireComponent_binary_C::Wire' has a wrong offset!");
 
 }
 

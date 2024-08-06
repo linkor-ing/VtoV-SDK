@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass p_kerfus_r.p_kerfus_r_C
-// 0x0000 (0x0478 - 0x0478)
+// 0x0000 (0x04A8 - 0x04A8)
 class AP_kerfus_r_C final : public AP_kerfus_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AP_kerfus_r_C) == 0x000008, "Wrong alignment on AP_kerfus_r_C");
-static_assert(sizeof(AP_kerfus_r_C) == 0x000478, "Wrong size on AP_kerfus_r_C");
+static_assert(sizeof(AP_kerfus_r_C) == 0x0004A8, "Wrong size on AP_kerfus_r_C");
 
 }
 

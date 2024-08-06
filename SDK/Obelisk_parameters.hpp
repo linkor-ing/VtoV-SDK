@@ -10,131 +10,190 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Struct_save_structs.hpp"
-#include "Struct_mBool_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Struct_mBool_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function obelisk.obelisk_C.ExecuteUbergraph_obelisk
-// 0x0440 (0x0440 - 0x0000)
+// 0x0610 (0x0610 - 0x0000)
 struct Obelisk_C_ExecuteUbergraph_obelisk final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable;                                // 0x0004(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x000C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DF0[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DF1[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable_1;                               // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DF2[0x3];                                     // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DF3[0x3];                                     // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x0038(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         CallFunc_BreakRotator_Roll;                        // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Pitch;                       // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Yaw;                         // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0050(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x005C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult;       // 0x00E4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult_1;  // 0x016C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x01F4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0200(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RandomUnitVector_ReturnValue;             // 0x020C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0218(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0224(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RandomUnitVector_ReturnValue_1;           // 0x0230(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x023C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x024C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0250(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x025C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DF4[0x3];                                     // 0x0269(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x026C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_3;         // 0x027C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_4;         // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x0284(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0290(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x02C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_C*                                CallFunc_FinishSpawningActor_ReturnValue;          // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent;    // 0x02D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x02D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x02E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x02E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x02EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DF5[0x3];                                     // 0x02ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x02F0(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AMainPlayer_C*                          CallFunc_getMainPlayer_AsMain_Player;              // 0x0378(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x0380(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_3;        // 0x038C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0398(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_SetVectorLength_ReturnValue;              // 0x03A4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult_2;  // 0x03B0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0008(0x0010)(ConstParm, ReferenceParm)
+	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x0018(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0024(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RandomUnitVector_ReturnValue;             // 0x0030(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x003C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0048(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RandomUnitVector_ReturnValue_1;           // 0x0054(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0060(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0070(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x0080(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x008C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0098(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_3;         // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_4;         // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x00B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x00C0(0x0030)(IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_C*                                CallFunc_FinishSpawningActor_ReturnValue;          // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent;    // 0x0100(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x0110(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x011C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11D[0x3];                                      // 0x011D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0120(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AMainPlayer_C*                          CallFunc_getMainPlayer_AsMain_Player;              // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x01B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_3;        // 0x01BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x01C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_SetVectorLength_ReturnValue;              // 0x01D4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x01E0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         Temp_int_Variable;                                 // 0x0268(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult_1;  // 0x026C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x02F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F5[0x3];                                      // 0x02F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x02F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x02FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_BreakRotator_Roll;                        // 0x0308(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Pitch;                       // 0x030C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Yaw;                         // 0x0310(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0314(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult;       // 0x0320(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_3A8[0x8];                                      // 0x03A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x03B0(0x0030)(IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x03E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_obelisk_C*                        CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x03E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UGameInst_C*                            CallFunc_getMainGameInstance_AsGame_Inst;          // 0x03F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VSize_ReturnValue;                        // 0x03F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x03FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3FD[0x3];                                      // 0x03FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EObjectTypeQuery>                      CallFunc_obj_static_obj;                           // 0x0400(0x0010)(ReferenceParm)
+	class FName                                   Temp_name_Variable;                                // 0x0410(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetUpVector_ReturnValue;                  // 0x0418(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_2;       // 0x0424(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_1;    // 0x0430(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue_1;      // 0x043C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_2;           // 0x0448(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit;         // 0x0454(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue;    // 0x04DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x04DD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x04DE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4DF[0x1];                                      // 0x04DF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x04E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x04E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x04E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x04F4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0500(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x050C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0518(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0520(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0528(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0530(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0538(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x053C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0540(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0544(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0550(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue;           // 0x055C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue_1;         // 0x0568(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotationFromAxes_ReturnValue;         // 0x0574(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult_1;     // 0x0580(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 static_assert(alignof(Obelisk_C_ExecuteUbergraph_obelisk) == 0x000010, "Wrong alignment on Obelisk_C_ExecuteUbergraph_obelisk");
-static_assert(sizeof(Obelisk_C_ExecuteUbergraph_obelisk) == 0x000440, "Wrong size on Obelisk_C_ExecuteUbergraph_obelisk");
+static_assert(sizeof(Obelisk_C_ExecuteUbergraph_obelisk) == 0x000610, "Wrong size on Obelisk_C_ExecuteUbergraph_obelisk");
 static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, EntryPoint) == 0x000000, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, Temp_name_Variable) == 0x000004, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_VLerp_ReturnValue) == 0x00000C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_VLerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, Temp_int_Variable) == 0x000018, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00001C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, Temp_bool_Has_Been_Initd_Variable) == 0x000024, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, Temp_int_Variable_1) == 0x000028, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00002C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_Add_IntInt_ReturnValue_1) == 0x000030, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_Less_IntInt_ReturnValue) == 0x000034, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_K2_GetActorRotation_ReturnValue) == 0x000038, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BreakRotator_Roll) == 0x000044, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BreakRotator_Roll' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BreakRotator_Pitch) == 0x000048, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BreakRotator_Pitch' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BreakRotator_Yaw) == 0x00004C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BreakRotator_Yaw' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_MakeRotator_ReturnValue) == 0x000050, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x00005C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_K2_SetWorldRotation_SweepHitResult) == 0x0000E4, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_K2_SetWorldRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_K2_SetRelativeLocation_SweepHitResult_1) == 0x00016C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_K2_SetRelativeLocation_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0001F4, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000200, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_RandomUnitVector_ReturnValue) == 0x00020C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_RandomUnitVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000218, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000224, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_RandomUnitVector_ReturnValue_1) == 0x000230, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_RandomUnitVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_Add_VectorVector_ReturnValue) == 0x00023C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_RandomFloatInRange_ReturnValue) == 0x000248, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x00024C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_MakeVector_ReturnValue) == 0x000250, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x00025C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, Temp_bool_IsClosed_Variable) == 0x000268, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_Add_VectorVector_ReturnValue_1) == 0x00026C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x000278, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_RandomFloatInRange_ReturnValue_3) == 0x00027C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_RandomFloatInRange_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_RandomFloatInRange_ReturnValue_4) == 0x000280, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_RandomFloatInRange_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_MakeVector_ReturnValue_1) == 0x000284, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_MakeTransform_ReturnValue) == 0x000290, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0002C0, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_FinishSpawningActor_ReturnValue) == 0x0002C8, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, K2Node_ComponentBoundEvent_OverlappedComponent) == 0x0002D0, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::K2Node_ComponentBoundEvent_OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, K2Node_ComponentBoundEvent_OtherActor) == 0x0002D8, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, K2Node_ComponentBoundEvent_OtherComp) == 0x0002E0, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, K2Node_ComponentBoundEvent_OtherBodyIndex) == 0x0002E8, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::K2Node_ComponentBoundEvent_OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, K2Node_ComponentBoundEvent_bFromSweep) == 0x0002EC, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::K2Node_ComponentBoundEvent_bFromSweep' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, K2Node_ComponentBoundEvent_SweepResult) == 0x0002F0, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::K2Node_ComponentBoundEvent_SweepResult' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_getMainPlayer_AsMain_Player) == 0x000378, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_getMainPlayer_AsMain_Player' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x000380, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_K2_GetActorLocation_ReturnValue_3) == 0x00038C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_K2_GetActorLocation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000398, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_SetVectorLength_ReturnValue) == 0x0003A4, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_SetVectorLength_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_K2_SetRelativeLocation_SweepHitResult_2) == 0x0003B0, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_K2_SetRelativeLocation_SweepHitResult_2' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, Temp_object_Variable) == 0x000008, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_VLerp_ReturnValue) == 0x000018, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_VLerp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000024, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_RandomUnitVector_ReturnValue) == 0x000030, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_RandomUnitVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x00003C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000048, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_RandomUnitVector_ReturnValue_1) == 0x000054, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_RandomUnitVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_Add_VectorVector_ReturnValue) == 0x000060, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_RandomFloatInRange_ReturnValue) == 0x00006C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_MakeVector_ReturnValue) == 0x000070, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x00007C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x000080, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x00008C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000098, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x0000A4, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_RandomFloatInRange_ReturnValue_3) == 0x0000A8, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_RandomFloatInRange_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_RandomFloatInRange_ReturnValue_4) == 0x0000AC, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_RandomFloatInRange_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_MakeVector_ReturnValue_1) == 0x0000B0, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_MakeTransform_ReturnValue) == 0x0000C0, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0000F0, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_FinishSpawningActor_ReturnValue) == 0x0000F8, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, K2Node_ComponentBoundEvent_OverlappedComponent) == 0x000100, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::K2Node_ComponentBoundEvent_OverlappedComponent' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, K2Node_ComponentBoundEvent_OtherActor) == 0x000108, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, K2Node_ComponentBoundEvent_OtherComp) == 0x000110, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, K2Node_ComponentBoundEvent_OtherBodyIndex) == 0x000118, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::K2Node_ComponentBoundEvent_OtherBodyIndex' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, K2Node_ComponentBoundEvent_bFromSweep) == 0x00011C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::K2Node_ComponentBoundEvent_bFromSweep' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, K2Node_ComponentBoundEvent_SweepResult) == 0x000120, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::K2Node_ComponentBoundEvent_SweepResult' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_getMainPlayer_AsMain_Player) == 0x0001A8, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_getMainPlayer_AsMain_Player' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x0001B0, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_K2_GetActorLocation_ReturnValue_3) == 0x0001BC, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_K2_GetActorLocation_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0001C8, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_SetVectorLength_ReturnValue) == 0x0001D4, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_SetVectorLength_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x0001E0, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, Temp_int_Variable) == 0x000268, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_K2_SetRelativeLocation_SweepHitResult_1) == 0x00026C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_K2_SetRelativeLocation_SweepHitResult_1' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0002F4, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_Add_IntInt_ReturnValue) == 0x0002F8, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_K2_GetActorRotation_ReturnValue) == 0x0002FC, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BreakRotator_Roll) == 0x000308, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BreakRotator_Roll' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BreakRotator_Pitch) == 0x00030C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BreakRotator_Pitch' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BreakRotator_Yaw) == 0x000310, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BreakRotator_Yaw' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_MakeRotator_ReturnValue) == 0x000314, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_K2_SetWorldRotation_SweepHitResult) == 0x000320, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_K2_SetWorldRotation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x0003B0, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x0003E0, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x0003E8, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_getMainGameInstance_AsGame_Inst) == 0x0003F0, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_getMainGameInstance_AsGame_Inst' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_VSize_ReturnValue) == 0x0003F8, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_VSize_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x0003FC, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_obj_static_obj) == 0x000400, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_obj_static_obj' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, Temp_name_Variable) == 0x000410, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::Temp_name_Variable' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_GetUpVector_ReturnValue) == 0x000418, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_GetUpVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_Multiply_VectorFloat_ReturnValue_2) == 0x000424, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_Multiply_VectorFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x000430, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_Subtract_VectorVector_ReturnValue_1) == 0x00043C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_Subtract_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_Add_VectorVector_ReturnValue_2) == 0x000448, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_Add_VectorVector_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_LineTraceSingleForObjects_OutHit) == 0x000454, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_LineTraceSingleForObjects_OutHit' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_LineTraceSingleForObjects_ReturnValue) == 0x0004DC, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_LineTraceSingleForObjects_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BreakHitResult_bBlockingHit) == 0x0004DD, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BreakHitResult_bInitialOverlap) == 0x0004DE, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BreakHitResult_Time) == 0x0004E0, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BreakHitResult_Distance) == 0x0004E4, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BreakHitResult_Location) == 0x0004E8, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BreakHitResult_ImpactPoint) == 0x0004F4, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BreakHitResult_Normal) == 0x000500, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BreakHitResult_ImpactNormal) == 0x00050C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BreakHitResult_PhysMat) == 0x000518, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BreakHitResult_HitActor) == 0x000520, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BreakHitResult_HitComponent) == 0x000528, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BreakHitResult_HitBoneName) == 0x000530, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BreakHitResult_HitItem) == 0x000538, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BreakHitResult_ElementIndex) == 0x00053C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BreakHitResult_FaceIndex) == 0x000540, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BreakHitResult_TraceStart) == 0x000544, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_BreakHitResult_TraceEnd) == 0x000550, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_Cross_VectorVector_ReturnValue) == 0x00055C, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_Cross_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_Cross_VectorVector_ReturnValue_1) == 0x000568, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_Cross_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_MakeRotationFromAxes_ReturnValue) == 0x000574, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_MakeRotationFromAxes_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Obelisk_C_ExecuteUbergraph_obelisk, CallFunc_K2_SetWorldRotation_SweepHitResult_1) == 0x000580, "Member 'Obelisk_C_ExecuteUbergraph_obelisk::CallFunc_K2_SetWorldRotation_SweepHitResult_1' has a wrong offset!");
 
 // Function obelisk.obelisk_C.BndEvt__obelisk_walk_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
 // 0x00A8 (0x00A8 - 0x0000)
@@ -146,7 +205,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DF6[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 static_assert(alignof(Obelisk_C_BndEvt__obelisk_walk_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on Obelisk_C_BndEvt__obelisk_walk_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
@@ -187,7 +246,7 @@ public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadData_return;                          // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DF7[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mBool                          CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };

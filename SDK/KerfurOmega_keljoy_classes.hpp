@@ -17,12 +17,9 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass kerfurOmega_keljoy.kerfurOmega_keljoy_C
-// 0x0000 (0x0800 - 0x0800)
+// 0x0000 (0x0830 - 0x0830)
 class AKerfurOmega_keljoy_C final : public AKerfurOmega_C
 {
-public:
-	void MakeFace();
-
 public:
 	static class UClass* StaticClass()
 	{
@@ -34,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AKerfurOmega_keljoy_C) == 0x000010, "Wrong alignment on AKerfurOmega_keljoy_C");
-static_assert(sizeof(AKerfurOmega_keljoy_C) == 0x000800, "Wrong size on AKerfurOmega_keljoy_C");
+static_assert(sizeof(AKerfurOmega_keljoy_C) == 0x000830, "Wrong size on AKerfurOmega_keljoy_C");
 
 }
 

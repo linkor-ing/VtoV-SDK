@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Enum_interactionActions_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 
 
@@ -24,13 +24,12 @@ struct P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E22[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit;                                  // 0x0010(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x009D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3E23[0x2];                                     // 0x009E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9A[0x6];                                       // 0x009A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_Event_color;                                // 0x00A8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X;                            // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -48,9 +47,8 @@ static_assert(sizeof(P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col) == 0x0000F0, 
 static_assert(offsetof(P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col, EntryPoint) == 0x000000, "Member 'P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col::EntryPoint' has a wrong offset!");
 static_assert(offsetof(P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col, K2Node_Event_player) == 0x000008, "Member 'P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col::K2Node_Event_player' has a wrong offset!");
 static_assert(offsetof(P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col, K2Node_Event_hit) == 0x000010, "Member 'P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col, K2Node_Event_index) == 0x000098, "Member 'P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col, K2Node_Event_action) == 0x00009C, "Member 'P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col, K2Node_SwitchEnum_CmpSuccess) == 0x00009D, "Member 'P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col, K2Node_Event_action) == 0x000098, "Member 'P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col, K2Node_SwitchEnum_CmpSuccess) == 0x000099, "Member 'P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x0000A0, "Member 'P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
 static_assert(offsetof(P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col, K2Node_Event_color) == 0x0000A8, "Member 'P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col::K2Node_Event_color' has a wrong offset!");
 static_assert(offsetof(P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col, CallFunc_BreakVector_X) == 0x0000B8, "Member 'P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col::CallFunc_BreakVector_X' has a wrong offset!");
@@ -63,17 +61,6 @@ static_assert(offsetof(P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col, CallFunc_RG
 static_assert(offsetof(P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col, CallFunc_HSVToRGB_ReturnValue) == 0x0000D4, "Member 'P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col::CallFunc_HSVToRGB_ReturnValue' has a wrong offset!");
 static_assert(offsetof(P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col, CallFunc_MakeVector_ReturnValue) == 0x0000E4, "Member 'P_kerfus_col_C_ExecuteUbergraph_p_kerfus_col::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
 
-// Function p_kerfus_col.p_kerfus_col_C.applyColor
-// 0x0010 (0x0010 - 0x0000)
-struct P_kerfus_col_C_ApplyColor final
-{
-public:
-	struct FLinearColor                           Color;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(P_kerfus_col_C_ApplyColor) == 0x000004, "Wrong alignment on P_kerfus_col_C_ApplyColor");
-static_assert(sizeof(P_kerfus_col_C_ApplyColor) == 0x000010, "Wrong size on P_kerfus_col_C_ApplyColor");
-static_assert(offsetof(P_kerfus_col_C_ApplyColor, Color) == 0x000000, "Member 'P_kerfus_col_C_ApplyColor::Color' has a wrong offset!");
-
 // Function p_kerfus_col.p_kerfus_col_C.actionOptionIndex
 // 0x0098 (0x0098 - 0x0000)
 struct P_kerfus_col_C_ActionOptionIndex final
@@ -81,15 +68,13 @@ struct P_kerfus_col_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(P_kerfus_col_C_ActionOptionIndex) == 0x000008, "Wrong alignment on P_kerfus_col_C_ActionOptionIndex");
 static_assert(sizeof(P_kerfus_col_C_ActionOptionIndex) == 0x000098, "Wrong size on P_kerfus_col_C_ActionOptionIndex");
 static_assert(offsetof(P_kerfus_col_C_ActionOptionIndex, Player) == 0x000000, "Member 'P_kerfus_col_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(P_kerfus_col_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'P_kerfus_col_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(P_kerfus_col_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'P_kerfus_col_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(P_kerfus_col_C_ActionOptionIndex, Action) == 0x000094, "Member 'P_kerfus_col_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(P_kerfus_col_C_ActionOptionIndex, Action) == 0x000090, "Member 'P_kerfus_col_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function p_kerfus_col.p_kerfus_col_C.upd
 // 0x002C (0x002C - 0x0000)
@@ -97,7 +82,7 @@ struct P_kerfus_col_C_Upd final
 {
 public:
 	bool                                          SkipFace;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3E24[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakVector_X;                            // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y;                            // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z;                            // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -113,8 +98,19 @@ static_assert(offsetof(P_kerfus_col_C_Upd, CallFunc_BreakVector_Z) == 0x00000C, 
 static_assert(offsetof(P_kerfus_col_C_Upd, CallFunc_HSVToRGB_ReturnValue) == 0x000010, "Member 'P_kerfus_col_C_Upd::CallFunc_HSVToRGB_ReturnValue' has a wrong offset!");
 static_assert(offsetof(P_kerfus_col_C_Upd, CallFunc_Conv_LinearColorToVector_ReturnValue) == 0x000020, "Member 'P_kerfus_col_C_Upd::CallFunc_Conv_LinearColorToVector_ReturnValue' has a wrong offset!");
 
+// Function p_kerfus_col.p_kerfus_col_C.applyColor
+// 0x0010 (0x0010 - 0x0000)
+struct P_kerfus_col_C_ApplyColor final
+{
+public:
+	struct FLinearColor                           Color;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(P_kerfus_col_C_ApplyColor) == 0x000004, "Wrong alignment on P_kerfus_col_C_ApplyColor");
+static_assert(sizeof(P_kerfus_col_C_ApplyColor) == 0x000010, "Wrong size on P_kerfus_col_C_ApplyColor");
+static_assert(offsetof(P_kerfus_col_C_ApplyColor, Color) == 0x000000, "Member 'P_kerfus_col_C_ApplyColor::Color' has a wrong offset!");
+
 // Function p_kerfus_col.p_kerfus_col_C.getActionOptions
-// 0x0058 (0x0058 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct P_kerfus_col_C_GetActionOptions final
 {
 public:
@@ -124,17 +120,20 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
 };
 static_assert(alignof(P_kerfus_col_C_GetActionOptions) == 0x000008, "Wrong alignment on P_kerfus_col_C_GetActionOptions");
-static_assert(sizeof(P_kerfus_col_C_GetActionOptions) == 0x000058, "Wrong size on P_kerfus_col_C_GetActionOptions");
+static_assert(sizeof(P_kerfus_col_C_GetActionOptions) == 0x000060, "Wrong size on P_kerfus_col_C_GetActionOptions");
 static_assert(offsetof(P_kerfus_col_C_GetActionOptions, Player) == 0x000000, "Member 'P_kerfus_col_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(P_kerfus_col_C_GetActionOptions, Component) == 0x000008, "Member 'P_kerfus_col_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(P_kerfus_col_C_GetActionOptions, Actor) == 0x000010, "Member 'P_kerfus_col_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(P_kerfus_col_C_GetActionOptions, Options) == 0x000018, "Member 'P_kerfus_col_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(P_kerfus_col_C_GetActionOptions, Options_enum) == 0x000028, "Member 'P_kerfus_col_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(P_kerfus_col_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'P_kerfus_col_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(P_kerfus_col_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'P_kerfus_col_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(P_kerfus_col_C_GetActionOptions, Number) == 0x000048, "Member 'P_kerfus_col_C_GetActionOptions::Number' has a wrong offset!");
+static_assert(offsetof(P_kerfus_col_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'P_kerfus_col_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 }
 

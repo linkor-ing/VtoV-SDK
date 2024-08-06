@@ -10,16 +10,17 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Struct_save_structs.hpp"
-#include "Struct_dangerProp_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "Enum_interactionActions_structs.hpp"
 #include "ProceduralMeshComponent_structs.hpp"
+#include "Struct_dangerProp_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Struct_mInt_structs.hpp"
 #include "Struct_mString_structs.hpp"
-#include "Struct_mVector_structs.hpp"
 #include "Struct_customMesh_structs.hpp"
+#include "Engine_structs.hpp"
+#include "Struct_mVector_structs.hpp"
+#include "Struct_multisectionCustomMesh_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "Struct_settings_structs.hpp"
 
@@ -28,161 +29,177 @@ namespace SDK::Params
 {
 
 // Function printedObject.printedObject_C.ExecuteUbergraph_printedObject
-// 0x05F0 (0x05F0 - 0x0000)
+// 0x06D0 (0x06D0 - 0x0000)
 struct PrintedObject_C_ExecuteUbergraph_printedObject final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EF2[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FKey                                   K2Node_Event_key_2;                                // 0x0008(0x0018)(HasGetValueTypeHash)
 	bool                                          K2Node_Event_pressed_1;                            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3EF3[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           K2Node_Event_color;                                // 0x0024(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_4;                             // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_5;                                // 0x0038(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AActor*                                 K2Node_Event_actor_1;                              // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_impact_1;                             // 0x00C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EF4[0x4];                                     // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AWaterVolume_C*                         K2Node_Event_water_3;                              // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water_2;                              // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water_1;                              // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water;                                // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_activate;                             // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_static;                               // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_frozen;                               // 0x00FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_active;                               // 0x00FB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3EF5[0x4];                                     // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 K2Node_Event_key_1;                                // 0x0100(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_11;                            // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_4;                                // 0x0118(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         K2Node_Event_damage_3;                             // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_fuel;                                 // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_10;                            // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_3;                                // 0x01B0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x023C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EF6[0x3];                                     // 0x023D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_9;                             // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_8;                             // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_2;                             // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_location_1;                           // 0x0254(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_7;                             // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x0270(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_wheelDelta;                           // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EF7[0x4];                                     // 0x027C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              K2Node_Event_mouse;                                // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   K2Node_Event_key;                                  // 0x0298(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed;                              // 0x02B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3EF8[0x3];                                     // 0x02B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_temperature_1;                        // 0x02B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_temperature;                          // 0x02B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_speed;                                // 0x02BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x02C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_2;                                // 0x02C8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class FString                                 K2Node_Event_name;                                 // 0x0350(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_volume;                               // 0x0360(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EF9[0x4];                                     // 0x0364(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0368(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_location;                             // 0x0370(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_1;                             // 0x037C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_clean;                                // 0x0380(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3EFA[0x7];                                     // 0x0381(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0388(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_1;                                // 0x0390(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AHook_C*                                K2Node_Event_hook;                                 // 0x0418(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_ignore;                               // 0x0420(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3EFB[0x7];                                     // 0x0421(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_getKey_key;                               // 0x0428(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0438(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0440(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EFC[0x4];                                     // 0x0444(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x0448(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0450(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3EFD[0x7];                                     // 0x0451(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Event_actor;                                // 0x0458(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage;                               // 0x0460(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x0464(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                K2Node_Event_impact;                               // 0x04EC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_skipSetting;                          // 0x04F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3EFE[0x3];                                     // 0x04F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue;           // 0x04FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0508(0x00CC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EFF[0x4];                                     // 0x05D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IInt_objects_C>        CallFunc_impactDamage_self_CastInput;              // 0x05D8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x05E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUmg_texturePicker_C*                   K2Node_Event_picker;                               // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_Event_texture;                              // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_index;                                // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_5;                             // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_5;                                // 0x0050(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AActor*                                 K2Node_Event_actor_1;                              // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_impact_1;                             // 0x00E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_EC[0x4];                                       // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AWaterVolume_C*                         K2Node_Event_water_3;                              // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterVolume_C*                         K2Node_Event_water_2;                              // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterVolume_C*                         K2Node_Event_water_1;                              // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterVolume_C*                         K2Node_Event_water;                                // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_activate;                             // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_static;                               // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_frozen;                               // 0x0112(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_active;                               // 0x0113(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 K2Node_Event_key_1;                                // 0x0118(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_12;                            // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_4;                                // 0x0130(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         K2Node_Event_damage_4;                             // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_fuel;                                 // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_3;                             // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hot;                                  // 0x01C4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_24C[0x4];                                      // 0x024C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_11;                            // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_3;                                // 0x0258(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x02E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2E1[0x7];                                      // 0x02E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_10;                            // 0x02E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_9;                             // 0x02F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_2;                             // 0x02F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_location_1;                           // 0x02FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_8;                             // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_7;                             // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_wheelDelta;                           // 0x0320(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_324[0x4];                                      // 0x0324(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_Event_mouse;                                // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x0338(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   K2Node_Event_key;                                  // 0x0340(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed;                              // 0x0358(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_359[0x3];                                      // 0x0359(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_temperature_1;                        // 0x035C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_temperature;                          // 0x0360(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_speed;                                // 0x0364(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0368(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_2;                                // 0x0370(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class FString                                 K2Node_Event_name;                                 // 0x03F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_volume;                               // 0x0408(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_40C[0x4];                                      // 0x040C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x0410(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_location;                             // 0x0418(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_1;                             // 0x0424(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_clean_1;                              // 0x0428(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_429[0x7];                                      // 0x0429(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0430(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_1;                                // 0x0438(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AHook_C*                                K2Node_Event_hook_1;                               // 0x04C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_clean;                                // 0x04C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4CC[0x4];                                      // 0x04CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x04D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AHook_C*                                K2Node_Event_hook;                                 // 0x04D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_ignore;                               // 0x04E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4E1[0x7];                                      // 0x04E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_getKey_key;                               // 0x04E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x04F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0500(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_504[0x4];                                      // 0x0504(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x0508(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0510(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_511[0x7];                                      // 0x0511(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Event_actor;                                // 0x0518(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage;                               // 0x0520(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x0524(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                K2Node_Event_impact;                               // 0x05AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_skipSetting;                          // 0x05B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5B9[0x3];                                      // 0x05B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue;           // 0x05BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       K2Node_Event_settings;                             // 0x05C8(0x00F0)(HasGetValueTypeHash)
+	TScriptInterface<class IInt_objects_C>        CallFunc_impactDamage_self_CastInput;              // 0x06B8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x06C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PrintedObject_C_ExecuteUbergraph_printedObject) == 0x000008, "Wrong alignment on PrintedObject_C_ExecuteUbergraph_printedObject");
-static_assert(sizeof(PrintedObject_C_ExecuteUbergraph_printedObject) == 0x0005F0, "Wrong size on PrintedObject_C_ExecuteUbergraph_printedObject");
+static_assert(sizeof(PrintedObject_C_ExecuteUbergraph_printedObject) == 0x0006D0, "Wrong size on PrintedObject_C_ExecuteUbergraph_printedObject");
 static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, EntryPoint) == 0x000000, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::EntryPoint' has a wrong offset!");
 static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_key_2) == 0x000008, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_key_2' has a wrong offset!");
 static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_pressed_1) == 0x000020, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_pressed_1' has a wrong offset!");
 static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_color) == 0x000024, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_color' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_damage_4) == 0x000034, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_damage_4' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_hit_5) == 0x000038, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_hit_5' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_actor_1) == 0x0000C0, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_actor_1' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_impact_1) == 0x0000C8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_impact_1' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_water_3) == 0x0000D8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_water_3' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_water_2) == 0x0000E0, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_water_2' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_water_1) == 0x0000E8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_water_1' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_water) == 0x0000F0, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_water' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_activate) == 0x0000F8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_activate' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_static) == 0x0000F9, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_static' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_frozen) == 0x0000FA, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_frozen' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_active) == 0x0000FB, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_active' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_key_1) == 0x000100, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_key_1' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player_11) == 0x000110, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player_11' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_hit_4) == 0x000118, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_hit_4' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_damage_3) == 0x0001A0, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_damage_3' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_fuel) == 0x0001A4, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_fuel' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player_10) == 0x0001A8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player_10' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_hit_3) == 0x0001B0, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_hit_3' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_index) == 0x000238, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_action) == 0x00023C, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player_9) == 0x000240, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player_9' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player_8) == 0x000248, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player_8' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_damage_2) == 0x000250, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_damage_2' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_location_1) == 0x000254, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_location_1' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player_7) == 0x000260, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player_7' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player_6) == 0x000268, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player_6' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player_5) == 0x000270, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player_5' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_wheelDelta) == 0x000278, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_wheelDelta' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player_4) == 0x000280, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player_4' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_mouse) == 0x000288, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_mouse' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player_3) == 0x000290, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player_3' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_key) == 0x000298, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_key' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_pressed) == 0x0002B0, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_pressed' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_temperature_1) == 0x0002B4, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_temperature_1' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_temperature) == 0x0002B8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_temperature' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_speed) == 0x0002BC, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_speed' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player_2) == 0x0002C0, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player_2' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_hit_2) == 0x0002C8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_hit_2' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_name) == 0x000350, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_name' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_volume) == 0x000360, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_volume' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player_1) == 0x000368, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_location) == 0x000370, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_location' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_damage_1) == 0x00037C, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_damage_1' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_clean) == 0x000380, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_clean' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player) == 0x000388, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_hit_1) == 0x000390, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_hit_1' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_hook) == 0x000418, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_hook' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_ignore) == 0x000420, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_ignore' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, CallFunc_getKey_key) == 0x000428, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::CallFunc_getKey_key' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000438, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, CallFunc_Array_Add_ReturnValue) == 0x000440, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x000448, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, CallFunc_Array_RemoveItem_ReturnValue) == 0x000450, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_actor) == 0x000458, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_actor' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_damage) == 0x000460, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_damage' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_hit) == 0x000464, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_impact) == 0x0004EC, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_impact' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_skipSetting) == 0x0004F8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_skipSetting' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, CallFunc_Divide_VectorFloat_ReturnValue) == 0x0004FC, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::CallFunc_Divide_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_settings) == 0x000508, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_settings' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, CallFunc_impactDamage_self_CastInput) == 0x0005D8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::CallFunc_impactDamage_self_CastInput' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_gamemode) == 0x0005E8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_gamemode' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_picker) == 0x000038, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_picker' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_texture) == 0x000040, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_texture' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_index) == 0x000048, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_damage_5) == 0x00004C, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_damage_5' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_hit_5) == 0x000050, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_hit_5' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_actor_1) == 0x0000D8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_actor_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_impact_1) == 0x0000E0, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_impact_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_water_3) == 0x0000F0, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_water_3' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_water_2) == 0x0000F8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_water_2' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_water_1) == 0x000100, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_water_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_water) == 0x000108, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_water' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_activate) == 0x000110, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_activate' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_static) == 0x000111, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_static' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_frozen) == 0x000112, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_frozen' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_active) == 0x000113, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_active' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_key_1) == 0x000118, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_key_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player_12) == 0x000128, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player_12' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_hit_4) == 0x000130, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_hit_4' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_damage_4) == 0x0001B8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_damage_4' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_fuel) == 0x0001BC, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_fuel' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_damage_3) == 0x0001C0, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_damage_3' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_hot) == 0x0001C4, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_hot' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player_11) == 0x000250, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player_11' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_hit_3) == 0x000258, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_hit_3' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_action) == 0x0002E0, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player_10) == 0x0002E8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player_10' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player_9) == 0x0002F0, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player_9' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_damage_2) == 0x0002F8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_damage_2' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_location_1) == 0x0002FC, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_location_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player_8) == 0x000308, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player_8' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player_7) == 0x000310, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player_7' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player_6) == 0x000318, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player_6' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_wheelDelta) == 0x000320, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_wheelDelta' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player_5) == 0x000328, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player_5' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_mouse) == 0x000330, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_mouse' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player_4) == 0x000338, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player_4' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_key) == 0x000340, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_key' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_pressed) == 0x000358, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_pressed' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_temperature_1) == 0x00035C, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_temperature_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_temperature) == 0x000360, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_temperature' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_speed) == 0x000364, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_speed' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player_3) == 0x000368, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player_3' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_hit_2) == 0x000370, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_hit_2' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_name) == 0x0003F8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_name' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_volume) == 0x000408, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_volume' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player_2) == 0x000410, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player_2' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_location) == 0x000418, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_location' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_damage_1) == 0x000424, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_damage_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_clean_1) == 0x000428, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_clean_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player_1) == 0x000430, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_hit_1) == 0x000438, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_hit_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_hook_1) == 0x0004C0, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_hook_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_clean) == 0x0004C8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_clean' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_player) == 0x0004D0, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_hook) == 0x0004D8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_hook' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_ignore) == 0x0004E0, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_ignore' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, CallFunc_getKey_key) == 0x0004E8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::CallFunc_getKey_key' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x0004F8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, CallFunc_Array_Add_ReturnValue) == 0x000500, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x000508, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, CallFunc_Array_RemoveItem_ReturnValue) == 0x000510, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_actor) == 0x000518, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_actor' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_damage) == 0x000520, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_damage' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_hit) == 0x000524, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_impact) == 0x0005AC, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_impact' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_skipSetting) == 0x0005B8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_skipSetting' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, CallFunc_Divide_VectorFloat_ReturnValue) == 0x0005BC, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::CallFunc_Divide_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_settings) == 0x0005C8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_settings' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, CallFunc_impactDamage_self_CastInput) == 0x0006B8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::CallFunc_impactDamage_self_CastInput' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ExecuteUbergraph_printedObject, K2Node_Event_gamemode) == 0x0006C8, "Member 'PrintedObject_C_ExecuteUbergraph_printedObject::K2Node_Event_gamemode' has a wrong offset!");
 
 // Function printedObject.printedObject_C.stuffUpgraded
 // 0x0008 (0x0008 - 0x0000)
@@ -196,14 +213,14 @@ static_assert(sizeof(PrintedObject_C_StuffUpgraded) == 0x000008, "Wrong size on 
 static_assert(offsetof(PrintedObject_C_StuffUpgraded, GameMode) == 0x000000, "Member 'PrintedObject_C_StuffUpgraded::GameMode' has a wrong offset!");
 
 // Function printedObject.printedObject_C.settingsApplied
-// 0x00CC (0x00CC - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct PrintedObject_C_SettingsApplied final
 {
 public:
-	struct FStruct_settings                       Settings;                                          // 0x0000(0x00CC)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       Settings;                                          // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PrintedObject_C_SettingsApplied) == 0x000004, "Wrong alignment on PrintedObject_C_SettingsApplied");
-static_assert(sizeof(PrintedObject_C_SettingsApplied) == 0x0000CC, "Wrong size on PrintedObject_C_SettingsApplied");
+static_assert(alignof(PrintedObject_C_SettingsApplied) == 0x000008, "Wrong alignment on PrintedObject_C_SettingsApplied");
+static_assert(sizeof(PrintedObject_C_SettingsApplied) == 0x0000F0, "Wrong size on PrintedObject_C_SettingsApplied");
 static_assert(offsetof(PrintedObject_C_SettingsApplied, Settings) == 0x000000, "Member 'PrintedObject_C_SettingsApplied::Settings' has a wrong offset!");
 
 // Function printedObject.printedObject_C.addDamage
@@ -235,6 +252,31 @@ public:
 static_assert(alignof(PrintedObject_C_SetIgnoreSave) == 0x000001, "Wrong alignment on PrintedObject_C_SetIgnoreSave");
 static_assert(sizeof(PrintedObject_C_SetIgnoreSave) == 0x000001, "Wrong size on PrintedObject_C_SetIgnoreSave");
 static_assert(offsetof(PrintedObject_C_SetIgnoreSave, Ignore) == 0x000000, "Member 'PrintedObject_C_SetIgnoreSave::Ignore' has a wrong offset!");
+
+// Function printedObject.printedObject_C.hookTension
+// 0x0008 (0x0008 - 0x0000)
+struct PrintedObject_C_HookTension final
+{
+public:
+	class AHook_C*                                Hook;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PrintedObject_C_HookTension) == 0x000008, "Wrong alignment on PrintedObject_C_HookTension");
+static_assert(sizeof(PrintedObject_C_HookTension) == 0x000008, "Wrong size on PrintedObject_C_HookTension");
+static_assert(offsetof(PrintedObject_C_HookTension, Hook) == 0x000000, "Member 'PrintedObject_C_HookTension::Hook' has a wrong offset!");
+
+// Function printedObject.printedObject_C.cleanSponge
+// 0x0010 (0x0010 - 0x0000)
+struct PrintedObject_C_CleanSponge final
+{
+public:
+	float                                         Clean;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          Player;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PrintedObject_C_CleanSponge) == 0x000008, "Wrong alignment on PrintedObject_C_CleanSponge");
+static_assert(sizeof(PrintedObject_C_CleanSponge) == 0x000010, "Wrong size on PrintedObject_C_CleanSponge");
+static_assert(offsetof(PrintedObject_C_CleanSponge, Clean) == 0x000000, "Member 'PrintedObject_C_CleanSponge::Clean' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_CleanSponge, Player) == 0x000008, "Member 'PrintedObject_C_CleanSponge::Player' has a wrong offset!");
 
 // Function printedObject.printedObject_C.hooked
 // 0x0008 (0x0008 - 0x0000)
@@ -450,15 +492,26 @@ struct PrintedObject_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PrintedObject_C_ActionOptionIndex) == 0x000008, "Wrong alignment on PrintedObject_C_ActionOptionIndex");
 static_assert(sizeof(PrintedObject_C_ActionOptionIndex) == 0x000098, "Wrong size on PrintedObject_C_ActionOptionIndex");
 static_assert(offsetof(PrintedObject_C_ActionOptionIndex, Player) == 0x000000, "Member 'PrintedObject_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(PrintedObject_C_ActionOptionIndex, Hit) == 0x000008, "Member 'PrintedObject_C_ActionOptionIndex::Hit' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'PrintedObject_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_ActionOptionIndex, Action) == 0x000094, "Member 'PrintedObject_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ActionOptionIndex, Action) == 0x000090, "Member 'PrintedObject_C_ActionOptionIndex::Action' has a wrong offset!");
+
+// Function printedObject.printedObject_C.receivedPhyiscsDamage
+// 0x008C (0x008C - 0x0000)
+struct PrintedObject_C_ReceivedPhyiscsDamage final
+{
+public:
+	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hot;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+static_assert(alignof(PrintedObject_C_ReceivedPhyiscsDamage) == 0x000004, "Wrong alignment on PrintedObject_C_ReceivedPhyiscsDamage");
+static_assert(sizeof(PrintedObject_C_ReceivedPhyiscsDamage) == 0x00008C, "Wrong size on PrintedObject_C_ReceivedPhyiscsDamage");
+static_assert(offsetof(PrintedObject_C_ReceivedPhyiscsDamage, Damage) == 0x000000, "Member 'PrintedObject_C_ReceivedPhyiscsDamage::Damage' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_ReceivedPhyiscsDamage, Hot) == 0x000004, "Member 'PrintedObject_C_ReceivedPhyiscsDamage::Hot' has a wrong offset!");
 
 // Function printedObject.printedObject_C.ignite
 // 0x0004 (0x0004 - 0x0000)
@@ -583,7 +636,7 @@ struct PrintedObject_C_ImpactDamage final
 public:
 	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_3F00[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0090(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Impact;                                            // 0x0098(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -593,6 +646,21 @@ static_assert(offsetof(PrintedObject_C_ImpactDamage, Damage) == 0x000000, "Membe
 static_assert(offsetof(PrintedObject_C_ImpactDamage, Hit) == 0x000004, "Member 'PrintedObject_C_ImpactDamage::Hit' has a wrong offset!");
 static_assert(offsetof(PrintedObject_C_ImpactDamage, Actor) == 0x000090, "Member 'PrintedObject_C_ImpactDamage::Actor' has a wrong offset!");
 static_assert(offsetof(PrintedObject_C_ImpactDamage, Impact) == 0x000098, "Member 'PrintedObject_C_ImpactDamage::Impact' has a wrong offset!");
+
+// Function printedObject.printedObject_C.texturePickerApply
+// 0x0018 (0x0018 - 0x0000)
+struct PrintedObject_C_TexturePickerApply final
+{
+public:
+	class UUmg_texturePicker_C*                   Picker;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Param_Index;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PrintedObject_C_TexturePickerApply) == 0x000008, "Wrong alignment on PrintedObject_C_TexturePickerApply");
+static_assert(sizeof(PrintedObject_C_TexturePickerApply) == 0x000018, "Wrong size on PrintedObject_C_TexturePickerApply");
+static_assert(offsetof(PrintedObject_C_TexturePickerApply, Picker) == 0x000000, "Member 'PrintedObject_C_TexturePickerApply::Picker' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_TexturePickerApply, Texture) == 0x000008, "Member 'PrintedObject_C_TexturePickerApply::Texture' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_TexturePickerApply, Param_Index) == 0x000010, "Member 'PrintedObject_C_TexturePickerApply::Param_Index' has a wrong offset!");
 
 // Function printedObject.printedObject_C.applyColor
 // 0x0010 (0x0010 - 0x0000)
@@ -619,156 +687,260 @@ static_assert(offsetof(PrintedObject_C_AnyKey, Param_Key) == 0x000000, "Member '
 static_assert(offsetof(PrintedObject_C_AnyKey, Pressed) == 0x000018, "Member 'PrintedObject_C_AnyKey::Pressed' has a wrong offset!");
 
 // Function printedObject.printedObject_C.loadFromPrinter
-// 0x00F0 (0x00F0 - 0x0000)
+// 0x0240 (0x0240 - 0x0000)
 struct PrintedObject_C_LoadFromPrinter final
 {
 public:
-	struct FStruct_customMesh                     Data;                                              // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	class UTexture*                               Param_Tex;                                         // 0x0050(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture*                               Normal;                                            // 0x0058(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture*                               Pbr;                                               // 0x0060(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETextureFilter                                Param_Filter_tex;                                  // 0x0068(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETextureFilter                                Param_Filter_pbr;                                  // 0x0069(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETextureFilter                                Param_Filter_normal;                               // 0x006A(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Param_Material;                                    // 0x006B(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Ind;                                               // 0x006C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FVector2D>                      Temp_struct_Variable;                              // 0x0070(0x0010)(ConstParm, ReferenceParm)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F01[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_mVector                        CallFunc_Array_Get_Item;                           // 0x0090(0x0010)(HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F02[0x3];                                     // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FVector2D>                      Temp_struct_Variable_1;                            // 0x00A8(0x0010)(ConstParm, ReferenceParm)
-	TArray<struct FVector2D>                      Temp_struct_Variable_2;                            // 0x00B8(0x0010)(ConstParm, ReferenceParm)
-	TArray<struct FLinearColor>                   Temp_struct_Variable_3;                            // 0x00C8(0x0010)(ConstParm, ReferenceParm)
-	TArray<struct FProcMeshTangent>               Temp_struct_Variable_4;                            // 0x00D8(0x0010)(ConstParm, ReferenceParm)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_multisectionCustomMesh         MultisectionMesh;                                  // 0x0000(0x0118)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	TArray<struct FVector>                        Cs;                                                // 0x0118(0x0010)(Edit, BlueprintVisible)
+	int32                                         Ind;                                               // 0x0128(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x012C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FVector2D>                      Temp_struct_Variable;                              // 0x0130(0x0010)(ConstParm, ReferenceParm)
+	TArray<struct FVector2D>                      Temp_struct_Variable_1;                            // 0x0140(0x0010)(ConstParm, ReferenceParm)
+	TArray<struct FVector2D>                      Temp_struct_Variable_2;                            // 0x0150(0x0010)(ConstParm, ReferenceParm)
+	TArray<struct FLinearColor>                   Temp_struct_Variable_3;                            // 0x0160(0x0010)(ConstParm, ReferenceParm)
+	TArray<struct FProcMeshTangent>               Temp_struct_Variable_4;                            // 0x0170(0x0010)(ConstParm, ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0184(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_18C[0x4];                                      // 0x018C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_customMesh                     CallFunc_Array_Get_Item;                           // 0x0190(0x0050)(HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E4[0x4];                                      // 0x01E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_mVector                        CallFunc_Array_Get_Item_1;                         // 0x01E8(0x0010)(HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         CallFunc_Array_Get_Item_2;                         // 0x01FD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_Array_Get_Item_3;                         // 0x01FE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x01FF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue_1;              // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_Array_Get_Item_4;                         // 0x0201(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_Array_Get_Item_5;                         // 0x0202(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue_2;              // 0x0203(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue_3;              // 0x0204(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_205[0x3];                                      // 0x0205(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             CallFunc_Array_Get_Item_6;                         // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             CallFunc_Array_Get_Item_7;                         // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             CallFunc_Array_Get_Item_8;                         // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             CallFunc_Array_Get_Item_9;                         // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0234(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_235[0x3];                                      // 0x0235(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PrintedObject_C_LoadFromPrinter) == 0x000008, "Wrong alignment on PrintedObject_C_LoadFromPrinter");
-static_assert(sizeof(PrintedObject_C_LoadFromPrinter) == 0x0000F0, "Wrong size on PrintedObject_C_LoadFromPrinter");
-static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Data) == 0x000000, "Member 'PrintedObject_C_LoadFromPrinter::Data' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Param_Tex) == 0x000050, "Member 'PrintedObject_C_LoadFromPrinter::Param_Tex' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Normal) == 0x000058, "Member 'PrintedObject_C_LoadFromPrinter::Normal' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Pbr) == 0x000060, "Member 'PrintedObject_C_LoadFromPrinter::Pbr' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Param_Filter_tex) == 0x000068, "Member 'PrintedObject_C_LoadFromPrinter::Param_Filter_tex' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Param_Filter_pbr) == 0x000069, "Member 'PrintedObject_C_LoadFromPrinter::Param_Filter_pbr' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Param_Filter_normal) == 0x00006A, "Member 'PrintedObject_C_LoadFromPrinter::Param_Filter_normal' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Param_Material) == 0x00006B, "Member 'PrintedObject_C_LoadFromPrinter::Param_Material' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Ind) == 0x00006C, "Member 'PrintedObject_C_LoadFromPrinter::Ind' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Temp_struct_Variable) == 0x000070, "Member 'PrintedObject_C_LoadFromPrinter::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_Array_Length_ReturnValue) == 0x000080, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Temp_int_Array_Index_Variable) == 0x000084, "Member 'PrintedObject_C_LoadFromPrinter::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Temp_int_Loop_Counter_Variable) == 0x000088, "Member 'PrintedObject_C_LoadFromPrinter::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_Array_Get_Item) == 0x000090, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_Less_IntInt_ReturnValue) == 0x0000A0, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_Add_IntInt_ReturnValue) == 0x0000A4, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Temp_struct_Variable_1) == 0x0000A8, "Member 'PrintedObject_C_LoadFromPrinter::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Temp_struct_Variable_2) == 0x0000B8, "Member 'PrintedObject_C_LoadFromPrinter::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Temp_struct_Variable_3) == 0x0000C8, "Member 'PrintedObject_C_LoadFromPrinter::Temp_struct_Variable_3' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Temp_struct_Variable_4) == 0x0000D8, "Member 'PrintedObject_C_LoadFromPrinter::Temp_struct_Variable_4' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x0000E8, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(sizeof(PrintedObject_C_LoadFromPrinter) == 0x000240, "Wrong size on PrintedObject_C_LoadFromPrinter");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, MultisectionMesh) == 0x000000, "Member 'PrintedObject_C_LoadFromPrinter::MultisectionMesh' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Cs) == 0x000118, "Member 'PrintedObject_C_LoadFromPrinter::Cs' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Ind) == 0x000128, "Member 'PrintedObject_C_LoadFromPrinter::Ind' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Temp_int_Array_Index_Variable) == 0x00012C, "Member 'PrintedObject_C_LoadFromPrinter::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Temp_struct_Variable) == 0x000130, "Member 'PrintedObject_C_LoadFromPrinter::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Temp_struct_Variable_1) == 0x000140, "Member 'PrintedObject_C_LoadFromPrinter::Temp_struct_Variable_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Temp_struct_Variable_2) == 0x000150, "Member 'PrintedObject_C_LoadFromPrinter::Temp_struct_Variable_2' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Temp_struct_Variable_3) == 0x000160, "Member 'PrintedObject_C_LoadFromPrinter::Temp_struct_Variable_3' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Temp_struct_Variable_4) == 0x000170, "Member 'PrintedObject_C_LoadFromPrinter::Temp_struct_Variable_4' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_Array_Length_ReturnValue) == 0x000180, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Temp_int_Array_Index_Variable_1) == 0x000184, "Member 'PrintedObject_C_LoadFromPrinter::Temp_int_Array_Index_Variable_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Temp_int_Loop_Counter_Variable) == 0x000188, "Member 'PrintedObject_C_LoadFromPrinter::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_Array_Get_Item) == 0x000190, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_Add_IntInt_ReturnValue) == 0x0001E0, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_Array_Get_Item_1) == 0x0001E8, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_Array_Length_ReturnValue_1) == 0x0001F8, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_Less_IntInt_ReturnValue) == 0x0001FC, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_Array_Get_Item_2) == 0x0001FD, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_Array_Get_Item_2' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_Array_Get_Item_3) == 0x0001FE, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_Array_Get_Item_3' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_GetValidValue_ReturnValue) == 0x0001FF, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_GetValidValue_ReturnValue_1) == 0x000200, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_GetValidValue_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_Array_Get_Item_4) == 0x000201, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_Array_Get_Item_4' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_Array_Get_Item_5) == 0x000202, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_Array_Get_Item_5' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_GetValidValue_ReturnValue_2) == 0x000203, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_GetValidValue_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_GetValidValue_ReturnValue_3) == 0x000204, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_GetValidValue_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_Array_Get_Item_6) == 0x000208, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_Array_Get_Item_6' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_Array_Get_Item_7) == 0x000210, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_Array_Get_Item_7' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_Array_Get_Item_8) == 0x000218, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_Array_Get_Item_8' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_Array_Get_Item_9) == 0x000220, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_Array_Get_Item_9' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000228, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, Temp_int_Loop_Counter_Variable_1) == 0x000230, "Member 'PrintedObject_C_LoadFromPrinter::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_Less_IntInt_ReturnValue_1) == 0x000234, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_LoadFromPrinter, CallFunc_Add_IntInt_ReturnValue_1) == 0x000238, "Member 'PrintedObject_C_LoadFromPrinter::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
 
 // Function printedObject.printedObject_C.load
-// 0x0168 (0x0168 - 0x0000)
+// 0x0250 (0x0250 - 0x0000)
 struct PrintedObject_C_Load final
 {
 public:
-	int32                                         Ind;                                               // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F03[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FVector2D>                      Temp_struct_Variable;                              // 0x0008(0x0010)(ConstParm, ReferenceParm)
-	TArray<struct FVector2D>                      Temp_struct_Variable_1;                            // 0x0018(0x0010)(ConstParm, ReferenceParm)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F04[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FVector2D>                      Temp_struct_Variable_2;                            // 0x0030(0x0010)(ConstParm, ReferenceParm)
-	TArray<struct FLinearColor>                   Temp_struct_Variable_3;                            // 0x0040(0x0010)(ConstParm, ReferenceParm)
-	TArray<struct FProcMeshTangent>               Temp_struct_Variable_4;                            // 0x0050(0x0010)(ConstParm, ReferenceParm)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F05[0x3];                                     // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F06[0x4];                                     // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FVector>                        Cols;                                              // 0x0000(0x0010)(Edit, BlueprintVisible)
+	int32                                         Ind;                                               // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FVector2D>                      Temp_struct_Variable;                              // 0x0018(0x0010)(ConstParm, ReferenceParm)
+	TArray<struct FVector2D>                      Temp_struct_Variable_1;                            // 0x0028(0x0010)(ConstParm, ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FVector2D>                      Temp_struct_Variable_2;                            // 0x0040(0x0010)(ConstParm, ReferenceParm)
+	TArray<struct FLinearColor>                   Temp_struct_Variable_3;                            // 0x0050(0x0010)(ConstParm, ReferenceParm)
+	TArray<struct FProcMeshTangent>               Temp_struct_Variable_4;                            // 0x0060(0x0010)(ConstParm, ReferenceParm)
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_customMesh                     CallFunc_loadPrinterMesh_mesh1;                    // 0x0078(0x0050)(HasGetValueTypeHash)
-	class UTexture2D*                             CallFunc_loadPrinterMesh_tex1;                     // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             CallFunc_loadPrinterMesh_tex_pbr1;                 // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_loadPrinterMesh_succ;                     // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F07[0x7];                                     // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             CallFunc_loadPrinterMesh_tex_normal1;              // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_mVector                        CallFunc_Array_Get_Item;                           // 0x00E8(0x0010)(HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F08[0x3];                                     // 0x00FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_vecBoundBox_min;                          // 0x0100(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_vecBoundBox_max;                          // 0x010C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_vecBoundBox_box;                          // 0x0118(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_vecBoundBox_origin;                       // 0x0124(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_vecBoundBox_boundingCenter;               // 0x0130(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetMinElement_ReturnValue;                // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetMaxElement_ReturnValue;                // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_dangerProp                     K2Node_MakeStruct_struct_dangerProp;               // 0x0154(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_multisectionCustomMesh         CallFunc_loadPrinterMesh_multisectionMesh;         // 0x0078(0x0118)(HasGetValueTypeHash)
+	bool                                          CallFunc_loadPrinterMesh_succ;                     // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_191[0x3];                                      // 0x0191(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x01A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         CallFunc_Array_Get_Item;                           // 0x01A5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x01A6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_Array_Get_Item_1;                         // 0x01A7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue_1;              // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_Array_Get_Item_2;                         // 0x01A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue_2;              // 0x01AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_Array_Get_Item_3;                         // 0x01AB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue_3;              // 0x01AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1AD[0x3];                                      // 0x01AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             CallFunc_Array_Get_Item_4;                         // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             CallFunc_Array_Get_Item_5;                         // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             CallFunc_Array_Get_Item_6;                         // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             CallFunc_Array_Get_Item_7;                         // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_customMesh                     CallFunc_Array_Get_Item_8;                         // 0x01D0(0x0050)(HasGetValueTypeHash)
+	struct FStruct_mVector                        CallFunc_Array_Get_Item_9;                         // 0x0220(0x0010)(HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0234(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_235[0x3];                                      // 0x0235(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0240(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0244(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_245[0x3];                                      // 0x0245(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PrintedObject_C_Load) == 0x000008, "Wrong alignment on PrintedObject_C_Load");
-static_assert(sizeof(PrintedObject_C_Load) == 0x000168, "Wrong size on PrintedObject_C_Load");
-static_assert(offsetof(PrintedObject_C_Load, Ind) == 0x000000, "Member 'PrintedObject_C_Load::Ind' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, Temp_struct_Variable) == 0x000008, "Member 'PrintedObject_C_Load::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, Temp_struct_Variable_1) == 0x000018, "Member 'PrintedObject_C_Load::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, Temp_int_Array_Index_Variable) == 0x000028, "Member 'PrintedObject_C_Load::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, Temp_struct_Variable_2) == 0x000030, "Member 'PrintedObject_C_Load::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, Temp_struct_Variable_3) == 0x000040, "Member 'PrintedObject_C_Load::Temp_struct_Variable_3' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, Temp_struct_Variable_4) == 0x000050, "Member 'PrintedObject_C_Load::Temp_struct_Variable_4' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, Temp_int_Loop_Counter_Variable) == 0x000060, "Member 'PrintedObject_C_Load::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, CallFunc_IsEmpty_ReturnValue) == 0x000064, "Member 'PrintedObject_C_Load::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, CallFunc_Add_IntInt_ReturnValue) == 0x000068, "Member 'PrintedObject_C_Load::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(sizeof(PrintedObject_C_Load) == 0x000250, "Wrong size on PrintedObject_C_Load");
+static_assert(offsetof(PrintedObject_C_Load, Cols) == 0x000000, "Member 'PrintedObject_C_Load::Cols' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, Ind) == 0x000010, "Member 'PrintedObject_C_Load::Ind' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, Temp_struct_Variable) == 0x000018, "Member 'PrintedObject_C_Load::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, Temp_struct_Variable_1) == 0x000028, "Member 'PrintedObject_C_Load::Temp_struct_Variable_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'PrintedObject_C_Load::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, Temp_struct_Variable_2) == 0x000040, "Member 'PrintedObject_C_Load::Temp_struct_Variable_2' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, Temp_struct_Variable_3) == 0x000050, "Member 'PrintedObject_C_Load::Temp_struct_Variable_3' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, Temp_struct_Variable_4) == 0x000060, "Member 'PrintedObject_C_Load::Temp_struct_Variable_4' has a wrong offset!");
 static_assert(offsetof(PrintedObject_C_Load, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000070, "Member 'PrintedObject_C_Load::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, CallFunc_loadPrinterMesh_mesh1) == 0x000078, "Member 'PrintedObject_C_Load::CallFunc_loadPrinterMesh_mesh1' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, CallFunc_loadPrinterMesh_tex1) == 0x0000C8, "Member 'PrintedObject_C_Load::CallFunc_loadPrinterMesh_tex1' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, CallFunc_loadPrinterMesh_tex_pbr1) == 0x0000D0, "Member 'PrintedObject_C_Load::CallFunc_loadPrinterMesh_tex_pbr1' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, CallFunc_loadPrinterMesh_succ) == 0x0000D8, "Member 'PrintedObject_C_Load::CallFunc_loadPrinterMesh_succ' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, CallFunc_loadPrinterMesh_tex_normal1) == 0x0000E0, "Member 'PrintedObject_C_Load::CallFunc_loadPrinterMesh_tex_normal1' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, CallFunc_Array_Get_Item) == 0x0000E8, "Member 'PrintedObject_C_Load::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, CallFunc_Array_Length_ReturnValue) == 0x0000F8, "Member 'PrintedObject_C_Load::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, CallFunc_Less_IntInt_ReturnValue) == 0x0000FC, "Member 'PrintedObject_C_Load::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, CallFunc_vecBoundBox_min) == 0x000100, "Member 'PrintedObject_C_Load::CallFunc_vecBoundBox_min' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, CallFunc_vecBoundBox_max) == 0x00010C, "Member 'PrintedObject_C_Load::CallFunc_vecBoundBox_max' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, CallFunc_vecBoundBox_box) == 0x000118, "Member 'PrintedObject_C_Load::CallFunc_vecBoundBox_box' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, CallFunc_vecBoundBox_origin) == 0x000124, "Member 'PrintedObject_C_Load::CallFunc_vecBoundBox_origin' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, CallFunc_vecBoundBox_boundingCenter) == 0x000130, "Member 'PrintedObject_C_Load::CallFunc_vecBoundBox_boundingCenter' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, CallFunc_GetMinElement_ReturnValue) == 0x00013C, "Member 'PrintedObject_C_Load::CallFunc_GetMinElement_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000140, "Member 'PrintedObject_C_Load::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, CallFunc_GetMaxElement_ReturnValue) == 0x000148, "Member 'PrintedObject_C_Load::CallFunc_GetMaxElement_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00014C, "Member 'PrintedObject_C_Load::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000150, "Member 'PrintedObject_C_Load::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_Load, K2Node_MakeStruct_struct_dangerProp) == 0x000154, "Member 'PrintedObject_C_Load::K2Node_MakeStruct_struct_dangerProp' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_loadPrinterMesh_multisectionMesh) == 0x000078, "Member 'PrintedObject_C_Load::CallFunc_loadPrinterMesh_multisectionMesh' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_loadPrinterMesh_succ) == 0x000190, "Member 'PrintedObject_C_Load::CallFunc_loadPrinterMesh_succ' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, Temp_int_Array_Index_Variable) == 0x000194, "Member 'PrintedObject_C_Load::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, Temp_int_Loop_Counter_Variable) == 0x000198, "Member 'PrintedObject_C_Load::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_Add_IntInt_ReturnValue) == 0x00019C, "Member 'PrintedObject_C_Load::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, Temp_int_Array_Index_Variable_1) == 0x0001A0, "Member 'PrintedObject_C_Load::Temp_int_Array_Index_Variable_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_IsEmpty_ReturnValue) == 0x0001A4, "Member 'PrintedObject_C_Load::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_Array_Get_Item) == 0x0001A5, "Member 'PrintedObject_C_Load::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_GetValidValue_ReturnValue) == 0x0001A6, "Member 'PrintedObject_C_Load::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_Array_Get_Item_1) == 0x0001A7, "Member 'PrintedObject_C_Load::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_GetValidValue_ReturnValue_1) == 0x0001A8, "Member 'PrintedObject_C_Load::CallFunc_GetValidValue_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_Array_Get_Item_2) == 0x0001A9, "Member 'PrintedObject_C_Load::CallFunc_Array_Get_Item_2' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_GetValidValue_ReturnValue_2) == 0x0001AA, "Member 'PrintedObject_C_Load::CallFunc_GetValidValue_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_Array_Get_Item_3) == 0x0001AB, "Member 'PrintedObject_C_Load::CallFunc_Array_Get_Item_3' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_GetValidValue_ReturnValue_3) == 0x0001AC, "Member 'PrintedObject_C_Load::CallFunc_GetValidValue_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_Array_Get_Item_4) == 0x0001B0, "Member 'PrintedObject_C_Load::CallFunc_Array_Get_Item_4' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_Array_Get_Item_5) == 0x0001B8, "Member 'PrintedObject_C_Load::CallFunc_Array_Get_Item_5' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_Array_Get_Item_6) == 0x0001C0, "Member 'PrintedObject_C_Load::CallFunc_Array_Get_Item_6' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_Array_Get_Item_7) == 0x0001C8, "Member 'PrintedObject_C_Load::CallFunc_Array_Get_Item_7' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_Array_Get_Item_8) == 0x0001D0, "Member 'PrintedObject_C_Load::CallFunc_Array_Get_Item_8' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_Array_Get_Item_9) == 0x000220, "Member 'PrintedObject_C_Load::CallFunc_Array_Get_Item_9' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_Array_Length_ReturnValue_1) == 0x000230, "Member 'PrintedObject_C_Load::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_Less_IntInt_ReturnValue) == 0x000234, "Member 'PrintedObject_C_Load::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000238, "Member 'PrintedObject_C_Load::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, Temp_int_Loop_Counter_Variable_1) == 0x000240, "Member 'PrintedObject_C_Load::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_Less_IntInt_ReturnValue_1) == 0x000244, "Member 'PrintedObject_C_Load::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_Load, CallFunc_Add_IntInt_ReturnValue_1) == 0x000248, "Member 'PrintedObject_C_Load::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
 
 // Function printedObject.printedObject_C.setFilters
-// 0x0038 (0x0038 - 0x0000)
+// 0x0220 (0x0220 - 0x0000)
 struct PrintedObject_C_SetFilters final
 {
 public:
-	uint8                                         Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F09[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPhysicalMaterial*                      Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPhysicalMaterial*                      Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPhysicalMaterial*                      Temp_object_Variable_2;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPhysicalMaterial*                      Temp_object_Variable_3;                            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPhysicalMaterial*                      Temp_object_Variable_4;                            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPhysicalMaterial*                      K2Node_Select_Default;                             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FVector>                        Cols;                                              // 0x0000(0x0010)(Edit, BlueprintVisible)
+	class UPhysicalMaterial*                      Temp_object_Variable;                              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      Temp_object_Variable_1;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      Temp_object_Variable_2;                            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      Temp_object_Variable_3;                            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      Temp_object_Variable_4;                            // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      Temp_object_Variable_5;                            // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      Temp_object_Variable_6;                            // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      Temp_object_Variable_7;                            // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      Temp_object_Variable_8;                            // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      Temp_object_Variable_9;                            // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      Temp_object_Variable_10;                           // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      Temp_object_Variable_11;                           // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      Temp_object_Variable_12;                           // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      Temp_object_Variable_13;                           // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      Temp_object_Variable_14;                           // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      Temp_object_Variable_15;                           // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9D[0x3];                                       // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_vecBoundBox_min;                          // 0x00A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_vecBoundBox_max;                          // 0x00AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_vecBoundBox_box;                          // 0x00B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_vecBoundBox_origin;                       // 0x00C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_vecBoundBox_boundingCenter;               // 0x00D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetMinElement_ReturnValue;                // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetMaxElement_ReturnValue;                // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Temp_byte_Variable;                                // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E5[0x3];                                       // 0x00E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_dangerProp                     K2Node_MakeStruct_struct_dangerProp;               // 0x00F0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0100(0x0030)(IsPlainOldData, NoDestructor)
+	class UPointLightComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x0130(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x013C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_13D[0x3];                                      // 0x013D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0140(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class UPhysicalMaterial*                      K2Node_Select_Default;                             // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_customMesh                     CallFunc_Array_Get_Item;                           // 0x01D0(0x0050)(HasGetValueTypeHash)
 };
-static_assert(alignof(PrintedObject_C_SetFilters) == 0x000008, "Wrong alignment on PrintedObject_C_SetFilters");
-static_assert(sizeof(PrintedObject_C_SetFilters) == 0x000038, "Wrong size on PrintedObject_C_SetFilters");
-static_assert(offsetof(PrintedObject_C_SetFilters, Temp_byte_Variable) == 0x000000, "Member 'PrintedObject_C_SetFilters::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_SetFilters, Temp_object_Variable) == 0x000008, "Member 'PrintedObject_C_SetFilters::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_SetFilters, Temp_object_Variable_1) == 0x000010, "Member 'PrintedObject_C_SetFilters::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_SetFilters, Temp_object_Variable_2) == 0x000018, "Member 'PrintedObject_C_SetFilters::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_SetFilters, Temp_object_Variable_3) == 0x000020, "Member 'PrintedObject_C_SetFilters::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_SetFilters, Temp_object_Variable_4) == 0x000028, "Member 'PrintedObject_C_SetFilters::Temp_object_Variable_4' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_SetFilters, K2Node_Select_Default) == 0x000030, "Member 'PrintedObject_C_SetFilters::K2Node_Select_Default' has a wrong offset!");
+static_assert(alignof(PrintedObject_C_SetFilters) == 0x000010, "Wrong alignment on PrintedObject_C_SetFilters");
+static_assert(sizeof(PrintedObject_C_SetFilters) == 0x000220, "Wrong size on PrintedObject_C_SetFilters");
+static_assert(offsetof(PrintedObject_C_SetFilters, Cols) == 0x000000, "Member 'PrintedObject_C_SetFilters::Cols' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, Temp_object_Variable) == 0x000010, "Member 'PrintedObject_C_SetFilters::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, Temp_object_Variable_1) == 0x000018, "Member 'PrintedObject_C_SetFilters::Temp_object_Variable_1' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, Temp_object_Variable_2) == 0x000020, "Member 'PrintedObject_C_SetFilters::Temp_object_Variable_2' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, Temp_object_Variable_3) == 0x000028, "Member 'PrintedObject_C_SetFilters::Temp_object_Variable_3' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, Temp_object_Variable_4) == 0x000030, "Member 'PrintedObject_C_SetFilters::Temp_object_Variable_4' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, Temp_object_Variable_5) == 0x000038, "Member 'PrintedObject_C_SetFilters::Temp_object_Variable_5' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, Temp_object_Variable_6) == 0x000040, "Member 'PrintedObject_C_SetFilters::Temp_object_Variable_6' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, Temp_object_Variable_7) == 0x000048, "Member 'PrintedObject_C_SetFilters::Temp_object_Variable_7' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, Temp_object_Variable_8) == 0x000050, "Member 'PrintedObject_C_SetFilters::Temp_object_Variable_8' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, Temp_object_Variable_9) == 0x000058, "Member 'PrintedObject_C_SetFilters::Temp_object_Variable_9' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, Temp_object_Variable_10) == 0x000060, "Member 'PrintedObject_C_SetFilters::Temp_object_Variable_10' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, Temp_object_Variable_11) == 0x000068, "Member 'PrintedObject_C_SetFilters::Temp_object_Variable_11' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, Temp_object_Variable_12) == 0x000070, "Member 'PrintedObject_C_SetFilters::Temp_object_Variable_12' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, Temp_object_Variable_13) == 0x000078, "Member 'PrintedObject_C_SetFilters::Temp_object_Variable_13' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, Temp_object_Variable_14) == 0x000080, "Member 'PrintedObject_C_SetFilters::Temp_object_Variable_14' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, Temp_object_Variable_15) == 0x000088, "Member 'PrintedObject_C_SetFilters::Temp_object_Variable_15' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, Temp_int_Array_Index_Variable) == 0x000090, "Member 'PrintedObject_C_SetFilters::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, Temp_int_Loop_Counter_Variable) == 0x000094, "Member 'PrintedObject_C_SetFilters::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, CallFunc_Add_IntInt_ReturnValue) == 0x000098, "Member 'PrintedObject_C_SetFilters::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, CallFunc_Array_IsValidIndex_ReturnValue) == 0x00009C, "Member 'PrintedObject_C_SetFilters::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, CallFunc_vecBoundBox_min) == 0x0000A0, "Member 'PrintedObject_C_SetFilters::CallFunc_vecBoundBox_min' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, CallFunc_vecBoundBox_max) == 0x0000AC, "Member 'PrintedObject_C_SetFilters::CallFunc_vecBoundBox_max' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, CallFunc_vecBoundBox_box) == 0x0000B8, "Member 'PrintedObject_C_SetFilters::CallFunc_vecBoundBox_box' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, CallFunc_vecBoundBox_origin) == 0x0000C4, "Member 'PrintedObject_C_SetFilters::CallFunc_vecBoundBox_origin' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, CallFunc_vecBoundBox_boundingCenter) == 0x0000D0, "Member 'PrintedObject_C_SetFilters::CallFunc_vecBoundBox_boundingCenter' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, CallFunc_GetMinElement_ReturnValue) == 0x0000DC, "Member 'PrintedObject_C_SetFilters::CallFunc_GetMinElement_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, CallFunc_GetMaxElement_ReturnValue) == 0x0000E0, "Member 'PrintedObject_C_SetFilters::CallFunc_GetMaxElement_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, Temp_byte_Variable) == 0x0000E4, "Member 'PrintedObject_C_SetFilters::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0000E8, "Member 'PrintedObject_C_SetFilters::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0000EC, "Member 'PrintedObject_C_SetFilters::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, K2Node_MakeStruct_struct_dangerProp) == 0x0000F0, "Member 'PrintedObject_C_SetFilters::K2Node_MakeStruct_struct_dangerProp' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, CallFunc_MakeTransform_ReturnValue) == 0x000100, "Member 'PrintedObject_C_SetFilters::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, CallFunc_AddComponent_ReturnValue) == 0x000130, "Member 'PrintedObject_C_SetFilters::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, CallFunc_Array_Length_ReturnValue) == 0x000138, "Member 'PrintedObject_C_SetFilters::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, CallFunc_Less_IntInt_ReturnValue) == 0x00013C, "Member 'PrintedObject_C_SetFilters::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x000140, "Member 'PrintedObject_C_SetFilters::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, K2Node_Select_Default) == 0x0001C8, "Member 'PrintedObject_C_SetFilters::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_SetFilters, CallFunc_Array_Get_Item) == 0x0001D0, "Member 'PrintedObject_C_SetFilters::CallFunc_Array_Get_Item' has a wrong offset!");
 
 // Function printedObject.printedObject_C.ignoreSave
 // 0x0001 (0x0001 - 0x0000)
@@ -782,49 +954,22 @@ static_assert(sizeof(PrintedObject_C_IgnoreSave) == 0x000001, "Wrong size on Pri
 static_assert(offsetof(PrintedObject_C_IgnoreSave, Param_IgnoreSave) == 0x000000, "Member 'PrintedObject_C_IgnoreSave::Param_IgnoreSave' has a wrong offset!");
 
 // Function printedObject.printedObject_C.loadData
-// 0x0120 (0x0120 - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct PrintedObject_C_LoadData final
 {
 public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F0A[0x7];                                     // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mString                        CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
-	struct FStruct_mInt                           CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0010)(HasGetValueTypeHash)
-	class FString                                 CallFunc_Array_Get_Item_2;                         // 0x00E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Get_Item_3;                         // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F0B[0x3];                                     // 0x00FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Get_Item_4;                         // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0104(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_Conv_IntToByte_ReturnValue_1;             // 0x0105(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_GetValidValue_ReturnValue_1;              // 0x0106(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F0C[0x1];                                     // 0x0107(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Get_Item_5;                         // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_Conv_IntToByte_ReturnValue_2;             // 0x010C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F0D[0x3];                                     // 0x010D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Get_Item_6;                         // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_GetValidValue_ReturnValue_2;              // 0x0114(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_Conv_IntToByte_ReturnValue_3;             // 0x0115(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PrintedObject_C_LoadData) == 0x000010, "Wrong alignment on PrintedObject_C_LoadData");
-static_assert(sizeof(PrintedObject_C_LoadData) == 0x000120, "Wrong size on PrintedObject_C_LoadData");
+static_assert(sizeof(PrintedObject_C_LoadData) == 0x0000F0, "Wrong size on PrintedObject_C_LoadData");
 static_assert(offsetof(PrintedObject_C_LoadData, Data) == 0x000000, "Member 'PrintedObject_C_LoadData::Data' has a wrong offset!");
 static_assert(offsetof(PrintedObject_C_LoadData, Return) == 0x0000C0, "Member 'PrintedObject_C_LoadData::Return' has a wrong offset!");
 static_assert(offsetof(PrintedObject_C_LoadData, CallFunc_Array_Get_Item) == 0x0000C8, "Member 'PrintedObject_C_LoadData::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(PrintedObject_C_LoadData, CallFunc_Array_Get_Item_1) == 0x0000D8, "Member 'PrintedObject_C_LoadData::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadData, CallFunc_Array_Get_Item_2) == 0x0000E8, "Member 'PrintedObject_C_LoadData::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadData, CallFunc_Array_Get_Item_3) == 0x0000F8, "Member 'PrintedObject_C_LoadData::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadData, CallFunc_Conv_IntToByte_ReturnValue) == 0x0000FC, "Member 'PrintedObject_C_LoadData::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadData, CallFunc_Array_Get_Item_4) == 0x000100, "Member 'PrintedObject_C_LoadData::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadData, CallFunc_GetValidValue_ReturnValue) == 0x000104, "Member 'PrintedObject_C_LoadData::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadData, CallFunc_Conv_IntToByte_ReturnValue_1) == 0x000105, "Member 'PrintedObject_C_LoadData::CallFunc_Conv_IntToByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadData, CallFunc_GetValidValue_ReturnValue_1) == 0x000106, "Member 'PrintedObject_C_LoadData::CallFunc_GetValidValue_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadData, CallFunc_Array_Get_Item_5) == 0x000108, "Member 'PrintedObject_C_LoadData::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadData, CallFunc_Conv_IntToByte_ReturnValue_2) == 0x00010C, "Member 'PrintedObject_C_LoadData::CallFunc_Conv_IntToByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadData, CallFunc_Array_Get_Item_6) == 0x000110, "Member 'PrintedObject_C_LoadData::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadData, CallFunc_GetValidValue_ReturnValue_2) == 0x000114, "Member 'PrintedObject_C_LoadData::CallFunc_GetValidValue_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PrintedObject_C_LoadData, CallFunc_Conv_IntToByte_ReturnValue_3) == 0x000115, "Member 'PrintedObject_C_LoadData::CallFunc_Conv_IntToByte_ReturnValue_3' has a wrong offset!");
 
 // Function printedObject.printedObject_C.getData
 // 0x0230 (0x0230 - 0x0000)
@@ -844,7 +989,7 @@ public:
 	TArray<struct FStruct_mString>                K2Node_MakeArray_Array_3;                          // 0x0120(0x0010)(ReferenceParm)
 	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0130(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F0E[0x8];                                     // 0x0168(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_168[0x8];                                      // 0x0168(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           K2Node_MakeStruct_struct_save;                     // 0x0170(0x00C0)(HasGetValueTypeHash)
 };
 static_assert(alignof(PrintedObject_C_GetData) == 0x000010, "Wrong alignment on PrintedObject_C_GetData");
@@ -874,6 +1019,17 @@ public:
 static_assert(alignof(PrintedObject_C_SkipPreDelete) == 0x000001, "Wrong alignment on PrintedObject_C_SkipPreDelete");
 static_assert(sizeof(PrintedObject_C_SkipPreDelete) == 0x000001, "Wrong size on PrintedObject_C_SkipPreDelete");
 static_assert(offsetof(PrintedObject_C_SkipPreDelete, Skip) == 0x000000, "Member 'PrintedObject_C_SkipPreDelete::Skip' has a wrong offset!");
+
+// Function printedObject.printedObject_C.gatherDataFromKey
+// 0x0001 (0x0001 - 0x0000)
+struct PrintedObject_C_GatherDataFromKey final
+{
+public:
+	bool                                          Gather;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(PrintedObject_C_GatherDataFromKey) == 0x000001, "Wrong alignment on PrintedObject_C_GatherDataFromKey");
+static_assert(sizeof(PrintedObject_C_GatherDataFromKey) == 0x000001, "Wrong size on PrintedObject_C_GatherDataFromKey");
+static_assert(offsetof(PrintedObject_C_GatherDataFromKey, Gather) == 0x000000, "Member 'PrintedObject_C_GatherDataFromKey::Gather' has a wrong offset!");
 
 // Function printedObject.printedObject_C.setPath
 // 0x0018 (0x0018 - 0x0000)
@@ -962,7 +1118,7 @@ static_assert(offsetof(PrintedObject_C_ToolboxFix, Toolbox) == 0x000000, "Member
 static_assert(offsetof(PrintedObject_C_ToolboxFix, Return) == 0x000008, "Member 'PrintedObject_C_ToolboxFix::Return' has a wrong offset!");
 
 // Function printedObject.printedObject_C.getActionOptions
-// 0x0048 (0x0048 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct PrintedObject_C_GetActionOptions final
 {
 public:
@@ -972,15 +1128,17 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PrintedObject_C_GetActionOptions) == 0x000008, "Wrong alignment on PrintedObject_C_GetActionOptions");
-static_assert(sizeof(PrintedObject_C_GetActionOptions) == 0x000048, "Wrong size on PrintedObject_C_GetActionOptions");
+static_assert(sizeof(PrintedObject_C_GetActionOptions) == 0x000050, "Wrong size on PrintedObject_C_GetActionOptions");
 static_assert(offsetof(PrintedObject_C_GetActionOptions, Player) == 0x000000, "Member 'PrintedObject_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(PrintedObject_C_GetActionOptions, Component) == 0x000008, "Member 'PrintedObject_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(PrintedObject_C_GetActionOptions, Actor) == 0x000010, "Member 'PrintedObject_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(PrintedObject_C_GetActionOptions, Options) == 0x000018, "Member 'PrintedObject_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(PrintedObject_C_GetActionOptions, Options_enum) == 0x000028, "Member 'PrintedObject_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(PrintedObject_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'PrintedObject_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
+static_assert(offsetof(PrintedObject_C_GetActionOptions, Number) == 0x000048, "Member 'PrintedObject_C_GetActionOptions::Number' has a wrong offset!");
 
 // Function printedObject.printedObject_C.gascanFuel
 // 0x0010 (0x0010 - 0x0000)
@@ -1005,6 +1163,17 @@ public:
 static_assert(alignof(PrintedObject_C_SkipRadial) == 0x000001, "Wrong alignment on PrintedObject_C_SkipRadial");
 static_assert(sizeof(PrintedObject_C_SkipRadial) == 0x000001, "Wrong size on PrintedObject_C_SkipRadial");
 static_assert(offsetof(PrintedObject_C_SkipRadial, Skip) == 0x000000, "Member 'PrintedObject_C_SkipRadial::Skip' has a wrong offset!");
+
+// Function printedObject.printedObject_C.getPriceMultiplier
+// 0x0004 (0x0004 - 0x0000)
+struct PrintedObject_C_GetPriceMultiplier final
+{
+public:
+	float                                         PriceMult;                                         // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PrintedObject_C_GetPriceMultiplier) == 0x000004, "Wrong alignment on PrintedObject_C_GetPriceMultiplier");
+static_assert(sizeof(PrintedObject_C_GetPriceMultiplier) == 0x000004, "Wrong size on PrintedObject_C_GetPriceMultiplier");
+static_assert(offsetof(PrintedObject_C_GetPriceMultiplier, PriceMult) == 0x000000, "Member 'PrintedObject_C_GetPriceMultiplier::PriceMult' has a wrong offset!");
 
 // Function printedObject.printedObject_C.dreamInv
 // 0x0018 (0x0018 - 0x0000)

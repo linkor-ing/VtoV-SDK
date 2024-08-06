@@ -37,20 +37,6 @@ void AProp_handradar_C::ExecuteUbergraph_prop_handradar(int32 EntryPoint)
 }
 
 
-// Function prop_handradar.prop_handradar_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_handradar_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_handradar_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_handradar.prop_handradar_C.OnCompleted_3D095B7742ACA77CDF23DA915B159D1D
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -248,6 +234,20 @@ void AProp_handradar_C::OnNotifyEnd_24CE38C74EA5F51BE312D5B987A72F72(class FName
 	Parms.NotifyName = NotifyName;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_handradar.prop_handradar_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_handradar_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_handradar_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

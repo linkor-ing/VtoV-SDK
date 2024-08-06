@@ -17,6 +17,101 @@
 namespace SDK
 {
 
+// Function hexpillar.hexpillar_C.dreamInv
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<struct FStruct_save>             Invv                                                   (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class ADreamBase_C*                     Base                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AHexpillar_C::DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("hexpillar_C", "dreamInv");
+
+	Params::Hexpillar_C_DreamInv Parms{};
+
+	Parms.Invv = std::move(Invv);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Invv = std::move(Parms.Invv);
+
+	if (Base != nullptr)
+		*Base = Parms.Base;
+}
+
+
+// Function hexpillar.hexpillar_C.setPath
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<struct FVector>                  Path                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AHexpillar_C::SetPath(const TArray<struct FVector>& Path, bool* Return)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("hexpillar_C", "setPath");
+
+	Params::Hexpillar_C_SetPath Parms{};
+
+	Parms.Path = std::move(Path);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return != nullptr)
+		*Return = Parms.Return;
+}
+
+
+// Function hexpillar.hexpillar_C.toolboxFix
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AProp_toolbox_C*                  Toolbox                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AHexpillar_C::ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("hexpillar_C", "toolboxFix");
+
+	Params::Hexpillar_C_ToolboxFix Parms{};
+
+	Parms.Toolbox = Toolbox;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return != nullptr)
+		*Return = Parms.Return;
+}
+
+
+// Function hexpillar.hexpillar_C.GetKey
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                           Param_Key                                              (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+
+void AHexpillar_C::GetKey(class FString* Param_Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("hexpillar_C", "GetKey");
+
+	Params::Hexpillar_C_GetKey Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Param_Key != nullptr)
+		*Param_Key = std::move(Parms.Param_Key);
+}
+
+
 // Function hexpillar.hexpillar_C.canBeUsedHold
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -204,7 +299,7 @@ void AHexpillar_C::Unfoc()
 // Function hexpillar.hexpillar_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void AHexpillar_C::SettingsApplied(const struct FStruct_settings& Settings)
 {
@@ -319,6 +414,30 @@ void AHexpillar_C::ApplyColor(const struct FLinearColor& Color)
 }
 
 
+// Function hexpillar.hexpillar_C.texturePickerApply
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AHexpillar_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("hexpillar_C", "texturePickerApply");
+
+	Params::Hexpillar_C_TexturePickerApply Parms{};
+
+	Parms.Picker = Picker;
+	Parms.Texture = Texture;
+	Parms.Param_Index = Param_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function hexpillar.hexpillar_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
@@ -412,101 +531,6 @@ void AHexpillar_C::ExecuteUbergraph_hexpillar(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function hexpillar.hexpillar_C.dreamInv
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<struct FStruct_save>             Invv                                                   (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// class ADreamBase_C*                     Base                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AHexpillar_C::DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("hexpillar_C", "dreamInv");
-
-	Params::Hexpillar_C_DreamInv Parms{};
-
-	Parms.Invv = std::move(Invv);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Invv = std::move(Parms.Invv);
-
-	if (Base != nullptr)
-		*Base = Parms.Base;
-}
-
-
-// Function hexpillar.hexpillar_C.setPath
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<struct FVector>                  Path                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AHexpillar_C::SetPath(const TArray<struct FVector>& Path, bool* Return)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("hexpillar_C", "setPath");
-
-	Params::Hexpillar_C_SetPath Parms{};
-
-	Parms.Path = std::move(Path);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Return != nullptr)
-		*Return = Parms.Return;
-}
-
-
-// Function hexpillar.hexpillar_C.toolboxFix
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AProp_toolbox_C*                  Toolbox                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AHexpillar_C::ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("hexpillar_C", "toolboxFix");
-
-	Params::Hexpillar_C_ToolboxFix Parms{};
-
-	Parms.Toolbox = Toolbox;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Return != nullptr)
-		*Return = Parms.Return;
-}
-
-
-// Function hexpillar.hexpillar_C.GetKey
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                           Param_Key                                              (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-
-void AHexpillar_C::GetKey(class FString* Param_Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("hexpillar_C", "GetKey");
-
-	Params::Hexpillar_C_GetKey Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Param_Key != nullptr)
-		*Param_Key = std::move(Parms.Param_Key);
 }
 
 }

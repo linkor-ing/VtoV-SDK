@@ -51,20 +51,6 @@ void AProp_waspnest_C::Hitted()
 }
 
 
-// Function prop_waspnest.prop_waspnest_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_waspnest_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_waspnest_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_waspnest.prop_waspnest_C.broken
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -74,6 +60,20 @@ void AProp_waspnest_C::broken()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("prop_waspnest_C", "broken");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function prop_waspnest.prop_waspnest_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_waspnest_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_waspnest_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -115,15 +115,23 @@ void AProp_waspnest_C::DigUp()
 
 // Function prop_waspnest.prop_waspnest_C.receivedPhyiscsDamage
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hot                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void AProp_waspnest_C::ReceivedPhyiscsDamage()
+void AProp_waspnest_C::ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("prop_waspnest_C", "receivedPhyiscsDamage");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::Prop_waspnest_C_ReceivedPhyiscsDamage Parms{};
+
+	Parms.Damage = Damage;
+	Parms.Hot = std::move(Hot);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

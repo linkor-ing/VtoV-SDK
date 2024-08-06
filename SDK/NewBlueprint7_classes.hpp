@@ -21,16 +21,16 @@ namespace SDK
 
 // BlueprintGeneratedClass NewBlueprint7.NewBlueprint7_C
 // 0x0070 (0x0530 - 0x04C0)
-class ANewBlueprint7_C final : public ACharacter
+class NewBlueprint7::ANewBlueprint7_C final : public ACharacter
 {
 public:
-	uint8                                         Pad_1E20[0x8];                                     // 0x04B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B8[0x8];                                      // 0x04B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UProceduralMeshComponent*               ProceduralMesh;                                    // 0x04C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UBillboardComponent*                    Billboard;                                         // 0x04D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        Audio;                                             // 0x04D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                          NewVar_0;                                          // 0x04E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E21[0x7];                                     // 0x04E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4E1[0x7];                                      // 0x04E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVector>                        NewVar_1;                                          // 0x04E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<int32>                                 NewVar_2;                                          // 0x04F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FVector>                        NewVar_3;                                          // 0x0508(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -49,26 +49,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"NewBlueprint7_C">();
+		return StaticBPGeneratedClassImpl<"BlueprintGeneratedClass NewBlueprint7.NewBlueprint7_C", true, "NewBlueprint7_C">();
 	}
-	static class ANewBlueprint7_C* GetDefaultObj()
+	static class NewBlueprint7::ANewBlueprint7_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<ANewBlueprint7_C>();
+		return GetDefaultObjImpl<NewBlueprint7::ANewBlueprint7_C>();
 	}
 };
-static_assert(alignof(ANewBlueprint7_C) == 0x000010, "Wrong alignment on ANewBlueprint7_C");
-static_assert(sizeof(ANewBlueprint7_C) == 0x000530, "Wrong size on ANewBlueprint7_C");
-static_assert(offsetof(ANewBlueprint7_C, UberGraphFrame) == 0x0004C0, "Member 'ANewBlueprint7_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ANewBlueprint7_C, ProceduralMesh) == 0x0004C8, "Member 'ANewBlueprint7_C::ProceduralMesh' has a wrong offset!");
-static_assert(offsetof(ANewBlueprint7_C, Billboard) == 0x0004D0, "Member 'ANewBlueprint7_C::Billboard' has a wrong offset!");
-static_assert(offsetof(ANewBlueprint7_C, Audio) == 0x0004D8, "Member 'ANewBlueprint7_C::Audio' has a wrong offset!");
-static_assert(offsetof(ANewBlueprint7_C, NewVar_0) == 0x0004E0, "Member 'ANewBlueprint7_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(ANewBlueprint7_C, NewVar_1) == 0x0004E8, "Member 'ANewBlueprint7_C::NewVar_1' has a wrong offset!");
-static_assert(offsetof(ANewBlueprint7_C, NewVar_2) == 0x0004F8, "Member 'ANewBlueprint7_C::NewVar_2' has a wrong offset!");
-static_assert(offsetof(ANewBlueprint7_C, NewVar_3) == 0x000508, "Member 'ANewBlueprint7_C::NewVar_3' has a wrong offset!");
-static_assert(offsetof(ANewBlueprint7_C, NewVar_4) == 0x000518, "Member 'ANewBlueprint7_C::NewVar_4' has a wrong offset!");
-static_assert(offsetof(ANewBlueprint7_C, NewVar_5) == 0x000528, "Member 'ANewBlueprint7_C::NewVar_5' has a wrong offset!");
-static_assert(offsetof(ANewBlueprint7_C, NewVar_6) == 0x000529, "Member 'ANewBlueprint7_C::NewVar_6' has a wrong offset!");
+static_assert(alignof(NewBlueprint7::ANewBlueprint7_C) == 0x000010, "Wrong alignment on NewBlueprint7::ANewBlueprint7_C");
+static_assert(sizeof(NewBlueprint7::ANewBlueprint7_C) == 0x000530, "Wrong size on NewBlueprint7::ANewBlueprint7_C");
+static_assert(offsetof(NewBlueprint7::ANewBlueprint7_C, UberGraphFrame) == 0x0004C0, "Member 'NewBlueprint7::ANewBlueprint7_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(NewBlueprint7::ANewBlueprint7_C, ProceduralMesh) == 0x0004C8, "Member 'NewBlueprint7::ANewBlueprint7_C::ProceduralMesh' has a wrong offset!");
+static_assert(offsetof(NewBlueprint7::ANewBlueprint7_C, Billboard) == 0x0004D0, "Member 'NewBlueprint7::ANewBlueprint7_C::Billboard' has a wrong offset!");
+static_assert(offsetof(NewBlueprint7::ANewBlueprint7_C, Audio) == 0x0004D8, "Member 'NewBlueprint7::ANewBlueprint7_C::Audio' has a wrong offset!");
+static_assert(offsetof(NewBlueprint7::ANewBlueprint7_C, NewVar_0) == 0x0004E0, "Member 'NewBlueprint7::ANewBlueprint7_C::NewVar_0' has a wrong offset!");
+static_assert(offsetof(NewBlueprint7::ANewBlueprint7_C, NewVar_1) == 0x0004E8, "Member 'NewBlueprint7::ANewBlueprint7_C::NewVar_1' has a wrong offset!");
+static_assert(offsetof(NewBlueprint7::ANewBlueprint7_C, NewVar_2) == 0x0004F8, "Member 'NewBlueprint7::ANewBlueprint7_C::NewVar_2' has a wrong offset!");
+static_assert(offsetof(NewBlueprint7::ANewBlueprint7_C, NewVar_3) == 0x000508, "Member 'NewBlueprint7::ANewBlueprint7_C::NewVar_3' has a wrong offset!");
+static_assert(offsetof(NewBlueprint7::ANewBlueprint7_C, NewVar_4) == 0x000518, "Member 'NewBlueprint7::ANewBlueprint7_C::NewVar_4' has a wrong offset!");
+static_assert(offsetof(NewBlueprint7::ANewBlueprint7_C, NewVar_5) == 0x000528, "Member 'NewBlueprint7::ANewBlueprint7_C::NewVar_5' has a wrong offset!");
+static_assert(offsetof(NewBlueprint7::ANewBlueprint7_C, NewVar_6) == 0x000529, "Member 'NewBlueprint7::ANewBlueprint7_C::NewVar_6' has a wrong offset!");
 
 }
 

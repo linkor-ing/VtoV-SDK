@@ -57,7 +57,7 @@ void AProp_soos_C::Exp(bool Skip)
 }
 
 
-// Function prop_soos.prop_soos_C.Light
+// Function prop_soos.prop_soos_C.light
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                                   NewIntensity                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -67,13 +67,41 @@ void AProp_soos_C::Light(float NewIntensity)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("prop_soos_C", "Light");
+		Func = Class->GetFunction("prop_soos_C", "light");
 
 	Params::Prop_soos_C_Light Parms{};
 
 	Parms.NewIntensity = NewIntensity;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_soos.prop_soos_C.enteredTheWater
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void AProp_soos_C::EnteredTheWater()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_soos_C", "enteredTheWater");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function prop_soos.prop_soos_C.exitTheWater
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void AProp_soos_C::ExitTheWater()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_soos_C", "exitTheWater");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -106,34 +134,6 @@ void AProp_soos_C::Microwave()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("prop_soos_C", "microwave");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop_soos.prop_soos_C.enteredTheWater
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void AProp_soos_C::EnteredTheWater()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_soos_C", "enteredTheWater");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop_soos.prop_soos_C.exitTheWater
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void AProp_soos_C::ExitTheWater()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_soos_C", "exitTheWater");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

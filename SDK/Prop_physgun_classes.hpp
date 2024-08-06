@@ -19,44 +19,41 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_physgun.prop_physgun_C
-// 0x0228 (0x0590 - 0x0368)
+// 0x0228 (0x05A0 - 0x0378)
 #pragma pack(push, 0x1)
 class alignas(0x10) AProp_physgun_C : public AProp_C
 {
 public:
-	uint8                                         Pad_3EBC[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_physgun_C;                     // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UParticleSystemComponent*               Eff_gphysgunBeam_end;                              // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USpringArmComponent*                    SpringArm;                                         // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPhysicsConstraintComponent*            SoftConstraint;                                    // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SoftPivot;                                         // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               beam;                                              // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               Eff_gphysgunBeam_start;                            // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBillboardComponent*                    Pivot;                                             // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBillboardComponent*                    Vis;                                               // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 ObjectPickup;                                      // 0x03B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Hold;                                              // 0x03B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3EBD[0x7];                                     // 0x03B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimitiveComponent*                    Component;                                         // 0x03C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FBodyInstance                          CompBodyInst;                                      // 0x03C8(0x0158)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FVector                                Offset;                                            // 0x0520(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EBE[0x4];                                     // 0x052C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Rel;                                               // 0x0530(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	float                                         Distance;                                          // 0x0560(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Rotate;                                            // 0x0564(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          ShiftHold;                                         // 0x0565(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          AltHold;                                           // 0x0566(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          SuperGun;                                          // 0x0567(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	TArray<EObjectTypeQuery>                      Obj;                                               // 0x0568(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          Soft;                                              // 0x0578(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3EBF[0x7];                                     // 0x0579(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 AttachActor;                                       // 0x0580(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_physgun_C;                     // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UParticleSystemComponent*               Eff_gphysgunBeam_end;                              // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USpringArmComponent*                    SpringArm;                                         // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPhysicsConstraintComponent*            SoftConstraint;                                    // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SoftPivot;                                         // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               beam;                                              // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Eff_gphysgunBeam_start;                            // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    Pivot;                                             // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    Vis;                                               // 0x03B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 ObjectPickup;                                      // 0x03C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Hold;                                              // 0x03C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3C9[0x7];                                      // 0x03C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPrimitiveComponent*                    Component;                                         // 0x03D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FBodyInstance                          CompBodyInst;                                      // 0x03D8(0x0158)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FVector                                Offset;                                            // 0x0530(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_53C[0x4];                                      // 0x053C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             Rel;                                               // 0x0540(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	float                                         Distance;                                          // 0x0570(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Rotate;                                            // 0x0574(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          ShiftHold;                                         // 0x0575(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          AltHold;                                           // 0x0576(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          SuperGun;                                          // 0x0577(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	TArray<EObjectTypeQuery>                      Obj;                                               // 0x0578(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          Soft;                                              // 0x0588(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_589[0x7];                                      // 0x0589(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 AttachActor;                                       // 0x0590(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_physgun(int32 EntryPoint);
-	void ReceiveDestroyed();
 	void Dest(class AActor* DestroyedActor);
-	void ReceiveBeginPlay();
 	void Alt(bool Pressed);
 	void Shift(bool Pressed);
 	void MouseXY(const struct FVector2D& Param_MouseXY);
@@ -66,9 +63,11 @@ public:
 	void ReceiveTick(float DeltaSeconds);
 	void Grab();
 	void Release();
-	void PlayerHandRelease_LMB(class AMainPlayer_C* Player);
+	void ReceiveDestroyed();
+	void ReceiveBeginPlay();
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
+	void PlayerHandRelease_LMB(class AMainPlayer_C* Player);
 
 public:
 	static class UClass* StaticClass()
@@ -82,30 +81,30 @@ public:
 };
 #pragma pack(pop)
 static_assert(alignof(AProp_physgun_C) == 0x000010, "Wrong alignment on AProp_physgun_C");
-static_assert(sizeof(AProp_physgun_C) == 0x000590, "Wrong size on AProp_physgun_C");
-static_assert(offsetof(AProp_physgun_C, UberGraphFrame_Prop_physgun_C) == 0x000368, "Member 'AProp_physgun_C::UberGraphFrame_Prop_physgun_C' has a wrong offset!");
-static_assert(offsetof(AProp_physgun_C, Eff_gphysgunBeam_end) == 0x000370, "Member 'AProp_physgun_C::Eff_gphysgunBeam_end' has a wrong offset!");
-static_assert(offsetof(AProp_physgun_C, SpringArm) == 0x000378, "Member 'AProp_physgun_C::SpringArm' has a wrong offset!");
-static_assert(offsetof(AProp_physgun_C, SoftConstraint) == 0x000380, "Member 'AProp_physgun_C::SoftConstraint' has a wrong offset!");
-static_assert(offsetof(AProp_physgun_C, SoftPivot) == 0x000388, "Member 'AProp_physgun_C::SoftPivot' has a wrong offset!");
-static_assert(offsetof(AProp_physgun_C, beam) == 0x000390, "Member 'AProp_physgun_C::beam' has a wrong offset!");
-static_assert(offsetof(AProp_physgun_C, Eff_gphysgunBeam_start) == 0x000398, "Member 'AProp_physgun_C::Eff_gphysgunBeam_start' has a wrong offset!");
-static_assert(offsetof(AProp_physgun_C, Pivot) == 0x0003A0, "Member 'AProp_physgun_C::Pivot' has a wrong offset!");
-static_assert(offsetof(AProp_physgun_C, Vis) == 0x0003A8, "Member 'AProp_physgun_C::Vis' has a wrong offset!");
-static_assert(offsetof(AProp_physgun_C, ObjectPickup) == 0x0003B0, "Member 'AProp_physgun_C::ObjectPickup' has a wrong offset!");
-static_assert(offsetof(AProp_physgun_C, Hold) == 0x0003B8, "Member 'AProp_physgun_C::Hold' has a wrong offset!");
-static_assert(offsetof(AProp_physgun_C, Component) == 0x0003C0, "Member 'AProp_physgun_C::Component' has a wrong offset!");
-static_assert(offsetof(AProp_physgun_C, CompBodyInst) == 0x0003C8, "Member 'AProp_physgun_C::CompBodyInst' has a wrong offset!");
-static_assert(offsetof(AProp_physgun_C, Offset) == 0x000520, "Member 'AProp_physgun_C::Offset' has a wrong offset!");
-static_assert(offsetof(AProp_physgun_C, Rel) == 0x000530, "Member 'AProp_physgun_C::Rel' has a wrong offset!");
-static_assert(offsetof(AProp_physgun_C, Distance) == 0x000560, "Member 'AProp_physgun_C::Distance' has a wrong offset!");
-static_assert(offsetof(AProp_physgun_C, Rotate) == 0x000564, "Member 'AProp_physgun_C::Rotate' has a wrong offset!");
-static_assert(offsetof(AProp_physgun_C, ShiftHold) == 0x000565, "Member 'AProp_physgun_C::ShiftHold' has a wrong offset!");
-static_assert(offsetof(AProp_physgun_C, AltHold) == 0x000566, "Member 'AProp_physgun_C::AltHold' has a wrong offset!");
-static_assert(offsetof(AProp_physgun_C, SuperGun) == 0x000567, "Member 'AProp_physgun_C::SuperGun' has a wrong offset!");
-static_assert(offsetof(AProp_physgun_C, Obj) == 0x000568, "Member 'AProp_physgun_C::Obj' has a wrong offset!");
-static_assert(offsetof(AProp_physgun_C, Soft) == 0x000578, "Member 'AProp_physgun_C::Soft' has a wrong offset!");
-static_assert(offsetof(AProp_physgun_C, AttachActor) == 0x000580, "Member 'AProp_physgun_C::AttachActor' has a wrong offset!");
+static_assert(sizeof(AProp_physgun_C) == 0x0005A0, "Wrong size on AProp_physgun_C");
+static_assert(offsetof(AProp_physgun_C, UberGraphFrame_Prop_physgun_C) == 0x000378, "Member 'AProp_physgun_C::UberGraphFrame_Prop_physgun_C' has a wrong offset!");
+static_assert(offsetof(AProp_physgun_C, Eff_gphysgunBeam_end) == 0x000380, "Member 'AProp_physgun_C::Eff_gphysgunBeam_end' has a wrong offset!");
+static_assert(offsetof(AProp_physgun_C, SpringArm) == 0x000388, "Member 'AProp_physgun_C::SpringArm' has a wrong offset!");
+static_assert(offsetof(AProp_physgun_C, SoftConstraint) == 0x000390, "Member 'AProp_physgun_C::SoftConstraint' has a wrong offset!");
+static_assert(offsetof(AProp_physgun_C, SoftPivot) == 0x000398, "Member 'AProp_physgun_C::SoftPivot' has a wrong offset!");
+static_assert(offsetof(AProp_physgun_C, beam) == 0x0003A0, "Member 'AProp_physgun_C::beam' has a wrong offset!");
+static_assert(offsetof(AProp_physgun_C, Eff_gphysgunBeam_start) == 0x0003A8, "Member 'AProp_physgun_C::Eff_gphysgunBeam_start' has a wrong offset!");
+static_assert(offsetof(AProp_physgun_C, Pivot) == 0x0003B0, "Member 'AProp_physgun_C::Pivot' has a wrong offset!");
+static_assert(offsetof(AProp_physgun_C, Vis) == 0x0003B8, "Member 'AProp_physgun_C::Vis' has a wrong offset!");
+static_assert(offsetof(AProp_physgun_C, ObjectPickup) == 0x0003C0, "Member 'AProp_physgun_C::ObjectPickup' has a wrong offset!");
+static_assert(offsetof(AProp_physgun_C, Hold) == 0x0003C8, "Member 'AProp_physgun_C::Hold' has a wrong offset!");
+static_assert(offsetof(AProp_physgun_C, Component) == 0x0003D0, "Member 'AProp_physgun_C::Component' has a wrong offset!");
+static_assert(offsetof(AProp_physgun_C, CompBodyInst) == 0x0003D8, "Member 'AProp_physgun_C::CompBodyInst' has a wrong offset!");
+static_assert(offsetof(AProp_physgun_C, Offset) == 0x000530, "Member 'AProp_physgun_C::Offset' has a wrong offset!");
+static_assert(offsetof(AProp_physgun_C, Rel) == 0x000540, "Member 'AProp_physgun_C::Rel' has a wrong offset!");
+static_assert(offsetof(AProp_physgun_C, Distance) == 0x000570, "Member 'AProp_physgun_C::Distance' has a wrong offset!");
+static_assert(offsetof(AProp_physgun_C, Rotate) == 0x000574, "Member 'AProp_physgun_C::Rotate' has a wrong offset!");
+static_assert(offsetof(AProp_physgun_C, ShiftHold) == 0x000575, "Member 'AProp_physgun_C::ShiftHold' has a wrong offset!");
+static_assert(offsetof(AProp_physgun_C, AltHold) == 0x000576, "Member 'AProp_physgun_C::AltHold' has a wrong offset!");
+static_assert(offsetof(AProp_physgun_C, SuperGun) == 0x000577, "Member 'AProp_physgun_C::SuperGun' has a wrong offset!");
+static_assert(offsetof(AProp_physgun_C, Obj) == 0x000578, "Member 'AProp_physgun_C::Obj' has a wrong offset!");
+static_assert(offsetof(AProp_physgun_C, Soft) == 0x000588, "Member 'AProp_physgun_C::Soft' has a wrong offset!");
+static_assert(offsetof(AProp_physgun_C, AttachActor) == 0x000590, "Member 'AProp_physgun_C::AttachActor' has a wrong offset!");
 
 }
 

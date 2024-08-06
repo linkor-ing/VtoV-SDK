@@ -111,6 +111,27 @@ void AProp_balloon_C::ReceiveTick(float DeltaSeconds)
 }
 
 
+// Function prop_balloon.prop_balloon_C.processKeys
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AProp_balloon_C::ProcessKeys(bool* Return)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_balloon_C", "processKeys");
+
+	Params::Prop_balloon_C_ProcessKeys Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return != nullptr)
+		*Return = Parms.Return;
+}
+
+
 // Function prop_balloon.prop_balloon_C.loadData
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -153,27 +174,6 @@ void AProp_balloon_C::GetData(struct FStruct_save* Data)
 
 	if (Data != nullptr)
 		*Data = std::move(Parms.Data);
-}
-
-
-// Function prop_balloon.prop_balloon_C.processKeys
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AProp_balloon_C::ProcessKeys(bool* Return)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_balloon_C", "processKeys");
-
-	Params::Prop_balloon_C_ProcessKeys Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Return != nullptr)
-		*Return = Parms.Return;
 }
 
 }

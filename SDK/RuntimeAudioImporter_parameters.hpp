@@ -45,7 +45,7 @@ struct ImportedSoundWave_RewindPlaybackTime final
 public:
 	float                                         PlaybackTime;                                      // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F41[0x3];                                      // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ImportedSoundWave_RewindPlaybackTime) == 0x000004, "Wrong alignment on ImportedSoundWave_RewindPlaybackTime");
 static_assert(sizeof(ImportedSoundWave_RewindPlaybackTime) == 0x000008, "Wrong size on ImportedSoundWave_RewindPlaybackTime");
@@ -91,7 +91,7 @@ struct RuntimeAudioImporterLibrary_ConvertSecondsToString final
 {
 public:
 	int32                                         Seconds;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F43[0x4];                                      // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RuntimeAudioImporterLibrary_ConvertSecondsToString) == 0x000008, "Wrong alignment on RuntimeAudioImporterLibrary_ConvertSecondsToString");
@@ -120,7 +120,7 @@ public:
 	EAudioFormat                                  AudioFormat;                                       // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Quality;                                           // 0x0019(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x001A(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F44[0x5];                                      // 0x001B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B[0x5];                                       // 0x001B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RuntimeAudioImporterLibrary_ExportSoundWaveToBuffer) == 0x000008, "Wrong alignment on RuntimeAudioImporterLibrary_ExportSoundWaveToBuffer");
 static_assert(sizeof(RuntimeAudioImporterLibrary_ExportSoundWaveToBuffer) == 0x000020, "Wrong size on RuntimeAudioImporterLibrary_ExportSoundWaveToBuffer");
@@ -140,7 +140,7 @@ public:
 	EAudioFormat                                  AudioFormat;                                       // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Quality;                                           // 0x0019(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x001A(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F45[0x5];                                      // 0x001B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B[0x5];                                       // 0x001B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RuntimeAudioImporterLibrary_ExportSoundWaveToFile) == 0x000008, "Wrong alignment on RuntimeAudioImporterLibrary_ExportSoundWaveToFile");
 static_assert(sizeof(RuntimeAudioImporterLibrary_ExportSoundWaveToFile) == 0x000020, "Wrong size on RuntimeAudioImporterLibrary_ExportSoundWaveToFile");
@@ -157,7 +157,7 @@ struct RuntimeAudioImporterLibrary_GetAudioFormat final
 public:
 	class FString                                 FilePath;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAudioFormat                                  ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F46[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RuntimeAudioImporterLibrary_GetAudioFormat) == 0x000008, "Wrong alignment on RuntimeAudioImporterLibrary_GetAudioFormat");
 static_assert(sizeof(RuntimeAudioImporterLibrary_GetAudioFormat) == 0x000018, "Wrong size on RuntimeAudioImporterLibrary_GetAudioFormat");
@@ -171,7 +171,7 @@ struct RuntimeAudioImporterLibrary_GetAudioFormatAdvanced final
 public:
 	TArray<uint8>                                 AudioData;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	EAudioFormat                                  ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F47[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RuntimeAudioImporterLibrary_GetAudioFormatAdvanced) == 0x000008, "Wrong alignment on RuntimeAudioImporterLibrary_GetAudioFormatAdvanced");
 static_assert(sizeof(RuntimeAudioImporterLibrary_GetAudioFormatAdvanced) == 0x000018, "Wrong size on RuntimeAudioImporterLibrary_GetAudioFormatAdvanced");
@@ -185,10 +185,10 @@ struct RuntimeAudioImporterLibrary_TranscodeRAWDataFromBuffer final
 public:
 	TArray<uint8>                                 RAWData_From;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	ERAWAudioFormat                               FormatFrom;                                        // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F48[0x7];                                      // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<uint8>                                 RAWData_To;                                        // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	ERAWAudioFormat                               FormatTo;                                          // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F49[0x7];                                      // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RuntimeAudioImporterLibrary_TranscodeRAWDataFromBuffer) == 0x000008, "Wrong alignment on RuntimeAudioImporterLibrary_TranscodeRAWDataFromBuffer");
 static_assert(sizeof(RuntimeAudioImporterLibrary_TranscodeRAWDataFromBuffer) == 0x000030, "Wrong size on RuntimeAudioImporterLibrary_TranscodeRAWDataFromBuffer");
@@ -204,11 +204,11 @@ struct RuntimeAudioImporterLibrary_TranscodeRAWDataFromFile final
 public:
 	class FString                                 FilePathFrom;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERAWAudioFormat                               FormatFrom;                                        // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F4A[0x7];                                      // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 FilePathTo;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERAWAudioFormat                               FormatTo;                                          // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0029(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F4B[0x6];                                      // 0x002A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RuntimeAudioImporterLibrary_TranscodeRAWDataFromFile) == 0x000008, "Wrong alignment on RuntimeAudioImporterLibrary_TranscodeRAWDataFromFile");
 static_assert(sizeof(RuntimeAudioImporterLibrary_TranscodeRAWDataFromFile) == 0x000030, "Wrong size on RuntimeAudioImporterLibrary_TranscodeRAWDataFromFile");
@@ -248,7 +248,7 @@ struct RuntimeAudioImporterLibrary_ImportAudioFromBuffer final
 public:
 	TArray<uint8>                                 AudioData;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	EAudioFormat                                  Format;                                            // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F4C[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RuntimeAudioImporterLibrary_ImportAudioFromBuffer) == 0x000008, "Wrong alignment on RuntimeAudioImporterLibrary_ImportAudioFromBuffer");
 static_assert(sizeof(RuntimeAudioImporterLibrary_ImportAudioFromBuffer) == 0x000018, "Wrong size on RuntimeAudioImporterLibrary_ImportAudioFromBuffer");
@@ -262,7 +262,7 @@ struct RuntimeAudioImporterLibrary_ImportAudioFromFile final
 public:
 	class FString                                 FilePath;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAudioFormat                                  Format;                                            // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F4D[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RuntimeAudioImporterLibrary_ImportAudioFromFile) == 0x000008, "Wrong alignment on RuntimeAudioImporterLibrary_ImportAudioFromFile");
 static_assert(sizeof(RuntimeAudioImporterLibrary_ImportAudioFromFile) == 0x000018, "Wrong size on RuntimeAudioImporterLibrary_ImportAudioFromFile");
@@ -287,10 +287,10 @@ struct RuntimeAudioImporterLibrary_ImportAudioFromRAWBuffer final
 public:
 	TArray<uint8>                                 RAWBuffer;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	ERAWAudioFormat                               Format;                                            // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F4E[0x3];                                      // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         SampleRate;                                        // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         NumOfChannels;                                     // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F4F[0x4];                                      // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RuntimeAudioImporterLibrary_ImportAudioFromRAWBuffer) == 0x000008, "Wrong alignment on RuntimeAudioImporterLibrary_ImportAudioFromRAWBuffer");
 static_assert(sizeof(RuntimeAudioImporterLibrary_ImportAudioFromRAWBuffer) == 0x000020, "Wrong size on RuntimeAudioImporterLibrary_ImportAudioFromRAWBuffer");
@@ -306,10 +306,10 @@ struct RuntimeAudioImporterLibrary_ImportAudioFromRAWFile final
 public:
 	class FString                                 FilePath;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERAWAudioFormat                               Format;                                            // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F50[0x3];                                      // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         SampleRate;                                        // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         NumOfChannels;                                     // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F51[0x4];                                      // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RuntimeAudioImporterLibrary_ImportAudioFromRAWFile) == 0x000008, "Wrong alignment on RuntimeAudioImporterLibrary_ImportAudioFromRAWFile");
 static_assert(sizeof(RuntimeAudioImporterLibrary_ImportAudioFromRAWFile) == 0x000020, "Wrong size on RuntimeAudioImporterLibrary_ImportAudioFromRAWFile");

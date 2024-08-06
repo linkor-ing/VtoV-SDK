@@ -18,220 +18,264 @@ namespace SDK::Params
 {
 
 // Function flammable.flammable_C.ExecuteUbergraph_flammable
-// 0x0520 (0x0520 - 0x0000)
+// 0x0590 (0x0590 - 0x0000)
 struct Flammable_C_ExecuteUbergraph_flammable final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3E72[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_CustomEvent_fuel;                           // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E73[0xC];                                     // 0x0014(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam;                // 0x0020(0x0080)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_bound_Origin;                             // 0x00A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_bound_BoxExtent;                          // 0x00AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue;           // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorFloat_ReturnValue;         // 0x00C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetMaxElement_ReturnValue;                // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x00D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam_1;              // 0x00E0(0x0080)(IsPlainOldData, NoDestructor)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_K2_GetComponentRotation_ReturnValue;      // 0x0164(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam_2;              // 0x0170(0x0080)(IsPlainOldData, NoDestructor)
-	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects;                  // 0x01F0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3E74[0x3];                                     // 0x0201(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0204(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x020C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatMinusEquals_FloatOut;         // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0214(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3E75[0x3];                                     // 0x0215(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_FMax_ReturnValue;                         // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E76[0x4];                                     // 0x021C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_CustomEvent_DestroyedActor;                 // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0228(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0229(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3E77[0x6];                                     // 0x022A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0230(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FBoxSphereBounds                       CallFunc_GetBounds_ReturnValue;                    // 0x023C(0x001C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class AActor* DestroyedActor)> K2Node_CreateDelegate_OutputDelegate;              // 0x025C(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x026C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3E78[0x3];                                     // 0x026D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0270(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E79[0xC];                                     // 0x0274(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0280(0x0030)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_TransformLocation_ReturnValue;            // 0x02B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x02BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult; // 0x02C8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0350(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3E7A[0x3];                                     // 0x0351(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0354(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorFloat_ReturnValue;              // 0x0358(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0364(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x0368(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_K2_GetComponentRotation_ReturnValue_1;    // 0x036C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	class UStaticMeshComponent*                   K2Node_DynamicCast_AsStatic_Mesh_Component;        // 0x0378(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0380(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x0381(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3E7B[0x2];                                     // 0x0382(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x0384(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0388(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E7C[0x4];                                     // 0x038C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         K2Node_MakeArray_Array;                            // 0x0390(0x0010)(ConstParm, ReferenceParm)
-	TArray<struct FHitResult>                     CallFunc_BoxTraceMulti_OutHits;                    // 0x03A0(0x0010)(ReferenceParm, ContainsInstancedReference)
-	bool                                          CallFunc_BoxTraceMulti_ReturnValue;                // 0x03B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3E7D[0x7];                                     // 0x03B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x03B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_Array_Get_Item;                           // 0x03C0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component;          // 0x0448(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0450(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0451(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0452(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3E7E[0x1];                                     // 0x0453(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x0454(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0458(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x045C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0468(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0474(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0480(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E7F[0x4];                                     // 0x048C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0490(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0498(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x04A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x04A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x04B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x04B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x04B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x04BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x04C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E80[0x4];                                     // 0x04D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     CallFunc_GetMaterial_ReturnValue;                  // 0x04D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects_1;                // 0x04E0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x04F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x04F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3E81[0x6];                                     // 0x04F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPhysicalMaterial*                      CallFunc_GetPhysicalMaterial_ReturnValue;          // 0x04F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x0500(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x0501(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_isFlammable_isFlammable;                  // 0x0502(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_isFlammable_isFlammable_1;                // 0x0503(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0504(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3E82[0x3];                                     // 0x0505(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0508(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x050C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_1;       // 0x050D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x050E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_isUnderwater_ReturnValue;                 // 0x050F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsBeingDestroyed_ReturnValue;             // 0x0510(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsBeingDestroyed_ReturnValue_1;           // 0x0511(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0512(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_7;                    // 0x0513(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_8;                    // 0x0514(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x0515(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_isUnderwater_ReturnValue_1;               // 0x0516(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam;                // 0x0030(0x0080)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_CustomEvent_fuel;                           // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_bound_Origin;                             // 0x00B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_bound_BoxExtent;                          // 0x00C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue;           // 0x00D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorFloat_ReturnValue;         // 0x00D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetMaxElement_ReturnValue;                // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x00E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F8[0x8];                                       // 0x00F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam_1;              // 0x0100(0x0080)(IsPlainOldData, NoDestructor)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_K2_GetComponentRotation_ReturnValue;      // 0x0184(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects;                  // 0x0190(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1A1[0x3];                                      // 0x01A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FMax_ReturnValue;                         // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_CustomEvent_DestroyedActor;                 // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x01B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1BA[0x2];                                      // 0x01BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x01C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1C5[0x3];                                      // 0x01C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class AActor* DestroyedActor)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x01C8(0x0010)(ZeroConstructor, NoDestructor)
+	struct FBoxSphereBounds                       CallFunc_GetBounds_ReturnValue;                    // 0x01D8(0x001C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1F4[0xC];                                      // 0x01F4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0200(0x0030)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_TransformLocation_ReturnValue;            // 0x0230(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x023C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0240(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorFloat_ReturnValue;              // 0x024C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_K2_GetComponentRotation_ReturnValue_1;    // 0x0258(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0264(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0268(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_26C[0x4];                                      // 0x026C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         K2Node_MakeArray_Array;                            // 0x0270(0x0010)(ConstParm, ReferenceParm)
+	TArray<struct FHitResult>                     CallFunc_BoxTraceMulti_OutHits;                    // 0x0280(0x0010)(ReferenceParm, ContainsInstancedReference)
+	bool                                          CallFunc_BoxTraceMulti_ReturnValue;                // 0x0290(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_isUnderwater_ReturnValue;                 // 0x0291(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_292[0x2];                                      // 0x0292(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_Array_Get_Item;                           // 0x0294(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x031C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x031D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31E[0x2];                                      // 0x031E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x0320(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0324(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0328(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0334(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0340(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x034C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0358(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0360(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0368(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0370(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0378(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x037C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0380(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0384(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0390(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x039C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     CallFunc_GetMaterial_ReturnValue;                  // 0x03A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x03A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x03A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3AA[0x6];                                      // 0x03AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPhysicalMaterial*                      CallFunc_GetPhysicalMaterial_ReturnValue;          // 0x03B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects_1;                // 0x03B8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x03C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x03C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_isFlammable_isFlammable;                  // 0x03CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3CB[0x5];                                      // 0x03CB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects_2;                // 0x03D0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x03E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x03E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_isFlammable_isFlammable_1;                // 0x03E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsBeingDestroyed_ReturnValue;             // 0x03E3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsBeingDestroyed_ReturnValue_1;           // 0x03E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x03E5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x03E6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_7;                    // 0x03E7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x03E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_isUnderwater_ReturnValue_1;               // 0x03E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_8;                    // 0x03EA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3EB[0x1];                                      // 0x03EB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x03EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatMinusEquals_FloatOut;         // 0x03F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x03F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F5[0x3];                                      // 0x03F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x03F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3FC[0x4];                                      // 0x03FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_InvalidateTimerHandle_ReturnValue;     // 0x0400(0x0008)(NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0408(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component;          // 0x0410(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0418(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_419[0x3];                                      // 0x0419(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult; // 0x041C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x04A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4A5[0x3];                                      // 0x04A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x04A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_9;                    // 0x04AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4AD[0x3];                                      // 0x04AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x04B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4B4[0x4];                                      // 0x04B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UStaticMeshComponent*                   K2Node_DynamicCast_AsStatic_Mesh_Component;        // 0x04B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x04C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4C1[0x3];                                      // 0x04C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue;           // 0x04C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_2;        // 0x04D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4D4[0xC];                                      // 0x04D4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam_2;              // 0x04E0(0x0080)(IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x0560(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_564[0x4];                                      // 0x0564(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0568(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x0570(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0571(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_1;       // 0x0572(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x0573(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_574[0x4];                                      // 0x0574(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0578(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x0580(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0588(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x058C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Flammable_C_ExecuteUbergraph_flammable) == 0x000010, "Wrong alignment on Flammable_C_ExecuteUbergraph_flammable");
-static_assert(sizeof(Flammable_C_ExecuteUbergraph_flammable) == 0x000520, "Wrong size on Flammable_C_ExecuteUbergraph_flammable");
+static_assert(sizeof(Flammable_C_ExecuteUbergraph_flammable) == 0x000590, "Wrong size on Flammable_C_ExecuteUbergraph_flammable");
 static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, EntryPoint) == 0x000000, "Member 'Flammable_C_ExecuteUbergraph_flammable::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_GetOwner_ReturnValue) == 0x000008, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_CustomEvent_fuel) == 0x000010, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_CustomEvent_fuel' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_MakeStruct_ParticleSysParam) == 0x000020, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_MakeStruct_ParticleSysParam' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_bound_Origin) == 0x0000A0, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_bound_Origin' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_bound_BoxExtent) == 0x0000AC, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_bound_BoxExtent' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_SpawnSoundAttached_ReturnValue) == 0x0000B8, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_SpawnSoundAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Subtract_VectorFloat_ReturnValue) == 0x0000C0, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Subtract_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_GetMaxElement_ReturnValue) == 0x0000CC, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_GetMaxElement_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x0000D0, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0000DC, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_MakeStruct_ParticleSysParam_1) == 0x0000E0, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_MakeStruct_ParticleSysParam_1' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Add_FloatFloat_ReturnValue) == 0x000160, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_K2_GetComponentRotation_ReturnValue) == 0x000164, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_K2_GetComponentRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_MakeStruct_ParticleSysParam_2) == 0x000170, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_MakeStruct_ParticleSysParam_2' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_DynamicCast_AsInt_Objects) == 0x0001F0, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_DynamicCast_AsInt_Objects' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_DynamicCast_bSuccess) == 0x000200, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_RandomFloatInRange_ReturnValue) == 0x000204, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000208, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x00020C, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_VictoryFloatMinusEquals_FloatOut) == 0x000210, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_VictoryFloatMinusEquals_FloatOut' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000214, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_FMax_ReturnValue) == 0x000218, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_CustomEvent_DestroyedActor) == 0x000220, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_CustomEvent_DestroyedActor' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_IsValid_ReturnValue_1) == 0x000228, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_IsValid_ReturnValue_2) == 0x000229, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000230, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, Temp_int_Loop_Counter_Variable) == 0x000238, "Member 'Flammable_C_ExecuteUbergraph_flammable::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_GetBounds_ReturnValue) == 0x00023C, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_GetBounds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Add_IntInt_ReturnValue) == 0x000258, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_CreateDelegate_OutputDelegate) == 0x00025C, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_IsValid_ReturnValue_3) == 0x00026C, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, Temp_int_Array_Index_Variable) == 0x000270, "Member 'Flammable_C_ExecuteUbergraph_flammable::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x000280, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_TransformLocation_ReturnValue) == 0x0002B0, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_TransformLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Add_VectorVector_ReturnValue) == 0x0002BC, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult) == 0x0002C8, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000350, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Array_Add_ReturnValue) == 0x000354, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Add_VectorFloat_ReturnValue) == 0x000358, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Add_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Array_Add_ReturnValue_1) == 0x000364, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Array_Add_ReturnValue_2) == 0x000368, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Array_Add_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_K2_GetComponentRotation_ReturnValue_1) == 0x00036C, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_K2_GetComponentRotation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_DynamicCast_AsStatic_Mesh_Component) == 0x000378, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_DynamicCast_AsStatic_Mesh_Component' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_DynamicCast_bSuccess_1) == 0x000380, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x000381, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x000384, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000388, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_MakeArray_Array) == 0x000390, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BoxTraceMulti_OutHits) == 0x0003A0, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BoxTraceMulti_OutHits' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BoxTraceMulti_ReturnValue) == 0x0003B0, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BoxTraceMulti_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_K2_GetRootComponent_ReturnValue) == 0x0003B8, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Array_Get_Item) == 0x0003C0, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_DynamicCast_AsPrimitive_Component) == 0x000448, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_DynamicCast_AsPrimitive_Component' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_DynamicCast_bSuccess_2) == 0x000450, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_bBlockingHit) == 0x000451, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_bInitialOverlap) == 0x000452, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_Time) == 0x000454, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_Distance) == 0x000458, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_Location) == 0x00045C, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_ImpactPoint) == 0x000468, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_Normal) == 0x000474, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_ImpactNormal) == 0x000480, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_PhysMat) == 0x000490, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_HitActor) == 0x000498, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_HitComponent) == 0x0004A0, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_HitBoneName) == 0x0004A8, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_HitItem) == 0x0004B0, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_ElementIndex) == 0x0004B4, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_FaceIndex) == 0x0004B8, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_TraceStart) == 0x0004BC, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_TraceEnd) == 0x0004C8, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_GetMaterial_ReturnValue) == 0x0004D8, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_DynamicCast_AsInt_Objects_1) == 0x0004E0, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_DynamicCast_AsInt_Objects_1' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_DynamicCast_bSuccess_3) == 0x0004F0, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_IsValid_ReturnValue_4) == 0x0004F1, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_GetPhysicalMaterial_ReturnValue) == 0x0004F8, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_GetPhysicalMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_IsValid_ReturnValue_5) == 0x000500, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_IsValid_ReturnValue_6) == 0x000501, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_isFlammable_isFlammable) == 0x000502, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_isFlammable_isFlammable' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_isFlammable_isFlammable_1) == 0x000503, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_isFlammable_isFlammable_1' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BooleanAND_ReturnValue) == 0x000504, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Array_Length_ReturnValue) == 0x000508, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Less_IntInt_ReturnValue) == 0x00050C, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_RandomBoolWithWeight_ReturnValue_1) == 0x00050D, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_RandomBoolWithWeight_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BooleanAND_ReturnValue_1) == 0x00050E, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_isUnderwater_ReturnValue) == 0x00050F, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_isUnderwater_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_IsBeingDestroyed_ReturnValue) == 0x000510, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_IsBeingDestroyed_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_IsBeingDestroyed_ReturnValue_1) == 0x000511, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_IsBeingDestroyed_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BooleanOR_ReturnValue) == 0x000512, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_IsValid_ReturnValue_7) == 0x000513, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_IsValid_ReturnValue_8) == 0x000514, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_IsValid_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BooleanAND_ReturnValue_2) == 0x000515, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_isUnderwater_ReturnValue_1) == 0x000516, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_isUnderwater_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000020, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_MakeStruct_ParticleSysParam) == 0x000030, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_MakeStruct_ParticleSysParam' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_CustomEvent_fuel) == 0x0000B0, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_CustomEvent_fuel' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_bound_Origin) == 0x0000B4, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_bound_Origin' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_bound_BoxExtent) == 0x0000C0, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_bound_BoxExtent' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_SpawnSoundAttached_ReturnValue) == 0x0000D0, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_SpawnSoundAttached_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Subtract_VectorFloat_ReturnValue) == 0x0000D8, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Subtract_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_GetMaxElement_ReturnValue) == 0x0000E4, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_GetMaxElement_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x0000E8, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0000F4, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_MakeStruct_ParticleSysParam_1) == 0x000100, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_MakeStruct_ParticleSysParam_1' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Add_FloatFloat_ReturnValue) == 0x000180, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_K2_GetComponentRotation_ReturnValue) == 0x000184, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_K2_GetComponentRotation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_DynamicCast_AsInt_Objects) == 0x000190, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_DynamicCast_AsInt_Objects' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_DynamicCast_bSuccess) == 0x0001A0, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_RandomFloatInRange_ReturnValue) == 0x0001A4, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x0001A8, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_FMax_ReturnValue) == 0x0001AC, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_FMax_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_CustomEvent_DestroyedActor) == 0x0001B0, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_CustomEvent_DestroyedActor' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_IsValid_ReturnValue) == 0x0001B8, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_IsValid_ReturnValue_1) == 0x0001B9, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, Temp_int_Loop_Counter_Variable) == 0x0001BC, "Member 'Flammable_C_ExecuteUbergraph_flammable::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Add_IntInt_ReturnValue) == 0x0001C0, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_IsValid_ReturnValue_2) == 0x0001C4, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_CreateDelegate_OutputDelegate_1) == 0x0001C8, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_GetBounds_ReturnValue) == 0x0001D8, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_GetBounds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x000200, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_TransformLocation_ReturnValue) == 0x000230, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_TransformLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, Temp_int_Array_Index_Variable) == 0x00023C, "Member 'Flammable_C_ExecuteUbergraph_flammable::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Add_VectorVector_ReturnValue) == 0x000240, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Add_VectorFloat_ReturnValue) == 0x00024C, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Add_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_K2_GetComponentRotation_ReturnValue_1) == 0x000258, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_K2_GetComponentRotation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000264, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000268, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_MakeArray_Array) == 0x000270, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BoxTraceMulti_OutHits) == 0x000280, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BoxTraceMulti_OutHits' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BoxTraceMulti_ReturnValue) == 0x000290, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BoxTraceMulti_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_isUnderwater_ReturnValue) == 0x000291, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_isUnderwater_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Array_Get_Item) == 0x000294, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_bBlockingHit) == 0x00031C, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_bInitialOverlap) == 0x00031D, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_Time) == 0x000320, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_Distance) == 0x000324, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_Location) == 0x000328, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_ImpactPoint) == 0x000334, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_Normal) == 0x000340, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_ImpactNormal) == 0x00034C, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_PhysMat) == 0x000358, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_HitActor) == 0x000360, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_HitComponent) == 0x000368, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_HitBoneName) == 0x000370, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_HitItem) == 0x000378, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_ElementIndex) == 0x00037C, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_FaceIndex) == 0x000380, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_TraceStart) == 0x000384, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BreakHitResult_TraceEnd) == 0x000390, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Array_Length_ReturnValue) == 0x00039C, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_GetMaterial_ReturnValue) == 0x0003A0, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Less_IntInt_ReturnValue) == 0x0003A8, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_IsValid_ReturnValue_3) == 0x0003A9, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_GetPhysicalMaterial_ReturnValue) == 0x0003B0, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_GetPhysicalMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_DynamicCast_AsInt_Objects_1) == 0x0003B8, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_DynamicCast_AsInt_Objects_1' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_DynamicCast_bSuccess_1) == 0x0003C8, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_IsValid_ReturnValue_4) == 0x0003C9, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_isFlammable_isFlammable) == 0x0003CA, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_isFlammable_isFlammable' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_DynamicCast_AsInt_Objects_2) == 0x0003D0, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_DynamicCast_AsInt_Objects_2' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_DynamicCast_bSuccess_2) == 0x0003E0, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_IsValid_ReturnValue_5) == 0x0003E1, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_isFlammable_isFlammable_1) == 0x0003E2, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_isFlammable_isFlammable_1' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_IsBeingDestroyed_ReturnValue) == 0x0003E3, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_IsBeingDestroyed_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_IsBeingDestroyed_ReturnValue_1) == 0x0003E4, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_IsBeingDestroyed_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BooleanOR_ReturnValue) == 0x0003E5, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_IsValid_ReturnValue_6) == 0x0003E6, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_IsValid_ReturnValue_7) == 0x0003E7, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BooleanAND_ReturnValue) == 0x0003E8, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_isUnderwater_ReturnValue_1) == 0x0003E9, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_isUnderwater_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_IsValid_ReturnValue_8) == 0x0003EA, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_IsValid_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x0003EC, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_VictoryFloatMinusEquals_FloatOut) == 0x0003F0, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_VictoryFloatMinusEquals_FloatOut' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x0003F4, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_Event_DeltaSeconds) == 0x0003F8, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_K2_InvalidateTimerHandle_ReturnValue) == 0x000400, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_K2_InvalidateTimerHandle_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000408, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_DynamicCast_AsPrimitive_Component) == 0x000410, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_DynamicCast_AsPrimitive_Component' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_DynamicCast_bSuccess_3) == 0x000418, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult) == 0x00041C, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_K2_AttachToComponent_ReturnValue) == 0x0004A4, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Array_Add_ReturnValue) == 0x0004A8, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_IsValid_ReturnValue_9) == 0x0004AC, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_IsValid_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Array_Add_ReturnValue_1) == 0x0004B0, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_DynamicCast_AsStatic_Mesh_Component) == 0x0004B8, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_DynamicCast_AsStatic_Mesh_Component' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_DynamicCast_bSuccess_4) == 0x0004C0, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Conv_FloatToVector_ReturnValue) == 0x0004C4, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Conv_FloatToVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x0004D0, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, K2Node_MakeStruct_ParticleSysParam_2) == 0x0004E0, "Member 'Flammable_C_ExecuteUbergraph_flammable::K2Node_MakeStruct_ParticleSysParam_2' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Array_Add_ReturnValue_2) == 0x000560, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Array_Add_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000568, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x000570, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BooleanAND_ReturnValue_1) == 0x000571, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_RandomBoolWithWeight_ReturnValue_1) == 0x000572, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_RandomBoolWithWeight_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_BooleanAND_ReturnValue_2) == 0x000573, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000578, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x000580, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Array_AddUnique_ReturnValue) == 0x000588, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_ExecuteUbergraph_flammable, CallFunc_Array_RemoveItem_ReturnValue) == 0x00058C, "Member 'Flammable_C_ExecuteUbergraph_flammable::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
+
+// Function flammable.flammable_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct Flammable_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Flammable_C_ReceiveTick) == 0x000004, "Wrong alignment on Flammable_C_ReceiveTick");
+static_assert(sizeof(Flammable_C_ReceiveTick) == 0x000004, "Wrong size on Flammable_C_ReceiveTick");
+static_assert(offsetof(Flammable_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'Flammable_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function flammable.flammable_C.des
 // 0x0008 (0x0008 - 0x0000)
@@ -266,10 +310,10 @@ public:
 	struct FVector                                CallFunc_GetComponentBounds_Origin;                // 0x0020(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetComponentBounds_BoxExtent;             // 0x002C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetComponentBounds_SphereRadius;          // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E83[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStaticMeshComponent*                   K2Node_DynamicCast_AsStatic_Mesh_Component;        // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3E84[0x3];                                     // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetComponentScale_ReturnValue;         // 0x004C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FBoxSphereBounds                       CallFunc_GetBounds_ReturnValue;                    // 0x0058(0x001C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x0074(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -287,6 +331,25 @@ static_assert(offsetof(Flammable_C_bound, K2Node_DynamicCast_bSuccess) == 0x0000
 static_assert(offsetof(Flammable_C_bound, CallFunc_K2_GetComponentScale_ReturnValue) == 0x00004C, "Member 'Flammable_C_bound::CallFunc_K2_GetComponentScale_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Flammable_C_bound, CallFunc_GetBounds_ReturnValue) == 0x000058, "Member 'Flammable_C_bound::CallFunc_GetBounds_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Flammable_C_bound, CallFunc_Multiply_VectorVector_ReturnValue) == 0x000074, "Member 'Flammable_C_bound::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
+
+// Function flammable.flammable_C.igniteSound
+// 0x0038 (0x0038 - 0x0000)
+struct Flammable_C_IgniteSound final
+{
+public:
+	struct FVector                                CallFunc_GetActorBounds_Origin;                    // 0x0000(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorBounds_BoxExtent;                 // 0x000C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue;           // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Flammable_C_IgniteSound) == 0x000008, "Wrong alignment on Flammable_C_IgniteSound");
+static_assert(sizeof(Flammable_C_IgniteSound) == 0x000038, "Wrong size on Flammable_C_IgniteSound");
+static_assert(offsetof(Flammable_C_IgniteSound, CallFunc_GetActorBounds_Origin) == 0x000000, "Member 'Flammable_C_IgniteSound::CallFunc_GetActorBounds_Origin' has a wrong offset!");
+static_assert(offsetof(Flammable_C_IgniteSound, CallFunc_GetActorBounds_BoxExtent) == 0x00000C, "Member 'Flammable_C_IgniteSound::CallFunc_GetActorBounds_BoxExtent' has a wrong offset!");
+static_assert(offsetof(Flammable_C_IgniteSound, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000018, "Member 'Flammable_C_IgniteSound::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_IgniteSound, CallFunc_GetDisplayName_ReturnValue) == 0x000020, "Member 'Flammable_C_IgniteSound::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Flammable_C_IgniteSound, CallFunc_SpawnSoundAttached_ReturnValue) == 0x000030, "Member 'Flammable_C_IgniteSound::CallFunc_SpawnSoundAttached_ReturnValue' has a wrong offset!");
 
 }
 

@@ -10,17 +10,17 @@
 
 #include "Basic.hpp"
 
-#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass portal_phys.portal_phys_C
-// 0x0108 (0x0328 - 0x0220)
+// 0x0118 (0x0338 - 0x0220)
 class APortal_phys_C : public AActor
 {
 public:
@@ -41,46 +41,25 @@ public:
 	class APortal_phys_C*                         Out;                                               // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 OutKey;                                            // 0x02A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	struct FVector                                Size;                                              // 0x02B0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42D6[0x4];                                     // 0x02BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2BC[0x4];                                      // 0x02BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         InsideActors;                                      // 0x02C0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
 	float                                         Off;                                               // 0x02D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42D7[0x4];                                     // 0x02D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D4[0x4];                                      // 0x02D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UStaticMeshComponent*>           Meshes;                                            // 0x02D8(0x0010)(Edit, BlueprintVisible, ContainsInstancedReference)
 	TArray<class UStaticMeshComponent*>           Comps;                                             // 0x02E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	struct FVector                                Mesh_Offset;                                       // 0x02F8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Mesh_Scale;                                        // 0x0304(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMesh*                            Mesh;                                              // 0x0310(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_             NewEventDispatcher_0;                              // 0x0318(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	float                                         RenderDistance;                                    // 0x0328(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          UseBeginPlayEnable;                                // 0x032C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          beginPlayEnable;                                   // 0x032D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_32E[0x2];                                      // 0x032E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MaxViewDistanceOverride;                           // 0x0330(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void PlayerHandMouse(class AMainPlayer_C* Player, const struct FVector2D& Mouse);
-	void PlayerHandAnyKey(class AMainPlayer_C* Player, const struct FKey& Param_Key, bool Pressed);
-	void MicrowaveElec();
-	void AddTemperature(float Temperature);
-	void AccumulateTemperature(float Temperature, float Speed);
-	void ActionName(class AMainPlayer_C* Player, const struct FHitResult& Hit, const class FString& Param_Name);
-	void Stepped(float Volume);
-	void PlayerLookAway(class AMainPlayer_C* Player);
-	void ReachedByExplosion(const struct FVector& Location, float Damage);
-	void bitten();
-	void Slice(bool Clean);
-	void PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
-	void AttemptIgnite();
-	void Hooked(class AHook_C* Hook);
-	void Set_ignoreSave_trigger(bool NewParam);
-	void CordPlugged(class ACord_C* Cord, class ACordSocket_C* Socket);
-	void CordUnplugged(class ACord_C* Cord, class ACordSocket_C* Socket);
-	void SetActiveTrigger(class AActor* SentFrom, bool Active);
-	void ReceiveBeginPlay();
-	void BndEvt__insides_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void BndEvt__insides_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
-	void BndEvt__outside_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
-	void ReceiveTick(float DeltaSeconds);
-	void RunTrigger(class AActor* Param_Owner, int32 Param_Index);
-	void GamemodeBeginPlay();
-	void ExecuteUbergraph_portal_phys(int32 EntryPoint);
-	void NewEventDispatcher_0__DelegateSignature();
 	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base);
+	void GetPriceMultiplier(float* PriceMult);
 	void SkipRadial(bool* Skip);
 	void GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled);
 	void ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return);
@@ -89,7 +68,8 @@ public:
 	void ProcessKeys(bool* Return);
 	void GetOnlyKey(class FString* Param_Key);
 	void SetPath(const TArray<struct FVector>& Path, bool* Return);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void GatherDataFromKeyT(bool* Gather);
 	void GetTriggerData(struct FStruct_triggerSave* Data);
 	void LoadTriggerData(const struct FStruct_triggerSave& Data, bool* Return);
 	void IgnoreSave_trigger(bool* Ignore);
@@ -107,6 +87,7 @@ public:
 	void GamemodeMakeKeys();
 	void PropRenderer_finishProps();
 	void ApplyColor(const struct FLinearColor& Color);
+	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void ImpactDamage(float Damage, const struct FHitResult& Hit, class AActor* Actor, const struct FVector& Impact);
 	void EnterWater(class AWaterVolume_C* Water);
 	void LeaveWater(class AWaterVolume_C* Water);
@@ -125,8 +106,8 @@ public:
 	void FireDamage(float Damage);
 	void Ignite(float Fuel);
 	void Microwave();
-	void ReceivedPhyiscsDamage();
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
+	void ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 	void Exploded(float Damage, const struct FVector& Location);
@@ -134,6 +115,36 @@ public:
 	void PlayerHandRelease_RMB(class AMainPlayer_C* Player);
 	void PlayerHandRelease_LMB(class AMainPlayer_C* Player);
 	void PlayerHandMouseWheel(class AMainPlayer_C* Player, float WheelDelta);
+	void PlayerHandMouse(class AMainPlayer_C* Player, const struct FVector2D& Mouse);
+	void PlayerHandAnyKey(class AMainPlayer_C* Player, const struct FKey& Param_Key, bool Pressed);
+	void MicrowaveElec();
+	void AddTemperature(float Temperature);
+	void AccumulateTemperature(float Temperature, float Speed);
+	void ActionName(class AMainPlayer_C* Player, const struct FHitResult& Hit, const class FString& Param_Name);
+	void Stepped(float Volume);
+	void PlayerLookAway(class AMainPlayer_C* Player);
+	void ReachedByExplosion(const struct FVector& Location, float Damage);
+	void bitten();
+	void Slice(bool Clean);
+	void PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
+	void AttemptIgnite();
+	void Hooked(class AHook_C* Hook);
+	void Crafted();
+	void CleanSponge(float Clean, class AMainPlayer_C* Player);
+	void HookTension(class AHook_C* Hook);
+	void Set_ignoreSave_trigger(bool NewParam);
+	void CordPlugged(class ACord_C* Cord, class ACordSocket_C* Socket);
+	void CordUnplugged(class ACord_C* Cord, class ACordSocket_C* Socket);
+	void SetActiveTrigger(class AActor* SentFrom, bool Active);
+	void ReceiveBeginPlay();
+	void BndEvt__insides_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+	void BndEvt__insides_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	void BndEvt__outside_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	void ReceiveTick(float DeltaSeconds);
+	void RunTrigger(class AActor* Param_Owner, int32 Param_Index);
+	void GamemodeBeginPlay();
+	void ExecuteUbergraph_portal_phys(int32 EntryPoint);
+	void NewEventDispatcher_0__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()
@@ -146,7 +157,7 @@ public:
 	}
 };
 static_assert(alignof(APortal_phys_C) == 0x000008, "Wrong alignment on APortal_phys_C");
-static_assert(sizeof(APortal_phys_C) == 0x000328, "Wrong size on APortal_phys_C");
+static_assert(sizeof(APortal_phys_C) == 0x000338, "Wrong size on APortal_phys_C");
 static_assert(offsetof(APortal_phys_C, UberGraphFrame) == 0x000220, "Member 'APortal_phys_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(APortal_phys_C, Wall_yMinus) == 0x000228, "Member 'APortal_phys_C::Wall_yMinus' has a wrong offset!");
 static_assert(offsetof(APortal_phys_C, Wall_yPlus) == 0x000230, "Member 'APortal_phys_C::Wall_yPlus' has a wrong offset!");
@@ -172,6 +183,10 @@ static_assert(offsetof(APortal_phys_C, Mesh_Offset) == 0x0002F8, "Member 'APorta
 static_assert(offsetof(APortal_phys_C, Mesh_Scale) == 0x000304, "Member 'APortal_phys_C::Mesh_Scale' has a wrong offset!");
 static_assert(offsetof(APortal_phys_C, Mesh) == 0x000310, "Member 'APortal_phys_C::Mesh' has a wrong offset!");
 static_assert(offsetof(APortal_phys_C, NewEventDispatcher_0) == 0x000318, "Member 'APortal_phys_C::NewEventDispatcher_0' has a wrong offset!");
+static_assert(offsetof(APortal_phys_C, RenderDistance) == 0x000328, "Member 'APortal_phys_C::RenderDistance' has a wrong offset!");
+static_assert(offsetof(APortal_phys_C, UseBeginPlayEnable) == 0x00032C, "Member 'APortal_phys_C::UseBeginPlayEnable' has a wrong offset!");
+static_assert(offsetof(APortal_phys_C, beginPlayEnable) == 0x00032D, "Member 'APortal_phys_C::beginPlayEnable' has a wrong offset!");
+static_assert(offsetof(APortal_phys_C, MaxViewDistanceOverride) == 0x000330, "Member 'APortal_phys_C::MaxViewDistanceOverride' has a wrong offset!");
 
 }
 

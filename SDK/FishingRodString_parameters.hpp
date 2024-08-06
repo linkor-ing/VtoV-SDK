@@ -10,292 +10,298 @@
 
 #include "Basic.hpp"
 
-#include "Struct_food1_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Struct_prop_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Struct_prop_structs.hpp"
+#include "Struct_food1_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function fishingRodString.fishingRodString_C.ExecuteUbergraph_fishingRodString
-// 0x0580 (0x0580 - 0x0000)
+// 0x0590 (0x0590 - 0x0000)
 struct FishingRodString_C_ExecuteUbergraph_fishingRodString final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21F5[0xC];                                     // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0010(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_C*                                CallFunc_FinishSpawningActor_ReturnValue;          // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_food_C*                           CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_1;                               // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21F6[0x3];                                     // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue_1;        // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_K2_AttachToComponent_ReturnValue_1;       // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21F7[0x2];                                     // 0x0082(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_isUnderwater_ReturnValue;                 // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21F8[0x6];                                     // 0x008A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<float>                                 CallFunc_Map_Values_Values;                        // 0x0090(0x0010)(ReferenceParm)
-	TArray<class FName>                           CallFunc_Map_Keys_Keys;                            // 0x00A0(0x0010)(ReferenceParm)
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue_2;        // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component;          // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21F9[0x7];                                     // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue_3;        // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component_1;        // 0x00D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21FA[0x7];                                     // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable;                              // 0x00E0(0x0010)(ConstParm, ReferenceParm)
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue_4;        // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component_2;        // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_K2_AttachToComponent_ReturnValue_2;       // 0x0101(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21FB[0x2];                                     // 0x0102(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_CustomEvent_DestroyedActor;                 // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_2;                               // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0114(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21FC[0x3];                                     // 0x0115(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class AActor* DestroyedActor)> K2Node_CreateDelegate_OutputDelegate;              // 0x011C(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_21FD[0x4];                                     // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IInt_save1_C>          K2Node_DynamicCast_AsInt_Save_1;                   // 0x0130(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21FE[0x7];                                     // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IInt_save1_C>          K2Node_DynamicCast_AsInt_Save_1_1;                 // 0x0148(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21FF[0x3];                                     // 0x0159(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x015C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<EObjectTypeQuery>                      CallFunc_obj_statDyn_obj;                          // 0x0168(0x0010)(ReferenceParm)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0178(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_1;    // 0x0184(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x0190(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_SphereTraceSingleForObjects_OutHit;       // 0x019C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_SphereTraceSingleForObjects_ReturnValue;  // 0x0224(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0225(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0226(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2200[0x1];                                     // 0x0227(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x022C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0230(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x023C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0248(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0254(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0270(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x0284(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0288(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x028C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0298(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Vector_Distance_ReturnValue;              // 0x02A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetComponentVelocity_ReturnValue;         // 0x02A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x02B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VSize_ReturnValue;                        // 0x02B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x02BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue;                       // 0x02C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetComponentVelocity_ReturnValue_1;       // 0x02C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x02D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VSize_ReturnValue_1;                      // 0x02D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x02D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2201[0x3];                                     // 0x02D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x02DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x02E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue_1;                     // 0x02E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_1;        // 0x02E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1; // 0x02EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue_2;                 // 0x02F0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_1;       // 0x02FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_2;       // 0x02FD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_isUnderwater_ReturnValue_1;               // 0x02FE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x02FF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0300(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_2;    // 0x030C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Vector_Distance_ReturnValue_1;            // 0x0318(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_2;          // 0x031C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue_2;                     // 0x0320(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_3;    // 0x0324(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_2; // 0x0330(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_3;       // 0x0334(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2202[0x3];                                     // 0x0335(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_4;    // 0x0338(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Vector_Distance_ReturnValue_2;            // 0x0344(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0348(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2203[0x3];                                     // 0x0349(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x034C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_weightedRandomV2_exponent_index;          // 0x0350(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2204[0x4];                                     // 0x0354(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_prop                           CallFunc_GetDataTableRowFromName_OutRow;           // 0x0358(0x0080)(HasGetValueTypeHash)
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x03D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2205[0x3];                                     // 0x03D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_Array_Get_Item;                           // 0x03DC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_propToObject_ReturnValue;                 // 0x03E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2206[0x3];                                     // 0x03E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_food1                          CallFunc_propToObject_foodData;                    // 0x03E8(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 CallFunc_propToObject_object;                      // 0x0400(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_propToObject_isFood;                      // 0x0408(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2207[0x7];                                     // 0x0409(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_prop                           CallFunc_propToObject_propData;                    // 0x0410(0x0080)(HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x0490(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0498(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2208[0x7];                                     // 0x0499(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x04A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x04A8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x04B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2209[0x7];                                     // 0x04B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AProp_C*                                CallFunc_asProp_return;                            // 0x04C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x04C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue_1;              // 0x04C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_4;       // 0x04CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x04CB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue_2;              // 0x04CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x04CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_220A[0x2];                                     // 0x04CE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x04D0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Temp_int_Variable_3;                               // 0x0558(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_4;                               // 0x055C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x0560(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_220B[0x7];                                     // 0x0561(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Select_Default;                             // 0x0568(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0570(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0004(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue_1;        // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue_1;       // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3A[0x2];                                       // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_isUnderwater_ReturnValue;                 // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_42[0x6];                                       // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue_2;        // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component;          // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue_3;        // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component_1;        // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0078(0x0010)(ConstParm, ReferenceParm)
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue_4;        // 0x0088(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component_2;        // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue_2;       // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9A[0x2];                                       // 0x009A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_CustomEvent_DestroyedActor;                 // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_2;                               // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_AD[0x3];                                       // 0x00AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class AActor* DestroyedActor)> K2Node_CreateDelegate_OutputDelegate;              // 0x00B4(0x0010)(ZeroConstructor, NoDestructor)
+	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IInt_save1_C>          K2Node_DynamicCast_AsInt_Save_1;                   // 0x00C8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IInt_save1_C>          K2Node_DynamicCast_AsInt_Save_1_1;                 // 0x00E0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F1[0x3];                                       // 0x00F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x00F4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<EObjectTypeQuery>                      CallFunc_obj_statDyn_obj;                          // 0x0100(0x0010)(ReferenceParm)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_1;    // 0x0110(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_2;    // 0x011C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x0128(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_SphereTraceSingleForObjects_OutHit;       // 0x0134(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_SphereTraceSingleForObjects_ReturnValue;  // 0x01BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x01BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x01BE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1BF[0x1];                                      // 0x01BF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x01C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x01D4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x01E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x01EC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0208(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x021C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0224(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0230(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Vector_Distance_ReturnValue;              // 0x023C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetComponentVelocity_ReturnValue;         // 0x0240(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x024C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VSize_ReturnValue;                        // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0254(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetComponentVelocity_ReturnValue_1;       // 0x025C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x0268(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VSize_ReturnValue_1;                      // 0x026C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_271[0x3];                                      // 0x0271(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0274(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue_1;                     // 0x027C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_1;        // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1; // 0x0284(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue_2;                 // 0x0288(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_1;       // 0x0294(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_2;       // 0x0295(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_isUnderwater_ReturnValue_1;               // 0x0296(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0297(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0298(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_3;    // 0x02A4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Vector_Distance_ReturnValue_1;            // 0x02B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_2;          // 0x02B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue_2;                     // 0x02B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_4;    // 0x02BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_2; // 0x02C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_3;       // 0x02CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2CD[0x3];                                      // 0x02CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_5;    // 0x02D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Vector_Distance_ReturnValue_2;            // 0x02DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x02E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2E1[0x3];                                      // 0x02E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x02E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_prop                           CallFunc_GetDataTableRowFromName_OutRow;           // 0x02E8(0x0080)(HasGetValueTypeHash)
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0368(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0369(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue_1;              // 0x036A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_4;       // 0x036B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x036C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue_2;              // 0x036D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x036E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_36F[0x1];                                      // 0x036F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0370(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         Temp_int_Variable_3;                               // 0x03F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_4;                               // 0x03FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x0400(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_401[0x3];                                      // 0x0401(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0404(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_408[0x8];                                      // 0x0408(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0410(0x0030)(IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0440(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<float>                                 CallFunc_Map_Values_Values;                        // 0x0448(0x0010)(ReferenceParm)
+	class AProp_C*                                CallFunc_FinishSpawningActor_ReturnValue;          // 0x0458(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_weightedRandomV2_exponent_index;          // 0x0460(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_464[0x4];                                      // 0x0464(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FName>                           CallFunc_Map_Keys_Keys;                            // 0x0468(0x0010)(ReferenceParm)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0478(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Array_Get_Item;                           // 0x0480(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_food_C*                           CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0488(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_propToObject_ReturnValue;                 // 0x0490(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_491[0x3];                                      // 0x0491(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_food1                          CallFunc_propToObject_foodData;                    // 0x0494(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4AC[0x4];                                      // 0x04AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_propToObject_object;                      // 0x04B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_propToObject_isFood;                      // 0x04B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4B9[0x7];                                      // 0x04B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_prop                           CallFunc_propToObject_propData;                    // 0x04C0(0x0080)(HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x0540(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0548(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_549[0x7];                                      // 0x0549(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x0550(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x0558(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x0568(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_569[0x7];                                      // 0x0569(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Select_Default;                             // 0x0570(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_C*                                CallFunc_asProp_return;                            // 0x0578(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0580(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(FishingRodString_C_ExecuteUbergraph_fishingRodString) == 0x000010, "Wrong alignment on FishingRodString_C_ExecuteUbergraph_fishingRodString");
-static_assert(sizeof(FishingRodString_C_ExecuteUbergraph_fishingRodString) == 0x000580, "Wrong size on FishingRodString_C_ExecuteUbergraph_fishingRodString");
+static_assert(sizeof(FishingRodString_C_ExecuteUbergraph_fishingRodString) == 0x000590, "Wrong size on FishingRodString_C_ExecuteUbergraph_fishingRodString");
 static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, EntryPoint) == 0x000000, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::EntryPoint' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x000010, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000040, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000048, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_FinishSpawningActor_ReturnValue) == 0x000050, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000058, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, Temp_int_Variable) == 0x000060, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, Temp_int_Variable_1) == 0x000064, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000068, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Add_IntInt_ReturnValue) == 0x00006C, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000070, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetRootComponent_ReturnValue_1) == 0x000078, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetRootComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000080, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_AttachToComponent_ReturnValue_1) == 0x000081, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_AttachToComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_Event_DeltaSeconds) == 0x000084, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_isUnderwater_ReturnValue) == 0x000088, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_isUnderwater_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_IsValid_ReturnValue) == 0x000089, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Map_Values_Values) == 0x000090, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Map_Values_Values' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Map_Keys_Keys) == 0x0000A0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Map_Keys_Keys' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetRootComponent_ReturnValue_2) == 0x0000B0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetRootComponent_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_AsPrimitive_Component) == 0x0000B8, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_AsPrimitive_Component' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_bSuccess) == 0x0000C0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetRootComponent_ReturnValue_3) == 0x0000C8, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetRootComponent_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_AsPrimitive_Component_1) == 0x0000D0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_AsPrimitive_Component_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_bSuccess_1) == 0x0000D8, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, Temp_object_Variable) == 0x0000E0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetRootComponent_ReturnValue_4) == 0x0000F0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetRootComponent_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_AsPrimitive_Component_2) == 0x0000F8, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_AsPrimitive_Component_2' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_bSuccess_2) == 0x000100, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_AttachToComponent_ReturnValue_2) == 0x000101, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_AttachToComponent_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_RandomFloatInRange_ReturnValue) == 0x000104, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_CustomEvent_DestroyedActor) == 0x000108, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_CustomEvent_DestroyedActor' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, Temp_int_Variable_2) == 0x000110, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000114, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Add_IntInt_ReturnValue_1) == 0x000118, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_CreateDelegate_OutputDelegate) == 0x00011C, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_AsInt_Save_1) == 0x000130, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_AsInt_Save_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_bSuccess_3) == 0x000140, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_AsInt_Save_1_1) == 0x000148, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_AsInt_Save_1_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_bSuccess_4) == 0x000158, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_MakeVector_ReturnValue) == 0x00015C, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_obj_statDyn_obj) == 0x000168, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_obj_statDyn_obj' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000178, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x000184, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_MakeVector_ReturnValue_1) == 0x000190, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_SphereTraceSingleForObjects_OutHit) == 0x00019C, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_SphereTraceSingleForObjects_OutHit' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_SphereTraceSingleForObjects_ReturnValue) == 0x000224, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_SphereTraceSingleForObjects_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_bBlockingHit) == 0x000225, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_bInitialOverlap) == 0x000226, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_Time) == 0x000228, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_Distance) == 0x00022C, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_Location) == 0x000230, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_ImpactPoint) == 0x00023C, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_Normal) == 0x000248, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_ImpactNormal) == 0x000254, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_PhysMat) == 0x000260, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_HitActor) == 0x000268, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_HitComponent) == 0x000270, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_HitBoneName) == 0x000278, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_HitItem) == 0x000280, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_ElementIndex) == 0x000284, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_FaceIndex) == 0x000288, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_TraceStart) == 0x00028C, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_TraceEnd) == 0x000298, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Vector_Distance_ReturnValue) == 0x0002A4, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Vector_Distance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_GetComponentVelocity_ReturnValue) == 0x0002A8, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_GetComponentVelocity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x0002B4, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_VSize_ReturnValue) == 0x0002B8, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0002BC, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_FClamp_ReturnValue) == 0x0002C0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_GetComponentVelocity_ReturnValue_1) == 0x0002C4, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_GetComponentVelocity_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x0002D0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_VSize_ReturnValue_1) == 0x0002D4, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_VSize_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x0002D8, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Add_FloatFloat_ReturnValue) == 0x0002DC, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x0002E0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_FClamp_ReturnValue_1) == 0x0002E4, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_FClamp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x0002E8, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1) == 0x0002EC, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_MakeVector_ReturnValue_2) == 0x0002F0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_MakeVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_RandomBoolWithWeight_ReturnValue_1) == 0x0002FC, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_RandomBoolWithWeight_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_RandomBoolWithWeight_ReturnValue_2) == 0x0002FD, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_RandomBoolWithWeight_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_isUnderwater_ReturnValue_1) == 0x0002FE, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_isUnderwater_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BooleanAND_ReturnValue) == 0x0002FF, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000300, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetComponentLocation_ReturnValue_2) == 0x00030C, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetComponentLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Vector_Distance_ReturnValue_1) == 0x000318, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Vector_Distance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Divide_FloatFloat_ReturnValue_2) == 0x00031C, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_FClamp_ReturnValue_2) == 0x000320, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_FClamp_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetComponentLocation_ReturnValue_3) == 0x000324, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetComponentLocation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_2) == 0x000330, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_RandomBoolWithWeight_ReturnValue_3) == 0x000334, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_RandomBoolWithWeight_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetComponentLocation_ReturnValue_4) == 0x000338, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetComponentLocation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Vector_Distance_ReturnValue_2) == 0x000344, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Vector_Distance_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000348, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_SelectFloat_ReturnValue) == 0x00034C, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_weightedRandomV2_exponent_index) == 0x000350, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_weightedRandomV2_exponent_index' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_GetDataTableRowFromName_OutRow) == 0x000358, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0003D8, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Array_Get_Item) == 0x0003DC, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_propToObject_ReturnValue) == 0x0003E4, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_propToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_propToObject_foodData) == 0x0003E8, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_propToObject_foodData' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_propToObject_object) == 0x000400, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_propToObject_object' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_propToObject_isFood) == 0x000408, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_propToObject_isFood' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_propToObject_propData) == 0x000410, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_propToObject_propData' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x000490, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_IsValidClass_ReturnValue) == 0x000498, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x0004A0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_AsInt_Player) == 0x0004A8, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_AsInt_Player' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_bSuccess_5) == 0x0004B8, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_asProp_return) == 0x0004C0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_asProp_return' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_SetStaticMesh_ReturnValue) == 0x0004C8, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_SetStaticMesh_ReturnValue_1) == 0x0004C9, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_SetStaticMesh_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_RandomBoolWithWeight_ReturnValue_4) == 0x0004CA, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_RandomBoolWithWeight_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_NotEqual_NameName_ReturnValue) == 0x0004CB, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_NotEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_SetStaticMesh_ReturnValue_2) == 0x0004CC, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_SetStaticMesh_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_IsValid_ReturnValue_1) == 0x0004CD, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x0004D0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, Temp_int_Variable_3) == 0x000558, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, Temp_int_Variable_4) == 0x00055C, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x000560, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_Select_Default) == 0x000568, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Add_IntInt_ReturnValue_2) == 0x000570, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000004, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000010, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, Temp_int_Variable) == 0x000018, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, Temp_int_Variable_1) == 0x00001C, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::Temp_int_Variable_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000020, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000028, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetRootComponent_ReturnValue_1) == 0x000030, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetRootComponent_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000038, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_AttachToComponent_ReturnValue_1) == 0x000039, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_AttachToComponent_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_Event_DeltaSeconds) == 0x00003C, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_isUnderwater_ReturnValue) == 0x000040, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_isUnderwater_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_IsValid_ReturnValue) == 0x000041, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetRootComponent_ReturnValue_2) == 0x000048, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetRootComponent_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_AsPrimitive_Component) == 0x000050, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_AsPrimitive_Component' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetRootComponent_ReturnValue_3) == 0x000060, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetRootComponent_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_AsPrimitive_Component_1) == 0x000068, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_AsPrimitive_Component_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_bSuccess_1) == 0x000070, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, Temp_object_Variable) == 0x000078, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetRootComponent_ReturnValue_4) == 0x000088, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetRootComponent_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_AsPrimitive_Component_2) == 0x000090, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_AsPrimitive_Component_2' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_bSuccess_2) == 0x000098, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_AttachToComponent_ReturnValue_2) == 0x000099, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_AttachToComponent_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_RandomFloatInRange_ReturnValue) == 0x00009C, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_CustomEvent_DestroyedActor) == 0x0000A0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_CustomEvent_DestroyedActor' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, Temp_int_Variable_2) == 0x0000A8, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::Temp_int_Variable_2' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x0000AC, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000B0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_CreateDelegate_OutputDelegate) == 0x0000B4, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_AsInt_Save_1) == 0x0000C8, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_AsInt_Save_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_bSuccess_3) == 0x0000D8, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_AsInt_Save_1_1) == 0x0000E0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_AsInt_Save_1_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_bSuccess_4) == 0x0000F0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_MakeVector_ReturnValue) == 0x0000F4, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_obj_statDyn_obj) == 0x000100, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_obj_statDyn_obj' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x000110, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetComponentLocation_ReturnValue_2) == 0x00011C, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetComponentLocation_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_MakeVector_ReturnValue_1) == 0x000128, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_SphereTraceSingleForObjects_OutHit) == 0x000134, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_SphereTraceSingleForObjects_OutHit' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_SphereTraceSingleForObjects_ReturnValue) == 0x0001BC, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_SphereTraceSingleForObjects_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_bBlockingHit) == 0x0001BD, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_bInitialOverlap) == 0x0001BE, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_Time) == 0x0001C0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_Distance) == 0x0001C4, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_Location) == 0x0001C8, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_ImpactPoint) == 0x0001D4, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_Normal) == 0x0001E0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_ImpactNormal) == 0x0001EC, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_PhysMat) == 0x0001F8, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_HitActor) == 0x000200, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_HitComponent) == 0x000208, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_HitBoneName) == 0x000210, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_HitItem) == 0x000218, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_ElementIndex) == 0x00021C, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_FaceIndex) == 0x000220, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_TraceStart) == 0x000224, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BreakHitResult_TraceEnd) == 0x000230, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Vector_Distance_ReturnValue) == 0x00023C, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Vector_Distance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_GetComponentVelocity_ReturnValue) == 0x000240, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_GetComponentVelocity_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x00024C, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_VSize_ReturnValue) == 0x000250, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_VSize_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000254, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_FClamp_ReturnValue) == 0x000258, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_FClamp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_GetComponentVelocity_ReturnValue_1) == 0x00025C, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_GetComponentVelocity_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x000268, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_VSize_ReturnValue_1) == 0x00026C, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_VSize_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x000270, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Add_FloatFloat_ReturnValue) == 0x000274, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x000278, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_FClamp_ReturnValue_1) == 0x00027C, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_FClamp_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x000280, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1) == 0x000284, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_MakeVector_ReturnValue_2) == 0x000288, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_MakeVector_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_RandomBoolWithWeight_ReturnValue_1) == 0x000294, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_RandomBoolWithWeight_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_RandomBoolWithWeight_ReturnValue_2) == 0x000295, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_RandomBoolWithWeight_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_isUnderwater_ReturnValue_1) == 0x000296, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_isUnderwater_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BooleanAND_ReturnValue) == 0x000297, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000298, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetComponentLocation_ReturnValue_3) == 0x0002A4, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetComponentLocation_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Vector_Distance_ReturnValue_1) == 0x0002B0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Vector_Distance_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Divide_FloatFloat_ReturnValue_2) == 0x0002B4, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_FClamp_ReturnValue_2) == 0x0002B8, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_FClamp_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetComponentLocation_ReturnValue_4) == 0x0002BC, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetComponentLocation_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_2) == 0x0002C8, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_RandomBoolWithWeight_ReturnValue_3) == 0x0002CC, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_RandomBoolWithWeight_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetComponentLocation_ReturnValue_5) == 0x0002D0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetComponentLocation_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Vector_Distance_ReturnValue_2) == 0x0002DC, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Vector_Distance_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x0002E0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_SelectFloat_ReturnValue) == 0x0002E4, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_GetDataTableRowFromName_OutRow) == 0x0002E8, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000368, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_SetStaticMesh_ReturnValue) == 0x000369, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_SetStaticMesh_ReturnValue_1) == 0x00036A, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_SetStaticMesh_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_RandomBoolWithWeight_ReturnValue_4) == 0x00036B, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_RandomBoolWithWeight_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_NotEqual_NameName_ReturnValue) == 0x00036C, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_NotEqual_NameName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_SetStaticMesh_ReturnValue_2) == 0x00036D, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_SetStaticMesh_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_IsValid_ReturnValue_1) == 0x00036E, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x000370, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, Temp_int_Variable_3) == 0x0003F8, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::Temp_int_Variable_3' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, Temp_int_Variable_4) == 0x0003FC, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::Temp_int_Variable_4' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x000400, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Add_IntInt_ReturnValue_2) == 0x000404, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x000410, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000440, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Map_Values_Values) == 0x000448, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Map_Values_Values' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_FinishSpawningActor_ReturnValue) == 0x000458, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_weightedRandomV2_exponent_index) == 0x000460, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_weightedRandomV2_exponent_index' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Map_Keys_Keys) == 0x000468, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Map_Keys_Keys' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000478, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Array_Get_Item) == 0x000480, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000488, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_propToObject_ReturnValue) == 0x000490, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_propToObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_propToObject_foodData) == 0x000494, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_propToObject_foodData' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_propToObject_object) == 0x0004B0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_propToObject_object' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_propToObject_isFood) == 0x0004B8, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_propToObject_isFood' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_propToObject_propData) == 0x0004C0, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_propToObject_propData' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x000540, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_IsValidClass_ReturnValue) == 0x000548, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x000550, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_AsInt_Player) == 0x000558, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_AsInt_Player' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_DynamicCast_bSuccess_5) == 0x000568, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, K2Node_Select_Default) == 0x000570, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_asProp_return) == 0x000578, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_asProp_return' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ExecuteUbergraph_fishingRodString, CallFunc_Conv_NameToString_ReturnValue) == 0x000580, "Member 'FishingRodString_C_ExecuteUbergraph_fishingRodString::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
 
 // Function fishingRodString.fishingRodString_C.Dest
 // 0x0008 (0x0008 - 0x0000)
@@ -338,13 +344,13 @@ struct FishingRodString_C_SetHookLoc final
 {
 public:
 	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_220C[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0008(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_220D[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStaticMeshComponent*                   K2Node_DynamicCast_AsStatic_Mesh_Component;        // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_220E[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FBoxSphereBounds                       CallFunc_GetBounds_ReturnValue;                    // 0x0024(0x001C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_Subtract_VectorFloat_ReturnValue;         // 0x0040(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X;                            // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -354,14 +360,14 @@ public:
 	float                                         CallFunc_BreakVector_Y_1;                          // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z_1;                          // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_220F[0x3];                                     // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x0068(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue_2;                 // 0x0074(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue_3;                 // 0x0080(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_SelectVector_ReturnValue;                 // 0x008C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_2;         // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2210[0x2];                                     // 0x009A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9A[0x2];                                       // 0x009A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_SelectVector_ReturnValue_1;               // 0x009C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_SelectVector_ReturnValue_2;               // 0x00A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x00B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -395,14 +401,14 @@ static_assert(offsetof(FishingRodString_C_SetHookLoc, CallFunc_Multiply_VectorFl
 static_assert(offsetof(FishingRodString_C_SetHookLoc, CallFunc_Add_VectorVector_ReturnValue) == 0x0000C0, "Member 'FishingRodString_C_SetHookLoc::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
 
 // Function fishingRodString.fishingRodString_C.debugRandom
-// 0x01E0 (0x01E0 - 0x0000)
+// 0x01E8 (0x01E8 - 0x0000)
 struct FishingRodString_C_DebugRandom final
 {
 public:
 	int32                                         LastIndex;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Exponent;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         I;                                                 // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2211[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           Ks;                                                // 0x0010(0x0010)(Edit, BlueprintVisible)
 	TArray<float>                                 Vs;                                                // 0x0020(0x0010)(Edit, BlueprintVisible)
 	TArray<int32>                                 Ns;                                                // 0x0030(0x0010)(Edit, BlueprintVisible)
@@ -419,45 +425,46 @@ public:
 	int32                                         Temp_int_Variable_1;                               // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_2;                               // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2212[0x3];                                     // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B9[0x3];                                       // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Temp_struct_Variable_5;                            // 0x00C0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable_6;                            // 0x00D0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_3;                               // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable_7;                            // 0x00E4(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x00F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2213[0x3];                                     // 0x00F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Get_Item;                           // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2214[0x4];                                     // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Array_Get_Item_1;                         // 0x0100(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2215[0x4];                                     // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0118(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2216[0x4];                                     // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0130(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2217[0x4];                                     // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0148(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Clamp_ReturnValue;                        // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x015C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2218[0x3];                                     // 0x0161(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable_8;                            // 0x0164(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_weightedRandomV2_exponent_index;          // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Array_Get_Item_2;                         // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0180(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable_9;                            // 0x01A0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x01B0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<float>                                 CallFunc_Map_Values_Values;                        // 0x01C0(0x0010)(ReferenceParm)
-	TArray<class FName>                           CallFunc_Map_Keys_Keys;                            // 0x01D0(0x0010)(ReferenceParm)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable_6;                            // 0x00D8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<float>                                 CallFunc_Map_Values_Values;                        // 0x00E8(0x0010)(ReferenceParm)
+	TArray<class FName>                           CallFunc_Map_Keys_Keys;                            // 0x00F8(0x0010)(ReferenceParm)
+	int32                                         Temp_int_Variable_3;                               // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable_7;                            // 0x010C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x011C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11D[0x3];                                      // 0x011D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Get_Item;                           // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_124[0x4];                                      // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Array_Get_Item_1;                         // 0x0128(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_13C[0x4];                                      // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0140(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_154[0x4];                                      // 0x0154(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0158(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_16C[0x4];                                      // 0x016C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0170(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Clamp_ReturnValue;                        // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0184(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_189[0x3];                                      // 0x0189(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           Temp_struct_Variable_8;                            // 0x018C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_weightedRandomV2_exponent_index;          // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Array_Get_Item_2;                         // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x01A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable_9;                            // 0x01C8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x01D8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(FishingRodString_C_DebugRandom) == 0x000008, "Wrong alignment on FishingRodString_C_DebugRandom");
-static_assert(sizeof(FishingRodString_C_DebugRandom) == 0x0001E0, "Wrong size on FishingRodString_C_DebugRandom");
+static_assert(sizeof(FishingRodString_C_DebugRandom) == 0x0001E8, "Wrong size on FishingRodString_C_DebugRandom");
 static_assert(offsetof(FishingRodString_C_DebugRandom, LastIndex) == 0x000000, "Member 'FishingRodString_C_DebugRandom::LastIndex' has a wrong offset!");
 static_assert(offsetof(FishingRodString_C_DebugRandom, Exponent) == 0x000004, "Member 'FishingRodString_C_DebugRandom::Exponent' has a wrong offset!");
 static_assert(offsetof(FishingRodString_C_DebugRandom, I) == 0x000008, "Member 'FishingRodString_C_DebugRandom::I' has a wrong offset!");
@@ -479,33 +486,78 @@ static_assert(offsetof(FishingRodString_C_DebugRandom, Temp_int_Variable_2) == 0
 static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0000B8, "Member 'FishingRodString_C_DebugRandom::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000BC, "Member 'FishingRodString_C_DebugRandom::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(FishingRodString_C_DebugRandom, Temp_struct_Variable_5) == 0x0000C0, "Member 'FishingRodString_C_DebugRandom::Temp_struct_Variable_5' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, Temp_struct_Variable_6) == 0x0000D0, "Member 'FishingRodString_C_DebugRandom::Temp_struct_Variable_6' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, Temp_int_Variable_3) == 0x0000E0, "Member 'FishingRodString_C_DebugRandom::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, Temp_struct_Variable_7) == 0x0000E4, "Member 'FishingRodString_C_DebugRandom::Temp_struct_Variable_7' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0000F4, "Member 'FishingRodString_C_DebugRandom::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Array_Get_Item) == 0x0000F8, "Member 'FishingRodString_C_DebugRandom::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Array_Get_Item_1) == 0x000100, "Member 'FishingRodString_C_DebugRandom::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000110, "Member 'FishingRodString_C_DebugRandom::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Concat_StrStr_ReturnValue) == 0x000118, "Member 'FishingRodString_C_DebugRandom::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000128, "Member 'FishingRodString_C_DebugRandom::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Conv_IntToString_ReturnValue) == 0x000130, "Member 'FishingRodString_C_DebugRandom::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_FTrunc_ReturnValue) == 0x000140, "Member 'FishingRodString_C_DebugRandom::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000148, "Member 'FishingRodString_C_DebugRandom::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Clamp_ReturnValue) == 0x000158, "Member 'FishingRodString_C_DebugRandom::CallFunc_Clamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Array_Length_ReturnValue) == 0x00015C, "Member 'FishingRodString_C_DebugRandom::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Less_IntInt_ReturnValue) == 0x000160, "Member 'FishingRodString_C_DebugRandom::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, Temp_struct_Variable_8) == 0x000164, "Member 'FishingRodString_C_DebugRandom::Temp_struct_Variable_8' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_weightedRandomV2_exponent_index) == 0x000174, "Member 'FishingRodString_C_DebugRandom::CallFunc_weightedRandomV2_exponent_index' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Array_Get_Item_2) == 0x000178, "Member 'FishingRodString_C_DebugRandom::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Conv_NameToString_ReturnValue) == 0x000180, "Member 'FishingRodString_C_DebugRandom::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Array_Add_ReturnValue) == 0x000190, "Member 'FishingRodString_C_DebugRandom::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Array_Add_ReturnValue_1) == 0x000194, "Member 'FishingRodString_C_DebugRandom::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Array_Find_ReturnValue) == 0x000198, "Member 'FishingRodString_C_DebugRandom::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Add_IntInt_ReturnValue_2) == 0x00019C, "Member 'FishingRodString_C_DebugRandom::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, Temp_struct_Variable_9) == 0x0001A0, "Member 'FishingRodString_C_DebugRandom::Temp_struct_Variable_9' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, K2Node_Select_Default) == 0x0001B0, "Member 'FishingRodString_C_DebugRandom::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Map_Values_Values) == 0x0001C0, "Member 'FishingRodString_C_DebugRandom::CallFunc_Map_Values_Values' has a wrong offset!");
-static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Map_Keys_Keys) == 0x0001D0, "Member 'FishingRodString_C_DebugRandom::CallFunc_Map_Keys_Keys' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x0000D0, "Member 'FishingRodString_C_DebugRandom::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, Temp_struct_Variable_6) == 0x0000D8, "Member 'FishingRodString_C_DebugRandom::Temp_struct_Variable_6' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Map_Values_Values) == 0x0000E8, "Member 'FishingRodString_C_DebugRandom::CallFunc_Map_Values_Values' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Map_Keys_Keys) == 0x0000F8, "Member 'FishingRodString_C_DebugRandom::CallFunc_Map_Keys_Keys' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, Temp_int_Variable_3) == 0x000108, "Member 'FishingRodString_C_DebugRandom::Temp_int_Variable_3' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, Temp_struct_Variable_7) == 0x00010C, "Member 'FishingRodString_C_DebugRandom::Temp_struct_Variable_7' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00011C, "Member 'FishingRodString_C_DebugRandom::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Array_Get_Item) == 0x000120, "Member 'FishingRodString_C_DebugRandom::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Array_Get_Item_1) == 0x000128, "Member 'FishingRodString_C_DebugRandom::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000138, "Member 'FishingRodString_C_DebugRandom::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Concat_StrStr_ReturnValue) == 0x000140, "Member 'FishingRodString_C_DebugRandom::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000150, "Member 'FishingRodString_C_DebugRandom::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Conv_IntToString_ReturnValue) == 0x000158, "Member 'FishingRodString_C_DebugRandom::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_FTrunc_ReturnValue) == 0x000168, "Member 'FishingRodString_C_DebugRandom::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000170, "Member 'FishingRodString_C_DebugRandom::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Clamp_ReturnValue) == 0x000180, "Member 'FishingRodString_C_DebugRandom::CallFunc_Clamp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Array_Length_ReturnValue) == 0x000184, "Member 'FishingRodString_C_DebugRandom::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Less_IntInt_ReturnValue) == 0x000188, "Member 'FishingRodString_C_DebugRandom::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, Temp_struct_Variable_8) == 0x00018C, "Member 'FishingRodString_C_DebugRandom::Temp_struct_Variable_8' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_weightedRandomV2_exponent_index) == 0x00019C, "Member 'FishingRodString_C_DebugRandom::CallFunc_weightedRandomV2_exponent_index' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Array_Get_Item_2) == 0x0001A0, "Member 'FishingRodString_C_DebugRandom::CallFunc_Array_Get_Item_2' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Conv_NameToString_ReturnValue) == 0x0001A8, "Member 'FishingRodString_C_DebugRandom::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Array_Add_ReturnValue) == 0x0001B8, "Member 'FishingRodString_C_DebugRandom::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Array_Add_ReturnValue_1) == 0x0001BC, "Member 'FishingRodString_C_DebugRandom::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Array_Find_ReturnValue) == 0x0001C0, "Member 'FishingRodString_C_DebugRandom::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, CallFunc_Add_IntInt_ReturnValue_2) == 0x0001C4, "Member 'FishingRodString_C_DebugRandom::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, Temp_struct_Variable_9) == 0x0001C8, "Member 'FishingRodString_C_DebugRandom::Temp_struct_Variable_9' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_DebugRandom, K2Node_Select_Default) == 0x0001D8, "Member 'FishingRodString_C_DebugRandom::K2Node_Select_Default' has a wrong offset!");
+
+// Function fishingRodString.fishingRodString_C.processDrops
+// 0x00D0 (0x00D0 - 0x0000)
+struct FishingRodString_C_ProcessDrops final
+{
+public:
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0010(0x0010)(ConstParm, ReferenceParm)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0020(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<EObjectTypeQuery>                      CallFunc_obj_trigger_obj;                          // 0x0038(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_SphereOverlapActors_OutActors;            // 0x0048(0x0010)(ReferenceParm)
+	bool                                          CallFunc_SphereOverlapActors_ReturnValue;          // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFishingDropSpot_C*                     K2Node_DynamicCast_AsFishing_Drop_Spot;            // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FName, float>                      CallFunc_appendDrop_NewParam;                      // 0x0080(0x0050)()
+};
+static_assert(alignof(FishingRodString_C_ProcessDrops) == 0x000008, "Wrong alignment on FishingRodString_C_ProcessDrops");
+static_assert(sizeof(FishingRodString_C_ProcessDrops) == 0x0000D0, "Wrong size on FishingRodString_C_ProcessDrops");
+static_assert(offsetof(FishingRodString_C_ProcessDrops, Temp_int_Array_Index_Variable) == 0x000000, "Member 'FishingRodString_C_ProcessDrops::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ProcessDrops, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'FishingRodString_C_ProcessDrops::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ProcessDrops, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'FishingRodString_C_ProcessDrops::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ProcessDrops, Temp_object_Variable) == 0x000010, "Member 'FishingRodString_C_ProcessDrops::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ProcessDrops, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000020, "Member 'FishingRodString_C_ProcessDrops::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ProcessDrops, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000030, "Member 'FishingRodString_C_ProcessDrops::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ProcessDrops, CallFunc_obj_trigger_obj) == 0x000038, "Member 'FishingRodString_C_ProcessDrops::CallFunc_obj_trigger_obj' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ProcessDrops, CallFunc_SphereOverlapActors_OutActors) == 0x000048, "Member 'FishingRodString_C_ProcessDrops::CallFunc_SphereOverlapActors_OutActors' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ProcessDrops, CallFunc_SphereOverlapActors_ReturnValue) == 0x000058, "Member 'FishingRodString_C_ProcessDrops::CallFunc_SphereOverlapActors_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ProcessDrops, CallFunc_Array_Length_ReturnValue) == 0x00005C, "Member 'FishingRodString_C_ProcessDrops::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ProcessDrops, CallFunc_Less_IntInt_ReturnValue) == 0x000060, "Member 'FishingRodString_C_ProcessDrops::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ProcessDrops, CallFunc_Array_Get_Item) == 0x000068, "Member 'FishingRodString_C_ProcessDrops::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ProcessDrops, K2Node_DynamicCast_AsFishing_Drop_Spot) == 0x000070, "Member 'FishingRodString_C_ProcessDrops::K2Node_DynamicCast_AsFishing_Drop_Spot' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ProcessDrops, K2Node_DynamicCast_bSuccess) == 0x000078, "Member 'FishingRodString_C_ProcessDrops::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(FishingRodString_C_ProcessDrops, CallFunc_appendDrop_NewParam) == 0x000080, "Member 'FishingRodString_C_ProcessDrops::CallFunc_appendDrop_NewParam' has a wrong offset!");
 
 }
 

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Struct_food1_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Struct_prop_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Struct_food1_structs.hpp"
+#include "Struct_prop_structs.hpp"
 
 
 namespace SDK::Params
@@ -27,13 +27,13 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D27[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent;    // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D28[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0028(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 static_assert(alignof(HillRollerSpawner_C_ExecuteUbergraph_hillRollerSpawner) == 0x000008, "Wrong alignment on HillRollerSpawner_C_ExecuteUbergraph_hillRollerSpawner");
@@ -58,7 +58,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D29[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 static_assert(alignof(HillRollerSpawner_C_BndEvt__hillRollerSpawner_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on HillRollerSpawner_C_BndEvt__hillRollerSpawner_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
@@ -71,7 +71,7 @@ static_assert(offsetof(HillRollerSpawner_C_BndEvt__hillRollerSpawner_Box_K2Node_
 static_assert(offsetof(HillRollerSpawner_C_BndEvt__hillRollerSpawner_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'HillRollerSpawner_C_BndEvt__hillRollerSpawner_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
 
 // Function hillRollerSpawner.hillRollerSpawner_C.Spawn
-// 0x0460 (0x0460 - 0x0000)
+// 0x0480 (0x0480 - 0x0000)
 struct HillRollerSpawner_C_Spawn final
 {
 public:
@@ -85,30 +85,30 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D2A[0x3];                                     // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_1;                               // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D2B[0x3];                                     // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_2;                               // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable;                                // 0x0070(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x0078(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D2C[0x4];                                     // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EObjectTypeQuery>                      CallFunc_obj_phys_obj;                             // 0x0088(0x0010)(ReferenceParm)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0098(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D2D[0x4];                                     // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   Temp_name_Variable;                                // 0x0064(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_3;                               // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x007C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0088(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EObjectTypeQuery>                      CallFunc_obj_phys_obj;                             // 0x0098(0x0010)(ReferenceParm)
 	class UArrowComponent*                        CallFunc_Array_Get_Item;                           // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   CallFunc_Array_Get_Item_1;                         // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetForwardVector_ReturnValue_1;           // 0x00B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D2E[0xC];                                     // 0x00C4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C4[0xC];                                       // 0x00C4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x00D0(0x0030)(IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x0100(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D2F[0x4];                                     // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AProp_C*                                CallFunc_FinishSpawningActor_ReturnValue;          // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -120,14 +120,14 @@ public:
 	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue;    // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x01D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x01DA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D30[0x1];                                     // 0x01DB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DB[0x1];                                      // 0x01DB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x01E4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x01F0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x01FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0208(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D31[0x4];                                     // 0x0214(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_214[0x4];                                      // 0x0214(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0228(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -138,65 +138,67 @@ public:
 	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0244(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0250(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_propToObject_ReturnValue;                 // 0x025C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D32[0x3];                                     // 0x025D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25D[0x3];                                      // 0x025D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_food1                          CallFunc_propToObject_foodData;                    // 0x0260(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 CallFunc_propToObject_object;                      // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_propToObject_isFood;                      // 0x0280(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D33[0x7];                                     // 0x0281(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_281[0x7];                                      // 0x0281(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_prop                           CallFunc_propToObject_propData;                    // 0x0288(0x0080)(HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_2;       // 0x0308(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x0314(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x0320(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0328(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D34[0x7];                                     // 0x0329(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_329[0x7];                                      // 0x0329(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x0338(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0348(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D35[0x7];                                     // 0x0349(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AProp_C*                                CallFunc_asProp_return;                            // 0x0350(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_3;       // 0x0358(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0364(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0370(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3; // 0x03A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x03A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D36[0x7];                                     // 0x03A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ANail_ax_C*                             CallFunc_FinishSpawningActor_ReturnValue_3;        // 0x03B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x03B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_nailNail_fail;                            // 0x03BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x03BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D37[0x2];                                     // 0x03BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x03C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x03C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D38[0x3];                                     // 0x03C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable_3;                               // 0x03C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_4;                               // 0x03CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_Select_Default;                             // 0x03D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player_1;                 // 0x03D8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x03E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x03E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D39[0x6];                                     // 0x03EA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class AProp_C*                                CallFunc_asProp_return_1;                          // 0x03F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects;                  // 0x03F8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0408(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D3A[0x3];                                     // 0x0409(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_5;                 // 0x040C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class USceneComponent*>                CallFunc_GetChildrenComponents_Children;           // 0x0410(0x0010)(ReferenceParm, ContainsInstancedReference)
-	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0420(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D3B[0x4];                                     // 0x0424(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USceneComponent*                        CallFunc_Array_Get_Item_3;                         // 0x0428(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0430(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D3C[0x7];                                     // 0x0431(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UArrowComponent*                        K2Node_DynamicCast_AsArrow_Component;              // 0x0438(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0440(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D3D[0x3];                                     // 0x0441(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0444(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   K2Node_DynamicCast_AsStatic_Mesh_Component;        // 0x0448(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x0450(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D3E[0x3];                                     // 0x0451(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0454(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_349[0x7];                                      // 0x0349(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Select_Default;                             // 0x0350(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_C*                                CallFunc_asProp_return;                            // 0x0358(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player_1;                 // 0x0360(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0370(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_371[0x7];                                      // 0x0371(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AProp_C*                                CallFunc_asProp_return_1;                          // 0x0378(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects;                  // 0x0380(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0390(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_391[0x7];                                      // 0x0391(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0398(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_3;       // 0x03A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x03B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3B5[0x3];                                      // 0x03B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x03B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C4[0xC];                                      // 0x03C4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x03D0(0x0030)(IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0400(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_404[0x4];                                      // 0x0404(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3; // 0x0408(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0410(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_411[0x7];                                      // 0x0411(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ANail_ax_C*                             CallFunc_FinishSpawningActor_ReturnValue_3;        // 0x0418(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_nailNail_fail;                            // 0x0420(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_421[0x3];                                      // 0x0421(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0424(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0428(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_429[0x3];                                      // 0x0429(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable_4;                               // 0x042C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class USceneComponent*>                CallFunc_GetChildrenComponents_Children;           // 0x0430(0x0010)(ReferenceParm, ContainsInstancedReference)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x0440(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_441[0x7];                                      // 0x0441(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USceneComponent*                        CallFunc_Array_Get_Item_3;                         // 0x0448(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        K2Node_DynamicCast_AsArrow_Component;              // 0x0450(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0458(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_459[0x7];                                      // 0x0459(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UStaticMeshComponent*                   K2Node_DynamicCast_AsStatic_Mesh_Component;        // 0x0460(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x0468(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_469[0x3];                                      // 0x0469(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x046C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0470(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0474(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_5;                 // 0x0478(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x047C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(HillRollerSpawner_C_Spawn) == 0x000010, "Wrong alignment on HillRollerSpawner_C_Spawn");
-static_assert(sizeof(HillRollerSpawner_C_Spawn) == 0x000460, "Wrong size on HillRollerSpawner_C_Spawn");
+static_assert(sizeof(HillRollerSpawner_C_Spawn) == 0x000480, "Wrong size on HillRollerSpawner_C_Spawn");
 static_assert(offsetof(HillRollerSpawner_C_Spawn, Nails) == 0x000000, "Member 'HillRollerSpawner_C_Spawn::Nails' has a wrong offset!");
 static_assert(offsetof(HillRollerSpawner_C_Spawn, Props) == 0x000010, "Member 'HillRollerSpawner_C_Spawn::Props' has a wrong offset!");
 static_assert(offsetof(HillRollerSpawner_C_Spawn, Temp_object_Variable) == 0x000020, "Member 'HillRollerSpawner_C_Spawn::Temp_object_Variable' has a wrong offset!");
@@ -213,13 +215,14 @@ static_assert(offsetof(HillRollerSpawner_C_Spawn, Temp_int_Variable_1) == 0x0000
 static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000058, "Member 'HillRollerSpawner_C_Spawn::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Add_IntInt_ReturnValue_3) == 0x00005C, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
 static_assert(offsetof(HillRollerSpawner_C_Spawn, Temp_int_Variable_2) == 0x000060, "Member 'HillRollerSpawner_C_Spawn::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, Temp_int_Loop_Counter_Variable_2) == 0x000064, "Member 'HillRollerSpawner_C_Spawn::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Add_IntInt_ReturnValue_4) == 0x000068, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, Temp_int_Array_Index_Variable_2) == 0x00006C, "Member 'HillRollerSpawner_C_Spawn::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, Temp_name_Variable) == 0x000070, "Member 'HillRollerSpawner_C_Spawn::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_GetForwardVector_ReturnValue) == 0x000078, "Member 'HillRollerSpawner_C_Spawn::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_obj_phys_obj) == 0x000088, "Member 'HillRollerSpawner_C_Spawn::CallFunc_obj_phys_obj' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000098, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, Temp_name_Variable) == 0x000064, "Member 'HillRollerSpawner_C_Spawn::Temp_name_Variable' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, Temp_int_Loop_Counter_Variable_2) == 0x00006C, "Member 'HillRollerSpawner_C_Spawn::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Add_IntInt_ReturnValue_4) == 0x000070, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, Temp_int_Array_Index_Variable_2) == 0x000074, "Member 'HillRollerSpawner_C_Spawn::Temp_int_Array_Index_Variable_2' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, Temp_int_Variable_3) == 0x000078, "Member 'HillRollerSpawner_C_Spawn::Temp_int_Variable_3' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_GetForwardVector_ReturnValue) == 0x00007C, "Member 'HillRollerSpawner_C_Spawn::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000088, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_obj_phys_obj) == 0x000098, "Member 'HillRollerSpawner_C_Spawn::CallFunc_obj_phys_obj' has a wrong offset!");
 static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Array_Get_Item) == 0x0000A8, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Array_Get_Item_1) == 0x0000B0, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Array_Get_Item_1' has a wrong offset!");
 static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_GetForwardVector_ReturnValue_1) == 0x0000B8, "Member 'HillRollerSpawner_C_Spawn::CallFunc_GetForwardVector_ReturnValue_1' has a wrong offset!");
@@ -263,38 +266,38 @@ static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_IsValidClass_ReturnVa
 static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x000330, "Member 'HillRollerSpawner_C_Spawn::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(HillRollerSpawner_C_Spawn, K2Node_DynamicCast_AsInt_Player) == 0x000338, "Member 'HillRollerSpawner_C_Spawn::K2Node_DynamicCast_AsInt_Player' has a wrong offset!");
 static_assert(offsetof(HillRollerSpawner_C_Spawn, K2Node_DynamicCast_bSuccess) == 0x000348, "Member 'HillRollerSpawner_C_Spawn::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_asProp_return) == 0x000350, "Member 'HillRollerSpawner_C_Spawn::CallFunc_asProp_return' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Multiply_VectorFloat_ReturnValue_3) == 0x000358, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Multiply_VectorFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000364, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_MakeTransform_ReturnValue) == 0x000370, "Member 'HillRollerSpawner_C_Spawn::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3) == 0x0003A0, "Member 'HillRollerSpawner_C_Spawn::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Array_Contains_ReturnValue) == 0x0003A8, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_FinishSpawningActor_ReturnValue_3) == 0x0003B0, "Member 'HillRollerSpawner_C_Spawn::CallFunc_FinishSpawningActor_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Array_Length_ReturnValue) == 0x0003B8, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_nailNail_fail) == 0x0003BC, "Member 'HillRollerSpawner_C_Spawn::CallFunc_nailNail_fail' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Less_IntInt_ReturnValue) == 0x0003BD, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Array_Length_ReturnValue_1) == 0x0003C0, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Less_IntInt_ReturnValue_1) == 0x0003C4, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, Temp_int_Variable_3) == 0x0003C8, "Member 'HillRollerSpawner_C_Spawn::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, Temp_int_Variable_4) == 0x0003CC, "Member 'HillRollerSpawner_C_Spawn::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, K2Node_Select_Default) == 0x0003D0, "Member 'HillRollerSpawner_C_Spawn::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, K2Node_DynamicCast_AsInt_Player_1) == 0x0003D8, "Member 'HillRollerSpawner_C_Spawn::K2Node_DynamicCast_AsInt_Player_1' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, K2Node_DynamicCast_bSuccess_1) == 0x0003E8, "Member 'HillRollerSpawner_C_Spawn::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x0003E9, "Member 'HillRollerSpawner_C_Spawn::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_asProp_return_1) == 0x0003F0, "Member 'HillRollerSpawner_C_Spawn::CallFunc_asProp_return_1' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, K2Node_DynamicCast_AsInt_Objects) == 0x0003F8, "Member 'HillRollerSpawner_C_Spawn::K2Node_DynamicCast_AsInt_Objects' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, K2Node_DynamicCast_bSuccess_2) == 0x000408, "Member 'HillRollerSpawner_C_Spawn::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Add_IntInt_ReturnValue_5) == 0x00040C, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_GetChildrenComponents_Children) == 0x000410, "Member 'HillRollerSpawner_C_Spawn::CallFunc_GetChildrenComponents_Children' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Array_Length_ReturnValue_2) == 0x000420, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Array_Get_Item_3) == 0x000428, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Less_IntInt_ReturnValue_2) == 0x000430, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, K2Node_DynamicCast_AsArrow_Component) == 0x000438, "Member 'HillRollerSpawner_C_Spawn::K2Node_DynamicCast_AsArrow_Component' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, K2Node_DynamicCast_bSuccess_3) == 0x000440, "Member 'HillRollerSpawner_C_Spawn::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Array_Add_ReturnValue) == 0x000444, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, K2Node_DynamicCast_AsStatic_Mesh_Component) == 0x000448, "Member 'HillRollerSpawner_C_Spawn::K2Node_DynamicCast_AsStatic_Mesh_Component' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, K2Node_DynamicCast_bSuccess_4) == 0x000450, "Member 'HillRollerSpawner_C_Spawn::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Array_Add_ReturnValue_1) == 0x000454, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, K2Node_Select_Default) == 0x000350, "Member 'HillRollerSpawner_C_Spawn::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_asProp_return) == 0x000358, "Member 'HillRollerSpawner_C_Spawn::CallFunc_asProp_return' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, K2Node_DynamicCast_AsInt_Player_1) == 0x000360, "Member 'HillRollerSpawner_C_Spawn::K2Node_DynamicCast_AsInt_Player_1' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, K2Node_DynamicCast_bSuccess_1) == 0x000370, "Member 'HillRollerSpawner_C_Spawn::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_asProp_return_1) == 0x000378, "Member 'HillRollerSpawner_C_Spawn::CallFunc_asProp_return_1' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, K2Node_DynamicCast_AsInt_Objects) == 0x000380, "Member 'HillRollerSpawner_C_Spawn::K2Node_DynamicCast_AsInt_Objects' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, K2Node_DynamicCast_bSuccess_2) == 0x000390, "Member 'HillRollerSpawner_C_Spawn::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Conv_NameToString_ReturnValue) == 0x000398, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Multiply_VectorFloat_ReturnValue_3) == 0x0003A8, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Multiply_VectorFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Array_Contains_ReturnValue) == 0x0003B4, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Add_VectorVector_ReturnValue_1) == 0x0003B8, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_MakeTransform_ReturnValue) == 0x0003D0, "Member 'HillRollerSpawner_C_Spawn::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Array_Length_ReturnValue) == 0x000400, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3) == 0x000408, "Member 'HillRollerSpawner_C_Spawn::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Less_IntInt_ReturnValue) == 0x000410, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_FinishSpawningActor_ReturnValue_3) == 0x000418, "Member 'HillRollerSpawner_C_Spawn::CallFunc_FinishSpawningActor_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_nailNail_fail) == 0x000420, "Member 'HillRollerSpawner_C_Spawn::CallFunc_nailNail_fail' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Array_Length_ReturnValue_1) == 0x000424, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Less_IntInt_ReturnValue_1) == 0x000428, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, Temp_int_Variable_4) == 0x00042C, "Member 'HillRollerSpawner_C_Spawn::Temp_int_Variable_4' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_GetChildrenComponents_Children) == 0x000430, "Member 'HillRollerSpawner_C_Spawn::CallFunc_GetChildrenComponents_Children' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x000440, "Member 'HillRollerSpawner_C_Spawn::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Array_Get_Item_3) == 0x000448, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Array_Get_Item_3' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, K2Node_DynamicCast_AsArrow_Component) == 0x000450, "Member 'HillRollerSpawner_C_Spawn::K2Node_DynamicCast_AsArrow_Component' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, K2Node_DynamicCast_bSuccess_3) == 0x000458, "Member 'HillRollerSpawner_C_Spawn::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, K2Node_DynamicCast_AsStatic_Mesh_Component) == 0x000460, "Member 'HillRollerSpawner_C_Spawn::K2Node_DynamicCast_AsStatic_Mesh_Component' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, K2Node_DynamicCast_bSuccess_4) == 0x000468, "Member 'HillRollerSpawner_C_Spawn::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Array_Add_ReturnValue) == 0x00046C, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Array_Add_ReturnValue_1) == 0x000470, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Array_Length_ReturnValue_2) == 0x000474, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Add_IntInt_ReturnValue_5) == 0x000478, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(HillRollerSpawner_C_Spawn, CallFunc_Less_IntInt_ReturnValue_2) == 0x00047C, "Member 'HillRollerSpawner_C_Spawn::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
 
 }
 

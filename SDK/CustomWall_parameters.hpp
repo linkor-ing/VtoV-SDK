@@ -10,107 +10,106 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
+#include "Struct_physSound_structs.hpp"
 #include "Struct_save_structs.hpp"
 #include "Struct_prop_structs.hpp"
 #include "Struct_mInt_structs.hpp"
 #include "Struct_mFloat_structs.hpp"
-#include "Struct_food1_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Struct_physSound_structs.hpp"
+#include "Engine_structs.hpp"
+#include "Struct_food1_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function customWall.customWall_C.ExecuteUbergraph_customWall
-// 0x0500 (0x0500 - 0x0000)
+// 0x0510 (0x0510 - 0x0000)
 struct CustomWall_C_ExecuteUbergraph_customWall final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EAC[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInterface*                     CallFunc_customWall_material_material;             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_customWall_material_drop;                 // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_customWall_material_requirement;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_propToObject_ReturnValue;                 // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EAD[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_food1                          CallFunc_propToObject_foodData;                    // 0x0024(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EAE[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 CallFunc_propToObject_object;                      // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_propToObject_isFood;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EAF[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_prop                           CallFunc_propToObject_propData;                    // 0x0050(0x0080)(HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x00D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EB0[0x3];                                     // 0x00D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x00DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EB1[0x3];                                     // 0x00DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable_1;                               // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_2;                               // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x00EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EB2[0x3];                                     // 0x00ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_3;                               // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_4;                               // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EB3[0x4];                                     // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimitiveComponent*                    K2Node_Event_component;                            // 0x0100(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_1;                             // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_1;                                // 0x010C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_2EB4[0x4];                                     // 0x0194(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Event_actor_1;                              // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_impact_1;                             // 0x01A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EB5[0x4];                                     // 0x01AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Event_actor;                                // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage;                               // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x01BC(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                K2Node_Event_impact;                               // 0x0244(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_skipSetting;                          // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0251(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0252(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EB6[0x1];                                     // 0x0253(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x0254(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x025C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0268(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0274(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0280(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EB7[0x4];                                     // 0x028C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0298(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x02A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x02A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x02B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x02B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x02B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x02BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x02C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit_1;            // 0x02D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap_1;         // 0x02D5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EB8[0x2];                                     // 0x02D6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time_1;                    // 0x02D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance_1;                // 0x02DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location_1;                // 0x02E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint_1;             // 0x02EC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal_1;                  // 0x02F8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal_1;            // 0x0304(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat_1;                 // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor_1;                // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent_1;            // 0x0320(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName_1;             // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem_1;                 // 0x0330(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex_1;            // 0x0334(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex_1;               // 0x0338(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart_1;              // 0x033C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd_1;                // 0x0348(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x0354(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue_1;       // 0x0360(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	int32                                         Temp_int_Variable_5;                               // 0x036C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D2[0x2];                                       // 0x00D2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x00DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_DD[0x3];                                       // 0x00DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_2;                               // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_3;                               // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_4;                               // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F4[0x4];                                       // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPrimitiveComponent*                    K2Node_Event_component;                            // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_1;                             // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_1;                                // 0x0104(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_18C[0x4];                                      // 0x018C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Event_actor_1;                              // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_impact_1;                             // 0x0198(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A4[0x4];                                      // 0x01A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Event_actor;                                // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage;                               // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x01B4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                K2Node_Event_impact;                               // 0x023C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_skipSetting;                          // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0249(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x024A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_24B[0x1];                                      // 0x024B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x024C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0254(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0260(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x026C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0278(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_284[0x4];                                      // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0298(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x02A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x02A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x02AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x02B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x02B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x02C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit_1;            // 0x02CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap_1;         // 0x02CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2CE[0x2];                                      // 0x02CE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time_1;                    // 0x02D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance_1;                // 0x02D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location_1;                // 0x02D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint_1;             // 0x02E4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal_1;                  // 0x02F0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal_1;            // 0x02FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat_1;                 // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor_1;                // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent_1;            // 0x0318(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName_1;             // 0x0320(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem_1;                 // 0x0328(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex_1;            // 0x032C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex_1;               // 0x0330(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart_1;              // 0x0334(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd_1;                // 0x0340(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x034C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue_1;       // 0x0358(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         Temp_int_Variable_5;                               // 0x0364(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_368[0x8];                                      // 0x0368(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0370(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x03A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EB9[0x3];                                     // 0x03A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A1[0x3];                                      // 0x03A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x03A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_RandomPointInBoundingBox_ReturnValue;     // 0x03A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_TransformLocation_ReturnValue;            // 0x03B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -120,38 +119,40 @@ public:
 	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue;          // 0x0400(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x0408(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0418(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EBA[0x7];                                     // 0x0419(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_419[0x7];                                      // 0x0419(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AProp_C*                                CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0420(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AProp_C*                                CallFunc_asProp_return;                            // 0x0428(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x0430(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AProp_food_C*                           CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x0438(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_Select_Default;                             // 0x0440(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_C*                                K2Node_DynamicCast_AsProp;                         // 0x0448(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0450(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EBB[0x3];                                     // 0x0451(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0454(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0460(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x046C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0478(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorScale3D_ReturnValue;              // 0x0484(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RandomUnitVector_ReturnValue;             // 0x0490(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Divide_VectorVector_ReturnValue;          // 0x049C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x04A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x04AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorScale3D_ReturnValue_1;            // 0x04B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorScale3D_ReturnValue_2;            // 0x04C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorFloat_ReturnValue;         // 0x04D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_customWall_getBricks_ToCeil;              // 0x04DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x04E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Loge_ReturnValue;                         // 0x04E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x04E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FCeil_ReturnValue;                        // 0x04EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Max_ReturnValue;                          // 0x04F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_3;           // 0x04F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0448(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class AProp_C*                                K2Node_DynamicCast_AsProp;                         // 0x0458(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0460(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_461[0x3];                                      // 0x0461(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0464(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0470(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorScale3D_ReturnValue;              // 0x047C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0488(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RandomUnitVector_ReturnValue;             // 0x0494(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x04A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x04AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Divide_VectorVector_ReturnValue;          // 0x04B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x04BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorScale3D_ReturnValue_1;            // 0x04C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorScale3D_ReturnValue_2;            // 0x04D4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorFloat_ReturnValue;         // 0x04E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_customWall_getBricks_ToCeil;              // 0x04EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x04F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Loge_ReturnValue;                         // 0x04F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x04F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FCeil_ReturnValue;                        // 0x04FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Max_ReturnValue;                          // 0x0500(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_3;           // 0x0504(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(CustomWall_C_ExecuteUbergraph_customWall) == 0x000010, "Wrong alignment on CustomWall_C_ExecuteUbergraph_customWall");
-static_assert(sizeof(CustomWall_C_ExecuteUbergraph_customWall) == 0x000500, "Wrong size on CustomWall_C_ExecuteUbergraph_customWall");
+static_assert(sizeof(CustomWall_C_ExecuteUbergraph_customWall) == 0x000510, "Wrong size on CustomWall_C_ExecuteUbergraph_customWall");
 static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, EntryPoint) == 0x000000, "Member 'CustomWall_C_ExecuteUbergraph_customWall::EntryPoint' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, Temp_int_Variable) == 0x000004, "Member 'CustomWall_C_ExecuteUbergraph_customWall::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_customWall_material_material) == 0x000008, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_customWall_material_material' has a wrong offset!");
 static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_customWall_material_drop) == 0x000010, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_customWall_material_drop' has a wrong offset!");
 static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_customWall_material_requirement) == 0x000018, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_customWall_material_requirement' has a wrong offset!");
@@ -160,64 +161,63 @@ static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_propTo
 static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_propToObject_object) == 0x000040, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_propToObject_object' has a wrong offset!");
 static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_propToObject_isFood) == 0x000048, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_propToObject_isFood' has a wrong offset!");
 static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_propToObject_propData) == 0x000050, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_propToObject_propData' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, Temp_int_Variable) == 0x0000D0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0000D4, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Add_IntInt_ReturnValue) == 0x0000D8, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_IsValidClass_ReturnValue) == 0x0000DC, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, Temp_int_Variable_1) == 0x0000E0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000E4, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, Temp_int_Variable_2) == 0x0000E8, "Member 'CustomWall_C_ExecuteUbergraph_customWall::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x0000EC, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Add_IntInt_ReturnValue_2) == 0x0000F0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, Temp_int_Variable_3) == 0x0000F4, "Member 'CustomWall_C_ExecuteUbergraph_customWall::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, Temp_int_Variable_4) == 0x0000F8, "Member 'CustomWall_C_ExecuteUbergraph_customWall::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_Event_component) == 0x000100, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_Event_component' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_Event_damage_1) == 0x000108, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_Event_damage_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_Event_hit_1) == 0x00010C, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_Event_hit_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_Event_actor_1) == 0x000198, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_Event_actor_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_Event_impact_1) == 0x0001A0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_Event_impact_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_Event_actor) == 0x0001B0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_Event_actor' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_Event_damage) == 0x0001B8, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_Event_damage' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_Event_hit) == 0x0001BC, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_Event_impact) == 0x000244, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_Event_impact' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_Event_skipSetting) == 0x000250, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_Event_skipSetting' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_bBlockingHit) == 0x000251, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_bInitialOverlap) == 0x000252, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_Time) == 0x000254, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_Distance) == 0x000258, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_Location) == 0x00025C, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_ImpactPoint) == 0x000268, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_Normal) == 0x000274, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_ImpactNormal) == 0x000280, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_PhysMat) == 0x000290, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_HitActor) == 0x000298, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_HitComponent) == 0x0002A0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_HitBoneName) == 0x0002A8, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_HitItem) == 0x0002B0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_ElementIndex) == 0x0002B4, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_FaceIndex) == 0x0002B8, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_TraceStart) == 0x0002BC, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_TraceEnd) == 0x0002C8, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_bBlockingHit_1) == 0x0002D4, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_bBlockingHit_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_bInitialOverlap_1) == 0x0002D5, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_bInitialOverlap_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_Time_1) == 0x0002D8, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_Time_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_Distance_1) == 0x0002DC, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_Distance_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_Location_1) == 0x0002E0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_Location_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_ImpactPoint_1) == 0x0002EC, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_ImpactPoint_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_Normal_1) == 0x0002F8, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_Normal_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_ImpactNormal_1) == 0x000304, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_ImpactNormal_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_PhysMat_1) == 0x000310, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_PhysMat_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_HitActor_1) == 0x000318, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_HitActor_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_HitComponent_1) == 0x000320, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_HitComponent_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_HitBoneName_1) == 0x000328, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_HitBoneName_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_HitItem_1) == 0x000330, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_HitItem_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_ElementIndex_1) == 0x000334, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_ElementIndex_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_FaceIndex_1) == 0x000338, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_FaceIndex_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_TraceStart_1) == 0x00033C, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_TraceStart_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_TraceEnd_1) == 0x000348, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_TraceEnd_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x000354, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Conv_VectorToRotator_ReturnValue_1) == 0x000360, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Conv_VectorToRotator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, Temp_int_Variable_5) == 0x00036C, "Member 'CustomWall_C_ExecuteUbergraph_customWall::Temp_int_Variable_5' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0000D0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_IsValidClass_ReturnValue) == 0x0000D1, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Add_IntInt_ReturnValue) == 0x0000D4, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, Temp_int_Variable_1) == 0x0000D8, "Member 'CustomWall_C_ExecuteUbergraph_customWall::Temp_int_Variable_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x0000DC, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000E0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, Temp_int_Variable_2) == 0x0000E4, "Member 'CustomWall_C_ExecuteUbergraph_customWall::Temp_int_Variable_2' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Add_IntInt_ReturnValue_2) == 0x0000E8, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, Temp_int_Variable_3) == 0x0000EC, "Member 'CustomWall_C_ExecuteUbergraph_customWall::Temp_int_Variable_3' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, Temp_int_Variable_4) == 0x0000F0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::Temp_int_Variable_4' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_Event_component) == 0x0000F8, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_Event_component' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_Event_damage_1) == 0x000100, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_Event_damage_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_Event_hit_1) == 0x000104, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_Event_hit_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_Event_actor_1) == 0x000190, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_Event_actor_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_Event_impact_1) == 0x000198, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_Event_impact_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_Event_actor) == 0x0001A8, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_Event_actor' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_Event_damage) == 0x0001B0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_Event_damage' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_Event_hit) == 0x0001B4, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_Event_impact) == 0x00023C, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_Event_impact' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_Event_skipSetting) == 0x000248, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_Event_skipSetting' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_bBlockingHit) == 0x000249, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_bInitialOverlap) == 0x00024A, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_Time) == 0x00024C, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_Distance) == 0x000250, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_Location) == 0x000254, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_ImpactPoint) == 0x000260, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_Normal) == 0x00026C, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_ImpactNormal) == 0x000278, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_PhysMat) == 0x000288, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_HitActor) == 0x000290, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_HitComponent) == 0x000298, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_HitBoneName) == 0x0002A0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_HitItem) == 0x0002A8, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_ElementIndex) == 0x0002AC, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_FaceIndex) == 0x0002B0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_TraceStart) == 0x0002B4, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_TraceEnd) == 0x0002C0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_bBlockingHit_1) == 0x0002CC, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_bBlockingHit_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_bInitialOverlap_1) == 0x0002CD, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_bInitialOverlap_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_Time_1) == 0x0002D0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_Time_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_Distance_1) == 0x0002D4, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_Distance_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_Location_1) == 0x0002D8, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_Location_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_ImpactPoint_1) == 0x0002E4, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_ImpactPoint_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_Normal_1) == 0x0002F0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_Normal_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_ImpactNormal_1) == 0x0002FC, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_ImpactNormal_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_PhysMat_1) == 0x000308, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_PhysMat_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_HitActor_1) == 0x000310, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_HitActor_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_HitComponent_1) == 0x000318, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_HitComponent_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_HitBoneName_1) == 0x000320, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_HitBoneName_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_HitItem_1) == 0x000328, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_HitItem_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_ElementIndex_1) == 0x00032C, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_ElementIndex_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_FaceIndex_1) == 0x000330, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_FaceIndex_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_TraceStart_1) == 0x000334, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_TraceStart_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BreakHitResult_TraceEnd_1) == 0x000340, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BreakHitResult_TraceEnd_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x00034C, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Conv_VectorToRotator_ReturnValue_1) == 0x000358, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Conv_VectorToRotator_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, Temp_int_Variable_5) == 0x000364, "Member 'CustomWall_C_ExecuteUbergraph_customWall::Temp_int_Variable_5' has a wrong offset!");
 static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_GetTransform_ReturnValue) == 0x000370, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x0003A0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Add_IntInt_ReturnValue_3) == 0x0003A4, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
@@ -234,27 +234,28 @@ static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_asProp
 static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x000430, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x000438, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_Select_Default) == 0x000440, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_DynamicCast_AsProp) == 0x000448, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_DynamicCast_AsProp' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_DynamicCast_bSuccess_1) == 0x000450, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000454, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000460, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Subtract_VectorVector_ReturnValue) == 0x00046C, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000478, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_GetActorScale3D_ReturnValue) == 0x000484, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_RandomUnitVector_ReturnValue) == 0x000490, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_RandomUnitVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Divide_VectorVector_ReturnValue) == 0x00049C, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Divide_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_RandomFloatInRange_ReturnValue) == 0x0004A8, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x0004AC, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_GetActorScale3D_ReturnValue_1) == 0x0004B8, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_GetActorScale3D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_GetActorScale3D_ReturnValue_2) == 0x0004C4, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_GetActorScale3D_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Subtract_VectorFloat_ReturnValue) == 0x0004D0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Subtract_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_customWall_getBricks_ToCeil) == 0x0004DC, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_customWall_getBricks_ToCeil' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0004E0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Loge_ReturnValue) == 0x0004E4, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Loge_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0004E8, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_FCeil_ReturnValue) == 0x0004EC, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_FCeil_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Max_ReturnValue) == 0x0004F0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Max_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_LessEqual_IntInt_ReturnValue_3) == 0x0004F4, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_LessEqual_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Conv_NameToString_ReturnValue) == 0x000448, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_DynamicCast_AsProp) == 0x000458, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_DynamicCast_AsProp' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, K2Node_DynamicCast_bSuccess_1) == 0x000460, "Member 'CustomWall_C_ExecuteUbergraph_customWall::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000464, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000470, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_GetActorScale3D_ReturnValue) == 0x00047C, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000488, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_RandomUnitVector_ReturnValue) == 0x000494, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_RandomUnitVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x0004A0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_RandomFloatInRange_ReturnValue) == 0x0004AC, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Divide_VectorVector_ReturnValue) == 0x0004B0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Divide_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x0004BC, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_GetActorScale3D_ReturnValue_1) == 0x0004C8, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_GetActorScale3D_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_GetActorScale3D_ReturnValue_2) == 0x0004D4, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_GetActorScale3D_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Subtract_VectorFloat_ReturnValue) == 0x0004E0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Subtract_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_customWall_getBricks_ToCeil) == 0x0004EC, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_customWall_getBricks_ToCeil' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0004F0, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Loge_ReturnValue) == 0x0004F4, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Loge_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0004F8, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_FCeil_ReturnValue) == 0x0004FC, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_FCeil_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_Max_ReturnValue) == 0x000500, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_Max_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_ExecuteUbergraph_customWall, CallFunc_LessEqual_IntInt_ReturnValue_3) == 0x000504, "Member 'CustomWall_C_ExecuteUbergraph_customWall::CallFunc_LessEqual_IntInt_ReturnValue_3' has a wrong offset!");
 
 // Function customWall.customWall_C.impactDamageCPP
 // 0x00A8 (0x00A8 - 0x0000)
@@ -263,7 +264,7 @@ struct CustomWall_C_ImpactDamageCPP final
 public:
 	float                                         Param_Damage;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_2EBC[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0090(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Impact;                                            // 0x0098(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -293,7 +294,7 @@ public:
 	float                                         Param_Damage;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Location;                                          // 0x0004(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               Rotation;                                          // 0x0010(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EBD[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x002C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -350,7 +351,7 @@ static_assert(offsetof(CustomWall_C_Fix, CallFunc_VictoryFloatPlusEquals_FloatOu
 static_assert(offsetof(CustomWall_C_Fix, CallFunc_Less_FloatFloat_ReturnValue) == 0x000008, "Member 'CustomWall_C_Fix::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function customWall.customWall_C.Init
-// 0x0088 (0x0088 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct CustomWall_C_Init final
 {
 public:
@@ -359,23 +360,26 @@ public:
 	class FName                                   CallFunc_customWall_material_requirement;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMesh*                            CallFunc_customWall_shape_shape;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPhysicalMaterial*                      CallFunc_GetPhysicalMaterial_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_physSound                      CallFunc_physSound_return;                         // 0x0028(0x0040)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EBE[0x3];                                     // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetActorScale3D_ReturnValue;              // 0x006C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorFloat_ReturnValue;         // 0x0078(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_physSound_return;                         // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_physSound                      CallFunc_physSound_data;                           // 0x0030(0x0040)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_71[0x3];                                       // 0x0071(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetActorScale3D_ReturnValue;              // 0x0074(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorFloat_ReturnValue;         // 0x0080(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(CustomWall_C_Init) == 0x000008, "Wrong alignment on CustomWall_C_Init");
-static_assert(sizeof(CustomWall_C_Init) == 0x000088, "Wrong size on CustomWall_C_Init");
+static_assert(sizeof(CustomWall_C_Init) == 0x000090, "Wrong size on CustomWall_C_Init");
 static_assert(offsetof(CustomWall_C_Init, CallFunc_customWall_material_material) == 0x000000, "Member 'CustomWall_C_Init::CallFunc_customWall_material_material' has a wrong offset!");
 static_assert(offsetof(CustomWall_C_Init, CallFunc_customWall_material_drop) == 0x000008, "Member 'CustomWall_C_Init::CallFunc_customWall_material_drop' has a wrong offset!");
 static_assert(offsetof(CustomWall_C_Init, CallFunc_customWall_material_requirement) == 0x000010, "Member 'CustomWall_C_Init::CallFunc_customWall_material_requirement' has a wrong offset!");
 static_assert(offsetof(CustomWall_C_Init, CallFunc_customWall_shape_shape) == 0x000018, "Member 'CustomWall_C_Init::CallFunc_customWall_shape_shape' has a wrong offset!");
 static_assert(offsetof(CustomWall_C_Init, CallFunc_GetPhysicalMaterial_ReturnValue) == 0x000020, "Member 'CustomWall_C_Init::CallFunc_GetPhysicalMaterial_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CustomWall_C_Init, CallFunc_physSound_return) == 0x000028, "Member 'CustomWall_C_Init::CallFunc_physSound_return' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_Init, CallFunc_SetStaticMesh_ReturnValue) == 0x000068, "Member 'CustomWall_C_Init::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_Init, CallFunc_GetActorScale3D_ReturnValue) == 0x00006C, "Member 'CustomWall_C_Init::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CustomWall_C_Init, CallFunc_Subtract_VectorFloat_ReturnValue) == 0x000078, "Member 'CustomWall_C_Init::CallFunc_Subtract_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_Init, CallFunc_physSound_data) == 0x000030, "Member 'CustomWall_C_Init::CallFunc_physSound_data' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_Init, CallFunc_SetStaticMesh_ReturnValue) == 0x000070, "Member 'CustomWall_C_Init::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_Init, CallFunc_GetActorScale3D_ReturnValue) == 0x000074, "Member 'CustomWall_C_Init::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CustomWall_C_Init, CallFunc_Subtract_VectorFloat_ReturnValue) == 0x000080, "Member 'CustomWall_C_Init::CallFunc_Subtract_VectorFloat_ReturnValue' has a wrong offset!");
 
 // Function customWall.customWall_C.setHealth
 // 0x0080 (0x0080 - 0x0000)
@@ -478,7 +482,7 @@ public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadData_return;                          // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EBF[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mInt                           CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	struct FStruct_mFloat                         CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0010)(HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Get_Item_2;                         // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

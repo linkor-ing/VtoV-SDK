@@ -10,19 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "KerfurOmega_col_classes.hpp"
 #include "Engine_structs.hpp"
+#include "KerfurOmega_col_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass kerfurOmega_col_gamer.kerfurOmega_col_gamer_C
-// 0x0010 (0x0820 - 0x0810)
+// 0x0000 (0x0850 - 0x0850)
 class AKerfurOmega_col_gamer_C final : public AKerfurOmega_col_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_KerfurOmega_col_gamer_C;            // 0x0810(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	uint8                                         Pad_844[0x4];                                      // 0x0844(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_KerfurOmega_col_gamer_C;            // 0x0848(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_kerfurOmega_col_gamer(int32 EntryPoint);
@@ -40,8 +41,8 @@ public:
 	}
 };
 static_assert(alignof(AKerfurOmega_col_gamer_C) == 0x000010, "Wrong alignment on AKerfurOmega_col_gamer_C");
-static_assert(sizeof(AKerfurOmega_col_gamer_C) == 0x000820, "Wrong size on AKerfurOmega_col_gamer_C");
-static_assert(offsetof(AKerfurOmega_col_gamer_C, UberGraphFrame_KerfurOmega_col_gamer_C) == 0x000810, "Member 'AKerfurOmega_col_gamer_C::UberGraphFrame_KerfurOmega_col_gamer_C' has a wrong offset!");
+static_assert(sizeof(AKerfurOmega_col_gamer_C) == 0x000850, "Wrong size on AKerfurOmega_col_gamer_C");
+static_assert(offsetof(AKerfurOmega_col_gamer_C, UberGraphFrame_KerfurOmega_col_gamer_C) == 0x000848, "Member 'AKerfurOmega_col_gamer_C::UberGraphFrame_KerfurOmega_col_gamer_C' has a wrong offset!");
 
 }
 

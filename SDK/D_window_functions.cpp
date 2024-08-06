@@ -37,23 +37,37 @@ void AD_window_C::ExecuteUbergraph_d_window(int32 EntryPoint)
 }
 
 
-// Function d_window.d_window_C.cleanAtPoint
+// Function d_window.d_window_C.dirtify
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AProp_sponge_C*                   Sponge                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AD_window_C::CleanAtPoint(class AProp_sponge_C* Sponge, const struct FVector& Location)
+void AD_window_C::Dirtify()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("d_window_C", "cleanAtPoint");
+		Func = Class->GetFunction("d_window_C", "dirtify");
 
-	Params::D_window_C_CleanAtPoint Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Sponge = Sponge;
-	Parms.Location = std::move(Location);
+
+// Function d_window.d_window_C.cleanPhys
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AProp_sponge_C*                   InputPin                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+
+void AD_window_C::CleanPhys(class AProp_sponge_C* InputPin, const struct FHitResult& Hit)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("d_window_C", "cleanPhys");
+
+	Params::D_window_C_CleanPhys Parms{};
+
+	Parms.InputPin = InputPin;
+	Parms.Hit = std::move(Hit);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -73,6 +87,28 @@ void AD_window_C::ReceiveBeginPlay()
 }
 
 
+// Function d_window.d_window_C.cleanOnHit
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AProp_sponge_C*                   InputPin                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+
+void AD_window_C::CleanOnHit(class AProp_sponge_C* InputPin, const struct FHitResult& Hit)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("d_window_C", "cleanOnHit");
+
+	Params::D_window_C_CleanOnHit Parms{};
+
+	Parms.InputPin = InputPin;
+	Parms.Hit = std::move(Hit);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function d_window.d_window_C.Canvas
 // (BlueprintCallable, BlueprintEvent)
 
@@ -87,29 +123,23 @@ void AD_window_C::Canvas()
 }
 
 
-// Function d_window.d_window_C.BndEvt__StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
+// Function d_window.d_window_C.cleanAtPoint
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPrimitiveComponent*              HitComponent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          NormalImpulse                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// class AProp_sponge_C*                   Sponge                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AD_window_C::BndEvt__StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
+void AD_window_C::CleanAtPoint(class AProp_sponge_C* Sponge, const struct FVector& Location)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("d_window_C", "BndEvt__StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature");
+		Func = Class->GetFunction("d_window_C", "cleanAtPoint");
 
-	Params::D_window_C_BndEvt__StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature Parms{};
+	Params::D_window_C_CleanAtPoint Parms{};
 
-	Parms.HitComponent = HitComponent;
-	Parms.OtherActor = OtherActor;
-	Parms.OtherComp = OtherComp;
-	Parms.NormalImpulse = std::move(NormalImpulse);
-	Parms.Hit = std::move(Hit);
+	Parms.Sponge = Sponge;
+	Parms.Location = std::move(Location);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -165,7 +195,7 @@ void AD_window_C::GetCode(TArray<uint8>* ByteArray)
 
 
 // Function d_window.d_window_C.setCode
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // TArray<uint8>                           ByteArray                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
@@ -193,6 +223,20 @@ void AD_window_C::Dirty()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("d_window_C", "dirty");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function d_window.d_window_C.prepareRT
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AD_window_C::PrepareRT()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("d_window_C", "prepareRT");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
