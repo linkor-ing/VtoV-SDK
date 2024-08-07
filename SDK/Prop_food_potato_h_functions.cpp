@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function prop_food_potato_h.prop_food_potato_h_C.ExecuteUbergraph_prop_food_potato_h
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_food_potato_h_C::ExecuteUbergraph_prop_food_potato_h(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_food_potato_h_C", "ExecuteUbergraph_prop_food_potato_h");
+
+	Params::Prop_food_potato_h_C_ExecuteUbergraph_prop_food_potato_h Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function prop_food_potato_h.prop_food_potato_h_C.cooked
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -28,6 +48,26 @@ void AProp_food_potato_h_C::Cooked()
 		Func = Class->GetFunction("prop_food_potato_h_C", "cooked");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function prop_food_potato_h.prop_food_potato_h_C.slice
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Clean                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AProp_food_potato_h_C::Slice(bool Clean)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_food_potato_h_C", "slice");
+
+	Params::Prop_food_potato_h_C_Slice Parms{};
+
+	Parms.Clean = Clean;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

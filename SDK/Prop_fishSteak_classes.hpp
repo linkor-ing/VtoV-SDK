@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_fishSteak.prop_fishSteak_C
-// 0x0008 (0x0400 - 0x03F8)
+// 0x0000 (0x03C8 - 0x03C8)
 class AProp_fishSteak_C : public AProp_cookingFood_C
 {
 public:
-	int32                                         Type;                                              // 0x03F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Type;                                              // 0x03C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void Cooked();
@@ -38,8 +38,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_fishSteak_C) == 0x000008, "Wrong alignment on AProp_fishSteak_C");
-static_assert(sizeof(AProp_fishSteak_C) == 0x000400, "Wrong size on AProp_fishSteak_C");
-static_assert(offsetof(AProp_fishSteak_C, Type) == 0x0003F8, "Member 'AProp_fishSteak_C::Type' has a wrong offset!");
+static_assert(sizeof(AProp_fishSteak_C) == 0x0003C8, "Wrong size on AProp_fishSteak_C");
+static_assert(offsetof(AProp_fishSteak_C, Type) == 0x0003C4, "Member 'AProp_fishSteak_C::Type' has a wrong offset!");
 
 }
 

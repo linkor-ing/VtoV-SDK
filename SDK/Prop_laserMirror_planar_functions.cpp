@@ -37,6 +37,20 @@ void AProp_laserMirror_planar_C::ExecuteUbergraph_prop_laserMirror_planar(int32 
 }
 
 
+// Function prop_laserMirror_planar.prop_laserMirror_planar_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_laserMirror_planar_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_laserMirror_planar_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function prop_laserMirror_planar.prop_laserMirror_planar_C.BndEvt__prop_laserMirror_planar_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -90,20 +104,6 @@ void AProp_laserMirror_planar_C::BndEvt__prop_laserMirror_planar_Sphere_K2Node_C
 	Parms.SweepResult = std::move(SweepResult);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop_laserMirror_planar.prop_laserMirror_planar_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_laserMirror_planar_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_laserMirror_planar_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

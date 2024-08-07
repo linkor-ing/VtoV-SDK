@@ -19,44 +19,36 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass d_window.d_window_C
-// 0x00B0 (0x02D0 - 0x0220)
+// 0x0070 (0x0290 - 0x0220)
 class AD_window_C final : public AActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   NewbaseWindow3_sig_002;                            // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   NewbaseWindow3_sig_003;                            // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   NewbaseWindow3_sig_004;                            // 0x0238(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0240(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               Dynmat;                                            // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Ratio;                                             // 0x0250(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_254[0x4];                                      // 0x0254(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTextureRenderTarget2D*                 Rt_w;                                              // 0x0258(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCanvas*                                Canv;                                              // 0x0260(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDrawToRenderTargetContext             Cont;                                              // 0x0268(0x0010)(Edit, BlueprintVisible, NoDestructor)
-	struct FIntPoint                              Size;                                              // 0x0278(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              A;                                                 // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Cv;                                                // 0x0288(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_289[0x7];                                      // 0x0289(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Code;                                              // 0x0290(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 PicHash;                                           // 0x02A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	TArray<uint8>                                 GotCode;                                           // 0x02B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<uint8>                                 DefaultImage;                                      // 0x02C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               Dynmat;                                            // 0x0238(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Ratio;                                             // 0x0240(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_26AE[0x4];                                     // 0x0244(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTextureRenderTarget2D*                 Rt_w;                                              // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCanvas*                                Canv;                                              // 0x0250(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDrawToRenderTargetContext             Cont;                                              // 0x0258(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	struct FIntPoint                              Size;                                              // 0x0268(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              A;                                                 // 0x0270(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Cv;                                                // 0x0278(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_26AF[0x7];                                     // 0x0279(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Code;                                              // 0x0280(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_d_window(int32 EntryPoint);
-	void Dirtify();
-	void CleanPhys(class AProp_sponge_C* InputPin, const struct FHitResult& Hit);
-	void ReceiveBeginPlay();
-	void CleanOnHit(class AProp_sponge_C* InputPin, const struct FHitResult& Hit);
-	void Canvas();
 	void CleanAtPoint(class AProp_sponge_C* Sponge, const struct FVector& Location);
+	void ReceiveBeginPlay();
+	void Canvas();
+	void BndEvt__StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
 	void SetDraw();
 	void EndDraw();
 	void GetCode(TArray<uint8>* ByteArray);
 	void SetCode(const TArray<uint8>& ByteArray);
 	void Dirty();
-	void PrepareRT();
 
 public:
 	static class UClass* StaticClass()
@@ -69,24 +61,19 @@ public:
 	}
 };
 static_assert(alignof(AD_window_C) == 0x000008, "Wrong alignment on AD_window_C");
-static_assert(sizeof(AD_window_C) == 0x0002D0, "Wrong size on AD_window_C");
+static_assert(sizeof(AD_window_C) == 0x000290, "Wrong size on AD_window_C");
 static_assert(offsetof(AD_window_C, UberGraphFrame) == 0x000220, "Member 'AD_window_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AD_window_C, NewbaseWindow3_sig_002) == 0x000228, "Member 'AD_window_C::NewbaseWindow3_sig_002' has a wrong offset!");
-static_assert(offsetof(AD_window_C, NewbaseWindow3_sig_003) == 0x000230, "Member 'AD_window_C::NewbaseWindow3_sig_003' has a wrong offset!");
-static_assert(offsetof(AD_window_C, NewbaseWindow3_sig_004) == 0x000238, "Member 'AD_window_C::NewbaseWindow3_sig_004' has a wrong offset!");
-static_assert(offsetof(AD_window_C, DefaultSceneRoot) == 0x000240, "Member 'AD_window_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AD_window_C, Dynmat) == 0x000248, "Member 'AD_window_C::Dynmat' has a wrong offset!");
-static_assert(offsetof(AD_window_C, Ratio) == 0x000250, "Member 'AD_window_C::Ratio' has a wrong offset!");
-static_assert(offsetof(AD_window_C, Rt_w) == 0x000258, "Member 'AD_window_C::Rt_w' has a wrong offset!");
-static_assert(offsetof(AD_window_C, Canv) == 0x000260, "Member 'AD_window_C::Canv' has a wrong offset!");
-static_assert(offsetof(AD_window_C, Cont) == 0x000268, "Member 'AD_window_C::Cont' has a wrong offset!");
-static_assert(offsetof(AD_window_C, Size) == 0x000278, "Member 'AD_window_C::Size' has a wrong offset!");
-static_assert(offsetof(AD_window_C, A) == 0x000280, "Member 'AD_window_C::A' has a wrong offset!");
-static_assert(offsetof(AD_window_C, Cv) == 0x000288, "Member 'AD_window_C::Cv' has a wrong offset!");
-static_assert(offsetof(AD_window_C, Code) == 0x000290, "Member 'AD_window_C::Code' has a wrong offset!");
-static_assert(offsetof(AD_window_C, PicHash) == 0x0002A0, "Member 'AD_window_C::PicHash' has a wrong offset!");
-static_assert(offsetof(AD_window_C, GotCode) == 0x0002B0, "Member 'AD_window_C::GotCode' has a wrong offset!");
-static_assert(offsetof(AD_window_C, DefaultImage) == 0x0002C0, "Member 'AD_window_C::DefaultImage' has a wrong offset!");
+static_assert(offsetof(AD_window_C, StaticMesh) == 0x000228, "Member 'AD_window_C::StaticMesh' has a wrong offset!");
+static_assert(offsetof(AD_window_C, DefaultSceneRoot) == 0x000230, "Member 'AD_window_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(offsetof(AD_window_C, Dynmat) == 0x000238, "Member 'AD_window_C::Dynmat' has a wrong offset!");
+static_assert(offsetof(AD_window_C, Ratio) == 0x000240, "Member 'AD_window_C::Ratio' has a wrong offset!");
+static_assert(offsetof(AD_window_C, Rt_w) == 0x000248, "Member 'AD_window_C::Rt_w' has a wrong offset!");
+static_assert(offsetof(AD_window_C, Canv) == 0x000250, "Member 'AD_window_C::Canv' has a wrong offset!");
+static_assert(offsetof(AD_window_C, Cont) == 0x000258, "Member 'AD_window_C::Cont' has a wrong offset!");
+static_assert(offsetof(AD_window_C, Size) == 0x000268, "Member 'AD_window_C::Size' has a wrong offset!");
+static_assert(offsetof(AD_window_C, A) == 0x000270, "Member 'AD_window_C::A' has a wrong offset!");
+static_assert(offsetof(AD_window_C, Cv) == 0x000278, "Member 'AD_window_C::Cv' has a wrong offset!");
+static_assert(offsetof(AD_window_C, Code) == 0x000280, "Member 'AD_window_C::Code' has a wrong offset!");
 
 }
 

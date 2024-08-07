@@ -19,24 +19,21 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_kerfurOmega.prop_kerfurOmega_C
-// 0x0028 (0x03A0 - 0x0378)
+// 0x0018 (0x0380 - 0x0368)
 class AProp_kerfurOmega_C : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_kerfurOmega_C;                 // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UComp_radarPoint_C*                     Comp_radarPoint;                                   // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBillboardComponent*                    Spwn;                                              // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	int32                                         Type;                                              // 0x0390(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Sentient;                                          // 0x0394(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_395[0x3];                                      // 0x0395(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 SpawnKerfur;                                       // 0x0398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D0E[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_kerfurOmega_C;                 // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBillboardComponent*                    Spwn;                                              // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	int32                                         Type;                                              // 0x0378(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Sentient;                                          // 0x037C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_prop_kerfurOmega(int32 EntryPoint);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
-	void ReceiveBeginPlay();
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
 	void SettingsApplied(const struct FStruct_settings& Settings);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 
 public:
 	static class UClass* StaticClass()
@@ -49,13 +46,11 @@ public:
 	}
 };
 static_assert(alignof(AProp_kerfurOmega_C) == 0x000008, "Wrong alignment on AProp_kerfurOmega_C");
-static_assert(sizeof(AProp_kerfurOmega_C) == 0x0003A0, "Wrong size on AProp_kerfurOmega_C");
-static_assert(offsetof(AProp_kerfurOmega_C, UberGraphFrame_Prop_kerfurOmega_C) == 0x000378, "Member 'AProp_kerfurOmega_C::UberGraphFrame_Prop_kerfurOmega_C' has a wrong offset!");
-static_assert(offsetof(AProp_kerfurOmega_C, Comp_radarPoint) == 0x000380, "Member 'AProp_kerfurOmega_C::Comp_radarPoint' has a wrong offset!");
-static_assert(offsetof(AProp_kerfurOmega_C, Spwn) == 0x000388, "Member 'AProp_kerfurOmega_C::Spwn' has a wrong offset!");
-static_assert(offsetof(AProp_kerfurOmega_C, Type) == 0x000390, "Member 'AProp_kerfurOmega_C::Type' has a wrong offset!");
-static_assert(offsetof(AProp_kerfurOmega_C, Sentient) == 0x000394, "Member 'AProp_kerfurOmega_C::Sentient' has a wrong offset!");
-static_assert(offsetof(AProp_kerfurOmega_C, SpawnKerfur) == 0x000398, "Member 'AProp_kerfurOmega_C::SpawnKerfur' has a wrong offset!");
+static_assert(sizeof(AProp_kerfurOmega_C) == 0x000380, "Wrong size on AProp_kerfurOmega_C");
+static_assert(offsetof(AProp_kerfurOmega_C, UberGraphFrame_Prop_kerfurOmega_C) == 0x000368, "Member 'AProp_kerfurOmega_C::UberGraphFrame_Prop_kerfurOmega_C' has a wrong offset!");
+static_assert(offsetof(AProp_kerfurOmega_C, Spwn) == 0x000370, "Member 'AProp_kerfurOmega_C::Spwn' has a wrong offset!");
+static_assert(offsetof(AProp_kerfurOmega_C, Type) == 0x000378, "Member 'AProp_kerfurOmega_C::Type' has a wrong offset!");
+static_assert(offsetof(AProp_kerfurOmega_C, Sentient) == 0x00037C, "Member 'AProp_kerfurOmega_C::Sentient' has a wrong offset!");
 
 }
 

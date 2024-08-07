@@ -41,7 +41,7 @@ public:
 	TArray<float>                                 Dists;                                             // 0x02D0(0x0010)(Edit, BlueprintVisible)
 	TArray<float>                                 AngsDiffs;                                         // 0x02E0(0x0010)(Edit, BlueprintVisible)
 	bool                                          Active;                                            // 0x02F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F1[0x3];                                      // 0x02F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4297[0x3];                                     // 0x02F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         S;                                                 // 0x02F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Middle;                                            // 0x02F8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

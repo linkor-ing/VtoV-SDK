@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_wallbuilder_Child.prop_wallbuilder_Child_C
-// 0x0000 (0x0420 - 0x0420)
+// 0x0000 (0x0410 - 0x0410)
 class AProp_wallbuilder_Child_C final : public AProp_wallbuilder_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_wallbuilder_Child_C) == 0x000008, "Wrong alignment on AProp_wallbuilder_Child_C");
-static_assert(sizeof(AProp_wallbuilder_Child_C) == 0x000420, "Wrong size on AProp_wallbuilder_Child_C");
+static_assert(sizeof(AProp_wallbuilder_Child_C) == 0x000410, "Wrong size on AProp_wallbuilder_Child_C");
 
 }
 

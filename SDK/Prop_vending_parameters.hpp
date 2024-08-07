@@ -12,136 +12,160 @@
 
 #include "Engine_structs.hpp"
 #include "Struct_prop_structs.hpp"
-#include "Enum_interactionActions_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Struct_food1_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function prop_vending.prop_vending_C.ExecuteUbergraph_prop_vending
-// 0x0350 (0x0350 - 0x0000)
+// 0x0390 (0x0390 - 0x0000)
 struct Prop_vending_C_ExecuteUbergraph_prop_vending final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_1;                               // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_2;                               // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x0028(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class FString                                 K2Node_Event_name;                                 // 0x00B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchString_CmpSuccess;                    // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C1[0x3];                                       // 0x00C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x00C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_K2_GetComponentRotation_ReturnValue;      // 0x00D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x00E0(0x0030)(IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3970[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
+	int32                                         Temp_int_Variable;                                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3971[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3972[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3973[0x3];                                     // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_2;                               // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_3;                               // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3974[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x0050(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class FString                                 K2Node_Event_name;                                 // 0x00D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchString_CmpSuccess;                    // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3975[0x3];                                     // 0x00E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable_4;                               // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x00F0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3976[0x3];                                     // 0x00FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_K2_GetComponentRotation_ReturnValue;      // 0x0104(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x0110(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11C[0x4];                                      // 0x011C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0128(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_134[0x4];                                      // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AProp_food_C*                           CallFunc_FinishSpawningActor_ReturnValue;          // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_C*                                CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot;                     // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_propToObject_ReturnValue;                 // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_159[0x3];                                      // 0x0159(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_food1                          CallFunc_propToObject_foodData;                    // 0x015C(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_174[0x4];                                      // 0x0174(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 CallFunc_propToObject_object;                      // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_propToObject_isFood;                      // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_181[0x7];                                      // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_prop                           CallFunc_propToObject_propData;                    // 0x0188(0x0080)(HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_209[0x7];                                      // 0x0209(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_219[0x7];                                      // 0x0219(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x0228(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_239[0x7];                                      // 0x0239(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AProp_C*                                CallFunc_asProp_return;                            // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Multiply_IntInt_ReturnValue;              // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24C[0x4];                                      // 0x024C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0250(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_HitComponent;           // 0x0260(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x0270(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_ComponentBoundEvent_NormalImpulse;          // 0x0278(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_ComponentBoundEvent_Hit;                    // 0x0284(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Temp_int_Variable_3;                               // 0x030C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_4;                               // 0x0310(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_314[0x4];                                      // 0x0314(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Select_Default;                             // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x0320(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_321[0x7];                                      // 0x0321(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player_1;                 // 0x0328(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0338(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_339[0x7];                                      // 0x0339(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AProp_C*                                CallFunc_asProp_return_1;                          // 0x0340(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0348(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3977[0x4];                                     // 0x011C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0120(0x0030)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0150(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3978[0x4];                                     // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_C*                                CallFunc_FinishSpawningActor_ReturnValue;          // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_food_C*                           CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot;                     // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_propToObject_ReturnValue;                 // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3979[0x3];                                     // 0x0189(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_food1                          CallFunc_propToObject_foodData;                    // 0x018C(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_397A[0x4];                                     // 0x01A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_propToObject_object;                      // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_propToObject_isFood;                      // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_397B[0x7];                                     // 0x01B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_prop                           CallFunc_propToObject_propData;                    // 0x01B8(0x0080)(HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_397C[0x7];                                     // 0x0239(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_397D[0x7];                                     // 0x0249(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x0258(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_397E[0x7];                                     // 0x0269(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Select_Default;                             // 0x0270(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_C*                                CallFunc_asProp_return;                            // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player_1;                 // 0x0280(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0290(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_397F[0x7];                                     // 0x0291(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AProp_C*                                CallFunc_asProp_return_1;                          // 0x0298(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Multiply_IntInt_ReturnValue;              // 0x02A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3980[0x4];                                     // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_HitComponent;           // 0x02A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x02B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_ComponentBoundEvent_NormalImpulse;          // 0x02C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_ComponentBoundEvent_Hit;                    // 0x02CC(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_DoesImplementInterface_ReturnValue;       // 0x0354(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3981[0x3];                                     // 0x0355(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects;                  // 0x0358(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0368(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3982[0x3];                                     // 0x0369(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_VSize_ReturnValue;                        // 0x036C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0370(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3983[0x4];                                     // 0x0374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_DynamicCast_AsMain_Player;                  // 0x0378(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0380(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0381(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Prop_vending_C_ExecuteUbergraph_prop_vending) == 0x000010, "Wrong alignment on Prop_vending_C_ExecuteUbergraph_prop_vending");
-static_assert(sizeof(Prop_vending_C_ExecuteUbergraph_prop_vending) == 0x000350, "Wrong size on Prop_vending_C_ExecuteUbergraph_prop_vending");
+static_assert(sizeof(Prop_vending_C_ExecuteUbergraph_prop_vending) == 0x000390, "Wrong size on Prop_vending_C_ExecuteUbergraph_prop_vending");
 static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, EntryPoint) == 0x000000, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, Temp_int_Variable) == 0x000004, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000008, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, Temp_int_Variable_1) == 0x000010, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, Temp_int_Variable_2) == 0x000014, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000018, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_Add_IntInt_ReturnValue_1) == 0x00001C, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_Event_player) == 0x000020, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_Event_hit) == 0x000028, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_Event_name) == 0x0000B0, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_Event_name' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_SwitchString_CmpSuccess) == 0x0000C0, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_SwitchString_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0000C4, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_K2_GetComponentRotation_ReturnValue) == 0x0000D0, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_K2_GetComponentRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_MakeTransform_ReturnValue) == 0x0000E0, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, Temp_int_Variable) == 0x000018, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000020, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000028, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_Add_IntInt_ReturnValue) == 0x00002C, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, Temp_int_Variable_1) == 0x000030, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::Temp_int_Variable_1' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000034, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_Add_IntInt_ReturnValue_1) == 0x000038, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, Temp_int_Variable_2) == 0x00003C, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::Temp_int_Variable_2' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, Temp_int_Variable_3) == 0x000040, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::Temp_int_Variable_3' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_Event_player) == 0x000048, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_Event_hit) == 0x000050, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_Event_name) == 0x0000D8, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_Event_name' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_SwitchString_CmpSuccess) == 0x0000E8, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_SwitchString_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, Temp_int_Variable_4) == 0x0000EC, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::Temp_int_Variable_4' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0000F0, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x0000FC, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_Add_IntInt_ReturnValue_2) == 0x000100, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_K2_GetComponentRotation_ReturnValue) == 0x000104, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_K2_GetComponentRotation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_GetForwardVector_ReturnValue) == 0x000110, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000120, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000128, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_FinishSpawningActor_ReturnValue) == 0x000138, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000140, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000148, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_getSaveSlot_saveSlot) == 0x000150, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_getSaveSlot_saveSlot' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_propToObject_ReturnValue) == 0x000158, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_propToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_propToObject_foodData) == 0x00015C, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_propToObject_foodData' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_propToObject_object) == 0x000178, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_propToObject_object' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_propToObject_isFood) == 0x000180, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_propToObject_isFood' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_propToObject_propData) == 0x000188, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_propToObject_propData' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000208, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x000210, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_IsValidClass_ReturnValue) == 0x000218, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x000220, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_DynamicCast_AsInt_Player) == 0x000228, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_DynamicCast_AsInt_Player' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_DynamicCast_bSuccess) == 0x000238, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_asProp_return) == 0x000240, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_asProp_return' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_Multiply_IntInt_ReturnValue) == 0x000248, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_Conv_NameToString_ReturnValue) == 0x000250, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_ComponentBoundEvent_HitComponent) == 0x000260, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_ComponentBoundEvent_HitComponent' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_ComponentBoundEvent_OtherActor) == 0x000268, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_ComponentBoundEvent_OtherComp) == 0x000270, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_ComponentBoundEvent_NormalImpulse) == 0x000278, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_ComponentBoundEvent_NormalImpulse' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_ComponentBoundEvent_Hit) == 0x000284, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_ComponentBoundEvent_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, Temp_int_Variable_3) == 0x00030C, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, Temp_int_Variable_4) == 0x000310, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_Select_Default) == 0x000318, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x000320, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_DynamicCast_AsInt_Player_1) == 0x000328, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_DynamicCast_AsInt_Player_1' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_DynamicCast_bSuccess_1) == 0x000338, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_asProp_return_1) == 0x000340, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_asProp_return_1' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_Add_IntInt_ReturnValue_2) == 0x000348, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_MakeTransform_ReturnValue) == 0x000120, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000150, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000160, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000168, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_FinishSpawningActor_ReturnValue) == 0x000170, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000178, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_getSaveSlot_saveSlot) == 0x000180, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_getSaveSlot_saveSlot' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_propToObject_ReturnValue) == 0x000188, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_propToObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_propToObject_foodData) == 0x00018C, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_propToObject_foodData' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_propToObject_object) == 0x0001A8, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_propToObject_object' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_propToObject_isFood) == 0x0001B0, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_propToObject_isFood' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_propToObject_propData) == 0x0001B8, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_propToObject_propData' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000238, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x000240, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_IsValidClass_ReturnValue) == 0x000248, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x000250, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_DynamicCast_AsInt_Player) == 0x000258, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_DynamicCast_AsInt_Player' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_DynamicCast_bSuccess) == 0x000268, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_Select_Default) == 0x000270, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_asProp_return) == 0x000278, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_asProp_return' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_DynamicCast_AsInt_Player_1) == 0x000280, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_DynamicCast_AsInt_Player_1' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_DynamicCast_bSuccess_1) == 0x000290, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_asProp_return_1) == 0x000298, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_asProp_return_1' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_Multiply_IntInt_ReturnValue) == 0x0002A0, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_ComponentBoundEvent_HitComponent) == 0x0002A8, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_ComponentBoundEvent_HitComponent' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_ComponentBoundEvent_OtherActor) == 0x0002B0, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_ComponentBoundEvent_OtherComp) == 0x0002B8, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_ComponentBoundEvent_NormalImpulse) == 0x0002C0, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_ComponentBoundEvent_NormalImpulse' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_ComponentBoundEvent_Hit) == 0x0002CC, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_ComponentBoundEvent_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_DoesImplementInterface_ReturnValue) == 0x000354, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_DoesImplementInterface_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_DynamicCast_AsInt_Objects) == 0x000358, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_DynamicCast_AsInt_Objects' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_DynamicCast_bSuccess_2) == 0x000368, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_VSize_ReturnValue) == 0x00036C, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_VSize_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000370, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_DynamicCast_AsMain_Player) == 0x000378, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_DynamicCast_AsMain_Player' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, K2Node_DynamicCast_bSuccess_3) == 0x000380, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_ExecuteUbergraph_prop_vending, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000381, "Member 'Prop_vending_C_ExecuteUbergraph_prop_vending::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function prop_vending.prop_vending_C.BndEvt__prop_vending_StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature
 // 0x00B0 (0x00B0 - 0x0000)
@@ -187,10 +211,10 @@ public:
 	TArray<class FName>                           CallFunc_Map_Keys_Keys;                            // 0x0050(0x0010)(ReferenceParm)
 	class FName                                   CallFunc_Array_Get_Item;                           // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Get_Item_1;                         // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3984[0x4];                                     // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_prop                           CallFunc_GetDataTableRowFromName_OutRow;           // 0x0070(0x0080)(HasGetValueTypeHash)
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3985[0x7];                                     // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00F8(0x0040)(HasGetValueTypeHash)
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x0138(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0178(0x0010)(ReferenceParm)
@@ -235,20 +259,20 @@ public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3986[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x00B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3987[0x1];                                     // 0x00B3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x00BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x00C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x00D4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x00E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_EC[0x4];                                       // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3988[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0100(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -259,7 +283,7 @@ public:
 	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x011C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0128(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0134(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_135[0x3];                                      // 0x0135(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3989[0x3];                                     // 0x0135(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    K2Node_Select_Default;                             // 0x0138(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_vending_C_LookAt) == 0x000008, "Wrong alignment on Prop_vending_C_LookAt");
@@ -269,10 +293,9 @@ static_assert(offsetof(Prop_vending_C_LookAt, Param_Hit) == 0x000008, "Member 'P
 static_assert(offsetof(Prop_vending_C_LookAt, Return) == 0x000090, "Member 'Prop_vending_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(Prop_vending_C_LookAt, Text) == 0x000098, "Member 'Prop_vending_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(Prop_vending_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'Prop_vending_C_LookAt::boundObjectReplace' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_LookAt, Number) == 0x0000B0, "Member 'Prop_vending_C_LookAt::Number' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_LookAt, Temp_bool_Variable) == 0x0000B1, "Member 'Prop_vending_C_LookAt::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_LookAt, CallFunc_BreakHitResult_bBlockingHit) == 0x0000B2, "Member 'Prop_vending_C_LookAt::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_LookAt, CallFunc_BreakHitResult_bInitialOverlap) == 0x0000B3, "Member 'Prop_vending_C_LookAt::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_LookAt, Temp_bool_Variable) == 0x0000B0, "Member 'Prop_vending_C_LookAt::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_LookAt, CallFunc_BreakHitResult_bBlockingHit) == 0x0000B1, "Member 'Prop_vending_C_LookAt::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_LookAt, CallFunc_BreakHitResult_bInitialOverlap) == 0x0000B2, "Member 'Prop_vending_C_LookAt::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
 static_assert(offsetof(Prop_vending_C_LookAt, CallFunc_BreakHitResult_Time) == 0x0000B4, "Member 'Prop_vending_C_LookAt::CallFunc_BreakHitResult_Time' has a wrong offset!");
 static_assert(offsetof(Prop_vending_C_LookAt, CallFunc_BreakHitResult_Distance) == 0x0000B8, "Member 'Prop_vending_C_LookAt::CallFunc_BreakHitResult_Distance' has a wrong offset!");
 static_assert(offsetof(Prop_vending_C_LookAt, CallFunc_BreakHitResult_Location) == 0x0000BC, "Member 'Prop_vending_C_LookAt::CallFunc_BreakHitResult_Location' has a wrong offset!");
@@ -302,21 +325,20 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          Temp_bool_Variable;                                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_398A[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         Temp_string_Variable;                              // 0x0050(0x0010)(ReferenceParm)
 	bool                                          Temp_bool_Variable_1;                              // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_398B[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FText>                           Temp_text_Variable;                                // 0x0068(0x0010)(ReferenceParm)
 	bool                                          Temp_bool_Variable_2;                              // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_398C[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<Enum_interactionActions>               Temp_byte_Variable;                                // 0x0080(0x0010)(ReferenceParm)
 	TArray<class FText>                           K2Node_MakeArray_Array;                            // 0x0090(0x0010)(ReferenceParm)
 	TArray<class FString>                         K2Node_MakeArray_Array_1;                          // 0x00A0(0x0010)(ReferenceParm)
 	TArray<Enum_interactionActions>               K2Node_MakeArray_Array_2;                          // 0x00B0(0x0010)(ReferenceParm)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_398D[0x7];                                     // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<Enum_interactionActions>               K2Node_Select_Default;                             // 0x00C8(0x0010)(ReferenceParm)
 	TArray<class FString>                         K2Node_Select_Default_1;                           // 0x00D8(0x0010)(ReferenceParm)
 	TArray<class FText>                           K2Node_Select_Default_2;                           // 0x00E8(0x0010)(ReferenceParm)
@@ -329,8 +351,7 @@ static_assert(offsetof(Prop_vending_C_GetActionOptions, Actor) == 0x000010, "Mem
 static_assert(offsetof(Prop_vending_C_GetActionOptions, Options) == 0x000018, "Member 'Prop_vending_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Prop_vending_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Prop_vending_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Prop_vending_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Prop_vending_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_GetActionOptions, Number) == 0x000048, "Member 'Prop_vending_C_GetActionOptions::Number' has a wrong offset!");
-static_assert(offsetof(Prop_vending_C_GetActionOptions, Temp_bool_Variable) == 0x000049, "Member 'Prop_vending_C_GetActionOptions::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_vending_C_GetActionOptions, Temp_bool_Variable) == 0x000048, "Member 'Prop_vending_C_GetActionOptions::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(Prop_vending_C_GetActionOptions, Temp_string_Variable) == 0x000050, "Member 'Prop_vending_C_GetActionOptions::Temp_string_Variable' has a wrong offset!");
 static_assert(offsetof(Prop_vending_C_GetActionOptions, Temp_bool_Variable_1) == 0x000060, "Member 'Prop_vending_C_GetActionOptions::Temp_bool_Variable_1' has a wrong offset!");
 static_assert(offsetof(Prop_vending_C_GetActionOptions, Temp_text_Variable) == 0x000068, "Member 'Prop_vending_C_GetActionOptions::Temp_text_Variable' has a wrong offset!");

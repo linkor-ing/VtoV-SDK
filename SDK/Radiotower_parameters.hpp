@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Enum_interactionActions_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "InputCore_structs.hpp"
 
@@ -20,22 +20,22 @@ namespace SDK::Params
 {
 
 // Function radiotower.radiotower_C.ExecuteUbergraph_radiotower
-// 0x06E0 (0x06E0 - 0x0000)
+// 0x0618 (0x0618 - 0x0000)
 struct Radiotower_C_ExecuteUbergraph_radiotower final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A11[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A12[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x001C(0x0010)(ZeroConstructor, NoDestructor)
-	float                                         K2Node_Event_damage_6;                             // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_4;                             // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit_7;                                // 0x0030(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class AActor*                                 K2Node_Event_actor_1;                              // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                K2Node_Event_impact_1;                             // 0x00C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A13[0x4];                                     // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AWaterVolume_C*                         K2Node_Event_water_3;                              // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AWaterVolume_C*                         K2Node_Event_water_2;                              // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AWaterVolume_C*                         K2Node_Event_water_1;                              // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -44,91 +44,80 @@ public:
 	bool                                          K2Node_Event_static;                               // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_frozen;                               // 0x00F2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_active;                               // 0x00F3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F4[0x4];                                       // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A14[0x4];                                     // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_Event_actor;                                // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_5;                             // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_3;                             // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit_6;                                // 0x0104(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FVector                                K2Node_Event_impact;                               // 0x018C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_skipSetting;                          // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_199[0x7];                                      // 0x0199(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A15[0x7];                                     // 0x0199(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 K2Node_Event_key_1;                                // 0x01A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_18;                            // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_14;                            // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit_5;                                // 0x01B8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         K2Node_Event_damage_4;                             // 0x0240(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_2;                             // 0x0240(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_fuel;                                 // 0x0244(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_3;                             // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hot;                                  // 0x024C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_2D4[0x4];                                      // 0x02D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_17;                            // 0x02D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_16;                            // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_2;                             // 0x02E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_location_1;                           // 0x02EC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_15;                            // 0x02F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_14;                            // 0x0300(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_13;                            // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_wheelDelta;                           // 0x0310(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_314[0x4];                                      // 0x0314(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_12;                            // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              K2Node_Event_mouse;                                // 0x0320(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_11;                            // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   K2Node_Event_key;                                  // 0x0330(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed;                              // 0x0348(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_349[0x3];                                      // 0x0349(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_temperature_1;                        // 0x034C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_temperature;                          // 0x0350(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_speed;                                // 0x0354(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_10;                            // 0x0358(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_4;                                // 0x0360(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class FString                                 K2Node_Event_name_1;                               // 0x03E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_volume;                               // 0x03F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FC[0x4];                                      // 0x03FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_9;                             // 0x0400(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_location;                             // 0x0408(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_1;                             // 0x0414(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_clean_1;                              // 0x0418(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_419[0x7];                                      // 0x0419(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_8;                             // 0x0420(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_3;                                // 0x0428(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AHook_C*                                K2Node_Event_hook_1;                               // 0x04B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_clean;                                // 0x04B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4BC[0x4];                                      // 0x04BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_7;                             // 0x04C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AHook_C*                                K2Node_Event_hook;                                 // 0x04C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x04D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_2;                                // 0x04D8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          K2Node_Event_kick;                                 // 0x0560(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_561[0x3];                                      // 0x0561(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_Event_name;                                 // 0x0564(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_56C[0x4];                                      // 0x056C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x0570(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x0578(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_1;                                // 0x0580(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         K2Node_Event_damage;                               // 0x0608(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_60C[0x4];                                      // 0x060C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0610(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x0618(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0620(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0628(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x0630(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x06B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x06B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6BA[0x2];                                      // 0x06BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x06BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x06C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6C1[0x7];                                      // 0x06C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x06C8(0x0008)(NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x06D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6D4[0x4];                                      // 0x06D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_1;        // 0x06D8(0x0008)(NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_13;                            // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_12;                            // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_1;                             // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_location_1;                           // 0x025C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_11;                            // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_10;                            // 0x0270(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_9;                             // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_wheelDelta;                           // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A16[0x4];                                     // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_8;                             // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_Event_mouse;                                // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_7;                             // 0x0298(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   K2Node_Event_key;                                  // 0x02A0(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed;                              // 0x02B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2A17[0x3];                                     // 0x02B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_temperature_1;                        // 0x02BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_temperature;                          // 0x02C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_speed;                                // 0x02C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_4;                                // 0x02D0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class FString                                 K2Node_Event_name_1;                               // 0x0358(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_volume;                               // 0x0368(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A18[0x4];                                     // 0x036C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x0370(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_location;                             // 0x0378(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage;                               // 0x0384(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_clean;                                // 0x0388(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2A19[0x7];                                     // 0x0389(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x0390(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_3;                                // 0x0398(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AHook_C*                                K2Node_Event_hook;                                 // 0x0420(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0428(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_2;                                // 0x0430(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          K2Node_Event_kick;                                 // 0x04B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2A1A[0x3];                                     // 0x04B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_Event_name;                                 // 0x04BC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A1B[0x4];                                     // 0x04C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x04C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x04D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_1;                                // 0x04D8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0560(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x0568(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         K2Node_Event_index;                                // 0x05F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x05F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x05F5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2A1C[0x2];                                     // 0x05F6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x05F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x05FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2A1D[0x3];                                     // 0x05FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0600(0x0008)(NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x0608(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A1E[0x4];                                     // 0x060C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_1;        // 0x0610(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Radiotower_C_ExecuteUbergraph_radiotower) == 0x000008, "Wrong alignment on Radiotower_C_ExecuteUbergraph_radiotower");
-static_assert(sizeof(Radiotower_C_ExecuteUbergraph_radiotower) == 0x0006E0, "Wrong size on Radiotower_C_ExecuteUbergraph_radiotower");
+static_assert(sizeof(Radiotower_C_ExecuteUbergraph_radiotower) == 0x000618, "Wrong size on Radiotower_C_ExecuteUbergraph_radiotower");
 static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, EntryPoint) == 0x000000, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, Temp_bool_Variable) == 0x000004, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, CallFunc_Not_PreBool_ReturnValue) == 0x000018, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_CreateDelegate_OutputDelegate_1) == 0x00001C, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_damage_6) == 0x00002C, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_damage_6' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_damage_4) == 0x00002C, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_damage_4' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_hit_7) == 0x000030, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_hit_7' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_actor_1) == 0x0000B8, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_actor_1' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_impact_1) == 0x0000C0, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_impact_1' has a wrong offset!");
@@ -141,67 +130,59 @@ static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_st
 static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_frozen) == 0x0000F2, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_frozen' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_active) == 0x0000F3, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_active' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_actor) == 0x0000F8, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_actor' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_damage_5) == 0x000100, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_damage_5' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_damage_3) == 0x000100, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_damage_3' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_hit_6) == 0x000104, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_hit_6' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_impact) == 0x00018C, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_impact' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_skipSetting) == 0x000198, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_skipSetting' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_key_1) == 0x0001A0, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_key_1' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_18) == 0x0001B0, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_18' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_14) == 0x0001B0, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_14' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_hit_5) == 0x0001B8, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_hit_5' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_damage_4) == 0x000240, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_damage_4' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_damage_2) == 0x000240, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_damage_2' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_fuel) == 0x000244, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_fuel' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_damage_3) == 0x000248, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_damage_3' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_hot) == 0x00024C, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_hot' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_17) == 0x0002D8, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_17' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_16) == 0x0002E0, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_16' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_damage_2) == 0x0002E8, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_damage_2' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_location_1) == 0x0002EC, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_location_1' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_15) == 0x0002F8, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_15' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_14) == 0x000300, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_14' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_13) == 0x000308, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_13' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_wheelDelta) == 0x000310, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_wheelDelta' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_12) == 0x000318, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_12' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_mouse) == 0x000320, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_mouse' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_11) == 0x000328, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_11' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_key) == 0x000330, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_key' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_pressed) == 0x000348, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_pressed' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_temperature_1) == 0x00034C, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_temperature_1' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_temperature) == 0x000350, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_temperature' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_speed) == 0x000354, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_speed' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_10) == 0x000358, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_10' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_hit_4) == 0x000360, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_hit_4' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_name_1) == 0x0003E8, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_name_1' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_volume) == 0x0003F8, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_volume' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_9) == 0x000400, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_9' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_location) == 0x000408, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_location' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_damage_1) == 0x000414, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_damage_1' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_clean_1) == 0x000418, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_clean_1' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_8) == 0x000420, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_8' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_hit_3) == 0x000428, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_hit_3' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_hook_1) == 0x0004B0, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_hook_1' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_clean) == 0x0004B8, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_clean' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_7) == 0x0004C0, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_7' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_hook) == 0x0004C8, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_hook' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_6) == 0x0004D0, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_6' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_hit_2) == 0x0004D8, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_hit_2' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_kick) == 0x000560, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_kick' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_name) == 0x000564, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_name' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_5) == 0x000570, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_5' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_4) == 0x000578, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_4' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_hit_1) == 0x000580, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_hit_1' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_damage) == 0x000608, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_damage' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_3) == 0x000610, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_3' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_2) == 0x000618, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_2' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_1) == 0x000620, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player) == 0x000628, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_hit) == 0x000630, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_action) == 0x0006B8, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_SwitchEnum_CmpSuccess) == 0x0006B9, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, CallFunc_RandomFloatInRange_ReturnValue) == 0x0006BC, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x0006C0, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0006C8, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, CallFunc_SelectFloat_ReturnValue) == 0x0006D0, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, CallFunc_K2_SetTimerDelegate_ReturnValue_1) == 0x0006D8, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::CallFunc_K2_SetTimerDelegate_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_13) == 0x000248, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_13' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_12) == 0x000250, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_12' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_damage_1) == 0x000258, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_damage_1' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_location_1) == 0x00025C, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_location_1' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_11) == 0x000268, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_11' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_10) == 0x000270, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_10' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_9) == 0x000278, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_9' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_wheelDelta) == 0x000280, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_wheelDelta' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_8) == 0x000288, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_8' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_mouse) == 0x000290, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_mouse' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_7) == 0x000298, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_7' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_key) == 0x0002A0, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_key' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_pressed) == 0x0002B8, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_pressed' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_temperature_1) == 0x0002BC, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_temperature_1' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_temperature) == 0x0002C0, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_temperature' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_speed) == 0x0002C4, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_speed' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_6) == 0x0002C8, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_6' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_hit_4) == 0x0002D0, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_hit_4' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_name_1) == 0x000358, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_name_1' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_volume) == 0x000368, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_volume' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_5) == 0x000370, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_5' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_location) == 0x000378, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_location' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_damage) == 0x000384, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_damage' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_clean) == 0x000388, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_clean' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_4) == 0x000390, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_4' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_hit_3) == 0x000398, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_hit_3' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_hook) == 0x000420, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_hook' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_3) == 0x000428, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_3' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_hit_2) == 0x000430, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_hit_2' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_kick) == 0x0004B8, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_kick' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_name) == 0x0004BC, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_name' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_2) == 0x0004C8, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_2' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player_1) == 0x0004D0, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_hit_1) == 0x0004D8, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_hit_1' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_player) == 0x000560, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_hit) == 0x000568, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_index) == 0x0005F0, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_Event_action) == 0x0005F4, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, K2Node_SwitchEnum_CmpSuccess) == 0x0005F5, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, CallFunc_RandomFloatInRange_ReturnValue) == 0x0005F8, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x0005FC, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000600, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, CallFunc_SelectFloat_ReturnValue) == 0x000608, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ExecuteUbergraph_radiotower, CallFunc_K2_SetTimerDelegate_ReturnValue_1) == 0x000610, "Member 'Radiotower_C_ExecuteUbergraph_radiotower::CallFunc_K2_SetTimerDelegate_ReturnValue_1' has a wrong offset!");
 
 // Function radiotower.radiotower_C.actionOptionIndex
 // 0x0098 (0x0098 - 0x0000)
@@ -210,61 +191,28 @@ struct Radiotower_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Radiotower_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Radiotower_C_ActionOptionIndex");
 static_assert(sizeof(Radiotower_C_ActionOptionIndex) == 0x000098, "Wrong size on Radiotower_C_ActionOptionIndex");
 static_assert(offsetof(Radiotower_C_ActionOptionIndex, Player) == 0x000000, "Member 'Radiotower_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_ActionOptionIndex, Hit) == 0x000008, "Member 'Radiotower_C_ActionOptionIndex::Hit' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ActionOptionIndex, Action) == 0x000090, "Member 'Radiotower_C_ActionOptionIndex::Action' has a wrong offset!");
-
-// Function radiotower.radiotower_C.playerR
-// 0x0008 (0x0008 - 0x0000)
-struct Radiotower_C_PlayerR final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Radiotower_C_PlayerR) == 0x000008, "Wrong alignment on Radiotower_C_PlayerR");
-static_assert(sizeof(Radiotower_C_PlayerR) == 0x000008, "Wrong size on Radiotower_C_PlayerR");
-static_assert(offsetof(Radiotower_C_PlayerR, Player) == 0x000000, "Member 'Radiotower_C_PlayerR::Player' has a wrong offset!");
-
-// Function radiotower.radiotower_C.playerHold
-// 0x0008 (0x0008 - 0x0000)
-struct Radiotower_C_PlayerHold final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Radiotower_C_PlayerHold) == 0x000008, "Wrong alignment on Radiotower_C_PlayerHold");
-static_assert(sizeof(Radiotower_C_PlayerHold) == 0x000008, "Wrong size on Radiotower_C_PlayerHold");
-static_assert(offsetof(Radiotower_C_PlayerHold, Player) == 0x000000, "Member 'Radiotower_C_PlayerHold::Player' has a wrong offset!");
-
-// Function radiotower.radiotower_C.playerUnequip
-// 0x0008 (0x0008 - 0x0000)
-struct Radiotower_C_PlayerUnequip final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Radiotower_C_PlayerUnequip) == 0x000008, "Wrong alignment on Radiotower_C_PlayerUnequip");
-static_assert(sizeof(Radiotower_C_PlayerUnequip) == 0x000008, "Wrong size on Radiotower_C_PlayerUnequip");
-static_assert(offsetof(Radiotower_C_PlayerUnequip, Player) == 0x000000, "Member 'Radiotower_C_PlayerUnequip::Player' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Radiotower_C_ActionOptionIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_ActionOptionIndex, Action) == 0x000094, "Member 'Radiotower_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function radiotower.radiotower_C.damageByPlayer
-// 0x0098 (0x0098 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct Radiotower_C_DamageByPlayer final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         Damage;                                            // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Radiotower_C_DamageByPlayer) == 0x000008, "Wrong alignment on Radiotower_C_DamageByPlayer");
-static_assert(sizeof(Radiotower_C_DamageByPlayer) == 0x000098, "Wrong size on Radiotower_C_DamageByPlayer");
+static_assert(sizeof(Radiotower_C_DamageByPlayer) == 0x000090, "Wrong size on Radiotower_C_DamageByPlayer");
 static_assert(offsetof(Radiotower_C_DamageByPlayer, Player) == 0x000000, "Member 'Radiotower_C_DamageByPlayer::Player' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_DamageByPlayer, Hit) == 0x000008, "Member 'Radiotower_C_DamageByPlayer::Hit' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_DamageByPlayer, Damage) == 0x000090, "Member 'Radiotower_C_DamageByPlayer::Damage' has a wrong offset!");
 
 // Function radiotower.radiotower_C.thrown
 // 0x0008 (0x0008 - 0x0000)
@@ -311,31 +259,6 @@ static_assert(alignof(Radiotower_C_Player_use) == 0x000008, "Wrong alignment on 
 static_assert(sizeof(Radiotower_C_Player_use) == 0x000090, "Wrong size on Radiotower_C_Player_use");
 static_assert(offsetof(Radiotower_C_Player_use, Player) == 0x000000, "Member 'Radiotower_C_Player_use::Player' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_Player_use, Hit) == 0x000008, "Member 'Radiotower_C_Player_use::Hit' has a wrong offset!");
-
-// Function radiotower.radiotower_C.hookTension
-// 0x0008 (0x0008 - 0x0000)
-struct Radiotower_C_HookTension final
-{
-public:
-	class AHook_C*                                Hook;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Radiotower_C_HookTension) == 0x000008, "Wrong alignment on Radiotower_C_HookTension");
-static_assert(sizeof(Radiotower_C_HookTension) == 0x000008, "Wrong size on Radiotower_C_HookTension");
-static_assert(offsetof(Radiotower_C_HookTension, Hook) == 0x000000, "Member 'Radiotower_C_HookTension::Hook' has a wrong offset!");
-
-// Function radiotower.radiotower_C.cleanSponge
-// 0x0010 (0x0010 - 0x0000)
-struct Radiotower_C_CleanSponge final
-{
-public:
-	float                                         Clean;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          Player;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Radiotower_C_CleanSponge) == 0x000008, "Wrong alignment on Radiotower_C_CleanSponge");
-static_assert(sizeof(Radiotower_C_CleanSponge) == 0x000010, "Wrong size on Radiotower_C_CleanSponge");
-static_assert(offsetof(Radiotower_C_CleanSponge, Clean) == 0x000000, "Member 'Radiotower_C_CleanSponge::Clean' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_CleanSponge, Player) == 0x000008, "Member 'Radiotower_C_CleanSponge::Player' has a wrong offset!");
 
 // Function radiotower.radiotower_C.hooked
 // 0x0008 (0x0008 - 0x0000)
@@ -544,19 +467,6 @@ static_assert(alignof(Radiotower_C_PlayerHandUse_RMB) == 0x000008, "Wrong alignm
 static_assert(sizeof(Radiotower_C_PlayerHandUse_RMB) == 0x000008, "Wrong size on Radiotower_C_PlayerHandUse_RMB");
 static_assert(offsetof(Radiotower_C_PlayerHandUse_RMB, Player) == 0x000000, "Member 'Radiotower_C_PlayerHandUse_RMB::Player' has a wrong offset!");
 
-// Function radiotower.radiotower_C.receivedPhyiscsDamage
-// 0x008C (0x008C - 0x0000)
-struct Radiotower_C_ReceivedPhyiscsDamage final
-{
-public:
-	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Hot;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-static_assert(alignof(Radiotower_C_ReceivedPhyiscsDamage) == 0x000004, "Wrong alignment on Radiotower_C_ReceivedPhyiscsDamage");
-static_assert(sizeof(Radiotower_C_ReceivedPhyiscsDamage) == 0x00008C, "Wrong size on Radiotower_C_ReceivedPhyiscsDamage");
-static_assert(offsetof(Radiotower_C_ReceivedPhyiscsDamage, Damage) == 0x000000, "Member 'Radiotower_C_ReceivedPhyiscsDamage::Damage' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_ReceivedPhyiscsDamage, Hot) == 0x000004, "Member 'Radiotower_C_ReceivedPhyiscsDamage::Hot' has a wrong offset!");
-
 // Function radiotower.radiotower_C.ignite
 // 0x0004 (0x0004 - 0x0000)
 struct Radiotower_C_Ignite final
@@ -699,7 +609,7 @@ struct Radiotower_C_ImpactDamage final
 public:
 	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A1F[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0090(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Impact;                                            // 0x0098(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -731,40 +641,6 @@ public:
 static_assert(alignof(Radiotower_C_SetHidden) == 0x000001, "Wrong alignment on Radiotower_C_SetHidden");
 static_assert(sizeof(Radiotower_C_SetHidden) == 0x000001, "Wrong size on Radiotower_C_SetHidden");
 static_assert(offsetof(Radiotower_C_SetHidden, NewHidden) == 0x000000, "Member 'Radiotower_C_SetHidden::NewHidden' has a wrong offset!");
-
-// Function radiotower.radiotower_C.SetHeight
-// 0x0070 (0x0070 - 0x0000)
-struct Radiotower_C_SetHeight final
-{
-public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0014(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0020(0x0030)(IsPlainOldData, NoDestructor)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UInstancedStaticMeshComponent*          K2Node_Select_Default;                             // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_AddInstance_ReturnValue;                  // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(Radiotower_C_SetHeight) == 0x000010, "Wrong alignment on Radiotower_C_SetHeight");
-static_assert(sizeof(Radiotower_C_SetHeight) == 0x000070, "Wrong size on Radiotower_C_SetHeight");
-static_assert(offsetof(Radiotower_C_SetHeight, Temp_bool_Variable) == 0x000000, "Member 'Radiotower_C_SetHeight::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_SetHeight, Temp_int_Variable) == 0x000004, "Member 'Radiotower_C_SetHeight::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_SetHeight, CallFunc_Percent_IntInt_ReturnValue) == 0x000008, "Member 'Radiotower_C_SetHeight::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_SetHeight, CallFunc_Multiply_IntFloat_ReturnValue) == 0x00000C, "Member 'Radiotower_C_SetHeight::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_SetHeight, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000010, "Member 'Radiotower_C_SetHeight::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_SetHeight, CallFunc_MakeVector_ReturnValue) == 0x000014, "Member 'Radiotower_C_SetHeight::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_SetHeight, CallFunc_MakeTransform_ReturnValue) == 0x000020, "Member 'Radiotower_C_SetHeight::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_SetHeight, CallFunc_Add_IntInt_ReturnValue) == 0x000050, "Member 'Radiotower_C_SetHeight::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_SetHeight, K2Node_Select_Default) == 0x000058, "Member 'Radiotower_C_SetHeight::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_SetHeight, CallFunc_AddInstance_ReturnValue) == 0x000060, "Member 'Radiotower_C_SetHeight::CallFunc_AddInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_SetHeight, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000064, "Member 'Radiotower_C_SetHeight::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function radiotower.radiotower_C.canBePutInContainer
 // 0x0001 (0x0001 - 0x0000)
@@ -820,20 +696,20 @@ public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A20[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x00B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2A21[0x1];                                     // 0x00B3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x00BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x00C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x00D4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x00E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_EC[0x4];                                       // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A22[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0100(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -843,11 +719,11 @@ public:
 	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x011C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0128(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_134[0x4];                                      // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A23[0x4];                                     // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0138(0x0018)()
 	class FText                                   Temp_text_Variable_1;                              // 0x0150(0x0018)()
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_169[0x7];                                      // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A24[0x7];                                     // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0170(0x0018)()
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0188(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x01C8(0x0010)(ReferenceParm)
@@ -861,10 +737,9 @@ static_assert(offsetof(Radiotower_C_LookAt, Hit) == 0x000008, "Member 'Radiotowe
 static_assert(offsetof(Radiotower_C_LookAt, Return) == 0x000090, "Member 'Radiotower_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_LookAt, Text) == 0x000098, "Member 'Radiotower_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'Radiotower_C_LookAt::boundObjectReplace' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_LookAt, Number) == 0x0000B0, "Member 'Radiotower_C_LookAt::Number' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_LookAt, Temp_bool_Variable) == 0x0000B1, "Member 'Radiotower_C_LookAt::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_LookAt, CallFunc_BreakHitResult_bBlockingHit) == 0x0000B2, "Member 'Radiotower_C_LookAt::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_LookAt, CallFunc_BreakHitResult_bInitialOverlap) == 0x0000B3, "Member 'Radiotower_C_LookAt::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_LookAt, Temp_bool_Variable) == 0x0000B0, "Member 'Radiotower_C_LookAt::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_LookAt, CallFunc_BreakHitResult_bBlockingHit) == 0x0000B1, "Member 'Radiotower_C_LookAt::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_LookAt, CallFunc_BreakHitResult_bInitialOverlap) == 0x0000B2, "Member 'Radiotower_C_LookAt::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_LookAt, CallFunc_BreakHitResult_Time) == 0x0000B4, "Member 'Radiotower_C_LookAt::CallFunc_BreakHitResult_Time' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_LookAt, CallFunc_BreakHitResult_Distance) == 0x0000B8, "Member 'Radiotower_C_LookAt::CallFunc_BreakHitResult_Distance' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_LookAt, CallFunc_BreakHitResult_Location) == 0x0000BC, "Member 'Radiotower_C_LookAt::CallFunc_BreakHitResult_Location' has a wrong offset!");
@@ -900,19 +775,6 @@ static_assert(alignof(Radiotower_C_IsButtonUsed) == 0x000001, "Wrong alignment o
 static_assert(sizeof(Radiotower_C_IsButtonUsed) == 0x000001, "Wrong size on Radiotower_C_IsButtonUsed");
 static_assert(offsetof(Radiotower_C_IsButtonUsed, Failed) == 0x000000, "Member 'Radiotower_C_IsButtonUsed::Failed' has a wrong offset!");
 
-// Function radiotower.radiotower_C.landedOn
-// 0x0010 (0x0010 - 0x0000)
-struct Radiotower_C_LandedOn final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IgnoreFallDamage;                                  // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(Radiotower_C_LandedOn) == 0x000008, "Wrong alignment on Radiotower_C_LandedOn");
-static_assert(sizeof(Radiotower_C_LandedOn) == 0x000010, "Wrong size on Radiotower_C_LandedOn");
-static_assert(offsetof(Radiotower_C_LandedOn, Player) == 0x000000, "Member 'Radiotower_C_LandedOn::Player' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_LandedOn, IgnoreFallDamage) == 0x000008, "Member 'Radiotower_C_LandedOn::IgnoreFallDamage' has a wrong offset!");
-
 // Function radiotower.radiotower_C.gascanFuel
 // 0x0010 (0x0010 - 0x0000)
 struct Radiotower_C_GascanFuel final
@@ -927,7 +789,7 @@ static_assert(offsetof(Radiotower_C_GascanFuel, Gascan) == 0x000000, "Member 'Ra
 static_assert(offsetof(Radiotower_C_GascanFuel, Fueled) == 0x000008, "Member 'Radiotower_C_GascanFuel::Fueled' has a wrong offset!");
 
 // Function radiotower.radiotower_C.getActionOptions
-// 0x0060 (0x0060 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct Radiotower_C_GetActionOptions final
 {
 public:
@@ -937,20 +799,17 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
 };
 static_assert(alignof(Radiotower_C_GetActionOptions) == 0x000008, "Wrong alignment on Radiotower_C_GetActionOptions");
-static_assert(sizeof(Radiotower_C_GetActionOptions) == 0x000060, "Wrong size on Radiotower_C_GetActionOptions");
+static_assert(sizeof(Radiotower_C_GetActionOptions) == 0x000058, "Wrong size on Radiotower_C_GetActionOptions");
 static_assert(offsetof(Radiotower_C_GetActionOptions, Player) == 0x000000, "Member 'Radiotower_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_GetActionOptions, Component) == 0x000008, "Member 'Radiotower_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_GetActionOptions, Actor) == 0x000010, "Member 'Radiotower_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_GetActionOptions, Options) == 0x000018, "Member 'Radiotower_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Radiotower_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Radiotower_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Radiotower_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_GetActionOptions, Number) == 0x000048, "Member 'Radiotower_C_GetActionOptions::Number' has a wrong offset!");
-static_assert(offsetof(Radiotower_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Radiotower_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Radiotower_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'Radiotower_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 // Function radiotower.radiotower_C.setPath
 // 0x0018 (0x0018 - 0x0000)
@@ -1032,17 +891,6 @@ public:
 static_assert(alignof(Radiotower_C_SkipRadial) == 0x000001, "Wrong alignment on Radiotower_C_SkipRadial");
 static_assert(sizeof(Radiotower_C_SkipRadial) == 0x000001, "Wrong size on Radiotower_C_SkipRadial");
 static_assert(offsetof(Radiotower_C_SkipRadial, Skip) == 0x000000, "Member 'Radiotower_C_SkipRadial::Skip' has a wrong offset!");
-
-// Function radiotower.radiotower_C.getPriceMultiplier
-// 0x0004 (0x0004 - 0x0000)
-struct Radiotower_C_GetPriceMultiplier final
-{
-public:
-	float                                         PriceMult;                                         // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Radiotower_C_GetPriceMultiplier) == 0x000004, "Wrong alignment on Radiotower_C_GetPriceMultiplier");
-static_assert(sizeof(Radiotower_C_GetPriceMultiplier) == 0x000004, "Wrong size on Radiotower_C_GetPriceMultiplier");
-static_assert(offsetof(Radiotower_C_GetPriceMultiplier, PriceMult) == 0x000000, "Member 'Radiotower_C_GetPriceMultiplier::PriceMult' has a wrong offset!");
 
 }
 

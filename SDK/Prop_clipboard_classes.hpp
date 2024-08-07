@@ -19,26 +19,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_clipboard.prop_clipboard_C
-// 0x0030 (0x03A8 - 0x0378)
+// 0x0030 (0x0398 - 0x0368)
 class AProp_clipboard_C : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_clipboard_C;                   // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	TArray<class FString>                         Text;                                              // 0x0380(0x0010)(Edit, BlueprintVisible, ExposeOnSpawn)
-	TArray<class FText>                           Text2;                                             // 0x0390(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                         Page;                                              // 0x03A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3D72[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_clipboard_C;                   // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	TArray<class FString>                         Text;                                              // 0x0370(0x0010)(Edit, BlueprintVisible, ExposeOnSpawn)
+	TArray<class FText>                           Text2;                                             // 0x0380(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         Page;                                              // 0x0390(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_clipboard(int32 EntryPoint);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
 	void Upd();
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
 	void GamemodeBeginPlay();
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
 	void UserConstructionScript();
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Param_Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Param_Text, class UPrimitiveComponent** boundObjectReplace);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 
 public:
 	static class UClass* StaticClass()
@@ -51,11 +52,11 @@ public:
 	}
 };
 static_assert(alignof(AProp_clipboard_C) == 0x000008, "Wrong alignment on AProp_clipboard_C");
-static_assert(sizeof(AProp_clipboard_C) == 0x0003A8, "Wrong size on AProp_clipboard_C");
-static_assert(offsetof(AProp_clipboard_C, UberGraphFrame_Prop_clipboard_C) == 0x000378, "Member 'AProp_clipboard_C::UberGraphFrame_Prop_clipboard_C' has a wrong offset!");
-static_assert(offsetof(AProp_clipboard_C, Text) == 0x000380, "Member 'AProp_clipboard_C::Text' has a wrong offset!");
-static_assert(offsetof(AProp_clipboard_C, Text2) == 0x000390, "Member 'AProp_clipboard_C::Text2' has a wrong offset!");
-static_assert(offsetof(AProp_clipboard_C, Page) == 0x0003A0, "Member 'AProp_clipboard_C::Page' has a wrong offset!");
+static_assert(sizeof(AProp_clipboard_C) == 0x000398, "Wrong size on AProp_clipboard_C");
+static_assert(offsetof(AProp_clipboard_C, UberGraphFrame_Prop_clipboard_C) == 0x000368, "Member 'AProp_clipboard_C::UberGraphFrame_Prop_clipboard_C' has a wrong offset!");
+static_assert(offsetof(AProp_clipboard_C, Text) == 0x000370, "Member 'AProp_clipboard_C::Text' has a wrong offset!");
+static_assert(offsetof(AProp_clipboard_C, Text2) == 0x000380, "Member 'AProp_clipboard_C::Text2' has a wrong offset!");
+static_assert(offsetof(AProp_clipboard_C, Page) == 0x000390, "Member 'AProp_clipboard_C::Page' has a wrong offset!");
 
 }
 

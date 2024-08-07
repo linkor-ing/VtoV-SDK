@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_flag_S.prop_flag_S_C
-// 0x0000 (0x03A0 - 0x03A0)
+// 0x0000 (0x0390 - 0x0390)
 class AProp_flag_S_C final : public AProp_flag_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_flag_S_C) == 0x000008, "Wrong alignment on AProp_flag_S_C");
-static_assert(sizeof(AProp_flag_S_C) == 0x0003A0, "Wrong size on AProp_flag_S_C");
+static_assert(sizeof(AProp_flag_S_C) == 0x000390, "Wrong size on AProp_flag_S_C");
 
 }
 

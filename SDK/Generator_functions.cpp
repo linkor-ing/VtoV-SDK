@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function generator.generator_C.turnedOn__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void AGenerator_C::TurnedOn__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("generator_C", "turnedOn__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function generator.generator_C.ExecuteUbergraph_generator
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -79,66 +65,6 @@ void AGenerator_C::ReceiveBeginPlay()
 }
 
 
-// Function generator.generator_C.playerR
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AGenerator_C::PlayerR(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("generator_C", "playerR");
-
-	Params::Generator_C_PlayerR Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function generator.generator_C.playerHold
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AGenerator_C::PlayerHold(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("generator_C", "playerHold");
-
-	Params::Generator_C_PlayerHold Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function generator.generator_C.playerUnequip
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AGenerator_C::PlayerUnequip(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("generator_C", "playerUnequip");
-
-	Params::Generator_C_PlayerUnequip Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function generator.generator_C.updateStrAgl
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -158,9 +84,8 @@ void AGenerator_C::UpdateStrAgl()
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AGenerator_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage)
+void AGenerator_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit)
 {
 	static class UFunction* Func = nullptr;
 
@@ -171,7 +96,6 @@ void AGenerator_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHit
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
-	Parms.Damage = Damage;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -301,30 +225,6 @@ void AGenerator_C::DriveDetached()
 }
 
 
-// Function generator.generator_C.texturePickerApply
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AGenerator_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("generator_C", "texturePickerApply");
-
-	Params::Generator_C_TexturePickerApply Parms{};
-
-	Parms.Picker = Picker;
-	Parms.Texture = Texture;
-	Parms.Param_Index = Param_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function generator.generator_C.applyColor
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -426,7 +326,7 @@ void AGenerator_C::Unfocused()
 // Function generator.generator_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AGenerator_C::SettingsApplied(const struct FStruct_settings& Settings)
 {
@@ -610,30 +510,6 @@ void AGenerator_C::CanPickup(bool* Return)
 }
 
 
-// Function generator.generator_C.actionOptionIndex
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AGenerator_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("generator_C", "actionOptionIndex");
-
-	Params::Generator_C_ActionOptionIndex Parms{};
-
-	Parms.Player = Player;
-	Parms.Hit = std::move(Hit);
-	Parms.Action = Action;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function generator.generator_C.noRespawn
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -666,9 +542,8 @@ void AGenerator_C::NoRespawn(bool Param_NoRespawn, bool* Return)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AGenerator_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
+void AGenerator_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
 {
 	static class UFunction* Func = nullptr;
 
@@ -690,9 +565,6 @@ void AGenerator_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& 
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
 }
 
 
@@ -714,30 +586,6 @@ void AGenerator_C::IsButtonUsed(bool* Failed)
 
 	if (Failed != nullptr)
 		*Failed = Parms.Failed;
-}
-
-
-// Function generator.generator_C.landedOn
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IgnoreFallDamage                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AGenerator_C::LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("generator_C", "landedOn");
-
-	Params::Generator_C_LandedOn Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (IgnoreFallDamage != nullptr)
-		*IgnoreFallDamage = Parms.IgnoreFallDamage;
 }
 
 
@@ -790,6 +638,32 @@ void AGenerator_C::AddDamage(class AActor* Actor, float Damage, const struct FHi
 	Parms.Hit = std::move(Hit);
 	Parms.Impact = std::move(Impact);
 	Parms.SkipSetting = SkipSetting;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function generator.generator_C.actionOptionIndex
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AGenerator_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("generator_C", "actionOptionIndex");
+
+	Params::Generator_C_ActionOptionIndex Parms{};
+
+	Parms.Player = Player;
+	Parms.Hit = std::move(Hit);
+	Parms.Param_Index = Param_Index;
+	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -849,9 +723,8 @@ void AGenerator_C::GetData(struct FStruct_save* Data)
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AGenerator_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
+void AGenerator_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
 {
 	static class UFunction* Func = nullptr;
 
@@ -874,30 +747,6 @@ void AGenerator_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiv
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
-}
-
-
-// Function generator.generator_C.gatherDataFromKey
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AGenerator_C::GatherDataFromKey(bool* Gather)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("generator_C", "gatherDataFromKey");
-
-	Params::Generator_C_GatherDataFromKey Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Gather != nullptr)
-		*Gather = Parms.Gather;
 }
 
 }

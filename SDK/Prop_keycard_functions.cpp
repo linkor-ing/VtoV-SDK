@@ -57,19 +57,19 @@ void AProp_keycard_C::Hooked(class AHook_C* Param_Hook)
 }
 
 
-// Function prop_keycard.prop_keycard_C.playerHandRelease_LMB
+// Function prop_keycard.prop_keycard_C.playerHandUse_RMB
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_keycard_C::PlayerHandRelease_LMB(class AMainPlayer_C* Player)
+void AProp_keycard_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("prop_keycard_C", "playerHandRelease_LMB");
+		Func = Class->GetFunction("prop_keycard_C", "playerHandUse_RMB");
 
-	Params::Prop_keycard_C_PlayerHandRelease_LMB Parms{};
+	Params::Prop_keycard_C_PlayerHandUse_RMB Parms{};
 
 	Parms.Player = Player;
 
@@ -130,9 +130,8 @@ void AProp_keycard_C::GetData(struct FStruct_save* Data)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_keycard_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
+void AProp_keycard_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
 {
 	static class UFunction* Func = nullptr;
 
@@ -154,9 +153,6 @@ void AProp_keycard_C::LookAt(class AMainPlayer_C* Player, const struct FHitResul
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
 }
 
 }

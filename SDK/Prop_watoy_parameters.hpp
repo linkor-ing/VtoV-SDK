@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
 #include "Enum_interactionActions_structs.hpp"
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
@@ -24,15 +24,16 @@ struct Prop_watoy_C_ExecuteUbergraph_prop_watoy final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0xC];                                        // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3967[0xC];                                     // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Temp_struct_Variable;                              // 0x0010(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit;                                  // 0x0048(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UComp_zerog_C*                          CallFunc_AddComponent_ReturnValue;                 // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_index;                                // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x00D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3968[0x3];                                     // 0x00D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UZerogComponent_C*                      CallFunc_AddComponent_ReturnValue;                 // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E1[0x3];                                       // 0x00E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3969[0x3];                                     // 0x00E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetComponentVelocity_ReturnValue;         // 0x00E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Lerp_ReturnValue;                         // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -47,10 +48,10 @@ public:
 	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x0128(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0134(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_141[0x3];                                      // 0x0141(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_396A[0x3];                                     // 0x0141(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_GetForwardVector_ReturnValue_1;           // 0x0144(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_151[0x3];                                      // 0x0151(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_396B[0x3];                                     // 0x0151(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x0154(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x0160(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -60,7 +61,8 @@ static_assert(offsetof(Prop_watoy_C_ExecuteUbergraph_prop_watoy, EntryPoint) == 
 static_assert(offsetof(Prop_watoy_C_ExecuteUbergraph_prop_watoy, Temp_struct_Variable) == 0x000010, "Member 'Prop_watoy_C_ExecuteUbergraph_prop_watoy::Temp_struct_Variable' has a wrong offset!");
 static_assert(offsetof(Prop_watoy_C_ExecuteUbergraph_prop_watoy, K2Node_Event_player) == 0x000040, "Member 'Prop_watoy_C_ExecuteUbergraph_prop_watoy::K2Node_Event_player' has a wrong offset!");
 static_assert(offsetof(Prop_watoy_C_ExecuteUbergraph_prop_watoy, K2Node_Event_hit) == 0x000048, "Member 'Prop_watoy_C_ExecuteUbergraph_prop_watoy::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_watoy_C_ExecuteUbergraph_prop_watoy, K2Node_Event_action) == 0x0000D0, "Member 'Prop_watoy_C_ExecuteUbergraph_prop_watoy::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_watoy_C_ExecuteUbergraph_prop_watoy, K2Node_Event_index) == 0x0000D0, "Member 'Prop_watoy_C_ExecuteUbergraph_prop_watoy::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Prop_watoy_C_ExecuteUbergraph_prop_watoy, K2Node_Event_action) == 0x0000D4, "Member 'Prop_watoy_C_ExecuteUbergraph_prop_watoy::K2Node_Event_action' has a wrong offset!");
 static_assert(offsetof(Prop_watoy_C_ExecuteUbergraph_prop_watoy, CallFunc_AddComponent_ReturnValue) == 0x0000D8, "Member 'Prop_watoy_C_ExecuteUbergraph_prop_watoy::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_watoy_C_ExecuteUbergraph_prop_watoy, K2Node_SwitchEnum_CmpSuccess) == 0x0000E0, "Member 'Prop_watoy_C_ExecuteUbergraph_prop_watoy::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(Prop_watoy_C_ExecuteUbergraph_prop_watoy, K2Node_Event_DeltaSeconds) == 0x0000E4, "Member 'Prop_watoy_C_ExecuteUbergraph_prop_watoy::K2Node_Event_DeltaSeconds' has a wrong offset!");
@@ -100,16 +102,18 @@ struct Prop_watoy_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_watoy_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_watoy_C_ActionOptionIndex");
 static_assert(sizeof(Prop_watoy_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_watoy_C_ActionOptionIndex");
 static_assert(offsetof(Prop_watoy_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_watoy_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(Prop_watoy_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_watoy_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_watoy_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_watoy_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(Prop_watoy_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_watoy_C_ActionOptionIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(Prop_watoy_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_watoy_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function prop_watoy.prop_watoy_C.getActionOptions
-// 0x0060 (0x0060 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct Prop_watoy_C_GetActionOptions final
 {
 public:
@@ -119,20 +123,17 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
 };
 static_assert(alignof(Prop_watoy_C_GetActionOptions) == 0x000008, "Wrong alignment on Prop_watoy_C_GetActionOptions");
-static_assert(sizeof(Prop_watoy_C_GetActionOptions) == 0x000060, "Wrong size on Prop_watoy_C_GetActionOptions");
+static_assert(sizeof(Prop_watoy_C_GetActionOptions) == 0x000058, "Wrong size on Prop_watoy_C_GetActionOptions");
 static_assert(offsetof(Prop_watoy_C_GetActionOptions, Player) == 0x000000, "Member 'Prop_watoy_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Prop_watoy_C_GetActionOptions, Component) == 0x000008, "Member 'Prop_watoy_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Prop_watoy_C_GetActionOptions, Actor) == 0x000010, "Member 'Prop_watoy_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Prop_watoy_C_GetActionOptions, Options) == 0x000018, "Member 'Prop_watoy_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Prop_watoy_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Prop_watoy_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Prop_watoy_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Prop_watoy_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Prop_watoy_C_GetActionOptions, Number) == 0x000048, "Member 'Prop_watoy_C_GetActionOptions::Number' has a wrong offset!");
-static_assert(offsetof(Prop_watoy_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Prop_watoy_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Prop_watoy_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'Prop_watoy_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 }
 

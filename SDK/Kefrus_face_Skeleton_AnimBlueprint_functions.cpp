@@ -37,26 +37,6 @@ void UKefrus_face_Skeleton_AnimBlueprint_C::ExecuteUbergraph_kefrus_face_Skeleto
 }
 
 
-// Function kefrus_face_Skeleton_AnimBlueprint.kefrus_face_Skeleton_AnimBlueprint_C.BlueprintUpdateAnimation
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaTimeX                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UKefrus_face_Skeleton_AnimBlueprint_C::BlueprintUpdateAnimation(float DeltaTimeX)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("kefrus_face_Skeleton_AnimBlueprint_C", "BlueprintUpdateAnimation");
-
-	Params::Kefrus_face_Skeleton_AnimBlueprint_C_BlueprintUpdateAnimation Parms{};
-
-	Parms.DeltaTimeX = DeltaTimeX;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function kefrus_face_Skeleton_AnimBlueprint.kefrus_face_Skeleton_AnimBlueprint_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:

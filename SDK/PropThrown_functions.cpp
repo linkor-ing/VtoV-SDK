@@ -37,34 +37,6 @@ void UPropThrown_C::ExecuteUbergraph_propThrown(int32 EntryPoint)
 }
 
 
-// Function propThrown.propThrown_C.hitted
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPrimitiveComponent*              HitComponent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          NormalImpulse                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-
-void UPropThrown_C::Hitted(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("propThrown_C", "hitted");
-
-	Params::PropThrown_C_Hitted Parms{};
-
-	Parms.HitComponent = HitComponent;
-	Parms.OtherActor = OtherActor;
-	Parms.OtherComp = OtherComp;
-	Parms.NormalImpulse = std::move(NormalImpulse);
-	Parms.Hit = std::move(Hit);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function propThrown.propThrown_C.fin
 // (BlueprintCallable, BlueprintEvent)
 
@@ -126,6 +98,20 @@ void UPropThrown_C::Init(class AProp_C* Param_Prop, class UPrimitiveComponent* P
 	Parms.Param_Component = Param_Component;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function propThrown.propThrown_C.Hit
+// (BlueprintCallable, BlueprintEvent)
+
+void UPropThrown_C::Hit()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("propThrown_C", "Hit");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

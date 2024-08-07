@@ -18,21 +18,22 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_stickers.prop_stickers_C
-// 0x0030 (0x03A8 - 0x0378)
+// 0x0030 (0x0398 - 0x0368)
 class AProp_stickers_C final : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_stickers_C;                    // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class FString                                 ActiveName;                                        // 0x0380(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	int32                                         Index_Prop_stickers_C;                             // 0x0390(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_394[0x4];                                      // 0x0394(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 buffKey;                                           // 0x0398(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	uint8                                         Pad_3A4F[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_stickers_C;                    // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class FString                                 ActiveName;                                        // 0x0370(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	int32                                         Index_Prop_stickers_C;                             // 0x0380(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3A50[0x4];                                     // 0x0384(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 buffKey;                                           // 0x0388(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_stickers(int32 EntryPoint);
 	void ReceiveBeginPlay();
-	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
+	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
 
@@ -47,11 +48,11 @@ public:
 	}
 };
 static_assert(alignof(AProp_stickers_C) == 0x000008, "Wrong alignment on AProp_stickers_C");
-static_assert(sizeof(AProp_stickers_C) == 0x0003A8, "Wrong size on AProp_stickers_C");
-static_assert(offsetof(AProp_stickers_C, UberGraphFrame_Prop_stickers_C) == 0x000378, "Member 'AProp_stickers_C::UberGraphFrame_Prop_stickers_C' has a wrong offset!");
-static_assert(offsetof(AProp_stickers_C, ActiveName) == 0x000380, "Member 'AProp_stickers_C::ActiveName' has a wrong offset!");
-static_assert(offsetof(AProp_stickers_C, Index_Prop_stickers_C) == 0x000390, "Member 'AProp_stickers_C::Index_Prop_stickers_C' has a wrong offset!");
-static_assert(offsetof(AProp_stickers_C, buffKey) == 0x000398, "Member 'AProp_stickers_C::buffKey' has a wrong offset!");
+static_assert(sizeof(AProp_stickers_C) == 0x000398, "Wrong size on AProp_stickers_C");
+static_assert(offsetof(AProp_stickers_C, UberGraphFrame_Prop_stickers_C) == 0x000368, "Member 'AProp_stickers_C::UberGraphFrame_Prop_stickers_C' has a wrong offset!");
+static_assert(offsetof(AProp_stickers_C, ActiveName) == 0x000370, "Member 'AProp_stickers_C::ActiveName' has a wrong offset!");
+static_assert(offsetof(AProp_stickers_C, Index_Prop_stickers_C) == 0x000380, "Member 'AProp_stickers_C::Index_Prop_stickers_C' has a wrong offset!");
+static_assert(offsetof(AProp_stickers_C, buffKey) == 0x000388, "Member 'AProp_stickers_C::buffKey' has a wrong offset!");
 
 }
 

@@ -10,57 +10,58 @@
 
 #include "Basic.hpp"
 
+#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Prop_classes.hpp"
-#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass prop_container.prop_container_C
-// 0x0080 (0x03F8 - 0x0378)
+// 0x0080 (0x03E8 - 0x0368)
 class AProp_container_C : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_container_C;                   // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBoxComponent*                          UsableVolume;                                      // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        Audio;                                             // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UArrowComponent*                        Spawn;                                             // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          Overlap;                                           // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPropInventory_C*                       PropInventory;                                     // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          Canoverlap;                                        // 0x03A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3A9[0x7];                                      // 0x03A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<float>                                 MassData;                                          // 0x03B0(0x0010)(Edit, BlueprintVisible)
-	TArray<float>                                 VolumeData;                                        // 0x03C0(0x0010)(Edit, BlueprintVisible)
-	TArray<class FString>                         NameData;                                          // 0x03D0(0x0010)(Edit, BlueprintVisible)
-	bool                                          Locked;                                            // 0x03E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3E1[0x3];                                      // 0x03E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                Volume;                                            // 0x03E4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Fridge;                                            // 0x03F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4207[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_container_C;                   // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBoxComponent*                          UsableVolume;                                      // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        Audio;                                             // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        Spawn;                                             // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Overlap;                                           // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPropInventory_C*                       PropInventory;                                     // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          Canoverlap;                                        // 0x0398(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4208[0x7];                                     // 0x0399(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<float>                                 MassData;                                          // 0x03A0(0x0010)(Edit, BlueprintVisible)
+	TArray<float>                                 VolumeData;                                        // 0x03B0(0x0010)(Edit, BlueprintVisible)
+	TArray<class FString>                         NameData;                                          // 0x03C0(0x0010)(Edit, BlueprintVisible)
+	bool                                          Locked;                                            // 0x03D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4209[0x3];                                     // 0x03D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                Volume;                                            // 0x03D4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Fridge;                                            // 0x03E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_prop_container(int32 EntryPoint);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
-	void Dingus();
-	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
 	void PropRenderer_finishProps();
 	void broken_fire();
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
 	void ReceiveDestroyed();
+	void Dingus();
 	void broken();
 	void BndEvt__overlap_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 	void BndEvt__overlap_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 	void ReceiveBeginPlay();
+	void Extract(int32 Param_Index);
+	void Spawned();
+	void GetObject(int32 Param_Index, bool CustomLoc, const struct FVector& Loc, class AActor** OutputPin);
+	void UpdateVolumesAndMass();
+	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
 	void UserConstructionScript();
 	void LoadData(const struct FStruct_save& Data, bool* Return);
-	void Extract(int32 Param_Index);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
-	void Spawned();
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
 	void GetData(struct FStruct_save* Data);
-	void GetObject(int32 Param_Index, bool CustomLoc, const struct FVector& Loc, class AActor** OutputPin);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
-	void UpdateVolumesAndMass();
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 
 public:
 	static class UClass* StaticClass()
@@ -73,20 +74,20 @@ public:
 	}
 };
 static_assert(alignof(AProp_container_C) == 0x000008, "Wrong alignment on AProp_container_C");
-static_assert(sizeof(AProp_container_C) == 0x0003F8, "Wrong size on AProp_container_C");
-static_assert(offsetof(AProp_container_C, UberGraphFrame_Prop_container_C) == 0x000378, "Member 'AProp_container_C::UberGraphFrame_Prop_container_C' has a wrong offset!");
-static_assert(offsetof(AProp_container_C, UsableVolume) == 0x000380, "Member 'AProp_container_C::UsableVolume' has a wrong offset!");
-static_assert(offsetof(AProp_container_C, Audio) == 0x000388, "Member 'AProp_container_C::Audio' has a wrong offset!");
-static_assert(offsetof(AProp_container_C, Spawn) == 0x000390, "Member 'AProp_container_C::Spawn' has a wrong offset!");
-static_assert(offsetof(AProp_container_C, Overlap) == 0x000398, "Member 'AProp_container_C::Overlap' has a wrong offset!");
-static_assert(offsetof(AProp_container_C, PropInventory) == 0x0003A0, "Member 'AProp_container_C::PropInventory' has a wrong offset!");
-static_assert(offsetof(AProp_container_C, Canoverlap) == 0x0003A8, "Member 'AProp_container_C::Canoverlap' has a wrong offset!");
-static_assert(offsetof(AProp_container_C, MassData) == 0x0003B0, "Member 'AProp_container_C::MassData' has a wrong offset!");
-static_assert(offsetof(AProp_container_C, VolumeData) == 0x0003C0, "Member 'AProp_container_C::VolumeData' has a wrong offset!");
-static_assert(offsetof(AProp_container_C, NameData) == 0x0003D0, "Member 'AProp_container_C::NameData' has a wrong offset!");
-static_assert(offsetof(AProp_container_C, Locked) == 0x0003E0, "Member 'AProp_container_C::Locked' has a wrong offset!");
-static_assert(offsetof(AProp_container_C, Volume) == 0x0003E4, "Member 'AProp_container_C::Volume' has a wrong offset!");
-static_assert(offsetof(AProp_container_C, Fridge) == 0x0003F0, "Member 'AProp_container_C::Fridge' has a wrong offset!");
+static_assert(sizeof(AProp_container_C) == 0x0003E8, "Wrong size on AProp_container_C");
+static_assert(offsetof(AProp_container_C, UberGraphFrame_Prop_container_C) == 0x000368, "Member 'AProp_container_C::UberGraphFrame_Prop_container_C' has a wrong offset!");
+static_assert(offsetof(AProp_container_C, UsableVolume) == 0x000370, "Member 'AProp_container_C::UsableVolume' has a wrong offset!");
+static_assert(offsetof(AProp_container_C, Audio) == 0x000378, "Member 'AProp_container_C::Audio' has a wrong offset!");
+static_assert(offsetof(AProp_container_C, Spawn) == 0x000380, "Member 'AProp_container_C::Spawn' has a wrong offset!");
+static_assert(offsetof(AProp_container_C, Overlap) == 0x000388, "Member 'AProp_container_C::Overlap' has a wrong offset!");
+static_assert(offsetof(AProp_container_C, PropInventory) == 0x000390, "Member 'AProp_container_C::PropInventory' has a wrong offset!");
+static_assert(offsetof(AProp_container_C, Canoverlap) == 0x000398, "Member 'AProp_container_C::Canoverlap' has a wrong offset!");
+static_assert(offsetof(AProp_container_C, MassData) == 0x0003A0, "Member 'AProp_container_C::MassData' has a wrong offset!");
+static_assert(offsetof(AProp_container_C, VolumeData) == 0x0003B0, "Member 'AProp_container_C::VolumeData' has a wrong offset!");
+static_assert(offsetof(AProp_container_C, NameData) == 0x0003C0, "Member 'AProp_container_C::NameData' has a wrong offset!");
+static_assert(offsetof(AProp_container_C, Locked) == 0x0003D0, "Member 'AProp_container_C::Locked' has a wrong offset!");
+static_assert(offsetof(AProp_container_C, Volume) == 0x0003D4, "Member 'AProp_container_C::Volume' has a wrong offset!");
+static_assert(offsetof(AProp_container_C, Fridge) == 0x0003E0, "Member 'AProp_container_C::Fridge' has a wrong offset!");
 
 }
 

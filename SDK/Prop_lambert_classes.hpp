@@ -18,20 +18,21 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_lambert.prop_lambert_C
-// 0x0018 (0x0390 - 0x0378)
+// 0x0018 (0x0380 - 0x0368)
 class AProp_lambert_C final : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_lambert_C;                     // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UParticleSystemComponent*               beam;                                              // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UUmg_lambUI_C*                          Widget;                                            // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_383A[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_lambert_C;                     // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UParticleSystemComponent*               beam;                                              // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UUmg_lambUI_C*                          Widget;                                            // 0x0378(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_lambert(int32 EntryPoint);
-	void Healing();
-	void ReceiveTick(float DeltaSeconds);
 	void ReceiveDestroyed();
+	void Healing();
 	void ReceiveBeginPlay();
+	void ReceiveTick(float DeltaSeconds);
 
 public:
 	static class UClass* StaticClass()
@@ -44,10 +45,10 @@ public:
 	}
 };
 static_assert(alignof(AProp_lambert_C) == 0x000008, "Wrong alignment on AProp_lambert_C");
-static_assert(sizeof(AProp_lambert_C) == 0x000390, "Wrong size on AProp_lambert_C");
-static_assert(offsetof(AProp_lambert_C, UberGraphFrame_Prop_lambert_C) == 0x000378, "Member 'AProp_lambert_C::UberGraphFrame_Prop_lambert_C' has a wrong offset!");
-static_assert(offsetof(AProp_lambert_C, beam) == 0x000380, "Member 'AProp_lambert_C::beam' has a wrong offset!");
-static_assert(offsetof(AProp_lambert_C, Widget) == 0x000388, "Member 'AProp_lambert_C::Widget' has a wrong offset!");
+static_assert(sizeof(AProp_lambert_C) == 0x000380, "Wrong size on AProp_lambert_C");
+static_assert(offsetof(AProp_lambert_C, UberGraphFrame_Prop_lambert_C) == 0x000368, "Member 'AProp_lambert_C::UberGraphFrame_Prop_lambert_C' has a wrong offset!");
+static_assert(offsetof(AProp_lambert_C, beam) == 0x000370, "Member 'AProp_lambert_C::beam' has a wrong offset!");
+static_assert(offsetof(AProp_lambert_C, Widget) == 0x000378, "Member 'AProp_lambert_C::Widget' has a wrong offset!");
 
 }
 

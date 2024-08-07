@@ -20,7 +20,7 @@ struct Prop_wireComponent_pulsar_C_ExecuteUbergraph_prop_wireComponent_pulsar fi
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D42[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AWire_C*                                K2Node_Event_wire;                                 // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_wireComponent_pulsar_C_ExecuteUbergraph_prop_wireComponent_pulsar) == 0x000008, "Wrong alignment on Prop_wireComponent_pulsar_C_ExecuteUbergraph_prop_wireComponent_pulsar");

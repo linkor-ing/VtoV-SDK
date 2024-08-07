@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "Prop_garbageClump_classes.hpp"
+#include "Prop_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass prop_dirtball.prop_dirtball_C
-// 0x0000 (0x02F0 - 0x02F0)
-class AProp_dirtball_C final : public AProp_garbageClump_C
+// 0x0000 (0x0368 - 0x0368)
+class AProp_dirtball_C final : public AProp_C
 {
 public:
 	static class UClass* StaticClass()
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_dirtball_C) == 0x000008, "Wrong alignment on AProp_dirtball_C");
-static_assert(sizeof(AProp_dirtball_C) == 0x0002F0, "Wrong size on AProp_dirtball_C");
+static_assert(sizeof(AProp_dirtball_C) == 0x000368, "Wrong size on AProp_dirtball_C");
 
 }
 

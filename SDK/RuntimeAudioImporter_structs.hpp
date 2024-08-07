@@ -74,7 +74,7 @@ struct FCompressedSoundWaveInfo final
 public:
 	ESoundGroup                                   SoundGroup;                                        // 0x0000(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLooping;                                          // 0x0001(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F3C[0x2];                                      // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Volume;                                            // 0x0004(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Pitch;                                             // 0x0008(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -90,7 +90,7 @@ static_assert(offsetof(FCompressedSoundWaveInfo, Pitch) == 0x000008, "Member 'FC
 struct alignas(0x08) FPCMStruct final
 {
 public:
-	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F3D[0x18];                                     // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FPCMStruct) == 0x000008, "Wrong alignment on FPCMStruct");
 static_assert(sizeof(FPCMStruct) == 0x000018, "Wrong size on FPCMStruct");

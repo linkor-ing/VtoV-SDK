@@ -26,7 +26,6 @@ public:
 	void IgnoreSave(bool* Param_IgnoreSave);
 	void SetIgnoreSave(bool Ignore);
 	void SkipPreDelete(bool* Skip);
-	void GatherDataFromKey(bool* Gather);
 
 public:
 	static class UClass* StaticClass()

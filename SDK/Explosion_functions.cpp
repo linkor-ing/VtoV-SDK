@@ -92,19 +92,5 @@ void AExplosion_C::RuneCheck()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-
-// Function explosion.explosion_C.scorchMark
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void AExplosion_C::ScorchMark()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("explosion_C", "scorchMark");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
 }
 

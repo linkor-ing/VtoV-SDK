@@ -18,23 +18,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass clocks.clocks_C
-// 0x0030 (0x03A8 - 0x0378)
+// 0x0030 (0x0398 - 0x0368)
 class AClocks_C final : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Clocks_C;                           // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class URectLightComponent*                    RectLight;                                         // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          Tick;                                              // 0x0388(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_389[0x7];                                      // 0x0389(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               Dynmat_min;                                        // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               Dynmat_hr;                                         // 0x0398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Loaded;                                            // 0x03A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3B8F[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Clocks_C;                           // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class URectLightComponent*                    RectLight;                                         // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          Tick;                                              // 0x0378(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3B90[0x7];                                     // 0x0379(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               Dynmat_min;                                        // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               Dynmat_hr;                                         // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Loaded;                                            // 0x0390(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_clocks(int32 EntryPoint);
-	void ReceiveTick(float DeltaSeconds);
 	void ReceiveBeginPlay();
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
+	void ReceiveTick(float DeltaSeconds);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
 
 public:
 	static class UClass* StaticClass()
@@ -47,13 +48,13 @@ public:
 	}
 };
 static_assert(alignof(AClocks_C) == 0x000008, "Wrong alignment on AClocks_C");
-static_assert(sizeof(AClocks_C) == 0x0003A8, "Wrong size on AClocks_C");
-static_assert(offsetof(AClocks_C, UberGraphFrame_Clocks_C) == 0x000378, "Member 'AClocks_C::UberGraphFrame_Clocks_C' has a wrong offset!");
-static_assert(offsetof(AClocks_C, RectLight) == 0x000380, "Member 'AClocks_C::RectLight' has a wrong offset!");
-static_assert(offsetof(AClocks_C, Tick) == 0x000388, "Member 'AClocks_C::Tick' has a wrong offset!");
-static_assert(offsetof(AClocks_C, Dynmat_min) == 0x000390, "Member 'AClocks_C::Dynmat_min' has a wrong offset!");
-static_assert(offsetof(AClocks_C, Dynmat_hr) == 0x000398, "Member 'AClocks_C::Dynmat_hr' has a wrong offset!");
-static_assert(offsetof(AClocks_C, Loaded) == 0x0003A0, "Member 'AClocks_C::Loaded' has a wrong offset!");
+static_assert(sizeof(AClocks_C) == 0x000398, "Wrong size on AClocks_C");
+static_assert(offsetof(AClocks_C, UberGraphFrame_Clocks_C) == 0x000368, "Member 'AClocks_C::UberGraphFrame_Clocks_C' has a wrong offset!");
+static_assert(offsetof(AClocks_C, RectLight) == 0x000370, "Member 'AClocks_C::RectLight' has a wrong offset!");
+static_assert(offsetof(AClocks_C, Tick) == 0x000378, "Member 'AClocks_C::Tick' has a wrong offset!");
+static_assert(offsetof(AClocks_C, Dynmat_min) == 0x000380, "Member 'AClocks_C::Dynmat_min' has a wrong offset!");
+static_assert(offsetof(AClocks_C, Dynmat_hr) == 0x000388, "Member 'AClocks_C::Dynmat_hr' has a wrong offset!");
+static_assert(offsetof(AClocks_C, Loaded) == 0x000390, "Member 'AClocks_C::Loaded' has a wrong offset!");
 
 }
 

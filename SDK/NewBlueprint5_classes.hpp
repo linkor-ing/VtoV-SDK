@@ -20,7 +20,7 @@ namespace SDK
 
 // BlueprintGeneratedClass NewBlueprint5.NewBlueprint5_C
 // 0x0040 (0x0260 - 0x0220)
-class NewBlueprint5::ANewBlueprint5_C final : public AActor
+class ANewBlueprint5_C final : public AActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
@@ -40,22 +40,22 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BlueprintGeneratedClass NewBlueprint5.NewBlueprint5_C", true, "NewBlueprint5_C">();
+		return StaticBPGeneratedClassImpl<"NewBlueprint5_C">();
 	}
-	static class NewBlueprint5::ANewBlueprint5_C* GetDefaultObj()
+	static class ANewBlueprint5_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<NewBlueprint5::ANewBlueprint5_C>();
+		return GetDefaultObjImpl<ANewBlueprint5_C>();
 	}
 };
-static_assert(alignof(NewBlueprint5::ANewBlueprint5_C) == 0x000008, "Wrong alignment on NewBlueprint5::ANewBlueprint5_C");
-static_assert(sizeof(NewBlueprint5::ANewBlueprint5_C) == 0x000260, "Wrong size on NewBlueprint5::ANewBlueprint5_C");
-static_assert(offsetof(NewBlueprint5::ANewBlueprint5_C, UberGraphFrame) == 0x000220, "Member 'NewBlueprint5::ANewBlueprint5_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(NewBlueprint5::ANewBlueprint5_C, ProceduralMesh) == 0x000228, "Member 'NewBlueprint5::ANewBlueprint5_C::ProceduralMesh' has a wrong offset!");
-static_assert(offsetof(NewBlueprint5::ANewBlueprint5_C, DefaultSceneRoot) == 0x000230, "Member 'NewBlueprint5::ANewBlueprint5_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(NewBlueprint5::ANewBlueprint5_C, Vs) == 0x000238, "Member 'NewBlueprint5::ANewBlueprint5_C::Vs' has a wrong offset!");
-static_assert(offsetof(NewBlueprint5::ANewBlueprint5_C, Ts) == 0x000248, "Member 'NewBlueprint5::ANewBlueprint5_C::Ts' has a wrong offset!");
-static_assert(offsetof(NewBlueprint5::ANewBlueprint5_C, Ime) == 0x000258, "Member 'NewBlueprint5::ANewBlueprint5_C::Ime' has a wrong offset!");
-static_assert(offsetof(NewBlueprint5::ANewBlueprint5_C, NewVar_0) == 0x00025C, "Member 'NewBlueprint5::ANewBlueprint5_C::NewVar_0' has a wrong offset!");
+static_assert(alignof(ANewBlueprint5_C) == 0x000008, "Wrong alignment on ANewBlueprint5_C");
+static_assert(sizeof(ANewBlueprint5_C) == 0x000260, "Wrong size on ANewBlueprint5_C");
+static_assert(offsetof(ANewBlueprint5_C, UberGraphFrame) == 0x000220, "Member 'ANewBlueprint5_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ANewBlueprint5_C, ProceduralMesh) == 0x000228, "Member 'ANewBlueprint5_C::ProceduralMesh' has a wrong offset!");
+static_assert(offsetof(ANewBlueprint5_C, DefaultSceneRoot) == 0x000230, "Member 'ANewBlueprint5_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(offsetof(ANewBlueprint5_C, Vs) == 0x000238, "Member 'ANewBlueprint5_C::Vs' has a wrong offset!");
+static_assert(offsetof(ANewBlueprint5_C, Ts) == 0x000248, "Member 'ANewBlueprint5_C::Ts' has a wrong offset!");
+static_assert(offsetof(ANewBlueprint5_C, Ime) == 0x000258, "Member 'ANewBlueprint5_C::Ime' has a wrong offset!");
+static_assert(offsetof(ANewBlueprint5_C, NewVar_0) == 0x00025C, "Member 'ANewBlueprint5_C::NewVar_0' has a wrong offset!");
 
 }
 

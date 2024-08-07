@@ -65,54 +65,6 @@ void AProp_bombBarrel_C::BndEvt__prop_bombBarrel_StaticMesh_K2Node_ComponentBoun
 }
 
 
-// Function prop_bombBarrel.prop_bombBarrel_C.addDamage
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// struct FVector                          Param_Impact                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    SkipSetting                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AProp_bombBarrel_C::AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Param_Hit, const struct FVector& Param_Impact, bool SkipSetting)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_bombBarrel_C", "addDamage");
-
-	Params::Prop_bombBarrel_C_AddDamage Parms{};
-
-	Parms.Actor = Actor;
-	Parms.Damage = Damage;
-	Parms.Param_Hit = std::move(Param_Hit);
-	Parms.Param_Impact = std::move(Param_Impact);
-	Parms.SkipSetting = SkipSetting;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop_bombBarrel.prop_bombBarrel_C.fireDamage
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_bombBarrel_C::FireDamage(float Damage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_bombBarrel_C", "fireDamage");
-
-	Params::Prop_bombBarrel_C_FireDamage Parms{};
-
-	Parms.Damage = Damage;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function prop_bombBarrel.prop_bombBarrel_C.broken_fire
 // (Public, BlueprintCallable, BlueprintEvent)
 

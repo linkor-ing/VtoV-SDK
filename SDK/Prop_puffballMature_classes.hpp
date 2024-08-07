@@ -19,21 +19,22 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_puffballMature.prop_puffballMature_C
-// 0x0010 (0x03E0 - 0x03D0)
+// 0x0010 (0x03D0 - 0x03C0)
 class AProp_puffballMature_C final : public AProp_food_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_puffballMature_C;              // 0x03D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	bool                                          Nuclear;                                           // 0x03D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F2B[0x4];                                     // 0x03BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_puffballMature_C;              // 0x03C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	bool                                          Nuclear;                                           // 0x03C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_prop_puffballMature(int32 EntryPoint);
 	void AttemptExplode();
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
-	void ToggleNuclear(bool Param_Nuclear);
-	void broken();
-	void broken_fire();
 	void ReceiveBeginPlay();
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
+	void broken_fire();
+	void broken();
+	void ToggleNuclear(bool Param_Nuclear);
 
 public:
 	static class UClass* StaticClass()
@@ -46,9 +47,9 @@ public:
 	}
 };
 static_assert(alignof(AProp_puffballMature_C) == 0x000008, "Wrong alignment on AProp_puffballMature_C");
-static_assert(sizeof(AProp_puffballMature_C) == 0x0003E0, "Wrong size on AProp_puffballMature_C");
-static_assert(offsetof(AProp_puffballMature_C, UberGraphFrame_Prop_puffballMature_C) == 0x0003D0, "Member 'AProp_puffballMature_C::UberGraphFrame_Prop_puffballMature_C' has a wrong offset!");
-static_assert(offsetof(AProp_puffballMature_C, Nuclear) == 0x0003D8, "Member 'AProp_puffballMature_C::Nuclear' has a wrong offset!");
+static_assert(sizeof(AProp_puffballMature_C) == 0x0003D0, "Wrong size on AProp_puffballMature_C");
+static_assert(offsetof(AProp_puffballMature_C, UberGraphFrame_Prop_puffballMature_C) == 0x0003C0, "Member 'AProp_puffballMature_C::UberGraphFrame_Prop_puffballMature_C' has a wrong offset!");
+static_assert(offsetof(AProp_puffballMature_C, Nuclear) == 0x0003C8, "Member 'AProp_puffballMature_C::Nuclear' has a wrong offset!");
 
 }
 

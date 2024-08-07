@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Grunge_classes.hpp"
 #include "Engine_structs.hpp"
+#include "Grunge_classes.hpp"
 #include "Enum_interactionActions_structs.hpp"
 
 
@@ -27,9 +27,6 @@ public:
 
 public:
 	void ExecuteUbergraph_grunge_dyn(int32 EntryPoint);
-	void HookTension(class AHook_C* Hook);
-	void CleanSponge(float Param_Clean, class AMainPlayer_C* Player);
-	void Crafted();
 	void Hooked(class AHook_C* Hook);
 	void AttemptIgnite();
 	void PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
@@ -51,8 +48,8 @@ public:
 	void Exploded(float Damage, const struct FVector& Location);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
-	void ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
+	void ReceivedPhyiscsDamage();
 	void Microwave();
 	void Ignite(float Fuel);
 	void FireDamage(float Damage);
@@ -72,7 +69,7 @@ public:
 	void EnterWater(class AWaterVolume_C* Water);
 	void ImpactDamage(float Damage, const struct FHitResult& Hit, class AActor* Actor, const struct FVector& Impact);
 	void SetMat();
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 	void SetPath(const TArray<struct FVector>& Path, bool* Return);
 	void GetOnlyKey(class FString* Key);
 	void ProcessKeys(bool* Return);
@@ -81,7 +78,6 @@ public:
 	void ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return);
 	void GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled);
 	void SkipRadial(bool* Skip);
-	void GetPriceMultiplier(float* PriceMult);
 
 public:
 	static class UClass* StaticClass()

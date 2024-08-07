@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_ariralPillow.prop_ariralPillow_C
-// 0x0008 (0x0390 - 0x0388)
+// 0x0008 (0x0380 - 0x0378)
 class AProp_ariralPillow_C : public Abed_C
 {
 public:
-	class USlapperSummoner_C*                     SlapperSummoner;                                   // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USlapperSummoner_C*                     SlapperSummoner;                                   // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +34,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_ariralPillow_C) == 0x000008, "Wrong alignment on AProp_ariralPillow_C");
-static_assert(sizeof(AProp_ariralPillow_C) == 0x000390, "Wrong size on AProp_ariralPillow_C");
-static_assert(offsetof(AProp_ariralPillow_C, SlapperSummoner) == 0x000388, "Member 'AProp_ariralPillow_C::SlapperSummoner' has a wrong offset!");
+static_assert(sizeof(AProp_ariralPillow_C) == 0x000380, "Wrong size on AProp_ariralPillow_C");
+static_assert(offsetof(AProp_ariralPillow_C, SlapperSummoner) == 0x000378, "Member 'AProp_ariralPillow_C::SlapperSummoner' has a wrong offset!");
 
 }
 

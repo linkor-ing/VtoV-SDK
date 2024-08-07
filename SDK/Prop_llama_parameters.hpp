@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function prop_llama.prop_llama_C.ExecuteUbergraph_prop_llama
-// 0x0158 (0x0158 - 0x0000)
+// 0x0150 (0x0150 - 0x0000)
 struct Prop_llama_C_ExecuteUbergraph_prop_llama final
 {
 public:
@@ -32,23 +32,22 @@ public:
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x0048(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0054(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue_1;     // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_3;        // 0x0068(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue_1;      // 0x0074(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue;           // 0x0080(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent;    // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x00A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_AD[0x3];                                       // 0x00AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x00B0(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue_1;         // 0x0138(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotationFromAxes_ReturnValue;         // 0x0144(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_K2_SetActorRotation_ReturnValue;          // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent;    // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x0084(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_385B[0x3];                                     // 0x0085(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0088(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_3;        // 0x0110(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue_1;      // 0x011C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue;           // 0x0128(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue_1;         // 0x0134(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotationFromAxes_ReturnValue;         // 0x0140(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_K2_SetActorRotation_ReturnValue;          // 0x014C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Prop_llama_C_ExecuteUbergraph_prop_llama) == 0x000008, "Wrong alignment on Prop_llama_C_ExecuteUbergraph_prop_llama");
-static_assert(sizeof(Prop_llama_C_ExecuteUbergraph_prop_llama) == 0x000158, "Wrong size on Prop_llama_C_ExecuteUbergraph_prop_llama");
+static_assert(sizeof(Prop_llama_C_ExecuteUbergraph_prop_llama) == 0x000150, "Wrong size on Prop_llama_C_ExecuteUbergraph_prop_llama");
 static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, EntryPoint) == 0x000000, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000004, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000010, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
@@ -59,18 +58,18 @@ static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, CallFunc_Multip
 static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x000048, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000054, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, CallFunc_GetPlayerCameraManager_ReturnValue_1) == 0x000060, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::CallFunc_GetPlayerCameraManager_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, CallFunc_K2_GetActorLocation_ReturnValue_3) == 0x000068, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::CallFunc_K2_GetActorLocation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, CallFunc_Subtract_VectorVector_ReturnValue_1) == 0x000074, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::CallFunc_Subtract_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, CallFunc_Cross_VectorVector_ReturnValue) == 0x000080, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::CallFunc_Cross_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, K2Node_ComponentBoundEvent_OverlappedComponent) == 0x000090, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::K2Node_ComponentBoundEvent_OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, K2Node_ComponentBoundEvent_OtherActor) == 0x000098, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
-static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, K2Node_ComponentBoundEvent_OtherComp) == 0x0000A0, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
-static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, K2Node_ComponentBoundEvent_OtherBodyIndex) == 0x0000A8, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::K2Node_ComponentBoundEvent_OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, K2Node_ComponentBoundEvent_bFromSweep) == 0x0000AC, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::K2Node_ComponentBoundEvent_bFromSweep' has a wrong offset!");
-static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, K2Node_ComponentBoundEvent_SweepResult) == 0x0000B0, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::K2Node_ComponentBoundEvent_SweepResult' has a wrong offset!");
-static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, CallFunc_Cross_VectorVector_ReturnValue_1) == 0x000138, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::CallFunc_Cross_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, CallFunc_MakeRotationFromAxes_ReturnValue) == 0x000144, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::CallFunc_MakeRotationFromAxes_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, CallFunc_K2_SetActorRotation_ReturnValue) == 0x000150, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::CallFunc_K2_SetActorRotation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, K2Node_ComponentBoundEvent_OverlappedComponent) == 0x000068, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::K2Node_ComponentBoundEvent_OverlappedComponent' has a wrong offset!");
+static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, K2Node_ComponentBoundEvent_OtherActor) == 0x000070, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
+static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, K2Node_ComponentBoundEvent_OtherComp) == 0x000078, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
+static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, K2Node_ComponentBoundEvent_OtherBodyIndex) == 0x000080, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::K2Node_ComponentBoundEvent_OtherBodyIndex' has a wrong offset!");
+static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, K2Node_ComponentBoundEvent_bFromSweep) == 0x000084, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::K2Node_ComponentBoundEvent_bFromSweep' has a wrong offset!");
+static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, K2Node_ComponentBoundEvent_SweepResult) == 0x000088, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::K2Node_ComponentBoundEvent_SweepResult' has a wrong offset!");
+static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, CallFunc_K2_GetActorLocation_ReturnValue_3) == 0x000110, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::CallFunc_K2_GetActorLocation_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, CallFunc_Subtract_VectorVector_ReturnValue_1) == 0x00011C, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::CallFunc_Subtract_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, CallFunc_Cross_VectorVector_ReturnValue) == 0x000128, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::CallFunc_Cross_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, CallFunc_Cross_VectorVector_ReturnValue_1) == 0x000134, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::CallFunc_Cross_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, CallFunc_MakeRotationFromAxes_ReturnValue) == 0x000140, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::CallFunc_MakeRotationFromAxes_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_llama_C_ExecuteUbergraph_prop_llama, CallFunc_K2_SetActorRotation_ReturnValue) == 0x00014C, "Member 'Prop_llama_C_ExecuteUbergraph_prop_llama::CallFunc_K2_SetActorRotation_ReturnValue' has a wrong offset!");
 
 // Function prop_llama.prop_llama_C.BndEvt__prop_llama_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
 // 0x00A8 (0x00A8 - 0x0000)
@@ -82,7 +81,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_385C[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 static_assert(alignof(Prop_llama_C_BndEvt__prop_llama_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on Prop_llama_C_BndEvt__prop_llama_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");

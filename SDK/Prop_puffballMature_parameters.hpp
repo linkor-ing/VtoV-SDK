@@ -11,55 +11,77 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function prop_puffballMature.prop_puffballMature_C.ExecuteUbergraph_prop_puffballMature
-// 0x0130 (0x0130 - 0x0000)
+// 0x01A0 (0x01A0 - 0x0000)
 struct Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0004(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0010(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x001C(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0030(0x0030)(IsPlainOldData, NoDestructor)
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x0068(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APuffballExplosion_C*                   CallFunc_FinishSpawningActor_ReturnValue;          // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_109[0x3];                                      // 0x0109(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0118(0x0008)(NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3F2C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
+	int32                                         Temp_int_Variable;                                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F2D[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3F2E[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0030(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AExplosion_C*                           CallFunc_FinishSpawningActor_ReturnValue;          // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x0078(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         K2Node_Event_index;                                // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x0104(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0105(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F2F[0x2];                                     // 0x0106(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_RandomUnitVector_ReturnValue;             // 0x0108(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0114(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0120(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x012C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3F30[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0140(0x0030)(IsPlainOldData, NoDestructor)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3F31[0x4];                                     // 0x0174(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0180(0x0008)(NoDestructor, HasGetValueTypeHash)
+	class AMushroomSpore_C*                       CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_1;       // 0x0191(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature) == 0x000010, "Wrong alignment on Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature");
-static_assert(sizeof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature) == 0x000130, "Wrong size on Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature");
+static_assert(sizeof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature) == 0x0001A0, "Wrong size on Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature");
 static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, EntryPoint) == 0x000000, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000004, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_Add_VectorVector_ReturnValue) == 0x000010, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, K2Node_CreateDelegate_OutputDelegate) == 0x00001C, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_MakeTransform_ReturnValue) == 0x000030, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, K2Node_Event_player) == 0x000060, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, K2Node_Event_hit) == 0x000068, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, K2Node_Event_action) == 0x0000F0, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0000F8, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_FinishSpawningActor_ReturnValue) == 0x000100, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, K2Node_SwitchEnum_CmpSuccess) == 0x000108, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_RandomFloatInRange_ReturnValue) == 0x00010C, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x000110, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000118, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000120, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000008, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, Temp_int_Variable) == 0x000020, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000024, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_GetTransform_ReturnValue) == 0x000030, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000060, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_FinishSpawningActor_ReturnValue) == 0x000068, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, K2Node_Event_player) == 0x000070, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, K2Node_Event_hit) == 0x000078, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, K2Node_Event_index) == 0x000100, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, K2Node_Event_action) == 0x000104, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, K2Node_SwitchEnum_CmpSuccess) == 0x000105, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_RandomUnitVector_ReturnValue) == 0x000108, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_RandomUnitVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000114, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_Add_VectorVector_ReturnValue) == 0x000120, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_Add_VectorVector_ReturnValue_1) == 0x00012C, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_MakeTransform_ReturnValue) == 0x000140, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_RandomFloatInRange_ReturnValue) == 0x000170, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000178, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000180, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000188, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x000190, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature, CallFunc_RandomBoolWithWeight_ReturnValue_1) == 0x000191, "Member 'Prop_puffballMature_C_ExecuteUbergraph_prop_puffballMature::CallFunc_RandomBoolWithWeight_ReturnValue_1' has a wrong offset!");
 
 // Function prop_puffballMature.prop_puffballMature_C.actionOptionIndex
 // 0x0098 (0x0098 - 0x0000)
@@ -68,13 +90,15 @@ struct Prop_puffballMature_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_puffballMature_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_puffballMature_C_ActionOptionIndex");
 static_assert(sizeof(Prop_puffballMature_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_puffballMature_C_ActionOptionIndex");
 static_assert(offsetof(Prop_puffballMature_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_puffballMature_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(Prop_puffballMature_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_puffballMature_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_puffballMature_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_puffballMature_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_puffballMature_C_ActionOptionIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(Prop_puffballMature_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_puffballMature_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function prop_puffballMature.prop_puffballMature_C.toggleNuclear
 // 0x0001 (0x0001 - 0x0000)

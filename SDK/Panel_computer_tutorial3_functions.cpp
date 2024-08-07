@@ -37,6 +37,20 @@ void APanel_computer_tutorial3_C::ExecuteUbergraph_panel_computer_tutorial3(int3
 }
 
 
+// Function panel_computer_tutorial3.panel_computer_tutorial3_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void APanel_computer_tutorial3_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("panel_computer_tutorial3_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function panel_computer_tutorial3.panel_computer_tutorial3_C.Finish
 // (BlueprintCallable, BlueprintEvent)
 
@@ -222,41 +236,6 @@ void APanel_computer_tutorial3_C::GetTriggerData(struct FStruct_triggerSave* Dat
 
 	if (Data != nullptr)
 		*Data = std::move(Parms.Data);
-}
-
-
-// Function panel_computer_tutorial3.panel_computer_tutorial3_C.gatherDataFromKeyT
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void APanel_computer_tutorial3_C::GatherDataFromKeyT(bool* Gather)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("panel_computer_tutorial3_C", "gatherDataFromKeyT");
-
-	Params::Panel_computer_tutorial3_C_GatherDataFromKeyT Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Gather != nullptr)
-		*Gather = Parms.Gather;
-}
-
-
-// Function panel_computer_tutorial3.panel_computer_tutorial3_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void APanel_computer_tutorial3_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("panel_computer_tutorial3_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

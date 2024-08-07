@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "DreamBase_classes.hpp"
 #include "Engine_structs.hpp"
+#include "DreamBase_classes.hpp"
 
 
 namespace SDK
@@ -219,8 +219,8 @@ public:
 
 public:
 	void ExecuteUbergraph_dream_burger(int32 EntryPoint);
-	void ReceiveBeginPlay();
 	void Collec(const class ADreamBurger_coll_C*& Item);
+	void ReceiveBeginPlay();
 	void Awoken();
 
 public:

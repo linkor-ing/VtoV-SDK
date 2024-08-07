@@ -27,17 +27,17 @@ public:
 	class UPrimitiveComponent*                    Component;                                         // 0x00B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	TArray<EObjectTypeQuery>                      Obj;                                               // 0x00C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FVector                                Lastloc;                                           // 0x00D0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_372A[0x4];                                     // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AProp_C*                                Prop;                                              // 0x00E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          CanRepeat;                                         // 0x00E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_propThrown(int32 EntryPoint);
-	void Hitted(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
 	void Fin();
 	void Throw();
 	void Repeat();
 	void Init(class AProp_C* Param_Prop, class UPrimitiveComponent* Param_Component);
+	void Hit();
 
 public:
 	static class UClass* StaticClass()

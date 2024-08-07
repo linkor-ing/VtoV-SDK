@@ -37,34 +37,6 @@ void AProp_rug_c_C::ExecuteUbergraph_prop_rug_c(int32 EntryPoint)
 }
 
 
-// Function prop_rug_c.prop_rug_c_C.setSkin
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AProp_rug_c_C::SetSkin()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_rug_c_C", "setSkin");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop_rug_c.prop_rug_c_C.gamemodeBeginPlay
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AProp_rug_c_C::GamemodeBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_rug_c_C", "gamemodeBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_rug_c.prop_rug_c_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
@@ -74,6 +46,20 @@ void AProp_rug_c_C::ReceiveBeginPlay()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("prop_rug_c_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function prop_rug_c.prop_rug_c_C.setSkin
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AProp_rug_c_C::SetSkin()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_rug_c_C", "setSkin");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -98,6 +84,20 @@ void AProp_rug_c_C::Player_use(class AMainPlayer_C* Player, const struct FHitRes
 	Parms.Param_Hit = std::move(Param_Hit);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_rug_c.prop_rug_c_C.gamemodeBeginPlay
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AProp_rug_c_C::GamemodeBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_rug_c_C", "gamemodeBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

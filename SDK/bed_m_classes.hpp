@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass bed_m.bed_m_C
-// 0x0000 (0x0388 - 0x0388)
+// 0x0000 (0x0378 - 0x0378)
 class Abed_m_C final : public Abed_C
 {
 public:
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 
 public:
 	static class UClass* StaticClass()
@@ -35,7 +35,7 @@ public:
 	}
 };
 static_assert(alignof(Abed_m_C) == 0x000008, "Wrong alignment on Abed_m_C");
-static_assert(sizeof(Abed_m_C) == 0x000388, "Wrong size on Abed_m_C");
+static_assert(sizeof(Abed_m_C) == 0x000378, "Wrong size on Abed_m_C");
 
 }
 

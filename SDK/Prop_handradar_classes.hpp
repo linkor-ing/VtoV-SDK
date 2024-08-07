@@ -18,16 +18,18 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_handradar.prop_handradar_C
-// 0x0018 (0x0390 - 0x0378)
+// 0x0018 (0x0380 - 0x0368)
 class AProp_handradar_C final : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_handradar_C;                   // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetComponent*                       Widget;                                            // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UUmg_handradar_C*                       Hand_Radar;                                        // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19E9[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_handradar_C;                   // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetComponent*                       Widget;                                            // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UUmg_handradar_C*                       Hand_Radar;                                        // 0x0378(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_handradar(int32 EntryPoint);
+	void ReceiveBeginPlay();
 	void OnCompleted_3D095B7742ACA77CDF23DA915B159D1D(class FName NotifyName);
 	void OnBlendOut_3D095B7742ACA77CDF23DA915B159D1D(class FName NotifyName);
 	void OnInterrupted_3D095B7742ACA77CDF23DA915B159D1D(class FName NotifyName);
@@ -38,7 +40,6 @@ public:
 	void OnInterrupted_24CE38C74EA5F51BE312D5B987A72F72(class FName NotifyName);
 	void OnNotifyBegin_24CE38C74EA5F51BE312D5B987A72F72(class FName NotifyName);
 	void OnNotifyEnd_24CE38C74EA5F51BE312D5B987A72F72(class FName NotifyName);
-	void ReceiveBeginPlay();
 	void PlayerHandRelease_RMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
 
@@ -53,10 +54,10 @@ public:
 	}
 };
 static_assert(alignof(AProp_handradar_C) == 0x000008, "Wrong alignment on AProp_handradar_C");
-static_assert(sizeof(AProp_handradar_C) == 0x000390, "Wrong size on AProp_handradar_C");
-static_assert(offsetof(AProp_handradar_C, UberGraphFrame_Prop_handradar_C) == 0x000378, "Member 'AProp_handradar_C::UberGraphFrame_Prop_handradar_C' has a wrong offset!");
-static_assert(offsetof(AProp_handradar_C, Widget) == 0x000380, "Member 'AProp_handradar_C::Widget' has a wrong offset!");
-static_assert(offsetof(AProp_handradar_C, Hand_Radar) == 0x000388, "Member 'AProp_handradar_C::Hand_Radar' has a wrong offset!");
+static_assert(sizeof(AProp_handradar_C) == 0x000380, "Wrong size on AProp_handradar_C");
+static_assert(offsetof(AProp_handradar_C, UberGraphFrame_Prop_handradar_C) == 0x000368, "Member 'AProp_handradar_C::UberGraphFrame_Prop_handradar_C' has a wrong offset!");
+static_assert(offsetof(AProp_handradar_C, Widget) == 0x000370, "Member 'AProp_handradar_C::Widget' has a wrong offset!");
+static_assert(offsetof(AProp_handradar_C, Hand_Radar) == 0x000378, "Member 'AProp_handradar_C::Hand_Radar' has a wrong offset!");
 
 }
 

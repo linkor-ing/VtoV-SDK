@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_bloodGib_leg.prop_bloodGib_leg_C
-// 0x0008 (0x03E0 - 0x03D8)
+// 0x0008 (0x03D0 - 0x03C8)
 class AProp_bloodGib_leg_C final : public AProp_bloodGib_C
 {
 public:
-	class UParticleSystemComponent*               ParticleSystem;                                    // 0x03D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               ParticleSystem;                                    // 0x03C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +34,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_bloodGib_leg_C) == 0x000008, "Wrong alignment on AProp_bloodGib_leg_C");
-static_assert(sizeof(AProp_bloodGib_leg_C) == 0x0003E0, "Wrong size on AProp_bloodGib_leg_C");
-static_assert(offsetof(AProp_bloodGib_leg_C, ParticleSystem) == 0x0003D8, "Member 'AProp_bloodGib_leg_C::ParticleSystem' has a wrong offset!");
+static_assert(sizeof(AProp_bloodGib_leg_C) == 0x0003D0, "Wrong size on AProp_bloodGib_leg_C");
+static_assert(offsetof(AProp_bloodGib_leg_C, ParticleSystem) == 0x0003C8, "Member 'AProp_bloodGib_leg_C::ParticleSystem' has a wrong offset!");
 
 }
 

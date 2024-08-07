@@ -143,30 +143,6 @@ void ACordSocket_C::BndEvt__cordSocket_Sphere_K2Node_ComponentBoundEvent_0_Compo
 }
 
 
-// Function cordSocket.cordSocket_C.texturePickerApply
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ACordSocket_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("cordSocket_C", "texturePickerApply");
-
-	Params::CordSocket_C_TexturePickerApply Parms{};
-
-	Parms.Picker = Picker;
-	Parms.Texture = Texture;
-	Parms.Param_Index = Param_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function cordSocket.cordSocket_C.applyColor
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -268,7 +244,7 @@ void ACordSocket_C::Unfocused()
 // Function cordSocket.cordSocket_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ACordSocket_C::SettingsApplied(const struct FStruct_settings& Settings)
 {
@@ -542,27 +518,6 @@ void ACordSocket_C::GetTriggerData(struct FStruct_triggerSave* Data)
 
 	if (Data != nullptr)
 		*Data = std::move(Parms.Data);
-}
-
-
-// Function cordSocket.cordSocket_C.gatherDataFromKeyT
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ACordSocket_C::GatherDataFromKeyT(bool* Gather)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("cordSocket_C", "gatherDataFromKeyT");
-
-	Params::CordSocket_C_GatherDataFromKeyT Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Gather != nullptr)
-		*Gather = Parms.Gather;
 }
 
 

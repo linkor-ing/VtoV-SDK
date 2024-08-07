@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "Enum_interactionActions_structs.hpp"
 #include "AIModule_structs.hpp"
 
 
@@ -25,7 +25,7 @@ namespace SDK
 class ACookier_C final : public ACharacter
 {
 public:
-	uint8                                         Pad_4B8[0x8];                                      // 0x04B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_433A[0x8];                                     // 0x04B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UBillboardComponent*                    Drop;                                              // 0x04C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   StaticMesh;                                        // 0x04D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -33,31 +33,29 @@ public:
 	float                                         Step;                                              // 0x04E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                LastStep;                                          // 0x04E4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                WalkTo;                                            // 0x04F0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4FC[0x4];                                      // 0x04FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_433B[0x4];                                     // 0x04FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVector>                        WalkPath;                                          // 0x0500(0x0010)(Edit, BlueprintVisible)
 	int32                                         Ind;                                               // 0x0510(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Volume;                                            // 0x0514(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundAttenuation*                      Att;                                               // 0x0518(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 Key;                                               // 0x0520(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          Walking;                                           // 0x0530(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_531[0x3];                                      // 0x0531(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_433C[0x3];                                     // 0x0531(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Loc;                                               // 0x0534(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CanDrop;                                           // 0x0540(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_541[0x3];                                      // 0x0541(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_433D[0x3];                                     // 0x0541(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Rep;                                               // 0x0544(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void GetPriceMultiplier(float* PriceMult);
 	void SkipRadial(bool* Skip);
 	void GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 	void SetPath(const TArray<struct FVector>& Path, bool* Return);
 	void ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return);
 	void GetKey(class FString* Param_Key);
 	void CanBeUsedHold(bool* Return);
 	void ProcessKeys(bool* Return);
 	void GetOnlyKey(class FString* Param_Key);
-	void GatherDataFromKeyT(bool* Gather);
 	void IgnoreSave_trigger(bool* Ignore);
 	void LoadTriggerData(const struct FStruct_triggerSave& Data, bool* Return);
 	void GetTriggerData(struct FStruct_triggerSave* Data);
@@ -83,8 +81,8 @@ public:
 	void FireDamage(float Damage);
 	void Ignite(float Fuel);
 	void Microwave();
-	void ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
+	void ReceivedPhyiscsDamage();
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 	void Exploded(float Damage, const struct FVector& Location);
@@ -106,9 +104,6 @@ public:
 	void PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void AttemptIgnite();
 	void Hooked(class AHook_C* Hook);
-	void Crafted();
-	void CleanSponge(float Clean, class AMainPlayer_C* Player);
-	void HookTension(class AHook_C* Hook);
 	void Set_ignoreSave_trigger(bool NewParam);
 	void CordPlugged(class ACord_C* Cord, class ACordSocket_C* Socket);
 	void CordUnplugged(class ACord_C* Cord, class ACordSocket_C* Socket);

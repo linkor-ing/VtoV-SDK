@@ -37,6 +37,20 @@ void AClocks_C::ExecuteUbergraph_clocks(int32 EntryPoint)
 }
 
 
+// Function clocks.clocks_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AClocks_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("clocks_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function clocks.clocks_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -57,20 +71,6 @@ void AClocks_C::ReceiveTick(float DeltaSeconds)
 }
 
 
-// Function clocks.clocks_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AClocks_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("clocks_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function clocks.clocks_C.lookAt
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -79,9 +79,8 @@ void AClocks_C::ReceiveBeginPlay()
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AClocks_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
+void AClocks_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
 {
 	static class UFunction* Func = nullptr;
 
@@ -103,9 +102,6 @@ void AClocks_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Par
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
 }
 
 }

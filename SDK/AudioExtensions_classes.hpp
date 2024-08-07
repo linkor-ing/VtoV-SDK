@@ -16,22 +16,22 @@
 namespace SDK
 {
 
-// Class AudioExtensions.SoundfieldEndpointSettingsBase
+// Class AudioExtensions.SpatializationPluginSourceSettingsBase
 // 0x0000 (0x0028 - 0x0028)
-class USoundfieldEndpointSettingsBase final : public UObject
+class USpatializationPluginSourceSettingsBase final : public UObject
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SoundfieldEndpointSettingsBase">();
+		return StaticClassImpl<"SpatializationPluginSourceSettingsBase">();
 	}
-	static class USoundfieldEndpointSettingsBase* GetDefaultObj()
+	static class USpatializationPluginSourceSettingsBase* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<USoundfieldEndpointSettingsBase>();
+		return GetDefaultObjImpl<USpatializationPluginSourceSettingsBase>();
 	}
 };
-static_assert(alignof(USoundfieldEndpointSettingsBase) == 0x000008, "Wrong alignment on USoundfieldEndpointSettingsBase");
-static_assert(sizeof(USoundfieldEndpointSettingsBase) == 0x000028, "Wrong size on USoundfieldEndpointSettingsBase");
+static_assert(alignof(USpatializationPluginSourceSettingsBase) == 0x000008, "Wrong alignment on USpatializationPluginSourceSettingsBase");
+static_assert(sizeof(USpatializationPluginSourceSettingsBase) == 0x000028, "Wrong size on USpatializationPluginSourceSettingsBase");
 
 // Class AudioExtensions.SoundfieldEncodingSettingsBase
 // 0x0000 (0x0028 - 0x0028)
@@ -84,23 +84,6 @@ public:
 static_assert(alignof(UDummyEndpointSettings) == 0x000008, "Wrong alignment on UDummyEndpointSettings");
 static_assert(sizeof(UDummyEndpointSettings) == 0x000028, "Wrong size on UDummyEndpointSettings");
 
-// Class AudioExtensions.SpatializationPluginSourceSettingsBase
-// 0x0000 (0x0028 - 0x0028)
-class USpatializationPluginSourceSettingsBase final : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"SpatializationPluginSourceSettingsBase">();
-	}
-	static class USpatializationPluginSourceSettingsBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<USpatializationPluginSourceSettingsBase>();
-	}
-};
-static_assert(alignof(USpatializationPluginSourceSettingsBase) == 0x000008, "Wrong alignment on USpatializationPluginSourceSettingsBase");
-static_assert(sizeof(USpatializationPluginSourceSettingsBase) == 0x000028, "Wrong size on USpatializationPluginSourceSettingsBase");
-
 // Class AudioExtensions.OcclusionPluginSourceSettingsBase
 // 0x0000 (0x0028 - 0x0028)
 class UOcclusionPluginSourceSettingsBase final : public UObject
@@ -151,6 +134,23 @@ public:
 };
 static_assert(alignof(USoundModulatorBase) == 0x000008, "Wrong alignment on USoundModulatorBase");
 static_assert(sizeof(USoundModulatorBase) == 0x000028, "Wrong size on USoundModulatorBase");
+
+// Class AudioExtensions.SoundfieldEndpointSettingsBase
+// 0x0000 (0x0028 - 0x0028)
+class USoundfieldEndpointSettingsBase final : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"SoundfieldEndpointSettingsBase">();
+	}
+	static class USoundfieldEndpointSettingsBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<USoundfieldEndpointSettingsBase>();
+	}
+};
+static_assert(alignof(USoundfieldEndpointSettingsBase) == 0x000008, "Wrong alignment on USoundfieldEndpointSettingsBase");
+static_assert(sizeof(USoundfieldEndpointSettingsBase) == 0x000028, "Wrong size on USoundfieldEndpointSettingsBase");
 
 // Class AudioExtensions.SoundfieldEffectSettingsBase
 // 0x0000 (0x0028 - 0x0028)

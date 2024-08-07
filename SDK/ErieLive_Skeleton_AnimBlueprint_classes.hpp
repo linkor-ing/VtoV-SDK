@@ -23,7 +23,7 @@ namespace SDK
 class UErieLive_Skeleton_AnimBlueprint_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_2B8[0x8];                                      // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2219[0x8];                                     // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x02C8(0x0030)()
 	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer;                    // 0x02F8(0x00E8)()
@@ -33,7 +33,7 @@ public:
 	struct FAnimNode_TwoWayBlend                  AnimGraphNode_TwoWayBlend;                         // 0x0570(0x00C8)()
 	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x0638(0x0080)()
 	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace;               // 0x06B8(0x0020)()
-	uint8                                         Pad_6D8[0x8];                                      // 0x06D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_221A[0x8];                                     // 0x06D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAnimNode_LookAt                       AnimGraphNode_LookAt_1;                            // 0x06E0(0x01B0)()
 	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x0890(0x0020)()
 	struct FAnimNode_LookAt                       AnimGraphNode_LookAt;                              // 0x08B0(0x01B0)()
@@ -42,14 +42,14 @@ public:
 	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose_1;                     // 0x0C78(0x0028)()
 	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose;                       // 0x0CA0(0x0028)()
 	float                                         WalkAlpha;                                         // 0x0CC8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CCC[0x4];                                      // 0x0CCC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_221B[0x4];                                     // 0x0CCC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  Pawn;                                              // 0x0CD0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AController*                            Controller;                                        // 0x0CD8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ACharacter*                             Character;                                         // 0x0CE0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         InterpSpeed;                                       // 0x0CE8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Splatloop;                                         // 0x0CEC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Splatfall;                                         // 0x0CF0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CF4[0x4];                                      // 0x0CF4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         SplatFall;                                         // 0x0CF0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_221C[0x4];                                     // 0x0CF4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USkeletalMeshComponent*                 Component;                                         // 0x0CF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Carrying;                                          // 0x0D00(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -96,7 +96,7 @@ static_assert(offsetof(UErieLive_Skeleton_AnimBlueprint_C, Controller) == 0x000C
 static_assert(offsetof(UErieLive_Skeleton_AnimBlueprint_C, Character) == 0x000CE0, "Member 'UErieLive_Skeleton_AnimBlueprint_C::Character' has a wrong offset!");
 static_assert(offsetof(UErieLive_Skeleton_AnimBlueprint_C, InterpSpeed) == 0x000CE8, "Member 'UErieLive_Skeleton_AnimBlueprint_C::InterpSpeed' has a wrong offset!");
 static_assert(offsetof(UErieLive_Skeleton_AnimBlueprint_C, Splatloop) == 0x000CEC, "Member 'UErieLive_Skeleton_AnimBlueprint_C::Splatloop' has a wrong offset!");
-static_assert(offsetof(UErieLive_Skeleton_AnimBlueprint_C, Splatfall) == 0x000CF0, "Member 'UErieLive_Skeleton_AnimBlueprint_C::Splatfall' has a wrong offset!");
+static_assert(offsetof(UErieLive_Skeleton_AnimBlueprint_C, SplatFall) == 0x000CF0, "Member 'UErieLive_Skeleton_AnimBlueprint_C::SplatFall' has a wrong offset!");
 static_assert(offsetof(UErieLive_Skeleton_AnimBlueprint_C, Component) == 0x000CF8, "Member 'UErieLive_Skeleton_AnimBlueprint_C::Component' has a wrong offset!");
 static_assert(offsetof(UErieLive_Skeleton_AnimBlueprint_C, Carrying) == 0x000D00, "Member 'UErieLive_Skeleton_AnimBlueprint_C::Carrying' has a wrong offset!");
 

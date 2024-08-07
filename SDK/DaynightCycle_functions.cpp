@@ -57,45 +57,23 @@ void ADaynightCycle_C::ExecuteUbergraph_daynightCycle(int32 EntryPoint)
 }
 
 
-// Function daynightCycle.daynightCycle_C.rainClean
-// (BlueprintCallable, BlueprintEvent)
+// Function daynightCycle.daynightCycle_C.applyColor
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FLinearColor                     Color                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ADaynightCycle_C::RainClean()
+void ADaynightCycle_C::ApplyColor(const struct FLinearColor& Color)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("daynightCycle_C", "rainClean");
+		Func = Class->GetFunction("daynightCycle_C", "applyColor");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::DaynightCycle_C_ApplyColor Parms{};
 
+	Parms.Color = std::move(Color);
 
-// Function daynightCycle.daynightCycle_C.rainCleanup
-// (BlueprintCallable, BlueprintEvent)
-
-void ADaynightCycle_C::RainCleanup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("daynightCycle_C", "rainCleanup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function daynightCycle.daynightCycle_C.superFogEvent
-// (BlueprintCallable, BlueprintEvent)
-
-void ADaynightCycle_C::SuperFogEvent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("daynightCycle_C", "superFogEvent");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -161,10 +139,30 @@ void ADaynightCycle_C::FogEvent()
 }
 
 
+// Function daynightCycle.daynightCycle_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ADaynightCycle_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("daynightCycle_C", "ReceiveTick");
+
+	Params::DaynightCycle_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function daynightCycle.daynightCycle_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ADaynightCycle_C::SettingsApplied(const struct FStruct_settings& Settings)
 {
@@ -190,6 +188,96 @@ void ADaynightCycle_C::GamemodeBeginPlay()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("daynightCycle_C", "gamemodeBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function daynightCycle.daynightCycle_C.signalDeleted
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ADaynightCycle_C::SignalDeleted()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("daynightCycle_C", "signalDeleted");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function daynightCycle.daynightCycle_C.signalSaved
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ADaynightCycle_C::SignalSaved()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("daynightCycle_C", "signalSaved");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function daynightCycle.daynightCycle_C.stuffUpgraded
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainGamemode_C*                  GameMode                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ADaynightCycle_C::StuffUpgraded(class AMainGamemode_C* GameMode)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("daynightCycle_C", "stuffUpgraded");
+
+	Params::DaynightCycle_C_StuffUpgraded Parms{};
+
+	Parms.GameMode = GameMode;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function daynightCycle.daynightCycle_C.unfoc
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ADaynightCycle_C::Unfoc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("daynightCycle_C", "unfoc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function daynightCycle.daynightCycle_C.unfocused
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ADaynightCycle_C::Unfocused()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("daynightCycle_C", "unfocused");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function daynightCycle.daynightCycle_C.gamemodePreLoad
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ADaynightCycle_C::GamemodePreLoad()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("daynightCycle_C", "gamemodePreLoad");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -223,98 +311,6 @@ void ADaynightCycle_C::Ligh()
 }
 
 
-// Function daynightCycle.daynightCycle_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ADaynightCycle_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("daynightCycle_C", "ReceiveTick");
-
-	Params::DaynightCycle_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function daynightCycle.daynightCycle_C.texturePickerApply
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ADaynightCycle_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("daynightCycle_C", "texturePickerApply");
-
-	Params::DaynightCycle_C_TexturePickerApply Parms{};
-
-	Parms.Picker = Picker;
-	Parms.Texture = Texture;
-	Parms.Param_Index = Param_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function daynightCycle.daynightCycle_C.applyColor
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FLinearColor                     Color                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ADaynightCycle_C::ApplyColor(const struct FLinearColor& Color)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("daynightCycle_C", "applyColor");
-
-	Params::DaynightCycle_C_ApplyColor Parms{};
-
-	Parms.Color = std::move(Color);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function daynightCycle.daynightCycle_C.propRenderer_finishProps
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ADaynightCycle_C::PropRenderer_finishProps()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("daynightCycle_C", "propRenderer_finishProps");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function daynightCycle.daynightCycle_C.gamemodeMakeKeys
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ADaynightCycle_C::GamemodeMakeKeys()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("daynightCycle_C", "gamemodeMakeKeys");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function daynightCycle.daynightCycle_C.AnyKey
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -337,91 +333,29 @@ void ADaynightCycle_C::AnyKey(const struct FKey& Key, bool Pressed)
 }
 
 
-// Function daynightCycle.daynightCycle_C.gamemodePreLoad
+// Function daynightCycle.daynightCycle_C.gamemodeMakeKeys
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ADaynightCycle_C::GamemodePreLoad()
+void ADaynightCycle_C::GamemodeMakeKeys()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("daynightCycle_C", "gamemodePreLoad");
+		Func = Class->GetFunction("daynightCycle_C", "gamemodeMakeKeys");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function daynightCycle.daynightCycle_C.unfocused
+// Function daynightCycle.daynightCycle_C.propRenderer_finishProps
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ADaynightCycle_C::Unfocused()
+void ADaynightCycle_C::PropRenderer_finishProps()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("daynightCycle_C", "unfocused");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function daynightCycle.daynightCycle_C.unfoc
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ADaynightCycle_C::Unfoc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("daynightCycle_C", "unfoc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function daynightCycle.daynightCycle_C.stuffUpgraded
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainGamemode_C*                  GameMode                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ADaynightCycle_C::StuffUpgraded(class AMainGamemode_C* GameMode)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("daynightCycle_C", "stuffUpgraded");
-
-	Params::DaynightCycle_C_StuffUpgraded Parms{};
-
-	Parms.GameMode = GameMode;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function daynightCycle.daynightCycle_C.signalSaved
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ADaynightCycle_C::SignalSaved()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("daynightCycle_C", "signalSaved");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function daynightCycle.daynightCycle_C.signalDeleted
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ADaynightCycle_C::SignalDeleted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("daynightCycle_C", "signalDeleted");
+		Func = Class->GetFunction("daynightCycle_C", "propRenderer_finishProps");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -486,9 +420,9 @@ void ADaynightCycle_C::IsDream(bool Dream)
 // Function daynightCycle.daynightCycle_C.makeOrder
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FStruct_storeOrder1              Struct_storeOrder                                      (Parm, OutParm, HasGetValueTypeHash)
+// struct FStruct_storeOrder               Struct_storeOrder                                      (Parm, OutParm, HasGetValueTypeHash)
 
-void ADaynightCycle_C::MakeOrder(struct FStruct_storeOrder1* Struct_storeOrder)
+void ADaynightCycle_C::MakeOrder(struct FStruct_storeOrder* Struct_storeOrder)
 {
 	static class UFunction* Func = nullptr;
 
@@ -562,20 +496,6 @@ void ADaynightCycle_C::SendDriveBox(class AMainGamemode_C* Self2, bool* OutputPi
 
 	if (OutputPin != nullptr)
 		*OutputPin = Parms.OutputPin;
-}
-
-
-// Function daynightCycle.daynightCycle_C.setSkyIntensity
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ADaynightCycle_C::SetSkyIntensity()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("daynightCycle_C", "setSkyIntensity");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

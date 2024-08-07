@@ -10,77 +10,74 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Struct_triggerSave_structs.hpp"
-#include "Struct_settings_structs.hpp"
-#include "Struct_save_structs.hpp"
-#include "InputCore_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Struct_save_structs.hpp"
+#include "Struct_settings_structs.hpp"
+#include "InputCore_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function cordSocket.cordSocket_C.ExecuteUbergraph_cordSocket
-// 0x0298 (0x0298 - 0x0000)
+// 0x0260 (0x0260 - 0x0000)
 struct CordSocket_C_ExecuteUbergraph_cordSocket final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F98[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_Event_owner;                                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_index_1;                              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_index;                                // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_NewParam;                             // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F99[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class ACord_C*                                K2Node_Event_cord_1;                               // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ACordSocket_C*                          K2Node_Event_socket_1;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ACord_C*                                K2Node_Event_cord;                                 // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ACordSocket_C*                          K2Node_Event_socket;                               // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0040(0x00F0)(HasGetValueTypeHash)
-	struct FKey                                   K2Node_Event_key;                                  // 0x0130(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed;                              // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_149[0x3];                                      // 0x0149(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Event_color;                                // 0x014C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15C[0x4];                                      // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUmg_texturePicker_C*                   K2Node_Event_picker;                               // 0x0160(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_Event_texture;                              // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_index;                                // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_174[0x4];                                      // 0x0174(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent_1;  // 0x0178(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor_1;           // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp_1;            // 0x0188(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex_1;       // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x0194(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_195[0x3];                                      // 0x0195(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0198(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class ACord_C*                                K2Node_DynamicCast_AsCord;                         // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0228(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0229(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x022A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_22B[0x5];                                      // 0x022B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent;    // 0x0230(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x0240(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsChildActor_ReturnValue;                 // 0x024C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_24D[0x3];                                      // 0x024D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_GetParentActor_ReturnValue;               // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x0258(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_269[0x7];                                      // 0x0269(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AProp_C*                                CallFunc_asProp_return;                            // 0x0270(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_Event_sentFrom;                             // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_active;                               // 0x0280(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_281[0x7];                                      // 0x0281(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0290(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0040(0x00CC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F9A[0x4];                                     // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   K2Node_Event_key;                                  // 0x0110(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed;                              // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F9B[0x3];                                     // 0x0129(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           K2Node_Event_color;                                // 0x012C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F9C[0x4];                                     // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent_1;  // 0x0140(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor_1;           // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp_1;            // 0x0150(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex_1;       // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x015C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F9D[0x3];                                     // 0x015D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0160(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class ACord_C*                                K2Node_DynamicCast_AsCord;                         // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x01F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x01F2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F9E[0x5];                                     // 0x01F3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent;    // 0x01F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x0208(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsChildActor_ReturnValue;                 // 0x0214(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F9F[0x3];                                     // 0x0215(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_GetParentActor_ReturnValue;               // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x0220(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FA0[0x7];                                     // 0x0231(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AProp_C*                                CallFunc_asProp_return;                            // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_Event_sentFrom;                             // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_active;                               // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FA1[0x7];                                     // 0x0249(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(CordSocket_C_ExecuteUbergraph_cordSocket) == 0x000008, "Wrong alignment on CordSocket_C_ExecuteUbergraph_cordSocket");
-static_assert(sizeof(CordSocket_C_ExecuteUbergraph_cordSocket) == 0x000298, "Wrong size on CordSocket_C_ExecuteUbergraph_cordSocket");
+static_assert(sizeof(CordSocket_C_ExecuteUbergraph_cordSocket) == 0x000260, "Wrong size on CordSocket_C_ExecuteUbergraph_cordSocket");
 static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, EntryPoint) == 0x000000, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::EntryPoint' has a wrong offset!");
 static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_Event_owner) == 0x000008, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_Event_owner' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_Event_index_1) == 0x000010, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_Event_index_1' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_Event_index) == 0x000010, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_Event_index' has a wrong offset!");
 static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_Event_NewParam) == 0x000014, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_Event_NewParam' has a wrong offset!");
 static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_Event_cord_1) == 0x000018, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_Event_cord_1' has a wrong offset!");
 static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_Event_socket_1) == 0x000020, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_Event_socket_1' has a wrong offset!");
@@ -88,35 +85,32 @@ static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_Event_co
 static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_Event_socket) == 0x000030, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_Event_socket' has a wrong offset!");
 static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_Event_gamemode) == 0x000038, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_Event_gamemode' has a wrong offset!");
 static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_Event_settings) == 0x000040, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_Event_settings' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_Event_key) == 0x000130, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_Event_key' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_Event_pressed) == 0x000148, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_Event_pressed' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_Event_color) == 0x00014C, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_Event_color' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_Event_picker) == 0x000160, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_Event_picker' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_Event_texture) == 0x000168, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_Event_texture' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_Event_index) == 0x000170, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_ComponentBoundEvent_OverlappedComponent_1) == 0x000178, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_ComponentBoundEvent_OverlappedComponent_1' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_ComponentBoundEvent_OtherActor_1) == 0x000180, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_ComponentBoundEvent_OtherActor_1' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_ComponentBoundEvent_OtherComp_1) == 0x000188, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_ComponentBoundEvent_OtherComp_1' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_ComponentBoundEvent_OtherBodyIndex_1) == 0x000190, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_ComponentBoundEvent_OtherBodyIndex_1' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_ComponentBoundEvent_bFromSweep) == 0x000194, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_ComponentBoundEvent_bFromSweep' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_ComponentBoundEvent_SweepResult) == 0x000198, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_ComponentBoundEvent_SweepResult' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_DynamicCast_AsCord) == 0x000220, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_DynamicCast_AsCord' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_DynamicCast_bSuccess) == 0x000228, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, CallFunc_IsValid_ReturnValue) == 0x000229, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, CallFunc_IsValid_ReturnValue_1) == 0x00022A, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_ComponentBoundEvent_OverlappedComponent) == 0x000230, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_ComponentBoundEvent_OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_ComponentBoundEvent_OtherActor) == 0x000238, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_ComponentBoundEvent_OtherComp) == 0x000240, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_ComponentBoundEvent_OtherBodyIndex) == 0x000248, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_ComponentBoundEvent_OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, CallFunc_IsChildActor_ReturnValue) == 0x00024C, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::CallFunc_IsChildActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, CallFunc_GetParentActor_ReturnValue) == 0x000250, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::CallFunc_GetParentActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_DynamicCast_AsInt_Player) == 0x000258, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_DynamicCast_AsInt_Player' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_DynamicCast_bSuccess_1) == 0x000268, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, CallFunc_asProp_return) == 0x000270, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::CallFunc_asProp_return' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_Event_sentFrom) == 0x000278, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_Event_sentFrom' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_Event_active) == 0x000280, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_Event_active' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000288, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, CallFunc_Array_Add_ReturnValue) == 0x000290, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_Event_key) == 0x000110, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_Event_key' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_Event_pressed) == 0x000128, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_Event_pressed' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_Event_color) == 0x00012C, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_Event_color' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_ComponentBoundEvent_OverlappedComponent_1) == 0x000140, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_ComponentBoundEvent_OverlappedComponent_1' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_ComponentBoundEvent_OtherActor_1) == 0x000148, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_ComponentBoundEvent_OtherActor_1' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_ComponentBoundEvent_OtherComp_1) == 0x000150, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_ComponentBoundEvent_OtherComp_1' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_ComponentBoundEvent_OtherBodyIndex_1) == 0x000158, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_ComponentBoundEvent_OtherBodyIndex_1' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_ComponentBoundEvent_bFromSweep) == 0x00015C, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_ComponentBoundEvent_bFromSweep' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_ComponentBoundEvent_SweepResult) == 0x000160, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_ComponentBoundEvent_SweepResult' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_DynamicCast_AsCord) == 0x0001E8, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_DynamicCast_AsCord' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_DynamicCast_bSuccess) == 0x0001F0, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, CallFunc_IsValid_ReturnValue) == 0x0001F1, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, CallFunc_IsValid_ReturnValue_1) == 0x0001F2, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_ComponentBoundEvent_OverlappedComponent) == 0x0001F8, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_ComponentBoundEvent_OverlappedComponent' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_ComponentBoundEvent_OtherActor) == 0x000200, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_ComponentBoundEvent_OtherComp) == 0x000208, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_ComponentBoundEvent_OtherBodyIndex) == 0x000210, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_ComponentBoundEvent_OtherBodyIndex' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, CallFunc_IsChildActor_ReturnValue) == 0x000214, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::CallFunc_IsChildActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, CallFunc_GetParentActor_ReturnValue) == 0x000218, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::CallFunc_GetParentActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_DynamicCast_AsInt_Player) == 0x000220, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_DynamicCast_AsInt_Player' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_DynamicCast_bSuccess_1) == 0x000230, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, CallFunc_asProp_return) == 0x000238, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::CallFunc_asProp_return' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_Event_sentFrom) == 0x000240, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_Event_sentFrom' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, K2Node_Event_active) == 0x000248, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::K2Node_Event_active' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000250, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(CordSocket_C_ExecuteUbergraph_cordSocket, CallFunc_Array_Add_ReturnValue) == 0x000258, "Member 'CordSocket_C_ExecuteUbergraph_cordSocket::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 
 // Function cordSocket.cordSocket_C.setActiveTrigger
 // 0x0010 (0x0010 - 0x0000)
@@ -158,7 +152,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FA2[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 static_assert(alignof(CordSocket_C_BndEvt__cordSocket_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on CordSocket_C_BndEvt__cordSocket_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
@@ -169,21 +163,6 @@ static_assert(offsetof(CordSocket_C_BndEvt__cordSocket_Sphere_K2Node_ComponentBo
 static_assert(offsetof(CordSocket_C_BndEvt__cordSocket_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'CordSocket_C_BndEvt__cordSocket_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
 static_assert(offsetof(CordSocket_C_BndEvt__cordSocket_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, bFromSweep) == 0x00001C, "Member 'CordSocket_C_BndEvt__cordSocket_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::bFromSweep' has a wrong offset!");
 static_assert(offsetof(CordSocket_C_BndEvt__cordSocket_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'CordSocket_C_BndEvt__cordSocket_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
-
-// Function cordSocket.cordSocket_C.texturePickerApply
-// 0x0018 (0x0018 - 0x0000)
-struct CordSocket_C_TexturePickerApply final
-{
-public:
-	class UUmg_texturePicker_C*                   Picker;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Param_Index;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(CordSocket_C_TexturePickerApply) == 0x000008, "Wrong alignment on CordSocket_C_TexturePickerApply");
-static_assert(sizeof(CordSocket_C_TexturePickerApply) == 0x000018, "Wrong size on CordSocket_C_TexturePickerApply");
-static_assert(offsetof(CordSocket_C_TexturePickerApply, Picker) == 0x000000, "Member 'CordSocket_C_TexturePickerApply::Picker' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_TexturePickerApply, Texture) == 0x000008, "Member 'CordSocket_C_TexturePickerApply::Texture' has a wrong offset!");
-static_assert(offsetof(CordSocket_C_TexturePickerApply, Param_Index) == 0x000010, "Member 'CordSocket_C_TexturePickerApply::Param_Index' has a wrong offset!");
 
 // Function cordSocket.cordSocket_C.applyColor
 // 0x0010 (0x0010 - 0x0000)
@@ -210,14 +189,14 @@ static_assert(offsetof(CordSocket_C_AnyKey, Param_Key) == 0x000000, "Member 'Cor
 static_assert(offsetof(CordSocket_C_AnyKey, Pressed) == 0x000018, "Member 'CordSocket_C_AnyKey::Pressed' has a wrong offset!");
 
 // Function cordSocket.cordSocket_C.settingsApplied
-// 0x00F0 (0x00F0 - 0x0000)
+// 0x00CC (0x00CC - 0x0000)
 struct CordSocket_C_SettingsApplied final
 {
 public:
-	struct FStruct_settings                       Settings;                                          // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FStruct_settings                       Settings;                                          // 0x0000(0x00CC)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CordSocket_C_SettingsApplied) == 0x000008, "Wrong alignment on CordSocket_C_SettingsApplied");
-static_assert(sizeof(CordSocket_C_SettingsApplied) == 0x0000F0, "Wrong size on CordSocket_C_SettingsApplied");
+static_assert(alignof(CordSocket_C_SettingsApplied) == 0x000004, "Wrong alignment on CordSocket_C_SettingsApplied");
+static_assert(sizeof(CordSocket_C_SettingsApplied) == 0x0000CC, "Wrong size on CordSocket_C_SettingsApplied");
 static_assert(offsetof(CordSocket_C_SettingsApplied, Settings) == 0x000000, "Member 'CordSocket_C_SettingsApplied::Settings' has a wrong offset!");
 
 // Function cordSocket.cordSocket_C.stuffUpgraded
@@ -288,10 +267,10 @@ struct CordSocket_C_SetActiveCord final
 public:
 	bool                                          Plug;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FA3[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IInt_ttrigger_C>       K2Node_DynamicCast_AsInt_Ttrigger;                 // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FA4[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IInt_ttrigger_C>       K2Node_DynamicCast_AsInt_Ttrigger_1;               // 0x0020(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -351,17 +330,6 @@ public:
 static_assert(alignof(CordSocket_C_GetTriggerData) == 0x000010, "Wrong alignment on CordSocket_C_GetTriggerData");
 static_assert(sizeof(CordSocket_C_GetTriggerData) == 0x0000F0, "Wrong size on CordSocket_C_GetTriggerData");
 static_assert(offsetof(CordSocket_C_GetTriggerData, Data) == 0x000000, "Member 'CordSocket_C_GetTriggerData::Data' has a wrong offset!");
-
-// Function cordSocket.cordSocket_C.gatherDataFromKeyT
-// 0x0001 (0x0001 - 0x0000)
-struct CordSocket_C_GatherDataFromKeyT final
-{
-public:
-	bool                                          Gather;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(CordSocket_C_GatherDataFromKeyT) == 0x000001, "Wrong alignment on CordSocket_C_GatherDataFromKeyT");
-static_assert(sizeof(CordSocket_C_GatherDataFromKeyT) == 0x000001, "Wrong size on CordSocket_C_GatherDataFromKeyT");
-static_assert(offsetof(CordSocket_C_GatherDataFromKeyT, Gather) == 0x000000, "Member 'CordSocket_C_GatherDataFromKeyT::Gather' has a wrong offset!");
 
 // Function cordSocket.cordSocket_C.ignoreSave
 // 0x0001 (0x0001 - 0x0000)

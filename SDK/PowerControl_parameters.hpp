@@ -10,284 +10,252 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "Enum_interactionActions_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "Struct_triggerSave_structs.hpp"
 #include "Struct_save_structs.hpp"
+#include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
+#include "Struct_triggerSave_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function powerControl.powerControl_C.ExecuteUbergraph_powerControl
-// 0x0450 (0x0450 - 0x0000)
+// 0x03E8 (0x03E8 - 0x0000)
 struct PowerControl_C_ExecuteUbergraph_powerControl final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_SelectRotator_ReturnValue;                // 0x0004(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	int32                                         Temp_int_Variable;                                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_2;                               // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool Active_calc, bool Active_downl, bool Active_coords, bool Active_play, bool Active_light)> K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
-	int32                                         Temp_int_Variable_1;                               // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_2;                               // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_3;                               // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_4;                               // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_5;                               // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMoveComponentAction                          Temp_byte_Variable;                                // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_5;                 // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_6;                               // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMoveComponentAction                          Temp_byte_Variable_1;                              // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_6;                 // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMoveComponentAction                          Temp_byte_Variable_2;                              // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMoveComponentAction                          Temp_byte_Variable_3;                              // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMoveComponentAction                          Temp_byte_Variable_4;                              // 0x0062(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_63[0x1];                                       // 0x0063(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_7;                 // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_2;                                // 0x0078(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          K2Node_Event_kick;                                 // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_101[0x3];                                      // 0x0101(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_Event_name;                                 // 0x0104(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_1;                                // 0x0120(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         K2Node_Event_damage;                               // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1AC[0x4];                                      // 0x01AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_1;    // 0x01C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x01CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x01CB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_2;    // 0x01CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_3;    // 0x01CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x01CE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1CF[0x1];                                      // 0x01CF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable_7;                               // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_8;                 // 0x01D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_3;                // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_4;    // 0x01D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_4;                // 0x01DA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1DB[0x5];                                      // 0x01DB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AServerBox_C*>                   CallFunc_GetAllActorsOfClass_OutActors;            // 0x01E0(0x0010)(ReferenceParm)
-	class ATrigger_lightRoot_C*                   CallFunc_Array_Get_Item;                           // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1FC[0x4];                                      // 0x01FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ATrigger_lightRoot_C*                   CallFunc_Array_Get_Item_1;                         // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_209[0x3];                                      // 0x0209(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x020C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_211[0x7];                                      // 0x0211(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AServerBox_C*                           CallFunc_Array_Get_Item_2;                         // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0224(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_225[0x3];                                      // 0x0225(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0228(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IInt_ttrigger_C>       CallFunc_runTrigger_self_CastInput;                // 0x0238(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_active_calc;                    // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_active_downl;                   // 0x0249(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_active_coords;                  // 0x024A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_active_play;                    // 0x024B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_active_light;                   // 0x024C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_24D[0x3];                                      // 0x024D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class ADoor_C*                                CallFunc_Array_Get_Item_3;                         // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x025C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_25D[0x3];                                      // 0x025D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AServerBox_C*                           CallFunc_Array_Get_Item_4;                         // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue_1;        // 0x0268(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_4;               // 0x0270(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_4;                // 0x0274(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_275[0x3];                                      // 0x0275(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AServerBox_C*                           CallFunc_Array_Get_Item_5;                         // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_5;               // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_5;                // 0x0284(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_285[0x3];                                      // 0x0285(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue_2;        // 0x0288(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ATrigger_lightRoot_C*                   CallFunc_Array_Get_Item_6;                         // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_6;               // 0x0298(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29C[0x4];                                      // 0x029C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ATrigger_lightRoot_C*                   CallFunc_Array_Get_Item_7;                         // 0x02A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_6;                // 0x02A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A9[0x3];                                      // 0x02A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_7;               // 0x02AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_7;                // 0x02B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B1[0x7];                                      // 0x02B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IInt_ttrigger_C>       CallFunc_runTrigger_self_CastInput_1;              // 0x02B8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_activate;                             // 0x02C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_isGeneratorsFine_fine;                    // 0x02C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_isGeneratorsFine_fine_1;                  // 0x02CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2CB[0x5];                                      // 0x02CB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x02D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x02D8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x0360(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_361[0x7];                                      // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x0368(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0370(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0371(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_372[0x2];                                      // 0x0372(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x0374(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0378(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x037C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0388(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0394(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x03A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AC[0x4];                                      // 0x03AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x03B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x03B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x03C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x03C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x03D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x03D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x03D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x03DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x03E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F4[0x4];                                      // 0x03F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ACordSocket_C*                          CallFunc_Array_Get_Item_8;                         // 0x03F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_8;               // 0x0400(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_404[0x4];                                      // 0x0404(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IInt_ttrigger_C>       K2Node_DynamicCast_AsInt_Ttrigger;                 // 0x0408(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0418(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_8;                // 0x0419(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_41A[0x2];                                      // 0x041A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_SelectRotator_ReturnValue_1;              // 0x041C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FRotator                               CallFunc_SelectRotator_ReturnValue_2;              // 0x0428(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FRotator                               CallFunc_SelectRotator_ReturnValue_3;              // 0x0434(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FRotator                               CallFunc_SelectRotator_ReturnValue_4;              // 0x0440(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_3;                               // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_4;                               // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_5;                               // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_6;                               // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_5;                 // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_6;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_7;                 // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_2;                                // 0x0060(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          K2Node_Event_kick;                                 // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F19[0x3];                                     // 0x00E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_Event_name;                                 // 0x00EC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F1A[0x4];                                     // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_1;                                // 0x0108(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_1;    // 0x0191(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0192(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0193(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         Temp_int_Variable_7;                               // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_8;                 // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_2;    // 0x019C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_3;    // 0x019D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x019E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_3;                // 0x019F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_4;    // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_4;                // 0x01A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F1B[0x6];                                     // 0x01A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AServerBox_C*>                   CallFunc_GetAllActorsOfClass_OutActors;            // 0x01A8(0x0010)(ReferenceParm)
+	class ATrigger_lightRoot_C*                   CallFunc_Array_Get_Item;                           // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F1C[0x4];                                     // 0x01C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ATrigger_lightRoot_C*                   CallFunc_Array_Get_Item_1;                         // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F1D[0x3];                                     // 0x01D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x01D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F1E[0x7];                                     // 0x01D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AServerBox_C*                           CallFunc_Array_Get_Item_2;                         // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x01EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F1F[0x3];                                     // 0x01ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x01F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IInt_ttrigger_C>       CallFunc_runTrigger_self_CastInput;                // 0x0200(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_active_calc;                    // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_active_downl;                   // 0x0211(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_active_coords;                  // 0x0212(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_active_play;                    // 0x0213(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_active_light;                   // 0x0214(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F20[0x3];                                     // 0x0215(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class ADoor_C*                                CallFunc_Array_Get_Item_3;                         // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x0224(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F21[0x3];                                     // 0x0225(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class AServerBox_C*                           CallFunc_Array_Get_Item_4;                         // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue_1;        // 0x0230(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_4;               // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_4;                // 0x023C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F22[0x3];                                     // 0x023D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class AServerBox_C*                           CallFunc_Array_Get_Item_5;                         // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_5;               // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_5;                // 0x024C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F23[0x3];                                     // 0x024D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue_2;        // 0x0250(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ATrigger_lightRoot_C*                   CallFunc_Array_Get_Item_6;                         // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_6;               // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F24[0x4];                                     // 0x0264(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ATrigger_lightRoot_C*                   CallFunc_Array_Get_Item_7;                         // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_6;                // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F25[0x3];                                     // 0x0271(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_7;               // 0x0274(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_7;                // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F26[0x7];                                     // 0x0279(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IInt_ttrigger_C>       CallFunc_runTrigger_self_CastInput_1;              // 0x0280(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_activate;                             // 0x0290(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_isGeneratorsFine_fine;                    // 0x0291(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_isGeneratorsFine_fine_1;                  // 0x0292(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F27[0x5];                                     // 0x0293(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0298(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x02A0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         K2Node_Event_index;                                // 0x0328(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x032C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F28[0x3];                                     // 0x032D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0338(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0339(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F29[0x2];                                     // 0x033A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x033C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0340(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0344(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0350(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x035C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0368(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F2A[0x4];                                     // 0x0374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0378(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0380(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0388(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0390(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0398(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x039C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x03A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x03A4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x03B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F2B[0x4];                                     // 0x03BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ACordSocket_C*                          CallFunc_Array_Get_Item_8;                         // 0x03C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_8;               // 0x03C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F2C[0x4];                                     // 0x03CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IInt_ttrigger_C>       K2Node_DynamicCast_AsInt_Ttrigger;                 // 0x03D0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x03E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_8;                // 0x03E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(PowerControl_C_ExecuteUbergraph_powerControl) == 0x000008, "Wrong alignment on PowerControl_C_ExecuteUbergraph_powerControl");
-static_assert(sizeof(PowerControl_C_ExecuteUbergraph_powerControl) == 0x000450, "Wrong size on PowerControl_C_ExecuteUbergraph_powerControl");
+static_assert(sizeof(PowerControl_C_ExecuteUbergraph_powerControl) == 0x0003E8, "Wrong size on PowerControl_C_ExecuteUbergraph_powerControl");
 static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, EntryPoint) == 0x000000, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_SelectRotator_ReturnValue) == 0x000004, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_SelectRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_int_Variable) == 0x000010, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_int_Variable) == 0x000004, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_int_Variable_1) == 0x000008, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_int_Variable_1' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Add_IntInt_ReturnValue_1) == 0x000010, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_int_Variable_2) == 0x000014, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_int_Variable_2' has a wrong offset!");
 static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_int_Variable_1) == 0x000028, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_int_Variable_2) == 0x00002C, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Add_IntInt_ReturnValue_1) == 0x000030, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Add_IntInt_ReturnValue_2) == 0x000034, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_int_Variable_3) == 0x000038, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_int_Variable_4) == 0x00003C, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Add_IntInt_ReturnValue_3) == 0x000040, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Add_IntInt_ReturnValue_4) == 0x000044, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_int_Variable_5) == 0x000048, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_byte_Variable) == 0x00004C, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Add_IntInt_ReturnValue_5) == 0x000050, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_int_Variable_6) == 0x000054, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_int_Variable_6' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_byte_Variable_1) == 0x000058, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Add_IntInt_ReturnValue_6) == 0x00005C, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Add_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_byte_Variable_2) == 0x000060, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_byte_Variable_3) == 0x000061, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_byte_Variable_4) == 0x000062, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_int_Array_Index_Variable) == 0x000064, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_int_Loop_Counter_Variable) == 0x000068, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Add_IntInt_ReturnValue_7) == 0x00006C, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Add_IntInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_player_6) == 0x000070, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_player_6' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_hit_2) == 0x000078, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_hit_2' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_kick) == 0x000100, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_kick' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_name) == 0x000104, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_name' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_player_5) == 0x000110, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_player_5' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_player_4) == 0x000118, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_player_4' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_hit_1) == 0x000120, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_hit_1' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_damage) == 0x0001A8, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_damage' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_player_3) == 0x0001B0, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_player_3' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_player_2) == 0x0001B8, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_player_2' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_player_1) == 0x0001C0, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x0001C8, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_EqualEqual_ObjectObject_ReturnValue_1) == 0x0001C9, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_EqualEqual_ObjectObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Not_PreBool_ReturnValue) == 0x0001CA, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Not_PreBool_ReturnValue_1) == 0x0001CB, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_EqualEqual_ObjectObject_ReturnValue_2) == 0x0001CC, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_EqualEqual_ObjectObject_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_EqualEqual_ObjectObject_ReturnValue_3) == 0x0001CD, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_EqualEqual_ObjectObject_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Not_PreBool_ReturnValue_2) == 0x0001CE, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_int_Variable_7) == 0x0001D0, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_int_Variable_7' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Add_IntInt_ReturnValue_8) == 0x0001D4, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Add_IntInt_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Not_PreBool_ReturnValue_3) == 0x0001D8, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_EqualEqual_ObjectObject_ReturnValue_4) == 0x0001D9, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_EqualEqual_ObjectObject_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Not_PreBool_ReturnValue_4) == 0x0001DA, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Not_PreBool_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_GetAllActorsOfClass_OutActors) == 0x0001E0, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Get_Item) == 0x0001F0, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Length_ReturnValue) == 0x0001F8, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Get_Item_1) == 0x000200, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Less_IntInt_ReturnValue) == 0x000208, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Length_ReturnValue_1) == 0x00020C, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Less_IntInt_ReturnValue_1) == 0x000210, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Get_Item_2) == 0x000218, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Length_ReturnValue_2) == 0x000220, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Less_IntInt_ReturnValue_2) == 0x000224, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000228, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000230, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_runTrigger_self_CastInput) == 0x000238, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_runTrigger_self_CastInput' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_CustomEvent_active_calc) == 0x000248, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_CustomEvent_active_calc' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_CustomEvent_active_downl) == 0x000249, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_CustomEvent_active_downl' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_CustomEvent_active_coords) == 0x00024A, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_CustomEvent_active_coords' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_CustomEvent_active_play) == 0x00024B, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_CustomEvent_active_play' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_CustomEvent_active_light) == 0x00024C, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_CustomEvent_active_light' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Get_Item_3) == 0x000250, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Length_ReturnValue_3) == 0x000258, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Less_IntInt_ReturnValue_3) == 0x00025C, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Get_Item_4) == 0x000260, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_K2_GetRootComponent_ReturnValue_1) == 0x000268, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_K2_GetRootComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Length_ReturnValue_4) == 0x000270, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Less_IntInt_ReturnValue_4) == 0x000274, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Less_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Get_Item_5) == 0x000278, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Length_ReturnValue_5) == 0x000280, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Length_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Less_IntInt_ReturnValue_5) == 0x000284, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Less_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_K2_GetRootComponent_ReturnValue_2) == 0x000288, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_K2_GetRootComponent_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Get_Item_6) == 0x000290, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Length_ReturnValue_6) == 0x000298, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Length_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Get_Item_7) == 0x0002A0, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Get_Item_7' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Less_IntInt_ReturnValue_6) == 0x0002A8, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Less_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Length_ReturnValue_7) == 0x0002AC, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Length_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Less_IntInt_ReturnValue_7) == 0x0002B0, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Less_IntInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_runTrigger_self_CastInput_1) == 0x0002B8, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_runTrigger_self_CastInput_1' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_activate) == 0x0002C8, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_activate' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_isGeneratorsFine_fine) == 0x0002C9, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_isGeneratorsFine_fine' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_isGeneratorsFine_fine_1) == 0x0002CA, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_isGeneratorsFine_fine_1' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_player) == 0x0002D0, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_hit) == 0x0002D8, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_action) == 0x000360, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x000368, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_bBlockingHit) == 0x000370, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_bInitialOverlap) == 0x000371, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_Time) == 0x000374, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_Distance) == 0x000378, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_Location) == 0x00037C, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_ImpactPoint) == 0x000388, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_Normal) == 0x000394, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_ImpactNormal) == 0x0003A0, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_PhysMat) == 0x0003B0, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_HitActor) == 0x0003B8, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_HitComponent) == 0x0003C0, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_HitBoneName) == 0x0003C8, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_HitItem) == 0x0003D0, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_ElementIndex) == 0x0003D4, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_FaceIndex) == 0x0003D8, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_TraceStart) == 0x0003DC, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_TraceEnd) == 0x0003E8, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Get_Item_8) == 0x0003F8, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Get_Item_8' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Length_ReturnValue_8) == 0x000400, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Length_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_DynamicCast_AsInt_Ttrigger) == 0x000408, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_DynamicCast_AsInt_Ttrigger' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_DynamicCast_bSuccess) == 0x000418, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Less_IntInt_ReturnValue_8) == 0x000419, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Less_IntInt_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_SelectRotator_ReturnValue_1) == 0x00041C, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_SelectRotator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_SelectRotator_ReturnValue_2) == 0x000428, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_SelectRotator_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_SelectRotator_ReturnValue_3) == 0x000434, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_SelectRotator_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_SelectRotator_ReturnValue_4) == 0x000440, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_SelectRotator_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Add_IntInt_ReturnValue_2) == 0x000028, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_int_Variable_3) == 0x00002C, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_int_Variable_3' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_int_Variable_4) == 0x000030, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_int_Variable_4' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Add_IntInt_ReturnValue_3) == 0x000034, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Add_IntInt_ReturnValue_4) == 0x000038, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_int_Variable_5) == 0x00003C, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_int_Variable_5' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_int_Variable_6) == 0x000040, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_int_Variable_6' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Add_IntInt_ReturnValue_5) == 0x000044, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Add_IntInt_ReturnValue_6) == 0x000048, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Add_IntInt_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_int_Array_Index_Variable) == 0x00004C, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_int_Loop_Counter_Variable) == 0x000050, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Add_IntInt_ReturnValue_7) == 0x000054, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Add_IntInt_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_player_3) == 0x000058, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_player_3' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_hit_2) == 0x000060, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_hit_2' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_kick) == 0x0000E8, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_kick' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_name) == 0x0000EC, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_name' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_player_2) == 0x0000F8, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_player_2' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_player_1) == 0x000100, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_hit_1) == 0x000108, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_hit_1' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000190, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_EqualEqual_ObjectObject_ReturnValue_1) == 0x000191, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_EqualEqual_ObjectObject_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Not_PreBool_ReturnValue) == 0x000192, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Not_PreBool_ReturnValue_1) == 0x000193, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, Temp_int_Variable_7) == 0x000194, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::Temp_int_Variable_7' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Add_IntInt_ReturnValue_8) == 0x000198, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Add_IntInt_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_EqualEqual_ObjectObject_ReturnValue_2) == 0x00019C, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_EqualEqual_ObjectObject_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_EqualEqual_ObjectObject_ReturnValue_3) == 0x00019D, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_EqualEqual_ObjectObject_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Not_PreBool_ReturnValue_2) == 0x00019E, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Not_PreBool_ReturnValue_3) == 0x00019F, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_EqualEqual_ObjectObject_ReturnValue_4) == 0x0001A0, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_EqualEqual_ObjectObject_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Not_PreBool_ReturnValue_4) == 0x0001A1, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Not_PreBool_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_GetAllActorsOfClass_OutActors) == 0x0001A8, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Get_Item) == 0x0001B8, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Length_ReturnValue) == 0x0001C0, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Get_Item_1) == 0x0001C8, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Less_IntInt_ReturnValue) == 0x0001D0, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Length_ReturnValue_1) == 0x0001D4, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Less_IntInt_ReturnValue_1) == 0x0001D8, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Get_Item_2) == 0x0001E0, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Get_Item_2' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Length_ReturnValue_2) == 0x0001E8, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Less_IntInt_ReturnValue_2) == 0x0001EC, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_K2_GetRootComponent_ReturnValue) == 0x0001F0, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x0001F8, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_runTrigger_self_CastInput) == 0x000200, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_runTrigger_self_CastInput' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_CustomEvent_active_calc) == 0x000210, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_CustomEvent_active_calc' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_CustomEvent_active_downl) == 0x000211, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_CustomEvent_active_downl' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_CustomEvent_active_coords) == 0x000212, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_CustomEvent_active_coords' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_CustomEvent_active_play) == 0x000213, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_CustomEvent_active_play' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_CustomEvent_active_light) == 0x000214, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_CustomEvent_active_light' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Get_Item_3) == 0x000218, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Get_Item_3' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Length_ReturnValue_3) == 0x000220, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Less_IntInt_ReturnValue_3) == 0x000224, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Get_Item_4) == 0x000228, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Get_Item_4' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_K2_GetRootComponent_ReturnValue_1) == 0x000230, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_K2_GetRootComponent_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Length_ReturnValue_4) == 0x000238, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Less_IntInt_ReturnValue_4) == 0x00023C, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Less_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Get_Item_5) == 0x000240, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Get_Item_5' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Length_ReturnValue_5) == 0x000248, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Length_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Less_IntInt_ReturnValue_5) == 0x00024C, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Less_IntInt_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_K2_GetRootComponent_ReturnValue_2) == 0x000250, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_K2_GetRootComponent_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Get_Item_6) == 0x000258, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Get_Item_6' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Length_ReturnValue_6) == 0x000260, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Length_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Get_Item_7) == 0x000268, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Get_Item_7' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Less_IntInt_ReturnValue_6) == 0x000270, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Less_IntInt_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Length_ReturnValue_7) == 0x000274, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Length_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Less_IntInt_ReturnValue_7) == 0x000278, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Less_IntInt_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_runTrigger_self_CastInput_1) == 0x000280, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_runTrigger_self_CastInput_1' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_activate) == 0x000290, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_activate' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_isGeneratorsFine_fine) == 0x000291, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_isGeneratorsFine_fine' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_isGeneratorsFine_fine_1) == 0x000292, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_isGeneratorsFine_fine_1' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_player) == 0x000298, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_hit) == 0x0002A0, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_index) == 0x000328, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_Event_action) == 0x00032C, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x000330, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_bBlockingHit) == 0x000338, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_bInitialOverlap) == 0x000339, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_Time) == 0x00033C, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_Distance) == 0x000340, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_Location) == 0x000344, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_ImpactPoint) == 0x000350, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_Normal) == 0x00035C, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_ImpactNormal) == 0x000368, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_PhysMat) == 0x000378, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_HitActor) == 0x000380, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_HitComponent) == 0x000388, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_HitBoneName) == 0x000390, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_HitItem) == 0x000398, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_ElementIndex) == 0x00039C, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_FaceIndex) == 0x0003A0, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_TraceStart) == 0x0003A4, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_BreakHitResult_TraceEnd) == 0x0003B0, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Get_Item_8) == 0x0003C0, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Get_Item_8' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Array_Length_ReturnValue_8) == 0x0003C8, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Array_Length_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_DynamicCast_AsInt_Ttrigger) == 0x0003D0, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_DynamicCast_AsInt_Ttrigger' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, K2Node_DynamicCast_bSuccess) == 0x0003E0, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ExecuteUbergraph_powerControl, CallFunc_Less_IntInt_ReturnValue_8) == 0x0003E1, "Member 'PowerControl_C_ExecuteUbergraph_powerControl::CallFunc_Less_IntInt_ReturnValue_8' has a wrong offset!");
 
 // Function powerControl.powerControl_C.powerChanged
 // 0x0005 (0x0005 - 0x0000)
@@ -308,53 +276,18 @@ static_assert(offsetof(PowerControl_C_PowerChanged, Active_coords) == 0x000002, 
 static_assert(offsetof(PowerControl_C_PowerChanged, Active_play) == 0x000003, "Member 'PowerControl_C_PowerChanged::Active_play' has a wrong offset!");
 static_assert(offsetof(PowerControl_C_PowerChanged, Active_light) == 0x000004, "Member 'PowerControl_C_PowerChanged::Active_light' has a wrong offset!");
 
-// Function powerControl.powerControl_C.playerR
-// 0x0008 (0x0008 - 0x0000)
-struct PowerControl_C_PlayerR final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PowerControl_C_PlayerR) == 0x000008, "Wrong alignment on PowerControl_C_PlayerR");
-static_assert(sizeof(PowerControl_C_PlayerR) == 0x000008, "Wrong size on PowerControl_C_PlayerR");
-static_assert(offsetof(PowerControl_C_PlayerR, Player) == 0x000000, "Member 'PowerControl_C_PlayerR::Player' has a wrong offset!");
-
-// Function powerControl.powerControl_C.playerHold
-// 0x0008 (0x0008 - 0x0000)
-struct PowerControl_C_PlayerHold final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PowerControl_C_PlayerHold) == 0x000008, "Wrong alignment on PowerControl_C_PlayerHold");
-static_assert(sizeof(PowerControl_C_PlayerHold) == 0x000008, "Wrong size on PowerControl_C_PlayerHold");
-static_assert(offsetof(PowerControl_C_PlayerHold, Player) == 0x000000, "Member 'PowerControl_C_PlayerHold::Player' has a wrong offset!");
-
-// Function powerControl.powerControl_C.playerUnequip
-// 0x0008 (0x0008 - 0x0000)
-struct PowerControl_C_PlayerUnequip final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PowerControl_C_PlayerUnequip) == 0x000008, "Wrong alignment on PowerControl_C_PlayerUnequip");
-static_assert(sizeof(PowerControl_C_PlayerUnequip) == 0x000008, "Wrong size on PowerControl_C_PlayerUnequip");
-static_assert(offsetof(PowerControl_C_PlayerUnequip, Player) == 0x000000, "Member 'PowerControl_C_PlayerUnequip::Player' has a wrong offset!");
-
 // Function powerControl.powerControl_C.damageByPlayer
-// 0x0098 (0x0098 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct PowerControl_C_DamageByPlayer final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         Damage;                                            // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PowerControl_C_DamageByPlayer) == 0x000008, "Wrong alignment on PowerControl_C_DamageByPlayer");
-static_assert(sizeof(PowerControl_C_DamageByPlayer) == 0x000098, "Wrong size on PowerControl_C_DamageByPlayer");
+static_assert(sizeof(PowerControl_C_DamageByPlayer) == 0x000090, "Wrong size on PowerControl_C_DamageByPlayer");
 static_assert(offsetof(PowerControl_C_DamageByPlayer, Player) == 0x000000, "Member 'PowerControl_C_DamageByPlayer::Player' has a wrong offset!");
 static_assert(offsetof(PowerControl_C_DamageByPlayer, Hit) == 0x000008, "Member 'PowerControl_C_DamageByPlayer::Hit' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_DamageByPlayer, Damage) == 0x000090, "Member 'PowerControl_C_DamageByPlayer::Damage' has a wrong offset!");
 
 // Function powerControl.powerControl_C.thrown
 // 0x0008 (0x0008 - 0x0000)
@@ -403,57 +336,54 @@ static_assert(offsetof(PowerControl_C_Player_use, Player) == 0x000000, "Member '
 static_assert(offsetof(PowerControl_C_Player_use, Hit) == 0x000008, "Member 'PowerControl_C_Player_use::Hit' has a wrong offset!");
 
 // Function powerControl.powerControl_C.buttonsVisibility
-// 0x00D8 (0x00D8 - 0x0000)
+// 0x00D0 (0x00D0 - 0x0000)
 struct PowerControl_C_buttonsVisibility final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F2D[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystem*                        Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_1;                              // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     Temp_object_Variable_2;                            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_3;                            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F2E[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystem*                        Temp_object_Variable_2;                            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        Temp_object_Variable_3;                            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_2;                              // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     Temp_object_Variable_4;                            // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_5;                            // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F2F[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystem*                        Temp_object_Variable_4;                            // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        Temp_object_Variable_5;                            // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_3;                              // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     Temp_object_Variable_6;                            // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_7;                            // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_4;                              // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     Temp_object_Variable_8;                            // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_9;                            // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     K2Node_Select_Default;                             // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_82[0x6];                                       // 0x0082(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     K2Node_Select_Default_1;                           // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     K2Node_Select_Default_2;                           // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_3;                // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     K2Node_Select_Default_3;                           // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_4;                // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     K2Node_Select_Default_4;                           // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_isGeneratorsFine_fine;                    // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_5;                // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_6;                // 0x00C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00C3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C5[0x3];                                       // 0x00C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Conv_BoolToFloat_ReturnValue;             // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_7;                // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_CD[0x3];                                       // 0x00CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F30[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystem*                        Temp_object_Variable_6;                            // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        Temp_object_Variable_7;                            // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        Temp_object_Variable_8;                            // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        Temp_object_Variable_9;                            // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_4;                              // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_isGeneratorsFine_fine;                    // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0073(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0075(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F31[0x2];                                     // 0x0076(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F32[0x4];                                     // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystem*                        K2Node_Select_Default;                             // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SelectFloat_ReturnValue_1;                // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F33[0x4];                                     // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystem*                        K2Node_Select_Default_1;                           // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SelectFloat_ReturnValue_2;                // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F34[0x4];                                     // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystem*                        K2Node_Select_Default_2;                           // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SelectFloat_ReturnValue_3;                // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F35[0x4];                                     // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystem*                        K2Node_Select_Default_3;                           // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SelectFloat_ReturnValue_4;                // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F36[0x4];                                     // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystem*                        K2Node_Select_Default_4;                           // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PowerControl_C_buttonsVisibility) == 0x000008, "Wrong alignment on PowerControl_C_buttonsVisibility");
-static_assert(sizeof(PowerControl_C_buttonsVisibility) == 0x0000D8, "Wrong size on PowerControl_C_buttonsVisibility");
+static_assert(sizeof(PowerControl_C_buttonsVisibility) == 0x0000D0, "Wrong size on PowerControl_C_buttonsVisibility");
 static_assert(offsetof(PowerControl_C_buttonsVisibility, Temp_bool_Variable) == 0x000000, "Member 'PowerControl_C_buttonsVisibility::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(PowerControl_C_buttonsVisibility, Temp_object_Variable) == 0x000008, "Member 'PowerControl_C_buttonsVisibility::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(PowerControl_C_buttonsVisibility, Temp_object_Variable_1) == 0x000010, "Member 'PowerControl_C_buttonsVisibility::Temp_object_Variable_1' has a wrong offset!");
@@ -466,27 +396,25 @@ static_assert(offsetof(PowerControl_C_buttonsVisibility, Temp_object_Variable_5)
 static_assert(offsetof(PowerControl_C_buttonsVisibility, Temp_bool_Variable_3) == 0x000048, "Member 'PowerControl_C_buttonsVisibility::Temp_bool_Variable_3' has a wrong offset!");
 static_assert(offsetof(PowerControl_C_buttonsVisibility, Temp_object_Variable_6) == 0x000050, "Member 'PowerControl_C_buttonsVisibility::Temp_object_Variable_6' has a wrong offset!");
 static_assert(offsetof(PowerControl_C_buttonsVisibility, Temp_object_Variable_7) == 0x000058, "Member 'PowerControl_C_buttonsVisibility::Temp_object_Variable_7' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_buttonsVisibility, Temp_bool_Variable_4) == 0x000060, "Member 'PowerControl_C_buttonsVisibility::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_buttonsVisibility, Temp_object_Variable_8) == 0x000068, "Member 'PowerControl_C_buttonsVisibility::Temp_object_Variable_8' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_buttonsVisibility, Temp_object_Variable_9) == 0x000070, "Member 'PowerControl_C_buttonsVisibility::Temp_object_Variable_9' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_buttonsVisibility, K2Node_Select_Default) == 0x000078, "Member 'PowerControl_C_buttonsVisibility::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_Not_PreBool_ReturnValue) == 0x000080, "Member 'PowerControl_C_buttonsVisibility::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_Not_PreBool_ReturnValue_1) == 0x000081, "Member 'PowerControl_C_buttonsVisibility::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_buttonsVisibility, K2Node_Select_Default_1) == 0x000088, "Member 'PowerControl_C_buttonsVisibility::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_Not_PreBool_ReturnValue_2) == 0x000090, "Member 'PowerControl_C_buttonsVisibility::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_buttonsVisibility, K2Node_Select_Default_2) == 0x000098, "Member 'PowerControl_C_buttonsVisibility::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_Not_PreBool_ReturnValue_3) == 0x0000A0, "Member 'PowerControl_C_buttonsVisibility::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_buttonsVisibility, K2Node_Select_Default_3) == 0x0000A8, "Member 'PowerControl_C_buttonsVisibility::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_Not_PreBool_ReturnValue_4) == 0x0000B0, "Member 'PowerControl_C_buttonsVisibility::CallFunc_Not_PreBool_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_buttonsVisibility, K2Node_Select_Default_4) == 0x0000B8, "Member 'PowerControl_C_buttonsVisibility::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_isGeneratorsFine_fine) == 0x0000C0, "Member 'PowerControl_C_buttonsVisibility::CallFunc_isGeneratorsFine_fine' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_Not_PreBool_ReturnValue_5) == 0x0000C1, "Member 'PowerControl_C_buttonsVisibility::CallFunc_Not_PreBool_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_Not_PreBool_ReturnValue_6) == 0x0000C2, "Member 'PowerControl_C_buttonsVisibility::CallFunc_Not_PreBool_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_BooleanOR_ReturnValue) == 0x0000C3, "Member 'PowerControl_C_buttonsVisibility::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_BooleanAND_ReturnValue) == 0x0000C4, "Member 'PowerControl_C_buttonsVisibility::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_Conv_BoolToFloat_ReturnValue) == 0x0000C8, "Member 'PowerControl_C_buttonsVisibility::CallFunc_Conv_BoolToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_Not_PreBool_ReturnValue_7) == 0x0000CC, "Member 'PowerControl_C_buttonsVisibility::CallFunc_Not_PreBool_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x0000D0, "Member 'PowerControl_C_buttonsVisibility::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_buttonsVisibility, Temp_object_Variable_8) == 0x000060, "Member 'PowerControl_C_buttonsVisibility::Temp_object_Variable_8' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_buttonsVisibility, Temp_object_Variable_9) == 0x000068, "Member 'PowerControl_C_buttonsVisibility::Temp_object_Variable_9' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_buttonsVisibility, Temp_bool_Variable_4) == 0x000070, "Member 'PowerControl_C_buttonsVisibility::Temp_bool_Variable_4' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_isGeneratorsFine_fine) == 0x000071, "Member 'PowerControl_C_buttonsVisibility::CallFunc_isGeneratorsFine_fine' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_Not_PreBool_ReturnValue) == 0x000072, "Member 'PowerControl_C_buttonsVisibility::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_Not_PreBool_ReturnValue_1) == 0x000073, "Member 'PowerControl_C_buttonsVisibility::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_BooleanOR_ReturnValue) == 0x000074, "Member 'PowerControl_C_buttonsVisibility::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_BooleanAND_ReturnValue) == 0x000075, "Member 'PowerControl_C_buttonsVisibility::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000078, "Member 'PowerControl_C_buttonsVisibility::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_SelectFloat_ReturnValue) == 0x000080, "Member 'PowerControl_C_buttonsVisibility::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_buttonsVisibility, K2Node_Select_Default) == 0x000088, "Member 'PowerControl_C_buttonsVisibility::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_SelectFloat_ReturnValue_1) == 0x000090, "Member 'PowerControl_C_buttonsVisibility::CallFunc_SelectFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_buttonsVisibility, K2Node_Select_Default_1) == 0x000098, "Member 'PowerControl_C_buttonsVisibility::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_SelectFloat_ReturnValue_2) == 0x0000A0, "Member 'PowerControl_C_buttonsVisibility::CallFunc_SelectFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_buttonsVisibility, K2Node_Select_Default_2) == 0x0000A8, "Member 'PowerControl_C_buttonsVisibility::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_SelectFloat_ReturnValue_3) == 0x0000B0, "Member 'PowerControl_C_buttonsVisibility::CallFunc_SelectFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_buttonsVisibility, K2Node_Select_Default_3) == 0x0000B8, "Member 'PowerControl_C_buttonsVisibility::K2Node_Select_Default_3' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_buttonsVisibility, CallFunc_SelectFloat_ReturnValue_4) == 0x0000C0, "Member 'PowerControl_C_buttonsVisibility::CallFunc_SelectFloat_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_buttonsVisibility, K2Node_Select_Default_4) == 0x0000C8, "Member 'PowerControl_C_buttonsVisibility::K2Node_Select_Default_4' has a wrong offset!");
 
 // Function powerControl.powerControl_C.playSND
 // 0x0030 (0x0030 - 0x0000)
@@ -495,11 +423,11 @@ struct PowerControl_C_PlaySND final
 public:
 	bool                                          Activated;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F37[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_isGeneratorsFine_fine;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F38[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             K2Node_Select_Default;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_BoolBool_ReturnValue;          // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsPlaying_ReturnValue;                    // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -527,21 +455,21 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_2;                               // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F39[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F3A[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ACordSocket_C*                          CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F3B[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IInt_ttrigger_C>       K2Node_DynamicCast_AsInt_Ttrigger;                 // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F3C[0x6];                                     // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class ATrigger_lightRoot_C*                   CallFunc_Array_Get_Item_1;                         // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F3D[0x3];                                     // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class ATrigger_lightRoot_C*                   CallFunc_Array_Get_Item_2;                         // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IInt_ttrigger_C>       CallFunc_runTrigger_self_CastInput;                // 0x0068(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -583,20 +511,20 @@ public:
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ACordSocket_C*                          CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F3E[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IInt_ttrigger_C>       K2Node_DynamicCast_AsInt_Ttrigger;                 // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_42[0x6];                                       // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F3F[0x6];                                     // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class ATrigger_lightRoot_C*                   CallFunc_Array_Get_Item_1;                         // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F40[0x3];                                     // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class ATrigger_lightRoot_C*                   CallFunc_Array_Get_Item_2;                         // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IInt_ttrigger_C>       CallFunc_runTrigger_self_CastInput;                // 0x0060(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_75[0x3];                                       // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F41[0x3];                                     // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PowerControl_C_SendPower) == 0x000008, "Wrong alignment on PowerControl_C_SendPower");
@@ -634,26 +562,24 @@ static_assert(sizeof(PowerControl_C_IsButtonUsed) == 0x000001, "Wrong size on Po
 static_assert(offsetof(PowerControl_C_IsButtonUsed, Failed) == 0x000000, "Member 'PowerControl_C_IsButtonUsed::Failed' has a wrong offset!");
 
 // Function powerControl.powerControl_C.lookAt
-// 0x00B8 (0x00B8 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct PowerControl_C_LookAt final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F42[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PowerControl_C_LookAt) == 0x000008, "Wrong alignment on PowerControl_C_LookAt");
-static_assert(sizeof(PowerControl_C_LookAt) == 0x0000B8, "Wrong size on PowerControl_C_LookAt");
+static_assert(sizeof(PowerControl_C_LookAt) == 0x0000B0, "Wrong size on PowerControl_C_LookAt");
 static_assert(offsetof(PowerControl_C_LookAt, Player) == 0x000000, "Member 'PowerControl_C_LookAt::Player' has a wrong offset!");
 static_assert(offsetof(PowerControl_C_LookAt, Hit) == 0x000008, "Member 'PowerControl_C_LookAt::Hit' has a wrong offset!");
 static_assert(offsetof(PowerControl_C_LookAt, Return) == 0x000090, "Member 'PowerControl_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(PowerControl_C_LookAt, Text) == 0x000098, "Member 'PowerControl_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(PowerControl_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'PowerControl_C_LookAt::boundObjectReplace' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_LookAt, Number) == 0x0000B0, "Member 'PowerControl_C_LookAt::Number' has a wrong offset!");
 
 // Function powerControl.powerControl_C.noRespawn
 // 0x0002 (0x0002 - 0x0000)
@@ -701,19 +627,6 @@ static_assert(alignof(PowerControl_C_CanBePutInContainer) == 0x000001, "Wrong al
 static_assert(sizeof(PowerControl_C_CanBePutInContainer) == 0x000001, "Wrong size on PowerControl_C_CanBePutInContainer");
 static_assert(offsetof(PowerControl_C_CanBePutInContainer, Return) == 0x000000, "Member 'PowerControl_C_CanBePutInContainer::Return' has a wrong offset!");
 
-// Function powerControl.powerControl_C.landedOn
-// 0x0010 (0x0010 - 0x0000)
-struct PowerControl_C_LandedOn final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IgnoreFallDamage;                                  // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(PowerControl_C_LandedOn) == 0x000008, "Wrong alignment on PowerControl_C_LandedOn");
-static_assert(sizeof(PowerControl_C_LandedOn) == 0x000010, "Wrong size on PowerControl_C_LandedOn");
-static_assert(offsetof(PowerControl_C_LandedOn, Player) == 0x000000, "Member 'PowerControl_C_LandedOn::Player' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_LandedOn, IgnoreFallDamage) == 0x000008, "Member 'PowerControl_C_LandedOn::IgnoreFallDamage' has a wrong offset!");
-
 // Function powerControl.powerControl_C.actionOptionIndex
 // 0x0098 (0x0098 - 0x0000)
 struct PowerControl_C_ActionOptionIndex final
@@ -721,13 +634,15 @@ struct PowerControl_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PowerControl_C_ActionOptionIndex) == 0x000008, "Wrong alignment on PowerControl_C_ActionOptionIndex");
 static_assert(sizeof(PowerControl_C_ActionOptionIndex) == 0x000098, "Wrong size on PowerControl_C_ActionOptionIndex");
 static_assert(offsetof(PowerControl_C_ActionOptionIndex, Player) == 0x000000, "Member 'PowerControl_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(PowerControl_C_ActionOptionIndex, Hit) == 0x000008, "Member 'PowerControl_C_ActionOptionIndex::Hit' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_ActionOptionIndex, Action) == 0x000090, "Member 'PowerControl_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'PowerControl_C_ActionOptionIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_ActionOptionIndex, Action) == 0x000094, "Member 'PowerControl_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function powerControl.powerControl_C.virus
 // 0x0001 (0x0001 - 0x0000)
@@ -751,21 +666,21 @@ public:
 	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ADoor_C*                                CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F43[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IInt_objects_C>        CallFunc_getKey_self_CastInput;                    // 0x0020(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	class FString                                 CallFunc_getKey_key;                               // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F44[0x3];                                     // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ATrigger_lightRoot_C*                   CallFunc_Array_Get_Item_1;                         // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F45[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IInt_objects_C>        CallFunc_getKey_self_CastInput_1;                  // 0x0060(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	class FString                                 CallFunc_getKey_key_1;                             // 0x0070(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_81[0x3];                                       // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F46[0x3];                                     // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PowerControl_C_UserConstructionScript) == 0x000008, "Wrong alignment on PowerControl_C_UserConstructionScript");
@@ -796,7 +711,7 @@ struct PowerControl_C_LoadTriggerData final
 public:
 	struct FStruct_triggerSave                    Data;                                              // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00F0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F1[0x3];                                       // 0x00F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F47[0x3];                                     // 0x00F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         I;                                                 // 0x00F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Get_Item;                           // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Get_Item_1;                         // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -826,10 +741,10 @@ struct PowerControl_C_GetTriggerData final
 public:
 	struct FStruct_triggerSave                    Data;                                              // 0x0000(0x00F0)(Parm, OutParm, HasGetValueTypeHash)
 	int32                                         I;                                                 // 0x00F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F4[0x4];                                       // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F48[0x4];                                     // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         A;                                                 // 0x00F8(0x0010)(Edit, BlueprintVisible)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F49[0x4];                                     // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<bool>                                  K2Node_MakeArray_Array;                            // 0x0110(0x0010)(ReferenceParm)
 	TArray<int32>                                 K2Node_MakeArray_Array_1;                          // 0x0120(0x0010)(ReferenceParm)
 	struct FStruct_triggerSave                    CallFunc_getTriggerData_data;                      // 0x0130(0x00F0)(HasGetValueTypeHash)
@@ -846,48 +761,35 @@ static_assert(offsetof(PowerControl_C_GetTriggerData, K2Node_MakeArray_Array_1) 
 static_assert(offsetof(PowerControl_C_GetTriggerData, CallFunc_getTriggerData_data) == 0x000130, "Member 'PowerControl_C_GetTriggerData::CallFunc_getTriggerData_data' has a wrong offset!");
 static_assert(offsetof(PowerControl_C_GetTriggerData, K2Node_SetFieldsInStruct_StructOut) == 0x000220, "Member 'PowerControl_C_GetTriggerData::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
 
-// Function powerControl.powerControl_C.dreamInv
-// 0x0018 (0x0018 - 0x0000)
-struct PowerControl_C_DreamInv final
-{
-public:
-	TArray<struct FStruct_save>                   Invv;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	class ADreamBase_C*                           Base;                                              // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PowerControl_C_DreamInv) == 0x000008, "Wrong alignment on PowerControl_C_DreamInv");
-static_assert(sizeof(PowerControl_C_DreamInv) == 0x000018, "Wrong size on PowerControl_C_DreamInv");
-static_assert(offsetof(PowerControl_C_DreamInv, Invv) == 0x000000, "Member 'PowerControl_C_DreamInv::Invv' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_DreamInv, Base) == 0x000010, "Member 'PowerControl_C_DreamInv::Base' has a wrong offset!");
-
 // Function powerControl.powerControl_C.processKeys
 // 0x0070 (0x0070 - 0x0000)
 struct PowerControl_C_ProcessKeys final
 {
 public:
 	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F4A[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F4B[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Array_Get_Item;                           // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F4C[0x3];                                     // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_getObjectFromKey_Output;                  // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_processKeys_return;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F4D[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ATrigger_lightRoot_C*                   K2Node_DynamicCast_AsTrigger_Light_Root;           // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F4E[0x3];                                     // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ADoor_C*                                K2Node_DynamicCast_AsDoor;                         // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F4F[0x3];                                     // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue_3;                  // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PowerControl_C_ProcessKeys) == 0x000008, "Wrong alignment on PowerControl_C_ProcessKeys");
@@ -912,8 +814,21 @@ static_assert(offsetof(PowerControl_C_ProcessKeys, K2Node_DynamicCast_AsDoor) ==
 static_assert(offsetof(PowerControl_C_ProcessKeys, K2Node_DynamicCast_bSuccess_1) == 0x000068, "Member 'PowerControl_C_ProcessKeys::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
 static_assert(offsetof(PowerControl_C_ProcessKeys, CallFunc_Array_Add_ReturnValue_3) == 0x00006C, "Member 'PowerControl_C_ProcessKeys::CallFunc_Array_Add_ReturnValue_3' has a wrong offset!");
 
+// Function powerControl.powerControl_C.dreamInv
+// 0x0018 (0x0018 - 0x0000)
+struct PowerControl_C_DreamInv final
+{
+public:
+	TArray<struct FStruct_save>                   Invv;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class ADreamBase_C*                           Base;                                              // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PowerControl_C_DreamInv) == 0x000008, "Wrong alignment on PowerControl_C_DreamInv");
+static_assert(sizeof(PowerControl_C_DreamInv) == 0x000018, "Wrong size on PowerControl_C_DreamInv");
+static_assert(offsetof(PowerControl_C_DreamInv, Invv) == 0x000000, "Member 'PowerControl_C_DreamInv::Invv' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_DreamInv, Base) == 0x000010, "Member 'PowerControl_C_DreamInv::Base' has a wrong offset!");
+
 // Function powerControl.powerControl_C.getActionOptions
-// 0x0060 (0x0060 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct PowerControl_C_GetActionOptions final
 {
 public:
@@ -923,20 +838,17 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
 };
 static_assert(alignof(PowerControl_C_GetActionOptions) == 0x000008, "Wrong alignment on PowerControl_C_GetActionOptions");
-static_assert(sizeof(PowerControl_C_GetActionOptions) == 0x000060, "Wrong size on PowerControl_C_GetActionOptions");
+static_assert(sizeof(PowerControl_C_GetActionOptions) == 0x000058, "Wrong size on PowerControl_C_GetActionOptions");
 static_assert(offsetof(PowerControl_C_GetActionOptions, Player) == 0x000000, "Member 'PowerControl_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(PowerControl_C_GetActionOptions, Component) == 0x000008, "Member 'PowerControl_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(PowerControl_C_GetActionOptions, Actor) == 0x000010, "Member 'PowerControl_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(PowerControl_C_GetActionOptions, Options) == 0x000018, "Member 'PowerControl_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(PowerControl_C_GetActionOptions, Options_enum) == 0x000028, "Member 'PowerControl_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(PowerControl_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'PowerControl_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_GetActionOptions, Number) == 0x000048, "Member 'PowerControl_C_GetActionOptions::Number' has a wrong offset!");
-static_assert(offsetof(PowerControl_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'PowerControl_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(PowerControl_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'PowerControl_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 }
 

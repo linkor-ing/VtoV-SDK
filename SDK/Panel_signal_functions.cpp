@@ -37,26 +37,6 @@ void APanel_signal_C::ExecuteUbergraph_panel_signal(int32 EntryPoint)
 }
 
 
-// Function panel_signal.panel_signal_C.unused
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Pressed                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void APanel_signal_C::Unused(bool Pressed)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("panel_signal_C", "unused");
-
-	Params::Panel_signal_C_Unused Parms{};
-
-	Parms.Pressed = Pressed;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function panel_signal.panel_signal_C.Dest
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -334,9 +314,10 @@ void APanel_signal_C::AddParams(int32 Add)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APanel_signal_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action)
+void APanel_signal_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -347,6 +328,7 @@ void APanel_signal_C::ActionOptionIndex(class AMainPlayer_C* Player, const struc
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
+	Parms.Param_Index = Param_Index;
 	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -396,9 +378,8 @@ void APanel_signal_C::IsButtonUsed(bool* Failed)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APanel_signal_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
+void APanel_signal_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
 {
 	static class UFunction* Func = nullptr;
 
@@ -420,9 +401,6 @@ void APanel_signal_C::LookAt(class AMainPlayer_C* Player, const struct FHitResul
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
 }
 
 
@@ -461,9 +439,8 @@ void APanel_signal_C::DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBa
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APanel_signal_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
+void APanel_signal_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
 {
 	static class UFunction* Func = nullptr;
 
@@ -486,9 +463,6 @@ void APanel_signal_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimi
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
 }
 
 }

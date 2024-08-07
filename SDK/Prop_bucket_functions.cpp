@@ -37,6 +37,20 @@ void AProp_bucket_C::ExecuteUbergraph_prop_bucket(int32 EntryPoint)
 }
 
 
+// Function prop_bucket.prop_bucket_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_bucket_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_bucket_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function prop_bucket.prop_bucket_C.BndEvt__prop_bucket_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -159,94 +173,6 @@ void AProp_bucket_C::Dipped(bool* IsDipped)
 
 	if (IsDipped != nullptr)
 		*IsDipped = Parms.IsDipped;
-}
-
-
-// Function prop_bucket.prop_bucket_C.calcPoints
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void AProp_bucket_C::CalcPoints()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_bucket_C", "calcPoints");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop_bucket.prop_bucket_C.getFromWater
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_bucket_C::GetFromWater(class AMainPlayer_C* NewParam)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_bucket_C", "getFromWater");
-
-	Params::Prop_bucket_C_GetFromWater Parms{};
-
-	Parms.NewParam = NewParam;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop_bucket.prop_bucket_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_bucket_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_bucket_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop_bucket.prop_bucket_C.playerHandUse_LMB
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_bucket_C::PlayerHandUse_LMB(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_bucket_C", "playerHandUse_LMB");
-
-	Params::Prop_bucket_C_PlayerHandUse_LMB Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop_bucket.prop_bucket_C.playerHandUse_RMB
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_bucket_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_bucket_C", "playerHandUse_RMB");
-
-	Params::Prop_bucket_C_PlayerHandUse_RMB Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

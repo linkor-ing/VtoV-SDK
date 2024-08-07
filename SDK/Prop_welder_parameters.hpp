@@ -22,12 +22,12 @@ struct Prop_welder_C_ExecuteUbergraph_prop_welder final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_37B7[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_37B8[0x2];                                     // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0020(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -43,21 +43,21 @@ public:
 	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x007C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0088(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_94[0xC];                                       // 0x0094(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_37B9[0xC];                                     // 0x0094(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x00A0(0x0030)(IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AWeld_C*                                CallFunc_FinishSpawningActor_ReturnValue;          // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit_1;            // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap_1;         // 0x00E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_EA[0x2];                                       // 0x00EA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_37BA[0x2];                                     // 0x00EA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time_1;                    // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance_1;                // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location_1;                // 0x00F4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactPoint_1;             // 0x0100(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Normal_1;                  // 0x010C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactNormal_1;            // 0x0118(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_124[0x4];                                      // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_37BB[0x4];                                     // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat_1;                 // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor_1;                // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent_1;            // 0x0138(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -123,17 +123,6 @@ static_assert(alignof(Prop_welder_C_ReceiveTick) == 0x000004, "Wrong alignment o
 static_assert(sizeof(Prop_welder_C_ReceiveTick) == 0x000004, "Wrong size on Prop_welder_C_ReceiveTick");
 static_assert(offsetof(Prop_welder_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'Prop_welder_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
-// Function prop_welder.prop_welder_C.playerHandUse_LMB
-// 0x0008 (0x0008 - 0x0000)
-struct Prop_welder_C_PlayerHandUse_LMB final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_welder_C_PlayerHandUse_LMB) == 0x000008, "Wrong alignment on Prop_welder_C_PlayerHandUse_LMB");
-static_assert(sizeof(Prop_welder_C_PlayerHandUse_LMB) == 0x000008, "Wrong size on Prop_welder_C_PlayerHandUse_LMB");
-static_assert(offsetof(Prop_welder_C_PlayerHandUse_LMB, Player) == 0x000000, "Member 'Prop_welder_C_PlayerHandUse_LMB::Player' has a wrong offset!");
-
 // Function prop_welder.prop_welder_C.playerHandRelease_LMB
 // 0x0008 (0x0008 - 0x0000)
 struct Prop_welder_C_PlayerHandRelease_LMB final
@@ -144,6 +133,17 @@ public:
 static_assert(alignof(Prop_welder_C_PlayerHandRelease_LMB) == 0x000008, "Wrong alignment on Prop_welder_C_PlayerHandRelease_LMB");
 static_assert(sizeof(Prop_welder_C_PlayerHandRelease_LMB) == 0x000008, "Wrong size on Prop_welder_C_PlayerHandRelease_LMB");
 static_assert(offsetof(Prop_welder_C_PlayerHandRelease_LMB, Player) == 0x000000, "Member 'Prop_welder_C_PlayerHandRelease_LMB::Player' has a wrong offset!");
+
+// Function prop_welder.prop_welder_C.playerHandUse_LMB
+// 0x0008 (0x0008 - 0x0000)
+struct Prop_welder_C_PlayerHandUse_LMB final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_welder_C_PlayerHandUse_LMB) == 0x000008, "Wrong alignment on Prop_welder_C_PlayerHandUse_LMB");
+static_assert(sizeof(Prop_welder_C_PlayerHandUse_LMB) == 0x000008, "Wrong size on Prop_welder_C_PlayerHandUse_LMB");
+static_assert(offsetof(Prop_welder_C_PlayerHandUse_LMB, Player) == 0x000000, "Member 'Prop_welder_C_PlayerHandUse_LMB::Player' has a wrong offset!");
 
 }
 

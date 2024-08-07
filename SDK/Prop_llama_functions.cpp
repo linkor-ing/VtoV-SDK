@@ -37,6 +37,20 @@ void AProp_llama_C::ExecuteUbergraph_prop_llama(int32 EntryPoint)
 }
 
 
+// Function prop_llama.prop_llama_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_llama_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_llama_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function prop_llama.prop_llama_C.BndEvt__prop_llama_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -64,34 +78,6 @@ void AProp_llama_C::BndEvt__prop_llama_Sphere_K2Node_ComponentBoundEvent_0_Compo
 	Parms.SweepResult = std::move(SweepResult);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop_llama.prop_llama_C.ReceiveDestroyed
-// (Event, Public, BlueprintEvent)
-
-void AProp_llama_C::ReceiveDestroyed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_llama_C", "ReceiveDestroyed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop_llama.prop_llama_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_llama_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_llama_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

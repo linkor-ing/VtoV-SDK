@@ -24,30 +24,30 @@ struct Prop_landmine_C_ExecuteUbergraph_prop_landmine final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsActorBeingDestroyed_ReturnValue;        // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_38FE[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent_1;  // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor_1;           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp_1;            // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex_1;       // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_38FF[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0028(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent;    // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3900[0x4];                                     // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x00D0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	TArray<class AActor*>                         CallFunc_GetOverlappingActors_OverlappingActors;   // 0x0100(0x0010)(ReferenceParm)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x011C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11D[0x3];                                      // 0x011D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3901[0x3];                                     // 0x011D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AExplosion_C*                           CallFunc_FinishSpawningActor_ReturnValue;          // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_static;                               // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_frozen;                               // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_active;                               // 0x012A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_12B[0x5];                                      // 0x012B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3902[0x5];                                     // 0x012B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetAttachParentActor_ReturnValue;         // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -77,6 +77,21 @@ static_assert(offsetof(Prop_landmine_C_ExecuteUbergraph_prop_landmine, K2Node_Ev
 static_assert(offsetof(Prop_landmine_C_ExecuteUbergraph_prop_landmine, CallFunc_GetAttachParentActor_ReturnValue) == 0x000130, "Member 'Prop_landmine_C_ExecuteUbergraph_prop_landmine::CallFunc_GetAttachParentActor_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_landmine_C_ExecuteUbergraph_prop_landmine, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x000138, "Member 'Prop_landmine_C_ExecuteUbergraph_prop_landmine::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
 
+// Function prop_landmine.prop_landmine_C.setPropProps
+// 0x0003 (0x0003 - 0x0000)
+struct Prop_landmine_C_SetPropProps final
+{
+public:
+	bool                                          Param_Static;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Param_Frozen;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Param_Active;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Prop_landmine_C_SetPropProps) == 0x000001, "Wrong alignment on Prop_landmine_C_SetPropProps");
+static_assert(sizeof(Prop_landmine_C_SetPropProps) == 0x000003, "Wrong size on Prop_landmine_C_SetPropProps");
+static_assert(offsetof(Prop_landmine_C_SetPropProps, Param_Static) == 0x000000, "Member 'Prop_landmine_C_SetPropProps::Param_Static' has a wrong offset!");
+static_assert(offsetof(Prop_landmine_C_SetPropProps, Param_Frozen) == 0x000001, "Member 'Prop_landmine_C_SetPropProps::Param_Frozen' has a wrong offset!");
+static_assert(offsetof(Prop_landmine_C_SetPropProps, Param_Active) == 0x000002, "Member 'Prop_landmine_C_SetPropProps::Param_Active' has a wrong offset!");
+
 // Function prop_landmine.prop_landmine_C.BndEvt__prop_landmine_Cylinder_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature
 // 0x0020 (0x0020 - 0x0000)
 struct Prop_landmine_C_BndEvt__prop_landmine_Cylinder_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature final
@@ -104,7 +119,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3903[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 static_assert(alignof(Prop_landmine_C_BndEvt__prop_landmine_Cylinder_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on Prop_landmine_C_BndEvt__prop_landmine_Cylinder_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
@@ -115,21 +130,6 @@ static_assert(offsetof(Prop_landmine_C_BndEvt__prop_landmine_Cylinder_K2Node_Com
 static_assert(offsetof(Prop_landmine_C_BndEvt__prop_landmine_Cylinder_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'Prop_landmine_C_BndEvt__prop_landmine_Cylinder_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
 static_assert(offsetof(Prop_landmine_C_BndEvt__prop_landmine_Cylinder_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, bFromSweep) == 0x00001C, "Member 'Prop_landmine_C_BndEvt__prop_landmine_Cylinder_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::bFromSweep' has a wrong offset!");
 static_assert(offsetof(Prop_landmine_C_BndEvt__prop_landmine_Cylinder_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'Prop_landmine_C_BndEvt__prop_landmine_Cylinder_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
-
-// Function prop_landmine.prop_landmine_C.setPropProps
-// 0x0003 (0x0003 - 0x0000)
-struct Prop_landmine_C_SetPropProps final
-{
-public:
-	bool                                          Param_Static;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Param_Frozen;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Param_Active;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(Prop_landmine_C_SetPropProps) == 0x000001, "Wrong alignment on Prop_landmine_C_SetPropProps");
-static_assert(sizeof(Prop_landmine_C_SetPropProps) == 0x000003, "Wrong size on Prop_landmine_C_SetPropProps");
-static_assert(offsetof(Prop_landmine_C_SetPropProps, Param_Static) == 0x000000, "Member 'Prop_landmine_C_SetPropProps::Param_Static' has a wrong offset!");
-static_assert(offsetof(Prop_landmine_C_SetPropProps, Param_Frozen) == 0x000001, "Member 'Prop_landmine_C_SetPropProps::Param_Frozen' has a wrong offset!");
-static_assert(offsetof(Prop_landmine_C_SetPropProps, Param_Active) == 0x000002, "Member 'Prop_landmine_C_SetPropProps::Param_Active' has a wrong offset!");
 
 // Function prop_landmine.prop_landmine_C.Init
 // 0x0004 (0x0004 - 0x0000)

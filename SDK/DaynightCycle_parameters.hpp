@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "Struct_settings_structs.hpp"
 #include "Struct_save_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "InputCore_structs.hpp"
-#include "Enum_difficulty_structs.hpp"
-#include "Struct_storeOrder1_structs.hpp"
-#include "Struct_store_structs.hpp"
 #include "Engine_structs.hpp"
-#include "Struct_task_structs.hpp"
+#include "Enum_difficulty_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "Struct_storeOrder_structs.hpp"
+#include "Struct_store_structs.hpp"
+#include "InputCore_structs.hpp"
+#include "Struct_settings_structs.hpp"
 #include "Struct_event_structs.hpp"
+#include "Struct_task_structs.hpp"
 
 
 namespace SDK::Params
@@ -37,792 +37,659 @@ static_assert(sizeof(DaynightCycle_C_NewMinute__DelegateSignature) == 0x00000C, 
 static_assert(offsetof(DaynightCycle_C_NewMinute__DelegateSignature, Time) == 0x000000, "Member 'DaynightCycle_C_NewMinute__DelegateSignature::Time' has a wrong offset!");
 
 // Function daynightCycle.daynightCycle_C.ExecuteUbergraph_daynightCycle
-// 0x0D40 (0x0D40 - 0x0000)
+// 0x0A10 (0x0A10 - 0x0000)
 struct DaynightCycle_C_ExecuteUbergraph_daynightCycle final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   K2Node_Event_key;                                  // 0x0018(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed;                              // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Event_color;                                // 0x0034(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUmg_texturePicker_C*                   K2Node_Event_picker;                               // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_Event_texture;                              // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_index;                                // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_DegSin_ReturnValue;                       // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue;           // 0x0074(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue;              // 0x0084(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0090(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9D[0x3];                                       // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x00A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue_1;       // 0x00AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_K2_SetActorRotation_ReturnValue;          // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B9[0x3];                                       // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_2;        // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue_1;             // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Percent_FloatFloat_ReturnValue;           // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_2;        // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x00E5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_BoolBool_ReturnValue;          // 0x00E6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E7[0x1];                                       // 0x00E7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Temp_float_Variable;                               // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F9[0x3];                                       // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0104(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_105[0x3];                                      // 0x0105(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_1;       // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_BoolToFloat_ReturnValue;             // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue;                         // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1; // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_2; // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue_1;                       // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_3;         // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x012C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_12D[0x3];                                      // 0x012D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_4;         // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x0134(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_1;       // 0x0135(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_136[0x2];                                      // 0x0136(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0140(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x014C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_1D4[0x4];                                      // 0x01D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_3;        // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         Temp_object_Variable;                              // 0x01E0(0x0010)(ConstParm, ReferenceParm)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x01F0(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0200(0x0008)(NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_2;          // 0x0209(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_3;          // 0x020A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_4;          // 0x020B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x020C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_4;        // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_3;        // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_2;         // 0x021C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21D[0x3];                                      // 0x021D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_4;        // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_3;         // 0x0224(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_225[0x3];                                      // 0x0225(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_5;        // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_4;         // 0x022C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_22D[0x3];                                      // 0x022D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_6;        // 0x0230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_5;         // 0x0234(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_235[0x3];                                      // 0x0235(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_1;                            // 0x0238(0x0010)(ConstParm, ReferenceParm)
-	TArray<class AActor*>                         Temp_object_Variable_2;                            // 0x0248(0x0010)(ConstParm, ReferenceParm)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_5;        // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_6;        // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_269[0x7];                                      // 0x0269(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0270(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x02A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ASuperFog_C*                            CallFunc_FinishSpawningActor_ReturnValue;          // 0x02A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_7;        // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x02B8(0x0010)(ZeroConstructor, NoDestructor)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x02C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_difficulty                               Temp_byte_Variable;                                // 0x02CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2CD[0x3];                                      // 0x02CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_8;        // 0x02D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_9;        // 0x02D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue;              // 0x02E0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UGameInst_C*                            CallFunc_getMainGameInstance_AsGame_Inst;          // 0x02F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class AActor* DestroyedActor)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x02F8(0x0010)(ZeroConstructor, NoDestructor)
-	struct FStruct_storeOrder1                    CallFunc_makeOrder_struct_storeOrder;              // 0x0308(0x0018)(HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0320(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_321[0x7];                                      // 0x0321(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_10;       // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0330(0x00F0)(HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_7;        // 0x0420(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x0424(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_dailyTaskDriveSize_0;                     // 0x0428(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_dailyTaskDriveSize_1;                     // 0x042C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_dailyTaskDriveSize_2;                     // 0x0430(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_dailyTaskDriveSize_3;                     // 0x0434(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_dailyTaskDriveSize_dishCheckAm;           // 0x0438(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_43C[0x4];                                      // 0x043C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         CallFunc_getDishesNames_codes;                     // 0x0440(0x0010)(ReferenceParm)
-	TArray<class FString>                         CallFunc_getDishesNames_dishs;                     // 0x0450(0x0010)(ReferenceParm)
-	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0460(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_SelectInt_ReturnValue_1;                  // 0x0464(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Multiply_IntInt_ReturnValue;              // 0x0468(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Multiply_IntInt_ReturnValue_1;            // 0x046C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_SelectInt_ReturnValue_2;                  // 0x0470(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_SelectInt_ReturnValue_3;                  // 0x0474(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Multiply_IntInt_ReturnValue_2;            // 0x0478(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Multiply_IntInt_ReturnValue_3;            // 0x047C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0480(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x0484(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_5;                 // 0x0488(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_6;                 // 0x048C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x0490(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_2;          // 0x049C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_11;       // 0x04A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_8;        // 0x04A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x04AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x04B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue;                       // 0x04B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_12;       // 0x04B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_2;       // 0x04C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4C1[0x7];                                      // 0x04C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_13;       // 0x04C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x04D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_3;       // 0x04D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4D2[0x6];                                      // 0x04D2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class USave_main_C*                           CallFunc_getMainSave_save_main;                    // 0x04D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x04E0(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0510(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWeatherFogController_C*                CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0518(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_7;                 // 0x0520(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetForwardVector_ReturnValue_1;           // 0x0524(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x0530(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x0534(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_9;        // 0x0540(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue_2;       // 0x0544(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue_2;             // 0x0550(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult;       // 0x0554(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_3;          // 0x05DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot;                     // 0x05E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Multiply_IntInt_ReturnValue_4;            // 0x05E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5EC[0x4];                                      // 0x05EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x05F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0600(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot_1;                   // 0x0610(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0618(0x0018)()
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_6;         // 0x0630(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_631[0x3];                                      // 0x0631(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_2;       // 0x0634(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatMinusEquals_FloatOut;         // 0x0638(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue_1;       // 0x063C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_63D[0x3];                                      // 0x063D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0640(0x0010)(ZeroConstructor, NoDestructor)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_14;       // 0x0650(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_4;          // 0x0658(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x065C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue_3;             // 0x0660(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Percent_FloatFloat_ReturnValue_1;         // 0x0664(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0668(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_669[0x3];                                      // 0x0669(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_10;       // 0x066C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_5;          // 0x0670(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Percent_FloatFloat_ReturnValue_2;         // 0x0674(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0678(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FTrunc_ReturnValue_1;                     // 0x067C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FIntVector                             K2Node_MakeStruct_IntVector;                       // 0x0680(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_4;       // 0x068C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_68D[0x3];                                      // 0x068D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_15;       // 0x0690(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_16;       // 0x0698(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_5;       // 0x06A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6A1[0x7];                                      // 0x06A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDateTime                              CallFunc_Now_ReturnValue;                          // 0x06A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakDateTime_Year;                       // 0x06B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakDateTime_Month;                      // 0x06B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakDateTime_Day;                        // 0x06B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakDateTime_Hour;                       // 0x06BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakDateTime_Minute;                     // 0x06C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakDateTime_Second;                     // 0x06C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakDateTime_Millisecond;                // 0x06C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_hasAchievement_ReturnValue;               // 0x06CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_5;          // 0x06CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x06CE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6CF[0x1];                                      // 0x06CF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_2;              // 0x06D0(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x0700(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AEvent_fleshRain_C*                     CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x0708(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UGameInst_C*                            CallFunc_getMainGameInstance_AsGame_Inst_1;        // 0x0710(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UGameInst_C*                            CallFunc_getMainGameInstance_AsGame_Inst_2;        // 0x0718(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0720(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue_1;          // 0x0721(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0722(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_723[0x5];                                      // 0x0723(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FName>                           CallFunc_GetDataTableRowNames_OutRowNames;         // 0x0728(0x0010)(ReferenceParm)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_6;       // 0x0738(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_739[0x3];                                      // 0x0739(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x073C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Array_Get_Item;                           // 0x0740(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UGameInst_C*                            CallFunc_getMainGameInstance_AsGame_Inst_3;        // 0x0748(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_event                          CallFunc_GetDataTableRowFromName_OutRow;           // 0x0750(0x0014)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0764(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_2;        // 0x0765(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_766[0x2];                                      // 0x0766(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Temp_float_Variable_1;                             // 0x0768(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_6;          // 0x076C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_76D[0x3];                                      // 0x076D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Lerp_ReturnValue_2;                       // 0x0770(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FMax_ReturnValue;                         // 0x0774(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_11;       // 0x0778(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue_1;            // 0x077C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x078C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue_3;                       // 0x079C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Temp_float_Variable_2;                             // 0x07A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x07A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_7A5[0x3];                                      // 0x07A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_CustomEvent_DestroyedActor;                 // 0x07A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Temp_float_Variable_3;                             // 0x07B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_5;         // 0x07B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_6;         // 0x07B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_7;       // 0x07BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_7BD[0x3];                                      // 0x07BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_7;         // 0x07C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7C4[0x4];                                      // 0x07C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_1;        // 0x07C8(0x0008)(NoDestructor, HasGetValueTypeHash)
-	struct FDateTime                              CallFunc_Now_ReturnValue_1;                        // 0x07D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTimespan                              CallFunc_GetTimeOfDay_ReturnValue;                 // 0x07D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetTotalHours_ReturnValue;                // 0x07E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Temp_float_Variable_4;                             // 0x07E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x07E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue_4;             // 0x07EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Percent_FloatFloat_ReturnValue_3;         // 0x07F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_6;          // 0x07F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x07F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_7;          // 0x07F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_7FA[0x6];                                      // 0x07FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot_2;                   // 0x0800(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_3; // 0x0808(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_12;       // 0x080C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue_4;                       // 0x0810(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_1;        // 0x0814(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FMax_ReturnValue_1;                       // 0x0818(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_2;        // 0x081C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot_3;                   // 0x0820(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Temp_float_Variable_5;                             // 0x0828(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Multiply_IntInt_ReturnValue_5;            // 0x082C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0830(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_831[0x7];                                      // 0x0831(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0838(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0878(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0888(0x0018)()
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_1;        // 0x08A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	Enum_difficulty                               Temp_byte_Variable_1;                              // 0x08A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x08A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_8A3[0x1];                                      // 0x08A3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Select_Default;                             // 0x08A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_SetActorRotation_ReturnValue_1;        // 0x08A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_8A9[0x3];                                      // 0x08A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable_1;                               // 0x08AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_2;                               // 0x08B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_8;                 // 0x08B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ADish_C*                                CallFunc_Array_Get_Item_1;                         // 0x08B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x08C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_8C1[0x3];                                      // 0x08C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_8;         // 0x08C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_2;        // 0x08C8(0x0008)(NoDestructor, HasGetValueTypeHash)
-	struct FIntVector                             CallFunc_settime_Output_Get;                       // 0x08D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_settime_new_min;                          // 0x08DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_settime_new_hour;                         // 0x08DD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_settime_new_day;                          // 0x08DE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_8DF[0x1];                                      // 0x08DF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_9;                 // 0x08E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_8;          // 0x08E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_9;          // 0x08E5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_10;         // 0x08E6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_8;       // 0x08E7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x08E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8EC[0x4];                                      // 0x08EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EObjectTypeQuery>                      CallFunc_obj_trigger_obj;                          // 0x08F0(0x0010)(ReferenceParm)
-	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue_1;     // 0x0900(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<EObjectTypeQuery>                      CallFunc_obj_static_obj;                           // 0x0908(0x0010)(ReferenceParm)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0918(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloat_ReturnValue;                  // 0x0924(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         CallFunc_SphereOverlapActors_OutActors;            // 0x0928(0x0010)(ReferenceParm)
-	bool                                          CallFunc_SphereOverlapActors_ReturnValue;          // 0x0938(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_939[0x3];                                      // 0x0939(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x093C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         K2Node_LowEntry_LocalVariable_Value__Object;       // 0x0940(0x0010)(ReferenceParm)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0950(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_951[0x3];                                      // 0x0951(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x0954(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0958(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue_5;                       // 0x095C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Round_ReturnValue;                        // 0x0960(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_9;       // 0x0964(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_965[0x3];                                      // 0x0965(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_17;       // 0x0968(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue_2;     // 0x0970(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<EObjectTypeQuery>                      CallFunc_obj_static_obj_1;                         // 0x0978(0x0010)(ReferenceParm)
-	class AActor*                                 CallFunc_Array_Get_Item_2;                         // 0x0988(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_4;               // 0x0990(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_994[0x4];                                      // 0x0994(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects;                  // 0x0998(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x09A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x09A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9AA[0x2];                                      // 0x09AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x09AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetDistanceTo_ReturnValue;                // 0x09B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x09BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue_2;       // 0x09C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9C9[0x3];                                      // 0x09C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit;         // 0x09CC(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue;    // 0x0A54(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_10;      // 0x0A55(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A56[0x2];                                      // 0x0A56(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_7;          // 0x0A58(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_11;      // 0x0A5C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A5D[0x3];                                      // 0x0A5D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Temp_float_Variable_6;                             // 0x0A60(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0A64(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FMin_ReturnValue;                         // 0x0A74(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Temp_float_Variable_7;                             // 0x0A78(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A7C[0x4];                                      // 0x0A7C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGameInst_C*                            CallFunc_getMainGameInstance_AsGame_Inst_4;        // 0x0A80(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_3;        // 0x0A88(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A89[0x3];                                      // 0x0A89(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Temp_float_Variable_8;                             // 0x0A8C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_13;       // 0x0A90(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_1;        // 0x0A94(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue_1;                     // 0x0A98(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Temp_float_Variable_9;                             // 0x0A9C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue;          // 0x0AA0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_R;                             // 0x0AB0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_G;                             // 0x0AB4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_B;                             // 0x0AB8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_A;                             // 0x0ABC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Select_Default_1;                           // 0x0AC0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue_5;             // 0x0AC4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x0AC8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue_6;             // 0x0ACC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Round_ReturnValue_1;                      // 0x0AD0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_8;          // 0x0AD4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_task                           K2Node_MakeStruct_struct_task;                     // 0x0AD8(0x0070)(HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_MakeColor_ReturnValue;                    // 0x0B48(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue_2;            // 0x0B58(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RGBToHSV_H;                               // 0x0B68(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RGBToHSV_S;                               // 0x0B6C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RGBToHSV_V;                               // 0x0B70(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RGBToHSV_A;                               // 0x0B74(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_HSVToRGB_ReturnValue;                     // 0x0B78(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_14;       // 0x0B88(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue_3;            // 0x0B8C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_2;        // 0x0B9C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue_2;                     // 0x0BA0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0BA4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue_1;        // 0x0BA8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_Array_Get_Item_3;                         // 0x0BB8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue_1;      // 0x0BC0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_3;        // 0x0BCC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x0BD8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_BE4[0x4];                                      // 0x0BE4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGrunge_C*                              K2Node_DynamicCast_AsGrunge;                       // 0x0BE8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0BF0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_BF1[0x3];                                      // 0x0BF1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0BF4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_2;           // 0x0C00(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit_1;       // 0x0C0C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue_1;  // 0x0C94(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C95[0x3];                                      // 0x0C95(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue_2;        // 0x0C98(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue_4;            // 0x0CA8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x0CB8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_R_1;                           // 0x0CBC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_G_1;                           // 0x0CC0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_B_1;                           // 0x0CC4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_A_1;                           // 0x0CC8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue_7;             // 0x0CCC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue_8;             // 0x0CD0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_9;          // 0x0CD4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_4; // 0x0CD8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x0CDC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_MakeColor_ReturnValue_1;                  // 0x0CE0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue_5;            // 0x0CF0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x0D00(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D01[0x3];                                      // 0x0D01(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RGBToHSV_H_1;                             // 0x0D04(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RGBToHSV_S_1;                             // 0x0D08(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RGBToHSV_V_1;                             // 0x0D0C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RGBToHSV_A_1;                             // 0x0D10(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_10;         // 0x0D14(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_10;                // 0x0D18(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_HSVToRGB_ReturnValue_1;                   // 0x0D1C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue_6;            // 0x0D2C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_DegSin_ReturnValue;                       // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue;           // 0x0018(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue;              // 0x0028(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x0034(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_K2_SetActorRotation_ReturnValue;          // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FAE[0x2];                                     // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_2;        // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue_1;             // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Percent_FloatFloat_ReturnValue;           // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_2;        // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_BoolBool_ReturnValue;          // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FAF[0x5];                                     // 0x0073(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   K2Node_Event_key;                                  // 0x0078(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed;                              // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FB0[0x3];                                     // 0x0091(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FB1[0x3];                                     // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_1;       // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_BoolToFloat_ReturnValue;             // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue;                         // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1; // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_2; // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue_1;                       // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_3;         // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x00C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FB2[0x3];                                     // 0x00C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_4;         // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_1;       // 0x00CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FB3[0x2];                                     // 0x00CE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x00D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x00E4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_2FB4[0x4];                                     // 0x016C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_3;        // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class AActor* DestroyedActor)> K2Node_CreateDelegate_OutputDelegate;              // 0x0178(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x0189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_2;          // 0x018A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_3;          // 0x018B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FB5[0x4];                                     // 0x018C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0190(0x0030)(IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2FB6[0x4];                                     // 0x01C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_4;        // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWeatherFogController_C*                CallFunc_FinishSpawningActor_ReturnValue;          // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_3;        // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_2;         // 0x01E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FB7[0x3];                                     // 0x01E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_4;        // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_3;         // 0x01EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FB8[0x3];                                     // 0x01ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_5;        // 0x01F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_4;         // 0x01F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FB9[0x3];                                     // 0x01F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_6;        // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_5;         // 0x01FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FBA[0x3];                                     // 0x01FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0200(0x0010)(ZeroConstructor, NoDestructor)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_5;        // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_6;        // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FBB[0xF];                                     // 0x0221(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x0230(0x0030)(IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AEvent_fleshRain_C*                     CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_7;        // 0x0270(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2FBC[0x4];                                     // 0x027C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_8;        // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_9;        // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue;              // 0x0298(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UGameInst_C*                            CallFunc_getMainGameInstance_AsGame_Inst;          // 0x02A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_storeOrder                     CallFunc_makeOrder_struct_storeOrder;              // 0x02B0(0x0018)(HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x02C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FBD[0x3];                                     // 0x02C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x02CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_10;       // 0x02D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       K2Node_Event_settings;                             // 0x02D8(0x00CC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_7;        // 0x03A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x03A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_dailyTaskDriveSize_0;                     // 0x03AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_dailyTaskDriveSize_1;                     // 0x03B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_dailyTaskDriveSize_2;                     // 0x03B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_dailyTaskDriveSize_3;                     // 0x03B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_dailyTaskDriveSize_dishCheckAm;           // 0x03BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FString>                         CallFunc_getDishesNames_codes;                     // 0x03C0(0x0010)(ReferenceParm)
+	TArray<class FString>                         CallFunc_getDishesNames_dishs;                     // 0x03D0(0x0010)(ReferenceParm)
+	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x03E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_SelectInt_ReturnValue_1;                  // 0x03E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Multiply_IntInt_ReturnValue;              // 0x03E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Multiply_IntInt_ReturnValue_1;            // 0x03EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_SelectInt_ReturnValue_2;                  // 0x03F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_SelectInt_ReturnValue_3;                  // 0x03F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Multiply_IntInt_ReturnValue_2;            // 0x03F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Multiply_IntInt_ReturnValue_3;            // 0x03FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0400(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0404(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0408(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x040C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x0410(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_2;          // 0x041C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_11;       // 0x0420(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_8;        // 0x0428(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x042C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0430(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0434(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_12;       // 0x0438(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_2;       // 0x0440(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FBE[0x7];                                     // 0x0441(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_13;       // 0x0448(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_3;       // 0x0450(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0451(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FBF[0x6];                                     // 0x0452(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class USave_main_C*                           CallFunc_getMainSave_save_main;                    // 0x0458(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetForwardVector_ReturnValue_1;           // 0x0460(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x046C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_9;        // 0x0470(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_5;                 // 0x0474(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue_2;             // 0x0478(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_3;          // 0x047C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable;                               // 0x0480(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x0484(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue_1;       // 0x0490(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FC0[0x4];                                     // 0x049C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot;                     // 0x04A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult;       // 0x04A8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         CallFunc_Multiply_IntInt_ReturnValue_4;            // 0x0530(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2FC1[0x4];                                     // 0x0534(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0538(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0548(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot_1;                   // 0x0558(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0560(0x0018)()
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_6;         // 0x0578(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FC2[0x3];                                     // 0x0579(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_2;       // 0x057C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatMinusEquals_FloatOut;         // 0x0580(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable_1;                             // 0x0584(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue_1;       // 0x0588(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FC3[0x7];                                     // 0x0589(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_14;       // 0x0590(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_4;          // 0x0598(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x059C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue_3;             // 0x05A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Percent_FloatFloat_ReturnValue_1;         // 0x05A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x05A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FC4[0x3];                                     // 0x05A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_10;       // 0x05AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_5;          // 0x05B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Percent_FloatFloat_ReturnValue_2;         // 0x05B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x05B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FTrunc_ReturnValue_1;                     // 0x05BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FIntVector                             K2Node_MakeStruct_IntVector;                       // 0x05C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_4;       // 0x05CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FC5[0x3];                                     // 0x05CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Temp_float_Variable_2;                             // 0x05D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2FC6[0x4];                                     // 0x05D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_15;       // 0x05D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_16;       // 0x05E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_5;       // 0x05E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FC7[0x7];                                     // 0x05E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDateTime                              CallFunc_Now_ReturnValue;                          // 0x05F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakDateTime_Year;                       // 0x05F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakDateTime_Month;                      // 0x05FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakDateTime_Day;                        // 0x0600(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakDateTime_Hour;                       // 0x0604(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakDateTime_Minute;                     // 0x0608(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakDateTime_Second;                     // 0x060C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakDateTime_Millisecond;                // 0x0610(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_hasAchievement_ReturnValue;               // 0x0614(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_4;          // 0x0615(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0616(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FC8[0x1];                                     // 0x0617(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x0618(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable_3;                             // 0x061C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable_4;                             // 0x0620(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2FC9[0x4];                                     // 0x0624(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGameInst_C*                            CallFunc_getMainGameInstance_AsGame_Inst_1;        // 0x0628(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UGameInst_C*                            CallFunc_getMainGameInstance_AsGame_Inst_2;        // 0x0630(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0638(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue_1;          // 0x0639(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	Enum_difficulty                               Temp_byte_Variable;                                // 0x063A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2FCA[0x1];                                     // 0x063B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Select_Default;                             // 0x063C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                           CallFunc_GetDataTableRowNames_OutRowNames;         // 0x0640(0x0010)(ReferenceParm)
+	int32                                         Temp_int_Variable_1;                               // 0x0650(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0654(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_6;                 // 0x0658(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Array_Get_Item;                           // 0x065C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_event                          CallFunc_GetDataTableRowFromName_OutRow;           // 0x0664(0x0014)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0678(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FCB[0x7];                                     // 0x0679(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ADish_C*                                CallFunc_Array_Get_Item_1;                         // 0x0680(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0688(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_5;          // 0x0689(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_6;       // 0x068A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FCC[0x5];                                     // 0x068B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGameInst_C*                            CallFunc_getMainGameInstance_AsGame_Inst_3;        // 0x0690(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0698(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FCD[0x3];                                     // 0x0699(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Lerp_ReturnValue_2;                       // 0x069C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_11;       // 0x06A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FMax_ReturnValue;                         // 0x06A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue_1;            // 0x06A8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue_3;                       // 0x06B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x06BC(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FIntVector                             CallFunc_settime_Output_Get;                       // 0x06CC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_settime_new_min;                          // 0x06D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_settime_new_hour;                         // 0x06D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_settime_new_day;                          // 0x06DA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x06DB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_6;          // 0x06DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_7;          // 0x06DD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FCE[0x2];                                     // 0x06DE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_CustomEvent_DestroyedActor;                 // 0x06E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_5;         // 0x06E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_6;         // 0x06EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_7;       // 0x06F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FCF[0x3];                                     // 0x06F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_7;         // 0x06F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x06F8(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FDateTime                              CallFunc_Now_ReturnValue_1;                        // 0x0700(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimespan                              CallFunc_GetTimeOfDay_ReturnValue;                 // 0x0708(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetTotalHours_ReturnValue;                // 0x0710(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable_5;                             // 0x0714(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x0718(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue_4;             // 0x071C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Percent_FloatFloat_ReturnValue_3;         // 0x0720(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_6;          // 0x0724(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0728(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_8;          // 0x0729(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FD0[0x6];                                     // 0x072A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot_2;                   // 0x0730(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_3; // 0x0738(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_12;       // 0x073C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue_4;                       // 0x0740(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_1;        // 0x0744(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FMax_ReturnValue_1;                       // 0x0748(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_2;        // 0x074C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot_3;                   // 0x0750(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable_6;                             // 0x0758(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Multiply_IntInt_ReturnValue_5;            // 0x075C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0760(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FD1[0x7];                                     // 0x0761(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0768(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x07A8(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x07B8(0x0018)()
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_1;        // 0x07D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FD2[0x3];                                     // 0x07D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Temp_float_Variable_7;                             // 0x07D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue_5;                       // 0x07D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x07DC(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue;          // 0x07EC(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_float_Variable_8;                             // 0x07FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_R;                             // 0x0800(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_G;                             // 0x0804(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_B;                             // 0x0808(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_A;                             // 0x080C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_13;       // 0x0810(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue_6;                       // 0x0814(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UGameInst_C*                            CallFunc_getMainGameInstance_AsGame_Inst_4;        // 0x0818(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_2;        // 0x0820(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FD3[0x3];                                     // 0x0821(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Temp_float_Variable_9;                             // 0x0824(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_difficulty                               Temp_byte_Variable_1;                              // 0x0828(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2FD4[0x3];                                     // 0x0829(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Select_Default_1;                           // 0x082C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_14;       // 0x0830(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x0834(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_1;        // 0x0838(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Round_ReturnValue;                        // 0x083C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue_1;                     // 0x0840(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2FD5[0x4];                                     // 0x0844(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_task                           K2Node_MakeStruct_struct_task;                     // 0x0848(0x0070)(HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue_1;        // 0x08B8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_R_1;                           // 0x08C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_G_1;                           // 0x08CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_B_1;                           // 0x08D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_A_1;                           // 0x08D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue_5;             // 0x08D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue_6;             // 0x08DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_7;          // 0x08E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_MakeColor_ReturnValue;                    // 0x08E4(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue_2;            // 0x08F4(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_15;       // 0x0904(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RGBToHSV_H;                               // 0x0908(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RGBToHSV_S;                               // 0x090C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RGBToHSV_V;                               // 0x0910(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RGBToHSV_A;                               // 0x0914(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_2;        // 0x0918(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_HSVToRGB_ReturnValue;                     // 0x091C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue_2;                     // 0x092C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue_3;            // 0x0930(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue_2;        // 0x0940(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue_3;        // 0x0950(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue_4;            // 0x0960(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_R_2;                           // 0x0970(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_G_2;                           // 0x0974(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_B_2;                           // 0x0978(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_A_2;                           // 0x097C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Event_color;                                // 0x0980(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue_7;             // 0x0990(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0994(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue_8;             // 0x0998(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_8;          // 0x099C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_4; // 0x09A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_MakeColor_ReturnValue_1;                  // 0x09A4(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue_5;            // 0x09B4(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x09C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RGBToHSV_H_1;                             // 0x09C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RGBToHSV_S_1;                             // 0x09CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RGBToHSV_V_1;                             // 0x09D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RGBToHSV_A_1;                             // 0x09D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_9;          // 0x09D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x09DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2FD6[0x3];                                     // 0x09DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           CallFunc_HSVToRGB_ReturnValue_1;                   // 0x09E0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue_6;            // 0x09F0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_7;                 // 0x0A00(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(DaynightCycle_C_ExecuteUbergraph_daynightCycle) == 0x000010, "Wrong alignment on DaynightCycle_C_ExecuteUbergraph_daynightCycle");
-static_assert(sizeof(DaynightCycle_C_ExecuteUbergraph_daynightCycle) == 0x000D40, "Wrong size on DaynightCycle_C_ExecuteUbergraph_daynightCycle");
+static_assert(sizeof(DaynightCycle_C_ExecuteUbergraph_daynightCycle) == 0x000A10, "Wrong size on DaynightCycle_C_ExecuteUbergraph_daynightCycle");
 static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, EntryPoint) == 0x000000, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::EntryPoint' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_Event_gamemode) == 0x000010, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_Event_gamemode' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_Event_key) == 0x000018, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_Event_key' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_Event_pressed) == 0x000030, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_Event_pressed' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_Event_color) == 0x000034, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_Event_color' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_Event_picker) == 0x000048, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_Event_picker' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_Event_texture) == 0x000050, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_Event_texture' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_Event_index) == 0x000058, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_Event_DeltaSeconds) == 0x00005C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_FloatFloat_ReturnValue) == 0x000060, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000064, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000068, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_DegSin_ReturnValue) == 0x00006C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_DegSin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000070, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Cross_VectorVector_ReturnValue) == 0x000074, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Cross_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000080, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RotateAngleAxis_ReturnValue) == 0x000084, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RotateAngleAxis_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000090, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_IsValid_ReturnValue) == 0x00009C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x0000A0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Conv_VectorToRotator_ReturnValue_1) == 0x0000AC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Conv_VectorToRotator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_K2_SetActorRotation_ReturnValue) == 0x0000B8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_K2_SetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x0000BC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x0000C0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x0000C8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Percent_FloatFloat_ReturnValue) == 0x0000CC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Percent_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x0000D0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_2) == 0x0000D8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000E0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0000E4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Greater_FloatFloat_ReturnValue_1) == 0x0000E5, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_BoolBool_ReturnValue) == 0x0000E6, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_BoolBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_int_Loop_Counter_Variable_1) == 0x0000E8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_IntInt_ReturnValue_2) == 0x0000EC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_int_Variable) == 0x0000F0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_float_Variable) == 0x0000F4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000F8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomFloatInRange_ReturnValue) == 0x0000FC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000100, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000104, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetWorldDeltaSeconds_ReturnValue_1) == 0x000108, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetWorldDeltaSeconds_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Conv_BoolToFloat_ReturnValue) == 0x00010C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Conv_BoolToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Lerp_ReturnValue) == 0x000110, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x000114, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1) == 0x000118, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_2) == 0x00011C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Lerp_ReturnValue_1) == 0x000120, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Lerp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x000124, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomFloatInRange_ReturnValue_3) == 0x000128, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomFloatInRange_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x00012C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomFloatInRange_ReturnValue_4) == 0x000130, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomFloatInRange_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x000134, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomBoolWithWeight_ReturnValue_1) == 0x000135, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomBoolWithWeight_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000138, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000140, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x00014C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_3) == 0x0001D8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_object_Variable) == 0x0001E0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_CreateDelegate_OutputDelegate) == 0x0001F0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000200, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000208, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x000209, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_IntInt_ReturnValue_3) == 0x00020A, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_IntInt_ReturnValue_4) == 0x00020B, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomIntegerInRange_ReturnValue) == 0x00020C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_4) == 0x000210, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_4' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x000218, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Greater_FloatFloat_ReturnValue_2) == 0x00021C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Greater_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_4) == 0x000220, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Greater_FloatFloat_ReturnValue_3) == 0x000224, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Greater_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_5) == 0x000228, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Greater_FloatFloat_ReturnValue_4) == 0x00022C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Greater_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_6) == 0x000230, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Greater_FloatFloat_ReturnValue_5) == 0x000234, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Greater_FloatFloat_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_object_Variable_1) == 0x000238, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_object_Variable_2) == 0x000248, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_5) == 0x000258, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_5' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_6) == 0x000260, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_6' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000268, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_MakeTransform_ReturnValue) == 0x000270, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0002A0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_FinishSpawningActor_ReturnValue) == 0x0002A8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_7) == 0x0002B0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_7' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_CreateDelegate_OutputDelegate_1) == 0x0002B8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Array_Length_ReturnValue) == 0x0002C8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_byte_Variable) == 0x0002CC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_8) == 0x0002D0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_8' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_9) == 0x0002D8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_9' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LinearColorLerp_ReturnValue) == 0x0002E0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LinearColorLerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGameInstance_AsGame_Inst) == 0x0002F0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGameInstance_AsGame_Inst' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_CreateDelegate_OutputDelegate_2) == 0x0002F8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_makeOrder_struct_storeOrder) == 0x000308, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_makeOrder_struct_storeOrder' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000320, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_10) == 0x000328, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_10' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_Event_settings) == 0x000330, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_Event_settings' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_7) == 0x000420, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x000424, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_dailyTaskDriveSize_0) == 0x000428, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_dailyTaskDriveSize_0' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_dailyTaskDriveSize_1) == 0x00042C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_dailyTaskDriveSize_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_dailyTaskDriveSize_2) == 0x000430, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_dailyTaskDriveSize_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_dailyTaskDriveSize_3) == 0x000434, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_dailyTaskDriveSize_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_dailyTaskDriveSize_dishCheckAm) == 0x000438, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_dailyTaskDriveSize_dishCheckAm' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getDishesNames_codes) == 0x000440, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getDishesNames_codes' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getDishesNames_dishs) == 0x000450, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getDishesNames_dishs' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_SelectInt_ReturnValue) == 0x000460, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_SelectInt_ReturnValue_1) == 0x000464, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_SelectInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_IntInt_ReturnValue) == 0x000468, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_IntInt_ReturnValue_1) == 0x00046C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_SelectInt_ReturnValue_2) == 0x000470, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_SelectInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_SelectInt_ReturnValue_3) == 0x000474, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_SelectInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_IntInt_ReturnValue_2) == 0x000478, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_IntInt_ReturnValue_3) == 0x00047C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_IntInt_ReturnValue_3) == 0x000480, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_IntInt_ReturnValue_4) == 0x000484, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_IntInt_ReturnValue_5) == 0x000488, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_IntInt_ReturnValue_6) == 0x00048C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetForwardVector_ReturnValue) == 0x000490, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Divide_FloatFloat_ReturnValue_2) == 0x00049C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_11) == 0x0004A0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_11' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_8) == 0x0004A8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x0004AC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Array_Length_ReturnValue_1) == 0x0004B0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_FClamp_ReturnValue) == 0x0004B4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_12) == 0x0004B8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_12' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomBoolWithWeight_ReturnValue_2) == 0x0004C0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomBoolWithWeight_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_13) == 0x0004C8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_13' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_IsValid_ReturnValue_1) == 0x0004D0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomBoolWithWeight_ReturnValue_3) == 0x0004D1, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomBoolWithWeight_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainSave_save_main) == 0x0004D8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainSave_save_main' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_MakeTransform_ReturnValue_1) == 0x0004E0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000510, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000518, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_IntInt_ReturnValue_7) == 0x000520, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_IntInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetForwardVector_ReturnValue_1) == 0x000524, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetForwardVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Dot_VectorVector_ReturnValue) == 0x000530, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetActorForwardVector_ReturnValue) == 0x000534, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_9) == 0x000540, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Conv_VectorToRotator_ReturnValue_2) == 0x000544, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Conv_VectorToRotator_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_FloatFloat_ReturnValue_2) == 0x000550, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_K2_SetWorldRotation_SweepHitResult) == 0x000554, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_K2_SetWorldRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Divide_FloatFloat_ReturnValue_3) == 0x0005DC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Divide_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getSaveSlot_saveSlot) == 0x0005E0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getSaveSlot_saveSlot' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_IntInt_ReturnValue_4) == 0x0005E8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Conv_IntToString_ReturnValue) == 0x0005F0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Concat_StrStr_ReturnValue) == 0x000600, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getSaveSlot_saveSlot_1) == 0x000610, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getSaveSlot_saveSlot_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Conv_StringToText_ReturnValue) == 0x000618, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Greater_FloatFloat_ReturnValue_6) == 0x000630, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Greater_FloatFloat_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetWorldDeltaSeconds_ReturnValue_2) == 0x000634, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetWorldDeltaSeconds_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_VictoryFloatMinusEquals_FloatOut) == 0x000638, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_VictoryFloatMinusEquals_FloatOut' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LessEqual_FloatFloat_ReturnValue_1) == 0x00063C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LessEqual_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_CreateDelegate_OutputDelegate_3) == 0x000640, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_14) == 0x000650, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_14' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Divide_FloatFloat_ReturnValue_4) == 0x000658, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Divide_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x00065C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_FloatFloat_ReturnValue_3) == 0x000660, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Percent_FloatFloat_ReturnValue_1) == 0x000664, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Percent_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000668, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_10) == 0x00066C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Divide_FloatFloat_ReturnValue_5) == 0x000670, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Divide_FloatFloat_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Percent_FloatFloat_ReturnValue_2) == 0x000674, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Percent_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_FTrunc_ReturnValue) == 0x000678, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_FTrunc_ReturnValue_1) == 0x00067C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_FTrunc_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_MakeStruct_IntVector) == 0x000680, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_MakeStruct_IntVector' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomBoolWithWeight_ReturnValue_4) == 0x00068C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomBoolWithWeight_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_15) == 0x000690, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_15' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_16) == 0x000698, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_16' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomBoolWithWeight_ReturnValue_5) == 0x0006A0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomBoolWithWeight_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Now_ReturnValue) == 0x0006A8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Now_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakDateTime_Year) == 0x0006B0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakDateTime_Year' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakDateTime_Month) == 0x0006B4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakDateTime_Month' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakDateTime_Day) == 0x0006B8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakDateTime_Day' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakDateTime_Hour) == 0x0006BC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakDateTime_Hour' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakDateTime_Minute) == 0x0006C0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakDateTime_Minute' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakDateTime_Second) == 0x0006C4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakDateTime_Second' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakDateTime_Millisecond) == 0x0006C8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakDateTime_Millisecond' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_hasAchievement_ReturnValue) == 0x0006CC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_hasAchievement_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_IntInt_ReturnValue_5) == 0x0006CD, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BooleanOR_ReturnValue) == 0x0006CE, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_MakeTransform_ReturnValue_2) == 0x0006D0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_MakeTransform_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x000700, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x000708, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGameInstance_AsGame_Inst_1) == 0x000710, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGameInstance_AsGame_Inst_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGameInstance_AsGame_Inst_2) == 0x000718, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGameInstance_AsGame_Inst_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000720, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_NotEqual_ByteByte_ReturnValue_1) == 0x000721, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_NotEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000722, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetDataTableRowNames_OutRowNames) == 0x000728, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetDataTableRowNames_OutRowNames' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomBoolWithWeight_ReturnValue_6) == 0x000738, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomBoolWithWeight_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Array_LastIndex_ReturnValue) == 0x00073C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Array_Get_Item) == 0x000740, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGameInstance_AsGame_Inst_3) == 0x000748, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGameInstance_AsGame_Inst_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetDataTableRowFromName_OutRow) == 0x000750, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000764, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000765, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_float_Variable_1) == 0x000768, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_IntInt_ReturnValue_6) == 0x00076C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Lerp_ReturnValue_2) == 0x000770, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Lerp_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_FMax_ReturnValue) == 0x000774, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_11) == 0x000778, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LinearColorLerp_ReturnValue_1) == 0x00077C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LinearColorLerp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_SelectColor_ReturnValue) == 0x00078C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_SelectColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Lerp_ReturnValue_3) == 0x00079C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Lerp_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_float_Variable_2) == 0x0007A0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_float_Variable_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_IsValid_ReturnValue_2) == 0x0007A4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_CustomEvent_DestroyedActor) == 0x0007A8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_CustomEvent_DestroyedActor' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_float_Variable_3) == 0x0007B0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_float_Variable_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomFloatInRange_ReturnValue_5) == 0x0007B4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomFloatInRange_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomFloatInRange_ReturnValue_6) == 0x0007B8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomFloatInRange_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomBoolWithWeight_ReturnValue_7) == 0x0007BC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomBoolWithWeight_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomFloatInRange_ReturnValue_7) == 0x0007C0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomFloatInRange_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_K2_SetTimerDelegate_ReturnValue_1) == 0x0007C8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_K2_SetTimerDelegate_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Now_ReturnValue_1) == 0x0007D0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Now_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetTimeOfDay_ReturnValue) == 0x0007D8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetTimeOfDay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetTotalHours_ReturnValue) == 0x0007E0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetTotalHours_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_float_Variable_4) == 0x0007E4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_float_Variable_4' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_SelectFloat_ReturnValue) == 0x0007E8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_FloatFloat_ReturnValue_4) == 0x0007EC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Percent_FloatFloat_ReturnValue_3) == 0x0007F0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Percent_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Divide_FloatFloat_ReturnValue_6) == 0x0007F4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Divide_FloatFloat_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Less_FloatFloat_ReturnValue) == 0x0007F8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_IntInt_ReturnValue_7) == 0x0007F9, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_IntInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getSaveSlot_saveSlot_2) == 0x000800, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getSaveSlot_saveSlot_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_3) == 0x000808, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_12) == 0x00080C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Lerp_ReturnValue_4) == 0x000810, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Lerp_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_VictoryFloatPlusEquals_FloatOut_1) == 0x000814, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_VictoryFloatPlusEquals_FloatOut_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_FMax_ReturnValue_1) == 0x000818, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_FMax_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_VictoryFloatPlusEquals_FloatOut_2) == 0x00081C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_VictoryFloatPlusEquals_FloatOut_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getSaveSlot_saveSlot_3) == 0x000820, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getSaveSlot_saveSlot_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_float_Variable_5) == 0x000828, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_float_Variable_5' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_IntInt_ReturnValue_5) == 0x00082C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000830, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_MakeStruct_FormatArgumentData) == 0x000838, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_MakeArray_Array) == 0x000878, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Format_ReturnValue) == 0x000888, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x0008A0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_byte_Variable_1) == 0x0008A1, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_IsValid_ReturnValue_3) == 0x0008A2, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_Select_Default) == 0x0008A4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_K2_SetActorRotation_ReturnValue_1) == 0x0008A8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_K2_SetActorRotation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_int_Variable_1) == 0x0008AC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_int_Variable_2) == 0x0008B0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_IntInt_ReturnValue_8) == 0x0008B4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_IntInt_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Array_Get_Item_1) == 0x0008B8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Less_IntInt_ReturnValue) == 0x0008C0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomFloatInRange_ReturnValue_8) == 0x0008C4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomFloatInRange_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_K2_SetTimerDelegate_ReturnValue_2) == 0x0008C8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_K2_SetTimerDelegate_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_settime_Output_Get) == 0x0008D0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_settime_Output_Get' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_settime_new_min) == 0x0008DC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_settime_new_min' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_settime_new_hour) == 0x0008DD, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_settime_new_hour' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_settime_new_day) == 0x0008DE, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_settime_new_day' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_IntInt_ReturnValue_9) == 0x0008E0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_IntInt_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_IntInt_ReturnValue_8) == 0x0008E4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_IntInt_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_IntInt_ReturnValue_9) == 0x0008E5, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_IntInt_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_IntInt_ReturnValue_10) == 0x0008E6, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_IntInt_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomBoolWithWeight_ReturnValue_8) == 0x0008E7, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomBoolWithWeight_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Percent_IntInt_ReturnValue) == 0x0008E8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_obj_trigger_obj) == 0x0008F0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_obj_trigger_obj' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetPlayerCameraManager_ReturnValue_1) == 0x000900, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetPlayerCameraManager_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_obj_static_obj) == 0x000908, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_obj_static_obj' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000918, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomFloat_ReturnValue) == 0x000924, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_SphereOverlapActors_OutActors) == 0x000928, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_SphereOverlapActors_OutActors' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_SphereOverlapActors_ReturnValue) == 0x000938, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_SphereOverlapActors_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Array_Length_ReturnValue_2) == 0x00093C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_LowEntry_LocalVariable_Value__Object) == 0x000940, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_LowEntry_LocalVariable_Value__Object' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Less_IntInt_ReturnValue_1) == 0x000950, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Array_Length_ReturnValue_3) == 0x000954, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000958, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Lerp_ReturnValue_5) == 0x00095C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Lerp_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Round_ReturnValue) == 0x000960, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Round_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomBoolWithWeight_ReturnValue_9) == 0x000964, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomBoolWithWeight_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_17) == 0x000968, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_17' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetPlayerCameraManager_ReturnValue_2) == 0x000970, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetPlayerCameraManager_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_obj_static_obj_1) == 0x000978, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_obj_static_obj_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Array_Get_Item_2) == 0x000988, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Array_Length_ReturnValue_4) == 0x000990, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_DynamicCast_AsInt_Objects) == 0x000998, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_DynamicCast_AsInt_Objects' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_DynamicCast_bSuccess) == 0x0009A8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Less_IntInt_ReturnValue_2) == 0x0009A9, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x0009AC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetDistanceTo_ReturnValue) == 0x0009B8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetDistanceTo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_VectorVector_ReturnValue) == 0x0009BC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LessEqual_FloatFloat_ReturnValue_2) == 0x0009C8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LessEqual_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LineTraceSingleForObjects_OutHit) == 0x0009CC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LineTraceSingleForObjects_OutHit' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LineTraceSingleForObjects_ReturnValue) == 0x000A54, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LineTraceSingleForObjects_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomBoolWithWeight_ReturnValue_10) == 0x000A55, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomBoolWithWeight_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Divide_FloatFloat_ReturnValue_7) == 0x000A58, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Divide_FloatFloat_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomBoolWithWeight_ReturnValue_11) == 0x000A5C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomBoolWithWeight_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_float_Variable_6) == 0x000A60, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_float_Variable_6' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_MakeStruct_LinearColor) == 0x000A64, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_MakeStruct_LinearColor' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_FMin_ReturnValue) == 0x000A74, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_FMin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_float_Variable_7) == 0x000A78, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_float_Variable_7' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGameInstance_AsGame_Inst_4) == 0x000A80, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGameInstance_AsGame_Inst_4' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x000A88, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_float_Variable_8) == 0x000A8C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_float_Variable_8' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_13) == 0x000A90, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x000A94, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_FClamp_ReturnValue_1) == 0x000A98, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_FClamp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_float_Variable_9) == 0x000A9C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_float_Variable_9' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetLinearColorValue_ReturnValue) == 0x000AA0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetLinearColorValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakColor_R) == 0x000AB0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakColor_R' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakColor_G) == 0x000AB4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakColor_G' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakColor_B) == 0x000AB8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakColor_B' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakColor_A) == 0x000ABC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakColor_A' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_Select_Default_1) == 0x000AC0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_FloatFloat_ReturnValue_5) == 0x000AC4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_FloatFloat_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000AC8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_FloatFloat_ReturnValue_6) == 0x000ACC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_FloatFloat_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Round_ReturnValue_1) == 0x000AD0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Round_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Divide_FloatFloat_ReturnValue_8) == 0x000AD4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Divide_FloatFloat_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_MakeStruct_struct_task) == 0x000AD8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_MakeStruct_struct_task' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_MakeColor_ReturnValue) == 0x000B48, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_MakeColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LinearColorLerp_ReturnValue_2) == 0x000B58, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LinearColorLerp_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RGBToHSV_H) == 0x000B68, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RGBToHSV_H' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RGBToHSV_S) == 0x000B6C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RGBToHSV_S' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RGBToHSV_V) == 0x000B70, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RGBToHSV_V' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RGBToHSV_A) == 0x000B74, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RGBToHSV_A' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_HSVToRGB_ReturnValue) == 0x000B78, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_HSVToRGB_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_14) == 0x000B88, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LinearColorLerp_ReturnValue_3) == 0x000B8C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LinearColorLerp_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Subtract_FloatFloat_ReturnValue_2) == 0x000B9C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Subtract_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_FClamp_ReturnValue_2) == 0x000BA0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_FClamp_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_int_Array_Index_Variable_1) == 0x000BA4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetLinearColorValue_ReturnValue_1) == 0x000BA8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetLinearColorValue_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Array_Get_Item_3) == 0x000BB8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetActorForwardVector_ReturnValue_1) == 0x000BC0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetActorForwardVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_K2_GetActorLocation_ReturnValue_3) == 0x000BCC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_K2_GetActorLocation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x000BD8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_DynamicCast_AsGrunge) == 0x000BE8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_DynamicCast_AsGrunge' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_DynamicCast_bSuccess_1) == 0x000BF0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000BF4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_VectorVector_ReturnValue_2) == 0x000C00, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_VectorVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LineTraceSingleForObjects_OutHit_1) == 0x000C0C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LineTraceSingleForObjects_OutHit_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LineTraceSingleForObjects_ReturnValue_1) == 0x000C94, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LineTraceSingleForObjects_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetLinearColorValue_ReturnValue_2) == 0x000C98, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetLinearColorValue_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LinearColorLerp_ReturnValue_4) == 0x000CA8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LinearColorLerp_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_int_Array_Index_Variable_2) == 0x000CB8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakColor_R_1) == 0x000CBC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakColor_R_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakColor_G_1) == 0x000CC0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakColor_G_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakColor_B_1) == 0x000CC4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakColor_B_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakColor_A_1) == 0x000CC8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakColor_A_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_FloatFloat_ReturnValue_7) == 0x000CCC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_FloatFloat_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_FloatFloat_ReturnValue_8) == 0x000CD0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_FloatFloat_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Divide_FloatFloat_ReturnValue_9) == 0x000CD4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Divide_FloatFloat_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_4) == 0x000CD8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_int_Loop_Counter_Variable_2) == 0x000CDC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_MakeColor_ReturnValue_1) == 0x000CE0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_MakeColor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LinearColorLerp_ReturnValue_5) == 0x000CF0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LinearColorLerp_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Less_IntInt_ReturnValue_3) == 0x000D00, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RGBToHSV_H_1) == 0x000D04, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RGBToHSV_H_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RGBToHSV_S_1) == 0x000D08, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RGBToHSV_S_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RGBToHSV_V_1) == 0x000D0C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RGBToHSV_V_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RGBToHSV_A_1) == 0x000D10, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RGBToHSV_A_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Divide_FloatFloat_ReturnValue_10) == 0x000D14, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Divide_FloatFloat_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_IntInt_ReturnValue_10) == 0x000D18, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_IntInt_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_HSVToRGB_ReturnValue_1) == 0x000D1C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_HSVToRGB_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LinearColorLerp_ReturnValue_6) == 0x000D2C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LinearColorLerp_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_FloatFloat_ReturnValue) == 0x000004, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000008, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00000C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_DegSin_ReturnValue) == 0x000010, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_DegSin_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000014, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Cross_VectorVector_ReturnValue) == 0x000018, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Cross_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000024, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RotateAngleAxis_ReturnValue) == 0x000028, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RotateAngleAxis_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x000034, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_IsValid_ReturnValue) == 0x000040, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_K2_SetActorRotation_ReturnValue) == 0x000041, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_K2_SetActorRotation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x000044, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000048, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x000050, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Percent_FloatFloat_ReturnValue) == 0x000054, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Percent_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x000058, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_2) == 0x000060, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Percent_IntInt_ReturnValue) == 0x000068, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_IntInt_ReturnValue) == 0x00006C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000070, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Greater_FloatFloat_ReturnValue_1) == 0x000071, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_BoolBool_ReturnValue) == 0x000072, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_BoolBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_Event_key) == 0x000078, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_Event_key' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_Event_pressed) == 0x000090, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_Event_pressed' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomFloatInRange_ReturnValue) == 0x000094, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000098, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x00009C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetWorldDeltaSeconds_ReturnValue_1) == 0x0000A0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetWorldDeltaSeconds_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Conv_BoolToFloat_ReturnValue) == 0x0000A4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Conv_BoolToFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Lerp_ReturnValue) == 0x0000A8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Lerp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x0000AC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1) == 0x0000B0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_2) == 0x0000B4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Lerp_ReturnValue_1) == 0x0000B8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Lerp_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x0000BC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomFloatInRange_ReturnValue_3) == 0x0000C0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomFloatInRange_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x0000C4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomFloatInRange_ReturnValue_4) == 0x0000C8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomFloatInRange_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x0000CC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomBoolWithWeight_ReturnValue_1) == 0x0000CD, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomBoolWithWeight_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x0000D0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000D8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x0000E4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_3) == 0x000170, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_3' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_CreateDelegate_OutputDelegate) == 0x000178, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000188, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000189, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x00018A, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_IntInt_ReturnValue_3) == 0x00018B, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_MakeTransform_ReturnValue) == 0x000190, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomIntegerInRange_ReturnValue) == 0x0001C0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0001C8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_4) == 0x0001D0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_4' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_FinishSpawningActor_ReturnValue) == 0x0001D8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x0001E0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Greater_FloatFloat_ReturnValue_2) == 0x0001E4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Greater_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_4) == 0x0001E8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Greater_FloatFloat_ReturnValue_3) == 0x0001EC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Greater_FloatFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_5) == 0x0001F0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Greater_FloatFloat_ReturnValue_4) == 0x0001F4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Greater_FloatFloat_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_6) == 0x0001F8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Greater_FloatFloat_ReturnValue_5) == 0x0001FC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Greater_FloatFloat_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_CreateDelegate_OutputDelegate_1) == 0x000200, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_5) == 0x000210, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_5' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_6) == 0x000218, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_6' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000220, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_MakeTransform_ReturnValue_1) == 0x000230, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000260, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000268, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_7) == 0x000270, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_7' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Array_Length_ReturnValue) == 0x000278, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_Event_gamemode) == 0x000280, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_Event_gamemode' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_8) == 0x000288, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_8' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_9) == 0x000290, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_9' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LinearColorLerp_ReturnValue) == 0x000298, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LinearColorLerp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGameInstance_AsGame_Inst) == 0x0002A8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGameInstance_AsGame_Inst' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_makeOrder_struct_storeOrder) == 0x0002B0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_makeOrder_struct_storeOrder' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0002C8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_int_Variable) == 0x0002CC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_10) == 0x0002D0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_10' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_Event_settings) == 0x0002D8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_Event_settings' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_7) == 0x0003A4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x0003A8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_dailyTaskDriveSize_0) == 0x0003AC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_dailyTaskDriveSize_0' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_dailyTaskDriveSize_1) == 0x0003B0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_dailyTaskDriveSize_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_dailyTaskDriveSize_2) == 0x0003B4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_dailyTaskDriveSize_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_dailyTaskDriveSize_3) == 0x0003B8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_dailyTaskDriveSize_3' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_dailyTaskDriveSize_dishCheckAm) == 0x0003BC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_dailyTaskDriveSize_dishCheckAm' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getDishesNames_codes) == 0x0003C0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getDishesNames_codes' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getDishesNames_dishs) == 0x0003D0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getDishesNames_dishs' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_SelectInt_ReturnValue) == 0x0003E0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_SelectInt_ReturnValue_1) == 0x0003E4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_SelectInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_IntInt_ReturnValue) == 0x0003E8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_IntInt_ReturnValue_1) == 0x0003EC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_SelectInt_ReturnValue_2) == 0x0003F0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_SelectInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_SelectInt_ReturnValue_3) == 0x0003F4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_SelectInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_IntInt_ReturnValue_2) == 0x0003F8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_IntInt_ReturnValue_3) == 0x0003FC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_IntInt_ReturnValue_1) == 0x000400, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_IntInt_ReturnValue_2) == 0x000404, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_IntInt_ReturnValue_3) == 0x000408, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_IntInt_ReturnValue_4) == 0x00040C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetForwardVector_ReturnValue) == 0x000410, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Divide_FloatFloat_ReturnValue_2) == 0x00041C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_11) == 0x000420, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_11' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_8) == 0x000428, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x00042C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Array_Length_ReturnValue_1) == 0x000430, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_FClamp_ReturnValue) == 0x000434, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_FClamp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_12) == 0x000438, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_12' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomBoolWithWeight_ReturnValue_2) == 0x000440, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomBoolWithWeight_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_13) == 0x000448, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_13' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomBoolWithWeight_ReturnValue_3) == 0x000450, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomBoolWithWeight_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_IsValid_ReturnValue_1) == 0x000451, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainSave_save_main) == 0x000458, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainSave_save_main' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetForwardVector_ReturnValue_1) == 0x000460, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetForwardVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Dot_VectorVector_ReturnValue) == 0x00046C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_9) == 0x000470, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_IntInt_ReturnValue_5) == 0x000474, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_FloatFloat_ReturnValue_2) == 0x000478, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Divide_FloatFloat_ReturnValue_3) == 0x00047C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Divide_FloatFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_float_Variable) == 0x000480, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_float_Variable' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetActorForwardVector_ReturnValue) == 0x000484, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Conv_VectorToRotator_ReturnValue_1) == 0x000490, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Conv_VectorToRotator_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getSaveSlot_saveSlot) == 0x0004A0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getSaveSlot_saveSlot' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_K2_SetWorldRotation_SweepHitResult) == 0x0004A8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_K2_SetWorldRotation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_IntInt_ReturnValue_4) == 0x000530, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Conv_IntToString_ReturnValue) == 0x000538, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Concat_StrStr_ReturnValue) == 0x000548, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getSaveSlot_saveSlot_1) == 0x000558, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getSaveSlot_saveSlot_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Conv_StringToText_ReturnValue) == 0x000560, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Greater_FloatFloat_ReturnValue_6) == 0x000578, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Greater_FloatFloat_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetWorldDeltaSeconds_ReturnValue_2) == 0x00057C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetWorldDeltaSeconds_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_VictoryFloatMinusEquals_FloatOut) == 0x000580, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_VictoryFloatMinusEquals_FloatOut' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_float_Variable_1) == 0x000584, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_float_Variable_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LessEqual_FloatFloat_ReturnValue_1) == 0x000588, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LessEqual_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_14) == 0x000590, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_14' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Divide_FloatFloat_ReturnValue_4) == 0x000598, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Divide_FloatFloat_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x00059C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_FloatFloat_ReturnValue_3) == 0x0005A0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_FloatFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Percent_FloatFloat_ReturnValue_1) == 0x0005A4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Percent_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0005A8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_10) == 0x0005AC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_10' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Divide_FloatFloat_ReturnValue_5) == 0x0005B0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Divide_FloatFloat_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Percent_FloatFloat_ReturnValue_2) == 0x0005B4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Percent_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_FTrunc_ReturnValue) == 0x0005B8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_FTrunc_ReturnValue_1) == 0x0005BC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_FTrunc_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_MakeStruct_IntVector) == 0x0005C0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_MakeStruct_IntVector' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomBoolWithWeight_ReturnValue_4) == 0x0005CC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomBoolWithWeight_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_float_Variable_2) == 0x0005D0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_float_Variable_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_15) == 0x0005D8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_15' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGamemode_AsMain_Gamemode_16) == 0x0005E0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGamemode_AsMain_Gamemode_16' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomBoolWithWeight_ReturnValue_5) == 0x0005E8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomBoolWithWeight_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Now_ReturnValue) == 0x0005F0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Now_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakDateTime_Year) == 0x0005F8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakDateTime_Year' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakDateTime_Month) == 0x0005FC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakDateTime_Month' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakDateTime_Day) == 0x000600, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakDateTime_Day' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakDateTime_Hour) == 0x000604, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakDateTime_Hour' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakDateTime_Minute) == 0x000608, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakDateTime_Minute' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakDateTime_Second) == 0x00060C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakDateTime_Second' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakDateTime_Millisecond) == 0x000610, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakDateTime_Millisecond' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_hasAchievement_ReturnValue) == 0x000614, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_hasAchievement_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_IntInt_ReturnValue_4) == 0x000615, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BooleanOR_ReturnValue) == 0x000616, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_Event_DeltaSeconds) == 0x000618, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_float_Variable_3) == 0x00061C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_float_Variable_3' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_float_Variable_4) == 0x000620, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_float_Variable_4' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGameInstance_AsGame_Inst_1) == 0x000628, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGameInstance_AsGame_Inst_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGameInstance_AsGame_Inst_2) == 0x000630, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGameInstance_AsGame_Inst_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000638, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_NotEqual_ByteByte_ReturnValue_1) == 0x000639, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_NotEqual_ByteByte_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_byte_Variable) == 0x00063A, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_Select_Default) == 0x00063C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetDataTableRowNames_OutRowNames) == 0x000640, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetDataTableRowNames_OutRowNames' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_int_Variable_1) == 0x000650, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_int_Variable_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Array_LastIndex_ReturnValue) == 0x000654, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_IntInt_ReturnValue_6) == 0x000658, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_IntInt_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Array_Get_Item) == 0x00065C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetDataTableRowFromName_OutRow) == 0x000664, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000678, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Array_Get_Item_1) == 0x000680, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Less_IntInt_ReturnValue) == 0x000688, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_IntInt_ReturnValue_5) == 0x000689, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_IntInt_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomBoolWithWeight_ReturnValue_6) == 0x00068A, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomBoolWithWeight_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGameInstance_AsGame_Inst_3) == 0x000690, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGameInstance_AsGame_Inst_3' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000698, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Lerp_ReturnValue_2) == 0x00069C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Lerp_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_11) == 0x0006A0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_11' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_FMax_ReturnValue) == 0x0006A4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_FMax_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LinearColorLerp_ReturnValue_1) == 0x0006A8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LinearColorLerp_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Lerp_ReturnValue_3) == 0x0006B8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Lerp_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_SelectColor_ReturnValue) == 0x0006BC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_SelectColor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_settime_Output_Get) == 0x0006CC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_settime_Output_Get' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_settime_new_min) == 0x0006D8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_settime_new_min' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_settime_new_hour) == 0x0006D9, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_settime_new_hour' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_settime_new_day) == 0x0006DA, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_settime_new_day' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_IsValid_ReturnValue_2) == 0x0006DB, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_IntInt_ReturnValue_6) == 0x0006DC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_IntInt_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_IntInt_ReturnValue_7) == 0x0006DD, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_IntInt_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_CustomEvent_DestroyedActor) == 0x0006E0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_CustomEvent_DestroyedActor' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomFloatInRange_ReturnValue_5) == 0x0006E8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomFloatInRange_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomFloatInRange_ReturnValue_6) == 0x0006EC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomFloatInRange_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomBoolWithWeight_ReturnValue_7) == 0x0006F0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomBoolWithWeight_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RandomFloatInRange_ReturnValue_7) == 0x0006F4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RandomFloatInRange_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0006F8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Now_ReturnValue_1) == 0x000700, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Now_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetTimeOfDay_ReturnValue) == 0x000708, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetTimeOfDay_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetTotalHours_ReturnValue) == 0x000710, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetTotalHours_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_float_Variable_5) == 0x000714, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_float_Variable_5' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_SelectFloat_ReturnValue) == 0x000718, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_FloatFloat_ReturnValue_4) == 0x00071C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_FloatFloat_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Percent_FloatFloat_ReturnValue_3) == 0x000720, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Percent_FloatFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Divide_FloatFloat_ReturnValue_6) == 0x000724, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Divide_FloatFloat_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Less_FloatFloat_ReturnValue) == 0x000728, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_IntInt_ReturnValue_8) == 0x000729, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_IntInt_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getSaveSlot_saveSlot_2) == 0x000730, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getSaveSlot_saveSlot_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_3) == 0x000738, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_12) == 0x00073C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_12' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Lerp_ReturnValue_4) == 0x000740, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Lerp_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_VictoryFloatPlusEquals_FloatOut_1) == 0x000744, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_VictoryFloatPlusEquals_FloatOut_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_FMax_ReturnValue_1) == 0x000748, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_FMax_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_VictoryFloatPlusEquals_FloatOut_2) == 0x00074C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_VictoryFloatPlusEquals_FloatOut_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getSaveSlot_saveSlot_3) == 0x000750, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getSaveSlot_saveSlot_3' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_float_Variable_6) == 0x000758, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_float_Variable_6' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_IntInt_ReturnValue_5) == 0x00075C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_IntInt_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000760, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_MakeStruct_FormatArgumentData) == 0x000768, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_MakeArray_Array) == 0x0007A8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Format_ReturnValue) == 0x0007B8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x0007D0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_float_Variable_7) == 0x0007D4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_float_Variable_7' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Lerp_ReturnValue_5) == 0x0007D8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Lerp_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_MakeStruct_LinearColor) == 0x0007DC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_MakeStruct_LinearColor' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetLinearColorValue_ReturnValue) == 0x0007EC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetLinearColorValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_float_Variable_8) == 0x0007FC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_float_Variable_8' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakColor_R) == 0x000800, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakColor_R' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakColor_G) == 0x000804, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakColor_G' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakColor_B) == 0x000808, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakColor_B' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakColor_A) == 0x00080C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakColor_A' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_13) == 0x000810, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_13' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Lerp_ReturnValue_6) == 0x000814, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Lerp_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_getMainGameInstance_AsGame_Inst_4) == 0x000818, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_getMainGameInstance_AsGame_Inst_4' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000820, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_float_Variable_9) == 0x000824, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_float_Variable_9' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_byte_Variable_1) == 0x000828, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_Select_Default_1) == 0x00082C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_14) == 0x000830, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_14' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000834, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x000838, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Round_ReturnValue) == 0x00083C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Round_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_FClamp_ReturnValue_1) == 0x000840, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_FClamp_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_MakeStruct_struct_task) == 0x000848, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_MakeStruct_struct_task' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetLinearColorValue_ReturnValue_1) == 0x0008B8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetLinearColorValue_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakColor_R_1) == 0x0008C8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakColor_R_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakColor_G_1) == 0x0008CC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakColor_G_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakColor_B_1) == 0x0008D0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakColor_B_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakColor_A_1) == 0x0008D4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakColor_A_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_FloatFloat_ReturnValue_5) == 0x0008D8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_FloatFloat_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_FloatFloat_ReturnValue_6) == 0x0008DC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_FloatFloat_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Divide_FloatFloat_ReturnValue_7) == 0x0008E0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Divide_FloatFloat_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_MakeColor_ReturnValue) == 0x0008E4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_MakeColor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LinearColorLerp_ReturnValue_2) == 0x0008F4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LinearColorLerp_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Multiply_FloatFloat_ReturnValue_15) == 0x000904, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Multiply_FloatFloat_ReturnValue_15' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RGBToHSV_H) == 0x000908, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RGBToHSV_H' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RGBToHSV_S) == 0x00090C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RGBToHSV_S' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RGBToHSV_V) == 0x000910, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RGBToHSV_V' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RGBToHSV_A) == 0x000914, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RGBToHSV_A' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Subtract_FloatFloat_ReturnValue_2) == 0x000918, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Subtract_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_HSVToRGB_ReturnValue) == 0x00091C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_HSVToRGB_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_FClamp_ReturnValue_2) == 0x00092C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_FClamp_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LinearColorLerp_ReturnValue_3) == 0x000930, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LinearColorLerp_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetLinearColorValue_ReturnValue_2) == 0x000940, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetLinearColorValue_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_GetLinearColorValue_ReturnValue_3) == 0x000950, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_GetLinearColorValue_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LinearColorLerp_ReturnValue_4) == 0x000960, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LinearColorLerp_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakColor_R_2) == 0x000970, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakColor_R_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakColor_G_2) == 0x000974, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakColor_G_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakColor_B_2) == 0x000978, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakColor_B_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_BreakColor_A_2) == 0x00097C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_BreakColor_A_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, K2Node_Event_color) == 0x000980, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::K2Node_Event_color' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_FloatFloat_ReturnValue_7) == 0x000990, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_FloatFloat_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_int_Array_Index_Variable) == 0x000994, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_FloatFloat_ReturnValue_8) == 0x000998, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_FloatFloat_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Divide_FloatFloat_ReturnValue_8) == 0x00099C, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Divide_FloatFloat_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_4) == 0x0009A0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_MakeColor_ReturnValue_1) == 0x0009A4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_MakeColor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LinearColorLerp_ReturnValue_5) == 0x0009B4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LinearColorLerp_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, Temp_int_Loop_Counter_Variable) == 0x0009C4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RGBToHSV_H_1) == 0x0009C8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RGBToHSV_H_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RGBToHSV_S_1) == 0x0009CC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RGBToHSV_S_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RGBToHSV_V_1) == 0x0009D0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RGBToHSV_V_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_RGBToHSV_A_1) == 0x0009D4, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_RGBToHSV_A_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Divide_FloatFloat_ReturnValue_9) == 0x0009D8, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Divide_FloatFloat_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Less_IntInt_ReturnValue_1) == 0x0009DC, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_HSVToRGB_ReturnValue_1) == 0x0009E0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_HSVToRGB_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_LinearColorLerp_ReturnValue_6) == 0x0009F0, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_LinearColorLerp_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_ExecuteUbergraph_daynightCycle, CallFunc_Add_IntInt_ReturnValue_7) == 0x000A00, "Member 'DaynightCycle_C_ExecuteUbergraph_daynightCycle::CallFunc_Add_IntInt_ReturnValue_7' has a wrong offset!");
+
+// Function daynightCycle.daynightCycle_C.applyColor
+// 0x0010 (0x0010 - 0x0000)
+struct DaynightCycle_C_ApplyColor final
+{
+public:
+	struct FLinearColor                           Color;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(DaynightCycle_C_ApplyColor) == 0x000004, "Wrong alignment on DaynightCycle_C_ApplyColor");
+static_assert(sizeof(DaynightCycle_C_ApplyColor) == 0x000010, "Wrong size on DaynightCycle_C_ApplyColor");
+static_assert(offsetof(DaynightCycle_C_ApplyColor, Color) == 0x000000, "Member 'DaynightCycle_C_ApplyColor::Color' has a wrong offset!");
 
 // Function daynightCycle.daynightCycle_C.Dest
 // 0x0008 (0x0008 - 0x0000)
@@ -835,17 +702,6 @@ static_assert(alignof(DaynightCycle_C_Dest) == 0x000008, "Wrong alignment on Day
 static_assert(sizeof(DaynightCycle_C_Dest) == 0x000008, "Wrong size on DaynightCycle_C_Dest");
 static_assert(offsetof(DaynightCycle_C_Dest, DestroyedActor) == 0x000000, "Member 'DaynightCycle_C_Dest::DestroyedActor' has a wrong offset!");
 
-// Function daynightCycle.daynightCycle_C.settingsApplied
-// 0x00F0 (0x00F0 - 0x0000)
-struct DaynightCycle_C_SettingsApplied final
-{
-public:
-	struct FStruct_settings                       Settings;                                          // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-static_assert(alignof(DaynightCycle_C_SettingsApplied) == 0x000008, "Wrong alignment on DaynightCycle_C_SettingsApplied");
-static_assert(sizeof(DaynightCycle_C_SettingsApplied) == 0x0000F0, "Wrong size on DaynightCycle_C_SettingsApplied");
-static_assert(offsetof(DaynightCycle_C_SettingsApplied, Settings) == 0x000000, "Member 'DaynightCycle_C_SettingsApplied::Settings' has a wrong offset!");
-
 // Function daynightCycle.daynightCycle_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
 struct DaynightCycle_C_ReceiveTick final
@@ -857,31 +713,27 @@ static_assert(alignof(DaynightCycle_C_ReceiveTick) == 0x000004, "Wrong alignment
 static_assert(sizeof(DaynightCycle_C_ReceiveTick) == 0x000004, "Wrong size on DaynightCycle_C_ReceiveTick");
 static_assert(offsetof(DaynightCycle_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'DaynightCycle_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
-// Function daynightCycle.daynightCycle_C.texturePickerApply
-// 0x0018 (0x0018 - 0x0000)
-struct DaynightCycle_C_TexturePickerApply final
+// Function daynightCycle.daynightCycle_C.settingsApplied
+// 0x00CC (0x00CC - 0x0000)
+struct DaynightCycle_C_SettingsApplied final
 {
 public:
-	class UUmg_texturePicker_C*                   Picker;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Param_Index;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       Settings;                                          // 0x0000(0x00CC)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DaynightCycle_C_TexturePickerApply) == 0x000008, "Wrong alignment on DaynightCycle_C_TexturePickerApply");
-static_assert(sizeof(DaynightCycle_C_TexturePickerApply) == 0x000018, "Wrong size on DaynightCycle_C_TexturePickerApply");
-static_assert(offsetof(DaynightCycle_C_TexturePickerApply, Picker) == 0x000000, "Member 'DaynightCycle_C_TexturePickerApply::Picker' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_TexturePickerApply, Texture) == 0x000008, "Member 'DaynightCycle_C_TexturePickerApply::Texture' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_TexturePickerApply, Param_Index) == 0x000010, "Member 'DaynightCycle_C_TexturePickerApply::Param_Index' has a wrong offset!");
+static_assert(alignof(DaynightCycle_C_SettingsApplied) == 0x000004, "Wrong alignment on DaynightCycle_C_SettingsApplied");
+static_assert(sizeof(DaynightCycle_C_SettingsApplied) == 0x0000CC, "Wrong size on DaynightCycle_C_SettingsApplied");
+static_assert(offsetof(DaynightCycle_C_SettingsApplied, Settings) == 0x000000, "Member 'DaynightCycle_C_SettingsApplied::Settings' has a wrong offset!");
 
-// Function daynightCycle.daynightCycle_C.applyColor
-// 0x0010 (0x0010 - 0x0000)
-struct DaynightCycle_C_ApplyColor final
+// Function daynightCycle.daynightCycle_C.stuffUpgraded
+// 0x0008 (0x0008 - 0x0000)
+struct DaynightCycle_C_StuffUpgraded final
 {
 public:
-	struct FLinearColor                           Color;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        GameMode;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DaynightCycle_C_ApplyColor) == 0x000004, "Wrong alignment on DaynightCycle_C_ApplyColor");
-static_assert(sizeof(DaynightCycle_C_ApplyColor) == 0x000010, "Wrong size on DaynightCycle_C_ApplyColor");
-static_assert(offsetof(DaynightCycle_C_ApplyColor, Color) == 0x000000, "Member 'DaynightCycle_C_ApplyColor::Color' has a wrong offset!");
+static_assert(alignof(DaynightCycle_C_StuffUpgraded) == 0x000008, "Wrong alignment on DaynightCycle_C_StuffUpgraded");
+static_assert(sizeof(DaynightCycle_C_StuffUpgraded) == 0x000008, "Wrong size on DaynightCycle_C_StuffUpgraded");
+static_assert(offsetof(DaynightCycle_C_StuffUpgraded, GameMode) == 0x000000, "Member 'DaynightCycle_C_StuffUpgraded::GameMode' has a wrong offset!");
 
 // Function daynightCycle.daynightCycle_C.AnyKey
 // 0x0020 (0x0020 - 0x0000)
@@ -895,17 +747,6 @@ static_assert(alignof(DaynightCycle_C_AnyKey) == 0x000008, "Wrong alignment on D
 static_assert(sizeof(DaynightCycle_C_AnyKey) == 0x000020, "Wrong size on DaynightCycle_C_AnyKey");
 static_assert(offsetof(DaynightCycle_C_AnyKey, Key) == 0x000000, "Member 'DaynightCycle_C_AnyKey::Key' has a wrong offset!");
 static_assert(offsetof(DaynightCycle_C_AnyKey, Pressed) == 0x000018, "Member 'DaynightCycle_C_AnyKey::Pressed' has a wrong offset!");
-
-// Function daynightCycle.daynightCycle_C.stuffUpgraded
-// 0x0008 (0x0008 - 0x0000)
-struct DaynightCycle_C_StuffUpgraded final
-{
-public:
-	class AMainGamemode_C*                        GameMode;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(DaynightCycle_C_StuffUpgraded) == 0x000008, "Wrong alignment on DaynightCycle_C_StuffUpgraded");
-static_assert(sizeof(DaynightCycle_C_StuffUpgraded) == 0x000008, "Wrong size on DaynightCycle_C_StuffUpgraded");
-static_assert(offsetof(DaynightCycle_C_StuffUpgraded, GameMode) == 0x000000, "Member 'DaynightCycle_C_StuffUpgraded::GameMode' has a wrong offset!");
 
 // Function daynightCycle.daynightCycle_C.UserConstructionScript
 // 0x0094 (0x0094 - 0x0000)
@@ -947,37 +788,37 @@ static_assert(offsetof(DaynightCycle_C_IsDream, Dream) == 0x000000, "Member 'Day
 static_assert(offsetof(DaynightCycle_C_IsDream, CallFunc_Not_PreBool_ReturnValue) == 0x000001, "Member 'DaynightCycle_C_IsDream::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 // Function daynightCycle.daynightCycle_C.makeOrder
-// 0x0150 (0x0150 - 0x0000)
+// 0x0138 (0x0138 - 0x0000)
 struct DaynightCycle_C_MakeOrder final
 {
 public:
-	struct FStruct_storeOrder1                    Struct_storeOrder;                                 // 0x0000(0x0018)(Parm, OutParm, HasGetValueTypeHash)
+	struct FStruct_storeOrder                     Struct_storeOrder;                                 // 0x0000(0x0018)(Parm, OutParm, HasGetValueTypeHash)
 	TArray<struct FStruct_store>                  A;                                                 // 0x0018(0x0010)(Edit, BlueprintVisible)
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_sendDriveBox_OutputPin;                   // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_store                          K2Node_MakeStruct_struct_store;                    // 0x0038(0x0050)(HasGetValueTypeHash)
-	struct FStruct_storeOrder1                    K2Node_MakeStruct_struct_storeOrder1;              // 0x0088(0x0018)(HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_store                          K2Node_MakeStruct_struct_store_1;                  // 0x00A8(0x0050)(HasGetValueTypeHash)
-	struct FStruct_store                          K2Node_MakeStruct_struct_store_2;                  // 0x00F8(0x0050)(HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2FD7[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_store                          K2Node_MakeStruct_struct_store;                    // 0x0038(0x0048)(HasGetValueTypeHash)
+	struct FStruct_storeOrder                     K2Node_MakeStruct_struct_storeOrder;               // 0x0080(0x0018)(HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2FD8[0x4];                                     // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_store                          K2Node_MakeStruct_struct_store_1;                  // 0x00A0(0x0048)(HasGetValueTypeHash)
+	struct FStruct_store                          K2Node_MakeStruct_struct_store_2;                  // 0x00E8(0x0048)(HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(DaynightCycle_C_MakeOrder) == 0x000008, "Wrong alignment on DaynightCycle_C_MakeOrder");
-static_assert(sizeof(DaynightCycle_C_MakeOrder) == 0x000150, "Wrong size on DaynightCycle_C_MakeOrder");
+static_assert(sizeof(DaynightCycle_C_MakeOrder) == 0x000138, "Wrong size on DaynightCycle_C_MakeOrder");
 static_assert(offsetof(DaynightCycle_C_MakeOrder, Struct_storeOrder) == 0x000000, "Member 'DaynightCycle_C_MakeOrder::Struct_storeOrder' has a wrong offset!");
 static_assert(offsetof(DaynightCycle_C_MakeOrder, A) == 0x000018, "Member 'DaynightCycle_C_MakeOrder::A' has a wrong offset!");
 static_assert(offsetof(DaynightCycle_C_MakeOrder, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000028, "Member 'DaynightCycle_C_MakeOrder::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
 static_assert(offsetof(DaynightCycle_C_MakeOrder, CallFunc_sendDriveBox_OutputPin) == 0x000030, "Member 'DaynightCycle_C_MakeOrder::CallFunc_sendDriveBox_OutputPin' has a wrong offset!");
 static_assert(offsetof(DaynightCycle_C_MakeOrder, K2Node_MakeStruct_struct_store) == 0x000038, "Member 'DaynightCycle_C_MakeOrder::K2Node_MakeStruct_struct_store' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_MakeOrder, K2Node_MakeStruct_struct_storeOrder1) == 0x000088, "Member 'DaynightCycle_C_MakeOrder::K2Node_MakeStruct_struct_storeOrder1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_MakeOrder, CallFunc_Array_Add_ReturnValue) == 0x0000A0, "Member 'DaynightCycle_C_MakeOrder::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_MakeOrder, K2Node_MakeStruct_struct_store_1) == 0x0000A8, "Member 'DaynightCycle_C_MakeOrder::K2Node_MakeStruct_struct_store_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_MakeOrder, K2Node_MakeStruct_struct_store_2) == 0x0000F8, "Member 'DaynightCycle_C_MakeOrder::K2Node_MakeStruct_struct_store_2' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_MakeOrder, CallFunc_Array_Add_ReturnValue_1) == 0x000148, "Member 'DaynightCycle_C_MakeOrder::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_MakeOrder, CallFunc_Array_Add_ReturnValue_2) == 0x00014C, "Member 'DaynightCycle_C_MakeOrder::CallFunc_Array_Add_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_MakeOrder, K2Node_MakeStruct_struct_storeOrder) == 0x000080, "Member 'DaynightCycle_C_MakeOrder::K2Node_MakeStruct_struct_storeOrder' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_MakeOrder, CallFunc_Array_Add_ReturnValue) == 0x000098, "Member 'DaynightCycle_C_MakeOrder::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_MakeOrder, K2Node_MakeStruct_struct_store_1) == 0x0000A0, "Member 'DaynightCycle_C_MakeOrder::K2Node_MakeStruct_struct_store_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_MakeOrder, K2Node_MakeStruct_struct_store_2) == 0x0000E8, "Member 'DaynightCycle_C_MakeOrder::K2Node_MakeStruct_struct_store_2' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_MakeOrder, CallFunc_Array_Add_ReturnValue_1) == 0x000130, "Member 'DaynightCycle_C_MakeOrder::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DaynightCycle_C_MakeOrder, CallFunc_Array_Add_ReturnValue_2) == 0x000134, "Member 'DaynightCycle_C_MakeOrder::CallFunc_Array_Add_ReturnValue_2' has a wrong offset!");
 
 // Function daynightCycle.daynightCycle_C.dailyTaskDriveSize
 // 0x00E0 (0x00E0 - 0x0000)
@@ -994,7 +835,7 @@ public:
 	Enum_difficulty                               Temp_byte_Variable_2;                              // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	Enum_difficulty                               Temp_byte_Variable_3;                              // 0x0017(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	Enum_difficulty                               Temp_byte_Variable_4;                              // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FD9[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_1;                               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_2;                               // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1029,7 +870,7 @@ public:
 	int32                                         K2Node_Select_Default_3;                           // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue_3;            // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Select_Default_4;                           // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FDA[0x4];                                     // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue_4;            // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1109,16 +950,16 @@ struct DaynightCycle_C_SendDriveBox final
 public:
 	class AMainGamemode_C*                        Self2;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          OutputPin;                                         // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FDB[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FDC[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AProp_box_C*                            CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsSimulatingPhysics_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FDD[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FDE[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(DaynightCycle_C_SendDriveBox) == 0x000008, "Wrong alignment on DaynightCycle_C_SendDriveBox");
@@ -1132,37 +973,6 @@ static_assert(offsetof(DaynightCycle_C_SendDriveBox, CallFunc_IsSimulatingPhysic
 static_assert(offsetof(DaynightCycle_C_SendDriveBox, Temp_int_Loop_Counter_Variable) == 0x000024, "Member 'DaynightCycle_C_SendDriveBox::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(DaynightCycle_C_SendDriveBox, CallFunc_Less_IntInt_ReturnValue) == 0x000028, "Member 'DaynightCycle_C_SendDriveBox::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DaynightCycle_C_SendDriveBox, CallFunc_Add_IntInt_ReturnValue) == 0x00002C, "Member 'DaynightCycle_C_SendDriveBox::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-
-// Function daynightCycle.daynightCycle_C.setSkyIntensity
-// 0x0038 (0x0038 - 0x0000)
-struct DaynightCycle_C_SetSkyIntensity final
-{
-public:
-	float                                         CallFunc_Lerp_ReturnValue;                         // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue;          // 0x000C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_R;                             // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_G;                             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_B;                             // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_A;                             // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue_1;                       // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(DaynightCycle_C_SetSkyIntensity) == 0x000004, "Wrong alignment on DaynightCycle_C_SetSkyIntensity");
-static_assert(sizeof(DaynightCycle_C_SetSkyIntensity) == 0x000038, "Wrong size on DaynightCycle_C_SetSkyIntensity");
-static_assert(offsetof(DaynightCycle_C_SetSkyIntensity, CallFunc_Lerp_ReturnValue) == 0x000000, "Member 'DaynightCycle_C_SetSkyIntensity::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_SetSkyIntensity, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000004, "Member 'DaynightCycle_C_SetSkyIntensity::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_SetSkyIntensity, CallFunc_Add_FloatFloat_ReturnValue) == 0x000008, "Member 'DaynightCycle_C_SetSkyIntensity::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_SetSkyIntensity, CallFunc_GetLinearColorValue_ReturnValue) == 0x00000C, "Member 'DaynightCycle_C_SetSkyIntensity::CallFunc_GetLinearColorValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_SetSkyIntensity, CallFunc_BreakColor_R) == 0x00001C, "Member 'DaynightCycle_C_SetSkyIntensity::CallFunc_BreakColor_R' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_SetSkyIntensity, CallFunc_BreakColor_G) == 0x000020, "Member 'DaynightCycle_C_SetSkyIntensity::CallFunc_BreakColor_G' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_SetSkyIntensity, CallFunc_BreakColor_B) == 0x000024, "Member 'DaynightCycle_C_SetSkyIntensity::CallFunc_BreakColor_B' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_SetSkyIntensity, CallFunc_BreakColor_A) == 0x000028, "Member 'DaynightCycle_C_SetSkyIntensity::CallFunc_BreakColor_A' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_SetSkyIntensity, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x00002C, "Member 'DaynightCycle_C_SetSkyIntensity::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_SetSkyIntensity, CallFunc_Lerp_ReturnValue_1) == 0x000030, "Member 'DaynightCycle_C_SetSkyIntensity::CallFunc_Lerp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DaynightCycle_C_SetSkyIntensity, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000034, "Member 'DaynightCycle_C_SetSkyIntensity::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function daynightCycle.daynightCycle_C.dreamInv
 // 0x0018 (0x0018 - 0x0000)

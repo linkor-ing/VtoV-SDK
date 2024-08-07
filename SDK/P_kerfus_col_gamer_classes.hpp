@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass p_kerfus_col_gamer.p_kerfus_col_gamer_C
-// 0x0008 (0x04C8 - 0x04C0)
+// 0x0008 (0x0498 - 0x0490)
 class AP_kerfus_col_gamer_C final : public AP_kerfus_col_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_P_kerfus_col_gamer_C;               // 0x04C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_P_kerfus_col_gamer_C;               // 0x0490(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_p_kerfus_col_gamer(int32 EntryPoint);
@@ -39,8 +39,8 @@ public:
 	}
 };
 static_assert(alignof(AP_kerfus_col_gamer_C) == 0x000008, "Wrong alignment on AP_kerfus_col_gamer_C");
-static_assert(sizeof(AP_kerfus_col_gamer_C) == 0x0004C8, "Wrong size on AP_kerfus_col_gamer_C");
-static_assert(offsetof(AP_kerfus_col_gamer_C, UberGraphFrame_P_kerfus_col_gamer_C) == 0x0004C0, "Member 'AP_kerfus_col_gamer_C::UberGraphFrame_P_kerfus_col_gamer_C' has a wrong offset!");
+static_assert(sizeof(AP_kerfus_col_gamer_C) == 0x000498, "Wrong size on AP_kerfus_col_gamer_C");
+static_assert(offsetof(AP_kerfus_col_gamer_C, UberGraphFrame_P_kerfus_col_gamer_C) == 0x000490, "Member 'AP_kerfus_col_gamer_C::UberGraphFrame_P_kerfus_col_gamer_C' has a wrong offset!");
 
 }
 

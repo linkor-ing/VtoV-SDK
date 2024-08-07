@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_FloatieRing_sit2.prop_FloatieRing_sit2_C
-// 0x0008 (0x0388 - 0x0380)
+// 0x0008 (0x0378 - 0x0370)
 class AProp_FloatieRing_sit2_C final : public AProp_FloatieRing_sit_C
 {
 public:
-	class UChildActorComponent*                   ChildActor_0;                                      // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   ChildActor_0;                                      // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +34,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_FloatieRing_sit2_C) == 0x000008, "Wrong alignment on AProp_FloatieRing_sit2_C");
-static_assert(sizeof(AProp_FloatieRing_sit2_C) == 0x000388, "Wrong size on AProp_FloatieRing_sit2_C");
-static_assert(offsetof(AProp_FloatieRing_sit2_C, ChildActor_0) == 0x000380, "Member 'AProp_FloatieRing_sit2_C::ChildActor_0' has a wrong offset!");
+static_assert(sizeof(AProp_FloatieRing_sit2_C) == 0x000378, "Wrong size on AProp_FloatieRing_sit2_C");
+static_assert(offsetof(AProp_FloatieRing_sit2_C, ChildActor_0) == 0x000370, "Member 'AProp_FloatieRing_sit2_C::ChildActor_0' has a wrong offset!");
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "ArirFollower_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
+#include "ArirFollower_classes.hpp"
 
 
 namespace SDK
@@ -26,7 +26,7 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_ArirSlapper_C;                      // 0x0618(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class AActor*                                 StolenThing;                                       // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	struct FVector                                PlaceReturn;                                       // 0x0628(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_634[0x4];                                      // 0x0634(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C65[0x4];                                     // 0x0634(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 StolenThing_key;                                   // 0x0638(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:

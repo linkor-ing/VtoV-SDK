@@ -37,62 +37,6 @@ void AGrunge_dyn_C::ExecuteUbergraph_grunge_dyn(int32 EntryPoint)
 }
 
 
-// Function grunge_dyn.grunge_dyn_C.hookTension
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AHook_C*                          Hook                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AGrunge_dyn_C::HookTension(class AHook_C* Hook)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("grunge_dyn_C", "hookTension");
-
-	Params::Grunge_dyn_C_HookTension Parms{};
-
-	Parms.Hook = Hook;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function grunge_dyn.grunge_dyn_C.cleanSponge
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Param_Clean                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AGrunge_dyn_C::CleanSponge(float Param_Clean, class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("grunge_dyn_C", "cleanSponge");
-
-	Params::Grunge_dyn_C_CleanSponge Parms{};
-
-	Parms.Param_Clean = Param_Clean;
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function grunge_dyn.grunge_dyn_C.crafted
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AGrunge_dyn_C::Crafted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("grunge_dyn_C", "crafted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function grunge_dyn.grunge_dyn_C.hooked
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -514,9 +458,10 @@ void AGrunge_dyn_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AGrunge_dyn_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action)
+void AGrunge_dyn_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -527,6 +472,7 @@ void AGrunge_dyn_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct 
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
+	Parms.Param_Index = Param_Index;
 	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -535,23 +481,15 @@ void AGrunge_dyn_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct 
 
 // Function grunge_dyn.grunge_dyn_C.receivedPhyiscsDamage
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hot                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void AGrunge_dyn_C::ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot)
+void AGrunge_dyn_C::ReceivedPhyiscsDamage()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("grunge_dyn_C", "receivedPhyiscsDamage");
 
-	Params::Grunge_dyn_C_ReceivedPhyiscsDamage Parms{};
-
-	Parms.Damage = Damage;
-	Parms.Hot = std::move(Hot);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -922,9 +860,8 @@ void AGrunge_dyn_C::SetMat()
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AGrunge_dyn_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
+void AGrunge_dyn_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
 {
 	static class UFunction* Func = nullptr;
 
@@ -947,9 +884,6 @@ void AGrunge_dyn_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimiti
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
 }
 
 
@@ -1127,27 +1061,6 @@ void AGrunge_dyn_C::SkipRadial(bool* Skip)
 
 	if (Skip != nullptr)
 		*Skip = Parms.Skip;
-}
-
-
-// Function grunge_dyn.grunge_dyn_C.getPriceMultiplier
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   PriceMult                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AGrunge_dyn_C::GetPriceMultiplier(float* PriceMult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("grunge_dyn_C", "getPriceMultiplier");
-
-	Params::Grunge_dyn_C_GetPriceMultiplier Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (PriceMult != nullptr)
-		*PriceMult = Parms.PriceMult;
 }
 
 }

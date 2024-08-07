@@ -37,20 +37,6 @@ void ADream_ufo_C::ExecuteUbergraph_dream_ufo(int32 EntryPoint)
 }
 
 
-// Function dream_ufo.dream_ufo_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ADream_ufo_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("dream_ufo_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function dream_ufo.dream_ufo_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -122,6 +108,20 @@ void ADream_ufo_C::Light__FinishedFunc()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("dream_ufo_C", "light__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function dream_ufo.dream_ufo_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ADream_ufo_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("dream_ufo_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

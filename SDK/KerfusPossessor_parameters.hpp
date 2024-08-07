@@ -11,405 +11,93 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function kerfusPossessor.kerfusPossessor_C.ExecuteUbergraph_kerfusPossessor
-// 0x0860 (0x0860 - 0x0000)
+// 0x00E0 (0x00E0 - 0x0000)
 struct KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0008(0x0010)(ConstParm, ReferenceParm)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
-	TArray<class AActor*>                         Temp_object_Variable_1;                            // 0x0028(0x0010)(ConstParm, ReferenceParm)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x003C(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AP_kerfus_C*>                    CallFunc_GetAllActorsOfClass_OutActors;            // 0x0050(0x0010)(ReferenceParm)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AP_kerfus_C*                            CallFunc_Array_Get_Item;                           // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue;              // 0x0070(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_ProjectPointToNavigation_ProjectedLocation; // 0x0080(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_ProjectPointToNavigation_ReturnValue;  // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_8D[0x3];                                       // 0x008D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_LowEntry_LocalVariable_Value__Object;       // 0x0094(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x00A4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AP_kerfus_C*                            CallFunc_Array_Get_Item_1;                         // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x00B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x00C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x00D0(0x0030)(IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_NotEqualExactly_VectorVector_ReturnValue; // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_garbageClump_C*                   CallFunc_FinishSpawningActor_ReturnValue;          // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AKerfurOmega_C*>                 CallFunc_GetAllActorsOfClass_OutActors_1;          // 0x0128(0x0010)(ReferenceParm)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0139(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x013A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x013B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x013C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_13D[0x3];                                      // 0x013D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_LastIndex_ReturnValue_1;            // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0144(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_145[0x3];                                      // 0x0145(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue_1;       // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AKerfurOmega_C*                         CallFunc_Array_Get_Item_2;                         // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_159[0x7];                                      // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EObjectTypeQuery>                      CallFunc_obj_static_obj;                           // 0x0160(0x0010)(ReferenceParm)
-	bool                                          CallFunc_WasRecentlyRendered_ReturnValue;          // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_171[0x3];                                      // 0x0171(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0174(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0188(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x0194(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<EObjectTypeQuery>                      CallFunc_obj_static_obj_1;                         // 0x01A0(0x0010)(ReferenceParm)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue_1;      // 0x01B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1BC[0x4];                                      // 0x01BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_2;                            // 0x01C0(0x0010)(ConstParm, ReferenceParm)
-	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit;         // 0x01D0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue;    // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0259(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x025A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_25B[0x1];                                      // 0x025B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0264(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0270(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x027C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0288(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_294[0x4];                                      // 0x0294(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0298(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x02A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x02A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x02B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x02BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x02C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x02C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x02D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x02DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_2;           // 0x02E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F4[0xC];                                      // 0x02F4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x0300(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFleshroom_C*                           CallFunc_GetActorOfClass_ReturnValue;              // 0x0338(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_3;        // 0x0340(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34C[0x4];                                      // 0x034C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGrunge_C*                              CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0350(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult;       // 0x0358(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_K2_SetActorLocation_ReturnValue;          // 0x03E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_1;       // 0x03E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3E2[0x6];                                      // 0x03E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_3;                            // 0x03E8(0x0010)(ConstParm, ReferenceParm)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x03F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F9[0x3];                                      // 0x03F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit_1;       // 0x03FC(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue_1;  // 0x0484(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x0485(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_486[0x2];                                      // 0x0486(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0488(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x048C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0490(0x0008)(NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_1;        // 0x0498(0x0008)(NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_2;       // 0x04A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4A1[0x3];                                      // 0x04A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x04A4(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_4B4[0x4];                                      // 0x04B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_2;        // 0x04B8(0x0008)(NoDestructor, HasGetValueTypeHash)
-	TArray<EObjectTypeQuery>                      CallFunc_obj_static_obj_2;                         // 0x04C0(0x0010)(ReferenceParm)
-	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit_2;       // 0x04D0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue_2;  // 0x0558(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_559[0x3];                                      // 0x0559(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_3;         // 0x055C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue_1;            // 0x0560(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit_1;            // 0x056C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap_1;         // 0x056D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_56E[0x2];                                      // 0x056E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time_1;                    // 0x0570(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance_1;                // 0x0574(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location_1;                // 0x0578(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint_1;             // 0x0584(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal_1;                  // 0x0590(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal_1;            // 0x059C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat_1;                 // 0x05A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor_1;                // 0x05B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent_1;            // 0x05B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName_1;             // 0x05C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem_1;                 // 0x05C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex_1;            // 0x05CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex_1;               // 0x05D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart_1;              // 0x05D4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd_1;                // 0x05E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_ProjectPointToNavigation_ProjectedLocation_1; // 0x05EC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_ProjectPointToNavigation_ReturnValue_1; // 0x05F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5F9[0x3];                                      // 0x05F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue_1;       // 0x05FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                K2Node_LowEntry_LocalVariable_Value__1_Object;     // 0x0608(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakRotIntoAxes_X;                       // 0x0614(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakRotIntoAxes_Y;                       // 0x0620(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakRotIntoAxes_Z;                       // 0x062C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqualExactly_VectorVector_ReturnValue_1; // 0x0638(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_639[0x3];                                      // 0x0639(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_MakeRotationFromAxes_ReturnValue;         // 0x063C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_648[0x8];                                      // 0x0648(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_2;              // 0x0650(0x0030)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue_2;      // 0x0680(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_68C[0x4];                                      // 0x068C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x0690(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_3;           // 0x0698(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6A4[0x4];                                      // 0x06A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMurderKerfuroDig_C*                    CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x06A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<EObjectTypeQuery>                      CallFunc_obj_static_obj_3;                         // 0x06B0(0x0010)(ReferenceParm)
-	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit_3;       // 0x06C0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue_3;  // 0x0748(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_749[0x3];                                      // 0x0749(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x074C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0750(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_751[0x3];                                      // 0x0751(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0754(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit_2;            // 0x0758(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap_2;         // 0x0759(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_75A[0x2];                                      // 0x075A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time_2;                    // 0x075C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance_2;                // 0x0760(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location_2;                // 0x0764(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint_2;             // 0x0770(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal_2;                  // 0x077C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal_2;            // 0x0788(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_794[0x4];                                      // 0x0794(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat_2;                 // 0x0798(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor_2;                // 0x07A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent_2;            // 0x07A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName_2;             // 0x07B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem_2;                 // 0x07B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex_2;            // 0x07BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex_2;               // 0x07C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart_2;              // 0x07C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd_2;                // 0x07D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue_2;       // 0x07DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakRotIntoAxes_X_1;                     // 0x07E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakRotIntoAxes_Y_1;                     // 0x07F4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakRotIntoAxes_Z_1;                     // 0x0800(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotationFromAxes_ReturnValue_1;       // 0x080C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_818[0x8];                                      // 0x0818(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_3;              // 0x0820(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3; // 0x0850(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMurderKerfuroDig_C*                    CallFunc_FinishSpawningActor_ReturnValue_3;        // 0x0858(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AP_kerfus_C*>                    CallFunc_GetAllActorsOfClass_OutActors;            // 0x0008(0x0010)(ReferenceParm)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1719[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AP_kerfus_C*                            CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue;              // 0x0028(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_ProjectPointToNavigation_ProjectedLocation; // 0x0038(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_ProjectPointToNavigation_ReturnValue;  // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_171A[0x3];                                     // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_LowEntry_LocalVariable_Value__Object;       // 0x004C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x005C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AP_kerfus_C*                            CallFunc_Array_Get_Item_1;                         // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0070(0x0030)(IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_garbageClump_C*                   CallFunc_FinishSpawningActor_ReturnValue;          // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqualExactly_VectorVector_ReturnValue; // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_171B[0x3];                                     // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_171C[0x7];                                     // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00D3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_171D[0x3];                                     // 0x00D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor) == 0x000010, "Wrong alignment on KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor");
-static_assert(sizeof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor) == 0x000860, "Wrong size on KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor");
+static_assert(sizeof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor) == 0x0000E0, "Wrong size on KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor");
 static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, EntryPoint) == 0x000000, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::EntryPoint' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, Temp_object_Variable) == 0x000008, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, Temp_object_Variable_1) == 0x000028, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, Temp_int_Array_Index_Variable) == 0x000038, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, K2Node_CreateDelegate_OutputDelegate_1) == 0x00003C, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_GetAllActorsOfClass_OutActors) == 0x000050, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_RandomFloatInRange_ReturnValue) == 0x000060, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Array_Get_Item) == 0x000068, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_RotateAngleAxis_ReturnValue) == 0x000070, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_RotateAngleAxis_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Array_Length_ReturnValue) == 0x00007C, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_K2_ProjectPointToNavigation_ProjectedLocation) == 0x000080, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_K2_ProjectPointToNavigation_ProjectedLocation' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_K2_ProjectPointToNavigation_ReturnValue) == 0x00008C, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_K2_ProjectPointToNavigation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Array_LastIndex_ReturnValue) == 0x000090, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, K2Node_LowEntry_LocalVariable_Value__Object) == 0x000094, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::K2Node_LowEntry_LocalVariable_Value__Object' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_RandomIntegerInRange_ReturnValue) == 0x0000A0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0000A4, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Array_Get_Item_1) == 0x0000B0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Add_VectorVector_ReturnValue) == 0x0000B8, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Add_VectorVector_ReturnValue_1) == 0x0000C4, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_MakeTransform_ReturnValue) == 0x0000D0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_NotEqualExactly_VectorVector_ReturnValue) == 0x000100, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_NotEqualExactly_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000108, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_FinishSpawningActor_ReturnValue) == 0x000110, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x000118, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000120, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_GetAllActorsOfClass_OutActors_1) == 0x000128, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_GetAllActorsOfClass_OutActors_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000138, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Greater_IntInt_ReturnValue) == 0x000139, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BooleanAND_ReturnValue) == 0x00013A, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00013B, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00013C, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Array_LastIndex_ReturnValue_1) == 0x000140, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Array_LastIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BooleanOR_ReturnValue) == 0x000144, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_RandomIntegerInRange_ReturnValue_1) == 0x000148, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_RandomIntegerInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Array_Get_Item_2) == 0x000150, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_IsValid_ReturnValue) == 0x000158, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_obj_static_obj) == 0x000160, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_obj_static_obj' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_WasRecentlyRendered_ReturnValue) == 0x000170, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_WasRecentlyRendered_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000174, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000180, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000188, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x000194, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_obj_static_obj_1) == 0x0001A0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_obj_static_obj_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Subtract_VectorVector_ReturnValue_1) == 0x0001B0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Subtract_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, Temp_object_Variable_2) == 0x0001C0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_LineTraceSingleForObjects_OutHit) == 0x0001D0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_LineTraceSingleForObjects_OutHit' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_LineTraceSingleForObjects_ReturnValue) == 0x000258, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_LineTraceSingleForObjects_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_bBlockingHit) == 0x000259, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_bInitialOverlap) == 0x00025A, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_Time) == 0x00025C, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_Distance) == 0x000260, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_Location) == 0x000264, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_ImpactPoint) == 0x000270, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_Normal) == 0x00027C, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_ImpactNormal) == 0x000288, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_PhysMat) == 0x000298, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_HitActor) == 0x0002A0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_HitComponent) == 0x0002A8, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_HitBoneName) == 0x0002B0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_HitItem) == 0x0002B8, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_ElementIndex) == 0x0002BC, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_FaceIndex) == 0x0002C0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_TraceStart) == 0x0002C4, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_TraceEnd) == 0x0002D0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x0002DC, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Add_VectorVector_ReturnValue_2) == 0x0002E8, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Add_VectorVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_MakeTransform_ReturnValue_1) == 0x000300, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000330, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_GetActorOfClass_ReturnValue) == 0x000338, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_GetActorOfClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_K2_GetActorLocation_ReturnValue_3) == 0x000340, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_K2_GetActorLocation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000350, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_K2_SetActorLocation_SweepHitResult) == 0x000358, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_K2_SetActorLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_K2_SetActorLocation_ReturnValue) == 0x0003E0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_K2_SetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_RandomBoolWithWeight_ReturnValue_1) == 0x0003E1, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_RandomBoolWithWeight_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, Temp_object_Variable_3) == 0x0003E8, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BooleanAND_ReturnValue_1) == 0x0003F8, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_LineTraceSingleForObjects_OutHit_1) == 0x0003FC, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_LineTraceSingleForObjects_OutHit_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_LineTraceSingleForObjects_ReturnValue_1) == 0x000484, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_LineTraceSingleForObjects_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BooleanAND_ReturnValue_2) == 0x000485, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000488, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x00048C, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000490, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_K2_SetTimerDelegate_ReturnValue_1) == 0x000498, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_K2_SetTimerDelegate_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_RandomBoolWithWeight_ReturnValue_2) == 0x0004A0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_RandomBoolWithWeight_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, K2Node_CreateDelegate_OutputDelegate_2) == 0x0004A4, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_K2_SetTimerDelegate_ReturnValue_2) == 0x0004B8, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_K2_SetTimerDelegate_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_obj_static_obj_2) == 0x0004C0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_obj_static_obj_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_LineTraceSingleForObjects_OutHit_2) == 0x0004D0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_LineTraceSingleForObjects_OutHit_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_LineTraceSingleForObjects_ReturnValue_2) == 0x000558, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_LineTraceSingleForObjects_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_RandomFloatInRange_ReturnValue_3) == 0x00055C, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_RandomFloatInRange_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_RotateAngleAxis_ReturnValue_1) == 0x000560, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_RotateAngleAxis_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_bBlockingHit_1) == 0x00056C, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_bBlockingHit_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_bInitialOverlap_1) == 0x00056D, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_bInitialOverlap_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_Time_1) == 0x000570, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_Time_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_Distance_1) == 0x000574, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_Distance_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_Location_1) == 0x000578, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_Location_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_ImpactPoint_1) == 0x000584, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_ImpactPoint_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_Normal_1) == 0x000590, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_Normal_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_ImpactNormal_1) == 0x00059C, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_ImpactNormal_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_PhysMat_1) == 0x0005A8, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_PhysMat_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_HitActor_1) == 0x0005B0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_HitActor_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_HitComponent_1) == 0x0005B8, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_HitComponent_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_HitBoneName_1) == 0x0005C0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_HitBoneName_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_HitItem_1) == 0x0005C8, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_HitItem_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_ElementIndex_1) == 0x0005CC, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_ElementIndex_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_FaceIndex_1) == 0x0005D0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_FaceIndex_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_TraceStart_1) == 0x0005D4, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_TraceStart_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_TraceEnd_1) == 0x0005E0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_TraceEnd_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_K2_ProjectPointToNavigation_ProjectedLocation_1) == 0x0005EC, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_K2_ProjectPointToNavigation_ProjectedLocation_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_K2_ProjectPointToNavigation_ReturnValue_1) == 0x0005F8, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_K2_ProjectPointToNavigation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Conv_VectorToRotator_ReturnValue_1) == 0x0005FC, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Conv_VectorToRotator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, K2Node_LowEntry_LocalVariable_Value__1_Object) == 0x000608, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::K2Node_LowEntry_LocalVariable_Value__1_Object' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakRotIntoAxes_X) == 0x000614, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakRotIntoAxes_X' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakRotIntoAxes_Y) == 0x000620, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakRotIntoAxes_Y' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakRotIntoAxes_Z) == 0x00062C, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakRotIntoAxes_Z' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_NotEqualExactly_VectorVector_ReturnValue_1) == 0x000638, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_NotEqualExactly_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_MakeRotationFromAxes_ReturnValue) == 0x00063C, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_MakeRotationFromAxes_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_MakeTransform_ReturnValue_2) == 0x000650, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_MakeTransform_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Subtract_VectorVector_ReturnValue_2) == 0x000680, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Subtract_VectorVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x000690, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Add_VectorVector_ReturnValue_3) == 0x000698, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Add_VectorVector_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x0006A8, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_obj_static_obj_3) == 0x0006B0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_obj_static_obj_3' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_LineTraceSingleForObjects_OutHit_3) == 0x0006C0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_LineTraceSingleForObjects_OutHit_3' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_LineTraceSingleForObjects_ReturnValue_3) == 0x000748, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_LineTraceSingleForObjects_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, Temp_int_Loop_Counter_Variable) == 0x00074C, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Less_IntInt_ReturnValue) == 0x000750, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Add_IntInt_ReturnValue) == 0x000754, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_bBlockingHit_2) == 0x000758, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_bBlockingHit_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_bInitialOverlap_2) == 0x000759, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_bInitialOverlap_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_Time_2) == 0x00075C, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_Time_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_Distance_2) == 0x000760, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_Distance_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_Location_2) == 0x000764, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_Location_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_ImpactPoint_2) == 0x000770, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_ImpactPoint_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_Normal_2) == 0x00077C, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_Normal_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_ImpactNormal_2) == 0x000788, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_ImpactNormal_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_PhysMat_2) == 0x000798, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_PhysMat_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_HitActor_2) == 0x0007A0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_HitActor_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_HitComponent_2) == 0x0007A8, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_HitComponent_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_HitBoneName_2) == 0x0007B0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_HitBoneName_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_HitItem_2) == 0x0007B8, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_HitItem_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_ElementIndex_2) == 0x0007BC, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_ElementIndex_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_FaceIndex_2) == 0x0007C0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_FaceIndex_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_TraceStart_2) == 0x0007C4, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_TraceStart_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakHitResult_TraceEnd_2) == 0x0007D0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakHitResult_TraceEnd_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Conv_VectorToRotator_ReturnValue_2) == 0x0007DC, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Conv_VectorToRotator_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakRotIntoAxes_X_1) == 0x0007E8, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakRotIntoAxes_X_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakRotIntoAxes_Y_1) == 0x0007F4, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakRotIntoAxes_Y_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BreakRotIntoAxes_Z_1) == 0x000800, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BreakRotIntoAxes_Z_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_MakeRotationFromAxes_ReturnValue_1) == 0x00080C, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_MakeRotationFromAxes_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_MakeTransform_ReturnValue_3) == 0x000820, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_MakeTransform_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3) == 0x000850, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_FinishSpawningActor_ReturnValue_3) == 0x000858, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_FinishSpawningActor_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, Temp_int_Array_Index_Variable) == 0x000004, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_GetAllActorsOfClass_OutActors) == 0x000008, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_RandomFloatInRange_ReturnValue) == 0x000018, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Array_Get_Item) == 0x000020, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_RotateAngleAxis_ReturnValue) == 0x000028, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_RotateAngleAxis_ReturnValue' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Array_Length_ReturnValue) == 0x000034, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_K2_ProjectPointToNavigation_ProjectedLocation) == 0x000038, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_K2_ProjectPointToNavigation_ProjectedLocation' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_K2_ProjectPointToNavigation_ReturnValue) == 0x000044, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_K2_ProjectPointToNavigation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Array_LastIndex_ReturnValue) == 0x000048, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, K2Node_LowEntry_LocalVariable_Value__Object) == 0x00004C, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::K2Node_LowEntry_LocalVariable_Value__Object' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_RandomIntegerInRange_ReturnValue) == 0x000058, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Add_VectorVector_ReturnValue) == 0x00005C, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Array_Get_Item_1) == 0x000068, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_MakeTransform_ReturnValue) == 0x000070, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0000A0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_FinishSpawningActor_ReturnValue) == 0x0000A8, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_NotEqualExactly_VectorVector_ReturnValue) == 0x0000B0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_NotEqualExactly_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, K2Node_Event_DeltaSeconds) == 0x0000B4, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x0000B8, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x0000C0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x0000C8, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, Temp_int_Loop_Counter_Variable) == 0x0000CC, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0000D0, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0000D1, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Less_IntInt_ReturnValue) == 0x0000D2, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BooleanOR_ReturnValue) == 0x0000D3, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_BooleanAND_ReturnValue) == 0x0000D4, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor, CallFunc_Add_IntInt_ReturnValue) == 0x0000D8, "Member 'KerfusPossessor_C_ExecuteUbergraph_kerfusPossessor::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
-// Function kerfusPossessor.kerfusPossessor_C.spawnSkerfuro
-// 0x00D0 (0x00D0 - 0x0000)
-struct KerfusPossessor_C_SpawnSkerfuro final
+// Function kerfusPossessor.kerfusPossessor_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct KerfusPossessor_C_ReceiveTick final
 {
 public:
-	TArray<class UClass*>                         Skerfurs;                                          // 0x0000(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
-	TArray<class UClass*>                         Kerfurs;                                           // 0x0010(0x0010)(Edit, BlueprintVisible)
-	TArray<class UClass*>                         K2Node_MakeArray_Array;                            // 0x0020(0x0010)(ReferenceParm)
-	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0030(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UClass*>                         K2Node_MakeArray_Array_1;                          // 0x0068(0x0010)(ReferenceParm)
-	class ASkerfuroWalk_C*                        CallFunc_FinishSpawningActor_ReturnValue;          // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AbaseWindow_C*>                  CallFunc_GetAllActorsOfClass_OutActors;            // 0x0080(0x0010)(ReferenceParm)
-	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 CallFunc_Array_Get_Item;                           // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AbaseWindow_C*                          CallFunc_Array_Get_Item_1;                         // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ASkerfuroWalk_C*                        CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(KerfusPossessor_C_SpawnSkerfuro) == 0x000010, "Wrong alignment on KerfusPossessor_C_SpawnSkerfuro");
-static_assert(sizeof(KerfusPossessor_C_SpawnSkerfuro) == 0x0000D0, "Wrong size on KerfusPossessor_C_SpawnSkerfuro");
-static_assert(offsetof(KerfusPossessor_C_SpawnSkerfuro, Skerfurs) == 0x000000, "Member 'KerfusPossessor_C_SpawnSkerfuro::Skerfurs' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_SpawnSkerfuro, Kerfurs) == 0x000010, "Member 'KerfusPossessor_C_SpawnSkerfuro::Kerfurs' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_SpawnSkerfuro, K2Node_MakeArray_Array) == 0x000020, "Member 'KerfusPossessor_C_SpawnSkerfuro::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_SpawnSkerfuro, CallFunc_GetTransform_ReturnValue) == 0x000030, "Member 'KerfusPossessor_C_SpawnSkerfuro::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_SpawnSkerfuro, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000060, "Member 'KerfusPossessor_C_SpawnSkerfuro::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_SpawnSkerfuro, K2Node_MakeArray_Array_1) == 0x000068, "Member 'KerfusPossessor_C_SpawnSkerfuro::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_SpawnSkerfuro, CallFunc_FinishSpawningActor_ReturnValue) == 0x000078, "Member 'KerfusPossessor_C_SpawnSkerfuro::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_SpawnSkerfuro, CallFunc_GetAllActorsOfClass_OutActors) == 0x000080, "Member 'KerfusPossessor_C_SpawnSkerfuro::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_SpawnSkerfuro, CallFunc_GetObjectClass_ReturnValue) == 0x000090, "Member 'KerfusPossessor_C_SpawnSkerfuro::CallFunc_GetObjectClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_SpawnSkerfuro, CallFunc_Array_LastIndex_ReturnValue) == 0x000098, "Member 'KerfusPossessor_C_SpawnSkerfuro::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_SpawnSkerfuro, CallFunc_Array_Find_ReturnValue) == 0x00009C, "Member 'KerfusPossessor_C_SpawnSkerfuro::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_SpawnSkerfuro, CallFunc_RandomIntegerInRange_ReturnValue) == 0x0000A0, "Member 'KerfusPossessor_C_SpawnSkerfuro::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_SpawnSkerfuro, CallFunc_Array_Get_Item) == 0x0000A8, "Member 'KerfusPossessor_C_SpawnSkerfuro::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_SpawnSkerfuro, CallFunc_Array_Get_Item_1) == 0x0000B0, "Member 'KerfusPossessor_C_SpawnSkerfuro::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_SpawnSkerfuro, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x0000B8, "Member 'KerfusPossessor_C_SpawnSkerfuro::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_SpawnSkerfuro, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x0000C0, "Member 'KerfusPossessor_C_SpawnSkerfuro::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(KerfusPossessor_C_SpawnSkerfuro, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0000C8, "Member 'KerfusPossessor_C_SpawnSkerfuro::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(alignof(KerfusPossessor_C_ReceiveTick) == 0x000004, "Wrong alignment on KerfusPossessor_C_ReceiveTick");
+static_assert(sizeof(KerfusPossessor_C_ReceiveTick) == 0x000004, "Wrong size on KerfusPossessor_C_ReceiveTick");
+static_assert(offsetof(KerfusPossessor_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'KerfusPossessor_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 }
 

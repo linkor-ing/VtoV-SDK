@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "Struct_save_structs.hpp"
-#include "Struct_mBool_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Struct_lootWeighted_structs.hpp"
 #include "Struct_food1_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Struct_prop_structs.hpp"
+#include "Struct_mBool_structs.hpp"
 #include "Struct_mObject_structs.hpp"
 
 
@@ -30,14 +30,14 @@ public:
 	class UStaticMeshComponent*                   Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AProp_container_C*                      Param_Owner;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0010(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FA6[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mObject                        Temp_struct_Variable;                              // 0x0020(0x0010)(ConstParm, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X;                            // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y;                            // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z;                            // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FA7[0x3];                                     // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_2;        // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -73,52 +73,49 @@ public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         InsertIndex1;                                      // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FA8[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Err;                                               // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-	float                                         Mvol;                                              // 0x0020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         InsertIndex;                                       // 0x0024(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         InsertIndex;                                       // 0x0020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3FA9[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FStruct_mBool>                  A;                                                 // 0x0028(0x0010)(Edit, BlueprintVisible)
-	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FAA[0x8];                                     // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           D;                                                 // 0x0040(0x00C0)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	bool                                          Canp;                                              // 0x0100(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FAB[0x7];                                     // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0108(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IInt_save1_C>          K2Node_DynamicCast_AsInt_Save_1;                   // 0x0110(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_121[0x7];                                      // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FAC[0x7];                                     // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStaticMeshComponent*                   K2Node_DynamicCast_AsStatic_Mesh_Component;        // 0x0128(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_131[0xF];                                      // 0x0131(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FAD[0xF];                                     // 0x0131(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           CallFunc_getData_data;                             // 0x0140(0x00C0)(HasGetValueTypeHash)
 	float                                         CallFunc_Get_Volume_volume;                        // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Get_Volume_mass;                          // 0x0204(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x020C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_20D[0x3];                                      // 0x020D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0210(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0208(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3FAE[0x7];                                     // 0x0219(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AProp_C*                                K2Node_DynamicCast_AsProp;                         // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0228(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_safeAsProp_isValid;                       // 0x0229(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_22A[0x6];                                      // 0x022A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class AProp_C*                                CallFunc_safeAsProp_prop;                          // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3FAF[0x7];                                     // 0x0229(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0238(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 K2Node_ClassDynamicCast_AsPrinted_Object;          // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ClassDynamicCast_bSuccess;                  // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_259[0x7];                                      // 0x0259(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 K2Node_ClassDynamicCast_AsProp;                    // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ClassDynamicCast_bSuccess_1;                // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_269[0x7];                                      // 0x0269(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 K2Node_ClassDynamicCast_AsPrinted_Object;          // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ClassDynamicCast_bSuccess;                  // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3FB0[0x7];                                     // 0x0251(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 K2Node_ClassDynamicCast_AsProp;                    // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ClassDynamicCast_bSuccess_1;                // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3FB1[0xF];                                     // 0x0261(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           K2Node_SetFieldsInStruct_StructOut;                // 0x0270(0x00C0)(HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0330(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0334(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_335[0x3];                                      // 0x0335(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FB2[0x3];                                     // 0x0335(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0338(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x033C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_33D[0x3];                                      // 0x033D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FB3[0x3];                                     // 0x033D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0340(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0344(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_345[0x3];                                      // 0x0345(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FB4[0x3];                                     // 0x0345(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0348(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0350(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Max_ReturnValue;                          // 0x0354(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -130,8 +127,7 @@ static_assert(offsetof(PropInventory_C_AddObject, Actor) == 0x000000, "Member 'P
 static_assert(offsetof(PropInventory_C_AddObject, InsertIndex1) == 0x000008, "Member 'PropInventory_C_AddObject::InsertIndex1' has a wrong offset!");
 static_assert(offsetof(PropInventory_C_AddObject, Return) == 0x00000C, "Member 'PropInventory_C_AddObject::Return' has a wrong offset!");
 static_assert(offsetof(PropInventory_C_AddObject, Err) == 0x000010, "Member 'PropInventory_C_AddObject::Err' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddObject, Mvol) == 0x000020, "Member 'PropInventory_C_AddObject::Mvol' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddObject, InsertIndex) == 0x000024, "Member 'PropInventory_C_AddObject::InsertIndex' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddObject, InsertIndex) == 0x000020, "Member 'PropInventory_C_AddObject::InsertIndex' has a wrong offset!");
 static_assert(offsetof(PropInventory_C_AddObject, A) == 0x000028, "Member 'PropInventory_C_AddObject::A' has a wrong offset!");
 static_assert(offsetof(PropInventory_C_AddObject, D) == 0x000040, "Member 'PropInventory_C_AddObject::D' has a wrong offset!");
 static_assert(offsetof(PropInventory_C_AddObject, Canp) == 0x000100, "Member 'PropInventory_C_AddObject::Canp' has a wrong offset!");
@@ -143,19 +139,16 @@ static_assert(offsetof(PropInventory_C_AddObject, K2Node_DynamicCast_bSuccess_1)
 static_assert(offsetof(PropInventory_C_AddObject, CallFunc_getData_data) == 0x000140, "Member 'PropInventory_C_AddObject::CallFunc_getData_data' has a wrong offset!");
 static_assert(offsetof(PropInventory_C_AddObject, CallFunc_Get_Volume_volume) == 0x000200, "Member 'PropInventory_C_AddObject::CallFunc_Get_Volume_volume' has a wrong offset!");
 static_assert(offsetof(PropInventory_C_AddObject, CallFunc_Get_Volume_mass) == 0x000204, "Member 'PropInventory_C_AddObject::CallFunc_Get_Volume_mass' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddObject, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000208, "Member 'PropInventory_C_AddObject::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddObject, CallFunc_IsValidClass_ReturnValue) == 0x00020C, "Member 'PropInventory_C_AddObject::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddObject, CallFunc_GetDisplayName_ReturnValue) == 0x000210, "Member 'PropInventory_C_AddObject::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddObject, CallFunc_GetDisplayName_ReturnValue) == 0x000208, "Member 'PropInventory_C_AddObject::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddObject, CallFunc_IsValidClass_ReturnValue) == 0x000218, "Member 'PropInventory_C_AddObject::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PropInventory_C_AddObject, K2Node_DynamicCast_AsProp) == 0x000220, "Member 'PropInventory_C_AddObject::K2Node_DynamicCast_AsProp' has a wrong offset!");
 static_assert(offsetof(PropInventory_C_AddObject, K2Node_DynamicCast_bSuccess_2) == 0x000228, "Member 'PropInventory_C_AddObject::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddObject, CallFunc_safeAsProp_isValid) == 0x000229, "Member 'PropInventory_C_AddObject::CallFunc_safeAsProp_isValid' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddObject, CallFunc_safeAsProp_prop) == 0x000230, "Member 'PropInventory_C_AddObject::CallFunc_safeAsProp_prop' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddObject, CallFunc_GetObjectClass_ReturnValue) == 0x000230, "Member 'PropInventory_C_AddObject::CallFunc_GetObjectClass_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PropInventory_C_AddObject, CallFunc_Conv_NameToString_ReturnValue) == 0x000238, "Member 'PropInventory_C_AddObject::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddObject, CallFunc_GetObjectClass_ReturnValue) == 0x000248, "Member 'PropInventory_C_AddObject::CallFunc_GetObjectClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddObject, K2Node_ClassDynamicCast_AsPrinted_Object) == 0x000250, "Member 'PropInventory_C_AddObject::K2Node_ClassDynamicCast_AsPrinted_Object' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddObject, K2Node_ClassDynamicCast_bSuccess) == 0x000258, "Member 'PropInventory_C_AddObject::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddObject, K2Node_ClassDynamicCast_AsProp) == 0x000260, "Member 'PropInventory_C_AddObject::K2Node_ClassDynamicCast_AsProp' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddObject, K2Node_ClassDynamicCast_bSuccess_1) == 0x000268, "Member 'PropInventory_C_AddObject::K2Node_ClassDynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddObject, K2Node_ClassDynamicCast_AsPrinted_Object) == 0x000248, "Member 'PropInventory_C_AddObject::K2Node_ClassDynamicCast_AsPrinted_Object' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddObject, K2Node_ClassDynamicCast_bSuccess) == 0x000250, "Member 'PropInventory_C_AddObject::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddObject, K2Node_ClassDynamicCast_AsProp) == 0x000258, "Member 'PropInventory_C_AddObject::K2Node_ClassDynamicCast_AsProp' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddObject, K2Node_ClassDynamicCast_bSuccess_1) == 0x000260, "Member 'PropInventory_C_AddObject::K2Node_ClassDynamicCast_bSuccess_1' has a wrong offset!");
 static_assert(offsetof(PropInventory_C_AddObject, K2Node_SetFieldsInStruct_StructOut) == 0x000270, "Member 'PropInventory_C_AddObject::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
 static_assert(offsetof(PropInventory_C_AddObject, CallFunc_Array_Add_ReturnValue) == 0x000330, "Member 'PropInventory_C_AddObject::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PropInventory_C_AddObject, CallFunc_Array_Contains_ReturnValue) == 0x000334, "Member 'PropInventory_C_AddObject::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
@@ -176,23 +169,23 @@ public:
 	int32                                         Param_Index;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Param_RemoveVol;                                   // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Return;                                            // 0x0005(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6[0xA];                                        // 0x0006(0x000A)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FB5[0xA];                                     // 0x0006(0x000A)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           Output;                                            // 0x0010(0x00C0)(Parm, OutParm, HasGetValueTypeHash)
 	class AActor*                                 Object;                                            // 0x00D0(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D8[0x8];                                       // 0x00D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FB6[0x8];                                     // 0x00D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           R;                                                 // 0x00E0(0x00C0)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x01A0(0x0030)(IsPlainOldData, NoDestructor)
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D9[0x7];                                      // 0x01D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FB7[0x7];                                     // 0x01D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue;          // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x01F0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_201[0x7];                                      // 0x0201(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FB8[0x7];                                     // 0x0201(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IInt_save1_C>          K2Node_DynamicCast_AsInt_Save_1;                   // 0x0208(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_219[0x7];                                      // 0x0219(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FB9[0x7];                                     // 0x0219(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AProp_C*                                CallFunc_asProp_return;                            // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_loadData_return;                          // 0x0228(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -235,7 +228,7 @@ public:
 	int32                                         ID;                                                // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Add;                                               // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FBA[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FStruct_save>                   buff_1;                                            // 0x0010(0x0010)(Edit, BlueprintVisible)
 	TArray<struct FStruct_save>                   Res_1;                                             // 0x0020(0x0010)(Edit, BlueprintVisible)
 	TArray<float>                                 Res_4;                                             // 0x0030(0x0010)(Edit, BlueprintVisible)
@@ -255,7 +248,7 @@ public:
 	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C5[0x3];                                       // 0x00C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FBB[0x3];                                     // 0x00C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Get_Item;                           // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -264,14 +257,14 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Array_Get_Item_3;                         // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F4[0xC];                                       // 0x00F4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FBC[0xC];                                     // 0x00F4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           CallFunc_Array_Get_Item_4;                         // 0x0100(0x00C0)(HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue_3;                  // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x01D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D5[0x3];                                      // 0x01D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FBD[0x3];                                     // 0x01D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue_4;                  // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Get_Item_5;                         // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -325,66 +318,71 @@ static_assert(offsetof(PropInventory_C_MoveIndex, CallFunc_getMainGamemode_AsMai
 static_assert(offsetof(PropInventory_C_MoveIndex, CallFunc_Array_IsValidIndex_ReturnValue) == 0x0001F0, "Member 'PropInventory_C_MoveIndex::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
 
 // Function propInventory.propInventory_C.addLoot
-// 0x0250 (0x0250 - 0x0000)
+// 0x0270 (0x0270 - 0x0000)
 struct PropInventory_C_AddLoot final
 {
 public:
 	class AActor*                                 Spawned;                                           // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Isfood;                                            // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FBE[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Am;                                                // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<float>                                 A;                                                 // 0x0010(0x0010)(Edit, BlueprintVisible)
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0020(0x0030)(IsPlainOldData, NoDestructor)
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x0050(0x0030)(IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AProp_C*                                CallFunc_FinishSpawningActor_ReturnValue;          // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x0098(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_addObject_return;                         // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_AA[0x6];                                       // 0x00AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_addObject_err;                            // 0x00B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class AProp_C*                                CallFunc_asProp_return;                            // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x0090(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3FBF[0x7];                                     // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AProp_C*                                CallFunc_asProp_return;                            // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_addObject_return;                         // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3FC0[0x7];                                     // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_addObject_err;                            // 0x00B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_addObject_return_1;                       // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FC1[0x7];                                     // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_addObject_err_1;                          // 0x00D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_2;              // 0x00E0(0x0030)(IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_addObject_return_2;                       // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_addObject_err_2;                          // 0x0118(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_food_C*                           CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x013C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_addObject_return_3;                       // 0x013D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_13E[0x2];                                      // 0x013E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_addObject_err_3;                          // 0x0140(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_151[0x3];                                      // 0x0151(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_lootWeighted                   CallFunc_Array_Get_Item;                           // 0x0154(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x0164(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_165[0x3];                                      // 0x0165(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x016C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_16D[0x3];                                      // 0x016D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_food1                          CallFunc_GetDataTableRowFromName_OutRow;           // 0x0170(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_propToObject_ReturnValue;                 // 0x0189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_18A[0x2];                                      // 0x018A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_food1                          CallFunc_propToObject_foodData;                    // 0x018C(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1A4[0x4];                                      // 0x01A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 CallFunc_propToObject_object;                      // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_propToObject_isFood;                      // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1B1[0x7];                                      // 0x01B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_prop                           CallFunc_propToObject_propData;                    // 0x01B8(0x0080)(HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_241[0x7];                                      // 0x0241(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3FC2[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue_2;              // 0x00F0(0x0030)(IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_addObject_return_2;                       // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3FC3[0x7];                                     // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_addObject_err_2;                          // 0x0128(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_food_C*                           CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x014C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_addObject_return_3;                       // 0x014D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3FC4[0x2];                                     // 0x014E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_addObject_err_3;                          // 0x0150(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0164(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_lootWeighted                   CallFunc_Array_Get_Item;                           // 0x0168(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x017C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x017D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x017E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3FC5[0x1];                                     // 0x017F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_food1                          CallFunc_GetDataTableRowFromName_OutRow;           // 0x0180(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_propToObject_ReturnValue;                 // 0x0199(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3FC6[0x2];                                     // 0x019A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_food1                          CallFunc_propToObject_foodData;                    // 0x019C(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3FC7[0x4];                                     // 0x01B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_propToObject_object;                      // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_propToObject_isFood;                      // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3FC8[0x7];                                     // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_prop                           CallFunc_propToObject_propData;                    // 0x01C8(0x0080)(HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3FC9[0x4];                                     // 0x024C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3FCA[0x7];                                     // 0x0259(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PropInventory_C_AddLoot) == 0x000010, "Wrong alignment on PropInventory_C_AddLoot");
-static_assert(sizeof(PropInventory_C_AddLoot) == 0x000250, "Wrong size on PropInventory_C_AddLoot");
+static_assert(sizeof(PropInventory_C_AddLoot) == 0x000270, "Wrong size on PropInventory_C_AddLoot");
 static_assert(offsetof(PropInventory_C_AddLoot, Spawned) == 0x000000, "Member 'PropInventory_C_AddLoot::Spawned' has a wrong offset!");
 static_assert(offsetof(PropInventory_C_AddLoot, Isfood) == 0x000008, "Member 'PropInventory_C_AddLoot::Isfood' has a wrong offset!");
 static_assert(offsetof(PropInventory_C_AddLoot, Am) == 0x00000C, "Member 'PropInventory_C_AddLoot::Am' has a wrong offset!");
@@ -393,39 +391,43 @@ static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_MakeTransform_ReturnVal
 static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_MakeTransform_ReturnValue_1) == 0x000050, "Member 'PropInventory_C_AddLoot::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000080, "Member 'PropInventory_C_AddLoot::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_FinishSpawningActor_ReturnValue) == 0x000088, "Member 'PropInventory_C_AddLoot::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, Temp_int_Variable) == 0x000090, "Member 'PropInventory_C_AddLoot::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_Add_IntInt_ReturnValue) == 0x000094, "Member 'PropInventory_C_AddLoot::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, K2Node_DynamicCast_AsInt_Player) == 0x000098, "Member 'PropInventory_C_AddLoot::K2Node_DynamicCast_AsInt_Player' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, K2Node_DynamicCast_bSuccess) == 0x0000A8, "Member 'PropInventory_C_AddLoot::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_addObject_return) == 0x0000A9, "Member 'PropInventory_C_AddLoot::CallFunc_addObject_return' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_addObject_err) == 0x0000B0, "Member 'PropInventory_C_AddLoot::CallFunc_addObject_err' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_asProp_return) == 0x0000C0, "Member 'PropInventory_C_AddLoot::CallFunc_asProp_return' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, K2Node_DynamicCast_AsInt_Player) == 0x000090, "Member 'PropInventory_C_AddLoot::K2Node_DynamicCast_AsInt_Player' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, K2Node_DynamicCast_bSuccess) == 0x0000A0, "Member 'PropInventory_C_AddLoot::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_asProp_return) == 0x0000A8, "Member 'PropInventory_C_AddLoot::CallFunc_asProp_return' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_addObject_return) == 0x0000B0, "Member 'PropInventory_C_AddLoot::CallFunc_addObject_return' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_addObject_err) == 0x0000B8, "Member 'PropInventory_C_AddLoot::CallFunc_addObject_err' has a wrong offset!");
 static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_addObject_return_1) == 0x0000C8, "Member 'PropInventory_C_AddLoot::CallFunc_addObject_return_1' has a wrong offset!");
 static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_addObject_err_1) == 0x0000D0, "Member 'PropInventory_C_AddLoot::CallFunc_addObject_err_1' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_MakeTransform_ReturnValue_2) == 0x0000E0, "Member 'PropInventory_C_AddLoot::CallFunc_MakeTransform_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_addObject_return_2) == 0x000110, "Member 'PropInventory_C_AddLoot::CallFunc_addObject_return_2' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_addObject_err_2) == 0x000118, "Member 'PropInventory_C_AddLoot::CallFunc_addObject_err_2' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000128, "Member 'PropInventory_C_AddLoot::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000130, "Member 'PropInventory_C_AddLoot::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_Array_Length_ReturnValue) == 0x000138, "Member 'PropInventory_C_AddLoot::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_Greater_IntInt_ReturnValue) == 0x00013C, "Member 'PropInventory_C_AddLoot::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_addObject_return_3) == 0x00013D, "Member 'PropInventory_C_AddLoot::CallFunc_addObject_return_3' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_addObject_err_3) == 0x000140, "Member 'PropInventory_C_AddLoot::CallFunc_addObject_err_3' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000150, "Member 'PropInventory_C_AddLoot::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_Array_Get_Item) == 0x000154, "Member 'PropInventory_C_AddLoot::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x000164, "Member 'PropInventory_C_AddLoot::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_Array_Add_ReturnValue) == 0x000168, "Member 'PropInventory_C_AddLoot::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00016C, "Member 'PropInventory_C_AddLoot::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_GetDataTableRowFromName_OutRow) == 0x000170, "Member 'PropInventory_C_AddLoot::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000188, "Member 'PropInventory_C_AddLoot::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_propToObject_ReturnValue) == 0x000189, "Member 'PropInventory_C_AddLoot::CallFunc_propToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_propToObject_foodData) == 0x00018C, "Member 'PropInventory_C_AddLoot::CallFunc_propToObject_foodData' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_propToObject_object) == 0x0001A8, "Member 'PropInventory_C_AddLoot::CallFunc_propToObject_object' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_propToObject_isFood) == 0x0001B0, "Member 'PropInventory_C_AddLoot::CallFunc_propToObject_isFood' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_propToObject_propData) == 0x0001B8, "Member 'PropInventory_C_AddLoot::CallFunc_propToObject_propData' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x000238, "Member 'PropInventory_C_AddLoot::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_IsValidClass_ReturnValue) == 0x000240, "Member 'PropInventory_C_AddLoot::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x000248, "Member 'PropInventory_C_AddLoot::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, Temp_int_Loop_Counter_Variable) == 0x0000E0, "Member 'PropInventory_C_AddLoot::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_Add_IntInt_ReturnValue) == 0x0000E4, "Member 'PropInventory_C_AddLoot::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, Temp_int_Array_Index_Variable) == 0x0000E8, "Member 'PropInventory_C_AddLoot::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_MakeTransform_ReturnValue_2) == 0x0000F0, "Member 'PropInventory_C_AddLoot::CallFunc_MakeTransform_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_addObject_return_2) == 0x000120, "Member 'PropInventory_C_AddLoot::CallFunc_addObject_return_2' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_addObject_err_2) == 0x000128, "Member 'PropInventory_C_AddLoot::CallFunc_addObject_err_2' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000138, "Member 'PropInventory_C_AddLoot::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000140, "Member 'PropInventory_C_AddLoot::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_Array_Length_ReturnValue) == 0x000148, "Member 'PropInventory_C_AddLoot::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_Greater_IntInt_ReturnValue) == 0x00014C, "Member 'PropInventory_C_AddLoot::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_addObject_return_3) == 0x00014D, "Member 'PropInventory_C_AddLoot::CallFunc_addObject_return_3' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_addObject_err_3) == 0x000150, "Member 'PropInventory_C_AddLoot::CallFunc_addObject_err_3' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, Temp_int_Variable) == 0x000160, "Member 'PropInventory_C_AddLoot::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_Add_IntInt_ReturnValue_1) == 0x000164, "Member 'PropInventory_C_AddLoot::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_Array_Get_Item) == 0x000168, "Member 'PropInventory_C_AddLoot::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_Array_Length_ReturnValue_1) == 0x000178, "Member 'PropInventory_C_AddLoot::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_Less_IntInt_ReturnValue) == 0x00017C, "Member 'PropInventory_C_AddLoot::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x00017D, "Member 'PropInventory_C_AddLoot::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00017E, "Member 'PropInventory_C_AddLoot::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_GetDataTableRowFromName_OutRow) == 0x000180, "Member 'PropInventory_C_AddLoot::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000198, "Member 'PropInventory_C_AddLoot::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_propToObject_ReturnValue) == 0x000199, "Member 'PropInventory_C_AddLoot::CallFunc_propToObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_propToObject_foodData) == 0x00019C, "Member 'PropInventory_C_AddLoot::CallFunc_propToObject_foodData' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_propToObject_object) == 0x0001B8, "Member 'PropInventory_C_AddLoot::CallFunc_propToObject_object' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_propToObject_isFood) == 0x0001C0, "Member 'PropInventory_C_AddLoot::CallFunc_propToObject_isFood' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_propToObject_propData) == 0x0001C8, "Member 'PropInventory_C_AddLoot::CallFunc_propToObject_propData' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_Array_Add_ReturnValue) == 0x000248, "Member 'PropInventory_C_AddLoot::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x000250, "Member 'PropInventory_C_AddLoot::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_IsValidClass_ReturnValue) == 0x000258, "Member 'PropInventory_C_AddLoot::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PropInventory_C_AddLoot, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x000260, "Member 'PropInventory_C_AddLoot::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
 
 // Function propInventory.propInventory_C.getObj
 // 0x01A0 (0x01A0 - 0x0000)
@@ -434,7 +436,7 @@ struct PropInventory_C_GetObj final
 public:
 	int32                                         Param_Index;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5[0xB];                                        // 0x0005(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FCB[0xB];                                     // 0x0005(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           Output;                                            // 0x0010(0x00C0)(Parm, OutParm, HasGetValueTypeHash)
 	struct FStruct_save                           R;                                                 // 0x00D0(0x00C0)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

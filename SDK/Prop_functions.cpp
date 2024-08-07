@@ -65,20 +65,6 @@ void AProp_C::TakenByPlayer__DelegateSignature(class AProp_C* Prop)
 }
 
 
-// Function prop.prop_C.awoken__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void AProp_C::Awoken__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_C", "awoken__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop.prop_C.ExecuteUbergraph_prop
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -96,20 +82,6 @@ void AProp_C::ExecuteUbergraph_prop(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop.prop_C.awake
-// (BlueprintCallable, BlueprintEvent)
-
-void AProp_C::Awake()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_C", "awake");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -158,9 +130,10 @@ void AProp_C::ExtinguishFire()
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action)
+void AProp_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -171,37 +144,10 @@ void AProp_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitRe
 
 	Parms.Player = Player;
 	Parms.Param_Hit = std::move(Param_Hit);
+	Parms.Param_Index = Param_Index;
 	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop.prop_C.enteredTheWater
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void AProp_C::EnteredTheWater()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_C", "enteredTheWater");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop.prop_C.exitTheWater
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void AProp_C::ExitTheWater()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_C", "exitTheWater");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -311,26 +257,6 @@ void AProp_C::SetIgnoreSave(bool Ignore)
 }
 
 
-// Function prop.prop_C.impactSquishCPP
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPrimitiveComponent*              Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_C::ImpactSquishCPP(class UPrimitiveComponent* Component)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_C", "impactSquishCPP");
-
-	Params::Prop_C_ImpactSquishCPP Parms{};
-
-	Parms.Component = Component;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function prop.prop_C.addDamage
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -428,7 +354,7 @@ void AProp_C::GamemodeBeginPlay()
 // Function prop.prop_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AProp_C::SettingsApplied(const struct FStruct_settings& Settings)
 {
@@ -440,66 +366,6 @@ void AProp_C::SettingsApplied(const struct FStruct_settings& Settings)
 	Params::Prop_C_SettingsApplied Parms{};
 
 	Parms.Settings = std::move(Settings);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop.prop_C.playerR
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_C::PlayerR(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_C", "playerR");
-
-	Params::Prop_C_PlayerR Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop.prop_C.playerHold
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_C::PlayerHold(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_C", "playerHold");
-
-	Params::Prop_C_PlayerHold Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop.prop_C.playerUnequip
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_C::PlayerUnequip(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_C", "playerUnequip");
-
-	Params::Prop_C_PlayerUnequip Parms{};
-
-	Parms.Player = Player;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -524,9 +390,8 @@ void AProp_C::UpdateStrAgl()
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, float Damage)
+void AProp_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit)
 {
 	static class UFunction* Func = nullptr;
 
@@ -537,7 +402,6 @@ void AProp_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResul
 
 	Parms.Player = Player;
 	Parms.Param_Hit = std::move(Param_Hit);
-	Parms.Damage = Damage;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -664,30 +528,6 @@ void AProp_C::DriveDetached()
 		Func = Class->GetFunction("prop_C", "driveDetached");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop.prop_C.texturePickerApply
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_C", "texturePickerApply");
-
-	Params::Prop_C_TexturePickerApply Parms{};
-
-	Parms.Picker = Picker;
-	Parms.Texture = Texture;
-	Parms.Param_Index = Param_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -846,62 +686,6 @@ void AProp_C::SignalDeleted()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("prop_C", "signalDeleted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop.prop_C.hookTension
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AHook_C*                          Hook                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_C::HookTension(class AHook_C* Hook)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_C", "hookTension");
-
-	Params::Prop_C_HookTension Parms{};
-
-	Parms.Hook = Hook;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop.prop_C.cleanSponge
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Clean                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_C::CleanSponge(float Clean, class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_C", "cleanSponge");
-
-	Params::Prop_C_CleanSponge Parms{};
-
-	Parms.Clean = Clean;
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop.prop_C.crafted
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AProp_C::Crafted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_C", "crafted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1311,23 +1095,15 @@ void AProp_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
 
 // Function prop.prop_C.receivedPhyiscsDamage
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hot                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void AProp_C::ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot)
+void AProp_C::ReceivedPhyiscsDamage()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("prop_C", "receivedPhyiscsDamage");
 
-	Params::Prop_C_ReceivedPhyiscsDamage Parms{};
-
-	Parms.Damage = Damage;
-	Parms.Hot = std::move(Hot);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -1563,6 +1339,54 @@ void AProp_C::ImpactDamage(float Damage, const struct FHitResult& Param_Hit, cla
 }
 
 
+// Function prop.prop_C.impactSquishCPP
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPrimitiveComponent*              Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_C::ImpactSquishCPP(class UPrimitiveComponent* Component)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_C", "impactSquishCPP");
+
+	Params::Prop_C_ImpactSquishCPP Parms{};
+
+	Parms.Component = Component;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop.prop_C.exitTheWater
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void AProp_C::ExitTheWater()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_C", "exitTheWater");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function prop.prop_C.enteredTheWater
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void AProp_C::EnteredTheWater()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_C", "enteredTheWater");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function prop.prop_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
@@ -1726,27 +1550,6 @@ void AProp_C::SkipPreDelete(bool* Skip)
 }
 
 
-// Function prop.prop_C.gatherDataFromKey
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AProp_C::GatherDataFromKey(bool* Gather)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_C", "gatherDataFromKey");
-
-	Params::Prop_C_GatherDataFromKey Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Gather != nullptr)
-		*Gather = Parms.Gather;
-}
-
-
 // Function prop.prop_C.lookAt
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1755,9 +1558,8 @@ void AProp_C::GatherDataFromKey(bool* Gather)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
+void AProp_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1779,9 +1581,6 @@ void AProp_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
 }
 
 
@@ -1893,30 +1692,6 @@ void AProp_C::CanBePutInContainer(bool* Return)
 }
 
 
-// Function prop.prop_C.landedOn
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IgnoreFallDamage                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AProp_C::LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_C", "landedOn");
-
-	Params::Prop_C_LandedOn Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (IgnoreFallDamage != nullptr)
-		*IgnoreFallDamage = Parms.IgnoreFallDamage;
-}
-
-
 // Function prop.prop_C.dreamInv
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1944,7 +1719,7 @@ void AProp_C::DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** B
 
 
 // Function prop.prop_C.GetKey
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FString                           Param_Key                                              (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 
@@ -2084,9 +1859,8 @@ void AProp_C::SetPath(const TArray<struct FVector>& Path, bool* Return)
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
+void AProp_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2109,9 +1883,6 @@ void AProp_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComp
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
 }
 
 
@@ -2157,27 +1928,6 @@ void AProp_C::SkipRadial(bool* Skip)
 
 	if (Skip != nullptr)
 		*Skip = Parms.Skip;
-}
-
-
-// Function prop.prop_C.getPriceMultiplier
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   PriceMult                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_C::GetPriceMultiplier(float* PriceMult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_C", "getPriceMultiplier");
-
-	Params::Prop_C_GetPriceMultiplier Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (PriceMult != nullptr)
-		*PriceMult = Parms.PriceMult;
 }
 
 }

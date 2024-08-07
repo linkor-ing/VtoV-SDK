@@ -10,29 +10,29 @@
 
 #include "Basic.hpp"
 
+#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "P_kerfus_classes.hpp"
-#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass p_kerfus_col.p_kerfus_col_C
-// 0x0018 (0x04C0 - 0x04A8)
+// 0x0018 (0x0490 - 0x0478)
 class AP_kerfus_col_C : public AP_kerfus_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_P_kerfus_col_C;                     // 0x04A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FVector                                HSV;                                               // 0x04B0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_P_kerfus_col_C;                     // 0x0478(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FVector                                HSV;                                               // 0x0480(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_p_kerfus_col(int32 EntryPoint);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
-	void Upd(bool SkipFace);
 	void ApplyColor(const struct FLinearColor& Color);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
+	void Upd(bool SkipFace);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 
 public:
 	static class UClass* StaticClass()
@@ -45,9 +45,9 @@ public:
 	}
 };
 static_assert(alignof(AP_kerfus_col_C) == 0x000008, "Wrong alignment on AP_kerfus_col_C");
-static_assert(sizeof(AP_kerfus_col_C) == 0x0004C0, "Wrong size on AP_kerfus_col_C");
-static_assert(offsetof(AP_kerfus_col_C, UberGraphFrame_P_kerfus_col_C) == 0x0004A8, "Member 'AP_kerfus_col_C::UberGraphFrame_P_kerfus_col_C' has a wrong offset!");
-static_assert(offsetof(AP_kerfus_col_C, HSV) == 0x0004B0, "Member 'AP_kerfus_col_C::HSV' has a wrong offset!");
+static_assert(sizeof(AP_kerfus_col_C) == 0x000490, "Wrong size on AP_kerfus_col_C");
+static_assert(offsetof(AP_kerfus_col_C, UberGraphFrame_P_kerfus_col_C) == 0x000478, "Member 'AP_kerfus_col_C::UberGraphFrame_P_kerfus_col_C' has a wrong offset!");
+static_assert(offsetof(AP_kerfus_col_C, HSV) == 0x000480, "Member 'AP_kerfus_col_C::HSV' has a wrong offset!");
 
 }
 

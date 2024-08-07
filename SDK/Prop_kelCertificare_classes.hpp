@@ -19,15 +19,15 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_kelCertificare.prop_kelCertificare_C
-// 0x0010 (0x0440 - 0x0430)
+// 0x0010 (0x0430 - 0x0420)
 class AProp_kelCertificare_C final : public AProp_picture_h_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_kelCertificare_C;              // 0x0430(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_kelCertificare_C;              // 0x0420(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_prop_kelCertificare(int32 EntryPoint);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
 
 public:
 	static class UClass* StaticClass()
@@ -40,8 +40,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_kelCertificare_C) == 0x000010, "Wrong alignment on AProp_kelCertificare_C");
-static_assert(sizeof(AProp_kelCertificare_C) == 0x000440, "Wrong size on AProp_kelCertificare_C");
-static_assert(offsetof(AProp_kelCertificare_C, UberGraphFrame_Prop_kelCertificare_C) == 0x000430, "Member 'AProp_kelCertificare_C::UberGraphFrame_Prop_kelCertificare_C' has a wrong offset!");
+static_assert(sizeof(AProp_kelCertificare_C) == 0x000430, "Wrong size on AProp_kelCertificare_C");
+static_assert(offsetof(AProp_kelCertificare_C, UberGraphFrame_Prop_kelCertificare_C) == 0x000420, "Member 'AProp_kelCertificare_C::UberGraphFrame_Prop_kelCertificare_C' has a wrong offset!");
 
 }
 

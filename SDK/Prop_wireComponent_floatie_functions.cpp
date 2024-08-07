@@ -57,20 +57,6 @@ void AProp_wireComponent_floatie_C::WirePass(class AWire_C* Wire)
 }
 
 
-// Function prop_wireComponent_floatie.prop_wireComponent_floatie_C.updFloat
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AProp_wireComponent_floatie_C::UpdFloat()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_wireComponent_floatie_C", "updFloat");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_wireComponent_floatie.prop_wireComponent_floatie_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
@@ -80,6 +66,20 @@ void AProp_wireComponent_floatie_C::ReceiveBeginPlay()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("prop_wireComponent_floatie_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function prop_wireComponent_floatie.prop_wireComponent_floatie_C.updFloat
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AProp_wireComponent_floatie_C::UpdFloat()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_wireComponent_floatie_C", "updFloat");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

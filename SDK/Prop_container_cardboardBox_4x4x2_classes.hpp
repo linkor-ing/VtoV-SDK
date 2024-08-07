@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_container_cardboardBox_4x4x2.prop_container_cardboardBox_4x4x2_C
-// 0x0000 (0x03F8 - 0x03F8)
+// 0x0000 (0x03E8 - 0x03E8)
 class AProp_container_cardboardBox_4x4x2_C final : public AProp_container_cardboardBox_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_container_cardboardBox_4x4x2_C) == 0x000008, "Wrong alignment on AProp_container_cardboardBox_4x4x2_C");
-static_assert(sizeof(AProp_container_cardboardBox_4x4x2_C) == 0x0003F8, "Wrong size on AProp_container_cardboardBox_4x4x2_C");
+static_assert(sizeof(AProp_container_cardboardBox_4x4x2_C) == 0x0003E8, "Wrong size on AProp_container_cardboardBox_4x4x2_C");
 
 }
 

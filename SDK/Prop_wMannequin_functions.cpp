@@ -37,6 +37,40 @@ void AProp_wMannequin_C::ExecuteUbergraph_prop_wMannequin(int32 EntryPoint)
 }
 
 
+// Function prop_wMannequin.prop_wMannequin_C.fireDamage
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_wMannequin_C::FireDamage(float Damage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_wMannequin_C", "fireDamage");
+
+	Params::Prop_wMannequin_C_FireDamage Parms{};
+
+	Parms.Damage = Damage;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_wMannequin.prop_wMannequin_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
+
+void AProp_wMannequin_C::ReceiveDestroyed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_wMannequin_C", "ReceiveDestroyed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function prop_wMannequin.prop_wMannequin_C.upd
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -56,6 +90,20 @@ void AProp_wMannequin_C::Upd(class UNavigationPath* AffectedPath, ENavPathEvent 
 	Parms.PathEvent = PathEvent;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_wMannequin.prop_wMannequin_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_wMannequin_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_wMannequin_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -116,54 +164,6 @@ void AProp_wMannequin_C::OnFail_8AF90BF14EEA5E13962F0D85A5B30679(EPathFollowingR
 	Parms.MovementResult = MovementResult;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop_wMannequin.prop_wMannequin_C.fireDamage
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_wMannequin_C::FireDamage(float Damage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_wMannequin_C", "fireDamage");
-
-	Params::Prop_wMannequin_C_FireDamage Parms{};
-
-	Parms.Damage = Damage;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop_wMannequin.prop_wMannequin_C.ReceiveDestroyed
-// (Event, Public, BlueprintEvent)
-
-void AProp_wMannequin_C::ReceiveDestroyed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_wMannequin_C", "ReceiveDestroyed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop_wMannequin.prop_wMannequin_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_wMannequin_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_wMannequin_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

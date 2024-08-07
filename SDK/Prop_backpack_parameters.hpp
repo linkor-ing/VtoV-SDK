@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Enum_interactionActions_structs.hpp"
-#include "Struct_save_structs.hpp"
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
+#include "Engine_structs.hpp"
+#include "Struct_save_structs.hpp"
 
 
 namespace SDK::Params
@@ -25,36 +25,37 @@ struct Prop_backpack_C_ExecuteUbergraph_prop_backpack final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4273[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit;                                  // 0x0010(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9A[0x2];                                       // 0x009A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorBounds_Origin;                    // 0x00B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorBounds_BoxExtent;                 // 0x00BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C8[0x8];                                       // 0x00C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Event_index;                                // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x009D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4274[0x2];                                     // 0x009E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4275[0x4];                                     // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorBounds_Origin;                    // 0x00B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorBounds_BoxExtent;                 // 0x00C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x00D0(0x0030)(IsPlainOldData, NoDestructor)
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_108[0x8];                                      // 0x0108(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4276[0x8];                                     // 0x0108(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           CallFunc_getData_data;                             // 0x0110(0x00C0)(HasGetValueTypeHash)
 	bool                                          CallFunc_AddEquipment_return;                      // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D1[0xF];                                      // 0x01D1(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4277[0xF];                                     // 0x01D1(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           CallFunc_Array_Get_Item;                           // 0x01E0(0x00C0)(HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x02A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A4[0x4];                                      // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4278[0x4];                                     // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x02A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x02B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B1[0x7];                                      // 0x02B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4279[0x7];                                     // 0x02B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue;          // 0x02B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IInt_save1_C>          K2Node_DynamicCast_AsInt_Save_1;                   // 0x02C0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadData_return;                          // 0x02D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D2[0x6];                                      // 0x02D2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_427A[0x6];                                     // 0x02D2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x02D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_2;        // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -63,14 +64,15 @@ static_assert(sizeof(Prop_backpack_C_ExecuteUbergraph_prop_backpack) == 0x0002F0
 static_assert(offsetof(Prop_backpack_C_ExecuteUbergraph_prop_backpack, EntryPoint) == 0x000000, "Member 'Prop_backpack_C_ExecuteUbergraph_prop_backpack::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Prop_backpack_C_ExecuteUbergraph_prop_backpack, K2Node_Event_player) == 0x000008, "Member 'Prop_backpack_C_ExecuteUbergraph_prop_backpack::K2Node_Event_player' has a wrong offset!");
 static_assert(offsetof(Prop_backpack_C_ExecuteUbergraph_prop_backpack, K2Node_Event_hit) == 0x000010, "Member 'Prop_backpack_C_ExecuteUbergraph_prop_backpack::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_backpack_C_ExecuteUbergraph_prop_backpack, K2Node_Event_action) == 0x000098, "Member 'Prop_backpack_C_ExecuteUbergraph_prop_backpack::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Prop_backpack_C_ExecuteUbergraph_prop_backpack, K2Node_SwitchEnum_CmpSuccess) == 0x000099, "Member 'Prop_backpack_C_ExecuteUbergraph_prop_backpack::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Prop_backpack_C_ExecuteUbergraph_prop_backpack, Temp_int_Array_Index_Variable) == 0x00009C, "Member 'Prop_backpack_C_ExecuteUbergraph_prop_backpack::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_backpack_C_ExecuteUbergraph_prop_backpack, Temp_int_Loop_Counter_Variable) == 0x0000A0, "Member 'Prop_backpack_C_ExecuteUbergraph_prop_backpack::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_backpack_C_ExecuteUbergraph_prop_backpack, CallFunc_Add_IntInt_ReturnValue) == 0x0000A4, "Member 'Prop_backpack_C_ExecuteUbergraph_prop_backpack::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_backpack_C_ExecuteUbergraph_prop_backpack, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x0000A8, "Member 'Prop_backpack_C_ExecuteUbergraph_prop_backpack::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(Prop_backpack_C_ExecuteUbergraph_prop_backpack, CallFunc_GetActorBounds_Origin) == 0x0000B0, "Member 'Prop_backpack_C_ExecuteUbergraph_prop_backpack::CallFunc_GetActorBounds_Origin' has a wrong offset!");
-static_assert(offsetof(Prop_backpack_C_ExecuteUbergraph_prop_backpack, CallFunc_GetActorBounds_BoxExtent) == 0x0000BC, "Member 'Prop_backpack_C_ExecuteUbergraph_prop_backpack::CallFunc_GetActorBounds_BoxExtent' has a wrong offset!");
+static_assert(offsetof(Prop_backpack_C_ExecuteUbergraph_prop_backpack, K2Node_Event_index) == 0x000098, "Member 'Prop_backpack_C_ExecuteUbergraph_prop_backpack::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Prop_backpack_C_ExecuteUbergraph_prop_backpack, K2Node_Event_action) == 0x00009C, "Member 'Prop_backpack_C_ExecuteUbergraph_prop_backpack::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_backpack_C_ExecuteUbergraph_prop_backpack, K2Node_SwitchEnum_CmpSuccess) == 0x00009D, "Member 'Prop_backpack_C_ExecuteUbergraph_prop_backpack::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_backpack_C_ExecuteUbergraph_prop_backpack, Temp_int_Array_Index_Variable) == 0x0000A0, "Member 'Prop_backpack_C_ExecuteUbergraph_prop_backpack::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_backpack_C_ExecuteUbergraph_prop_backpack, Temp_int_Loop_Counter_Variable) == 0x0000A4, "Member 'Prop_backpack_C_ExecuteUbergraph_prop_backpack::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_backpack_C_ExecuteUbergraph_prop_backpack, CallFunc_Add_IntInt_ReturnValue) == 0x0000A8, "Member 'Prop_backpack_C_ExecuteUbergraph_prop_backpack::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_backpack_C_ExecuteUbergraph_prop_backpack, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x0000B0, "Member 'Prop_backpack_C_ExecuteUbergraph_prop_backpack::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(Prop_backpack_C_ExecuteUbergraph_prop_backpack, CallFunc_GetActorBounds_Origin) == 0x0000B8, "Member 'Prop_backpack_C_ExecuteUbergraph_prop_backpack::CallFunc_GetActorBounds_Origin' has a wrong offset!");
+static_assert(offsetof(Prop_backpack_C_ExecuteUbergraph_prop_backpack, CallFunc_GetActorBounds_BoxExtent) == 0x0000C4, "Member 'Prop_backpack_C_ExecuteUbergraph_prop_backpack::CallFunc_GetActorBounds_BoxExtent' has a wrong offset!");
 static_assert(offsetof(Prop_backpack_C_ExecuteUbergraph_prop_backpack, CallFunc_MakeTransform_ReturnValue) == 0x0000D0, "Member 'Prop_backpack_C_ExecuteUbergraph_prop_backpack::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_backpack_C_ExecuteUbergraph_prop_backpack, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x000100, "Member 'Prop_backpack_C_ExecuteUbergraph_prop_backpack::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
 static_assert(offsetof(Prop_backpack_C_ExecuteUbergraph_prop_backpack, CallFunc_getData_data) == 0x000110, "Member 'Prop_backpack_C_ExecuteUbergraph_prop_backpack::CallFunc_getData_data' has a wrong offset!");
@@ -93,13 +95,15 @@ struct Prop_backpack_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_backpack_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_backpack_C_ActionOptionIndex");
 static_assert(sizeof(Prop_backpack_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_backpack_C_ActionOptionIndex");
 static_assert(offsetof(Prop_backpack_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_backpack_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(Prop_backpack_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_backpack_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_backpack_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_backpack_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(Prop_backpack_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_backpack_C_ActionOptionIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(Prop_backpack_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_backpack_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function prop_backpack.prop_backpack_C.playerHandUse_RMB
 // 0x0008 (0x0008 - 0x0000)
@@ -128,7 +132,7 @@ static_assert(offsetof(Prop_backpack_C_LoadData, Return) == 0x0000C0, "Member 'P
 static_assert(offsetof(Prop_backpack_C_LoadData, CallFunc_loadData_return) == 0x0000C1, "Member 'Prop_backpack_C_LoadData::CallFunc_loadData_return' has a wrong offset!");
 
 // Function prop_backpack.prop_backpack_C.getActionOptions
-// 0x0060 (0x0060 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct Prop_backpack_C_GetActionOptions final
 {
 public:
@@ -138,20 +142,17 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
 };
 static_assert(alignof(Prop_backpack_C_GetActionOptions) == 0x000008, "Wrong alignment on Prop_backpack_C_GetActionOptions");
-static_assert(sizeof(Prop_backpack_C_GetActionOptions) == 0x000060, "Wrong size on Prop_backpack_C_GetActionOptions");
+static_assert(sizeof(Prop_backpack_C_GetActionOptions) == 0x000058, "Wrong size on Prop_backpack_C_GetActionOptions");
 static_assert(offsetof(Prop_backpack_C_GetActionOptions, Player) == 0x000000, "Member 'Prop_backpack_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Prop_backpack_C_GetActionOptions, Component) == 0x000008, "Member 'Prop_backpack_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Prop_backpack_C_GetActionOptions, Actor) == 0x000010, "Member 'Prop_backpack_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Prop_backpack_C_GetActionOptions, Options) == 0x000018, "Member 'Prop_backpack_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Prop_backpack_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Prop_backpack_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Prop_backpack_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Prop_backpack_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Prop_backpack_C_GetActionOptions, Number) == 0x000048, "Member 'Prop_backpack_C_GetActionOptions::Number' has a wrong offset!");
-static_assert(offsetof(Prop_backpack_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Prop_backpack_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Prop_backpack_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'Prop_backpack_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 }
 

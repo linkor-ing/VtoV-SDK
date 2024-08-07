@@ -37,26 +37,6 @@ void ACustomPlank_C::ExecuteUbergraph_customPlank(int32 EntryPoint)
 }
 
 
-// Function customPlank.customPlank_C.Cut
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FHitResult                       Param_Hit                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-
-void ACustomPlank_C::Cut(const struct FHitResult& Param_Hit)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("customPlank_C", "Cut");
-
-	Params::CustomPlank_C_Cut Parms{};
-
-	Parms.Param_Hit = std::move(Param_Hit);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function customPlank.customPlank_C.addDamage
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -85,17 +65,23 @@ void ACustomPlank_C::AddDamage(class AActor* Actor, float Damage, const struct F
 }
 
 
-// Function customPlank.customPlank_C.Init
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function customPlank.customPlank_C.Cut
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FHitResult                       Param_Hit                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void ACustomPlank_C::Init()
+void ACustomPlank_C::Cut(const struct FHitResult& Param_Hit)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("customPlank_C", "Init");
+		Func = Class->GetFunction("customPlank_C", "Cut");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::CustomPlank_C_Cut Parms{};
+
+	Parms.Param_Hit = std::move(Param_Hit);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -194,9 +180,8 @@ void ACustomPlank_C::NoRespawn(bool Param_NoRespawn, bool* Return)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ACustomPlank_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
+void ACustomPlank_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
 {
 	static class UFunction* Func = nullptr;
 
@@ -218,9 +203,6 @@ void ACustomPlank_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
 }
 
 
@@ -242,6 +224,20 @@ void ACustomPlank_C::IsButtonUsed(bool* Failed)
 
 	if (Failed != nullptr)
 		*Failed = Parms.Failed;
+}
+
+
+// Function customPlank.customPlank_C.Init
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ACustomPlank_C::Init()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("customPlank_C", "Init");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

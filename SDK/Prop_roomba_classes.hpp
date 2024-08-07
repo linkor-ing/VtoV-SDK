@@ -10,57 +10,57 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
-#include "Prop_container_classes.hpp"
 #include "Enum_interactionActions_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "Prop_container_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass prop_roomba.prop_roomba_C
-// 0x00B8 (0x04B0 - 0x03F8)
+// 0x00B8 (0x04A0 - 0x03E8)
 class AProp_roomba_C : public AProp_container_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_roomba_C;                      // 0x03F8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UAudioComponent*                        Roomba_on;                                         // 0x0400(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 RoombaBrush;                                       // 0x0408(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        Roomba_off;                                        // 0x0410(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        Roomba_loop;                                       // 0x0418(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPhysicsConstraintComponent*            Two;                                               // 0x0420(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPhysicsConstraintComponent*            One;                                               // 0x0428(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPhysicsConstraintComponent*            Three;                                             // 0x0430(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   S_3;                                               // 0x0438(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   S_2;                                               // 0x0440(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   S_1;                                               // 0x0448(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Dir;                                               // 0x0450(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         A_a_FAEF67734F2C96D682CE99AD2092AF66;              // 0x0458(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            A__Direction_FAEF67734F2C96D682CE99AD2092AF66;     // 0x045C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45D[0x3];                                      // 0x045D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     A;                                                 // 0x0460(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Rotat;                                             // 0x0468(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_469[0x3];                                      // 0x0469(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Rot;                                               // 0x046C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UPrimitiveComponent*>            Wheels;                                            // 0x0470(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	bool                                          Active;                                            // 0x0480(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Move;                                              // 0x0481(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_482[0x6];                                      // 0x0482(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class URoombaBrush_Skeleton_AnimBlueprint_C*  brushAnim;                                         // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Alpha;                                             // 0x0490(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          RotDir;                                            // 0x0494(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_495[0x3];                                      // 0x0495(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         V;                                                 // 0x0498(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Mov;                                               // 0x049C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_49D[0x3];                                      // 0x049D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                Loc;                                               // 0x04A0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Proc;                                              // 0x04AC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Sw;                                                // 0x04AD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_roomba_C;                      // 0x03E8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UAudioComponent*                        Roomba_on;                                         // 0x03F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 RoombaBrush;                                       // 0x03F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        Roomba_off;                                        // 0x0400(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        Roomba_loop;                                       // 0x0408(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPhysicsConstraintComponent*            Two;                                               // 0x0410(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPhysicsConstraintComponent*            One;                                               // 0x0418(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPhysicsConstraintComponent*            Three;                                             // 0x0420(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   S_3;                                               // 0x0428(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   S_2;                                               // 0x0430(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   S_1;                                               // 0x0438(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Dir;                                               // 0x0440(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         A_a_FAEF67734F2C96D682CE99AD2092AF66;              // 0x0448(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            A__Direction_FAEF67734F2C96D682CE99AD2092AF66;     // 0x044C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_427B[0x3];                                     // 0x044D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     A;                                                 // 0x0450(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Rotat;                                             // 0x0458(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_427C[0x3];                                     // 0x0459(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Rot;                                               // 0x045C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UPrimitiveComponent*>            Wheels;                                            // 0x0460(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	bool                                          Active;                                            // 0x0470(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Move;                                              // 0x0471(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_427D[0x6];                                     // 0x0472(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class URoombaBrush_Skeleton_AnimBlueprint_C*  brushAnim;                                         // 0x0478(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Alpha;                                             // 0x0480(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          RotDir;                                            // 0x0484(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_427E[0x3];                                     // 0x0485(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         V;                                                 // 0x0488(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Mov;                                               // 0x048C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_427F[0x3];                                     // 0x048D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                Loc;                                               // 0x0490(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Proc;                                              // 0x049C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Sw;                                                // 0x049D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_prop_roomba(int32 EntryPoint);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
 	void Use();
 	void Sound(bool Play);
 	void Activate();
@@ -70,10 +70,10 @@ public:
 	void A__FinishedFunc();
 	void Upd();
 	void ReceiveBeginPlay();
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
 	void GetData(struct FStruct_save* Data);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 
 public:
 	static class UClass* StaticClass()
@@ -86,35 +86,35 @@ public:
 	}
 };
 static_assert(alignof(AProp_roomba_C) == 0x000008, "Wrong alignment on AProp_roomba_C");
-static_assert(sizeof(AProp_roomba_C) == 0x0004B0, "Wrong size on AProp_roomba_C");
-static_assert(offsetof(AProp_roomba_C, UberGraphFrame_Prop_roomba_C) == 0x0003F8, "Member 'AProp_roomba_C::UberGraphFrame_Prop_roomba_C' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, Roomba_on) == 0x000400, "Member 'AProp_roomba_C::Roomba_on' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, RoombaBrush) == 0x000408, "Member 'AProp_roomba_C::RoombaBrush' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, Roomba_off) == 0x000410, "Member 'AProp_roomba_C::Roomba_off' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, Roomba_loop) == 0x000418, "Member 'AProp_roomba_C::Roomba_loop' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, Two) == 0x000420, "Member 'AProp_roomba_C::Two' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, One) == 0x000428, "Member 'AProp_roomba_C::One' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, Three) == 0x000430, "Member 'AProp_roomba_C::Three' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, S_3) == 0x000438, "Member 'AProp_roomba_C::S_3' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, S_2) == 0x000440, "Member 'AProp_roomba_C::S_2' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, S_1) == 0x000448, "Member 'AProp_roomba_C::S_1' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, Dir) == 0x000450, "Member 'AProp_roomba_C::Dir' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, A_a_FAEF67734F2C96D682CE99AD2092AF66) == 0x000458, "Member 'AProp_roomba_C::A_a_FAEF67734F2C96D682CE99AD2092AF66' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, A__Direction_FAEF67734F2C96D682CE99AD2092AF66) == 0x00045C, "Member 'AProp_roomba_C::A__Direction_FAEF67734F2C96D682CE99AD2092AF66' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, A) == 0x000460, "Member 'AProp_roomba_C::A' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, Rotat) == 0x000468, "Member 'AProp_roomba_C::Rotat' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, Rot) == 0x00046C, "Member 'AProp_roomba_C::Rot' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, Wheels) == 0x000470, "Member 'AProp_roomba_C::Wheels' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, Active) == 0x000480, "Member 'AProp_roomba_C::Active' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, Move) == 0x000481, "Member 'AProp_roomba_C::Move' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, brushAnim) == 0x000488, "Member 'AProp_roomba_C::brushAnim' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, Alpha) == 0x000490, "Member 'AProp_roomba_C::Alpha' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, RotDir) == 0x000494, "Member 'AProp_roomba_C::RotDir' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, V) == 0x000498, "Member 'AProp_roomba_C::V' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, Mov) == 0x00049C, "Member 'AProp_roomba_C::Mov' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, Loc) == 0x0004A0, "Member 'AProp_roomba_C::Loc' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, Proc) == 0x0004AC, "Member 'AProp_roomba_C::Proc' has a wrong offset!");
-static_assert(offsetof(AProp_roomba_C, Sw) == 0x0004AD, "Member 'AProp_roomba_C::Sw' has a wrong offset!");
+static_assert(sizeof(AProp_roomba_C) == 0x0004A0, "Wrong size on AProp_roomba_C");
+static_assert(offsetof(AProp_roomba_C, UberGraphFrame_Prop_roomba_C) == 0x0003E8, "Member 'AProp_roomba_C::UberGraphFrame_Prop_roomba_C' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, Roomba_on) == 0x0003F0, "Member 'AProp_roomba_C::Roomba_on' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, RoombaBrush) == 0x0003F8, "Member 'AProp_roomba_C::RoombaBrush' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, Roomba_off) == 0x000400, "Member 'AProp_roomba_C::Roomba_off' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, Roomba_loop) == 0x000408, "Member 'AProp_roomba_C::Roomba_loop' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, Two) == 0x000410, "Member 'AProp_roomba_C::Two' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, One) == 0x000418, "Member 'AProp_roomba_C::One' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, Three) == 0x000420, "Member 'AProp_roomba_C::Three' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, S_3) == 0x000428, "Member 'AProp_roomba_C::S_3' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, S_2) == 0x000430, "Member 'AProp_roomba_C::S_2' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, S_1) == 0x000438, "Member 'AProp_roomba_C::S_1' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, Dir) == 0x000440, "Member 'AProp_roomba_C::Dir' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, A_a_FAEF67734F2C96D682CE99AD2092AF66) == 0x000448, "Member 'AProp_roomba_C::A_a_FAEF67734F2C96D682CE99AD2092AF66' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, A__Direction_FAEF67734F2C96D682CE99AD2092AF66) == 0x00044C, "Member 'AProp_roomba_C::A__Direction_FAEF67734F2C96D682CE99AD2092AF66' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, A) == 0x000450, "Member 'AProp_roomba_C::A' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, Rotat) == 0x000458, "Member 'AProp_roomba_C::Rotat' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, Rot) == 0x00045C, "Member 'AProp_roomba_C::Rot' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, Wheels) == 0x000460, "Member 'AProp_roomba_C::Wheels' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, Active) == 0x000470, "Member 'AProp_roomba_C::Active' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, Move) == 0x000471, "Member 'AProp_roomba_C::Move' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, brushAnim) == 0x000478, "Member 'AProp_roomba_C::brushAnim' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, Alpha) == 0x000480, "Member 'AProp_roomba_C::Alpha' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, RotDir) == 0x000484, "Member 'AProp_roomba_C::RotDir' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, V) == 0x000488, "Member 'AProp_roomba_C::V' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, Mov) == 0x00048C, "Member 'AProp_roomba_C::Mov' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, Loc) == 0x000490, "Member 'AProp_roomba_C::Loc' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, Proc) == 0x00049C, "Member 'AProp_roomba_C::Proc' has a wrong offset!");
+static_assert(offsetof(AProp_roomba_C, Sw) == 0x00049D, "Member 'AProp_roomba_C::Sw' has a wrong offset!");
 
 }
 

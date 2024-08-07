@@ -10,14 +10,13 @@
 
 #include "Basic.hpp"
 
+#include "Enum_action_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "Enum_action_structs.hpp"
 #include "Enum_signalResponse_structs.hpp"
-#include "Enum_emailChars_structs.hpp"
-#include "Enum_difficulty_structs.hpp"
 #include "Enum_notifyType_structs.hpp"
-#include "Enum_controllerType_structs.hpp"
+#include "Enum_difficulty_structs.hpp"
+#include "Enum_emailChars_structs.hpp"
 
 
 namespace SDK
@@ -28,12 +27,12 @@ namespace SDK
 class ULib_C final : public UBlueprintFunctionLibrary
 {
 public:
-	static void PhysSound(class UPhysicalMaterial* PhysMat, class UObject* __WorldContext, bool* Return, struct FStruct_physSound* Data);
+	static void PhysSound(class UPhysicalMaterial* PhysMat, class UObject* __WorldContext, struct FStruct_physSound* Return);
 	static void GetMainGamemode(class UObject* __WorldContext, class AMainGamemode_C** AsMain_Gamemode);
 	static void GetMainPlayer(class UObject* __WorldContext, class AMainPlayer_C** AsMain_Player);
 	static void SetSettings_d(class UObject* __WorldContext);
 	static void Fourdir(const struct FVector& In, class UObject* __WorldContext, struct FVector* Return);
-	static void GetSatelliteName(int32 Param_Index, class UObject* __WorldContext, class FString* TechName, class FText* Normal, class FText* Classic);
+	static void GetSatelliteName(int32 Param_Index, class UObject* __WorldContext, class FText* Return);
 	static void RandObject_all(class UObject* __WorldContext, class FName* Return);
 	static void GetNRT(const class USoundBase*& Key, class UObject* __WorldContext, class UConstantQNRT** NewParam);
 	static void SetButtonOffset(class USceneComponent* Comp, float Z, class UObject* __WorldContext);
@@ -57,8 +56,8 @@ public:
 	static void IsDreaming(class UObject* __WorldContext, bool* Dreaming);
 	static void SavToObj(const struct FStruct_save& Sav, class UObject* __WorldContext, struct FStruct_object* Obj);
 	static void ObjToSav(const struct FStruct_object& Sav, class UObject* __WorldContext, struct FStruct_save* Obj);
-	static void ProgressAchievement(const class FName Achievement, bool Popup, bool Autosave, class UObject* __WorldContext);
-	static void ProgressAdvancement(const class FName Advancement, bool DisablePopup, class UObject* __WorldContext, bool* Finished, class FName* Param_Name);
+	static void ProgressAchievement(const class FName Achievement, bool Popup, class UObject* __WorldContext);
+	static void ProgressAdvancement(const class FName Advancement, class UObject* __WorldContext, bool* Finished, class FName* Param_Name);
 	static void NameLocText(Enum_action Action, class UObject* __WorldContext, class FString* Strng);
 	static bool buttonLoc(class FName Tag, class UObject* __WorldContext, class FString* Return);
 	static bool HasAchievement(class FName Achievement, class UObject* __WorldContext);
@@ -72,7 +71,7 @@ public:
 	static void SetEvent(bool IsEventActive, class UObject* __WorldContext);
 	static void GetEvent(class UObject* __WorldContext, bool* IsEventActive);
 	static void Get_Key_Bind(const struct FKey& Key, class UObject* __WorldContext, struct FKey* bind);
-	static void GetBoyoancy(class UPhysicalMaterial* Phys, class UPrimitiveComponent* Component, class UObject* __WorldContext, float* Value);
+	static void GetBoyoancy(class UPhysicalMaterial* Phys, class UObject* __WorldContext, float* Value);
 	static void PropDescription(const class FString& Prop, bool AddName, class UObject* __WorldContext, class FText* Desc, class FText* Param_Name);
 	static void PropToIcon(const class FString& ItemToFind, class UObject* __WorldContext, class UTexture2D** Output);
 	static void PropToDynamic(const struct FStruct_save& Data, class UObject* __WorldContext, struct FStruct_propDynamic* Equip);
@@ -90,10 +89,10 @@ public:
 	static void UpdateCollision(class UPrimitiveComponent* Component, class UObject* __WorldContext);
 	static void AchievementObjects(const struct FStruct_prop& Struct_prop, class UObject* __WorldContext, bool* Hidden);
 	static void IsMature(class UObject* __WorldContext, bool* Mature);
-	static void GetAssetFolder(bool SkipCreation, class UObject* __WorldContext, class FString* Path);
-	static void NameToSignal(class FName Param_Name, class UObject* __WorldContext, struct FStruct_signal_data1* Data);
-	static void SignalToDynamic(const struct FStruct_signal_data1& Data, class UObject* __WorldContext, struct FStruct_signalDataDynamic* Dynamic);
-	static void DynamicToSignal(const struct FStruct_signalDataDynamic& Dynamic, class UObject* __WorldContext, struct FStruct_signal_data1* Data);
+	static void UserAssetFolder(class UObject* __WorldContext, class FString* Path);
+	static void NameToSignal(class FName Param_Name, class UObject* __WorldContext, struct FStruct_signal_data2* Data);
+	static void SignalToDynamic(const struct FStruct_signal_data2& Data, class UObject* __WorldContext, struct FStruct_signalDataDynamic* Dynamic);
+	static void DynamicToSignal(const struct FStruct_signalDataDynamic& Dynamic, class UObject* __WorldContext, struct FStruct_signal_data2* Data);
 	static void IsSignalUnique(class FName Param_Name, class UObject* __WorldContext, bool* Unique);
 	static void RadioStations(class UObject* __WorldContext, TArray<class FString>* StringArray);
 	static void IsGeneratorsFine(class UObject* __WorldContext, bool* Fine);
@@ -106,7 +105,7 @@ public:
 	static void AddGloss(class FName Param_Name, int32 Level, class UObject* __WorldContext);
 	static void GenerateAssetDirectory(class UObject* __WorldContext, class FString* Path);
 	static void Get_Volume(const class UStaticMesh* Mesh, const class FString& Param_Name, class UObject* __WorldContext, float* Volume, float* Mass);
-	static void Step(class ACharacter* Character, float Z_offset, class AActor* CallActor, float Volume, float Pitch, float SpeedVolume, class UObject* __WorldContext, struct FHitResult* OutHit);
+	static void Step(class ACharacter* Character, float Z_offset, class AActor* CallActor, class UObject* __WorldContext);
 	static void GetAttachActorRoot(class AActor* Actor, class UObject* __WorldContext, class AActor** RootActor);
 	static void IsFunny(class UObject* __WorldContext, bool* Param_IsFunny);
 	static void AriralRep(float Rep, class UObject* __WorldContext);
@@ -115,15 +114,10 @@ public:
 	static void CustomWall_getBricks(const struct FVector& ActorScale, int32 Shape, class UObject* __WorldContext, float* ToCeil);
 	static void CustomWall_shape(int32 Type, class UObject* __WorldContext, class UStaticMesh** Shape);
 	static void CustomWall_material(int32 Type, class UObject* __WorldContext, class UMaterialInterface** Material, class FName* Drop, class FName* Requirement);
-	static void SellObject(class FName Object, bool OnlyShop, class AActor* ObjectToSell, class UObject* __WorldContext, int32* Points, bool* Sold);
+	static void SellObject(class FName Object, bool OnlyShop, class UObject* __WorldContext, int32* Points, bool* Sold);
 	static void SafeAsProp(class AActor* Actor, class UObject* __WorldContext, bool* IsValid, class AProp_C** Prop);
 	static void DetecCyr(const class FText& Text, class UObject* __WorldContext, bool* Return, class FString* Str1);
 	static void Lag(class UObject* __WorldContext);
-	static void PropToName(const class FString& ItemToFind, class UObject* __WorldContext, class FText* Output);
-	static void GetMoonPhase(class UObject* __WorldContext, float* Phase);
-	static void AddEffect(class FName Effect, float Strength, float Time, bool IncrementStrength, bool IncrementTime, class UObject* __WorldContext);
-	static void GenerateKey(class FString& KeyIn, const class AActor*& Object, class UObject* __WorldContext, class FString* KeyOut);
-	static void DebugSound(class UObject* __WorldContext);
 
 public:
 	static class UClass* StaticClass()

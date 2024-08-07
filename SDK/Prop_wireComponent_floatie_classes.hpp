@@ -18,19 +18,19 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_wireComponent_floatie.prop_wireComponent_floatie_C
-// 0x0010 (0x0390 - 0x0380)
+// 0x0010 (0x0380 - 0x0370)
 class AProp_wireComponent_floatie_C final : public AProp_wireComponent_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_wireComponent_floatie_C;       // 0x0380(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	float                                         DefaultFloat;                                      // 0x0388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Active;                                            // 0x038C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_wireComponent_floatie_C;       // 0x0370(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	float                                         DefaultFloat;                                      // 0x0378(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Active;                                            // 0x037C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_prop_wireComponent_floatie(int32 EntryPoint);
 	void WirePass(class AWire_C* Wire);
-	void UpdFloat();
 	void ReceiveBeginPlay();
+	void UpdFloat();
 	void LeaveWater(class AWaterVolume_C* Water);
 	void EnterWater(class AWaterVolume_C* Water);
 
@@ -45,10 +45,10 @@ public:
 	}
 };
 static_assert(alignof(AProp_wireComponent_floatie_C) == 0x000008, "Wrong alignment on AProp_wireComponent_floatie_C");
-static_assert(sizeof(AProp_wireComponent_floatie_C) == 0x000390, "Wrong size on AProp_wireComponent_floatie_C");
-static_assert(offsetof(AProp_wireComponent_floatie_C, UberGraphFrame_Prop_wireComponent_floatie_C) == 0x000380, "Member 'AProp_wireComponent_floatie_C::UberGraphFrame_Prop_wireComponent_floatie_C' has a wrong offset!");
-static_assert(offsetof(AProp_wireComponent_floatie_C, DefaultFloat) == 0x000388, "Member 'AProp_wireComponent_floatie_C::DefaultFloat' has a wrong offset!");
-static_assert(offsetof(AProp_wireComponent_floatie_C, Active) == 0x00038C, "Member 'AProp_wireComponent_floatie_C::Active' has a wrong offset!");
+static_assert(sizeof(AProp_wireComponent_floatie_C) == 0x000380, "Wrong size on AProp_wireComponent_floatie_C");
+static_assert(offsetof(AProp_wireComponent_floatie_C, UberGraphFrame_Prop_wireComponent_floatie_C) == 0x000370, "Member 'AProp_wireComponent_floatie_C::UberGraphFrame_Prop_wireComponent_floatie_C' has a wrong offset!");
+static_assert(offsetof(AProp_wireComponent_floatie_C, DefaultFloat) == 0x000378, "Member 'AProp_wireComponent_floatie_C::DefaultFloat' has a wrong offset!");
+static_assert(offsetof(AProp_wireComponent_floatie_C, Active) == 0x00037C, "Member 'AProp_wireComponent_floatie_C::Active' has a wrong offset!");
 
 }
 

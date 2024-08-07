@@ -10,20 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "Struct_task_structs.hpp"
+#include "Enum_objectType_structs.hpp"
 #include "Struct_achievement_structs.hpp"
-#include "Struct_mObject_structs.hpp"
-#include "Engine_classes.hpp"
-#include "Struct_signal_data1_structs.hpp"
+#include "Struct_signal_data2_structs.hpp"
 #include "Struct_upgrades_structs.hpp"
+#include "Struct_mObject_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Struct_triggerSave_structs.hpp"
 #include "Struct_email_structs.hpp"
-#include "Struct_storeOrder1_structs.hpp"
+#include "Struct_storeOrder_structs.hpp"
+#include "Struct_task_structs.hpp"
+#include "Engine_classes.hpp"
 #include "Struct_save_structs.hpp"
 #include "Struct_equipment_structs.hpp"
 #include "Struct_byteImage_structs.hpp"
-#include "Struct_triggerSave_structs.hpp"
-#include "Enum_objectType_structs.hpp"
 #include "Struct_loan_structs.hpp"
 #include "Struct_signal_spawn_structs.hpp"
 #include "Struct_signalDataDynamic_structs.hpp"
@@ -33,28 +33,28 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass saveSlot.saveSlot_C
-// 0x0838 (0x0860 - 0x0028)
+// 0x0828 (0x0850 - 0x0028)
 class USaveSlot_C final : public USaveGame
 {
 public:
-	TArray<struct FStruct_signal_data1>           SavedSignals_obs;                                  // 0x0028(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, Deprecated)
+	TArray<struct FStruct_signal_data2>           SavedSignals_obs;                                  // 0x0028(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, Deprecated)
 	TArray<class FName>                           Specials;                                          // 0x0038(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FStruct_upgrades                       Upgrades;                                          // 0x0048(0x0068)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Points;                                            // 0x00B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_401D[0x4];                                     // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           CatchedSignals;                                    // 0x00B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<struct FStruct_signal_data1>           SavedSignals_comp_obs;                             // 0x00C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, Deprecated)
+	TArray<struct FStruct_signal_data2>           SavedSignals_comp_obs;                             // 0x00C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, Deprecated)
 	struct FIntVector                             Savedtime;                                         // 0x00D8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_401E[0x4];                                     // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           PassEvents;                                        // 0x00E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class AMainGamemode_C*                        GameMode;                                          // 0x00F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TotalTime;                                         // 0x0100(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Food;                                              // 0x0104(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Sleep;                                             // 0x0108(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_401F[0x4];                                     // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           AllEvents;                                         // 0x0110(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	float                                         battery;                                           // 0x0120(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_124[0x4];                                      // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4020[0x4];                                     // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           ForceObjects;                                      // 0x0128(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FStruct_email>                  Emails;                                            // 0x0138(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FStruct_task                           Task;                                              // 0x0148(0x0070)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
@@ -64,9 +64,9 @@ public:
 	TArray<bool>                                  AdvancementsCompleted;                             // 0x01E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FStruct_achievement>            Advancements;                                      // 0x01F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	float                                         CarFuel;                                           // 0x0208(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_20C[0x4];                                      // 0x020C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_storeOrder1                    DroneOrder;                                        // 0x0210(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	uint8                                         Pad_228[0x8];                                      // 0x0228(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4021[0x4];                                     // 0x020C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_storeOrder                     DroneOrder;                                        // 0x0210(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	uint8                                         Pad_4022[0x8];                                     // 0x0228(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             PlayerTransform;                                   // 0x0230(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	struct FTransform                             Def;                                               // 0x0260(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	struct FTransform                             CarTransform;                                      // 0x0290(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -77,10 +77,10 @@ public:
 	TArray<struct FStruct_save>                   ObjectsData;                                       // 0x0320(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FStruct_save                           Drone;                                             // 0x0330(0x00C0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	float                                         CarHealth;                                         // 0x03F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F4[0x4];                                      // 0x03F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4023[0x4];                                     // 0x03F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Version;                                           // 0x03F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	float                                         Health;                                            // 0x0408(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_40C[0x4];                                      // 0x040C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4024[0x4];                                     // 0x040C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         SoldSignals;                                       // 0x0410(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FStruct_equipment>              Equipment;                                         // 0x0420(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FStruct_equipment>              Hold;                                              // 0x0430(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -88,12 +88,12 @@ public:
 	struct FDateTime                              LastDate;                                          // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FDateTime                              CreationDate;                                      // 0x0458(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FStruct_byteImage>              Photos;                                            // 0x0460(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<struct FStruct_storeOrder1>            Orders;                                            // 0x0470(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<struct FStruct_storeOrder>             Orders;                                            // 0x0470(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FStruct_triggerSave>            Triggers;                                          // 0x0480(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FStruct_equipment>              Hold_def;                                          // 0x0490(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FStruct_equipment>              Equipment_def;                                     // 0x04A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	float                                         CoffeePower;                                       // 0x04B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B4[0x4];                                      // 0x04B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4025[0x4];                                     // 0x04B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<Enum_objectType, int32>                  ObjectsCount;                                      // 0x04B8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FStruct_loan                           Loan;                                              // 0x0508(0x0020)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	float                                         LoanTime;                                          // 0x0528(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -115,12 +115,12 @@ public:
 	struct FDateTime                              LastPlayed;                                        // 0x0790(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Map;                                               // 0x0798(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsReset;                                           // 0x07A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_7A1[0x7];                                      // 0x07A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4026[0x7];                                     // 0x07A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FStruct_save>                   GrimeData;                                         // 0x07A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FStruct_save>                   TrashPilesData;                                    // 0x07B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FName                                   SubArea;                                           // 0x07C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         ArirReputation;                                    // 0x07D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7D4[0x4];                                      // 0x07D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4027[0x4];                                     // 0x07D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           ArirPranks_mean;                                   // 0x07D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class FName>                           ArirPranks_inconv;                                 // 0x07E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class FName>                           ArirPranks_neutral;                                // 0x07F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -130,19 +130,16 @@ public:
 	float                                         Agility;                                           // 0x082C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 FlashlightBattery;                                 // 0x0830(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          HasFailedWeek;                                     // 0x0838(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_839[0x3];                                      // 0x0839(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4028[0x3];                                     // 0x0839(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ServertimeBest;                                    // 0x083C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Completes;                                         // 0x0840(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         MoonPhase;                                         // 0x0844(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UGameInst_C*                            GameInst;                                          // 0x0848(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         I;                                                 // 0x0850(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void Save();
 	void Settime(const struct FIntVector& NewTime, struct FIntVector* Output_Get, bool* New_min, bool* New_hour, bool* New_day);
 	void SetGamemode(class AMainGamemode_C* Param_GameMode);
 	int32 Conv(const struct FIntVector& IntVector);
-	void PrAdvanc(const class FName& InputPin, bool DisablePopup, bool* Finished, class FName* Param_Name);
+	void PrAdvanc(const class FName& InputPin, bool* Finished, class FName* Param_Name);
 	void Reset_days(int32 Param_Day);
 	void Reset_objects();
 	void Reset_points();
@@ -156,10 +153,6 @@ public:
 	bool SaveToSlot();
 	void Reset_printerObjects();
 	void CleanGrime();
-	void SetGameinst(class UGameInst_C* Param_GameInst);
-	void Regenerate(const class FString& InputName);
-	void Duplicate(const class FString& Param_Name);
-	void SavePlayerOnly();
 
 public:
 	static class UClass* StaticClass()
@@ -172,7 +165,7 @@ public:
 	}
 };
 static_assert(alignof(USaveSlot_C) == 0x000010, "Wrong alignment on USaveSlot_C");
-static_assert(sizeof(USaveSlot_C) == 0x000860, "Wrong size on USaveSlot_C");
+static_assert(sizeof(USaveSlot_C) == 0x000850, "Wrong size on USaveSlot_C");
 static_assert(offsetof(USaveSlot_C, SavedSignals_obs) == 0x000028, "Member 'USaveSlot_C::SavedSignals_obs' has a wrong offset!");
 static_assert(offsetof(USaveSlot_C, Specials) == 0x000038, "Member 'USaveSlot_C::Specials' has a wrong offset!");
 static_assert(offsetof(USaveSlot_C, Upgrades) == 0x000048, "Member 'USaveSlot_C::Upgrades' has a wrong offset!");
@@ -257,9 +250,6 @@ static_assert(offsetof(USaveSlot_C, FlashlightBattery) == 0x000830, "Member 'USa
 static_assert(offsetof(USaveSlot_C, HasFailedWeek) == 0x000838, "Member 'USaveSlot_C::HasFailedWeek' has a wrong offset!");
 static_assert(offsetof(USaveSlot_C, ServertimeBest) == 0x00083C, "Member 'USaveSlot_C::ServertimeBest' has a wrong offset!");
 static_assert(offsetof(USaveSlot_C, Completes) == 0x000840, "Member 'USaveSlot_C::Completes' has a wrong offset!");
-static_assert(offsetof(USaveSlot_C, MoonPhase) == 0x000844, "Member 'USaveSlot_C::MoonPhase' has a wrong offset!");
-static_assert(offsetof(USaveSlot_C, GameInst) == 0x000848, "Member 'USaveSlot_C::GameInst' has a wrong offset!");
-static_assert(offsetof(USaveSlot_C, I) == 0x000850, "Member 'USaveSlot_C::I' has a wrong offset!");
 
 }
 

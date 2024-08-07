@@ -18,18 +18,19 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_wireComponent.prop_wireComponent_C
-// 0x0008 (0x0380 - 0x0378)
+// 0x0008 (0x0370 - 0x0368)
 class AProp_wireComponent_C : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_wireComponent_C;               // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	uint8                                         Pad_3D08[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_wireComponent_C;               // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_prop_wireComponent(int32 EntryPoint);
 	void WireDisconnected(class AWire_C* Wire, bool Side);
 	void WireConnected(class AWire_C* Wire, bool Side);
 	void WirePass(class AWire_C* Wire);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
 
 public:
 	static class UClass* StaticClass()
@@ -42,8 +43,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_wireComponent_C) == 0x000008, "Wrong alignment on AProp_wireComponent_C");
-static_assert(sizeof(AProp_wireComponent_C) == 0x000380, "Wrong size on AProp_wireComponent_C");
-static_assert(offsetof(AProp_wireComponent_C, UberGraphFrame_Prop_wireComponent_C) == 0x000378, "Member 'AProp_wireComponent_C::UberGraphFrame_Prop_wireComponent_C' has a wrong offset!");
+static_assert(sizeof(AProp_wireComponent_C) == 0x000370, "Wrong size on AProp_wireComponent_C");
+static_assert(offsetof(AProp_wireComponent_C, UberGraphFrame_Prop_wireComponent_C) == 0x000368, "Member 'AProp_wireComponent_C::UberGraphFrame_Prop_wireComponent_C' has a wrong offset!");
 
 }
 

@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_physgun_s.prop_physgun_s_C
-// 0x0010 (0x05B0 - 0x05A0)
+// 0x0010 (0x05A0 - 0x0590)
 class AProp_physgun_s_C final : public AProp_physgun_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_physgun_s_C;                   // 0x0598(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UParticleSystemComponent*               Charges;                                           // 0x05A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_physgun_s_C;                   // 0x0588(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UParticleSystemComponent*               Charges;                                           // 0x0590(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_physgun_s(int32 EntryPoint);
@@ -40,9 +40,9 @@ public:
 	}
 };
 static_assert(alignof(AProp_physgun_s_C) == 0x000010, "Wrong alignment on AProp_physgun_s_C");
-static_assert(sizeof(AProp_physgun_s_C) == 0x0005B0, "Wrong size on AProp_physgun_s_C");
-static_assert(offsetof(AProp_physgun_s_C, UberGraphFrame_Prop_physgun_s_C) == 0x000598, "Member 'AProp_physgun_s_C::UberGraphFrame_Prop_physgun_s_C' has a wrong offset!");
-static_assert(offsetof(AProp_physgun_s_C, Charges) == 0x0005A0, "Member 'AProp_physgun_s_C::Charges' has a wrong offset!");
+static_assert(sizeof(AProp_physgun_s_C) == 0x0005A0, "Wrong size on AProp_physgun_s_C");
+static_assert(offsetof(AProp_physgun_s_C, UberGraphFrame_Prop_physgun_s_C) == 0x000588, "Member 'AProp_physgun_s_C::UberGraphFrame_Prop_physgun_s_C' has a wrong offset!");
+static_assert(offsetof(AProp_physgun_s_C, Charges) == 0x000590, "Member 'AProp_physgun_s_C::Charges' has a wrong offset!");
 
 }
 

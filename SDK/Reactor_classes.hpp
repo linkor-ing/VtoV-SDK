@@ -34,7 +34,7 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                          Dir;                                               // 0x0268(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          CanMove;                                           // 0x0269(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_26A[0x2];                                      // 0x026A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FB3[0x2];                                     // 0x026A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Targ;                                              // 0x026C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FVector>                        Locs;                                              // 0x0270(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class UStaticMeshComponent*>           Rods;                                              // 0x0280(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)

@@ -11,169 +11,161 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Enum_interactionActions_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function cord.cord_C.ExecuteUbergraph_cord
-// 0x0440 (0x0440 - 0x0000)
+// 0x0420 (0x0420 - 0x0000)
 struct Cord_C_ExecuteUbergraph_cord final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0004(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit_2;                                // 0x0018(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          K2Node_Event_kick;                                 // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F84[0x3];                                     // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_Event_name;                                 // 0x00A4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F85[0x4];                                     // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit_1;                                // 0x00C0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         K2Node_Event_damage;                               // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x0170(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x01F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x01FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1FB[0x1];                                      // 0x01FB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0204(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0210(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x021C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0228(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_234[0x4];                                      // 0x0234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0248(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0264(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0270(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x027C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0280(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_1;    // 0x028C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Vector_Distance_ReturnValue;              // 0x0298(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x029C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x029D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29E[0x2];                                      // 0x029E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_2;    // 0x02A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_3;    // 0x02AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Vector_Distance_ReturnValue_1;            // 0x02B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x02BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2BD[0x3];                                      // 0x02BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x02C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x02C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x02C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SelectFloat_ReturnValue_1;                // 0x02CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue_1;    // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x02D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D2[0xE];                                      // 0x02D2(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x02E0(0x0030)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0310(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x031C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0328(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult; // 0x0334(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_3BC[0x4];                                      // 0x03BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_GetParentActor_ReturnValue;               // 0x03C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x03C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D4[0x4];                                      // 0x03D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x03D8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x03E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3E9[0x7];                                      // 0x03E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AProp_C*                                CallFunc_asProp_return;                            // 0x03F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsChildActor_ReturnValue;                 // 0x03F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F9[0x7];                                      // 0x03F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0400(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue_2;                 // 0x0408(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_414[0x4];                                      // 0x0414(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player_1;                 // 0x0418(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0428(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_429[0x7];                                      // 0x0429(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AProp_C*                                CallFunc_asProp_return_1;                          // 0x0430(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0438(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0439(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x0150(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         K2Node_Event_index;                                // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x01DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x01DD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x01DE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F86[0x1];                                     // 0x01DF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x01E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x01F4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0200(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x020C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0228(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x023C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0240(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0244(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0250(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0260(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_1;    // 0x026C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Vector_Distance_ReturnValue;              // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x027C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x027D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F87[0x2];                                     // 0x027E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_2;    // 0x0280(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_3;    // 0x028C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Vector_Distance_ReturnValue_1;            // 0x0298(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x029C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F88[0x3];                                     // 0x029D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x02A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x02A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x02A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SelectFloat_ReturnValue_1;                // 0x02AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue_1;    // 0x02B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x02B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F89[0xE];                                     // 0x02B2(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x02C0(0x0030)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x02F0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x02FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0308(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult; // 0x0314(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_2F8A[0x4];                                     // 0x039C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_GetParentActor_ReturnValue;               // 0x03A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x03A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F8B[0x4];                                     // 0x03B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x03B8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x03C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F8C[0x7];                                     // 0x03C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AProp_C*                                CallFunc_asProp_return;                            // 0x03D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsChildActor_ReturnValue;                 // 0x03D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F8D[0x7];                                     // 0x03D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x03E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue_2;                 // 0x03E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F8E[0x4];                                     // 0x03F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player_1;                 // 0x03F8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0408(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F8F[0x7];                                     // 0x0409(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AProp_C*                                CallFunc_asProp_return_1;                          // 0x0410(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0418(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0419(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Cord_C_ExecuteUbergraph_cord) == 0x000010, "Wrong alignment on Cord_C_ExecuteUbergraph_cord");
-static_assert(sizeof(Cord_C_ExecuteUbergraph_cord) == 0x000440, "Wrong size on Cord_C_ExecuteUbergraph_cord");
+static_assert(sizeof(Cord_C_ExecuteUbergraph_cord) == 0x000420, "Wrong size on Cord_C_ExecuteUbergraph_cord");
 static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, EntryPoint) == 0x000000, "Member 'Cord_C_ExecuteUbergraph_cord::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_MakeVector_ReturnValue) == 0x000004, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_Event_player_6) == 0x000010, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_Event_player_6' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_Event_player_3) == 0x000010, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_Event_player_3' has a wrong offset!");
 static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_Event_hit_2) == 0x000018, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_Event_hit_2' has a wrong offset!");
 static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_Event_kick) == 0x0000A0, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_Event_kick' has a wrong offset!");
 static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_Event_name) == 0x0000A4, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_Event_name' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_Event_player_5) == 0x0000B0, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_Event_player_5' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_Event_player_4) == 0x0000B8, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_Event_player_4' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_Event_player_2) == 0x0000B0, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_Event_player_2' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_Event_player_1) == 0x0000B8, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_Event_player_1' has a wrong offset!");
 static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_Event_hit_1) == 0x0000C0, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_Event_hit_1' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_Event_damage) == 0x000148, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_Event_damage' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_Event_player_3) == 0x000150, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_Event_player_3' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_Event_player_2) == 0x000158, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_Event_player_2' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_Event_player_1) == 0x000160, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_Event_player) == 0x000168, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_Event_hit) == 0x000170, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_Event_action) == 0x0001F8, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_bBlockingHit) == 0x0001F9, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_bInitialOverlap) == 0x0001FA, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_Time) == 0x0001FC, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_Distance) == 0x000200, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_Location) == 0x000204, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_ImpactPoint) == 0x000210, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_Normal) == 0x00021C, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_ImpactNormal) == 0x000228, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_PhysMat) == 0x000238, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_HitActor) == 0x000240, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_HitComponent) == 0x000248, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_HitBoneName) == 0x000250, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_HitItem) == 0x000258, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_ElementIndex) == 0x00025C, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_FaceIndex) == 0x000260, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_TraceStart) == 0x000264, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_TraceEnd) == 0x000270, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_Event_DeltaSeconds) == 0x00027C, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000280, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x00028C, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_Vector_Distance_ReturnValue) == 0x000298, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_Vector_Distance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_IsValid_ReturnValue) == 0x00029C, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_IsValid_ReturnValue_1) == 0x00029D, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_K2_GetComponentLocation_ReturnValue_2) == 0x0002A0, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_K2_GetComponentLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_K2_GetComponentLocation_ReturnValue_3) == 0x0002AC, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_K2_GetComponentLocation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_Vector_Distance_ReturnValue_1) == 0x0002B8, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_Vector_Distance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x0002BC, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_SelectFloat_ReturnValue) == 0x0002C0, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0002C4, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_Add_FloatFloat_ReturnValue) == 0x0002C8, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_SelectFloat_ReturnValue_1) == 0x0002CC, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_SelectFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_GreaterEqual_FloatFloat_ReturnValue_1) == 0x0002D0, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_GreaterEqual_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x0002D1, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x0002E0, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakTransform_Location) == 0x000310, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakTransform_Rotation) == 0x00031C, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakTransform_Scale) == 0x000328, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult) == 0x000334, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_GetParentActor_ReturnValue) == 0x0003C0, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_GetParentActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_MakeVector_ReturnValue_1) == 0x0003C8, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_DynamicCast_AsInt_Player) == 0x0003D8, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_DynamicCast_AsInt_Player' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_DynamicCast_bSuccess) == 0x0003E8, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_asProp_return) == 0x0003F0, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_asProp_return' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_IsChildActor_ReturnValue) == 0x0003F8, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_IsChildActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_GetOwner_ReturnValue) == 0x000400, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_MakeVector_ReturnValue_2) == 0x000408, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_MakeVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_DynamicCast_AsInt_Player_1) == 0x000418, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_DynamicCast_AsInt_Player_1' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_DynamicCast_bSuccess_1) == 0x000428, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_asProp_return_1) == 0x000430, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_asProp_return_1' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_IsValid_ReturnValue_2) == 0x000438, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_IsValid_ReturnValue_3) == 0x000439, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_Event_player) == 0x000148, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_Event_hit) == 0x000150, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_Event_index) == 0x0001D8, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_Event_action) == 0x0001DC, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_bBlockingHit) == 0x0001DD, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_bInitialOverlap) == 0x0001DE, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_Time) == 0x0001E0, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_Distance) == 0x0001E4, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_Location) == 0x0001E8, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_ImpactPoint) == 0x0001F4, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_Normal) == 0x000200, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_ImpactNormal) == 0x00020C, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_PhysMat) == 0x000218, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_HitActor) == 0x000220, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_HitComponent) == 0x000228, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_HitBoneName) == 0x000230, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_HitItem) == 0x000238, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_ElementIndex) == 0x00023C, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_FaceIndex) == 0x000240, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_TraceStart) == 0x000244, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakHitResult_TraceEnd) == 0x000250, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_Event_DeltaSeconds) == 0x00025C, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000260, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x00026C, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_Vector_Distance_ReturnValue) == 0x000278, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_Vector_Distance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_IsValid_ReturnValue) == 0x00027C, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_IsValid_ReturnValue_1) == 0x00027D, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_K2_GetComponentLocation_ReturnValue_2) == 0x000280, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_K2_GetComponentLocation_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_K2_GetComponentLocation_ReturnValue_3) == 0x00028C, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_K2_GetComponentLocation_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_Vector_Distance_ReturnValue_1) == 0x000298, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_Vector_Distance_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x00029C, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_SelectFloat_ReturnValue) == 0x0002A0, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0002A4, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_Add_FloatFloat_ReturnValue) == 0x0002A8, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_SelectFloat_ReturnValue_1) == 0x0002AC, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_SelectFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_GreaterEqual_FloatFloat_ReturnValue_1) == 0x0002B0, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_GreaterEqual_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x0002B1, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x0002C0, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakTransform_Location) == 0x0002F0, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakTransform_Location' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakTransform_Rotation) == 0x0002FC, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakTransform_Rotation' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_BreakTransform_Scale) == 0x000308, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_BreakTransform_Scale' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult) == 0x000314, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_GetParentActor_ReturnValue) == 0x0003A0, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_GetParentActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_MakeVector_ReturnValue_1) == 0x0003A8, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_DynamicCast_AsInt_Player) == 0x0003B8, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_DynamicCast_AsInt_Player' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_DynamicCast_bSuccess) == 0x0003C8, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_asProp_return) == 0x0003D0, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_asProp_return' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_IsChildActor_ReturnValue) == 0x0003D8, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_IsChildActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_GetOwner_ReturnValue) == 0x0003E0, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_MakeVector_ReturnValue_2) == 0x0003E8, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_MakeVector_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_DynamicCast_AsInt_Player_1) == 0x0003F8, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_DynamicCast_AsInt_Player_1' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, K2Node_DynamicCast_bSuccess_1) == 0x000408, "Member 'Cord_C_ExecuteUbergraph_cord::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_asProp_return_1) == 0x000410, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_asProp_return_1' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_IsValid_ReturnValue_2) == 0x000418, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Cord_C_ExecuteUbergraph_cord, CallFunc_IsValid_ReturnValue_3) == 0x000419, "Member 'Cord_C_ExecuteUbergraph_cord::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
 
 // Function cord.cord_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -193,61 +185,28 @@ struct Cord_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Cord_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Cord_C_ActionOptionIndex");
 static_assert(sizeof(Cord_C_ActionOptionIndex) == 0x000098, "Wrong size on Cord_C_ActionOptionIndex");
 static_assert(offsetof(Cord_C_ActionOptionIndex, Player) == 0x000000, "Member 'Cord_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(Cord_C_ActionOptionIndex, Hit) == 0x000008, "Member 'Cord_C_ActionOptionIndex::Hit' has a wrong offset!");
-static_assert(offsetof(Cord_C_ActionOptionIndex, Action) == 0x000090, "Member 'Cord_C_ActionOptionIndex::Action' has a wrong offset!");
-
-// Function cord.cord_C.playerR
-// 0x0008 (0x0008 - 0x0000)
-struct Cord_C_PlayerR final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Cord_C_PlayerR) == 0x000008, "Wrong alignment on Cord_C_PlayerR");
-static_assert(sizeof(Cord_C_PlayerR) == 0x000008, "Wrong size on Cord_C_PlayerR");
-static_assert(offsetof(Cord_C_PlayerR, Player) == 0x000000, "Member 'Cord_C_PlayerR::Player' has a wrong offset!");
-
-// Function cord.cord_C.playerHold
-// 0x0008 (0x0008 - 0x0000)
-struct Cord_C_PlayerHold final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Cord_C_PlayerHold) == 0x000008, "Wrong alignment on Cord_C_PlayerHold");
-static_assert(sizeof(Cord_C_PlayerHold) == 0x000008, "Wrong size on Cord_C_PlayerHold");
-static_assert(offsetof(Cord_C_PlayerHold, Player) == 0x000000, "Member 'Cord_C_PlayerHold::Player' has a wrong offset!");
-
-// Function cord.cord_C.playerUnequip
-// 0x0008 (0x0008 - 0x0000)
-struct Cord_C_PlayerUnequip final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Cord_C_PlayerUnequip) == 0x000008, "Wrong alignment on Cord_C_PlayerUnequip");
-static_assert(sizeof(Cord_C_PlayerUnequip) == 0x000008, "Wrong size on Cord_C_PlayerUnequip");
-static_assert(offsetof(Cord_C_PlayerUnequip, Player) == 0x000000, "Member 'Cord_C_PlayerUnequip::Player' has a wrong offset!");
+static_assert(offsetof(Cord_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Cord_C_ActionOptionIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(Cord_C_ActionOptionIndex, Action) == 0x000094, "Member 'Cord_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function cord.cord_C.damageByPlayer
-// 0x0098 (0x0098 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct Cord_C_DamageByPlayer final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         Damage;                                            // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Cord_C_DamageByPlayer) == 0x000008, "Wrong alignment on Cord_C_DamageByPlayer");
-static_assert(sizeof(Cord_C_DamageByPlayer) == 0x000098, "Wrong size on Cord_C_DamageByPlayer");
+static_assert(sizeof(Cord_C_DamageByPlayer) == 0x000090, "Wrong size on Cord_C_DamageByPlayer");
 static_assert(offsetof(Cord_C_DamageByPlayer, Player) == 0x000000, "Member 'Cord_C_DamageByPlayer::Player' has a wrong offset!");
 static_assert(offsetof(Cord_C_DamageByPlayer, Hit) == 0x000008, "Member 'Cord_C_DamageByPlayer::Hit' has a wrong offset!");
-static_assert(offsetof(Cord_C_DamageByPlayer, Damage) == 0x000090, "Member 'Cord_C_DamageByPlayer::Damage' has a wrong offset!");
 
 // Function cord.cord_C.thrown
 // 0x0008 (0x0008 - 0x0000)
@@ -301,17 +260,17 @@ struct Cord_C_Connect final
 {
 public:
 	class ACordSocket_C*                          Param_Socket;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F90[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0010(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0040(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_InverseTransformLocation_ReturnValue;     // 0x004C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5A[0x6];                                       // 0x005A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F91[0x6];                                     // 0x005A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IInt_ttrigger_C>       K2Node_DynamicCast_AsInt_Ttrigger;                 // 0x0060(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_72[0xE];                                       // 0x0072(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F92[0xE];                                     // 0x0072(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0080(0x0030)(IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x00B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x00BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -392,65 +351,6 @@ static_assert(offsetof(Cord_C_GetAttachComponents, CallFunc_GetTransform_ReturnV
 static_assert(offsetof(Cord_C_GetAttachComponents, CallFunc_IsValid_ReturnValue) == 0x0000E0, "Member 'Cord_C_GetAttachComponents::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Cord_C_GetAttachComponents, CallFunc_IsValid_ReturnValue_1) == 0x0000E1, "Member 'Cord_C_GetAttachComponents::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 
-// Function cord.cord_C.UserConstructionScript
-// 0x0088 (0x0088 - 0x0000)
-struct Cord_C_UserConstructionScript final
-{
-public:
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0000(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-static_assert(alignof(Cord_C_UserConstructionScript) == 0x000004, "Wrong alignment on Cord_C_UserConstructionScript");
-static_assert(sizeof(Cord_C_UserConstructionScript) == 0x000088, "Wrong size on Cord_C_UserConstructionScript");
-static_assert(offsetof(Cord_C_UserConstructionScript, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x000000, "Member 'Cord_C_UserConstructionScript::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
-
-// Function cord.cord_C.ignoreSave
-// 0x0001 (0x0001 - 0x0000)
-struct Cord_C_IgnoreSave final
-{
-public:
-	bool                                          Param_IgnoreSave;                                  // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(Cord_C_IgnoreSave) == 0x000001, "Wrong alignment on Cord_C_IgnoreSave");
-static_assert(sizeof(Cord_C_IgnoreSave) == 0x000001, "Wrong size on Cord_C_IgnoreSave");
-static_assert(offsetof(Cord_C_IgnoreSave, Param_IgnoreSave) == 0x000000, "Member 'Cord_C_IgnoreSave::Param_IgnoreSave' has a wrong offset!");
-
-// Function cord.cord_C.skipPreDelete
-// 0x0001 (0x0001 - 0x0000)
-struct Cord_C_SkipPreDelete final
-{
-public:
-	bool                                          Skip;                                              // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(Cord_C_SkipPreDelete) == 0x000001, "Wrong alignment on Cord_C_SkipPreDelete");
-static_assert(sizeof(Cord_C_SkipPreDelete) == 0x000001, "Wrong size on Cord_C_SkipPreDelete");
-static_assert(offsetof(Cord_C_SkipPreDelete, Skip) == 0x000000, "Member 'Cord_C_SkipPreDelete::Skip' has a wrong offset!");
-
-// Function cord.cord_C.getActionOptions
-// 0x0060 (0x0060 - 0x0000)
-struct Cord_C_GetActionOptions final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    Component;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
-	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
-	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
-};
-static_assert(alignof(Cord_C_GetActionOptions) == 0x000008, "Wrong alignment on Cord_C_GetActionOptions");
-static_assert(sizeof(Cord_C_GetActionOptions) == 0x000060, "Wrong size on Cord_C_GetActionOptions");
-static_assert(offsetof(Cord_C_GetActionOptions, Player) == 0x000000, "Member 'Cord_C_GetActionOptions::Player' has a wrong offset!");
-static_assert(offsetof(Cord_C_GetActionOptions, Component) == 0x000008, "Member 'Cord_C_GetActionOptions::Component' has a wrong offset!");
-static_assert(offsetof(Cord_C_GetActionOptions, Actor) == 0x000010, "Member 'Cord_C_GetActionOptions::Actor' has a wrong offset!");
-static_assert(offsetof(Cord_C_GetActionOptions, Options) == 0x000018, "Member 'Cord_C_GetActionOptions::Options' has a wrong offset!");
-static_assert(offsetof(Cord_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Cord_C_GetActionOptions::Options_enum' has a wrong offset!");
-static_assert(offsetof(Cord_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Cord_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Cord_C_GetActionOptions, Number) == 0x000048, "Member 'Cord_C_GetActionOptions::Number' has a wrong offset!");
-static_assert(offsetof(Cord_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Cord_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
-
 // Function cord.cord_C.canBePutInContainer
 // 0x0001 (0x0001 - 0x0000)
 struct Cord_C_CanBePutInContainer final
@@ -505,20 +405,20 @@ public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F93[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x00B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F94[0x1];                                     // 0x00B3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x00BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x00C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x00D4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x00E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_EC[0x4];                                       // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F95[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0100(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -529,7 +429,7 @@ public:
 	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x011C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0128(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0134(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_135[0x3];                                      // 0x0135(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F96[0x3];                                     // 0x0135(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_SelectString_ReturnValue;                 // 0x0138(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_Select_Default;                             // 0x0148(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -540,10 +440,9 @@ static_assert(offsetof(Cord_C_LookAt, Hit) == 0x000008, "Member 'Cord_C_LookAt::
 static_assert(offsetof(Cord_C_LookAt, Return) == 0x000090, "Member 'Cord_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(Cord_C_LookAt, Text) == 0x000098, "Member 'Cord_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(Cord_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'Cord_C_LookAt::boundObjectReplace' has a wrong offset!");
-static_assert(offsetof(Cord_C_LookAt, Number) == 0x0000B0, "Member 'Cord_C_LookAt::Number' has a wrong offset!");
-static_assert(offsetof(Cord_C_LookAt, Temp_bool_Variable) == 0x0000B1, "Member 'Cord_C_LookAt::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Cord_C_LookAt, CallFunc_BreakHitResult_bBlockingHit) == 0x0000B2, "Member 'Cord_C_LookAt::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(Cord_C_LookAt, CallFunc_BreakHitResult_bInitialOverlap) == 0x0000B3, "Member 'Cord_C_LookAt::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(Cord_C_LookAt, Temp_bool_Variable) == 0x0000B0, "Member 'Cord_C_LookAt::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(Cord_C_LookAt, CallFunc_BreakHitResult_bBlockingHit) == 0x0000B1, "Member 'Cord_C_LookAt::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(Cord_C_LookAt, CallFunc_BreakHitResult_bInitialOverlap) == 0x0000B2, "Member 'Cord_C_LookAt::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
 static_assert(offsetof(Cord_C_LookAt, CallFunc_BreakHitResult_Time) == 0x0000B4, "Member 'Cord_C_LookAt::CallFunc_BreakHitResult_Time' has a wrong offset!");
 static_assert(offsetof(Cord_C_LookAt, CallFunc_BreakHitResult_Distance) == 0x0000B8, "Member 'Cord_C_LookAt::CallFunc_BreakHitResult_Distance' has a wrong offset!");
 static_assert(offsetof(Cord_C_LookAt, CallFunc_BreakHitResult_Location) == 0x0000BC, "Member 'Cord_C_LookAt::CallFunc_BreakHitResult_Location' has a wrong offset!");
@@ -574,18 +473,61 @@ static_assert(alignof(Cord_C_IsButtonUsed) == 0x000001, "Wrong alignment on Cord
 static_assert(sizeof(Cord_C_IsButtonUsed) == 0x000001, "Wrong size on Cord_C_IsButtonUsed");
 static_assert(offsetof(Cord_C_IsButtonUsed, Failed) == 0x000000, "Member 'Cord_C_IsButtonUsed::Failed' has a wrong offset!");
 
-// Function cord.cord_C.landedOn
-// 0x0010 (0x0010 - 0x0000)
-struct Cord_C_LandedOn final
+// Function cord.cord_C.UserConstructionScript
+// 0x0088 (0x0088 - 0x0000)
+struct Cord_C_UserConstructionScript final
+{
+public:
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0000(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+static_assert(alignof(Cord_C_UserConstructionScript) == 0x000004, "Wrong alignment on Cord_C_UserConstructionScript");
+static_assert(sizeof(Cord_C_UserConstructionScript) == 0x000088, "Wrong size on Cord_C_UserConstructionScript");
+static_assert(offsetof(Cord_C_UserConstructionScript, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x000000, "Member 'Cord_C_UserConstructionScript::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
+
+// Function cord.cord_C.ignoreSave
+// 0x0001 (0x0001 - 0x0000)
+struct Cord_C_IgnoreSave final
+{
+public:
+	bool                                          Param_IgnoreSave;                                  // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Cord_C_IgnoreSave) == 0x000001, "Wrong alignment on Cord_C_IgnoreSave");
+static_assert(sizeof(Cord_C_IgnoreSave) == 0x000001, "Wrong size on Cord_C_IgnoreSave");
+static_assert(offsetof(Cord_C_IgnoreSave, Param_IgnoreSave) == 0x000000, "Member 'Cord_C_IgnoreSave::Param_IgnoreSave' has a wrong offset!");
+
+// Function cord.cord_C.skipPreDelete
+// 0x0001 (0x0001 - 0x0000)
+struct Cord_C_SkipPreDelete final
+{
+public:
+	bool                                          Skip;                                              // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Cord_C_SkipPreDelete) == 0x000001, "Wrong alignment on Cord_C_SkipPreDelete");
+static_assert(sizeof(Cord_C_SkipPreDelete) == 0x000001, "Wrong size on Cord_C_SkipPreDelete");
+static_assert(offsetof(Cord_C_SkipPreDelete, Skip) == 0x000000, "Member 'Cord_C_SkipPreDelete::Skip' has a wrong offset!");
+
+// Function cord.cord_C.getActionOptions
+// 0x0058 (0x0058 - 0x0000)
+struct Cord_C_GetActionOptions final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IgnoreFallDamage;                                  // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UPrimitiveComponent*                    Component;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
+	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
+	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
 };
-static_assert(alignof(Cord_C_LandedOn) == 0x000008, "Wrong alignment on Cord_C_LandedOn");
-static_assert(sizeof(Cord_C_LandedOn) == 0x000010, "Wrong size on Cord_C_LandedOn");
-static_assert(offsetof(Cord_C_LandedOn, Player) == 0x000000, "Member 'Cord_C_LandedOn::Player' has a wrong offset!");
-static_assert(offsetof(Cord_C_LandedOn, IgnoreFallDamage) == 0x000008, "Member 'Cord_C_LandedOn::IgnoreFallDamage' has a wrong offset!");
+static_assert(alignof(Cord_C_GetActionOptions) == 0x000008, "Wrong alignment on Cord_C_GetActionOptions");
+static_assert(sizeof(Cord_C_GetActionOptions) == 0x000058, "Wrong size on Cord_C_GetActionOptions");
+static_assert(offsetof(Cord_C_GetActionOptions, Player) == 0x000000, "Member 'Cord_C_GetActionOptions::Player' has a wrong offset!");
+static_assert(offsetof(Cord_C_GetActionOptions, Component) == 0x000008, "Member 'Cord_C_GetActionOptions::Component' has a wrong offset!");
+static_assert(offsetof(Cord_C_GetActionOptions, Actor) == 0x000010, "Member 'Cord_C_GetActionOptions::Actor' has a wrong offset!");
+static_assert(offsetof(Cord_C_GetActionOptions, Options) == 0x000018, "Member 'Cord_C_GetActionOptions::Options' has a wrong offset!");
+static_assert(offsetof(Cord_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Cord_C_GetActionOptions::Options_enum' has a wrong offset!");
+static_assert(offsetof(Cord_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Cord_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
+static_assert(offsetof(Cord_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'Cord_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 }
 

@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_baskethoop.prop_baskethoop_C
-// 0x0060 (0x0470 - 0x0410)
+// 0x0060 (0x0460 - 0x0400)
 class AProp_baskethoop_C final : public AProp_wallAttachable_C
 {
 public:
-	uint8                                         Pad_405[0xB];                                      // 0x0405(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Tr_B_0;                                            // 0x0410(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	struct FTransform                             Tr_A_0;                                            // 0x0440(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3DB2[0xC];                                     // 0x03F4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             Tr_B_0;                                            // 0x0400(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FTransform                             Tr_A_0;                                            // 0x0430(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	static class UClass* StaticClass()
@@ -37,9 +37,9 @@ public:
 	}
 };
 static_assert(alignof(AProp_baskethoop_C) == 0x000010, "Wrong alignment on AProp_baskethoop_C");
-static_assert(sizeof(AProp_baskethoop_C) == 0x000470, "Wrong size on AProp_baskethoop_C");
-static_assert(offsetof(AProp_baskethoop_C, Tr_B_0) == 0x000410, "Member 'AProp_baskethoop_C::Tr_B_0' has a wrong offset!");
-static_assert(offsetof(AProp_baskethoop_C, Tr_A_0) == 0x000440, "Member 'AProp_baskethoop_C::Tr_A_0' has a wrong offset!");
+static_assert(sizeof(AProp_baskethoop_C) == 0x000460, "Wrong size on AProp_baskethoop_C");
+static_assert(offsetof(AProp_baskethoop_C, Tr_B_0) == 0x000400, "Member 'AProp_baskethoop_C::Tr_B_0' has a wrong offset!");
+static_assert(offsetof(AProp_baskethoop_C, Tr_A_0) == 0x000430, "Member 'AProp_baskethoop_C::Tr_A_0' has a wrong offset!");
 
 }
 

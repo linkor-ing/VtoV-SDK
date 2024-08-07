@@ -71,6 +71,26 @@ void AProp_fireExt_C::ReceiveTick(float DeltaSeconds)
 }
 
 
+// Function prop_fireExt.prop_fireExt_C.fireDamage
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_fireExt_C::FireDamage(float Damage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_fireExt_C", "fireDamage");
+
+	Params::Prop_fireExt_C_FireDamage Parms{};
+
+	Parms.Damage = Damage;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function prop_fireExt.prop_fireExt_C.shoot
 // (BlueprintCallable, BlueprintEvent)
 
@@ -82,6 +102,34 @@ void AProp_fireExt_C::Shoot()
 		Func = Class->GetFunction("prop_fireExt_C", "shoot");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function prop_fireExt.prop_fireExt_C.addDamage
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// struct FVector                          Impact                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    SkipSetting                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AProp_fireExt_C::AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Param_Hit, const struct FVector& Impact, bool SkipSetting)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_fireExt_C", "addDamage");
+
+	Params::Prop_fireExt_C_AddDamage Parms{};
+
+	Parms.Actor = Actor;
+	Parms.Damage = Damage;
+	Parms.Param_Hit = std::move(Param_Hit);
+	Parms.Impact = std::move(Impact);
+	Parms.SkipSetting = SkipSetting;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -157,54 +205,6 @@ void AProp_fireExt_C::ExtinguishRay(const struct FVector& InputPin, const struct
 }
 
 
-// Function prop_fireExt.prop_fireExt_C.fireDamage
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_fireExt_C::FireDamage(float Damage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_fireExt_C", "fireDamage");
-
-	Params::Prop_fireExt_C_FireDamage Parms{};
-
-	Parms.Damage = Damage;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop_fireExt.prop_fireExt_C.addDamage
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// struct FVector                          Impact                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    SkipSetting                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AProp_fireExt_C::AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Param_Hit, const struct FVector& Impact, bool SkipSetting)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_fireExt_C", "addDamage");
-
-	Params::Prop_fireExt_C_AddDamage Parms{};
-
-	Parms.Actor = Actor;
-	Parms.Damage = Damage;
-	Parms.Param_Hit = std::move(Param_Hit);
-	Parms.Impact = std::move(Impact);
-	Parms.SkipSetting = SkipSetting;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function prop_fireExt.prop_fireExt_C.playerHandRelease_LMB
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -247,23 +247,15 @@ void AProp_fireExt_C::PlayerHandUse_LMB(class AMainPlayer_C* Player)
 
 // Function prop_fireExt.prop_fireExt_C.receivedPhyiscsDamage
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hot                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void AProp_fireExt_C::ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot)
+void AProp_fireExt_C::ReceivedPhyiscsDamage()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("prop_fireExt_C", "receivedPhyiscsDamage");
 
-	Params::Prop_fireExt_C_ReceivedPhyiscsDamage Parms{};
-
-	Parms.Damage = Damage;
-	Parms.Hot = std::move(Hot);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

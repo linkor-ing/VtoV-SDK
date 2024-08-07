@@ -17,12 +17,9 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass pnormal.pnormal_C
-// 0x0008 (0x00B8 - 0x00B0)
+// 0x0000 (0x00B0 - 0x00B0)
 class UPnormal_C final : public UActorComponent
 {
-public:
-	float                                         Strength;                                          // 0x00B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
 public:
 	static class UClass* StaticClass()
 	{
@@ -34,8 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UPnormal_C) == 0x000008, "Wrong alignment on UPnormal_C");
-static_assert(sizeof(UPnormal_C) == 0x0000B8, "Wrong size on UPnormal_C");
-static_assert(offsetof(UPnormal_C, Strength) == 0x0000B0, "Member 'UPnormal_C::Strength' has a wrong offset!");
+static_assert(sizeof(UPnormal_C) == 0x0000B0, "Wrong size on UPnormal_C");
 
 }
 

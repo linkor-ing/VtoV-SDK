@@ -17,11 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_sitChair1.prop_sitChair1_C
-// 0x0008 (0x0380 - 0x0378)
+// 0x0008 (0x0370 - 0x0368)
 class AProp_sitChair1_C final : public AProp_C
 {
 public:
-	class UChildActorComponent*                   ChildActor;                                        // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_37DE[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UChildActorComponent*                   ChildActor;                                        // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +35,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_sitChair1_C) == 0x000008, "Wrong alignment on AProp_sitChair1_C");
-static_assert(sizeof(AProp_sitChair1_C) == 0x000380, "Wrong size on AProp_sitChair1_C");
-static_assert(offsetof(AProp_sitChair1_C, ChildActor) == 0x000378, "Member 'AProp_sitChair1_C::ChildActor' has a wrong offset!");
+static_assert(sizeof(AProp_sitChair1_C) == 0x000370, "Wrong size on AProp_sitChair1_C");
+static_assert(offsetof(AProp_sitChair1_C, ChildActor) == 0x000368, "Member 'AProp_sitChair1_C::ChildActor' has a wrong offset!");
 
 }
 

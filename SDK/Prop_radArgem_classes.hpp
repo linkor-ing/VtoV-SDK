@@ -18,26 +18,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_radArgem.prop_radArgem_C
-// 0x0030 (0x03A8 - 0x0378)
+// 0x0030 (0x0398 - 0x0368)
 class AProp_radArgem_C : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_radArgem_C;                    // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPointLightComponent*                   S;                                                 // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPointLightComponent*                   PointLight;                                        // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         A_a_5E966E8C4BC9C5219E739AA419A85DD5;              // 0x0390(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            A__Direction_5E966E8C4BC9C5219E739AA419A85DD5;     // 0x0394(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_395[0x3];                                      // 0x0395(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     A;                                                 // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         I;                                                 // 0x03A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_380D[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_radArgem_C;                    // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPointLightComponent*                   S;                                                 // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPointLightComponent*                   PointLight;                                        // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         A_a_5E966E8C4BC9C5219E739AA419A85DD5;              // 0x0380(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            A__Direction_5E966E8C4BC9C5219E739AA419A85DD5;     // 0x0384(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_380E[0x3];                                     // 0x0385(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     A;                                                 // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         I;                                                 // 0x0390(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_radArgem(int32 EntryPoint);
+	void ReceiveBeginPlay();
 	void BndEvt__StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Param_Hit);
 	void A__UpdateFunc();
 	void A__FinishedFunc();
 	void Ht();
-	void ReceiveBeginPlay();
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
 
@@ -52,14 +53,14 @@ public:
 	}
 };
 static_assert(alignof(AProp_radArgem_C) == 0x000008, "Wrong alignment on AProp_radArgem_C");
-static_assert(sizeof(AProp_radArgem_C) == 0x0003A8, "Wrong size on AProp_radArgem_C");
-static_assert(offsetof(AProp_radArgem_C, UberGraphFrame_Prop_radArgem_C) == 0x000378, "Member 'AProp_radArgem_C::UberGraphFrame_Prop_radArgem_C' has a wrong offset!");
-static_assert(offsetof(AProp_radArgem_C, S) == 0x000380, "Member 'AProp_radArgem_C::S' has a wrong offset!");
-static_assert(offsetof(AProp_radArgem_C, PointLight) == 0x000388, "Member 'AProp_radArgem_C::PointLight' has a wrong offset!");
-static_assert(offsetof(AProp_radArgem_C, A_a_5E966E8C4BC9C5219E739AA419A85DD5) == 0x000390, "Member 'AProp_radArgem_C::A_a_5E966E8C4BC9C5219E739AA419A85DD5' has a wrong offset!");
-static_assert(offsetof(AProp_radArgem_C, A__Direction_5E966E8C4BC9C5219E739AA419A85DD5) == 0x000394, "Member 'AProp_radArgem_C::A__Direction_5E966E8C4BC9C5219E739AA419A85DD5' has a wrong offset!");
-static_assert(offsetof(AProp_radArgem_C, A) == 0x000398, "Member 'AProp_radArgem_C::A' has a wrong offset!");
-static_assert(offsetof(AProp_radArgem_C, I) == 0x0003A0, "Member 'AProp_radArgem_C::I' has a wrong offset!");
+static_assert(sizeof(AProp_radArgem_C) == 0x000398, "Wrong size on AProp_radArgem_C");
+static_assert(offsetof(AProp_radArgem_C, UberGraphFrame_Prop_radArgem_C) == 0x000368, "Member 'AProp_radArgem_C::UberGraphFrame_Prop_radArgem_C' has a wrong offset!");
+static_assert(offsetof(AProp_radArgem_C, S) == 0x000370, "Member 'AProp_radArgem_C::S' has a wrong offset!");
+static_assert(offsetof(AProp_radArgem_C, PointLight) == 0x000378, "Member 'AProp_radArgem_C::PointLight' has a wrong offset!");
+static_assert(offsetof(AProp_radArgem_C, A_a_5E966E8C4BC9C5219E739AA419A85DD5) == 0x000380, "Member 'AProp_radArgem_C::A_a_5E966E8C4BC9C5219E739AA419A85DD5' has a wrong offset!");
+static_assert(offsetof(AProp_radArgem_C, A__Direction_5E966E8C4BC9C5219E739AA419A85DD5) == 0x000384, "Member 'AProp_radArgem_C::A__Direction_5E966E8C4BC9C5219E739AA419A85DD5' has a wrong offset!");
+static_assert(offsetof(AProp_radArgem_C, A) == 0x000388, "Member 'AProp_radArgem_C::A' has a wrong offset!");
+static_assert(offsetof(AProp_radArgem_C, I) == 0x000390, "Member 'AProp_radArgem_C::I' has a wrong offset!");
 
 }
 

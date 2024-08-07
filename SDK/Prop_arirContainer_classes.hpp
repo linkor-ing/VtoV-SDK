@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_arirContainer.prop_arirContainer_C
-// 0x0008 (0x0400 - 0x03F8)
+// 0x0008 (0x03F0 - 0x03E8)
 class AProp_arirContainer_C : public AProp_container_C
 {
 public:
-	class USlapperSummoner_C*                     SlapperSummoner;                                   // 0x03F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USlapperSummoner_C*                     SlapperSummoner;                                   // 0x03E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +34,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_arirContainer_C) == 0x000008, "Wrong alignment on AProp_arirContainer_C");
-static_assert(sizeof(AProp_arirContainer_C) == 0x000400, "Wrong size on AProp_arirContainer_C");
-static_assert(offsetof(AProp_arirContainer_C, SlapperSummoner) == 0x0003F8, "Member 'AProp_arirContainer_C::SlapperSummoner' has a wrong offset!");
+static_assert(sizeof(AProp_arirContainer_C) == 0x0003F0, "Wrong size on AProp_arirContainer_C");
+static_assert(offsetof(AProp_arirContainer_C, SlapperSummoner) == 0x0003E8, "Member 'AProp_arirContainer_C::SlapperSummoner' has a wrong offset!");
 
 }
 

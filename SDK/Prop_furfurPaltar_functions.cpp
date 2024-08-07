@@ -57,6 +57,20 @@ void AProp_furfurPAltar_C::ReceiveTick(float DeltaSeconds)
 }
 
 
+// Function prop_furfurPaltar.prop_furfurPAltar_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_furfurPAltar_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_furfurPAltar_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function prop_furfurPaltar.prop_furfurPAltar_C.BndEvt__prop_furfurPAltar_2_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -114,20 +128,6 @@ void AProp_furfurPAltar_C::BndEvt__prop_furfurPAltar_1_K2Node_ComponentBoundEven
 	Parms.SweepResult = std::move(SweepResult);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop_furfurPaltar.prop_furfurPAltar_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_furfurPAltar_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_furfurPAltar_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

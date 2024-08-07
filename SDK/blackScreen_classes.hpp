@@ -21,7 +21,7 @@ namespace SDK
 class UblackScreen_C final : public UUserWidget
 {
 public:
-	class UImage*                                 Img;                                               // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_6;                                           // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -35,7 +35,7 @@ public:
 };
 static_assert(alignof(UblackScreen_C) == 0x000008, "Wrong alignment on UblackScreen_C");
 static_assert(sizeof(UblackScreen_C) == 0x000268, "Wrong size on UblackScreen_C");
-static_assert(offsetof(UblackScreen_C, Img) == 0x000260, "Member 'UblackScreen_C::Img' has a wrong offset!");
+static_assert(offsetof(UblackScreen_C, Image_6) == 0x000260, "Member 'UblackScreen_C::Image_6' has a wrong offset!");
 
 }
 

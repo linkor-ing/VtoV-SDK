@@ -57,6 +57,20 @@ void AProp_wallbuilder_C::ReceiveTick(float DeltaSeconds)
 }
 
 
+// Function prop_wallbuilder.prop_wallbuilder_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_wallbuilder_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_wallbuilder_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function prop_wallbuilder.prop_wallbuilder_C.OnCompleted_8882420E4F2CF57684C98A8A5539FB1C
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -233,17 +247,23 @@ void AProp_wallbuilder_C::EditMat()
 }
 
 
-// Function prop_wallbuilder.prop_wallbuilder_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function prop_wallbuilder.prop_wallbuilder_C.playerHandRelease_LMB
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_wallbuilder_C::ReceiveBeginPlay()
+void AProp_wallbuilder_C::PlayerHandRelease_LMB(class AMainPlayer_C* Player)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("prop_wallbuilder_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("prop_wallbuilder_C", "playerHandRelease_LMB");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::Prop_wallbuilder_C_PlayerHandRelease_LMB Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -260,26 +280,6 @@ void AProp_wallbuilder_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
 		Func = Class->GetFunction("prop_wallbuilder_C", "playerHandUse_RMB");
 
 	Params::Prop_wallbuilder_C_PlayerHandUse_RMB Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop_wallbuilder.prop_wallbuilder_C.playerHandRelease_LMB
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_wallbuilder_C::PlayerHandRelease_LMB(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_wallbuilder_C", "playerHandRelease_LMB");
-
-	Params::Prop_wallbuilder_C_PlayerHandRelease_LMB Parms{};
 
 	Parms.Player = Player;
 

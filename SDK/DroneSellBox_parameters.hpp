@@ -12,13 +12,13 @@
 
 #include "Enum_signalResponse_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Struct_signal_data1_structs.hpp"
+#include "Struct_loan_structs.hpp"
 #include "Struct_signalDataDynamic_structs.hpp"
 #include "Struct_mObject_structs.hpp"
+#include "Struct_signal_data2_structs.hpp"
 #include "Struct_save_structs.hpp"
-#include "Struct_loan_structs.hpp"
-#include "Struct_mInt_structs.hpp"
 #include "Struct_mString_structs.hpp"
+#include "Struct_mInt_structs.hpp"
 
 
 namespace SDK::Params
@@ -31,9 +31,9 @@ struct DroneSellBox_C_ExecuteUbergraph_droneSellBox final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2773[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2774[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         CallFunc_GetOverlappingActors_OverlappingActors;   // 0x0010(0x0010)(ReferenceParm)
 	TArray<class AActor*>                         CallFunc_GetOverlappingActors_OverlappingActors_1; // 0x0020(0x0010)(ReferenceParm)
 	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -61,14 +61,14 @@ static_assert(sizeof(DroneSellBox_C_ReceiveTick) == 0x000004, "Wrong size on Dro
 static_assert(offsetof(DroneSellBox_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'DroneSellBox_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function droneSellBox.droneSellBox_C.sell
-// 0x0C90 (0x0C90 - 0x0000)
+// 0x0C50 (0x0C50 - 0x0000)
 struct DroneSellBox_C_Sell final
 {
 public:
 	TArray<struct FStruct_signalDataDynamic>      Array;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	class FString                                 Info;                                              // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          Itembox;                                           // 0x0020(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21[0xF];                                       // 0x0021(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2775[0xF];                                     // 0x0021(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           Data;                                              // 0x0030(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	int32                                         Points;                                            // 0x00F0(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	Enum_signalResponse                           ResponseEmail;                                     // 0x00F4(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -76,9 +76,9 @@ public:
 	bool                                          AllowComplete2;                                    // 0x00F6(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          AllowComplete1;                                    // 0x00F7(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          IsEmpty;                                           // 0x00F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2776[0x7];                                     // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         RespsS;                                            // 0x0100(0x0010)(Edit, BlueprintVisible)
-	TArray<struct FStruct_signal_data1>           Sd;                                                // 0x0110(0x0010)(Edit, BlueprintVisible)
+	TArray<struct FStruct_signal_data2>           Sd;                                                // 0x0110(0x0010)(Edit, BlueprintVisible)
 	TArray<class FName>                           Sn;                                                // 0x0120(0x0010)(Edit, BlueprintVisible)
 	class FString                                 Rep_4;                                             // 0x0130(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	TArray<struct FStruct_loan>                   Loans;                                             // 0x0140(0x0010)(Edit, BlueprintVisible)
@@ -86,16 +86,16 @@ public:
 	TArray<class ADish_C*>                        Dada;                                              // 0x0160(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
 	TArray<class FString>                         Ds;                                                // 0x0170(0x0010)(Edit, BlueprintVisible)
 	bool                                          HasDupes;                                          // 0x0180(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_181[0x7];                                      // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2777[0x7];                                     // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         SoldSIgs;                                          // 0x0188(0x0010)(Edit, BlueprintVisible)
 	class FString                                 Rep_3;                                             // 0x0198(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 Inffo;                                             // 0x01A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CanRep;                                            // 0x01B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1B9[0x7];                                      // 0x01B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2778[0x7];                                     // 0x01B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Rep_2;                                             // 0x01C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 Rep_1;                                             // 0x01D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          NoRepor;                                           // 0x01E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E1[0x7];                                      // 0x01E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2779[0x7];                                     // 0x01E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<bool>                                  Checks;                                            // 0x01E8(0x0010)(Edit, BlueprintVisible)
 	TArray<int32>                                 Resps_p;                                           // 0x01F8(0x0010)(Edit, BlueprintVisible)
 	TArray<Enum_signalResponse>                   Resps;                                             // 0x0208(0x0010)(Edit, BlueprintVisible)
@@ -105,227 +105,224 @@ public:
 	int32                                         Lvl0;                                              // 0x0224(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Resp;                                              // 0x0228(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Res;                                               // 0x022C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_mInt                           CallFunc_Array_Get_Item;                           // 0x0230(0x0010)(HasGetValueTypeHash)
-	class FString                                 CallFunc_ToLower_ReturnValue;                      // 0x0240(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Get_Item_1;                         // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0254(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_25C[0x4];                                      // 0x025C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Temp_string_Variable;                              // 0x0260(0x0010)(ConstParm, ZeroConstructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0270(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_274[0x4];                                      // 0x0274(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Temp_string_Variable_1;                            // 0x0278(0x0010)(ConstParm, ZeroConstructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0288(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x028C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0290(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0294(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0298(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29C[0x4];                                      // 0x029C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Temp_string_Variable_2;                            // 0x02A0(0x0010)(ConstParm, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 Temp_string_Variable_3;                            // 0x02B0(0x0010)(ConstParm, ZeroConstructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x02C0(0x0030)(IsPlainOldData, NoDestructor)
-	int32                                         Temp_int_Variable_1;                               // 0x02F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x02F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x02F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F9[0x3];                                      // 0x02F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x02FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x0300(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_304[0x4];                                      // 0x0304(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot;                     // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_signalDataDynamic              CallFunc_Array_Get_Item_2;                         // 0x0310(0x0070)(HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0380(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0384(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_385[0x3];                                      // 0x0385(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot_1;                   // 0x0388(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_2;                               // 0x0390(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_3;                   // 0x0394(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x0398(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39C[0x4];                                      // 0x039C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x03A0(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x03B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_3;                  // 0x03C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3CC[0x4];                                      // 0x03CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x03D0(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x03E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_5;                 // 0x03F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_3;                               // 0x03FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<Enum_signalResponse>                   K2Node_MakeArray_Array;                            // 0x0400(0x0010)(ReferenceParm)
-	TArray<int32>                                 K2Node_MakeArray_Array_1;                          // 0x0410(0x0010)(ReferenceParm)
-	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot_2;                   // 0x0420(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FString>                         K2Node_MakeArray_Array_2;                          // 0x0428(0x0010)(ReferenceParm)
-	struct FStruct_mObject                        CallFunc_Array_Get_Item_3;                         // 0x0438(0x0010)(HasGetValueTypeHash)
-	TArray<struct FStruct_loan>                   K2Node_MakeArray_Array_3;                          // 0x0448(0x0010)(ReferenceParm)
-	uint8                                         Pad_458[0x8];                                      // 0x0458(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_save                           CallFunc_Array_Get_Item_4;                         // 0x0460(0x00C0)(HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0520(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0524(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_525[0x3];                                      // 0x0525(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0528(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue;          // 0x0530(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_mString                        CallFunc_Array_Get_Item_5;                         // 0x0538(0x0010)(HasGetValueTypeHash)
-	class FString                                 CallFunc_Array_Get_Item_6;                         // 0x0548(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0558(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0560(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_sellObject_points;                        // 0x0564(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_sellObject_sold;                          // 0x0568(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_569[0x7];                                      // 0x0569(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_signal_data1                   CallFunc_Array_Get_Item_7;                         // 0x0570(0x01D0)(HasGetValueTypeHash)
-	int32                                         CallFunc_VictoryIntPlusEquals_IntOut;              // 0x0740(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0744(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_745[0x3];                                      // 0x0745(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0748(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_4;                               // 0x074C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_5;                               // 0x0750(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select_Default;                             // 0x0754(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_MakeLiteralString_ReturnValue;            // 0x0758(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0768(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Len_ReturnValue;                          // 0x076C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_6;                               // 0x0770(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_7;                               // 0x0774(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0778(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_signalResponse                           K2Node_Select_Default_1;                           // 0x0780(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_781[0x7];                                      // 0x0781(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x0788(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0790(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0791(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0792(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_793[0x5];                                      // 0x0793(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Array_Get_Item_8;                         // 0x0798(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x07A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_8;                               // 0x07AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x07B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_7B1[0x7];                                      // 0x07B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x07B8(0x0018)()
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_2;        // 0x07D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x07D8(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_7D9[0x7];                                      // 0x07D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot_3;                   // 0x07E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x07E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEmpty_ReturnValue_1;                    // 0x07F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_7F9[0x7];                                      // 0x07F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue_1;           // 0x0800(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue_2;           // 0x0810(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0820(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0830(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x0840(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_844[0x4];                                      // 0x0844(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0848(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x0858(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_4;              // 0x0868(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FindSubstring_ReturnValue;                // 0x0878(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_6;                 // 0x087C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasSubstring_ReturnValue;                 // 0x0880(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_881[0x7];                                      // 0x0881(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_RightChop_ReturnValue;                    // 0x0888(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_RemoveCharactersExcept_ReturnValue;       // 0x0898(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Left_ReturnValue;                         // 0x08A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Find_ReturnValue_1;                 // 0x08B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8BC[0x4];                                      // 0x08BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USave_main_C*                           CallFunc_getMainSave_save_main;                    // 0x08C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_loan                           CallFunc_Array_Get_Item_9;                         // 0x08C8(0x0020)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x08E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_8E9[0x3];                                      // 0x08E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_7;                 // 0x08EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_8;                 // 0x08F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8F4[0x4];                                      // 0x08F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_3;        // 0x08F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_4;        // 0x0900(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Array_Get_Item_10;                        // 0x0908(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x0918(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_91C[0x4];                                      // 0x091C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_5;              // 0x0920(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x0930(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_931[0x3];                                      // 0x0931(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0934(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0938(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue_1;           // 0x0939(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_93A[0x2];                                      // 0x093A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_4;               // 0x093C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_5;               // 0x0940(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Multiply_IntInt_ReturnValue;              // 0x0944(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Multiply_IntInt_ReturnValue_1;            // 0x0948(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_94C[0x4];                                      // 0x094C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue_3;           // 0x0950(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_5;        // 0x0960(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_6;              // 0x0968(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_6;        // 0x0978(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0980(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0981(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_982[0x2];                                      // 0x0982(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_Select_Default_2;                           // 0x0984(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_9;                 // 0x0988(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_1;        // 0x098C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_2;        // 0x098D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_3;        // 0x098E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_4;        // 0x098F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue_4;           // 0x0990(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x09A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x09A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_4;                 // 0x09A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9A3[0x1];                                      // 0x09A3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Find_ReturnValue_2;                 // 0x09A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x09A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9A9[0x7];                                      // 0x09A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ADish_C*                                CallFunc_Array_Get_Item_11;                        // 0x09B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_7;              // 0x09B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_ToLower_ReturnValue_1;                    // 0x09C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_2;            // 0x09D8(0x0018)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_3;            // 0x09F0(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_2;          // 0x0A08(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_3;          // 0x0A18(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_4;            // 0x0A28(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_4;          // 0x0A40(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x0A50(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A54[0x4];                                      // 0x0A54(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_8;              // 0x0A58(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_5;            // 0x0A68(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_5;          // 0x0A80(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_7;        // 0x0A90(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0A98(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A99[0x3];                                      // 0x0A99(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue_3;                  // 0x0A9C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_8;        // 0x0AA0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_9;              // 0x0AA8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_10;             // 0x0AB8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasSubstring_ReturnValue_1;               // 0x0AC8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_AC9[0x7];                                      // 0x0AC9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_6;            // 0x0AD0(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_6;          // 0x0AE8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_7;            // 0x0AF8(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_7;          // 0x0B10(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_8;            // 0x0B20(0x0018)()
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_11;             // 0x0B38(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_12;             // 0x0B48(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0B58(0x0018)()
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_13;             // 0x0B70(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   K2Node_Select_Default_3;                           // 0x0B80(0x0018)(ConstParm)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_14;             // 0x0B98(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_8;          // 0x0BA8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_15;             // 0x0BB8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_16;             // 0x0BC8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_2;          // 0x0BD8(0x0018)()
-	bool                                          CallFunc_Array_Contains_ReturnValue_1;             // 0x0BF0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_BF1[0x3];                                      // 0x0BF1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable_9;                               // 0x0BF4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_MaxOfIntArray_IndexOfMaxValue;            // 0x0BF8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_MaxOfIntArray_MaxValue;                   // 0x0BFC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_signalResponse                           CallFunc_Array_Get_Item_12;                        // 0x0C00(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C01[0x3];                                      // 0x0C01(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue_4;                  // 0x0C04(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_9;            // 0x0C08(0x0018)()
-	int32                                         CallFunc_Array_Add_ReturnValue_5;                  // 0x0C20(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C24[0x4];                                      // 0x0C24(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_9;          // 0x0C28(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_10;           // 0x0C38(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_10;         // 0x0C50(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_17;             // 0x0C60(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_18;             // 0x0C70(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select_Default_4;                           // 0x0C80(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_10;                // 0x0C84(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_VictoryIntPlusEquals_IntOut_1;            // 0x0C88(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_277A[0x4];                                     // 0x0234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_mInt                           CallFunc_Array_Get_Item;                           // 0x0238(0x0010)(HasGetValueTypeHash)
+	class FString                                 CallFunc_ToLower_ReturnValue;                      // 0x0248(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Get_Item_1;                         // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0264(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0268(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x026C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0270(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0274(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 Temp_string_Variable;                              // 0x0278(0x0010)(ConstParm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 Temp_string_Variable_1;                            // 0x0288(0x0010)(ConstParm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 Temp_string_Variable_2;                            // 0x0298(0x0010)(ConstParm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 Temp_string_Variable_3;                            // 0x02A8(0x0010)(ConstParm, ZeroConstructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x02B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x02BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x02C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_277B[0x3];                                     // 0x02C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x02C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x02C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_277C[0x4];                                     // 0x02CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot;                     // 0x02D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_signalDataDynamic              CallFunc_Array_Get_Item_2;                         // 0x02D8(0x0070)(HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0348(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x034C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_277D[0x3];                                     // 0x034D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot_1;                   // 0x0350(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_2;                               // 0x0358(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_3;                   // 0x035C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x0360(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_277E[0x4];                                     // 0x0364(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0368(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0380(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x0390(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x03A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_3;                  // 0x03B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_5;                 // 0x03BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_3;                               // 0x03C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_277F[0x4];                                     // 0x03C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<Enum_signalResponse>                   K2Node_MakeArray_Array;                            // 0x03C8(0x0010)(ReferenceParm)
+	TArray<int32>                                 K2Node_MakeArray_Array_1;                          // 0x03D8(0x0010)(ReferenceParm)
+	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot_2;                   // 0x03E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FString>                         K2Node_MakeArray_Array_2;                          // 0x03F0(0x0010)(ReferenceParm)
+	struct FStruct_mObject                        CallFunc_Array_Get_Item_3;                         // 0x0400(0x0010)(HasGetValueTypeHash)
+	struct FStruct_save                           CallFunc_Array_Get_Item_4;                         // 0x0410(0x00C0)(HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x04D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x04D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2780[0x3];                                     // 0x04D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_mString                        CallFunc_Array_Get_Item_5;                         // 0x04D8(0x0010)(HasGetValueTypeHash)
+	class FString                                 CallFunc_Array_Get_Item_6;                         // 0x04E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x04F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0500(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_sellObject_points;                        // 0x0504(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_sellObject_sold;                          // 0x0508(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2781[0x7];                                     // 0x0509(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_signal_data2                   CallFunc_Array_Get_Item_7;                         // 0x0510(0x01D0)(HasGetValueTypeHash)
+	int32                                         CallFunc_VictoryIntPlusEquals_IntOut;              // 0x06E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2782[0x4];                                     // 0x06E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FStruct_loan>                   K2Node_MakeArray_Array_3;                          // 0x06E8(0x0010)(ReferenceParm)
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x06F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2783[0x3];                                     // 0x06F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x06FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_4;                               // 0x0700(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2784[0x4];                                     // 0x0704(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_MakeLiteralString_ReturnValue;            // 0x0708(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Len_ReturnValue;                          // 0x0718(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select_Default;                             // 0x071C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_5;                               // 0x0720(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0724(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_6;                               // 0x0728(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2785[0x4];                                     // 0x072C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0730(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x0738(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0740(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0741(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0742(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2786[0x5];                                     // 0x0743(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Array_Get_Item_8;                         // 0x0748(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0758(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_7;                               // 0x075C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0760(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2787[0x7];                                     // 0x0761(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0768(0x0018)()
+	int32                                         Temp_int_Variable_8;                               // 0x0780(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_signalResponse                           K2Node_Select_Default_1;                           // 0x0784(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2788[0x3];                                     // 0x0785(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_2;        // 0x0788(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot_3;                   // 0x0790(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0798(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEmpty_ReturnValue_1;                    // 0x07A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2789[0x7];                                     // 0x07A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue_1;           // 0x07B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue_2;           // 0x07C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x07D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x07E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x07F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_278A[0x4];                                     // 0x07F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x07F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x0808(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_4;              // 0x0818(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FindSubstring_ReturnValue;                // 0x0828(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasSubstring_ReturnValue;                 // 0x082C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_278B[0x3];                                     // 0x082D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_6;                 // 0x0830(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_278C[0x4];                                     // 0x0834(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_RightChop_ReturnValue;                    // 0x0838(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0848(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_278D[0x7];                                     // 0x0849(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_RemoveCharactersExcept_ReturnValue;       // 0x0850(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class USave_main_C*                           CallFunc_getMainSave_save_main;                    // 0x0860(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Left_ReturnValue;                         // 0x0868(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Find_ReturnValue_1;                 // 0x0878(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_278E[0x4];                                     // 0x087C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_loan                           CallFunc_Array_Get_Item_9;                         // 0x0880(0x0020)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_7;                 // 0x08A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_8;                 // 0x08A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x08A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_278F[0x7];                                     // 0x08A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_3;        // 0x08B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_4;        // 0x08B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Array_Get_Item_10;                        // 0x08C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x08D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2790[0x4];                                     // 0x08D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_5;              // 0x08D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x08E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2791[0x3];                                     // 0x08E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x08EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x08F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue_1;           // 0x08F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2792[0x2];                                     // 0x08F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_4;               // 0x08F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_5;               // 0x08F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Multiply_IntInt_ReturnValue;              // 0x08FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Multiply_IntInt_ReturnValue_1;            // 0x0900(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2793[0x4];                                     // 0x0904(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue_3;           // 0x0908(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_5;        // 0x0918(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_6;              // 0x0920(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_6;        // 0x0930(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0938(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0939(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2794[0x2];                                     // 0x093A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Select_Default_2;                           // 0x093C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_9;                 // 0x0940(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_1;        // 0x0944(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_2;        // 0x0945(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_3;        // 0x0946(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_4;        // 0x0947(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue_4;           // 0x0948(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x0958(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x0959(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_4;                 // 0x095A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2795[0x1];                                     // 0x095B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Find_ReturnValue_2;                 // 0x095C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ADish_C*                                CallFunc_Array_Get_Item_11;                        // 0x0960(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_2;            // 0x0968(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_2;          // 0x0980(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_7;              // 0x0990(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_ToLower_ReturnValue_1;                    // 0x09A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_3;            // 0x09B0(0x0018)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_4;            // 0x09C8(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_3;          // 0x09E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_4;          // 0x09F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0A00(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2796[0x7];                                     // 0x0A01(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_8;              // 0x0A08(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x0A18(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2797[0x4];                                     // 0x0A1C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_5;            // 0x0A20(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_5;          // 0x0A38(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_7;        // 0x0A48(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0A50(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2798[0x3];                                     // 0x0A51(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue_3;                  // 0x0A54(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_8;        // 0x0A58(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_9;              // 0x0A60(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_10;             // 0x0A70(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasSubstring_ReturnValue_1;               // 0x0A80(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2799[0x7];                                     // 0x0A81(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_6;            // 0x0A88(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_6;          // 0x0AA0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_7;            // 0x0AB0(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_7;          // 0x0AC8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_8;            // 0x0AD8(0x0018)()
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_11;             // 0x0AF0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_12;             // 0x0B00(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0B10(0x0018)()
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_13;             // 0x0B28(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   K2Node_Select_Default_3;                           // 0x0B38(0x0018)(ConstParm)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_14;             // 0x0B50(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_8;          // 0x0B60(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_15;             // 0x0B70(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_16;             // 0x0B80(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_2;          // 0x0B90(0x0018)()
+	bool                                          CallFunc_Array_Contains_ReturnValue_1;             // 0x0BA8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_279A[0x3];                                     // 0x0BA9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable_9;                               // 0x0BAC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_MaxOfIntArray_IndexOfMaxValue;            // 0x0BB0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_MaxOfIntArray_MaxValue;                   // 0x0BB4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_signalResponse                           CallFunc_Array_Get_Item_12;                        // 0x0BB8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_279B[0x3];                                     // 0x0BB9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue_4;                  // 0x0BBC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_9;            // 0x0BC0(0x0018)()
+	int32                                         CallFunc_Array_Add_ReturnValue_5;                  // 0x0BD8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_279C[0x4];                                     // 0x0BDC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_9;          // 0x0BE0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_10;           // 0x0BF0(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_10;         // 0x0C08(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_17;             // 0x0C18(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_18;             // 0x0C28(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select_Default_4;                           // 0x0C38(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_10;                // 0x0C3C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_VictoryIntPlusEquals_IntOut_1;            // 0x0C40(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(DroneSellBox_C_Sell) == 0x000010, "Wrong alignment on DroneSellBox_C_Sell");
-static_assert(sizeof(DroneSellBox_C_Sell) == 0x000C90, "Wrong size on DroneSellBox_C_Sell");
+static_assert(sizeof(DroneSellBox_C_Sell) == 0x000C50, "Wrong size on DroneSellBox_C_Sell");
 static_assert(offsetof(DroneSellBox_C_Sell, Array) == 0x000000, "Member 'DroneSellBox_C_Sell::Array' has a wrong offset!");
 static_assert(offsetof(DroneSellBox_C_Sell, Info) == 0x000010, "Member 'DroneSellBox_C_Sell::Info' has a wrong offset!");
 static_assert(offsetof(DroneSellBox_C_Sell, Itembox) == 0x000020, "Member 'DroneSellBox_C_Sell::Itembox' has a wrong offset!");
@@ -361,189 +358,186 @@ static_assert(offsetof(DroneSellBox_C_Sell, Lvl1) == 0x000220, "Member 'DroneSel
 static_assert(offsetof(DroneSellBox_C_Sell, Lvl0) == 0x000224, "Member 'DroneSellBox_C_Sell::Lvl0' has a wrong offset!");
 static_assert(offsetof(DroneSellBox_C_Sell, Resp) == 0x000228, "Member 'DroneSellBox_C_Sell::Resp' has a wrong offset!");
 static_assert(offsetof(DroneSellBox_C_Sell, Res) == 0x00022C, "Member 'DroneSellBox_C_Sell::Res' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item) == 0x000230, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_ToLower_ReturnValue) == 0x000240, "Member 'DroneSellBox_C_Sell::CallFunc_ToLower_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_1) == 0x000250, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Length_ReturnValue) == 0x000254, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Array_Index_Variable) == 0x000258, "Member 'DroneSellBox_C_Sell::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_string_Variable) == 0x000260, "Member 'DroneSellBox_C_Sell::Temp_string_Variable' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Variable) == 0x000270, "Member 'DroneSellBox_C_Sell::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_string_Variable_1) == 0x000278, "Member 'DroneSellBox_C_Sell::Temp_string_Variable_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Loop_Counter_Variable) == 0x000288, "Member 'DroneSellBox_C_Sell::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Add_IntInt_ReturnValue) == 0x00028C, "Member 'DroneSellBox_C_Sell::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Array_Index_Variable_1) == 0x000290, "Member 'DroneSellBox_C_Sell::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Loop_Counter_Variable_1) == 0x000294, "Member 'DroneSellBox_C_Sell::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Add_IntInt_ReturnValue_1) == 0x000298, "Member 'DroneSellBox_C_Sell::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_string_Variable_2) == 0x0002A0, "Member 'DroneSellBox_C_Sell::Temp_string_Variable_2' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_string_Variable_3) == 0x0002B0, "Member 'DroneSellBox_C_Sell::Temp_string_Variable_3' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeTransform_ReturnValue) == 0x0002C0, "Member 'DroneSellBox_C_Sell::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Variable_1) == 0x0002F0, "Member 'DroneSellBox_C_Sell::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Loop_Counter_Variable_2) == 0x0002F4, "Member 'DroneSellBox_C_Sell::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Less_IntInt_ReturnValue) == 0x0002F8, "Member 'DroneSellBox_C_Sell::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Add_IntInt_ReturnValue_2) == 0x0002FC, "Member 'DroneSellBox_C_Sell::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Array_Index_Variable_2) == 0x000300, "Member 'DroneSellBox_C_Sell::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getSaveSlot_saveSlot) == 0x000308, "Member 'DroneSellBox_C_Sell::CallFunc_getSaveSlot_saveSlot' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_2) == 0x000310, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Add_IntInt_ReturnValue_3) == 0x000380, "Member 'DroneSellBox_C_Sell::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000384, "Member 'DroneSellBox_C_Sell::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getSaveSlot_saveSlot_1) == 0x000388, "Member 'DroneSellBox_C_Sell::CallFunc_getSaveSlot_saveSlot_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Variable_2) == 0x000390, "Member 'DroneSellBox_C_Sell::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Array_Index_Variable_3) == 0x000394, "Member 'DroneSellBox_C_Sell::Temp_int_Array_Index_Variable_3' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Add_IntInt_ReturnValue_4) == 0x000398, "Member 'DroneSellBox_C_Sell::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralText_ReturnValue) == 0x0003A0, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_TextToString_ReturnValue) == 0x0003B8, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Loop_Counter_Variable_3) == 0x0003C8, "Member 'DroneSellBox_C_Sell::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralText_ReturnValue_1) == 0x0003D0, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_TextToString_ReturnValue_1) == 0x0003E8, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Add_IntInt_ReturnValue_5) == 0x0003F8, "Member 'DroneSellBox_C_Sell::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Variable_3) == 0x0003FC, "Member 'DroneSellBox_C_Sell::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, K2Node_MakeArray_Array) == 0x000400, "Member 'DroneSellBox_C_Sell::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, K2Node_MakeArray_Array_1) == 0x000410, "Member 'DroneSellBox_C_Sell::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getSaveSlot_saveSlot_2) == 0x000420, "Member 'DroneSellBox_C_Sell::CallFunc_getSaveSlot_saveSlot_2' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, K2Node_MakeArray_Array_2) == 0x000428, "Member 'DroneSellBox_C_Sell::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_3) == 0x000438, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, K2Node_MakeArray_Array_3) == 0x000448, "Member 'DroneSellBox_C_Sell::K2Node_MakeArray_Array_3' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_4) == 0x000460, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Length_ReturnValue_1) == 0x000520, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Less_IntInt_ReturnValue_1) == 0x000524, "Member 'DroneSellBox_C_Sell::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000528, "Member 'DroneSellBox_C_Sell::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_FinishSpawningActor_ReturnValue) == 0x000530, "Member 'DroneSellBox_C_Sell::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_5) == 0x000538, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_6) == 0x000548, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_StringToName_ReturnValue) == 0x000558, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Find_ReturnValue) == 0x000560, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_sellObject_points) == 0x000564, "Member 'DroneSellBox_C_Sell::CallFunc_sellObject_points' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_sellObject_sold) == 0x000568, "Member 'DroneSellBox_C_Sell::CallFunc_sellObject_sold' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_7) == 0x000570, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_7' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_VictoryIntPlusEquals_IntOut) == 0x000740, "Member 'DroneSellBox_C_Sell::CallFunc_VictoryIntPlusEquals_IntOut' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_IsEmpty_ReturnValue) == 0x000744, "Member 'DroneSellBox_C_Sell::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Add_ReturnValue) == 0x000748, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Variable_4) == 0x00074C, "Member 'DroneSellBox_C_Sell::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Variable_5) == 0x000750, "Member 'DroneSellBox_C_Sell::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, K2Node_Select_Default) == 0x000754, "Member 'DroneSellBox_C_Sell::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralString_ReturnValue) == 0x000758, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_SelectInt_ReturnValue) == 0x000768, "Member 'DroneSellBox_C_Sell::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Len_ReturnValue) == 0x00076C, "Member 'DroneSellBox_C_Sell::CallFunc_Len_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Variable_6) == 0x000770, "Member 'DroneSellBox_C_Sell::Temp_int_Variable_6' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Variable_7) == 0x000774, "Member 'DroneSellBox_C_Sell::Temp_int_Variable_7' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000778, "Member 'DroneSellBox_C_Sell::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, K2Node_Select_Default_1) == 0x000780, "Member 'DroneSellBox_C_Sell::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x000788, "Member 'DroneSellBox_C_Sell::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_BooleanOR_ReturnValue) == 0x000790, "Member 'DroneSellBox_C_Sell::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_BooleanAND_ReturnValue) == 0x000791, "Member 'DroneSellBox_C_Sell::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Not_PreBool_ReturnValue) == 0x000792, "Member 'DroneSellBox_C_Sell::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_8) == 0x000798, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_8' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Length_ReturnValue_2) == 0x0007A8, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Variable_8) == 0x0007AC, "Member 'DroneSellBox_C_Sell::Temp_int_Variable_8' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Less_IntInt_ReturnValue_2) == 0x0007B0, "Member 'DroneSellBox_C_Sell::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_StringToText_ReturnValue) == 0x0007B8, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getMainGamemode_AsMain_Gamemode_2) == 0x0007D0, "Member 'DroneSellBox_C_Sell::CallFunc_getMainGamemode_AsMain_Gamemode_2' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_bool_Variable) == 0x0007D8, "Member 'DroneSellBox_C_Sell::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getSaveSlot_saveSlot_3) == 0x0007E0, "Member 'DroneSellBox_C_Sell::CallFunc_getSaveSlot_saveSlot_3' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_IntToString_ReturnValue) == 0x0007E8, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_IsEmpty_ReturnValue_1) == 0x0007F8, "Member 'DroneSellBox_C_Sell::CallFunc_IsEmpty_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_IntToString_ReturnValue_1) == 0x000800, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_IntToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_IntToString_ReturnValue_2) == 0x000810, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_IntToString_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue) == 0x000820, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000830, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000840, "Member 'DroneSellBox_C_Sell::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000848, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000858, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_4) == 0x000868, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_FindSubstring_ReturnValue) == 0x000878, "Member 'DroneSellBox_C_Sell::CallFunc_FindSubstring_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Add_IntInt_ReturnValue_6) == 0x00087C, "Member 'DroneSellBox_C_Sell::CallFunc_Add_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_HasSubstring_ReturnValue) == 0x000880, "Member 'DroneSellBox_C_Sell::CallFunc_HasSubstring_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_RightChop_ReturnValue) == 0x000888, "Member 'DroneSellBox_C_Sell::CallFunc_RightChop_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_RemoveCharactersExcept_ReturnValue) == 0x000898, "Member 'DroneSellBox_C_Sell::CallFunc_RemoveCharactersExcept_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Left_ReturnValue) == 0x0008A8, "Member 'DroneSellBox_C_Sell::CallFunc_Left_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Find_ReturnValue_1) == 0x0008B8, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getMainSave_save_main) == 0x0008C0, "Member 'DroneSellBox_C_Sell::CallFunc_getMainSave_save_main' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_9) == 0x0008C8, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_9' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0008E8, "Member 'DroneSellBox_C_Sell::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Add_IntInt_ReturnValue_7) == 0x0008EC, "Member 'DroneSellBox_C_Sell::CallFunc_Add_IntInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Add_IntInt_ReturnValue_8) == 0x0008F0, "Member 'DroneSellBox_C_Sell::CallFunc_Add_IntInt_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getMainGamemode_AsMain_Gamemode_3) == 0x0008F8, "Member 'DroneSellBox_C_Sell::CallFunc_getMainGamemode_AsMain_Gamemode_3' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getMainGamemode_AsMain_Gamemode_4) == 0x000900, "Member 'DroneSellBox_C_Sell::CallFunc_getMainGamemode_AsMain_Gamemode_4' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_10) == 0x000908, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_10' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Length_ReturnValue_3) == 0x000918, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_5) == 0x000920, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Less_IntInt_ReturnValue_3) == 0x000930, "Member 'DroneSellBox_C_Sell::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Add_ReturnValue_1) == 0x000934, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_RemoveItem_ReturnValue) == 0x000938, "Member 'DroneSellBox_C_Sell::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_RemoveItem_ReturnValue_1) == 0x000939, "Member 'DroneSellBox_C_Sell::CallFunc_Array_RemoveItem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Length_ReturnValue_4) == 0x00093C, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Length_ReturnValue_5) == 0x000940, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Length_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Multiply_IntInt_ReturnValue) == 0x000944, "Member 'DroneSellBox_C_Sell::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Multiply_IntInt_ReturnValue_1) == 0x000948, "Member 'DroneSellBox_C_Sell::CallFunc_Multiply_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_IntToString_ReturnValue_3) == 0x000950, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_IntToString_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getMainGamemode_AsMain_Gamemode_5) == 0x000960, "Member 'DroneSellBox_C_Sell::CallFunc_getMainGamemode_AsMain_Gamemode_5' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_6) == 0x000968, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getMainGamemode_AsMain_Gamemode_6) == 0x000978, "Member 'DroneSellBox_C_Sell::CallFunc_getMainGamemode_AsMain_Gamemode_6' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_BooleanAND_ReturnValue_1) == 0x000980, "Member 'DroneSellBox_C_Sell::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Not_PreBool_ReturnValue_1) == 0x000981, "Member 'DroneSellBox_C_Sell::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, K2Node_Select_Default_2) == 0x000984, "Member 'DroneSellBox_C_Sell::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Add_IntInt_ReturnValue_9) == 0x000988, "Member 'DroneSellBox_C_Sell::CallFunc_Add_IntInt_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x00098C, "Member 'DroneSellBox_C_Sell::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_GreaterEqual_IntInt_ReturnValue_2) == 0x00098D, "Member 'DroneSellBox_C_Sell::CallFunc_GreaterEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_GreaterEqual_IntInt_ReturnValue_3) == 0x00098E, "Member 'DroneSellBox_C_Sell::CallFunc_GreaterEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_GreaterEqual_IntInt_ReturnValue_4) == 0x00098F, "Member 'DroneSellBox_C_Sell::CallFunc_GreaterEqual_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_IntToString_ReturnValue_4) == 0x000990, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_IntToString_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_BooleanAND_ReturnValue_2) == 0x0009A0, "Member 'DroneSellBox_C_Sell::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_BooleanAND_ReturnValue_3) == 0x0009A1, "Member 'DroneSellBox_C_Sell::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_BooleanAND_ReturnValue_4) == 0x0009A2, "Member 'DroneSellBox_C_Sell::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Find_ReturnValue_2) == 0x0009A4, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Find_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_bool_Variable_1) == 0x0009A8, "Member 'DroneSellBox_C_Sell::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_11) == 0x0009B0, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_11' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_7) == 0x0009B8, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_ToLower_ReturnValue_1) == 0x0009C8, "Member 'DroneSellBox_C_Sell::CallFunc_ToLower_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralText_ReturnValue_2) == 0x0009D8, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralText_ReturnValue_3) == 0x0009F0, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_TextToString_ReturnValue_2) == 0x000A08, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_TextToString_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_TextToString_ReturnValue_3) == 0x000A18, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_TextToString_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralText_ReturnValue_4) == 0x000A28, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralText_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_TextToString_ReturnValue_4) == 0x000A40, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_TextToString_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Add_ReturnValue_2) == 0x000A50, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Add_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_8) == 0x000A58, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralText_ReturnValue_5) == 0x000A68, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralText_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_TextToString_ReturnValue_5) == 0x000A80, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_TextToString_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getMainGamemode_AsMain_Gamemode_7) == 0x000A90, "Member 'DroneSellBox_C_Sell::CallFunc_getMainGamemode_AsMain_Gamemode_7' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Contains_ReturnValue) == 0x000A98, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Add_ReturnValue_3) == 0x000A9C, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Add_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getMainGamemode_AsMain_Gamemode_8) == 0x000AA0, "Member 'DroneSellBox_C_Sell::CallFunc_getMainGamemode_AsMain_Gamemode_8' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_9) == 0x000AA8, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_10) == 0x000AB8, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_HasSubstring_ReturnValue_1) == 0x000AC8, "Member 'DroneSellBox_C_Sell::CallFunc_HasSubstring_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralText_ReturnValue_6) == 0x000AD0, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralText_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_TextToString_ReturnValue_6) == 0x000AE8, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_TextToString_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralText_ReturnValue_7) == 0x000AF8, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralText_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_TextToString_ReturnValue_7) == 0x000B10, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_TextToString_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralText_ReturnValue_8) == 0x000B20, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralText_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_11) == 0x000B38, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_12) == 0x000B48, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000B58, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_13) == 0x000B70, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, K2Node_Select_Default_3) == 0x000B80, "Member 'DroneSellBox_C_Sell::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_14) == 0x000B98, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_TextToString_ReturnValue_8) == 0x000BA8, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_TextToString_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_15) == 0x000BB8, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_16) == 0x000BC8, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_StringToText_ReturnValue_2) == 0x000BD8, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_StringToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Contains_ReturnValue_1) == 0x000BF0, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Contains_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Variable_9) == 0x000BF4, "Member 'DroneSellBox_C_Sell::Temp_int_Variable_9' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MaxOfIntArray_IndexOfMaxValue) == 0x000BF8, "Member 'DroneSellBox_C_Sell::CallFunc_MaxOfIntArray_IndexOfMaxValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MaxOfIntArray_MaxValue) == 0x000BFC, "Member 'DroneSellBox_C_Sell::CallFunc_MaxOfIntArray_MaxValue' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_12) == 0x000C00, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_12' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Add_ReturnValue_4) == 0x000C04, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Add_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralText_ReturnValue_9) == 0x000C08, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralText_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Add_ReturnValue_5) == 0x000C20, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Add_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_TextToString_ReturnValue_9) == 0x000C28, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_TextToString_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralText_ReturnValue_10) == 0x000C38, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralText_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_TextToString_ReturnValue_10) == 0x000C50, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_TextToString_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_17) == 0x000C60, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_18) == 0x000C70, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, K2Node_Select_Default_4) == 0x000C80, "Member 'DroneSellBox_C_Sell::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Add_IntInt_ReturnValue_10) == 0x000C84, "Member 'DroneSellBox_C_Sell::CallFunc_Add_IntInt_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_VictoryIntPlusEquals_IntOut_1) == 0x000C88, "Member 'DroneSellBox_C_Sell::CallFunc_VictoryIntPlusEquals_IntOut_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Array_Index_Variable) == 0x000230, "Member 'DroneSellBox_C_Sell::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item) == 0x000238, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_ToLower_ReturnValue) == 0x000248, "Member 'DroneSellBox_C_Sell::CallFunc_ToLower_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_1) == 0x000258, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Length_ReturnValue) == 0x00025C, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Variable) == 0x000260, "Member 'DroneSellBox_C_Sell::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Loop_Counter_Variable) == 0x000264, "Member 'DroneSellBox_C_Sell::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Add_IntInt_ReturnValue) == 0x000268, "Member 'DroneSellBox_C_Sell::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Array_Index_Variable_1) == 0x00026C, "Member 'DroneSellBox_C_Sell::Temp_int_Array_Index_Variable_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Loop_Counter_Variable_1) == 0x000270, "Member 'DroneSellBox_C_Sell::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Add_IntInt_ReturnValue_1) == 0x000274, "Member 'DroneSellBox_C_Sell::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_string_Variable) == 0x000278, "Member 'DroneSellBox_C_Sell::Temp_string_Variable' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_string_Variable_1) == 0x000288, "Member 'DroneSellBox_C_Sell::Temp_string_Variable_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_string_Variable_2) == 0x000298, "Member 'DroneSellBox_C_Sell::Temp_string_Variable_2' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_string_Variable_3) == 0x0002A8, "Member 'DroneSellBox_C_Sell::Temp_string_Variable_3' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Variable_1) == 0x0002B8, "Member 'DroneSellBox_C_Sell::Temp_int_Variable_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Loop_Counter_Variable_2) == 0x0002BC, "Member 'DroneSellBox_C_Sell::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Less_IntInt_ReturnValue) == 0x0002C0, "Member 'DroneSellBox_C_Sell::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Add_IntInt_ReturnValue_2) == 0x0002C4, "Member 'DroneSellBox_C_Sell::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Array_Index_Variable_2) == 0x0002C8, "Member 'DroneSellBox_C_Sell::Temp_int_Array_Index_Variable_2' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getSaveSlot_saveSlot) == 0x0002D0, "Member 'DroneSellBox_C_Sell::CallFunc_getSaveSlot_saveSlot' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_2) == 0x0002D8, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_2' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Add_IntInt_ReturnValue_3) == 0x000348, "Member 'DroneSellBox_C_Sell::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Greater_FloatFloat_ReturnValue) == 0x00034C, "Member 'DroneSellBox_C_Sell::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getSaveSlot_saveSlot_1) == 0x000350, "Member 'DroneSellBox_C_Sell::CallFunc_getSaveSlot_saveSlot_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Variable_2) == 0x000358, "Member 'DroneSellBox_C_Sell::Temp_int_Variable_2' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Array_Index_Variable_3) == 0x00035C, "Member 'DroneSellBox_C_Sell::Temp_int_Array_Index_Variable_3' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Add_IntInt_ReturnValue_4) == 0x000360, "Member 'DroneSellBox_C_Sell::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralText_ReturnValue) == 0x000368, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_TextToString_ReturnValue) == 0x000380, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000390, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_TextToString_ReturnValue_1) == 0x0003A8, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Loop_Counter_Variable_3) == 0x0003B8, "Member 'DroneSellBox_C_Sell::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Add_IntInt_ReturnValue_5) == 0x0003BC, "Member 'DroneSellBox_C_Sell::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Variable_3) == 0x0003C0, "Member 'DroneSellBox_C_Sell::Temp_int_Variable_3' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, K2Node_MakeArray_Array) == 0x0003C8, "Member 'DroneSellBox_C_Sell::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, K2Node_MakeArray_Array_1) == 0x0003D8, "Member 'DroneSellBox_C_Sell::K2Node_MakeArray_Array_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getSaveSlot_saveSlot_2) == 0x0003E8, "Member 'DroneSellBox_C_Sell::CallFunc_getSaveSlot_saveSlot_2' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, K2Node_MakeArray_Array_2) == 0x0003F0, "Member 'DroneSellBox_C_Sell::K2Node_MakeArray_Array_2' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_3) == 0x000400, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_3' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_4) == 0x000410, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_4' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Length_ReturnValue_1) == 0x0004D0, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Less_IntInt_ReturnValue_1) == 0x0004D4, "Member 'DroneSellBox_C_Sell::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_5) == 0x0004D8, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_5' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_6) == 0x0004E8, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_6' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_StringToName_ReturnValue) == 0x0004F8, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Find_ReturnValue) == 0x000500, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_sellObject_points) == 0x000504, "Member 'DroneSellBox_C_Sell::CallFunc_sellObject_points' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_sellObject_sold) == 0x000508, "Member 'DroneSellBox_C_Sell::CallFunc_sellObject_sold' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_7) == 0x000510, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_7' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_VictoryIntPlusEquals_IntOut) == 0x0006E0, "Member 'DroneSellBox_C_Sell::CallFunc_VictoryIntPlusEquals_IntOut' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, K2Node_MakeArray_Array_3) == 0x0006E8, "Member 'DroneSellBox_C_Sell::K2Node_MakeArray_Array_3' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_IsEmpty_ReturnValue) == 0x0006F8, "Member 'DroneSellBox_C_Sell::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Add_ReturnValue) == 0x0006FC, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Variable_4) == 0x000700, "Member 'DroneSellBox_C_Sell::Temp_int_Variable_4' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralString_ReturnValue) == 0x000708, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Len_ReturnValue) == 0x000718, "Member 'DroneSellBox_C_Sell::CallFunc_Len_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, K2Node_Select_Default) == 0x00071C, "Member 'DroneSellBox_C_Sell::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Variable_5) == 0x000720, "Member 'DroneSellBox_C_Sell::Temp_int_Variable_5' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_SelectInt_ReturnValue) == 0x000724, "Member 'DroneSellBox_C_Sell::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Variable_6) == 0x000728, "Member 'DroneSellBox_C_Sell::Temp_int_Variable_6' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000730, "Member 'DroneSellBox_C_Sell::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x000738, "Member 'DroneSellBox_C_Sell::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_BooleanOR_ReturnValue) == 0x000740, "Member 'DroneSellBox_C_Sell::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_BooleanAND_ReturnValue) == 0x000741, "Member 'DroneSellBox_C_Sell::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Not_PreBool_ReturnValue) == 0x000742, "Member 'DroneSellBox_C_Sell::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_8) == 0x000748, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_8' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Length_ReturnValue_2) == 0x000758, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Variable_7) == 0x00075C, "Member 'DroneSellBox_C_Sell::Temp_int_Variable_7' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Less_IntInt_ReturnValue_2) == 0x000760, "Member 'DroneSellBox_C_Sell::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_StringToText_ReturnValue) == 0x000768, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Variable_8) == 0x000780, "Member 'DroneSellBox_C_Sell::Temp_int_Variable_8' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, K2Node_Select_Default_1) == 0x000784, "Member 'DroneSellBox_C_Sell::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getMainGamemode_AsMain_Gamemode_2) == 0x000788, "Member 'DroneSellBox_C_Sell::CallFunc_getMainGamemode_AsMain_Gamemode_2' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getSaveSlot_saveSlot_3) == 0x000790, "Member 'DroneSellBox_C_Sell::CallFunc_getSaveSlot_saveSlot_3' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_IntToString_ReturnValue) == 0x000798, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_IsEmpty_ReturnValue_1) == 0x0007A8, "Member 'DroneSellBox_C_Sell::CallFunc_IsEmpty_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_IntToString_ReturnValue_1) == 0x0007B0, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_IntToString_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_IntToString_ReturnValue_2) == 0x0007C0, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_IntToString_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue) == 0x0007D0, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_1) == 0x0007E0, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Multiply_IntFloat_ReturnValue) == 0x0007F0, "Member 'DroneSellBox_C_Sell::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_2) == 0x0007F8, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000808, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_4) == 0x000818, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_FindSubstring_ReturnValue) == 0x000828, "Member 'DroneSellBox_C_Sell::CallFunc_FindSubstring_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_HasSubstring_ReturnValue) == 0x00082C, "Member 'DroneSellBox_C_Sell::CallFunc_HasSubstring_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Add_IntInt_ReturnValue_6) == 0x000830, "Member 'DroneSellBox_C_Sell::CallFunc_Add_IntInt_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_RightChop_ReturnValue) == 0x000838, "Member 'DroneSellBox_C_Sell::CallFunc_RightChop_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_bool_Variable) == 0x000848, "Member 'DroneSellBox_C_Sell::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_RemoveCharactersExcept_ReturnValue) == 0x000850, "Member 'DroneSellBox_C_Sell::CallFunc_RemoveCharactersExcept_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getMainSave_save_main) == 0x000860, "Member 'DroneSellBox_C_Sell::CallFunc_getMainSave_save_main' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Left_ReturnValue) == 0x000868, "Member 'DroneSellBox_C_Sell::CallFunc_Left_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Find_ReturnValue_1) == 0x000878, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Find_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_9) == 0x000880, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_9' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Add_IntInt_ReturnValue_7) == 0x0008A0, "Member 'DroneSellBox_C_Sell::CallFunc_Add_IntInt_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Add_IntInt_ReturnValue_8) == 0x0008A4, "Member 'DroneSellBox_C_Sell::CallFunc_Add_IntInt_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0008A8, "Member 'DroneSellBox_C_Sell::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getMainGamemode_AsMain_Gamemode_3) == 0x0008B0, "Member 'DroneSellBox_C_Sell::CallFunc_getMainGamemode_AsMain_Gamemode_3' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getMainGamemode_AsMain_Gamemode_4) == 0x0008B8, "Member 'DroneSellBox_C_Sell::CallFunc_getMainGamemode_AsMain_Gamemode_4' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_10) == 0x0008C0, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_10' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Length_ReturnValue_3) == 0x0008D0, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_5) == 0x0008D8, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Less_IntInt_ReturnValue_3) == 0x0008E8, "Member 'DroneSellBox_C_Sell::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Add_ReturnValue_1) == 0x0008EC, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_RemoveItem_ReturnValue) == 0x0008F0, "Member 'DroneSellBox_C_Sell::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_RemoveItem_ReturnValue_1) == 0x0008F1, "Member 'DroneSellBox_C_Sell::CallFunc_Array_RemoveItem_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Length_ReturnValue_4) == 0x0008F4, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Length_ReturnValue_5) == 0x0008F8, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Length_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Multiply_IntInt_ReturnValue) == 0x0008FC, "Member 'DroneSellBox_C_Sell::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Multiply_IntInt_ReturnValue_1) == 0x000900, "Member 'DroneSellBox_C_Sell::CallFunc_Multiply_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_IntToString_ReturnValue_3) == 0x000908, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_IntToString_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getMainGamemode_AsMain_Gamemode_5) == 0x000918, "Member 'DroneSellBox_C_Sell::CallFunc_getMainGamemode_AsMain_Gamemode_5' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_6) == 0x000920, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getMainGamemode_AsMain_Gamemode_6) == 0x000930, "Member 'DroneSellBox_C_Sell::CallFunc_getMainGamemode_AsMain_Gamemode_6' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_BooleanAND_ReturnValue_1) == 0x000938, "Member 'DroneSellBox_C_Sell::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Not_PreBool_ReturnValue_1) == 0x000939, "Member 'DroneSellBox_C_Sell::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, K2Node_Select_Default_2) == 0x00093C, "Member 'DroneSellBox_C_Sell::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Add_IntInt_ReturnValue_9) == 0x000940, "Member 'DroneSellBox_C_Sell::CallFunc_Add_IntInt_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x000944, "Member 'DroneSellBox_C_Sell::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_GreaterEqual_IntInt_ReturnValue_2) == 0x000945, "Member 'DroneSellBox_C_Sell::CallFunc_GreaterEqual_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_GreaterEqual_IntInt_ReturnValue_3) == 0x000946, "Member 'DroneSellBox_C_Sell::CallFunc_GreaterEqual_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_GreaterEqual_IntInt_ReturnValue_4) == 0x000947, "Member 'DroneSellBox_C_Sell::CallFunc_GreaterEqual_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_IntToString_ReturnValue_4) == 0x000948, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_IntToString_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_BooleanAND_ReturnValue_2) == 0x000958, "Member 'DroneSellBox_C_Sell::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_BooleanAND_ReturnValue_3) == 0x000959, "Member 'DroneSellBox_C_Sell::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_BooleanAND_ReturnValue_4) == 0x00095A, "Member 'DroneSellBox_C_Sell::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Find_ReturnValue_2) == 0x00095C, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Find_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_11) == 0x000960, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_11' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralText_ReturnValue_2) == 0x000968, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_TextToString_ReturnValue_2) == 0x000980, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_TextToString_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_7) == 0x000990, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_ToLower_ReturnValue_1) == 0x0009A0, "Member 'DroneSellBox_C_Sell::CallFunc_ToLower_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralText_ReturnValue_3) == 0x0009B0, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralText_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralText_ReturnValue_4) == 0x0009C8, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralText_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_TextToString_ReturnValue_3) == 0x0009E0, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_TextToString_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_TextToString_ReturnValue_4) == 0x0009F0, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_TextToString_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_bool_Variable_1) == 0x000A00, "Member 'DroneSellBox_C_Sell::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_8) == 0x000A08, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Add_ReturnValue_2) == 0x000A18, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Add_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralText_ReturnValue_5) == 0x000A20, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralText_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_TextToString_ReturnValue_5) == 0x000A38, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_TextToString_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getMainGamemode_AsMain_Gamemode_7) == 0x000A48, "Member 'DroneSellBox_C_Sell::CallFunc_getMainGamemode_AsMain_Gamemode_7' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Contains_ReturnValue) == 0x000A50, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Add_ReturnValue_3) == 0x000A54, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Add_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_getMainGamemode_AsMain_Gamemode_8) == 0x000A58, "Member 'DroneSellBox_C_Sell::CallFunc_getMainGamemode_AsMain_Gamemode_8' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_9) == 0x000A60, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_10) == 0x000A70, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_10' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_HasSubstring_ReturnValue_1) == 0x000A80, "Member 'DroneSellBox_C_Sell::CallFunc_HasSubstring_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralText_ReturnValue_6) == 0x000A88, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralText_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_TextToString_ReturnValue_6) == 0x000AA0, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_TextToString_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralText_ReturnValue_7) == 0x000AB0, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralText_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_TextToString_ReturnValue_7) == 0x000AC8, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_TextToString_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralText_ReturnValue_8) == 0x000AD8, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralText_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_11) == 0x000AF0, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_11' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_12) == 0x000B00, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_12' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000B10, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_13) == 0x000B28, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_13' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, K2Node_Select_Default_3) == 0x000B38, "Member 'DroneSellBox_C_Sell::K2Node_Select_Default_3' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_14) == 0x000B50, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_14' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_TextToString_ReturnValue_8) == 0x000B60, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_TextToString_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_15) == 0x000B70, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_15' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_16) == 0x000B80, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_16' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_StringToText_ReturnValue_2) == 0x000B90, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_StringToText_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Contains_ReturnValue_1) == 0x000BA8, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Contains_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, Temp_int_Variable_9) == 0x000BAC, "Member 'DroneSellBox_C_Sell::Temp_int_Variable_9' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MaxOfIntArray_IndexOfMaxValue) == 0x000BB0, "Member 'DroneSellBox_C_Sell::CallFunc_MaxOfIntArray_IndexOfMaxValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MaxOfIntArray_MaxValue) == 0x000BB4, "Member 'DroneSellBox_C_Sell::CallFunc_MaxOfIntArray_MaxValue' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Get_Item_12) == 0x000BB8, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Get_Item_12' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Add_ReturnValue_4) == 0x000BBC, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Add_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralText_ReturnValue_9) == 0x000BC0, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralText_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Array_Add_ReturnValue_5) == 0x000BD8, "Member 'DroneSellBox_C_Sell::CallFunc_Array_Add_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_TextToString_ReturnValue_9) == 0x000BE0, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_TextToString_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_MakeLiteralText_ReturnValue_10) == 0x000BF0, "Member 'DroneSellBox_C_Sell::CallFunc_MakeLiteralText_ReturnValue_10' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Conv_TextToString_ReturnValue_10) == 0x000C08, "Member 'DroneSellBox_C_Sell::CallFunc_Conv_TextToString_ReturnValue_10' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_17) == 0x000C18, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_17' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Concat_StrStr_ReturnValue_18) == 0x000C28, "Member 'DroneSellBox_C_Sell::CallFunc_Concat_StrStr_ReturnValue_18' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, K2Node_Select_Default_4) == 0x000C38, "Member 'DroneSellBox_C_Sell::K2Node_Select_Default_4' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_Add_IntInt_ReturnValue_10) == 0x000C3C, "Member 'DroneSellBox_C_Sell::CallFunc_Add_IntInt_ReturnValue_10' has a wrong offset!");
+static_assert(offsetof(DroneSellBox_C_Sell, CallFunc_VictoryIntPlusEquals_IntOut_1) == 0x000C40, "Member 'DroneSellBox_C_Sell::CallFunc_VictoryIntPlusEquals_IntOut_1' has a wrong offset!");
 
 // Function droneSellBox.droneSellBox_C.canSell
 // 0x0058 (0x0058 - 0x0000)
@@ -554,13 +548,13 @@ public:
 	bool                                          Can;                                               // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          IsItembox;                                         // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_279D[0x5];                                     // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class AProp_container_itemBox_C*              K2Node_DynamicCast_AsProp_Container_Item_Box;      // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_279E[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AProp_box_C*                            K2Node_DynamicCast_AsProp_Box;                     // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_279F[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_GetComponentVelocity_ReturnValue;         // 0x002C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetPhysicsAngularVelocityInRadians_ReturnValue; // 0x0038(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0044(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

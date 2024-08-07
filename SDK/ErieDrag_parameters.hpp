@@ -10,163 +10,146 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Struct_save_structs.hpp"
 #include "Struct_mFloat_structs.hpp"
-#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function erieDrag.erieDrag_C.ExecuteUbergraph_erieDrag
-// 0x0760 (0x0760 - 0x0000)
+// 0x05D0 (0x05D0 - 0x0000)
 struct ErieDrag_C_ExecuteUbergraph_erieDrag final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22E3[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0008(0x0010)(ConstParm, ReferenceParm)
 	bool                                          Temp_bool_Variable;                                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22E4[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   Temp_name_Variable;                                // 0x001C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Temp_name_Variable_1;                              // 0x0024(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_1;                              // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22E5[0x3];                                     // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   Temp_name_Variable_2;                              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Temp_name_Variable_3;                              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_1;                                // 0x0050(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         K2Node_Event_damage;                               // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_ignore;                               // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F1[0x3];                                       // 0x00F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x00F8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0104(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x0110(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x011C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x0128(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x0134(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Roll;                        // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Pitch;                       // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Yaw;                         // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue;           // 0x014C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotationFromAxes_ReturnValue;         // 0x0158(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue_1;        // 0x0164(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         CallFunc_BreakRotator_Roll_1;                      // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Pitch_1;                     // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Yaw_1;                       // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17C[0x4];                                      // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EObjectTypeQuery>                      CallFunc_obj_static_obj;                           // 0x0180(0x0010)(ReferenceParm)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0190(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x019C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_SphereTraceSingleForObjects_OutHit;       // 0x01A8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_SphereTraceSingleForObjects_ReturnValue;  // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0231(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0232(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_233[0x1];                                      // 0x0233(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x0234(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x023C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0248(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0254(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0260(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_26C[0x4];                                      // 0x026C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0270(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0280(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0290(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x0294(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0298(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x029C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x02A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit_1;            // 0x02B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap_1;         // 0x02B5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B6[0x2];                                      // 0x02B6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time_1;                    // 0x02B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance_1;                // 0x02BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location_1;                // 0x02C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint_1;             // 0x02CC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal_1;                  // 0x02D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal_1;            // 0x02E4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat_1;                 // 0x02F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor_1;                // 0x02F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent_1;            // 0x0300(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName_1;             // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem_1;                 // 0x0310(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex_1;            // 0x0314(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex_1;               // 0x0318(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart_1;              // 0x031C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd_1;                // 0x0328(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0334(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x0340(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0344(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Abs_ReturnValue;                          // 0x0350(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0354(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0355(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_356[0x2];                                      // 0x0356(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0358(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_Event_name;                                 // 0x0364(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_kick;                                 // 0x036C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_36D[0x3];                                      // 0x036D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0370(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x0378(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class FName                                   K2Node_Select_Default;                             // 0x0400(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_Select_Default_1;                           // 0x0408(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorScale3D_ReturnValue;              // 0x0410(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x041C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorScale3D_ReturnValue_1;            // 0x0420(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x042C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0430(0x0030)(IsPlainOldData, NoDestructor)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue_1;                // 0x0460(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_46C[0x4];                                      // 0x046C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x0470(0x0030)(IsPlainOldData, NoDestructor)
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_HitComponent;           // 0x04A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x04A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x04B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_ComponentBoundEvent_NormalImpulse;          // 0x04B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_ComponentBoundEvent_Hit;                    // 0x04C4(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit_2;            // 0x054C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap_2;         // 0x054D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_54E[0x2];                                      // 0x054E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time_2;                    // 0x0550(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance_2;                // 0x0554(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location_2;                // 0x0558(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint_2;             // 0x0564(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal_2;                  // 0x0570(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal_2;            // 0x057C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat_2;                 // 0x0588(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor_2;                // 0x0590(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent_2;            // 0x0598(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName_2;             // 0x05A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem_2;                 // 0x05A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex_2;            // 0x05AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex_2;               // 0x05B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart_2;              // 0x05B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd_2;                // 0x05C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECollisionChannel                             CallFunc_GetCollisionObjectType_ReturnValue;       // 0x05CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5CD[0x3];                                      // 0x05CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x05D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x05D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5D9[0x7];                                      // 0x05D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AEriePlushLive_C*                       CallFunc_FinishSpawningActor_ReturnValue;          // 0x05E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x05E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult;       // 0x05F0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AEriePlushLive_C*                       CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0678(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult_1;     // 0x0680(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0708(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0710(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x0740(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_erieHold_C*                       CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x0748(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_collectObject_collected;                  // 0x0750(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x0040(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x004C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x0058(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x0064(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult;       // 0x0070(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x00F8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x0104(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue;           // 0x0110(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Roll;                        // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Pitch;                       // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Yaw;                         // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotationFromAxes_ReturnValue;         // 0x0128(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue_1;        // 0x0134(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_BreakRotator_Roll_1;                      // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Pitch_1;                     // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Yaw_1;                       // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_22E6[0x4];                                     // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EObjectTypeQuery>                      CallFunc_obj_static_obj;                           // 0x0150(0x0010)(ReferenceParm)
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0160(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x016C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_SphereTraceSingleForObjects_OutHit;       // 0x0178(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_SphereTraceSingleForObjects_ReturnValue;  // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0201(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0202(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_22E7[0x1];                                     // 0x0203(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x0204(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x020C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0218(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0224(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0230(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_22E8[0x4];                                     // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0250(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x0264(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0268(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x026C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0278(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit_1;            // 0x0284(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap_1;         // 0x0285(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_22E9[0x2];                                     // 0x0286(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time_1;                    // 0x0288(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance_1;                // 0x028C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location_1;                // 0x0290(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint_1;             // 0x029C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal_1;                  // 0x02A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal_1;            // 0x02B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat_1;                 // 0x02C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor_1;                // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent_1;            // 0x02D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName_1;             // 0x02D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem_1;                 // 0x02E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex_1;            // 0x02E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex_1;               // 0x02E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart_1;              // 0x02EC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd_1;                // 0x02F8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0304(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x0310(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0314(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Abs_ReturnValue;                          // 0x0320(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0324(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0325(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_22EA[0x2];                                     // 0x0326(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0328(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_ignore;                               // 0x0334(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_22EB[0x3];                                     // 0x0335(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x0338(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult_1;     // 0x033C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class FName                                   K2Node_Select_Default;                             // 0x03C4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_Select_Default_1;                           // 0x03CC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorScale3D_ReturnValue;              // 0x03D4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x03E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorScale3D_ReturnValue_1;            // 0x03E4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x03F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_22EC[0xC];                                     // 0x03F4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0400(0x0030)(IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue_1;                // 0x0430(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_22ED[0x4];                                     // 0x043C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0440(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_22EE[0x8];                                     // 0x0448(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x0450(0x0030)(IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0480(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AEriePlushLive_C*                       CallFunc_FinishSpawningActor_ReturnValue;          // 0x0488(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AEriePlushLive_C*                       CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0490(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_HitComponent;           // 0x0498(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x04A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x04A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_ComponentBoundEvent_NormalImpulse;          // 0x04B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_ComponentBoundEvent_Hit;                    // 0x04BC(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit_2;            // 0x0544(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap_2;         // 0x0545(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_22EF[0x2];                                     // 0x0546(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time_2;                    // 0x0548(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance_2;                // 0x054C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location_2;                // 0x0550(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint_2;             // 0x055C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal_2;                  // 0x0568(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal_2;            // 0x0574(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat_2;                 // 0x0580(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor_2;                // 0x0588(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent_2;            // 0x0590(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName_2;             // 0x0598(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem_2;                 // 0x05A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex_2;            // 0x05A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex_2;               // 0x05A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart_2;              // 0x05AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd_2;                // 0x05B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECollisionChannel                             CallFunc_GetCollisionObjectType_ReturnValue;       // 0x05C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x05C5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(ErieDrag_C_ExecuteUbergraph_erieDrag) == 0x000010, "Wrong alignment on ErieDrag_C_ExecuteUbergraph_erieDrag");
-static_assert(sizeof(ErieDrag_C_ExecuteUbergraph_erieDrag) == 0x000760, "Wrong size on ErieDrag_C_ExecuteUbergraph_erieDrag");
+static_assert(sizeof(ErieDrag_C_ExecuteUbergraph_erieDrag) == 0x0005D0, "Wrong size on ErieDrag_C_ExecuteUbergraph_erieDrag");
 static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, EntryPoint) == 0x000000, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, Temp_object_Variable) == 0x000008, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, Temp_bool_Variable) == 0x000018, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::Temp_bool_Variable' has a wrong offset!");
@@ -175,134 +158,108 @@ static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, Temp_name_Variable_
 static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, Temp_bool_Variable_1) == 0x00002C, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::Temp_bool_Variable_1' has a wrong offset!");
 static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, Temp_name_Variable_2) == 0x000030, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::Temp_name_Variable_2' has a wrong offset!");
 static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, Temp_name_Variable_3) == 0x000038, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::Temp_name_Variable_3' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_Event_player_5) == 0x000040, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_Event_player_5' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_Event_player_4) == 0x000048, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_Event_player_4' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_Event_hit_1) == 0x000050, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_Event_hit_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_Event_damage) == 0x0000D8, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_Event_damage' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_Event_player_3) == 0x0000E0, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_Event_player_3' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_Event_player_2) == 0x0000E8, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_Event_player_2' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_Event_ignore) == 0x0000F0, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_Event_ignore' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_Event_DeltaSeconds) == 0x0000F4, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_GetVelocity_ReturnValue) == 0x0000F8, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_GetVelocity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000104, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x000110, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_GetActorForwardVector_ReturnValue) == 0x00011C, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_K2_GetActorRotation_ReturnValue) == 0x000128, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_Multiply_VectorVector_ReturnValue) == 0x000134, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakRotator_Roll) == 0x000140, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakRotator_Roll' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakRotator_Pitch) == 0x000144, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakRotator_Pitch' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakRotator_Yaw) == 0x000148, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakRotator_Yaw' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_Cross_VectorVector_ReturnValue) == 0x00014C, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_Cross_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_MakeRotationFromAxes_ReturnValue) == 0x000158, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_MakeRotationFromAxes_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_K2_GetActorRotation_ReturnValue_1) == 0x000164, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_K2_GetActorRotation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakRotator_Roll_1) == 0x000170, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakRotator_Roll_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakRotator_Pitch_1) == 0x000174, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakRotator_Pitch_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakRotator_Yaw_1) == 0x000178, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakRotator_Yaw_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_obj_static_obj) == 0x000180, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_obj_static_obj' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_MakeRotator_ReturnValue) == 0x000190, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00019C, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_SphereTraceSingleForObjects_OutHit) == 0x0001A8, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_SphereTraceSingleForObjects_OutHit' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_SphereTraceSingleForObjects_ReturnValue) == 0x000230, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_SphereTraceSingleForObjects_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_bBlockingHit) == 0x000231, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_bInitialOverlap) == 0x000232, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Time) == 0x000234, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Distance) == 0x000238, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Location) == 0x00023C, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_ImpactPoint) == 0x000248, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Normal) == 0x000254, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_ImpactNormal) == 0x000260, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_PhysMat) == 0x000270, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitActor) == 0x000278, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitComponent) == 0x000280, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitBoneName) == 0x000288, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitItem) == 0x000290, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_ElementIndex) == 0x000294, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_FaceIndex) == 0x000298, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_TraceStart) == 0x00029C, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_TraceEnd) == 0x0002A8, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_bBlockingHit_1) == 0x0002B4, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_bBlockingHit_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_bInitialOverlap_1) == 0x0002B5, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_bInitialOverlap_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Time_1) == 0x0002B8, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Time_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Distance_1) == 0x0002BC, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Distance_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Location_1) == 0x0002C0, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Location_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_ImpactPoint_1) == 0x0002CC, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_ImpactPoint_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Normal_1) == 0x0002D8, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Normal_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_ImpactNormal_1) == 0x0002E4, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_ImpactNormal_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_PhysMat_1) == 0x0002F0, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_PhysMat_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitActor_1) == 0x0002F8, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitActor_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitComponent_1) == 0x000300, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitComponent_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitBoneName_1) == 0x000308, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitBoneName_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitItem_1) == 0x000310, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitItem_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_ElementIndex_1) == 0x000314, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_ElementIndex_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_FaceIndex_1) == 0x000318, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_FaceIndex_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_TraceStart_1) == 0x00031C, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_TraceStart_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_TraceEnd_1) == 0x000328, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_TraceEnd_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_Add_VectorVector_ReturnValue) == 0x000334, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_Dot_VectorVector_ReturnValue) == 0x000340, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000344, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_Abs_ReturnValue) == 0x000350, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_Abs_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000354, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_Less_FloatFloat_ReturnValue) == 0x000355, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000358, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_Event_name) == 0x000364, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_Event_name' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_Event_kick) == 0x00036C, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_Event_kick' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_Event_player_1) == 0x000370, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_Event_hit) == 0x000378, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_Select_Default) == 0x000400, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_Select_Default_1) == 0x000408, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_GetActorScale3D_ReturnValue) == 0x000410, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_SelectFloat_ReturnValue) == 0x00041C, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_GetActorScale3D_ReturnValue_1) == 0x000420, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_GetActorScale3D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_Add_FloatFloat_ReturnValue) == 0x00042C, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_MakeTransform_ReturnValue) == 0x000430, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_MakeRotator_ReturnValue_1) == 0x000460, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_MakeRotator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_MakeTransform_ReturnValue_1) == 0x000470, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_ComponentBoundEvent_HitComponent) == 0x0004A0, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_ComponentBoundEvent_HitComponent' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_ComponentBoundEvent_OtherActor) == 0x0004A8, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_ComponentBoundEvent_OtherComp) == 0x0004B0, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_ComponentBoundEvent_NormalImpulse) == 0x0004B8, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_ComponentBoundEvent_NormalImpulse' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_ComponentBoundEvent_Hit) == 0x0004C4, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_ComponentBoundEvent_Hit' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_bBlockingHit_2) == 0x00054C, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_bBlockingHit_2' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_bInitialOverlap_2) == 0x00054D, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_bInitialOverlap_2' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Time_2) == 0x000550, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Time_2' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Distance_2) == 0x000554, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Distance_2' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Location_2) == 0x000558, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Location_2' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_ImpactPoint_2) == 0x000564, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_ImpactPoint_2' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Normal_2) == 0x000570, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Normal_2' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_ImpactNormal_2) == 0x00057C, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_ImpactNormal_2' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_PhysMat_2) == 0x000588, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_PhysMat_2' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitActor_2) == 0x000590, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitActor_2' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitComponent_2) == 0x000598, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitComponent_2' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitBoneName_2) == 0x0005A0, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitBoneName_2' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitItem_2) == 0x0005A8, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitItem_2' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_ElementIndex_2) == 0x0005AC, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_ElementIndex_2' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_FaceIndex_2) == 0x0005B0, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_FaceIndex_2' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_TraceStart_2) == 0x0005B4, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_TraceStart_2' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_TraceEnd_2) == 0x0005C0, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_TraceEnd_2' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_GetCollisionObjectType_ReturnValue) == 0x0005CC, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_GetCollisionObjectType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0005D0, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0005D8, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_FinishSpawningActor_ReturnValue) == 0x0005E0, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x0005E8, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_K2_SetWorldRotation_SweepHitResult) == 0x0005F0, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_K2_SetWorldRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000678, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_K2_SetWorldRotation_SweepHitResult_1) == 0x000680, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_K2_SetWorldRotation_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_Event_player) == 0x000708, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_GetTransform_ReturnValue) == 0x000710, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x000740, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x000748, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_collectObject_collected) == 0x000750, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_collectObject_collected' has a wrong offset!");
-
-// Function erieDrag.erieDrag_C.playerR
-// 0x0008 (0x0008 - 0x0000)
-struct ErieDrag_C_PlayerR final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ErieDrag_C_PlayerR) == 0x000008, "Wrong alignment on ErieDrag_C_PlayerR");
-static_assert(sizeof(ErieDrag_C_PlayerR) == 0x000008, "Wrong size on ErieDrag_C_PlayerR");
-static_assert(offsetof(ErieDrag_C_PlayerR, Player) == 0x000000, "Member 'ErieDrag_C_PlayerR::Player' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_GetVelocity_ReturnValue) == 0x000040, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_GetVelocity_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x00004C, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x000058, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_GetActorForwardVector_ReturnValue) == 0x000064, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_K2_SetWorldRotation_SweepHitResult) == 0x000070, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_K2_SetWorldRotation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_Multiply_VectorVector_ReturnValue) == 0x0000F8, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_K2_GetActorRotation_ReturnValue) == 0x000104, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_Cross_VectorVector_ReturnValue) == 0x000110, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_Cross_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakRotator_Roll) == 0x00011C, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakRotator_Roll' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakRotator_Pitch) == 0x000120, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakRotator_Pitch' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakRotator_Yaw) == 0x000124, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakRotator_Yaw' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_MakeRotationFromAxes_ReturnValue) == 0x000128, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_MakeRotationFromAxes_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_K2_GetActorRotation_ReturnValue_1) == 0x000134, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_K2_GetActorRotation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakRotator_Roll_1) == 0x000140, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakRotator_Roll_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakRotator_Pitch_1) == 0x000144, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakRotator_Pitch_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakRotator_Yaw_1) == 0x000148, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakRotator_Yaw_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_obj_static_obj) == 0x000150, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_obj_static_obj' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_MakeRotator_ReturnValue) == 0x000160, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00016C, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_SphereTraceSingleForObjects_OutHit) == 0x000178, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_SphereTraceSingleForObjects_OutHit' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_SphereTraceSingleForObjects_ReturnValue) == 0x000200, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_SphereTraceSingleForObjects_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_bBlockingHit) == 0x000201, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_bInitialOverlap) == 0x000202, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Time) == 0x000204, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Distance) == 0x000208, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Location) == 0x00020C, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_ImpactPoint) == 0x000218, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Normal) == 0x000224, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_ImpactNormal) == 0x000230, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_PhysMat) == 0x000240, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitActor) == 0x000248, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitComponent) == 0x000250, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitBoneName) == 0x000258, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitItem) == 0x000260, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_ElementIndex) == 0x000264, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_FaceIndex) == 0x000268, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_TraceStart) == 0x00026C, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_TraceEnd) == 0x000278, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_bBlockingHit_1) == 0x000284, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_bBlockingHit_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_bInitialOverlap_1) == 0x000285, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_bInitialOverlap_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Time_1) == 0x000288, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Time_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Distance_1) == 0x00028C, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Distance_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Location_1) == 0x000290, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Location_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_ImpactPoint_1) == 0x00029C, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_ImpactPoint_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Normal_1) == 0x0002A8, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Normal_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_ImpactNormal_1) == 0x0002B4, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_ImpactNormal_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_PhysMat_1) == 0x0002C0, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_PhysMat_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitActor_1) == 0x0002C8, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitActor_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitComponent_1) == 0x0002D0, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitComponent_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitBoneName_1) == 0x0002D8, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitBoneName_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitItem_1) == 0x0002E0, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitItem_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_ElementIndex_1) == 0x0002E4, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_ElementIndex_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_FaceIndex_1) == 0x0002E8, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_FaceIndex_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_TraceStart_1) == 0x0002EC, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_TraceStart_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_TraceEnd_1) == 0x0002F8, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_TraceEnd_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_Add_VectorVector_ReturnValue) == 0x000304, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_Dot_VectorVector_ReturnValue) == 0x000310, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000314, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_Abs_ReturnValue) == 0x000320, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_Abs_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000324, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_Less_FloatFloat_ReturnValue) == 0x000325, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000328, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_Event_ignore) == 0x000334, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_Event_ignore' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_Event_DeltaSeconds) == 0x000338, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_K2_SetWorldRotation_SweepHitResult_1) == 0x00033C, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_K2_SetWorldRotation_SweepHitResult_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_Select_Default) == 0x0003C4, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_Select_Default_1) == 0x0003CC, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_GetActorScale3D_ReturnValue) == 0x0003D4, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_SelectFloat_ReturnValue) == 0x0003E0, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_GetActorScale3D_ReturnValue_1) == 0x0003E4, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_GetActorScale3D_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_Add_FloatFloat_ReturnValue) == 0x0003F0, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_MakeTransform_ReturnValue) == 0x000400, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_MakeRotator_ReturnValue_1) == 0x000430, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_MakeRotator_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000440, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_MakeTransform_ReturnValue_1) == 0x000450, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000480, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_FinishSpawningActor_ReturnValue) == 0x000488, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000490, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_ComponentBoundEvent_HitComponent) == 0x000498, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_ComponentBoundEvent_HitComponent' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_ComponentBoundEvent_OtherActor) == 0x0004A0, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_ComponentBoundEvent_OtherComp) == 0x0004A8, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_ComponentBoundEvent_NormalImpulse) == 0x0004B0, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_ComponentBoundEvent_NormalImpulse' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, K2Node_ComponentBoundEvent_Hit) == 0x0004BC, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::K2Node_ComponentBoundEvent_Hit' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_bBlockingHit_2) == 0x000544, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_bBlockingHit_2' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_bInitialOverlap_2) == 0x000545, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_bInitialOverlap_2' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Time_2) == 0x000548, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Time_2' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Distance_2) == 0x00054C, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Distance_2' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Location_2) == 0x000550, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Location_2' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_ImpactPoint_2) == 0x00055C, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_ImpactPoint_2' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_Normal_2) == 0x000568, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_Normal_2' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_ImpactNormal_2) == 0x000574, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_ImpactNormal_2' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_PhysMat_2) == 0x000580, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_PhysMat_2' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitActor_2) == 0x000588, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitActor_2' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitComponent_2) == 0x000590, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitComponent_2' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitBoneName_2) == 0x000598, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitBoneName_2' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_HitItem_2) == 0x0005A0, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_HitItem_2' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_ElementIndex_2) == 0x0005A4, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_ElementIndex_2' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_FaceIndex_2) == 0x0005A8, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_FaceIndex_2' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_TraceStart_2) == 0x0005AC, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_TraceStart_2' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_BreakHitResult_TraceEnd_2) == 0x0005B8, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_BreakHitResult_TraceEnd_2' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_GetCollisionObjectType_ReturnValue) == 0x0005C4, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_GetCollisionObjectType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErieDrag_C_ExecuteUbergraph_erieDrag, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0005C5, "Member 'ErieDrag_C_ExecuteUbergraph_erieDrag::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function erieDrag.erieDrag_C.BndEvt__erieDrag_Sphere_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature
 // 0x00B0 (0x00B0 - 0x0000)
@@ -322,41 +279,6 @@ static_assert(offsetof(ErieDrag_C_BndEvt__erieDrag_Sphere_K2Node_ComponentBoundE
 static_assert(offsetof(ErieDrag_C_BndEvt__erieDrag_Sphere_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'ErieDrag_C_BndEvt__erieDrag_Sphere_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature::OtherComp' has a wrong offset!");
 static_assert(offsetof(ErieDrag_C_BndEvt__erieDrag_Sphere_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature, NormalImpulse) == 0x000018, "Member 'ErieDrag_C_BndEvt__erieDrag_Sphere_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature::NormalImpulse' has a wrong offset!");
 static_assert(offsetof(ErieDrag_C_BndEvt__erieDrag_Sphere_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature, Hit) == 0x000024, "Member 'ErieDrag_C_BndEvt__erieDrag_Sphere_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature::Hit' has a wrong offset!");
-
-// Function erieDrag.erieDrag_C.player_use
-// 0x0090 (0x0090 - 0x0000)
-struct ErieDrag_C_Player_use final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-static_assert(alignof(ErieDrag_C_Player_use) == 0x000008, "Wrong alignment on ErieDrag_C_Player_use");
-static_assert(sizeof(ErieDrag_C_Player_use) == 0x000090, "Wrong size on ErieDrag_C_Player_use");
-static_assert(offsetof(ErieDrag_C_Player_use, Player) == 0x000000, "Member 'ErieDrag_C_Player_use::Player' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_Player_use, Hit) == 0x000008, "Member 'ErieDrag_C_Player_use::Hit' has a wrong offset!");
-
-// Function erieDrag.erieDrag_C.kicked
-// 0x0001 (0x0001 - 0x0000)
-struct ErieDrag_C_Kicked final
-{
-public:
-	bool                                          Kick;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(ErieDrag_C_Kicked) == 0x000001, "Wrong alignment on ErieDrag_C_Kicked");
-static_assert(sizeof(ErieDrag_C_Kicked) == 0x000001, "Wrong size on ErieDrag_C_Kicked");
-static_assert(offsetof(ErieDrag_C_Kicked, Kick) == 0x000000, "Member 'ErieDrag_C_Kicked::Kick' has a wrong offset!");
-
-// Function erieDrag.erieDrag_C.sendName
-// 0x0008 (0x0008 - 0x0000)
-struct ErieDrag_C_SendName final
-{
-public:
-	class FName                                   Param_Name;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ErieDrag_C_SendName) == 0x000004, "Wrong alignment on ErieDrag_C_SendName");
-static_assert(sizeof(ErieDrag_C_SendName) == 0x000008, "Wrong size on ErieDrag_C_SendName");
-static_assert(offsetof(ErieDrag_C_SendName, Param_Name) == 0x000000, "Member 'ErieDrag_C_SendName::Param_Name' has a wrong offset!");
 
 // Function erieDrag.erieDrag_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -379,54 +301,6 @@ public:
 static_assert(alignof(ErieDrag_C_SetIgnoreSave) == 0x000001, "Wrong alignment on ErieDrag_C_SetIgnoreSave");
 static_assert(sizeof(ErieDrag_C_SetIgnoreSave) == 0x000001, "Wrong size on ErieDrag_C_SetIgnoreSave");
 static_assert(offsetof(ErieDrag_C_SetIgnoreSave, Ignore) == 0x000000, "Member 'ErieDrag_C_SetIgnoreSave::Ignore' has a wrong offset!");
-
-// Function erieDrag.erieDrag_C.playerHold
-// 0x0008 (0x0008 - 0x0000)
-struct ErieDrag_C_PlayerHold final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ErieDrag_C_PlayerHold) == 0x000008, "Wrong alignment on ErieDrag_C_PlayerHold");
-static_assert(sizeof(ErieDrag_C_PlayerHold) == 0x000008, "Wrong size on ErieDrag_C_PlayerHold");
-static_assert(offsetof(ErieDrag_C_PlayerHold, Player) == 0x000000, "Member 'ErieDrag_C_PlayerHold::Player' has a wrong offset!");
-
-// Function erieDrag.erieDrag_C.playerUnequip
-// 0x0008 (0x0008 - 0x0000)
-struct ErieDrag_C_PlayerUnequip final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ErieDrag_C_PlayerUnequip) == 0x000008, "Wrong alignment on ErieDrag_C_PlayerUnequip");
-static_assert(sizeof(ErieDrag_C_PlayerUnequip) == 0x000008, "Wrong size on ErieDrag_C_PlayerUnequip");
-static_assert(offsetof(ErieDrag_C_PlayerUnequip, Player) == 0x000000, "Member 'ErieDrag_C_PlayerUnequip::Player' has a wrong offset!");
-
-// Function erieDrag.erieDrag_C.damageByPlayer
-// 0x0098 (0x0098 - 0x0000)
-struct ErieDrag_C_DamageByPlayer final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         Damage;                                            // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ErieDrag_C_DamageByPlayer) == 0x000008, "Wrong alignment on ErieDrag_C_DamageByPlayer");
-static_assert(sizeof(ErieDrag_C_DamageByPlayer) == 0x000098, "Wrong size on ErieDrag_C_DamageByPlayer");
-static_assert(offsetof(ErieDrag_C_DamageByPlayer, Player) == 0x000000, "Member 'ErieDrag_C_DamageByPlayer::Player' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_DamageByPlayer, Hit) == 0x000008, "Member 'ErieDrag_C_DamageByPlayer::Hit' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_DamageByPlayer, Damage) == 0x000090, "Member 'ErieDrag_C_DamageByPlayer::Damage' has a wrong offset!");
-
-// Function erieDrag.erieDrag_C.thrown
-// 0x0008 (0x0008 - 0x0000)
-struct ErieDrag_C_Thrown final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ErieDrag_C_Thrown) == 0x000008, "Wrong alignment on ErieDrag_C_Thrown");
-static_assert(sizeof(ErieDrag_C_Thrown) == 0x000008, "Wrong size on ErieDrag_C_Thrown");
-static_assert(offsetof(ErieDrag_C_Thrown, Player) == 0x000000, "Member 'ErieDrag_C_Thrown::Player' has a wrong offset!");
 
 // Function erieDrag.erieDrag_C.boing
 // 0x0048 (0x0048 - 0x0000)
@@ -478,7 +352,7 @@ struct ErieDrag_C_LoadData final
 public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22F0[0x7];                                     // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mFloat                         CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	float                                         CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -498,7 +372,7 @@ public:
 	TArray<float>                                 K2Node_MakeArray_Array;                            // 0x00C0(0x0010)(ReferenceParm)
 	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FStruct_mFloat                         K2Node_MakeStruct_struct_mFloat;                   // 0x00D8(0x0010)(HasGetValueTypeHash)
-	uint8                                         Pad_E8[0x8];                                       // 0x00E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22F1[0x8];                                     // 0x00E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x00F0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	TArray<struct FStruct_mFloat>                 K2Node_MakeArray_Array_1;                          // 0x0120(0x0010)(ReferenceParm)
 	struct FStruct_save                           K2Node_MakeStruct_struct_save;                     // 0x0130(0x00C0)(HasGetValueTypeHash)
@@ -512,109 +386,6 @@ static_assert(offsetof(ErieDrag_C_GetData, K2Node_MakeStruct_struct_mFloat) == 0
 static_assert(offsetof(ErieDrag_C_GetData, CallFunc_GetTransform_ReturnValue) == 0x0000F0, "Member 'ErieDrag_C_GetData::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ErieDrag_C_GetData, K2Node_MakeArray_Array_1) == 0x000120, "Member 'ErieDrag_C_GetData::K2Node_MakeArray_Array_1' has a wrong offset!");
 static_assert(offsetof(ErieDrag_C_GetData, K2Node_MakeStruct_struct_save) == 0x000130, "Member 'ErieDrag_C_GetData::K2Node_MakeStruct_struct_save' has a wrong offset!");
-
-// Function erieDrag.erieDrag_C.gatherDataFromKey
-// 0x0001 (0x0001 - 0x0000)
-struct ErieDrag_C_GatherDataFromKey final
-{
-public:
-	bool                                          Gather;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(ErieDrag_C_GatherDataFromKey) == 0x000001, "Wrong alignment on ErieDrag_C_GatherDataFromKey");
-static_assert(sizeof(ErieDrag_C_GatherDataFromKey) == 0x000001, "Wrong size on ErieDrag_C_GatherDataFromKey");
-static_assert(offsetof(ErieDrag_C_GatherDataFromKey, Gather) == 0x000000, "Member 'ErieDrag_C_GatherDataFromKey::Gather' has a wrong offset!");
-
-// Function erieDrag.erieDrag_C.canBePutInContainer
-// 0x0001 (0x0001 - 0x0000)
-struct ErieDrag_C_CanBePutInContainer final
-{
-public:
-	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(ErieDrag_C_CanBePutInContainer) == 0x000001, "Wrong alignment on ErieDrag_C_CanBePutInContainer");
-static_assert(sizeof(ErieDrag_C_CanBePutInContainer) == 0x000001, "Wrong size on ErieDrag_C_CanBePutInContainer");
-static_assert(offsetof(ErieDrag_C_CanBePutInContainer, Return) == 0x000000, "Member 'ErieDrag_C_CanBePutInContainer::Return' has a wrong offset!");
-
-// Function erieDrag.erieDrag_C.asProp
-// 0x0008 (0x0008 - 0x0000)
-struct ErieDrag_C_AsProp final
-{
-public:
-	class AProp_C*                                Return;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ErieDrag_C_AsProp) == 0x000008, "Wrong alignment on ErieDrag_C_AsProp");
-static_assert(sizeof(ErieDrag_C_AsProp) == 0x000008, "Wrong size on ErieDrag_C_AsProp");
-static_assert(offsetof(ErieDrag_C_AsProp, Return) == 0x000000, "Member 'ErieDrag_C_AsProp::Return' has a wrong offset!");
-
-// Function erieDrag.erieDrag_C.canPickup
-// 0x0001 (0x0001 - 0x0000)
-struct ErieDrag_C_CanPickup final
-{
-public:
-	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(ErieDrag_C_CanPickup) == 0x000001, "Wrong alignment on ErieDrag_C_CanPickup");
-static_assert(sizeof(ErieDrag_C_CanPickup) == 0x000001, "Wrong size on ErieDrag_C_CanPickup");
-static_assert(offsetof(ErieDrag_C_CanPickup, Return) == 0x000000, "Member 'ErieDrag_C_CanPickup::Return' has a wrong offset!");
-
-// Function erieDrag.erieDrag_C.noRespawn
-// 0x0002 (0x0002 - 0x0000)
-struct ErieDrag_C_NoRespawn final
-{
-public:
-	bool                                          Param_NoRespawn;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Return;                                            // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(ErieDrag_C_NoRespawn) == 0x000001, "Wrong alignment on ErieDrag_C_NoRespawn");
-static_assert(sizeof(ErieDrag_C_NoRespawn) == 0x000002, "Wrong size on ErieDrag_C_NoRespawn");
-static_assert(offsetof(ErieDrag_C_NoRespawn, Param_NoRespawn) == 0x000000, "Member 'ErieDrag_C_NoRespawn::Param_NoRespawn' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_NoRespawn, Return) == 0x000001, "Member 'ErieDrag_C_NoRespawn::Return' has a wrong offset!");
-
-// Function erieDrag.erieDrag_C.lookAt
-// 0x00B8 (0x00B8 - 0x0000)
-struct ErieDrag_C_LookAt final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ErieDrag_C_LookAt) == 0x000008, "Wrong alignment on ErieDrag_C_LookAt");
-static_assert(sizeof(ErieDrag_C_LookAt) == 0x0000B8, "Wrong size on ErieDrag_C_LookAt");
-static_assert(offsetof(ErieDrag_C_LookAt, Player) == 0x000000, "Member 'ErieDrag_C_LookAt::Player' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_LookAt, Hit) == 0x000008, "Member 'ErieDrag_C_LookAt::Hit' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_LookAt, Return) == 0x000090, "Member 'ErieDrag_C_LookAt::Return' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_LookAt, Text) == 0x000098, "Member 'ErieDrag_C_LookAt::Text' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'ErieDrag_C_LookAt::boundObjectReplace' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_LookAt, Number) == 0x0000B0, "Member 'ErieDrag_C_LookAt::Number' has a wrong offset!");
-
-// Function erieDrag.erieDrag_C.isButtonUsed
-// 0x0001 (0x0001 - 0x0000)
-struct ErieDrag_C_IsButtonUsed final
-{
-public:
-	bool                                          Failed;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(ErieDrag_C_IsButtonUsed) == 0x000001, "Wrong alignment on ErieDrag_C_IsButtonUsed");
-static_assert(sizeof(ErieDrag_C_IsButtonUsed) == 0x000001, "Wrong size on ErieDrag_C_IsButtonUsed");
-static_assert(offsetof(ErieDrag_C_IsButtonUsed, Failed) == 0x000000, "Member 'ErieDrag_C_IsButtonUsed::Failed' has a wrong offset!");
-
-// Function erieDrag.erieDrag_C.landedOn
-// 0x0010 (0x0010 - 0x0000)
-struct ErieDrag_C_LandedOn final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IgnoreFallDamage;                                  // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(ErieDrag_C_LandedOn) == 0x000008, "Wrong alignment on ErieDrag_C_LandedOn");
-static_assert(sizeof(ErieDrag_C_LandedOn) == 0x000010, "Wrong size on ErieDrag_C_LandedOn");
-static_assert(offsetof(ErieDrag_C_LandedOn, Player) == 0x000000, "Member 'ErieDrag_C_LandedOn::Player' has a wrong offset!");
-static_assert(offsetof(ErieDrag_C_LandedOn, IgnoreFallDamage) == 0x000008, "Member 'ErieDrag_C_LandedOn::IgnoreFallDamage' has a wrong offset!");
 
 }
 

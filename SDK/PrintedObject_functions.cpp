@@ -116,7 +116,7 @@ void APrintedObject_C::Unfoc()
 // Function printedObject.printedObject_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void APrintedObject_C::SettingsApplied(const struct FStruct_settings& Settings)
 {
@@ -234,62 +234,6 @@ void APrintedObject_C::SetIgnoreSave(bool Ignore)
 	Parms.Ignore = Ignore;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function printedObject.printedObject_C.hookTension
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AHook_C*                          Hook                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APrintedObject_C::HookTension(class AHook_C* Hook)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("printedObject_C", "hookTension");
-
-	Params::PrintedObject_C_HookTension Parms{};
-
-	Parms.Hook = Hook;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function printedObject.printedObject_C.cleanSponge
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Clean                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APrintedObject_C::CleanSponge(float Clean, class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("printedObject_C", "cleanSponge");
-
-	Params::PrintedObject_C_CleanSponge Parms{};
-
-	Parms.Clean = Clean;
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function printedObject.printedObject_C.crafted
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void APrintedObject_C::Crafted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("printedObject_C", "crafted");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -714,9 +658,10 @@ void APrintedObject_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APrintedObject_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action)
+void APrintedObject_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -727,6 +672,7 @@ void APrintedObject_C::ActionOptionIndex(class AMainPlayer_C* Player, const stru
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
+	Parms.Param_Index = Param_Index;
 	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -735,23 +681,15 @@ void APrintedObject_C::ActionOptionIndex(class AMainPlayer_C* Player, const stru
 
 // Function printedObject.printedObject_C.receivedPhyiscsDamage
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hot                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void APrintedObject_C::ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot)
+void APrintedObject_C::ReceivedPhyiscsDamage()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("printedObject_C", "receivedPhyiscsDamage");
 
-	Params::PrintedObject_C_ReceivedPhyiscsDamage Parms{};
-
-	Parms.Damage = Damage;
-	Parms.Hot = std::move(Hot);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -1071,30 +1009,6 @@ void APrintedObject_C::ImpactDamage(float Damage, const struct FHitResult& Hit, 
 }
 
 
-// Function printedObject.printedObject_C.texturePickerApply
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APrintedObject_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("printedObject_C", "texturePickerApply");
-
-	Params::PrintedObject_C_TexturePickerApply Parms{};
-
-	Parms.Picker = Picker;
-	Parms.Texture = Texture;
-	Parms.Param_Index = Param_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function printedObject.printedObject_C.applyColor
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1182,9 +1096,16 @@ void APrintedObject_C::UserConstructionScript()
 // Function printedObject.printedObject_C.loadFromPrinter
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_multisectionCustomMesh   MultisectionMesh                                       (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// struct FStruct_customMesh               Data                                                   (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// class UTexture*                         Param_Tex                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture*                         Normal                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture*                         Pbr                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ETextureFilter                          Param_Filter_tex                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ETextureFilter                          Param_Filter_pbr                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ETextureFilter                          Param_Filter_normal                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                                   Param_Material                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APrintedObject_C::LoadFromPrinter(const struct FStruct_multisectionCustomMesh& MultisectionMesh)
+void APrintedObject_C::LoadFromPrinter(const struct FStruct_customMesh& Data, class UTexture* Param_Tex, class UTexture* Normal, class UTexture* Pbr, ETextureFilter Param_Filter_tex, ETextureFilter Param_Filter_pbr, ETextureFilter Param_Filter_normal, uint8 Param_Material)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1193,7 +1114,14 @@ void APrintedObject_C::LoadFromPrinter(const struct FStruct_multisectionCustomMe
 
 	Params::PrintedObject_C_LoadFromPrinter Parms{};
 
-	Parms.MultisectionMesh = std::move(MultisectionMesh);
+	Parms.Data = std::move(Data);
+	Parms.Param_Tex = Param_Tex;
+	Parms.Normal = Normal;
+	Parms.Pbr = Pbr;
+	Parms.Param_Filter_tex = Param_Filter_tex;
+	Parms.Param_Filter_pbr = Param_Filter_pbr;
+	Parms.Param_Filter_normal = Param_Filter_normal;
+	Parms.Param_Material = Param_Material;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -1214,7 +1142,7 @@ void APrintedObject_C::Load()
 
 
 // Function printedObject.printedObject_C.setFilters
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 
 void APrintedObject_C::SetFilters()
 {
@@ -1311,27 +1239,6 @@ void APrintedObject_C::SkipPreDelete(bool* Skip)
 
 	if (Skip != nullptr)
 		*Skip = Parms.Skip;
-}
-
-
-// Function printedObject.printedObject_C.gatherDataFromKey
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void APrintedObject_C::GatherDataFromKey(bool* Gather)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("printedObject_C", "gatherDataFromKey");
-
-	Params::PrintedObject_C_GatherDataFromKey Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Gather != nullptr)
-		*Gather = Parms.Gather;
 }
 
 
@@ -1476,9 +1383,8 @@ void APrintedObject_C::ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return)
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APrintedObject_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
+void APrintedObject_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1501,9 +1407,6 @@ void APrintedObject_C::GetActionOptions(class AMainPlayer_C* Player, class UPrim
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
 }
 
 
@@ -1549,27 +1452,6 @@ void APrintedObject_C::SkipRadial(bool* Skip)
 
 	if (Skip != nullptr)
 		*Skip = Parms.Skip;
-}
-
-
-// Function printedObject.printedObject_C.getPriceMultiplier
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   PriceMult                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APrintedObject_C::GetPriceMultiplier(float* PriceMult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("printedObject_C", "getPriceMultiplier");
-
-	Params::PrintedObject_C_GetPriceMultiplier Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (PriceMult != nullptr)
-		*PriceMult = Parms.PriceMult;
 }
 
 

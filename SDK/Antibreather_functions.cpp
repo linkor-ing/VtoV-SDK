@@ -37,34 +37,6 @@ void AAntibreather_C::ExecuteUbergraph_antibreather(int32 EntryPoint)
 }
 
 
-// Function antibreather.antibreather_C.checkVisible
-// (BlueprintCallable, BlueprintEvent)
-
-void AAntibreather_C::CheckVisible()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("antibreather_C", "checkVisible");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function antibreather.antibreather_C.openDoor
-// (BlueprintCallable, BlueprintEvent)
-
-void AAntibreather_C::OpenDoor()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("antibreather_C", "openDoor");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function antibreather.antibreather_C.acquireMushroom
 // (BlueprintCallable, BlueprintEvent)
 

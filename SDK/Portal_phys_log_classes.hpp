@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass portal_phys_log.portal_phys_log_C
-// 0x0000 (0x0338 - 0x0338)
+// 0x0000 (0x0328 - 0x0328)
 class APortal_phys_log_C final : public APortal_phys_C
 {
 public:
@@ -34,7 +34,7 @@ public:
 	}
 };
 static_assert(alignof(APortal_phys_log_C) == 0x000008, "Wrong alignment on APortal_phys_log_C");
-static_assert(sizeof(APortal_phys_log_C) == 0x000338, "Wrong size on APortal_phys_log_C");
+static_assert(sizeof(APortal_phys_log_C) == 0x000328, "Wrong size on APortal_phys_log_C");
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Enum_interactionActions_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 
 
@@ -34,72 +34,73 @@ public:
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp_1;            // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex_1;       // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_377D[0x3];                                     // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0038(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent;    // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x00D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x00DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_DD[0x3];                                       // 0x00DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_377E[0x3];                                     // 0x00DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E5[0x3];                                       // 0x00E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_377F[0x3];                                     // 0x00E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F4[0x4];                                       // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3780[0x4];                                     // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0100(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component;          // 0x0130(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_139[0x7];                                      // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3781[0x7];                                     // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeRelativeTransform_ReturnValue;        // 0x0140(0x0030)(IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_GetPhysicsAngularVelocityInDegrees_ReturnValue; // 0x0170(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetComponentVelocity_ReturnValue;         // 0x017C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_188[0x8];                                      // 0x0188(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3782[0x8];                                     // 0x0188(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_GetTransform_ReturnValue_1;               // 0x0190(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	struct FTransform                             CallFunc_ComposeTransforms_ReturnValue;            // 0x01C0(0x0030)(IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_InverseTransformDirection_ReturnValue;    // 0x01F0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             CallFunc_K2_SetActorTransform_SweepHitResult;      // 0x01FC(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_SetActorTransform_ReturnValue;         // 0x0284(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_285[0x3];                                      // 0x0285(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3783[0x3];                                     // 0x0285(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue;           // 0x0288(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_InverseTransformDirection_ReturnValue_1;  // 0x0294(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_TransformDirection_ReturnValue;           // 0x02A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue_1;         // 0x02AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_TransformDirection_ReturnValue_1;         // 0x02B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C4[0x4];                                      // 0x02C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3784[0x4];                                     // 0x02C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    K2Node_Event_MyComp;                               // 0x02C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_Event_Other;                                // 0x02D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_Event_othercomp;                            // 0x02D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_Event_OtherComp;                            // 0x02D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bSelfMoved;                           // 0x02E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E1[0x3];                                      // 0x02E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3785[0x3];                                     // 0x02E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                K2Node_Event_HitLocation;                          // 0x02E4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                K2Node_Event_HitNormal;                            // 0x02F0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                K2Node_Event_NormalImpulse;                        // 0x02FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit_1;                                // 0x0308(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0390(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_394[0x4];                                      // 0x0394(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3786[0x4];                                     // 0x0394(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_Array_Get_Item_1;                         // 0x0398(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue_1;        // 0x03A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x03A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3A9[0x7];                                      // 0x03A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3787[0x7];                                     // 0x03A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component_1;        // 0x03B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x03B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3B9[0x3];                                      // 0x03B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3788[0x3];                                     // 0x03B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_GetPhysicsAngularVelocityInDegrees_ReturnValue_1; // 0x03BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetComponentVelocity_ReturnValue_1;       // 0x03C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue_2;         // 0x03D4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue_3;         // 0x03E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x03EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x03F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F4[0x4];                                      // 0x03F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3789[0x4];                                     // 0x03F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x03F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit;                                  // 0x0400(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x0488(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0489(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x048A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x048B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         K2Node_Event_index;                                // 0x0488(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x048C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x048D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x048E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x048F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(RelativeField_C_ExecuteUbergraph_relativeField) == 0x000010, "Wrong alignment on RelativeField_C_ExecuteUbergraph_relativeField");
 static_assert(sizeof(RelativeField_C_ExecuteUbergraph_relativeField) == 0x000490, "Wrong size on RelativeField_C_ExecuteUbergraph_relativeField");
@@ -143,7 +144,7 @@ static_assert(offsetof(RelativeField_C_ExecuteUbergraph_relativeField, CallFunc_
 static_assert(offsetof(RelativeField_C_ExecuteUbergraph_relativeField, CallFunc_TransformDirection_ReturnValue_1) == 0x0002B8, "Member 'RelativeField_C_ExecuteUbergraph_relativeField::CallFunc_TransformDirection_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(RelativeField_C_ExecuteUbergraph_relativeField, K2Node_Event_MyComp) == 0x0002C8, "Member 'RelativeField_C_ExecuteUbergraph_relativeField::K2Node_Event_MyComp' has a wrong offset!");
 static_assert(offsetof(RelativeField_C_ExecuteUbergraph_relativeField, K2Node_Event_Other) == 0x0002D0, "Member 'RelativeField_C_ExecuteUbergraph_relativeField::K2Node_Event_Other' has a wrong offset!");
-static_assert(offsetof(RelativeField_C_ExecuteUbergraph_relativeField, K2Node_Event_othercomp) == 0x0002D8, "Member 'RelativeField_C_ExecuteUbergraph_relativeField::K2Node_Event_othercomp' has a wrong offset!");
+static_assert(offsetof(RelativeField_C_ExecuteUbergraph_relativeField, K2Node_Event_OtherComp) == 0x0002D8, "Member 'RelativeField_C_ExecuteUbergraph_relativeField::K2Node_Event_OtherComp' has a wrong offset!");
 static_assert(offsetof(RelativeField_C_ExecuteUbergraph_relativeField, K2Node_Event_bSelfMoved) == 0x0002E0, "Member 'RelativeField_C_ExecuteUbergraph_relativeField::K2Node_Event_bSelfMoved' has a wrong offset!");
 static_assert(offsetof(RelativeField_C_ExecuteUbergraph_relativeField, K2Node_Event_HitLocation) == 0x0002E4, "Member 'RelativeField_C_ExecuteUbergraph_relativeField::K2Node_Event_HitLocation' has a wrong offset!");
 static_assert(offsetof(RelativeField_C_ExecuteUbergraph_relativeField, K2Node_Event_HitNormal) == 0x0002F0, "Member 'RelativeField_C_ExecuteUbergraph_relativeField::K2Node_Event_HitNormal' has a wrong offset!");
@@ -163,10 +164,28 @@ static_assert(offsetof(RelativeField_C_ExecuteUbergraph_relativeField, CallFunc_
 static_assert(offsetof(RelativeField_C_ExecuteUbergraph_relativeField, CallFunc_Array_Length_ReturnValue_1) == 0x0003F0, "Member 'RelativeField_C_ExecuteUbergraph_relativeField::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(RelativeField_C_ExecuteUbergraph_relativeField, K2Node_Event_player) == 0x0003F8, "Member 'RelativeField_C_ExecuteUbergraph_relativeField::K2Node_Event_player' has a wrong offset!");
 static_assert(offsetof(RelativeField_C_ExecuteUbergraph_relativeField, K2Node_Event_hit) == 0x000400, "Member 'RelativeField_C_ExecuteUbergraph_relativeField::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(RelativeField_C_ExecuteUbergraph_relativeField, K2Node_Event_action) == 0x000488, "Member 'RelativeField_C_ExecuteUbergraph_relativeField::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(RelativeField_C_ExecuteUbergraph_relativeField, CallFunc_Less_IntInt_ReturnValue_1) == 0x000489, "Member 'RelativeField_C_ExecuteUbergraph_relativeField::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RelativeField_C_ExecuteUbergraph_relativeField, K2Node_SwitchEnum_CmpSuccess) == 0x00048A, "Member 'RelativeField_C_ExecuteUbergraph_relativeField::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(RelativeField_C_ExecuteUbergraph_relativeField, CallFunc_Not_PreBool_ReturnValue) == 0x00048B, "Member 'RelativeField_C_ExecuteUbergraph_relativeField::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RelativeField_C_ExecuteUbergraph_relativeField, K2Node_Event_index) == 0x000488, "Member 'RelativeField_C_ExecuteUbergraph_relativeField::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(RelativeField_C_ExecuteUbergraph_relativeField, K2Node_Event_action) == 0x00048C, "Member 'RelativeField_C_ExecuteUbergraph_relativeField::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(RelativeField_C_ExecuteUbergraph_relativeField, CallFunc_Less_IntInt_ReturnValue_1) == 0x00048D, "Member 'RelativeField_C_ExecuteUbergraph_relativeField::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(RelativeField_C_ExecuteUbergraph_relativeField, K2Node_SwitchEnum_CmpSuccess) == 0x00048E, "Member 'RelativeField_C_ExecuteUbergraph_relativeField::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(RelativeField_C_ExecuteUbergraph_relativeField, CallFunc_Not_PreBool_ReturnValue) == 0x00048F, "Member 'RelativeField_C_ExecuteUbergraph_relativeField::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+
+// Function relativeField.relativeField_C.actionOptionIndex
+// 0x0098 (0x0098 - 0x0000)
+struct RelativeField_C_ActionOptionIndex final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(RelativeField_C_ActionOptionIndex) == 0x000008, "Wrong alignment on RelativeField_C_ActionOptionIndex");
+static_assert(sizeof(RelativeField_C_ActionOptionIndex) == 0x000098, "Wrong size on RelativeField_C_ActionOptionIndex");
+static_assert(offsetof(RelativeField_C_ActionOptionIndex, Player) == 0x000000, "Member 'RelativeField_C_ActionOptionIndex::Player' has a wrong offset!");
+static_assert(offsetof(RelativeField_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'RelativeField_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
+static_assert(offsetof(RelativeField_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'RelativeField_C_ActionOptionIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(RelativeField_C_ActionOptionIndex, Action) == 0x000094, "Member 'RelativeField_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function relativeField.relativeField_C.ReceiveHit
 // 0x00C8 (0x00C8 - 0x0000)
@@ -177,7 +196,7 @@ public:
 	class AActor*                                 Other;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bSelfMoved;                                        // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_378A[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                HitLocation;                                       // 0x001C(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                HitNormal;                                         // 0x0028(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                NormalImpulse;                                     // 0x0034(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -221,7 +240,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_378B[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 static_assert(alignof(RelativeField_C_BndEvt__relativeField_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on RelativeField_C_BndEvt__relativeField_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
@@ -250,7 +269,7 @@ struct RelativeField_C_Upd final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_378C[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInterface*                     Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInterface*                     K2Node_Select_Default;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -262,9 +281,9 @@ static_assert(offsetof(RelativeField_C_Upd, Temp_object_Variable) == 0x000008, "
 static_assert(offsetof(RelativeField_C_Upd, Temp_object_Variable_1) == 0x000010, "Member 'RelativeField_C_Upd::Temp_object_Variable_1' has a wrong offset!");
 static_assert(offsetof(RelativeField_C_Upd, K2Node_Select_Default) == 0x000018, "Member 'RelativeField_C_Upd::K2Node_Select_Default' has a wrong offset!");
 
-// Function relativeField.relativeField_C.NewFunction_0_0
+// Function relativeField.relativeField_C.NewFunction_0
 // 0x0038 (0x0038 - 0x0000)
-struct RelativeField_C_NewFunction_0_0 final
+struct RelativeField_C_NewFunction_0 final
 {
 public:
 	class UPrimitiveComponent*                    Self2;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -273,31 +292,16 @@ public:
 	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0020(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_SetVectorLength_ReturnValue;              // 0x002C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RelativeField_C_NewFunction_0_0) == 0x000008, "Wrong alignment on RelativeField_C_NewFunction_0_0");
-static_assert(sizeof(RelativeField_C_NewFunction_0_0) == 0x000038, "Wrong size on RelativeField_C_NewFunction_0_0");
-static_assert(offsetof(RelativeField_C_NewFunction_0_0, Self2) == 0x000000, "Member 'RelativeField_C_NewFunction_0_0::Self2' has a wrong offset!");
-static_assert(offsetof(RelativeField_C_NewFunction_0_0, CallFunc_GetCenterOfMass_ReturnValue) == 0x000008, "Member 'RelativeField_C_NewFunction_0_0::CallFunc_GetCenterOfMass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RelativeField_C_NewFunction_0_0, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000014, "Member 'RelativeField_C_NewFunction_0_0::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RelativeField_C_NewFunction_0_0, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000020, "Member 'RelativeField_C_NewFunction_0_0::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RelativeField_C_NewFunction_0_0, CallFunc_SetVectorLength_ReturnValue) == 0x00002C, "Member 'RelativeField_C_NewFunction_0_0::CallFunc_SetVectorLength_ReturnValue' has a wrong offset!");
-
-// Function relativeField.relativeField_C.actionOptionIndex
-// 0x0098 (0x0098 - 0x0000)
-struct RelativeField_C_ActionOptionIndex final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(RelativeField_C_ActionOptionIndex) == 0x000008, "Wrong alignment on RelativeField_C_ActionOptionIndex");
-static_assert(sizeof(RelativeField_C_ActionOptionIndex) == 0x000098, "Wrong size on RelativeField_C_ActionOptionIndex");
-static_assert(offsetof(RelativeField_C_ActionOptionIndex, Player) == 0x000000, "Member 'RelativeField_C_ActionOptionIndex::Player' has a wrong offset!");
-static_assert(offsetof(RelativeField_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'RelativeField_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(RelativeField_C_ActionOptionIndex, Action) == 0x000090, "Member 'RelativeField_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(alignof(RelativeField_C_NewFunction_0) == 0x000008, "Wrong alignment on RelativeField_C_NewFunction_0");
+static_assert(sizeof(RelativeField_C_NewFunction_0) == 0x000038, "Wrong size on RelativeField_C_NewFunction_0");
+static_assert(offsetof(RelativeField_C_NewFunction_0, Self2) == 0x000000, "Member 'RelativeField_C_NewFunction_0::Self2' has a wrong offset!");
+static_assert(offsetof(RelativeField_C_NewFunction_0, CallFunc_GetCenterOfMass_ReturnValue) == 0x000008, "Member 'RelativeField_C_NewFunction_0::CallFunc_GetCenterOfMass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RelativeField_C_NewFunction_0, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000014, "Member 'RelativeField_C_NewFunction_0::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RelativeField_C_NewFunction_0, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000020, "Member 'RelativeField_C_NewFunction_0::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(RelativeField_C_NewFunction_0, CallFunc_SetVectorLength_ReturnValue) == 0x00002C, "Member 'RelativeField_C_NewFunction_0::CallFunc_SetVectorLength_ReturnValue' has a wrong offset!");
 
 // Function relativeField.relativeField_C.getActionOptions
-// 0x0060 (0x0060 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct RelativeField_C_GetActionOptions final
 {
 public:
@@ -307,20 +311,17 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
 };
 static_assert(alignof(RelativeField_C_GetActionOptions) == 0x000008, "Wrong alignment on RelativeField_C_GetActionOptions");
-static_assert(sizeof(RelativeField_C_GetActionOptions) == 0x000060, "Wrong size on RelativeField_C_GetActionOptions");
+static_assert(sizeof(RelativeField_C_GetActionOptions) == 0x000058, "Wrong size on RelativeField_C_GetActionOptions");
 static_assert(offsetof(RelativeField_C_GetActionOptions, Player) == 0x000000, "Member 'RelativeField_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(RelativeField_C_GetActionOptions, Component) == 0x000008, "Member 'RelativeField_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(RelativeField_C_GetActionOptions, Actor) == 0x000010, "Member 'RelativeField_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(RelativeField_C_GetActionOptions, Options) == 0x000018, "Member 'RelativeField_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(RelativeField_C_GetActionOptions, Options_enum) == 0x000028, "Member 'RelativeField_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(RelativeField_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'RelativeField_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(RelativeField_C_GetActionOptions, Number) == 0x000048, "Member 'RelativeField_C_GetActionOptions::Number' has a wrong offset!");
-static_assert(offsetof(RelativeField_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'RelativeField_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(RelativeField_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'RelativeField_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 }
 

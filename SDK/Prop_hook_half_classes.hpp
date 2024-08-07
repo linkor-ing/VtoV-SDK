@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_hook_half.prop_hook_half_C
-// 0x0000 (0x0388 - 0x0388)
+// 0x0000 (0x0378 - 0x0378)
 class AProp_hook_half_C final : public AProp_hook_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_hook_half_C) == 0x000008, "Wrong alignment on AProp_hook_half_C");
-static_assert(sizeof(AProp_hook_half_C) == 0x000388, "Wrong size on AProp_hook_half_C");
+static_assert(sizeof(AProp_hook_half_C) == 0x000378, "Wrong size on AProp_hook_half_C");
 
 }
 

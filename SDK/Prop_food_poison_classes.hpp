@@ -18,13 +18,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_food_poison.prop_food_poison_C
-// 0x0010 (0x03E0 - 0x03D0)
+// 0x0010 (0x03D0 - 0x03C0)
 class AProp_food_poison_C : public AProp_food_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_food_poison_C;                 // 0x03D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	float                                         PoisonStrength;                                    // 0x03D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         PoisonDelay;                                       // 0x03DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3F60[0x4];                                     // 0x03BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_food_poison_C;                 // 0x03C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	float                                         PoisonStrength;                                    // 0x03C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         PoisonDelay;                                       // 0x03CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_food_poison(int32 EntryPoint);
@@ -42,10 +43,10 @@ public:
 	}
 };
 static_assert(alignof(AProp_food_poison_C) == 0x000008, "Wrong alignment on AProp_food_poison_C");
-static_assert(sizeof(AProp_food_poison_C) == 0x0003E0, "Wrong size on AProp_food_poison_C");
-static_assert(offsetof(AProp_food_poison_C, UberGraphFrame_Prop_food_poison_C) == 0x0003D0, "Member 'AProp_food_poison_C::UberGraphFrame_Prop_food_poison_C' has a wrong offset!");
-static_assert(offsetof(AProp_food_poison_C, PoisonStrength) == 0x0003D8, "Member 'AProp_food_poison_C::PoisonStrength' has a wrong offset!");
-static_assert(offsetof(AProp_food_poison_C, PoisonDelay) == 0x0003DC, "Member 'AProp_food_poison_C::PoisonDelay' has a wrong offset!");
+static_assert(sizeof(AProp_food_poison_C) == 0x0003D0, "Wrong size on AProp_food_poison_C");
+static_assert(offsetof(AProp_food_poison_C, UberGraphFrame_Prop_food_poison_C) == 0x0003C0, "Member 'AProp_food_poison_C::UberGraphFrame_Prop_food_poison_C' has a wrong offset!");
+static_assert(offsetof(AProp_food_poison_C, PoisonStrength) == 0x0003C8, "Member 'AProp_food_poison_C::PoisonStrength' has a wrong offset!");
+static_assert(offsetof(AProp_food_poison_C, PoisonDelay) == 0x0003CC, "Member 'AProp_food_poison_C::PoisonDelay' has a wrong offset!");
 
 }
 

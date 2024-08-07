@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function flammable.flammable_C.extinguished__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UFlammable_C::Extinguished__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("flammable_C", "extinguished__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function flammable.flammable_C.ExecuteUbergraph_flammable
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -48,40 +34,6 @@ void UFlammable_C::ExecuteUbergraph_flammable(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function flammable.flammable_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UFlammable_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("flammable_C", "ReceiveTick");
-
-	Params::Flammable_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function flammable.flammable_C.spreadFire
-// (BlueprintCallable, BlueprintEvent)
-
-void UFlammable_C::SpreadFire()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("flammable_C", "spreadFire");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -178,20 +130,6 @@ void UFlammable_C::bound(const class USceneComponent* Param_Component, struct FV
 
 	if (BoxExtent != nullptr)
 		*BoxExtent = std::move(Parms.BoxExtent);
-}
-
-
-// Function flammable.flammable_C.igniteSound
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UFlammable_C::IgniteSound()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("flammable_C", "igniteSound");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

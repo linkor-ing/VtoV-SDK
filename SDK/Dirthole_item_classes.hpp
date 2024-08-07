@@ -29,7 +29,7 @@ public:
 	class FName                                   Name_Dirthole_item_C;                              // 0x0260(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class UClass*                                 Object;                                            // 0x0268(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          Grab;                                              // 0x0270(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_271[0xF];                                      // 0x0271(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E26[0xF];                                     // 0x0271(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           Data;                                              // 0x0280(0x00C0)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    RootComp;                                          // 0x0340(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 Ac;                                                // 0x0348(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -43,7 +43,6 @@ public:
 	void ReceiveDestroyed();
 	void GamemodeBeginPlay();
 	void ReceiveBeginPlay();
-	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void ApplyColor(const struct FLinearColor& Color);
 	void PropRenderer_finishProps();
 	void GamemodeMakeKeys();

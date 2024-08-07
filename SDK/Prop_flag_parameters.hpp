@@ -11,48 +11,69 @@
 #include "Basic.hpp"
 
 #include "Enum_interactionActions_structs.hpp"
-#include "Struct_settings_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Struct_save_structs.hpp"
 #include "Struct_mInt_structs.hpp"
-#include "Engine_structs.hpp"
+#include "Struct_settings_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function prop_flag.prop_flag_C.ExecuteUbergraph_prop_flag
-// 0x01C0 (0x01C0 - 0x0000)
+// 0x01A0 (0x01A0 - 0x0000)
 struct Prop_flag_C_ExecuteUbergraph_prop_flag final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x0018(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_settings                       K2Node_Event_settings;                             // 0x00A8(0x00F0)(HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_199[0x7];                                      // 0x0199(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUmg_texturePicker_C*                   K2Node_Event_picker;                               // 0x01A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_Event_texture;                              // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_index;                                // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_VictoryIntPlusEquals_IntOut;              // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UTexture2D*>                     K2Node_LowEntry_LocalVariable_Value__Object;       // 0x0010(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3AEA[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3AEB[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x0040(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         K2Node_Event_index;                                // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3AEC[0x3];                                     // 0x00CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_settings                       K2Node_Event_settings;                             // 0x00D0(0x00CC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x019C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Prop_flag_C_ExecuteUbergraph_prop_flag) == 0x000008, "Wrong alignment on Prop_flag_C_ExecuteUbergraph_prop_flag");
-static_assert(sizeof(Prop_flag_C_ExecuteUbergraph_prop_flag) == 0x0001C0, "Wrong size on Prop_flag_C_ExecuteUbergraph_prop_flag");
+static_assert(sizeof(Prop_flag_C_ExecuteUbergraph_prop_flag) == 0x0001A0, "Wrong size on Prop_flag_C_ExecuteUbergraph_prop_flag");
 static_assert(offsetof(Prop_flag_C_ExecuteUbergraph_prop_flag, EntryPoint) == 0x000000, "Member 'Prop_flag_C_ExecuteUbergraph_prop_flag::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Prop_flag_C_ExecuteUbergraph_prop_flag, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000008, "Member 'Prop_flag_C_ExecuteUbergraph_prop_flag::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_flag_C_ExecuteUbergraph_prop_flag, K2Node_Event_player) == 0x000010, "Member 'Prop_flag_C_ExecuteUbergraph_prop_flag::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(Prop_flag_C_ExecuteUbergraph_prop_flag, K2Node_Event_hit) == 0x000018, "Member 'Prop_flag_C_ExecuteUbergraph_prop_flag::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_flag_C_ExecuteUbergraph_prop_flag, K2Node_Event_action) == 0x0000A0, "Member 'Prop_flag_C_ExecuteUbergraph_prop_flag::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Prop_flag_C_ExecuteUbergraph_prop_flag, K2Node_Event_settings) == 0x0000A8, "Member 'Prop_flag_C_ExecuteUbergraph_prop_flag::K2Node_Event_settings' has a wrong offset!");
-static_assert(offsetof(Prop_flag_C_ExecuteUbergraph_prop_flag, K2Node_SwitchEnum_CmpSuccess) == 0x000198, "Member 'Prop_flag_C_ExecuteUbergraph_prop_flag::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Prop_flag_C_ExecuteUbergraph_prop_flag, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x0001A0, "Member 'Prop_flag_C_ExecuteUbergraph_prop_flag::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(Prop_flag_C_ExecuteUbergraph_prop_flag, K2Node_Event_picker) == 0x0001A8, "Member 'Prop_flag_C_ExecuteUbergraph_prop_flag::K2Node_Event_picker' has a wrong offset!");
-static_assert(offsetof(Prop_flag_C_ExecuteUbergraph_prop_flag, K2Node_Event_texture) == 0x0001B0, "Member 'Prop_flag_C_ExecuteUbergraph_prop_flag::K2Node_Event_texture' has a wrong offset!");
-static_assert(offsetof(Prop_flag_C_ExecuteUbergraph_prop_flag, K2Node_Event_index) == 0x0001B8, "Member 'Prop_flag_C_ExecuteUbergraph_prop_flag::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Prop_flag_C_ExecuteUbergraph_prop_flag, CallFunc_VictoryIntPlusEquals_IntOut) == 0x000004, "Member 'Prop_flag_C_ExecuteUbergraph_prop_flag::CallFunc_VictoryIntPlusEquals_IntOut' has a wrong offset!");
+static_assert(offsetof(Prop_flag_C_ExecuteUbergraph_prop_flag, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000008, "Member 'Prop_flag_C_ExecuteUbergraph_prop_flag::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(Prop_flag_C_ExecuteUbergraph_prop_flag, K2Node_LowEntry_LocalVariable_Value__Object) == 0x000010, "Member 'Prop_flag_C_ExecuteUbergraph_prop_flag::K2Node_LowEntry_LocalVariable_Value__Object' has a wrong offset!");
+static_assert(offsetof(Prop_flag_C_ExecuteUbergraph_prop_flag, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'Prop_flag_C_ExecuteUbergraph_prop_flag::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_flag_C_ExecuteUbergraph_prop_flag, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000028, "Member 'Prop_flag_C_ExecuteUbergraph_prop_flag::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_flag_C_ExecuteUbergraph_prop_flag, CallFunc_Percent_IntInt_ReturnValue) == 0x000030, "Member 'Prop_flag_C_ExecuteUbergraph_prop_flag::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_flag_C_ExecuteUbergraph_prop_flag, K2Node_Event_player) == 0x000038, "Member 'Prop_flag_C_ExecuteUbergraph_prop_flag::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Prop_flag_C_ExecuteUbergraph_prop_flag, K2Node_Event_hit) == 0x000040, "Member 'Prop_flag_C_ExecuteUbergraph_prop_flag::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(Prop_flag_C_ExecuteUbergraph_prop_flag, K2Node_Event_index) == 0x0000C8, "Member 'Prop_flag_C_ExecuteUbergraph_prop_flag::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Prop_flag_C_ExecuteUbergraph_prop_flag, K2Node_Event_action) == 0x0000CC, "Member 'Prop_flag_C_ExecuteUbergraph_prop_flag::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_flag_C_ExecuteUbergraph_prop_flag, K2Node_Event_settings) == 0x0000D0, "Member 'Prop_flag_C_ExecuteUbergraph_prop_flag::K2Node_Event_settings' has a wrong offset!");
+static_assert(offsetof(Prop_flag_C_ExecuteUbergraph_prop_flag, K2Node_SwitchEnum_CmpSuccess) == 0x00019C, "Member 'Prop_flag_C_ExecuteUbergraph_prop_flag::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+
+// Function prop_flag.prop_flag_C.actionOptionIndex
+// 0x0098 (0x0098 - 0x0000)
+struct Prop_flag_C_ActionOptionIndex final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_flag_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_flag_C_ActionOptionIndex");
+static_assert(sizeof(Prop_flag_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_flag_C_ActionOptionIndex");
+static_assert(offsetof(Prop_flag_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_flag_C_ActionOptionIndex::Player' has a wrong offset!");
+static_assert(offsetof(Prop_flag_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_flag_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_flag_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_flag_C_ActionOptionIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(Prop_flag_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_flag_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function prop_flag.prop_flag_C.setTex
 // 0x0010 (0x0010 - 0x0000)
@@ -67,46 +88,16 @@ static_assert(sizeof(Prop_flag_C_SetTex) == 0x000010, "Wrong size on Prop_flag_C
 static_assert(offsetof(Prop_flag_C_SetTex, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000000, "Member 'Prop_flag_C_SetTex::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
 static_assert(offsetof(Prop_flag_C_SetTex, CallFunc_Array_Get_Item) == 0x000008, "Member 'Prop_flag_C_SetTex::CallFunc_Array_Get_Item' has a wrong offset!");
 
-// Function prop_flag.prop_flag_C.actionOptionIndex
-// 0x0098 (0x0098 - 0x0000)
-struct Prop_flag_C_ActionOptionIndex final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_flag_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_flag_C_ActionOptionIndex");
-static_assert(sizeof(Prop_flag_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_flag_C_ActionOptionIndex");
-static_assert(offsetof(Prop_flag_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_flag_C_ActionOptionIndex::Player' has a wrong offset!");
-static_assert(offsetof(Prop_flag_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_flag_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_flag_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_flag_C_ActionOptionIndex::Action' has a wrong offset!");
-
 // Function prop_flag.prop_flag_C.settingsApplied
-// 0x00F0 (0x00F0 - 0x0000)
+// 0x00CC (0x00CC - 0x0000)
 struct Prop_flag_C_SettingsApplied final
 {
 public:
-	struct FStruct_settings                       Settings;                                          // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FStruct_settings                       Settings;                                          // 0x0000(0x00CC)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Prop_flag_C_SettingsApplied) == 0x000008, "Wrong alignment on Prop_flag_C_SettingsApplied");
-static_assert(sizeof(Prop_flag_C_SettingsApplied) == 0x0000F0, "Wrong size on Prop_flag_C_SettingsApplied");
+static_assert(alignof(Prop_flag_C_SettingsApplied) == 0x000004, "Wrong alignment on Prop_flag_C_SettingsApplied");
+static_assert(sizeof(Prop_flag_C_SettingsApplied) == 0x0000CC, "Wrong size on Prop_flag_C_SettingsApplied");
 static_assert(offsetof(Prop_flag_C_SettingsApplied, Settings) == 0x000000, "Member 'Prop_flag_C_SettingsApplied::Settings' has a wrong offset!");
-
-// Function prop_flag.prop_flag_C.texturePickerApply
-// 0x0018 (0x0018 - 0x0000)
-struct Prop_flag_C_TexturePickerApply final
-{
-public:
-	class UUmg_texturePicker_C*                   Picker;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Param_Index;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_flag_C_TexturePickerApply) == 0x000008, "Wrong alignment on Prop_flag_C_TexturePickerApply");
-static_assert(sizeof(Prop_flag_C_TexturePickerApply) == 0x000018, "Wrong size on Prop_flag_C_TexturePickerApply");
-static_assert(offsetof(Prop_flag_C_TexturePickerApply, Picker) == 0x000000, "Member 'Prop_flag_C_TexturePickerApply::Picker' has a wrong offset!");
-static_assert(offsetof(Prop_flag_C_TexturePickerApply, Texture) == 0x000008, "Member 'Prop_flag_C_TexturePickerApply::Texture' has a wrong offset!");
-static_assert(offsetof(Prop_flag_C_TexturePickerApply, Param_Index) == 0x000010, "Member 'Prop_flag_C_TexturePickerApply::Param_Index' has a wrong offset!");
 
 // Function prop_flag.prop_flag_C.loadData
 // 0x00E0 (0x00E0 - 0x0000)
@@ -116,7 +107,7 @@ public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadData_return;                          // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3AED[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mInt                           CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -150,7 +141,7 @@ static_assert(offsetof(Prop_flag_C_GetData, K2Node_MakeArray_Array_1) == 0x0001A
 static_assert(offsetof(Prop_flag_C_GetData, K2Node_SetFieldsInStruct_StructOut) == 0x0001B0, "Member 'Prop_flag_C_GetData::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
 
 // Function prop_flag.prop_flag_C.getActionOptions
-// 0x0060 (0x0060 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct Prop_flag_C_GetActionOptions final
 {
 public:
@@ -160,20 +151,17 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
 };
 static_assert(alignof(Prop_flag_C_GetActionOptions) == 0x000008, "Wrong alignment on Prop_flag_C_GetActionOptions");
-static_assert(sizeof(Prop_flag_C_GetActionOptions) == 0x000060, "Wrong size on Prop_flag_C_GetActionOptions");
+static_assert(sizeof(Prop_flag_C_GetActionOptions) == 0x000058, "Wrong size on Prop_flag_C_GetActionOptions");
 static_assert(offsetof(Prop_flag_C_GetActionOptions, Player) == 0x000000, "Member 'Prop_flag_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Prop_flag_C_GetActionOptions, Component) == 0x000008, "Member 'Prop_flag_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Prop_flag_C_GetActionOptions, Actor) == 0x000010, "Member 'Prop_flag_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Prop_flag_C_GetActionOptions, Options) == 0x000018, "Member 'Prop_flag_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Prop_flag_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Prop_flag_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Prop_flag_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Prop_flag_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Prop_flag_C_GetActionOptions, Number) == 0x000048, "Member 'Prop_flag_C_GetActionOptions::Number' has a wrong offset!");
-static_assert(offsetof(Prop_flag_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Prop_flag_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Prop_flag_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'Prop_flag_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 }
 

@@ -20,59 +20,52 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass laptop.laptop_C
-// 0x0060 (0x0280 - 0x0220)
+// 0x0050 (0x0270 - 0x0220)
 class ALaptop_C final : public AActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBoxComponent*                          boxBlock;                                          // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          boxScreen;                                         // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        Startup;                                           // 0x0238(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   GamingPc;                                          // 0x0240(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        Scene;                                             // 0x0248(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UArrowComponent*                        LookAt_0;                                          // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UWidgetComponent*                       Screen;                                            // 0x0258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        Snd;                                               // 0x0260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsOpened;                                          // 0x0268(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_269[0x7];                                      // 0x0269(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUmg_laptop_C*                          Widget;                                            // 0x0270(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CanUse;                                            // 0x0278(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Turorial;                                          // 0x0279(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Anim;                                              // 0x027A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class UAudioComponent*                        Startup;                                           // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   GamingPc;                                          // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        Scene;                                             // 0x0238(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        LookAt_0;                                          // 0x0240(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UWidgetComponent*                       Screen;                                            // 0x0248(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        Snd;                                               // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsOpened;                                          // 0x0258(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2A4B[0x7];                                     // 0x0259(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUmg_laptop_C*                          Widget;                                            // 0x0260(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CanUse;                                            // 0x0268(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Turorial;                                          // 0x0269(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Anim;                                              // 0x026A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_laptop(int32 EntryPoint);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
+	void PhysDestroyed();
 	void Virus(bool Activate);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
 	void PhysPreDestroyed();
-	void SetPropProps(bool Static, bool Frozen, bool Active);
-	void DigUp();
 	void SettingsApplied(const struct FStruct_settings& Settings);
 	void ImpactDamage(float Damage, const struct FHitResult& Hit, class AActor* Actor, const struct FVector& Impact);
 	void EnterWater(class AWaterVolume_C* Water);
 	void LeaveWater(class AWaterVolume_C* Water);
+	void SetPropProps(bool Static, bool Frozen, bool Active);
 	void AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Hit, const struct FVector& Impact, bool SkipSetting);
-	void SetKey(const class FString& Key);
+	void DigUp();
 	void Unhook();
-	void SteppedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void EnterWaterOrigin(class AWaterVolume_C* Water);
 	void LeaveWaterOrigin(class AWaterVolume_C* Water);
 	void Player_use(class AMainPlayer_C* Player, const struct FHitResult& Hit);
-	void PhysDestroyed();
+	void SetKey(const class FString& Key);
 	void Eaten();
 	void GamemodeBeginPlay();
-	void PlayerR(class AMainPlayer_C* Player);
-	void PlayerHold(class AMainPlayer_C* Player);
-	void PlayerUnequip(class AMainPlayer_C* Player);
 	void UpdateStrAgl();
-	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage);
+	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void Thrown(class AMainPlayer_C* Player);
 	void broken_fire();
 	void broken();
 	void SendName(class FName Param_Name);
 	void Kicked(bool Kick);
 	void DriveDetached();
-	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void ApplyColor(const struct FLinearColor& Color);
 	void PropRenderer_finishProps();
 	void GamemodeMakeKeys();
@@ -83,9 +76,6 @@ public:
 	void StuffUpgraded(class AMainGamemode_C* GameMode);
 	void SignalSaved();
 	void SignalDeleted();
-	void HookTension(class AHook_C* Hook);
-	void CleanSponge(float Clean, class AMainPlayer_C* Player);
-	void Crafted();
 	void Hooked(class AHook_C* Hook);
 	void AttemptIgnite();
 	void PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
@@ -107,20 +97,20 @@ public:
 	void Exploded(float Damage, const struct FVector& Location);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
-	void ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot);
+	void ReceivedPhyiscsDamage();
 	void Microwave();
 	void Ignite(float Fuel);
 	void FireDamage(float Damage);
+	void SteppedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void Enter(class AMainPlayer_C* Self2);
 	void IsButtonUsed(bool* Failed);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
 	void NoRespawn(bool Param_NoRespawn, bool* Return);
 	void CanPickup(bool* Return);
 	void AsProp(class AProp_C** Return);
 	void CanBePutInContainer(bool* Return);
-	void LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage);
 	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 	void SetPath(const TArray<struct FVector>& Path, bool* Return);
 	void GetOnlyKey(class FString* Key);
 	void ProcessKeys(bool* Return);
@@ -129,7 +119,6 @@ public:
 	void ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return);
 	void GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled);
 	void SkipRadial(bool* Skip);
-	void GetPriceMultiplier(float* PriceMult);
 
 public:
 	static class UClass* StaticClass()
@@ -142,21 +131,19 @@ public:
 	}
 };
 static_assert(alignof(ALaptop_C) == 0x000008, "Wrong alignment on ALaptop_C");
-static_assert(sizeof(ALaptop_C) == 0x000280, "Wrong size on ALaptop_C");
+static_assert(sizeof(ALaptop_C) == 0x000270, "Wrong size on ALaptop_C");
 static_assert(offsetof(ALaptop_C, UberGraphFrame) == 0x000220, "Member 'ALaptop_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ALaptop_C, boxBlock) == 0x000228, "Member 'ALaptop_C::boxBlock' has a wrong offset!");
-static_assert(offsetof(ALaptop_C, boxScreen) == 0x000230, "Member 'ALaptop_C::boxScreen' has a wrong offset!");
-static_assert(offsetof(ALaptop_C, Startup) == 0x000238, "Member 'ALaptop_C::Startup' has a wrong offset!");
-static_assert(offsetof(ALaptop_C, GamingPc) == 0x000240, "Member 'ALaptop_C::GamingPc' has a wrong offset!");
-static_assert(offsetof(ALaptop_C, Scene) == 0x000248, "Member 'ALaptop_C::Scene' has a wrong offset!");
-static_assert(offsetof(ALaptop_C, LookAt_0) == 0x000250, "Member 'ALaptop_C::LookAt_0' has a wrong offset!");
-static_assert(offsetof(ALaptop_C, Screen) == 0x000258, "Member 'ALaptop_C::Screen' has a wrong offset!");
-static_assert(offsetof(ALaptop_C, Snd) == 0x000260, "Member 'ALaptop_C::Snd' has a wrong offset!");
-static_assert(offsetof(ALaptop_C, IsOpened) == 0x000268, "Member 'ALaptop_C::IsOpened' has a wrong offset!");
-static_assert(offsetof(ALaptop_C, Widget) == 0x000270, "Member 'ALaptop_C::Widget' has a wrong offset!");
-static_assert(offsetof(ALaptop_C, CanUse) == 0x000278, "Member 'ALaptop_C::CanUse' has a wrong offset!");
-static_assert(offsetof(ALaptop_C, Turorial) == 0x000279, "Member 'ALaptop_C::Turorial' has a wrong offset!");
-static_assert(offsetof(ALaptop_C, Anim) == 0x00027A, "Member 'ALaptop_C::Anim' has a wrong offset!");
+static_assert(offsetof(ALaptop_C, Startup) == 0x000228, "Member 'ALaptop_C::Startup' has a wrong offset!");
+static_assert(offsetof(ALaptop_C, GamingPc) == 0x000230, "Member 'ALaptop_C::GamingPc' has a wrong offset!");
+static_assert(offsetof(ALaptop_C, Scene) == 0x000238, "Member 'ALaptop_C::Scene' has a wrong offset!");
+static_assert(offsetof(ALaptop_C, LookAt_0) == 0x000240, "Member 'ALaptop_C::LookAt_0' has a wrong offset!");
+static_assert(offsetof(ALaptop_C, Screen) == 0x000248, "Member 'ALaptop_C::Screen' has a wrong offset!");
+static_assert(offsetof(ALaptop_C, Snd) == 0x000250, "Member 'ALaptop_C::Snd' has a wrong offset!");
+static_assert(offsetof(ALaptop_C, IsOpened) == 0x000258, "Member 'ALaptop_C::IsOpened' has a wrong offset!");
+static_assert(offsetof(ALaptop_C, Widget) == 0x000260, "Member 'ALaptop_C::Widget' has a wrong offset!");
+static_assert(offsetof(ALaptop_C, CanUse) == 0x000268, "Member 'ALaptop_C::CanUse' has a wrong offset!");
+static_assert(offsetof(ALaptop_C, Turorial) == 0x000269, "Member 'ALaptop_C::Turorial' has a wrong offset!");
+static_assert(offsetof(ALaptop_C, Anim) == 0x00026A, "Member 'ALaptop_C::Anim' has a wrong offset!");
 
 }
 

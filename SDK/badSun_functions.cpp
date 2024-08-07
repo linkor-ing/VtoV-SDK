@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function badSun.badSun_C.ExecuteUbergraph_badSun
-// (Final, UbergraphFunction, HasDefaults)
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -34,20 +34,6 @@ void AbadSun_C::ExecuteUbergraph_badSun(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function badSun.badSun_C.updateRvt
-// (BlueprintCallable, BlueprintEvent)
-
-void AbadSun_C::UpdateRvt()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("badSun_C", "updateRvt");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

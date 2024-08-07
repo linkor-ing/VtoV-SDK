@@ -151,15 +151,15 @@ enum class ERTIInformationType : uint8
 	E_MAX                                    = 6,
 };
 
-// ScriptStruct RealTimeImport.RTIFBXGeometryStruct
-// 0x00B8 (0x00B8 - 0x0000)
-struct alignas(0x08) FRTIFBXGeometryStruct final
+// ScriptStruct RealTimeImport.RTISoundDataStruct
+// 0x0038 (0x0038 - 0x0000)
+struct alignas(0x08) FRTISoundDataStruct final
 {
 public:
-	uint8                                         Pad_0[0xB8];                                       // 0x0000(0x00B8)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F71[0x38];                                     // 0x0000(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FRTIFBXGeometryStruct) == 0x000008, "Wrong alignment on FRTIFBXGeometryStruct");
-static_assert(sizeof(FRTIFBXGeometryStruct) == 0x0000B8, "Wrong size on FRTIFBXGeometryStruct");
+static_assert(alignof(FRTISoundDataStruct) == 0x000008, "Wrong alignment on FRTISoundDataStruct");
+static_assert(sizeof(FRTISoundDataStruct) == 0x000038, "Wrong size on FRTISoundDataStruct");
 
 // ScriptStruct RealTimeImport.RTITextureStruct
 // 0x0028 (0x0028 - 0x0000)
@@ -167,9 +167,9 @@ struct FRTITextureStruct final
 {
 public:
 	class FString                                 TextureName;                                       // 0x0000(0x0010)(Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10[0x8];                                       // 0x0010(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F72[0x8];                                      // 0x0010(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	ERTITextureType                               TextureType;                                       // 0x0018(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F73[0x7];                                      // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	int64                                         FbxID;                                             // 0x0020(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FRTITextureStruct) == 0x000008, "Wrong alignment on FRTITextureStruct");
@@ -178,13 +178,23 @@ static_assert(offsetof(FRTITextureStruct, TextureName) == 0x000000, "Member 'FRT
 static_assert(offsetof(FRTITextureStruct, TextureType) == 0x000018, "Member 'FRTITextureStruct::TextureType' has a wrong offset!");
 static_assert(offsetof(FRTITextureStruct, FbxID) == 0x000020, "Member 'FRTITextureStruct::FbxID' has a wrong offset!");
 
+// ScriptStruct RealTimeImport.RTITextureToDeleteStruct
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) FRTITextureToDeleteStruct final
+{
+public:
+	uint8                                         Pad_F74[0x10];                                     // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FRTITextureToDeleteStruct) == 0x000008, "Wrong alignment on FRTITextureToDeleteStruct");
+static_assert(sizeof(FRTITextureToDeleteStruct) == 0x000010, "Wrong size on FRTITextureToDeleteStruct");
+
 // ScriptStruct RealTimeImport.RTIMaterialStruct
 // 0x00A8 (0x00A8 - 0x0000)
 struct FRTIMaterialStruct final
 {
 public:
 	bool                                          IsEmpty;                                           // 0x0000(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F75[0x7];                                      // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 MaterialName;                                      // 0x0008(0x0010)(Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 TextureName;                                       // 0x0018(0x0010)(Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMap<class FString, struct FRTITextureStruct> Textures;                                          // 0x0028(0x0050)(Edit, EditConst, NativeAccessSpecifierPublic)
@@ -212,32 +222,12 @@ static_assert(offsetof(FRTIMaterialStruct, Dissolved) == 0x000098, "Member 'FRTI
 static_assert(offsetof(FRTIMaterialStruct, DissolvedInverted) == 0x00009C, "Member 'FRTIMaterialStruct::DissolvedInverted' has a wrong offset!");
 static_assert(offsetof(FRTIMaterialStruct, FbxID) == 0x0000A0, "Member 'FRTIMaterialStruct::FbxID' has a wrong offset!");
 
-// ScriptStruct RealTimeImport.RTISoundDataStruct
-// 0x0038 (0x0038 - 0x0000)
-struct alignas(0x08) FRTISoundDataStruct final
-{
-public:
-	uint8                                         Pad_0[0x38];                                       // 0x0000(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FRTISoundDataStruct) == 0x000008, "Wrong alignment on FRTISoundDataStruct");
-static_assert(sizeof(FRTISoundDataStruct) == 0x000038, "Wrong size on FRTISoundDataStruct");
-
-// ScriptStruct RealTimeImport.RTITextureToDeleteStruct
-// 0x0010 (0x0010 - 0x0000)
-struct alignas(0x08) FRTITextureToDeleteStruct final
-{
-public:
-	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FRTITextureToDeleteStruct) == 0x000008, "Wrong alignment on FRTITextureToDeleteStruct");
-static_assert(sizeof(FRTITextureToDeleteStruct) == 0x000010, "Wrong size on FRTITextureToDeleteStruct");
-
 // ScriptStruct RealTimeImport.RTIMeshStruct
 // 0x0118 (0x0118 - 0x0000)
 struct FRTIMeshStruct final
 {
 public:
-	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F76[0x8];                                      // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 GeometryName;                                      // 0x0008(0x0010)(Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<int32>                                 Triangles;                                         // 0x0018(0x0010)(Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
 	TArray<struct FVector>                        Vertices;                                          // 0x0028(0x0010)(Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
@@ -245,7 +235,7 @@ public:
 	TArray<struct FVector2D>                      UV0;                                               // 0x0048(0x0010)(Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
 	TArray<struct FLinearColor>                   VertexColors;                                      // 0x0058(0x0010)(Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
 	bool                                          HasMaterialData;                                   // 0x0068(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F77[0x7];                                      // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRTIMaterialStruct                     MaterialData;                                      // 0x0070(0x00A8)(Edit, EditConst, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FRTIMeshStruct) == 0x000008, "Wrong alignment on FRTIMeshStruct");
@@ -279,7 +269,7 @@ static_assert(offsetof(FRTIModelStruct, MeshStructs) == 0x000040, "Member 'FRTIM
 struct alignas(0x08) FSRealtimeImportThreadJobData final
 {
 public:
-	uint8                                         Pad_0[0x90];                                       // 0x0000(0x0090)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F78[0x90];                                     // 0x0000(0x0090)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FSRealtimeImportThreadJobData) == 0x000008, "Wrong alignment on FSRealtimeImportThreadJobData");
 static_assert(sizeof(FSRealtimeImportThreadJobData) == 0x000090, "Wrong size on FSRealtimeImportThreadJobData");
@@ -289,7 +279,7 @@ static_assert(sizeof(FSRealtimeImportThreadJobData) == 0x000090, "Wrong size on 
 struct alignas(0x08) FRTIWavPlayAsyncStruct final
 {
 public:
-	uint8                                         Pad_0[0x68];                                       // 0x0000(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F79[0x68];                                     // 0x0000(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FRTIWavPlayAsyncStruct) == 0x000008, "Wrong alignment on FRTIWavPlayAsyncStruct");
 static_assert(sizeof(FRTIWavPlayAsyncStruct) == 0x000068, "Wrong size on FRTIWavPlayAsyncStruct");
@@ -299,7 +289,7 @@ static_assert(sizeof(FRTIWavPlayAsyncStruct) == 0x000068, "Wrong size on FRTIWav
 struct alignas(0x08) FRTIFBXConnections final
 {
 public:
-	uint8                                         Pad_0[0x190];                                      // 0x0000(0x0190)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F7A[0x190];                                    // 0x0000(0x0190)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FRTIFBXConnections) == 0x000008, "Wrong alignment on FRTIFBXConnections");
 static_assert(sizeof(FRTIFBXConnections) == 0x000190, "Wrong size on FRTIFBXConnections");
@@ -309,7 +299,7 @@ static_assert(sizeof(FRTIFBXConnections) == 0x000190, "Wrong size on FRTIFBXConn
 struct alignas(0x10) FRTIFBXModelStruct final
 {
 public:
-	uint8                                         Pad_0[0xB0];                                       // 0x0000(0x00B0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F7B[0xB0];                                     // 0x0000(0x00B0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FRTIFBXModelStruct) == 0x000010, "Wrong alignment on FRTIFBXModelStruct");
 static_assert(sizeof(FRTIFBXModelStruct) == 0x0000B0, "Wrong size on FRTIFBXModelStruct");
@@ -319,17 +309,27 @@ static_assert(sizeof(FRTIFBXModelStruct) == 0x0000B0, "Wrong size on FRTIFBXMode
 struct FRTIFBXArmatureStruct final
 {
 public:
-	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F7C[0x1];                                      // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FRTIFBXArmatureStruct) == 0x000001, "Wrong alignment on FRTIFBXArmatureStruct");
 static_assert(sizeof(FRTIFBXArmatureStruct) == 0x000001, "Wrong size on FRTIFBXArmatureStruct");
+
+// ScriptStruct RealTimeImport.RTIFBXGeometryStruct
+// 0x00B8 (0x00B8 - 0x0000)
+struct alignas(0x08) FRTIFBXGeometryStruct final
+{
+public:
+	uint8                                         Pad_F7D[0xB8];                                     // 0x0000(0x00B8)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FRTIFBXGeometryStruct) == 0x000008, "Wrong alignment on FRTIFBXGeometryStruct");
+static_assert(sizeof(FRTIFBXGeometryStruct) == 0x0000B8, "Wrong size on FRTIFBXGeometryStruct");
 
 // ScriptStruct RealTimeImport.RTIFBXMaterialStruct
 // 0x0098 (0x0098 - 0x0000)
 struct alignas(0x08) FRTIFBXMaterialStruct final
 {
 public:
-	uint8                                         Pad_0[0x98];                                       // 0x0000(0x0098)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F7E[0x98];                                     // 0x0000(0x0098)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FRTIFBXMaterialStruct) == 0x000008, "Wrong alignment on FRTIFBXMaterialStruct");
 static_assert(sizeof(FRTIFBXMaterialStruct) == 0x000098, "Wrong size on FRTIFBXMaterialStruct");
@@ -339,7 +339,7 @@ static_assert(sizeof(FRTIFBXMaterialStruct) == 0x000098, "Wrong size on FRTIFBXM
 struct alignas(0x08) FRTIFBXTextureStruct final
 {
 public:
-	uint8                                         Pad_0[0x60];                                       // 0x0000(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F7F[0x60];                                     // 0x0000(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FRTIFBXTextureStruct) == 0x000008, "Wrong alignment on FRTIFBXTextureStruct");
 static_assert(sizeof(FRTIFBXTextureStruct) == 0x000060, "Wrong size on FRTIFBXTextureStruct");
@@ -349,7 +349,7 @@ static_assert(sizeof(FRTIFBXTextureStruct) == 0x000060, "Wrong size on FRTIFBXTe
 struct alignas(0x08) FRTIFBXVideoStruct final
 {
 public:
-	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F80[0x28];                                     // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FRTIFBXVideoStruct) == 0x000008, "Wrong alignment on FRTIFBXVideoStruct");
 static_assert(sizeof(FRTIFBXVideoStruct) == 0x000028, "Wrong size on FRTIFBXVideoStruct");

@@ -70,9 +70,10 @@ void ARadiotower_C::blinking()
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ARadiotower_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action)
+void ARadiotower_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -83,6 +84,7 @@ void ARadiotower_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct 
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
+	Parms.Param_Index = Param_Index;
 	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -100,66 +102,6 @@ void ARadiotower_C::ReceiveBeginPlay()
 		Func = Class->GetFunction("radiotower_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function radiotower.radiotower_C.playerR
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ARadiotower_C::PlayerR(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("radiotower_C", "playerR");
-
-	Params::Radiotower_C_PlayerR Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function radiotower.radiotower_C.playerHold
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ARadiotower_C::PlayerHold(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("radiotower_C", "playerHold");
-
-	Params::Radiotower_C_PlayerHold Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function radiotower.radiotower_C.playerUnequip
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ARadiotower_C::PlayerUnequip(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("radiotower_C", "playerUnequip");
-
-	Params::Radiotower_C_PlayerUnequip Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -182,9 +124,8 @@ void ARadiotower_C::UpdateStrAgl()
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ARadiotower_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage)
+void ARadiotower_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit)
 {
 	static class UFunction* Func = nullptr;
 
@@ -195,7 +136,6 @@ void ARadiotower_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHi
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
-	Parms.Damage = Damage;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -320,62 +260,6 @@ void ARadiotower_C::DriveDetached()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("radiotower_C", "driveDetached");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function radiotower.radiotower_C.hookTension
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AHook_C*                          Hook                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ARadiotower_C::HookTension(class AHook_C* Hook)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("radiotower_C", "hookTension");
-
-	Params::Radiotower_C_HookTension Parms{};
-
-	Parms.Hook = Hook;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function radiotower.radiotower_C.cleanSponge
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Clean                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ARadiotower_C::CleanSponge(float Clean, class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("radiotower_C", "cleanSponge");
-
-	Params::Radiotower_C_CleanSponge Parms{};
-
-	Parms.Clean = Clean;
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function radiotower.radiotower_C.crafted
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ARadiotower_C::Crafted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("radiotower_C", "crafted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -799,23 +683,15 @@ void ARadiotower_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
 
 // Function radiotower.radiotower_C.receivedPhyiscsDamage
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hot                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void ARadiotower_C::ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot)
+void ARadiotower_C::ReceivedPhyiscsDamage()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("radiotower_C", "receivedPhyiscsDamage");
 
-	Params::Radiotower_C_ReceivedPhyiscsDamage Parms{};
-
-	Parms.Damage = Damage;
-	Parms.Hot = std::move(Hot);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -1163,20 +1039,6 @@ void ARadiotower_C::ImpactDamage(float Damage, const struct FHitResult& Hit, cla
 }
 
 
-// Function radiotower.radiotower_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ARadiotower_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("radiotower_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function radiotower.radiotower_C.visligh
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1214,20 +1076,6 @@ void ARadiotower_C::SetHidden(bool NewHidden)
 	Parms.NewHidden = NewHidden;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function radiotower.radiotower_C.SetHeight
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ARadiotower_C::SetHeight()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("radiotower_C", "SetHeight");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -1326,9 +1174,8 @@ void ARadiotower_C::NoRespawn(bool Param_NoRespawn, bool* Return)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ARadiotower_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
+void ARadiotower_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1350,9 +1197,6 @@ void ARadiotower_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult&
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
 }
 
 
@@ -1374,30 +1218,6 @@ void ARadiotower_C::IsButtonUsed(bool* Failed)
 
 	if (Failed != nullptr)
 		*Failed = Parms.Failed;
-}
-
-
-// Function radiotower.radiotower_C.landedOn
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IgnoreFallDamage                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ARadiotower_C::LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("radiotower_C", "landedOn");
-
-	Params::Radiotower_C_LandedOn Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (IgnoreFallDamage != nullptr)
-		*IgnoreFallDamage = Parms.IgnoreFallDamage;
 }
 
 
@@ -1434,9 +1254,8 @@ void ARadiotower_C::GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled)
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ARadiotower_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
+void ARadiotower_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1459,9 +1278,6 @@ void ARadiotower_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimiti
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
 }
 
 
@@ -1615,27 +1431,6 @@ void ARadiotower_C::SkipRadial(bool* Skip)
 
 	if (Skip != nullptr)
 		*Skip = Parms.Skip;
-}
-
-
-// Function radiotower.radiotower_C.getPriceMultiplier
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   PriceMult                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ARadiotower_C::GetPriceMultiplier(float* PriceMult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("radiotower_C", "getPriceMultiplier");
-
-	Params::Radiotower_C_GetPriceMultiplier Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (PriceMult != nullptr)
-		*PriceMult = Parms.PriceMult;
 }
 
 }

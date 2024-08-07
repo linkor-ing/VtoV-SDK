@@ -10,342 +10,382 @@
 
 #include "Basic.hpp"
 
-#include "Struct_save_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "Struct_mBool_structs.hpp"
-#include "Enum_interactionActions_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Struct_save_structs.hpp"
+#include "Struct_mBool_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function prop_fish.prop_fish_C.ExecuteUbergraph_prop_fish
-// 0x0740 (0x0740 - 0x0000)
+// 0x0800 (0x0800 - 0x0000)
 struct Prop_fish_C_ExecuteUbergraph_prop_fish final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_1;                               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_2;                               // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_3;                               // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_4;                               // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_5;                               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_6;                               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_7;                               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_8;                               // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_9;                               // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_10;                              // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_11;                              // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_12;                              // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_13;                              // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_14;                              // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_15;                              // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 Temp_class_Variable;                               // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable_1;                             // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable_2;                             // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable_3;                             // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable_4;                             // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable_5;                             // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable_6;                             // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable_7;                             // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable_8;                             // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable_9;                             // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable_10;                            // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable_11;                            // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable_12;                            // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable_13;                            // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 Temp_class_Variable_14;                            // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 K2Node_Select_Default;                             // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorRightVector_ReturnValue;          // 0x00CC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x00D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Dot_VectorVector_ReturnValue_1;           // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x00F4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x0100(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_16;                              // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0110(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select_Default_1;                           // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetPhysicsAngularVelocityInDegrees_ReturnValue; // 0x0120(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetComponentVelocity_ReturnValue;         // 0x012C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_2;       // 0x0138(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_3;       // 0x0144(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RandomUnitVector_ReturnValue;             // 0x0150(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x015C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_4;       // 0x0160(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_17;                              // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0174(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_175[0x3];                                      // 0x0175(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x017C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetVelocity_ReturnValue_1;                // 0x0188(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x0194(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VSize_ReturnValue;                        // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x01A4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1B1[0x3];                                      // 0x01B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetActorRightVector_ReturnValue_1;        // 0x01B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue_1;      // 0x01C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Dot_VectorVector_ReturnValue_2;           // 0x01CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_2;        // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D4[0x4];                                      // 0x01D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable;                              // 0x01D8(0x0010)(ConstParm, ReferenceParm)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_5;       // 0x01E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloat_ReturnValue;                  // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_SelectVector_ReturnValue;                 // 0x01F8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Ease_ReturnValue;                         // 0x0204(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0208(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x0214(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_2;           // 0x0218(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SignOfFloat_ReturnValue;                  // 0x0224(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_3;        // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x022C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_4;        // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_6;       // 0x023C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0248(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_254[0x4];                                      // 0x0254(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EObjectTypeQuery>                      CallFunc_obj_pawn_obj;                             // 0x0258(0x0010)(ReferenceParm)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0268(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0274(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_275[0x3];                                      // 0x0275(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetActorRightVector_ReturnValue_2;        // 0x0278(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_284[0x4];                                      // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_HitComponent;           // 0x0288(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x0298(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_ComponentBoundEvent_NormalImpulse;          // 0x02A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_ComponentBoundEvent_Hit;                    // 0x02AC(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x0334(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0340(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue_1;      // 0x034C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Normal_ReturnValue_1;                     // 0x0358(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue_2;      // 0x0364(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Dot_VectorVector_ReturnValue_3;           // 0x0370(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_7;       // 0x0374(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_5;        // 0x0380(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_8;       // 0x0384(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0390(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_1;                                // 0x0398(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x0420(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_421[0x7];                                      // 0x0421(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Event_actor;                                // 0x0428(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage;                               // 0x0430(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x0434(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                K2Node_Event_impact;                               // 0x04BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_skipSetting;                          // 0x04C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x04C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4CA[0x2];                                      // 0x04CA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_VictoryFloatMinusEquals_FloatOut;         // 0x04CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x04D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_clean;                                // 0x04D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4D2[0xE];                                      // 0x04D2(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x04E0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0510(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue;          // 0x0518(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_3;        // 0x0520(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RandomUnitVector_ReturnValue_1;           // 0x052C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_4;        // 0x0538(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_9;       // 0x0544(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue_1;      // 0x0550(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_3;           // 0x055C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_4;           // 0x0568(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_574[0x4];                                      // 0x0574(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0578(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<EObjectTypeQuery>                      CallFunc_obj_static_obj;                           // 0x0580(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         Temp_object_Variable_1;                            // 0x0590(0x0010)(ConstParm, ReferenceParm)
-	struct FHitResult                             CallFunc_SphereTraceSingleForObjects_OutHit;       // 0x05A0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_SphereTraceSingleForObjects_ReturnValue;  // 0x0628(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_629[0x7];                                      // 0x0629(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         CallFunc_SphereOverlapActors_OutActors;            // 0x0630(0x0010)(ReferenceParm)
-	bool                                          CallFunc_SphereOverlapActors_ReturnValue;          // 0x0640(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0641(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0642(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_643[0x1];                                      // 0x0643(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x0644(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0648(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x064C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0658(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0664(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0670(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_67C[0x4];                                      // 0x067C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0680(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0688(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0690(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0698(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x06A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x06A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x06A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x06AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x06B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x06C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x06D0(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0700(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0708(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGrunge_C*                              CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0710(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water;                                // 0x0718(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0720(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0730(0x0008)(NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3881[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AWaterVolume_C*                         K2Node_Event_water;                                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3882[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3883[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_2;                               // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3884[0x3];                                     // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_3;                               // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_3;           // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3885[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorRightVector_ReturnValue;          // 0x0044(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x0050(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Dot_VectorVector_ReturnValue_1;           // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x006C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x0078(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0084(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetPhysicsAngularVelocityInDegrees_ReturnValue; // 0x0090(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetComponentVelocity_ReturnValue;         // 0x009C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_2;       // 0x00A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_3;       // 0x00B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RandomUnitVector_ReturnValue;             // 0x00C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_4;       // 0x00D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_4;                               // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_4;           // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3886[0x3];                                     // 0x00E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x00EC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetVelocity_ReturnValue_1;                // 0x00F8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x0104(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VSize_ReturnValue;                        // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x0114(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3887[0x3];                                     // 0x0121(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetActorRightVector_ReturnValue_1;        // 0x0124(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue_1;      // 0x0130(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Dot_VectorVector_ReturnValue_2;           // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_2;        // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3888[0x4];                                     // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0148(0x0010)(ConstParm, ReferenceParm)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_5;       // 0x0158(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloat_ReturnValue;                  // 0x0164(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_SelectVector_ReturnValue;                 // 0x0168(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Ease_ReturnValue;                         // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0178(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x0184(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_2;           // 0x0188(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SignOfFloat_ReturnValue;                  // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_3;        // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x019C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_4;        // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_6;       // 0x01AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x01B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3889[0x4];                                     // 0x01C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EObjectTypeQuery>                      CallFunc_obj_pawn_obj;                             // 0x01C8(0x0010)(ReferenceParm)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x01D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x01E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_388A[0x3];                                     // 0x01E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetActorRightVector_ReturnValue_2;        // 0x01E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_388B[0x4];                                     // 0x01F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_HitComponent;           // 0x01F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x0208(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_ComponentBoundEvent_NormalImpulse;          // 0x0210(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_ComponentBoundEvent_Hit;                    // 0x021C(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x02A4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x02B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue_1;      // 0x02BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Normal_ReturnValue_1;                     // 0x02C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue_2;      // 0x02D4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Dot_VectorVector_ReturnValue_3;           // 0x02E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_7;       // 0x02E4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_5;        // 0x02F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_8;       // 0x02F4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0300(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_1;                                // 0x0308(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         K2Node_Event_index;                                // 0x0390(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x0394(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_388C[0x3];                                     // 0x0395(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Event_actor;                                // 0x0398(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage;                               // 0x03A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x03A4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                K2Node_Event_impact;                               // 0x042C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_skipSetting;                          // 0x0438(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x0439(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_388D[0x2];                                     // 0x043A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_VictoryFloatMinusEquals_FloatOut;         // 0x043C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0440(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_clean;                                // 0x0441(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_388E[0xE];                                     // 0x0442(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0450(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0480(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_388F[0x7];                                     // 0x0481(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0488(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_5;                               // 0x0490(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3890[0x4];                                     // 0x0494(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AProp_fishSteak_0_C*                    CallFunc_FinishSpawningActor_ReturnValue;          // 0x0498(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_5;           // 0x04A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3891[0x3];                                     // 0x04A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_5;                 // 0x04A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3892[0x8];                                     // 0x04A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetTransform_ReturnValue_1;               // 0x04B0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	TArray<class AActor*>                         Temp_object_Variable_1;                            // 0x04E0(0x0010)(ConstParm, ReferenceParm)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x04F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         CallFunc_SphereOverlapActors_OutActors;            // 0x04F8(0x0010)(ReferenceParm)
+	bool                                          CallFunc_SphereOverlapActors_ReturnValue;          // 0x0508(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3893[0x7];                                     // 0x0509(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AProp_fishSteak_1_C*                    CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0510(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0518(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0520(0x0010)(ZeroConstructor, NoDestructor)
+	struct FTransform                             CallFunc_GetTransform_ReturnValue_2;               // 0x0530(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0560(0x0008)(NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x0568(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetTransform_ReturnValue_3;               // 0x0570(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	class AProp_fishSteak_2_C*                    CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x05A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3; // 0x05A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetTransform_ReturnValue_4;               // 0x05B0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	class AProp_fishSteak_3_C*                    CallFunc_FinishSpawningActor_ReturnValue_3;        // 0x05E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4; // 0x05E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetTransform_ReturnValue_5;               // 0x05F0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	class AProp_fishSteak_4_C*                    CallFunc_FinishSpawningActor_ReturnValue_4;        // 0x0620(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_5; // 0x0628(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_fishSteak_5_C*                    CallFunc_FinishSpawningActor_ReturnValue_5;        // 0x0630(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_3;        // 0x0638(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RandomUnitVector_ReturnValue_1;           // 0x0644(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_4;        // 0x0650(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_9;       // 0x065C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue_1;      // 0x0668(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_3;           // 0x0674(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_4;           // 0x0680(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3894[0x4];                                     // 0x068C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0690(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<EObjectTypeQuery>                      CallFunc_obj_static_obj;                           // 0x0698(0x0010)(ReferenceParm)
+	struct FHitResult                             CallFunc_SphereTraceSingleForObjects_OutHit;       // 0x06A8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_SphereTraceSingleForObjects_ReturnValue;  // 0x0730(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0731(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0732(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3895[0x1];                                     // 0x0733(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x0734(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0738(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x073C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0748(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0754(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0760(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3896[0x4];                                     // 0x076C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0770(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0778(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0780(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0788(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0790(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x0794(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0798(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x079C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x07A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x07B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x07C0(0x0030)(IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_6; // 0x07F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGrunge_C*                              CallFunc_FinishSpawningActor_ReturnValue_6;        // 0x07F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_fish_C_ExecuteUbergraph_prop_fish) == 0x000010, "Wrong alignment on Prop_fish_C_ExecuteUbergraph_prop_fish");
-static_assert(sizeof(Prop_fish_C_ExecuteUbergraph_prop_fish) == 0x000740, "Wrong size on Prop_fish_C_ExecuteUbergraph_prop_fish");
+static_assert(sizeof(Prop_fish_C_ExecuteUbergraph_prop_fish) == 0x000800, "Wrong size on Prop_fish_C_ExecuteUbergraph_prop_fish");
 static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, EntryPoint) == 0x000000, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable) == 0x000004, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable_1) == 0x000008, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable_2) == 0x00000C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable_3) == 0x000010, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable_4) == 0x000014, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable_5) == 0x000018, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable_6) == 0x00001C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable_6' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable_7) == 0x000020, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable_7' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable_8) == 0x000024, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable_8' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable_9) == 0x000028, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable_9' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable_10) == 0x00002C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable_10' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable_11) == 0x000030, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable_11' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable_12) == 0x000034, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable_12' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable_13) == 0x000038, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable_13' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable_14) == 0x00003C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable_14' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable_15) == 0x000040, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable_15' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_class_Variable) == 0x000048, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_class_Variable_1) == 0x000050, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_class_Variable_1' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_class_Variable_2) == 0x000058, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_class_Variable_2' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_class_Variable_3) == 0x000060, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_class_Variable_3' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_class_Variable_4) == 0x000068, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_class_Variable_4' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_class_Variable_5) == 0x000070, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_class_Variable_5' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_class_Variable_6) == 0x000078, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_class_Variable_6' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_class_Variable_7) == 0x000080, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_class_Variable_7' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_class_Variable_8) == 0x000088, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_class_Variable_8' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_class_Variable_9) == 0x000090, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_class_Variable_9' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_class_Variable_10) == 0x000098, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_class_Variable_10' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_class_Variable_11) == 0x0000A0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_class_Variable_11' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_class_Variable_12) == 0x0000A8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_class_Variable_12' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_class_Variable_13) == 0x0000B0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_class_Variable_13' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_class_Variable_14) == 0x0000B8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_class_Variable_14' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Select_Default) == 0x0000C0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Event_DeltaSeconds) == 0x0000C8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetActorRightVector_ReturnValue) == 0x0000CC, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetActorRightVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetActorForwardVector_ReturnValue) == 0x0000D8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Dot_VectorVector_ReturnValue) == 0x0000E4, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Dot_VectorVector_ReturnValue_1) == 0x0000E8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Dot_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0000EC, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x0000F0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x0000F4, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x000100, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable_16) == 0x00010C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable_16' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Add_VectorVector_ReturnValue) == 0x000110, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Select_Default_1) == 0x00011C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetPhysicsAngularVelocityInDegrees_ReturnValue) == 0x000120, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetPhysicsAngularVelocityInDegrees_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetComponentVelocity_ReturnValue) == 0x00012C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetComponentVelocity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorFloat_ReturnValue_2) == 0x000138, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorFloat_ReturnValue_3) == 0x000144, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_RandomUnitVector_ReturnValue) == 0x000150, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_RandomUnitVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_RandomFloatInRange_ReturnValue) == 0x00015C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorFloat_ReturnValue_4) == 0x000160, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x00016C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable_17) == 0x000170, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable_17' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000174, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Add_IntInt_ReturnValue) == 0x000178, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetVelocity_ReturnValue) == 0x00017C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetVelocity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetVelocity_ReturnValue_1) == 0x000188, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetVelocity_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorVector_ReturnValue) == 0x000194, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_VSize_ReturnValue) == 0x0001A0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Normal_ReturnValue) == 0x0001A4, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Normal_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0001B0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetActorRightVector_ReturnValue_1) == 0x0001B4, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetActorRightVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetActorForwardVector_ReturnValue_1) == 0x0001C0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetActorForwardVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Dot_VectorVector_ReturnValue_2) == 0x0001CC, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Dot_VectorVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x0001D0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_object_Variable) == 0x0001D8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorFloat_ReturnValue_5) == 0x0001E8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorFloat_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_RandomFloat_ReturnValue) == 0x0001F4, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_RandomFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_SelectVector_ReturnValue) == 0x0001F8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_SelectVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Ease_ReturnValue) == 0x000204, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Ease_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000208, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x000214, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Add_VectorVector_ReturnValue_2) == 0x000218, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Add_VectorVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_SignOfFloat_ReturnValue) == 0x000224, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_SignOfFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x000228, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_MakeVector_ReturnValue) == 0x00022C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_FloatFloat_ReturnValue_4) == 0x000238, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorFloat_ReturnValue_6) == 0x00023C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorFloat_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000248, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_obj_pawn_obj) == 0x000258, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_obj_pawn_obj' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000268, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_IsValid_ReturnValue) == 0x000274, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetActorRightVector_ReturnValue_2) == 0x000278, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetActorRightVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_ComponentBoundEvent_HitComponent) == 0x000288, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_ComponentBoundEvent_HitComponent' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_ComponentBoundEvent_OtherActor) == 0x000290, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_ComponentBoundEvent_OtherComp) == 0x000298, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_ComponentBoundEvent_NormalImpulse) == 0x0002A0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_ComponentBoundEvent_NormalImpulse' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_ComponentBoundEvent_Hit) == 0x0002AC, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_ComponentBoundEvent_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x000334, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000340, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorVector_ReturnValue_1) == 0x00034C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Normal_ReturnValue_1) == 0x000358, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Normal_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetActorForwardVector_ReturnValue_2) == 0x000364, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetActorForwardVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Dot_VectorVector_ReturnValue_3) == 0x000370, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Dot_VectorVector_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorFloat_ReturnValue_7) == 0x000374, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorFloat_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_FloatFloat_ReturnValue_5) == 0x000380, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_FloatFloat_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorFloat_ReturnValue_8) == 0x000384, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorFloat_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Event_player) == 0x000390, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Event_hit_1) == 0x000398, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Event_hit_1' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Event_action) == 0x000420, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Event_actor) == 0x000428, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Event_actor' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Event_damage) == 0x000430, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Event_damage' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Event_hit) == 0x000434, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Event_impact) == 0x0004BC, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Event_impact' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Event_skipSetting) == 0x0004C8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Event_skipSetting' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Greater_FloatFloat_ReturnValue_1) == 0x0004C9, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_VictoryFloatMinusEquals_FloatOut) == 0x0004CC, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_VictoryFloatMinusEquals_FloatOut' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Less_FloatFloat_ReturnValue) == 0x0004D0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Event_clean) == 0x0004D1, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Event_clean' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetTransform_ReturnValue) == 0x0004E0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000510, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_FinishSpawningActor_ReturnValue) == 0x000518, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_K2_GetActorLocation_ReturnValue_3) == 0x000520, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_K2_GetActorLocation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_RandomUnitVector_ReturnValue_1) == 0x00052C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_RandomUnitVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_K2_GetActorLocation_ReturnValue_4) == 0x000538, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_K2_GetActorLocation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorFloat_ReturnValue_9) == 0x000544, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorFloat_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Subtract_VectorVector_ReturnValue_1) == 0x000550, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Subtract_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Add_VectorVector_ReturnValue_3) == 0x00055C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Add_VectorVector_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Add_VectorVector_ReturnValue_4) == 0x000568, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Add_VectorVector_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000578, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_obj_static_obj) == 0x000580, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_obj_static_obj' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_object_Variable_1) == 0x000590, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_SphereTraceSingleForObjects_OutHit) == 0x0005A0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_SphereTraceSingleForObjects_OutHit' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_SphereTraceSingleForObjects_ReturnValue) == 0x000628, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_SphereTraceSingleForObjects_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_SphereOverlapActors_OutActors) == 0x000630, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_SphereOverlapActors_OutActors' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_SphereOverlapActors_ReturnValue) == 0x000640, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_SphereOverlapActors_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_bBlockingHit) == 0x000641, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_bInitialOverlap) == 0x000642, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_Time) == 0x000644, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_Distance) == 0x000648, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_Location) == 0x00064C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_ImpactPoint) == 0x000658, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_Normal) == 0x000664, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_ImpactNormal) == 0x000670, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_PhysMat) == 0x000680, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_HitActor) == 0x000688, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_HitComponent) == 0x000690, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_HitBoneName) == 0x000698, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_HitItem) == 0x0006A0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_ElementIndex) == 0x0006A4, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_FaceIndex) == 0x0006A8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_TraceStart) == 0x0006AC, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_TraceEnd) == 0x0006B8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x0006C4, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_MakeTransform_ReturnValue) == 0x0006D0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Array_Get_Item) == 0x000700, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000708, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000710, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Event_water) == 0x000718, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Event_water' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_CreateDelegate_OutputDelegate) == 0x000720, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000730, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Event_water) == 0x000008, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Event_water' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable) == 0x000010, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000014, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable_1) == 0x00001C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable_1' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000020, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Add_IntInt_ReturnValue_1) == 0x000024, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable_2) == 0x000028, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable_2' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x00002C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Add_IntInt_ReturnValue_2) == 0x000030, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable_3) == 0x000034, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable_3' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_LessEqual_IntInt_ReturnValue_3) == 0x000038, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_LessEqual_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Add_IntInt_ReturnValue_3) == 0x00003C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Event_DeltaSeconds) == 0x000040, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetActorRightVector_ReturnValue) == 0x000044, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetActorRightVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetActorForwardVector_ReturnValue) == 0x000050, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Dot_VectorVector_ReturnValue) == 0x00005C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Dot_VectorVector_ReturnValue_1) == 0x000060, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Dot_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000064, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000068, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x00006C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x000078, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Add_VectorVector_ReturnValue) == 0x000084, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetPhysicsAngularVelocityInDegrees_ReturnValue) == 0x000090, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetPhysicsAngularVelocityInDegrees_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetComponentVelocity_ReturnValue) == 0x00009C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetComponentVelocity_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorFloat_ReturnValue_2) == 0x0000A8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorFloat_ReturnValue_3) == 0x0000B4, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_RandomUnitVector_ReturnValue) == 0x0000C0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_RandomUnitVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_RandomFloatInRange_ReturnValue) == 0x0000CC, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorFloat_ReturnValue_4) == 0x0000D0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorFloat_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x0000DC, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable_4) == 0x0000E0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable_4' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_LessEqual_IntInt_ReturnValue_4) == 0x0000E4, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_LessEqual_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Add_IntInt_ReturnValue_4) == 0x0000E8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetVelocity_ReturnValue) == 0x0000EC, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetVelocity_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetVelocity_ReturnValue_1) == 0x0000F8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetVelocity_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorVector_ReturnValue) == 0x000104, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_VSize_ReturnValue) == 0x000110, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_VSize_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Normal_ReturnValue) == 0x000114, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Normal_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000120, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetActorRightVector_ReturnValue_1) == 0x000124, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetActorRightVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetActorForwardVector_ReturnValue_1) == 0x000130, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetActorForwardVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Dot_VectorVector_ReturnValue_2) == 0x00013C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Dot_VectorVector_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x000140, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_object_Variable) == 0x000148, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorFloat_ReturnValue_5) == 0x000158, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorFloat_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_RandomFloat_ReturnValue) == 0x000164, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_RandomFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_SelectVector_ReturnValue) == 0x000168, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_SelectVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Ease_ReturnValue) == 0x000174, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Ease_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000178, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x000184, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Add_VectorVector_ReturnValue_2) == 0x000188, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Add_VectorVector_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_SignOfFloat_ReturnValue) == 0x000194, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_SignOfFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x000198, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_MakeVector_ReturnValue) == 0x00019C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_FloatFloat_ReturnValue_4) == 0x0001A8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_FloatFloat_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorFloat_ReturnValue_6) == 0x0001AC, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorFloat_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0001B8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_obj_pawn_obj) == 0x0001C8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_obj_pawn_obj' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x0001D8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_IsValid_ReturnValue) == 0x0001E4, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetActorRightVector_ReturnValue_2) == 0x0001E8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetActorRightVector_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_ComponentBoundEvent_HitComponent) == 0x0001F8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_ComponentBoundEvent_HitComponent' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_ComponentBoundEvent_OtherActor) == 0x000200, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_ComponentBoundEvent_OtherComp) == 0x000208, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_ComponentBoundEvent_NormalImpulse) == 0x000210, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_ComponentBoundEvent_NormalImpulse' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_ComponentBoundEvent_Hit) == 0x00021C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_ComponentBoundEvent_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x0002A4, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0002B0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorVector_ReturnValue_1) == 0x0002BC, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Normal_ReturnValue_1) == 0x0002C8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Normal_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetActorForwardVector_ReturnValue_2) == 0x0002D4, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetActorForwardVector_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Dot_VectorVector_ReturnValue_3) == 0x0002E0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Dot_VectorVector_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorFloat_ReturnValue_7) == 0x0002E4, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorFloat_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_FloatFloat_ReturnValue_5) == 0x0002F0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_FloatFloat_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorFloat_ReturnValue_8) == 0x0002F4, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorFloat_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Event_player) == 0x000300, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Event_hit_1) == 0x000308, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Event_hit_1' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Event_index) == 0x000390, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Event_action) == 0x000394, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Event_actor) == 0x000398, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Event_actor' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Event_damage) == 0x0003A0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Event_damage' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Event_hit) == 0x0003A4, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Event_impact) == 0x00042C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Event_impact' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Event_skipSetting) == 0x000438, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Event_skipSetting' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Greater_FloatFloat_ReturnValue_1) == 0x000439, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_VictoryFloatMinusEquals_FloatOut) == 0x00043C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_VictoryFloatMinusEquals_FloatOut' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Less_FloatFloat_ReturnValue) == 0x000440, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_Event_clean) == 0x000441, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_Event_clean' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetTransform_ReturnValue) == 0x000450, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_SwitchInteger_CmpSuccess) == 0x000480, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000488, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_int_Variable_5) == 0x000490, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_int_Variable_5' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_FinishSpawningActor_ReturnValue) == 0x000498, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_LessEqual_IntInt_ReturnValue_5) == 0x0004A0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_LessEqual_IntInt_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Add_IntInt_ReturnValue_5) == 0x0004A4, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetTransform_ReturnValue_1) == 0x0004B0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetTransform_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, Temp_object_Variable_1) == 0x0004E0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::Temp_object_Variable_1' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x0004F0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_SphereOverlapActors_OutActors) == 0x0004F8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_SphereOverlapActors_OutActors' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_SphereOverlapActors_ReturnValue) == 0x000508, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_SphereOverlapActors_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000510, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Array_Get_Item) == 0x000518, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, K2Node_CreateDelegate_OutputDelegate) == 0x000520, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetTransform_ReturnValue_2) == 0x000530, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetTransform_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000560, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x000568, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetTransform_ReturnValue_3) == 0x000570, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetTransform_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x0005A0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3) == 0x0005A8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetTransform_ReturnValue_4) == 0x0005B0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetTransform_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_FinishSpawningActor_ReturnValue_3) == 0x0005E0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_FinishSpawningActor_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4) == 0x0005E8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_GetTransform_ReturnValue_5) == 0x0005F0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_GetTransform_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_FinishSpawningActor_ReturnValue_4) == 0x000620, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_FinishSpawningActor_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_5) == 0x000628, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_FinishSpawningActor_ReturnValue_5) == 0x000630, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_FinishSpawningActor_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_K2_GetActorLocation_ReturnValue_3) == 0x000638, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_K2_GetActorLocation_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_RandomUnitVector_ReturnValue_1) == 0x000644, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_RandomUnitVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_K2_GetActorLocation_ReturnValue_4) == 0x000650, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_K2_GetActorLocation_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Multiply_VectorFloat_ReturnValue_9) == 0x00065C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Multiply_VectorFloat_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Subtract_VectorVector_ReturnValue_1) == 0x000668, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Subtract_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Add_VectorVector_ReturnValue_3) == 0x000674, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Add_VectorVector_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Add_VectorVector_ReturnValue_4) == 0x000680, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Add_VectorVector_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000690, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_obj_static_obj) == 0x000698, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_obj_static_obj' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_SphereTraceSingleForObjects_OutHit) == 0x0006A8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_SphereTraceSingleForObjects_OutHit' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_SphereTraceSingleForObjects_ReturnValue) == 0x000730, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_SphereTraceSingleForObjects_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_bBlockingHit) == 0x000731, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_bInitialOverlap) == 0x000732, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_Time) == 0x000734, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_Distance) == 0x000738, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_Location) == 0x00073C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_ImpactPoint) == 0x000748, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_Normal) == 0x000754, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_ImpactNormal) == 0x000760, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_PhysMat) == 0x000770, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_HitActor) == 0x000778, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_HitComponent) == 0x000780, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_HitBoneName) == 0x000788, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_HitItem) == 0x000790, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_ElementIndex) == 0x000794, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_FaceIndex) == 0x000798, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_TraceStart) == 0x00079C, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BreakHitResult_TraceEnd) == 0x0007A8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x0007B4, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_MakeTransform_ReturnValue) == 0x0007C0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_6) == 0x0007F0, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ExecuteUbergraph_prop_fish, CallFunc_FinishSpawningActor_ReturnValue_6) == 0x0007F8, "Member 'Prop_fish_C_ExecuteUbergraph_prop_fish::CallFunc_FinishSpawningActor_ReturnValue_6' has a wrong offset!");
+
+// Function prop_fish.prop_fish_C.addDamage
+// 0x00A8 (0x00A8 - 0x0000)
+struct Prop_fish_C_AddDamage final
+{
+public:
+	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Damage;                                            // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Param_Hit;                                         // 0x000C(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                Impact;                                            // 0x0094(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          SkipSetting;                                       // 0x00A0(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Prop_fish_C_AddDamage) == 0x000008, "Wrong alignment on Prop_fish_C_AddDamage");
+static_assert(sizeof(Prop_fish_C_AddDamage) == 0x0000A8, "Wrong size on Prop_fish_C_AddDamage");
+static_assert(offsetof(Prop_fish_C_AddDamage, Actor) == 0x000000, "Member 'Prop_fish_C_AddDamage::Actor' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_AddDamage, Damage) == 0x000008, "Member 'Prop_fish_C_AddDamage::Damage' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_AddDamage, Param_Hit) == 0x00000C, "Member 'Prop_fish_C_AddDamage::Param_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_AddDamage, Impact) == 0x000094, "Member 'Prop_fish_C_AddDamage::Impact' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_AddDamage, SkipSetting) == 0x0000A0, "Member 'Prop_fish_C_AddDamage::SkipSetting' has a wrong offset!");
+
+// Function prop_fish.prop_fish_C.actionOptionIndex
+// 0x0098 (0x0098 - 0x0000)
+struct Prop_fish_C_ActionOptionIndex final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_fish_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_fish_C_ActionOptionIndex");
+static_assert(sizeof(Prop_fish_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_fish_C_ActionOptionIndex");
+static_assert(offsetof(Prop_fish_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_fish_C_ActionOptionIndex::Player' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_fish_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_fish_C_ActionOptionIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_fish_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function prop_fish.prop_fish_C.BndEvt__prop_fish_StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature
 // 0x00B0 (0x00B0 - 0x0000)
@@ -377,40 +417,6 @@ static_assert(alignof(Prop_fish_C_ReceiveTick) == 0x000004, "Wrong alignment on 
 static_assert(sizeof(Prop_fish_C_ReceiveTick) == 0x000004, "Wrong size on Prop_fish_C_ReceiveTick");
 static_assert(offsetof(Prop_fish_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'Prop_fish_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
-// Function prop_fish.prop_fish_C.addDamage
-// 0x00A8 (0x00A8 - 0x0000)
-struct Prop_fish_C_AddDamage final
-{
-public:
-	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Damage;                                            // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Param_Hit;                                         // 0x000C(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                Impact;                                            // 0x0094(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          SkipSetting;                                       // 0x00A0(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(Prop_fish_C_AddDamage) == 0x000008, "Wrong alignment on Prop_fish_C_AddDamage");
-static_assert(sizeof(Prop_fish_C_AddDamage) == 0x0000A8, "Wrong size on Prop_fish_C_AddDamage");
-static_assert(offsetof(Prop_fish_C_AddDamage, Actor) == 0x000000, "Member 'Prop_fish_C_AddDamage::Actor' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_AddDamage, Damage) == 0x000008, "Member 'Prop_fish_C_AddDamage::Damage' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_AddDamage, Param_Hit) == 0x00000C, "Member 'Prop_fish_C_AddDamage::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_AddDamage, Impact) == 0x000094, "Member 'Prop_fish_C_AddDamage::Impact' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_AddDamage, SkipSetting) == 0x0000A0, "Member 'Prop_fish_C_AddDamage::SkipSetting' has a wrong offset!");
-
-// Function prop_fish.prop_fish_C.actionOptionIndex
-// 0x0098 (0x0098 - 0x0000)
-struct Prop_fish_C_ActionOptionIndex final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_fish_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_fish_C_ActionOptionIndex");
-static_assert(sizeof(Prop_fish_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_fish_C_ActionOptionIndex");
-static_assert(offsetof(Prop_fish_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_fish_C_ActionOptionIndex::Player' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_fish_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_fish_C_ActionOptionIndex::Action' has a wrong offset!");
-
 // Function prop_fish.prop_fish_C.slice
 // 0x0001 (0x0001 - 0x0000)
 struct Prop_fish_C_Slice final
@@ -434,7 +440,7 @@ static_assert(sizeof(Prop_fish_C_LeaveWater) == 0x000008, "Wrong size on Prop_fi
 static_assert(offsetof(Prop_fish_C_LeaveWater, Water) == 0x000000, "Member 'Prop_fish_C_LeaveWater::Water' has a wrong offset!");
 
 // Function prop_fish.prop_fish_C.Init
-// 0x0084 (0x0084 - 0x0000)
+// 0x003C (0x003C - 0x0000)
 struct Prop_fish_C_Init final
 {
 public:
@@ -445,19 +451,10 @@ public:
 	class FName                                   Temp_name_Variable_3;                              // 0x001C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Temp_name_Variable_4;                              // 0x0024(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Temp_name_Variable_5;                              // 0x002C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_6;                              // 0x0034(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_7;                              // 0x003C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_8;                              // 0x0044(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_9;                              // 0x004C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_10;                             // 0x0054(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_11;                             // 0x005C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_12;                             // 0x0064(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_13;                             // 0x006C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_14;                             // 0x0074(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_Select_Default;                             // 0x007C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_Select_Default;                             // 0x0034(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_fish_C_Init) == 0x000004, "Wrong alignment on Prop_fish_C_Init");
-static_assert(sizeof(Prop_fish_C_Init) == 0x000084, "Wrong size on Prop_fish_C_Init");
+static_assert(sizeof(Prop_fish_C_Init) == 0x00003C, "Wrong size on Prop_fish_C_Init");
 static_assert(offsetof(Prop_fish_C_Init, Temp_int_Variable) == 0x000000, "Member 'Prop_fish_C_Init::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(Prop_fish_C_Init, Temp_name_Variable) == 0x000004, "Member 'Prop_fish_C_Init::Temp_name_Variable' has a wrong offset!");
 static_assert(offsetof(Prop_fish_C_Init, Temp_name_Variable_1) == 0x00000C, "Member 'Prop_fish_C_Init::Temp_name_Variable_1' has a wrong offset!");
@@ -465,16 +462,7 @@ static_assert(offsetof(Prop_fish_C_Init, Temp_name_Variable_2) == 0x000014, "Mem
 static_assert(offsetof(Prop_fish_C_Init, Temp_name_Variable_3) == 0x00001C, "Member 'Prop_fish_C_Init::Temp_name_Variable_3' has a wrong offset!");
 static_assert(offsetof(Prop_fish_C_Init, Temp_name_Variable_4) == 0x000024, "Member 'Prop_fish_C_Init::Temp_name_Variable_4' has a wrong offset!");
 static_assert(offsetof(Prop_fish_C_Init, Temp_name_Variable_5) == 0x00002C, "Member 'Prop_fish_C_Init::Temp_name_Variable_5' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_Init, Temp_name_Variable_6) == 0x000034, "Member 'Prop_fish_C_Init::Temp_name_Variable_6' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_Init, Temp_name_Variable_7) == 0x00003C, "Member 'Prop_fish_C_Init::Temp_name_Variable_7' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_Init, Temp_name_Variable_8) == 0x000044, "Member 'Prop_fish_C_Init::Temp_name_Variable_8' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_Init, Temp_name_Variable_9) == 0x00004C, "Member 'Prop_fish_C_Init::Temp_name_Variable_9' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_Init, Temp_name_Variable_10) == 0x000054, "Member 'Prop_fish_C_Init::Temp_name_Variable_10' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_Init, Temp_name_Variable_11) == 0x00005C, "Member 'Prop_fish_C_Init::Temp_name_Variable_11' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_Init, Temp_name_Variable_12) == 0x000064, "Member 'Prop_fish_C_Init::Temp_name_Variable_12' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_Init, Temp_name_Variable_13) == 0x00006C, "Member 'Prop_fish_C_Init::Temp_name_Variable_13' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_Init, Temp_name_Variable_14) == 0x000074, "Member 'Prop_fish_C_Init::Temp_name_Variable_14' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_Init, K2Node_Select_Default) == 0x00007C, "Member 'Prop_fish_C_Init::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_Init, K2Node_Select_Default) == 0x000034, "Member 'Prop_fish_C_Init::K2Node_Select_Default' has a wrong offset!");
 
 // Function prop_fish.prop_fish_C.loadData
 // 0x00E0 (0x00E0 - 0x0000)
@@ -484,7 +472,7 @@ public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3897[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mBool                          CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	bool                                          CallFunc_loadData_return;                          // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_Get_Item_1;                         // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -532,9 +520,8 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          Temp_bool_Variable;                                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3898[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
 	TArray<Enum_interactionActions>               K2Node_MakeArray_Array_1;                          // 0x0060(0x0010)(ReferenceParm)
 	TArray<Enum_interactionActions>               K2Node_Select_Default;                             // 0x0070(0x0010)(ReferenceParm)
@@ -547,8 +534,7 @@ static_assert(offsetof(Prop_fish_C_GetActionOptions, Actor) == 0x000010, "Member
 static_assert(offsetof(Prop_fish_C_GetActionOptions, Options) == 0x000018, "Member 'Prop_fish_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Prop_fish_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Prop_fish_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Prop_fish_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Prop_fish_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_GetActionOptions, Number) == 0x000048, "Member 'Prop_fish_C_GetActionOptions::Number' has a wrong offset!");
-static_assert(offsetof(Prop_fish_C_GetActionOptions, Temp_bool_Variable) == 0x000049, "Member 'Prop_fish_C_GetActionOptions::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_fish_C_GetActionOptions, Temp_bool_Variable) == 0x000048, "Member 'Prop_fish_C_GetActionOptions::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(Prop_fish_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Prop_fish_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(Prop_fish_C_GetActionOptions, K2Node_MakeArray_Array_1) == 0x000060, "Member 'Prop_fish_C_GetActionOptions::K2Node_MakeArray_Array_1' has a wrong offset!");
 static_assert(offsetof(Prop_fish_C_GetActionOptions, K2Node_Select_Default) == 0x000070, "Member 'Prop_fish_C_GetActionOptions::K2Node_Select_Default' has a wrong offset!");

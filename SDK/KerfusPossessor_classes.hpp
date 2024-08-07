@@ -18,27 +18,18 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass kerfusPossessor.kerfusPossessor_C
-// 0x0030 (0x0250 - 0x0220)
+// 0x0018 (0x0238 - 0x0220)
 class AKerfusPossessor_C final : public AActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class AP_kerfus_C*                            Kerfu;                                             // 0x0230(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AKerfurOmega_C*                         KerfuOm;                                           // 0x0238(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AbaseWindow_C*                          Window;                                            // 0x0240(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           Timer;                                             // 0x0248(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_kerfusPossessor(int32 EntryPoint);
-	void ManualSpawnMurderfur();
-	void KerfuroTimer();
-	void KerfusTimer();
-	void ReceiveBeginPlay();
-	void CheckKerfuro();
-	void Skerfuro();
 	void Poss();
-	void SpawnSkerfuro();
+	void ReceiveTick(float DeltaSeconds);
 
 public:
 	static class UClass* StaticClass()
@@ -51,13 +42,10 @@ public:
 	}
 };
 static_assert(alignof(AKerfusPossessor_C) == 0x000008, "Wrong alignment on AKerfusPossessor_C");
-static_assert(sizeof(AKerfusPossessor_C) == 0x000250, "Wrong size on AKerfusPossessor_C");
+static_assert(sizeof(AKerfusPossessor_C) == 0x000238, "Wrong size on AKerfusPossessor_C");
 static_assert(offsetof(AKerfusPossessor_C, UberGraphFrame) == 0x000220, "Member 'AKerfusPossessor_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AKerfusPossessor_C, DefaultSceneRoot) == 0x000228, "Member 'AKerfusPossessor_C::DefaultSceneRoot' has a wrong offset!");
 static_assert(offsetof(AKerfusPossessor_C, Kerfu) == 0x000230, "Member 'AKerfusPossessor_C::Kerfu' has a wrong offset!");
-static_assert(offsetof(AKerfusPossessor_C, KerfuOm) == 0x000238, "Member 'AKerfusPossessor_C::KerfuOm' has a wrong offset!");
-static_assert(offsetof(AKerfusPossessor_C, Window) == 0x000240, "Member 'AKerfusPossessor_C::Window' has a wrong offset!");
-static_assert(offsetof(AKerfusPossessor_C, Timer) == 0x000248, "Member 'AKerfusPossessor_C::Timer' has a wrong offset!");
 
 }
 

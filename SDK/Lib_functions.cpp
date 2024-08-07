@@ -22,10 +22,9 @@ namespace SDK
 // Parameters:
 // class UPhysicalMaterial*                PhysMat                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FStruct_physSound                Data                                                   (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FStruct_physSound                Return                                                 (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ULib_C::PhysSound(class UPhysicalMaterial* PhysMat, class UObject* __WorldContext, bool* Return, struct FStruct_physSound* Data)
+void ULib_C::PhysSound(class UPhysicalMaterial* PhysMat, class UObject* __WorldContext, struct FStruct_physSound* Return)
 {
 	static class UFunction* Func = nullptr;
 
@@ -40,10 +39,7 @@ void ULib_C::PhysSound(class UPhysicalMaterial* PhysMat, class UObject* __WorldC
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	if (Return != nullptr)
-		*Return = Parms.Return;
-
-	if (Data != nullptr)
-		*Data = std::move(Parms.Data);
+		*Return = std::move(Parms.Return);
 }
 
 
@@ -146,11 +142,9 @@ void ULib_C::Fourdir(const struct FVector& In, class UObject* __WorldContext, st
 // Parameters:
 // int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString                           TechName                                               (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-// class FText                             Normal                                                 (Parm, OutParm)
-// class FText                             Classic                                                (Parm, OutParm)
+// class FText                             Return                                                 (Parm, OutParm)
 
-void ULib_C::GetSatelliteName(int32 Param_Index, class UObject* __WorldContext, class FString* TechName, class FText* Normal, class FText* Classic)
+void ULib_C::GetSatelliteName(int32 Param_Index, class UObject* __WorldContext, class FText* Return)
 {
 	static class UFunction* Func = nullptr;
 
@@ -164,14 +158,8 @@ void ULib_C::GetSatelliteName(int32 Param_Index, class UObject* __WorldContext, 
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (TechName != nullptr)
-		*TechName = std::move(Parms.TechName);
-
-	if (Normal != nullptr)
-		*Normal = std::move(Parms.Normal);
-
-	if (Classic != nullptr)
-		*Classic = std::move(Parms.Classic);
+	if (Return != nullptr)
+		*Return = std::move(Parms.Return);
 }
 
 
@@ -766,10 +754,9 @@ void ULib_C::ObjToSav(const struct FStruct_object& Sav, class UObject* __WorldCo
 // Parameters:
 // class FName                             Achievement                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Popup                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Autosave                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ULib_C::ProgressAchievement(const class FName Achievement, bool Popup, bool Autosave, class UObject* __WorldContext)
+void ULib_C::ProgressAchievement(const class FName Achievement, bool Popup, class UObject* __WorldContext)
 {
 	static class UFunction* Func = nullptr;
 
@@ -780,7 +767,6 @@ void ULib_C::ProgressAchievement(const class FName Achievement, bool Popup, bool
 
 	Parms.Achievement = Achievement;
 	Parms.Popup = Popup;
-	Parms.Autosave = Autosave;
 	Parms.__WorldContext = __WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
@@ -791,12 +777,11 @@ void ULib_C::ProgressAchievement(const class FName Achievement, bool Popup, bool
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             Advancement                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    DisablePopup                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Finished                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FName                             Param_Name                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ULib_C::ProgressAdvancement(const class FName Advancement, bool DisablePopup, class UObject* __WorldContext, bool* Finished, class FName* Param_Name)
+void ULib_C::ProgressAdvancement(const class FName Advancement, class UObject* __WorldContext, bool* Finished, class FName* Param_Name)
 {
 	static class UFunction* Func = nullptr;
 
@@ -806,7 +791,6 @@ void ULib_C::ProgressAdvancement(const class FName Advancement, bool DisablePopu
 	Params::Lib_C_ProgressAdvancement Parms{};
 
 	Parms.Advancement = Advancement;
-	Parms.DisablePopup = DisablePopup;
 	Parms.__WorldContext = __WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
@@ -1195,11 +1179,10 @@ void ULib_C::Get_Key_Bind(const struct FKey& Key, class UObject* __WorldContext,
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UPhysicalMaterial*                Phys                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   Value                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ULib_C::GetBoyoancy(class UPhysicalMaterial* Phys, class UPrimitiveComponent* Component, class UObject* __WorldContext, float* Value)
+void ULib_C::GetBoyoancy(class UPhysicalMaterial* Phys, class UObject* __WorldContext, float* Value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1209,7 +1192,6 @@ void ULib_C::GetBoyoancy(class UPhysicalMaterial* Phys, class UPrimitiveComponen
 	Params::Lib_C_GetBoyoancy Parms{};
 
 	Parms.Phys = Phys;
-	Parms.Component = Component;
 	Parms.__WorldContext = __WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
@@ -1659,23 +1641,21 @@ void ULib_C::IsMature(class UObject* __WorldContext, bool* Mature)
 }
 
 
-// Function lib.lib_C.GetAssetFolder
+// Function lib.lib_C.userAssetFolder
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    SkipCreation                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                           Path                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 
-void ULib_C::GetAssetFolder(bool SkipCreation, class UObject* __WorldContext, class FString* Path)
+void ULib_C::UserAssetFolder(class UObject* __WorldContext, class FString* Path)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("lib_C", "GetAssetFolder");
+		Func = StaticClass()->GetFunction("lib_C", "userAssetFolder");
 
-	Params::Lib_C_GetAssetFolder Parms{};
+	Params::Lib_C_UserAssetFolder Parms{};
 
-	Parms.SkipCreation = SkipCreation;
 	Parms.__WorldContext = __WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
@@ -1690,9 +1670,9 @@ void ULib_C::GetAssetFolder(bool SkipCreation, class UObject* __WorldContext, cl
 // Parameters:
 // class FName                             Param_Name                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FStruct_signal_data1             Data                                                   (Parm, OutParm, HasGetValueTypeHash)
+// struct FStruct_signal_data2             Data                                                   (Parm, OutParm, HasGetValueTypeHash)
 
-void ULib_C::NameToSignal(class FName Param_Name, class UObject* __WorldContext, struct FStruct_signal_data1* Data)
+void ULib_C::NameToSignal(class FName Param_Name, class UObject* __WorldContext, struct FStruct_signal_data2* Data)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1714,11 +1694,11 @@ void ULib_C::NameToSignal(class FName Param_Name, class UObject* __WorldContext,
 // Function lib.lib_C.signalToDynamic
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_signal_data1             Data                                                   (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// struct FStruct_signal_data2             Data                                                   (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FStruct_signalDataDynamic        Dynamic                                                (Parm, OutParm, HasGetValueTypeHash)
 
-void ULib_C::SignalToDynamic(const struct FStruct_signal_data1& Data, class UObject* __WorldContext, struct FStruct_signalDataDynamic* Dynamic)
+void ULib_C::SignalToDynamic(const struct FStruct_signal_data2& Data, class UObject* __WorldContext, struct FStruct_signalDataDynamic* Dynamic)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1742,9 +1722,9 @@ void ULib_C::SignalToDynamic(const struct FStruct_signal_data1& Data, class UObj
 // Parameters:
 // struct FStruct_signalDataDynamic        Dynamic                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FStruct_signal_data1             Data                                                   (Parm, OutParm, HasGetValueTypeHash)
+// struct FStruct_signal_data2             Data                                                   (Parm, OutParm, HasGetValueTypeHash)
 
-void ULib_C::DynamicToSignal(const struct FStruct_signalDataDynamic& Dynamic, class UObject* __WorldContext, struct FStruct_signal_data1* Data)
+void ULib_C::DynamicToSignal(const struct FStruct_signalDataDynamic& Dynamic, class UObject* __WorldContext, struct FStruct_signal_data2* Data)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2083,18 +2063,14 @@ void ULib_C::Get_Volume(const class UStaticMesh* Mesh, const class FString& Para
 
 
 // Function lib.lib_C.step
-// (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Static, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ACharacter*                       Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   Z_offset                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           CallActor                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Pitch                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   SpeedVolume                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       OutHit                                                 (Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void ULib_C::Step(class ACharacter* Character, float Z_offset, class AActor* CallActor, float Volume, float Pitch, float SpeedVolume, class UObject* __WorldContext, struct FHitResult* OutHit)
+void ULib_C::Step(class ACharacter* Character, float Z_offset, class AActor* CallActor, class UObject* __WorldContext)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2106,15 +2082,9 @@ void ULib_C::Step(class ACharacter* Character, float Z_offset, class AActor* Cal
 	Parms.Character = Character;
 	Parms.Z_offset = Z_offset;
 	Parms.CallActor = CallActor;
-	Parms.Volume = Volume;
-	Parms.Pitch = Pitch;
-	Parms.SpeedVolume = SpeedVolume;
 	Parms.__WorldContext = __WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	if (OutHit != nullptr)
-		*OutHit = std::move(Parms.OutHit);
 }
 
 
@@ -2357,12 +2327,11 @@ void ULib_C::CustomWall_material(int32 Type, class UObject* __WorldContext, clas
 // Parameters:
 // class FName                             Object                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    OnlyShop                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class AActor*                           ObjectToSell                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Points                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Sold                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ULib_C::SellObject(class FName Object, bool OnlyShop, class AActor* ObjectToSell, class UObject* __WorldContext, int32* Points, bool* Sold)
+void ULib_C::SellObject(class FName Object, bool OnlyShop, class UObject* __WorldContext, int32* Points, bool* Sold)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2373,7 +2342,6 @@ void ULib_C::SellObject(class FName Object, bool OnlyShop, class AActor* ObjectT
 
 	Parms.Object = Object;
 	Parms.OnlyShop = OnlyShop;
-	Parms.ObjectToSell = ObjectToSell;
 	Parms.__WorldContext = __WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
@@ -2459,136 +2427,6 @@ void ULib_C::Lag(class UObject* __WorldContext)
 		Func = StaticClass()->GetFunction("lib_C", "lag");
 
 	Params::Lib_C_Lag Parms{};
-
-	Parms.__WorldContext = __WorldContext;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-}
-
-
-// Function lib.lib_C.propToName
-// (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                           ItemToFind                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Output                                                 (Parm, OutParm)
-
-void ULib_C::PropToName(const class FString& ItemToFind, class UObject* __WorldContext, class FText* Output)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("lib_C", "propToName");
-
-	Params::Lib_C_PropToName Parms{};
-
-	Parms.ItemToFind = std::move(ItemToFind);
-	Parms.__WorldContext = __WorldContext;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	if (Output != nullptr)
-		*Output = std::move(Parms.Output);
-}
-
-
-// Function lib.lib_C.getMoonPhase
-// (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Phase                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ULib_C::GetMoonPhase(class UObject* __WorldContext, float* Phase)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("lib_C", "getMoonPhase");
-
-	Params::Lib_C_GetMoonPhase Parms{};
-
-	Parms.__WorldContext = __WorldContext;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	if (Phase != nullptr)
-		*Phase = Parms.Phase;
-}
-
-
-// Function lib.lib_C.addEffect
-// (Static, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             Effect                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Strength                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Time                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IncrementStrength                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    IncrementTime                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ULib_C::AddEffect(class FName Effect, float Strength, float Time, bool IncrementStrength, bool IncrementTime, class UObject* __WorldContext)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("lib_C", "addEffect");
-
-	Params::Lib_C_AddEffect Parms{};
-
-	Parms.Effect = Effect;
-	Parms.Strength = Strength;
-	Parms.Time = Time;
-	Parms.IncrementStrength = IncrementStrength;
-	Parms.IncrementTime = IncrementTime;
-	Parms.__WorldContext = __WorldContext;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-}
-
-
-// Function lib.lib_C.generateKey
-// (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                           KeyIn                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash)
-// class AActor*                           Object                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString                           KeyOut                                                 (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-
-void ULib_C::GenerateKey(class FString& KeyIn, const class AActor*& Object, class UObject* __WorldContext, class FString* KeyOut)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("lib_C", "generateKey");
-
-	Params::Lib_C_GenerateKey Parms{};
-
-	Parms.KeyIn = std::move(KeyIn);
-	Parms.Object = Object;
-	Parms.__WorldContext = __WorldContext;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	KeyIn = std::move(Parms.KeyIn);
-
-	if (KeyOut != nullptr)
-		*KeyOut = std::move(Parms.KeyOut);
-}
-
-
-// Function lib.lib_C.debugSound
-// (Static, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ULib_C::DebugSound(class UObject* __WorldContext)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("lib_C", "debugSound");
-
-	Params::Lib_C_DebugSound Parms{};
 
 	Parms.__WorldContext = __WorldContext;
 

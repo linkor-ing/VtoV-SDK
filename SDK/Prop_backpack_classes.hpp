@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Prop_container_classes.hpp"
+#include "Engine_structs.hpp"
 #include "Enum_interactionActions_structs.hpp"
 
 
@@ -19,19 +19,19 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_backpack.prop_backpack_C
-// 0x0008 (0x0400 - 0x03F8)
+// 0x0008 (0x03F0 - 0x03E8)
 class AProp_backpack_C final : public AProp_container_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_backpack_C;                    // 0x03F8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_backpack_C;                    // 0x03E8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_prop_backpack(int32 EntryPoint);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
 	void Explode();
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 
 public:
 	static class UClass* StaticClass()
@@ -44,8 +44,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_backpack_C) == 0x000008, "Wrong alignment on AProp_backpack_C");
-static_assert(sizeof(AProp_backpack_C) == 0x000400, "Wrong size on AProp_backpack_C");
-static_assert(offsetof(AProp_backpack_C, UberGraphFrame_Prop_backpack_C) == 0x0003F8, "Member 'AProp_backpack_C::UberGraphFrame_Prop_backpack_C' has a wrong offset!");
+static_assert(sizeof(AProp_backpack_C) == 0x0003F0, "Wrong size on AProp_backpack_C");
+static_assert(offsetof(AProp_backpack_C, UberGraphFrame_Prop_backpack_C) == 0x0003E8, "Member 'AProp_backpack_C::UberGraphFrame_Prop_backpack_C' has a wrong offset!");
 
 }
 

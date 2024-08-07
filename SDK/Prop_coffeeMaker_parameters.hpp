@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "Struct_mBool_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Struct_triggerSave_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Enum_interactionActions_structs.hpp"
-#include "Struct_save_structs.hpp"
-#include "Struct_mVector_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Struct_save_structs.hpp"
+#include "Struct_mBool_structs.hpp"
+#include "Struct_mVector_structs.hpp"
 
 
 namespace SDK::Params
@@ -28,28 +28,28 @@ struct Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A1D[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_Event_owner;                                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_index;                                // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_index_1;                              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_NewParam;                             // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A1E[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_Event_sentFrom;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_active;                               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A1F[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_HitComponent;           // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                K2Node_ComponentBoundEvent_NormalImpulse;          // 0x0040(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_ComponentBoundEvent_Hit;                    // 0x004C(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A20[0x4];                                     // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AProp_C*                                K2Node_DynamicCast_AsProp;                         // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E1[0x3];                                       // 0x00E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A21[0x3];                                     // 0x00E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AProp_coffeeBag_C*                      K2Node_DynamicCast_AsProp_Coffee_Bag;              // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F2[0x2];                                       // 0x00F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A22[0x2];                                     // 0x00F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -57,15 +57,16 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00FB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x00FD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_FE[0x2];                                       // 0x00FE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A23[0x2];                                     // 0x00FE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0100(0x0030)(IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AProp_food_coffeeCup_C*                 CallFunc_FinishSpawningActor_ReturnValue;          // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit;                                  // 0x0148(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x01D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D2[0x6];                                      // 0x01D2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Event_index;                                // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x01D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x01D5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1A24[0x2];                                     // 0x01D6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class ACord_C*                                K2Node_Event_cord_1;                               // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ACordSocket_C*                          K2Node_Event_socket_1;                             // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ACord_C*                                K2Node_Event_cord;                                 // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -77,7 +78,7 @@ static_assert(alignof(Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker) == 0
 static_assert(sizeof(Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker) == 0x000210, "Wrong size on Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker");
 static_assert(offsetof(Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker, EntryPoint) == 0x000000, "Member 'Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker, K2Node_Event_owner) == 0x000008, "Member 'Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker::K2Node_Event_owner' has a wrong offset!");
-static_assert(offsetof(Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker, K2Node_Event_index) == 0x000010, "Member 'Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker, K2Node_Event_index_1) == 0x000010, "Member 'Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker::K2Node_Event_index_1' has a wrong offset!");
 static_assert(offsetof(Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker, K2Node_Event_NewParam) == 0x000014, "Member 'Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker::K2Node_Event_NewParam' has a wrong offset!");
 static_assert(offsetof(Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker, K2Node_Event_sentFrom) == 0x000018, "Member 'Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker::K2Node_Event_sentFrom' has a wrong offset!");
 static_assert(offsetof(Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker, K2Node_Event_active) == 0x000020, "Member 'Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker::K2Node_Event_active' has a wrong offset!");
@@ -104,8 +105,9 @@ static_assert(offsetof(Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker, Cal
 static_assert(offsetof(Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker, CallFunc_FinishSpawningActor_ReturnValue) == 0x000138, "Member 'Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker, K2Node_Event_player) == 0x000140, "Member 'Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker::K2Node_Event_player' has a wrong offset!");
 static_assert(offsetof(Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker, K2Node_Event_hit) == 0x000148, "Member 'Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker, K2Node_Event_action) == 0x0001D0, "Member 'Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker, K2Node_SwitchEnum_CmpSuccess) == 0x0001D1, "Member 'Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker, K2Node_Event_index) == 0x0001D0, "Member 'Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker, K2Node_Event_action) == 0x0001D4, "Member 'Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker, K2Node_SwitchEnum_CmpSuccess) == 0x0001D5, "Member 'Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker, K2Node_Event_cord_1) == 0x0001D8, "Member 'Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker::K2Node_Event_cord_1' has a wrong offset!");
 static_assert(offsetof(Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker, K2Node_Event_socket_1) == 0x0001E0, "Member 'Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker::K2Node_Event_socket_1' has a wrong offset!");
 static_assert(offsetof(Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker, K2Node_Event_cord) == 0x0001E8, "Member 'Prop_coffeeMaker_C_ExecuteUbergraph_prop_coffeeMaker::K2Node_Event_cord' has a wrong offset!");
@@ -138,6 +140,23 @@ static_assert(alignof(Prop_coffeeMaker_C_CordPlugged) == 0x000008, "Wrong alignm
 static_assert(sizeof(Prop_coffeeMaker_C_CordPlugged) == 0x000010, "Wrong size on Prop_coffeeMaker_C_CordPlugged");
 static_assert(offsetof(Prop_coffeeMaker_C_CordPlugged, Param_Cord) == 0x000000, "Member 'Prop_coffeeMaker_C_CordPlugged::Param_Cord' has a wrong offset!");
 static_assert(offsetof(Prop_coffeeMaker_C_CordPlugged, Socket) == 0x000008, "Member 'Prop_coffeeMaker_C_CordPlugged::Socket' has a wrong offset!");
+
+// Function prop_coffeeMaker.prop_coffeeMaker_C.actionOptionIndex
+// 0x0098 (0x0098 - 0x0000)
+struct Prop_coffeeMaker_C_ActionOptionIndex final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_coffeeMaker_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_coffeeMaker_C_ActionOptionIndex");
+static_assert(sizeof(Prop_coffeeMaker_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_coffeeMaker_C_ActionOptionIndex");
+static_assert(offsetof(Prop_coffeeMaker_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_coffeeMaker_C_ActionOptionIndex::Player' has a wrong offset!");
+static_assert(offsetof(Prop_coffeeMaker_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_coffeeMaker_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_coffeeMaker_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_coffeeMaker_C_ActionOptionIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(Prop_coffeeMaker_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_coffeeMaker_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function prop_coffeeMaker.prop_coffeeMaker_C.BndEvt__StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature
 // 0x00B0 (0x00B0 - 0x0000)
@@ -201,7 +220,7 @@ struct Prop_coffeeMaker_C_Upd final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A25[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStaticMesh*                            Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMesh*                            Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMesh*                            K2Node_Select_Default;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -250,32 +269,6 @@ static_assert(alignof(Prop_coffeeMaker_C_GetTriggerData) == 0x000010, "Wrong ali
 static_assert(sizeof(Prop_coffeeMaker_C_GetTriggerData) == 0x0000F0, "Wrong size on Prop_coffeeMaker_C_GetTriggerData");
 static_assert(offsetof(Prop_coffeeMaker_C_GetTriggerData, Data) == 0x000000, "Member 'Prop_coffeeMaker_C_GetTriggerData::Data' has a wrong offset!");
 
-// Function prop_coffeeMaker.prop_coffeeMaker_C.gatherDataFromKeyT
-// 0x0001 (0x0001 - 0x0000)
-struct Prop_coffeeMaker_C_GatherDataFromKeyT final
-{
-public:
-	bool                                          Gather;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(Prop_coffeeMaker_C_GatherDataFromKeyT) == 0x000001, "Wrong alignment on Prop_coffeeMaker_C_GatherDataFromKeyT");
-static_assert(sizeof(Prop_coffeeMaker_C_GatherDataFromKeyT) == 0x000001, "Wrong size on Prop_coffeeMaker_C_GatherDataFromKeyT");
-static_assert(offsetof(Prop_coffeeMaker_C_GatherDataFromKeyT, Gather) == 0x000000, "Member 'Prop_coffeeMaker_C_GatherDataFromKeyT::Gather' has a wrong offset!");
-
-// Function prop_coffeeMaker.prop_coffeeMaker_C.actionOptionIndex
-// 0x0098 (0x0098 - 0x0000)
-struct Prop_coffeeMaker_C_ActionOptionIndex final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_coffeeMaker_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_coffeeMaker_C_ActionOptionIndex");
-static_assert(sizeof(Prop_coffeeMaker_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_coffeeMaker_C_ActionOptionIndex");
-static_assert(offsetof(Prop_coffeeMaker_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_coffeeMaker_C_ActionOptionIndex::Player' has a wrong offset!");
-static_assert(offsetof(Prop_coffeeMaker_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_coffeeMaker_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_coffeeMaker_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_coffeeMaker_C_ActionOptionIndex::Action' has a wrong offset!");
-
 // Function prop_coffeeMaker.prop_coffeeMaker_C.lookAt
 // 0x01C8 (0x01C8 - 0x0000)
 struct Prop_coffeeMaker_C_LookAt final
@@ -284,12 +277,11 @@ public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A26[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B2[0x6];                                       // 0x00B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          Temp_bool_Variable;                                // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1A27[0x7];                                     // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Temp_string_Variable;                              // 0x00B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 Temp_string_Variable_1;                            // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00D8(0x0018)()
@@ -314,8 +306,7 @@ static_assert(offsetof(Prop_coffeeMaker_C_LookAt, Param_Hit) == 0x000008, "Membe
 static_assert(offsetof(Prop_coffeeMaker_C_LookAt, Return) == 0x000090, "Member 'Prop_coffeeMaker_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(Prop_coffeeMaker_C_LookAt, Text) == 0x000098, "Member 'Prop_coffeeMaker_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(Prop_coffeeMaker_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'Prop_coffeeMaker_C_LookAt::boundObjectReplace' has a wrong offset!");
-static_assert(offsetof(Prop_coffeeMaker_C_LookAt, Number) == 0x0000B0, "Member 'Prop_coffeeMaker_C_LookAt::Number' has a wrong offset!");
-static_assert(offsetof(Prop_coffeeMaker_C_LookAt, Temp_bool_Variable) == 0x0000B1, "Member 'Prop_coffeeMaker_C_LookAt::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_coffeeMaker_C_LookAt, Temp_bool_Variable) == 0x0000B0, "Member 'Prop_coffeeMaker_C_LookAt::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(Prop_coffeeMaker_C_LookAt, Temp_string_Variable) == 0x0000B8, "Member 'Prop_coffeeMaker_C_LookAt::Temp_string_Variable' has a wrong offset!");
 static_assert(offsetof(Prop_coffeeMaker_C_LookAt, Temp_string_Variable_1) == 0x0000C8, "Member 'Prop_coffeeMaker_C_LookAt::Temp_string_Variable_1' has a wrong offset!");
 static_assert(offsetof(Prop_coffeeMaker_C_LookAt, CallFunc_MakeLiteralText_ReturnValue) == 0x0000D8, "Member 'Prop_coffeeMaker_C_LookAt::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
@@ -340,19 +331,19 @@ struct Prop_coffeeMaker_C_LoadData final
 public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A28[0x7];                                     // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mVector                        CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	struct FStruct_mBool                          CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0010)(HasGetValueTypeHash)
 	struct FVector                                CallFunc_Array_Get_Item_2;                         // 0x00E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Get_Item_3;                         // 0x00F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F5[0x3];                                       // 0x00F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A29[0x3];                                     // 0x00F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x00F8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_Get_Item_4;                         // 0x0104(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_Get_Item_5;                         // 0x0105(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_106[0x2];                                      // 0x0106(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A2A[0x2];                                     // 0x0106(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_Array_Get_Item_6;                         // 0x0108(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0114(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_115[0x3];                                      // 0x0115(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A2B[0x3];                                     // 0x0115(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult; // 0x0118(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_loadData_return;                          // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -382,13 +373,13 @@ public:
 	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x00F0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x00FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0108(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A2C[0x4];                                     // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<bool>                                  K2Node_MakeArray_Array;                            // 0x0118(0x0010)(ReferenceParm)
 	struct FVector                                CallFunc_Conv_RotatorToVector_ReturnValue;         // 0x0128(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_134[0x4];                                      // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A2D[0x4];                                     // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mBool                          K2Node_MakeStruct_struct_mBool;                    // 0x0138(0x0010)(HasGetValueTypeHash)
 	TArray<struct FVector>                        K2Node_MakeArray_Array_1;                          // 0x0148(0x0010)(ReferenceParm)
-	uint8                                         Pad_158[0x8];                                      // 0x0158(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A2E[0x8];                                     // 0x0158(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           CallFunc_getData_data;                             // 0x0160(0x00C0)(HasGetValueTypeHash)
 	struct FStruct_mVector                        K2Node_MakeStruct_struct_mVector;                  // 0x0220(0x0010)(HasGetValueTypeHash)
 	TArray<struct FStruct_mVector>                K2Node_MakeArray_Array_2;                          // 0x0230(0x0010)(ReferenceParm)
@@ -415,7 +406,7 @@ static_assert(offsetof(Prop_coffeeMaker_C_GetData, K2Node_MakeArray_Array_3) == 
 static_assert(offsetof(Prop_coffeeMaker_C_GetData, K2Node_SetFieldsInStruct_StructOut) == 0x000260, "Member 'Prop_coffeeMaker_C_GetData::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
 
 // Function prop_coffeeMaker.prop_coffeeMaker_C.getActionOptions
-// 0x0060 (0x0060 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct Prop_coffeeMaker_C_GetActionOptions final
 {
 public:
@@ -425,20 +416,17 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
 };
 static_assert(alignof(Prop_coffeeMaker_C_GetActionOptions) == 0x000008, "Wrong alignment on Prop_coffeeMaker_C_GetActionOptions");
-static_assert(sizeof(Prop_coffeeMaker_C_GetActionOptions) == 0x000060, "Wrong size on Prop_coffeeMaker_C_GetActionOptions");
+static_assert(sizeof(Prop_coffeeMaker_C_GetActionOptions) == 0x000058, "Wrong size on Prop_coffeeMaker_C_GetActionOptions");
 static_assert(offsetof(Prop_coffeeMaker_C_GetActionOptions, Player) == 0x000000, "Member 'Prop_coffeeMaker_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Prop_coffeeMaker_C_GetActionOptions, Component) == 0x000008, "Member 'Prop_coffeeMaker_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Prop_coffeeMaker_C_GetActionOptions, Actor) == 0x000010, "Member 'Prop_coffeeMaker_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Prop_coffeeMaker_C_GetActionOptions, Options) == 0x000018, "Member 'Prop_coffeeMaker_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Prop_coffeeMaker_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Prop_coffeeMaker_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Prop_coffeeMaker_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Prop_coffeeMaker_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Prop_coffeeMaker_C_GetActionOptions, Number) == 0x000048, "Member 'Prop_coffeeMaker_C_GetActionOptions::Number' has a wrong offset!");
-static_assert(offsetof(Prop_coffeeMaker_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Prop_coffeeMaker_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Prop_coffeeMaker_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'Prop_coffeeMaker_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 }
 

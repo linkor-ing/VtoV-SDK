@@ -37,20 +37,6 @@ void ADream_burger_C::ExecuteUbergraph_dream_burger(int32 EntryPoint)
 }
 
 
-// Function dream_burger.dream_burger_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ADream_burger_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("dream_burger_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function dream_burger.dream_burger_C.collec
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -68,6 +54,20 @@ void ADream_burger_C::Collec(const class ADreamBurger_coll_C*& Item)
 	Parms.Item = Item;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function dream_burger.dream_burger_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ADream_burger_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("dream_burger_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -37,6 +37,20 @@ void AProp_wireComponent_sequence_C::ExecuteUbergraph_prop_wireComponent_sequenc
 }
 
 
+// Function prop_wireComponent_sequence.prop_wireComponent_sequence_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_wireComponent_sequence_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_wireComponent_sequence_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function prop_wireComponent_sequence.prop_wireComponent_sequence_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -118,20 +132,6 @@ void AProp_wireComponent_sequence_C::WireConnected(class AWire_C* Wire, bool Sid
 	Parms.Side = Side;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop_wireComponent_sequence.prop_wireComponent_sequence_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_wireComponent_sequence_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_wireComponent_sequence_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -22,7 +22,7 @@ namespace SDK
 class UFastNoiseWrapper final : public UObject
 {
 public:
-	uint8                                         Pad_28[0x450];                                     // 0x0028(0x0450)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C58[0x450];                                    // 0x0028(0x0450)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	EFastNoise_NoiseType GetNoiseType();

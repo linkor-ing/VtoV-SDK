@@ -10,43 +10,43 @@
 
 #include "Basic.hpp"
 
+#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Prop_tv2_classes.hpp"
-#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass prop_tv_plasma.prop_tv_plasma_C
-// 0x0090 (0x04B0 - 0x0420)
+// 0x0090 (0x04A0 - 0x0410)
 class AProp_tv_plasma_C final : public AProp_tv2_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_tv_plasma_C;                   // 0x0420(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UArrowComponent*                        Stick;                                             // 0x0428(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Timeline_0_a_B450364C46342F62D04E89B2597346A4;     // 0x0430(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Timeline_0__Direction_B450364C46342F62D04E89B2597346A4; // 0x0434(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_435[0x3];                                      // 0x0435(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Timeline_0;                                        // 0x0438(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             Tr_A;                                              // 0x0440(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	struct FTransform                             Tr_B;                                              // 0x0470(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	float                                         Dir;                                               // 0x04A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          DoStick;                                           // 0x04A4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_tv_plasma_C;                   // 0x0410(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UArrowComponent*                        Stick;                                             // 0x0418(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Timeline_0_a_B450364C46342F62D04E89B2597346A4;     // 0x0420(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline_0__Direction_B450364C46342F62D04E89B2597346A4; // 0x0424(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3BF7[0x3];                                     // 0x0425(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Timeline_0;                                        // 0x0428(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             Tr_A;                                              // 0x0430(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FTransform                             Tr_B;                                              // 0x0460(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	float                                         Dir;                                               // 0x0490(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          DoStick;                                           // 0x0494(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_prop_tv_plasma(int32 EntryPoint);
+	void SetPropProps(bool Param_Static, bool Param_Frozen, bool Active);
+	void ReceiveBeginPlay();
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
 	void ForceStick();
 	void Sticking();
 	void Timeline_0__UpdateFunc();
 	void Timeline_0__FinishedFunc();
 	void TryStick(struct FHitResult* OutHit);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
-	void SetPropProps(bool Param_Static, bool Param_Frozen, bool Active);
-	void ReceiveBeginPlay();
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 
 public:
 	static class UClass* StaticClass()
@@ -59,16 +59,16 @@ public:
 	}
 };
 static_assert(alignof(AProp_tv_plasma_C) == 0x000010, "Wrong alignment on AProp_tv_plasma_C");
-static_assert(sizeof(AProp_tv_plasma_C) == 0x0004B0, "Wrong size on AProp_tv_plasma_C");
-static_assert(offsetof(AProp_tv_plasma_C, UberGraphFrame_Prop_tv_plasma_C) == 0x000420, "Member 'AProp_tv_plasma_C::UberGraphFrame_Prop_tv_plasma_C' has a wrong offset!");
-static_assert(offsetof(AProp_tv_plasma_C, Stick) == 0x000428, "Member 'AProp_tv_plasma_C::Stick' has a wrong offset!");
-static_assert(offsetof(AProp_tv_plasma_C, Timeline_0_a_B450364C46342F62D04E89B2597346A4) == 0x000430, "Member 'AProp_tv_plasma_C::Timeline_0_a_B450364C46342F62D04E89B2597346A4' has a wrong offset!");
-static_assert(offsetof(AProp_tv_plasma_C, Timeline_0__Direction_B450364C46342F62D04E89B2597346A4) == 0x000434, "Member 'AProp_tv_plasma_C::Timeline_0__Direction_B450364C46342F62D04E89B2597346A4' has a wrong offset!");
-static_assert(offsetof(AProp_tv_plasma_C, Timeline_0) == 0x000438, "Member 'AProp_tv_plasma_C::Timeline_0' has a wrong offset!");
-static_assert(offsetof(AProp_tv_plasma_C, Tr_A) == 0x000440, "Member 'AProp_tv_plasma_C::Tr_A' has a wrong offset!");
-static_assert(offsetof(AProp_tv_plasma_C, Tr_B) == 0x000470, "Member 'AProp_tv_plasma_C::Tr_B' has a wrong offset!");
-static_assert(offsetof(AProp_tv_plasma_C, Dir) == 0x0004A0, "Member 'AProp_tv_plasma_C::Dir' has a wrong offset!");
-static_assert(offsetof(AProp_tv_plasma_C, DoStick) == 0x0004A4, "Member 'AProp_tv_plasma_C::DoStick' has a wrong offset!");
+static_assert(sizeof(AProp_tv_plasma_C) == 0x0004A0, "Wrong size on AProp_tv_plasma_C");
+static_assert(offsetof(AProp_tv_plasma_C, UberGraphFrame_Prop_tv_plasma_C) == 0x000410, "Member 'AProp_tv_plasma_C::UberGraphFrame_Prop_tv_plasma_C' has a wrong offset!");
+static_assert(offsetof(AProp_tv_plasma_C, Stick) == 0x000418, "Member 'AProp_tv_plasma_C::Stick' has a wrong offset!");
+static_assert(offsetof(AProp_tv_plasma_C, Timeline_0_a_B450364C46342F62D04E89B2597346A4) == 0x000420, "Member 'AProp_tv_plasma_C::Timeline_0_a_B450364C46342F62D04E89B2597346A4' has a wrong offset!");
+static_assert(offsetof(AProp_tv_plasma_C, Timeline_0__Direction_B450364C46342F62D04E89B2597346A4) == 0x000424, "Member 'AProp_tv_plasma_C::Timeline_0__Direction_B450364C46342F62D04E89B2597346A4' has a wrong offset!");
+static_assert(offsetof(AProp_tv_plasma_C, Timeline_0) == 0x000428, "Member 'AProp_tv_plasma_C::Timeline_0' has a wrong offset!");
+static_assert(offsetof(AProp_tv_plasma_C, Tr_A) == 0x000430, "Member 'AProp_tv_plasma_C::Tr_A' has a wrong offset!");
+static_assert(offsetof(AProp_tv_plasma_C, Tr_B) == 0x000460, "Member 'AProp_tv_plasma_C::Tr_B' has a wrong offset!");
+static_assert(offsetof(AProp_tv_plasma_C, Dir) == 0x000490, "Member 'AProp_tv_plasma_C::Dir' has a wrong offset!");
+static_assert(offsetof(AProp_tv_plasma_C, DoStick) == 0x000494, "Member 'AProp_tv_plasma_C::DoStick' has a wrong offset!");
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_radArgem_2.prop_radArgem_2_C
-// 0x0000 (0x03A8 - 0x03A8)
+// 0x0000 (0x0398 - 0x0398)
 class AProp_radArgem_2_C final : public AProp_radArgem_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_radArgem_2_C) == 0x000008, "Wrong alignment on AProp_radArgem_2_C");
-static_assert(sizeof(AProp_radArgem_2_C) == 0x0003A8, "Wrong size on AProp_radArgem_2_C");
+static_assert(sizeof(AProp_radArgem_2_C) == 0x000398, "Wrong size on AProp_radArgem_2_C");
 
 }
 

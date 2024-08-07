@@ -51,7 +51,7 @@ void AEyer_C::Del()
 }
 
 
-// Function eyer.eyer_C.Despawn
+// Function eyer.eyer_C.despawn
 // (BlueprintCallable, BlueprintEvent)
 
 void AEyer_C::Despawn()
@@ -59,7 +59,7 @@ void AEyer_C::Despawn()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("eyer_C", "Despawn");
+		Func = Class->GetFunction("eyer_C", "despawn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -12,8 +12,8 @@
 
 #include "CoreUObject_structs.hpp"
 #include "InputCore_structs.hpp"
-#include "Struct_settings_structs.hpp"
 #include "Struct_save_structs.hpp"
+#include "Struct_settings_structs.hpp"
 
 
 namespace SDK::Params
@@ -31,14 +31,14 @@ static_assert(sizeof(Int_coms_C_StuffUpgraded) == 0x000008, "Wrong size on Int_c
 static_assert(offsetof(Int_coms_C_StuffUpgraded, GameMode) == 0x000000, "Member 'Int_coms_C_StuffUpgraded::GameMode' has a wrong offset!");
 
 // Function int_coms.int_coms_C.settingsApplied
-// 0x00F0 (0x00F0 - 0x0000)
+// 0x00CC (0x00CC - 0x0000)
 struct Int_coms_C_SettingsApplied final
 {
 public:
-	struct FStruct_settings                       Settings;                                          // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FStruct_settings                       Settings;                                          // 0x0000(0x00CC)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Int_coms_C_SettingsApplied) == 0x000008, "Wrong alignment on Int_coms_C_SettingsApplied");
-static_assert(sizeof(Int_coms_C_SettingsApplied) == 0x0000F0, "Wrong size on Int_coms_C_SettingsApplied");
+static_assert(alignof(Int_coms_C_SettingsApplied) == 0x000004, "Wrong alignment on Int_coms_C_SettingsApplied");
+static_assert(sizeof(Int_coms_C_SettingsApplied) == 0x0000CC, "Wrong size on Int_coms_C_SettingsApplied");
 static_assert(offsetof(Int_coms_C_SettingsApplied, Settings) == 0x000000, "Member 'Int_coms_C_SettingsApplied::Settings' has a wrong offset!");
 
 // Function int_coms.int_coms_C.dreamInv
@@ -77,21 +77,6 @@ public:
 static_assert(alignof(Int_coms_C_ApplyColor) == 0x000004, "Wrong alignment on Int_coms_C_ApplyColor");
 static_assert(sizeof(Int_coms_C_ApplyColor) == 0x000010, "Wrong size on Int_coms_C_ApplyColor");
 static_assert(offsetof(Int_coms_C_ApplyColor, Color) == 0x000000, "Member 'Int_coms_C_ApplyColor::Color' has a wrong offset!");
-
-// Function int_coms.int_coms_C.texturePickerApply
-// 0x0018 (0x0018 - 0x0000)
-struct Int_coms_C_TexturePickerApply final
-{
-public:
-	class UUmg_texturePicker_C*                   Picker;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Param_Index;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Int_coms_C_TexturePickerApply) == 0x000008, "Wrong alignment on Int_coms_C_TexturePickerApply");
-static_assert(sizeof(Int_coms_C_TexturePickerApply) == 0x000018, "Wrong size on Int_coms_C_TexturePickerApply");
-static_assert(offsetof(Int_coms_C_TexturePickerApply, Picker) == 0x000000, "Member 'Int_coms_C_TexturePickerApply::Picker' has a wrong offset!");
-static_assert(offsetof(Int_coms_C_TexturePickerApply, Texture) == 0x000008, "Member 'Int_coms_C_TexturePickerApply::Texture' has a wrong offset!");
-static_assert(offsetof(Int_coms_C_TexturePickerApply, Param_Index) == 0x000010, "Member 'Int_coms_C_TexturePickerApply::Param_Index' has a wrong offset!");
 
 }
 

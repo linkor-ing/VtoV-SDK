@@ -18,11 +18,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_wtotem_1.prop_wtotem_1_C
-// 0x0008 (0x0380 - 0x0378)
+// 0x0008 (0x0370 - 0x0368)
 class AProp_wtotem_1_C final : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_wtotem_1_C;                    // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	uint8                                         Pad_3CCF[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_wtotem_1_C;                    // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_prop_wtotem_1(int32 EntryPoint);
@@ -39,8 +40,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_wtotem_1_C) == 0x000008, "Wrong alignment on AProp_wtotem_1_C");
-static_assert(sizeof(AProp_wtotem_1_C) == 0x000380, "Wrong size on AProp_wtotem_1_C");
-static_assert(offsetof(AProp_wtotem_1_C, UberGraphFrame_Prop_wtotem_1_C) == 0x000378, "Member 'AProp_wtotem_1_C::UberGraphFrame_Prop_wtotem_1_C' has a wrong offset!");
+static_assert(sizeof(AProp_wtotem_1_C) == 0x000370, "Wrong size on AProp_wtotem_1_C");
+static_assert(offsetof(AProp_wtotem_1_C, UberGraphFrame_Prop_wtotem_1_C) == 0x000368, "Member 'AProp_wtotem_1_C::UberGraphFrame_Prop_wtotem_1_C' has a wrong offset!");
 
 }
 

@@ -15,7 +15,7 @@ namespace SDK
 {
 
 // UserDefinedEnum enum_kerfurCommand.enum_kerfurCommand
-// NumValues: 0x0008
+// NumValues: 0x0007
 enum class Enum_kerfurCommand : uint8
 {
 	NewEnumerator0                           = 0,
@@ -24,8 +24,7 @@ enum class Enum_kerfurCommand : uint8
 	NewEnumerator3                           = 3,
 	NewEnumerator4                           = 4,
 	NewEnumerator5                           = 5,
-	NewEnumerator6                           = 6,
-	Enum_MAX                                 = 7,
+	Enum_MAX                                 = 6,
 };
 
 }

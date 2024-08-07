@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass generator.generator_C
-// 0x0068 (0x02B0 - 0x0248)
+// 0x0058 (0x02A0 - 0x0248)
 class AGenerator_C final : public AActor_save_C
 {
 public:
@@ -33,22 +33,16 @@ public:
 	class UAudioComponent*                        Audio;                                             // 0x0280(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0288(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsBroken;                                          // 0x0290(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_291[0x3];                                      // 0x0291(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EDB[0x3];                                     // 0x0291(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Index_Generator_C;                                 // 0x0294(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Cycle;                                             // 0x0298(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29C[0x4];                                      // 0x029C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	FMulticastInlineDelegateProperty_             TurnedOn;                                          // 0x02A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void TurnedOn__DelegateSignature();
 	void ExecuteUbergraph_generator(int32 EntryPoint);
 	void GamemodeBeginPlay();
 	void ReceiveBeginPlay();
-	void PlayerR(class AMainPlayer_C* Player);
-	void PlayerHold(class AMainPlayer_C* Player);
-	void PlayerUnequip(class AMainPlayer_C* Player);
 	void UpdateStrAgl();
-	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage);
+	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void Thrown(class AMainPlayer_C* Player);
 	void broken_fire();
 	void broken();
@@ -56,7 +50,6 @@ public:
 	void Kicked(bool Kick);
 	void Player_use(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void DriveDetached();
-	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void ApplyColor(const struct FLinearColor& Color);
 	void PropRenderer_finishProps();
 	void GamemodeMakeKeys();
@@ -74,17 +67,15 @@ public:
 	void CanBePutInContainer(bool* Return);
 	void AsProp(class AProp_C** Return);
 	void CanPickup(bool* Return);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
 	void NoRespawn(bool Param_NoRespawn, bool* Return);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
 	void IsButtonUsed(bool* Failed);
-	void LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage);
 	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base);
 	void AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Hit, const struct FVector& Impact, bool SkipSetting);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
-	void GatherDataFromKey(bool* Gather);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 
 public:
 	static class UClass* StaticClass()
@@ -97,7 +88,7 @@ public:
 	}
 };
 static_assert(alignof(AGenerator_C) == 0x000008, "Wrong alignment on AGenerator_C");
-static_assert(sizeof(AGenerator_C) == 0x0002B0, "Wrong size on AGenerator_C");
+static_assert(sizeof(AGenerator_C) == 0x0002A0, "Wrong size on AGenerator_C");
 static_assert(offsetof(AGenerator_C, UberGraphFrame_Generator_C) == 0x000248, "Member 'AGenerator_C::UberGraphFrame_Generator_C' has a wrong offset!");
 static_assert(offsetof(AGenerator_C, KerfSpot) == 0x000250, "Member 'AGenerator_C::KerfSpot' has a wrong offset!");
 static_assert(offsetof(AGenerator_C, Svtarget) == 0x000258, "Member 'AGenerator_C::Svtarget' has a wrong offset!");
@@ -110,7 +101,6 @@ static_assert(offsetof(AGenerator_C, StaticMesh) == 0x000288, "Member 'AGenerato
 static_assert(offsetof(AGenerator_C, IsBroken) == 0x000290, "Member 'AGenerator_C::IsBroken' has a wrong offset!");
 static_assert(offsetof(AGenerator_C, Index_Generator_C) == 0x000294, "Member 'AGenerator_C::Index_Generator_C' has a wrong offset!");
 static_assert(offsetof(AGenerator_C, Cycle) == 0x000298, "Member 'AGenerator_C::Cycle' has a wrong offset!");
-static_assert(offsetof(AGenerator_C, TurnedOn) == 0x0002A0, "Member 'AGenerator_C::TurnedOn' has a wrong offset!");
 
 }
 

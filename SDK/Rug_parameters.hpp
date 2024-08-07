@@ -10,144 +10,102 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "ProceduralMeshComponent_structs.hpp"
-#include "Enum_interactionActions_structs.hpp"
 #include "Struct_save_structs.hpp"
+#include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
+#include "ProceduralMeshComponent_structs.hpp"
 #include "Struct_mInt_structs.hpp"
 #include "Struct_mString_structs.hpp"
-#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function rug.rug_c.ExecuteUbergraph_rug
-// 0x02E0 (0x02E0 - 0x0000)
+// 0x02C0 (0x02C0 - 0x0000)
 struct Rug_c_ExecuteUbergraph_rug final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E5B[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit;                                  // 0x0010(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9A[0x6];                                       // 0x009A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_index;                                // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x009D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2E5C[0x2];                                     // 0x009E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit_2;                                // 0x00A8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          K2Node_Event_kick;                                 // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_131[0x3];                                      // 0x0131(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E5D[0x3];                                     // 0x0131(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_Event_name;                                 // 0x0134(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_13C[0x4];                                      // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2E5E[0x4];                                     // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit_1;                                // 0x0150(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         K2Node_Event_damage;                               // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1DC[0x4];                                      // 0x01DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1F8[0x8];                                      // 0x01F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0200(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_rug_C*                            CallFunc_FinishSpawningActor_ReturnValue;          // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IInt_player_C>         CallFunc_sendName_self_CastInput;                  // 0x0240(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_VictoryIntPlusEquals_IntOut;              // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_25C[0x4];                                      // 0x025C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UTexture2D*>                     K2Node_LowEntry_LocalVariable_Value__Object;       // 0x0260(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0270(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0274(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_279[0x7];                                      // 0x0279(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetTransform_ReturnValue_1;               // 0x0280(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_rug_c_C*                          CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x02B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IInt_player_C>         CallFunc_sendName_self_CastInput_1;                // 0x02C0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_1;        // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2E5F[0x8];                                     // 0x01D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x01E0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_rug_C*                            CallFunc_FinishSpawningActor_ReturnValue;          // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IInt_player_C>         CallFunc_sendName_self_CastInput;                  // 0x0220(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_VictoryIntPlusEquals_IntOut;              // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2E60[0x4];                                     // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UTexture2D*>                     K2Node_LowEntry_LocalVariable_Value__Object;       // 0x0240(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0254(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2E61[0x7];                                     // 0x0259(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetTransform_ReturnValue_1;               // 0x0260(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_rug_c_C*                          CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0298(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IInt_player_C>         CallFunc_sendName_self_CastInput_1;                // 0x02A0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_1;        // 0x02B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Rug_c_ExecuteUbergraph_rug) == 0x000010, "Wrong alignment on Rug_c_ExecuteUbergraph_rug");
-static_assert(sizeof(Rug_c_ExecuteUbergraph_rug) == 0x0002E0, "Wrong size on Rug_c_ExecuteUbergraph_rug");
+static_assert(sizeof(Rug_c_ExecuteUbergraph_rug) == 0x0002C0, "Wrong size on Rug_c_ExecuteUbergraph_rug");
 static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, EntryPoint) == 0x000000, "Member 'Rug_c_ExecuteUbergraph_rug::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, K2Node_Event_player) == 0x000008, "Member 'Rug_c_ExecuteUbergraph_rug::K2Node_Event_player' has a wrong offset!");
 static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, K2Node_Event_hit) == 0x000010, "Member 'Rug_c_ExecuteUbergraph_rug::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, K2Node_Event_action) == 0x000098, "Member 'Rug_c_ExecuteUbergraph_rug::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, K2Node_SwitchEnum_CmpSuccess) == 0x000099, "Member 'Rug_c_ExecuteUbergraph_rug::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, K2Node_Event_player_6) == 0x0000A0, "Member 'Rug_c_ExecuteUbergraph_rug::K2Node_Event_player_6' has a wrong offset!");
+static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, K2Node_Event_index) == 0x000098, "Member 'Rug_c_ExecuteUbergraph_rug::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, K2Node_Event_action) == 0x00009C, "Member 'Rug_c_ExecuteUbergraph_rug::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, K2Node_SwitchEnum_CmpSuccess) == 0x00009D, "Member 'Rug_c_ExecuteUbergraph_rug::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, K2Node_Event_player_3) == 0x0000A0, "Member 'Rug_c_ExecuteUbergraph_rug::K2Node_Event_player_3' has a wrong offset!");
 static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, K2Node_Event_hit_2) == 0x0000A8, "Member 'Rug_c_ExecuteUbergraph_rug::K2Node_Event_hit_2' has a wrong offset!");
 static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, K2Node_Event_kick) == 0x000130, "Member 'Rug_c_ExecuteUbergraph_rug::K2Node_Event_kick' has a wrong offset!");
 static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, K2Node_Event_name) == 0x000134, "Member 'Rug_c_ExecuteUbergraph_rug::K2Node_Event_name' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, K2Node_Event_player_5) == 0x000140, "Member 'Rug_c_ExecuteUbergraph_rug::K2Node_Event_player_5' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, K2Node_Event_player_4) == 0x000148, "Member 'Rug_c_ExecuteUbergraph_rug::K2Node_Event_player_4' has a wrong offset!");
+static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, K2Node_Event_player_2) == 0x000140, "Member 'Rug_c_ExecuteUbergraph_rug::K2Node_Event_player_2' has a wrong offset!");
+static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, K2Node_Event_player_1) == 0x000148, "Member 'Rug_c_ExecuteUbergraph_rug::K2Node_Event_player_1' has a wrong offset!");
 static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, K2Node_Event_hit_1) == 0x000150, "Member 'Rug_c_ExecuteUbergraph_rug::K2Node_Event_hit_1' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, K2Node_Event_damage) == 0x0001D8, "Member 'Rug_c_ExecuteUbergraph_rug::K2Node_Event_damage' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, K2Node_Event_player_3) == 0x0001E0, "Member 'Rug_c_ExecuteUbergraph_rug::K2Node_Event_player_3' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, K2Node_Event_player_2) == 0x0001E8, "Member 'Rug_c_ExecuteUbergraph_rug::K2Node_Event_player_2' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, K2Node_Event_player_1) == 0x0001F0, "Member 'Rug_c_ExecuteUbergraph_rug::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_GetTransform_ReturnValue) == 0x000200, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000230, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_FinishSpawningActor_ReturnValue) == 0x000238, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_sendName_self_CastInput) == 0x000240, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_sendName_self_CastInput' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000250, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_VictoryIntPlusEquals_IntOut) == 0x000258, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_VictoryIntPlusEquals_IntOut' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, K2Node_LowEntry_LocalVariable_Value__Object) == 0x000260, "Member 'Rug_c_ExecuteUbergraph_rug::K2Node_LowEntry_LocalVariable_Value__Object' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_Array_Length_ReturnValue) == 0x000270, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_Percent_IntInt_ReturnValue) == 0x000274, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000278, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_GetTransform_ReturnValue_1) == 0x000280, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_GetTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x0002B0, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x0002B8, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_sendName_self_CastInput_1) == 0x0002C0, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_sendName_self_CastInput_1' has a wrong offset!");
-static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x0002D0, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
-
-// Function rug.rug_c.playerR
-// 0x0008 (0x0008 - 0x0000)
-struct Rug_c_PlayerR final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Rug_c_PlayerR) == 0x000008, "Wrong alignment on Rug_c_PlayerR");
-static_assert(sizeof(Rug_c_PlayerR) == 0x000008, "Wrong size on Rug_c_PlayerR");
-static_assert(offsetof(Rug_c_PlayerR, Player) == 0x000000, "Member 'Rug_c_PlayerR::Player' has a wrong offset!");
-
-// Function rug.rug_c.playerHold
-// 0x0008 (0x0008 - 0x0000)
-struct Rug_c_PlayerHold final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Rug_c_PlayerHold) == 0x000008, "Wrong alignment on Rug_c_PlayerHold");
-static_assert(sizeof(Rug_c_PlayerHold) == 0x000008, "Wrong size on Rug_c_PlayerHold");
-static_assert(offsetof(Rug_c_PlayerHold, Player) == 0x000000, "Member 'Rug_c_PlayerHold::Player' has a wrong offset!");
-
-// Function rug.rug_c.playerUnequip
-// 0x0008 (0x0008 - 0x0000)
-struct Rug_c_PlayerUnequip final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Rug_c_PlayerUnequip) == 0x000008, "Wrong alignment on Rug_c_PlayerUnequip");
-static_assert(sizeof(Rug_c_PlayerUnequip) == 0x000008, "Wrong size on Rug_c_PlayerUnequip");
-static_assert(offsetof(Rug_c_PlayerUnequip, Player) == 0x000000, "Member 'Rug_c_PlayerUnequip::Player' has a wrong offset!");
+static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_GetTransform_ReturnValue) == 0x0001E0, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000210, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_FinishSpawningActor_ReturnValue) == 0x000218, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_sendName_self_CastInput) == 0x000220, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_sendName_self_CastInput' has a wrong offset!");
+static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000230, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_VictoryIntPlusEquals_IntOut) == 0x000238, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_VictoryIntPlusEquals_IntOut' has a wrong offset!");
+static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, K2Node_LowEntry_LocalVariable_Value__Object) == 0x000240, "Member 'Rug_c_ExecuteUbergraph_rug::K2Node_LowEntry_LocalVariable_Value__Object' has a wrong offset!");
+static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_Array_Length_ReturnValue) == 0x000250, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_Percent_IntInt_ReturnValue) == 0x000254, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000258, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_GetTransform_ReturnValue_1) == 0x000260, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_GetTransform_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000290, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000298, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_sendName_self_CastInput_1) == 0x0002A0, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_sendName_self_CastInput_1' has a wrong offset!");
+static_assert(offsetof(Rug_c_ExecuteUbergraph_rug, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x0002B0, "Member 'Rug_c_ExecuteUbergraph_rug::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
 
 // Function rug.rug_c.damageByPlayer
-// 0x0098 (0x0098 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct Rug_c_DamageByPlayer final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         Damage;                                            // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Rug_c_DamageByPlayer) == 0x000008, "Wrong alignment on Rug_c_DamageByPlayer");
-static_assert(sizeof(Rug_c_DamageByPlayer) == 0x000098, "Wrong size on Rug_c_DamageByPlayer");
+static_assert(sizeof(Rug_c_DamageByPlayer) == 0x000090, "Wrong size on Rug_c_DamageByPlayer");
 static_assert(offsetof(Rug_c_DamageByPlayer, Player) == 0x000000, "Member 'Rug_c_DamageByPlayer::Player' has a wrong offset!");
 static_assert(offsetof(Rug_c_DamageByPlayer, Hit) == 0x000008, "Member 'Rug_c_DamageByPlayer::Hit' has a wrong offset!");
-static_assert(offsetof(Rug_c_DamageByPlayer, Damage) == 0x000090, "Member 'Rug_c_DamageByPlayer::Damage' has a wrong offset!");
 
 // Function rug.rug_c.thrown
 // 0x0008 (0x0008 - 0x0000)
@@ -201,7 +159,7 @@ struct Rug_c_Gen final
 {
 public:
 	struct FVector                                Vec_comp;                                          // 0x0000(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E62[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVector>                        Ress;                                              // 0x0010(0x0010)(Edit, BlueprintVisible)
 	TArray<struct FVector2D>                      Temp_struct_Variable;                              // 0x0020(0x0010)(ConstParm, ReferenceParm)
 	TArray<struct FVector2D>                      Temp_struct_Variable_1;                            // 0x0030(0x0010)(ConstParm, ReferenceParm)
@@ -258,7 +216,7 @@ public:
 	TArray<struct FVector>                        A1;                                                // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	TArray<struct FVector>                        b1;                                                // 0x0010(0x0010)(Parm, OutParm)
 	int32                                         Ind;                                               // 0x0020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E63[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVector>                        B;                                                 // 0x0028(0x0010)(Edit, BlueprintVisible)
 	TArray<struct FVector>                        A;                                                 // 0x0038(0x0010)(Edit, BlueprintVisible)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -276,7 +234,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E64[0x3];                                     // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_isValid_Output_3;                         // 0x00A4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x00B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -324,15 +282,15 @@ struct Rug_c_CheckWall final
 public:
 	struct FVector                                A;                                                 // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Condition;                                         // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E65[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    Target;                                            // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                B;                                                 // 0x0018(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Location;                                          // 0x0024(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E66[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<EObjectTypeQuery>                      CallFunc_obj_static_obj;                           // 0x0038(0x0010)(ReferenceParm)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0048(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E67[0x4];                                     // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0058(0x0010)(ConstParm, ReferenceParm)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0068(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0074(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -345,7 +303,7 @@ public:
 	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue;    // 0x0134(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0135(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0136(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_137[0x1];                                      // 0x0137(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E68[0x1];                                     // 0x0137(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0140(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -433,7 +391,7 @@ public:
 	struct FVector                                Output;                                            // 0x0014(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Array_Get_Item;                           // 0x0020(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E69[0x3];                                     // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Vector_Distance_ReturnValue;              // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -458,7 +416,7 @@ struct Rug_c_SetSkin final
 {
 public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E6A[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     CallFunc_getCarpet_ReturnValue;                    // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -506,31 +464,28 @@ static_assert(offsetof(Rug_c_NoRespawn, Param_NoRespawn) == 0x000000, "Member 'R
 static_assert(offsetof(Rug_c_NoRespawn, Return) == 0x000001, "Member 'Rug_c_NoRespawn::Return' has a wrong offset!");
 
 // Function rug.rug_c.lookAt
-// 0x00E0 (0x00E0 - 0x0000)
+// 0x00D8 (0x00D8 - 0x0000)
 struct Rug_c_LookAt final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E6B[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00B8(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00B0(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Rug_c_LookAt) == 0x000008, "Wrong alignment on Rug_c_LookAt");
-static_assert(sizeof(Rug_c_LookAt) == 0x0000E0, "Wrong size on Rug_c_LookAt");
+static_assert(sizeof(Rug_c_LookAt) == 0x0000D8, "Wrong size on Rug_c_LookAt");
 static_assert(offsetof(Rug_c_LookAt, Player) == 0x000000, "Member 'Rug_c_LookAt::Player' has a wrong offset!");
 static_assert(offsetof(Rug_c_LookAt, Hit) == 0x000008, "Member 'Rug_c_LookAt::Hit' has a wrong offset!");
 static_assert(offsetof(Rug_c_LookAt, Return) == 0x000090, "Member 'Rug_c_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(Rug_c_LookAt, Text) == 0x000098, "Member 'Rug_c_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(Rug_c_LookAt, boundObjectReplace) == 0x0000A8, "Member 'Rug_c_LookAt::boundObjectReplace' has a wrong offset!");
-static_assert(offsetof(Rug_c_LookAt, Number) == 0x0000B0, "Member 'Rug_c_LookAt::Number' has a wrong offset!");
-static_assert(offsetof(Rug_c_LookAt, CallFunc_MakeLiteralText_ReturnValue) == 0x0000B8, "Member 'Rug_c_LookAt::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rug_c_LookAt, CallFunc_Conv_TextToString_ReturnValue) == 0x0000D0, "Member 'Rug_c_LookAt::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Rug_c_LookAt, CallFunc_MakeLiteralText_ReturnValue) == 0x0000B0, "Member 'Rug_c_LookAt::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Rug_c_LookAt, CallFunc_Conv_TextToString_ReturnValue) == 0x0000C8, "Member 'Rug_c_LookAt::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
 
 // Function rug.rug_c.isButtonUsed
 // 0x0001 (0x0001 - 0x0000)
@@ -554,19 +509,6 @@ static_assert(alignof(Rug_c_CanBePutInContainer) == 0x000001, "Wrong alignment o
 static_assert(sizeof(Rug_c_CanBePutInContainer) == 0x000001, "Wrong size on Rug_c_CanBePutInContainer");
 static_assert(offsetof(Rug_c_CanBePutInContainer, Return) == 0x000000, "Member 'Rug_c_CanBePutInContainer::Return' has a wrong offset!");
 
-// Function rug.rug_c.landedOn
-// 0x0010 (0x0010 - 0x0000)
-struct Rug_c_LandedOn final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IgnoreFallDamage;                                  // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(Rug_c_LandedOn) == 0x000008, "Wrong alignment on Rug_c_LandedOn");
-static_assert(sizeof(Rug_c_LandedOn) == 0x000010, "Wrong size on Rug_c_LandedOn");
-static_assert(offsetof(Rug_c_LandedOn, Player) == 0x000000, "Member 'Rug_c_LandedOn::Player' has a wrong offset!");
-static_assert(offsetof(Rug_c_LandedOn, IgnoreFallDamage) == 0x000008, "Member 'Rug_c_LandedOn::IgnoreFallDamage' has a wrong offset!");
-
 // Function rug.rug_c.actionOptionIndex
 // 0x0098 (0x0098 - 0x0000)
 struct Rug_c_ActionOptionIndex final
@@ -574,13 +516,15 @@ struct Rug_c_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Rug_c_ActionOptionIndex) == 0x000008, "Wrong alignment on Rug_c_ActionOptionIndex");
 static_assert(sizeof(Rug_c_ActionOptionIndex) == 0x000098, "Wrong size on Rug_c_ActionOptionIndex");
 static_assert(offsetof(Rug_c_ActionOptionIndex, Player) == 0x000000, "Member 'Rug_c_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(Rug_c_ActionOptionIndex, Hit) == 0x000008, "Member 'Rug_c_ActionOptionIndex::Hit' has a wrong offset!");
-static_assert(offsetof(Rug_c_ActionOptionIndex, Action) == 0x000090, "Member 'Rug_c_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(Rug_c_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Rug_c_ActionOptionIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(Rug_c_ActionOptionIndex, Action) == 0x000094, "Member 'Rug_c_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function rug.rug_c.loadData
 // 0x0110 (0x0110 - 0x0000)
@@ -590,7 +534,7 @@ public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadData_return;                          // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E6C[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mString                        CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	struct FStruct_mInt                           CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0010)(HasGetValueTypeHash)
 	class FString                                 CallFunc_Array_Get_Item_2;                         // 0x00E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
@@ -642,7 +586,7 @@ static_assert(offsetof(Rug_c_GetData, K2Node_MakeArray_Array_3) == 0x0001F0, "Me
 static_assert(offsetof(Rug_c_GetData, K2Node_SetFieldsInStruct_StructOut) == 0x000200, "Member 'Rug_c_GetData::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
 
 // Function rug.rug_c.getActionOptions
-// 0x0060 (0x0060 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct Rug_c_GetActionOptions final
 {
 public:
@@ -652,20 +596,17 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
 };
 static_assert(alignof(Rug_c_GetActionOptions) == 0x000008, "Wrong alignment on Rug_c_GetActionOptions");
-static_assert(sizeof(Rug_c_GetActionOptions) == 0x000060, "Wrong size on Rug_c_GetActionOptions");
+static_assert(sizeof(Rug_c_GetActionOptions) == 0x000058, "Wrong size on Rug_c_GetActionOptions");
 static_assert(offsetof(Rug_c_GetActionOptions, Player) == 0x000000, "Member 'Rug_c_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Rug_c_GetActionOptions, Component) == 0x000008, "Member 'Rug_c_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Rug_c_GetActionOptions, Actor) == 0x000010, "Member 'Rug_c_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Rug_c_GetActionOptions, Options) == 0x000018, "Member 'Rug_c_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Rug_c_GetActionOptions, Options_enum) == 0x000028, "Member 'Rug_c_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Rug_c_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Rug_c_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Rug_c_GetActionOptions, Number) == 0x000048, "Member 'Rug_c_GetActionOptions::Number' has a wrong offset!");
-static_assert(offsetof(Rug_c_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Rug_c_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Rug_c_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'Rug_c_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 }
 

@@ -17,6 +17,556 @@
 namespace SDK
 {
 
+// Function portal_phys.portal_phys_C.playerHandMouse
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                        Mouse                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APortal_phys_C::PlayerHandMouse(class AMainPlayer_C* Player, const struct FVector2D& Mouse)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "playerHandMouse");
+
+	Params::Portal_phys_C_PlayerHandMouse Parms{};
+
+	Parms.Player = Player;
+	Parms.Mouse = std::move(Mouse);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function portal_phys.portal_phys_C.playerHandAnyKey
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FKey                             Param_Key                                              (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// bool                                    Pressed                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void APortal_phys_C::PlayerHandAnyKey(class AMainPlayer_C* Player, const struct FKey& Param_Key, bool Pressed)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "playerHandAnyKey");
+
+	Params::Portal_phys_C_PlayerHandAnyKey Parms{};
+
+	Parms.Player = Player;
+	Parms.Param_Key = std::move(Param_Key);
+	Parms.Pressed = Pressed;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function portal_phys.portal_phys_C.microwaveElec
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void APortal_phys_C::MicrowaveElec()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "microwaveElec");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function portal_phys.portal_phys_C.addTemperature
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Temperature                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APortal_phys_C::AddTemperature(float Temperature)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "addTemperature");
+
+	Params::Portal_phys_C_AddTemperature Parms{};
+
+	Parms.Temperature = Temperature;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function portal_phys.portal_phys_C.accumulateTemperature
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Temperature                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Speed                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APortal_phys_C::AccumulateTemperature(float Temperature, float Speed)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "accumulateTemperature");
+
+	Params::Portal_phys_C_AccumulateTemperature Parms{};
+
+	Parms.Temperature = Temperature;
+	Parms.Speed = Speed;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function portal_phys.portal_phys_C.ActionName
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// class FString                           Param_Name                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void APortal_phys_C::ActionName(class AMainPlayer_C* Player, const struct FHitResult& Hit, const class FString& Param_Name)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "ActionName");
+
+	Params::Portal_phys_C_ActionName Parms{};
+
+	Parms.Player = Player;
+	Parms.Hit = std::move(Hit);
+	Parms.Param_Name = std::move(Param_Name);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function portal_phys.portal_phys_C.stepped
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APortal_phys_C::Stepped(float Volume)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "stepped");
+
+	Params::Portal_phys_C_Stepped Parms{};
+
+	Parms.Volume = Volume;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function portal_phys.portal_phys_C.playerLookAway
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APortal_phys_C::PlayerLookAway(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "playerLookAway");
+
+	Params::Portal_phys_C_PlayerLookAway Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function portal_phys.portal_phys_C.reachedByExplosion
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector                          Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APortal_phys_C::ReachedByExplosion(const struct FVector& Location, float Damage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "reachedByExplosion");
+
+	Params::Portal_phys_C_ReachedByExplosion Parms{};
+
+	Parms.Location = std::move(Location);
+	Parms.Damage = Damage;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function portal_phys.portal_phys_C.bitten
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void APortal_phys_C::bitten()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "bitten");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function portal_phys.portal_phys_C.slice
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Clean                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void APortal_phys_C::Slice(bool Clean)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "slice");
+
+	Params::Portal_phys_C_Slice Parms{};
+
+	Parms.Clean = Clean;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function portal_phys.portal_phys_C.playerUsedOn
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+
+void APortal_phys_C::PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "playerUsedOn");
+
+	Params::Portal_phys_C_PlayerUsedOn Parms{};
+
+	Parms.Player = Player;
+	Parms.Hit = std::move(Hit);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function portal_phys.portal_phys_C.attemptIgnite
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void APortal_phys_C::AttemptIgnite()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "attemptIgnite");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function portal_phys.portal_phys_C.hooked
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AHook_C*                          Hook                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APortal_phys_C::Hooked(class AHook_C* Hook)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "hooked");
+
+	Params::Portal_phys_C_Hooked Parms{};
+
+	Parms.Hook = Hook;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function portal_phys.portal_phys_C.set_ignoreSave_trigger
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void APortal_phys_C::Set_ignoreSave_trigger(bool NewParam)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "set_ignoreSave_trigger");
+
+	Params::Portal_phys_C_Set_ignoreSave_trigger Parms{};
+
+	Parms.NewParam = NewParam;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function portal_phys.portal_phys_C.cordPlugged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ACord_C*                          Cord                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ACordSocket_C*                    Socket                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APortal_phys_C::CordPlugged(class ACord_C* Cord, class ACordSocket_C* Socket)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "cordPlugged");
+
+	Params::Portal_phys_C_CordPlugged Parms{};
+
+	Parms.Cord = Cord;
+	Parms.Socket = Socket;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function portal_phys.portal_phys_C.cordUnplugged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ACord_C*                          Cord                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ACordSocket_C*                    Socket                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APortal_phys_C::CordUnplugged(class ACord_C* Cord, class ACordSocket_C* Socket)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "cordUnplugged");
+
+	Params::Portal_phys_C_CordUnplugged Parms{};
+
+	Parms.Cord = Cord;
+	Parms.Socket = Socket;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function portal_phys.portal_phys_C.setActiveTrigger
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           SentFrom                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void APortal_phys_C::SetActiveTrigger(class AActor* SentFrom, bool Active)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "setActiveTrigger");
+
+	Params::Portal_phys_C_SetActiveTrigger Parms{};
+
+	Parms.SentFrom = SentFrom;
+	Parms.Active = Active;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function portal_phys.portal_phys_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void APortal_phys_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function portal_phys.portal_phys_C.BndEvt__insides_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bFromSweep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FHitResult                       SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+
+void APortal_phys_C::BndEvt__insides_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "BndEvt__insides_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+
+	Params::Portal_phys_C_BndEvt__insides_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
+
+	Parms.OverlappedComponent = OverlappedComponent;
+	Parms.OtherActor = OtherActor;
+	Parms.OtherComp = OtherComp;
+	Parms.OtherBodyIndex = OtherBodyIndex;
+	Parms.bFromSweep = bFromSweep;
+	Parms.SweepResult = std::move(SweepResult);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function portal_phys.portal_phys_C.BndEvt__insides_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APortal_phys_C::BndEvt__insides_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "BndEvt__insides_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
+
+	Params::Portal_phys_C_BndEvt__insides_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature Parms{};
+
+	Parms.OverlappedComponent = OverlappedComponent;
+	Parms.OtherActor = OtherActor;
+	Parms.OtherComp = OtherComp;
+	Parms.OtherBodyIndex = OtherBodyIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function portal_phys.portal_phys_C.BndEvt__outside_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APortal_phys_C::BndEvt__outside_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "BndEvt__outside_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature");
+
+	Params::Portal_phys_C_BndEvt__outside_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature Parms{};
+
+	Parms.OverlappedComponent = OverlappedComponent;
+	Parms.OtherActor = OtherActor;
+	Parms.OtherComp = OtherComp;
+	Parms.OtherBodyIndex = OtherBodyIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function portal_phys.portal_phys_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APortal_phys_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "ReceiveTick");
+
+	Params::Portal_phys_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function portal_phys.portal_phys_C.runTrigger
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Param_Owner                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APortal_phys_C::RunTrigger(class AActor* Param_Owner, int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "runTrigger");
+
+	Params::Portal_phys_C_RunTrigger Parms{};
+
+	Parms.Param_Owner = Param_Owner;
+	Parms.Param_Index = Param_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function portal_phys.portal_phys_C.gamemodeBeginPlay
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void APortal_phys_C::GamemodeBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "gamemodeBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function portal_phys.portal_phys_C.ExecuteUbergraph_portal_phys
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APortal_phys_C::ExecuteUbergraph_portal_phys(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "ExecuteUbergraph_portal_phys");
+
+	Params::Portal_phys_C_ExecuteUbergraph_portal_phys Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function portal_phys.portal_phys_C.NewEventDispatcher_0__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void APortal_phys_C::NewEventDispatcher_0__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_phys_C", "NewEventDispatcher_0__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function portal_phys.portal_phys_C.dreamInv
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -40,27 +590,6 @@ void APortal_phys_C::DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBas
 
 	if (Base != nullptr)
 		*Base = Parms.Base;
-}
-
-
-// Function portal_phys.portal_phys_C.getPriceMultiplier
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   PriceMult                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APortal_phys_C::GetPriceMultiplier(float* PriceMult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "getPriceMultiplier");
-
-	Params::Portal_phys_C_GetPriceMultiplier Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (PriceMult != nullptr)
-		*PriceMult = Parms.PriceMult;
 }
 
 
@@ -250,9 +779,8 @@ void APortal_phys_C::SetPath(const TArray<struct FVector>& Path, bool* Return)
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APortal_phys_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
+void APortal_phys_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
 {
 	static class UFunction* Func = nullptr;
 
@@ -275,30 +803,6 @@ void APortal_phys_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimit
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
-}
-
-
-// Function portal_phys.portal_phys_C.gatherDataFromKeyT
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void APortal_phys_C::GatherDataFromKeyT(bool* Gather)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "gatherDataFromKeyT");
-
-	Params::Portal_phys_C_GatherDataFromKeyT Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Gather != nullptr)
-		*Gather = Parms.Gather;
 }
 
 
@@ -484,7 +988,7 @@ void APortal_phys_C::Unfoc()
 // Function portal_phys.portal_phys_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void APortal_phys_C::SettingsApplied(const struct FStruct_settings& Settings)
 {
@@ -594,30 +1098,6 @@ void APortal_phys_C::ApplyColor(const struct FLinearColor& Color)
 	Params::Portal_phys_C_ApplyColor Parms{};
 
 	Parms.Color = std::move(Color);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.texturePickerApply
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APortal_phys_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "texturePickerApply");
-
-	Params::Portal_phys_C_TexturePickerApply Parms{};
-
-	Parms.Picker = Picker;
-	Parms.Texture = Texture;
-	Parms.Param_Index = Param_Index;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -969,23 +1449,15 @@ void APortal_phys_C::Microwave()
 
 // Function portal_phys.portal_phys_C.receivedPhyiscsDamage
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hot                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void APortal_phys_C::ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot)
+void APortal_phys_C::ReceivedPhyiscsDamage()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("portal_phys_C", "receivedPhyiscsDamage");
 
-	Params::Portal_phys_C_ReceivedPhyiscsDamage Parms{};
-
-	Parms.Damage = Damage;
-	Parms.Hot = std::move(Hot);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -994,9 +1466,10 @@ void APortal_phys_C::ReceivedPhyiscsDamage(float Damage, const struct FHitResult
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APortal_phys_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action)
+void APortal_phys_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1007,6 +1480,7 @@ void APortal_phys_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
+	Parms.Param_Index = Param_Index;
 	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -1148,612 +1622,6 @@ void APortal_phys_C::PlayerHandMouseWheel(class AMainPlayer_C* Player, float Whe
 	Parms.WheelDelta = WheelDelta;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.playerHandMouse
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                        Mouse                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APortal_phys_C::PlayerHandMouse(class AMainPlayer_C* Player, const struct FVector2D& Mouse)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "playerHandMouse");
-
-	Params::Portal_phys_C_PlayerHandMouse Parms{};
-
-	Parms.Player = Player;
-	Parms.Mouse = std::move(Mouse);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.playerHandAnyKey
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FKey                             Param_Key                                              (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// bool                                    Pressed                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void APortal_phys_C::PlayerHandAnyKey(class AMainPlayer_C* Player, const struct FKey& Param_Key, bool Pressed)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "playerHandAnyKey");
-
-	Params::Portal_phys_C_PlayerHandAnyKey Parms{};
-
-	Parms.Player = Player;
-	Parms.Param_Key = std::move(Param_Key);
-	Parms.Pressed = Pressed;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.microwaveElec
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void APortal_phys_C::MicrowaveElec()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "microwaveElec");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function portal_phys.portal_phys_C.addTemperature
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Temperature                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APortal_phys_C::AddTemperature(float Temperature)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "addTemperature");
-
-	Params::Portal_phys_C_AddTemperature Parms{};
-
-	Parms.Temperature = Temperature;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.accumulateTemperature
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Temperature                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Speed                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APortal_phys_C::AccumulateTemperature(float Temperature, float Speed)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "accumulateTemperature");
-
-	Params::Portal_phys_C_AccumulateTemperature Parms{};
-
-	Parms.Temperature = Temperature;
-	Parms.Speed = Speed;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.ActionName
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// class FString                           Param_Name                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void APortal_phys_C::ActionName(class AMainPlayer_C* Player, const struct FHitResult& Hit, const class FString& Param_Name)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "ActionName");
-
-	Params::Portal_phys_C_ActionName Parms{};
-
-	Parms.Player = Player;
-	Parms.Hit = std::move(Hit);
-	Parms.Param_Name = std::move(Param_Name);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.stepped
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APortal_phys_C::Stepped(float Volume)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "stepped");
-
-	Params::Portal_phys_C_Stepped Parms{};
-
-	Parms.Volume = Volume;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.playerLookAway
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APortal_phys_C::PlayerLookAway(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "playerLookAway");
-
-	Params::Portal_phys_C_PlayerLookAway Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.reachedByExplosion
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FVector                          Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APortal_phys_C::ReachedByExplosion(const struct FVector& Location, float Damage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "reachedByExplosion");
-
-	Params::Portal_phys_C_ReachedByExplosion Parms{};
-
-	Parms.Location = std::move(Location);
-	Parms.Damage = Damage;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.bitten
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void APortal_phys_C::bitten()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "bitten");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function portal_phys.portal_phys_C.slice
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Clean                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void APortal_phys_C::Slice(bool Clean)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "slice");
-
-	Params::Portal_phys_C_Slice Parms{};
-
-	Parms.Clean = Clean;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.playerUsedOn
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-
-void APortal_phys_C::PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "playerUsedOn");
-
-	Params::Portal_phys_C_PlayerUsedOn Parms{};
-
-	Parms.Player = Player;
-	Parms.Hit = std::move(Hit);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.attemptIgnite
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void APortal_phys_C::AttemptIgnite()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "attemptIgnite");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function portal_phys.portal_phys_C.hooked
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AHook_C*                          Hook                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APortal_phys_C::Hooked(class AHook_C* Hook)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "hooked");
-
-	Params::Portal_phys_C_Hooked Parms{};
-
-	Parms.Hook = Hook;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.crafted
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void APortal_phys_C::Crafted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "crafted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function portal_phys.portal_phys_C.cleanSponge
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Clean                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APortal_phys_C::CleanSponge(float Clean, class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "cleanSponge");
-
-	Params::Portal_phys_C_CleanSponge Parms{};
-
-	Parms.Clean = Clean;
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.hookTension
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AHook_C*                          Hook                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APortal_phys_C::HookTension(class AHook_C* Hook)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "hookTension");
-
-	Params::Portal_phys_C_HookTension Parms{};
-
-	Parms.Hook = Hook;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.set_ignoreSave_trigger
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void APortal_phys_C::Set_ignoreSave_trigger(bool NewParam)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "set_ignoreSave_trigger");
-
-	Params::Portal_phys_C_Set_ignoreSave_trigger Parms{};
-
-	Parms.NewParam = NewParam;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.cordPlugged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class ACord_C*                          Cord                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class ACordSocket_C*                    Socket                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APortal_phys_C::CordPlugged(class ACord_C* Cord, class ACordSocket_C* Socket)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "cordPlugged");
-
-	Params::Portal_phys_C_CordPlugged Parms{};
-
-	Parms.Cord = Cord;
-	Parms.Socket = Socket;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.cordUnplugged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class ACord_C*                          Cord                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class ACordSocket_C*                    Socket                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APortal_phys_C::CordUnplugged(class ACord_C* Cord, class ACordSocket_C* Socket)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "cordUnplugged");
-
-	Params::Portal_phys_C_CordUnplugged Parms{};
-
-	Parms.Cord = Cord;
-	Parms.Socket = Socket;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.setActiveTrigger
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           SentFrom                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void APortal_phys_C::SetActiveTrigger(class AActor* SentFrom, bool Active)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "setActiveTrigger");
-
-	Params::Portal_phys_C_SetActiveTrigger Parms{};
-
-	Parms.SentFrom = SentFrom;
-	Parms.Active = Active;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void APortal_phys_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function portal_phys.portal_phys_C.BndEvt__insides_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bFromSweep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FHitResult                       SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-
-void APortal_phys_C::BndEvt__insides_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "BndEvt__insides_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
-
-	Params::Portal_phys_C_BndEvt__insides_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
-
-	Parms.OverlappedComponent = OverlappedComponent;
-	Parms.OtherActor = OtherActor;
-	Parms.OtherComp = OtherComp;
-	Parms.OtherBodyIndex = OtherBodyIndex;
-	Parms.bFromSweep = bFromSweep;
-	Parms.SweepResult = std::move(SweepResult);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.BndEvt__insides_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APortal_phys_C::BndEvt__insides_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "BndEvt__insides_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
-
-	Params::Portal_phys_C_BndEvt__insides_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature Parms{};
-
-	Parms.OverlappedComponent = OverlappedComponent;
-	Parms.OtherActor = OtherActor;
-	Parms.OtherComp = OtherComp;
-	Parms.OtherBodyIndex = OtherBodyIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.BndEvt__outside_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APortal_phys_C::BndEvt__outside_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "BndEvt__outside_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature");
-
-	Params::Portal_phys_C_BndEvt__outside_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature Parms{};
-
-	Parms.OverlappedComponent = OverlappedComponent;
-	Parms.OtherActor = OtherActor;
-	Parms.OtherComp = OtherComp;
-	Parms.OtherBodyIndex = OtherBodyIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APortal_phys_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "ReceiveTick");
-
-	Params::Portal_phys_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.runTrigger
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Param_Owner                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APortal_phys_C::RunTrigger(class AActor* Param_Owner, int32 Param_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "runTrigger");
-
-	Params::Portal_phys_C_RunTrigger Parms{};
-
-	Parms.Param_Owner = Param_Owner;
-	Parms.Param_Index = Param_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.gamemodeBeginPlay
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void APortal_phys_C::GamemodeBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "gamemodeBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function portal_phys.portal_phys_C.ExecuteUbergraph_portal_phys
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APortal_phys_C::ExecuteUbergraph_portal_phys(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "ExecuteUbergraph_portal_phys");
-
-	Params::Portal_phys_C_ExecuteUbergraph_portal_phys Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function portal_phys.portal_phys_C.NewEventDispatcher_0__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void APortal_phys_C::NewEventDispatcher_0__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("portal_phys_C", "NewEventDispatcher_0__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -17,11 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_pot.prop_pot_C
-// 0x0008 (0x0380 - 0x0378)
+// 0x0008 (0x0370 - 0x0368)
 class AProp_pot_C : public AProp_C
 {
 public:
-	class UStaticMeshComponent*                   Plant;                                             // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3A99[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UStaticMeshComponent*                   Plant;                                             // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +35,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_pot_C) == 0x000008, "Wrong alignment on AProp_pot_C");
-static_assert(sizeof(AProp_pot_C) == 0x000380, "Wrong size on AProp_pot_C");
-static_assert(offsetof(AProp_pot_C, Plant) == 0x000378, "Member 'AProp_pot_C::Plant' has a wrong offset!");
+static_assert(sizeof(AProp_pot_C) == 0x000370, "Wrong size on AProp_pot_C");
+static_assert(offsetof(AProp_pot_C, Plant) == 0x000368, "Member 'AProp_pot_C::Plant' has a wrong offset!");
 
 }
 

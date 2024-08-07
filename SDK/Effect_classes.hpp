@@ -10,7 +10,6 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Actor_save_classes.hpp"
 
 
@@ -18,21 +17,9 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass effect.effect_C
-// 0x0010 (0x0258 - 0x0248)
+// 0x0000 (0x0248 - 0x0248)
 class AEffect_C : public AActor_save_C
 {
-public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Effect_C;                           // 0x0248(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	float                                         Time;                                              // 0x0250(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	float                                         Strength;                                          // 0x0254(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-
-public:
-	void ExecuteUbergraph_effect(int32 EntryPoint);
-	void ReceiveTick(float DeltaSeconds);
-	void Del();
-	void LoadData(const struct FStruct_save& Data, bool* Return);
-	void GetData(struct FStruct_save* Data);
-
 public:
 	static class UClass* StaticClass()
 	{
@@ -44,10 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AEffect_C) == 0x000008, "Wrong alignment on AEffect_C");
-static_assert(sizeof(AEffect_C) == 0x000258, "Wrong size on AEffect_C");
-static_assert(offsetof(AEffect_C, UberGraphFrame_Effect_C) == 0x000248, "Member 'AEffect_C::UberGraphFrame_Effect_C' has a wrong offset!");
-static_assert(offsetof(AEffect_C, Time) == 0x000250, "Member 'AEffect_C::Time' has a wrong offset!");
-static_assert(offsetof(AEffect_C, Strength) == 0x000254, "Member 'AEffect_C::Strength' has a wrong offset!");
+static_assert(sizeof(AEffect_C) == 0x000248, "Wrong size on AEffect_C");
 
 }
 

@@ -17,11 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_h.prop_h_C
-// 0x0008 (0x0380 - 0x0378)
+// 0x0008 (0x0370 - 0x0368)
 class AProp_h_C final : public AProp_C
 {
 public:
-	class UPnormal_C*                             Pnormal;                                           // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_384A[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPnormal_C*                             Pnormal;                                           // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +35,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_h_C) == 0x000008, "Wrong alignment on AProp_h_C");
-static_assert(sizeof(AProp_h_C) == 0x000380, "Wrong size on AProp_h_C");
-static_assert(offsetof(AProp_h_C, Pnormal) == 0x000378, "Member 'AProp_h_C::Pnormal' has a wrong offset!");
+static_assert(sizeof(AProp_h_C) == 0x000370, "Wrong size on AProp_h_C");
+static_assert(offsetof(AProp_h_C, Pnormal) == 0x000368, "Member 'AProp_h_C::Pnormal' has a wrong offset!");
 
 }
 

@@ -19,34 +19,35 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_garbageBin.prop_garbageBin_C
-// 0x0040 (0x03B8 - 0x0378)
+// 0x0040 (0x03A8 - 0x0368)
 class AProp_garbageBin_C final : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_garbageBin_C;                  // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UArrowComponent*                        Spwn;                                              // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          Box;                                               // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPhysicsConstraintComponent*            PhysicsConstraint;                                 // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   Cap;                                               // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBillboardComponent*                    Axis;                                              // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          Grabbed;                                           // 0x03A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3A9[0x3];                                      // 0x03A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Slot;                                              // 0x03AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USaveSlot_C*                            Sav;                                               // 0x03B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_398E[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_garbageBin_C;                  // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UArrowComponent*                        Spwn;                                              // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Box;                                               // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPhysicsConstraintComponent*            PhysicsConstraint;                                 // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   Cap;                                               // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    Axis;                                              // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          Grabbed;                                           // 0x0398(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_398F[0x3];                                     // 0x0399(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Slot;                                              // 0x039C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USaveSlot_C*                            Sav;                                               // 0x03A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_garbageBin(int32 EntryPoint);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
+	void ReceiveDestroyed();
+	void ReceiveBeginPlay();
 	void BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 	void BndEvt__Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 	void FindSlot();
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
-	void ReceiveDestroyed();
 	void GamemodeBeginPlay();
-	void ReceiveBeginPlay();
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 
 public:
 	static class UClass* StaticClass()
@@ -59,16 +60,16 @@ public:
 	}
 };
 static_assert(alignof(AProp_garbageBin_C) == 0x000008, "Wrong alignment on AProp_garbageBin_C");
-static_assert(sizeof(AProp_garbageBin_C) == 0x0003B8, "Wrong size on AProp_garbageBin_C");
-static_assert(offsetof(AProp_garbageBin_C, UberGraphFrame_Prop_garbageBin_C) == 0x000378, "Member 'AProp_garbageBin_C::UberGraphFrame_Prop_garbageBin_C' has a wrong offset!");
-static_assert(offsetof(AProp_garbageBin_C, Spwn) == 0x000380, "Member 'AProp_garbageBin_C::Spwn' has a wrong offset!");
-static_assert(offsetof(AProp_garbageBin_C, Box) == 0x000388, "Member 'AProp_garbageBin_C::Box' has a wrong offset!");
-static_assert(offsetof(AProp_garbageBin_C, PhysicsConstraint) == 0x000390, "Member 'AProp_garbageBin_C::PhysicsConstraint' has a wrong offset!");
-static_assert(offsetof(AProp_garbageBin_C, Cap) == 0x000398, "Member 'AProp_garbageBin_C::Cap' has a wrong offset!");
-static_assert(offsetof(AProp_garbageBin_C, Axis) == 0x0003A0, "Member 'AProp_garbageBin_C::Axis' has a wrong offset!");
-static_assert(offsetof(AProp_garbageBin_C, Grabbed) == 0x0003A8, "Member 'AProp_garbageBin_C::Grabbed' has a wrong offset!");
-static_assert(offsetof(AProp_garbageBin_C, Slot) == 0x0003AC, "Member 'AProp_garbageBin_C::Slot' has a wrong offset!");
-static_assert(offsetof(AProp_garbageBin_C, Sav) == 0x0003B0, "Member 'AProp_garbageBin_C::Sav' has a wrong offset!");
+static_assert(sizeof(AProp_garbageBin_C) == 0x0003A8, "Wrong size on AProp_garbageBin_C");
+static_assert(offsetof(AProp_garbageBin_C, UberGraphFrame_Prop_garbageBin_C) == 0x000368, "Member 'AProp_garbageBin_C::UberGraphFrame_Prop_garbageBin_C' has a wrong offset!");
+static_assert(offsetof(AProp_garbageBin_C, Spwn) == 0x000370, "Member 'AProp_garbageBin_C::Spwn' has a wrong offset!");
+static_assert(offsetof(AProp_garbageBin_C, Box) == 0x000378, "Member 'AProp_garbageBin_C::Box' has a wrong offset!");
+static_assert(offsetof(AProp_garbageBin_C, PhysicsConstraint) == 0x000380, "Member 'AProp_garbageBin_C::PhysicsConstraint' has a wrong offset!");
+static_assert(offsetof(AProp_garbageBin_C, Cap) == 0x000388, "Member 'AProp_garbageBin_C::Cap' has a wrong offset!");
+static_assert(offsetof(AProp_garbageBin_C, Axis) == 0x000390, "Member 'AProp_garbageBin_C::Axis' has a wrong offset!");
+static_assert(offsetof(AProp_garbageBin_C, Grabbed) == 0x000398, "Member 'AProp_garbageBin_C::Grabbed' has a wrong offset!");
+static_assert(offsetof(AProp_garbageBin_C, Slot) == 0x00039C, "Member 'AProp_garbageBin_C::Slot' has a wrong offset!");
+static_assert(offsetof(AProp_garbageBin_C, Sav) == 0x0003A0, "Member 'AProp_garbageBin_C::Sav' has a wrong offset!");
 
 }
 

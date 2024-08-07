@@ -57,6 +57,20 @@ void AProp_map_C::ReceiveTick(float DeltaSeconds)
 }
 
 
+// Function prop_map.prop_map_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_map_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_map_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function prop_map.prop_map_C.OnCompleted_26407029439BD8B1D2873EAE3E829D0A
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -254,20 +268,6 @@ void AProp_map_C::OnNotifyEnd_1BF788334BE9A102B33746BB6D4880F8(class FName Notif
 	Parms.NotifyName = NotifyName;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop_map.prop_map_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_map_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_map_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

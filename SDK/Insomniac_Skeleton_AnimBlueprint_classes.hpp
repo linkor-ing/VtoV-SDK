@@ -24,7 +24,7 @@ namespace SDK
 class UInsomniac_Skeleton_AnimBlueprint_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_2B8[0x8];                                      // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F66[0x8];                                      // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x02C8(0x0030)()
 	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer;                    // 0x02F8(0x00E8)()
@@ -33,7 +33,7 @@ public:
 	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x05B0(0x0020)()
 	struct FAnimNode_LookAt                       AnimGraphNode_LookAt_2;                            // 0x05D0(0x01B0)()
 	struct FAnimNode_Slot                         AnimGraphNode_Slot;                                // 0x0780(0x0048)()
-	uint8                                         Pad_7C8[0x8];                                      // 0x07C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F67[0x8];                                      // 0x07C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAnimNode_LookAt                       AnimGraphNode_LookAt_1;                            // 0x07D0(0x01B0)()
 	struct FAnimNode_LookAt                       AnimGraphNode_LookAt;                              // 0x0980(0x01B0)()
 	struct FVector                                Look;                                              // 0x0B30(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -24,13 +24,13 @@ class alignas(0x10) UImportedSoundWave final : public USoundWaveProcedural
 {
 public:
 	int32                                         SamplingRate;                                      // 0x03C0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3C4[0x4];                                      // 0x03C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F3E[0x4];                                      // 0x03C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnAudioPlaybackFinished;                           // 0x03C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnGeneratePCMData;                                 // 0x03D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3E8[0x4];                                      // 0x03E8(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F3F[0x4];                                      // 0x03E8(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CurrentNumOfFrames;                                // 0x03EC(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPCMStruct                             PCMBufferInfo;                                     // 0x03F0(0x0018)(NativeAccessSpecifierPublic)
-	uint8                                         Pad_408[0x8];                                      // 0x0408(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F40[0x8];                                      // 0x0408(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	float GetDuration();
@@ -67,7 +67,7 @@ class UPreImportedSoundAsset final : public UObject
 public:
 	TArray<uint8>                                 AudioDataArray;                                    // 0x0028(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	EAudioFormat                                  AudioFormat;                                       // 0x0038(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F42[0x7];                                      // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

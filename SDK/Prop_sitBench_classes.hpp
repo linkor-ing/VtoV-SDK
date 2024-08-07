@@ -17,14 +17,15 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_sitBench.prop_sitBench_C
-// 0x0020 (0x0398 - 0x0378)
+// 0x0020 (0x0388 - 0x0368)
 class AProp_sitBench_C final : public AProp_C
 {
 public:
-	class UChildActorComponent*                   NavmeshBlock1;                                     // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   ChildActor2;                                       // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   ChildActor1;                                       // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   ChildActor;                                        // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_37E0[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UChildActorComponent*                   NavmeshBlock1;                                     // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   ChildActor2;                                       // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   ChildActor1;                                       // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   ChildActor;                                        // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -37,11 +38,11 @@ public:
 	}
 };
 static_assert(alignof(AProp_sitBench_C) == 0x000008, "Wrong alignment on AProp_sitBench_C");
-static_assert(sizeof(AProp_sitBench_C) == 0x000398, "Wrong size on AProp_sitBench_C");
-static_assert(offsetof(AProp_sitBench_C, NavmeshBlock1) == 0x000378, "Member 'AProp_sitBench_C::NavmeshBlock1' has a wrong offset!");
-static_assert(offsetof(AProp_sitBench_C, ChildActor2) == 0x000380, "Member 'AProp_sitBench_C::ChildActor2' has a wrong offset!");
-static_assert(offsetof(AProp_sitBench_C, ChildActor1) == 0x000388, "Member 'AProp_sitBench_C::ChildActor1' has a wrong offset!");
-static_assert(offsetof(AProp_sitBench_C, ChildActor) == 0x000390, "Member 'AProp_sitBench_C::ChildActor' has a wrong offset!");
+static_assert(sizeof(AProp_sitBench_C) == 0x000388, "Wrong size on AProp_sitBench_C");
+static_assert(offsetof(AProp_sitBench_C, NavmeshBlock1) == 0x000368, "Member 'AProp_sitBench_C::NavmeshBlock1' has a wrong offset!");
+static_assert(offsetof(AProp_sitBench_C, ChildActor2) == 0x000370, "Member 'AProp_sitBench_C::ChildActor2' has a wrong offset!");
+static_assert(offsetof(AProp_sitBench_C, ChildActor1) == 0x000378, "Member 'AProp_sitBench_C::ChildActor1' has a wrong offset!");
+static_assert(offsetof(AProp_sitBench_C, ChildActor) == 0x000380, "Member 'AProp_sitBench_C::ChildActor' has a wrong offset!");
 
 }
 

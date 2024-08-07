@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_classes.hpp"
 #include "Enum_interactionActions_structs.hpp"
+#include "CoreUObject_classes.hpp"
 
 
 namespace SDK
@@ -46,9 +46,9 @@ public:
 	void FireDamage(float Damage);
 	void Ignite(float Fuel);
 	void Microwave();
-	void ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
+	void ReceivedPhyiscsDamage();
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 	void Exploded(float Damage, const struct FVector& Location);
@@ -72,10 +72,6 @@ public:
 	void AttemptIgnite();
 	void Hooked(class AHook_C* Hook);
 	void SkipRadial(bool* Skip);
-	void Crafted();
-	void CleanSponge(float Clean, class AMainPlayer_C* Player);
-	void HookTension(class AHook_C* Hook);
-	void GetPriceMultiplier(float* PriceMult);
 
 public:
 	static class UClass* StaticClass()

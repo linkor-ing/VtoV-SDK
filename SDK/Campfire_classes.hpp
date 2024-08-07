@@ -18,25 +18,21 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass campfire.campfire_C
-// 0x0040 (0x0288 - 0x0248)
+// 0x0028 (0x0270 - 0x0248)
 class ACampfire_C final : public AActor_save_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_Campfire_C;                         // 0x0248(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPointLightComponent*                   PointLight;                                        // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Cauldron;                                          // 0x0258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Base;                                              // 0x0260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   S;                                                 // 0x0268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               ParticleSystem;                                    // 0x0270(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0278(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          Active;                                            // 0x0280(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UStaticMeshComponent*                   S;                                                 // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               ParticleSystem;                                    // 0x0258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          Active;                                            // 0x0268(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
-	void GatherDataFromKeyT(bool* Gather);
 	void GetTriggerData(struct FStruct_triggerSave* Data);
 	void LoadTriggerData(const struct FStruct_triggerSave& Data, bool* Return);
 	void IgnoreSave_trigger(bool* Ignore);
-	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Param_Base);
+	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base);
 	void GetData(struct FStruct_save* Data);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void Upd();
@@ -55,7 +51,6 @@ public:
 	void GamemodeMakeKeys();
 	void PropRenderer_finishProps();
 	void ApplyColor(const struct FLinearColor& Color);
-	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void GamemodeBeginPlay();
 	void RunTrigger(class AActor* Param_Owner, int32 Param_Index);
 	void ExecuteUbergraph_campfire(int32 EntryPoint);
@@ -71,15 +66,12 @@ public:
 	}
 };
 static_assert(alignof(ACampfire_C) == 0x000008, "Wrong alignment on ACampfire_C");
-static_assert(sizeof(ACampfire_C) == 0x000288, "Wrong size on ACampfire_C");
+static_assert(sizeof(ACampfire_C) == 0x000270, "Wrong size on ACampfire_C");
 static_assert(offsetof(ACampfire_C, UberGraphFrame_Campfire_C) == 0x000248, "Member 'ACampfire_C::UberGraphFrame_Campfire_C' has a wrong offset!");
-static_assert(offsetof(ACampfire_C, PointLight) == 0x000250, "Member 'ACampfire_C::PointLight' has a wrong offset!");
-static_assert(offsetof(ACampfire_C, Cauldron) == 0x000258, "Member 'ACampfire_C::Cauldron' has a wrong offset!");
-static_assert(offsetof(ACampfire_C, Base) == 0x000260, "Member 'ACampfire_C::Base' has a wrong offset!");
-static_assert(offsetof(ACampfire_C, S) == 0x000268, "Member 'ACampfire_C::S' has a wrong offset!");
-static_assert(offsetof(ACampfire_C, ParticleSystem) == 0x000270, "Member 'ACampfire_C::ParticleSystem' has a wrong offset!");
-static_assert(offsetof(ACampfire_C, StaticMesh) == 0x000278, "Member 'ACampfire_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(ACampfire_C, Active) == 0x000280, "Member 'ACampfire_C::Active' has a wrong offset!");
+static_assert(offsetof(ACampfire_C, S) == 0x000250, "Member 'ACampfire_C::S' has a wrong offset!");
+static_assert(offsetof(ACampfire_C, ParticleSystem) == 0x000258, "Member 'ACampfire_C::ParticleSystem' has a wrong offset!");
+static_assert(offsetof(ACampfire_C, StaticMesh) == 0x000260, "Member 'ACampfire_C::StaticMesh' has a wrong offset!");
+static_assert(offsetof(ACampfire_C, Active) == 0x000268, "Member 'ACampfire_C::Active' has a wrong offset!");
 
 }
 

@@ -73,16 +73,5 @@ static_assert(alignof(Int_save1_C_SkipPreDelete) == 0x000001, "Wrong alignment o
 static_assert(sizeof(Int_save1_C_SkipPreDelete) == 0x000001, "Wrong size on Int_save1_C_SkipPreDelete");
 static_assert(offsetof(Int_save1_C_SkipPreDelete, Skip) == 0x000000, "Member 'Int_save1_C_SkipPreDelete::Skip' has a wrong offset!");
 
-// Function int_save1.int_save1_C.gatherDataFromKey
-// 0x0001 (0x0001 - 0x0000)
-struct Int_save1_C_GatherDataFromKey final
-{
-public:
-	bool                                          Gather;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(Int_save1_C_GatherDataFromKey) == 0x000001, "Wrong alignment on Int_save1_C_GatherDataFromKey");
-static_assert(sizeof(Int_save1_C_GatherDataFromKey) == 0x000001, "Wrong size on Int_save1_C_GatherDataFromKey");
-static_assert(offsetof(Int_save1_C_GatherDataFromKey, Gather) == 0x000000, "Member 'Int_save1_C_GatherDataFromKey::Gather' has a wrong offset!");
-
 }
 

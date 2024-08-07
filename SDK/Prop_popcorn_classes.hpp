@@ -19,24 +19,25 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_popcorn.prop_popcorn_C
-// 0x0010 (0x0388 - 0x0378)
+// 0x0010 (0x0378 - 0x0368)
 class AProp_popcorn_C final : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_popcorn_C;                     // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	float                                         Inflat;                                            // 0x0380(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         EatenPerc;                                         // 0x0384(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3AA6[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_popcorn_C;                     // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	float                                         Inflat;                                            // 0x0370(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         EatenPerc;                                         // 0x0374(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_popcorn(int32 EntryPoint);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
 	void Pop();
 	void Upd();
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
 	void Microwave();
 	void UserConstructionScript();
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 
 public:
 	static class UClass* StaticClass()
@@ -49,10 +50,10 @@ public:
 	}
 };
 static_assert(alignof(AProp_popcorn_C) == 0x000008, "Wrong alignment on AProp_popcorn_C");
-static_assert(sizeof(AProp_popcorn_C) == 0x000388, "Wrong size on AProp_popcorn_C");
-static_assert(offsetof(AProp_popcorn_C, UberGraphFrame_Prop_popcorn_C) == 0x000378, "Member 'AProp_popcorn_C::UberGraphFrame_Prop_popcorn_C' has a wrong offset!");
-static_assert(offsetof(AProp_popcorn_C, Inflat) == 0x000380, "Member 'AProp_popcorn_C::Inflat' has a wrong offset!");
-static_assert(offsetof(AProp_popcorn_C, EatenPerc) == 0x000384, "Member 'AProp_popcorn_C::EatenPerc' has a wrong offset!");
+static_assert(sizeof(AProp_popcorn_C) == 0x000378, "Wrong size on AProp_popcorn_C");
+static_assert(offsetof(AProp_popcorn_C, UberGraphFrame_Prop_popcorn_C) == 0x000368, "Member 'AProp_popcorn_C::UberGraphFrame_Prop_popcorn_C' has a wrong offset!");
+static_assert(offsetof(AProp_popcorn_C, Inflat) == 0x000370, "Member 'AProp_popcorn_C::Inflat' has a wrong offset!");
+static_assert(offsetof(AProp_popcorn_C, EatenPerc) == 0x000374, "Member 'AProp_popcorn_C::EatenPerc' has a wrong offset!");
 
 }
 

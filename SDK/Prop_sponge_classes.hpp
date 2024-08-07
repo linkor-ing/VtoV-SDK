@@ -18,26 +18,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_sponge.prop_sponge_C
-// 0x0048 (0x03C0 - 0x0378)
+// 0x0040 (0x03A8 - 0x0368)
 class AProp_sponge_C : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_sponge_C;                      // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	float                                         Power;                                             // 0x0380(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_384[0x4];                                      // 0x0384(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               Dynmat;                                            // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Col;                                               // 0x0390(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Strength;                                          // 0x0394(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Size;                                              // 0x0398(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Anim;                                              // 0x039C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_39D[0x3];                                      // 0x039D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          Player;                                            // 0x03A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<EObjectTypeQuery>                      Objs;                                              // 0x03A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UMaterialInterface*                     Drawmat;                                           // 0x03B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E40[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_sponge_C;                      // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	float                                         Power;                                             // 0x0370(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E41[0x4];                                     // 0x0374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               Dynmat;                                            // 0x0378(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Col;                                               // 0x0380(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Strength;                                          // 0x0384(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Size;                                              // 0x0388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Anim;                                              // 0x038C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3E42[0x3];                                     // 0x038D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          Player;                                            // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<EObjectTypeQuery>                      Objs;                                              // 0x0398(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_prop_sponge(int32 EntryPoint);
 	void BndEvt__prop_sponge_StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Param_Hit);
+	void ReceiveBeginPlay();
 	void OnCompleted_7AB3ADC64B1C9C34BB990BA811472BD6(class FName NotifyName);
 	void OnBlendOut_7AB3ADC64B1C9C34BB990BA811472BD6(class FName NotifyName);
 	void OnInterrupted_7AB3ADC64B1C9C34BB990BA811472BD6(class FName NotifyName);
@@ -49,15 +50,11 @@ public:
 	void OnNotifyBegin_D7F53866450AC44C2E9A9EA70ECE8CE0(class FName NotifyName);
 	void OnNotifyEnd_D7F53866450AC44C2E9A9EA70ECE8CE0(class FName NotifyName);
 	void Wash(float Replace, float Sub, float* FloatOut, class UMaterialInstanceDynamic** Param_Dynmat, float* Param_Size);
-	void Clamp();
-	void Collided(class UPrimitiveComponent* Hitcomp, class AActor* Otherac, class UPrimitiveComponent* OtherComp, const struct FVector& InputPin4, const struct FHitResult& InputPin5);
-	void EnteredTheWater();
-	void ReceiveBeginPlay();
-	void PlayerHandRelease_LMB(class AMainPlayer_C* Param_Player);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Param_Player);
 	void PlayerHandRelease_RMB(class AMainPlayer_C* Param_Player);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Param_Player);
 	void EnterWater(class AWaterVolume_C* Water);
+	void EnteredTheWater();
 
 public:
 	static class UClass* StaticClass()
@@ -70,17 +67,16 @@ public:
 	}
 };
 static_assert(alignof(AProp_sponge_C) == 0x000008, "Wrong alignment on AProp_sponge_C");
-static_assert(sizeof(AProp_sponge_C) == 0x0003C0, "Wrong size on AProp_sponge_C");
-static_assert(offsetof(AProp_sponge_C, UberGraphFrame_Prop_sponge_C) == 0x000378, "Member 'AProp_sponge_C::UberGraphFrame_Prop_sponge_C' has a wrong offset!");
-static_assert(offsetof(AProp_sponge_C, Power) == 0x000380, "Member 'AProp_sponge_C::Power' has a wrong offset!");
-static_assert(offsetof(AProp_sponge_C, Dynmat) == 0x000388, "Member 'AProp_sponge_C::Dynmat' has a wrong offset!");
-static_assert(offsetof(AProp_sponge_C, Col) == 0x000390, "Member 'AProp_sponge_C::Col' has a wrong offset!");
-static_assert(offsetof(AProp_sponge_C, Strength) == 0x000394, "Member 'AProp_sponge_C::Strength' has a wrong offset!");
-static_assert(offsetof(AProp_sponge_C, Size) == 0x000398, "Member 'AProp_sponge_C::Size' has a wrong offset!");
-static_assert(offsetof(AProp_sponge_C, Anim) == 0x00039C, "Member 'AProp_sponge_C::Anim' has a wrong offset!");
-static_assert(offsetof(AProp_sponge_C, Player) == 0x0003A0, "Member 'AProp_sponge_C::Player' has a wrong offset!");
-static_assert(offsetof(AProp_sponge_C, Objs) == 0x0003A8, "Member 'AProp_sponge_C::Objs' has a wrong offset!");
-static_assert(offsetof(AProp_sponge_C, Drawmat) == 0x0003B8, "Member 'AProp_sponge_C::Drawmat' has a wrong offset!");
+static_assert(sizeof(AProp_sponge_C) == 0x0003A8, "Wrong size on AProp_sponge_C");
+static_assert(offsetof(AProp_sponge_C, UberGraphFrame_Prop_sponge_C) == 0x000368, "Member 'AProp_sponge_C::UberGraphFrame_Prop_sponge_C' has a wrong offset!");
+static_assert(offsetof(AProp_sponge_C, Power) == 0x000370, "Member 'AProp_sponge_C::Power' has a wrong offset!");
+static_assert(offsetof(AProp_sponge_C, Dynmat) == 0x000378, "Member 'AProp_sponge_C::Dynmat' has a wrong offset!");
+static_assert(offsetof(AProp_sponge_C, Col) == 0x000380, "Member 'AProp_sponge_C::Col' has a wrong offset!");
+static_assert(offsetof(AProp_sponge_C, Strength) == 0x000384, "Member 'AProp_sponge_C::Strength' has a wrong offset!");
+static_assert(offsetof(AProp_sponge_C, Size) == 0x000388, "Member 'AProp_sponge_C::Size' has a wrong offset!");
+static_assert(offsetof(AProp_sponge_C, Anim) == 0x00038C, "Member 'AProp_sponge_C::Anim' has a wrong offset!");
+static_assert(offsetof(AProp_sponge_C, Player) == 0x000390, "Member 'AProp_sponge_C::Player' has a wrong offset!");
+static_assert(offsetof(AProp_sponge_C, Objs) == 0x000398, "Member 'AProp_sponge_C::Objs' has a wrong offset!");
 
 }
 

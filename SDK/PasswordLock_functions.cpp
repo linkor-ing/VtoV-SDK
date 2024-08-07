@@ -37,87 +37,23 @@ void APasswordLock_C::ExecuteUbergraph_passwordLock(int32 EntryPoint)
 }
 
 
-// Function passwordLock.passwordLock_C.unfocus
-// (BlueprintCallable, BlueprintEvent)
-
-void APasswordLock_C::Unfocus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("passwordLock_C", "unfocus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function passwordLock.passwordLock_C.inputNumber
-// (BlueprintCallable, BlueprintEvent)
+// Function passwordLock.passwordLock_C.kicked
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_Num                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Kick                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void APasswordLock_C::InputNumber(int32 Param_Num)
+void APasswordLock_C::Kicked(bool Kick)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("passwordLock_C", "inputNumber");
+		Func = Class->GetFunction("passwordLock_C", "kicked");
 
-	Params::PasswordLock_C_InputNumber Parms{};
+	Params::PasswordLock_C_Kicked Parms{};
 
-	Parms.Param_Num = Param_Num;
+	Parms.Kick = Kick;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function passwordLock.passwordLock_C.playerAnykey
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FKey                             Param_Key                                              (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// bool                                    Pressed                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void APasswordLock_C::PlayerAnykey(const struct FKey& Param_Key, bool Pressed)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("passwordLock_C", "playerAnykey");
-
-	Params::PasswordLock_C_PlayerAnykey Parms{};
-
-	Parms.Param_Key = std::move(Param_Key);
-	Parms.Pressed = Pressed;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function passwordLock.passwordLock_C.focusOn
-// (BlueprintCallable, BlueprintEvent)
-
-void APasswordLock_C::FocusOn()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("passwordLock_C", "focusOn");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function passwordLock.passwordLock_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void APasswordLock_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("passwordLock_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -135,6 +71,28 @@ void APasswordLock_C::Open2()
 }
 
 
+// Function passwordLock.passwordLock_C.runTrigger
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Param_Owner                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APasswordLock_C::RunTrigger(class AActor* Param_Owner, int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("passwordLock_C", "runTrigger");
+
+	Params::PasswordLock_C_RunTrigger Parms{};
+
+	Parms.Param_Owner = Param_Owner;
+	Parms.Param_Index = Param_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function passwordLock.passwordLock_C.Reset
 // (BlueprintCallable, BlueprintEvent)
 
@@ -146,6 +104,26 @@ void APasswordLock_C::Reset()
 		Func = Class->GetFunction("passwordLock_C", "Reset");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function passwordLock.passwordLock_C.sendName
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             Param_Name                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APasswordLock_C::SendName(class FName Param_Name)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("passwordLock_C", "sendName");
+
+	Params::PasswordLock_C_SendName Parms{};
+
+	Parms.Param_Name = Param_Name;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -163,23 +141,17 @@ void APasswordLock_C::DriveDetached()
 }
 
 
-// Function passwordLock.passwordLock_C.playerR
+// Function passwordLock.passwordLock_C.broken
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APasswordLock_C::PlayerR(class AMainPlayer_C* Player)
+void APasswordLock_C::broken()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("passwordLock_C", "playerR");
+		Func = Class->GetFunction("passwordLock_C", "broken");
 
-	Params::PasswordLock_C_PlayerR Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -205,60 +177,6 @@ void APasswordLock_C::Player_use(class AMainPlayer_C* Player, const struct FHitR
 }
 
 
-// Function passwordLock.passwordLock_C.kicked
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Kick                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void APasswordLock_C::Kicked(bool Kick)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("passwordLock_C", "kicked");
-
-	Params::PasswordLock_C_Kicked Parms{};
-
-	Parms.Kick = Kick;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function passwordLock.passwordLock_C.sendName
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             Param_Name                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APasswordLock_C::SendName(class FName Param_Name)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("passwordLock_C", "sendName");
-
-	Params::PasswordLock_C_SendName Parms{};
-
-	Parms.Param_Name = Param_Name;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function passwordLock.passwordLock_C.broken
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void APasswordLock_C::broken()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("passwordLock_C", "broken");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function passwordLock.passwordLock_C.broken_fire
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -273,19 +191,19 @@ void APasswordLock_C::broken_fire()
 }
 
 
-// Function passwordLock.passwordLock_C.playerHold
+// Function passwordLock.passwordLock_C.thrown
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APasswordLock_C::PlayerHold(class AMainPlayer_C* Player)
+void APasswordLock_C::Thrown(class AMainPlayer_C* Player)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("passwordLock_C", "playerHold");
+		Func = Class->GetFunction("passwordLock_C", "thrown");
 
-	Params::PasswordLock_C_PlayerHold Parms{};
+	Params::PasswordLock_C_Thrown Parms{};
 
 	Parms.Player = Player;
 
@@ -310,64 +228,6 @@ void APasswordLock_C::Open(bool Param_Active)
 	Parms.Param_Active = Param_Active;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function passwordLock.passwordLock_C.thrown
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APasswordLock_C::Thrown(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("passwordLock_C", "thrown");
-
-	Params::PasswordLock_C_Thrown Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function passwordLock.passwordLock_C.damageByPlayer
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APasswordLock_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("passwordLock_C", "damageByPlayer");
-
-	Params::PasswordLock_C_DamageByPlayer Parms{};
-
-	Parms.Player = Player;
-	Parms.Hit = std::move(Hit);
-	Parms.Damage = Damage;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function passwordLock.passwordLock_C.updateStrAgl
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void APasswordLock_C::UpdateStrAgl()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("passwordLock_C", "updateStrAgl");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -413,23 +273,53 @@ void APasswordLock_C::PowerChanged(bool Active_calc, bool Active_downl, bool Act
 }
 
 
-// Function passwordLock.passwordLock_C.playerUnequip
+// Function passwordLock.passwordLock_C.damageByPlayer
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void APasswordLock_C::PlayerUnequip(class AMainPlayer_C* Player)
+void APasswordLock_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("passwordLock_C", "playerUnequip");
+		Func = Class->GetFunction("passwordLock_C", "damageByPlayer");
 
-	Params::PasswordLock_C_PlayerUnequip Parms{};
+	Params::PasswordLock_C_DamageByPlayer Parms{};
 
 	Parms.Player = Player;
+	Parms.Hit = std::move(Hit);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function passwordLock.passwordLock_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void APasswordLock_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("passwordLock_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function passwordLock.passwordLock_C.updateStrAgl
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void APasswordLock_C::UpdateStrAgl()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("passwordLock_C", "updateStrAgl");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -510,9 +400,8 @@ void APasswordLock_C::IsButtonUsed(bool* Failed)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APasswordLock_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
+void APasswordLock_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
 {
 	static class UFunction* Func = nullptr;
 
@@ -534,9 +423,6 @@ void APasswordLock_C::LookAt(class AMainPlayer_C* Player, const struct FHitResul
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
 }
 
 
@@ -627,58 +513,15 @@ void APasswordLock_C::CanBePutInContainer(bool* Return)
 }
 
 
-// Function passwordLock.passwordLock_C.landedOn
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IgnoreFallDamage                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void APasswordLock_C::LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("passwordLock_C", "landedOn");
-
-	Params::PasswordLock_C_LandedOn Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (IgnoreFallDamage != nullptr)
-		*IgnoreFallDamage = Parms.IgnoreFallDamage;
-}
-
-
-// Function passwordLock.passwordLock_C.playerLookAway
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APasswordLock_C::PlayerLookAway(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("passwordLock_C", "playerLookAway");
-
-	Params::PasswordLock_C_PlayerLookAway Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function passwordLock.passwordLock_C.actionOptionIndex
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APasswordLock_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action)
+void APasswordLock_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -689,29 +532,8 @@ void APasswordLock_C::ActionOptionIndex(class AMainPlayer_C* Player, const struc
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
-	Parms.Action = Action;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function passwordLock.passwordLock_C.runTrigger
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Param_Owner                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APasswordLock_C::RunTrigger(class AActor* Param_Owner, int32 Param_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("passwordLock_C", "runTrigger");
-
-	Params::PasswordLock_C_RunTrigger Parms{};
-
-	Parms.Param_Owner = Param_Owner;
 	Parms.Param_Index = Param_Index;
+	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -811,24 +633,24 @@ void APasswordLock_C::IgnoreSave_trigger(bool* Ignore)
 }
 
 
-// Function passwordLock.passwordLock_C.gatherDataFromKeyT
+// Function passwordLock.passwordLock_C.processKeys
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void APasswordLock_C::GatherDataFromKeyT(bool* Gather)
+void APasswordLock_C::ProcessKeys(bool* Return)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("passwordLock_C", "gatherDataFromKeyT");
+		Func = Class->GetFunction("passwordLock_C", "processKeys");
 
-	Params::PasswordLock_C_GatherDataFromKeyT Parms{};
+	Params::PasswordLock_C_ProcessKeys Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Gather != nullptr)
-		*Gather = Parms.Gather;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -858,27 +680,6 @@ void APasswordLock_C::DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBa
 }
 
 
-// Function passwordLock.passwordLock_C.processKeys
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void APasswordLock_C::ProcessKeys(bool* Return)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("passwordLock_C", "processKeys");
-
-	Params::PasswordLock_C_ProcessKeys Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Return != nullptr)
-		*Return = Parms.Return;
-}
-
-
 // Function passwordLock.passwordLock_C.getActionOptions
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -888,9 +689,8 @@ void APasswordLock_C::ProcessKeys(bool* Return)
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APasswordLock_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
+void APasswordLock_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
 {
 	static class UFunction* Func = nullptr;
 
@@ -913,9 +713,6 @@ void APasswordLock_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimi
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
 }
 
 }

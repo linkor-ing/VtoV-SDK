@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Struct_save_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "Struct_mBool_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Struct_save_structs.hpp"
+#include "Struct_mBool_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Enum_interactionActions_structs.hpp"
 
 
@@ -21,248 +21,145 @@ namespace SDK::Params
 {
 
 // Function prop_dingus.prop_dingus_C.ExecuteUbergraph_prop_dingus
-// 0x0440 (0x0440 - 0x0000)
+// 0x0280 (0x0280 - 0x0000)
 struct Prop_dingus_C_ExecuteUbergraph_prop_dingus final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable;                                // 0x0004(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUmg_oj_C*                              CallFunc_Create_ReturnValue;                       // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Temp_struct_Variable;                              // 0x0020(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	int32                                         Temp_int_Variable;                                 // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_1;                               // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_2;                               // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_71[0x3];                                       // 0x0071(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_3;                               // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_7D[0x3];                                       // 0x007D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0084(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_85[0x3];                                       // 0x0085(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x008D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_IsClosed_Variable;                       // 0x008E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Has_Been_Initd_Variable_1;               // 0x008F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_IsClosed_Variable_1;                     // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x3];                                       // 0x0091(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable_4;                               // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_1;                              // 0x00A0(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A9[0x3];                                       // 0x00A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable_5;                               // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_6;                               // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_5;                 // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_3;           // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B9[0x3];                                       // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_6;                 // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_7;                               // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_4;           // 0x00C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C5[0x3];                                       // 0x00C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_7;                 // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x00D8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_171[0x3];                                      // 0x0171(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable_8;                               // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water;                                // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0180(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_dingusDies_C*                     CallFunc_FinishSpawningActor_ReturnValue;          // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_8;                 // 0x01C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x01CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x01D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D5[0x3];                                      // 0x01D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_RandomUnitVector_ReturnValue;             // 0x01D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_RandomRotator_ReturnValue;                // 0x01E4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x01F0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x01FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_208[0x8];                                      // 0x0208(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0210(0x0030)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0240(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24C[0x4];                                      // 0x024C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UStaticMeshComponent*                   CallFunc_AddComponent_ReturnValue_1;               // 0x0250(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_258[0x8];                                      // 0x0258(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x0260(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AExplosion_C*                           CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0298(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x02A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_9;                               // 0x02A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_9;                 // 0x02AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x02B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x02B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RandomUnitVector_ReturnValue_1;           // 0x02B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x02C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   CallFunc_Array_Get_Item;                           // 0x02C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x02D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x02DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x02E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E1[0x3];                                      // 0x02E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x02E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x02E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatMinusEquals_FloatOut;         // 0x02EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FMax_ReturnValue;                         // 0x02F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_Select_Default;                             // 0x02F4(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x02FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FD[0x3];                                      // 0x02FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0300(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_30C[0x4];                                      // 0x030C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_2;              // 0x0310(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x0340(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AExplosion_C*                           CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x0348(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_10;                              // 0x0350(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_10;                // 0x0354(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   CallFunc_Array_Get_Item_1;                         // 0x0358(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0360(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_361[0x3];                                      // 0x0361(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0364(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   CallFunc_Array_Get_Item_2;                         // 0x0368(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0370(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x0374(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_375[0xB];                                      // 0x0375(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetTransform_ReturnValue_1;               // 0x0380(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_damage;                               // 0x03B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x03B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x03C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x03CC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D8[0x8];                                      // 0x03D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_3;              // 0x03E0(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3; // 0x0410(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_garbageClump_C*                   CallFunc_FinishSpawningActor_ReturnValue_3;        // 0x0418(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetComponentVelocity_ReturnValue;         // 0x0420(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_2;       // 0x042C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F8E[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_2;                               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_3;                               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F8F[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_4;                               // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_5;                               // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_6;                               // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F90[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_3;           // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F91[0x3];                                     // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_5;                 // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x0050(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         K2Node_Event_index;                                // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x00DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3F92[0x3];                                     // 0x00DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F93[0x7];                                     // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AWaterVolume_C*                         K2Node_Event_water;                                // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3F94[0x8];                                     // 0x00F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0100(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_dingusDies_C*                     CallFunc_FinishSpawningActor_ReturnValue;          // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_6;                 // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0154(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F95[0x3];                                     // 0x0155(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable_7;                               // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RandomUnitVector_ReturnValue;             // 0x015C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0168(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0174(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_RandomRotator_ReturnValue;                // 0x0180(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F96[0x4];                                     // 0x018C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0190(0x0030)(IsPlainOldData, NoDestructor)
+	class UStaticMeshComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x01C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x01C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3F97[0xC];                                     // 0x01D4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x01E0(0x0030)(IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AExplosion_C*                           CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_7;                 // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x022C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   CallFunc_Array_Get_Item;                           // 0x0230(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x023C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F98[0x3];                                     // 0x023D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_RandomUnitVector_ReturnValue_1;           // 0x0240(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x024C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   CallFunc_Array_Get_Item_1;                         // 0x0250(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x0258(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0264(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F99[0x3];                                     // 0x0269(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x026C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0270(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatMinusEquals_FloatOut;         // 0x0274(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FMax_ReturnValue;                         // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_dingus_C_ExecuteUbergraph_prop_dingus) == 0x000010, "Wrong alignment on Prop_dingus_C_ExecuteUbergraph_prop_dingus");
-static_assert(sizeof(Prop_dingus_C_ExecuteUbergraph_prop_dingus) == 0x000440, "Wrong size on Prop_dingus_C_ExecuteUbergraph_prop_dingus");
+static_assert(sizeof(Prop_dingus_C_ExecuteUbergraph_prop_dingus) == 0x000280, "Wrong size on Prop_dingus_C_ExecuteUbergraph_prop_dingus");
 static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, EntryPoint) == 0x000000, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_name_Variable) == 0x000004, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Create_ReturnValue) == 0x000010, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_struct_Variable) == 0x000020, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_int_Variable) == 0x000050, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Add_IntInt_ReturnValue) == 0x000054, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_AddComponent_ReturnValue) == 0x000058, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_int_Variable_1) == 0x000060, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_int_Variable_2) == 0x000064, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000068, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Add_IntInt_ReturnValue_1) == 0x00006C, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000070, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Add_IntInt_ReturnValue_2) == 0x000074, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_int_Variable_3) == 0x000078, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00007C, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Percent_IntInt_ReturnValue) == 0x000080, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000084, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Add_IntInt_ReturnValue_3) == 0x000088, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Less_IntInt_ReturnValue) == 0x00008C, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_bool_Has_Been_Initd_Variable) == 0x00008D, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_bool_IsClosed_Variable) == 0x00008E, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_bool_Has_Been_Initd_Variable_1) == 0x00008F, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_bool_Has_Been_Initd_Variable_1' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_bool_IsClosed_Variable_1) == 0x000090, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_bool_IsClosed_Variable_1' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_int_Variable_4) == 0x000094, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x000098, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Add_IntInt_ReturnValue_4) == 0x00009C, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_name_Variable_1) == 0x0000A0, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_name_Variable_1' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_bool_Variable) == 0x0000A8, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_int_Variable_5) == 0x0000AC, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_int_Variable_6) == 0x0000B0, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_int_Variable_6' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Add_IntInt_ReturnValue_5) == 0x0000B4, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_LessEqual_IntInt_ReturnValue_3) == 0x0000B8, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_LessEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Add_IntInt_ReturnValue_6) == 0x0000BC, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Add_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_int_Variable_7) == 0x0000C0, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_int_Variable_7' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_LessEqual_IntInt_ReturnValue_4) == 0x0000C4, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_LessEqual_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Add_IntInt_ReturnValue_7) == 0x0000C8, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Add_IntInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, K2Node_Event_player_1) == 0x0000D0, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, K2Node_Event_hit) == 0x0000D8, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, K2Node_Event_action) == 0x000160, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, K2Node_Event_player) == 0x000168, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, K2Node_SwitchEnum_CmpSuccess) == 0x000170, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_int_Variable_8) == 0x000174, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_int_Variable_8' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, K2Node_Event_water) == 0x000178, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::K2Node_Event_water' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_GetTransform_ReturnValue) == 0x000180, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0001B0, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_FinishSpawningActor_ReturnValue) == 0x0001B8, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x0001C0, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Add_IntInt_ReturnValue_8) == 0x0001C8, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Add_IntInt_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Add_FloatFloat_ReturnValue) == 0x0001CC, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x0001D0, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0001D4, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_RandomUnitVector_ReturnValue) == 0x0001D8, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_RandomUnitVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_RandomRotator_ReturnValue) == 0x0001E4, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_RandomRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x0001F0, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Add_VectorVector_ReturnValue) == 0x0001FC, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_MakeTransform_ReturnValue) == 0x000210, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000240, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_AddComponent_ReturnValue_1) == 0x000250, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_AddComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_MakeTransform_ReturnValue_1) == 0x000260, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000290, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000298, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x0002A0, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_int_Variable_9) == 0x0002A8, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_int_Variable_9' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Add_IntInt_ReturnValue_9) == 0x0002AC, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Add_IntInt_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Array_Add_ReturnValue) == 0x0002B0, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Array_Length_ReturnValue) == 0x0002B4, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_RandomUnitVector_ReturnValue_1) == 0x0002B8, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_RandomUnitVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_RandomFloatInRange_ReturnValue) == 0x0002C4, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Array_Get_Item) == 0x0002C8, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x0002D0, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Array_Length_ReturnValue_1) == 0x0002DC, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Less_IntInt_ReturnValue_1) == 0x0002E0, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x0002E4, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0002E8, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_VictoryFloatMinusEquals_FloatOut) == 0x0002EC, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_VictoryFloatMinusEquals_FloatOut' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_FMax_ReturnValue) == 0x0002F0, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, K2Node_Select_Default) == 0x0002F4, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, K2Node_SwitchInteger_CmpSuccess) == 0x0002FC, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000300, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_MakeTransform_ReturnValue_2) == 0x000310, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_MakeTransform_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x000340, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x000348, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_int_Variable_10) == 0x000350, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_int_Variable_10' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Add_IntInt_ReturnValue_10) == 0x000354, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Add_IntInt_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Array_Get_Item_1) == 0x000358, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Less_IntInt_ReturnValue_2) == 0x000360, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Array_Add_ReturnValue_1) == 0x000364, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Array_Get_Item_2) == 0x000368, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Array_Length_ReturnValue_2) == 0x000370, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Less_IntInt_ReturnValue_3) == 0x000374, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_GetTransform_ReturnValue_1) == 0x000380, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_GetTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, K2Node_Event_damage) == 0x0003B0, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::K2Node_Event_damage' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_BreakTransform_Location) == 0x0003B4, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_BreakTransform_Rotation) == 0x0003C0, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_BreakTransform_Scale) == 0x0003CC, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_MakeTransform_ReturnValue_3) == 0x0003E0, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_MakeTransform_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3) == 0x000410, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_FinishSpawningActor_ReturnValue_3) == 0x000418, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_FinishSpawningActor_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_GetComponentVelocity_ReturnValue) == 0x000420, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_GetComponentVelocity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Multiply_VectorFloat_ReturnValue_2) == 0x00042C, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Multiply_VectorFloat_ReturnValue_2' has a wrong offset!");
-
-// Function prop_dingus.prop_dingus_C.fireDamage
-// 0x0004 (0x0004 - 0x0000)
-struct Prop_dingus_C_FireDamage final
-{
-public:
-	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_dingus_C_FireDamage) == 0x000004, "Wrong alignment on Prop_dingus_C_FireDamage");
-static_assert(sizeof(Prop_dingus_C_FireDamage) == 0x000004, "Wrong size on Prop_dingus_C_FireDamage");
-static_assert(offsetof(Prop_dingus_C_FireDamage, Damage) == 0x000000, "Member 'Prop_dingus_C_FireDamage::Damage' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_int_Variable) == 0x000004, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_int_Variable_1) == 0x00000C, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_int_Variable_1' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000010, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Add_IntInt_ReturnValue_1) == 0x000014, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_int_Variable_2) == 0x000018, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_int_Variable_2' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Add_IntInt_ReturnValue_2) == 0x00001C, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_int_Variable_3) == 0x000020, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_int_Variable_3' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000024, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Add_IntInt_ReturnValue_3) == 0x000028, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_int_Variable_4) == 0x00002C, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_int_Variable_4' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_int_Variable_5) == 0x000030, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_int_Variable_5' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_int_Variable_6) == 0x000034, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_int_Variable_6' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x000038, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Add_IntInt_ReturnValue_4) == 0x00003C, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_LessEqual_IntInt_ReturnValue_3) == 0x000040, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_LessEqual_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Add_IntInt_ReturnValue_5) == 0x000044, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, K2Node_Event_player_1) == 0x000048, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, K2Node_Event_hit) == 0x000050, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, K2Node_Event_index) == 0x0000D8, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, K2Node_Event_action) == 0x0000DC, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, K2Node_Event_player) == 0x0000E0, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, K2Node_SwitchEnum_CmpSuccess) == 0x0000E8, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, K2Node_Event_water) == 0x0000F0, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::K2Node_Event_water' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_GetTransform_ReturnValue) == 0x000100, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000130, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_FinishSpawningActor_ReturnValue) == 0x000138, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000140, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Add_IntInt_ReturnValue_6) == 0x000148, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Add_IntInt_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Add_FloatFloat_ReturnValue) == 0x00014C, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x000150, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000154, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, Temp_int_Variable_7) == 0x000158, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::Temp_int_Variable_7' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_RandomUnitVector_ReturnValue) == 0x00015C, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_RandomUnitVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000168, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Add_VectorVector_ReturnValue) == 0x000174, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_RandomRotator_ReturnValue) == 0x000180, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_RandomRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_MakeTransform_ReturnValue) == 0x000190, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_AddComponent_ReturnValue) == 0x0001C0, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0001C8, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_MakeTransform_ReturnValue_1) == 0x0001E0, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000210, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000218, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x000220, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Add_IntInt_ReturnValue_7) == 0x000228, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Add_IntInt_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Array_Add_ReturnValue) == 0x00022C, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Array_Get_Item) == 0x000230, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Array_Length_ReturnValue) == 0x000238, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Less_IntInt_ReturnValue) == 0x00023C, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_RandomUnitVector_ReturnValue_1) == 0x000240, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_RandomUnitVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_RandomFloatInRange_ReturnValue) == 0x00024C, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Array_Get_Item_1) == 0x000250, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x000258, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Array_Length_ReturnValue_1) == 0x000264, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Less_IntInt_ReturnValue_1) == 0x000268, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x00026C, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000270, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_VictoryFloatMinusEquals_FloatOut) == 0x000274, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_VictoryFloatMinusEquals_FloatOut' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ExecuteUbergraph_prop_dingus, CallFunc_FMax_ReturnValue) == 0x000278, "Member 'Prop_dingus_C_ExecuteUbergraph_prop_dingus::CallFunc_FMax_ReturnValue' has a wrong offset!");
 
 // Function prop_dingus.prop_dingus_C.actionOptionIndex
 // 0x0098 (0x0098 - 0x0000)
@@ -271,13 +168,15 @@ struct Prop_dingus_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_dingus_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_dingus_C_ActionOptionIndex");
 static_assert(sizeof(Prop_dingus_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_dingus_C_ActionOptionIndex");
 static_assert(offsetof(Prop_dingus_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_dingus_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(Prop_dingus_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_dingus_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_dingus_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_dingus_C_ActionOptionIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_dingus_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function prop_dingus.prop_dingus_C.enterWater
 // 0x0008 (0x0008 - 0x0000)
@@ -301,50 +200,8 @@ static_assert(alignof(Prop_dingus_C_PlayerHandUse_RMB) == 0x000008, "Wrong align
 static_assert(sizeof(Prop_dingus_C_PlayerHandUse_RMB) == 0x000008, "Wrong size on Prop_dingus_C_PlayerHandUse_RMB");
 static_assert(offsetof(Prop_dingus_C_PlayerHandUse_RMB, Player) == 0x000000, "Member 'Prop_dingus_C_PlayerHandUse_RMB::Player' has a wrong offset!");
 
-// Function prop_dingus.prop_dingus_C.lookAt
-// 0x00B8 (0x00B8 - 0x0000)
-struct Prop_dingus_C_LookAt final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_dingus_C_LookAt) == 0x000008, "Wrong alignment on Prop_dingus_C_LookAt");
-static_assert(sizeof(Prop_dingus_C_LookAt) == 0x0000B8, "Wrong size on Prop_dingus_C_LookAt");
-static_assert(offsetof(Prop_dingus_C_LookAt, Player) == 0x000000, "Member 'Prop_dingus_C_LookAt::Player' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_LookAt, Param_Hit) == 0x000008, "Member 'Prop_dingus_C_LookAt::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_LookAt, Return) == 0x000090, "Member 'Prop_dingus_C_LookAt::Return' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_LookAt, Text) == 0x000098, "Member 'Prop_dingus_C_LookAt::Text' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'Prop_dingus_C_LookAt::boundObjectReplace' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_LookAt, Number) == 0x0000B0, "Member 'Prop_dingus_C_LookAt::Number' has a wrong offset!");
-
-// Function prop_dingus.prop_dingus_C.loadData
-// 0x00E0 (0x00E0 - 0x0000)
-struct Prop_dingus_C_LoadData final
-{
-public:
-	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_mBool                          CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
-	bool                                          CallFunc_loadData_return;                          // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Array_Get_Item_1;                         // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(Prop_dingus_C_LoadData) == 0x000010, "Wrong alignment on Prop_dingus_C_LoadData");
-static_assert(sizeof(Prop_dingus_C_LoadData) == 0x0000E0, "Wrong size on Prop_dingus_C_LoadData");
-static_assert(offsetof(Prop_dingus_C_LoadData, Data) == 0x000000, "Member 'Prop_dingus_C_LoadData::Data' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_LoadData, Return) == 0x0000C0, "Member 'Prop_dingus_C_LoadData::Return' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_LoadData, CallFunc_Array_Get_Item) == 0x0000C8, "Member 'Prop_dingus_C_LoadData::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_LoadData, CallFunc_loadData_return) == 0x0000D8, "Member 'Prop_dingus_C_LoadData::CallFunc_loadData_return' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_LoadData, CallFunc_Array_Get_Item_1) == 0x0000D9, "Member 'Prop_dingus_C_LoadData::CallFunc_Array_Get_Item_1' has a wrong offset!");
-
 // Function prop_dingus.prop_dingus_C.getActionOptions
-// 0x0060 (0x0060 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct Prop_dingus_C_GetActionOptions final
 {
 public:
@@ -354,20 +211,37 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
 };
 static_assert(alignof(Prop_dingus_C_GetActionOptions) == 0x000008, "Wrong alignment on Prop_dingus_C_GetActionOptions");
-static_assert(sizeof(Prop_dingus_C_GetActionOptions) == 0x000060, "Wrong size on Prop_dingus_C_GetActionOptions");
+static_assert(sizeof(Prop_dingus_C_GetActionOptions) == 0x000058, "Wrong size on Prop_dingus_C_GetActionOptions");
 static_assert(offsetof(Prop_dingus_C_GetActionOptions, Player) == 0x000000, "Member 'Prop_dingus_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Prop_dingus_C_GetActionOptions, Component) == 0x000008, "Member 'Prop_dingus_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Prop_dingus_C_GetActionOptions, Actor) == 0x000010, "Member 'Prop_dingus_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Prop_dingus_C_GetActionOptions, Options) == 0x000018, "Member 'Prop_dingus_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Prop_dingus_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Prop_dingus_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Prop_dingus_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Prop_dingus_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_GetActionOptions, Number) == 0x000048, "Member 'Prop_dingus_C_GetActionOptions::Number' has a wrong offset!");
-static_assert(offsetof(Prop_dingus_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Prop_dingus_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'Prop_dingus_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+
+// Function prop_dingus.prop_dingus_C.lookAt
+// 0x00B0 (0x00B0 - 0x0000)
+struct Prop_dingus_C_LookAt final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F9A[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_dingus_C_LookAt) == 0x000008, "Wrong alignment on Prop_dingus_C_LookAt");
+static_assert(sizeof(Prop_dingus_C_LookAt) == 0x0000B0, "Wrong size on Prop_dingus_C_LookAt");
+static_assert(offsetof(Prop_dingus_C_LookAt, Player) == 0x000000, "Member 'Prop_dingus_C_LookAt::Player' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_LookAt, Param_Hit) == 0x000008, "Member 'Prop_dingus_C_LookAt::Param_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_LookAt, Return) == 0x000090, "Member 'Prop_dingus_C_LookAt::Return' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_LookAt, Text) == 0x000098, "Member 'Prop_dingus_C_LookAt::Text' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'Prop_dingus_C_LookAt::boundObjectReplace' has a wrong offset!");
 
 // Function prop_dingus.prop_dingus_C.getData
 // 0x0280 (0x0280 - 0x0000)
@@ -391,6 +265,26 @@ static_assert(offsetof(Prop_dingus_C_GetData, K2Node_MakeStruct_struct_mBool) ==
 static_assert(offsetof(Prop_dingus_C_GetData, CallFunc_Array_Get_Item) == 0x0001A0, "Member 'Prop_dingus_C_GetData::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(Prop_dingus_C_GetData, K2Node_MakeArray_Array_1) == 0x0001B0, "Member 'Prop_dingus_C_GetData::K2Node_MakeArray_Array_1' has a wrong offset!");
 static_assert(offsetof(Prop_dingus_C_GetData, K2Node_SetFieldsInStruct_StructOut) == 0x0001C0, "Member 'Prop_dingus_C_GetData::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
+
+// Function prop_dingus.prop_dingus_C.loadData
+// 0x00E0 (0x00E0 - 0x0000)
+struct Prop_dingus_C_LoadData final
+{
+public:
+	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F9B[0x7];                                     // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_mBool                          CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
+	bool                                          CallFunc_loadData_return;                          // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_Get_Item_1;                         // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Prop_dingus_C_LoadData) == 0x000010, "Wrong alignment on Prop_dingus_C_LoadData");
+static_assert(sizeof(Prop_dingus_C_LoadData) == 0x0000E0, "Wrong size on Prop_dingus_C_LoadData");
+static_assert(offsetof(Prop_dingus_C_LoadData, Data) == 0x000000, "Member 'Prop_dingus_C_LoadData::Data' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_LoadData, Return) == 0x0000C0, "Member 'Prop_dingus_C_LoadData::Return' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_LoadData, CallFunc_Array_Get_Item) == 0x0000C8, "Member 'Prop_dingus_C_LoadData::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_LoadData, CallFunc_loadData_return) == 0x0000D8, "Member 'Prop_dingus_C_LoadData::CallFunc_loadData_return' has a wrong offset!");
+static_assert(offsetof(Prop_dingus_C_LoadData, CallFunc_Array_Get_Item_1) == 0x0000D9, "Member 'Prop_dingus_C_LoadData::CallFunc_Array_Get_Item_1' has a wrong offset!");
 
 }
 

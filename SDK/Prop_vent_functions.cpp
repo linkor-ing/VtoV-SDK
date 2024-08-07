@@ -17,27 +17,6 @@
 namespace SDK
 {
 
-// Function prop_vent.prop_vent_C.gatherDataFromKeyT
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AProp_vent_C::GatherDataFromKeyT(bool* Gather)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_vent_C", "gatherDataFromKeyT");
-
-	Params::Prop_vent_C_GatherDataFromKeyT Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Gather != nullptr)
-		*Gather = Parms.Gather;
-}
-
-
 // Function prop_vent.prop_vent_C.ignoreSave_trigger
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:

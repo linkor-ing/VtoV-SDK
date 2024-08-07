@@ -23,7 +23,7 @@ class AObelisk_C final : public AActor_save_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_Obelisk_C;                          // 0x0248(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UComp_radarPoint_C*                     RadarPoint;                                        // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class URadarPointComponent_C*                 RadarPoint;                                        // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               ParticleSystem;                                    // 0x0258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USphereComponent*                       Walk;                                              // 0x0260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        Obelisk_loop;                                      // 0x0268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -41,10 +41,9 @@ public:
 	class UStaticMeshComponent*                   StaticMesh;                                        // 0x02C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         A_a_C998E1C741F26E46558BD89743B5C0AC;              // 0x02D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            A__Direction_C998E1C741F26E46558BD89743B5C0AC;     // 0x02D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D5[0x3];                                      // 0x02D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DEF[0x3];                                     // 0x02D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     A;                                                 // 0x02D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Fallen;                                            // 0x02E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Pulledout;                                         // 0x02E1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_obelisk(int32 EntryPoint);
@@ -91,7 +90,6 @@ static_assert(offsetof(AObelisk_C, A_a_C998E1C741F26E46558BD89743B5C0AC) == 0x00
 static_assert(offsetof(AObelisk_C, A__Direction_C998E1C741F26E46558BD89743B5C0AC) == 0x0002D4, "Member 'AObelisk_C::A__Direction_C998E1C741F26E46558BD89743B5C0AC' has a wrong offset!");
 static_assert(offsetof(AObelisk_C, A) == 0x0002D8, "Member 'AObelisk_C::A' has a wrong offset!");
 static_assert(offsetof(AObelisk_C, Fallen) == 0x0002E0, "Member 'AObelisk_C::Fallen' has a wrong offset!");
-static_assert(offsetof(AObelisk_C, Pulledout) == 0x0002E1, "Member 'AObelisk_C::Pulledout' has a wrong offset!");
 
 }
 

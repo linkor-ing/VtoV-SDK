@@ -10,33 +10,18 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
-#include "Actor_save_classes.hpp"
+#include "Prop_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass prop_shower.prop_shower_C
-// 0x0020 (0x0268 - 0x0248)
-class AProp_shower_C final : public AActor_save_C
+// 0x0000 (0x0368 - 0x0368)
+class AProp_shower_C final : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_shower_C;                      // 0x0248(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   Cube;                                              // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Clean;                                             // 0x0258(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CleanVec;                                          // 0x025C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-public:
-	void GetData(struct FStruct_save* Data);
-	void LoadData(const struct FStruct_save& Data, bool* Return);
-	void GatherDataFromKey(bool* Gather);
-	void Upd();
-	void UserConstructionScript();
-	void CleanSponge(float Param_Clean, class AMainPlayer_C* Player);
-	void ReceiveBeginPlay();
-	void ExecuteUbergraph_prop_shower(int32 EntryPoint);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
 
 public:
 	static class UClass* StaticClass()
@@ -49,11 +34,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_shower_C) == 0x000008, "Wrong alignment on AProp_shower_C");
-static_assert(sizeof(AProp_shower_C) == 0x000268, "Wrong size on AProp_shower_C");
-static_assert(offsetof(AProp_shower_C, UberGraphFrame_Prop_shower_C) == 0x000248, "Member 'AProp_shower_C::UberGraphFrame_Prop_shower_C' has a wrong offset!");
-static_assert(offsetof(AProp_shower_C, Cube) == 0x000250, "Member 'AProp_shower_C::Cube' has a wrong offset!");
-static_assert(offsetof(AProp_shower_C, Clean) == 0x000258, "Member 'AProp_shower_C::Clean' has a wrong offset!");
-static_assert(offsetof(AProp_shower_C, CleanVec) == 0x00025C, "Member 'AProp_shower_C::CleanVec' has a wrong offset!");
+static_assert(sizeof(AProp_shower_C) == 0x000368, "Wrong size on AProp_shower_C");
 
 }
 

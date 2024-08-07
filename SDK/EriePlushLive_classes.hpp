@@ -10,25 +10,24 @@
 
 #include "Basic.hpp"
 
-#include "AIModule_structs.hpp"
-#include "Enum_erieAnimState_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "Struct_save_structs.hpp"
-#include "Enum_interactionActions_structs.hpp"
+#include "Enum_erieAnimState_structs.hpp"
+#include "AIModule_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass eriePlushLive.eriePlushLive_C
-// 0x01E0 (0x06A0 - 0x04C0)
-#pragma pack(push, 0x1)
-class alignas(0x10) AEriePlushLive_C : public ACharacter
+// 0x01C0 (0x0680 - 0x04C0)
+class AEriePlushLive_C final : public ACharacter
 {
 public:
-	uint8                                         Pad_4B8[0x8];                                      // 0x04B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2221[0x8];                                     // 0x04B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UBillboardComponent*                    SpawnEmote;                                        // 0x04C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UBillboardComponent*                    SpawnEmoteRoot;                                    // 0x04D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -42,65 +41,48 @@ public:
 	class UBillboardComponent*                    SpawnSplat;                                        // 0x0510(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         StealTimeline_a_60FFC5FB430B1C7250BA3AB38FCAC71B;  // 0x0518(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            StealTimeline__Direction_60FFC5FB430B1C7250BA3AB38FCAC71B; // 0x051C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_51D[0x3];                                      // 0x051D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2222[0x3];                                     // 0x051D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     StealTimeline;                                     // 0x0520(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Splatted;                                          // 0x0528(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_529[0x7];                                      // 0x0529(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2223[0x7];                                     // 0x0529(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UErieLive_Skeleton_AnimBlueprint_C*     Anim;                                              // 0x0530(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   SplatAnim;                                         // 0x0538(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class AActor*                                 Steal;                                             // 0x0540(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CanAction;                                         // 0x0548(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_549[0x7];                                      // 0x0549(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2224[0x7];                                     // 0x0549(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           StolenData;                                        // 0x0550(0x00C0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                          IsCarrying;                                        // 0x0610(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_611[0xF];                                      // 0x0611(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2225[0xF];                                     // 0x0611(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             T1;                                                // 0x0620(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Standup;                                           // 0x0650(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_651[0x7];                                      // 0x0651(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2226[0x7];                                     // 0x0651(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           Timer;                                             // 0x0658(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	Enum_erieAnimState                            State;                                             // 0x0660(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_661[0x3];                                      // 0x0661(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2227[0x3];                                     // 0x0661(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Rep;                                               // 0x0664(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class AProp_C*                                StealProp;                                         // 0x0668(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          SuperEater;                                        // 0x0670(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_671[0x3];                                      // 0x0671(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2228[0x3];                                     // 0x0671(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   FoodEating;                                        // 0x0674(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_67C[0x4];                                      // 0x067C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 ErieDrag;                                          // 0x0680(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 ErieLiving;                                        // 0x0688(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsEvil;                                            // 0x0690(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          IsGood;                                            // 0x0691(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          SkipGetUp;                                         // 0x0692(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	bool                                          Skip;                                              // 0x0693(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
 public:
 	void ExecuteUbergraph_eriePlushLive(int32 EntryPoint);
-	void SetIgnoreSave(bool Ignore);
-	void DriveDetached();
-	void Player_use(class AMainPlayer_C* Player, const struct FHitResult& Hit);
-	void Descend();
 	void ReduceRep();
 	void PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void Throw();
-	void Kicked(bool Kick);
 	void CheckClip();
 	void GetStolen();
 	void Ignite(float Fuel);
 	void BndEvt__eriePlushLive_CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
 	void AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Hit, const struct FVector& Impact, bool SkipSetting);
-	void SendName(class FName Param_Name);
 	void ReceiveDestroyed();
 	void StealAnim(bool Condition);
-	void broken();
 	void Stealing();
 	void Splat(const struct FHitResult& Hit);
 	void ReceiveBeginPlay();
 	void StartMoving();
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
 	void ReceiveTick(float DeltaSeconds);
-	void HookTension(class AHook_C* Hook);
-	void CleanSponge(float Clean, class AMainPlayer_C* Player);
-	void Crafted();
 	void Hooked(class AHook_C* Hook);
 	void AttemptIgnite();
 	void Slice(bool Clean);
@@ -121,7 +103,7 @@ public:
 	void Exploded(float Damage, const struct FVector& Location);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
-	void ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot);
+	void ReceivedPhyiscsDamage();
 	void Microwave();
 	void FireDamage(float Damage);
 	void SteppedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
@@ -138,18 +120,16 @@ public:
 	void LeaveWater(class AWaterVolume_C* Water);
 	void EnterWater(class AWaterVolume_C* Water);
 	void ImpactDamage(float Damage, const struct FHitResult& Hit, class AActor* Actor, const struct FVector& Impact);
-	void PlayerR(class AMainPlayer_C* Player);
-	void PlayerHold(class AMainPlayer_C* Player);
-	void PlayerUnequip(class AMainPlayer_C* Player);
 	void UpdateStrAgl();
-	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage);
+	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void Thrown(class AMainPlayer_C* Player);
 	void broken_fire();
-	void OnCompleted_1AB22B384D90439DB9097998C64CBFCB(class FName NotifyName);
-	void OnBlendOut_1AB22B384D90439DB9097998C64CBFCB(class FName NotifyName);
-	void OnInterrupted_1AB22B384D90439DB9097998C64CBFCB(class FName NotifyName);
-	void OnNotifyBegin_1AB22B384D90439DB9097998C64CBFCB(class FName NotifyName);
-	void OnNotifyEnd_1AB22B384D90439DB9097998C64CBFCB(class FName NotifyName);
+	void broken();
+	void SendName(class FName Param_Name);
+	void Kicked(bool Kick);
+	void Player_use(class AMainPlayer_C* Player, const struct FHitResult& Hit);
+	void DriveDetached();
+	void SetIgnoreSave(bool Ignore);
 	void OnCompleted_6C8828B34AC3A0F799F1F79CB729EFE7(class FName NotifyName);
 	void OnBlendOut_6C8828B34AC3A0F799F1F79CB729EFE7(class FName NotifyName);
 	void OnInterrupted_6C8828B34AC3A0F799F1F79CB729EFE7(class FName NotifyName);
@@ -181,34 +161,30 @@ public:
 	void OnFail_B60F5EF14CE1F1CFFF7ED8BE49287491(EPathFollowingResult MovementResult);
 	void StealTimeline__UpdateFunc();
 	void StealTimeline__FinishedFunc();
-	void UserConstructionScript();
 	struct FVector MakeLoc();
 	void bonked();
 	void StopAnim();
 	void AddRep();
 	void GetStealProp(const TArray<class AActor*>& TargetArray, class AActor** OutItem);
 	void GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 	void SetPath(const TArray<struct FVector>& Path, bool* Return);
 	void GetOnlyKey(class FString* Key);
 	void ProcessKeys(bool* Return);
 	void CanBeUsedHold(bool* Return);
 	void GetKey(class FString* Key);
 	void ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return);
-	void SkipRadial(bool* Param_Skip);
-	void GetPriceMultiplier(float* PriceMult);
+	void SkipRadial(bool* Skip);
 	void CanBePutInContainer(bool* Return);
 	void AsProp(class AProp_C** Return);
 	void CanPickup(bool* Return);
 	void NoRespawn(bool Param_NoRespawn, bool* Return);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
 	void IsButtonUsed(bool* Failed);
-	void LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage);
-	void SkipPreDelete(bool* Param_Skip);
+	void SkipPreDelete(bool* Skip);
 	void IgnoreSave(bool* Param_IgnoreSave);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
-	void GatherDataFromKey(bool* Gather);
 
 public:
 	static class UClass* StaticClass()
@@ -220,9 +196,8 @@ public:
 		return GetDefaultObjImpl<AEriePlushLive_C>();
 	}
 };
-#pragma pack(pop)
 static_assert(alignof(AEriePlushLive_C) == 0x000010, "Wrong alignment on AEriePlushLive_C");
-static_assert(sizeof(AEriePlushLive_C) == 0x0006A0, "Wrong size on AEriePlushLive_C");
+static_assert(sizeof(AEriePlushLive_C) == 0x000680, "Wrong size on AEriePlushLive_C");
 static_assert(offsetof(AEriePlushLive_C, UberGraphFrame) == 0x0004C0, "Member 'AEriePlushLive_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AEriePlushLive_C, SpawnEmote) == 0x0004C8, "Member 'AEriePlushLive_C::SpawnEmote' has a wrong offset!");
 static_assert(offsetof(AEriePlushLive_C, SpawnEmoteRoot) == 0x0004D0, "Member 'AEriePlushLive_C::SpawnEmoteRoot' has a wrong offset!");
@@ -252,12 +227,6 @@ static_assert(offsetof(AEriePlushLive_C, Rep) == 0x000664, "Member 'AEriePlushLi
 static_assert(offsetof(AEriePlushLive_C, StealProp) == 0x000668, "Member 'AEriePlushLive_C::StealProp' has a wrong offset!");
 static_assert(offsetof(AEriePlushLive_C, SuperEater) == 0x000670, "Member 'AEriePlushLive_C::SuperEater' has a wrong offset!");
 static_assert(offsetof(AEriePlushLive_C, FoodEating) == 0x000674, "Member 'AEriePlushLive_C::FoodEating' has a wrong offset!");
-static_assert(offsetof(AEriePlushLive_C, ErieDrag) == 0x000680, "Member 'AEriePlushLive_C::ErieDrag' has a wrong offset!");
-static_assert(offsetof(AEriePlushLive_C, ErieLiving) == 0x000688, "Member 'AEriePlushLive_C::ErieLiving' has a wrong offset!");
-static_assert(offsetof(AEriePlushLive_C, IsEvil) == 0x000690, "Member 'AEriePlushLive_C::IsEvil' has a wrong offset!");
-static_assert(offsetof(AEriePlushLive_C, IsGood) == 0x000691, "Member 'AEriePlushLive_C::IsGood' has a wrong offset!");
-static_assert(offsetof(AEriePlushLive_C, SkipGetUp) == 0x000692, "Member 'AEriePlushLive_C::SkipGetUp' has a wrong offset!");
-static_assert(offsetof(AEriePlushLive_C, Skip) == 0x000693, "Member 'AEriePlushLive_C::Skip' has a wrong offset!");
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_bucket_mop.prop_bucket_mop_C
-// 0x0000 (0x03E8 - 0x03E8)
+// 0x0000 (0x03D8 - 0x03D8)
 class AProp_bucket_mop_C final : public AProp_bucket_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_bucket_mop_C) == 0x000008, "Wrong alignment on AProp_bucket_mop_C");
-static_assert(sizeof(AProp_bucket_mop_C) == 0x0003E8, "Wrong size on AProp_bucket_mop_C");
+static_assert(sizeof(AProp_bucket_mop_C) == 0x0003D8, "Wrong size on AProp_bucket_mop_C");
 
 }
 

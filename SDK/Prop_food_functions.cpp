@@ -37,6 +37,26 @@ void AProp_food_C::ExecuteUbergraph_prop_food(int32 EntryPoint)
 }
 
 
+// Function prop_food.prop_food_C.settingsApplied
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_food_C::SettingsApplied(const struct FStruct_settings& Settings)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_food_C", "settingsApplied");
+
+	Params::Prop_food_C_SettingsApplied Parms{};
+
+	Parms.Settings = std::move(Settings);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function prop_food.prop_food_C.fireDamage
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -82,9 +102,10 @@ void AProp_food_C::ReceiveTick(float DeltaSeconds)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_food_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action)
+void AProp_food_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -95,9 +116,38 @@ void AProp_food_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct F
 
 	Parms.Player = Player;
 	Parms.Param_Hit = std::move(Param_Hit);
+	Parms.Param_Index = Param_Index;
 	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_food.prop_food_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_food_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_food_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function prop_food.prop_food_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
+
+void AProp_food_C::ReceiveDestroyed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_food_C", "ReceiveDestroyed");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -112,26 +162,6 @@ void AProp_food_C::Used()
 		Func = Class->GetFunction("prop_food_C", "used");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop_food.prop_food_C.settingsApplied
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void AProp_food_C::SettingsApplied(const struct FStruct_settings& Settings)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_food_C", "settingsApplied");
-
-	Params::Prop_food_C_SettingsApplied Parms{};
-
-	Parms.Settings = std::move(Settings);
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -197,20 +227,6 @@ void AProp_food_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
 }
 
 
-// Function prop_food.prop_food_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_food_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_food_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_food.prop_food_C.microwave
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -220,20 +236,6 @@ void AProp_food_C::Microwave()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("prop_food_C", "microwave");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop_food.prop_food_C.ReceiveDestroyed
-// (Event, Public, BlueprintEvent)
-
-void AProp_food_C::ReceiveDestroyed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_food_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -292,9 +294,8 @@ void AProp_food_C::IsButtonUsed(bool* Failed)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_food_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
+void AProp_food_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
 {
 	static class UFunction* Func = nullptr;
 
@@ -316,9 +317,6 @@ void AProp_food_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& 
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
 }
 
 
@@ -352,9 +350,8 @@ void AProp_food_C::GetData(struct FStruct_save* Data)
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_food_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
+void AProp_food_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
 {
 	static class UFunction* Func = nullptr;
 
@@ -377,23 +374,6 @@ void AProp_food_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiv
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
-}
-
-
-// Function prop_food.prop_food_C.Init
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void AProp_food_C::Init()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_food_C", "Init");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

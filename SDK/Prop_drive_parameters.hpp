@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "Struct_save_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Struct_save_structs.hpp"
 #include "Struct_signalDataDynamic_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Enum_interactionActions_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
@@ -26,30 +26,31 @@ struct Prop_drive_C_ExecuteUbergraph_prop_drive final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3CD9[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x0010(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_22[0x2];                                       // 0x0022(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3CDA[0x2];                                     // 0x0022(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             CallFunc_K2_AddActorLocalOffset_SweepHitResult;    // 0x0024(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3CDB[0x4];                                     // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_HitComponent;           // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                K2Node_ComponentBoundEvent_NormalImpulse;          // 0x00C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_ComponentBoundEvent_Hit;                    // 0x00D4(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          K2Node_Event_kick;                                 // 0x015C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_15D[0x3];                                      // 0x015D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3CDC[0x3];                                     // 0x015D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16C[0x4];                                      // 0x016C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3CDD[0x4];                                     // 0x016C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit;                                  // 0x0180(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0209(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_20A[0x6];                                      // 0x020A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Event_index;                                // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x020C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x020D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3CDE[0x2];                                     // 0x020E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_drive_C_ExecuteUbergraph_prop_drive) == 0x000008, "Wrong alignment on Prop_drive_C_ExecuteUbergraph_prop_drive");
@@ -71,9 +72,27 @@ static_assert(offsetof(Prop_drive_C_ExecuteUbergraph_prop_drive, CallFunc_Array_
 static_assert(offsetof(Prop_drive_C_ExecuteUbergraph_prop_drive, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x000170, "Member 'Prop_drive_C_ExecuteUbergraph_prop_drive::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
 static_assert(offsetof(Prop_drive_C_ExecuteUbergraph_prop_drive, K2Node_Event_player_2) == 0x000178, "Member 'Prop_drive_C_ExecuteUbergraph_prop_drive::K2Node_Event_player_2' has a wrong offset!");
 static_assert(offsetof(Prop_drive_C_ExecuteUbergraph_prop_drive, K2Node_Event_hit) == 0x000180, "Member 'Prop_drive_C_ExecuteUbergraph_prop_drive::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_ExecuteUbergraph_prop_drive, K2Node_Event_action) == 0x000208, "Member 'Prop_drive_C_ExecuteUbergraph_prop_drive::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_ExecuteUbergraph_prop_drive, CallFunc_Array_RemoveItem_ReturnValue) == 0x000209, "Member 'Prop_drive_C_ExecuteUbergraph_prop_drive::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_ExecuteUbergraph_prop_drive, K2Node_Event_index) == 0x000208, "Member 'Prop_drive_C_ExecuteUbergraph_prop_drive::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_ExecuteUbergraph_prop_drive, K2Node_Event_action) == 0x00020C, "Member 'Prop_drive_C_ExecuteUbergraph_prop_drive::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_ExecuteUbergraph_prop_drive, CallFunc_Array_RemoveItem_ReturnValue) == 0x00020D, "Member 'Prop_drive_C_ExecuteUbergraph_prop_drive::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_drive_C_ExecuteUbergraph_prop_drive, K2Node_Event_player_1) == 0x000210, "Member 'Prop_drive_C_ExecuteUbergraph_prop_drive::K2Node_Event_player_1' has a wrong offset!");
+
+// Function prop_drive.prop_drive_C.actionOptionIndex
+// 0x0098 (0x0098 - 0x0000)
+struct Prop_drive_C_ActionOptionIndex final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_drive_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_drive_C_ActionOptionIndex");
+static_assert(sizeof(Prop_drive_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_drive_C_ActionOptionIndex");
+static_assert(offsetof(Prop_drive_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_drive_C_ActionOptionIndex::Player' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_drive_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_drive_C_ActionOptionIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_drive_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function prop_drive.prop_drive_C.BndEvt__StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature
 // 0x00B0 (0x00B0 - 0x0000)
@@ -106,7 +125,7 @@ public:
 	int32                                         Temp_int_Variable;                                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0024(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3CDF[0x3];                                     // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystem*                        K2Node_Select_Default;                             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_SelectColor_ReturnValue_1;                // 0x0040(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -121,21 +140,6 @@ static_assert(offsetof(Prop_drive_C_Upd, CallFunc_SelectColor_ReturnValue) == 0x
 static_assert(offsetof(Prop_drive_C_Upd, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000034, "Member 'Prop_drive_C_Upd::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_drive_C_Upd, K2Node_Select_Default) == 0x000038, "Member 'Prop_drive_C_Upd::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(Prop_drive_C_Upd, CallFunc_SelectColor_ReturnValue_1) == 0x000040, "Member 'Prop_drive_C_Upd::CallFunc_SelectColor_ReturnValue_1' has a wrong offset!");
-
-// Function prop_drive.prop_drive_C.actionOptionIndex
-// 0x0098 (0x0098 - 0x0000)
-struct Prop_drive_C_ActionOptionIndex final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_drive_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_drive_C_ActionOptionIndex");
-static_assert(sizeof(Prop_drive_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_drive_C_ActionOptionIndex");
-static_assert(offsetof(Prop_drive_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_drive_C_ActionOptionIndex::Player' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_drive_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_drive_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function prop_drive.prop_drive_C.kicked
 // 0x0001 (0x0001 - 0x0000)
@@ -176,7 +180,7 @@ struct Prop_drive_C_UserConstructionScript final
 {
 public:
 	bool                                          CallFunc_NotEqual_FloatFloat_ReturnValue;          // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3CE0[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_signalDataDynamic              CallFunc_signalToDynamic_dynamic;                  // 0x0008(0x0070)(HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_drive_C_UserConstructionScript) == 0x000008, "Wrong alignment on Prop_drive_C_UserConstructionScript");
@@ -192,7 +196,7 @@ public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadData_return;                          // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3CE1[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_signalDataDynamic              CallFunc_Array_Get_Item;                           // 0x00C8(0x0070)(HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_drive_C_LoadData) == 0x000010, "Wrong alignment on Prop_drive_C_LoadData");
@@ -214,75 +218,72 @@ static_assert(sizeof(Prop_drive_C_IsButtonUsed) == 0x000001, "Wrong size on Prop
 static_assert(offsetof(Prop_drive_C_IsButtonUsed, Failed) == 0x000000, "Member 'Prop_drive_C_IsButtonUsed::Failed' has a wrong offset!");
 
 // Function prop_drive.prop_drive_C.lookAt
-// 0x0230 (0x0230 - 0x0000)
+// 0x0228 (0x0228 - 0x0000)
 struct Prop_drive_C_LookAt final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3CE2[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00B8(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x00E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_SelectString_ReturnValue;                 // 0x00F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0100(0x0018)()
-	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x0120(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0130(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0148(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_SelectString_ReturnValue_1;               // 0x0158(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x0168(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_2;          // 0x0180(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_SelectString_ReturnValue_2;               // 0x0190(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x01A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x01B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_4;              // 0x01C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_5;              // 0x01D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_6;              // 0x01E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_7;              // 0x01F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_8;              // 0x0200(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_9;              // 0x0210(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_10;             // 0x0220(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00B0(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x00D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_SelectString_ReturnValue;                 // 0x00E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x00F8(0x0018)()
+	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3CE3[0x7];                                     // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x0118(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0128(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3CE4[0x7];                                     // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0140(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_SelectString_ReturnValue_1;               // 0x0150(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x0160(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_2;          // 0x0178(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_SelectString_ReturnValue_2;               // 0x0188(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0198(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x01A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_4;              // 0x01B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_5;              // 0x01C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_6;              // 0x01D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_7;              // 0x01E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_8;              // 0x01F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_9;              // 0x0208(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_10;             // 0x0218(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_drive_C_LookAt) == 0x000008, "Wrong alignment on Prop_drive_C_LookAt");
-static_assert(sizeof(Prop_drive_C_LookAt) == 0x000230, "Wrong size on Prop_drive_C_LookAt");
+static_assert(sizeof(Prop_drive_C_LookAt) == 0x000228, "Wrong size on Prop_drive_C_LookAt");
 static_assert(offsetof(Prop_drive_C_LookAt, Player) == 0x000000, "Member 'Prop_drive_C_LookAt::Player' has a wrong offset!");
 static_assert(offsetof(Prop_drive_C_LookAt, Param_Hit) == 0x000008, "Member 'Prop_drive_C_LookAt::Param_Hit' has a wrong offset!");
 static_assert(offsetof(Prop_drive_C_LookAt, Return) == 0x000090, "Member 'Prop_drive_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(Prop_drive_C_LookAt, Text) == 0x000098, "Member 'Prop_drive_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(Prop_drive_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'Prop_drive_C_LookAt::boundObjectReplace' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, Number) == 0x0000B0, "Member 'Prop_drive_C_LookAt::Number' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_MakeLiteralText_ReturnValue) == 0x0000B8, "Member 'Prop_drive_C_LookAt::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Conv_TextToString_ReturnValue) == 0x0000D0, "Member 'Prop_drive_C_LookAt::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Concat_StrStr_ReturnValue) == 0x0000E0, "Member 'Prop_drive_C_LookAt::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_SelectString_ReturnValue) == 0x0000F0, "Member 'Prop_drive_C_LookAt::CallFunc_SelectString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Conv_FloatToText_ReturnValue) == 0x000100, "Member 'Prop_drive_C_LookAt::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000118, "Member 'Prop_drive_C_LookAt::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Conv_TextToString_ReturnValue_1) == 0x000120, "Member 'Prop_drive_C_LookAt::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000130, "Member 'Prop_drive_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_IsEmpty_ReturnValue) == 0x000140, "Member 'Prop_drive_C_LookAt::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Conv_IntToString_ReturnValue) == 0x000148, "Member 'Prop_drive_C_LookAt::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_SelectString_ReturnValue_1) == 0x000158, "Member 'Prop_drive_C_LookAt::CallFunc_SelectString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000168, "Member 'Prop_drive_C_LookAt::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Conv_TextToString_ReturnValue_2) == 0x000180, "Member 'Prop_drive_C_LookAt::CallFunc_Conv_TextToString_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_SelectString_ReturnValue_2) == 0x000190, "Member 'Prop_drive_C_LookAt::CallFunc_SelectString_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_2) == 0x0001A0, "Member 'Prop_drive_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_3) == 0x0001B0, "Member 'Prop_drive_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_4) == 0x0001C0, "Member 'Prop_drive_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_5) == 0x0001D0, "Member 'Prop_drive_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_6) == 0x0001E0, "Member 'Prop_drive_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_7) == 0x0001F0, "Member 'Prop_drive_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_8) == 0x000200, "Member 'Prop_drive_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_9) == 0x000210, "Member 'Prop_drive_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_10) == 0x000220, "Member 'Prop_drive_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_10' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_MakeLiteralText_ReturnValue) == 0x0000B0, "Member 'Prop_drive_C_LookAt::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Conv_TextToString_ReturnValue) == 0x0000C8, "Member 'Prop_drive_C_LookAt::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Concat_StrStr_ReturnValue) == 0x0000D8, "Member 'Prop_drive_C_LookAt::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_SelectString_ReturnValue) == 0x0000E8, "Member 'Prop_drive_C_LookAt::CallFunc_SelectString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Conv_FloatToText_ReturnValue) == 0x0000F8, "Member 'Prop_drive_C_LookAt::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000110, "Member 'Prop_drive_C_LookAt::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Conv_TextToString_ReturnValue_1) == 0x000118, "Member 'Prop_drive_C_LookAt::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000128, "Member 'Prop_drive_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_IsEmpty_ReturnValue) == 0x000138, "Member 'Prop_drive_C_LookAt::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Conv_IntToString_ReturnValue) == 0x000140, "Member 'Prop_drive_C_LookAt::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_SelectString_ReturnValue_1) == 0x000150, "Member 'Prop_drive_C_LookAt::CallFunc_SelectString_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000160, "Member 'Prop_drive_C_LookAt::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Conv_TextToString_ReturnValue_2) == 0x000178, "Member 'Prop_drive_C_LookAt::CallFunc_Conv_TextToString_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_SelectString_ReturnValue_2) == 0x000188, "Member 'Prop_drive_C_LookAt::CallFunc_SelectString_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000198, "Member 'Prop_drive_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_3) == 0x0001A8, "Member 'Prop_drive_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_4) == 0x0001B8, "Member 'Prop_drive_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_5) == 0x0001C8, "Member 'Prop_drive_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_6) == 0x0001D8, "Member 'Prop_drive_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_7) == 0x0001E8, "Member 'Prop_drive_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_8) == 0x0001F8, "Member 'Prop_drive_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_9) == 0x000208, "Member 'Prop_drive_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(Prop_drive_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_10) == 0x000218, "Member 'Prop_drive_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_10' has a wrong offset!");
 
 // Function prop_drive.prop_drive_C.getData
 // 0x0250 (0x0250 - 0x0000)

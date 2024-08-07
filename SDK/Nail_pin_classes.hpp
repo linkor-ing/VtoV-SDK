@@ -22,7 +22,7 @@ namespace SDK
 class ANail_pin_C final : public ANail_C
 {
 public:
-	uint8                                         Pad_374[0x4];                                      // 0x0374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3483[0x4];                                     // 0x0374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame_Nail_pin_C;                         // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:

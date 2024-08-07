@@ -19,26 +19,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_spotlightHead.prop_spotlightHead_C
-// 0x0020 (0x0398 - 0x0378)
+// 0x0020 (0x0388 - 0x0368)
 class AProp_spotlightHead_C final : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_spotlightHead_C;               // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPointLightComponent*                   PointLight;                                        // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USpotLightComponent*                    SpotLight;                                         // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          Active;                                            // 0x0390(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3A62[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_spotlightHead_C;               // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPointLightComponent*                   PointLight;                                        // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USpotLightComponent*                    SpotLight;                                         // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          Active;                                            // 0x0380(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_prop_spotlightHead(int32 EntryPoint);
-	void Upd();
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
 	void SetPropProps(bool Param_Static, bool Param_Frozen, bool Param_Active);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
+	void Upd();
 	void GamemodeBeginPlay();
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
 	void UserConstructionScript();
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 
 public:
 	static class UClass* StaticClass()
@@ -51,11 +52,11 @@ public:
 	}
 };
 static_assert(alignof(AProp_spotlightHead_C) == 0x000008, "Wrong alignment on AProp_spotlightHead_C");
-static_assert(sizeof(AProp_spotlightHead_C) == 0x000398, "Wrong size on AProp_spotlightHead_C");
-static_assert(offsetof(AProp_spotlightHead_C, UberGraphFrame_Prop_spotlightHead_C) == 0x000378, "Member 'AProp_spotlightHead_C::UberGraphFrame_Prop_spotlightHead_C' has a wrong offset!");
-static_assert(offsetof(AProp_spotlightHead_C, PointLight) == 0x000380, "Member 'AProp_spotlightHead_C::PointLight' has a wrong offset!");
-static_assert(offsetof(AProp_spotlightHead_C, SpotLight) == 0x000388, "Member 'AProp_spotlightHead_C::SpotLight' has a wrong offset!");
-static_assert(offsetof(AProp_spotlightHead_C, Active) == 0x000390, "Member 'AProp_spotlightHead_C::Active' has a wrong offset!");
+static_assert(sizeof(AProp_spotlightHead_C) == 0x000388, "Wrong size on AProp_spotlightHead_C");
+static_assert(offsetof(AProp_spotlightHead_C, UberGraphFrame_Prop_spotlightHead_C) == 0x000368, "Member 'AProp_spotlightHead_C::UberGraphFrame_Prop_spotlightHead_C' has a wrong offset!");
+static_assert(offsetof(AProp_spotlightHead_C, PointLight) == 0x000370, "Member 'AProp_spotlightHead_C::PointLight' has a wrong offset!");
+static_assert(offsetof(AProp_spotlightHead_C, SpotLight) == 0x000378, "Member 'AProp_spotlightHead_C::SpotLight' has a wrong offset!");
+static_assert(offsetof(AProp_spotlightHead_C, Active) == 0x000380, "Member 'AProp_spotlightHead_C::Active' has a wrong offset!");
 
 }
 

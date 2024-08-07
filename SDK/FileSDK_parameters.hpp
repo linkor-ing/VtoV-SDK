@@ -25,10 +25,10 @@ public:
 	class FString                                 Destination;                                       // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(int32 KilobytesWritten, int32 TotalKilobytes)> ProgressCallback;                                  // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          OverwriteDestination;                              // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C3A[0x3];                                      // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ChunkSizeInKilobytes;                              // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C3B[0x7];                                      // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FileSDKBPLibrary_CopyDirectory) == 0x000008, "Wrong alignment on FileSDKBPLibrary_CopyDirectory");
 static_assert(sizeof(FileSDKBPLibrary_CopyDirectory) == 0x000040, "Wrong size on FileSDKBPLibrary_CopyDirectory");
@@ -48,7 +48,7 @@ public:
 	class FString                                 Destination;                                       // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(int32 KilobytesWritten, int32 TotalKilobytes)> ProgressCallback;                                  // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          OverwriteDestination;                              // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C3C[0x3];                                      // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ChunkSizeInKilobytes;                              // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FileSDKBPLibrary_CopyDirectoryAsync) == 0x000008, "Wrong alignment on FileSDKBPLibrary_CopyDirectoryAsync");
@@ -71,7 +71,7 @@ public:
 	int32                                         ChunkSizeInKilobytes;                              // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          OverwriteDestination;                              // 0x003C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x003D(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3E[0x2];                                       // 0x003E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C3D[0x2];                                      // 0x003E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FileSDKBPLibrary_CopyFile) == 0x000008, "Wrong alignment on FileSDKBPLibrary_CopyFile");
 static_assert(sizeof(FileSDKBPLibrary_CopyFile) == 0x000040, "Wrong size on FileSDKBPLibrary_CopyFile");
@@ -93,7 +93,7 @@ public:
 	TDelegate<void(int32 KilobytesWritten, int32 TotalKilobytes)> ProgressCallback;                                  // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FFileSDKDelegatePreInfo                PreInfo;                                           // 0x0030(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ChunkSizeInKilobytes;                              // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C3E[0x4];                                      // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FileSDKBPLibrary_CopyFileAsync) == 0x000008, "Wrong alignment on FileSDKBPLibrary_CopyFileAsync");
 static_assert(sizeof(FileSDKBPLibrary_CopyFileAsync) == 0x000040, "Wrong size on FileSDKBPLibrary_CopyFileAsync");
@@ -111,7 +111,7 @@ public:
 	class FString                                 DirectoryName;                                     // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          CreateDirectoryTree;                               // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C3F[0x6];                                      // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FileSDKBPLibrary_CreateDirectory) == 0x000008, "Wrong alignment on FileSDKBPLibrary_CreateDirectory");
 static_assert(sizeof(FileSDKBPLibrary_CreateDirectory) == 0x000018, "Wrong size on FileSDKBPLibrary_CreateDirectory");
@@ -127,7 +127,7 @@ public:
 	class FString                                 Filename;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ClearContentsIfExists;                             // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          CreateDirectoryTree;                               // 0x0011(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C40[0x6];                                      // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FileSDKBPLibrary_CreateFile) == 0x000008, "Wrong alignment on FileSDKBPLibrary_CreateFile");
 static_assert(sizeof(FileSDKBPLibrary_CreateFile) == 0x000018, "Wrong size on FileSDKBPLibrary_CreateFile");
@@ -143,7 +143,7 @@ public:
 	class FString                                 DirectoryName;                                     // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          Recursive;                                         // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C41[0x6];                                      // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FileSDKBPLibrary_DeleteDirectory) == 0x000008, "Wrong alignment on FileSDKBPLibrary_DeleteDirectory");
 static_assert(sizeof(FileSDKBPLibrary_DeleteDirectory) == 0x000018, "Wrong size on FileSDKBPLibrary_DeleteDirectory");
@@ -158,7 +158,7 @@ struct FileSDKBPLibrary_DeleteFile final
 public:
 	class FString                                 Filename;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C42[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FileSDKBPLibrary_DeleteFile) == 0x000008, "Wrong alignment on FileSDKBPLibrary_DeleteFile");
 static_assert(sizeof(FileSDKBPLibrary_DeleteFile) == 0x000018, "Wrong size on FileSDKBPLibrary_DeleteFile");
@@ -194,7 +194,7 @@ struct FileSDKBPLibrary_GetDirectoryContentsWithFileInfo final
 public:
 	class FString                                 Directory;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          SearchSubfolders;                                  // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C43[0x7];                                      // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFileSDKFileInfo>               ReturnValue;                                       // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FileSDKBPLibrary_GetDirectoryContentsWithFileInfo) == 0x000008, "Wrong alignment on FileSDKBPLibrary_GetDirectoryContentsWithFileInfo");
@@ -238,7 +238,7 @@ public:
 	class FString                                 FilterFilesWithExtension;                          // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          SearchSubfolders;                                  // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFileSDKFileType                              FileType;                                          // 0x0021(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C44[0x6];                                      // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         ReturnValue;                                       // 0x0028(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FileSDKBPLibrary_GetFilesFromDirectory) == 0x000008, "Wrong alignment on FileSDKBPLibrary_GetFilesFromDirectory");
@@ -256,7 +256,7 @@ struct FileSDKBPLibrary_OpenFileReader final
 public:
 	class FString                                 Filename;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          OpenInBinaryMode;                                  // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C45[0x7];                                      // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFileSDKFileReader*                     ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FileSDKBPLibrary_OpenFileReader) == 0x000008, "Wrong alignment on FileSDKBPLibrary_OpenFileReader");
@@ -273,7 +273,7 @@ public:
 	class FString                                 Filename;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<uint8>                                 Content;                                           // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C46[0x7];                                      // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FileSDKBPLibrary_ReadBytesFromFile) == 0x000008, "Wrong alignment on FileSDKBPLibrary_ReadBytesFromFile");
 static_assert(sizeof(FileSDKBPLibrary_ReadBytesFromFile) == 0x000028, "Wrong size on FileSDKBPLibrary_ReadBytesFromFile");
@@ -290,7 +290,7 @@ public:
 	TSubclassOf<class UFileSDKLineReader>         LineReader;                                        // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                         Lines;                                             // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C47[0x7];                                      // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FileSDKBPLibrary_ReadLinesFromFile) == 0x000008, "Wrong alignment on FileSDKBPLibrary_ReadLinesFromFile");
 static_assert(sizeof(FileSDKBPLibrary_ReadLinesFromFile) == 0x000030, "Wrong size on FileSDKBPLibrary_ReadLinesFromFile");
@@ -307,7 +307,7 @@ public:
 	class FString                                 Filename;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Content;                                           // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C48[0x7];                                      // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FileSDKBPLibrary_ReadStringFromFile) == 0x000008, "Wrong alignment on FileSDKBPLibrary_ReadStringFromFile");
 static_assert(sizeof(FileSDKBPLibrary_ReadStringFromFile) == 0x000028, "Wrong size on FileSDKBPLibrary_ReadStringFromFile");
@@ -323,7 +323,7 @@ public:
 	class FString                                 Source;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Destination;                                       // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C49[0x7];                                      // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FileSDKBPLibrary_RenameFileOrDirectory) == 0x000008, "Wrong alignment on FileSDKBPLibrary_RenameFileOrDirectory");
 static_assert(sizeof(FileSDKBPLibrary_RenameFileOrDirectory) == 0x000028, "Wrong size on FileSDKBPLibrary_RenameFileOrDirectory");
@@ -339,7 +339,7 @@ public:
 	class FString                                 Filename;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<uint8>                                 Content;                                           // 0x0010(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C4A[0x7];                                      // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FileSDKBPLibrary_WriteBytesToFile) == 0x000008, "Wrong alignment on FileSDKBPLibrary_WriteBytesToFile");
 static_assert(sizeof(FileSDKBPLibrary_WriteBytesToFile) == 0x000028, "Wrong size on FileSDKBPLibrary_WriteBytesToFile");
@@ -357,7 +357,7 @@ public:
 	bool                                          Append;                                            // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFileSDKEncodingOptions                       Encoding;                                          // 0x0021(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0022(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23[0x5];                                       // 0x0023(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C4B[0x5];                                      // 0x0023(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FileSDKBPLibrary_WriteStringToFile) == 0x000008, "Wrong alignment on FileSDKBPLibrary_WriteStringToFile");
 static_assert(sizeof(FileSDKBPLibrary_WriteStringToFile) == 0x000028, "Wrong size on FileSDKBPLibrary_WriteStringToFile");
@@ -377,7 +377,7 @@ public:
 	class FString                                 Destination;                                       // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(int32 KilobytesWritten, int32 TotalKilobytes)> ProgressCallback;                                  // 0x0028(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          OverwriteDestination;                              // 0x0038(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C4D[0x3];                                      // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ChunkSizeInKilobytes;                              // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFileSDKCopyFileAsync*                  ReturnValue;                                       // 0x0040(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -408,10 +408,10 @@ struct FileSDKFileReader_ReadBytes final
 {
 public:
 	int32                                         Num;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C4F[0x4];                                      // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<uint8>                                 Content;                                           // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C50[0x4];                                      // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FileSDKFileReader_ReadBytes) == 0x000008, "Wrong alignment on FileSDKFileReader_ReadBytes");
 static_assert(sizeof(FileSDKFileReader_ReadBytes) == 0x000020, "Wrong size on FileSDKFileReader_ReadBytes");
@@ -426,7 +426,7 @@ struct FileSDKFileReader_ReadBytesToEnd final
 public:
 	TArray<uint8>                                 Content;                                           // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C51[0x4];                                      // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FileSDKFileReader_ReadBytesToEnd) == 0x000008, "Wrong alignment on FileSDKFileReader_ReadBytesToEnd");
 static_assert(sizeof(FileSDKFileReader_ReadBytesToEnd) == 0x000018, "Wrong size on FileSDKFileReader_ReadBytesToEnd");
@@ -439,10 +439,10 @@ struct FileSDKFileReader_ReadString final
 {
 public:
 	int32                                         Num;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C52[0x4];                                      // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Content;                                           // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C53[0x4];                                      // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FileSDKFileReader_ReadString) == 0x000008, "Wrong alignment on FileSDKFileReader_ReadString");
 static_assert(sizeof(FileSDKFileReader_ReadString) == 0x000020, "Wrong size on FileSDKFileReader_ReadString");
@@ -457,7 +457,7 @@ struct FileSDKFileReader_ReadStringToEnd final
 public:
 	class FString                                 Content;                                           // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C54[0x4];                                      // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FileSDKFileReader_ReadStringToEnd) == 0x000008, "Wrong alignment on FileSDKFileReader_ReadStringToEnd");
 static_assert(sizeof(FileSDKFileReader_ReadStringToEnd) == 0x000018, "Wrong size on FileSDKFileReader_ReadStringToEnd");
@@ -470,10 +470,10 @@ struct FileSDKFileReader_SeekFilePosition final
 {
 public:
 	EFileSDKFileAnchor                            Anchor;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C55[0x3];                                      // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Offset;                                            // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C56[0x3];                                      // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FileSDKFileReader_SeekFilePosition) == 0x000004, "Wrong alignment on FileSDKFileReader_SeekFilePosition");
 static_assert(sizeof(FileSDKFileReader_SeekFilePosition) == 0x00000C, "Wrong size on FileSDKFileReader_SeekFilePosition");
@@ -488,7 +488,7 @@ struct FileSDKLineReader_FilterLine final
 public:
 	class FString                                 Line;                                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C57[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FileSDKLineReader_FilterLine) == 0x000008, "Wrong alignment on FileSDKLineReader_FilterLine");
 static_assert(sizeof(FileSDKLineReader_FilterLine) == 0x000018, "Wrong size on FileSDKLineReader_FilterLine");

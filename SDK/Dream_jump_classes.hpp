@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "DreamBase_classes.hpp"
 #include "Engine_structs.hpp"
+#include "DreamBase_classes.hpp"
 
 
 namespace SDK

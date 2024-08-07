@@ -64,7 +64,7 @@ class UFileSDKCopyFileAsync final : public UBlueprintAsyncActionBase
 {
 public:
 	FMulticastInlineDelegateProperty_             Completed;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_40[0x38];                                      // 0x0040(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C4C[0x38];                                     // 0x0040(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UFileSDKCopyFileAsync* CopyFileAsync(class UObject* WorldContextObject, const class FString& Source, const class FString& Destination, const TDelegate<void(int32 KilobytesWritten, int32 TotalKilobytes)>& ProgressCallback, bool OverwriteDestination, int32 ChunkSizeInKilobytes);
@@ -90,7 +90,7 @@ class UFileSDKFileReader final : public UObject
 public:
 	class FString                                 Filename;                                          // 0x0028(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          BinaryMode;                                        // 0x0038(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_39[0xF];                                       // 0x0039(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C4E[0xF];                                      // 0x0039(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void Close();

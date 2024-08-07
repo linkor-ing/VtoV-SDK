@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "Prop_food_mushroom_classes.hpp"
+#include "Prop_food_poison_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass prop_food_redshroom.prop_food_redshroom_C
-// 0x0000 (0x03D8 - 0x03D8)
-class AProp_food_redshroom_C final : public AProp_food_mushroom_C
+// 0x0000 (0x03D0 - 0x03D0)
+class AProp_food_redshroom_C final : public AProp_food_poison_C
 {
 public:
 	static class UClass* StaticClass()
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_food_redshroom_C) == 0x000008, "Wrong alignment on AProp_food_redshroom_C");
-static_assert(sizeof(AProp_food_redshroom_C) == 0x0003D8, "Wrong size on AProp_food_redshroom_C");
+static_assert(sizeof(AProp_food_redshroom_C) == 0x0003D0, "Wrong size on AProp_food_redshroom_C");
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
-#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK::Params
@@ -24,17 +24,36 @@ struct Prop_rune_C_ExecuteUbergraph_prop_rune final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_38C2[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit;                                  // 0x0010(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_index;                                // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_rune_C_ExecuteUbergraph_prop_rune) == 0x000008, "Wrong alignment on Prop_rune_C_ExecuteUbergraph_prop_rune");
 static_assert(sizeof(Prop_rune_C_ExecuteUbergraph_prop_rune) == 0x0000A0, "Wrong size on Prop_rune_C_ExecuteUbergraph_prop_rune");
 static_assert(offsetof(Prop_rune_C_ExecuteUbergraph_prop_rune, EntryPoint) == 0x000000, "Member 'Prop_rune_C_ExecuteUbergraph_prop_rune::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Prop_rune_C_ExecuteUbergraph_prop_rune, K2Node_Event_player) == 0x000008, "Member 'Prop_rune_C_ExecuteUbergraph_prop_rune::K2Node_Event_player' has a wrong offset!");
 static_assert(offsetof(Prop_rune_C_ExecuteUbergraph_prop_rune, K2Node_Event_hit) == 0x000010, "Member 'Prop_rune_C_ExecuteUbergraph_prop_rune::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_rune_C_ExecuteUbergraph_prop_rune, K2Node_Event_action) == 0x000098, "Member 'Prop_rune_C_ExecuteUbergraph_prop_rune::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_rune_C_ExecuteUbergraph_prop_rune, K2Node_Event_index) == 0x000098, "Member 'Prop_rune_C_ExecuteUbergraph_prop_rune::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Prop_rune_C_ExecuteUbergraph_prop_rune, K2Node_Event_action) == 0x00009C, "Member 'Prop_rune_C_ExecuteUbergraph_prop_rune::K2Node_Event_action' has a wrong offset!");
+
+// Function prop_rune.prop_rune_C.actionOptionIndex
+// 0x0098 (0x0098 - 0x0000)
+struct Prop_rune_C_ActionOptionIndex final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_rune_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_rune_C_ActionOptionIndex");
+static_assert(sizeof(Prop_rune_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_rune_C_ActionOptionIndex");
+static_assert(offsetof(Prop_rune_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_rune_C_ActionOptionIndex::Player' has a wrong offset!");
+static_assert(offsetof(Prop_rune_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_rune_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_rune_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_rune_C_ActionOptionIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(Prop_rune_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_rune_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function prop_rune.prop_rune_C.SetActive
 // 0x0001 (0x0001 - 0x0000)
@@ -46,21 +65,6 @@ public:
 static_assert(alignof(Prop_rune_C_SetActive) == 0x000001, "Wrong alignment on Prop_rune_C_SetActive");
 static_assert(sizeof(Prop_rune_C_SetActive) == 0x000001, "Wrong size on Prop_rune_C_SetActive");
 static_assert(offsetof(Prop_rune_C_SetActive, Param_Active) == 0x000000, "Member 'Prop_rune_C_SetActive::Param_Active' has a wrong offset!");
-
-// Function prop_rune.prop_rune_C.actionOptionIndex
-// 0x0098 (0x0098 - 0x0000)
-struct Prop_rune_C_ActionOptionIndex final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_rune_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_rune_C_ActionOptionIndex");
-static_assert(sizeof(Prop_rune_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_rune_C_ActionOptionIndex");
-static_assert(offsetof(Prop_rune_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_rune_C_ActionOptionIndex::Player' has a wrong offset!");
-static_assert(offsetof(Prop_rune_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_rune_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_rune_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_rune_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function prop_rune.prop_rune_C.UserConstructionScript
 // 0x0054 (0x0054 - 0x0000)

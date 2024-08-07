@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_gascan_funny.prop_gascan_funny_C
-// 0x0008 (0x03B0 - 0x03A8)
+// 0x0008 (0x0390 - 0x0388)
 class AProp_gascan_funny_C final : public AProp_gascan_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_gascan_funny_C;                // 0x03A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_gascan_funny_C;                // 0x0388(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_prop_gascan_funny(int32 EntryPoint);
@@ -39,8 +39,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_gascan_funny_C) == 0x000008, "Wrong alignment on AProp_gascan_funny_C");
-static_assert(sizeof(AProp_gascan_funny_C) == 0x0003B0, "Wrong size on AProp_gascan_funny_C");
-static_assert(offsetof(AProp_gascan_funny_C, UberGraphFrame_Prop_gascan_funny_C) == 0x0003A8, "Member 'AProp_gascan_funny_C::UberGraphFrame_Prop_gascan_funny_C' has a wrong offset!");
+static_assert(sizeof(AProp_gascan_funny_C) == 0x000390, "Wrong size on AProp_gascan_funny_C");
+static_assert(offsetof(AProp_gascan_funny_C, UberGraphFrame_Prop_gascan_funny_C) == 0x000388, "Member 'AProp_gascan_funny_C::UberGraphFrame_Prop_gascan_funny_C' has a wrong offset!");
 
 }
 

@@ -18,14 +18,15 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_wallfixer.prop_wallfixer_C
-// 0x0020 (0x0398 - 0x0378)
+// 0x0020 (0x0388 - 0x0368)
 class AProp_wallfixer_C : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_wallfixer_C;                   // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class AMainPlayer_C*                          Player;                                            // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           Timer;                                             // 0x0388(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	bool                                          Cheat;                                             // 0x0390(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3A2F[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_wallfixer_C;                   // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class AMainPlayer_C*                          Player;                                            // 0x0370(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           Timer;                                             // 0x0378(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                          Cheat;                                             // 0x0380(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_prop_wallfixer(int32 EntryPoint);
@@ -49,11 +50,11 @@ public:
 	}
 };
 static_assert(alignof(AProp_wallfixer_C) == 0x000008, "Wrong alignment on AProp_wallfixer_C");
-static_assert(sizeof(AProp_wallfixer_C) == 0x000398, "Wrong size on AProp_wallfixer_C");
-static_assert(offsetof(AProp_wallfixer_C, UberGraphFrame_Prop_wallfixer_C) == 0x000378, "Member 'AProp_wallfixer_C::UberGraphFrame_Prop_wallfixer_C' has a wrong offset!");
-static_assert(offsetof(AProp_wallfixer_C, Player) == 0x000380, "Member 'AProp_wallfixer_C::Player' has a wrong offset!");
-static_assert(offsetof(AProp_wallfixer_C, Timer) == 0x000388, "Member 'AProp_wallfixer_C::Timer' has a wrong offset!");
-static_assert(offsetof(AProp_wallfixer_C, Cheat) == 0x000390, "Member 'AProp_wallfixer_C::Cheat' has a wrong offset!");
+static_assert(sizeof(AProp_wallfixer_C) == 0x000388, "Wrong size on AProp_wallfixer_C");
+static_assert(offsetof(AProp_wallfixer_C, UberGraphFrame_Prop_wallfixer_C) == 0x000368, "Member 'AProp_wallfixer_C::UberGraphFrame_Prop_wallfixer_C' has a wrong offset!");
+static_assert(offsetof(AProp_wallfixer_C, Player) == 0x000370, "Member 'AProp_wallfixer_C::Player' has a wrong offset!");
+static_assert(offsetof(AProp_wallfixer_C, Timer) == 0x000378, "Member 'AProp_wallfixer_C::Timer' has a wrong offset!");
+static_assert(offsetof(AProp_wallfixer_C, Cheat) == 0x000380, "Member 'AProp_wallfixer_C::Cheat' has a wrong offset!");
 
 }
 

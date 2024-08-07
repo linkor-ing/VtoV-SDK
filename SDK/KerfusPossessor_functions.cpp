@@ -37,90 +37,6 @@ void AKerfusPossessor_C::ExecuteUbergraph_kerfusPossessor(int32 EntryPoint)
 }
 
 
-// Function kerfusPossessor.kerfusPossessor_C.manualSpawnMurderfur
-// (BlueprintCallable, BlueprintEvent)
-
-void AKerfusPossessor_C::ManualSpawnMurderfur()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("kerfusPossessor_C", "manualSpawnMurderfur");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function kerfusPossessor.kerfusPossessor_C.kerfuroTimer
-// (BlueprintCallable, BlueprintEvent)
-
-void AKerfusPossessor_C::KerfuroTimer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("kerfusPossessor_C", "kerfuroTimer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function kerfusPossessor.kerfusPossessor_C.kerfusTimer
-// (BlueprintCallable, BlueprintEvent)
-
-void AKerfusPossessor_C::KerfusTimer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("kerfusPossessor_C", "kerfusTimer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function kerfusPossessor.kerfusPossessor_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AKerfusPossessor_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("kerfusPossessor_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function kerfusPossessor.kerfusPossessor_C.checkKerfuro
-// (BlueprintCallable, BlueprintEvent)
-
-void AKerfusPossessor_C::CheckKerfuro()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("kerfusPossessor_C", "checkKerfuro");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function kerfusPossessor.kerfusPossessor_C.skerfuro
-// (BlueprintCallable, BlueprintEvent)
-
-void AKerfusPossessor_C::Skerfuro()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("kerfusPossessor_C", "skerfuro");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function kerfusPossessor.kerfusPossessor_C.poss
 // (BlueprintCallable, BlueprintEvent)
 
@@ -135,17 +51,23 @@ void AKerfusPossessor_C::Poss()
 }
 
 
-// Function kerfusPossessor.kerfusPossessor_C.spawnSkerfuro
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function kerfusPossessor.kerfusPossessor_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AKerfusPossessor_C::SpawnSkerfuro()
+void AKerfusPossessor_C::ReceiveTick(float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("kerfusPossessor_C", "spawnSkerfuro");
+		Func = Class->GetFunction("kerfusPossessor_C", "ReceiveTick");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::KerfusPossessor_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

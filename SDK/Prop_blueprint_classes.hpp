@@ -18,21 +18,22 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_blueprint.prop_blueprint_C
-// 0x0050 (0x03C8 - 0x0378)
+// 0x0050 (0x03B8 - 0x0368)
 class AProp_blueprint_C : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_blueprint_C;                   // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class FText                                   blueprintName;                                     // 0x0380(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FString                                 Blueprint;                                         // 0x0398(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CraftOrigin;                                       // 0x03A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 Ingrediants;                                       // 0x03B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	uint8                                         Pad_D3D[0x7];                                      // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_blueprint_C;                   // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class FText                                   blueprintName;                                     // 0x0370(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FString                                 Blueprint;                                         // 0x0388(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CraftOrigin;                                       // 0x0398(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 Ingrediants;                                       // 0x03A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_blueprint(int32 EntryPoint);
-	void MakeRecipe();
 	void ReceiveBeginPlay();
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
+	void MakeRecipe();
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
 	void SkipPreDelete(bool* Skip);
 	void IgnoreSave(bool* Param_IgnoreSave);
 
@@ -47,12 +48,12 @@ public:
 	}
 };
 static_assert(alignof(AProp_blueprint_C) == 0x000008, "Wrong alignment on AProp_blueprint_C");
-static_assert(sizeof(AProp_blueprint_C) == 0x0003C8, "Wrong size on AProp_blueprint_C");
-static_assert(offsetof(AProp_blueprint_C, UberGraphFrame_Prop_blueprint_C) == 0x000378, "Member 'AProp_blueprint_C::UberGraphFrame_Prop_blueprint_C' has a wrong offset!");
-static_assert(offsetof(AProp_blueprint_C, blueprintName) == 0x000380, "Member 'AProp_blueprint_C::blueprintName' has a wrong offset!");
-static_assert(offsetof(AProp_blueprint_C, Blueprint) == 0x000398, "Member 'AProp_blueprint_C::Blueprint' has a wrong offset!");
-static_assert(offsetof(AProp_blueprint_C, CraftOrigin) == 0x0003A8, "Member 'AProp_blueprint_C::CraftOrigin' has a wrong offset!");
-static_assert(offsetof(AProp_blueprint_C, Ingrediants) == 0x0003B8, "Member 'AProp_blueprint_C::Ingrediants' has a wrong offset!");
+static_assert(sizeof(AProp_blueprint_C) == 0x0003B8, "Wrong size on AProp_blueprint_C");
+static_assert(offsetof(AProp_blueprint_C, UberGraphFrame_Prop_blueprint_C) == 0x000368, "Member 'AProp_blueprint_C::UberGraphFrame_Prop_blueprint_C' has a wrong offset!");
+static_assert(offsetof(AProp_blueprint_C, blueprintName) == 0x000370, "Member 'AProp_blueprint_C::blueprintName' has a wrong offset!");
+static_assert(offsetof(AProp_blueprint_C, Blueprint) == 0x000388, "Member 'AProp_blueprint_C::Blueprint' has a wrong offset!");
+static_assert(offsetof(AProp_blueprint_C, CraftOrigin) == 0x000398, "Member 'AProp_blueprint_C::CraftOrigin' has a wrong offset!");
+static_assert(offsetof(AProp_blueprint_C, Ingrediants) == 0x0003A8, "Member 'AProp_blueprint_C::Ingrediants' has a wrong offset!");
 
 }
 

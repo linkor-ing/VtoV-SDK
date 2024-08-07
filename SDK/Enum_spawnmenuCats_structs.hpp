@@ -15,7 +15,7 @@ namespace SDK
 {
 
 // UserDefinedEnum enum_spawnmenuCats.enum_spawnmenuCats
-// NumValues: 0x000A
+// NumValues: 0x0008
 enum class Enum_spawnmenuCats : uint8
 {
 	NewEnumerator1                           = 0,
@@ -25,9 +25,7 @@ enum class Enum_spawnmenuCats : uint8
 	NewEnumerator4                           = 4,
 	NewEnumerator6                           = 5,
 	NewEnumerator0                           = 6,
-	NewEnumerator7                           = 7,
-	NewEnumerator8                           = 8,
-	Enum_MAX                                 = 9,
+	Enum_MAX                                 = 7,
 };
 
 }

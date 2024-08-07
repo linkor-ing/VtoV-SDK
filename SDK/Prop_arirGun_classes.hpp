@@ -19,25 +19,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_arirGun.prop_arirGun_C
-// 0x0040 (0x03B8 - 0x0378)
+// 0x0040 (0x03A8 - 0x0368)
 class AProp_arirGun_C : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_arirGun_C;                     // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UAudioComponent*                        ArirGunSnd;                                        // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPointLightComponent*                   PointLight;                                        // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 ArirGun2;                                          // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        Audio;                                             // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UArrowComponent*                        Fire;                                              // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          Usable;                                            // 0x03A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3A9[0x3];                                      // 0x03A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Reload;                                            // 0x03AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Opened;                                            // 0x03B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Anim;                                              // 0x03B1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Fired;                                             // 0x03B2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3D8B[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_arirGun_C;                     // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UAudioComponent*                        ArirGunSnd;                                        // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPointLightComponent*                   PointLight;                                        // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 ArirGun2;                                          // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        Audio;                                             // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        Fire;                                              // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          Usable;                                            // 0x0398(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3D8C[0x3];                                     // 0x0399(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Reload;                                            // 0x039C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Opened;                                            // 0x03A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Anim;                                              // 0x03A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Fired;                                             // 0x03A2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_prop_arirGun(int32 EntryPoint);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
 	void ReceiveTick(float DeltaSeconds);
 	void FireBeam();
 	void BndEvt__StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Param_Hit);
@@ -51,13 +53,12 @@ public:
 	void OnInterrupted_0B09162B49A54CB47986BFBCC0891E88(class FName NotifyName);
 	void OnNotifyBegin_0B09162B49A54CB47986BFBCC0891E88(class FName NotifyName);
 	void OnNotifyEnd_0B09162B49A54CB47986BFBCC0891E88(class FName NotifyName);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
 	void GamemodeBeginPlay();
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 
 public:
 	static class UClass* StaticClass()
@@ -70,18 +71,18 @@ public:
 	}
 };
 static_assert(alignof(AProp_arirGun_C) == 0x000008, "Wrong alignment on AProp_arirGun_C");
-static_assert(sizeof(AProp_arirGun_C) == 0x0003B8, "Wrong size on AProp_arirGun_C");
-static_assert(offsetof(AProp_arirGun_C, UberGraphFrame_Prop_arirGun_C) == 0x000378, "Member 'AProp_arirGun_C::UberGraphFrame_Prop_arirGun_C' has a wrong offset!");
-static_assert(offsetof(AProp_arirGun_C, ArirGunSnd) == 0x000380, "Member 'AProp_arirGun_C::ArirGunSnd' has a wrong offset!");
-static_assert(offsetof(AProp_arirGun_C, PointLight) == 0x000388, "Member 'AProp_arirGun_C::PointLight' has a wrong offset!");
-static_assert(offsetof(AProp_arirGun_C, ArirGun2) == 0x000390, "Member 'AProp_arirGun_C::ArirGun2' has a wrong offset!");
-static_assert(offsetof(AProp_arirGun_C, Audio) == 0x000398, "Member 'AProp_arirGun_C::Audio' has a wrong offset!");
-static_assert(offsetof(AProp_arirGun_C, Fire) == 0x0003A0, "Member 'AProp_arirGun_C::Fire' has a wrong offset!");
-static_assert(offsetof(AProp_arirGun_C, Usable) == 0x0003A8, "Member 'AProp_arirGun_C::Usable' has a wrong offset!");
-static_assert(offsetof(AProp_arirGun_C, Reload) == 0x0003AC, "Member 'AProp_arirGun_C::Reload' has a wrong offset!");
-static_assert(offsetof(AProp_arirGun_C, Opened) == 0x0003B0, "Member 'AProp_arirGun_C::Opened' has a wrong offset!");
-static_assert(offsetof(AProp_arirGun_C, Anim) == 0x0003B1, "Member 'AProp_arirGun_C::Anim' has a wrong offset!");
-static_assert(offsetof(AProp_arirGun_C, Fired) == 0x0003B2, "Member 'AProp_arirGun_C::Fired' has a wrong offset!");
+static_assert(sizeof(AProp_arirGun_C) == 0x0003A8, "Wrong size on AProp_arirGun_C");
+static_assert(offsetof(AProp_arirGun_C, UberGraphFrame_Prop_arirGun_C) == 0x000368, "Member 'AProp_arirGun_C::UberGraphFrame_Prop_arirGun_C' has a wrong offset!");
+static_assert(offsetof(AProp_arirGun_C, ArirGunSnd) == 0x000370, "Member 'AProp_arirGun_C::ArirGunSnd' has a wrong offset!");
+static_assert(offsetof(AProp_arirGun_C, PointLight) == 0x000378, "Member 'AProp_arirGun_C::PointLight' has a wrong offset!");
+static_assert(offsetof(AProp_arirGun_C, ArirGun2) == 0x000380, "Member 'AProp_arirGun_C::ArirGun2' has a wrong offset!");
+static_assert(offsetof(AProp_arirGun_C, Audio) == 0x000388, "Member 'AProp_arirGun_C::Audio' has a wrong offset!");
+static_assert(offsetof(AProp_arirGun_C, Fire) == 0x000390, "Member 'AProp_arirGun_C::Fire' has a wrong offset!");
+static_assert(offsetof(AProp_arirGun_C, Usable) == 0x000398, "Member 'AProp_arirGun_C::Usable' has a wrong offset!");
+static_assert(offsetof(AProp_arirGun_C, Reload) == 0x00039C, "Member 'AProp_arirGun_C::Reload' has a wrong offset!");
+static_assert(offsetof(AProp_arirGun_C, Opened) == 0x0003A0, "Member 'AProp_arirGun_C::Opened' has a wrong offset!");
+static_assert(offsetof(AProp_arirGun_C, Anim) == 0x0003A1, "Member 'AProp_arirGun_C::Anim' has a wrong offset!");
+static_assert(offsetof(AProp_arirGun_C, Fired) == 0x0003A2, "Member 'AProp_arirGun_C::Fired' has a wrong offset!");
 
 }
 

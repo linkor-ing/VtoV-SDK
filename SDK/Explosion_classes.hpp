@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass explosion.explosion_C
-// 0x00B8 (0x02D8 - 0x0220)
+// 0x00A0 (0x02C0 - 0x0220)
 class AExplosion_C final : public AActor
 {
 public:
@@ -31,7 +31,7 @@ public:
 	class UParticleSystemComponent*               ParticleSystem;                                    // 0x0248(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         A_a_B13196C64BC7C4D979C821B817D18F40;              // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            A__Direction_B13196C64BC7C4D979C821B817D18F40;     // 0x0254(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_255[0x3];                                      // 0x0255(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2CAA[0x3];                                     // 0x0255(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     A;                                                 // 0x0258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Force;                                             // 0x0260(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	float                                         Radius;                                            // 0x0264(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
@@ -40,19 +40,16 @@ public:
 	float                                         DebrisForce;                                       // 0x0270(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	float                                         FireStrength;                                      // 0x0274(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	float                                         FireFuel;                                          // 0x0278(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_27C[0x4];                                      // 0x027C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2CAB[0x4];                                     // 0x027C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<EObjectTypeQuery>                      Obj;                                               // 0x0280(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FVector                                Loc;                                               // 0x0290(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Impact;                                            // 0x029C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          Skip_Setting;                                      // 0x02A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          IgnoreWalls;                                       // 0x02A9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_2AA[0x6];                                      // 0x02AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2CAC[0x6];                                     // 0x02AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UCameraShakeBase>           Shake;                                             // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, UObjectWrapper, HasGetValueTypeHash)
 	float                                         InnerShake;                                        // 0x02B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	float                                         OuterShake;                                        // 0x02BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	int32                                         ObjType;                                           // 0x02C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_2C4[0x4];                                      // 0x02C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Ignores;                                           // 0x02C8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_explosion(int32 EntryPoint);
@@ -60,7 +57,6 @@ public:
 	void A__UpdateFunc();
 	void A__FinishedFunc();
 	void RuneCheck();
-	void ScorchMark();
 
 public:
 	static class UClass* StaticClass()
@@ -73,7 +69,7 @@ public:
 	}
 };
 static_assert(alignof(AExplosion_C) == 0x000008, "Wrong alignment on AExplosion_C");
-static_assert(sizeof(AExplosion_C) == 0x0002D8, "Wrong size on AExplosion_C");
+static_assert(sizeof(AExplosion_C) == 0x0002C0, "Wrong size on AExplosion_C");
 static_assert(offsetof(AExplosion_C, UberGraphFrame) == 0x000220, "Member 'AExplosion_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AExplosion_C, ExplosionEcho) == 0x000228, "Member 'AExplosion_C::ExplosionEcho' has a wrong offset!");
 static_assert(offsetof(AExplosion_C, PointLight) == 0x000230, "Member 'AExplosion_C::PointLight' has a wrong offset!");
@@ -98,8 +94,6 @@ static_assert(offsetof(AExplosion_C, IgnoreWalls) == 0x0002A9, "Member 'AExplosi
 static_assert(offsetof(AExplosion_C, Shake) == 0x0002B0, "Member 'AExplosion_C::Shake' has a wrong offset!");
 static_assert(offsetof(AExplosion_C, InnerShake) == 0x0002B8, "Member 'AExplosion_C::InnerShake' has a wrong offset!");
 static_assert(offsetof(AExplosion_C, OuterShake) == 0x0002BC, "Member 'AExplosion_C::OuterShake' has a wrong offset!");
-static_assert(offsetof(AExplosion_C, ObjType) == 0x0002C0, "Member 'AExplosion_C::ObjType' has a wrong offset!");
-static_assert(offsetof(AExplosion_C, Ignores) == 0x0002C8, "Member 'AExplosion_C::Ignores' has a wrong offset!");
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_wireComponent_tpOrb.prop_wireComponent_tpOrb_C
-// 0x0000 (0x03D8 - 0x03D8)
+// 0x0000 (0x03C8 - 0x03C8)
 class AProp_wireComponent_tpOrb_C final : public AProp_wireComponent_tpBeam_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_wireComponent_tpOrb_C) == 0x000008, "Wrong alignment on AProp_wireComponent_tpOrb_C");
-static_assert(sizeof(AProp_wireComponent_tpOrb_C) == 0x0003D8, "Wrong size on AProp_wireComponent_tpOrb_C");
+static_assert(sizeof(AProp_wireComponent_tpOrb_C) == 0x0003C8, "Wrong size on AProp_wireComponent_tpOrb_C");
 
 }
 

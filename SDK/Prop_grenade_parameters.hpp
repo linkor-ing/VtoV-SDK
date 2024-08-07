@@ -24,11 +24,10 @@ struct Prop_grenade_C_ExecuteUbergraph_prop_grenade final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_384C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Temp_name_Variable;                                // 0x0010(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_384D[0x8];                                     // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0020(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AProp_C*                                CallFunc_FinishSpawningActor_ReturnValue;          // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -37,7 +36,7 @@ public:
 	float                                         CallFunc_VictoryFloatMinusEquals_FloatOut;         // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0074(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_81[0xF];                                       // 0x0081(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_384E[0xF];                                     // 0x0081(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_GetTransform_ReturnValue_1;               // 0x0090(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AExplosion_C*                           CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -45,7 +44,6 @@ public:
 static_assert(alignof(Prop_grenade_C_ExecuteUbergraph_prop_grenade) == 0x000010, "Wrong alignment on Prop_grenade_C_ExecuteUbergraph_prop_grenade");
 static_assert(sizeof(Prop_grenade_C_ExecuteUbergraph_prop_grenade) == 0x0000D0, "Wrong size on Prop_grenade_C_ExecuteUbergraph_prop_grenade");
 static_assert(offsetof(Prop_grenade_C_ExecuteUbergraph_prop_grenade, EntryPoint) == 0x000000, "Member 'Prop_grenade_C_ExecuteUbergraph_prop_grenade::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Prop_grenade_C_ExecuteUbergraph_prop_grenade, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x000004, "Member 'Prop_grenade_C_ExecuteUbergraph_prop_grenade::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_grenade_C_ExecuteUbergraph_prop_grenade, K2Node_Event_player) == 0x000008, "Member 'Prop_grenade_C_ExecuteUbergraph_prop_grenade::K2Node_Event_player' has a wrong offset!");
 static_assert(offsetof(Prop_grenade_C_ExecuteUbergraph_prop_grenade, Temp_name_Variable) == 0x000010, "Member 'Prop_grenade_C_ExecuteUbergraph_prop_grenade::Temp_name_Variable' has a wrong offset!");
 static_assert(offsetof(Prop_grenade_C_ExecuteUbergraph_prop_grenade, CallFunc_GetTransform_ReturnValue) == 0x000020, "Member 'Prop_grenade_C_ExecuteUbergraph_prop_grenade::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
@@ -79,10 +77,10 @@ public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_384F[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mFloat                         CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	bool                                          CallFunc_loadData_return;                          // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D9[0x3];                                       // 0x00D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3850[0x3];                                     // 0x00D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Array_Get_Item_1;                         // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_grenade_C_LoadData) == 0x000010, "Wrong alignment on Prop_grenade_C_LoadData");

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
 #include "Struct_physSound_structs.hpp"
+#include "Engine_structs.hpp"
 #include "AIModule_structs.hpp"
 
 
@@ -20,26 +20,26 @@ namespace SDK::Params
 {
 
 // Function noiser.noiser_C.ExecuteUbergraph_noiser
-// 0x0250 (0x0250 - 0x0000)
+// 0x01C8 (0x01C8 - 0x0000)
 struct Noiser_C_ExecuteUbergraph_noiser final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPathFollowingResult                          K2Node_CustomEvent_MovementResult_1;               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2CCE[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(EPathFollowingResult MovementResult)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	EPathFollowingResult                          K2Node_CustomEvent_MovementResult;                 // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2CCF[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(EPathFollowingResult MovementResult)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x001C(0x0010)(ZeroConstructor, NoDestructor)
 	EPathFollowingResult                          Temp_byte_Variable;                                // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2CD0[0x3];                                     // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0040(0x0010)(ConstParm, ReferenceParm)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0060(0x0008)(NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6D[0x3];                                       // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2CD1[0x3];                                     // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0070(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x007C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Vector_Distance_ReturnValue;              // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -47,32 +47,31 @@ public:
 	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  CallFunc_GetPlayerPawn_ReturnValue;                // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_step_OutHit;                              // 0x00A0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x0128(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_13C[0x4];                                      // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_1;        // 0x0140(0x0008)(NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue;           // 0x0148(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_3;        // 0x0150(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15C[0x4];                                      // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_4;        // 0x0168(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_174[0x4];                                      // 0x0174(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EObjectTypeQuery>                      CallFunc_obj_statDyn_obj;                          // 0x0178(0x0010)(ReferenceParm)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_3;         // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit;         // 0x018C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue;    // 0x0214(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_215[0x3];                                      // 0x0215(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0218(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue;              // 0x0224(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0230(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23C[0x4];                                      // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAIAsyncTaskBlueprintProxy*             CallFunc_CreateMoveToProxyObject_ReturnValue;      // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x00A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2CD2[0x4];                                     // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_1;        // 0x00B8(0x0008)(NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue;           // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_3;        // 0x00C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2CD3[0x4];                                     // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_4;        // 0x00E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2CD4[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EObjectTypeQuery>                      CallFunc_obj_statDyn_obj;                          // 0x00F0(0x0010)(ReferenceParm)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_3;         // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit;         // 0x0104(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue;    // 0x018C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2CD5[0x3];                                     // 0x018D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0190(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue;              // 0x019C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x01A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2CD6[0x4];                                     // 0x01B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAIAsyncTaskBlueprintProxy*             CallFunc_CreateMoveToProxyObject_ReturnValue;      // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Noiser_C_ExecuteUbergraph_noiser) == 0x000008, "Wrong alignment on Noiser_C_ExecuteUbergraph_noiser");
-static_assert(sizeof(Noiser_C_ExecuteUbergraph_noiser) == 0x000250, "Wrong size on Noiser_C_ExecuteUbergraph_noiser");
+static_assert(sizeof(Noiser_C_ExecuteUbergraph_noiser) == 0x0001C8, "Wrong size on Noiser_C_ExecuteUbergraph_noiser");
 static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, EntryPoint) == 0x000000, "Member 'Noiser_C_ExecuteUbergraph_noiser::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, K2Node_CustomEvent_MovementResult_1) == 0x000004, "Member 'Noiser_C_ExecuteUbergraph_noiser::K2Node_CustomEvent_MovementResult_1' has a wrong offset!");
 static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'Noiser_C_ExecuteUbergraph_noiser::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
@@ -92,24 +91,23 @@ static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_Multiply_Float
 static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x000090, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
 static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_RandomFloatInRange_ReturnValue) == 0x000094, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_GetPlayerPawn_ReturnValue) == 0x000098, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_GetPlayerPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_step_OutHit) == 0x0000A0, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_step_OutHit' has a wrong offset!");
-static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x000128, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000134, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x000138, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_K2_SetTimerDelegate_ReturnValue_1) == 0x000140, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_K2_SetTimerDelegate_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_SpawnSoundAttached_ReturnValue) == 0x000148, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_SpawnSoundAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_K2_GetActorLocation_ReturnValue_3) == 0x000150, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_K2_GetActorLocation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000160, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_K2_GetActorLocation_ReturnValue_4) == 0x000168, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_K2_GetActorLocation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_obj_statDyn_obj) == 0x000178, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_obj_statDyn_obj' has a wrong offset!");
-static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_RandomFloatInRange_ReturnValue_3) == 0x000188, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_RandomFloatInRange_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_LineTraceSingleForObjects_OutHit) == 0x00018C, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_LineTraceSingleForObjects_OutHit' has a wrong offset!");
-static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_LineTraceSingleForObjects_ReturnValue) == 0x000214, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_LineTraceSingleForObjects_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_MakeVector_ReturnValue) == 0x000218, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_RotateAngleAxis_ReturnValue) == 0x000224, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_RotateAngleAxis_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_Add_VectorVector_ReturnValue) == 0x000230, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_CreateMoveToProxyObject_ReturnValue) == 0x000240, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_CreateMoveToProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_IsValid_ReturnValue) == 0x000248, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x0000A0, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x0000AC, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x0000B0, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_K2_SetTimerDelegate_ReturnValue_1) == 0x0000B8, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_K2_SetTimerDelegate_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_SpawnSoundAttached_ReturnValue) == 0x0000C0, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_SpawnSoundAttached_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_K2_GetActorLocation_ReturnValue_3) == 0x0000C8, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_K2_GetActorLocation_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x0000D8, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_K2_GetActorLocation_ReturnValue_4) == 0x0000E0, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_K2_GetActorLocation_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_obj_statDyn_obj) == 0x0000F0, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_obj_statDyn_obj' has a wrong offset!");
+static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_RandomFloatInRange_ReturnValue_3) == 0x000100, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_RandomFloatInRange_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_LineTraceSingleForObjects_OutHit) == 0x000104, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_LineTraceSingleForObjects_OutHit' has a wrong offset!");
+static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_LineTraceSingleForObjects_ReturnValue) == 0x00018C, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_LineTraceSingleForObjects_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_MakeVector_ReturnValue) == 0x000190, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_RotateAngleAxis_ReturnValue) == 0x00019C, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_RotateAngleAxis_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_Add_VectorVector_ReturnValue) == 0x0001A8, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_CreateMoveToProxyObject_ReturnValue) == 0x0001B8, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_CreateMoveToProxyObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Noiser_C_ExecuteUbergraph_noiser, CallFunc_IsValid_ReturnValue) == 0x0001C0, "Member 'Noiser_C_ExecuteUbergraph_noiser::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function noiser.noiser_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -160,14 +158,14 @@ public:
 	bool                                          CallFunc_SphereTraceSingleForObjects_ReturnValue;  // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x00DA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_DB[0x1];                                       // 0x00DB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2CD7[0x1];                                     // 0x00DB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x00E4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x00F0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x00FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0108(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2CD8[0x4];                                     // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0128(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -177,9 +175,8 @@ public:
 	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0144(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0150(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_physSound_return;                         // 0x015C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_15D[0x3];                                      // 0x015D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_physSound                      CallFunc_physSound_data;                           // 0x0160(0x0040)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2CD9[0x4];                                     // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_physSound                      CallFunc_physSound_return;                         // 0x0160(0x0040)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Noiser_C_StepOn) == 0x000008, "Wrong alignment on Noiser_C_StepOn");
 static_assert(sizeof(Noiser_C_StepOn) == 0x0001A0, "Wrong size on Noiser_C_StepOn");
@@ -209,8 +206,7 @@ static_assert(offsetof(Noiser_C_StepOn, CallFunc_BreakHitResult_ElementIndex) ==
 static_assert(offsetof(Noiser_C_StepOn, CallFunc_BreakHitResult_FaceIndex) == 0x000140, "Member 'Noiser_C_StepOn::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
 static_assert(offsetof(Noiser_C_StepOn, CallFunc_BreakHitResult_TraceStart) == 0x000144, "Member 'Noiser_C_StepOn::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
 static_assert(offsetof(Noiser_C_StepOn, CallFunc_BreakHitResult_TraceEnd) == 0x000150, "Member 'Noiser_C_StepOn::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(Noiser_C_StepOn, CallFunc_physSound_return) == 0x00015C, "Member 'Noiser_C_StepOn::CallFunc_physSound_return' has a wrong offset!");
-static_assert(offsetof(Noiser_C_StepOn, CallFunc_physSound_data) == 0x000160, "Member 'Noiser_C_StepOn::CallFunc_physSound_data' has a wrong offset!");
+static_assert(offsetof(Noiser_C_StepOn, CallFunc_physSound_return) == 0x000160, "Member 'Noiser_C_StepOn::CallFunc_physSound_return' has a wrong offset!");
 
 // Function noiser.noiser_C.setPoint
 // 0x000C (0x000C - 0x0000)

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_sponge_mega.prop_sponge_mega_C
-// 0x0000 (0x03C0 - 0x03C0)
+// 0x0000 (0x03A8 - 0x03A8)
 class AProp_sponge_mega_C final : public AProp_sponge_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_sponge_mega_C) == 0x000008, "Wrong alignment on AProp_sponge_mega_C");
-static_assert(sizeof(AProp_sponge_mega_C) == 0x0003C0, "Wrong size on AProp_sponge_mega_C");
+static_assert(sizeof(AProp_sponge_mega_C) == 0x0003A8, "Wrong size on AProp_sponge_mega_C");
 
 }
 

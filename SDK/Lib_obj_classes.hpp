@@ -31,9 +31,6 @@ public:
 	static void Obj_dynPhys(class UObject* __WorldContext, TArray<EObjectTypeQuery>* Obj);
 	static void Obj_phys(class UObject* __WorldContext, TArray<EObjectTypeQuery>* Obj);
 	static void Obj_pawn(class UObject* __WorldContext, TArray<EObjectTypeQuery>* Obj);
-	static void Obj_dynPhysPawn(class UObject* __WorldContext, TArray<EObjectTypeQuery>* Obj);
-	static void Obj_physPawn(class UObject* __WorldContext, TArray<EObjectTypeQuery>* Obj);
-	static void Obj_statDynPawn(class UObject* __WorldContext, TArray<EObjectTypeQuery>* Obj);
 
 public:
 	static class UClass* StaticClass()

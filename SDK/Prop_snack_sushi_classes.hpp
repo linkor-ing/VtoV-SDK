@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_snack_sushi.prop_snack_sushi_C
-// 0x0008 (0x03A0 - 0x0398)
+// 0x0008 (0x0390 - 0x0388)
 class AProp_snack_sushi_C final : public AProp_snack_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_snack_sushi_C;                 // 0x0398(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_snack_sushi_C;                 // 0x0388(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_prop_snack_sushi(int32 EntryPoint);
@@ -40,8 +40,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_snack_sushi_C) == 0x000008, "Wrong alignment on AProp_snack_sushi_C");
-static_assert(sizeof(AProp_snack_sushi_C) == 0x0003A0, "Wrong size on AProp_snack_sushi_C");
-static_assert(offsetof(AProp_snack_sushi_C, UberGraphFrame_Prop_snack_sushi_C) == 0x000398, "Member 'AProp_snack_sushi_C::UberGraphFrame_Prop_snack_sushi_C' has a wrong offset!");
+static_assert(sizeof(AProp_snack_sushi_C) == 0x000390, "Wrong size on AProp_snack_sushi_C");
+static_assert(offsetof(AProp_snack_sushi_C, UberGraphFrame_Prop_snack_sushi_C) == 0x000388, "Member 'AProp_snack_sushi_C::UberGraphFrame_Prop_snack_sushi_C' has a wrong offset!");
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_bloodGib_deer.prop_bloodGib_deer_C
-// 0x0000 (0x03D8 - 0x03D8)
+// 0x0000 (0x03C8 - 0x03C8)
 class AProp_bloodGib_deer_C : public AProp_bloodGib_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_bloodGib_deer_C) == 0x000008, "Wrong alignment on AProp_bloodGib_deer_C");
-static_assert(sizeof(AProp_bloodGib_deer_C) == 0x0003D8, "Wrong size on AProp_bloodGib_deer_C");
+static_assert(sizeof(AProp_bloodGib_deer_C) == 0x0003C8, "Wrong size on AProp_bloodGib_deer_C");
 
 }
 

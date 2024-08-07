@@ -20,9 +20,9 @@ namespace SDK
 // Function orderPlace.orderPlace_C.spawnOrder
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_storeOrder1              Order                                                  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// struct FStruct_storeOrder               Order                                                  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void AOrderPlace_C::SpawnOrder(const struct FStruct_storeOrder1& Order)
+void AOrderPlace_C::SpawnOrder(const struct FStruct_storeOrder& Order)
 {
 	static class UFunction* Func = nullptr;
 

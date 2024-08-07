@@ -22,18 +22,18 @@ struct Prop_passchanger_C_ExecuteUbergraph_prop_passchanger final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2830[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2831[0x2];                                     // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x001C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0028(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0034(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0040(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2832[0x4];                                     // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -43,7 +43,7 @@ public:
 	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x007C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0088(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2833[0x4];                                     // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APasswordLock_C*                        K2Node_DynamicCast_AsPassword_Lock;                // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -71,16 +71,16 @@ static_assert(offsetof(Prop_passchanger_C_ExecuteUbergraph_prop_passchanger, Cal
 static_assert(offsetof(Prop_passchanger_C_ExecuteUbergraph_prop_passchanger, K2Node_DynamicCast_AsPassword_Lock) == 0x000098, "Member 'Prop_passchanger_C_ExecuteUbergraph_prop_passchanger::K2Node_DynamicCast_AsPassword_Lock' has a wrong offset!");
 static_assert(offsetof(Prop_passchanger_C_ExecuteUbergraph_prop_passchanger, K2Node_DynamicCast_bSuccess) == 0x0000A0, "Member 'Prop_passchanger_C_ExecuteUbergraph_prop_passchanger::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
-// Function prop_passchanger.prop_passchanger_C.playerHandUse_LMB
+// Function prop_passchanger.prop_passchanger_C.playerHandUse_RMB
 // 0x0008 (0x0008 - 0x0000)
-struct Prop_passchanger_C_PlayerHandUse_LMB final
+struct Prop_passchanger_C_PlayerHandUse_RMB final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Prop_passchanger_C_PlayerHandUse_LMB) == 0x000008, "Wrong alignment on Prop_passchanger_C_PlayerHandUse_LMB");
-static_assert(sizeof(Prop_passchanger_C_PlayerHandUse_LMB) == 0x000008, "Wrong size on Prop_passchanger_C_PlayerHandUse_LMB");
-static_assert(offsetof(Prop_passchanger_C_PlayerHandUse_LMB, Player) == 0x000000, "Member 'Prop_passchanger_C_PlayerHandUse_LMB::Player' has a wrong offset!");
+static_assert(alignof(Prop_passchanger_C_PlayerHandUse_RMB) == 0x000008, "Wrong alignment on Prop_passchanger_C_PlayerHandUse_RMB");
+static_assert(sizeof(Prop_passchanger_C_PlayerHandUse_RMB) == 0x000008, "Wrong size on Prop_passchanger_C_PlayerHandUse_RMB");
+static_assert(offsetof(Prop_passchanger_C_PlayerHandUse_RMB, Player) == 0x000000, "Member 'Prop_passchanger_C_PlayerHandUse_RMB::Player' has a wrong offset!");
 
 }
 

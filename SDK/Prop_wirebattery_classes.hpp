@@ -18,12 +18,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_wirebattery.prop_wirebattery_C
-// 0x0018 (0x0390 - 0x0378)
+// 0x0018 (0x0380 - 0x0368)
 class AProp_wirebattery_C final : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_wirebattery_C;                 // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	TArray<class AWire_C*>                        Connected;                                         // 0x0380(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
+	uint8                                         Pad_3AA1[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_wirebattery_C;                 // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	TArray<class AWire_C*>                        Connected;                                         // 0x0370(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
 
 public:
 	void ExecuteUbergraph_prop_wirebattery(int32 EntryPoint);
@@ -40,9 +41,9 @@ public:
 	}
 };
 static_assert(alignof(AProp_wirebattery_C) == 0x000008, "Wrong alignment on AProp_wirebattery_C");
-static_assert(sizeof(AProp_wirebattery_C) == 0x000390, "Wrong size on AProp_wirebattery_C");
-static_assert(offsetof(AProp_wirebattery_C, UberGraphFrame_Prop_wirebattery_C) == 0x000378, "Member 'AProp_wirebattery_C::UberGraphFrame_Prop_wirebattery_C' has a wrong offset!");
-static_assert(offsetof(AProp_wirebattery_C, Connected) == 0x000380, "Member 'AProp_wirebattery_C::Connected' has a wrong offset!");
+static_assert(sizeof(AProp_wirebattery_C) == 0x000380, "Wrong size on AProp_wirebattery_C");
+static_assert(offsetof(AProp_wirebattery_C, UberGraphFrame_Prop_wirebattery_C) == 0x000368, "Member 'AProp_wirebattery_C::UberGraphFrame_Prop_wirebattery_C' has a wrong offset!");
+static_assert(offsetof(AProp_wirebattery_C, Connected) == 0x000370, "Member 'AProp_wirebattery_C::Connected' has a wrong offset!");
 
 }
 

@@ -18,24 +18,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_wireComponent_axis.prop_wireComponent_axis_C
-// 0x0030 (0x03B0 - 0x0380)
+// 0x0030 (0x03A0 - 0x0370)
 class AProp_wireComponent_axis_C final : public AProp_wireComponent_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_wireComponent_axis_C;          // 0x0380(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPhysicsConstraintComponent*            PhysicsConstraint;                                 // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   Axis;                                              // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Torque;                                            // 0x0398(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39C[0x4];                                      // 0x039C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimitiveComponent*                    Component;                                         // 0x03A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Active;                                            // 0x03A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_wireComponent_axis_C;          // 0x0370(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPhysicsConstraintComponent*            PhysicsConstraint;                                 // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   Axis;                                              // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Torque;                                            // 0x0388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3D34[0x4];                                     // 0x038C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPrimitiveComponent*                    Component;                                         // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Active;                                            // 0x0398(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_prop_wireComponent_axis(int32 EntryPoint);
 	void WirePass(class AWire_C* Wire);
+	void ReceiveBeginPlay();
 	void ReceiveTick(float DeltaSeconds);
 	void ApplyTorque(class UStaticMeshComponent* InputPin);
-	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()
@@ -48,13 +48,13 @@ public:
 	}
 };
 static_assert(alignof(AProp_wireComponent_axis_C) == 0x000008, "Wrong alignment on AProp_wireComponent_axis_C");
-static_assert(sizeof(AProp_wireComponent_axis_C) == 0x0003B0, "Wrong size on AProp_wireComponent_axis_C");
-static_assert(offsetof(AProp_wireComponent_axis_C, UberGraphFrame_Prop_wireComponent_axis_C) == 0x000380, "Member 'AProp_wireComponent_axis_C::UberGraphFrame_Prop_wireComponent_axis_C' has a wrong offset!");
-static_assert(offsetof(AProp_wireComponent_axis_C, PhysicsConstraint) == 0x000388, "Member 'AProp_wireComponent_axis_C::PhysicsConstraint' has a wrong offset!");
-static_assert(offsetof(AProp_wireComponent_axis_C, Axis) == 0x000390, "Member 'AProp_wireComponent_axis_C::Axis' has a wrong offset!");
-static_assert(offsetof(AProp_wireComponent_axis_C, Torque) == 0x000398, "Member 'AProp_wireComponent_axis_C::Torque' has a wrong offset!");
-static_assert(offsetof(AProp_wireComponent_axis_C, Component) == 0x0003A0, "Member 'AProp_wireComponent_axis_C::Component' has a wrong offset!");
-static_assert(offsetof(AProp_wireComponent_axis_C, Active) == 0x0003A8, "Member 'AProp_wireComponent_axis_C::Active' has a wrong offset!");
+static_assert(sizeof(AProp_wireComponent_axis_C) == 0x0003A0, "Wrong size on AProp_wireComponent_axis_C");
+static_assert(offsetof(AProp_wireComponent_axis_C, UberGraphFrame_Prop_wireComponent_axis_C) == 0x000370, "Member 'AProp_wireComponent_axis_C::UberGraphFrame_Prop_wireComponent_axis_C' has a wrong offset!");
+static_assert(offsetof(AProp_wireComponent_axis_C, PhysicsConstraint) == 0x000378, "Member 'AProp_wireComponent_axis_C::PhysicsConstraint' has a wrong offset!");
+static_assert(offsetof(AProp_wireComponent_axis_C, Axis) == 0x000380, "Member 'AProp_wireComponent_axis_C::Axis' has a wrong offset!");
+static_assert(offsetof(AProp_wireComponent_axis_C, Torque) == 0x000388, "Member 'AProp_wireComponent_axis_C::Torque' has a wrong offset!");
+static_assert(offsetof(AProp_wireComponent_axis_C, Component) == 0x000390, "Member 'AProp_wireComponent_axis_C::Component' has a wrong offset!");
+static_assert(offsetof(AProp_wireComponent_axis_C, Active) == 0x000398, "Member 'AProp_wireComponent_axis_C::Active' has a wrong offset!");
 
 }
 

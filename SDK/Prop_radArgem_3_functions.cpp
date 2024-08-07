@@ -51,6 +51,20 @@ void AProp_radArgem_3_C::Ht()
 }
 
 
+// Function prop_radArgem_3.prop_radArgem_3_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_radArgem_3_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_radArgem_3_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function prop_radArgem_3.prop_radArgem_3_C.set
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -74,20 +88,6 @@ void AProp_radArgem_3_C::GamemodeBeginPlay()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("prop_radArgem_3_C", "gamemodeBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop_radArgem_3.prop_radArgem_3_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_radArgem_3_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_radArgem_3_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

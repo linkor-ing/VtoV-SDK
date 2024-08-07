@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "DreamBase_classes.hpp"
 #include "Engine_structs.hpp"
+#include "DreamBase_classes.hpp"
 
 
 namespace SDK
@@ -38,18 +38,18 @@ public:
 	class UStaticMeshComponent*                   Plane;                                             // 0x02D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         Aa_a_B7C18E4A493E565630B091AA87B0C5CC;             // 0x02E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            Aa__Direction_B7C18E4A493E565630B091AA87B0C5CC;    // 0x02E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E5[0x3];                                      // 0x02E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_340A[0x3];                                     // 0x02E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     Aa;                                                // 0x02E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         A;                                                 // 0x02F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F4[0x4];                                      // 0x02F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_340B[0x4];                                     // 0x02F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UChildActorComponent*>           B;                                                 // 0x02F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
 	void ExecuteUbergraph_dream_fill(int32 EntryPoint);
-	void ReceiveBeginPlay();
 	void Aa__UpdateFunc();
 	void Aa__FinishedFunc();
 	void UserConstructionScript();
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

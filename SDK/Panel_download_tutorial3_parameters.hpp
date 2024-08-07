@@ -22,18 +22,18 @@ struct Panel_download_tutorial3_C_ExecuteUbergraph_panel_download_tutorial3 fina
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30E4[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IInt_ttrigger_C>       K2Node_DynamicCast_AsInt_Ttrigger;                 // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_NewParam;                             // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30E5[0x6];                                     // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class ACord_C*                                K2Node_Event_cord_1;                               // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ACordSocket_C*                          K2Node_Event_socket_1;                             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ACord_C*                                K2Node_Event_cord;                                 // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ACordSocket_C*                          K2Node_Event_socket;                               // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_Event_sentFrom;                             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_active;                               // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30E6[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_Event_owner;                                // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Event_index;                                // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -151,17 +151,6 @@ public:
 static_assert(alignof(Panel_download_tutorial3_C_GetTriggerData) == 0x000010, "Wrong alignment on Panel_download_tutorial3_C_GetTriggerData");
 static_assert(sizeof(Panel_download_tutorial3_C_GetTriggerData) == 0x0000F0, "Wrong size on Panel_download_tutorial3_C_GetTriggerData");
 static_assert(offsetof(Panel_download_tutorial3_C_GetTriggerData, Data) == 0x000000, "Member 'Panel_download_tutorial3_C_GetTriggerData::Data' has a wrong offset!");
-
-// Function panel_download_tutorial3.panel_download_tutorial3_C.gatherDataFromKeyT
-// 0x0001 (0x0001 - 0x0000)
-struct Panel_download_tutorial3_C_GatherDataFromKeyT final
-{
-public:
-	bool                                          Gather;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(Panel_download_tutorial3_C_GatherDataFromKeyT) == 0x000001, "Wrong alignment on Panel_download_tutorial3_C_GatherDataFromKeyT");
-static_assert(sizeof(Panel_download_tutorial3_C_GatherDataFromKeyT) == 0x000001, "Wrong size on Panel_download_tutorial3_C_GatherDataFromKeyT");
-static_assert(offsetof(Panel_download_tutorial3_C_GatherDataFromKeyT, Gather) == 0x000000, "Member 'Panel_download_tutorial3_C_GatherDataFromKeyT::Gather' has a wrong offset!");
 
 }
 

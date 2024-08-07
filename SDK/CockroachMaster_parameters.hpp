@@ -10,473 +10,754 @@
 
 #include "Basic.hpp"
 
-#include "Struct_settings_structs.hpp"
-#include "Struct_save_structs.hpp"
 #include "Engine_structs.hpp"
-#include "Enum_interactionActions_structs.hpp"
+#include "Struct_save_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
 #include "InputCore_structs.hpp"
+#include "Struct_settings_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function cockroachMaster.cockroachMaster_C.ExecuteUbergraph_cockroachMaster
-// 0x0CA0 (0x0CA0 - 0x0000)
+// 0x1310 (0x1310 - 0x0000)
 struct CockroachMaster_C_ExecuteUbergraph_cockroachMaster final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UStaticMesh*                            Temp_object_Variable;                              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2598[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPrimitiveComponent*                    K2Node_Event_component;                            // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         Temp_object_Variable_1;                            // 0x0030(0x0010)(ConstParm, ReferenceParm)
-	TArray<class AActor*>                         Temp_object_Variable_2;                            // 0x0040(0x0010)(ConstParm, ReferenceParm)
-	float                                         K2Node_Event_damage_7;                             // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_8;                                // 0x0054(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Event_actor_2;                              // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_impact_2;                             // 0x00E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F4[0x4];                                       // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   K2Node_Event_key_2;                                // 0x0100(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed_1;                            // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_119[0x3];                                      // 0x0119(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Event_color;                                // 0x011C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUmg_texturePicker_C*                   K2Node_Event_picker;                               // 0x0130(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_Event_texture;                              // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_index;                                // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_144[0x4];                                      // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_18;                            // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_7;                                // 0x0150(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          K2Node_Event_kick;                                 // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D9[0x3];                                      // 0x01D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_Event_name_1;                               // 0x01DC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E4[0x4];                                      // 0x01E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_17;                            // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_16;                            // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_6;                                // 0x01F8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         K2Node_Event_damage_6;                             // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_284[0x4];                                      // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_15;                            // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_14;                            // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_13;                            // 0x0298(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_5;                             // 0x02A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_5;                                // 0x02A4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_32C[0x4];                                      // 0x032C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Event_actor_1;                              // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_impact_1;                             // 0x0338(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_344[0x4];                                      // 0x0344(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AWaterVolume_C*                         K2Node_Event_water_3;                              // 0x0348(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water_2;                              // 0x0350(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water_1;                              // 0x0358(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water;                                // 0x0360(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_activate;                             // 0x0368(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_static;                               // 0x0369(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_frozen;                               // 0x036A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_active;                               // 0x036B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_36C[0x4];                                      // 0x036C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 K2Node_Event_key_1;                                // 0x0370(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_4;                             // 0x0380(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_fuel;                                 // 0x0384(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_3;                             // 0x0388(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hot;                                  // 0x038C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_414[0x4];                                      // 0x0414(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_12;                            // 0x0418(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_11;                            // 0x0420(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_2;                             // 0x0428(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_location_1;                           // 0x042C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_10;                            // 0x0438(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_9;                             // 0x0440(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_8;                             // 0x0448(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_wheelDelta;                           // 0x0450(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_454[0x4];                                      // 0x0454(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_7;                             // 0x0458(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              K2Node_Event_mouse;                                // 0x0460(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x0468(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   K2Node_Event_key;                                  // 0x0470(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed;                              // 0x0488(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_489[0x3];                                      // 0x0489(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_temperature_1;                        // 0x048C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_temperature;                          // 0x0490(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_speed;                                // 0x0494(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x0498(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_4;                                // 0x04A0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class FString                                 K2Node_Event_name;                                 // 0x0528(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_volume;                               // 0x0538(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_53C[0x4];                                      // 0x053C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x0540(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_location;                             // 0x0548(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_1;                             // 0x0554(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_clean_1;                              // 0x0558(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_559[0x7];                                      // 0x0559(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0560(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_3;                                // 0x0568(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AHook_C*                                K2Node_Event_hook_1;                               // 0x05F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_clean;                                // 0x05F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5FC[0x4];                                      // 0x05FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x0600(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AHook_C*                                K2Node_Event_hook;                                 // 0x0608(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0610(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0614(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_Event_actor;                                // 0x0618(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage;                               // 0x0620(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_2;                                // 0x0624(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                K2Node_Event_impact;                               // 0x06AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_skipSetting;                          // 0x06B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6B9[0x7];                                      // 0x06B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x06C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_1;                                // 0x06C8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x0750(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0754(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0758(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x075C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x075D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_75E[0x2];                                      // 0x075E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0760(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0764(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0768(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_769[0x7];                                      // 0x0769(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UStaticMeshComponent*                   CallFunc_Array_Get_Item;                           // 0x0770(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0778(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x077C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_X;                            // 0x0788(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Y;                            // 0x078C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Z;                            // 0x0790(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0794(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_795[0x3];                                      // 0x0795(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UStaticMeshComponent*             Temp_object_Variable_3;                            // 0x0798(0x0008)(ConstParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMesh*                            Temp_object_Variable_4;                            // 0x07A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x07A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_7A9[0x3];                                      // 0x07A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x07AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x07B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   CallFunc_Array_Get_Item_1;                         // 0x07B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x07C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentScale_ReturnValue;         // 0x07CC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_1;    // 0x07D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorInt_ReturnValue;           // 0x07E4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VSize_ReturnValue;                        // 0x07F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x07F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x07F5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_7F6[0x2];                                      // 0x07F6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_RandomPointInBoundingBox_ReturnValue;     // 0x07F8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_LowEntry_LocalVariable_Value__Object;       // 0x0804(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0810(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_811[0x7];                                      // 0x0811(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         CallFunc_SphereOverlapActors_OutActors;            // 0x0818(0x0010)(ReferenceParm)
-	bool                                          CallFunc_SphereOverlapActors_ReturnValue;          // 0x0828(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_829[0x7];                                      // 0x0829(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EObjectTypeQuery>                      CallFunc_obj_static_obj;                           // 0x0830(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0840(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RandomUnitVector_ReturnValue;             // 0x0844(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0850(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0854(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_Array_Get_Item_2;                         // 0x0860(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0868(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_869[0x3];                                      // 0x0869(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetActorBounds_Origin;                    // 0x086C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorBounds_BoxExtent;                 // 0x0878(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0884(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_SphereTraceSingleForObjects_OutHit;       // 0x0890(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_SphereTraceSingleForObjects_ReturnValue;  // 0x0918(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0919(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x091A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x091B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x091C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0920(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0924(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0930(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x093C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0948(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_954[0x4];                                      // 0x0954(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0958(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0960(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0968(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0970(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0978(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x097C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0980(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0984(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0990(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x099C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9A8[0x8];                                      // 0x09A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x09B0(0x0030)(IsPlainOldData, NoDestructor)
-	struct FStruct_settings                       K2Node_Event_settings;                             // 0x09E0(0x00F0)(HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0AD0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_cockroachNest_C*                  CallFunc_FinishSpawningActor_ReturnValue;          // 0x0AD8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Max_ReturnValue;                          // 0x0AE0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_AE4[0x4];                                      // 0x0AE4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UStaticMeshComponent*                   CallFunc_Array_Get_Item_3;                         // 0x0AE8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x0AF0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0AF4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_AF5[0x3];                                      // 0x0AF5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UStaticMeshComponent*             Temp_object_Variable_5;                            // 0x0AF8(0x0008)(ConstParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue_1;           // 0x0B00(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B01[0x7];                                      // 0x0B01(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0B08(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x0B10(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x0B98(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B99[0x7];                                      // 0x0B99(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UStaticMeshComponent*             Temp_object_Variable_6;                            // 0x0BA0(0x0008)(ConstParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0BA8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit_1;            // 0x0BA9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap_1;         // 0x0BAA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_BAB[0x1];                                      // 0x0BAB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time_1;                    // 0x0BAC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance_1;                // 0x0BB0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location_1;                // 0x0BB4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint_1;             // 0x0BC0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal_1;                  // 0x0BCC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal_1;            // 0x0BD8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_BE4[0x4];                                      // 0x0BE4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat_1;                 // 0x0BE8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor_1;                // 0x0BF0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent_1;            // 0x0BF8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName_1;             // 0x0C00(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem_1;                 // 0x0C08(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex_1;            // 0x0C0C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex_1;               // 0x0C10(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart_1;              // 0x0C14(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd_1;                // 0x0C20(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentScale_ReturnValue_1;       // 0x0C2C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   K2Node_DynamicCast_AsStatic_Mesh_Component;        // 0x0C38(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0C40(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C41[0x3];                                      // 0x0C41(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_VSize_ReturnValue_1;                      // 0x0C44(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Find_ReturnValue_1;                 // 0x0C48(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0C4C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_addFood_full;                             // 0x0C50(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_1;        // 0x0C51(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C52[0x6];                                      // 0x0C52(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot;                     // 0x0C58(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0C60(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C64[0x4];                                      // 0x0C64(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimitiveComponent*                    K2Node_Event_component;                            // 0x0C68(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0C70(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_1;       // 0x0C74(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_progressAdvancement_finished;             // 0x0C75(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C76[0x2];                                      // 0x0C76(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_progressAdvancement_name;                 // 0x0C78(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMesh*                            K2Node_Select_Default;                             // 0x0C80(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   CallFunc_Array_Get_Item_4;                         // 0x0C88(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0C90(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0028(0x0010)(ConstParm, ReferenceParm)
+	float                                         K2Node_Event_damage_5;                             // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_8;                                // 0x003C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_2599[0x4];                                     // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Event_actor_2;                              // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_impact_2;                             // 0x00D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_259A[0x4];                                     // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   K2Node_Event_key_2;                                // 0x00E8(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed_1;                            // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_259B[0x3];                                     // 0x0101(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           K2Node_Event_color;                                // 0x0104(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_259C[0x4];                                     // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_14;                            // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_7;                                // 0x0120(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          K2Node_Event_kick;                                 // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_259D[0x3];                                     // 0x01A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_Event_name_1;                               // 0x01AC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_259E[0x4];                                     // 0x01B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_13;                            // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_12;                            // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_6;                                // 0x01C8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         K2Node_Event_damage_4;                             // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_5;                                // 0x0254(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_259F[0x4];                                     // 0x02DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Event_actor_1;                              // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_impact_1;                             // 0x02E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25A0[0x4];                                     // 0x02F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AWaterVolume_C*                         K2Node_Event_water_3;                              // 0x02F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterVolume_C*                         K2Node_Event_water_2;                              // 0x0300(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterVolume_C*                         K2Node_Event_water_1;                              // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterVolume_C*                         K2Node_Event_water;                                // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_activate;                             // 0x0318(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_static;                               // 0x0319(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_frozen;                               // 0x031A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_active;                               // 0x031B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25A1[0x4];                                     // 0x031C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 K2Node_Event_key_1;                                // 0x0320(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_3;                             // 0x0330(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_fuel;                                 // 0x0334(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_11;                            // 0x0338(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_10;                            // 0x0340(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_2;                             // 0x0348(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_location_1;                           // 0x034C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_9;                             // 0x0358(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_8;                             // 0x0360(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_7;                             // 0x0368(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_wheelDelta;                           // 0x0370(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25A2[0x4];                                     // 0x0374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x0378(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_Event_mouse;                                // 0x0380(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x0388(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   K2Node_Event_key;                                  // 0x0390(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed;                              // 0x03A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25A3[0x3];                                     // 0x03A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_temperature_1;                        // 0x03AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_temperature;                          // 0x03B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_speed;                                // 0x03B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x03B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_4;                                // 0x03C0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class FString                                 K2Node_Event_name;                                 // 0x0448(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_volume;                               // 0x0458(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25A4[0x4];                                     // 0x045C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0460(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_location;                             // 0x0468(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_1;                             // 0x0474(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_clean;                                // 0x0478(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25A5[0x7];                                     // 0x0479(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x0480(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_3;                                // 0x0488(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AHook_C*                                K2Node_Event_hook;                                 // 0x0510(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0518(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x051C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   CallFunc_Array_Get_Item;                           // 0x0520(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0528(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x052C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<EObjectTypeQuery>                      CallFunc_obj_statDyn_obj;                          // 0x0530(0x0010)(ReferenceParm)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0540(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x054C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_1;       // 0x0558(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25A6[0x4];                                     // 0x055C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EObjectTypeQuery>                      CallFunc_obj_statDyn_obj_1;                        // 0x0560(0x0010)(ReferenceParm)
+	class UStaticMesh*                            Temp_object_Variable_1;                            // 0x0570(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStaticMesh*                            Temp_object_Variable_2;                            // 0x0578(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0580(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25A7[0x3];                                     // 0x0581(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_RandomUnitVector_ReturnValue;             // 0x0584(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x0590(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x059C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x05A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25A8[0x3];                                     // 0x05A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x05A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_2;       // 0x05A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x05AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualExactly_VectorVector_ReturnValue;    // 0x05AD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25A9[0x2];                                     // 0x05AE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UStaticMeshComponent*             Temp_object_Variable_3;                            // 0x05B0(0x0008)(ConstParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x05B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloat_ReturnValue;                  // 0x05C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x05C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Ease_ReturnValue;                         // 0x05CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x05D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_2;        // 0x05D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_2;       // 0x05D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25AA[0x4];                                     // 0x05E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UStaticMeshComponent*             Temp_object_Variable_4;                            // 0x05E8(0x0008)(ConstParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x05F0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_3;       // 0x05FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x0600(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25AB[0x4];                                     // 0x0604(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_5;                            // 0x0608(0x0010)(ConstParm, ReferenceParm)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0618(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25AC[0x3];                                     // 0x0619(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x061C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_Event_actor;                                // 0x0620(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage;                               // 0x0628(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_2;                                // 0x062C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                K2Node_Event_impact;                               // 0x06B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_skipSetting;                          // 0x06C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25AD[0x3];                                     // 0x06C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_VSize_ReturnValue;                        // 0x06C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x06C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_3;        // 0x06CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         CallFunc_SphereOverlapActors_OutActors;            // 0x06D0(0x0010)(ReferenceParm)
+	bool                                          CallFunc_SphereOverlapActors_ReturnValue;          // 0x06E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25AE[0x3];                                     // 0x06E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetComponentScale_ReturnValue;         // 0x06E4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x06F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x06F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x06F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_1;                                // 0x0700(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AActor*                                 CallFunc_Array_Get_Item_1;                         // 0x0788(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_food_C*                           K2Node_DynamicCast_AsProp_Food;                    // 0x0790(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0798(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25AF[0x3];                                     // 0x0799(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetActorBounds_Origin;                    // 0x079C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorBounds_BoxExtent;                 // 0x07A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x07B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25B0[0x3];                                     // 0x07B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetClosestPointOnCollision_OutPointOnBody; // 0x07B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetClosestPointOnCollision_ReturnValue;   // 0x07C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x07C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25B1[0x3];                                     // 0x07C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x07CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x07D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25B2[0x3];                                     // 0x07D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x07D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x07D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_4;       // 0x07DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatMinusEquals_FloatOut;         // 0x07E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_2;          // 0x07E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue_1;            // 0x07E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25B3[0x3];                                     // 0x07E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue;           // 0x07EC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_2;           // 0x07F8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25B4[0x4];                                     // 0x0804(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UStaticMeshComponent*                   CallFunc_Array_Get_Item_2;                         // 0x0808(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0810(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentScale_ReturnValue_1;       // 0x0814(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0820(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorInt_ReturnValue;           // 0x082C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VSize_ReturnValue_1;                      // 0x0838(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x083C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x083D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25B5[0x2];                                     // 0x083E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_6;                            // 0x0840(0x0010)(ConstParm, ReferenceParm)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0850(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25B6[0x3];                                     // 0x0851(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_SphereTraceSingleForObjects_OutHit;       // 0x0854(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_SphereTraceSingleForObjects_ReturnValue;  // 0x08DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x08DD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x08DE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25B7[0x1];                                     // 0x08DF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x08E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x08E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x08E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x08F4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0900(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x090C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0918(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0920(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0928(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0930(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0938(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x093C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0940(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0944(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0950(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x095C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_3;       // 0x0968(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_3;           // 0x0974(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_4;           // 0x0980(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotationFromAxes_ReturnValue;         // 0x098C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_SelectVector_ReturnValue;                 // 0x0998(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x09A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x09A8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         CallFunc_Abs_ReturnValue;                          // 0x0A30(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue;           // 0x0A34(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_2;         // 0x0A40(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25B8[0x3];                                     // 0x0A41(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue_1;         // 0x0A44(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotationFromAxes_ReturnValue_1;       // 0x0A50(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_SelectRotator_ReturnValue;                // 0x0A5C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult;       // 0x0A68(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0AF0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_3;                   // 0x0AF4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0AF8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25B9[0x7];                                     // 0x0AF9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UStaticMeshComponent*                   CallFunc_Array_Get_Item_3;                         // 0x0B00(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0B08(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_1;    // 0x0B0C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_X;                            // 0x0B18(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Y;                            // 0x0B1C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Z;                            // 0x0B20(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue_2;            // 0x0B24(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25BA[0x3];                                     // 0x0B25(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable_3;                  // 0x0B28(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25BB[0x4];                                     // 0x0B2C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x0B30(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0B38(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0B44(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25BC[0x3];                                     // 0x0B45(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0B48(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25BD[0x4];                                     // 0x0B4C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_7;                            // 0x0B50(0x0010)(ConstParm, ReferenceParm)
+	struct FHitResult                             CallFunc_SphereTraceSingleForObjects_OutHit_1;     // 0x0B60(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_SphereTraceSingleForObjects_ReturnValue_1; // 0x0BE8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit_1;            // 0x0BE9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap_1;         // 0x0BEA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25BE[0x1];                                     // 0x0BEB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time_1;                    // 0x0BEC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance_1;                // 0x0BF0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location_1;                // 0x0BF4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint_1;             // 0x0C00(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal_1;                  // 0x0C0C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal_1;            // 0x0C18(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25BF[0x4];                                     // 0x0C24(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat_1;                 // 0x0C28(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor_1;                // 0x0C30(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent_1;            // 0x0C38(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName_1;             // 0x0C40(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem_1;                 // 0x0C48(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex_1;            // 0x0C4C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex_1;               // 0x0C50(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart_1;              // 0x0C54(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd_1;                // 0x0C60(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RandomPointInBoundingBox_ReturnValue;     // 0x0C6C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_VLerp_ReturnValue_1;                      // 0x0C78(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_LowEntry_LocalVariable_Value__Object;       // 0x0C84(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue_2;         // 0x0C90(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_4;       // 0x0C9C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue_3;         // 0x0CA8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_5;           // 0x0CB4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_SelectVector_ReturnValue_1;               // 0x0CC0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult_1;     // 0x0CCC(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_25C0[0x4];                                     // 0x0D54(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EObjectTypeQuery>                      CallFunc_obj_static_obj;                           // 0x0D58(0x0010)(ReferenceParm)
+	struct FVector                                CallFunc_RandomUnitVector_ReturnValue_1;           // 0x0D68(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_5;       // 0x0D74(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         Temp_object_Variable_8;                            // 0x0D80(0x0010)(ConstParm, ReferenceParm)
+	TArray<class AActor*>                         CallFunc_SphereOverlapActors_OutActors_1;          // 0x0D90(0x0010)(ReferenceParm)
+	bool                                          CallFunc_SphereOverlapActors_ReturnValue_1;        // 0x0DA0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25C1[0x3];                                     // 0x0DA1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_LastIndex_ReturnValue_1;            // 0x0DA4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue_1;       // 0x0DA8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue_1;      // 0x0DAC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_Array_Get_Item_4;                         // 0x0DB8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorBounds_Origin_1;                  // 0x0DC0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorBounds_BoxExtent_1;               // 0x0DCC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualExactly_VectorVector_ReturnValue_1;  // 0x0DD8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25C2[0x3];                                     // 0x0DD9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_SelectVector_ReturnValue_2;               // 0x0DDC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_ProjectVectorOnToPlane_ReturnValue;       // 0x0DE8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualExactly_VectorVector_ReturnValue_2;  // 0x0DF4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25C3[0x3];                                     // 0x0DF5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x0DF8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x0E04(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25C4[0x3];                                     // 0x0E05(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Dot_VectorVector_ReturnValue_1;           // 0x0E08(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_DegAcos_ReturnValue;                      // 0x0E0C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0E10(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25C5[0x4];                                     // 0x0E14(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_9;                            // 0x0E18(0x0010)(ConstParm, ReferenceParm)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_4;        // 0x0E28(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25C6[0x4];                                     // 0x0E2C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         CallFunc_SphereOverlapActors_OutActors_2;          // 0x0E30(0x0010)(ReferenceParm)
+	bool                                          CallFunc_SphereOverlapActors_ReturnValue_2;        // 0x0E40(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25C7[0x3];                                     // 0x0E41(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_5;        // 0x0E44(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x0E48(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x0E4C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0E50(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue_2;       // 0x0E54(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_LowEntry_LocalVariable_Value__1_Object;     // 0x0E58(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25C8[0x4];                                     // 0x0E5C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_Array_Get_Item_5;                         // 0x0E60(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue;              // 0x0E68(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorBounds_Origin_2;                  // 0x0E74(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorBounds_BoxExtent_2;               // 0x0E80(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue_1;            // 0x0E8C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_6;           // 0x0E98(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotationFromAxes_ReturnValue_2;       // 0x0EA4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FHitResult                             CallFunc_SphereTraceSingleForObjects_OutHit_2;     // 0x0EB0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_SphereTraceSingleForObjects_ReturnValue_2; // 0x0F38(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25C9[0x3];                                     // 0x0F39(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult_1;     // 0x0F3C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit_2;            // 0x0FC4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap_2;         // 0x0FC5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25CA[0x2];                                     // 0x0FC6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time_2;                    // 0x0FC8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance_2;                // 0x0FCC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location_2;                // 0x0FD0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint_2;             // 0x0FDC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal_2;                  // 0x0FE8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal_2;            // 0x0FF4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat_2;                 // 0x1000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor_2;                // 0x1008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent_2;            // 0x1010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName_2;             // 0x1018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem_2;                 // 0x1020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex_2;            // 0x1024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex_2;               // 0x1028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart_2;              // 0x102C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd_2;                // 0x1038(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x1044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25CB[0x3];                                     // 0x1045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x1048(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25CC[0xC];                                     // 0x1054(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x1060(0x0030)(IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x1090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       K2Node_Event_settings;                             // 0x1098(0x00CC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25CD[0x4];                                     // 0x1164(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AProp_cockroachNest_C*                  CallFunc_FinishSpawningActor_ReturnValue;          // 0x1168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Max_ReturnValue;                          // 0x1170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25CE[0x4];                                     // 0x1174(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UStaticMeshComponent*                   CallFunc_Array_Get_Item_6;                         // 0x1178(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_4;               // 0x1180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x1184(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x1185(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25CF[0x2];                                     // 0x1186(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UStaticMeshComponent*             Temp_object_Variable_10;                           // 0x1188(0x0008)(ConstParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x1190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x1198(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         K2Node_Event_index;                                // 0x1220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x1224(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue_1;           // 0x1225(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x1226(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit_3;            // 0x1227(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap_3;         // 0x1228(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25D0[0x3];                                     // 0x1229(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time_3;                    // 0x122C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance_3;                // 0x1230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location_3;                // 0x1234(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint_3;             // 0x1240(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal_3;                  // 0x124C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal_3;            // 0x1258(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25D1[0x4];                                     // 0x1264(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat_3;                 // 0x1268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor_3;                // 0x1270(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent_3;            // 0x1278(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName_3;             // 0x1280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem_3;                 // 0x1288(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex_3;            // 0x128C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex_3;               // 0x1290(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart_3;              // 0x1294(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd_3;                // 0x12A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentScale_ReturnValue_2;       // 0x12AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x12B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25D2[0x3];                                     // 0x12B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_VSize_ReturnValue_2;                      // 0x12BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_6;        // 0x12C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25D3[0x4];                                     // 0x12C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UStaticMeshComponent*                   K2Node_DynamicCast_AsStatic_Mesh_Component;        // 0x12C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x12D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_addFood_full;                             // 0x12D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25D4[0x2];                                     // 0x12D2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Find_ReturnValue_1;                 // 0x12D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_1;        // 0x12D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x12D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25D5[0x6];                                     // 0x12DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot;                     // 0x12E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue;                       // 0x12E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_3;          // 0x12EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_1;       // 0x12F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25D6[0x7];                                     // 0x12F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UStaticMesh*                            K2Node_Select_Default;                             // 0x12F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x1300(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster) == 0x000010, "Wrong alignment on CockroachMaster_C_ExecuteUbergraph_cockroachMaster");
-static_assert(sizeof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster) == 0x000CA0, "Wrong size on CockroachMaster_C_ExecuteUbergraph_cockroachMaster");
+static_assert(sizeof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster) == 0x001310, "Wrong size on CockroachMaster_C_ExecuteUbergraph_cockroachMaster");
 static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, EntryPoint) == 0x000000, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::EntryPoint' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_object_Variable) == 0x000010, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_int_Loop_Counter_Variable_1) == 0x000018, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_component) == 0x000008, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_component' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_int_Loop_Counter_Variable) == 0x000010, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_int_Loop_Counter_Variable_1) == 0x000014, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Add_IntInt_ReturnValue_1) == 0x00001C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_int_Array_Index_Variable) == 0x000020, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_int_Variable) == 0x000024, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000028, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Add_IntInt_ReturnValue_2) == 0x00002C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_object_Variable_1) == 0x000030, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_object_Variable_2) == 0x000040, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_damage_7) == 0x000050, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_damage_7' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_hit_8) == 0x000054, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_hit_8' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_actor_2) == 0x0000E0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_actor_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_impact_2) == 0x0000E8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_impact_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_gamemode) == 0x0000F8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_gamemode' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_key_2) == 0x000100, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_key_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_pressed_1) == 0x000118, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_pressed_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_color) == 0x00011C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_color' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_picker) == 0x000130, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_picker' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_texture) == 0x000138, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_texture' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_index) == 0x000140, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_18) == 0x000148, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_18' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_hit_7) == 0x000150, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_hit_7' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_kick) == 0x0001D8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_kick' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_name_1) == 0x0001DC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_name_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_17) == 0x0001E8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_17' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_16) == 0x0001F0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_16' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_hit_6) == 0x0001F8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_hit_6' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_damage_6) == 0x000280, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_damage_6' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_15) == 0x000288, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_15' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_14) == 0x000290, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_14' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_13) == 0x000298, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_13' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_damage_5) == 0x0002A0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_damage_5' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_hit_5) == 0x0002A4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_hit_5' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_actor_1) == 0x000330, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_actor_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_impact_1) == 0x000338, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_impact_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_water_3) == 0x000348, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_water_3' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_water_2) == 0x000350, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_water_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_water_1) == 0x000358, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_water_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_water) == 0x000360, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_water' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_activate) == 0x000368, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_activate' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_static) == 0x000369, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_static' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_frozen) == 0x00036A, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_frozen' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_active) == 0x00036B, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_active' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_key_1) == 0x000370, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_key_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_damage_4) == 0x000380, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_damage_4' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_fuel) == 0x000384, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_fuel' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_damage_3) == 0x000388, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_damage_3' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_hot) == 0x00038C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_hot' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_12) == 0x000418, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_12' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_11) == 0x000420, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_11' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_damage_2) == 0x000428, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_damage_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_location_1) == 0x00042C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_location_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_10) == 0x000438, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_10' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_9) == 0x000440, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_9' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_8) == 0x000448, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_8' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_wheelDelta) == 0x000450, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_wheelDelta' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_7) == 0x000458, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_7' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_mouse) == 0x000460, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_mouse' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_6) == 0x000468, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_6' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_key) == 0x000470, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_key' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_pressed) == 0x000488, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_pressed' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_temperature_1) == 0x00048C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_temperature_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_temperature) == 0x000490, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_temperature' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_speed) == 0x000494, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_speed' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_5) == 0x000498, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_5' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_hit_4) == 0x0004A0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_hit_4' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_name) == 0x000528, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_name' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_volume) == 0x000538, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_volume' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_4) == 0x000540, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_4' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_location) == 0x000548, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_location' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_damage_1) == 0x000554, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_damage_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_clean_1) == 0x000558, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_clean_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_3) == 0x000560, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_3' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_hit_3) == 0x000568, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_hit_3' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_hook_1) == 0x0005F0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_hook_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_clean) == 0x0005F8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_clean' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_2) == 0x000600, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_hook) == 0x000608, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_hook' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_DeltaSeconds) == 0x000610, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_LastIndex_ReturnValue) == 0x000614, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_actor) == 0x000618, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_actor' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_damage) == 0x000620, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_damage' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_hit_2) == 0x000624, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_hit_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_impact) == 0x0006AC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_impact' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_skipSetting) == 0x0006B8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_skipSetting' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_1) == 0x0006C0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_hit_1) == 0x0006C8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_hit_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_int_Loop_Counter_Variable_2) == 0x000750, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Length_ReturnValue) == 0x000754, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Add_IntInt_ReturnValue_3) == 0x000758, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Less_IntInt_ReturnValue) == 0x00075C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x00075D, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Length_ReturnValue_1) == 0x000760, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_int_Array_Index_Variable_1) == 0x000764, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Less_IntInt_ReturnValue_1) == 0x000768, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Get_Item) == 0x000770, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Find_ReturnValue) == 0x000778, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x00077C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakVector_X) == 0x000788, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakVector_Y) == 0x00078C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakVector_Z) == 0x000790, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Less_FloatFloat_ReturnValue) == 0x000794, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_object_Variable_3) == 0x000798, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_object_Variable_4) == 0x0007A0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_object_Variable_4' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_RemoveItem_ReturnValue) == 0x0007A8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_int_Array_Index_Variable_2) == 0x0007AC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x0007B0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Get_Item_1) == 0x0007B8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0007C0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_K2_GetComponentScale_ReturnValue) == 0x0007CC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_K2_GetComponentScale_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x0007D8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Subtract_VectorInt_ReturnValue) == 0x0007E4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Subtract_VectorInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_VSize_ReturnValue) == 0x0007F0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0007F4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BooleanAND_ReturnValue) == 0x0007F5, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_RandomPointInBoundingBox_ReturnValue) == 0x0007F8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_RandomPointInBoundingBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_LowEntry_LocalVariable_Value__Object) == 0x000804, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_LowEntry_LocalVariable_Value__Object' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_bool_Variable) == 0x000810, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_SphereOverlapActors_OutActors) == 0x000818, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_SphereOverlapActors_OutActors' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_SphereOverlapActors_ReturnValue) == 0x000828, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_SphereOverlapActors_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_obj_static_obj) == 0x000830, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_obj_static_obj' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Length_ReturnValue_2) == 0x000840, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_RandomUnitVector_ReturnValue) == 0x000844, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_RandomUnitVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_RandomIntegerInRange_ReturnValue) == 0x000850, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000854, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Get_Item_2) == 0x000860, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Greater_IntInt_ReturnValue) == 0x000868, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_GetActorBounds_Origin) == 0x00086C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_GetActorBounds_Origin' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_GetActorBounds_BoxExtent) == 0x000878, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_GetActorBounds_BoxExtent' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Add_VectorVector_ReturnValue) == 0x000884, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_SphereTraceSingleForObjects_OutHit) == 0x000890, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_SphereTraceSingleForObjects_OutHit' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_SphereTraceSingleForObjects_ReturnValue) == 0x000918, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_SphereTraceSingleForObjects_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000919, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_bBlockingHit) == 0x00091A, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_bInitialOverlap) == 0x00091B, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Time) == 0x00091C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Distance) == 0x000920, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Location) == 0x000924, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_ImpactPoint) == 0x000930, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Normal) == 0x00093C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_ImpactNormal) == 0x000948, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_PhysMat) == 0x000958, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitActor) == 0x000960, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitComponent) == 0x000968, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitBoneName) == 0x000970, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitItem) == 0x000978, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_ElementIndex) == 0x00097C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_FaceIndex) == 0x000980, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_TraceStart) == 0x000984, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_TraceEnd) == 0x000990, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x00099C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_MakeTransform_ReturnValue) == 0x0009B0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_settings) == 0x0009E0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_settings' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000AD0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_FinishSpawningActor_ReturnValue) == 0x000AD8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Max_ReturnValue) == 0x000AE0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Max_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Get_Item_3) == 0x000AE8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Length_ReturnValue_3) == 0x000AF0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Less_IntInt_ReturnValue_2) == 0x000AF4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_object_Variable_5) == 0x000AF8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_object_Variable_5' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_RemoveItem_ReturnValue_1) == 0x000B00, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_RemoveItem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player) == 0x000B08, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_hit) == 0x000B10, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_action) == 0x000B98, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_object_Variable_6) == 0x000BA0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_object_Variable_6' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_SwitchEnum_CmpSuccess) == 0x000BA8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_bBlockingHit_1) == 0x000BA9, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_bBlockingHit_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_bInitialOverlap_1) == 0x000BAA, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_bInitialOverlap_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Time_1) == 0x000BAC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Time_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Distance_1) == 0x000BB0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Distance_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Location_1) == 0x000BB4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Location_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_ImpactPoint_1) == 0x000BC0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_ImpactPoint_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Normal_1) == 0x000BCC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Normal_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_ImpactNormal_1) == 0x000BD8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_ImpactNormal_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_PhysMat_1) == 0x000BE8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_PhysMat_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitActor_1) == 0x000BF0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitActor_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitComponent_1) == 0x000BF8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitComponent_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitBoneName_1) == 0x000C00, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitBoneName_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitItem_1) == 0x000C08, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitItem_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_ElementIndex_1) == 0x000C0C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_ElementIndex_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_FaceIndex_1) == 0x000C10, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_FaceIndex_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_TraceStart_1) == 0x000C14, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_TraceStart_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_TraceEnd_1) == 0x000C20, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_TraceEnd_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_K2_GetComponentScale_ReturnValue_1) == 0x000C2C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_K2_GetComponentScale_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_DynamicCast_AsStatic_Mesh_Component) == 0x000C38, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_DynamicCast_AsStatic_Mesh_Component' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_DynamicCast_bSuccess) == 0x000C40, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_VSize_ReturnValue_1) == 0x000C44, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_VSize_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Find_ReturnValue_1) == 0x000C48, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000C4C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_addFood_full) == 0x000C50, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_addFood_full' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x000C51, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_getSaveSlot_saveSlot) == 0x000C58, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_getSaveSlot_saveSlot' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_FClamp_ReturnValue) == 0x000C60, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_component) == 0x000C68, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_component' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000C70, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_RandomBoolWithWeight_ReturnValue_1) == 0x000C74, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_RandomBoolWithWeight_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_progressAdvancement_finished) == 0x000C75, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_progressAdvancement_finished' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_progressAdvancement_name) == 0x000C78, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_progressAdvancement_name' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Select_Default) == 0x000C80, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Get_Item_4) == 0x000C88, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_SetStaticMesh_ReturnValue) == 0x000C90, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_int_Array_Index_Variable_1) == 0x000024, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_int_Array_Index_Variable_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_object_Variable) == 0x000028, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_damage_5) == 0x000038, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_damage_5' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_hit_8) == 0x00003C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_hit_8' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_actor_2) == 0x0000C8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_actor_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_impact_2) == 0x0000D0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_impact_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_gamemode) == 0x0000E0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_gamemode' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_key_2) == 0x0000E8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_key_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_pressed_1) == 0x000100, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_pressed_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_color) == 0x000104, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_color' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_14) == 0x000118, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_14' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_hit_7) == 0x000120, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_hit_7' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_kick) == 0x0001A8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_kick' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_name_1) == 0x0001AC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_name_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_13) == 0x0001B8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_13' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_12) == 0x0001C0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_12' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_hit_6) == 0x0001C8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_hit_6' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_damage_4) == 0x000250, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_damage_4' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_hit_5) == 0x000254, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_hit_5' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_actor_1) == 0x0002E0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_actor_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_impact_1) == 0x0002E8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_impact_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_water_3) == 0x0002F8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_water_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_water_2) == 0x000300, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_water_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_water_1) == 0x000308, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_water_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_water) == 0x000310, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_water' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_activate) == 0x000318, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_activate' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_static) == 0x000319, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_static' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_frozen) == 0x00031A, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_frozen' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_active) == 0x00031B, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_active' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_key_1) == 0x000320, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_key_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_damage_3) == 0x000330, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_damage_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_fuel) == 0x000334, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_fuel' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_11) == 0x000338, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_11' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_10) == 0x000340, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_10' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_damage_2) == 0x000348, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_damage_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_location_1) == 0x00034C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_location_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_9) == 0x000358, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_9' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_8) == 0x000360, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_8' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_7) == 0x000368, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_7' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_wheelDelta) == 0x000370, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_wheelDelta' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_6) == 0x000378, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_6' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_mouse) == 0x000380, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_mouse' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_5) == 0x000388, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_5' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_key) == 0x000390, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_key' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_pressed) == 0x0003A8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_pressed' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_temperature_1) == 0x0003AC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_temperature_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_temperature) == 0x0003B0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_temperature' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_speed) == 0x0003B4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_speed' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_4) == 0x0003B8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_4' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_hit_4) == 0x0003C0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_hit_4' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_name) == 0x000448, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_name' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_volume) == 0x000458, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_volume' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_3) == 0x000460, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_location) == 0x000468, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_location' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_damage_1) == 0x000474, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_damage_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_clean) == 0x000478, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_clean' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_2) == 0x000480, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_hit_3) == 0x000488, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_hit_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_hook) == 0x000510, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_hook' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000518, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00051C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Get_Item) == 0x000520, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Length_ReturnValue) == 0x000528, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_DeltaSeconds) == 0x00052C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_obj_statDyn_obj) == 0x000530, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_obj_statDyn_obj' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000540, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Add_VectorVector_ReturnValue) == 0x00054C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_GetWorldDeltaSeconds_ReturnValue_1) == 0x000558, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_GetWorldDeltaSeconds_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_obj_statDyn_obj_1) == 0x000560, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_obj_statDyn_obj_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_object_Variable_1) == 0x000570, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_object_Variable_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_object_Variable_2) == 0x000578, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_object_Variable_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_IsValid_ReturnValue) == 0x000580, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_RandomUnitVector_ReturnValue) == 0x000584, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_RandomUnitVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x000590, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_RandomFloatInRange_ReturnValue) == 0x00059C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_bool_Variable) == 0x0005A0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_int_Array_Index_Variable_2) == 0x0005A4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_int_Array_Index_Variable_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_GetWorldDeltaSeconds_ReturnValue_2) == 0x0005A8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_GetWorldDeltaSeconds_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0005AC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_EqualExactly_VectorVector_ReturnValue) == 0x0005AD, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_EqualExactly_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_object_Variable_3) == 0x0005B0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_object_Variable_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0005B8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_RandomFloat_ReturnValue) == 0x0005C4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_RandomFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x0005C8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Ease_ReturnValue) == 0x0005CC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Ease_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x0005D0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x0005D4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Multiply_VectorFloat_ReturnValue_2) == 0x0005D8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Multiply_VectorFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_object_Variable_4) == 0x0005E8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_object_Variable_4' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Add_VectorVector_ReturnValue_1) == 0x0005F0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_GetWorldDeltaSeconds_ReturnValue_3) == 0x0005FC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_GetWorldDeltaSeconds_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_int_Loop_Counter_Variable_2) == 0x000600, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_object_Variable_5) == 0x000608, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_object_Variable_5' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Less_IntInt_ReturnValue) == 0x000618, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Add_IntInt_ReturnValue_2) == 0x00061C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_actor) == 0x000620, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_actor' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_damage) == 0x000628, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_damage' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_hit_2) == 0x00062C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_hit_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_impact) == 0x0006B4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_impact' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_skipSetting) == 0x0006C0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_skipSetting' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_VSize_ReturnValue) == 0x0006C4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_VSize_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x0006C8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x0006CC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_SphereOverlapActors_OutActors) == 0x0006D0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_SphereOverlapActors_OutActors' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_SphereOverlapActors_ReturnValue) == 0x0006E0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_SphereOverlapActors_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_K2_GetComponentScale_ReturnValue) == 0x0006E4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_K2_GetComponentScale_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_LastIndex_ReturnValue) == 0x0006F0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_RandomIntegerInRange_ReturnValue) == 0x0006F4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player_1) == 0x0006F8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_hit_1) == 0x000700, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_hit_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Get_Item_1) == 0x000788, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_DynamicCast_AsProp_Food) == 0x000790, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_DynamicCast_AsProp_Food' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_DynamicCast_bSuccess) == 0x000798, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_GetActorBounds_Origin) == 0x00079C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_GetActorBounds_Origin' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_GetActorBounds_BoxExtent) == 0x0007A8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_GetActorBounds_BoxExtent' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0007B4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_GetClosestPointOnCollision_OutPointOnBody) == 0x0007B8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_GetClosestPointOnCollision_OutPointOnBody' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_GetClosestPointOnCollision_ReturnValue) == 0x0007C4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_GetClosestPointOnCollision_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Less_FloatFloat_ReturnValue) == 0x0007C8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Conv_IntToFloat_ReturnValue) == 0x0007CC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BooleanAND_ReturnValue) == 0x0007D0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0007D4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x0007D8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_GetWorldDeltaSeconds_ReturnValue_4) == 0x0007DC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_GetWorldDeltaSeconds_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_VictoryFloatMinusEquals_FloatOut) == 0x0007E0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_VictoryFloatMinusEquals_FloatOut' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Divide_FloatFloat_ReturnValue_2) == 0x0007E4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Less_FloatFloat_ReturnValue_1) == 0x0007E8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Less_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Conv_FloatToVector_ReturnValue) == 0x0007EC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Conv_FloatToVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Add_VectorVector_ReturnValue_2) == 0x0007F8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Add_VectorVector_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Get_Item_2) == 0x000808, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Get_Item_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Length_ReturnValue_1) == 0x000810, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_K2_GetComponentScale_ReturnValue_1) == 0x000814, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_K2_GetComponentScale_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000820, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Subtract_VectorInt_ReturnValue) == 0x00082C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Subtract_VectorInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_VSize_ReturnValue_1) == 0x000838, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_VSize_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x00083C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Greater_FloatFloat_ReturnValue_1) == 0x00083D, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_object_Variable_6) == 0x000840, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_object_Variable_6' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BooleanAND_ReturnValue_1) == 0x000850, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_SphereTraceSingleForObjects_OutHit) == 0x000854, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_SphereTraceSingleForObjects_OutHit' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_SphereTraceSingleForObjects_ReturnValue) == 0x0008DC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_SphereTraceSingleForObjects_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_bBlockingHit) == 0x0008DD, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_bInitialOverlap) == 0x0008DE, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Time) == 0x0008E0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Distance) == 0x0008E4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Location) == 0x0008E8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_ImpactPoint) == 0x0008F4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Normal) == 0x000900, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_ImpactNormal) == 0x00090C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_PhysMat) == 0x000918, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitActor) == 0x000920, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitComponent) == 0x000928, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitBoneName) == 0x000930, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitItem) == 0x000938, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_ElementIndex) == 0x00093C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_FaceIndex) == 0x000940, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_TraceStart) == 0x000944, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_TraceEnd) == 0x000950, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_VLerp_ReturnValue) == 0x00095C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_VLerp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Multiply_VectorFloat_ReturnValue_3) == 0x000968, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Multiply_VectorFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Add_VectorVector_ReturnValue_3) == 0x000974, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Add_VectorVector_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Add_VectorVector_ReturnValue_4) == 0x000980, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Add_VectorVector_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_MakeRotationFromAxes_ReturnValue) == 0x00098C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_MakeRotationFromAxes_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_SelectVector_ReturnValue) == 0x000998, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_SelectVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Dot_VectorVector_ReturnValue) == 0x0009A4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x0009A8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Abs_ReturnValue) == 0x000A30, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Abs_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Cross_VectorVector_ReturnValue) == 0x000A34, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Cross_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Greater_FloatFloat_ReturnValue_2) == 0x000A40, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Greater_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Cross_VectorVector_ReturnValue_1) == 0x000A44, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Cross_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_MakeRotationFromAxes_ReturnValue_1) == 0x000A50, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_MakeRotationFromAxes_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_SelectRotator_ReturnValue) == 0x000A5C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_SelectRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_K2_SetWorldRotation_SweepHitResult) == 0x000A68, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_K2_SetWorldRotation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Length_ReturnValue_2) == 0x000AF0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_int_Array_Index_Variable_3) == 0x000AF4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_int_Array_Index_Variable_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Less_IntInt_ReturnValue_1) == 0x000AF8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Get_Item_3) == 0x000B00, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Get_Item_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Find_ReturnValue) == 0x000B08, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x000B0C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakVector_X) == 0x000B18, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakVector_X' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakVector_Y) == 0x000B1C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakVector_Y' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakVector_Z) == 0x000B20, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakVector_Z' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Less_FloatFloat_ReturnValue_2) == 0x000B24, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Less_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_int_Loop_Counter_Variable_3) == 0x000B28, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000B30, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000B38, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Less_IntInt_ReturnValue_2) == 0x000B44, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Add_IntInt_ReturnValue_3) == 0x000B48, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_object_Variable_7) == 0x000B50, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_object_Variable_7' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_SphereTraceSingleForObjects_OutHit_1) == 0x000B60, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_SphereTraceSingleForObjects_OutHit_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_SphereTraceSingleForObjects_ReturnValue_1) == 0x000BE8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_SphereTraceSingleForObjects_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_bBlockingHit_1) == 0x000BE9, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_bBlockingHit_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_bInitialOverlap_1) == 0x000BEA, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_bInitialOverlap_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Time_1) == 0x000BEC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Time_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Distance_1) == 0x000BF0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Distance_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Location_1) == 0x000BF4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Location_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_ImpactPoint_1) == 0x000C00, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_ImpactPoint_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Normal_1) == 0x000C0C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Normal_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_ImpactNormal_1) == 0x000C18, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_ImpactNormal_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_PhysMat_1) == 0x000C28, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_PhysMat_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitActor_1) == 0x000C30, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitActor_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitComponent_1) == 0x000C38, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitComponent_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitBoneName_1) == 0x000C40, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitBoneName_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitItem_1) == 0x000C48, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitItem_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_ElementIndex_1) == 0x000C4C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_ElementIndex_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_FaceIndex_1) == 0x000C50, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_FaceIndex_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_TraceStart_1) == 0x000C54, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_TraceStart_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_TraceEnd_1) == 0x000C60, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_TraceEnd_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_RandomPointInBoundingBox_ReturnValue) == 0x000C6C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_RandomPointInBoundingBox_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_VLerp_ReturnValue_1) == 0x000C78, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_VLerp_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_LowEntry_LocalVariable_Value__Object) == 0x000C84, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_LowEntry_LocalVariable_Value__Object' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Cross_VectorVector_ReturnValue_2) == 0x000C90, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Cross_VectorVector_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Multiply_VectorFloat_ReturnValue_4) == 0x000C9C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Multiply_VectorFloat_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Cross_VectorVector_ReturnValue_3) == 0x000CA8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Cross_VectorVector_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Add_VectorVector_ReturnValue_5) == 0x000CB4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Add_VectorVector_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_SelectVector_ReturnValue_1) == 0x000CC0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_SelectVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_K2_SetWorldLocation_SweepHitResult_1) == 0x000CCC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_K2_SetWorldLocation_SweepHitResult_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_obj_static_obj) == 0x000D58, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_obj_static_obj' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_RandomUnitVector_ReturnValue_1) == 0x000D68, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_RandomUnitVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Multiply_VectorFloat_ReturnValue_5) == 0x000D74, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Multiply_VectorFloat_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_object_Variable_8) == 0x000D80, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_object_Variable_8' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_SphereOverlapActors_OutActors_1) == 0x000D90, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_SphereOverlapActors_OutActors_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_SphereOverlapActors_ReturnValue_1) == 0x000DA0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_SphereOverlapActors_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_LastIndex_ReturnValue_1) == 0x000DA4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_LastIndex_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_RandomIntegerInRange_ReturnValue_1) == 0x000DA8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_RandomIntegerInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Subtract_VectorVector_ReturnValue_1) == 0x000DAC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Subtract_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Get_Item_4) == 0x000DB8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Get_Item_4' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_GetActorBounds_Origin_1) == 0x000DC0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_GetActorBounds_Origin_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_GetActorBounds_BoxExtent_1) == 0x000DCC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_GetActorBounds_BoxExtent_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_EqualExactly_VectorVector_ReturnValue_1) == 0x000DD8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_EqualExactly_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_SelectVector_ReturnValue_2) == 0x000DDC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_SelectVector_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_ProjectVectorOnToPlane_ReturnValue) == 0x000DE8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_ProjectVectorOnToPlane_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_EqualExactly_VectorVector_ReturnValue_2) == 0x000DF4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_EqualExactly_VectorVector_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Normal_ReturnValue) == 0x000DF8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Normal_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BooleanAND_ReturnValue_2) == 0x000E04, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Dot_VectorVector_ReturnValue_1) == 0x000E08, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Dot_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_DegAcos_ReturnValue) == 0x000E0C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_DegAcos_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000E10, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_object_Variable_9) == 0x000E18, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_object_Variable_9' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Multiply_FloatFloat_ReturnValue_4) == 0x000E28, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Multiply_FloatFloat_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_SphereOverlapActors_OutActors_2) == 0x000E30, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_SphereOverlapActors_OutActors_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_SphereOverlapActors_ReturnValue_2) == 0x000E40, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_SphereOverlapActors_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Multiply_FloatFloat_ReturnValue_5) == 0x000E44, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Multiply_FloatFloat_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_SelectFloat_ReturnValue) == 0x000E48, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Length_ReturnValue_3) == 0x000E4C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Add_FloatFloat_ReturnValue) == 0x000E50, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_RandomIntegerInRange_ReturnValue_2) == 0x000E54, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_RandomIntegerInRange_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_LowEntry_LocalVariable_Value__1_Object) == 0x000E58, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_LowEntry_LocalVariable_Value__1_Object' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Get_Item_5) == 0x000E60, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Get_Item_5' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_RotateAngleAxis_ReturnValue) == 0x000E68, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_RotateAngleAxis_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_GetActorBounds_Origin_2) == 0x000E74, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_GetActorBounds_Origin_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_GetActorBounds_BoxExtent_2) == 0x000E80, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_GetActorBounds_BoxExtent_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_RotateAngleAxis_ReturnValue_1) == 0x000E8C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_RotateAngleAxis_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Add_VectorVector_ReturnValue_6) == 0x000E98, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Add_VectorVector_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_MakeRotationFromAxes_ReturnValue_2) == 0x000EA4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_MakeRotationFromAxes_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_SphereTraceSingleForObjects_OutHit_2) == 0x000EB0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_SphereTraceSingleForObjects_OutHit_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_SphereTraceSingleForObjects_ReturnValue_2) == 0x000F38, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_SphereTraceSingleForObjects_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_K2_SetWorldRotation_SweepHitResult_1) == 0x000F3C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_K2_SetWorldRotation_SweepHitResult_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_bBlockingHit_2) == 0x000FC4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_bBlockingHit_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_bInitialOverlap_2) == 0x000FC5, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_bInitialOverlap_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Time_2) == 0x000FC8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Time_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Distance_2) == 0x000FCC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Distance_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Location_2) == 0x000FD0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Location_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_ImpactPoint_2) == 0x000FDC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_ImpactPoint_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Normal_2) == 0x000FE8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Normal_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_ImpactNormal_2) == 0x000FF4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_ImpactNormal_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_PhysMat_2) == 0x001000, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_PhysMat_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitActor_2) == 0x001008, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitActor_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitComponent_2) == 0x001010, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitComponent_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitBoneName_2) == 0x001018, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitBoneName_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitItem_2) == 0x001020, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitItem_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_ElementIndex_2) == 0x001024, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_ElementIndex_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_FaceIndex_2) == 0x001028, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_FaceIndex_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_TraceStart_2) == 0x00102C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_TraceStart_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_TraceEnd_2) == 0x001038, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_TraceEnd_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Greater_IntInt_ReturnValue) == 0x001044, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x001048, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_MakeTransform_ReturnValue) == 0x001060, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x001090, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_settings) == 0x001098, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_settings' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_FinishSpawningActor_ReturnValue) == 0x001168, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Max_ReturnValue) == 0x001170, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Max_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Get_Item_6) == 0x001178, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Get_Item_6' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Length_ReturnValue_4) == 0x001180, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_RemoveItem_ReturnValue) == 0x001184, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Less_IntInt_ReturnValue_3) == 0x001185, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, Temp_object_Variable_10) == 0x001188, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::Temp_object_Variable_10' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_player) == 0x001190, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_hit) == 0x001198, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_index) == 0x001220, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Event_action) == 0x001224, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_RemoveItem_ReturnValue_1) == 0x001225, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_RemoveItem_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_SwitchEnum_CmpSuccess) == 0x001226, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_bBlockingHit_3) == 0x001227, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_bBlockingHit_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_bInitialOverlap_3) == 0x001228, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_bInitialOverlap_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Time_3) == 0x00122C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Time_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Distance_3) == 0x001230, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Distance_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Location_3) == 0x001234, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Location_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_ImpactPoint_3) == 0x001240, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_ImpactPoint_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_Normal_3) == 0x00124C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_Normal_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_ImpactNormal_3) == 0x001258, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_ImpactNormal_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_PhysMat_3) == 0x001268, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_PhysMat_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitActor_3) == 0x001270, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitActor_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitComponent_3) == 0x001278, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitComponent_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitBoneName_3) == 0x001280, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitBoneName_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_HitItem_3) == 0x001288, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_HitItem_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_ElementIndex_3) == 0x00128C, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_ElementIndex_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_FaceIndex_3) == 0x001290, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_FaceIndex_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_TraceStart_3) == 0x001294, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_TraceStart_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_BreakHitResult_TraceEnd_3) == 0x0012A0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_BreakHitResult_TraceEnd_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_K2_GetComponentScale_ReturnValue_2) == 0x0012AC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_K2_GetComponentScale_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_IsValid_ReturnValue_1) == 0x0012B8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_VSize_ReturnValue_2) == 0x0012BC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_VSize_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Multiply_FloatFloat_ReturnValue_6) == 0x0012C0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Multiply_FloatFloat_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_DynamicCast_AsStatic_Mesh_Component) == 0x0012C8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_DynamicCast_AsStatic_Mesh_Component' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_DynamicCast_bSuccess_1) == 0x0012D0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_addFood_full) == 0x0012D1, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_addFood_full' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Array_Find_ReturnValue_1) == 0x0012D4, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Array_Find_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x0012D8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_IsValid_ReturnValue_2) == 0x0012D9, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_getSaveSlot_saveSlot) == 0x0012E0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_getSaveSlot_saveSlot' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_FClamp_ReturnValue) == 0x0012E8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_FClamp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_Divide_FloatFloat_ReturnValue_3) == 0x0012EC, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_Divide_FloatFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_RandomBoolWithWeight_ReturnValue_1) == 0x0012F0, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_RandomBoolWithWeight_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, K2Node_Select_Default) == 0x0012F8, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ExecuteUbergraph_cockroachMaster, CallFunc_SetStaticMesh_ReturnValue) == 0x001300, "Member 'CockroachMaster_C_ExecuteUbergraph_cockroachMaster::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
 
 // Function cockroachMaster.cockroachMaster_C.impactSquishCPP
 // 0x0008 (0x0008 - 0x0000)
@@ -496,23 +777,25 @@ struct CockroachMaster_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(CockroachMaster_C_ActionOptionIndex) == 0x000008, "Wrong alignment on CockroachMaster_C_ActionOptionIndex");
 static_assert(sizeof(CockroachMaster_C_ActionOptionIndex) == 0x000098, "Wrong size on CockroachMaster_C_ActionOptionIndex");
 static_assert(offsetof(CockroachMaster_C_ActionOptionIndex, Player) == 0x000000, "Member 'CockroachMaster_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(CockroachMaster_C_ActionOptionIndex, Hit) == 0x000008, "Member 'CockroachMaster_C_ActionOptionIndex::Hit' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ActionOptionIndex, Action) == 0x000090, "Member 'CockroachMaster_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'CockroachMaster_C_ActionOptionIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_ActionOptionIndex, Action) == 0x000094, "Member 'CockroachMaster_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function cockroachMaster.cockroachMaster_C.settingsApplied
-// 0x00F0 (0x00F0 - 0x0000)
+// 0x00CC (0x00CC - 0x0000)
 struct CockroachMaster_C_SettingsApplied final
 {
 public:
-	struct FStruct_settings                       Settings;                                          // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FStruct_settings                       Settings;                                          // 0x0000(0x00CC)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CockroachMaster_C_SettingsApplied) == 0x000008, "Wrong alignment on CockroachMaster_C_SettingsApplied");
-static_assert(sizeof(CockroachMaster_C_SettingsApplied) == 0x0000F0, "Wrong size on CockroachMaster_C_SettingsApplied");
+static_assert(alignof(CockroachMaster_C_SettingsApplied) == 0x000004, "Wrong alignment on CockroachMaster_C_SettingsApplied");
+static_assert(sizeof(CockroachMaster_C_SettingsApplied) == 0x0000CC, "Wrong size on CockroachMaster_C_SettingsApplied");
 static_assert(offsetof(CockroachMaster_C_SettingsApplied, Settings) == 0x000000, "Member 'CockroachMaster_C_SettingsApplied::Settings' has a wrong offset!");
 
 // Function cockroachMaster.cockroachMaster_C.steppedOn
@@ -557,31 +840,6 @@ public:
 static_assert(alignof(CockroachMaster_C_ReceiveTick) == 0x000004, "Wrong alignment on CockroachMaster_C_ReceiveTick");
 static_assert(sizeof(CockroachMaster_C_ReceiveTick) == 0x000004, "Wrong size on CockroachMaster_C_ReceiveTick");
 static_assert(offsetof(CockroachMaster_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'CockroachMaster_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
-
-// Function cockroachMaster.cockroachMaster_C.hookTension
-// 0x0008 (0x0008 - 0x0000)
-struct CockroachMaster_C_HookTension final
-{
-public:
-	class AHook_C*                                Hook;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(CockroachMaster_C_HookTension) == 0x000008, "Wrong alignment on CockroachMaster_C_HookTension");
-static_assert(sizeof(CockroachMaster_C_HookTension) == 0x000008, "Wrong size on CockroachMaster_C_HookTension");
-static_assert(offsetof(CockroachMaster_C_HookTension, Hook) == 0x000000, "Member 'CockroachMaster_C_HookTension::Hook' has a wrong offset!");
-
-// Function cockroachMaster.cockroachMaster_C.cleanSponge
-// 0x0010 (0x0010 - 0x0000)
-struct CockroachMaster_C_CleanSponge final
-{
-public:
-	float                                         Clean;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          Player;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(CockroachMaster_C_CleanSponge) == 0x000008, "Wrong alignment on CockroachMaster_C_CleanSponge");
-static_assert(sizeof(CockroachMaster_C_CleanSponge) == 0x000010, "Wrong size on CockroachMaster_C_CleanSponge");
-static_assert(offsetof(CockroachMaster_C_CleanSponge, Clean) == 0x000000, "Member 'CockroachMaster_C_CleanSponge::Clean' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_CleanSponge, Player) == 0x000008, "Member 'CockroachMaster_C_CleanSponge::Player' has a wrong offset!");
 
 // Function cockroachMaster.cockroachMaster_C.hooked
 // 0x0008 (0x0008 - 0x0000)
@@ -790,19 +1048,6 @@ static_assert(alignof(CockroachMaster_C_PlayerHandUse_RMB) == 0x000008, "Wrong a
 static_assert(sizeof(CockroachMaster_C_PlayerHandUse_RMB) == 0x000008, "Wrong size on CockroachMaster_C_PlayerHandUse_RMB");
 static_assert(offsetof(CockroachMaster_C_PlayerHandUse_RMB, Player) == 0x000000, "Member 'CockroachMaster_C_PlayerHandUse_RMB::Player' has a wrong offset!");
 
-// Function cockroachMaster.cockroachMaster_C.receivedPhyiscsDamage
-// 0x008C (0x008C - 0x0000)
-struct CockroachMaster_C_ReceivedPhyiscsDamage final
-{
-public:
-	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Hot;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-static_assert(alignof(CockroachMaster_C_ReceivedPhyiscsDamage) == 0x000004, "Wrong alignment on CockroachMaster_C_ReceivedPhyiscsDamage");
-static_assert(sizeof(CockroachMaster_C_ReceivedPhyiscsDamage) == 0x00008C, "Wrong size on CockroachMaster_C_ReceivedPhyiscsDamage");
-static_assert(offsetof(CockroachMaster_C_ReceivedPhyiscsDamage, Damage) == 0x000000, "Member 'CockroachMaster_C_ReceivedPhyiscsDamage::Damage' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_ReceivedPhyiscsDamage, Hot) == 0x000004, "Member 'CockroachMaster_C_ReceivedPhyiscsDamage::Hot' has a wrong offset!");
-
 // Function cockroachMaster.cockroachMaster_C.ignite
 // 0x0004 (0x0004 - 0x0000)
 struct CockroachMaster_C_Ignite final
@@ -913,7 +1158,7 @@ struct CockroachMaster_C_ImpactDamage final
 public:
 	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25D7[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0090(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Impact;                                            // 0x0098(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -924,53 +1169,18 @@ static_assert(offsetof(CockroachMaster_C_ImpactDamage, Hit) == 0x000004, "Member
 static_assert(offsetof(CockroachMaster_C_ImpactDamage, Actor) == 0x000090, "Member 'CockroachMaster_C_ImpactDamage::Actor' has a wrong offset!");
 static_assert(offsetof(CockroachMaster_C_ImpactDamage, Impact) == 0x000098, "Member 'CockroachMaster_C_ImpactDamage::Impact' has a wrong offset!");
 
-// Function cockroachMaster.cockroachMaster_C.playerR
-// 0x0008 (0x0008 - 0x0000)
-struct CockroachMaster_C_PlayerR final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(CockroachMaster_C_PlayerR) == 0x000008, "Wrong alignment on CockroachMaster_C_PlayerR");
-static_assert(sizeof(CockroachMaster_C_PlayerR) == 0x000008, "Wrong size on CockroachMaster_C_PlayerR");
-static_assert(offsetof(CockroachMaster_C_PlayerR, Player) == 0x000000, "Member 'CockroachMaster_C_PlayerR::Player' has a wrong offset!");
-
-// Function cockroachMaster.cockroachMaster_C.playerHold
-// 0x0008 (0x0008 - 0x0000)
-struct CockroachMaster_C_PlayerHold final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(CockroachMaster_C_PlayerHold) == 0x000008, "Wrong alignment on CockroachMaster_C_PlayerHold");
-static_assert(sizeof(CockroachMaster_C_PlayerHold) == 0x000008, "Wrong size on CockroachMaster_C_PlayerHold");
-static_assert(offsetof(CockroachMaster_C_PlayerHold, Player) == 0x000000, "Member 'CockroachMaster_C_PlayerHold::Player' has a wrong offset!");
-
-// Function cockroachMaster.cockroachMaster_C.playerUnequip
-// 0x0008 (0x0008 - 0x0000)
-struct CockroachMaster_C_PlayerUnequip final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(CockroachMaster_C_PlayerUnequip) == 0x000008, "Wrong alignment on CockroachMaster_C_PlayerUnequip");
-static_assert(sizeof(CockroachMaster_C_PlayerUnequip) == 0x000008, "Wrong size on CockroachMaster_C_PlayerUnequip");
-static_assert(offsetof(CockroachMaster_C_PlayerUnequip, Player) == 0x000000, "Member 'CockroachMaster_C_PlayerUnequip::Player' has a wrong offset!");
-
 // Function cockroachMaster.cockroachMaster_C.damageByPlayer
-// 0x0098 (0x0098 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct CockroachMaster_C_DamageByPlayer final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         Damage;                                            // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(CockroachMaster_C_DamageByPlayer) == 0x000008, "Wrong alignment on CockroachMaster_C_DamageByPlayer");
-static_assert(sizeof(CockroachMaster_C_DamageByPlayer) == 0x000098, "Wrong size on CockroachMaster_C_DamageByPlayer");
+static_assert(sizeof(CockroachMaster_C_DamageByPlayer) == 0x000090, "Wrong size on CockroachMaster_C_DamageByPlayer");
 static_assert(offsetof(CockroachMaster_C_DamageByPlayer, Player) == 0x000000, "Member 'CockroachMaster_C_DamageByPlayer::Player' has a wrong offset!");
 static_assert(offsetof(CockroachMaster_C_DamageByPlayer, Hit) == 0x000008, "Member 'CockroachMaster_C_DamageByPlayer::Hit' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_DamageByPlayer, Damage) == 0x000090, "Member 'CockroachMaster_C_DamageByPlayer::Damage' has a wrong offset!");
 
 // Function cockroachMaster.cockroachMaster_C.thrown
 // 0x0008 (0x0008 - 0x0000)
@@ -1018,21 +1228,6 @@ static_assert(sizeof(CockroachMaster_C_Player_use) == 0x000090, "Wrong size on C
 static_assert(offsetof(CockroachMaster_C_Player_use, Player) == 0x000000, "Member 'CockroachMaster_C_Player_use::Player' has a wrong offset!");
 static_assert(offsetof(CockroachMaster_C_Player_use, Hit) == 0x000008, "Member 'CockroachMaster_C_Player_use::Hit' has a wrong offset!");
 
-// Function cockroachMaster.cockroachMaster_C.texturePickerApply
-// 0x0018 (0x0018 - 0x0000)
-struct CockroachMaster_C_TexturePickerApply final
-{
-public:
-	class UUmg_texturePicker_C*                   Picker;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Param_Index;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(CockroachMaster_C_TexturePickerApply) == 0x000008, "Wrong alignment on CockroachMaster_C_TexturePickerApply");
-static_assert(sizeof(CockroachMaster_C_TexturePickerApply) == 0x000018, "Wrong size on CockroachMaster_C_TexturePickerApply");
-static_assert(offsetof(CockroachMaster_C_TexturePickerApply, Picker) == 0x000000, "Member 'CockroachMaster_C_TexturePickerApply::Picker' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_TexturePickerApply, Texture) == 0x000008, "Member 'CockroachMaster_C_TexturePickerApply::Texture' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_TexturePickerApply, Param_Index) == 0x000010, "Member 'CockroachMaster_C_TexturePickerApply::Param_Index' has a wrong offset!");
-
 // Function cockroachMaster.cockroachMaster_C.applyColor
 // 0x0010 (0x0010 - 0x0000)
 struct CockroachMaster_C_ApplyColor final
@@ -1075,7 +1270,7 @@ struct CockroachMaster_C_ImpactDamageCPP final
 public:
 	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25D8[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0090(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Impact;                                            // 0x0098(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -1095,7 +1290,7 @@ public:
 	struct FVector                                Param_Size;                                        // 0x000C(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bypassCheck;                                       // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualExactly_VectorVector_ReturnValue;    // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A[0x2];                                       // 0x001A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25D9[0x2];                                     // 0x001A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x001C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<EObjectTypeQuery>                      CallFunc_obj_statDyn_obj;                          // 0x0030(0x0010)(ReferenceParm)
@@ -1104,32 +1299,32 @@ public:
 	float                                         CallFunc_Vector_Distance_ReturnValue;              // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Ease_ReturnValue;                         // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25DA[0x3];                                     // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue;           // 0x005C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25DB[0x3];                                     // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_SelectVector_ReturnValue;                 // 0x006C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_78[0x8];                                       // 0x0078(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25DC[0x8];                                     // 0x0078(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0080(0x0030)(IsPlainOldData, NoDestructor)
 	class UStaticMeshComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x00B8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25DD[0x7];                                     // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0148(0x0010)(ConstParm, ReferenceParm)
 	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit;         // 0x0158(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue;    // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E1[0x3];                                      // 0x01E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25DE[0x3];                                     // 0x01E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x01E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EA[0x2];                                      // 0x01EA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25DF[0x2];                                     // 0x01EA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x01EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x01F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x01F4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0200(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x020C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0218(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_224[0x4];                                      // 0x0224(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25E0[0x4];                                     // 0x0224(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0238(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1143,7 +1338,7 @@ public:
 	bool                                          CallFunc_IsSimulatingPhysics_ReturnValue;          // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0271(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0272(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_273[0x1];                                      // 0x0273(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25E1[0x1];                                     // 0x0273(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0274(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(CockroachMaster_C_AddRoach) == 0x000010, "Wrong alignment on CockroachMaster_C_AddRoach");
@@ -1200,7 +1395,7 @@ struct CockroachMaster_C_UpdCurrent final
 {
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25E2[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetComponentScale_ReturnValue;         // 0x0004(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0010(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetUpVector_ReturnValue;                  // 0x001C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1223,9 +1418,9 @@ struct CockroachMaster_C_DeleteRoach final
 public:
 	int32                                         IndexToRemove;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Crush;                                             // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25E3[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25E4[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	const class UStaticMeshComponent*             Temp_object_Variable;                              // 0x0010(0x0008)(ConstParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0020(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1249,14 +1444,14 @@ public:
 	struct FHitResult                             Hit;                                               // 0x0000(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_8A[0x2];                                       // 0x008A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25E5[0x2];                                     // 0x008A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0094(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x00A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x00AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x00B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25E6[0x4];                                     // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1269,10 +1464,10 @@ public:
 	int32                                         Temp_int_Variable;                                 // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   K2Node_DynamicCast_AsStatic_Mesh_Component;        // 0x0110(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25E7[0x7];                                     // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0120(0x0030)(IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0150(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15C[0x4];                                      // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25E8[0x4];                                     // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AProp_deadRoach_C*                      CallFunc_FinishSpawningActor_ReturnValue;          // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetComponentScale_ReturnValue;         // 0x0170(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1282,7 +1477,7 @@ public:
 	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0194(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0195(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_196[0x2];                                      // 0x0196(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25E9[0x2];                                     // 0x0196(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(CockroachMaster_C_Dedt) == 0x000010, "Wrong alignment on CockroachMaster_C_Dedt");
@@ -1329,14 +1524,14 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25EA[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0010(0x0010)(ConstParm, ReferenceParm)
 	TArray<EObjectTypeQuery>                      CallFunc_obj_static_obj;                           // 0x0020(0x0010)(ReferenceParm)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0030(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   CallFunc_Array_Get_Item;                           // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25EB[0x3];                                     // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x004C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0058(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0064(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1366,7 +1561,7 @@ struct CockroachMaster_C_TryCrush final
 {
 public:
 	struct FVector                                Param_Loc;                                         // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25EC[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    Object;                                            // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1374,11 +1569,11 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_31[0xF];                                       // 0x0031(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25ED[0xF];                                     // 0x0031(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0040(0x0030)(IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0078(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25EE[0x4];                                     // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AProp_deadRoach_C*                      CallFunc_FinishSpawningActor_ReturnValue;          // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetDistanceToCollision_ClosestPointOnCollision; // 0x0090(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetDistanceToCollision_ReturnValue;       // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1416,15 +1611,15 @@ public:
 	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0018(0x0010)(ConstParm, ReferenceParm)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0028(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25EF[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_RandomPointInBoundingBox_ReturnValue;     // 0x0040(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                K2Node_LowEntry_LocalVariable_Value__Object;       // 0x004C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25F0[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         CallFunc_SphereOverlapActors_OutActors;            // 0x0060(0x0010)(ReferenceParm)
 	bool                                          CallFunc_SphereOverlapActors_ReturnValue;          // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_71[0x3];                                       // 0x0071(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25F1[0x3];                                     // 0x0071(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AProp_food_C*                           CallFunc_Array_Get_Item;                           // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_Array_Get_Item_1;                         // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1432,11 +1627,11 @@ public:
 	struct FVector                                CallFunc_GetActorBounds_BoxExtent;                 // 0x0094(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AProp_food_C*                           K2Node_DynamicCast_AsProp_Food;                    // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A9[0x3];                                       // 0x00A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25F2[0x3];                                     // 0x00A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B5[0x3];                                       // 0x00B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25F3[0x3];                                     // 0x00B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_FClamp_ReturnValue;                       // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1444,7 +1639,7 @@ public:
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25F4[0x7];                                     // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_FloatToString_ReturnValue;           // 0x00D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x00E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
@@ -1482,318 +1677,6 @@ static_assert(offsetof(CockroachMaster_C_FoodRoachSpawn, CallFunc_Divide_FloatFl
 static_assert(offsetof(CockroachMaster_C_FoodRoachSpawn, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x0000D0, "Member 'CockroachMaster_C_FoodRoachSpawn::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CockroachMaster_C_FoodRoachSpawn, CallFunc_Conv_FloatToString_ReturnValue) == 0x0000D8, "Member 'CockroachMaster_C_FoodRoachSpawn::CallFunc_Conv_FloatToString_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CockroachMaster_C_FoodRoachSpawn, CallFunc_Concat_StrStr_ReturnValue) == 0x0000E8, "Member 'CockroachMaster_C_FoodRoachSpawn::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-
-// Function cockroachMaster.cockroachMaster_C.calc
-// 0x0768 (0x0768 - 0x0000)
-struct CockroachMaster_C_Calc final
-{
-public:
-	bool                                          CallFunc_EqualExactly_VectorVector_ReturnValue;    // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue;           // 0x000C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentScale_ReturnValue;         // 0x0018(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0024(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VSize_ReturnValue;                        // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0038(0x0010)(ConstParm, ReferenceParm)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_1;       // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloat_ReturnValue;                  // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Ease_ReturnValue;                         // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x005D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5E[0x2];                                       // 0x005E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RandomUnitVector_ReturnValue;             // 0x0068(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_1;                            // 0x0078(0x0010)(ConstParm, ReferenceParm)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0088(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_95[0x3];                                       // 0x0095(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_2;                            // 0x0098(0x0010)(ConstParm, ReferenceParm)
-	TArray<class AActor*>                         Temp_object_Variable_3;                            // 0x00A8(0x0010)(ConstParm, ReferenceParm)
-	TArray<class AActor*>                         CallFunc_SphereOverlapActors_OutActors;            // 0x00B8(0x0010)(ReferenceParm)
-	bool                                          CallFunc_SphereOverlapActors_ReturnValue;          // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C9[0x3];                                       // 0x00C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_food_C*                           K2Node_DynamicCast_AsProp_Food;                    // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E9[0x3];                                       // 0x00E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetActorBounds_Origin;                    // 0x00EC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorBounds_BoxExtent;                 // 0x00F8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0104(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_105[0x3];                                      // 0x0105(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetClosestPointOnCollision_OutPointOnBody; // 0x0108(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetClosestPointOnCollision_ReturnValue;   // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_119[0x3];                                      // 0x0119(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_121[0x3];                                      // 0x0121(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_2;          // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EObjectTypeQuery>                      CallFunc_obj_statDyn_obj;                          // 0x0130(0x0010)(ReferenceParm)
-	float                                         CallFunc_VictoryFloatMinusEquals_FloatOut;         // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_2;       // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue_1;            // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_149[0x3];                                      // 0x0149(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_2;        // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x0150(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x015C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_SphereTraceSingleForObjects_OutHit;       // 0x0168(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_SphereTraceSingleForObjects_ReturnValue;  // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x01F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x01F2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F3[0x1];                                      // 0x01F3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x01FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0208(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0214(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0220(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_22C[0x4];                                      // 0x022C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0240(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x0254(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x025C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0268(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualExactly_VectorVector_ReturnValue_1;  // 0x0274(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_275[0x3];                                      // 0x0275(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x0278(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_2;       // 0x0284(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_2;           // 0x0290(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_3;           // 0x029C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotationFromAxes_ReturnValue;         // 0x02A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_SelectVector_ReturnValue;                 // 0x02B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x02C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x02C4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         CallFunc_Abs_ReturnValue;                          // 0x034C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue;           // 0x0350(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x035C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_35D[0x3];                                      // 0x035D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue_1;         // 0x0360(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotationFromAxes_ReturnValue_1;       // 0x036C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FRotator                               CallFunc_SelectRotator_ReturnValue;                // 0x0378(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult;       // 0x0384(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x040C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         CallFunc_SphereOverlapActors_OutActors_1;          // 0x0418(0x0010)(ReferenceParm)
-	bool                                          CallFunc_SphereOverlapActors_ReturnValue_1;        // 0x0428(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualExactly_VectorVector_ReturnValue_2;  // 0x0429(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_42A[0x2];                                      // 0x042A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_LastIndex_ReturnValue_1;            // 0x042C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0430(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_431[0x3];                                      // 0x0431(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue_1;       // 0x0434(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_Array_Get_Item_1;                         // 0x0438(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_3;       // 0x0440(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorBounds_Origin_1;                  // 0x0444(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorBounds_BoxExtent_1;               // 0x0450(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue_1;      // 0x045C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_SelectVector_ReturnValue_1;               // 0x0468(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_474[0x4];                                      // 0x0474(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EObjectTypeQuery>                      CallFunc_obj_statDyn_obj_1;                        // 0x0478(0x0010)(ReferenceParm)
-	struct FVector                                CallFunc_ProjectVectorOnToPlane_ReturnValue;       // 0x0488(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x0494(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Dot_VectorVector_ReturnValue_1;           // 0x04A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_4;       // 0x04A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_DegAcos_ReturnValue;                      // 0x04A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_3;        // 0x04AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x04B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_3;       // 0x04B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_4;        // 0x04C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_4;           // 0x04C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_5;        // 0x04D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_SphereTraceSingleForObjects_OutHit_1;     // 0x04D4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_SphereTraceSingleForObjects_ReturnValue_1; // 0x055C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_55D[0x3];                                      // 0x055D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x0560(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit_1;            // 0x0564(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap_1;         // 0x0565(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_566[0x2];                                      // 0x0566(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time_1;                    // 0x0568(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance_1;                // 0x056C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location_1;                // 0x0570(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint_1;             // 0x057C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal_1;                  // 0x0588(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal_1;            // 0x0594(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat_1;                 // 0x05A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor_1;                // 0x05A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent_1;            // 0x05B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName_1;             // 0x05B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem_1;                 // 0x05C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex_1;            // 0x05C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex_1;               // 0x05C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart_1;              // 0x05CC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd_1;                // 0x05D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x05E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_VLerp_ReturnValue_1;                      // 0x05E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_LowEntry_LocalVariable_Value__Object;       // 0x05F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue_2;         // 0x05F8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_4;       // 0x0604(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue;              // 0x0610(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_5;           // 0x061C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue_3;         // 0x0628(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_SelectVector_ReturnValue_2;               // 0x0634(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue_1;            // 0x0640(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult_1;     // 0x064C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FRotator                               CallFunc_MakeRotationFromAxes_ReturnValue_2;       // 0x06D4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult_1;     // 0x06E0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-static_assert(alignof(CockroachMaster_C_Calc) == 0x000008, "Wrong alignment on CockroachMaster_C_Calc");
-static_assert(sizeof(CockroachMaster_C_Calc) == 0x000768, "Wrong size on CockroachMaster_C_Calc");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_EqualExactly_VectorVector_ReturnValue) == 0x000000, "Member 'CockroachMaster_C_Calc::CallFunc_EqualExactly_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000004, "Member 'CockroachMaster_C_Calc::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000008, "Member 'CockroachMaster_C_Calc::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Conv_FloatToVector_ReturnValue) == 0x00000C, "Member 'CockroachMaster_C_Calc::CallFunc_Conv_FloatToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_K2_GetComponentScale_ReturnValue) == 0x000018, "Member 'CockroachMaster_C_Calc::CallFunc_K2_GetComponentScale_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Add_VectorVector_ReturnValue) == 0x000024, "Member 'CockroachMaster_C_Calc::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_VSize_ReturnValue) == 0x000030, "Member 'CockroachMaster_C_Calc::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x000034, "Member 'CockroachMaster_C_Calc::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, Temp_object_Variable) == 0x000038, "Member 'CockroachMaster_C_Calc::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_GetWorldDeltaSeconds_ReturnValue_1) == 0x000048, "Member 'CockroachMaster_C_Calc::CallFunc_GetWorldDeltaSeconds_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_RandomFloatInRange_ReturnValue) == 0x00004C, "Member 'CockroachMaster_C_Calc::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000050, "Member 'CockroachMaster_C_Calc::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_RandomFloat_ReturnValue) == 0x000054, "Member 'CockroachMaster_C_Calc::CallFunc_RandomFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Ease_ReturnValue) == 0x000058, "Member 'CockroachMaster_C_Calc::CallFunc_Ease_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_IsValid_ReturnValue) == 0x00005C, "Member 'CockroachMaster_C_Calc::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_IsValid_ReturnValue_1) == 0x00005D, "Member 'CockroachMaster_C_Calc::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000060, "Member 'CockroachMaster_C_Calc::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000064, "Member 'CockroachMaster_C_Calc::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_RandomUnitVector_ReturnValue) == 0x000068, "Member 'CockroachMaster_C_Calc::CallFunc_RandomUnitVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, Temp_object_Variable_1) == 0x000078, "Member 'CockroachMaster_C_Calc::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000088, "Member 'CockroachMaster_C_Calc::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_IsValid_ReturnValue_2) == 0x000094, "Member 'CockroachMaster_C_Calc::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, Temp_object_Variable_2) == 0x000098, "Member 'CockroachMaster_C_Calc::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, Temp_object_Variable_3) == 0x0000A8, "Member 'CockroachMaster_C_Calc::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_SphereOverlapActors_OutActors) == 0x0000B8, "Member 'CockroachMaster_C_Calc::CallFunc_SphereOverlapActors_OutActors' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_SphereOverlapActors_ReturnValue) == 0x0000C8, "Member 'CockroachMaster_C_Calc::CallFunc_SphereOverlapActors_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Array_LastIndex_ReturnValue) == 0x0000CC, "Member 'CockroachMaster_C_Calc::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_RandomIntegerInRange_ReturnValue) == 0x0000D0, "Member 'CockroachMaster_C_Calc::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Array_Get_Item) == 0x0000D8, "Member 'CockroachMaster_C_Calc::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, K2Node_DynamicCast_AsProp_Food) == 0x0000E0, "Member 'CockroachMaster_C_Calc::K2Node_DynamicCast_AsProp_Food' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, K2Node_DynamicCast_bSuccess) == 0x0000E8, "Member 'CockroachMaster_C_Calc::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_GetActorBounds_Origin) == 0x0000EC, "Member 'CockroachMaster_C_Calc::CallFunc_GetActorBounds_Origin' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_GetActorBounds_BoxExtent) == 0x0000F8, "Member 'CockroachMaster_C_Calc::CallFunc_GetActorBounds_BoxExtent' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000104, "Member 'CockroachMaster_C_Calc::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_GetClosestPointOnCollision_OutPointOnBody) == 0x000108, "Member 'CockroachMaster_C_Calc::CallFunc_GetClosestPointOnCollision_OutPointOnBody' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_GetClosestPointOnCollision_ReturnValue) == 0x000114, "Member 'CockroachMaster_C_Calc::CallFunc_GetClosestPointOnCollision_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Less_FloatFloat_ReturnValue) == 0x000118, "Member 'CockroachMaster_C_Calc::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00011C, "Member 'CockroachMaster_C_Calc::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BooleanAND_ReturnValue) == 0x000120, "Member 'CockroachMaster_C_Calc::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x000124, "Member 'CockroachMaster_C_Calc::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Divide_FloatFloat_ReturnValue_2) == 0x000128, "Member 'CockroachMaster_C_Calc::CallFunc_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_obj_statDyn_obj) == 0x000130, "Member 'CockroachMaster_C_Calc::CallFunc_obj_statDyn_obj' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_VictoryFloatMinusEquals_FloatOut) == 0x000140, "Member 'CockroachMaster_C_Calc::CallFunc_VictoryFloatMinusEquals_FloatOut' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_GetWorldDeltaSeconds_ReturnValue_2) == 0x000144, "Member 'CockroachMaster_C_Calc::CallFunc_GetWorldDeltaSeconds_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Less_FloatFloat_ReturnValue_1) == 0x000148, "Member 'CockroachMaster_C_Calc::CallFunc_Less_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x00014C, "Member 'CockroachMaster_C_Calc::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x000150, "Member 'CockroachMaster_C_Calc::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Add_VectorVector_ReturnValue_1) == 0x00015C, "Member 'CockroachMaster_C_Calc::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_SphereTraceSingleForObjects_OutHit) == 0x000168, "Member 'CockroachMaster_C_Calc::CallFunc_SphereTraceSingleForObjects_OutHit' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_SphereTraceSingleForObjects_ReturnValue) == 0x0001F0, "Member 'CockroachMaster_C_Calc::CallFunc_SphereTraceSingleForObjects_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_bBlockingHit) == 0x0001F1, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_bInitialOverlap) == 0x0001F2, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_Time) == 0x0001F4, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_Distance) == 0x0001F8, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_Location) == 0x0001FC, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_ImpactPoint) == 0x000208, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_Normal) == 0x000214, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_ImpactNormal) == 0x000220, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_PhysMat) == 0x000230, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_HitActor) == 0x000238, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_HitComponent) == 0x000240, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_HitBoneName) == 0x000248, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_HitItem) == 0x000250, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_ElementIndex) == 0x000254, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_FaceIndex) == 0x000258, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_TraceStart) == 0x00025C, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_TraceEnd) == 0x000268, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_EqualExactly_VectorVector_ReturnValue_1) == 0x000274, "Member 'CockroachMaster_C_Calc::CallFunc_EqualExactly_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_VLerp_ReturnValue) == 0x000278, "Member 'CockroachMaster_C_Calc::CallFunc_VLerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Multiply_VectorFloat_ReturnValue_2) == 0x000284, "Member 'CockroachMaster_C_Calc::CallFunc_Multiply_VectorFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Add_VectorVector_ReturnValue_2) == 0x000290, "Member 'CockroachMaster_C_Calc::CallFunc_Add_VectorVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Add_VectorVector_ReturnValue_3) == 0x00029C, "Member 'CockroachMaster_C_Calc::CallFunc_Add_VectorVector_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_MakeRotationFromAxes_ReturnValue) == 0x0002A8, "Member 'CockroachMaster_C_Calc::CallFunc_MakeRotationFromAxes_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_SelectVector_ReturnValue) == 0x0002B4, "Member 'CockroachMaster_C_Calc::CallFunc_SelectVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Dot_VectorVector_ReturnValue) == 0x0002C0, "Member 'CockroachMaster_C_Calc::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x0002C4, "Member 'CockroachMaster_C_Calc::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Abs_ReturnValue) == 0x00034C, "Member 'CockroachMaster_C_Calc::CallFunc_Abs_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Cross_VectorVector_ReturnValue) == 0x000350, "Member 'CockroachMaster_C_Calc::CallFunc_Cross_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Greater_FloatFloat_ReturnValue_1) == 0x00035C, "Member 'CockroachMaster_C_Calc::CallFunc_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Cross_VectorVector_ReturnValue_1) == 0x000360, "Member 'CockroachMaster_C_Calc::CallFunc_Cross_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_MakeRotationFromAxes_ReturnValue_1) == 0x00036C, "Member 'CockroachMaster_C_Calc::CallFunc_MakeRotationFromAxes_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_SelectRotator_ReturnValue) == 0x000378, "Member 'CockroachMaster_C_Calc::CallFunc_SelectRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_K2_SetWorldRotation_SweepHitResult) == 0x000384, "Member 'CockroachMaster_C_Calc::CallFunc_K2_SetWorldRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Subtract_VectorVector_ReturnValue) == 0x00040C, "Member 'CockroachMaster_C_Calc::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_SphereOverlapActors_OutActors_1) == 0x000418, "Member 'CockroachMaster_C_Calc::CallFunc_SphereOverlapActors_OutActors_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_SphereOverlapActors_ReturnValue_1) == 0x000428, "Member 'CockroachMaster_C_Calc::CallFunc_SphereOverlapActors_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_EqualExactly_VectorVector_ReturnValue_2) == 0x000429, "Member 'CockroachMaster_C_Calc::CallFunc_EqualExactly_VectorVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Array_LastIndex_ReturnValue_1) == 0x00042C, "Member 'CockroachMaster_C_Calc::CallFunc_Array_LastIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BooleanAND_ReturnValue_1) == 0x000430, "Member 'CockroachMaster_C_Calc::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_RandomIntegerInRange_ReturnValue_1) == 0x000434, "Member 'CockroachMaster_C_Calc::CallFunc_RandomIntegerInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Array_Get_Item_1) == 0x000438, "Member 'CockroachMaster_C_Calc::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_GetWorldDeltaSeconds_ReturnValue_3) == 0x000440, "Member 'CockroachMaster_C_Calc::CallFunc_GetWorldDeltaSeconds_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_GetActorBounds_Origin_1) == 0x000444, "Member 'CockroachMaster_C_Calc::CallFunc_GetActorBounds_Origin_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_GetActorBounds_BoxExtent_1) == 0x000450, "Member 'CockroachMaster_C_Calc::CallFunc_GetActorBounds_BoxExtent_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Subtract_VectorVector_ReturnValue_1) == 0x00045C, "Member 'CockroachMaster_C_Calc::CallFunc_Subtract_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_SelectVector_ReturnValue_1) == 0x000468, "Member 'CockroachMaster_C_Calc::CallFunc_SelectVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_obj_statDyn_obj_1) == 0x000478, "Member 'CockroachMaster_C_Calc::CallFunc_obj_statDyn_obj_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_ProjectVectorOnToPlane_ReturnValue) == 0x000488, "Member 'CockroachMaster_C_Calc::CallFunc_ProjectVectorOnToPlane_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Normal_ReturnValue) == 0x000494, "Member 'CockroachMaster_C_Calc::CallFunc_Normal_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Dot_VectorVector_ReturnValue_1) == 0x0004A0, "Member 'CockroachMaster_C_Calc::CallFunc_Dot_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_GetWorldDeltaSeconds_ReturnValue_4) == 0x0004A4, "Member 'CockroachMaster_C_Calc::CallFunc_GetWorldDeltaSeconds_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_DegAcos_ReturnValue) == 0x0004A8, "Member 'CockroachMaster_C_Calc::CallFunc_DegAcos_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x0004AC, "Member 'CockroachMaster_C_Calc::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x0004B0, "Member 'CockroachMaster_C_Calc::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Multiply_VectorFloat_ReturnValue_3) == 0x0004B4, "Member 'CockroachMaster_C_Calc::CallFunc_Multiply_VectorFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Multiply_FloatFloat_ReturnValue_4) == 0x0004C0, "Member 'CockroachMaster_C_Calc::CallFunc_Multiply_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Add_VectorVector_ReturnValue_4) == 0x0004C4, "Member 'CockroachMaster_C_Calc::CallFunc_Add_VectorVector_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Multiply_FloatFloat_ReturnValue_5) == 0x0004D0, "Member 'CockroachMaster_C_Calc::CallFunc_Multiply_FloatFloat_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_SphereTraceSingleForObjects_OutHit_1) == 0x0004D4, "Member 'CockroachMaster_C_Calc::CallFunc_SphereTraceSingleForObjects_OutHit_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_SphereTraceSingleForObjects_ReturnValue_1) == 0x00055C, "Member 'CockroachMaster_C_Calc::CallFunc_SphereTraceSingleForObjects_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_SelectFloat_ReturnValue) == 0x000560, "Member 'CockroachMaster_C_Calc::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_bBlockingHit_1) == 0x000564, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_bBlockingHit_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_bInitialOverlap_1) == 0x000565, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_bInitialOverlap_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_Time_1) == 0x000568, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_Time_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_Distance_1) == 0x00056C, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_Distance_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_Location_1) == 0x000570, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_Location_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_ImpactPoint_1) == 0x00057C, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_ImpactPoint_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_Normal_1) == 0x000588, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_Normal_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_ImpactNormal_1) == 0x000594, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_ImpactNormal_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_PhysMat_1) == 0x0005A0, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_PhysMat_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_HitActor_1) == 0x0005A8, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_HitActor_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_HitComponent_1) == 0x0005B0, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_HitComponent_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_HitBoneName_1) == 0x0005B8, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_HitBoneName_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_HitItem_1) == 0x0005C0, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_HitItem_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_ElementIndex_1) == 0x0005C4, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_ElementIndex_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_FaceIndex_1) == 0x0005C8, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_FaceIndex_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_TraceStart_1) == 0x0005CC, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_TraceStart_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_BreakHitResult_TraceEnd_1) == 0x0005D8, "Member 'CockroachMaster_C_Calc::CallFunc_BreakHitResult_TraceEnd_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Add_FloatFloat_ReturnValue) == 0x0005E4, "Member 'CockroachMaster_C_Calc::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_VLerp_ReturnValue_1) == 0x0005E8, "Member 'CockroachMaster_C_Calc::CallFunc_VLerp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, K2Node_LowEntry_LocalVariable_Value__Object) == 0x0005F4, "Member 'CockroachMaster_C_Calc::K2Node_LowEntry_LocalVariable_Value__Object' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Cross_VectorVector_ReturnValue_2) == 0x0005F8, "Member 'CockroachMaster_C_Calc::CallFunc_Cross_VectorVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Multiply_VectorFloat_ReturnValue_4) == 0x000604, "Member 'CockroachMaster_C_Calc::CallFunc_Multiply_VectorFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_RotateAngleAxis_ReturnValue) == 0x000610, "Member 'CockroachMaster_C_Calc::CallFunc_RotateAngleAxis_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Add_VectorVector_ReturnValue_5) == 0x00061C, "Member 'CockroachMaster_C_Calc::CallFunc_Add_VectorVector_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_Cross_VectorVector_ReturnValue_3) == 0x000628, "Member 'CockroachMaster_C_Calc::CallFunc_Cross_VectorVector_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_SelectVector_ReturnValue_2) == 0x000634, "Member 'CockroachMaster_C_Calc::CallFunc_SelectVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_RotateAngleAxis_ReturnValue_1) == 0x000640, "Member 'CockroachMaster_C_Calc::CallFunc_RotateAngleAxis_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_K2_SetWorldLocation_SweepHitResult_1) == 0x00064C, "Member 'CockroachMaster_C_Calc::CallFunc_K2_SetWorldLocation_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_MakeRotationFromAxes_ReturnValue_2) == 0x0006D4, "Member 'CockroachMaster_C_Calc::CallFunc_MakeRotationFromAxes_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_Calc, CallFunc_K2_SetWorldRotation_SweepHitResult_1) == 0x0006E0, "Member 'CockroachMaster_C_Calc::CallFunc_K2_SetWorldRotation_SweepHitResult_1' has a wrong offset!");
 
 // Function cockroachMaster.cockroachMaster_C.setPath
 // 0x0018 (0x0018 - 0x0000)
@@ -1866,7 +1749,7 @@ static_assert(offsetof(CockroachMaster_C_ToolboxFix, Toolbox) == 0x000000, "Memb
 static_assert(offsetof(CockroachMaster_C_ToolboxFix, Return) == 0x000008, "Member 'CockroachMaster_C_ToolboxFix::Return' has a wrong offset!");
 
 // Function cockroachMaster.cockroachMaster_C.getActionOptions
-// 0x0060 (0x0060 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct CockroachMaster_C_GetActionOptions final
 {
 public:
@@ -1876,20 +1759,17 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
 };
 static_assert(alignof(CockroachMaster_C_GetActionOptions) == 0x000008, "Wrong alignment on CockroachMaster_C_GetActionOptions");
-static_assert(sizeof(CockroachMaster_C_GetActionOptions) == 0x000060, "Wrong size on CockroachMaster_C_GetActionOptions");
+static_assert(sizeof(CockroachMaster_C_GetActionOptions) == 0x000058, "Wrong size on CockroachMaster_C_GetActionOptions");
 static_assert(offsetof(CockroachMaster_C_GetActionOptions, Player) == 0x000000, "Member 'CockroachMaster_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(CockroachMaster_C_GetActionOptions, Component) == 0x000008, "Member 'CockroachMaster_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(CockroachMaster_C_GetActionOptions, Actor) == 0x000010, "Member 'CockroachMaster_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(CockroachMaster_C_GetActionOptions, Options) == 0x000018, "Member 'CockroachMaster_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(CockroachMaster_C_GetActionOptions, Options_enum) == 0x000028, "Member 'CockroachMaster_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(CockroachMaster_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'CockroachMaster_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_GetActionOptions, Number) == 0x000048, "Member 'CockroachMaster_C_GetActionOptions::Number' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'CockroachMaster_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(CockroachMaster_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'CockroachMaster_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 // Function cockroachMaster.cockroachMaster_C.gascanFuel
 // 0x0010 (0x0010 - 0x0000)
@@ -1914,17 +1794,6 @@ public:
 static_assert(alignof(CockroachMaster_C_SkipRadial) == 0x000001, "Wrong alignment on CockroachMaster_C_SkipRadial");
 static_assert(sizeof(CockroachMaster_C_SkipRadial) == 0x000001, "Wrong size on CockroachMaster_C_SkipRadial");
 static_assert(offsetof(CockroachMaster_C_SkipRadial, Skip) == 0x000000, "Member 'CockroachMaster_C_SkipRadial::Skip' has a wrong offset!");
-
-// Function cockroachMaster.cockroachMaster_C.getPriceMultiplier
-// 0x0004 (0x0004 - 0x0000)
-struct CockroachMaster_C_GetPriceMultiplier final
-{
-public:
-	float                                         PriceMult;                                         // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(CockroachMaster_C_GetPriceMultiplier) == 0x000004, "Wrong alignment on CockroachMaster_C_GetPriceMultiplier");
-static_assert(sizeof(CockroachMaster_C_GetPriceMultiplier) == 0x000004, "Wrong size on CockroachMaster_C_GetPriceMultiplier");
-static_assert(offsetof(CockroachMaster_C_GetPriceMultiplier, PriceMult) == 0x000000, "Member 'CockroachMaster_C_GetPriceMultiplier::PriceMult' has a wrong offset!");
 
 // Function cockroachMaster.cockroachMaster_C.canBePutInContainer
 // 0x0001 (0x0001 - 0x0000)
@@ -1973,26 +1842,24 @@ static_assert(offsetof(CockroachMaster_C_NoRespawn, Param_NoRespawn) == 0x000000
 static_assert(offsetof(CockroachMaster_C_NoRespawn, Return) == 0x000001, "Member 'CockroachMaster_C_NoRespawn::Return' has a wrong offset!");
 
 // Function cockroachMaster.cockroachMaster_C.lookAt
-// 0x00B8 (0x00B8 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct CockroachMaster_C_LookAt final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25F5[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(CockroachMaster_C_LookAt) == 0x000008, "Wrong alignment on CockroachMaster_C_LookAt");
-static_assert(sizeof(CockroachMaster_C_LookAt) == 0x0000B8, "Wrong size on CockroachMaster_C_LookAt");
+static_assert(sizeof(CockroachMaster_C_LookAt) == 0x0000B0, "Wrong size on CockroachMaster_C_LookAt");
 static_assert(offsetof(CockroachMaster_C_LookAt, Player) == 0x000000, "Member 'CockroachMaster_C_LookAt::Player' has a wrong offset!");
 static_assert(offsetof(CockroachMaster_C_LookAt, Hit) == 0x000008, "Member 'CockroachMaster_C_LookAt::Hit' has a wrong offset!");
 static_assert(offsetof(CockroachMaster_C_LookAt, Return) == 0x000090, "Member 'CockroachMaster_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(CockroachMaster_C_LookAt, Text) == 0x000098, "Member 'CockroachMaster_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(CockroachMaster_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'CockroachMaster_C_LookAt::boundObjectReplace' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_LookAt, Number) == 0x0000B0, "Member 'CockroachMaster_C_LookAt::Number' has a wrong offset!");
 
 // Function cockroachMaster.cockroachMaster_C.isButtonUsed
 // 0x0001 (0x0001 - 0x0000)
@@ -2004,19 +1871,6 @@ public:
 static_assert(alignof(CockroachMaster_C_IsButtonUsed) == 0x000001, "Wrong alignment on CockroachMaster_C_IsButtonUsed");
 static_assert(sizeof(CockroachMaster_C_IsButtonUsed) == 0x000001, "Wrong size on CockroachMaster_C_IsButtonUsed");
 static_assert(offsetof(CockroachMaster_C_IsButtonUsed, Failed) == 0x000000, "Member 'CockroachMaster_C_IsButtonUsed::Failed' has a wrong offset!");
-
-// Function cockroachMaster.cockroachMaster_C.landedOn
-// 0x0010 (0x0010 - 0x0000)
-struct CockroachMaster_C_LandedOn final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IgnoreFallDamage;                                  // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(CockroachMaster_C_LandedOn) == 0x000008, "Wrong alignment on CockroachMaster_C_LandedOn");
-static_assert(sizeof(CockroachMaster_C_LandedOn) == 0x000010, "Wrong size on CockroachMaster_C_LandedOn");
-static_assert(offsetof(CockroachMaster_C_LandedOn, Player) == 0x000000, "Member 'CockroachMaster_C_LandedOn::Player' has a wrong offset!");
-static_assert(offsetof(CockroachMaster_C_LandedOn, IgnoreFallDamage) == 0x000008, "Member 'CockroachMaster_C_LandedOn::IgnoreFallDamage' has a wrong offset!");
 
 // Function cockroachMaster.cockroachMaster_C.dreamInv
 // 0x0018 (0x0018 - 0x0000)

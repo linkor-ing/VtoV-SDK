@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_arirGun_weapon.prop_arirGun_weapon_C
-// 0x0000 (0x03B8 - 0x03B8)
+// 0x0000 (0x03A8 - 0x03A8)
 class AProp_arirGun_weapon_C final : public AProp_arirGun_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_arirGun_weapon_C) == 0x000008, "Wrong alignment on AProp_arirGun_weapon_C");
-static_assert(sizeof(AProp_arirGun_weapon_C) == 0x0003B8, "Wrong size on AProp_arirGun_weapon_C");
+static_assert(sizeof(AProp_arirGun_weapon_C) == 0x0003A8, "Wrong size on AProp_arirGun_weapon_C");
 
 }
 

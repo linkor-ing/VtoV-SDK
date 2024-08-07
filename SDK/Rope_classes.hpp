@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK
@@ -37,11 +37,11 @@ public:
 	float                                         Dist;                                              // 0x0270(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Attached_a;                                        // 0x0274(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Attached_b;                                        // 0x0275(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_276[0x2];                                      // 0x0276(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_271E[0x2];                                     // 0x0276(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    Component_A;                                       // 0x0278(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    Component_B;                                       // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsThrown;                                          // 0x0288(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_289[0x3];                                      // 0x0289(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_271F[0x3];                                     // 0x0289(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Lastloc;                                           // 0x028C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USphereComponent*                       Phys;                                              // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         MaxDist;                                           // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -56,7 +56,7 @@ public:
 	void ExecuteUbergraph_rope(int32 EntryPoint);
 	void BndEvt__rope_PhysicsConstraint_K2Node_ComponentBoundEvent_0_ConstraintBrokenSignature__DelegateSignature(int32 ConstraintIndex);
 	void Microwave();
-	void ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot);
+	void ReceivedPhyiscsDamage();
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 	void Exploded(float Damage, const struct FVector& Location);
@@ -78,9 +78,6 @@ public:
 	void PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void AttemptIgnite();
 	void Hooked(class AHook_C* Hook);
-	void Crafted();
-	void CleanSponge(float Clean, class AMainPlayer_C* Player);
-	void HookTension(class AHook_C* Hook);
 	void SignalDeleted();
 	void SignalSaved();
 	void StuffUpgraded(class AMainGamemode_C* GameMode);
@@ -92,46 +89,42 @@ public:
 	void GamemodeMakeKeys();
 	void PropRenderer_finishProps();
 	void ApplyColor(const struct FLinearColor& Color);
-	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void DriveDetached();
 	void Player_use(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void Kicked(bool Kick);
 	void SendName(class FName Param_Name);
 	void broken();
 	void broken_fire();
+	void Thrown(class AMainPlayer_C* Player);
+	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit);
+	void UpdateStrAgl();
+	void SetIgnoreSave(bool Ignore);
 	void ImpactDamage(float Damage, const struct FHitResult& Hit, class AActor* Actor, const struct FVector& Impact);
 	void EnterWater(class AWaterVolume_C* Water);
-	void Thrown(class AMainPlayer_C* Player);
-	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
-	void UpdateStrAgl();
-	void PlayerUnequip(class AMainPlayer_C* Player);
-	void PlayerHold(class AMainPlayer_C* Player);
-	void PlayerR(class AMainPlayer_C* Player);
+	void Assign();
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
+	void D_a(class AActor* DestroyedActor);
 	void LeaveWater(class AWaterVolume_C* Water);
-	void SetIgnoreSave(bool Ignore);
 	void CustomEvent();
 	void CustomEvent_0();
 	void EnterWaterOrigin(class AWaterVolume_C* Water);
 	void LeaveWaterOrigin(class AWaterVolume_C* Water);
-	void Assign();
-	void D_a(class AActor* DestroyedActor);
-	void Eaten();
 	void D_b(class AActor* DestroyedActor);
-	void Virus(bool Activate);
 	void Ignite(float Fuel);
+	void Eaten();
 	void FireDamage(float Damage);
 	void GamemodeBeginPlay();
+	void Virus(bool Activate);
 	void SteppedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void Unhook();
 	void DigUp();
 	void PhysPreDestroyed();
 	void PhysDestroyed();
+	void SetKey(const class FString& Key);
+	void AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Hit, const struct FVector& Impact, bool SkipSetting);
+	void SetPropProps(bool Static, bool Frozen, bool Active);
 	void ReceiveTick(float DeltaSeconds);
 	void ReceiveBeginPlay();
-	void SetPropProps(bool Static, bool Frozen, bool Active);
-	void AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Hit, const struct FVector& Impact, bool SkipSetting);
-	void SetKey(const class FString& Key);
 	void Attach_a(const struct FHitResult& Hit, class AActor* Actor, bool CheckLen);
 	void Attach_b(const struct FHitResult& Hit, bool CheckLen, bool ForceLen);
 	void SetLength();
@@ -140,16 +133,14 @@ public:
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
 	void SkipPreDelete(bool* Skip);
-	void GatherDataFromKey(bool* Gather);
 	void CanBePutInContainer(bool* Return);
 	void AsProp(class AProp_C** Return);
 	void CanPickup(bool* Return);
 	void NoRespawn(bool Param_NoRespawn, bool* Return);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
 	void IsButtonUsed(bool* Failed);
-	void LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage);
 	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 	void SetPath(const TArray<struct FVector>& Path, bool* Return);
 	void GetOnlyKey(class FString* Key);
 	void ProcessKeys(bool* Return);
@@ -158,7 +149,6 @@ public:
 	void ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return);
 	void GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled);
 	void SkipRadial(bool* Skip);
-	void GetPriceMultiplier(float* PriceMult);
 
 public:
 	static class UClass* StaticClass()

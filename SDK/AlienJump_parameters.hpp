@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
 #include "Struct_food1_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Struct_prop_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -26,18 +26,18 @@ struct AlienJump_C_ExecuteUbergraph_alienJump final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D52[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0018(0x0010)(ConstParm, ReferenceParm)
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0028(0x0008)(NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D53[0x6];                                     // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent;    // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D54[0x3];                                     // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0058(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x00E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -79,7 +79,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D55[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 static_assert(alignof(AlienJump_C_BndEvt__hillRollerSpawner_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on AlienJump_C_BndEvt__hillRollerSpawner_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
@@ -92,43 +92,43 @@ static_assert(offsetof(AlienJump_C_BndEvt__hillRollerSpawner_Box_K2Node_Componen
 static_assert(offsetof(AlienJump_C_BndEvt__hillRollerSpawner_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'AlienJump_C_BndEvt__hillRollerSpawner_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
 
 // Function alienJump.alienJump_C.Spawn
-// 0x0490 (0x0490 - 0x0000)
+// 0x0480 (0x0480 - 0x0000)
 struct AlienJump_C_Spawn final
 {
 public:
 	TArray<class UArrowComponent*>                Nails;                                             // 0x0000(0x0010)(Edit, BlueprintVisible, ContainsInstancedReference)
 	TArray<class UStaticMeshComponent*>           Props;                                             // 0x0010(0x0010)(Edit, BlueprintVisible, ContainsInstancedReference)
-	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0020(0x0010)(ConstParm, ReferenceParm)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_1;                               // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_2;                               // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable;                                // 0x0064(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetRightVector_ReturnValue;               // 0x0078(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x0084(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0090(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x009C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_3;                               // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D56[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0030(0x0010)(ConstParm, ReferenceParm)
+	int32                                         Temp_int_Variable;                                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D57[0x3];                                     // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D58[0x3];                                     // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_2;                               // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable;                                // 0x0068(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetRightVector_ReturnValue;               // 0x007C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x0088(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0094(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x00A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D59[0x4];                                     // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<EObjectTypeQuery>                      CallFunc_obj_phys_obj;                             // 0x00B0(0x0010)(ReferenceParm)
 	class UArrowComponent*                        CallFunc_Array_Get_Item;                           // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   CallFunc_Array_Get_Item_1;                         // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ComponentHasTag_ReturnValue;              // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D1[0xF];                                       // 0x00D1(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D5A[0xF];                                     // 0x00D1(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x00E0(0x0030)(IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -139,113 +139,116 @@ public:
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_2;       // 0x0144(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x0150(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_propToObject_ReturnValue;                 // 0x015C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_15D[0x3];                                      // 0x015D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D5B[0x3];                                     // 0x015D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_food1                          CallFunc_propToObject_foodData;                    // 0x0160(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 CallFunc_propToObject_object;                      // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_propToObject_isFood;                      // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_181[0x7];                                      // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D5C[0x7];                                     // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_prop                           CallFunc_propToObject_propData;                    // 0x0188(0x0080)(HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_3;       // 0x0208(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_214[0x4];                                      // 0x0214(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D5D[0x4];                                     // 0x0214(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_221[0x7];                                      // 0x0221(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D5E[0x7];                                     // 0x0221(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x0230(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_241[0x7];                                      // 0x0241(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Select_Default;                             // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_C*                                CallFunc_asProp_return;                            // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player_1;                 // 0x0258(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_269[0x7];                                      // 0x0269(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AProp_C*                                CallFunc_asProp_return_1;                          // 0x0270(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0278(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue;           // 0x0288(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0290(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_291[0x3];                                      // 0x0291(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0294(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x02A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x02AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit;         // 0x02B0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue;    // 0x0338(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0339(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x033A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x033B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x033C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0340(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0344(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0350(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x035C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0368(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_374[0x4];                                      // 0x0374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0378(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0380(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0388(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0390(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0398(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x039C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x03A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x03A4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x03B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x03BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_4;       // 0x03C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x03CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3CD[0x3];                                      // 0x03CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x03D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DC[0x4];                                      // 0x03DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x03E0(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3; // 0x0410(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4; // 0x0418(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ANail_ax_C*                             CallFunc_FinishSpawningActor_ReturnValue_3;        // 0x0420(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ANail_C*                                CallFunc_FinishSpawningActor_ReturnValue_4;        // 0x0428(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_nailNail_fail;                            // 0x0430(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_nailNail_fail_1;                          // 0x0431(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_432[0x2];                                      // 0x0432(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable_4;                               // 0x0434(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D5F[0x7];                                     // 0x0241(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AProp_C*                                CallFunc_asProp_return;                            // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D60[0x3];                                     // 0x0251(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0254(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0264(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D61[0x3];                                     // 0x0271(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit;         // 0x0274(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue;    // 0x02FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x02FD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x02FE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D62[0x1];                                     // 0x02FF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x0300(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0304(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0308(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0314(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0320(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x032C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0338(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0340(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0348(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0350(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0358(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x035C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0360(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0364(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0370(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x037C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_4;       // 0x0380(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x038C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D63[0x3];                                     // 0x038D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0390(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D64[0x4];                                     // 0x039C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x03A0(0x0030)(IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3; // 0x03D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4; // 0x03D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ANail_ax_C*                             CallFunc_FinishSpawningActor_ReturnValue_3;        // 0x03E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ANail_C*                                CallFunc_FinishSpawningActor_ReturnValue_4;        // 0x03E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_nailNail_fail;                            // 0x03F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_nailNail_fail_1;                          // 0x03F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D65[0x2];                                     // 0x03F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable_3;                               // 0x03F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_4;                               // 0x03F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D66[0x4];                                     // 0x03FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Select_Default;                             // 0x0400(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player_1;                 // 0x0408(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0418(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x0419(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D67[0x6];                                     // 0x041A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class AProp_C*                                CallFunc_asProp_return_1;                          // 0x0420(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_5;                 // 0x0428(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D68[0x4];                                     // 0x042C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue;           // 0x0430(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class USceneComponent*>                CallFunc_GetChildrenComponents_Children;           // 0x0438(0x0010)(ReferenceParm, ContainsInstancedReference)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x0448(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_449[0x7];                                      // 0x0449(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0448(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D69[0x4];                                     // 0x044C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        CallFunc_Array_Get_Item_3;                         // 0x0450(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UArrowComponent*                        K2Node_DynamicCast_AsArrow_Component;              // 0x0458(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0460(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_461[0x7];                                      // 0x0461(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UStaticMeshComponent*                   K2Node_DynamicCast_AsStatic_Mesh_Component;        // 0x0468(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0470(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_471[0x3];                                      // 0x0471(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0474(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0478(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x047C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_5;                 // 0x0480(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0484(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0458(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D6A[0x7];                                     // 0x0459(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UArrowComponent*                        K2Node_DynamicCast_AsArrow_Component;              // 0x0460(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0468(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D6B[0x3];                                     // 0x0469(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x046C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   K2Node_DynamicCast_AsStatic_Mesh_Component;        // 0x0470(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0478(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D6C[0x3];                                     // 0x0479(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x047C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(AlienJump_C_Spawn) == 0x000010, "Wrong alignment on AlienJump_C_Spawn");
-static_assert(sizeof(AlienJump_C_Spawn) == 0x000490, "Wrong size on AlienJump_C_Spawn");
+static_assert(sizeof(AlienJump_C_Spawn) == 0x000480, "Wrong size on AlienJump_C_Spawn");
 static_assert(offsetof(AlienJump_C_Spawn, Nails) == 0x000000, "Member 'AlienJump_C_Spawn::Nails' has a wrong offset!");
 static_assert(offsetof(AlienJump_C_Spawn, Props) == 0x000010, "Member 'AlienJump_C_Spawn::Props' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, Temp_object_Variable) == 0x000020, "Member 'AlienJump_C_Spawn::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, Temp_int_Loop_Counter_Variable) == 0x000030, "Member 'AlienJump_C_Spawn::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Add_IntInt_ReturnValue) == 0x000034, "Member 'AlienJump_C_Spawn::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, Temp_int_Array_Index_Variable) == 0x000038, "Member 'AlienJump_C_Spawn::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, Temp_int_Variable) == 0x00003C, "Member 'AlienJump_C_Spawn::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, Temp_int_Loop_Counter_Variable_1) == 0x000040, "Member 'AlienJump_C_Spawn::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Add_IntInt_ReturnValue_1) == 0x000044, "Member 'AlienJump_C_Spawn::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000048, "Member 'AlienJump_C_Spawn::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Add_IntInt_ReturnValue_2) == 0x00004C, "Member 'AlienJump_C_Spawn::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, Temp_int_Array_Index_Variable_1) == 0x000050, "Member 'AlienJump_C_Spawn::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, Temp_int_Variable_1) == 0x000054, "Member 'AlienJump_C_Spawn::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000058, "Member 'AlienJump_C_Spawn::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Add_IntInt_ReturnValue_3) == 0x00005C, "Member 'AlienJump_C_Spawn::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, Temp_int_Variable_2) == 0x000060, "Member 'AlienJump_C_Spawn::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, Temp_name_Variable) == 0x000064, "Member 'AlienJump_C_Spawn::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, Temp_int_Loop_Counter_Variable_2) == 0x00006C, "Member 'AlienJump_C_Spawn::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Add_IntInt_ReturnValue_4) == 0x000070, "Member 'AlienJump_C_Spawn::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, Temp_int_Array_Index_Variable_2) == 0x000074, "Member 'AlienJump_C_Spawn::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_GetRightVector_ReturnValue) == 0x000078, "Member 'AlienJump_C_Spawn::CallFunc_GetRightVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_GetForwardVector_ReturnValue) == 0x000084, "Member 'AlienJump_C_Spawn::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000090, "Member 'AlienJump_C_Spawn::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x00009C, "Member 'AlienJump_C_Spawn::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, Temp_int_Variable_3) == 0x0000A8, "Member 'AlienJump_C_Spawn::Temp_int_Variable_3' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, Temp_int_Loop_Counter_Variable) == 0x000020, "Member 'AlienJump_C_Spawn::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'AlienJump_C_Spawn::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, Temp_int_Array_Index_Variable) == 0x000028, "Member 'AlienJump_C_Spawn::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, Temp_object_Variable) == 0x000030, "Member 'AlienJump_C_Spawn::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, Temp_int_Variable) == 0x000040, "Member 'AlienJump_C_Spawn::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, Temp_int_Loop_Counter_Variable_1) == 0x000044, "Member 'AlienJump_C_Spawn::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Add_IntInt_ReturnValue_1) == 0x000048, "Member 'AlienJump_C_Spawn::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00004C, "Member 'AlienJump_C_Spawn::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Add_IntInt_ReturnValue_2) == 0x000050, "Member 'AlienJump_C_Spawn::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, Temp_int_Array_Index_Variable_1) == 0x000054, "Member 'AlienJump_C_Spawn::Temp_int_Array_Index_Variable_1' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, Temp_int_Variable_1) == 0x000058, "Member 'AlienJump_C_Spawn::Temp_int_Variable_1' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x00005C, "Member 'AlienJump_C_Spawn::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Add_IntInt_ReturnValue_3) == 0x000060, "Member 'AlienJump_C_Spawn::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, Temp_int_Variable_2) == 0x000064, "Member 'AlienJump_C_Spawn::Temp_int_Variable_2' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, Temp_name_Variable) == 0x000068, "Member 'AlienJump_C_Spawn::Temp_name_Variable' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, Temp_int_Loop_Counter_Variable_2) == 0x000070, "Member 'AlienJump_C_Spawn::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Add_IntInt_ReturnValue_4) == 0x000074, "Member 'AlienJump_C_Spawn::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, Temp_int_Array_Index_Variable_2) == 0x000078, "Member 'AlienJump_C_Spawn::Temp_int_Array_Index_Variable_2' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_GetRightVector_ReturnValue) == 0x00007C, "Member 'AlienJump_C_Spawn::CallFunc_GetRightVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_GetForwardVector_ReturnValue) == 0x000088, "Member 'AlienJump_C_Spawn::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000094, "Member 'AlienJump_C_Spawn::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x0000A0, "Member 'AlienJump_C_Spawn::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(AlienJump_C_Spawn, CallFunc_obj_phys_obj) == 0x0000B0, "Member 'AlienJump_C_Spawn::CallFunc_obj_phys_obj' has a wrong offset!");
 static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Array_Get_Item) == 0x0000C0, "Member 'AlienJump_C_Spawn::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Array_Get_Item_1) == 0x0000C8, "Member 'AlienJump_C_Spawn::CallFunc_Array_Get_Item_1' has a wrong offset!");
@@ -270,61 +273,61 @@ static_assert(offsetof(AlienJump_C_Spawn, CallFunc_IsValidClass_ReturnValue) == 
 static_assert(offsetof(AlienJump_C_Spawn, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x000228, "Member 'AlienJump_C_Spawn::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(AlienJump_C_Spawn, K2Node_DynamicCast_AsInt_Player) == 0x000230, "Member 'AlienJump_C_Spawn::K2Node_DynamicCast_AsInt_Player' has a wrong offset!");
 static_assert(offsetof(AlienJump_C_Spawn, K2Node_DynamicCast_bSuccess) == 0x000240, "Member 'AlienJump_C_Spawn::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, K2Node_Select_Default) == 0x000248, "Member 'AlienJump_C_Spawn::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_asProp_return) == 0x000250, "Member 'AlienJump_C_Spawn::CallFunc_asProp_return' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, K2Node_DynamicCast_AsInt_Player_1) == 0x000258, "Member 'AlienJump_C_Spawn::K2Node_DynamicCast_AsInt_Player_1' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, K2Node_DynamicCast_bSuccess_1) == 0x000268, "Member 'AlienJump_C_Spawn::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_asProp_return_1) == 0x000270, "Member 'AlienJump_C_Spawn::CallFunc_asProp_return_1' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Conv_NameToString_ReturnValue) == 0x000278, "Member 'AlienJump_C_Spawn::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_SpawnSoundAttached_ReturnValue) == 0x000288, "Member 'AlienJump_C_Spawn::CallFunc_SpawnSoundAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Array_Contains_ReturnValue) == 0x000290, "Member 'AlienJump_C_Spawn::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000294, "Member 'AlienJump_C_Spawn::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Add_VectorVector_ReturnValue) == 0x0002A0, "Member 'AlienJump_C_Spawn::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Array_Length_ReturnValue) == 0x0002AC, "Member 'AlienJump_C_Spawn::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_LineTraceSingleForObjects_OutHit) == 0x0002B0, "Member 'AlienJump_C_Spawn::CallFunc_LineTraceSingleForObjects_OutHit' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_LineTraceSingleForObjects_ReturnValue) == 0x000338, "Member 'AlienJump_C_Spawn::CallFunc_LineTraceSingleForObjects_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Less_IntInt_ReturnValue) == 0x000339, "Member 'AlienJump_C_Spawn::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_bBlockingHit) == 0x00033A, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_bInitialOverlap) == 0x00033B, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_Time) == 0x00033C, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_Distance) == 0x000340, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_Location) == 0x000344, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_ImpactPoint) == 0x000350, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_Normal) == 0x00035C, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_ImpactNormal) == 0x000368, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_PhysMat) == 0x000378, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_HitActor) == 0x000380, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_HitComponent) == 0x000388, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_HitBoneName) == 0x000390, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_HitItem) == 0x000398, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_ElementIndex) == 0x00039C, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_FaceIndex) == 0x0003A0, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_TraceStart) == 0x0003A4, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_TraceEnd) == 0x0003B0, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Array_Length_ReturnValue_1) == 0x0003BC, "Member 'AlienJump_C_Spawn::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Multiply_VectorFloat_ReturnValue_4) == 0x0003C0, "Member 'AlienJump_C_Spawn::CallFunc_Multiply_VectorFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Less_IntInt_ReturnValue_1) == 0x0003CC, "Member 'AlienJump_C_Spawn::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Add_VectorVector_ReturnValue_1) == 0x0003D0, "Member 'AlienJump_C_Spawn::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_MakeTransform_ReturnValue) == 0x0003E0, "Member 'AlienJump_C_Spawn::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3) == 0x000410, "Member 'AlienJump_C_Spawn::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4) == 0x000418, "Member 'AlienJump_C_Spawn::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_FinishSpawningActor_ReturnValue_3) == 0x000420, "Member 'AlienJump_C_Spawn::CallFunc_FinishSpawningActor_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_FinishSpawningActor_ReturnValue_4) == 0x000428, "Member 'AlienJump_C_Spawn::CallFunc_FinishSpawningActor_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_nailNail_fail) == 0x000430, "Member 'AlienJump_C_Spawn::CallFunc_nailNail_fail' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_nailNail_fail_1) == 0x000431, "Member 'AlienJump_C_Spawn::CallFunc_nailNail_fail_1' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, Temp_int_Variable_4) == 0x000434, "Member 'AlienJump_C_Spawn::Temp_int_Variable_4' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_asProp_return) == 0x000248, "Member 'AlienJump_C_Spawn::CallFunc_asProp_return' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Array_Contains_ReturnValue) == 0x000250, "Member 'AlienJump_C_Spawn::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000254, "Member 'AlienJump_C_Spawn::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Array_Length_ReturnValue) == 0x000260, "Member 'AlienJump_C_Spawn::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Add_VectorVector_ReturnValue) == 0x000264, "Member 'AlienJump_C_Spawn::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Less_IntInt_ReturnValue) == 0x000270, "Member 'AlienJump_C_Spawn::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_LineTraceSingleForObjects_OutHit) == 0x000274, "Member 'AlienJump_C_Spawn::CallFunc_LineTraceSingleForObjects_OutHit' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_LineTraceSingleForObjects_ReturnValue) == 0x0002FC, "Member 'AlienJump_C_Spawn::CallFunc_LineTraceSingleForObjects_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_bBlockingHit) == 0x0002FD, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_bInitialOverlap) == 0x0002FE, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_Time) == 0x000300, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_Distance) == 0x000304, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_Location) == 0x000308, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_ImpactPoint) == 0x000314, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_Normal) == 0x000320, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_ImpactNormal) == 0x00032C, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_PhysMat) == 0x000338, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_HitActor) == 0x000340, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_HitComponent) == 0x000348, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_HitBoneName) == 0x000350, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_HitItem) == 0x000358, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_ElementIndex) == 0x00035C, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_FaceIndex) == 0x000360, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_TraceStart) == 0x000364, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BreakHitResult_TraceEnd) == 0x000370, "Member 'AlienJump_C_Spawn::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Array_Length_ReturnValue_1) == 0x00037C, "Member 'AlienJump_C_Spawn::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Multiply_VectorFloat_ReturnValue_4) == 0x000380, "Member 'AlienJump_C_Spawn::CallFunc_Multiply_VectorFloat_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Less_IntInt_ReturnValue_1) == 0x00038C, "Member 'AlienJump_C_Spawn::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000390, "Member 'AlienJump_C_Spawn::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_MakeTransform_ReturnValue) == 0x0003A0, "Member 'AlienJump_C_Spawn::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3) == 0x0003D0, "Member 'AlienJump_C_Spawn::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4) == 0x0003D8, "Member 'AlienJump_C_Spawn::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_FinishSpawningActor_ReturnValue_3) == 0x0003E0, "Member 'AlienJump_C_Spawn::CallFunc_FinishSpawningActor_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_FinishSpawningActor_ReturnValue_4) == 0x0003E8, "Member 'AlienJump_C_Spawn::CallFunc_FinishSpawningActor_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_nailNail_fail) == 0x0003F0, "Member 'AlienJump_C_Spawn::CallFunc_nailNail_fail' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_nailNail_fail_1) == 0x0003F1, "Member 'AlienJump_C_Spawn::CallFunc_nailNail_fail_1' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, Temp_int_Variable_3) == 0x0003F4, "Member 'AlienJump_C_Spawn::Temp_int_Variable_3' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, Temp_int_Variable_4) == 0x0003F8, "Member 'AlienJump_C_Spawn::Temp_int_Variable_4' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, K2Node_Select_Default) == 0x000400, "Member 'AlienJump_C_Spawn::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, K2Node_DynamicCast_AsInt_Player_1) == 0x000408, "Member 'AlienJump_C_Spawn::K2Node_DynamicCast_AsInt_Player_1' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, K2Node_DynamicCast_bSuccess_1) == 0x000418, "Member 'AlienJump_C_Spawn::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x000419, "Member 'AlienJump_C_Spawn::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_asProp_return_1) == 0x000420, "Member 'AlienJump_C_Spawn::CallFunc_asProp_return_1' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Add_IntInt_ReturnValue_5) == 0x000428, "Member 'AlienJump_C_Spawn::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_SpawnSoundAttached_ReturnValue) == 0x000430, "Member 'AlienJump_C_Spawn::CallFunc_SpawnSoundAttached_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AlienJump_C_Spawn, CallFunc_GetChildrenComponents_Children) == 0x000438, "Member 'AlienJump_C_Spawn::CallFunc_GetChildrenComponents_Children' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x000448, "Member 'AlienJump_C_Spawn::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Array_Length_ReturnValue_2) == 0x000448, "Member 'AlienJump_C_Spawn::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Array_Get_Item_3) == 0x000450, "Member 'AlienJump_C_Spawn::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, K2Node_DynamicCast_AsArrow_Component) == 0x000458, "Member 'AlienJump_C_Spawn::K2Node_DynamicCast_AsArrow_Component' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, K2Node_DynamicCast_bSuccess_2) == 0x000460, "Member 'AlienJump_C_Spawn::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, K2Node_DynamicCast_AsStatic_Mesh_Component) == 0x000468, "Member 'AlienJump_C_Spawn::K2Node_DynamicCast_AsStatic_Mesh_Component' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, K2Node_DynamicCast_bSuccess_3) == 0x000470, "Member 'AlienJump_C_Spawn::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Array_Add_ReturnValue) == 0x000474, "Member 'AlienJump_C_Spawn::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Array_Add_ReturnValue_1) == 0x000478, "Member 'AlienJump_C_Spawn::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Array_Length_ReturnValue_2) == 0x00047C, "Member 'AlienJump_C_Spawn::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Add_IntInt_ReturnValue_5) == 0x000480, "Member 'AlienJump_C_Spawn::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Less_IntInt_ReturnValue_2) == 0x000484, "Member 'AlienJump_C_Spawn::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Less_IntInt_ReturnValue_2) == 0x000458, "Member 'AlienJump_C_Spawn::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, K2Node_DynamicCast_AsArrow_Component) == 0x000460, "Member 'AlienJump_C_Spawn::K2Node_DynamicCast_AsArrow_Component' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, K2Node_DynamicCast_bSuccess_2) == 0x000468, "Member 'AlienJump_C_Spawn::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Array_Add_ReturnValue) == 0x00046C, "Member 'AlienJump_C_Spawn::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, K2Node_DynamicCast_AsStatic_Mesh_Component) == 0x000470, "Member 'AlienJump_C_Spawn::K2Node_DynamicCast_AsStatic_Mesh_Component' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, K2Node_DynamicCast_bSuccess_3) == 0x000478, "Member 'AlienJump_C_Spawn::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
+static_assert(offsetof(AlienJump_C_Spawn, CallFunc_Array_Add_ReturnValue_1) == 0x00047C, "Member 'AlienJump_C_Spawn::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
 
 }
 

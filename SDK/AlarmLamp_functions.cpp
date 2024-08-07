@@ -104,26 +104,5 @@ void AAlarmLamp_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-
-// Function alarmLamp.alarmLamp_C.gatherDataFromKey
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AAlarmLamp_C::GatherDataFromKey(bool* Gather)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("alarmLamp_C", "gatherDataFromKey");
-
-	Params::AlarmLamp_C_GatherDataFromKey Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Gather != nullptr)
-		*Gather = Parms.Gather;
-}
-
 }
 

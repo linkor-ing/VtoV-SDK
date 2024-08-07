@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_furfurPaltar_2.prop_furfurPaltar_2_C
-// 0x0000 (0x0378 - 0x0378)
+// 0x0000 (0x0368 - 0x0368)
 class AProp_furfurPaltar_2_C final : public AProp_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_furfurPaltar_2_C) == 0x000008, "Wrong alignment on AProp_furfurPaltar_2_C");
-static_assert(sizeof(AProp_furfurPaltar_2_C) == 0x000378, "Wrong size on AProp_furfurPaltar_2_C");
+static_assert(sizeof(AProp_furfurPaltar_2_C) == 0x000368, "Wrong size on AProp_furfurPaltar_2_C");
 
 }
 

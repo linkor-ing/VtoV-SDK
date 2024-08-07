@@ -11,80 +11,83 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function prop_arirContainer_v2.prop_arirContainer_v2_C.ExecuteUbergraph_prop_arirContainer_v2
-// 0x01C0 (0x01C0 - 0x0000)
+// 0x01D0 (0x01D0 - 0x0000)
 struct Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2 final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4229[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit;                                  // 0x0010(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x009C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x00A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class AActor* DestroyedActor)> K2Node_CreateDelegate_OutputDelegate;              // 0x00B4(0x0010)(ZeroConstructor, NoDestructor)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue;              // 0x00C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D5[0x3];                                       // 0x00D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x00D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x00E4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x00F0(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 K2Node_CustomEvent_DestroyedActor;                 // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AArirSlapper_C*                         CallFunc_FinishSpawningActor_ReturnValue;          // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorRightVector_ReturnValue;          // 0x0140(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x014C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x015C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue_1;            // 0x0160(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue_2;            // 0x016C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x0178(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x0184(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0190(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x019C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_SetVectorLength_ReturnValue;              // 0x01A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_index;                                // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_422A[0x3];                                     // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x00A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x00AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class AActor* DestroyedActor)> K2Node_CreateDelegate_OutputDelegate;              // 0x00B8(0x0010)(ZeroConstructor, NoDestructor)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue;              // 0x00CC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_422B[0x3];                                     // 0x00D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x00DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x00E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_422C[0xC];                                     // 0x00F4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0100(0x0030)(IsPlainOldData, NoDestructor)
+	class AActor*                                 K2Node_CustomEvent_DestroyedActor;                 // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AArirSlapper_C*                         CallFunc_FinishSpawningActor_ReturnValue;          // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorRightVector_ReturnValue;          // 0x0150(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x015C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue_1;            // 0x0170(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue_2;            // 0x017C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x0188(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x0194(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x01A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x01AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_SetVectorLength_ReturnValue;              // 0x01B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2) == 0x000010, "Wrong alignment on Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2");
-static_assert(sizeof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2) == 0x0001C0, "Wrong size on Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2");
+static_assert(sizeof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2) == 0x0001D0, "Wrong size on Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2");
 static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, EntryPoint) == 0x000000, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, K2Node_Event_player) == 0x000008, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::K2Node_Event_player' has a wrong offset!");
 static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, K2Node_Event_hit) == 0x000010, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, K2Node_Event_action) == 0x000098, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00009C, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x0000A8, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, K2Node_CreateDelegate_OutputDelegate) == 0x0000B4, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_RandomFloatInRange_ReturnValue) == 0x0000C4, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_RotateAngleAxis_ReturnValue) == 0x0000C8, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_RotateAngleAxis_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_IsValid_ReturnValue) == 0x0000D4, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_Add_VectorVector_ReturnValue) == 0x0000D8, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_Add_VectorVector_ReturnValue_1) == 0x0000E4, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_MakeTransform_ReturnValue) == 0x0000F0, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, K2Node_CustomEvent_DestroyedActor) == 0x000120, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::K2Node_CustomEvent_DestroyedActor' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000128, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_FinishSpawningActor_ReturnValue) == 0x000130, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_GetPlayerController_ReturnValue) == 0x000138, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_GetActorRightVector_ReturnValue) == 0x000140, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_GetActorRightVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_GetActorForwardVector_ReturnValue) == 0x00014C, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000158, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x00015C, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_RotateAngleAxis_ReturnValue_1) == 0x000160, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_RotateAngleAxis_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_RotateAngleAxis_ReturnValue_2) == 0x00016C, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_RotateAngleAxis_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x000178, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x000184, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000190, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_Multiply_VectorVector_ReturnValue) == 0x00019C, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_SetVectorLength_ReturnValue) == 0x0001A8, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_SetVectorLength_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, K2Node_Event_index) == 0x000098, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, K2Node_Event_action) == 0x00009C, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000A0, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x0000AC, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, K2Node_CreateDelegate_OutputDelegate) == 0x0000B8, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_RandomFloatInRange_ReturnValue) == 0x0000C8, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_RotateAngleAxis_ReturnValue) == 0x0000CC, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_RotateAngleAxis_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_IsValid_ReturnValue) == 0x0000D8, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_Add_VectorVector_ReturnValue) == 0x0000DC, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_Add_VectorVector_ReturnValue_1) == 0x0000E8, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_MakeTransform_ReturnValue) == 0x000100, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, K2Node_CustomEvent_DestroyedActor) == 0x000130, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::K2Node_CustomEvent_DestroyedActor' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000138, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_FinishSpawningActor_ReturnValue) == 0x000140, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_GetPlayerController_ReturnValue) == 0x000148, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_GetActorRightVector_ReturnValue) == 0x000150, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_GetActorRightVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_GetActorForwardVector_ReturnValue) == 0x00015C, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000168, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x00016C, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_RotateAngleAxis_ReturnValue_1) == 0x000170, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_RotateAngleAxis_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_RotateAngleAxis_ReturnValue_2) == 0x00017C, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_RotateAngleAxis_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x000188, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x000194, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0001A0, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_Multiply_VectorVector_ReturnValue) == 0x0001AC, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2, CallFunc_SetVectorLength_ReturnValue) == 0x0001B8, "Member 'Prop_arirContainer_v2_C_ExecuteUbergraph_prop_arirContainer_v2::CallFunc_SetVectorLength_ReturnValue' has a wrong offset!");
 
 // Function prop_arirContainer_v2.prop_arirContainer_v2_C.actionOptionIndex
 // 0x0098 (0x0098 - 0x0000)
@@ -93,13 +96,15 @@ struct Prop_arirContainer_v2_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_arirContainer_v2_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_arirContainer_v2_C_ActionOptionIndex");
 static_assert(sizeof(Prop_arirContainer_v2_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_arirContainer_v2_C_ActionOptionIndex");
 static_assert(offsetof(Prop_arirContainer_v2_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_arirContainer_v2_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(Prop_arirContainer_v2_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_arirContainer_v2_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_arirContainer_v2_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_arirContainer_v2_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_arirContainer_v2_C_ActionOptionIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(Prop_arirContainer_v2_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_arirContainer_v2_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function prop_arirContainer_v2.prop_arirContainer_v2_C.D
 // 0x0008 (0x0008 - 0x0000)

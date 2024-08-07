@@ -10,7 +10,6 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Prop_food_classes.hpp"
 
 
@@ -18,16 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_meatball.prop_meatball_C
-// 0x0010 (0x03E0 - 0x03D0)
+// 0x0008 (0x03C8 - 0x03C0)
 class AProp_meatball_C final : public AProp_food_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_meatball_C;                    // 0x03D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USkeletalMeshComponent*                 Flag;                                              // 0x03D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-
-public:
-	void ExecuteUbergraph_prop_meatball(int32 EntryPoint);
-	void PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit);
+	uint8                                         Pad_3F53[0x4];                                     // 0x03BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USkeletalMeshComponent*                 Flag;                                              // 0x03C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -40,9 +35,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_meatball_C) == 0x000008, "Wrong alignment on AProp_meatball_C");
-static_assert(sizeof(AProp_meatball_C) == 0x0003E0, "Wrong size on AProp_meatball_C");
-static_assert(offsetof(AProp_meatball_C, UberGraphFrame_Prop_meatball_C) == 0x0003D0, "Member 'AProp_meatball_C::UberGraphFrame_Prop_meatball_C' has a wrong offset!");
-static_assert(offsetof(AProp_meatball_C, Flag) == 0x0003D8, "Member 'AProp_meatball_C::Flag' has a wrong offset!");
+static_assert(sizeof(AProp_meatball_C) == 0x0003C8, "Wrong size on AProp_meatball_C");
+static_assert(offsetof(AProp_meatball_C, Flag) == 0x0003C0, "Member 'AProp_meatball_C::Flag' has a wrong offset!");
 
 }
 

@@ -29,7 +29,6 @@ public:
 	void CordPlugged(class ACord_C* Cord, class ACordSocket_C* Socket);
 	void CordUnplugged(class ACord_C* Cord, class ACordSocket_C* Socket);
 	void SetActiveTrigger(class AActor* SentFrom, bool Active);
-	void GatherDataFromKeyT(bool* Gather);
 
 public:
 	static class UClass* StaticClass()

@@ -27,15 +27,15 @@ public:
 	class UAudioComponent*                        Gears_loop_Cue;                                    // 0x0290(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	TArray<class UStaticMeshComponent*>           Gears;                                             // 0x0298(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	int32                                         Amountt;                                           // 0x02A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2AC[0x4];                                      // 0x02AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EBA[0x4];                                     // 0x02AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVector>                        Locs;                                              // 0x02B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_gearer(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void RunTrigger(class AActor* Param_Owner, int32 Param_Index);
 	void Gen_gear();
 	void CheckDist(const struct FVector& V2, bool* Overlap);
-	void RunTrigger(class AActor* Param_Owner, int32 Param_Index);
 	void IgnoreSave_trigger(bool* Ignore);
 
 public:

@@ -70,5 +70,50 @@ void AEffect_ariralVaccine_C::ReceiveTick(float DeltaSeconds)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function effect_ariralVaccine.effect_ariralVaccine_C.loadData
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FStruct_save                     Data                                                   (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AEffect_ariralVaccine_C::LoadData(const struct FStruct_save& Data, bool* Return)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("effect_ariralVaccine_C", "loadData");
+
+	Params::Effect_ariralVaccine_C_LoadData Parms{};
+
+	Parms.Data = std::move(Data);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return != nullptr)
+		*Return = Parms.Return;
+}
+
+
+// Function effect_ariralVaccine.effect_ariralVaccine_C.getData
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FStruct_save                     Data                                                   (Parm, OutParm, HasGetValueTypeHash)
+
+void AEffect_ariralVaccine_C::GetData(struct FStruct_save* Data)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("effect_ariralVaccine_C", "getData");
+
+	Params::Effect_ariralVaccine_C_GetData Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Data != nullptr)
+		*Data = std::move(Parms.Data);
+}
+
 }
 

@@ -25,7 +25,7 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_Hexpillar_C;                        // 0x0248(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UStaticMeshComponent*                   Hexpillar;                                         // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UBoxComponent*                          Box;                                               // 0x0258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UComp_physicsImpact_C*                  PhysicsImpact;                                     // 0x0260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPhysicsImpactComponent_C*              PhysicsImpact;                                     // 0x0260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USphereComponent*                       Sphere;                                            // 0x0268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UArrowComponent*                        Dir;                                               // 0x0270(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         A;                                                 // 0x0278(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
@@ -33,10 +33,6 @@ public:
 	bool                                          Ticking;                                           // 0x0280(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
-	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base);
-	void SetPath(const TArray<struct FVector>& Path, bool* Return);
-	void ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return);
-	void GetKey(class FString* Param_Key);
 	void CanBeUsedHold(bool* Return);
 	void ProcessKeys(bool* Return);
 	void GetOnlyKey(class FString* Param_Key);
@@ -54,12 +50,15 @@ public:
 	void GamemodeMakeKeys();
 	void PropRenderer_finishProps();
 	void ApplyColor(const struct FLinearColor& Color);
-	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void ReceiveBeginPlay();
 	void AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Hit, const struct FVector& Impact, bool SkipSetting);
 	void GamemodeBeginPlay();
 	void ReceiveTick(float DeltaSeconds);
 	void ExecuteUbergraph_hexpillar(int32 EntryPoint);
+	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base);
+	void SetPath(const TArray<struct FVector>& Path, bool* Return);
+	void ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return);
+	void GetKey(class FString* Param_Key);
 
 public:
 	static class UClass* StaticClass()

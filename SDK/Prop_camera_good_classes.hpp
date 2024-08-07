@@ -17,12 +17,9 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_camera_good.prop_camera_good_C
-// 0x0000 (0x04B0 - 0x04B0)
+// 0x0000 (0x0490 - 0x0490)
 class AProp_camera_good_C final : public AProp_camera_bad_C
 {
-public:
-	void Init();
-
 public:
 	static class UClass* StaticClass()
 	{
@@ -34,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_camera_good_C) == 0x000010, "Wrong alignment on AProp_camera_good_C");
-static_assert(sizeof(AProp_camera_good_C) == 0x0004B0, "Wrong size on AProp_camera_good_C");
+static_assert(sizeof(AProp_camera_good_C) == 0x000490, "Wrong size on AProp_camera_good_C");
 
 }
 

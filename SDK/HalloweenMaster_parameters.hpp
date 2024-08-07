@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Struct_settings_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Struct_save_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
+#include "Struct_settings_structs.hpp"
 #include "InputCore_structs.hpp"
 
 
@@ -21,7 +21,7 @@ namespace SDK::Params
 {
 
 // Function halloweenMaster.halloweenMaster_C.ExecuteUbergraph_halloweenMaster
-// 0x0490 (0x0490 - 0x0000)
+// 0x0460 (0x0460 - 0x0000)
 struct HalloweenMaster_C_ExecuteUbergraph_halloweenMaster final
 {
 public:
@@ -30,95 +30,93 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DB4[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0020(0x00F0)(HasGetValueTypeHash)
-	struct FKey                                   K2Node_Event_key;                                  // 0x0110(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed;                              // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_129[0x3];                                      // 0x0129(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Event_color;                                // 0x012C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_13C[0x4];                                      // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUmg_texturePicker_C*                   K2Node_Event_picker;                               // 0x0140(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_Event_texture;                              // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_index;                                // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_154[0x4];                                      // 0x0154(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Array_Get_Item;                           // 0x0160(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0170(0x0030)(IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A1[0x7];                                      // 0x01A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_spookyPumpkin_C*                  CallFunc_FinishSpawningActor_ReturnValue;          // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C4[0x4];                                      // 0x01C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ACharacter*                             CallFunc_GetPlayerCharacter_ReturnValue;           // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x01D4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_3;         // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_4;         // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x01E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x01F4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue;              // 0x0200(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x020C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_218[0x8];                                      // 0x0218(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x0220(0x0030)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0250(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_25C[0x4];                                      // 0x025C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        CallFunc_SpawnSoundAtLocation_ReturnValue;         // 0x0268(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_map_C*                            CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0270(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_spawnInsomniac_canSpawn;                  // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_279[0x3];                                      // 0x0279(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_spawnInsomniac_loc;                       // 0x027C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_2;        // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_2;              // 0x0290(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x02C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AInsomniac_C*                           CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  CallFunc_GetPlayerPawn_ReturnValue;                // 0x02D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x02D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E4[0xC];                                      // 0x02E4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_3;              // 0x02F0(0x0030)(IsPlainOldData, NoDestructor)
-	struct FVector                                Temp_struct_Variable;                              // 0x0320(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_32C[0x4];                                      // 0x032C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3; // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWendussy_C*                            CallFunc_FinishSpawningActor_ReturnValue_3;        // 0x0338(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  CallFunc_GetPlayerPawn_ReturnValue_1;              // 0x0340(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x0348(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_5;         // 0x0354(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_2;           // 0x0358(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_6;         // 0x0364(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue_2;                 // 0x0368(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_374[0x4];                                      // 0x0374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_3;        // 0x0378(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue_1;            // 0x0380(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_3;           // 0x038C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_398[0x8];                                      // 0x0398(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_4;              // 0x03A0(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4; // 0x03D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable;                                // 0x03D8(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_garbageClump_C*                   CallFunc_FinishSpawningActor_ReturnValue_4;        // 0x03E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_4;        // 0x03E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_7;         // 0x03F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue_2;            // 0x03F4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_4;           // 0x0400(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_LowEntry_LocalVariable_Value__Object;       // 0x040C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_8;         // 0x0418(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_ProjectPointToNavigation_ProjectedLocation; // 0x041C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_ProjectPointToNavigation_ReturnValue;  // 0x0428(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_429[0x3];                                      // 0x0429(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_5;           // 0x042C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqualExactly_VectorVector_ReturnValue; // 0x0438(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_439[0x7];                                      // 0x0439(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_5;              // 0x0440(0x0030)(IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0470(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_471[0x7];                                      // 0x0471(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_5; // 0x0478(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AEyer_C*                                CallFunc_FinishSpawningActor_ReturnValue_5;        // 0x0480(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0020(0x00CC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2DB5[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   K2Node_Event_key;                                  // 0x00F0(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed;                              // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2DB6[0x3];                                     // 0x0109(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           K2Node_Event_color;                                // 0x010C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2DB7[0x4];                                     // 0x011C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Array_Get_Item;                           // 0x0128(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2DB8[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0140(0x0030)(IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2DB9[0x7];                                     // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_spookyPumpkin_C*                  CallFunc_FinishSpawningActor_ReturnValue;          // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2DBA[0x4];                                     // 0x0194(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ACharacter*                             CallFunc_GetPlayerCharacter_ReturnValue;           // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x01A4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_3;         // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_4;         // 0x01B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x01B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x01C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue;              // 0x01D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x01DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2DBB[0x8];                                     // 0x01E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x01F0(0x0030)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0220(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2DBC[0x4];                                     // 0x022C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        CallFunc_SpawnSoundAtLocation_ReturnValue;         // 0x0238(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_map_C*                            CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_spawnInsomniac_canSpawn;                  // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2DBD[0x3];                                     // 0x0249(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_spawnInsomniac_loc;                       // 0x024C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_2;        // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue_2;              // 0x0260(0x0030)(IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AInsomniac_C*                           CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x0298(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  CallFunc_GetPlayerPawn_ReturnValue;                // 0x02A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x02A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2DBE[0xC];                                     // 0x02B4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue_3;              // 0x02C0(0x0030)(IsPlainOldData, NoDestructor)
+	struct FVector                                Temp_struct_Variable;                              // 0x02F0(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2DBF[0x4];                                     // 0x02FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3; // 0x0300(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWendussy_C*                            CallFunc_FinishSpawningActor_ReturnValue_3;        // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  CallFunc_GetPlayerPawn_ReturnValue_1;              // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x0318(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_5;         // 0x0324(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_2;           // 0x0328(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_6;         // 0x0334(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue_2;                 // 0x0338(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2DC0[0x4];                                     // 0x0344(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_3;        // 0x0348(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue_1;            // 0x0350(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_3;           // 0x035C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2DC1[0x8];                                     // 0x0368(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue_4;              // 0x0370(0x0030)(IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4; // 0x03A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable;                                // 0x03A8(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_garbageClump_C*                   CallFunc_FinishSpawningActor_ReturnValue_4;        // 0x03B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_4;        // 0x03B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_7;         // 0x03C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue_2;            // 0x03C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_4;           // 0x03D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_LowEntry_LocalVariable_Value__Object;       // 0x03DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_8;         // 0x03E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_ProjectPointToNavigation_ProjectedLocation; // 0x03EC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_ProjectPointToNavigation_ReturnValue;  // 0x03F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2DC2[0x3];                                     // 0x03F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_5;           // 0x03FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqualExactly_VectorVector_ReturnValue; // 0x0408(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2DC3[0x7];                                     // 0x0409(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue_5;              // 0x0410(0x0030)(IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0440(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2DC4[0x7];                                     // 0x0441(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_5; // 0x0448(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AEyer_C*                                CallFunc_FinishSpawningActor_ReturnValue_5;        // 0x0450(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster) == 0x000010, "Wrong alignment on HalloweenMaster_C_ExecuteUbergraph_halloweenMaster");
-static_assert(sizeof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster) == 0x000490, "Wrong size on HalloweenMaster_C_ExecuteUbergraph_halloweenMaster");
+static_assert(sizeof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster) == 0x000460, "Wrong size on HalloweenMaster_C_ExecuteUbergraph_halloweenMaster");
 static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, EntryPoint) == 0x000000, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::EntryPoint' has a wrong offset!");
 static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_RandomFloatInRange_ReturnValue) == 0x000004, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, Temp_int_Array_Index_Variable) == 0x000008, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::Temp_int_Array_Index_Variable' has a wrong offset!");
@@ -126,89 +124,71 @@ static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, Temp_
 static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, K2Node_Event_gamemode) == 0x000018, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::K2Node_Event_gamemode' has a wrong offset!");
 static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, K2Node_Event_settings) == 0x000020, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::K2Node_Event_settings' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, K2Node_Event_key) == 0x000110, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::K2Node_Event_key' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, K2Node_Event_pressed) == 0x000128, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::K2Node_Event_pressed' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, K2Node_Event_color) == 0x00012C, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::K2Node_Event_color' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, K2Node_Event_picker) == 0x000140, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::K2Node_Event_picker' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, K2Node_Event_texture) == 0x000148, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::K2Node_Event_texture' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, K2Node_Event_index) == 0x000150, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000158, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_Array_Get_Item) == 0x000160, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_Array_Length_ReturnValue) == 0x00016C, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_MakeTransform_ReturnValue) == 0x000170, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_Less_IntInt_ReturnValue) == 0x0001A0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0001A8, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_FinishSpawningActor_ReturnValue) == 0x0001B0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x0001B8, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x0001C0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_GetPlayerCharacter_ReturnValue) == 0x0001C8, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_GetPlayerCharacter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x0001D0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0001D4, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_RandomFloatInRange_ReturnValue_3) == 0x0001E0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_RandomFloatInRange_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_RandomFloatInRange_ReturnValue_4) == 0x0001E4, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_RandomFloatInRange_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_MakeVector_ReturnValue) == 0x0001E8, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_MakeVector_ReturnValue_1) == 0x0001F4, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_RotateAngleAxis_ReturnValue) == 0x000200, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_RotateAngleAxis_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_Add_VectorVector_ReturnValue) == 0x00020C, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_MakeTransform_ReturnValue_1) == 0x000220, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000250, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000260, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_SpawnSoundAtLocation_ReturnValue) == 0x000268, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_SpawnSoundAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000270, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_spawnInsomniac_canSpawn) == 0x000278, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_spawnInsomniac_canSpawn' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_spawnInsomniac_loc) == 0x00027C, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_spawnInsomniac_loc' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_getMainGamemode_AsMain_Gamemode_2) == 0x000288, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_getMainGamemode_AsMain_Gamemode_2' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_MakeTransform_ReturnValue_2) == 0x000290, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_MakeTransform_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x0002C0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x0002C8, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_GetPlayerPawn_ReturnValue) == 0x0002D0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_GetPlayerPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x0002D8, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_MakeTransform_ReturnValue_3) == 0x0002F0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_MakeTransform_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, Temp_struct_Variable) == 0x000320, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3) == 0x000330, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_FinishSpawningActor_ReturnValue_3) == 0x000338, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_FinishSpawningActor_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_GetPlayerPawn_ReturnValue_1) == 0x000340, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_GetPlayerPawn_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x000348, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_RandomFloatInRange_ReturnValue_5) == 0x000354, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_RandomFloatInRange_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_Add_VectorVector_ReturnValue_2) == 0x000358, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_Add_VectorVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_RandomFloatInRange_ReturnValue_6) == 0x000364, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_RandomFloatInRange_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_MakeVector_ReturnValue_2) == 0x000368, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_MakeVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_getMainGamemode_AsMain_Gamemode_3) == 0x000378, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_getMainGamemode_AsMain_Gamemode_3' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_RotateAngleAxis_ReturnValue_1) == 0x000380, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_RotateAngleAxis_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_Add_VectorVector_ReturnValue_3) == 0x00038C, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_Add_VectorVector_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_MakeTransform_ReturnValue_4) == 0x0003A0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_MakeTransform_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4) == 0x0003D0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, Temp_name_Variable) == 0x0003D8, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_FinishSpawningActor_ReturnValue_4) == 0x0003E0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_FinishSpawningActor_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_getMainGamemode_AsMain_Gamemode_4) == 0x0003E8, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_getMainGamemode_AsMain_Gamemode_4' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_RandomFloatInRange_ReturnValue_7) == 0x0003F0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_RandomFloatInRange_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_RotateAngleAxis_ReturnValue_2) == 0x0003F4, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_RotateAngleAxis_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_Add_VectorVector_ReturnValue_4) == 0x000400, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_Add_VectorVector_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, K2Node_LowEntry_LocalVariable_Value__Object) == 0x00040C, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::K2Node_LowEntry_LocalVariable_Value__Object' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_RandomFloatInRange_ReturnValue_8) == 0x000418, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_RandomFloatInRange_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_K2_ProjectPointToNavigation_ProjectedLocation) == 0x00041C, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_K2_ProjectPointToNavigation_ProjectedLocation' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_K2_ProjectPointToNavigation_ReturnValue) == 0x000428, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_K2_ProjectPointToNavigation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_Add_VectorVector_ReturnValue_5) == 0x00042C, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_Add_VectorVector_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_NotEqualExactly_VectorVector_ReturnValue) == 0x000438, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_NotEqualExactly_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_MakeTransform_ReturnValue_5) == 0x000440, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_MakeTransform_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_BooleanAND_ReturnValue) == 0x000470, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_5) == 0x000478, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_FinishSpawningActor_ReturnValue_5) == 0x000480, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_FinishSpawningActor_ReturnValue_5' has a wrong offset!");
-
-// Function halloweenMaster.halloweenMaster_C.texturePickerApply
-// 0x0018 (0x0018 - 0x0000)
-struct HalloweenMaster_C_TexturePickerApply final
-{
-public:
-	class UUmg_texturePicker_C*                   Picker;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Param_Index;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(HalloweenMaster_C_TexturePickerApply) == 0x000008, "Wrong alignment on HalloweenMaster_C_TexturePickerApply");
-static_assert(sizeof(HalloweenMaster_C_TexturePickerApply) == 0x000018, "Wrong size on HalloweenMaster_C_TexturePickerApply");
-static_assert(offsetof(HalloweenMaster_C_TexturePickerApply, Picker) == 0x000000, "Member 'HalloweenMaster_C_TexturePickerApply::Picker' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_TexturePickerApply, Texture) == 0x000008, "Member 'HalloweenMaster_C_TexturePickerApply::Texture' has a wrong offset!");
-static_assert(offsetof(HalloweenMaster_C_TexturePickerApply, Param_Index) == 0x000010, "Member 'HalloweenMaster_C_TexturePickerApply::Param_Index' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, K2Node_Event_key) == 0x0000F0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::K2Node_Event_key' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, K2Node_Event_pressed) == 0x000108, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::K2Node_Event_pressed' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, K2Node_Event_color) == 0x00010C, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::K2Node_Event_color' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000120, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_Array_Get_Item) == 0x000128, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_Array_Length_ReturnValue) == 0x000134, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_MakeTransform_ReturnValue) == 0x000140, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_Less_IntInt_ReturnValue) == 0x000170, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000178, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_FinishSpawningActor_ReturnValue) == 0x000180, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x000188, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000190, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_GetPlayerCharacter_ReturnValue) == 0x000198, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_GetPlayerCharacter_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x0001A0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0001A4, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_RandomFloatInRange_ReturnValue_3) == 0x0001B0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_RandomFloatInRange_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_RandomFloatInRange_ReturnValue_4) == 0x0001B4, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_RandomFloatInRange_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_MakeVector_ReturnValue) == 0x0001B8, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_MakeVector_ReturnValue_1) == 0x0001C4, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_RotateAngleAxis_ReturnValue) == 0x0001D0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_RotateAngleAxis_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_Add_VectorVector_ReturnValue) == 0x0001DC, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_MakeTransform_ReturnValue_1) == 0x0001F0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000220, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000230, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_SpawnSoundAtLocation_ReturnValue) == 0x000238, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_SpawnSoundAtLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000240, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_spawnInsomniac_canSpawn) == 0x000248, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_spawnInsomniac_canSpawn' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_spawnInsomniac_loc) == 0x00024C, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_spawnInsomniac_loc' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_getMainGamemode_AsMain_Gamemode_2) == 0x000258, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_getMainGamemode_AsMain_Gamemode_2' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_MakeTransform_ReturnValue_2) == 0x000260, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_MakeTransform_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x000290, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x000298, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_GetPlayerPawn_ReturnValue) == 0x0002A0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_GetPlayerPawn_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x0002A8, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_MakeTransform_ReturnValue_3) == 0x0002C0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_MakeTransform_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, Temp_struct_Variable) == 0x0002F0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3) == 0x000300, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_FinishSpawningActor_ReturnValue_3) == 0x000308, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_FinishSpawningActor_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_GetPlayerPawn_ReturnValue_1) == 0x000310, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_GetPlayerPawn_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x000318, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_RandomFloatInRange_ReturnValue_5) == 0x000324, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_RandomFloatInRange_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_Add_VectorVector_ReturnValue_2) == 0x000328, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_Add_VectorVector_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_RandomFloatInRange_ReturnValue_6) == 0x000334, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_RandomFloatInRange_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_MakeVector_ReturnValue_2) == 0x000338, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_MakeVector_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_getMainGamemode_AsMain_Gamemode_3) == 0x000348, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_getMainGamemode_AsMain_Gamemode_3' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_RotateAngleAxis_ReturnValue_1) == 0x000350, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_RotateAngleAxis_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_Add_VectorVector_ReturnValue_3) == 0x00035C, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_Add_VectorVector_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_MakeTransform_ReturnValue_4) == 0x000370, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_MakeTransform_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4) == 0x0003A0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, Temp_name_Variable) == 0x0003A8, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::Temp_name_Variable' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_FinishSpawningActor_ReturnValue_4) == 0x0003B0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_FinishSpawningActor_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_getMainGamemode_AsMain_Gamemode_4) == 0x0003B8, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_getMainGamemode_AsMain_Gamemode_4' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_RandomFloatInRange_ReturnValue_7) == 0x0003C0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_RandomFloatInRange_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_RotateAngleAxis_ReturnValue_2) == 0x0003C4, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_RotateAngleAxis_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_Add_VectorVector_ReturnValue_4) == 0x0003D0, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_Add_VectorVector_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, K2Node_LowEntry_LocalVariable_Value__Object) == 0x0003DC, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::K2Node_LowEntry_LocalVariable_Value__Object' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_RandomFloatInRange_ReturnValue_8) == 0x0003E8, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_RandomFloatInRange_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_K2_ProjectPointToNavigation_ProjectedLocation) == 0x0003EC, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_K2_ProjectPointToNavigation_ProjectedLocation' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_K2_ProjectPointToNavigation_ReturnValue) == 0x0003F8, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_K2_ProjectPointToNavigation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_Add_VectorVector_ReturnValue_5) == 0x0003FC, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_Add_VectorVector_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_NotEqualExactly_VectorVector_ReturnValue) == 0x000408, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_NotEqualExactly_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_MakeTransform_ReturnValue_5) == 0x000410, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_MakeTransform_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_BooleanAND_ReturnValue) == 0x000440, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_5) == 0x000448, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(HalloweenMaster_C_ExecuteUbergraph_halloweenMaster, CallFunc_FinishSpawningActor_ReturnValue_5) == 0x000450, "Member 'HalloweenMaster_C_ExecuteUbergraph_halloweenMaster::CallFunc_FinishSpawningActor_ReturnValue_5' has a wrong offset!");
 
 // Function halloweenMaster.halloweenMaster_C.applyColor
 // 0x0010 (0x0010 - 0x0000)
@@ -235,14 +215,14 @@ static_assert(offsetof(HalloweenMaster_C_AnyKey, Key) == 0x000000, "Member 'Hall
 static_assert(offsetof(HalloweenMaster_C_AnyKey, Pressed) == 0x000018, "Member 'HalloweenMaster_C_AnyKey::Pressed' has a wrong offset!");
 
 // Function halloweenMaster.halloweenMaster_C.settingsApplied
-// 0x00F0 (0x00F0 - 0x0000)
+// 0x00CC (0x00CC - 0x0000)
 struct HalloweenMaster_C_SettingsApplied final
 {
 public:
-	struct FStruct_settings                       Settings;                                          // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FStruct_settings                       Settings;                                          // 0x0000(0x00CC)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HalloweenMaster_C_SettingsApplied) == 0x000008, "Wrong alignment on HalloweenMaster_C_SettingsApplied");
-static_assert(sizeof(HalloweenMaster_C_SettingsApplied) == 0x0000F0, "Wrong size on HalloweenMaster_C_SettingsApplied");
+static_assert(alignof(HalloweenMaster_C_SettingsApplied) == 0x000004, "Wrong alignment on HalloweenMaster_C_SettingsApplied");
+static_assert(sizeof(HalloweenMaster_C_SettingsApplied) == 0x0000CC, "Wrong size on HalloweenMaster_C_SettingsApplied");
 static_assert(offsetof(HalloweenMaster_C_SettingsApplied, Settings) == 0x000000, "Member 'HalloweenMaster_C_SettingsApplied::Settings' has a wrong offset!");
 
 // Function halloweenMaster.halloweenMaster_C.stuffUpgraded
@@ -266,12 +246,12 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DC5[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0024(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DC6[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(HalloweenMaster_C_UserConstructionScript) == 0x000008, "Wrong alignment on HalloweenMaster_C_UserConstructionScript");
@@ -306,16 +286,16 @@ struct HalloweenMaster_C_SpawnInsomniac final
 {
 public:
 	bool                                          CanSpawn;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DC7[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Loc;                                               // 0x0004(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DC8[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0018(0x0010)(ConstParm, ReferenceParm)
 	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0028(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DC9[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<EObjectTypeQuery>                      CallFunc_obj_static_obj;                           // 0x0038(0x0010)(ReferenceParm)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DCA[0x4];                                     // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue;              // 0x0058(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0064(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -325,14 +305,14 @@ public:
 	bool                                          CallFunc_SphereTraceSingleForObjects_ReturnValue;  // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0112(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_113[0x1];                                      // 0x0113(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DCB[0x1];                                     // 0x0113(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x011C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0128(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0134(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0140(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DCC[0x4];                                     // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0160(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

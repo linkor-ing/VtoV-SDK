@@ -57,20 +57,6 @@ void AProp_deadDeer_C::D(class AActor* DestroyedActor)
 }
 
 
-// Function prop_deadDeer.prop_deadDeer_C.eaten
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AProp_deadDeer_C::Eaten()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_deadDeer_C", "eaten");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_deadDeer.prop_deadDeer_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 

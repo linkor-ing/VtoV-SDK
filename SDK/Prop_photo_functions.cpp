@@ -37,20 +37,6 @@ void AProp_photo_C::ExecuteUbergraph_prop_photo(int32 EntryPoint)
 }
 
 
-// Function prop_photo.prop_photo_C.loadImage
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void AProp_photo_C::LoadImage()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_photo_C", "loadImage");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_photo.prop_photo_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
@@ -60,6 +46,20 @@ void AProp_photo_C::ReceiveBeginPlay()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("prop_photo_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function prop_photo.prop_photo_C.loadImage
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void AProp_photo_C::LoadImage()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_photo_C", "loadImage");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

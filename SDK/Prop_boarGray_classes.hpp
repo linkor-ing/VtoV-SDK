@@ -18,19 +18,20 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_boarGray.prop_boarGray_C
-// 0x0048 (0x03C0 - 0x0378)
+// 0x0048 (0x03B0 - 0x0368)
 class AProp_boarGray_C final : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_boarGray_C;                    // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USphereComponent*                       Sphere;                                            // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        Audio;                                             // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UArrowComponent*                        Towards;                                           // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UArrowComponent*                        Follow;                                            // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UArrowComponent*                        Forward;                                           // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UArrowComponent*                        Normal;                                            // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPointLightComponent*                   PointLight;                                        // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Levitate;                                          // 0x03B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39A5[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_boarGray_C;                    // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USphereComponent*                       Sphere;                                            // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        Audio;                                             // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        Towards;                                           // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        Follow;                                            // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        Forward;                                           // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        Normal;                                            // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPointLightComponent*                   PointLight;                                        // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Levitate;                                          // 0x03A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_boarGray(int32 EntryPoint);
@@ -48,16 +49,16 @@ public:
 	}
 };
 static_assert(alignof(AProp_boarGray_C) == 0x000008, "Wrong alignment on AProp_boarGray_C");
-static_assert(sizeof(AProp_boarGray_C) == 0x0003C0, "Wrong size on AProp_boarGray_C");
-static_assert(offsetof(AProp_boarGray_C, UberGraphFrame_Prop_boarGray_C) == 0x000378, "Member 'AProp_boarGray_C::UberGraphFrame_Prop_boarGray_C' has a wrong offset!");
-static_assert(offsetof(AProp_boarGray_C, Sphere) == 0x000380, "Member 'AProp_boarGray_C::Sphere' has a wrong offset!");
-static_assert(offsetof(AProp_boarGray_C, Audio) == 0x000388, "Member 'AProp_boarGray_C::Audio' has a wrong offset!");
-static_assert(offsetof(AProp_boarGray_C, Towards) == 0x000390, "Member 'AProp_boarGray_C::Towards' has a wrong offset!");
-static_assert(offsetof(AProp_boarGray_C, Follow) == 0x000398, "Member 'AProp_boarGray_C::Follow' has a wrong offset!");
-static_assert(offsetof(AProp_boarGray_C, Forward) == 0x0003A0, "Member 'AProp_boarGray_C::Forward' has a wrong offset!");
-static_assert(offsetof(AProp_boarGray_C, Normal) == 0x0003A8, "Member 'AProp_boarGray_C::Normal' has a wrong offset!");
-static_assert(offsetof(AProp_boarGray_C, PointLight) == 0x0003B0, "Member 'AProp_boarGray_C::PointLight' has a wrong offset!");
-static_assert(offsetof(AProp_boarGray_C, Levitate) == 0x0003B8, "Member 'AProp_boarGray_C::Levitate' has a wrong offset!");
+static_assert(sizeof(AProp_boarGray_C) == 0x0003B0, "Wrong size on AProp_boarGray_C");
+static_assert(offsetof(AProp_boarGray_C, UberGraphFrame_Prop_boarGray_C) == 0x000368, "Member 'AProp_boarGray_C::UberGraphFrame_Prop_boarGray_C' has a wrong offset!");
+static_assert(offsetof(AProp_boarGray_C, Sphere) == 0x000370, "Member 'AProp_boarGray_C::Sphere' has a wrong offset!");
+static_assert(offsetof(AProp_boarGray_C, Audio) == 0x000378, "Member 'AProp_boarGray_C::Audio' has a wrong offset!");
+static_assert(offsetof(AProp_boarGray_C, Towards) == 0x000380, "Member 'AProp_boarGray_C::Towards' has a wrong offset!");
+static_assert(offsetof(AProp_boarGray_C, Follow) == 0x000388, "Member 'AProp_boarGray_C::Follow' has a wrong offset!");
+static_assert(offsetof(AProp_boarGray_C, Forward) == 0x000390, "Member 'AProp_boarGray_C::Forward' has a wrong offset!");
+static_assert(offsetof(AProp_boarGray_C, Normal) == 0x000398, "Member 'AProp_boarGray_C::Normal' has a wrong offset!");
+static_assert(offsetof(AProp_boarGray_C, PointLight) == 0x0003A0, "Member 'AProp_boarGray_C::PointLight' has a wrong offset!");
+static_assert(offsetof(AProp_boarGray_C, Levitate) == 0x0003A8, "Member 'AProp_boarGray_C::Levitate' has a wrong offset!");
 
 }
 

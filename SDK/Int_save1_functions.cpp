@@ -123,26 +123,5 @@ void IInt_save1_C::SkipPreDelete(bool* Skip)
 		*Skip = Parms.Skip;
 }
 
-
-// Function int_save1.int_save1_C.gatherDataFromKey
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void IInt_save1_C::GatherDataFromKey(bool* Gather)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("int_save1_C", "gatherDataFromKey");
-
-	Params::Int_save1_C_GatherDataFromKey Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Gather != nullptr)
-		*Gather = Parms.Gather;
-}
-
 }
 

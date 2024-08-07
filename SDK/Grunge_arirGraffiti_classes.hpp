@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Grunge_classes.hpp"
 #include "Engine_structs.hpp"
+#include "Grunge_classes.hpp"
 
 
 namespace SDK

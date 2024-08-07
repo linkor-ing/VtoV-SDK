@@ -10,26 +10,26 @@
 
 #include "Basic.hpp"
 
-#include "Struct_mBool_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
 #include "Struct_save_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Struct_mFloat_structs.hpp"
+#include "Struct_mBool_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function prop_fireExt.prop_fireExt_C.ExecuteUbergraph_prop_fireExt
-// 0x0318 (0x0318 - 0x0000)
+// 0x0288 (0x0288 - 0x0000)
 struct Prop_fireExt_C_ExecuteUbergraph_prop_fireExt final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C4A[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_Event_actor;                                // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_2;                             // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_1;                             // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit;                                  // 0x001C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FVector                                K2Node_Event_impact;                               // 0x00A4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_skipSetting;                          // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -44,61 +44,58 @@ public:
 	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue;           // 0x00C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Lerp_ReturnValue_2;                       // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Lerp_ReturnValue_3;                       // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_1;                             // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hot;                                  // 0x00E0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         K2Node_Event_damage;                               // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsActorBeingDestroyed_ReturnValue;        // 0x016C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x016D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsActorBeingDestroyed_ReturnValue_1;      // 0x016E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x016F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_171[0x3];                                      // 0x0171(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17C[0x4];                                      // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x0188(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0198(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x01A4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x01B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1BC[0x4];                                      // 0x01BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue_1;     // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RandomUnitVector_ReturnValue;             // 0x01C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x01D4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult;       // 0x01E4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x026C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0278(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatMinusEquals_FloatOut_1;       // 0x0284(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0288(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_289[0x3];                                      // 0x0289(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Lerp_ReturnValue_4;                       // 0x028C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue_1;         // 0x0290(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x029C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x02A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x02AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RandomUnitVector_ReturnValue_1;           // 0x02B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x02C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1; // 0x02C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue_5;                       // 0x02CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D1[0x3];                                      // 0x02D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_3;         // 0x02D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_2;       // 0x02D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E4[0x4];                                      // 0x02E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x02E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue_6;                       // 0x02F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_3;       // 0x02F4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_2;           // 0x0300(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_3;           // 0x030C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage;                               // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsActorBeingDestroyed_ReturnValue;        // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsActorBeingDestroyed_ReturnValue_1;      // 0x00E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00E3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3C4B[0x3];                                     // 0x00E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x00F8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0108(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0114(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0120(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C4C[0x4];                                     // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue_1;     // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RandomUnitVector_ReturnValue;             // 0x0138(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x0144(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult;       // 0x0154(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x01DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x01E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatMinusEquals_FloatOut_1;       // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3C4D[0x3];                                     // 0x01F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Lerp_ReturnValue_4;                       // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue_1;         // 0x0200(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x020C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x0210(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x021C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RandomUnitVector_ReturnValue_1;           // 0x0228(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x0234(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1; // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue_5;                       // 0x023C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3C4E[0x3];                                     // 0x0241(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_3;         // 0x0244(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_2;       // 0x0248(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C4F[0x4];                                     // 0x0254(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue_6;                       // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_3;       // 0x0264(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_2;           // 0x0270(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_3;           // 0x027C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt) == 0x000008, "Wrong alignment on Prop_fireExt_C_ExecuteUbergraph_prop_fireExt");
-static_assert(sizeof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt) == 0x000318, "Wrong size on Prop_fireExt_C_ExecuteUbergraph_prop_fireExt");
+static_assert(sizeof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt) == 0x000288, "Wrong size on Prop_fireExt_C_ExecuteUbergraph_prop_fireExt");
 static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, EntryPoint) == 0x000000, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, K2Node_Event_player) == 0x000008, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::K2Node_Event_player' has a wrong offset!");
 static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, K2Node_Event_actor) == 0x000010, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::K2Node_Event_actor' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, K2Node_Event_damage_2) == 0x000018, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::K2Node_Event_damage_2' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, K2Node_Event_damage_1) == 0x000018, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::K2Node_Event_damage_1' has a wrong offset!");
 static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, K2Node_Event_hit) == 0x00001C, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::K2Node_Event_hit' has a wrong offset!");
 static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, K2Node_Event_impact) == 0x0000A4, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::K2Node_Event_impact' has a wrong offset!");
 static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, K2Node_Event_skipSetting) == 0x0000B0, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::K2Node_Event_skipSetting' has a wrong offset!");
@@ -113,48 +110,46 @@ static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Le
 static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Conv_FloatToVector_ReturnValue) == 0x0000C8, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Conv_FloatToVector_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Lerp_ReturnValue_2) == 0x0000D4, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Lerp_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Lerp_ReturnValue_3) == 0x0000D8, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Lerp_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, K2Node_Event_damage_1) == 0x0000DC, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::K2Node_Event_damage_1' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, K2Node_Event_hot) == 0x0000E0, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::K2Node_Event_hot' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, K2Node_Event_damage) == 0x000168, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::K2Node_Event_damage' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_IsActorBeingDestroyed_ReturnValue) == 0x00016C, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_IsActorBeingDestroyed_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_IsValid_ReturnValue) == 0x00016D, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_IsActorBeingDestroyed_ReturnValue_1) == 0x00016E, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_IsActorBeingDestroyed_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_IsValid_ReturnValue_1) == 0x00016F, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, K2Node_SwitchEnum_CmpSuccess) == 0x000170, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, K2Node_Event_DeltaSeconds) == 0x000174, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x000178, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000180, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_GetActorForwardVector_ReturnValue) == 0x000188, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x000194, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000198, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0001A4, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Add_VectorVector_ReturnValue) == 0x0001B0, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_GetPlayerCameraManager_ReturnValue_1) == 0x0001C0, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_GetPlayerCameraManager_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_RandomUnitVector_ReturnValue) == 0x0001C8, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_RandomUnitVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_K2_GetActorRotation_ReturnValue) == 0x0001D4, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_RandomFloatInRange_ReturnValue) == 0x0001E0, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_K2_SetWorldRotation_SweepHitResult) == 0x0001E4, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_K2_SetWorldRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x00026C, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000278, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_VictoryFloatMinusEquals_FloatOut_1) == 0x000284, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_VictoryFloatMinusEquals_FloatOut_1' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Less_FloatFloat_ReturnValue) == 0x000288, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Lerp_ReturnValue_4) == 0x00028C, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Lerp_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Conv_FloatToVector_ReturnValue_1) == 0x000290, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Conv_FloatToVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x00029C, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_GetForwardVector_ReturnValue) == 0x0002A0, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0002AC, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_RandomUnitVector_ReturnValue_1) == 0x0002B8, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_RandomUnitVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x0002C4, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1) == 0x0002C8, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Lerp_ReturnValue_5) == 0x0002CC, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Lerp_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x0002D0, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_RandomFloatInRange_ReturnValue_3) == 0x0002D4, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_RandomFloatInRange_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Multiply_VectorFloat_ReturnValue_2) == 0x0002D8, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Multiply_VectorFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, K2Node_Event_player_1) == 0x0002E8, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Lerp_ReturnValue_6) == 0x0002F0, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Lerp_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Multiply_VectorFloat_ReturnValue_3) == 0x0002F4, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Multiply_VectorFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Add_VectorVector_ReturnValue_2) == 0x000300, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Add_VectorVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Add_VectorVector_ReturnValue_3) == 0x00030C, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Add_VectorVector_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, K2Node_Event_damage) == 0x0000DC, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::K2Node_Event_damage' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_IsActorBeingDestroyed_ReturnValue) == 0x0000E0, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_IsActorBeingDestroyed_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_IsValid_ReturnValue) == 0x0000E1, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_IsActorBeingDestroyed_ReturnValue_1) == 0x0000E2, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_IsActorBeingDestroyed_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_IsValid_ReturnValue_1) == 0x0000E3, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, K2Node_SwitchEnum_CmpSuccess) == 0x0000E4, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, K2Node_Event_DeltaSeconds) == 0x0000E8, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x0000EC, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x0000F0, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_GetActorForwardVector_ReturnValue) == 0x0000F8, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x000104, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000108, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000114, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Add_VectorVector_ReturnValue) == 0x000120, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_GetPlayerCameraManager_ReturnValue_1) == 0x000130, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_GetPlayerCameraManager_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_RandomUnitVector_ReturnValue) == 0x000138, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_RandomUnitVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_K2_GetActorRotation_ReturnValue) == 0x000144, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_RandomFloatInRange_ReturnValue) == 0x000150, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_K2_SetWorldRotation_SweepHitResult) == 0x000154, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_K2_SetWorldRotation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x0001DC, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Add_VectorVector_ReturnValue_1) == 0x0001E8, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_VictoryFloatMinusEquals_FloatOut_1) == 0x0001F4, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_VictoryFloatMinusEquals_FloatOut_1' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Less_FloatFloat_ReturnValue) == 0x0001F8, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Lerp_ReturnValue_4) == 0x0001FC, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Lerp_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Conv_FloatToVector_ReturnValue_1) == 0x000200, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Conv_FloatToVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x00020C, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_GetForwardVector_ReturnValue) == 0x000210, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x00021C, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_RandomUnitVector_ReturnValue_1) == 0x000228, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_RandomUnitVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x000234, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1) == 0x000238, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Lerp_ReturnValue_5) == 0x00023C, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Lerp_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x000240, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_RandomFloatInRange_ReturnValue_3) == 0x000244, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_RandomFloatInRange_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Multiply_VectorFloat_ReturnValue_2) == 0x000248, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Multiply_VectorFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, K2Node_Event_player_1) == 0x000258, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Lerp_ReturnValue_6) == 0x000260, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Lerp_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Multiply_VectorFloat_ReturnValue_3) == 0x000264, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Multiply_VectorFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Add_VectorVector_ReturnValue_2) == 0x000270, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Add_VectorVector_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_ExecuteUbergraph_prop_fireExt, CallFunc_Add_VectorVector_ReturnValue_3) == 0x00027C, "Member 'Prop_fireExt_C_ExecuteUbergraph_prop_fireExt::CallFunc_Add_VectorVector_ReturnValue_3' has a wrong offset!");
 
 // Function prop_fireExt.prop_fireExt_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -166,6 +161,36 @@ public:
 static_assert(alignof(Prop_fireExt_C_ReceiveTick) == 0x000004, "Wrong alignment on Prop_fireExt_C_ReceiveTick");
 static_assert(sizeof(Prop_fireExt_C_ReceiveTick) == 0x000004, "Wrong size on Prop_fireExt_C_ReceiveTick");
 static_assert(offsetof(Prop_fireExt_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'Prop_fireExt_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+
+// Function prop_fireExt.prop_fireExt_C.fireDamage
+// 0x0004 (0x0004 - 0x0000)
+struct Prop_fireExt_C_FireDamage final
+{
+public:
+	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_fireExt_C_FireDamage) == 0x000004, "Wrong alignment on Prop_fireExt_C_FireDamage");
+static_assert(sizeof(Prop_fireExt_C_FireDamage) == 0x000004, "Wrong size on Prop_fireExt_C_FireDamage");
+static_assert(offsetof(Prop_fireExt_C_FireDamage, Damage) == 0x000000, "Member 'Prop_fireExt_C_FireDamage::Damage' has a wrong offset!");
+
+// Function prop_fireExt.prop_fireExt_C.addDamage
+// 0x00A8 (0x00A8 - 0x0000)
+struct Prop_fireExt_C_AddDamage final
+{
+public:
+	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Damage;                                            // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Param_Hit;                                         // 0x000C(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                Impact;                                            // 0x0094(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          SkipSetting;                                       // 0x00A0(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Prop_fireExt_C_AddDamage) == 0x000008, "Wrong alignment on Prop_fireExt_C_AddDamage");
+static_assert(sizeof(Prop_fireExt_C_AddDamage) == 0x0000A8, "Wrong size on Prop_fireExt_C_AddDamage");
+static_assert(offsetof(Prop_fireExt_C_AddDamage, Actor) == 0x000000, "Member 'Prop_fireExt_C_AddDamage::Actor' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_AddDamage, Damage) == 0x000008, "Member 'Prop_fireExt_C_AddDamage::Damage' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_AddDamage, Param_Hit) == 0x00000C, "Member 'Prop_fireExt_C_AddDamage::Param_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_AddDamage, Impact) == 0x000094, "Member 'Prop_fireExt_C_AddDamage::Impact' has a wrong offset!");
+static_assert(offsetof(Prop_fireExt_C_AddDamage, SkipSetting) == 0x0000A0, "Member 'Prop_fireExt_C_AddDamage::SkipSetting' has a wrong offset!");
 
 // Function prop_fireExt.prop_fireExt_C.fire
 // 0x0002 (0x0002 - 0x0000)
@@ -193,20 +218,20 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C50[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<EObjectTypeQuery>                      CallFunc_obj_statDynPhys_obj;                      // 0x0040(0x0010)(ReferenceParm)
 	struct FHitResult                             CallFunc_SphereTraceSingleForObjects_OutHit;       // 0x0050(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_SphereTraceSingleForObjects_ReturnValue;  // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x00DA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_DB[0x1];                                       // 0x00DB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C51[0x1];                                     // 0x00DB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x00E4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x00F0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x00FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0108(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C52[0x4];                                     // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0128(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -218,15 +243,15 @@ public:
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0150(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x015C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsSimulatingPhysics_ReturnValue;          // 0x015D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_15E[0x2];                                      // 0x015E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C53[0x2];                                     // 0x015E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_164[0x4];                                      // 0x0164(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C54[0x4];                                     // 0x0164(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         CallFunc_SphereOverlapActors_OutActors;            // 0x0168(0x0010)(ReferenceParm)
 	bool                                          CallFunc_SphereOverlapActors_ReturnValue;          // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C55[0x7];                                     // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_18C[0x4];                                      // 0x018C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C56[0x4];                                     // 0x018C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects;                  // 0x0190(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -272,36 +297,6 @@ static_assert(offsetof(Prop_fireExt_C_ExtinguishRay, K2Node_DynamicCast_AsInt_Ob
 static_assert(offsetof(Prop_fireExt_C_ExtinguishRay, K2Node_DynamicCast_bSuccess) == 0x0001A0, "Member 'Prop_fireExt_C_ExtinguishRay::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(Prop_fireExt_C_ExtinguishRay, CallFunc_Less_IntInt_ReturnValue) == 0x0001A1, "Member 'Prop_fireExt_C_ExtinguishRay::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
-// Function prop_fireExt.prop_fireExt_C.fireDamage
-// 0x0004 (0x0004 - 0x0000)
-struct Prop_fireExt_C_FireDamage final
-{
-public:
-	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_fireExt_C_FireDamage) == 0x000004, "Wrong alignment on Prop_fireExt_C_FireDamage");
-static_assert(sizeof(Prop_fireExt_C_FireDamage) == 0x000004, "Wrong size on Prop_fireExt_C_FireDamage");
-static_assert(offsetof(Prop_fireExt_C_FireDamage, Damage) == 0x000000, "Member 'Prop_fireExt_C_FireDamage::Damage' has a wrong offset!");
-
-// Function prop_fireExt.prop_fireExt_C.addDamage
-// 0x00A8 (0x00A8 - 0x0000)
-struct Prop_fireExt_C_AddDamage final
-{
-public:
-	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Damage;                                            // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Param_Hit;                                         // 0x000C(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                Impact;                                            // 0x0094(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          SkipSetting;                                       // 0x00A0(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(Prop_fireExt_C_AddDamage) == 0x000008, "Wrong alignment on Prop_fireExt_C_AddDamage");
-static_assert(sizeof(Prop_fireExt_C_AddDamage) == 0x0000A8, "Wrong size on Prop_fireExt_C_AddDamage");
-static_assert(offsetof(Prop_fireExt_C_AddDamage, Actor) == 0x000000, "Member 'Prop_fireExt_C_AddDamage::Actor' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_AddDamage, Damage) == 0x000008, "Member 'Prop_fireExt_C_AddDamage::Damage' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_AddDamage, Param_Hit) == 0x00000C, "Member 'Prop_fireExt_C_AddDamage::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_AddDamage, Impact) == 0x000094, "Member 'Prop_fireExt_C_AddDamage::Impact' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_AddDamage, SkipSetting) == 0x0000A0, "Member 'Prop_fireExt_C_AddDamage::SkipSetting' has a wrong offset!");
-
 // Function prop_fireExt.prop_fireExt_C.playerHandRelease_LMB
 // 0x0008 (0x0008 - 0x0000)
 struct Prop_fireExt_C_PlayerHandRelease_LMB final
@@ -324,19 +319,6 @@ static_assert(alignof(Prop_fireExt_C_PlayerHandUse_LMB) == 0x000008, "Wrong alig
 static_assert(sizeof(Prop_fireExt_C_PlayerHandUse_LMB) == 0x000008, "Wrong size on Prop_fireExt_C_PlayerHandUse_LMB");
 static_assert(offsetof(Prop_fireExt_C_PlayerHandUse_LMB, Player) == 0x000000, "Member 'Prop_fireExt_C_PlayerHandUse_LMB::Player' has a wrong offset!");
 
-// Function prop_fireExt.prop_fireExt_C.receivedPhyiscsDamage
-// 0x008C (0x008C - 0x0000)
-struct Prop_fireExt_C_ReceivedPhyiscsDamage final
-{
-public:
-	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Hot;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-static_assert(alignof(Prop_fireExt_C_ReceivedPhyiscsDamage) == 0x000004, "Wrong alignment on Prop_fireExt_C_ReceivedPhyiscsDamage");
-static_assert(sizeof(Prop_fireExt_C_ReceivedPhyiscsDamage) == 0x00008C, "Wrong size on Prop_fireExt_C_ReceivedPhyiscsDamage");
-static_assert(offsetof(Prop_fireExt_C_ReceivedPhyiscsDamage, Damage) == 0x000000, "Member 'Prop_fireExt_C_ReceivedPhyiscsDamage::Damage' has a wrong offset!");
-static_assert(offsetof(Prop_fireExt_C_ReceivedPhyiscsDamage, Hot) == 0x000004, "Member 'Prop_fireExt_C_ReceivedPhyiscsDamage::Hot' has a wrong offset!");
-
 // Function prop_fireExt.prop_fireExt_C.loadData
 // 0x00F0 (0x00F0 - 0x0000)
 struct Prop_fireExt_C_LoadData final
@@ -345,7 +327,7 @@ public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadData_return;                          // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C57[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mFloat                         CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	struct FStruct_mBool                          CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0010)(HasGetValueTypeHash)
 	float                                         CallFunc_Array_Get_Item_2;                         // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

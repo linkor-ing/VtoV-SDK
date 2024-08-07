@@ -71,30 +71,6 @@ void ANail_C::ReceiveBeginPlay()
 }
 
 
-// Function nail.nail_C.texturePickerApply
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ANail_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("nail_C", "texturePickerApply");
-
-	Params::Nail_C_TexturePickerApply Parms{};
-
-	Parms.Picker = Picker;
-	Parms.Texture = Texture;
-	Parms.Param_Index = Param_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function nail.nail_C.assign
 // (BlueprintCallable, BlueprintEvent)
 
@@ -149,6 +125,34 @@ void ANail_C::D2(class AActor* DestroyedActor)
 }
 
 
+// Function nail.nail_C.addDamage
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// struct FVector                          Impact                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    SkipSetting                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ANail_C::AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Hit, const struct FVector& Impact, bool SkipSetting)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("nail_C", "addDamage");
+
+	Params::Nail_C_AddDamage Parms{};
+
+	Parms.Actor = Actor;
+	Parms.Damage = Damage;
+	Parms.Hit = std::move(Hit);
+	Parms.Impact = std::move(Impact);
+	Parms.SkipSetting = SkipSetting;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function nail.nail_C.ReceiveDestroyed
 // (Event, Public, BlueprintEvent)
 
@@ -197,6 +201,20 @@ void ANail_C::BndEvt__PhysicsConstraint_K2Node_ComponentBoundEvent_0_ConstraintB
 }
 
 
+// Function nail.nail_C.propRenderer_finishProps
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ANail_C::PropRenderer_finishProps()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("nail_C", "propRenderer_finishProps");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function nail.nail_C.signalDeleted
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -211,15 +229,15 @@ void ANail_C::SignalDeleted()
 }
 
 
-// Function nail.nail_C.propRenderer_finishProps
+// Function nail.nail_C.gamemodeBeginPlay
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ANail_C::PropRenderer_finishProps()
+void ANail_C::GamemodeBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("nail_C", "propRenderer_finishProps");
+		Func = Class->GetFunction("nail_C", "gamemodeBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -256,20 +274,6 @@ void ANail_C::StuffUpgraded(class AMainGamemode_C* GameMode)
 	Parms.GameMode = GameMode;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function nail.nail_C.gamemodeBeginPlay
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ANail_C::GamemodeBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("nail_C", "gamemodeBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -337,24 +341,10 @@ void ANail_C::Unfocused()
 }
 
 
-// Function nail.nail_C.unfoc
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ANail_C::Unfoc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("nail_C", "unfoc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function nail.nail_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ANail_C::SettingsApplied(const struct FStruct_settings& Settings)
 {
@@ -368,6 +358,20 @@ void ANail_C::SettingsApplied(const struct FStruct_settings& Settings)
 	Parms.Settings = std::move(Settings);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function nail.nail_C.unfoc
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ANail_C::Unfoc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("nail_C", "unfoc");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -486,31 +490,29 @@ void ANail_C::StickNoise()
 }
 
 
-// Function nail.nail_C.addDamage
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function nail.nail_C.dreamInv
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// struct FVector                          Impact                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    SkipSetting                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// TArray<struct FStruct_save>             Invv                                                   (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class ADreamBase_C*                     Base                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ANail_C::AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Hit, const struct FVector& Impact, bool SkipSetting)
+void ANail_C::DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("nail_C", "addDamage");
+		Func = Class->GetFunction("nail_C", "dreamInv");
 
-	Params::Nail_C_AddDamage Parms{};
+	Params::Nail_C_DreamInv Parms{};
 
-	Parms.Actor = Actor;
-	Parms.Damage = Damage;
-	Parms.Hit = std::move(Hit);
-	Parms.Impact = std::move(Impact);
-	Parms.SkipSetting = SkipSetting;
+	Parms.Invv = std::move(Invv);
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	Invv = std::move(Parms.Invv);
+
+	if (Base != nullptr)
+		*Base = Parms.Base;
 }
 
 
@@ -577,32 +579,6 @@ void ANail_C::ProcessKeys(bool* Return)
 
 	if (Return != nullptr)
 		*Return = Parms.Return;
-}
-
-
-// Function nail.nail_C.dreamInv
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<struct FStruct_save>             Invv                                                   (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// class ADreamBase_C*                     Base                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ANail_C::DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("nail_C", "dreamInv");
-
-	Params::Nail_C_DreamInv Parms{};
-
-	Parms.Invv = std::move(Invv);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Invv = std::move(Parms.Invv);
-
-	if (Base != nullptr)
-		*Base = Parms.Base;
 }
 
 }

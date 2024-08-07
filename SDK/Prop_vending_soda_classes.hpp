@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_vending_soda.prop_vending_soda_C
-// 0x0000 (0x04C8 - 0x04C8)
+// 0x0000 (0x04B8 - 0x04B8)
 class AProp_vending_soda_C final : public AProp_vending_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_vending_soda_C) == 0x000008, "Wrong alignment on AProp_vending_soda_C");
-static_assert(sizeof(AProp_vending_soda_C) == 0x0004C8, "Wrong size on AProp_vending_soda_C");
+static_assert(sizeof(AProp_vending_soda_C) == 0x0004B8, "Wrong size on AProp_vending_soda_C");
 
 }
 

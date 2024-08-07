@@ -10,8 +10,6 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-
 
 namespace SDK::Params
 {
@@ -23,7 +21,7 @@ struct CentipedeSegmet_C_ExecuteUbergraph_centipedeSegmet final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2191[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStaticMesh*                            Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMesh*                            Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMesh*                            K2Node_Select_Default;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -37,27 +35,6 @@ static_assert(offsetof(CentipedeSegmet_C_ExecuteUbergraph_centipedeSegmet, Temp_
 static_assert(offsetof(CentipedeSegmet_C_ExecuteUbergraph_centipedeSegmet, Temp_object_Variable_1) == 0x000010, "Member 'CentipedeSegmet_C_ExecuteUbergraph_centipedeSegmet::Temp_object_Variable_1' has a wrong offset!");
 static_assert(offsetof(CentipedeSegmet_C_ExecuteUbergraph_centipedeSegmet, K2Node_Select_Default) == 0x000018, "Member 'CentipedeSegmet_C_ExecuteUbergraph_centipedeSegmet::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(CentipedeSegmet_C_ExecuteUbergraph_centipedeSegmet, CallFunc_SetStaticMesh_ReturnValue) == 0x000020, "Member 'CentipedeSegmet_C_ExecuteUbergraph_centipedeSegmet::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-
-// Function centipedeSegmet.centipedeSegmet_C.set
-// 0x0020 (0x0020 - 0x0000)
-struct CentipedeSegmet_C_Set final
-{
-public:
-	struct FVector                                CallFunc_GetActorScale3D_ReturnValue;              // 0x0000(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_X;                            // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Y;                            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Z;                            // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(CentipedeSegmet_C_Set) == 0x000004, "Wrong alignment on CentipedeSegmet_C_Set");
-static_assert(sizeof(CentipedeSegmet_C_Set) == 0x000020, "Wrong size on CentipedeSegmet_C_Set");
-static_assert(offsetof(CentipedeSegmet_C_Set, CallFunc_GetActorScale3D_ReturnValue) == 0x000000, "Member 'CentipedeSegmet_C_Set::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CentipedeSegmet_C_Set, CallFunc_BreakVector_X) == 0x00000C, "Member 'CentipedeSegmet_C_Set::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(CentipedeSegmet_C_Set, CallFunc_BreakVector_Y) == 0x000010, "Member 'CentipedeSegmet_C_Set::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(CentipedeSegmet_C_Set, CallFunc_BreakVector_Z) == 0x000014, "Member 'CentipedeSegmet_C_Set::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(CentipedeSegmet_C_Set, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000018, "Member 'CentipedeSegmet_C_Set::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CentipedeSegmet_C_Set, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00001C, "Member 'CentipedeSegmet_C_Set::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 
 }
 

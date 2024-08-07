@@ -10,7 +10,6 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Prop_food_classes.hpp"
 
 
@@ -18,21 +17,16 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_cookingFood.prop_cookingFood_C
-// 0x0028 (0x03F8 - 0x03D0)
-class AProp_cookingFood_C : public AProp_food_C
+// 0x0008 (0x03C8 - 0x03C0)
+#pragma pack(push, 0x1)
+class alignas(0x08) AProp_cookingFood_C : public AProp_food_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_cookingFood_C;                 // 0x03D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	float                                         CookProgress;                                      // 0x03D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CookFinal;                                         // 0x03DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 CookedClass;                                       // 0x03E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                           Slices;                                            // 0x03E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	float                                         CookProgress;                                      // 0x03BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CookFinal;                                         // 0x03C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_prop_cookingFood(int32 EntryPoint);
-	void ReceiveTick(float DeltaSeconds);
 	void Cooked();
-	void Slice(bool Clean);
 
 public:
 	static class UClass* StaticClass()
@@ -44,13 +38,11 @@ public:
 		return GetDefaultObjImpl<AProp_cookingFood_C>();
 	}
 };
+#pragma pack(pop)
 static_assert(alignof(AProp_cookingFood_C) == 0x000008, "Wrong alignment on AProp_cookingFood_C");
-static_assert(sizeof(AProp_cookingFood_C) == 0x0003F8, "Wrong size on AProp_cookingFood_C");
-static_assert(offsetof(AProp_cookingFood_C, UberGraphFrame_Prop_cookingFood_C) == 0x0003D0, "Member 'AProp_cookingFood_C::UberGraphFrame_Prop_cookingFood_C' has a wrong offset!");
-static_assert(offsetof(AProp_cookingFood_C, CookProgress) == 0x0003D8, "Member 'AProp_cookingFood_C::CookProgress' has a wrong offset!");
-static_assert(offsetof(AProp_cookingFood_C, CookFinal) == 0x0003DC, "Member 'AProp_cookingFood_C::CookFinal' has a wrong offset!");
-static_assert(offsetof(AProp_cookingFood_C, CookedClass) == 0x0003E0, "Member 'AProp_cookingFood_C::CookedClass' has a wrong offset!");
-static_assert(offsetof(AProp_cookingFood_C, Slices) == 0x0003E8, "Member 'AProp_cookingFood_C::Slices' has a wrong offset!");
+static_assert(sizeof(AProp_cookingFood_C) == 0x0003C8, "Wrong size on AProp_cookingFood_C");
+static_assert(offsetof(AProp_cookingFood_C, CookProgress) == 0x0003BC, "Member 'AProp_cookingFood_C::CookProgress' has a wrong offset!");
+static_assert(offsetof(AProp_cookingFood_C, CookFinal) == 0x0003C0, "Member 'AProp_cookingFood_C::CookFinal' has a wrong offset!");
 
 }
 

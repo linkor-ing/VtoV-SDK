@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function prop_gascan.prop_gascan_C.pickedUp__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void AProp_gascan_C::PickedUp__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_gascan_C", "pickedUp__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_gascan.prop_gascan_C.ExecuteUbergraph_prop_gascan
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -79,62 +65,6 @@ void AProp_gascan_C::BndEvt__prop_gascan_StaticMesh_K2Node_ComponentBoundEvent_0
 }
 
 
-// Function prop_gascan.prop_gascan_C.getFuel
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   CurrentFuel                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   MaxFuel                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    HasFueled                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Changed                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AProp_gascan_C::GetFuel(float& CurrentFuel, float MaxFuel, bool* HasFueled, bool* Changed)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_gascan_C", "getFuel");
-
-	Params::Prop_gascan_C_GetFuel Parms{};
-
-	Parms.CurrentFuel = CurrentFuel;
-	Parms.MaxFuel = MaxFuel;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	CurrentFuel = Parms.CurrentFuel;
-
-	if (HasFueled != nullptr)
-		*HasFueled = Parms.HasFueled;
-
-	if (Changed != nullptr)
-		*Changed = Parms.Changed;
-}
-
-
-// Function prop_gascan.prop_gascan_C.actionOptionIndex
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_gascan_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_gascan_C", "actionOptionIndex");
-
-	Params::Prop_gascan_C_ActionOptionIndex Parms{};
-
-	Parms.Player = Player;
-	Parms.Param_Hit = std::move(Param_Hit);
-	Parms.Action = Action;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function prop_gascan.prop_gascan_C.broken_fire
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -158,20 +88,6 @@ void AProp_gascan_C::broken()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("prop_gascan_C", "broken");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop_gascan.prop_gascan_C.crafted
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AProp_gascan_C::Crafted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_gascan_C", "crafted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -225,9 +141,8 @@ void AProp_gascan_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_gascan_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
+void AProp_gascan_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
 {
 	static class UFunction* Func = nullptr;
 
@@ -249,9 +164,6 @@ void AProp_gascan_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
 }
 
 
@@ -297,27 +209,6 @@ void AProp_gascan_C::GetData(struct FStruct_save* Data)
 
 	if (Data != nullptr)
 		*Data = std::move(Parms.Data);
-}
-
-
-// Function prop_gascan.prop_gascan_C.getPriceMultiplier
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   PriceMult                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_gascan_C::GetPriceMultiplier(float* PriceMult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_gascan_C", "getPriceMultiplier");
-
-	Params::Prop_gascan_C_GetPriceMultiplier Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (PriceMult != nullptr)
-		*PriceMult = Parms.PriceMult;
 }
 
 }

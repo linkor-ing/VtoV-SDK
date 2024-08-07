@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_container_player.prop_container_player_C
-// 0x0000 (0x03F8 - 0x03F8)
+// 0x0000 (0x03E8 - 0x03E8)
 class AProp_container_player_C final : public AProp_container_C
 {
 public:
-	void IgnoreSave(bool* Param_IgnoreSave);
 	void Extract(int32 Param_Index);
+	void IgnoreSave(bool* Param_IgnoreSave);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 
 public:
@@ -36,7 +36,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_container_player_C) == 0x000008, "Wrong alignment on AProp_container_player_C");
-static_assert(sizeof(AProp_container_player_C) == 0x0003F8, "Wrong size on AProp_container_player_C");
+static_assert(sizeof(AProp_container_player_C) == 0x0003E8, "Wrong size on AProp_container_player_C");
 
 }
 

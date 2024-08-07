@@ -18,25 +18,26 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_waspnest.prop_waspnest_C
-// 0x0020 (0x0398 - 0x0378)
+// 0x0020 (0x0388 - 0x0368)
 class AProp_waspnest_C final : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_waspnest_C;                    // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UAudioComponent*                        Wasps_Cue;                                         // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               ParticleSystem;                                    // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Duration;                                          // 0x0390(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	bool                                          Chunk;                                             // 0x0394(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	bool                                          Active;                                            // 0x0395(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_38D2[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_waspnest_C;                    // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UAudioComponent*                        Wasps_Cue;                                         // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               ParticleSystem;                                    // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Duration;                                          // 0x0380(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	bool                                          Chunk;                                             // 0x0384(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	bool                                          Active;                                            // 0x0385(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_prop_waspnest(int32 EntryPoint);
 	void Hitted();
-	void broken();
 	void ReceiveBeginPlay();
+	void broken();
 	void EnterWater(class AWaterVolume_C* Water);
 	void DigUp();
-	void ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot);
+	void ReceivedPhyiscsDamage();
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
 
@@ -51,13 +52,13 @@ public:
 	}
 };
 static_assert(alignof(AProp_waspnest_C) == 0x000008, "Wrong alignment on AProp_waspnest_C");
-static_assert(sizeof(AProp_waspnest_C) == 0x000398, "Wrong size on AProp_waspnest_C");
-static_assert(offsetof(AProp_waspnest_C, UberGraphFrame_Prop_waspnest_C) == 0x000378, "Member 'AProp_waspnest_C::UberGraphFrame_Prop_waspnest_C' has a wrong offset!");
-static_assert(offsetof(AProp_waspnest_C, Wasps_Cue) == 0x000380, "Member 'AProp_waspnest_C::Wasps_Cue' has a wrong offset!");
-static_assert(offsetof(AProp_waspnest_C, ParticleSystem) == 0x000388, "Member 'AProp_waspnest_C::ParticleSystem' has a wrong offset!");
-static_assert(offsetof(AProp_waspnest_C, Duration) == 0x000390, "Member 'AProp_waspnest_C::Duration' has a wrong offset!");
-static_assert(offsetof(AProp_waspnest_C, Chunk) == 0x000394, "Member 'AProp_waspnest_C::Chunk' has a wrong offset!");
-static_assert(offsetof(AProp_waspnest_C, Active) == 0x000395, "Member 'AProp_waspnest_C::Active' has a wrong offset!");
+static_assert(sizeof(AProp_waspnest_C) == 0x000388, "Wrong size on AProp_waspnest_C");
+static_assert(offsetof(AProp_waspnest_C, UberGraphFrame_Prop_waspnest_C) == 0x000368, "Member 'AProp_waspnest_C::UberGraphFrame_Prop_waspnest_C' has a wrong offset!");
+static_assert(offsetof(AProp_waspnest_C, Wasps_Cue) == 0x000370, "Member 'AProp_waspnest_C::Wasps_Cue' has a wrong offset!");
+static_assert(offsetof(AProp_waspnest_C, ParticleSystem) == 0x000378, "Member 'AProp_waspnest_C::ParticleSystem' has a wrong offset!");
+static_assert(offsetof(AProp_waspnest_C, Duration) == 0x000380, "Member 'AProp_waspnest_C::Duration' has a wrong offset!");
+static_assert(offsetof(AProp_waspnest_C, Chunk) == 0x000384, "Member 'AProp_waspnest_C::Chunk' has a wrong offset!");
+static_assert(offsetof(AProp_waspnest_C, Active) == 0x000385, "Member 'AProp_waspnest_C::Active' has a wrong offset!");
 
 }
 

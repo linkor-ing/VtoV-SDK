@@ -10,302 +10,261 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-#include "Struct_signalDataDynamic_structs.hpp"
-#include "Struct_signal_data1_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "Struct_weightedName_structs.hpp"
-#include "InputCore_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Enum_difficulty_structs.hpp"
-#include "Struct_keybind_structs.hpp"
+#include "Struct_signal_data2_structs.hpp"
 #include "Struct_customMesh_structs.hpp"
+#include "Struct_keybind_structs.hpp"
+#include "InputCore_structs.hpp"
+#include "Struct_signalDataDynamic_structs.hpp"
 #include "Struct_tv_structs.hpp"
-#include "Struct_save_structs.hpp"
-#include "Struct_triggerSave_structs.hpp"
-#include "RuntimeFilesDownloader_structs.hpp"
-#include "UMG_structs.hpp"
-#include "Slate_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass mainGamemode.mainGamemode_C
-// 0x0B50 (0x0E10 - 0x02C0)
+// 0x0950 (0x0C10 - 0x02C0)
 class AMainGamemode_C final : public AGameModeBase
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPostProcessComponent*                  PostProcess;                                       // 0x02C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneCaptureComponent2D*               Cam_w;                                             // 0x02D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x02D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UUmg_UI_C*                              PlayerInterface;                                   // 0x02E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class ADish_C*>                        Dishs;                                             // 0x02E8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	class ASpaceRenderer_C*                       Master_spaceRenderer;                              // 0x02F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
-	class UUmg_coords_C*                          Coordinates;                                       // 0x0300(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<bool>                                  ActiveDishes;                                      // 0x0308(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UUmg_signalPlay_C*                      Widget_signal;                                     // 0x0318(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_             DishesStop;                                        // 0x0320(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class AObjectRenderer_C*                      ObjectRenderer;                                    // 0x0330(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUmg_signalDownload_C*                  SignalDownload;                                    // 0x0338(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FStruct_signal_data1>           SavedSignals;                                      // 0x0340(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UUmg_decoder_C*                         Decoder;                                           // 0x0350(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUmg_console_C*                         Console;                                           // 0x0358(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUmg_radarScreen_C*                     Radar;                                             // 0x0360(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Power_calculating;                                 // 0x0368(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Power_downloading;                                 // 0x036C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Power_coordinates;                                 // 0x0370(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Power_playing;                                     // 0x0374(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Power_light;                                       // 0x0378(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         TotalPower;                                        // 0x037C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         UsedPower;                                         // 0x0380(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         PowerRatio;                                        // 0x0384(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         PowerUsage;                                        // 0x0388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Usesp_calc;                                        // 0x038C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Usesp_downl;                                       // 0x038D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Usesp_coords;                                      // 0x038E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Usesp_play;                                        // 0x038F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Usesp_light;                                       // 0x0390(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_391[0x7];                                      // 0x0391(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	FMulticastInlineDelegateProperty_             PowerChanged;                                      // 0x0398(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TArray<class AServerBox_C*>                   Servers;                                           // 0x03A8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	float                                         ServerEfficiency_calc;                             // 0x03B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         ServerEfficiency_downl;                            // 0x03BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CompassTarget;                                     // 0x03C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                           List_objects;                                      // 0x03C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                         NewVar_0;                                          // 0x03D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DC[0x4];                                      // 0x03DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FName>                           AllObjectsNames;                                   // 0x03E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<float>                                 W_objects;                                         // 0x03F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UUmg_laptop_C*                          Laptop;                                            // 0x0400(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ADaynightCycle_C*                       DaynightCycle;                                     // 0x0408(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class USoundBase*>                     ToNrts;                                            // 0x0410(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<TSoftObjectPtr<class UObject>>         SignalsSoftRefs;                                   // 0x0420(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class UConstantQNRT*>                  AllNRTS;                                           // 0x0430(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                         NrtLoadId;                                         // 0x0440(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_444[0x4];                                      // 0x0444(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                UrrSoft;                                           // 0x0448(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APowerControl_C*                        PowerControl;                                      // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AAmbienceMastter_C*                     AmbMaster;                                         // 0x0458(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUmg_menu_C*                            Pause_mainMenu;                                    // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USaveSlot_C*                            SaveSlot;                                          // 0x0468(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FStruct_weightedName>           ObjectsWeighted;                                   // 0x0470(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<float>                                 br_weights;                                        // 0x0480(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class ATrigger_eventer_C*                     Eventer;                                           // 0x0490(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FIntVector                             Time;                                              // 0x0498(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsSleep;                                           // 0x04A4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4A5[0x3];                                      // 0x04A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class ACameraActor*                           SleepCam;                                          // 0x04A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  OrigPawn;                                          // 0x04B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGearer_C*                              Gearer;                                            // 0x04B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USave_main_C*                           Save_main;                                         // 0x04C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UGameInst_C*                            GameInstance;                                      // 0x04C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APropProcessor_C*                       PropRenderer;                                      // 0x04D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ShowHovertext;                                     // 0x04D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4D9[0x7];                                      // 0x04D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUmg_serverMinigame_C*                  ServerMinigame;                                    // 0x04E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          HasWeapon;                                         // 0x04E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4E9[0x7];                                      // 0x04E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Ae;                                                // 0x04F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	class AOrderPlace_C*                          OrderPlace;                                        // 0x0500(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUmg_reactor_C*                         Reactor_umg;                                       // 0x0508(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AReactor_C*                             Reactor;                                           // 0x0510(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ADrone_C*                               Drone;                                             // 0x0518(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Dreaming;                                          // 0x0520(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_521[0xF];                                      // 0x0521(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             PlayerPreDream;                                    // 0x0530(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	class ADreamBase_C*                           Dream;                                             // 0x0560(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 bed;                                               // 0x0568(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ATelescope_C*                           Telescope;                                         // 0x0570(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMap<class FString, class FString>            ActionEnums;                                       // 0x0578(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class ACar1_C*                                Car;                                               // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Apoc;                                              // 0x05D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5D1[0x3];                                      // 0x05D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Boxes;                                             // 0x05D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AProp_camera_bad_C*>             Cams;                                              // 0x05D8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	int32                                         AutosaveDelay;                                     // 0x05E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5EC[0x4];                                      // 0x05EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          MainPlayer;                                        // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUmg_hints_C*                           Hints;                                             // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUmg_clipboard_C*                       Clipboard;                                         // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FText>                           Dishes;                                            // 0x0608(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	Enum_difficulty                               Diff;                                              // 0x0618(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_619[0x3];                                      // 0x0619(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FIntPoint                              Res;                                               // 0x061C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_624[0x4];                                      // 0x0624(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AProp_beacon_C*>                 AllBeacons;                                        // 0x0628(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	class UUmg_minimap_C*                         Minimap;                                           // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUmg_propInv_C*                         PropInventory;                                     // 0x0640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         RadarObjects;                                      // 0x0648(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	int32                                         StartDay;                                          // 0x0658(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_65C[0x4];                                      // 0x065C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AInsomniac_C*                           Insomniac;                                         // 0x0660(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UTexture2D*>                     Pics_H;                                            // 0x0668(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class UTexture2D*>                     Pics_S;                                            // 0x0678(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class UTexture2D*>                     Pics_v;                                            // 0x0688(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class UTexture2D*>                     Pics_t;                                            // 0x0698(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class AProp_rdrone_C*>                 Drones;                                            // 0x06A8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	class AMg_invaders_C*                         Invaders;                                          // 0x06B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class ACheat_place_C*>                 Cheat_places;                                      // 0x06C0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class FString>                         Cheat_places_names;                                // 0x06D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class AHalloweenMaster_C*                     HalloweenMaster;                                   // 0x06E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsHalloween;                                       // 0x06E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6E9[0x7];                                      // 0x06E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<bool>                                  EventsActive;                                      // 0x06F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<struct FStruct_keybind>                KeybindsDefault;                                   // 0x0700(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<struct FKey>                           KeysDefaults;                                      // 0x0710(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class AActor*>                         UndoList;                                          // 0x0720(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class FString>                         Dishes_str;                                        // 0x0730(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class AProp_container_player_C*               PlayerContainer;                                   // 0x0740(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUmg_deathscreen_C*                     RedScreen;                                         // 0x0748(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Virus;                                             // 0x0750(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_751[0x7];                                      // 0x0751(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ATheEvil_C*                             Evil;                                              // 0x0758(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AProp_drive_C*>                  AllDrives;                                         // 0x0760(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class AProp_box_C*>                    AllDriveBoxes;                                     // 0x0770(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<int32>                                 W_objectsAm;                                       // 0x0780(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class FName>                           CopyObjs;                                          // 0x0790(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<float>                                 W_objectsChs;                                      // 0x07A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class AProp_C*>                        AllProps;                                          // 0x07B0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class AProp_container_C*>              AllContainers;                                     // 0x07C0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class AProp_driveRack_C*>              AllDriveracks;                                     // 0x07D0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	class ARoz_anim_C*                            RozShip;                                           // 0x07E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FString>                         KeyObj_key;                                        // 0x07E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class AActor*>                         KeyObj_obj;                                        // 0x07F8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	class APanel_SATconsole_C*                    RootConsole;                                       // 0x0808(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterFloatMaster_C*                    WaterFloatMaster;                                  // 0x0810(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class ARiverFlow_C*>                   RiverFlows;                                        // 0x0818(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class UTexture2D*>                     Photos;                                            // 0x0828(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class Abirber_C*                              birber;                                            // 0x0838(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AblackFog_C*                            blackFog;                                          // 0x0840(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARedSkyEvent_C*                         RedSky;                                            // 0x0848(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Slappers;                                          // 0x0850(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_854[0x4];                                      // 0x0854(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUmg_passlock_C*                        PasswordLock;                                      // 0x0858(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         brokenServers;                                     // 0x0860(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsFlying;                                          // 0x0864(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_865[0x3];                                      // 0x0865(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class USoundWave*>                     RadioMusics;                                       // 0x0868(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class FString>                         RadioMusics_tit;                                   // 0x0878(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class ADigcamMaster_C*                        DigcamMaster;                                      // 0x0888(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AEg_C*                                  Eg;                                                // 0x0890(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ProtoReload;                                       // 0x0898(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          backroomsEnabled;                                  // 0x0899(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_89A[0x6];                                      // 0x089A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AProp_food_shrimp_C*>            Shrimps;                                           // 0x08A0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class AProp_food_C*>                   Food;                                              // 0x08B0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	bool                                          CanDamage;                                         // 0x08C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_8C1[0x7];                                      // 0x08C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGameInst_C*                            GameInst;                                          // 0x08C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AD_window_C*                            PoopWindow;                                        // 0x08D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ACockroachMaster_C*                     CockroachMaster;                                   // 0x08D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AJellyfishPath_C*                       JellyfishPath;                                     // 0x08E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class ASignalCam_C*>                   SignalCams;                                        // 0x08E8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class UTexture2D*>                     Flags_MainGamemode_C;                              // 0x08F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UTexture2D*                             Trollface;                                         // 0x0908(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                           SignalNames_default;                               // 0x0910(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<struct FStruct_signal_data1>           SignalData_default;                                // 0x0920(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<struct FStruct_signalDataDynamic>      SavedSignals_0;                                    // 0x0930(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<float>                                 AllObjectsWeights;                                 // 0x0940(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<bool>                                  SignalUniques;                                     // 0x0950(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class UTexture2D*>                     Rugs;                                              // 0x0960(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<struct FStruct_customMesh>             Meshes;                                            // 0x0970(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class FString>                         MeshesNames;                                       // 0x0980(0x0010)(Edit, BlueprintVisible)
-	TArray<class UTexture2D*>                     MeshTex;                                           // 0x0990(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UUmg_printer_C*                         Printer;                                           // 0x09A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUmg_onlineRadio_C*                     OnlineRadio;                                       // 0x09A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FStruct_tv>                     TvVids;                                            // 0x09B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UUmg_tvOffline_C*                       OfflineTv;                                         // 0x09C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_             WokenUp;                                           // 0x09C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TArray<class AGenerator_C*>                   Generators;                                        // 0x09D8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	class AGeneratorFuckuper_C*                   GeneratorCond;                                     // 0x09E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ArirFeeding;                                       // 0x09F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9F1[0x7];                                      // 0x09F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class USvtarget_C*>                    SvTargets;                                         // 0x09F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	TArray<class UTexture2D*>                     Posters;                                           // 0x0A08(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class Aborders_C*                             borders;                                           // 0x0A18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AKillerwisp_C*>                  KillerWisps;                                       // 0x0A20(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<struct FStruct_tv>                     RadioLinks;                                        // 0x0A30(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FString                                 bufferName;                                        // 0x0A40(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	TArray<struct FStruct_tv>                     RadioLinks_offlin;                                 // 0x0A50(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class FString>                         NewVar_1;                                          // 0x0A60(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class UTexture2D*>                     NewVar_2;                                          // 0x0A70(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class UTexture2D*>                     Texs;                                              // 0x0A80(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	FMulticastInlineDelegateProperty_             FellAsleep;                                        // 0x0A90(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class AbadSun_C*                              badSun;                                            // 0x0AA0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         MannDest;                                          // 0x0AA8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_AAC[0x4];                                      // 0x0AAC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UTexture2D*>                     Stickers;                                          // 0x0AB0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class FString>                         Stickers_names;                                    // 0x0AC0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class AServerBox_C*>                   KerfusPendingServers;                              // 0x0AD0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class APrintedObject_C*>               PrintedMeshes;                                     // 0x0AE0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class UTexture2D*>                     MeshTex_PBR;                                       // 0x0AF0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class UTexture2D*>                     MeshTex_normal;                                    // 0x0B00(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class AProp_photo_C*>                  PhotosPrinted;                                     // 0x0B10(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class ACordSocket_C*>                  baseSockets;                                       // 0x0B20(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class UClass*>                         Dreamers_C;                                        // 0x0B30(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class AActor*>                         Dreamers;                                          // 0x0B40(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	class UUmg_paperDraw_C*                       PaperDraw;                                         // 0x0B50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Editor;                                            // 0x0B58(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B59[0x7];                                      // 0x0B59(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUmg_hsvWindow_C*                       HsvPicker;                                         // 0x0B60(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_             SleepTriggered;                                    // 0x0B68(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TArray<class UComp_radiation_C*>              RadiationComps;                                    // 0x0B78(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	class AAriralRepEventHandler_C*               AriralRepHandler;                                  // 0x0B88(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_             PhotoTaken;                                        // 0x0B90(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                          ArirHit;                                           // 0x0BA0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_BA1[0x3];                                      // 0x0BA1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         SleepTime;                                         // 0x0BA4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUmg_handradar_C*                       HandRadar;                                         // 0x0BA8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class ADirthole_item_C*>               AllDirtholeItems;                                  // 0x0BB0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	bool                                          Immortal;                                          // 0x0BC0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_BC1[0x7];                                      // 0x0BC1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ARadiotower_C*                          Radiotower;                                        // 0x0BC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AIndoorAmbienceMaster_C*                IndoorAmbientMaster;                               // 0x0BD0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 Result;                                            // 0x0BD8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	float                                         DryAlpha;                                          // 0x0BE8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          RipBozo;                                           // 0x0BEC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          PuffballNuclear;                                   // 0x0BED(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_BEE[0x2];                                      // 0x0BEE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         ValidityStack;                                     // 0x0BF0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	class FString                                 NewVar_3;                                          // 0x0C00(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	bool                                          backroomsPass;                                     // 0x0C10(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C11[0x7];                                      // 0x0C11(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 AssetFolder;                                       // 0x0C18(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	class ALakeglow_C*                            Event_lakeglow;                                    // 0x0C28(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AUndergroundGarbageSpawner_C*           UndergroundSpawnerMaster;                          // 0x0C30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMap<class FName, float>                      FishingItems;                                      // 0x0C38(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UUmg_texturePicker_C*                   TexturePicker;                                     // 0x0C88(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 TexPickerObject;                                   // 0x0C90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AEffect_C*>                      Effects;                                           // 0x0C98(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class FName>                           Effects_names;                                     // 0x0CA8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<int32>                                 Effect_amount;                                     // 0x0CB8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<struct FStruct_save>                   LoadedGatherers;                                   // 0x0CC8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class FString>                         LoadedGatherersKeys;                               // 0x0CD8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class AActor*>                         ExistingGatherers;                                 // 0x0CE8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class FString>                         ExistingGatherersKeys;                             // 0x0CF8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<struct FStruct_triggerSave>            LoadedGatherers_T;                                 // 0x0D08(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class FString>                         LoadedGatherersKeys_T;                             // 0x0D18(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class AActor*>                         ExistingGatherers_T;                               // 0x0D28(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class FString>                         ExistingGatherersKeys_T;                           // 0x0D38(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class AburiedItemsArea_C*>             AllBuriedItemAreas;                                // 0x0D48(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	bool                                          IsSnowyFootsteps;                                  // 0x0D58(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          IsSnowyFootsteps_0;                                // 0x0D59(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D5A[0x6];                                      // 0x0D5A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 A_0;                                               // 0x0D60(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	TArray<class FString>                         NewVar_4;                                          // 0x0D70(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class ACeilingLamp_C*>                 AllCeilingLights;                                  // 0x0D80(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class ALampPost_C*>                    AllLampPosts;                                      // 0x0D90(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	bool                                          DisablePlayerFloat;                                // 0x0DA0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_DA1[0x7];                                      // 0x0DA1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AP_kerfus_C*>                    AllKerfurs;                                        // 0x0DA8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class AKerfurOmega_C*>                 AllKerfuros;                                       // 0x0DB8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class AGrayboar_C*>                    AllGrayboars;                                      // 0x0DC8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	class AWaterVolume_basementFlooder_C*         basementFlooderWater;                              // 0x0DD8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         AllBurningObjects;                                 // 0x0DE0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	class UMaterialInstanceDynamic*               NewVar_5;                                          // 0x0DF0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UTexture2D*>                     MeshTex_emissive;                                  // 0x0DF8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class USceneCaptureComponent2D*               Cam_w;                                             // 0x02C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x02D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UUmg_UI_C*                              PlayerInterface;                                   // 0x02D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class ADish_C*>                        Dishs;                                             // 0x02E0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	class ASpaceRenderer_C*                       Master_spaceRenderer;                              // 0x02F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUmg_coords_C*                          Coordinates;                                       // 0x02F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<bool>                                  ActiveDishes;                                      // 0x0300(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UUmg_signalPlay_C*                      Widget_signal;                                     // 0x0310(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_             DishesStop;                                        // 0x0318(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class AObjectRenderer_C*                      ObjectRenderer;                                    // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUmg_signalDownload_C*                  SignalDownload;                                    // 0x0330(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FStruct_signal_data2>           SavedSignals;                                      // 0x0338(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UUmg_decoder_C*                         Decoder;                                           // 0x0348(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUmg_console_C*                         Console;                                           // 0x0350(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUmg_radarScreen_C*                     Radar;                                             // 0x0358(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Power_calculating;                                 // 0x0360(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Power_downloading;                                 // 0x0364(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Power_coordinates;                                 // 0x0368(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Power_playing;                                     // 0x036C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Power_light;                                       // 0x0370(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TotalPower;                                        // 0x0374(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         UsedPower;                                         // 0x0378(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         PowerRatio;                                        // 0x037C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         PowerUsage;                                        // 0x0380(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Usesp_calc;                                        // 0x0384(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Usesp_downl;                                       // 0x0385(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Usesp_coords;                                      // 0x0386(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Usesp_play;                                        // 0x0387(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Usesp_light;                                       // 0x0388(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4045[0x7];                                     // 0x0389(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             PowerChanged;                                      // 0x0390(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TArray<class AServerBox_C*>                   Servers;                                           // 0x03A0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	float                                         ServerEfficiency_calc;                             // 0x03B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         ServerEfficiency_downl;                            // 0x03B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CompassTarget;                                     // 0x03B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                           List_objects;                                      // 0x03C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         NewVar_0;                                          // 0x03D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4046[0x4];                                     // 0x03D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FName>                           AllObjectsNames;                                   // 0x03D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<float>                                 W_objects;                                         // 0x03E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UUmg_laptop_C*                          Laptop;                                            // 0x03F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ADaynightCycle_C*                       DaynightCycle;                                     // 0x0400(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class USoundBase*>                     ToNrts;                                            // 0x0408(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<TSoftObjectPtr<class UObject>>         SignalsSoftRefs;                                   // 0x0418(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class UConstantQNRT*>                  AllNRTS;                                           // 0x0428(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         NrtLoadId;                                         // 0x0438(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4047[0x4];                                     // 0x043C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                UrrSoft;                                           // 0x0440(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APowerControl_C*                        PowerControl;                                      // 0x0448(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AAmbienceMastter_C*                     AmbMaster;                                         // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUmg_menu_C*                            Pause_mainMenu;                                    // 0x0458(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USaveSlot_C*                            SaveSlot;                                          // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FStruct_weightedName>           ObjectsWeighted;                                   // 0x0468(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<float>                                 br_weights;                                        // 0x0478(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class ATrigger_eventer_C*                     Eventer;                                           // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FIntVector                             Time;                                              // 0x0490(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsSleep;                                           // 0x049C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4048[0x3];                                     // 0x049D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class ACameraActor*                           SleepCam;                                          // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  OrigPawn;                                          // 0x04A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGearer_C*                              Gearer;                                            // 0x04B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USave_main_C*                           Save_main;                                         // 0x04B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UGameInst_C*                            GameInstance;                                      // 0x04C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APropProcessor_C*                       PropRenderer;                                      // 0x04C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ShowHovertext;                                     // 0x04D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4049[0x7];                                     // 0x04D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUmg_serverMinigame_C*                  ServerMinigame;                                    // 0x04D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          HasWeapon;                                         // 0x04E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_404A[0x7];                                     // 0x04E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Ae;                                                // 0x04E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	class AOrderPlace_C*                          OrderPlace;                                        // 0x04F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUmg_reactor_C*                         Reactor_umg;                                       // 0x0500(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AReactor_C*                             Reactor;                                           // 0x0508(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ADrone_C*                               Drone;                                             // 0x0510(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Dreaming;                                          // 0x0518(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_404B[0x7];                                     // 0x0519(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             PlayerPreDream;                                    // 0x0520(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class ADreamBase_C*                           Dream;                                             // 0x0550(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 bed;                                               // 0x0558(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ATelescope_C*                           Telescope;                                         // 0x0560(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMap<class FString, class FString>            ActionEnums;                                       // 0x0568(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class ACar1_C*                                Car;                                               // 0x05B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Apoc;                                              // 0x05C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_404C[0x3];                                     // 0x05C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Boxes;                                             // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AProp_camera_bad_C*>             Cams;                                              // 0x05C8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	int32                                         AutosaveDelay;                                     // 0x05D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_404D[0x4];                                     // 0x05DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          MainPlayer;                                        // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUmg_hints_C*                           Hints;                                             // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUmg_clipboard_C*                       Clipboard;                                         // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FText>                           Dishes;                                            // 0x05F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	Enum_difficulty                               Diff;                                              // 0x0608(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_404E[0x3];                                     // 0x0609(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FIntPoint                              Res;                                               // 0x060C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_404F[0x4];                                     // 0x0614(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AProp_beacon_C*>                 beacons;                                           // 0x0618(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	class UUmg_minimap_C*                         Minimap;                                           // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUmg_propInv_C*                         PropInventory;                                     // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         RadarObjects;                                      // 0x0638(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	int32                                         StartDay;                                          // 0x0648(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4050[0x4];                                     // 0x064C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AInsomniac_C*                           Insomniac;                                         // 0x0650(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UTexture2D*>                     Pics_H;                                            // 0x0658(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class UTexture2D*>                     Pics_S;                                            // 0x0668(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class UTexture2D*>                     Pics_v;                                            // 0x0678(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class UTexture2D*>                     Pics_t;                                            // 0x0688(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class AProp_rdrone_C*>                 Drones;                                            // 0x0698(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	class AMg_invaders_C*                         Invaders;                                          // 0x06A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class ACheat_place_C*>                 Cheat_places;                                      // 0x06B0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	TArray<class FString>                         Cheat_places_names;                                // 0x06C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class AHalloweenMaster_C*                     HalloweenMaster;                                   // 0x06D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsHalloween;                                       // 0x06D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4051[0x7];                                     // 0x06D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<bool>                                  EventsActive;                                      // 0x06E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<struct FStruct_keybind>                KeybindsDefault;                                   // 0x06F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<struct FKey>                           KeysDefaults;                                      // 0x0700(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class AActor*>                         UndoList;                                          // 0x0710(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	TArray<class FString>                         Dishes_str;                                        // 0x0720(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class AProp_container_player_C*               PlayerContainer;                                   // 0x0730(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUmg_deathscreen_C*                     RedScreen;                                         // 0x0738(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Virus;                                             // 0x0740(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4052[0x7];                                     // 0x0741(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ATheEvil_C*                             Evil;                                              // 0x0748(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AProp_drive_C*>                  AllDrives;                                         // 0x0750(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	TArray<class AProp_box_C*>                    AllDriveBoxes;                                     // 0x0760(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	TArray<int32>                                 W_objectsAm;                                       // 0x0770(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class FName>                           CopyObjs;                                          // 0x0780(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<float>                                 W_objectsChs;                                      // 0x0790(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class AProp_C*>                        AllProps;                                          // 0x07A0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	TArray<class AProp_container_C*>              AllContainers;                                     // 0x07B0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	TArray<class AProp_driveRack_C*>              AllDriveracks;                                     // 0x07C0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	class ARoz_anim_C*                            RozShip;                                           // 0x07D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FString>                         KeyObj_key;                                        // 0x07D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class AActor*>                         KeyObj_obj;                                        // 0x07E8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	class APanel_SATconsole_C*                    RootConsole;                                       // 0x07F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterFloatMaster_C*                    WaterFloatMaster;                                  // 0x0800(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class ARiverFlow_C*>                   RiverFlows;                                        // 0x0808(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	TArray<class UTexture2D*>                     Photos;                                            // 0x0818(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class Abirber_C*                              birber;                                            // 0x0828(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AblackFog_C*                            blackFog;                                          // 0x0830(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARedSkyEvent_C*                         RedSky;                                            // 0x0838(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Slappers;                                          // 0x0840(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4053[0x4];                                     // 0x0844(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUmg_passlock_C*                        PasswordLock;                                      // 0x0848(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         brokenServers;                                     // 0x0850(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsFlying;                                          // 0x0854(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4054[0x3];                                     // 0x0855(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class USoundWave*>                     RadioMusics;                                       // 0x0858(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class FString>                         RadioMusics_tit;                                   // 0x0868(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class ADigcamMaster_C*                        DigcamMaster;                                      // 0x0878(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AEg_C*                                  Eg;                                                // 0x0880(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ProtoReload;                                       // 0x0888(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          backroomsEnabled;                                  // 0x0889(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4055[0x6];                                     // 0x088A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AProp_food_shrimp_C*>            Shrimps;                                           // 0x0890(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	TArray<class AProp_food_C*>                   Food;                                              // 0x08A0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	bool                                          CanDamage;                                         // 0x08B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4056[0x7];                                     // 0x08B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGameInst_C*                            GameInst;                                          // 0x08B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AD_window_C*                            PoopWindow;                                        // 0x08C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ACockroachMaster_C*                     CockroachMaster;                                   // 0x08C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AJellyfishPath_C*                       JellyfishPath;                                     // 0x08D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class ASignalCam_C*>                   SignalCams;                                        // 0x08D8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	TArray<class UTexture2D*>                     Flags_MainGamemode_C;                              // 0x08E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UTexture2D*                             Trollface;                                         // 0x08F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                           SignalNames_default;                               // 0x0900(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<struct FStruct_signal_data2>           SignalData_default;                                // 0x0910(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<struct FStruct_signalDataDynamic>      SavedSignals_0;                                    // 0x0920(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<float>                                 AllObjectsWeights;                                 // 0x0930(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<bool>                                  SignalUniques;                                     // 0x0940(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class UTexture2D*>                     Rugs;                                              // 0x0950(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<struct FStruct_customMesh>             Meshes;                                            // 0x0960(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class UTexture2D*>                     MeshTex;                                           // 0x0970(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class FString>                         MeshesNames;                                       // 0x0980(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UUmg_printer_C*                         Printer;                                           // 0x0990(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUmg_onlineRadio_C*                     OnlineRadio;                                       // 0x0998(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FStruct_tv>                     TvVids;                                            // 0x09A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UUmg_tvOffline_C*                       OfflineTv;                                         // 0x09B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_             WokenUp;                                           // 0x09B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TArray<class AGenerator_C*>                   Generators;                                        // 0x09C8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	class AGeneratorFuckuper_C*                   GeneratorCond;                                     // 0x09D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ArirFeeding;                                       // 0x09E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4057[0x7];                                     // 0x09E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class USvtarget_C*>                    SvTargets;                                         // 0x09E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	TArray<class UTexture2D*>                     Posters;                                           // 0x09F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class Aborders_C*                             borders;                                           // 0x0A08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AKillerwisp_C*>                  KillerWisps;                                       // 0x0A10(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	TArray<struct FStruct_tv>                     RadioLinks;                                        // 0x0A20(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FString                                 bufferName;                                        // 0x0A30(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	TArray<struct FStruct_tv>                     RadioLinks_offlin;                                 // 0x0A40(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class FString>                         NewVar_1;                                          // 0x0A50(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class UTexture2D*>                     NewVar_2;                                          // 0x0A60(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class UTexture2D*>                     Texs;                                              // 0x0A70(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	FMulticastInlineDelegateProperty_             FellAsleep;                                        // 0x0A80(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class AbadSun_C*                              badSun;                                            // 0x0A90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         MannDest;                                          // 0x0A98(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4058[0x4];                                     // 0x0A9C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UTexture2D*>                     Stickers;                                          // 0x0AA0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class FString>                         Stickers_names;                                    // 0x0AB0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class AServerBox_C*>                   KerfusPendingServers;                              // 0x0AC0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	TArray<class APrintedObject_C*>               PrintedMeshes;                                     // 0x0AD0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	TArray<class UTexture2D*>                     MeshTex_PBR;                                       // 0x0AE0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class UTexture2D*>                     MeshTex_normal;                                    // 0x0AF0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class AProp_photo_C*>                  PhotosPrinted;                                     // 0x0B00(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	TArray<class ACordSocket_C*>                  baseSockets;                                       // 0x0B10(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	TArray<class UClass*>                         Dreamers_C;                                        // 0x0B20(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class AActor*>                         Dreamers;                                          // 0x0B30(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	class UUmg_paperDraw_C*                       PaperDraw;                                         // 0x0B40(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Editor;                                            // 0x0B48(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4059[0x7];                                     // 0x0B49(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUmg_hsvWindow_C*                       HsvPicker;                                         // 0x0B50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_             SleepTriggered;                                    // 0x0B58(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TArray<class URadiationComponent_C*>          RadiationComps;                                    // 0x0B68(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	class AAriralRepEventHandler_C*               AriralRepHandler;                                  // 0x0B78(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_             PhotoTaken;                                        // 0x0B80(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          ArirHit;                                           // 0x0B90(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_405A[0x3];                                     // 0x0B91(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         SleepTime;                                         // 0x0B94(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUmg_handradar_C*                       HandRadar;                                         // 0x0B98(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class ADirthole_item_C*>               AllDirtholeItems;                                  // 0x0BA0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	bool                                          Immortal;                                          // 0x0BB0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_405B[0x7];                                     // 0x0BB1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ARadiotower_C*                          Radiotower;                                        // 0x0BB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AIndoorAmbienceMaster_C*                IndoorAmbientMaster;                               // 0x0BC0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 Result;                                            // 0x0BC8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	float                                         DryAlpha;                                          // 0x0BD8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          RipBozo;                                           // 0x0BDC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          PuffballNuclear;                                   // 0x0BDD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_405C[0x2];                                     // 0x0BDE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         ValidityStack;                                     // 0x0BE0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	class FString                                 NewVar_3;                                          // 0x0BF0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	bool                                          backroomsPass;                                     // 0x0C00(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void DishesStop__DelegateSignature();
@@ -315,39 +274,21 @@ public:
 	void SleepTriggered__DelegateSignature();
 	void PhotoTaken__DelegateSignature();
 	void ExecuteUbergraph_mainGamemode(int32 EntryPoint);
-	void Ticker_lakeMonsert();
-	void Ticker_lockerhead();
-	void CustomEvent_3();
-	void Ticker_radiotowerPoof();
-	void CustomEvent_1();
-	void CustomEvent_2();
-	void CustomEvent();
-	void FlowerSpawner();
-	void Gorelockertest();
-	void CustomEvent_4();
-	void CustomEvent_5();
-	void CustomEvent_6();
-	void CustomEvent_7();
-	void TickerFunguy();
-	void TickerBody();
-	void CustomEvent_10(const TArray<uint8>& DownloadedContent, EDownloadToMemoryResult Param_Result);
-	void CustomEvent_9(const int32 BytesReceived, const int32 ContentLength);
-	void Completed(const TArray<uint8>& DownloadedContent, EDownloadToMemoryResult Param_Result);
-	void Process(const int32 BytesReceived, const int32 ContentLength);
-	void CustomEvent_8();
 	void CheckATV();
 	void Chk1();
+	void Ticker_lockerhead();
+	void Ticker_radiotowerPoof();
 	void FuckYOuItem();
 	void Import_radio();
 	void Import_tv();
 	void ImportAssets();
 	void ExportPhoto(int32 Dimension_1);
 	void AAA(bool bSuccess);
-	void Photo(const struct FVector& NewLocation, const struct FRotator& NewRotation, bool Flash);
+	void Photo(const struct FVector& NewLocation, const struct FRotator& NewRotation);
 	void SeVis(class UUserWidget* Target);
 	void SettingsApplied(const struct FStruct_settings& Settings);
 	void Autosave();
-	void Sleep(class AActor* Param_bed, bool DropItem, bool IgnoreRagdoll);
+	void Sleep(class AActor* Param_bed, bool DropItem);
 	void Wakeup();
 	void Save();
 	void SaveAnim();
@@ -356,7 +297,6 @@ public:
 	void ReceiveTick(float DeltaSeconds);
 	void CheckFordDishes();
 	void ReceiveBeginPlay();
-	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void PropRenderer_finishProps();
 	void GamemodeMakeKeys();
 	void AnyKey(const struct FKey& Key, bool Pressed);
@@ -368,7 +308,7 @@ public:
 	void SignalSaved();
 	void SignalDeleted();
 	void GetCurrentSObject(struct FStruct_spaceObject* Data);
-	void GetSignalData(struct FStruct_signal_data1* Data);
+	void GetSignalData(struct FStruct_signal_data2* Data);
 	void GetSignalSData(struct FStruct_signal_spawn* Data);
 	void DeleteActiveSignal();
 	void DeleteSignal(int32 IndexToRemove);
@@ -414,9 +354,9 @@ public:
 	void CanBackrooms(bool* Return);
 	void GetPrinterMeshesNames(const class FString& A);
 	void GetRadioStations();
-	void LoadPrinterMesh(const class FString& Param_Name, bool SkipMessages, bool ImportConfig, struct FStruct_multisectionCustomMesh* MultisectionMesh, bool* Succ);
+	void LoadPrinterMesh(const class FString& Param_Name, bool SkipMessages, struct FStruct_customMesh* Mesh1, class UTexture2D** Tex1, class UTexture2D** Tex_pbr1, bool* Succ, class UTexture2D** Tex_normal1);
 	void LaunchServerMinigame(class UUmg_serverMinigame_C** Output_Get);
-	void Spawn_Bad_Sun();
+	void SpawnBadSun();
 	class AActor* ProcessDream(class UClass* CustomDream);
 	void EnterDrawPaper(class AProp_paper_drawable_C* Param_PaperDraw, class AProp_pencil_C* Pencil);
 	void SaveHoldObj();
@@ -424,17 +364,6 @@ public:
 	void SpawnPropThroughGamemode(class FName Prop, const struct FTransform& InputPin, int32 Amount, class AActor** Actor_);
 	void SetDryness(float Add);
 	void Chckcy();
-	void OpenPicker(TArray<class UTexture2D*>& TexArray, class AActor* ObjectApplyTo);
-	void AddEffect(class FName Effect, float Strength, float Param_Time, bool IncrementStrength, bool IncrementTime);
-	void SetGatherers();
-	void FindBuriedArea(const struct FVector& Location, class AburiedItemsArea_C** Array_Element);
-	void CalculateAreaError(int32* ErrorMargin);
-	void CalculateAreaError_0(int32* ErrorMargin);
-	void NewFunction_0(bool* NewParam);
-	void GetList(const class FString& Downloaded);
-	void ReturnList(class FString* T3_2, class FString* T3_1, class FString* T2_2, class FString* T2_1, class FString* T1_2, class FString* T1_1, class FString* B_B, class FString* B_A, class FString* Former);
-	void GetList_0(const class FString& Downloaded);
-	void NewFunction_1();
 	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base);
 	void ApplyColor(const struct FLinearColor& Color);
 
@@ -449,250 +378,217 @@ public:
 	}
 };
 static_assert(alignof(AMainGamemode_C) == 0x000010, "Wrong alignment on AMainGamemode_C");
-static_assert(sizeof(AMainGamemode_C) == 0x000E10, "Wrong size on AMainGamemode_C");
+static_assert(sizeof(AMainGamemode_C) == 0x000C10, "Wrong size on AMainGamemode_C");
 static_assert(offsetof(AMainGamemode_C, UberGraphFrame) == 0x0002C0, "Member 'AMainGamemode_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, PostProcess) == 0x0002C8, "Member 'AMainGamemode_C::PostProcess' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Cam_w) == 0x0002D0, "Member 'AMainGamemode_C::Cam_w' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, DefaultSceneRoot) == 0x0002D8, "Member 'AMainGamemode_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, PlayerInterface) == 0x0002E0, "Member 'AMainGamemode_C::PlayerInterface' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Dishs) == 0x0002E8, "Member 'AMainGamemode_C::Dishs' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Master_spaceRenderer) == 0x0002F8, "Member 'AMainGamemode_C::Master_spaceRenderer' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Coordinates) == 0x000300, "Member 'AMainGamemode_C::Coordinates' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, ActiveDishes) == 0x000308, "Member 'AMainGamemode_C::ActiveDishes' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Widget_signal) == 0x000318, "Member 'AMainGamemode_C::Widget_signal' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, DishesStop) == 0x000320, "Member 'AMainGamemode_C::DishesStop' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, ObjectRenderer) == 0x000330, "Member 'AMainGamemode_C::ObjectRenderer' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, SignalDownload) == 0x000338, "Member 'AMainGamemode_C::SignalDownload' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, SavedSignals) == 0x000340, "Member 'AMainGamemode_C::SavedSignals' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Decoder) == 0x000350, "Member 'AMainGamemode_C::Decoder' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Console) == 0x000358, "Member 'AMainGamemode_C::Console' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Radar) == 0x000360, "Member 'AMainGamemode_C::Radar' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Power_calculating) == 0x000368, "Member 'AMainGamemode_C::Power_calculating' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Power_downloading) == 0x00036C, "Member 'AMainGamemode_C::Power_downloading' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Power_coordinates) == 0x000370, "Member 'AMainGamemode_C::Power_coordinates' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Power_playing) == 0x000374, "Member 'AMainGamemode_C::Power_playing' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Power_light) == 0x000378, "Member 'AMainGamemode_C::Power_light' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, TotalPower) == 0x00037C, "Member 'AMainGamemode_C::TotalPower' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, UsedPower) == 0x000380, "Member 'AMainGamemode_C::UsedPower' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, PowerRatio) == 0x000384, "Member 'AMainGamemode_C::PowerRatio' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, PowerUsage) == 0x000388, "Member 'AMainGamemode_C::PowerUsage' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Usesp_calc) == 0x00038C, "Member 'AMainGamemode_C::Usesp_calc' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Usesp_downl) == 0x00038D, "Member 'AMainGamemode_C::Usesp_downl' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Usesp_coords) == 0x00038E, "Member 'AMainGamemode_C::Usesp_coords' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Usesp_play) == 0x00038F, "Member 'AMainGamemode_C::Usesp_play' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Usesp_light) == 0x000390, "Member 'AMainGamemode_C::Usesp_light' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, PowerChanged) == 0x000398, "Member 'AMainGamemode_C::PowerChanged' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Servers) == 0x0003A8, "Member 'AMainGamemode_C::Servers' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, ServerEfficiency_calc) == 0x0003B8, "Member 'AMainGamemode_C::ServerEfficiency_calc' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, ServerEfficiency_downl) == 0x0003BC, "Member 'AMainGamemode_C::ServerEfficiency_downl' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, CompassTarget) == 0x0003C0, "Member 'AMainGamemode_C::CompassTarget' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, List_objects) == 0x0003C8, "Member 'AMainGamemode_C::List_objects' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, NewVar_0) == 0x0003D8, "Member 'AMainGamemode_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, AllObjectsNames) == 0x0003E0, "Member 'AMainGamemode_C::AllObjectsNames' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, W_objects) == 0x0003F0, "Member 'AMainGamemode_C::W_objects' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Laptop) == 0x000400, "Member 'AMainGamemode_C::Laptop' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, DaynightCycle) == 0x000408, "Member 'AMainGamemode_C::DaynightCycle' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, ToNrts) == 0x000410, "Member 'AMainGamemode_C::ToNrts' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, SignalsSoftRefs) == 0x000420, "Member 'AMainGamemode_C::SignalsSoftRefs' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, AllNRTS) == 0x000430, "Member 'AMainGamemode_C::AllNRTS' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, NrtLoadId) == 0x000440, "Member 'AMainGamemode_C::NrtLoadId' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, UrrSoft) == 0x000448, "Member 'AMainGamemode_C::UrrSoft' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, PowerControl) == 0x000450, "Member 'AMainGamemode_C::PowerControl' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, AmbMaster) == 0x000458, "Member 'AMainGamemode_C::AmbMaster' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Pause_mainMenu) == 0x000460, "Member 'AMainGamemode_C::Pause_mainMenu' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, SaveSlot) == 0x000468, "Member 'AMainGamemode_C::SaveSlot' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, ObjectsWeighted) == 0x000470, "Member 'AMainGamemode_C::ObjectsWeighted' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, br_weights) == 0x000480, "Member 'AMainGamemode_C::br_weights' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Eventer) == 0x000490, "Member 'AMainGamemode_C::Eventer' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Time) == 0x000498, "Member 'AMainGamemode_C::Time' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, IsSleep) == 0x0004A4, "Member 'AMainGamemode_C::IsSleep' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, SleepCam) == 0x0004A8, "Member 'AMainGamemode_C::SleepCam' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, OrigPawn) == 0x0004B0, "Member 'AMainGamemode_C::OrigPawn' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Gearer) == 0x0004B8, "Member 'AMainGamemode_C::Gearer' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Save_main) == 0x0004C0, "Member 'AMainGamemode_C::Save_main' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, GameInstance) == 0x0004C8, "Member 'AMainGamemode_C::GameInstance' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, PropRenderer) == 0x0004D0, "Member 'AMainGamemode_C::PropRenderer' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, ShowHovertext) == 0x0004D8, "Member 'AMainGamemode_C::ShowHovertext' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, ServerMinigame) == 0x0004E0, "Member 'AMainGamemode_C::ServerMinigame' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, HasWeapon) == 0x0004E8, "Member 'AMainGamemode_C::HasWeapon' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Ae) == 0x0004F0, "Member 'AMainGamemode_C::Ae' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, OrderPlace) == 0x000500, "Member 'AMainGamemode_C::OrderPlace' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Reactor_umg) == 0x000508, "Member 'AMainGamemode_C::Reactor_umg' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Reactor) == 0x000510, "Member 'AMainGamemode_C::Reactor' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Drone) == 0x000518, "Member 'AMainGamemode_C::Drone' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Dreaming) == 0x000520, "Member 'AMainGamemode_C::Dreaming' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, PlayerPreDream) == 0x000530, "Member 'AMainGamemode_C::PlayerPreDream' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Dream) == 0x000560, "Member 'AMainGamemode_C::Dream' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, bed) == 0x000568, "Member 'AMainGamemode_C::bed' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Telescope) == 0x000570, "Member 'AMainGamemode_C::Telescope' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, ActionEnums) == 0x000578, "Member 'AMainGamemode_C::ActionEnums' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Car) == 0x0005C8, "Member 'AMainGamemode_C::Car' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Apoc) == 0x0005D0, "Member 'AMainGamemode_C::Apoc' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Boxes) == 0x0005D4, "Member 'AMainGamemode_C::Boxes' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Cams) == 0x0005D8, "Member 'AMainGamemode_C::Cams' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, AutosaveDelay) == 0x0005E8, "Member 'AMainGamemode_C::AutosaveDelay' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, MainPlayer) == 0x0005F0, "Member 'AMainGamemode_C::MainPlayer' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Hints) == 0x0005F8, "Member 'AMainGamemode_C::Hints' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Clipboard) == 0x000600, "Member 'AMainGamemode_C::Clipboard' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Dishes) == 0x000608, "Member 'AMainGamemode_C::Dishes' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Diff) == 0x000618, "Member 'AMainGamemode_C::Diff' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Res) == 0x00061C, "Member 'AMainGamemode_C::Res' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, AllBeacons) == 0x000628, "Member 'AMainGamemode_C::AllBeacons' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Minimap) == 0x000638, "Member 'AMainGamemode_C::Minimap' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, PropInventory) == 0x000640, "Member 'AMainGamemode_C::PropInventory' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, RadarObjects) == 0x000648, "Member 'AMainGamemode_C::RadarObjects' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, StartDay) == 0x000658, "Member 'AMainGamemode_C::StartDay' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Insomniac) == 0x000660, "Member 'AMainGamemode_C::Insomniac' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Pics_H) == 0x000668, "Member 'AMainGamemode_C::Pics_H' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Pics_S) == 0x000678, "Member 'AMainGamemode_C::Pics_S' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Pics_v) == 0x000688, "Member 'AMainGamemode_C::Pics_v' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Pics_t) == 0x000698, "Member 'AMainGamemode_C::Pics_t' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Drones) == 0x0006A8, "Member 'AMainGamemode_C::Drones' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Invaders) == 0x0006B8, "Member 'AMainGamemode_C::Invaders' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Cheat_places) == 0x0006C0, "Member 'AMainGamemode_C::Cheat_places' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Cheat_places_names) == 0x0006D0, "Member 'AMainGamemode_C::Cheat_places_names' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, HalloweenMaster) == 0x0006E0, "Member 'AMainGamemode_C::HalloweenMaster' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, IsHalloween) == 0x0006E8, "Member 'AMainGamemode_C::IsHalloween' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, EventsActive) == 0x0006F0, "Member 'AMainGamemode_C::EventsActive' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, KeybindsDefault) == 0x000700, "Member 'AMainGamemode_C::KeybindsDefault' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, KeysDefaults) == 0x000710, "Member 'AMainGamemode_C::KeysDefaults' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, UndoList) == 0x000720, "Member 'AMainGamemode_C::UndoList' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Dishes_str) == 0x000730, "Member 'AMainGamemode_C::Dishes_str' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, PlayerContainer) == 0x000740, "Member 'AMainGamemode_C::PlayerContainer' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, RedScreen) == 0x000748, "Member 'AMainGamemode_C::RedScreen' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Virus) == 0x000750, "Member 'AMainGamemode_C::Virus' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Evil) == 0x000758, "Member 'AMainGamemode_C::Evil' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, AllDrives) == 0x000760, "Member 'AMainGamemode_C::AllDrives' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, AllDriveBoxes) == 0x000770, "Member 'AMainGamemode_C::AllDriveBoxes' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, W_objectsAm) == 0x000780, "Member 'AMainGamemode_C::W_objectsAm' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, CopyObjs) == 0x000790, "Member 'AMainGamemode_C::CopyObjs' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, W_objectsChs) == 0x0007A0, "Member 'AMainGamemode_C::W_objectsChs' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, AllProps) == 0x0007B0, "Member 'AMainGamemode_C::AllProps' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, AllContainers) == 0x0007C0, "Member 'AMainGamemode_C::AllContainers' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, AllDriveracks) == 0x0007D0, "Member 'AMainGamemode_C::AllDriveracks' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, RozShip) == 0x0007E0, "Member 'AMainGamemode_C::RozShip' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, KeyObj_key) == 0x0007E8, "Member 'AMainGamemode_C::KeyObj_key' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, KeyObj_obj) == 0x0007F8, "Member 'AMainGamemode_C::KeyObj_obj' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, RootConsole) == 0x000808, "Member 'AMainGamemode_C::RootConsole' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, WaterFloatMaster) == 0x000810, "Member 'AMainGamemode_C::WaterFloatMaster' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, RiverFlows) == 0x000818, "Member 'AMainGamemode_C::RiverFlows' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Photos) == 0x000828, "Member 'AMainGamemode_C::Photos' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, birber) == 0x000838, "Member 'AMainGamemode_C::birber' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, blackFog) == 0x000840, "Member 'AMainGamemode_C::blackFog' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, RedSky) == 0x000848, "Member 'AMainGamemode_C::RedSky' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Slappers) == 0x000850, "Member 'AMainGamemode_C::Slappers' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, PasswordLock) == 0x000858, "Member 'AMainGamemode_C::PasswordLock' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, brokenServers) == 0x000860, "Member 'AMainGamemode_C::brokenServers' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, IsFlying) == 0x000864, "Member 'AMainGamemode_C::IsFlying' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, RadioMusics) == 0x000868, "Member 'AMainGamemode_C::RadioMusics' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, RadioMusics_tit) == 0x000878, "Member 'AMainGamemode_C::RadioMusics_tit' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, DigcamMaster) == 0x000888, "Member 'AMainGamemode_C::DigcamMaster' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Eg) == 0x000890, "Member 'AMainGamemode_C::Eg' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, ProtoReload) == 0x000898, "Member 'AMainGamemode_C::ProtoReload' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, backroomsEnabled) == 0x000899, "Member 'AMainGamemode_C::backroomsEnabled' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Shrimps) == 0x0008A0, "Member 'AMainGamemode_C::Shrimps' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Food) == 0x0008B0, "Member 'AMainGamemode_C::Food' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, CanDamage) == 0x0008C0, "Member 'AMainGamemode_C::CanDamage' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, GameInst) == 0x0008C8, "Member 'AMainGamemode_C::GameInst' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, PoopWindow) == 0x0008D0, "Member 'AMainGamemode_C::PoopWindow' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, CockroachMaster) == 0x0008D8, "Member 'AMainGamemode_C::CockroachMaster' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, JellyfishPath) == 0x0008E0, "Member 'AMainGamemode_C::JellyfishPath' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, SignalCams) == 0x0008E8, "Member 'AMainGamemode_C::SignalCams' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Flags_MainGamemode_C) == 0x0008F8, "Member 'AMainGamemode_C::Flags_MainGamemode_C' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Trollface) == 0x000908, "Member 'AMainGamemode_C::Trollface' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, SignalNames_default) == 0x000910, "Member 'AMainGamemode_C::SignalNames_default' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, SignalData_default) == 0x000920, "Member 'AMainGamemode_C::SignalData_default' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, SavedSignals_0) == 0x000930, "Member 'AMainGamemode_C::SavedSignals_0' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, AllObjectsWeights) == 0x000940, "Member 'AMainGamemode_C::AllObjectsWeights' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, SignalUniques) == 0x000950, "Member 'AMainGamemode_C::SignalUniques' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Rugs) == 0x000960, "Member 'AMainGamemode_C::Rugs' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Meshes) == 0x000970, "Member 'AMainGamemode_C::Meshes' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Cam_w) == 0x0002C8, "Member 'AMainGamemode_C::Cam_w' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, DefaultSceneRoot) == 0x0002D0, "Member 'AMainGamemode_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, PlayerInterface) == 0x0002D8, "Member 'AMainGamemode_C::PlayerInterface' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Dishs) == 0x0002E0, "Member 'AMainGamemode_C::Dishs' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Master_spaceRenderer) == 0x0002F0, "Member 'AMainGamemode_C::Master_spaceRenderer' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Coordinates) == 0x0002F8, "Member 'AMainGamemode_C::Coordinates' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, ActiveDishes) == 0x000300, "Member 'AMainGamemode_C::ActiveDishes' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Widget_signal) == 0x000310, "Member 'AMainGamemode_C::Widget_signal' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, DishesStop) == 0x000318, "Member 'AMainGamemode_C::DishesStop' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, ObjectRenderer) == 0x000328, "Member 'AMainGamemode_C::ObjectRenderer' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, SignalDownload) == 0x000330, "Member 'AMainGamemode_C::SignalDownload' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, SavedSignals) == 0x000338, "Member 'AMainGamemode_C::SavedSignals' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Decoder) == 0x000348, "Member 'AMainGamemode_C::Decoder' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Console) == 0x000350, "Member 'AMainGamemode_C::Console' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Radar) == 0x000358, "Member 'AMainGamemode_C::Radar' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Power_calculating) == 0x000360, "Member 'AMainGamemode_C::Power_calculating' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Power_downloading) == 0x000364, "Member 'AMainGamemode_C::Power_downloading' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Power_coordinates) == 0x000368, "Member 'AMainGamemode_C::Power_coordinates' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Power_playing) == 0x00036C, "Member 'AMainGamemode_C::Power_playing' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Power_light) == 0x000370, "Member 'AMainGamemode_C::Power_light' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, TotalPower) == 0x000374, "Member 'AMainGamemode_C::TotalPower' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, UsedPower) == 0x000378, "Member 'AMainGamemode_C::UsedPower' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, PowerRatio) == 0x00037C, "Member 'AMainGamemode_C::PowerRatio' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, PowerUsage) == 0x000380, "Member 'AMainGamemode_C::PowerUsage' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Usesp_calc) == 0x000384, "Member 'AMainGamemode_C::Usesp_calc' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Usesp_downl) == 0x000385, "Member 'AMainGamemode_C::Usesp_downl' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Usesp_coords) == 0x000386, "Member 'AMainGamemode_C::Usesp_coords' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Usesp_play) == 0x000387, "Member 'AMainGamemode_C::Usesp_play' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Usesp_light) == 0x000388, "Member 'AMainGamemode_C::Usesp_light' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, PowerChanged) == 0x000390, "Member 'AMainGamemode_C::PowerChanged' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Servers) == 0x0003A0, "Member 'AMainGamemode_C::Servers' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, ServerEfficiency_calc) == 0x0003B0, "Member 'AMainGamemode_C::ServerEfficiency_calc' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, ServerEfficiency_downl) == 0x0003B4, "Member 'AMainGamemode_C::ServerEfficiency_downl' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, CompassTarget) == 0x0003B8, "Member 'AMainGamemode_C::CompassTarget' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, List_objects) == 0x0003C0, "Member 'AMainGamemode_C::List_objects' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, NewVar_0) == 0x0003D0, "Member 'AMainGamemode_C::NewVar_0' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, AllObjectsNames) == 0x0003D8, "Member 'AMainGamemode_C::AllObjectsNames' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, W_objects) == 0x0003E8, "Member 'AMainGamemode_C::W_objects' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Laptop) == 0x0003F8, "Member 'AMainGamemode_C::Laptop' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, DaynightCycle) == 0x000400, "Member 'AMainGamemode_C::DaynightCycle' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, ToNrts) == 0x000408, "Member 'AMainGamemode_C::ToNrts' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, SignalsSoftRefs) == 0x000418, "Member 'AMainGamemode_C::SignalsSoftRefs' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, AllNRTS) == 0x000428, "Member 'AMainGamemode_C::AllNRTS' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, NrtLoadId) == 0x000438, "Member 'AMainGamemode_C::NrtLoadId' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, UrrSoft) == 0x000440, "Member 'AMainGamemode_C::UrrSoft' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, PowerControl) == 0x000448, "Member 'AMainGamemode_C::PowerControl' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, AmbMaster) == 0x000450, "Member 'AMainGamemode_C::AmbMaster' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Pause_mainMenu) == 0x000458, "Member 'AMainGamemode_C::Pause_mainMenu' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, SaveSlot) == 0x000460, "Member 'AMainGamemode_C::SaveSlot' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, ObjectsWeighted) == 0x000468, "Member 'AMainGamemode_C::ObjectsWeighted' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, br_weights) == 0x000478, "Member 'AMainGamemode_C::br_weights' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Eventer) == 0x000488, "Member 'AMainGamemode_C::Eventer' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Time) == 0x000490, "Member 'AMainGamemode_C::Time' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, IsSleep) == 0x00049C, "Member 'AMainGamemode_C::IsSleep' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, SleepCam) == 0x0004A0, "Member 'AMainGamemode_C::SleepCam' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, OrigPawn) == 0x0004A8, "Member 'AMainGamemode_C::OrigPawn' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Gearer) == 0x0004B0, "Member 'AMainGamemode_C::Gearer' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Save_main) == 0x0004B8, "Member 'AMainGamemode_C::Save_main' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, GameInstance) == 0x0004C0, "Member 'AMainGamemode_C::GameInstance' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, PropRenderer) == 0x0004C8, "Member 'AMainGamemode_C::PropRenderer' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, ShowHovertext) == 0x0004D0, "Member 'AMainGamemode_C::ShowHovertext' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, ServerMinigame) == 0x0004D8, "Member 'AMainGamemode_C::ServerMinigame' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, HasWeapon) == 0x0004E0, "Member 'AMainGamemode_C::HasWeapon' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Ae) == 0x0004E8, "Member 'AMainGamemode_C::Ae' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, OrderPlace) == 0x0004F8, "Member 'AMainGamemode_C::OrderPlace' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Reactor_umg) == 0x000500, "Member 'AMainGamemode_C::Reactor_umg' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Reactor) == 0x000508, "Member 'AMainGamemode_C::Reactor' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Drone) == 0x000510, "Member 'AMainGamemode_C::Drone' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Dreaming) == 0x000518, "Member 'AMainGamemode_C::Dreaming' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, PlayerPreDream) == 0x000520, "Member 'AMainGamemode_C::PlayerPreDream' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Dream) == 0x000550, "Member 'AMainGamemode_C::Dream' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, bed) == 0x000558, "Member 'AMainGamemode_C::bed' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Telescope) == 0x000560, "Member 'AMainGamemode_C::Telescope' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, ActionEnums) == 0x000568, "Member 'AMainGamemode_C::ActionEnums' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Car) == 0x0005B8, "Member 'AMainGamemode_C::Car' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Apoc) == 0x0005C0, "Member 'AMainGamemode_C::Apoc' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Boxes) == 0x0005C4, "Member 'AMainGamemode_C::Boxes' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Cams) == 0x0005C8, "Member 'AMainGamemode_C::Cams' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, AutosaveDelay) == 0x0005D8, "Member 'AMainGamemode_C::AutosaveDelay' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, MainPlayer) == 0x0005E0, "Member 'AMainGamemode_C::MainPlayer' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Hints) == 0x0005E8, "Member 'AMainGamemode_C::Hints' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Clipboard) == 0x0005F0, "Member 'AMainGamemode_C::Clipboard' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Dishes) == 0x0005F8, "Member 'AMainGamemode_C::Dishes' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Diff) == 0x000608, "Member 'AMainGamemode_C::Diff' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Res) == 0x00060C, "Member 'AMainGamemode_C::Res' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, beacons) == 0x000618, "Member 'AMainGamemode_C::beacons' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Minimap) == 0x000628, "Member 'AMainGamemode_C::Minimap' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, PropInventory) == 0x000630, "Member 'AMainGamemode_C::PropInventory' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, RadarObjects) == 0x000638, "Member 'AMainGamemode_C::RadarObjects' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, StartDay) == 0x000648, "Member 'AMainGamemode_C::StartDay' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Insomniac) == 0x000650, "Member 'AMainGamemode_C::Insomniac' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Pics_H) == 0x000658, "Member 'AMainGamemode_C::Pics_H' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Pics_S) == 0x000668, "Member 'AMainGamemode_C::Pics_S' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Pics_v) == 0x000678, "Member 'AMainGamemode_C::Pics_v' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Pics_t) == 0x000688, "Member 'AMainGamemode_C::Pics_t' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Drones) == 0x000698, "Member 'AMainGamemode_C::Drones' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Invaders) == 0x0006A8, "Member 'AMainGamemode_C::Invaders' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Cheat_places) == 0x0006B0, "Member 'AMainGamemode_C::Cheat_places' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Cheat_places_names) == 0x0006C0, "Member 'AMainGamemode_C::Cheat_places_names' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, HalloweenMaster) == 0x0006D0, "Member 'AMainGamemode_C::HalloweenMaster' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, IsHalloween) == 0x0006D8, "Member 'AMainGamemode_C::IsHalloween' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, EventsActive) == 0x0006E0, "Member 'AMainGamemode_C::EventsActive' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, KeybindsDefault) == 0x0006F0, "Member 'AMainGamemode_C::KeybindsDefault' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, KeysDefaults) == 0x000700, "Member 'AMainGamemode_C::KeysDefaults' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, UndoList) == 0x000710, "Member 'AMainGamemode_C::UndoList' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Dishes_str) == 0x000720, "Member 'AMainGamemode_C::Dishes_str' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, PlayerContainer) == 0x000730, "Member 'AMainGamemode_C::PlayerContainer' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, RedScreen) == 0x000738, "Member 'AMainGamemode_C::RedScreen' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Virus) == 0x000740, "Member 'AMainGamemode_C::Virus' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Evil) == 0x000748, "Member 'AMainGamemode_C::Evil' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, AllDrives) == 0x000750, "Member 'AMainGamemode_C::AllDrives' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, AllDriveBoxes) == 0x000760, "Member 'AMainGamemode_C::AllDriveBoxes' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, W_objectsAm) == 0x000770, "Member 'AMainGamemode_C::W_objectsAm' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, CopyObjs) == 0x000780, "Member 'AMainGamemode_C::CopyObjs' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, W_objectsChs) == 0x000790, "Member 'AMainGamemode_C::W_objectsChs' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, AllProps) == 0x0007A0, "Member 'AMainGamemode_C::AllProps' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, AllContainers) == 0x0007B0, "Member 'AMainGamemode_C::AllContainers' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, AllDriveracks) == 0x0007C0, "Member 'AMainGamemode_C::AllDriveracks' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, RozShip) == 0x0007D0, "Member 'AMainGamemode_C::RozShip' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, KeyObj_key) == 0x0007D8, "Member 'AMainGamemode_C::KeyObj_key' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, KeyObj_obj) == 0x0007E8, "Member 'AMainGamemode_C::KeyObj_obj' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, RootConsole) == 0x0007F8, "Member 'AMainGamemode_C::RootConsole' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, WaterFloatMaster) == 0x000800, "Member 'AMainGamemode_C::WaterFloatMaster' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, RiverFlows) == 0x000808, "Member 'AMainGamemode_C::RiverFlows' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Photos) == 0x000818, "Member 'AMainGamemode_C::Photos' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, birber) == 0x000828, "Member 'AMainGamemode_C::birber' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, blackFog) == 0x000830, "Member 'AMainGamemode_C::blackFog' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, RedSky) == 0x000838, "Member 'AMainGamemode_C::RedSky' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Slappers) == 0x000840, "Member 'AMainGamemode_C::Slappers' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, PasswordLock) == 0x000848, "Member 'AMainGamemode_C::PasswordLock' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, brokenServers) == 0x000850, "Member 'AMainGamemode_C::brokenServers' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, IsFlying) == 0x000854, "Member 'AMainGamemode_C::IsFlying' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, RadioMusics) == 0x000858, "Member 'AMainGamemode_C::RadioMusics' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, RadioMusics_tit) == 0x000868, "Member 'AMainGamemode_C::RadioMusics_tit' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, DigcamMaster) == 0x000878, "Member 'AMainGamemode_C::DigcamMaster' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Eg) == 0x000880, "Member 'AMainGamemode_C::Eg' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, ProtoReload) == 0x000888, "Member 'AMainGamemode_C::ProtoReload' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, backroomsEnabled) == 0x000889, "Member 'AMainGamemode_C::backroomsEnabled' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Shrimps) == 0x000890, "Member 'AMainGamemode_C::Shrimps' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Food) == 0x0008A0, "Member 'AMainGamemode_C::Food' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, CanDamage) == 0x0008B0, "Member 'AMainGamemode_C::CanDamage' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, GameInst) == 0x0008B8, "Member 'AMainGamemode_C::GameInst' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, PoopWindow) == 0x0008C0, "Member 'AMainGamemode_C::PoopWindow' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, CockroachMaster) == 0x0008C8, "Member 'AMainGamemode_C::CockroachMaster' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, JellyfishPath) == 0x0008D0, "Member 'AMainGamemode_C::JellyfishPath' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, SignalCams) == 0x0008D8, "Member 'AMainGamemode_C::SignalCams' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Flags_MainGamemode_C) == 0x0008E8, "Member 'AMainGamemode_C::Flags_MainGamemode_C' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Trollface) == 0x0008F8, "Member 'AMainGamemode_C::Trollface' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, SignalNames_default) == 0x000900, "Member 'AMainGamemode_C::SignalNames_default' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, SignalData_default) == 0x000910, "Member 'AMainGamemode_C::SignalData_default' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, SavedSignals_0) == 0x000920, "Member 'AMainGamemode_C::SavedSignals_0' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, AllObjectsWeights) == 0x000930, "Member 'AMainGamemode_C::AllObjectsWeights' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, SignalUniques) == 0x000940, "Member 'AMainGamemode_C::SignalUniques' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Rugs) == 0x000950, "Member 'AMainGamemode_C::Rugs' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Meshes) == 0x000960, "Member 'AMainGamemode_C::Meshes' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, MeshTex) == 0x000970, "Member 'AMainGamemode_C::MeshTex' has a wrong offset!");
 static_assert(offsetof(AMainGamemode_C, MeshesNames) == 0x000980, "Member 'AMainGamemode_C::MeshesNames' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, MeshTex) == 0x000990, "Member 'AMainGamemode_C::MeshTex' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Printer) == 0x0009A0, "Member 'AMainGamemode_C::Printer' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, OnlineRadio) == 0x0009A8, "Member 'AMainGamemode_C::OnlineRadio' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, TvVids) == 0x0009B0, "Member 'AMainGamemode_C::TvVids' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, OfflineTv) == 0x0009C0, "Member 'AMainGamemode_C::OfflineTv' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, WokenUp) == 0x0009C8, "Member 'AMainGamemode_C::WokenUp' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Generators) == 0x0009D8, "Member 'AMainGamemode_C::Generators' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, GeneratorCond) == 0x0009E8, "Member 'AMainGamemode_C::GeneratorCond' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, ArirFeeding) == 0x0009F0, "Member 'AMainGamemode_C::ArirFeeding' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, SvTargets) == 0x0009F8, "Member 'AMainGamemode_C::SvTargets' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Posters) == 0x000A08, "Member 'AMainGamemode_C::Posters' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, borders) == 0x000A18, "Member 'AMainGamemode_C::borders' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, KillerWisps) == 0x000A20, "Member 'AMainGamemode_C::KillerWisps' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, RadioLinks) == 0x000A30, "Member 'AMainGamemode_C::RadioLinks' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, bufferName) == 0x000A40, "Member 'AMainGamemode_C::bufferName' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, RadioLinks_offlin) == 0x000A50, "Member 'AMainGamemode_C::RadioLinks_offlin' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, NewVar_1) == 0x000A60, "Member 'AMainGamemode_C::NewVar_1' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, NewVar_2) == 0x000A70, "Member 'AMainGamemode_C::NewVar_2' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Texs) == 0x000A80, "Member 'AMainGamemode_C::Texs' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, FellAsleep) == 0x000A90, "Member 'AMainGamemode_C::FellAsleep' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, badSun) == 0x000AA0, "Member 'AMainGamemode_C::badSun' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, MannDest) == 0x000AA8, "Member 'AMainGamemode_C::MannDest' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Stickers) == 0x000AB0, "Member 'AMainGamemode_C::Stickers' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Stickers_names) == 0x000AC0, "Member 'AMainGamemode_C::Stickers_names' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, KerfusPendingServers) == 0x000AD0, "Member 'AMainGamemode_C::KerfusPendingServers' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, PrintedMeshes) == 0x000AE0, "Member 'AMainGamemode_C::PrintedMeshes' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, MeshTex_PBR) == 0x000AF0, "Member 'AMainGamemode_C::MeshTex_PBR' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, MeshTex_normal) == 0x000B00, "Member 'AMainGamemode_C::MeshTex_normal' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, PhotosPrinted) == 0x000B10, "Member 'AMainGamemode_C::PhotosPrinted' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, baseSockets) == 0x000B20, "Member 'AMainGamemode_C::baseSockets' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Dreamers_C) == 0x000B30, "Member 'AMainGamemode_C::Dreamers_C' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Dreamers) == 0x000B40, "Member 'AMainGamemode_C::Dreamers' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, PaperDraw) == 0x000B50, "Member 'AMainGamemode_C::PaperDraw' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Editor) == 0x000B58, "Member 'AMainGamemode_C::Editor' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, HsvPicker) == 0x000B60, "Member 'AMainGamemode_C::HsvPicker' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, SleepTriggered) == 0x000B68, "Member 'AMainGamemode_C::SleepTriggered' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, RadiationComps) == 0x000B78, "Member 'AMainGamemode_C::RadiationComps' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, AriralRepHandler) == 0x000B88, "Member 'AMainGamemode_C::AriralRepHandler' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, PhotoTaken) == 0x000B90, "Member 'AMainGamemode_C::PhotoTaken' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, ArirHit) == 0x000BA0, "Member 'AMainGamemode_C::ArirHit' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, SleepTime) == 0x000BA4, "Member 'AMainGamemode_C::SleepTime' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, HandRadar) == 0x000BA8, "Member 'AMainGamemode_C::HandRadar' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, AllDirtholeItems) == 0x000BB0, "Member 'AMainGamemode_C::AllDirtholeItems' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Immortal) == 0x000BC0, "Member 'AMainGamemode_C::Immortal' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Radiotower) == 0x000BC8, "Member 'AMainGamemode_C::Radiotower' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, IndoorAmbientMaster) == 0x000BD0, "Member 'AMainGamemode_C::IndoorAmbientMaster' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Result) == 0x000BD8, "Member 'AMainGamemode_C::Result' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, DryAlpha) == 0x000BE8, "Member 'AMainGamemode_C::DryAlpha' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, RipBozo) == 0x000BEC, "Member 'AMainGamemode_C::RipBozo' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, PuffballNuclear) == 0x000BED, "Member 'AMainGamemode_C::PuffballNuclear' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, ValidityStack) == 0x000BF0, "Member 'AMainGamemode_C::ValidityStack' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, NewVar_3) == 0x000C00, "Member 'AMainGamemode_C::NewVar_3' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, backroomsPass) == 0x000C10, "Member 'AMainGamemode_C::backroomsPass' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, AssetFolder) == 0x000C18, "Member 'AMainGamemode_C::AssetFolder' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Event_lakeglow) == 0x000C28, "Member 'AMainGamemode_C::Event_lakeglow' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, UndergroundSpawnerMaster) == 0x000C30, "Member 'AMainGamemode_C::UndergroundSpawnerMaster' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, FishingItems) == 0x000C38, "Member 'AMainGamemode_C::FishingItems' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, TexturePicker) == 0x000C88, "Member 'AMainGamemode_C::TexturePicker' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, TexPickerObject) == 0x000C90, "Member 'AMainGamemode_C::TexPickerObject' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Effects) == 0x000C98, "Member 'AMainGamemode_C::Effects' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Effects_names) == 0x000CA8, "Member 'AMainGamemode_C::Effects_names' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, Effect_amount) == 0x000CB8, "Member 'AMainGamemode_C::Effect_amount' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, LoadedGatherers) == 0x000CC8, "Member 'AMainGamemode_C::LoadedGatherers' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, LoadedGatherersKeys) == 0x000CD8, "Member 'AMainGamemode_C::LoadedGatherersKeys' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, ExistingGatherers) == 0x000CE8, "Member 'AMainGamemode_C::ExistingGatherers' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, ExistingGatherersKeys) == 0x000CF8, "Member 'AMainGamemode_C::ExistingGatherersKeys' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, LoadedGatherers_T) == 0x000D08, "Member 'AMainGamemode_C::LoadedGatherers_T' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, LoadedGatherersKeys_T) == 0x000D18, "Member 'AMainGamemode_C::LoadedGatherersKeys_T' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, ExistingGatherers_T) == 0x000D28, "Member 'AMainGamemode_C::ExistingGatherers_T' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, ExistingGatherersKeys_T) == 0x000D38, "Member 'AMainGamemode_C::ExistingGatherersKeys_T' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, AllBuriedItemAreas) == 0x000D48, "Member 'AMainGamemode_C::AllBuriedItemAreas' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, IsSnowyFootsteps) == 0x000D58, "Member 'AMainGamemode_C::IsSnowyFootsteps' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, IsSnowyFootsteps_0) == 0x000D59, "Member 'AMainGamemode_C::IsSnowyFootsteps_0' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, A_0) == 0x000D60, "Member 'AMainGamemode_C::A_0' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, NewVar_4) == 0x000D70, "Member 'AMainGamemode_C::NewVar_4' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, AllCeilingLights) == 0x000D80, "Member 'AMainGamemode_C::AllCeilingLights' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, AllLampPosts) == 0x000D90, "Member 'AMainGamemode_C::AllLampPosts' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, DisablePlayerFloat) == 0x000DA0, "Member 'AMainGamemode_C::DisablePlayerFloat' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, AllKerfurs) == 0x000DA8, "Member 'AMainGamemode_C::AllKerfurs' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, AllKerfuros) == 0x000DB8, "Member 'AMainGamemode_C::AllKerfuros' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, AllGrayboars) == 0x000DC8, "Member 'AMainGamemode_C::AllGrayboars' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, basementFlooderWater) == 0x000DD8, "Member 'AMainGamemode_C::basementFlooderWater' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, AllBurningObjects) == 0x000DE0, "Member 'AMainGamemode_C::AllBurningObjects' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, NewVar_5) == 0x000DF0, "Member 'AMainGamemode_C::NewVar_5' has a wrong offset!");
-static_assert(offsetof(AMainGamemode_C, MeshTex_emissive) == 0x000DF8, "Member 'AMainGamemode_C::MeshTex_emissive' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Printer) == 0x000990, "Member 'AMainGamemode_C::Printer' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, OnlineRadio) == 0x000998, "Member 'AMainGamemode_C::OnlineRadio' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, TvVids) == 0x0009A0, "Member 'AMainGamemode_C::TvVids' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, OfflineTv) == 0x0009B0, "Member 'AMainGamemode_C::OfflineTv' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, WokenUp) == 0x0009B8, "Member 'AMainGamemode_C::WokenUp' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Generators) == 0x0009C8, "Member 'AMainGamemode_C::Generators' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, GeneratorCond) == 0x0009D8, "Member 'AMainGamemode_C::GeneratorCond' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, ArirFeeding) == 0x0009E0, "Member 'AMainGamemode_C::ArirFeeding' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, SvTargets) == 0x0009E8, "Member 'AMainGamemode_C::SvTargets' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Posters) == 0x0009F8, "Member 'AMainGamemode_C::Posters' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, borders) == 0x000A08, "Member 'AMainGamemode_C::borders' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, KillerWisps) == 0x000A10, "Member 'AMainGamemode_C::KillerWisps' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, RadioLinks) == 0x000A20, "Member 'AMainGamemode_C::RadioLinks' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, bufferName) == 0x000A30, "Member 'AMainGamemode_C::bufferName' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, RadioLinks_offlin) == 0x000A40, "Member 'AMainGamemode_C::RadioLinks_offlin' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, NewVar_1) == 0x000A50, "Member 'AMainGamemode_C::NewVar_1' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, NewVar_2) == 0x000A60, "Member 'AMainGamemode_C::NewVar_2' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Texs) == 0x000A70, "Member 'AMainGamemode_C::Texs' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, FellAsleep) == 0x000A80, "Member 'AMainGamemode_C::FellAsleep' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, badSun) == 0x000A90, "Member 'AMainGamemode_C::badSun' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, MannDest) == 0x000A98, "Member 'AMainGamemode_C::MannDest' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Stickers) == 0x000AA0, "Member 'AMainGamemode_C::Stickers' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Stickers_names) == 0x000AB0, "Member 'AMainGamemode_C::Stickers_names' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, KerfusPendingServers) == 0x000AC0, "Member 'AMainGamemode_C::KerfusPendingServers' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, PrintedMeshes) == 0x000AD0, "Member 'AMainGamemode_C::PrintedMeshes' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, MeshTex_PBR) == 0x000AE0, "Member 'AMainGamemode_C::MeshTex_PBR' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, MeshTex_normal) == 0x000AF0, "Member 'AMainGamemode_C::MeshTex_normal' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, PhotosPrinted) == 0x000B00, "Member 'AMainGamemode_C::PhotosPrinted' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, baseSockets) == 0x000B10, "Member 'AMainGamemode_C::baseSockets' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Dreamers_C) == 0x000B20, "Member 'AMainGamemode_C::Dreamers_C' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Dreamers) == 0x000B30, "Member 'AMainGamemode_C::Dreamers' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, PaperDraw) == 0x000B40, "Member 'AMainGamemode_C::PaperDraw' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Editor) == 0x000B48, "Member 'AMainGamemode_C::Editor' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, HsvPicker) == 0x000B50, "Member 'AMainGamemode_C::HsvPicker' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, SleepTriggered) == 0x000B58, "Member 'AMainGamemode_C::SleepTriggered' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, RadiationComps) == 0x000B68, "Member 'AMainGamemode_C::RadiationComps' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, AriralRepHandler) == 0x000B78, "Member 'AMainGamemode_C::AriralRepHandler' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, PhotoTaken) == 0x000B80, "Member 'AMainGamemode_C::PhotoTaken' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, ArirHit) == 0x000B90, "Member 'AMainGamemode_C::ArirHit' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, SleepTime) == 0x000B94, "Member 'AMainGamemode_C::SleepTime' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, HandRadar) == 0x000B98, "Member 'AMainGamemode_C::HandRadar' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, AllDirtholeItems) == 0x000BA0, "Member 'AMainGamemode_C::AllDirtholeItems' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Immortal) == 0x000BB0, "Member 'AMainGamemode_C::Immortal' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Radiotower) == 0x000BB8, "Member 'AMainGamemode_C::Radiotower' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, IndoorAmbientMaster) == 0x000BC0, "Member 'AMainGamemode_C::IndoorAmbientMaster' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, Result) == 0x000BC8, "Member 'AMainGamemode_C::Result' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, DryAlpha) == 0x000BD8, "Member 'AMainGamemode_C::DryAlpha' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, RipBozo) == 0x000BDC, "Member 'AMainGamemode_C::RipBozo' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, PuffballNuclear) == 0x000BDD, "Member 'AMainGamemode_C::PuffballNuclear' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, ValidityStack) == 0x000BE0, "Member 'AMainGamemode_C::ValidityStack' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, NewVar_3) == 0x000BF0, "Member 'AMainGamemode_C::NewVar_3' has a wrong offset!");
+static_assert(offsetof(AMainGamemode_C, backroomsPass) == 0x000C00, "Member 'AMainGamemode_C::backroomsPass' has a wrong offset!");
 
 }
 

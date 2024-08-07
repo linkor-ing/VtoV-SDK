@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "Struct_save_structs.hpp"
 #include "Struct_mString_structs.hpp"
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -20,129 +20,127 @@ namespace SDK::Params
 {
 
 // Function prop_stickers.prop_stickers_C.ExecuteUbergraph_prop_stickers
-// 0x0260 (0x0260 - 0x0000)
+// 0x0290 (0x0290 - 0x0000)
 struct Prop_stickers_C_ExecuteUbergraph_prop_stickers final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A51[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<EObjectTypeQuery>                      CallFunc_obj_statDynPhys_obj;                      // 0x0010(0x0010)(ReferenceParm)
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Array_Get_Item;                           // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0038(0x0010)(ConstParm, ReferenceParm)
-	bool                                          Temp_bool_Variable;                                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x0060(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_arm_start;                                // 0x006C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_arm_end;                                  // 0x0078(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit;         // 0x0084(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue;    // 0x010C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x010D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x010E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_10F[0x1];                                      // 0x010F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0118(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0124(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0130(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x013C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0158(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0174(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0180(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects;                  // 0x0190(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A1[0x3];                                      // 0x01A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Abs_ReturnValue;                          // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_getKey_key;                               // 0x01A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1B9[0x3];                                      // 0x01B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_DoesImplementInterface_ReturnValue;       // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C1[0x3];                                      // 0x01C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x01C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x01D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x01DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue;           // 0x01E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x01F4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FRotator                               CallFunc_MakeRotationFromAxes_ReturnValue;         // 0x0200(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FRotator                               K2Node_Select_Default;                             // 0x020C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_218[0x8];                                      // 0x0218(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0220(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ASticker_C*                             CallFunc_FinishSpawningActor_ReturnValue;          // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0018)()
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3A52[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x0040(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_arm_start;                                // 0x004C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_arm_end;                                  // 0x0058(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3A53[0x4];                                     // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EObjectTypeQuery>                      CallFunc_obj_statDynPhys_obj;                      // 0x0068(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3A54[0x7];                                     // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Array_Get_Item;                           // 0x0088(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0098(0x0010)(ConstParm, ReferenceParm)
+	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit;         // 0x00A8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue;    // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0131(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0132(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3A55[0x1];                                     // 0x0133(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x013C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0148(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0154(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0160(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3A56[0x4];                                     // 0x016C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0180(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x019C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x01A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3A57[0x4];                                     // 0x01B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects;                  // 0x01B8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_DoesImplementInterface_ReturnValue;       // 0x01C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3A58[0x6];                                     // 0x01CA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_getKey_key;                               // 0x01D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x01E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x01EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x01F0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_Abs_ReturnValue;                          // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0204(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3A59[0x3];                                     // 0x0205(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0208(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x0214(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue;           // 0x0220(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotationFromAxes_ReturnValue;         // 0x022C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FRotator                               K2Node_Select_Default;                             // 0x0238(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3A5A[0xC];                                     // 0x0244(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0250(0x0030)(IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ASticker_C*                             CallFunc_FinishSpawningActor_ReturnValue;          // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_stickers_C_ExecuteUbergraph_prop_stickers) == 0x000010, "Wrong alignment on Prop_stickers_C_ExecuteUbergraph_prop_stickers");
-static_assert(sizeof(Prop_stickers_C_ExecuteUbergraph_prop_stickers) == 0x000260, "Wrong size on Prop_stickers_C_ExecuteUbergraph_prop_stickers");
+static_assert(sizeof(Prop_stickers_C_ExecuteUbergraph_prop_stickers) == 0x000290, "Wrong size on Prop_stickers_C_ExecuteUbergraph_prop_stickers");
 static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, EntryPoint) == 0x000000, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000008, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_obj_statDynPhys_obj) == 0x000010, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_obj_statDynPhys_obj' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, K2Node_Event_player_1) == 0x000020, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_Array_Get_Item) == 0x000028, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, Temp_object_Variable) == 0x000038, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, Temp_bool_Variable) == 0x000048, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x000050, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, K2Node_Event_player) == 0x000058, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_GetActorForwardVector_ReturnValue) == 0x000060, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_arm_start) == 0x00006C, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_arm_start' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_arm_end) == 0x000078, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_arm_end' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_LineTraceSingleForObjects_OutHit) == 0x000084, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_LineTraceSingleForObjects_OutHit' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_LineTraceSingleForObjects_ReturnValue) == 0x00010C, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_LineTraceSingleForObjects_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_bBlockingHit) == 0x00010D, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_bInitialOverlap) == 0x00010E, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_Time) == 0x000110, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_Distance) == 0x000114, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_Location) == 0x000118, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_ImpactPoint) == 0x000124, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_Normal) == 0x000130, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_ImpactNormal) == 0x00013C, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_PhysMat) == 0x000148, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_HitActor) == 0x000150, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_HitComponent) == 0x000158, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_HitBoneName) == 0x000160, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_HitItem) == 0x000168, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_ElementIndex) == 0x00016C, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_FaceIndex) == 0x000170, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_TraceStart) == 0x000174, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_TraceEnd) == 0x000180, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_Dot_VectorVector_ReturnValue) == 0x00018C, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, K2Node_DynamicCast_AsInt_Objects) == 0x000190, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::K2Node_DynamicCast_AsInt_Objects' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, K2Node_DynamicCast_bSuccess) == 0x0001A0, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_Abs_ReturnValue) == 0x0001A4, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_Abs_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_getKey_key) == 0x0001A8, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_getKey_key' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x0001B8, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0001BC, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_DoesImplementInterface_ReturnValue) == 0x0001C0, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_DoesImplementInterface_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_MakeVector_ReturnValue) == 0x0001C4, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x0001D0, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x0001DC, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_Cross_VectorVector_ReturnValue) == 0x0001E8, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_Cross_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x0001F4, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_MakeRotationFromAxes_ReturnValue) == 0x000200, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_MakeRotationFromAxes_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, K2Node_Select_Default) == 0x00020C, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_MakeTransform_ReturnValue) == 0x000220, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000250, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_FinishSpawningActor_ReturnValue) == 0x000258, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-
-// Function prop_stickers.prop_stickers_C.playerHandUse_LMB
-// 0x0008 (0x0008 - 0x0000)
-struct Prop_stickers_C_PlayerHandUse_LMB final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_stickers_C_PlayerHandUse_LMB) == 0x000008, "Wrong alignment on Prop_stickers_C_PlayerHandUse_LMB");
-static_assert(sizeof(Prop_stickers_C_PlayerHandUse_LMB) == 0x000008, "Wrong size on Prop_stickers_C_PlayerHandUse_LMB");
-static_assert(offsetof(Prop_stickers_C_PlayerHandUse_LMB, Player) == 0x000000, "Member 'Prop_stickers_C_PlayerHandUse_LMB::Player' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_Conv_StringToText_ReturnValue) == 0x000010, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, K2Node_Event_player_1) == 0x000030, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, K2Node_Event_player) == 0x000038, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_GetActorForwardVector_ReturnValue) == 0x000040, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_arm_start) == 0x00004C, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_arm_start' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_arm_end) == 0x000058, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_arm_end' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_obj_statDynPhys_obj) == 0x000068, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_obj_statDynPhys_obj' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_Add_IntInt_ReturnValue) == 0x000078, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_Percent_IntInt_ReturnValue) == 0x00007C, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, Temp_bool_Variable) == 0x000080, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_Array_Get_Item) == 0x000088, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, Temp_object_Variable) == 0x000098, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_LineTraceSingleForObjects_OutHit) == 0x0000A8, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_LineTraceSingleForObjects_OutHit' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_LineTraceSingleForObjects_ReturnValue) == 0x000130, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_LineTraceSingleForObjects_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_bBlockingHit) == 0x000131, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_bInitialOverlap) == 0x000132, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_Time) == 0x000134, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_Distance) == 0x000138, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_Location) == 0x00013C, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_ImpactPoint) == 0x000148, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_Normal) == 0x000154, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_ImpactNormal) == 0x000160, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_PhysMat) == 0x000170, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_HitActor) == 0x000178, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_HitComponent) == 0x000180, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_HitBoneName) == 0x000188, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_HitItem) == 0x000190, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_ElementIndex) == 0x000194, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_FaceIndex) == 0x000198, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_TraceStart) == 0x00019C, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BreakHitResult_TraceEnd) == 0x0001A8, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, K2Node_DynamicCast_AsInt_Objects) == 0x0001B8, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::K2Node_DynamicCast_AsInt_Objects' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, K2Node_DynamicCast_bSuccess) == 0x0001C8, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_DoesImplementInterface_ReturnValue) == 0x0001C9, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_DoesImplementInterface_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_getKey_key) == 0x0001D0, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_getKey_key' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x0001E0, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_Dot_VectorVector_ReturnValue) == 0x0001EC, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x0001F0, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_Abs_ReturnValue) == 0x0001FC, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_Abs_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000200, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000204, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_MakeVector_ReturnValue) == 0x000208, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x000214, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_Cross_VectorVector_ReturnValue) == 0x000220, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_Cross_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_MakeRotationFromAxes_ReturnValue) == 0x00022C, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_MakeRotationFromAxes_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, K2Node_Select_Default) == 0x000238, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_MakeTransform_ReturnValue) == 0x000250, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000280, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_stickers_C_ExecuteUbergraph_prop_stickers, CallFunc_FinishSpawningActor_ReturnValue) == 0x000288, "Member 'Prop_stickers_C_ExecuteUbergraph_prop_stickers::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
 
 // Function prop_stickers.prop_stickers_C.playerHandUse_RMB
 // 0x0008 (0x0008 - 0x0000)
@@ -155,6 +153,17 @@ static_assert(alignof(Prop_stickers_C_PlayerHandUse_RMB) == 0x000008, "Wrong ali
 static_assert(sizeof(Prop_stickers_C_PlayerHandUse_RMB) == 0x000008, "Wrong size on Prop_stickers_C_PlayerHandUse_RMB");
 static_assert(offsetof(Prop_stickers_C_PlayerHandUse_RMB, Player) == 0x000000, "Member 'Prop_stickers_C_PlayerHandUse_RMB::Player' has a wrong offset!");
 
+// Function prop_stickers.prop_stickers_C.playerHandUse_LMB
+// 0x0008 (0x0008 - 0x0000)
+struct Prop_stickers_C_PlayerHandUse_LMB final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_stickers_C_PlayerHandUse_LMB) == 0x000008, "Wrong alignment on Prop_stickers_C_PlayerHandUse_LMB");
+static_assert(sizeof(Prop_stickers_C_PlayerHandUse_LMB) == 0x000008, "Wrong size on Prop_stickers_C_PlayerHandUse_LMB");
+static_assert(offsetof(Prop_stickers_C_PlayerHandUse_LMB, Player) == 0x000000, "Member 'Prop_stickers_C_PlayerHandUse_LMB::Player' has a wrong offset!");
+
 // Function prop_stickers.prop_stickers_C.loadData
 // 0x0110 (0x0110 - 0x0000)
 struct Prop_stickers_C_LoadData final
@@ -162,11 +171,11 @@ struct Prop_stickers_C_LoadData final
 public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A5B[0x7];                                     // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x00C8(0x0018)()
 	struct FStruct_mString                        CallFunc_Array_Get_Item;                           // 0x00E0(0x0010)(HasGetValueTypeHash)
 	bool                                          CallFunc_loadData_return;                          // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A5C[0x7];                                     // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Array_Get_Item_1;                         // 0x00F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_stickers_C_LoadData) == 0x000010, "Wrong alignment on Prop_stickers_C_LoadData");

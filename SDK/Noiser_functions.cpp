@@ -65,7 +65,7 @@ void ANoiser_C::Timer()
 }
 
 
-// Function noiser.noiser_C.Despawn
+// Function noiser.noiser_C.despawn
 // (BlueprintCallable, BlueprintEvent)
 
 void ANoiser_C::Despawn()
@@ -73,7 +73,7 @@ void ANoiser_C::Despawn()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("noiser_C", "Despawn");
+		Func = Class->GetFunction("noiser_C", "despawn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

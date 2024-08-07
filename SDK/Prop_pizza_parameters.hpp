@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Enum_interactionActions_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Struct_save_structs.hpp"
 #include "Struct_mInt_structs.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -34,7 +34,7 @@ public:
 	class FName                                   Temp_name_Variable;                                // 0x004C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x0055(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_56[0x2];                                       // 0x0056(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1072[0x2];                                     // 0x0056(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   Temp_name_Variable_1;                              // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Temp_name_Variable_2;                              // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   K2Node_CustomEvent_NotifyName_4;                   // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -50,34 +50,35 @@ public:
 	class FName                                   Temp_name_Variable_3;                              // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_1;                              // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchName_CmpSuccess_1;                    // 0x00E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_EA[0x2];                                       // 0x00EA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1073[0x2];                                     // 0x00EA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   Temp_name_Variable_4;                              // 0x00EC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Temp_name_Variable_5;                              // 0x00F4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable;                                 // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   K2Node_CustomEvent_NotifyName_8;                   // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_8;            // 0x0108(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_119[0x3];                                      // 0x0119(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1074[0x3];                                     // 0x0119(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_9;            // 0x011C(0x0010)(ZeroConstructor, NoDestructor)
 	class FName                                   K2Node_Select_Default;                             // 0x012C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_134[0x4];                                      // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1075[0x4];                                     // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPlayMontageCallbackProxy*              CallFunc_CreateProxyObjectForPlayMontage_ReturnValue; // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0141(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_142[0x2];                                      // 0x0142(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1076[0x2];                                     // 0x0142(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_Select_Default_1;                           // 0x0144(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1077[0x4];                                     // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPlayMontageCallbackProxy*              CallFunc_CreateProxyObjectForPlayMontage_ReturnValue_1; // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit;                                  // 0x0160(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x01E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_addFood_full;                             // 0x01EA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x01EB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	class FName                                   K2Node_CustomEvent_NotifyName_9;                   // 0x01EC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x01F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F5[0x3];                                      // 0x01F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_index;                                // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x01EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x01ED(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_addFood_full;                             // 0x01EE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x01EF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class FName                                   K2Node_CustomEvent_NotifyName_9;                   // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1078[0x3];                                     // 0x01F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_pizza_C_ExecuteUbergraph_prop_pizza) == 0x000008, "Wrong alignment on Prop_pizza_C_ExecuteUbergraph_prop_pizza");
 static_assert(sizeof(Prop_pizza_C_ExecuteUbergraph_prop_pizza) == 0x000200, "Wrong size on Prop_pizza_C_ExecuteUbergraph_prop_pizza");
@@ -121,13 +122,31 @@ static_assert(offsetof(Prop_pizza_C_ExecuteUbergraph_prop_pizza, K2Node_Select_D
 static_assert(offsetof(Prop_pizza_C_ExecuteUbergraph_prop_pizza, CallFunc_CreateProxyObjectForPlayMontage_ReturnValue_1) == 0x000150, "Member 'Prop_pizza_C_ExecuteUbergraph_prop_pizza::CallFunc_CreateProxyObjectForPlayMontage_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(Prop_pizza_C_ExecuteUbergraph_prop_pizza, K2Node_Event_player) == 0x000158, "Member 'Prop_pizza_C_ExecuteUbergraph_prop_pizza::K2Node_Event_player' has a wrong offset!");
 static_assert(offsetof(Prop_pizza_C_ExecuteUbergraph_prop_pizza, K2Node_Event_hit) == 0x000160, "Member 'Prop_pizza_C_ExecuteUbergraph_prop_pizza::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_pizza_C_ExecuteUbergraph_prop_pizza, K2Node_Event_action) == 0x0001E8, "Member 'Prop_pizza_C_ExecuteUbergraph_prop_pizza::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Prop_pizza_C_ExecuteUbergraph_prop_pizza, K2Node_SwitchEnum_CmpSuccess) == 0x0001E9, "Member 'Prop_pizza_C_ExecuteUbergraph_prop_pizza::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Prop_pizza_C_ExecuteUbergraph_prop_pizza, CallFunc_addFood_full) == 0x0001EA, "Member 'Prop_pizza_C_ExecuteUbergraph_prop_pizza::CallFunc_addFood_full' has a wrong offset!");
-static_assert(offsetof(Prop_pizza_C_ExecuteUbergraph_prop_pizza, CallFunc_IsValid_ReturnValue_1) == 0x0001EB, "Member 'Prop_pizza_C_ExecuteUbergraph_prop_pizza::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_pizza_C_ExecuteUbergraph_prop_pizza, K2Node_CustomEvent_NotifyName_9) == 0x0001EC, "Member 'Prop_pizza_C_ExecuteUbergraph_prop_pizza::K2Node_CustomEvent_NotifyName_9' has a wrong offset!");
-static_assert(offsetof(Prop_pizza_C_ExecuteUbergraph_prop_pizza, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0001F4, "Member 'Prop_pizza_C_ExecuteUbergraph_prop_pizza::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_pizza_C_ExecuteUbergraph_prop_pizza, CallFunc_Subtract_IntInt_ReturnValue) == 0x0001F8, "Member 'Prop_pizza_C_ExecuteUbergraph_prop_pizza::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_pizza_C_ExecuteUbergraph_prop_pizza, K2Node_Event_index) == 0x0001E8, "Member 'Prop_pizza_C_ExecuteUbergraph_prop_pizza::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Prop_pizza_C_ExecuteUbergraph_prop_pizza, K2Node_Event_action) == 0x0001EC, "Member 'Prop_pizza_C_ExecuteUbergraph_prop_pizza::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_pizza_C_ExecuteUbergraph_prop_pizza, K2Node_SwitchEnum_CmpSuccess) == 0x0001ED, "Member 'Prop_pizza_C_ExecuteUbergraph_prop_pizza::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_pizza_C_ExecuteUbergraph_prop_pizza, CallFunc_addFood_full) == 0x0001EE, "Member 'Prop_pizza_C_ExecuteUbergraph_prop_pizza::CallFunc_addFood_full' has a wrong offset!");
+static_assert(offsetof(Prop_pizza_C_ExecuteUbergraph_prop_pizza, CallFunc_IsValid_ReturnValue_1) == 0x0001EF, "Member 'Prop_pizza_C_ExecuteUbergraph_prop_pizza::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_pizza_C_ExecuteUbergraph_prop_pizza, K2Node_CustomEvent_NotifyName_9) == 0x0001F0, "Member 'Prop_pizza_C_ExecuteUbergraph_prop_pizza::K2Node_CustomEvent_NotifyName_9' has a wrong offset!");
+static_assert(offsetof(Prop_pizza_C_ExecuteUbergraph_prop_pizza, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0001F8, "Member 'Prop_pizza_C_ExecuteUbergraph_prop_pizza::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_pizza_C_ExecuteUbergraph_prop_pizza, CallFunc_Subtract_IntInt_ReturnValue) == 0x0001FC, "Member 'Prop_pizza_C_ExecuteUbergraph_prop_pizza::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+
+// Function prop_pizza.prop_pizza_C.actionOptionIndex
+// 0x0098 (0x0098 - 0x0000)
+struct Prop_pizza_C_ActionOptionIndex final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_pizza_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_pizza_C_ActionOptionIndex");
+static_assert(sizeof(Prop_pizza_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_pizza_C_ActionOptionIndex");
+static_assert(offsetof(Prop_pizza_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_pizza_C_ActionOptionIndex::Player' has a wrong offset!");
+static_assert(offsetof(Prop_pizza_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_pizza_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_pizza_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_pizza_C_ActionOptionIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(Prop_pizza_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_pizza_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function prop_pizza.prop_pizza_C.OnCompleted_65498482477B12E33D62FBBDD42CD9F5
 // 0x0008 (0x0008 - 0x0000)
@@ -248,7 +267,7 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1079[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStaticMeshComponent*                   CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -263,21 +282,6 @@ static_assert(offsetof(Prop_pizza_C_UpdSlices, CallFunc_Array_Get_Item) == 0x000
 static_assert(offsetof(Prop_pizza_C_UpdSlices, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'Prop_pizza_C_UpdSlices::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_pizza_C_UpdSlices, CallFunc_Less_IntInt_ReturnValue_1) == 0x00001C, "Member 'Prop_pizza_C_UpdSlices::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
 
-// Function prop_pizza.prop_pizza_C.actionOptionIndex
-// 0x0098 (0x0098 - 0x0000)
-struct Prop_pizza_C_ActionOptionIndex final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_pizza_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_pizza_C_ActionOptionIndex");
-static_assert(sizeof(Prop_pizza_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_pizza_C_ActionOptionIndex");
-static_assert(offsetof(Prop_pizza_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_pizza_C_ActionOptionIndex::Player' has a wrong offset!");
-static_assert(offsetof(Prop_pizza_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_pizza_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_pizza_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_pizza_C_ActionOptionIndex::Action' has a wrong offset!");
-
 // Function prop_pizza.prop_pizza_C.UserConstructionScript
 // 0x0010 (0x0010 - 0x0000)
 struct Prop_pizza_C_UserConstructionScript final
@@ -290,31 +294,28 @@ static_assert(sizeof(Prop_pizza_C_UserConstructionScript) == 0x000010, "Wrong si
 static_assert(offsetof(Prop_pizza_C_UserConstructionScript, K2Node_MakeArray_Array) == 0x000000, "Member 'Prop_pizza_C_UserConstructionScript::K2Node_MakeArray_Array' has a wrong offset!");
 
 // Function prop_pizza.prop_pizza_C.lookAt
-// 0x00E0 (0x00E0 - 0x0000)
+// 0x00D8 (0x00D8 - 0x0000)
 struct Prop_pizza_C_LookAt final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_107A[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00B8(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00B0(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_pizza_C_LookAt) == 0x000008, "Wrong alignment on Prop_pizza_C_LookAt");
-static_assert(sizeof(Prop_pizza_C_LookAt) == 0x0000E0, "Wrong size on Prop_pizza_C_LookAt");
+static_assert(sizeof(Prop_pizza_C_LookAt) == 0x0000D8, "Wrong size on Prop_pizza_C_LookAt");
 static_assert(offsetof(Prop_pizza_C_LookAt, Player) == 0x000000, "Member 'Prop_pizza_C_LookAt::Player' has a wrong offset!");
 static_assert(offsetof(Prop_pizza_C_LookAt, Param_Hit) == 0x000008, "Member 'Prop_pizza_C_LookAt::Param_Hit' has a wrong offset!");
 static_assert(offsetof(Prop_pizza_C_LookAt, Return) == 0x000090, "Member 'Prop_pizza_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(Prop_pizza_C_LookAt, Text) == 0x000098, "Member 'Prop_pizza_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(Prop_pizza_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'Prop_pizza_C_LookAt::boundObjectReplace' has a wrong offset!");
-static_assert(offsetof(Prop_pizza_C_LookAt, Number) == 0x0000B0, "Member 'Prop_pizza_C_LookAt::Number' has a wrong offset!");
-static_assert(offsetof(Prop_pizza_C_LookAt, CallFunc_MakeLiteralText_ReturnValue) == 0x0000B8, "Member 'Prop_pizza_C_LookAt::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_pizza_C_LookAt, CallFunc_Conv_TextToString_ReturnValue) == 0x0000D0, "Member 'Prop_pizza_C_LookAt::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_pizza_C_LookAt, CallFunc_MakeLiteralText_ReturnValue) == 0x0000B0, "Member 'Prop_pizza_C_LookAt::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_pizza_C_LookAt, CallFunc_Conv_TextToString_ReturnValue) == 0x0000C8, "Member 'Prop_pizza_C_LookAt::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
 
 // Function prop_pizza.prop_pizza_C.loadData
 // 0x00E0 (0x00E0 - 0x0000)
@@ -324,7 +325,7 @@ public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadData_return;                          // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_107B[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mInt                           CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -368,9 +369,8 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          Temp_bool_Variable;                                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_107C[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
 	TArray<Enum_interactionActions>               K2Node_MakeArray_Array_1;                          // 0x0060(0x0010)(ReferenceParm)
 	TArray<Enum_interactionActions>               K2Node_Select_Default;                             // 0x0070(0x0010)(ReferenceParm)
@@ -383,28 +383,10 @@ static_assert(offsetof(Prop_pizza_C_GetActionOptions, Actor) == 0x000010, "Membe
 static_assert(offsetof(Prop_pizza_C_GetActionOptions, Options) == 0x000018, "Member 'Prop_pizza_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Prop_pizza_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Prop_pizza_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Prop_pizza_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Prop_pizza_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Prop_pizza_C_GetActionOptions, Number) == 0x000048, "Member 'Prop_pizza_C_GetActionOptions::Number' has a wrong offset!");
-static_assert(offsetof(Prop_pizza_C_GetActionOptions, Temp_bool_Variable) == 0x000049, "Member 'Prop_pizza_C_GetActionOptions::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_pizza_C_GetActionOptions, Temp_bool_Variable) == 0x000048, "Member 'Prop_pizza_C_GetActionOptions::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(Prop_pizza_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Prop_pizza_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(Prop_pizza_C_GetActionOptions, K2Node_MakeArray_Array_1) == 0x000060, "Member 'Prop_pizza_C_GetActionOptions::K2Node_MakeArray_Array_1' has a wrong offset!");
 static_assert(offsetof(Prop_pizza_C_GetActionOptions, K2Node_Select_Default) == 0x000070, "Member 'Prop_pizza_C_GetActionOptions::K2Node_Select_Default' has a wrong offset!");
-
-// Function prop_pizza.prop_pizza_C.getPriceMultiplier
-// 0x0010 (0x0010 - 0x0000)
-struct Prop_pizza_C_GetPriceMultiplier final
-{
-public:
-	float                                         PriceMult;                                         // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue;                       // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_pizza_C_GetPriceMultiplier) == 0x000004, "Wrong alignment on Prop_pizza_C_GetPriceMultiplier");
-static_assert(sizeof(Prop_pizza_C_GetPriceMultiplier) == 0x000010, "Wrong size on Prop_pizza_C_GetPriceMultiplier");
-static_assert(offsetof(Prop_pizza_C_GetPriceMultiplier, PriceMult) == 0x000000, "Member 'Prop_pizza_C_GetPriceMultiplier::PriceMult' has a wrong offset!");
-static_assert(offsetof(Prop_pizza_C_GetPriceMultiplier, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000004, "Member 'Prop_pizza_C_GetPriceMultiplier::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_pizza_C_GetPriceMultiplier, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000008, "Member 'Prop_pizza_C_GetPriceMultiplier::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_pizza_C_GetPriceMultiplier, CallFunc_FClamp_ReturnValue) == 0x00000C, "Member 'Prop_pizza_C_GetPriceMultiplier::CallFunc_FClamp_ReturnValue' has a wrong offset!");
 
 }
 

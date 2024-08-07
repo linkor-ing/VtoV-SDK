@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_metalTable2.prop_metalTable2_C
-// 0x0010 (0x0390 - 0x0380)
+// 0x0010 (0x0380 - 0x0370)
 class AProp_metalTable2_C final : public AProp_metalTable_C
 {
 public:
-	class UChildActorComponent*                   NavmeshBlock2;                                     // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   NavmeshBlock1;                                     // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   NavmeshBlock2;                                     // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   NavmeshBlock1;                                     // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -35,9 +35,9 @@ public:
 	}
 };
 static_assert(alignof(AProp_metalTable2_C) == 0x000008, "Wrong alignment on AProp_metalTable2_C");
-static_assert(sizeof(AProp_metalTable2_C) == 0x000390, "Wrong size on AProp_metalTable2_C");
-static_assert(offsetof(AProp_metalTable2_C, NavmeshBlock2) == 0x000380, "Member 'AProp_metalTable2_C::NavmeshBlock2' has a wrong offset!");
-static_assert(offsetof(AProp_metalTable2_C, NavmeshBlock1) == 0x000388, "Member 'AProp_metalTable2_C::NavmeshBlock1' has a wrong offset!");
+static_assert(sizeof(AProp_metalTable2_C) == 0x000380, "Wrong size on AProp_metalTable2_C");
+static_assert(offsetof(AProp_metalTable2_C, NavmeshBlock2) == 0x000370, "Member 'AProp_metalTable2_C::NavmeshBlock2' has a wrong offset!");
+static_assert(offsetof(AProp_metalTable2_C, NavmeshBlock1) == 0x000378, "Member 'AProp_metalTable2_C::NavmeshBlock1' has a wrong offset!");
 
 }
 

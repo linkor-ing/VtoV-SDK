@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass NewBlueprint3.NewBlueprint3_C
 // 0x0018 (0x0238 - 0x0220)
-class NewBlueprint3::ANewBlueprint3_C final : public AActor
+class ANewBlueprint3_C final : public AActor
 {
 public:
 	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0220(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -28,18 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BlueprintGeneratedClass NewBlueprint3.NewBlueprint3_C", true, "NewBlueprint3_C">();
+		return StaticBPGeneratedClassImpl<"NewBlueprint3_C">();
 	}
-	static class NewBlueprint3::ANewBlueprint3_C* GetDefaultObj()
+	static class ANewBlueprint3_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<NewBlueprint3::ANewBlueprint3_C>();
+		return GetDefaultObjImpl<ANewBlueprint3_C>();
 	}
 };
-static_assert(alignof(NewBlueprint3::ANewBlueprint3_C) == 0x000008, "Wrong alignment on NewBlueprint3::ANewBlueprint3_C");
-static_assert(sizeof(NewBlueprint3::ANewBlueprint3_C) == 0x000238, "Wrong size on NewBlueprint3::ANewBlueprint3_C");
-static_assert(offsetof(NewBlueprint3::ANewBlueprint3_C, StaticMesh) == 0x000220, "Member 'NewBlueprint3::ANewBlueprint3_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(NewBlueprint3::ANewBlueprint3_C, Pnormal) == 0x000228, "Member 'NewBlueprint3::ANewBlueprint3_C::Pnormal' has a wrong offset!");
-static_assert(offsetof(NewBlueprint3::ANewBlueprint3_C, DefaultSceneRoot) == 0x000230, "Member 'NewBlueprint3::ANewBlueprint3_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(alignof(ANewBlueprint3_C) == 0x000008, "Wrong alignment on ANewBlueprint3_C");
+static_assert(sizeof(ANewBlueprint3_C) == 0x000238, "Wrong size on ANewBlueprint3_C");
+static_assert(offsetof(ANewBlueprint3_C, StaticMesh) == 0x000220, "Member 'ANewBlueprint3_C::StaticMesh' has a wrong offset!");
+static_assert(offsetof(ANewBlueprint3_C, Pnormal) == 0x000228, "Member 'ANewBlueprint3_C::Pnormal' has a wrong offset!");
+static_assert(offsetof(ANewBlueprint3_C, DefaultSceneRoot) == 0x000230, "Member 'ANewBlueprint3_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

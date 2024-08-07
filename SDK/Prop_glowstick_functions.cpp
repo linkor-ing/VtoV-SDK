@@ -37,6 +37,32 @@ void AProp_glowstick_C::ExecuteUbergraph_prop_glowstick(int32 EntryPoint)
 }
 
 
+// Function prop_glowstick.prop_glowstick_C.actionOptionIndex
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_glowstick_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_glowstick_C", "actionOptionIndex");
+
+	Params::Prop_glowstick_C_ActionOptionIndex Parms{};
+
+	Parms.Player = Player;
+	Parms.Param_Hit = std::move(Param_Hit);
+	Parms.Param_Index = Param_Index;
+	Parms.Action = Action;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function prop_glowstick.prop_glowstick_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -54,6 +80,20 @@ void AProp_glowstick_C::ReceiveTick(float DeltaSeconds)
 	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_glowstick.prop_glowstick_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_glowstick_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_glowstick_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -115,7 +155,7 @@ void AProp_glowstick_C::StickTo(const struct FHitResult& Param_Hit)
 }
 
 
-// Function prop_glowstick.prop_glowstick_C.obj
+// Function prop_glowstick.prop_glowstick_C.Obj
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // TArray<EObjectTypeQuery>                OutputPin                                              (ConstParm, Parm, OutParm)
@@ -125,7 +165,7 @@ void AProp_glowstick_C::Obj(const TArray<EObjectTypeQuery>* OutputPin)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("prop_glowstick_C", "obj");
+		Func = Class->GetFunction("prop_glowstick_C", "Obj");
 
 	Params::Prop_glowstick_C_Obj Parms{};
 
@@ -133,30 +173,6 @@ void AProp_glowstick_C::Obj(const TArray<EObjectTypeQuery>* OutputPin)
 
 	if (OutputPin != nullptr)
 		*OutputPin = std::move(Parms.OutputPin);
-}
-
-
-// Function prop_glowstick.prop_glowstick_C.actionOptionIndex
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_glowstick_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_glowstick_C", "actionOptionIndex");
-
-	Params::Prop_glowstick_C_ActionOptionIndex Parms{};
-
-	Parms.Player = Player;
-	Parms.Param_Hit = std::move(Param_Hit);
-	Parms.Action = Action;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -169,34 +185,6 @@ void AProp_glowstick_C::GamemodeBeginPlay()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("prop_glowstick_C", "gamemodeBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop_glowstick.prop_glowstick_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_glowstick_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_glowstick_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop_glowstick.prop_glowstick_C.Init
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AProp_glowstick_C::Init()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_glowstick_C", "Init");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -244,6 +232,20 @@ void AProp_glowstick_C::GetData(struct FStruct_save* Data)
 
 	if (Data != nullptr)
 		*Data = std::move(Parms.Data);
+}
+
+
+// Function prop_glowstick.prop_glowstick_C.Init
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AProp_glowstick_C::Init()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_glowstick_C", "Init");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

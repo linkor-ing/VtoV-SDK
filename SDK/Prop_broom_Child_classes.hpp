@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_broom_Child.prop_broom_Child_C
-// 0x0000 (0x0390 - 0x0390)
+// 0x0000 (0x0380 - 0x0380)
 class AProp_broom_Child_C final : public AProp_broom_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_broom_Child_C) == 0x000008, "Wrong alignment on AProp_broom_Child_C");
-static_assert(sizeof(AProp_broom_Child_C) == 0x000390, "Wrong size on AProp_broom_Child_C");
+static_assert(sizeof(AProp_broom_Child_C) == 0x000380, "Wrong size on AProp_broom_Child_C");
 
 }
 

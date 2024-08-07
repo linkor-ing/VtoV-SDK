@@ -37,20 +37,6 @@ void ADream_fill_C::ExecuteUbergraph_dream_fill(int32 EntryPoint)
 }
 
 
-// Function dream_fill.dream_fill_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ADream_fill_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("dream_fill_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function dream_fill.dream_fill_C.aa__UpdateFunc
 // (BlueprintEvent)
 
@@ -88,6 +74,20 @@ void ADream_fill_C::UserConstructionScript()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("dream_fill_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function dream_fill.dream_fill_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ADream_fill_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("dream_fill_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

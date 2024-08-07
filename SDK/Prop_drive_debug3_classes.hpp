@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_drive_debug3.prop_drive_debug3_C
-// 0x0000 (0x05E8 - 0x05E8)
+// 0x0000 (0x05D8 - 0x05D8)
 class AProp_drive_debug3_C final : public AProp_drive_debug0_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_drive_debug3_C) == 0x000008, "Wrong alignment on AProp_drive_debug3_C");
-static_assert(sizeof(AProp_drive_debug3_C) == 0x0005E8, "Wrong size on AProp_drive_debug3_C");
+static_assert(sizeof(AProp_drive_debug3_C) == 0x0005D8, "Wrong size on AProp_drive_debug3_C");
 
 }
 

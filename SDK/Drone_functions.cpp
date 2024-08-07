@@ -40,9 +40,9 @@ void ADrone_C::ExecuteUbergraph_drone(int32 EntryPoint)
 // Function drone.drone_C.sendShop
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_storeOrder1              Param_Order                                            (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// struct FStruct_storeOrder               Param_Order                                            (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void ADrone_C::SendShop(const struct FStruct_storeOrder1& Param_Order)
+void ADrone_C::SendShop(const struct FStruct_storeOrder& Param_Order)
 {
 	static class UFunction* Func = nullptr;
 
@@ -455,27 +455,6 @@ void ADrone_C::IgnoreSave_trigger(bool* Ignore)
 
 	if (Ignore != nullptr)
 		*Ignore = Parms.Ignore;
-}
-
-
-// Function drone.drone_C.gatherDataFromKeyT
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ADrone_C::GatherDataFromKeyT(bool* Gather)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("drone_C", "gatherDataFromKeyT");
-
-	Params::Drone_C_GatherDataFromKeyT Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Gather != nullptr)
-		*Gather = Parms.Gather;
 }
 
 }

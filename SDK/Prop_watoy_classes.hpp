@@ -19,29 +19,30 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_watoy.prop_watoy_C
-// 0x0038 (0x03B0 - 0x0378)
+// 0x0038 (0x03A0 - 0x0368)
 class AProp_watoy_C final : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_watoy_C;                       // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UArrowComponent*                        Arrow;                                             // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        Audio;                                             // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Timeline_0_a_ED748EBB4D83BB8EAB8B1DA176A4EA8D;     // 0x0390(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Timeline_0__Direction_ED748EBB4D83BB8EAB8B1DA176A4EA8D; // 0x0394(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_395[0x3];                                      // 0x0395(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Timeline_0;                                        // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Active;                                            // 0x03A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3A1[0x7];                                      // 0x03A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UComp_zerog_C*                          A;                                                 // 0x03A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3964[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_watoy_C;                       // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UArrowComponent*                        Arrow;                                             // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        Audio;                                             // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Timeline_0_a_ED748EBB4D83BB8EAB8B1DA176A4EA8D;     // 0x0380(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline_0__Direction_ED748EBB4D83BB8EAB8B1DA176A4EA8D; // 0x0384(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3965[0x3];                                     // 0x0385(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Timeline_0;                                        // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Active;                                            // 0x0390(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3966[0x7];                                     // 0x0391(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UZerogComponent_C*                      A;                                                 // 0x0398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_watoy(int32 EntryPoint);
 	void ReceiveTick(float DeltaSeconds);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
 	void Activate();
 	void Timeline_0__UpdateFunc();
 	void Timeline_0__FinishedFunc();
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 
 public:
 	static class UClass* StaticClass()
@@ -54,15 +55,15 @@ public:
 	}
 };
 static_assert(alignof(AProp_watoy_C) == 0x000008, "Wrong alignment on AProp_watoy_C");
-static_assert(sizeof(AProp_watoy_C) == 0x0003B0, "Wrong size on AProp_watoy_C");
-static_assert(offsetof(AProp_watoy_C, UberGraphFrame_Prop_watoy_C) == 0x000378, "Member 'AProp_watoy_C::UberGraphFrame_Prop_watoy_C' has a wrong offset!");
-static_assert(offsetof(AProp_watoy_C, Arrow) == 0x000380, "Member 'AProp_watoy_C::Arrow' has a wrong offset!");
-static_assert(offsetof(AProp_watoy_C, Audio) == 0x000388, "Member 'AProp_watoy_C::Audio' has a wrong offset!");
-static_assert(offsetof(AProp_watoy_C, Timeline_0_a_ED748EBB4D83BB8EAB8B1DA176A4EA8D) == 0x000390, "Member 'AProp_watoy_C::Timeline_0_a_ED748EBB4D83BB8EAB8B1DA176A4EA8D' has a wrong offset!");
-static_assert(offsetof(AProp_watoy_C, Timeline_0__Direction_ED748EBB4D83BB8EAB8B1DA176A4EA8D) == 0x000394, "Member 'AProp_watoy_C::Timeline_0__Direction_ED748EBB4D83BB8EAB8B1DA176A4EA8D' has a wrong offset!");
-static_assert(offsetof(AProp_watoy_C, Timeline_0) == 0x000398, "Member 'AProp_watoy_C::Timeline_0' has a wrong offset!");
-static_assert(offsetof(AProp_watoy_C, Active) == 0x0003A0, "Member 'AProp_watoy_C::Active' has a wrong offset!");
-static_assert(offsetof(AProp_watoy_C, A) == 0x0003A8, "Member 'AProp_watoy_C::A' has a wrong offset!");
+static_assert(sizeof(AProp_watoy_C) == 0x0003A0, "Wrong size on AProp_watoy_C");
+static_assert(offsetof(AProp_watoy_C, UberGraphFrame_Prop_watoy_C) == 0x000368, "Member 'AProp_watoy_C::UberGraphFrame_Prop_watoy_C' has a wrong offset!");
+static_assert(offsetof(AProp_watoy_C, Arrow) == 0x000370, "Member 'AProp_watoy_C::Arrow' has a wrong offset!");
+static_assert(offsetof(AProp_watoy_C, Audio) == 0x000378, "Member 'AProp_watoy_C::Audio' has a wrong offset!");
+static_assert(offsetof(AProp_watoy_C, Timeline_0_a_ED748EBB4D83BB8EAB8B1DA176A4EA8D) == 0x000380, "Member 'AProp_watoy_C::Timeline_0_a_ED748EBB4D83BB8EAB8B1DA176A4EA8D' has a wrong offset!");
+static_assert(offsetof(AProp_watoy_C, Timeline_0__Direction_ED748EBB4D83BB8EAB8B1DA176A4EA8D) == 0x000384, "Member 'AProp_watoy_C::Timeline_0__Direction_ED748EBB4D83BB8EAB8B1DA176A4EA8D' has a wrong offset!");
+static_assert(offsetof(AProp_watoy_C, Timeline_0) == 0x000388, "Member 'AProp_watoy_C::Timeline_0' has a wrong offset!");
+static_assert(offsetof(AProp_watoy_C, Active) == 0x000390, "Member 'AProp_watoy_C::Active' has a wrong offset!");
+static_assert(offsetof(AProp_watoy_C, A) == 0x000398, "Member 'AProp_watoy_C::A' has a wrong offset!");
 
 }
 

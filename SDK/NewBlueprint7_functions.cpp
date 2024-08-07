@@ -22,7 +22,7 @@ namespace SDK
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void NewBlueprint7::ANewBlueprint7_C::ExecuteUbergraph_NewBlueprint7(int32 EntryPoint)
+void ANewBlueprint7_C::ExecuteUbergraph_NewBlueprint7(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
@@ -40,7 +40,7 @@ void NewBlueprint7::ANewBlueprint7_C::ExecuteUbergraph_NewBlueprint7(int32 Entry
 // Function NewBlueprint7.NewBlueprint7_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
-void NewBlueprint7::ANewBlueprint7_C::ReceiveBeginPlay()
+void ANewBlueprint7_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
@@ -56,7 +56,7 @@ void NewBlueprint7::ANewBlueprint7_C::ReceiveBeginPlay()
 // Parameters:
 // float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void NewBlueprint7::ANewBlueprint7_C::ReceiveTick(float DeltaSeconds)
+void ANewBlueprint7_C::ReceiveTick(float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
@@ -76,7 +76,7 @@ void NewBlueprint7::ANewBlueprint7_C::ReceiveTick(float DeltaSeconds)
 // Parameters:
 // EPathFollowingResult                    MovementResult                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void NewBlueprint7::ANewBlueprint7_C::OnSuccess_F89F5A8F414EC9E1688955A98075908F(EPathFollowingResult MovementResult)
+void ANewBlueprint7_C::OnSuccess_F89F5A8F414EC9E1688955A98075908F(EPathFollowingResult MovementResult)
 {
 	static class UFunction* Func = nullptr;
 
@@ -96,7 +96,7 @@ void NewBlueprint7::ANewBlueprint7_C::OnSuccess_F89F5A8F414EC9E1688955A98075908F
 // Parameters:
 // EPathFollowingResult                    MovementResult                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void NewBlueprint7::ANewBlueprint7_C::OnFail_F89F5A8F414EC9E1688955A98075908F(EPathFollowingResult MovementResult)
+void ANewBlueprint7_C::OnFail_F89F5A8F414EC9E1688955A98075908F(EPathFollowingResult MovementResult)
 {
 	static class UFunction* Func = nullptr;
 
@@ -114,7 +114,7 @@ void NewBlueprint7::ANewBlueprint7_C::OnFail_F89F5A8F414EC9E1688955A98075908F(EP
 // Function NewBlueprint7.NewBlueprint7_C.NewFunction_0
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void NewBlueprint7::ANewBlueprint7_C::NewFunction_0()
+void ANewBlueprint7_C::NewFunction_0()
 {
 	static class UFunction* Func = nullptr;
 

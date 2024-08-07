@@ -37,6 +37,44 @@ void AProp_landmine_C::ExecuteUbergraph_prop_landmine(int32 EntryPoint)
 }
 
 
+// Function prop_landmine.prop_landmine_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_landmine_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_landmine_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function prop_landmine.prop_landmine_C.setPropProps
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Param_Static                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Param_Frozen                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Param_Active                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AProp_landmine_C::SetPropProps(bool Param_Static, bool Param_Frozen, bool Param_Active)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_landmine_C", "setPropProps");
+
+	Params::Prop_landmine_C_SetPropProps Parms{};
+
+	Parms.Param_Static = Param_Static;
+	Parms.Param_Frozen = Param_Frozen;
+	Parms.Param_Active = Param_Active;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function prop_landmine.prop_landmine_C.BndEvt__prop_landmine_Cylinder_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -88,44 +126,6 @@ void AProp_landmine_C::BndEvt__prop_landmine_Cylinder_K2Node_ComponentBoundEvent
 	Parms.OtherBodyIndex = OtherBodyIndex;
 	Parms.bFromSweep = bFromSweep;
 	Parms.SweepResult = std::move(SweepResult);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop_landmine.prop_landmine_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_landmine_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_landmine_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop_landmine.prop_landmine_C.setPropProps
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Param_Static                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Param_Frozen                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Param_Active                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AProp_landmine_C::SetPropProps(bool Param_Static, bool Param_Frozen, bool Param_Active)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_landmine_C", "setPropProps");
-
-	Params::Prop_landmine_C_SetPropProps Parms{};
-
-	Parms.Param_Static = Param_Static;
-	Parms.Param_Frozen = Param_Frozen;
-	Parms.Param_Active = Param_Active;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

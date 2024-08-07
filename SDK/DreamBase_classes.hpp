@@ -31,7 +31,7 @@ public:
 	class UStaticMeshComponent*                   Sky;                                               // 0x0248(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UBillboardComponent*                    Billboard;                                         // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         Duration;                                          // 0x0258(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_25C[0x4];                                      // 0x025C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33EC[0x4];                                     // 0x025C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FStruct_save>                   Inventory;                                         // 0x0260(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
@@ -39,7 +39,6 @@ public:
 	void ReceiveTick(float DeltaSeconds);
 	void ReceiveDestroyed();
 	void ReceiveBeginPlay();
-	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void ApplyColor(const struct FLinearColor& Color);
 	void PropRenderer_finishProps();
 	void GamemodeMakeKeys();

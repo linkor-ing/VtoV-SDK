@@ -10,7 +10,6 @@
 
 #include "Basic.hpp"
 
-#include "Struct_multisectionCustomMesh_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "Enum_interactionActions_structs.hpp"
@@ -20,19 +19,25 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass printedObject.printedObject_C
-// 0x0160 (0x0380 - 0x0220)
+// 0x0068 (0x0288 - 0x0220)
 class APrintedObject_C final : public AActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UComp_physicsImpact_C*                  PhysicsImpact;                                     // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPhysicsImpactComponent_C*              PhysicsImpact;                                     // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UProceduralMeshComponent*               ProceduralMesh;                                    // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class FString                                 Name_PrintedObject_C;                              // 0x0238(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               Dynmat;                                            // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 Key;                                               // 0x0250(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          IsValidModel;                                      // 0x0260(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_261[0x7];                                      // 0x0261(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_multisectionCustomMesh         MultisectionData;                                  // 0x0268(0x0118)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	uint8                                         Pad_3EF1[0x7];                                     // 0x0261(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Tex;                                               // 0x0268(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Tex_pbr;                                           // 0x0270(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Tex_normal;                                        // 0x0278(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETextureFilter                                Filter_tex;                                        // 0x0280(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETextureFilter                                Filter_pbr;                                        // 0x0281(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETextureFilter                                Filter_normal;                                     // 0x0282(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Material;                                          // 0x0283(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_printedObject(int32 EntryPoint);
@@ -48,9 +53,6 @@ public:
 	void ReceiveDestroyed();
 	void ReceiveBeginPlay();
 	void SetIgnoreSave(bool Ignore);
-	void HookTension(class AHook_C* Hook);
-	void CleanSponge(float Clean, class AMainPlayer_C* Player);
-	void Crafted();
 	void Hooked(class AHook_C* Hook);
 	void AttemptIgnite();
 	void PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
@@ -72,8 +74,8 @@ public:
 	void Exploded(float Damage, const struct FVector& Location);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
-	void ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
+	void ReceivedPhyiscsDamage();
 	void Microwave();
 	void Ignite(float Fuel);
 	void FireDamage(float Damage);
@@ -91,30 +93,27 @@ public:
 	void LeaveWater(class AWaterVolume_C* Water);
 	void EnterWater(class AWaterVolume_C* Water);
 	void ImpactDamage(float Damage, const struct FHitResult& Hit, class AActor* Actor, const struct FVector& Impact);
-	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void ApplyColor(const struct FLinearColor& Color);
 	void PropRenderer_finishProps();
 	void GamemodeMakeKeys();
 	void AnyKey(const struct FKey& Param_Key, bool Pressed);
 	void UserConstructionScript();
-	void LoadFromPrinter(const struct FStruct_multisectionCustomMesh& MultisectionMesh);
+	void LoadFromPrinter(const struct FStruct_customMesh& Data, class UTexture* Param_Tex, class UTexture* Normal, class UTexture* Pbr, ETextureFilter Param_Filter_tex, ETextureFilter Param_Filter_pbr, ETextureFilter Param_Filter_normal, uint8 Param_Material);
 	void Load();
 	void SetFilters();
 	void IgnoreSave(bool* Param_IgnoreSave);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
 	void SkipPreDelete(bool* Skip);
-	void GatherDataFromKey(bool* Gather);
 	void SetPath(const TArray<struct FVector>& Path, bool* Return);
 	void GetOnlyKey(class FString* Param_Key);
 	void ProcessKeys(bool* Return);
 	void CanBeUsedHold(bool* Return);
 	void GetKey(class FString* Param_Key);
 	void ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 	void GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled);
 	void SkipRadial(bool* Skip);
-	void GetPriceMultiplier(float* PriceMult);
 	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base);
 
 public:
@@ -128,7 +127,7 @@ public:
 	}
 };
 static_assert(alignof(APrintedObject_C) == 0x000008, "Wrong alignment on APrintedObject_C");
-static_assert(sizeof(APrintedObject_C) == 0x000380, "Wrong size on APrintedObject_C");
+static_assert(sizeof(APrintedObject_C) == 0x000288, "Wrong size on APrintedObject_C");
 static_assert(offsetof(APrintedObject_C, UberGraphFrame) == 0x000220, "Member 'APrintedObject_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(APrintedObject_C, PhysicsImpact) == 0x000228, "Member 'APrintedObject_C::PhysicsImpact' has a wrong offset!");
 static_assert(offsetof(APrintedObject_C, ProceduralMesh) == 0x000230, "Member 'APrintedObject_C::ProceduralMesh' has a wrong offset!");
@@ -136,7 +135,13 @@ static_assert(offsetof(APrintedObject_C, Name_PrintedObject_C) == 0x000238, "Mem
 static_assert(offsetof(APrintedObject_C, Dynmat) == 0x000248, "Member 'APrintedObject_C::Dynmat' has a wrong offset!");
 static_assert(offsetof(APrintedObject_C, Key) == 0x000250, "Member 'APrintedObject_C::Key' has a wrong offset!");
 static_assert(offsetof(APrintedObject_C, IsValidModel) == 0x000260, "Member 'APrintedObject_C::IsValidModel' has a wrong offset!");
-static_assert(offsetof(APrintedObject_C, MultisectionData) == 0x000268, "Member 'APrintedObject_C::MultisectionData' has a wrong offset!");
+static_assert(offsetof(APrintedObject_C, Tex) == 0x000268, "Member 'APrintedObject_C::Tex' has a wrong offset!");
+static_assert(offsetof(APrintedObject_C, Tex_pbr) == 0x000270, "Member 'APrintedObject_C::Tex_pbr' has a wrong offset!");
+static_assert(offsetof(APrintedObject_C, Tex_normal) == 0x000278, "Member 'APrintedObject_C::Tex_normal' has a wrong offset!");
+static_assert(offsetof(APrintedObject_C, Filter_tex) == 0x000280, "Member 'APrintedObject_C::Filter_tex' has a wrong offset!");
+static_assert(offsetof(APrintedObject_C, Filter_pbr) == 0x000281, "Member 'APrintedObject_C::Filter_pbr' has a wrong offset!");
+static_assert(offsetof(APrintedObject_C, Filter_normal) == 0x000282, "Member 'APrintedObject_C::Filter_normal' has a wrong offset!");
+static_assert(offsetof(APrintedObject_C, Material) == 0x000283, "Member 'APrintedObject_C::Material' has a wrong offset!");
 
 }
 

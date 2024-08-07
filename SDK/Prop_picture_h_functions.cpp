@@ -37,28 +37,15 @@ void AProp_picture_h_C::ExecuteUbergraph_prop_picture_h(int32 EntryPoint)
 }
 
 
-// Function prop_picture_h.prop_picture_h_C.upd
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void AProp_picture_h_C::Upd()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_picture_h_C", "upd");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_picture_h.prop_picture_h_C.actionOptionIndex
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_picture_h_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action)
+void AProp_picture_h_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -69,27 +56,8 @@ void AProp_picture_h_C::ActionOptionIndex(class AMainPlayer_C* Player, const str
 
 	Parms.Player = Player;
 	Parms.Param_Hit = std::move(Param_Hit);
+	Parms.Param_Index = Param_Index;
 	Parms.Action = Action;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop_picture_h.prop_picture_h_C.settingsApplied
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void AProp_picture_h_C::SettingsApplied(const struct FStruct_settings& Settings)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_picture_h_C", "settingsApplied");
-
-	Params::Prop_picture_h_C_SettingsApplied Parms{};
-
-	Parms.Settings = std::move(Settings);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -109,25 +77,35 @@ void AProp_picture_h_C::ReceiveBeginPlay()
 }
 
 
-// Function prop_picture_h.prop_picture_h_C.texturePickerApply
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function prop_picture_h.prop_picture_h_C.upd
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void AProp_picture_h_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
+void AProp_picture_h_C::Upd()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("prop_picture_h_C", "texturePickerApply");
+		Func = Class->GetFunction("prop_picture_h_C", "upd");
 
-	Params::Prop_picture_h_C_TexturePickerApply Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Picker = Picker;
-	Parms.Texture = Texture;
-	Parms.Param_Index = Param_Index;
+
+// Function prop_picture_h.prop_picture_h_C.settingsApplied
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_picture_h_C::SettingsApplied(const struct FStruct_settings& Settings)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_picture_h_C", "settingsApplied");
+
+	Params::Prop_picture_h_C_SettingsApplied Parms{};
+
+	Parms.Settings = std::move(Settings);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -186,9 +164,8 @@ void AProp_picture_h_C::GetData(struct FStruct_save* Data)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_picture_h_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
+void AProp_picture_h_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
 {
 	static class UFunction* Func = nullptr;
 
@@ -210,9 +187,6 @@ void AProp_picture_h_C::LookAt(class AMainPlayer_C* Player, const struct FHitRes
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
 }
 
 
@@ -225,9 +199,8 @@ void AProp_picture_h_C::LookAt(class AMainPlayer_C* Player, const struct FHitRes
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_picture_h_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
+void AProp_picture_h_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
 {
 	static class UFunction* Func = nullptr;
 
@@ -250,9 +223,6 @@ void AProp_picture_h_C::GetActionOptions(class AMainPlayer_C* Player, class UPri
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
 }
 
 }

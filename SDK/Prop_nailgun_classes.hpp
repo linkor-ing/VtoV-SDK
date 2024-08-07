@@ -18,11 +18,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_nailgun.prop_nailgun_C
-// 0x0008 (0x0380 - 0x0378)
+// 0x0008 (0x0370 - 0x0368)
 class AProp_nailgun_C final : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_nailgun_C;                     // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	uint8                                         Pad_1295[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_nailgun_C;                     // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_prop_nailgun(int32 EntryPoint);
@@ -39,8 +40,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_nailgun_C) == 0x000008, "Wrong alignment on AProp_nailgun_C");
-static_assert(sizeof(AProp_nailgun_C) == 0x000380, "Wrong size on AProp_nailgun_C");
-static_assert(offsetof(AProp_nailgun_C, UberGraphFrame_Prop_nailgun_C) == 0x000378, "Member 'AProp_nailgun_C::UberGraphFrame_Prop_nailgun_C' has a wrong offset!");
+static_assert(sizeof(AProp_nailgun_C) == 0x000370, "Wrong size on AProp_nailgun_C");
+static_assert(offsetof(AProp_nailgun_C, UberGraphFrame_Prop_nailgun_C) == 0x000368, "Member 'AProp_nailgun_C::UberGraphFrame_Prop_nailgun_C' has a wrong offset!");
 
 }
 

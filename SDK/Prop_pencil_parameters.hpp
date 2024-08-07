@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "Struct_save_structs.hpp"
 #include "Struct_mFloat_structs.hpp"
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -25,19 +25,19 @@ struct Prop_pencil_C_ExecuteUbergraph_prop_pencil final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3AB3[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A[0x2];                                       // 0x001A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3AB4[0x2];                                     // 0x001A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0024(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0030(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x003C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0048(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3AB5[0x4];                                     // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -47,14 +47,14 @@ public:
 	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0084(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0090(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3AB6[0x4];                                     // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AProp_clipboard_paper_C*                K2Node_DynamicCast_AsProp_Clipboard_Paper;         // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3AB7[0x7];                                     // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AProp_paper_drawable_C*                 K2Node_DynamicCast_AsProp_Paper_Drawable;          // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C1[0xF];                                       // 0x00C1(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3AB8[0xF];                                     // 0x00C1(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x00D0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AProp_paper_drawable_C*                 CallFunc_FinishSpawningActor_ReturnValue;          // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -111,7 +111,7 @@ public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadData_return;                          // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3AB9[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mFloat                         CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	float                                         CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -124,37 +124,34 @@ static_assert(offsetof(Prop_pencil_C_LoadData, CallFunc_Array_Get_Item) == 0x000
 static_assert(offsetof(Prop_pencil_C_LoadData, CallFunc_Array_Get_Item_1) == 0x0000D8, "Member 'Prop_pencil_C_LoadData::CallFunc_Array_Get_Item_1' has a wrong offset!");
 
 // Function prop_pencil.prop_pencil_C.lookAt
-// 0x0148 (0x0148 - 0x0000)
+// 0x0140 (0x0140 - 0x0000)
 struct Prop_pencil_C_LookAt final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3ABA[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x00B8(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00D0(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0110(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0120(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0138(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x00B0(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00C8(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0108(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0118(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0130(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_pencil_C_LookAt) == 0x000008, "Wrong alignment on Prop_pencil_C_LookAt");
-static_assert(sizeof(Prop_pencil_C_LookAt) == 0x000148, "Wrong size on Prop_pencil_C_LookAt");
+static_assert(sizeof(Prop_pencil_C_LookAt) == 0x000140, "Wrong size on Prop_pencil_C_LookAt");
 static_assert(offsetof(Prop_pencil_C_LookAt, Player) == 0x000000, "Member 'Prop_pencil_C_LookAt::Player' has a wrong offset!");
 static_assert(offsetof(Prop_pencil_C_LookAt, Param_Hit) == 0x000008, "Member 'Prop_pencil_C_LookAt::Param_Hit' has a wrong offset!");
 static_assert(offsetof(Prop_pencil_C_LookAt, Return) == 0x000090, "Member 'Prop_pencil_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(Prop_pencil_C_LookAt, Text) == 0x000098, "Member 'Prop_pencil_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(Prop_pencil_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'Prop_pencil_C_LookAt::boundObjectReplace' has a wrong offset!");
-static_assert(offsetof(Prop_pencil_C_LookAt, Number) == 0x0000B0, "Member 'Prop_pencil_C_LookAt::Number' has a wrong offset!");
-static_assert(offsetof(Prop_pencil_C_LookAt, CallFunc_Conv_FloatToText_ReturnValue) == 0x0000B8, "Member 'Prop_pencil_C_LookAt::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_pencil_C_LookAt, K2Node_MakeStruct_FormatArgumentData) == 0x0000D0, "Member 'Prop_pencil_C_LookAt::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(Prop_pencil_C_LookAt, K2Node_MakeArray_Array) == 0x000110, "Member 'Prop_pencil_C_LookAt::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Prop_pencil_C_LookAt, CallFunc_Format_ReturnValue) == 0x000120, "Member 'Prop_pencil_C_LookAt::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_pencil_C_LookAt, CallFunc_Conv_TextToString_ReturnValue) == 0x000138, "Member 'Prop_pencil_C_LookAt::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_pencil_C_LookAt, CallFunc_Conv_FloatToText_ReturnValue) == 0x0000B0, "Member 'Prop_pencil_C_LookAt::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_pencil_C_LookAt, K2Node_MakeStruct_FormatArgumentData) == 0x0000C8, "Member 'Prop_pencil_C_LookAt::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(Prop_pencil_C_LookAt, K2Node_MakeArray_Array) == 0x000108, "Member 'Prop_pencil_C_LookAt::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Prop_pencil_C_LookAt, CallFunc_Format_ReturnValue) == 0x000118, "Member 'Prop_pencil_C_LookAt::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_pencil_C_LookAt, CallFunc_Conv_TextToString_ReturnValue) == 0x000130, "Member 'Prop_pencil_C_LookAt::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
 
 // Function prop_pencil.prop_pencil_C.getData
 // 0x0280 (0x0280 - 0x0000)

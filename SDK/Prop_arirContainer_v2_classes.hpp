@@ -19,21 +19,21 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_arirContainer_v2.prop_arirContainer_v2_C
-// 0x0030 (0x0430 - 0x0400)
+// 0x0030 (0x0420 - 0x03F0)
 class AProp_arirContainer_v2_C final : public AProp_arirContainer_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_arirContainer_v2_C;            // 0x0400(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UAudioComponent*                        SparkSh_Cue;                                       // 0x0408(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        ArirCrateAlarm_s;                                  // 0x0410(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        ArirCrateAlarm;                                    // 0x0418(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          Alarm;                                             // 0x0420(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_421[0x7];                                      // 0x0421(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AArirSlapper_C*                         Slapper;                                           // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_arirContainer_v2_C;            // 0x03F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UAudioComponent*                        SparkSh_Cue;                                       // 0x03F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        ArirCrateAlarm_s;                                  // 0x0400(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        ArirCrateAlarm;                                    // 0x0408(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          Alarm;                                             // 0x0410(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4228[0x7];                                     // 0x0411(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AArirSlapper_C*                         Slapper;                                           // 0x0418(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_arirContainer_v2(int32 EntryPoint);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
 	void D(class AActor* DestroyedActor);
 
 public:
@@ -47,13 +47,13 @@ public:
 	}
 };
 static_assert(alignof(AProp_arirContainer_v2_C) == 0x000008, "Wrong alignment on AProp_arirContainer_v2_C");
-static_assert(sizeof(AProp_arirContainer_v2_C) == 0x000430, "Wrong size on AProp_arirContainer_v2_C");
-static_assert(offsetof(AProp_arirContainer_v2_C, UberGraphFrame_Prop_arirContainer_v2_C) == 0x000400, "Member 'AProp_arirContainer_v2_C::UberGraphFrame_Prop_arirContainer_v2_C' has a wrong offset!");
-static_assert(offsetof(AProp_arirContainer_v2_C, SparkSh_Cue) == 0x000408, "Member 'AProp_arirContainer_v2_C::SparkSh_Cue' has a wrong offset!");
-static_assert(offsetof(AProp_arirContainer_v2_C, ArirCrateAlarm_s) == 0x000410, "Member 'AProp_arirContainer_v2_C::ArirCrateAlarm_s' has a wrong offset!");
-static_assert(offsetof(AProp_arirContainer_v2_C, ArirCrateAlarm) == 0x000418, "Member 'AProp_arirContainer_v2_C::ArirCrateAlarm' has a wrong offset!");
-static_assert(offsetof(AProp_arirContainer_v2_C, Alarm) == 0x000420, "Member 'AProp_arirContainer_v2_C::Alarm' has a wrong offset!");
-static_assert(offsetof(AProp_arirContainer_v2_C, Slapper) == 0x000428, "Member 'AProp_arirContainer_v2_C::Slapper' has a wrong offset!");
+static_assert(sizeof(AProp_arirContainer_v2_C) == 0x000420, "Wrong size on AProp_arirContainer_v2_C");
+static_assert(offsetof(AProp_arirContainer_v2_C, UberGraphFrame_Prop_arirContainer_v2_C) == 0x0003F0, "Member 'AProp_arirContainer_v2_C::UberGraphFrame_Prop_arirContainer_v2_C' has a wrong offset!");
+static_assert(offsetof(AProp_arirContainer_v2_C, SparkSh_Cue) == 0x0003F8, "Member 'AProp_arirContainer_v2_C::SparkSh_Cue' has a wrong offset!");
+static_assert(offsetof(AProp_arirContainer_v2_C, ArirCrateAlarm_s) == 0x000400, "Member 'AProp_arirContainer_v2_C::ArirCrateAlarm_s' has a wrong offset!");
+static_assert(offsetof(AProp_arirContainer_v2_C, ArirCrateAlarm) == 0x000408, "Member 'AProp_arirContainer_v2_C::ArirCrateAlarm' has a wrong offset!");
+static_assert(offsetof(AProp_arirContainer_v2_C, Alarm) == 0x000410, "Member 'AProp_arirContainer_v2_C::Alarm' has a wrong offset!");
+static_assert(offsetof(AProp_arirContainer_v2_C, Slapper) == 0x000418, "Member 'AProp_arirContainer_v2_C::Slapper' has a wrong offset!");
 
 }
 

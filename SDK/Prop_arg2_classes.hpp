@@ -19,21 +19,22 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_arg2.prop_arg2_C
-// 0x0018 (0x0390 - 0x0378)
+// 0x0018 (0x0380 - 0x0368)
 class AProp_arg2_C : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_arg2_C;                        // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UAudioComponent*                        ArgemusScream;                                     // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	int32                                         Size;                                              // 0x0388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Used;                                              // 0x038C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39B4[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_arg2_C;                        // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UAudioComponent*                        ArgemusScream;                                     // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	int32                                         Size;                                              // 0x0378(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Used;                                              // 0x037C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_prop_arg2(int32 EntryPoint);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
 	void BndEvt__StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Param_Hit);
-	void Upd();
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
 	void ReceiveBeginPlay();
+	void Upd();
 	void Microwave();
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
@@ -49,11 +50,11 @@ public:
 	}
 };
 static_assert(alignof(AProp_arg2_C) == 0x000008, "Wrong alignment on AProp_arg2_C");
-static_assert(sizeof(AProp_arg2_C) == 0x000390, "Wrong size on AProp_arg2_C");
-static_assert(offsetof(AProp_arg2_C, UberGraphFrame_Prop_arg2_C) == 0x000378, "Member 'AProp_arg2_C::UberGraphFrame_Prop_arg2_C' has a wrong offset!");
-static_assert(offsetof(AProp_arg2_C, ArgemusScream) == 0x000380, "Member 'AProp_arg2_C::ArgemusScream' has a wrong offset!");
-static_assert(offsetof(AProp_arg2_C, Size) == 0x000388, "Member 'AProp_arg2_C::Size' has a wrong offset!");
-static_assert(offsetof(AProp_arg2_C, Used) == 0x00038C, "Member 'AProp_arg2_C::Used' has a wrong offset!");
+static_assert(sizeof(AProp_arg2_C) == 0x000380, "Wrong size on AProp_arg2_C");
+static_assert(offsetof(AProp_arg2_C, UberGraphFrame_Prop_arg2_C) == 0x000368, "Member 'AProp_arg2_C::UberGraphFrame_Prop_arg2_C' has a wrong offset!");
+static_assert(offsetof(AProp_arg2_C, ArgemusScream) == 0x000370, "Member 'AProp_arg2_C::ArgemusScream' has a wrong offset!");
+static_assert(offsetof(AProp_arg2_C, Size) == 0x000378, "Member 'AProp_arg2_C::Size' has a wrong offset!");
+static_assert(offsetof(AProp_arg2_C, Used) == 0x00037C, "Member 'AProp_arg2_C::Used' has a wrong offset!");
 
 }
 

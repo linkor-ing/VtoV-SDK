@@ -37,6 +37,20 @@ void AProp_wireComponent_laser_C::ExecuteUbergraph_prop_wireComponent_laser(int3
 }
 
 
+// Function prop_wireComponent_laser.prop_wireComponent_laser_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_wireComponent_laser_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_wireComponent_laser_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function prop_wireComponent_laser.prop_wireComponent_laser_C.wirePass
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -54,20 +68,6 @@ void AProp_wireComponent_laser_C::WirePass(class AWire_C* Wire)
 	Parms.Wire = Wire;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop_wireComponent_laser.prop_wireComponent_laser_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_wireComponent_laser_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_wireComponent_laser_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

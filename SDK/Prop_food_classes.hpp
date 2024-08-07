@@ -11,56 +11,57 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
 #include "Struct_food1_structs.hpp"
 #include "Prop_classes.hpp"
-#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass prop_food.prop_food_C
-// 0x0058 (0x03D0 - 0x0378)
-class AProp_food_C : public AProp_C
+// 0x0058 (0x03C0 - 0x0368)
+#pragma pack(push, 0x1)
+class alignas(0x08) AProp_food_C : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_food_C;                        // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UAudioComponent*                        FliesSlow_Cue;                                     // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               Eff_spoiled;                                       // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               Eff_steam;                                         // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_food1                          FoodData;                                          // 0x0398(0x0018)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	bool                                          Antibreather;                                      // 0x03B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3B1[0x3];                                      // 0x03B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Temperature;                                       // 0x03B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Celsius;                                           // 0x03B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Ripeness;                                          // 0x03BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsFrozen;                                          // 0x03C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3C1[0x3];                                      // 0x03C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         SpoilageRate;                                      // 0x03C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          TempLessThan0;                                     // 0x03C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          IgnoreSpoiling;                                    // 0x03C9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          NotEdible;                                         // 0x03CA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          IgnoreRotting;                                     // 0x03CB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3E94[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_food_C;                        // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UAudioComponent*                        FliesSlow_Cue;                                     // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Eff_spoiled;                                       // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Eff_steam;                                         // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_food1                          FoodData;                                          // 0x0388(0x0018)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	bool                                          Antibreather;                                      // 0x03A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3E95[0x3];                                     // 0x03A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Temperature;                                       // 0x03A4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Celsius;                                           // 0x03A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Ripeness;                                          // 0x03AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsFrozen;                                          // 0x03B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3E96[0x3];                                     // 0x03B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         SpoilageRate;                                      // 0x03B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          TempLessThan0;                                     // 0x03B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IgnoreSpoiling;                                    // 0x03B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          NotEdible;                                         // 0x03BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          IgnoreRotting;                                     // 0x03BB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_prop_food(int32 EntryPoint);
+	void SettingsApplied(const struct FStruct_settings& Settings);
 	void FireDamage(float Damage);
 	void ReceiveTick(float DeltaSeconds);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
+	void ReceiveBeginPlay();
+	void ReceiveDestroyed();
 	void Used();
-	void SettingsApplied(const struct FStruct_settings& Settings);
 	void AccumulateTemperature(float Param_Temperature, float Speed);
 	void AddTemperature(float Param_Temperature);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
-	void ReceiveBeginPlay();
 	void Microwave();
-	void ReceiveDestroyed();
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void IsButtonUsed(bool* Failed);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
 	void GetData(struct FStruct_save* Data);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
-	void Init();
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 
 public:
 	static class UClass* StaticClass()
@@ -72,23 +73,24 @@ public:
 		return GetDefaultObjImpl<AProp_food_C>();
 	}
 };
+#pragma pack(pop)
 static_assert(alignof(AProp_food_C) == 0x000008, "Wrong alignment on AProp_food_C");
-static_assert(sizeof(AProp_food_C) == 0x0003D0, "Wrong size on AProp_food_C");
-static_assert(offsetof(AProp_food_C, UberGraphFrame_Prop_food_C) == 0x000378, "Member 'AProp_food_C::UberGraphFrame_Prop_food_C' has a wrong offset!");
-static_assert(offsetof(AProp_food_C, FliesSlow_Cue) == 0x000380, "Member 'AProp_food_C::FliesSlow_Cue' has a wrong offset!");
-static_assert(offsetof(AProp_food_C, Eff_spoiled) == 0x000388, "Member 'AProp_food_C::Eff_spoiled' has a wrong offset!");
-static_assert(offsetof(AProp_food_C, Eff_steam) == 0x000390, "Member 'AProp_food_C::Eff_steam' has a wrong offset!");
-static_assert(offsetof(AProp_food_C, FoodData) == 0x000398, "Member 'AProp_food_C::FoodData' has a wrong offset!");
-static_assert(offsetof(AProp_food_C, Antibreather) == 0x0003B0, "Member 'AProp_food_C::Antibreather' has a wrong offset!");
-static_assert(offsetof(AProp_food_C, Temperature) == 0x0003B4, "Member 'AProp_food_C::Temperature' has a wrong offset!");
-static_assert(offsetof(AProp_food_C, Celsius) == 0x0003B8, "Member 'AProp_food_C::Celsius' has a wrong offset!");
-static_assert(offsetof(AProp_food_C, Ripeness) == 0x0003BC, "Member 'AProp_food_C::Ripeness' has a wrong offset!");
-static_assert(offsetof(AProp_food_C, IsFrozen) == 0x0003C0, "Member 'AProp_food_C::IsFrozen' has a wrong offset!");
-static_assert(offsetof(AProp_food_C, SpoilageRate) == 0x0003C4, "Member 'AProp_food_C::SpoilageRate' has a wrong offset!");
-static_assert(offsetof(AProp_food_C, TempLessThan0) == 0x0003C8, "Member 'AProp_food_C::TempLessThan0' has a wrong offset!");
-static_assert(offsetof(AProp_food_C, IgnoreSpoiling) == 0x0003C9, "Member 'AProp_food_C::IgnoreSpoiling' has a wrong offset!");
-static_assert(offsetof(AProp_food_C, NotEdible) == 0x0003CA, "Member 'AProp_food_C::NotEdible' has a wrong offset!");
-static_assert(offsetof(AProp_food_C, IgnoreRotting) == 0x0003CB, "Member 'AProp_food_C::IgnoreRotting' has a wrong offset!");
+static_assert(sizeof(AProp_food_C) == 0x0003C0, "Wrong size on AProp_food_C");
+static_assert(offsetof(AProp_food_C, UberGraphFrame_Prop_food_C) == 0x000368, "Member 'AProp_food_C::UberGraphFrame_Prop_food_C' has a wrong offset!");
+static_assert(offsetof(AProp_food_C, FliesSlow_Cue) == 0x000370, "Member 'AProp_food_C::FliesSlow_Cue' has a wrong offset!");
+static_assert(offsetof(AProp_food_C, Eff_spoiled) == 0x000378, "Member 'AProp_food_C::Eff_spoiled' has a wrong offset!");
+static_assert(offsetof(AProp_food_C, Eff_steam) == 0x000380, "Member 'AProp_food_C::Eff_steam' has a wrong offset!");
+static_assert(offsetof(AProp_food_C, FoodData) == 0x000388, "Member 'AProp_food_C::FoodData' has a wrong offset!");
+static_assert(offsetof(AProp_food_C, Antibreather) == 0x0003A0, "Member 'AProp_food_C::Antibreather' has a wrong offset!");
+static_assert(offsetof(AProp_food_C, Temperature) == 0x0003A4, "Member 'AProp_food_C::Temperature' has a wrong offset!");
+static_assert(offsetof(AProp_food_C, Celsius) == 0x0003A8, "Member 'AProp_food_C::Celsius' has a wrong offset!");
+static_assert(offsetof(AProp_food_C, Ripeness) == 0x0003AC, "Member 'AProp_food_C::Ripeness' has a wrong offset!");
+static_assert(offsetof(AProp_food_C, IsFrozen) == 0x0003B0, "Member 'AProp_food_C::IsFrozen' has a wrong offset!");
+static_assert(offsetof(AProp_food_C, SpoilageRate) == 0x0003B4, "Member 'AProp_food_C::SpoilageRate' has a wrong offset!");
+static_assert(offsetof(AProp_food_C, TempLessThan0) == 0x0003B8, "Member 'AProp_food_C::TempLessThan0' has a wrong offset!");
+static_assert(offsetof(AProp_food_C, IgnoreSpoiling) == 0x0003B9, "Member 'AProp_food_C::IgnoreSpoiling' has a wrong offset!");
+static_assert(offsetof(AProp_food_C, NotEdible) == 0x0003BA, "Member 'AProp_food_C::NotEdible' has a wrong offset!");
+static_assert(offsetof(AProp_food_C, IgnoreRotting) == 0x0003BB, "Member 'AProp_food_C::IgnoreRotting' has a wrong offset!");
 
 }
 

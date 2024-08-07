@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "Prop_cookingFood_classes.hpp"
+#include "Prop_food_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass prop_food_pumpkin.prop_food_pumpkin_C
-// 0x0000 (0x03F8 - 0x03F8)
-class AProp_food_pumpkin_C final : public AProp_cookingFood_C
+// 0x0000 (0x03C0 - 0x03C0)
+class AProp_food_pumpkin_C final : public AProp_food_C
 {
 public:
 	static class UClass* StaticClass()
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_food_pumpkin_C) == 0x000008, "Wrong alignment on AProp_food_pumpkin_C");
-static_assert(sizeof(AProp_food_pumpkin_C) == 0x0003F8, "Wrong size on AProp_food_pumpkin_C");
+static_assert(sizeof(AProp_food_pumpkin_C) == 0x0003C0, "Wrong size on AProp_food_pumpkin_C");
 
 }
 

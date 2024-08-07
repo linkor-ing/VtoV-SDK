@@ -19,19 +19,20 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_medkit.prop_medkit_C
-// 0x0010 (0x0388 - 0x0378)
+// 0x0010 (0x0378 - 0x0368)
 class AProp_medkit_C : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_medkit_C;                      // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	float                                         Heal;                                              // 0x0380(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3ABD[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_medkit_C;                      // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	float                                         Heal;                                              // 0x0370(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_medkit(int32 EntryPoint);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 
 public:
 	static class UClass* StaticClass()
@@ -44,9 +45,9 @@ public:
 	}
 };
 static_assert(alignof(AProp_medkit_C) == 0x000008, "Wrong alignment on AProp_medkit_C");
-static_assert(sizeof(AProp_medkit_C) == 0x000388, "Wrong size on AProp_medkit_C");
-static_assert(offsetof(AProp_medkit_C, UberGraphFrame_Prop_medkit_C) == 0x000378, "Member 'AProp_medkit_C::UberGraphFrame_Prop_medkit_C' has a wrong offset!");
-static_assert(offsetof(AProp_medkit_C, Heal) == 0x000380, "Member 'AProp_medkit_C::Heal' has a wrong offset!");
+static_assert(sizeof(AProp_medkit_C) == 0x000378, "Wrong size on AProp_medkit_C");
+static_assert(offsetof(AProp_medkit_C, UberGraphFrame_Prop_medkit_C) == 0x000368, "Member 'AProp_medkit_C::UberGraphFrame_Prop_medkit_C' has a wrong offset!");
+static_assert(offsetof(AProp_medkit_C, Heal) == 0x000370, "Member 'AProp_medkit_C::Heal' has a wrong offset!");
 
 }
 

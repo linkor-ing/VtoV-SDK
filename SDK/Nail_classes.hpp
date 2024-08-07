@@ -34,21 +34,21 @@ public:
 	class AActor*                                 Actor_A;                                           // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 Actor_B;                                           // 0x0288(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Normal;                                            // 0x0290(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29C[0x4];                                      // 0x029C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3452[0x4];                                     // 0x029C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Actor_A_key;                                       // 0x02A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 Actor_B_key;                                       // 0x02B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	struct FVector                                PinLoc_A;                                          // 0x02C0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                PinLoc_B;                                          // 0x02CC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          A;                                                 // 0x02D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D9[0x3];                                      // 0x02D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3453[0x3];                                     // 0x02D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                PinNormal;                                         // 0x02DC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          broken;                                            // 0x02E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Static;                                            // 0x02E9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EA[0x2];                                      // 0x02EA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3454[0x2];                                     // 0x02EA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Type;                                              // 0x02EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               PinRot_A;                                          // 0x02F0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FRotator                               PinRot_B;                                          // 0x02FC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_308[0x8];                                      // 0x0308(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3455[0x8];                                     // 0x0308(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Pin_A;                                             // 0x0310(0x0030)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor)
 	struct FTransform                             Pin_B;                                             // 0x0340(0x0030)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor)
 	float                                         Length;                                            // 0x0370(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
@@ -57,35 +57,34 @@ public:
 	void ExecuteUbergraph_nail(int32 EntryPoint);
 	void ApplyColor(const struct FLinearColor& Color);
 	void ReceiveBeginPlay();
-	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void Assign();
 	void D1(class AActor* DestroyedActor);
 	void D2(class AActor* DestroyedActor);
+	void AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Hit, const struct FVector& Impact, bool SkipSetting);
 	void ReceiveDestroyed();
 	void Aea();
 	void BndEvt__PhysicsConstraint_K2Node_ComponentBoundEvent_0_ConstraintBrokenSignature__DelegateSignature(int32 ConstraintIndex);
-	void SignalDeleted();
 	void PropRenderer_finishProps();
+	void SignalDeleted();
+	void GamemodeBeginPlay();
 	void SignalSaved();
 	void StuffUpgraded(class AMainGamemode_C* GameMode);
-	void GamemodeBeginPlay();
 	void GamemodeMakeKeys();
 	void AnyKey(const struct FKey& Param_Key, bool Pressed);
 	void GamemodePreLoad();
 	void Unfocused();
-	void Unfoc();
 	void SettingsApplied(const struct FStruct_settings& Settings);
+	void Unfoc();
 	void N(struct FVector* Param_A, struct FVector* B);
 	void NailNail(bool Param_A, bool* Fail);
 	void Attach(bool Param_A, bool* Fail);
 	void SetRefLoc();
 	void Detached();
 	void StickNoise();
-	void AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Hit, const struct FVector& Impact, bool SkipSetting);
+	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
 	void ProcessKeys(bool* Return);
-	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base);
 
 public:
 	static class UClass* StaticClass()

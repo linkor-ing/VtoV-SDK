@@ -10,76 +10,73 @@
 
 #include "Basic.hpp"
 
-#include "Struct_settings_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Struct_save_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Struct_mClass_structs.hpp"
 #include "Struct_mFloat_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Struct_mBool_structs.hpp"
 #include "Struct_mString_structs.hpp"
+#include "Struct_settings_structs.hpp"
 #include "InputCore_structs.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function dirthole_item.dirthole_item_C.ExecuteUbergraph_dirthole_item
-// 0x0310 (0x0310 - 0x0000)
+// 0x02D0 (0x02D0 - 0x0000)
 struct Dirthole_item_C_ExecuteUbergraph_dirthole_item final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E27[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IInt_save1_C>          K2Node_DynamicCast_AsInt_Save_1;                   // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E28[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E29[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           CallFunc_getData_data;                             // 0x0030(0x00C0)(HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component;          // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E2A[0x7];                                     // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects;                  // 0x0100(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E2B[0x7];                                     // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0118(0x0010)(ConstParm, ReferenceParm)
 	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0130(0x00F0)(HasGetValueTypeHash)
-	struct FKey                                   K2Node_Event_key;                                  // 0x0220(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed;                              // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_239[0x3];                                      // 0x0239(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Event_color;                                // 0x023C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24C[0x4];                                      // 0x024C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUmg_texturePicker_C*                   K2Node_Event_picker;                               // 0x0250(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_Event_texture;                              // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_index;                                // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0264(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<EObjectTypeQuery>                      K2Node_MakeArray_Array;                            // 0x0270(0x0010)(ConstParm, ReferenceParm)
-	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0280(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_281[0x3];                                      // 0x0281(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0284(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x0288(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x028C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_299[0x7];                                      // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         CallFunc_SphereOverlapActors_OutActors;            // 0x02A0(0x0010)(ReferenceParm)
-	bool                                          CallFunc_SphereOverlapActors_ReturnValue;          // 0x02B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B1[0x7];                                      // 0x02B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_1;                            // 0x02B8(0x0010)(ConstParm, ReferenceParm)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x02C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C9[0x7];                                      // 0x02C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         CallFunc_SphereOverlapActors_OutActors_1;          // 0x02D0(0x0010)(ReferenceParm)
-	bool                                          CallFunc_SphereOverlapActors_ReturnValue_1;        // 0x02E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E1[0x7];                                      // 0x02E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x02E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x02F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x02F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0300(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0304(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0130(0x00CC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2E2C[0x4];                                     // 0x01FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   K2Node_Event_key;                                  // 0x0200(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed;                              // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2E2D[0x3];                                     // 0x0219(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           K2Node_Event_color;                                // 0x021C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x022C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<EObjectTypeQuery>                      K2Node_MakeArray_Array;                            // 0x0238(0x0010)(ConstParm, ReferenceParm)
+	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2E2E[0x3];                                     // 0x0249(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x024C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0254(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2E2F[0x7];                                     // 0x0261(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         CallFunc_SphereOverlapActors_OutActors;            // 0x0268(0x0010)(ReferenceParm)
+	bool                                          CallFunc_SphereOverlapActors_ReturnValue;          // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2E30[0x7];                                     // 0x0279(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_1;                            // 0x0280(0x0010)(ConstParm, ReferenceParm)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0290(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2E31[0x7];                                     // 0x0291(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         CallFunc_SphereOverlapActors_OutActors_1;          // 0x0298(0x0010)(ReferenceParm)
+	bool                                          CallFunc_SphereOverlapActors_ReturnValue_1;        // 0x02A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2E32[0x7];                                     // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x02B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x02C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x02C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x02CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Dirthole_item_C_ExecuteUbergraph_dirthole_item) == 0x000010, "Wrong alignment on Dirthole_item_C_ExecuteUbergraph_dirthole_item");
-static_assert(sizeof(Dirthole_item_C_ExecuteUbergraph_dirthole_item) == 0x000310, "Wrong size on Dirthole_item_C_ExecuteUbergraph_dirthole_item");
+static_assert(sizeof(Dirthole_item_C_ExecuteUbergraph_dirthole_item) == 0x0002D0, "Wrong size on Dirthole_item_C_ExecuteUbergraph_dirthole_item");
 static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, EntryPoint) == 0x000000, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, K2Node_DynamicCast_AsInt_Save_1) == 0x000008, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::K2Node_DynamicCast_AsInt_Save_1' has a wrong offset!");
 static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::K2Node_DynamicCast_bSuccess' has a wrong offset!");
@@ -92,45 +89,27 @@ static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, K2Node_Dy
 static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, Temp_object_Variable) == 0x000118, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, K2Node_Event_gamemode) == 0x000128, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::K2Node_Event_gamemode' has a wrong offset!");
 static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, K2Node_Event_settings) == 0x000130, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::K2Node_Event_settings' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, K2Node_Event_key) == 0x000220, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::K2Node_Event_key' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, K2Node_Event_pressed) == 0x000238, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::K2Node_Event_pressed' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, K2Node_Event_color) == 0x00023C, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::K2Node_Event_color' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, K2Node_Event_picker) == 0x000250, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::K2Node_Event_picker' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, K2Node_Event_texture) == 0x000258, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::K2Node_Event_texture' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, K2Node_Event_index) == 0x000260, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000264, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, K2Node_MakeArray_Array) == 0x000270, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000280, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000284, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x000288, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x00028C, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000298, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_SphereOverlapActors_OutActors) == 0x0002A0, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_SphereOverlapActors_OutActors' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_SphereOverlapActors_ReturnValue) == 0x0002B0, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_SphereOverlapActors_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, Temp_object_Variable_1) == 0x0002B8, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_Not_PreBool_ReturnValue) == 0x0002C8, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_SphereOverlapActors_OutActors_1) == 0x0002D0, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_SphereOverlapActors_OutActors_1' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_SphereOverlapActors_ReturnValue_1) == 0x0002E0, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_SphereOverlapActors_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_Array_Get_Item) == 0x0002E8, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x0002F0, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x0002F8, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_Array_Add_ReturnValue) == 0x000300, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_Array_RemoveItem_ReturnValue) == 0x000304, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
-
-// Function dirthole_item.dirthole_item_C.texturePickerApply
-// 0x0018 (0x0018 - 0x0000)
-struct Dirthole_item_C_TexturePickerApply final
-{
-public:
-	class UUmg_texturePicker_C*                   Picker;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Param_Index;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Dirthole_item_C_TexturePickerApply) == 0x000008, "Wrong alignment on Dirthole_item_C_TexturePickerApply");
-static_assert(sizeof(Dirthole_item_C_TexturePickerApply) == 0x000018, "Wrong size on Dirthole_item_C_TexturePickerApply");
-static_assert(offsetof(Dirthole_item_C_TexturePickerApply, Picker) == 0x000000, "Member 'Dirthole_item_C_TexturePickerApply::Picker' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_TexturePickerApply, Texture) == 0x000008, "Member 'Dirthole_item_C_TexturePickerApply::Texture' has a wrong offset!");
-static_assert(offsetof(Dirthole_item_C_TexturePickerApply, Param_Index) == 0x000010, "Member 'Dirthole_item_C_TexturePickerApply::Param_Index' has a wrong offset!");
+static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, K2Node_Event_key) == 0x000200, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::K2Node_Event_key' has a wrong offset!");
+static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, K2Node_Event_pressed) == 0x000218, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::K2Node_Event_pressed' has a wrong offset!");
+static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, K2Node_Event_color) == 0x00021C, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::K2Node_Event_color' has a wrong offset!");
+static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00022C, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, K2Node_MakeArray_Array) == 0x000238, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000248, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x00024C, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x000250, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
+static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000254, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000260, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_SphereOverlapActors_OutActors) == 0x000268, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_SphereOverlapActors_OutActors' has a wrong offset!");
+static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_SphereOverlapActors_ReturnValue) == 0x000278, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_SphereOverlapActors_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, Temp_object_Variable_1) == 0x000280, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::Temp_object_Variable_1' has a wrong offset!");
+static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_Not_PreBool_ReturnValue) == 0x000290, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_SphereOverlapActors_OutActors_1) == 0x000298, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_SphereOverlapActors_OutActors_1' has a wrong offset!");
+static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_SphereOverlapActors_ReturnValue_1) == 0x0002A8, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_SphereOverlapActors_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_Array_Get_Item) == 0x0002B0, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x0002B8, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x0002C0, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
+static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_Array_Add_ReturnValue) == 0x0002C8, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Dirthole_item_C_ExecuteUbergraph_dirthole_item, CallFunc_Array_RemoveItem_ReturnValue) == 0x0002CC, "Member 'Dirthole_item_C_ExecuteUbergraph_dirthole_item::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
 
 // Function dirthole_item.dirthole_item_C.applyColor
 // 0x0010 (0x0010 - 0x0000)
@@ -157,14 +136,14 @@ static_assert(offsetof(Dirthole_item_C_AnyKey, Param_Key) == 0x000000, "Member '
 static_assert(offsetof(Dirthole_item_C_AnyKey, Pressed) == 0x000018, "Member 'Dirthole_item_C_AnyKey::Pressed' has a wrong offset!");
 
 // Function dirthole_item.dirthole_item_C.settingsApplied
-// 0x00F0 (0x00F0 - 0x0000)
+// 0x00CC (0x00CC - 0x0000)
 struct Dirthole_item_C_SettingsApplied final
 {
 public:
-	struct FStruct_settings                       Settings;                                          // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FStruct_settings                       Settings;                                          // 0x0000(0x00CC)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Dirthole_item_C_SettingsApplied) == 0x000008, "Wrong alignment on Dirthole_item_C_SettingsApplied");
-static_assert(sizeof(Dirthole_item_C_SettingsApplied) == 0x0000F0, "Wrong size on Dirthole_item_C_SettingsApplied");
+static_assert(alignof(Dirthole_item_C_SettingsApplied) == 0x000004, "Wrong alignment on Dirthole_item_C_SettingsApplied");
+static_assert(sizeof(Dirthole_item_C_SettingsApplied) == 0x0000CC, "Wrong size on Dirthole_item_C_SettingsApplied");
 static_assert(offsetof(Dirthole_item_C_SettingsApplied, Settings) == 0x000000, "Member 'Dirthole_item_C_SettingsApplied::Settings' has a wrong offset!");
 
 // Function dirthole_item.dirthole_item_C.stuffUpgraded
@@ -196,17 +175,17 @@ struct Dirthole_item_C_buryItem final
 public:
 	class AActor*                                 Param_Ac;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E33[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects;                  // 0x0010(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E34[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IInt_save1_C>          K2Node_DynamicCast_AsInt_Save_1;                   // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E35[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component;          // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_51[0xF];                                       // 0x0051(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E36[0xF];                                     // 0x0051(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           CallFunc_getData_data;                             // 0x0060(0x00C0)(HasGetValueTypeHash)
 };
 static_assert(alignof(Dirthole_item_C_buryItem) == 0x000010, "Wrong alignment on Dirthole_item_C_buryItem");
@@ -242,7 +221,7 @@ struct Dirthole_item_C_LoadData final
 public:
 	struct FStruct_save                           Param_Data;                                        // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E37[0x7];                                     // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mClass                         CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	struct FStruct_mString                        CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0010)(HasGetValueTypeHash)
 	class UClass*                                 CallFunc_Array_Get_Item_2;                         // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

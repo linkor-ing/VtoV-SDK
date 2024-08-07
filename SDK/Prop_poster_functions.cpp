@@ -37,23 +37,17 @@ void AProp_poster_C::ExecuteUbergraph_prop_poster(int32 EntryPoint)
 }
 
 
-// Function prop_poster.prop_poster_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function prop_poster.prop_poster_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void AProp_poster_C::ReceiveTick(float DeltaSeconds)
+void AProp_poster_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("prop_poster_C", "ReceiveTick");
+		Func = Class->GetFunction("prop_poster_C", "ReceiveBeginPlay");
 
-	Params::Prop_poster_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -85,53 +79,10 @@ void AProp_poster_C::SetTex()
 }
 
 
-// Function prop_poster.prop_poster_C.normalRot
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FVector                          InputPin                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FRotator                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
-struct FRotator AProp_poster_C::NormalRot(const struct FVector& InputPin)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_poster_C", "normalRot");
-
-	Params::Prop_poster_C_NormalRot Parms{};
-
-	Parms.InputPin = std::move(InputPin);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function prop_poster.prop_poster_C.playerHold
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_poster_C::PlayerHold(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_poster_C", "playerHold");
-
-	Params::Prop_poster_C_PlayerHold Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function prop_poster.prop_poster_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AProp_poster_C::SettingsApplied(const struct FStruct_settings& Settings)
 {
@@ -159,40 +110,6 @@ void AProp_poster_C::GamemodeBeginPlay()
 		Func = Class->GetFunction("prop_poster_C", "gamemodeBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop_poster.prop_poster_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_poster_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_poster_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop_poster.prop_poster_C.playerHandUse_LMB
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_poster_C::PlayerHandUse_LMB(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_poster_C", "playerHandUse_LMB");
-
-	Params::Prop_poster_C_PlayerHandUse_LMB Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

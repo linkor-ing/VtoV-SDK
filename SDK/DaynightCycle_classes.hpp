@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass daynightCycle.daynightCycle_C
-// 0x0138 (0x0358 - 0x0220)
+// 0x0128 (0x0348 - 0x0220)
 class ADaynightCycle_C final : public AActor
 {
 public:
@@ -42,79 +42,70 @@ public:
 	float                                         MaxTime;                                           // 0x0288(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TotalTime;                                         // 0x028C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TimeScale;                                         // 0x0290(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_294[0x4];                                      // 0x0294(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FA6[0x4];                                     // 0x0294(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ALight*                                 Sun;                                               // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ANewsky_C*                              Skysphere;                                         // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ATrigger_ambientSound_C*                Ambient_day;                                       // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ATrigger_ambientSound_C*                Ambient_night;                                     // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                SunAxis;                                           // 0x02B8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsActive;                                          // 0x02C4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2C5[0x3];                                      // 0x02C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FA7[0x3];                                     // 0x02C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FIntVector                             TimeZ;                                             // 0x02C8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          SStar_active;                                      // 0x02D4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D5[0x3];                                      // 0x02D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FA8[0x3];                                     // 0x02D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Rain;                                              // 0x02D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsRaining;                                         // 0x02DC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          RainMuted;                                         // 0x02DD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2DE[0x2];                                      // 0x02DE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FA9[0x2];                                     // 0x02DE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Diff_mult;                                         // 0x02E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	Enum_difficulty                               Diff;                                              // 0x02E4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E5[0x3];                                      // 0x02E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FAA[0x3];                                     // 0x02E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Sun_height;                                        // 0x02E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         RainSpeed;                                         // 0x02EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCurveLinearColor*                      Fog_color_A;                                       // 0x02F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCurveLinearColor*                      Fog_color_B;                                       // 0x02F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCurveLinearColor*                      Amb_color;                                         // 0x0300(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Loan;                                              // 0x0308(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_309[0x7];                                      // 0x0309(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FAB[0x7];                                     // 0x0309(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             NewMinute;                                         // 0x0310(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	float                                         ThickFog;                                          // 0x0320(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_324[0x4];                                      // 0x0324(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FAC[0x4];                                     // 0x0324(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AWeatherFogController_C*                FogEventObject;                                    // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Realtime;                                          // 0x0330(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_331[0x3];                                      // 0x0331(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FAD[0x3];                                     // 0x0331(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DayAdd;                                            // 0x0334(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         RT_pastTime;                                       // 0x0338(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         WeekDay;                                           // 0x033C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         SettingMultiplayer;                                // 0x0340(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_344[0x4];                                      // 0x0344(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ALight*                                 Moonlight;                                         // 0x0348(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         SleeplessDays;                                     // 0x0350(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          EyeSpawned;                                        // 0x0354(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void NewMinute__DelegateSignature(const struct FIntVector& Time);
 	void ExecuteUbergraph_daynightCycle(int32 EntryPoint);
-	void RainClean();
-	void RainCleanup();
-	void SuperFogEvent();
+	void ApplyColor(const struct FLinearColor& Color);
 	void Rewind();
 	void ReceiveBeginPlay();
 	void Dest(class AActor* DestroyedActor);
 	void FogEvent();
+	void ReceiveTick(float DeltaSeconds);
 	void SettingsApplied(const struct FStruct_settings& Settings);
 	void GamemodeBeginPlay();
+	void SignalDeleted();
+	void SignalSaved();
+	void StuffUpgraded(class AMainGamemode_C* GameMode);
+	void Unfoc();
+	void Unfocused();
+	void GamemodePreLoad();
 	void RainS();
 	void Ligh();
-	void ReceiveTick(float DeltaSeconds);
-	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
-	void ApplyColor(const struct FLinearColor& Color);
-	void PropRenderer_finishProps();
-	void GamemodeMakeKeys();
 	void AnyKey(const struct FKey& Key, bool Pressed);
-	void GamemodePreLoad();
-	void Unfocused();
-	void Unfoc();
-	void StuffUpgraded(class AMainGamemode_C* GameMode);
-	void SignalSaved();
-	void SignalDeleted();
+	void GamemodeMakeKeys();
+	void PropRenderer_finishProps();
 	void UserConstructionScript();
 	void Loadtime(float Param_TotalTime, float Param_Day);
 	void IsDream(bool Dream);
-	void MakeOrder(struct FStruct_storeOrder1* Struct_storeOrder);
+	void MakeOrder(struct FStruct_storeOrder* Struct_storeOrder);
 	void DailyTaskDriveSize(int32* Zero, int32* One, int32* Two, int32* Three, int32* DishCheckAm);
 	void SendDriveBox(class AMainGamemode_C* Self2, bool* OutputPin);
-	void SetSkyIntensity();
 	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base);
 
 public:
@@ -128,7 +119,7 @@ public:
 	}
 };
 static_assert(alignof(ADaynightCycle_C) == 0x000008, "Wrong alignment on ADaynightCycle_C");
-static_assert(sizeof(ADaynightCycle_C) == 0x000358, "Wrong size on ADaynightCycle_C");
+static_assert(sizeof(ADaynightCycle_C) == 0x000348, "Wrong size on ADaynightCycle_C");
 static_assert(offsetof(ADaynightCycle_C, UberGraphFrame) == 0x000220, "Member 'ADaynightCycle_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ADaynightCycle_C, Arrow2) == 0x000228, "Member 'ADaynightCycle_C::Arrow2' has a wrong offset!");
 static_assert(offsetof(ADaynightCycle_C, Arrow1) == 0x000230, "Member 'ADaynightCycle_C::Arrow1' has a wrong offset!");
@@ -174,9 +165,6 @@ static_assert(offsetof(ADaynightCycle_C, DayAdd) == 0x000334, "Member 'ADaynight
 static_assert(offsetof(ADaynightCycle_C, RT_pastTime) == 0x000338, "Member 'ADaynightCycle_C::RT_pastTime' has a wrong offset!");
 static_assert(offsetof(ADaynightCycle_C, WeekDay) == 0x00033C, "Member 'ADaynightCycle_C::WeekDay' has a wrong offset!");
 static_assert(offsetof(ADaynightCycle_C, SettingMultiplayer) == 0x000340, "Member 'ADaynightCycle_C::SettingMultiplayer' has a wrong offset!");
-static_assert(offsetof(ADaynightCycle_C, Moonlight) == 0x000348, "Member 'ADaynightCycle_C::Moonlight' has a wrong offset!");
-static_assert(offsetof(ADaynightCycle_C, SleeplessDays) == 0x000350, "Member 'ADaynightCycle_C::SleeplessDays' has a wrong offset!");
-static_assert(offsetof(ADaynightCycle_C, EyeSpawned) == 0x000354, "Member 'ADaynightCycle_C::EyeSpawned' has a wrong offset!");
 
 }
 

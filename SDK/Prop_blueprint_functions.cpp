@@ -37,20 +37,6 @@ void AProp_blueprint_C::ExecuteUbergraph_prop_blueprint(int32 EntryPoint)
 }
 
 
-// Function prop_blueprint.prop_blueprint_C.makeRecipe
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void AProp_blueprint_C::MakeRecipe()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_blueprint_C", "makeRecipe");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_blueprint.prop_blueprint_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
@@ -65,6 +51,20 @@ void AProp_blueprint_C::ReceiveBeginPlay()
 }
 
 
+// Function prop_blueprint.prop_blueprint_C.makeRecipe
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void AProp_blueprint_C::MakeRecipe()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_blueprint_C", "makeRecipe");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function prop_blueprint.prop_blueprint_C.lookAt
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -73,9 +73,8 @@ void AProp_blueprint_C::ReceiveBeginPlay()
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_blueprint_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
+void AProp_blueprint_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
 {
 	static class UFunction* Func = nullptr;
 
@@ -97,9 +96,6 @@ void AProp_blueprint_C::LookAt(class AMainPlayer_C* Player, const struct FHitRes
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
 }
 
 

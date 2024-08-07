@@ -35,7 +35,7 @@ void USave_main_C::Save()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FStruct_settings                 Output                                                 (Parm, OutParm, HasGetValueTypeHash)
+// struct FStruct_settings                 Output                                                 (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void USave_main_C::SetDefaultSettings(int32 Type, struct FStruct_settings* Output)
 {
@@ -92,13 +92,12 @@ void USave_main_C::SetObjects(class AMainGamemode_C* Param_GameMode, class APlay
 
 
 // Function save_main.save_main_C.progressAchievement
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             Achievement                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             Achievement                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Popup                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Autosave                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void USave_main_C::ProgressAchievement(const class FName Achievement, bool Popup, bool Autosave)
+void USave_main_C::ProgressAchievement(const class FName& Achievement, bool Popup)
 {
 	static class UFunction* Func = nullptr;
 
@@ -109,67 +108,6 @@ void USave_main_C::ProgressAchievement(const class FName Achievement, bool Popup
 
 	Parms.Achievement = Achievement;
 	Parms.Popup = Popup;
-	Parms.Autosave = Autosave;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function save_main.save_main_C.addTreasure
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ItemToFind                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void USave_main_C::AddTreasure(const class FName& ItemToFind)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("save_main_C", "addTreasure");
-
-	Params::Save_main_C_AddTreasure Parms{};
-
-	Parms.ItemToFind = ItemToFind;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function save_main.save_main_C.addFish
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ItemToFind                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void USave_main_C::AddFish(const class FName& ItemToFind)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("save_main_C", "addFish");
-
-	Params::Save_main_C_AddFish Parms{};
-
-	Parms.ItemToFind = ItemToFind;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function save_main.save_main_C.addToFavourites
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ItemToFind                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void USave_main_C::AddToFavourites(const class FName& ItemToFind)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("save_main_C", "addToFavourites");
-
-	Params::Save_main_C_AddToFavourites Parms{};
-
-	Parms.ItemToFind = ItemToFind;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

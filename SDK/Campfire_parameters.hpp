@@ -10,28 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-#include "Struct_mBool_structs.hpp"
 #include "Struct_triggerSave_structs.hpp"
-#include "Struct_settings_structs.hpp"
 #include "Struct_save_structs.hpp"
-#include "Engine_structs.hpp"
+#include "Struct_mBool_structs.hpp"
+#include "Struct_settings_structs.hpp"
 #include "InputCore_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
 {
-
-// Function campfire.campfire_C.gatherDataFromKeyT
-// 0x0001 (0x0001 - 0x0000)
-struct Campfire_C_GatherDataFromKeyT final
-{
-public:
-	bool                                          Gather;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(Campfire_C_GatherDataFromKeyT) == 0x000001, "Wrong alignment on Campfire_C_GatherDataFromKeyT");
-static_assert(sizeof(Campfire_C_GatherDataFromKeyT) == 0x000001, "Wrong size on Campfire_C_GatherDataFromKeyT");
-static_assert(offsetof(Campfire_C_GatherDataFromKeyT, Gather) == 0x000000, "Member 'Campfire_C_GatherDataFromKeyT::Gather' has a wrong offset!");
 
 // Function campfire.campfire_C.getTriggerData
 // 0x00F0 (0x00F0 - 0x0000)
@@ -74,12 +62,12 @@ struct Campfire_C_DreamInv final
 {
 public:
 	TArray<struct FStruct_save>                   Invv;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	class ADreamBase_C*                           Param_Base;                                        // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ADreamBase_C*                           Base;                                              // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Campfire_C_DreamInv) == 0x000008, "Wrong alignment on Campfire_C_DreamInv");
 static_assert(sizeof(Campfire_C_DreamInv) == 0x000018, "Wrong size on Campfire_C_DreamInv");
 static_assert(offsetof(Campfire_C_DreamInv, Invv) == 0x000000, "Member 'Campfire_C_DreamInv::Invv' has a wrong offset!");
-static_assert(offsetof(Campfire_C_DreamInv, Param_Base) == 0x000010, "Member 'Campfire_C_DreamInv::Param_Base' has a wrong offset!");
+static_assert(offsetof(Campfire_C_DreamInv, Base) == 0x000010, "Member 'Campfire_C_DreamInv::Base' has a wrong offset!");
 
 // Function campfire.campfire_C.getData
 // 0x0270 (0x0270 - 0x0000)
@@ -110,7 +98,7 @@ public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadData_return;                          // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4391[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mBool                          CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -121,23 +109,6 @@ static_assert(offsetof(Campfire_C_LoadData, Return) == 0x0000C0, "Member 'Campfi
 static_assert(offsetof(Campfire_C_LoadData, CallFunc_loadData_return) == 0x0000C1, "Member 'Campfire_C_LoadData::CallFunc_loadData_return' has a wrong offset!");
 static_assert(offsetof(Campfire_C_LoadData, CallFunc_Array_Get_Item) == 0x0000C8, "Member 'Campfire_C_LoadData::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(Campfire_C_LoadData, CallFunc_Array_Get_Item_1) == 0x0000D8, "Member 'Campfire_C_LoadData::CallFunc_Array_Get_Item_1' has a wrong offset!");
-
-// Function campfire.campfire_C.upd
-// 0x0004 (0x0004 - 0x0000)
-struct Campfire_C_Upd final
-{
-public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ECollisionEnabled                             Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECollisionEnabled                             Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECollisionEnabled                             K2Node_Select_Default;                             // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Campfire_C_Upd) == 0x000001, "Wrong alignment on Campfire_C_Upd");
-static_assert(sizeof(Campfire_C_Upd) == 0x000004, "Wrong size on Campfire_C_Upd");
-static_assert(offsetof(Campfire_C_Upd, Temp_bool_Variable) == 0x000000, "Member 'Campfire_C_Upd::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Campfire_C_Upd, Temp_byte_Variable) == 0x000001, "Member 'Campfire_C_Upd::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Campfire_C_Upd, Temp_byte_Variable_1) == 0x000002, "Member 'Campfire_C_Upd::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(Campfire_C_Upd, K2Node_Select_Default) == 0x000003, "Member 'Campfire_C_Upd::K2Node_Select_Default' has a wrong offset!");
 
 // Function campfire.campfire_C.set_ignoreSave_trigger
 // 0x0001 (0x0001 - 0x0000)
@@ -201,14 +172,14 @@ static_assert(sizeof(Campfire_C_StuffUpgraded) == 0x000008, "Wrong size on Campf
 static_assert(offsetof(Campfire_C_StuffUpgraded, GameMode) == 0x000000, "Member 'Campfire_C_StuffUpgraded::GameMode' has a wrong offset!");
 
 // Function campfire.campfire_C.settingsApplied
-// 0x00F0 (0x00F0 - 0x0000)
+// 0x00CC (0x00CC - 0x0000)
 struct Campfire_C_SettingsApplied final
 {
 public:
-	struct FStruct_settings                       Settings;                                          // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FStruct_settings                       Settings;                                          // 0x0000(0x00CC)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Campfire_C_SettingsApplied) == 0x000008, "Wrong alignment on Campfire_C_SettingsApplied");
-static_assert(sizeof(Campfire_C_SettingsApplied) == 0x0000F0, "Wrong size on Campfire_C_SettingsApplied");
+static_assert(alignof(Campfire_C_SettingsApplied) == 0x000004, "Wrong alignment on Campfire_C_SettingsApplied");
+static_assert(sizeof(Campfire_C_SettingsApplied) == 0x0000CC, "Wrong size on Campfire_C_SettingsApplied");
 static_assert(offsetof(Campfire_C_SettingsApplied, Settings) == 0x000000, "Member 'Campfire_C_SettingsApplied::Settings' has a wrong offset!");
 
 // Function campfire.campfire_C.AnyKey
@@ -235,21 +206,6 @@ static_assert(alignof(Campfire_C_ApplyColor) == 0x000004, "Wrong alignment on Ca
 static_assert(sizeof(Campfire_C_ApplyColor) == 0x000010, "Wrong size on Campfire_C_ApplyColor");
 static_assert(offsetof(Campfire_C_ApplyColor, Color) == 0x000000, "Member 'Campfire_C_ApplyColor::Color' has a wrong offset!");
 
-// Function campfire.campfire_C.texturePickerApply
-// 0x0018 (0x0018 - 0x0000)
-struct Campfire_C_TexturePickerApply final
-{
-public:
-	class UUmg_texturePicker_C*                   Picker;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Param_Index;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Campfire_C_TexturePickerApply) == 0x000008, "Wrong alignment on Campfire_C_TexturePickerApply");
-static_assert(sizeof(Campfire_C_TexturePickerApply) == 0x000018, "Wrong size on Campfire_C_TexturePickerApply");
-static_assert(offsetof(Campfire_C_TexturePickerApply, Picker) == 0x000000, "Member 'Campfire_C_TexturePickerApply::Picker' has a wrong offset!");
-static_assert(offsetof(Campfire_C_TexturePickerApply, Texture) == 0x000008, "Member 'Campfire_C_TexturePickerApply::Texture' has a wrong offset!");
-static_assert(offsetof(Campfire_C_TexturePickerApply, Param_Index) == 0x000010, "Member 'Campfire_C_TexturePickerApply::Param_Index' has a wrong offset!");
-
 // Function campfire.campfire_C.runTrigger
 // 0x0010 (0x0010 - 0x0000)
 struct Campfire_C_RunTrigger final
@@ -264,37 +220,34 @@ static_assert(offsetof(Campfire_C_RunTrigger, Param_Owner) == 0x000000, "Member 
 static_assert(offsetof(Campfire_C_RunTrigger, Param_Index) == 0x000008, "Member 'Campfire_C_RunTrigger::Param_Index' has a wrong offset!");
 
 // Function campfire.campfire_C.ExecuteUbergraph_campfire
-// 0x0188 (0x0188 - 0x0000)
+// 0x0150 (0x0150 - 0x0000)
 struct Campfire_C_ExecuteUbergraph_campfire final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_NewParam;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4392[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class ACord_C*                                K2Node_Event_cord_1;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ACordSocket_C*                          K2Node_Event_socket_1;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ACord_C*                                K2Node_Event_cord;                                 // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ACordSocket_C*                          K2Node_Event_socket;                               // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_Event_sentFrom;                             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_active;                               // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4393[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0040(0x00F0)(HasGetValueTypeHash)
-	struct FKey                                   K2Node_Event_key;                                  // 0x0130(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed;                              // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_149[0x3];                                      // 0x0149(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Event_color;                                // 0x014C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15C[0x4];                                      // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUmg_texturePicker_C*                   K2Node_Event_picker;                               // 0x0160(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_Event_texture;                              // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_index_1;                              // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_174[0x4];                                      // 0x0174(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Event_owner;                                // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_index;                                // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Conv_IntToBool_ReturnValue;               // 0x0184(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0040(0x00CC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4394[0x4];                                     // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   K2Node_Event_key;                                  // 0x0110(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed;                              // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4395[0x3];                                     // 0x0129(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           K2Node_Event_color;                                // 0x012C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4396[0x4];                                     // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Event_owner;                                // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_index;                                // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Conv_IntToBool_ReturnValue;               // 0x014C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Campfire_C_ExecuteUbergraph_campfire) == 0x000008, "Wrong alignment on Campfire_C_ExecuteUbergraph_campfire");
-static_assert(sizeof(Campfire_C_ExecuteUbergraph_campfire) == 0x000188, "Wrong size on Campfire_C_ExecuteUbergraph_campfire");
+static_assert(sizeof(Campfire_C_ExecuteUbergraph_campfire) == 0x000150, "Wrong size on Campfire_C_ExecuteUbergraph_campfire");
 static_assert(offsetof(Campfire_C_ExecuteUbergraph_campfire, EntryPoint) == 0x000000, "Member 'Campfire_C_ExecuteUbergraph_campfire::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Campfire_C_ExecuteUbergraph_campfire, K2Node_Event_NewParam) == 0x000004, "Member 'Campfire_C_ExecuteUbergraph_campfire::K2Node_Event_NewParam' has a wrong offset!");
 static_assert(offsetof(Campfire_C_ExecuteUbergraph_campfire, K2Node_Event_cord_1) == 0x000008, "Member 'Campfire_C_ExecuteUbergraph_campfire::K2Node_Event_cord_1' has a wrong offset!");
@@ -305,15 +258,12 @@ static_assert(offsetof(Campfire_C_ExecuteUbergraph_campfire, K2Node_Event_sentFr
 static_assert(offsetof(Campfire_C_ExecuteUbergraph_campfire, K2Node_Event_active) == 0x000030, "Member 'Campfire_C_ExecuteUbergraph_campfire::K2Node_Event_active' has a wrong offset!");
 static_assert(offsetof(Campfire_C_ExecuteUbergraph_campfire, K2Node_Event_gamemode) == 0x000038, "Member 'Campfire_C_ExecuteUbergraph_campfire::K2Node_Event_gamemode' has a wrong offset!");
 static_assert(offsetof(Campfire_C_ExecuteUbergraph_campfire, K2Node_Event_settings) == 0x000040, "Member 'Campfire_C_ExecuteUbergraph_campfire::K2Node_Event_settings' has a wrong offset!");
-static_assert(offsetof(Campfire_C_ExecuteUbergraph_campfire, K2Node_Event_key) == 0x000130, "Member 'Campfire_C_ExecuteUbergraph_campfire::K2Node_Event_key' has a wrong offset!");
-static_assert(offsetof(Campfire_C_ExecuteUbergraph_campfire, K2Node_Event_pressed) == 0x000148, "Member 'Campfire_C_ExecuteUbergraph_campfire::K2Node_Event_pressed' has a wrong offset!");
-static_assert(offsetof(Campfire_C_ExecuteUbergraph_campfire, K2Node_Event_color) == 0x00014C, "Member 'Campfire_C_ExecuteUbergraph_campfire::K2Node_Event_color' has a wrong offset!");
-static_assert(offsetof(Campfire_C_ExecuteUbergraph_campfire, K2Node_Event_picker) == 0x000160, "Member 'Campfire_C_ExecuteUbergraph_campfire::K2Node_Event_picker' has a wrong offset!");
-static_assert(offsetof(Campfire_C_ExecuteUbergraph_campfire, K2Node_Event_texture) == 0x000168, "Member 'Campfire_C_ExecuteUbergraph_campfire::K2Node_Event_texture' has a wrong offset!");
-static_assert(offsetof(Campfire_C_ExecuteUbergraph_campfire, K2Node_Event_index_1) == 0x000170, "Member 'Campfire_C_ExecuteUbergraph_campfire::K2Node_Event_index_1' has a wrong offset!");
-static_assert(offsetof(Campfire_C_ExecuteUbergraph_campfire, K2Node_Event_owner) == 0x000178, "Member 'Campfire_C_ExecuteUbergraph_campfire::K2Node_Event_owner' has a wrong offset!");
-static_assert(offsetof(Campfire_C_ExecuteUbergraph_campfire, K2Node_Event_index) == 0x000180, "Member 'Campfire_C_ExecuteUbergraph_campfire::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(Campfire_C_ExecuteUbergraph_campfire, CallFunc_Conv_IntToBool_ReturnValue) == 0x000184, "Member 'Campfire_C_ExecuteUbergraph_campfire::CallFunc_Conv_IntToBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Campfire_C_ExecuteUbergraph_campfire, K2Node_Event_key) == 0x000110, "Member 'Campfire_C_ExecuteUbergraph_campfire::K2Node_Event_key' has a wrong offset!");
+static_assert(offsetof(Campfire_C_ExecuteUbergraph_campfire, K2Node_Event_pressed) == 0x000128, "Member 'Campfire_C_ExecuteUbergraph_campfire::K2Node_Event_pressed' has a wrong offset!");
+static_assert(offsetof(Campfire_C_ExecuteUbergraph_campfire, K2Node_Event_color) == 0x00012C, "Member 'Campfire_C_ExecuteUbergraph_campfire::K2Node_Event_color' has a wrong offset!");
+static_assert(offsetof(Campfire_C_ExecuteUbergraph_campfire, K2Node_Event_owner) == 0x000140, "Member 'Campfire_C_ExecuteUbergraph_campfire::K2Node_Event_owner' has a wrong offset!");
+static_assert(offsetof(Campfire_C_ExecuteUbergraph_campfire, K2Node_Event_index) == 0x000148, "Member 'Campfire_C_ExecuteUbergraph_campfire::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Campfire_C_ExecuteUbergraph_campfire, CallFunc_Conv_IntToBool_ReturnValue) == 0x00014C, "Member 'Campfire_C_ExecuteUbergraph_campfire::CallFunc_Conv_IntToBool_ReturnValue' has a wrong offset!");
 
 }
 

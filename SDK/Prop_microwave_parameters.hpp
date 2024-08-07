@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Struct_triggerSave_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Struct_save_structs.hpp"
 #include "Struct_mVector_structs.hpp"
-#include "Engine_structs.hpp"
-#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK::Params
@@ -33,14 +33,14 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable_2;                             // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39C6[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_Event_owner;                                // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_index;                                // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_index_1;                              // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_NewParam;                             // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39C7[0x3];                                     // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_Event_sentFrom;                             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_active;                               // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39C8[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VictoryFloatMinusEquals_FloatOut;         // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_1;       // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -48,64 +48,65 @@ public:
 	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x004C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FHitResult                             CallFunc_K2_AddLocalRotation_SweepHitResult;       // 0x0058(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E1[0x3];                                       // 0x00E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39C9[0x3];                                     // 0x00E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetActorRightVector_ReturnValue;          // 0x00E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x00F4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue_1;       // 0x0104(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_105[0x3];                                      // 0x0105(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39CA[0x3];                                     // 0x0105(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AProp_microwaveDoor_C*                  K2Node_DynamicCast_AsProp_Microwave_Door;          // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39CB[0x7];                                     // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         CallFunc_GetOverlappingActors_OverlappingActors;   // 0x0120(0x0010)(ReferenceParm)
 	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects;                  // 0x0138(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_149[0x7];                                      // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39CC[0x7];                                     // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0150(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component;          // 0x0158(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39CD[0x7];                                     // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects_1;                // 0x0168(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_179[0x3];                                      // 0x0179(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39CE[0x3];                                     // 0x0179(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_GetComponentBounds_Origin;                // 0x017C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetComponentBounds_BoxExtent;             // 0x0188(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetComponentBounds_SphereRadius;          // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0198(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInterface*                     CallFunc_GetMaterial_ReturnValue;                  // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1AC[0x4];                                      // 0x01AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39CF[0x4];                                     // 0x01AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      CallFunc_GetPhysicalMaterial_ReturnValue;          // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1B9[0x3];                                      // 0x01B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39D0[0x3];                                     // 0x01B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_Event_actor;                                // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_damage;                               // 0x01C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit_1;                                // 0x01CC(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FVector                                K2Node_Event_impact;                               // 0x0254(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_skipSetting;                          // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_261[0x3];                                      // 0x0261(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39D1[0x3];                                     // 0x0261(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Temp_float_Variable_3;                             // 0x0264(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_269[0x3];                                      // 0x0269(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39D2[0x3];                                     // 0x0269(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Temp_float_Variable_4;                             // 0x026C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UPhysicalMaterial*>              K2Node_MakeArray_Array;                            // 0x0270(0x0010)(ConstParm, ReferenceParm)
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0280(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x0281(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x0282(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_283[0x1];                                      // 0x0283(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39D3[0x1];                                     // 0x0283(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_RandomUnitVector_ReturnValue;             // 0x0284(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit;                                  // 0x0298(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x0320(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_321[0x3];                                      // 0x0321(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0324(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0330(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_331[0x7];                                      // 0x0331(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Event_index;                                // 0x0320(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x0324(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39D4[0x3];                                     // 0x0325(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0328(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0334(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39D5[0x3];                                     // 0x0335(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class ACord_C*                                K2Node_Event_cord_1;                               // 0x0338(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ACordSocket_C*                          K2Node_Event_socket_1;                             // 0x0340(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ACord_C*                                K2Node_Event_cord;                                 // 0x0348(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -125,7 +126,7 @@ static_assert(offsetof(Prop_microwave_C_ExecuteUbergraph_prop_microwave, CallFun
 static_assert(offsetof(Prop_microwave_C_ExecuteUbergraph_prop_microwave, Temp_int_Array_Index_Variable) == 0x000014, "Member 'Prop_microwave_C_ExecuteUbergraph_prop_microwave::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(Prop_microwave_C_ExecuteUbergraph_prop_microwave, Temp_float_Variable_2) == 0x000018, "Member 'Prop_microwave_C_ExecuteUbergraph_prop_microwave::Temp_float_Variable_2' has a wrong offset!");
 static_assert(offsetof(Prop_microwave_C_ExecuteUbergraph_prop_microwave, K2Node_Event_owner) == 0x000020, "Member 'Prop_microwave_C_ExecuteUbergraph_prop_microwave::K2Node_Event_owner' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_ExecuteUbergraph_prop_microwave, K2Node_Event_index) == 0x000028, "Member 'Prop_microwave_C_ExecuteUbergraph_prop_microwave::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_ExecuteUbergraph_prop_microwave, K2Node_Event_index_1) == 0x000028, "Member 'Prop_microwave_C_ExecuteUbergraph_prop_microwave::K2Node_Event_index_1' has a wrong offset!");
 static_assert(offsetof(Prop_microwave_C_ExecuteUbergraph_prop_microwave, K2Node_Event_NewParam) == 0x00002C, "Member 'Prop_microwave_C_ExecuteUbergraph_prop_microwave::K2Node_Event_NewParam' has a wrong offset!");
 static_assert(offsetof(Prop_microwave_C_ExecuteUbergraph_prop_microwave, K2Node_Event_sentFrom) == 0x000030, "Member 'Prop_microwave_C_ExecuteUbergraph_prop_microwave::K2Node_Event_sentFrom' has a wrong offset!");
 static_assert(offsetof(Prop_microwave_C_ExecuteUbergraph_prop_microwave, K2Node_Event_active) == 0x000038, "Member 'Prop_microwave_C_ExecuteUbergraph_prop_microwave::K2Node_Event_active' has a wrong offset!");
@@ -178,9 +179,10 @@ static_assert(offsetof(Prop_microwave_C_ExecuteUbergraph_prop_microwave, CallFun
 static_assert(offsetof(Prop_microwave_C_ExecuteUbergraph_prop_microwave, CallFunc_RandomUnitVector_ReturnValue) == 0x000284, "Member 'Prop_microwave_C_ExecuteUbergraph_prop_microwave::CallFunc_RandomUnitVector_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_microwave_C_ExecuteUbergraph_prop_microwave, K2Node_Event_player) == 0x000290, "Member 'Prop_microwave_C_ExecuteUbergraph_prop_microwave::K2Node_Event_player' has a wrong offset!");
 static_assert(offsetof(Prop_microwave_C_ExecuteUbergraph_prop_microwave, K2Node_Event_hit) == 0x000298, "Member 'Prop_microwave_C_ExecuteUbergraph_prop_microwave::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_ExecuteUbergraph_prop_microwave, K2Node_Event_action) == 0x000320, "Member 'Prop_microwave_C_ExecuteUbergraph_prop_microwave::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_ExecuteUbergraph_prop_microwave, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000324, "Member 'Prop_microwave_C_ExecuteUbergraph_prop_microwave::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_ExecuteUbergraph_prop_microwave, K2Node_SwitchEnum_CmpSuccess) == 0x000330, "Member 'Prop_microwave_C_ExecuteUbergraph_prop_microwave::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_ExecuteUbergraph_prop_microwave, K2Node_Event_index) == 0x000320, "Member 'Prop_microwave_C_ExecuteUbergraph_prop_microwave::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_ExecuteUbergraph_prop_microwave, K2Node_Event_action) == 0x000324, "Member 'Prop_microwave_C_ExecuteUbergraph_prop_microwave::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_ExecuteUbergraph_prop_microwave, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000328, "Member 'Prop_microwave_C_ExecuteUbergraph_prop_microwave::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_ExecuteUbergraph_prop_microwave, K2Node_SwitchEnum_CmpSuccess) == 0x000334, "Member 'Prop_microwave_C_ExecuteUbergraph_prop_microwave::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(Prop_microwave_C_ExecuteUbergraph_prop_microwave, K2Node_Event_cord_1) == 0x000338, "Member 'Prop_microwave_C_ExecuteUbergraph_prop_microwave::K2Node_Event_cord_1' has a wrong offset!");
 static_assert(offsetof(Prop_microwave_C_ExecuteUbergraph_prop_microwave, K2Node_Event_socket_1) == 0x000340, "Member 'Prop_microwave_C_ExecuteUbergraph_prop_microwave::K2Node_Event_socket_1' has a wrong offset!");
 static_assert(offsetof(Prop_microwave_C_ExecuteUbergraph_prop_microwave, K2Node_Event_cord) == 0x000348, "Member 'Prop_microwave_C_ExecuteUbergraph_prop_microwave::K2Node_Event_cord' has a wrong offset!");
@@ -215,6 +217,42 @@ static_assert(alignof(Prop_microwave_C_CordPlugged) == 0x000008, "Wrong alignmen
 static_assert(sizeof(Prop_microwave_C_CordPlugged) == 0x000010, "Wrong size on Prop_microwave_C_CordPlugged");
 static_assert(offsetof(Prop_microwave_C_CordPlugged, Param_Cord) == 0x000000, "Member 'Prop_microwave_C_CordPlugged::Param_Cord' has a wrong offset!");
 static_assert(offsetof(Prop_microwave_C_CordPlugged, Socket) == 0x000008, "Member 'Prop_microwave_C_CordPlugged::Socket' has a wrong offset!");
+
+// Function prop_microwave.prop_microwave_C.actionOptionIndex
+// 0x0098 (0x0098 - 0x0000)
+struct Prop_microwave_C_ActionOptionIndex final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_microwave_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_microwave_C_ActionOptionIndex");
+static_assert(sizeof(Prop_microwave_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_microwave_C_ActionOptionIndex");
+static_assert(offsetof(Prop_microwave_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_microwave_C_ActionOptionIndex::Player' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_microwave_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_microwave_C_ActionOptionIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_microwave_C_ActionOptionIndex::Action' has a wrong offset!");
+
+// Function prop_microwave.prop_microwave_C.addDamage
+// 0x00A8 (0x00A8 - 0x0000)
+struct Prop_microwave_C_AddDamage final
+{
+public:
+	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Damage;                                            // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Param_Hit;                                         // 0x000C(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                Impact;                                            // 0x0094(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          SkipSetting;                                       // 0x00A0(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Prop_microwave_C_AddDamage) == 0x000008, "Wrong alignment on Prop_microwave_C_AddDamage");
+static_assert(sizeof(Prop_microwave_C_AddDamage) == 0x0000A8, "Wrong size on Prop_microwave_C_AddDamage");
+static_assert(offsetof(Prop_microwave_C_AddDamage, Actor) == 0x000000, "Member 'Prop_microwave_C_AddDamage::Actor' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_AddDamage, Damage) == 0x000008, "Member 'Prop_microwave_C_AddDamage::Damage' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_AddDamage, Param_Hit) == 0x00000C, "Member 'Prop_microwave_C_AddDamage::Param_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_AddDamage, Impact) == 0x000094, "Member 'Prop_microwave_C_AddDamage::Impact' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_AddDamage, SkipSetting) == 0x0000A0, "Member 'Prop_microwave_C_AddDamage::SkipSetting' has a wrong offset!");
 
 // Function prop_microwave.prop_microwave_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -271,7 +309,7 @@ struct Prop_microwave_C_CloseDoor final
 public:
 	struct FVector                                CallFunc_K2_GetComponentScale_ReturnValue;         // 0x0000(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x000C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39D6[0x8];                                     // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0020(0x0030)(IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Prop_microwave_C_CloseDoor) == 0x000010, "Wrong alignment on Prop_microwave_C_CloseDoor");
@@ -287,7 +325,7 @@ struct Prop_microwave_C_OpenDoor final
 public:
 	struct FVector                                CallFunc_K2_GetComponentScale_ReturnValue;         // 0x0000(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x000C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39D7[0x8];                                     // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0020(0x0030)(IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Prop_microwave_C_OpenDoor) == 0x000010, "Wrong alignment on Prop_microwave_C_OpenDoor");
@@ -331,111 +369,63 @@ static_assert(alignof(Prop_microwave_C_GetTriggerData) == 0x000010, "Wrong align
 static_assert(sizeof(Prop_microwave_C_GetTriggerData) == 0x0000F0, "Wrong size on Prop_microwave_C_GetTriggerData");
 static_assert(offsetof(Prop_microwave_C_GetTriggerData, Data) == 0x000000, "Member 'Prop_microwave_C_GetTriggerData::Data' has a wrong offset!");
 
-// Function prop_microwave.prop_microwave_C.gatherDataFromKeyT
-// 0x0001 (0x0001 - 0x0000)
-struct Prop_microwave_C_GatherDataFromKeyT final
-{
-public:
-	bool                                          Gather;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(Prop_microwave_C_GatherDataFromKeyT) == 0x000001, "Wrong alignment on Prop_microwave_C_GatherDataFromKeyT");
-static_assert(sizeof(Prop_microwave_C_GatherDataFromKeyT) == 0x000001, "Wrong size on Prop_microwave_C_GatherDataFromKeyT");
-static_assert(offsetof(Prop_microwave_C_GatherDataFromKeyT, Gather) == 0x000000, "Member 'Prop_microwave_C_GatherDataFromKeyT::Gather' has a wrong offset!");
-
-// Function prop_microwave.prop_microwave_C.actionOptionIndex
-// 0x0098 (0x0098 - 0x0000)
-struct Prop_microwave_C_ActionOptionIndex final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_microwave_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_microwave_C_ActionOptionIndex");
-static_assert(sizeof(Prop_microwave_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_microwave_C_ActionOptionIndex");
-static_assert(offsetof(Prop_microwave_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_microwave_C_ActionOptionIndex::Player' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_microwave_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_microwave_C_ActionOptionIndex::Action' has a wrong offset!");
-
-// Function prop_microwave.prop_microwave_C.addDamage
-// 0x00A8 (0x00A8 - 0x0000)
-struct Prop_microwave_C_AddDamage final
-{
-public:
-	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Damage;                                            // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Param_Hit;                                         // 0x000C(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                Impact;                                            // 0x0094(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          SkipSetting;                                       // 0x00A0(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(Prop_microwave_C_AddDamage) == 0x000008, "Wrong alignment on Prop_microwave_C_AddDamage");
-static_assert(sizeof(Prop_microwave_C_AddDamage) == 0x0000A8, "Wrong size on Prop_microwave_C_AddDamage");
-static_assert(offsetof(Prop_microwave_C_AddDamage, Actor) == 0x000000, "Member 'Prop_microwave_C_AddDamage::Actor' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_AddDamage, Damage) == 0x000008, "Member 'Prop_microwave_C_AddDamage::Damage' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_AddDamage, Param_Hit) == 0x00000C, "Member 'Prop_microwave_C_AddDamage::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_AddDamage, Impact) == 0x000094, "Member 'Prop_microwave_C_AddDamage::Impact' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_AddDamage, SkipSetting) == 0x0000A0, "Member 'Prop_microwave_C_AddDamage::SkipSetting' has a wrong offset!");
-
 // Function prop_microwave.prop_microwave_C.lookAt
-// 0x0218 (0x0218 - 0x0000)
+// 0x0210 (0x0210 - 0x0000)
 struct Prop_microwave_C_LookAt final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39D8[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00B8(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x00E0(0x0018)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x00F8(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x0110(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_2;          // 0x0120(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_2;            // 0x0130(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_3;          // 0x0148(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_FloatToText_ReturnValue_1;           // 0x0158(0x0018)()
-	class FString                                 CallFunc_SelectString_ReturnValue;                 // 0x0170(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_4;          // 0x0180(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_SelectString_ReturnValue_1;               // 0x0190(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_3;            // 0x01A0(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_5;          // 0x01B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_SelectString_ReturnValue_2;               // 0x01C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_SelectString_ReturnValue_3;               // 0x01D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x01E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x01F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0208(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00B0(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x00D8(0x0018)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x00F0(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x0108(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_2;          // 0x0118(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_2;            // 0x0128(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_3;          // 0x0140(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_FloatToText_ReturnValue_1;           // 0x0150(0x0018)()
+	class FString                                 CallFunc_SelectString_ReturnValue;                 // 0x0168(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_4;          // 0x0178(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_SelectString_ReturnValue_1;               // 0x0188(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_3;            // 0x0198(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_5;          // 0x01B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_SelectString_ReturnValue_2;               // 0x01C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_SelectString_ReturnValue_3;               // 0x01D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x01E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x01F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0200(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_microwave_C_LookAt) == 0x000008, "Wrong alignment on Prop_microwave_C_LookAt");
-static_assert(sizeof(Prop_microwave_C_LookAt) == 0x000218, "Wrong size on Prop_microwave_C_LookAt");
+static_assert(sizeof(Prop_microwave_C_LookAt) == 0x000210, "Wrong size on Prop_microwave_C_LookAt");
 static_assert(offsetof(Prop_microwave_C_LookAt, Player) == 0x000000, "Member 'Prop_microwave_C_LookAt::Player' has a wrong offset!");
 static_assert(offsetof(Prop_microwave_C_LookAt, Param_Hit) == 0x000008, "Member 'Prop_microwave_C_LookAt::Param_Hit' has a wrong offset!");
 static_assert(offsetof(Prop_microwave_C_LookAt, Return) == 0x000090, "Member 'Prop_microwave_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(Prop_microwave_C_LookAt, Text) == 0x000098, "Member 'Prop_microwave_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(Prop_microwave_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'Prop_microwave_C_LookAt::boundObjectReplace' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_LookAt, Number) == 0x0000B0, "Member 'Prop_microwave_C_LookAt::Number' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_MakeLiteralText_ReturnValue) == 0x0000B8, "Member 'Prop_microwave_C_LookAt::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_Conv_TextToString_ReturnValue) == 0x0000D0, "Member 'Prop_microwave_C_LookAt::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_Conv_FloatToText_ReturnValue) == 0x0000E0, "Member 'Prop_microwave_C_LookAt::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_MakeLiteralText_ReturnValue_1) == 0x0000F8, "Member 'Prop_microwave_C_LookAt::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_Conv_TextToString_ReturnValue_1) == 0x000110, "Member 'Prop_microwave_C_LookAt::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_Conv_TextToString_ReturnValue_2) == 0x000120, "Member 'Prop_microwave_C_LookAt::CallFunc_Conv_TextToString_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_MakeLiteralText_ReturnValue_2) == 0x000130, "Member 'Prop_microwave_C_LookAt::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_Conv_TextToString_ReturnValue_3) == 0x000148, "Member 'Prop_microwave_C_LookAt::CallFunc_Conv_TextToString_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_Conv_FloatToText_ReturnValue_1) == 0x000158, "Member 'Prop_microwave_C_LookAt::CallFunc_Conv_FloatToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_SelectString_ReturnValue) == 0x000170, "Member 'Prop_microwave_C_LookAt::CallFunc_SelectString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_Conv_TextToString_ReturnValue_4) == 0x000180, "Member 'Prop_microwave_C_LookAt::CallFunc_Conv_TextToString_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_SelectString_ReturnValue_1) == 0x000190, "Member 'Prop_microwave_C_LookAt::CallFunc_SelectString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_MakeLiteralText_ReturnValue_3) == 0x0001A0, "Member 'Prop_microwave_C_LookAt::CallFunc_MakeLiteralText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_Conv_TextToString_ReturnValue_5) == 0x0001B8, "Member 'Prop_microwave_C_LookAt::CallFunc_Conv_TextToString_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_SelectString_ReturnValue_2) == 0x0001C8, "Member 'Prop_microwave_C_LookAt::CallFunc_SelectString_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_SelectString_ReturnValue_3) == 0x0001D8, "Member 'Prop_microwave_C_LookAt::CallFunc_SelectString_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_Concat_StrStr_ReturnValue) == 0x0001E8, "Member 'Prop_microwave_C_LookAt::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_1) == 0x0001F8, "Member 'Prop_microwave_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000208, "Member 'Prop_microwave_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_MakeLiteralText_ReturnValue) == 0x0000B0, "Member 'Prop_microwave_C_LookAt::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_Conv_TextToString_ReturnValue) == 0x0000C8, "Member 'Prop_microwave_C_LookAt::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_Conv_FloatToText_ReturnValue) == 0x0000D8, "Member 'Prop_microwave_C_LookAt::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_MakeLiteralText_ReturnValue_1) == 0x0000F0, "Member 'Prop_microwave_C_LookAt::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_Conv_TextToString_ReturnValue_1) == 0x000108, "Member 'Prop_microwave_C_LookAt::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_Conv_TextToString_ReturnValue_2) == 0x000118, "Member 'Prop_microwave_C_LookAt::CallFunc_Conv_TextToString_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_MakeLiteralText_ReturnValue_2) == 0x000128, "Member 'Prop_microwave_C_LookAt::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_Conv_TextToString_ReturnValue_3) == 0x000140, "Member 'Prop_microwave_C_LookAt::CallFunc_Conv_TextToString_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_Conv_FloatToText_ReturnValue_1) == 0x000150, "Member 'Prop_microwave_C_LookAt::CallFunc_Conv_FloatToText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_SelectString_ReturnValue) == 0x000168, "Member 'Prop_microwave_C_LookAt::CallFunc_SelectString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_Conv_TextToString_ReturnValue_4) == 0x000178, "Member 'Prop_microwave_C_LookAt::CallFunc_Conv_TextToString_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_SelectString_ReturnValue_1) == 0x000188, "Member 'Prop_microwave_C_LookAt::CallFunc_SelectString_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_MakeLiteralText_ReturnValue_3) == 0x000198, "Member 'Prop_microwave_C_LookAt::CallFunc_MakeLiteralText_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_Conv_TextToString_ReturnValue_5) == 0x0001B0, "Member 'Prop_microwave_C_LookAt::CallFunc_Conv_TextToString_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_SelectString_ReturnValue_2) == 0x0001C0, "Member 'Prop_microwave_C_LookAt::CallFunc_SelectString_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_SelectString_ReturnValue_3) == 0x0001D0, "Member 'Prop_microwave_C_LookAt::CallFunc_SelectString_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_Concat_StrStr_ReturnValue) == 0x0001E0, "Member 'Prop_microwave_C_LookAt::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_1) == 0x0001F0, "Member 'Prop_microwave_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000200, "Member 'Prop_microwave_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
 
 // Function prop_microwave.prop_microwave_C.loadData
 // 0x0190 (0x0190 - 0x0000)
@@ -445,10 +435,10 @@ public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadData_return;                          // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39D9[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mVector                        CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D9[0x3];                                       // 0x00D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39DA[0x3];                                     // 0x00D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_Array_Get_Item_1;                         // 0x00DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x00E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_Array_Get_Item_2;                         // 0x00F4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -509,7 +499,7 @@ static_assert(sizeof(Prop_microwave_C_IgnoreSave) == 0x000001, "Wrong size on Pr
 static_assert(offsetof(Prop_microwave_C_IgnoreSave, Param_IgnoreSave) == 0x000000, "Member 'Prop_microwave_C_IgnoreSave::Param_IgnoreSave' has a wrong offset!");
 
 // Function prop_microwave.prop_microwave_C.getActionOptions
-// 0x0060 (0x0060 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct Prop_microwave_C_GetActionOptions final
 {
 public:
@@ -519,20 +509,17 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
 };
 static_assert(alignof(Prop_microwave_C_GetActionOptions) == 0x000008, "Wrong alignment on Prop_microwave_C_GetActionOptions");
-static_assert(sizeof(Prop_microwave_C_GetActionOptions) == 0x000060, "Wrong size on Prop_microwave_C_GetActionOptions");
+static_assert(sizeof(Prop_microwave_C_GetActionOptions) == 0x000058, "Wrong size on Prop_microwave_C_GetActionOptions");
 static_assert(offsetof(Prop_microwave_C_GetActionOptions, Player) == 0x000000, "Member 'Prop_microwave_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Prop_microwave_C_GetActionOptions, Component) == 0x000008, "Member 'Prop_microwave_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Prop_microwave_C_GetActionOptions, Actor) == 0x000010, "Member 'Prop_microwave_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Prop_microwave_C_GetActionOptions, Options) == 0x000018, "Member 'Prop_microwave_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Prop_microwave_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Prop_microwave_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Prop_microwave_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Prop_microwave_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_GetActionOptions, Number) == 0x000048, "Member 'Prop_microwave_C_GetActionOptions::Number' has a wrong offset!");
-static_assert(offsetof(Prop_microwave_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Prop_microwave_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Prop_microwave_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'Prop_microwave_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 }
 

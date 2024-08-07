@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "Enum_interactionActions_structs.hpp"
 #include "UMG_structs.hpp"
 #include "AIModule_structs.hpp"
 
@@ -26,7 +26,7 @@ namespace SDK
 class ARufus_C : public ACharacter
 {
 public:
-	uint8                                         Pad_4B8[0x8];                                      // 0x04B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A25[0x8];                                     // 0x04B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UBillboardComponent*                    Grab;                                              // 0x04C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UBillboardComponent*                    Billboard1;                                        // 0x04D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -43,17 +43,21 @@ public:
 
 public:
 	void ExecuteUbergraph_rufus(int32 EntryPoint);
+	void PhysDestroyed();
+	void PhysPreDestroyed();
+	void EnterWater(class AWaterVolume_C* Water);
 	void LeaveWater(class AWaterVolume_C* Water);
 	void EnterWaterOrigin(class AWaterVolume_C* Water);
 	void ImpactDamage(float Damage, const struct FHitResult& Hit, class AActor* Actor, const struct FVector& Impact);
 	void AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Hit, const struct FVector& Impact, bool SkipSetting);
-	void EnterWater(class AWaterVolume_C* Water);
+	void LeaveWaterOrigin(class AWaterVolume_C* Water);
+	void Eaten();
+	void Virus(bool Activate);
+	void SetPropProps(bool Static, bool Frozen, bool Active);
+	void SetKey(const class FString& Key);
 	void ReceiveTick(float DeltaSeconds);
 	void ReceiveDestroyed();
 	void ReceiveBeginPlay();
-	void HookTension(class AHook_C* Hook);
-	void CleanSponge(float Clean, class AMainPlayer_C* Player);
-	void Crafted();
 	void Hooked(class AHook_C* Hook);
 	void AttemptIgnite();
 	void PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
@@ -75,21 +79,14 @@ public:
 	void Exploded(float Damage, const struct FVector& Location);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
-	void ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
+	void ReceivedPhyiscsDamage();
 	void Microwave();
 	void Ignite(float Fuel);
 	void FireDamage(float Damage);
 	void SteppedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void Unhook();
 	void DigUp();
-	void PhysPreDestroyed();
-	void PhysDestroyed();
-	void SetKey(const class FString& Key);
-	void SetPropProps(bool Static, bool Frozen, bool Active);
-	void Virus(bool Activate);
-	void Eaten();
-	void LeaveWaterOrigin(class AWaterVolume_C* Water);
 	void OnSuccess_1F7D9ADE470B0041A1C2409B8E5B8E12(EPathFollowingResult MovementResult);
 	void OnFail_1F7D9ADE470B0041A1C2409B8E5B8E12(EPathFollowingResult MovementResult);
 	void OnSuccess_FADCF23E4BAF14BB33124F926CAD3C77(EPathFollowingResult MovementResult);
@@ -101,10 +98,9 @@ public:
 	void CanBeUsedHold(bool* Return);
 	void GetKey(class FString* Key);
 	void ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 	void GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled);
 	void SkipRadial(bool* Skip);
-	void GetPriceMultiplier(float* PriceMult);
 
 public:
 	static class UClass* StaticClass()

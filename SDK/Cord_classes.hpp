@@ -10,36 +10,35 @@
 
 #include "Basic.hpp"
 
+#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Actor_save_classes.hpp"
-#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass cord.cord_C
-// 0x0068 (0x02B0 - 0x0248)
+// 0x0060 (0x02A8 - 0x0248)
 class ACord_C final : public AActor_save_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_Cord_C;                             // 0x0248(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   VisRoot;                                           // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USphereComponent*                       Sphere;                                            // 0x0258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        Audio;                                             // 0x0260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPhysicsConstraintComponent*            PhysicsConstraint;                                 // 0x0268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCableComponent*                        Cable;                                             // 0x0270(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Head;                                              // 0x0278(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Root;                                              // 0x0280(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class ACordSocket_C*                          Socket;                                            // 0x0288(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_C*                                Parent;                                            // 0x0290(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsDetached;                                        // 0x0298(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_299[0x3];                                      // 0x0299(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Dist;                                              // 0x029C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	bool                                          Length;                                            // 0x02A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A1[0x3];                                      // 0x02A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                Offset;                                            // 0x02A4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USphereComponent*                       Sphere;                                            // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        Audio;                                             // 0x0258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPhysicsConstraintComponent*            PhysicsConstraint;                                 // 0x0260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCableComponent*                        Cable;                                             // 0x0268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Head;                                              // 0x0270(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Root;                                              // 0x0278(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class ACordSocket_C*                          Socket;                                            // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_C*                                Parent;                                            // 0x0288(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDetached;                                        // 0x0290(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F82[0x3];                                     // 0x0291(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Dist;                                              // 0x0294(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	bool                                          Length;                                            // 0x0298(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F83[0x3];                                     // 0x0299(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                Offset;                                            // 0x029C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_cord(int32 EntryPoint);
@@ -47,12 +46,9 @@ public:
 	void Reattach();
 	void ReceiveTick(float DeltaSeconds);
 	void ReceiveBeginPlay();
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
-	void PlayerR(class AMainPlayer_C* Player);
-	void PlayerHold(class AMainPlayer_C* Player);
-	void PlayerUnequip(class AMainPlayer_C* Player);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
 	void UpdateStrAgl();
-	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage);
+	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void Thrown(class AMainPlayer_C* Player);
 	void broken_fire();
 	void broken();
@@ -64,18 +60,17 @@ public:
 	void Unplug();
 	void SetTr(const struct FTransform& NewTransform);
 	void GetAttachComponents(class UStaticMeshComponent** C1, class UStaticMeshComponent** C2, struct FTransform* Frame);
-	void UserConstructionScript();
-	void IgnoreSave(bool* Param_IgnoreSave);
-	void SkipPreDelete(bool* Skip);
 	void SetLen();
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 	void CanBePutInContainer(bool* Return);
 	void AsProp(class AProp_C** Return);
 	void CanPickup(bool* Return);
 	void NoRespawn(bool Param_NoRespawn, bool* Return);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
 	void IsButtonUsed(bool* Failed);
-	void LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage);
+	void UserConstructionScript();
+	void IgnoreSave(bool* Param_IgnoreSave);
+	void SkipPreDelete(bool* Skip);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 
 public:
 	static class UClass* StaticClass()
@@ -88,21 +83,20 @@ public:
 	}
 };
 static_assert(alignof(ACord_C) == 0x000008, "Wrong alignment on ACord_C");
-static_assert(sizeof(ACord_C) == 0x0002B0, "Wrong size on ACord_C");
+static_assert(sizeof(ACord_C) == 0x0002A8, "Wrong size on ACord_C");
 static_assert(offsetof(ACord_C, UberGraphFrame_Cord_C) == 0x000248, "Member 'ACord_C::UberGraphFrame_Cord_C' has a wrong offset!");
-static_assert(offsetof(ACord_C, VisRoot) == 0x000250, "Member 'ACord_C::VisRoot' has a wrong offset!");
-static_assert(offsetof(ACord_C, Sphere) == 0x000258, "Member 'ACord_C::Sphere' has a wrong offset!");
-static_assert(offsetof(ACord_C, Audio) == 0x000260, "Member 'ACord_C::Audio' has a wrong offset!");
-static_assert(offsetof(ACord_C, PhysicsConstraint) == 0x000268, "Member 'ACord_C::PhysicsConstraint' has a wrong offset!");
-static_assert(offsetof(ACord_C, Cable) == 0x000270, "Member 'ACord_C::Cable' has a wrong offset!");
-static_assert(offsetof(ACord_C, Head) == 0x000278, "Member 'ACord_C::Head' has a wrong offset!");
-static_assert(offsetof(ACord_C, Root) == 0x000280, "Member 'ACord_C::Root' has a wrong offset!");
-static_assert(offsetof(ACord_C, Socket) == 0x000288, "Member 'ACord_C::Socket' has a wrong offset!");
-static_assert(offsetof(ACord_C, Parent) == 0x000290, "Member 'ACord_C::Parent' has a wrong offset!");
-static_assert(offsetof(ACord_C, IsDetached) == 0x000298, "Member 'ACord_C::IsDetached' has a wrong offset!");
-static_assert(offsetof(ACord_C, Dist) == 0x00029C, "Member 'ACord_C::Dist' has a wrong offset!");
-static_assert(offsetof(ACord_C, Length) == 0x0002A0, "Member 'ACord_C::Length' has a wrong offset!");
-static_assert(offsetof(ACord_C, Offset) == 0x0002A4, "Member 'ACord_C::Offset' has a wrong offset!");
+static_assert(offsetof(ACord_C, Sphere) == 0x000250, "Member 'ACord_C::Sphere' has a wrong offset!");
+static_assert(offsetof(ACord_C, Audio) == 0x000258, "Member 'ACord_C::Audio' has a wrong offset!");
+static_assert(offsetof(ACord_C, PhysicsConstraint) == 0x000260, "Member 'ACord_C::PhysicsConstraint' has a wrong offset!");
+static_assert(offsetof(ACord_C, Cable) == 0x000268, "Member 'ACord_C::Cable' has a wrong offset!");
+static_assert(offsetof(ACord_C, Head) == 0x000270, "Member 'ACord_C::Head' has a wrong offset!");
+static_assert(offsetof(ACord_C, Root) == 0x000278, "Member 'ACord_C::Root' has a wrong offset!");
+static_assert(offsetof(ACord_C, Socket) == 0x000280, "Member 'ACord_C::Socket' has a wrong offset!");
+static_assert(offsetof(ACord_C, Parent) == 0x000288, "Member 'ACord_C::Parent' has a wrong offset!");
+static_assert(offsetof(ACord_C, IsDetached) == 0x000290, "Member 'ACord_C::IsDetached' has a wrong offset!");
+static_assert(offsetof(ACord_C, Dist) == 0x000294, "Member 'ACord_C::Dist' has a wrong offset!");
+static_assert(offsetof(ACord_C, Length) == 0x000298, "Member 'ACord_C::Length' has a wrong offset!");
+static_assert(offsetof(ACord_C, Offset) == 0x00029C, "Member 'ACord_C::Offset' has a wrong offset!");
 
 }
 

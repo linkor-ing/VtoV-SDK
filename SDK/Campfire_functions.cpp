@@ -17,27 +17,6 @@
 namespace SDK
 {
 
-// Function campfire.campfire_C.gatherDataFromKeyT
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ACampfire_C::GatherDataFromKeyT(bool* Gather)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("campfire_C", "gatherDataFromKeyT");
-
-	Params::Campfire_C_GatherDataFromKeyT Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Gather != nullptr)
-		*Gather = Parms.Gather;
-}
-
-
 // Function campfire.campfire_C.getTriggerData
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -108,9 +87,9 @@ void ACampfire_C::IgnoreSave_trigger(bool* Ignore)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // TArray<struct FStruct_save>             Invv                                                   (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// class ADreamBase_C*                     Param_Base                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ADreamBase_C*                     Base                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ACampfire_C::DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Param_Base)
+void ACampfire_C::DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base)
 {
 	static class UFunction* Func = nullptr;
 
@@ -125,8 +104,8 @@ void ACampfire_C::DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C
 
 	Invv = std::move(Parms.Invv);
 
-	if (Param_Base != nullptr)
-		*Param_Base = Parms.Param_Base;
+	if (Base != nullptr)
+		*Base = Parms.Base;
 }
 
 
@@ -340,7 +319,7 @@ void ACampfire_C::Unfoc()
 // Function campfire.campfire_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ACampfire_C::SettingsApplied(const struct FStruct_settings& Settings)
 {
@@ -450,30 +429,6 @@ void ACampfire_C::ApplyColor(const struct FLinearColor& Color)
 	Params::Campfire_C_ApplyColor Parms{};
 
 	Parms.Color = std::move(Color);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function campfire.campfire_C.texturePickerApply
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ACampfire_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("campfire_C", "texturePickerApply");
-
-	Params::Campfire_C_TexturePickerApply Parms{};
-
-	Parms.Picker = Picker;
-	Parms.Texture = Texture;
-	Parms.Param_Index = Param_Index;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

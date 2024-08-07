@@ -37,6 +37,20 @@ void AProp_lambert_C::ExecuteUbergraph_prop_lambert(int32 EntryPoint)
 }
 
 
+// Function prop_lambert.prop_lambert_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
+
+void AProp_lambert_C::ReceiveDestroyed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_lambert_C", "ReceiveDestroyed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function prop_lambert.prop_lambert_C.healing
 // (BlueprintCallable, BlueprintEvent)
 
@@ -46,6 +60,20 @@ void AProp_lambert_C::Healing()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("prop_lambert_C", "healing");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function prop_lambert.prop_lambert_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_lambert_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_lambert_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -68,34 +96,6 @@ void AProp_lambert_C::ReceiveTick(float DeltaSeconds)
 	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop_lambert.prop_lambert_C.ReceiveDestroyed
-// (Event, Public, BlueprintEvent)
-
-void AProp_lambert_C::ReceiveDestroyed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_lambert_C", "ReceiveDestroyed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop_lambert.prop_lambert_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_lambert_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_lambert_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

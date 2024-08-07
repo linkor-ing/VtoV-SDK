@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_wallShelf.prop_wallShelf_C
-// 0x0000 (0x0410 - 0x0410)
+// 0x0000 (0x0400 - 0x0400)
 class AProp_wallShelf_C final : public AProp_wallAttachable_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_wallShelf_C) == 0x000010, "Wrong alignment on AProp_wallShelf_C");
-static_assert(sizeof(AProp_wallShelf_C) == 0x000410, "Wrong size on AProp_wallShelf_C");
+static_assert(sizeof(AProp_wallShelf_C) == 0x000400, "Wrong size on AProp_wallShelf_C");
 
 }
 

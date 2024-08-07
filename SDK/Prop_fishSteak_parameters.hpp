@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Struct_food1_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Struct_prop_structs.hpp"
 
 
@@ -19,122 +19,100 @@ namespace SDK::Params
 {
 
 // Function prop_fishSteak.prop_fishSteak_C.cooked
-// 0x0220 (0x0220 - 0x0000)
+// 0x01C0 (0x01C0 - 0x0000)
 struct Prop_fishSteak_C_Cooked final
 {
 public:
 	int32                                         Temp_int_Variable;                                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_1;                               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable;                                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_1;                              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_2;                              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_3;                              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_4;                              // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_5;                              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_6;                              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_7;                              // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_8;                              // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_9;                              // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_10;                             // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_11;                             // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_12;                             // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_13;                             // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_14;                             // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_2;                               // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0084(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_85[0x3];                                       // 0x0085(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_3;                               // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x3];                                       // 0x0091(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_4;                               // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_5;                               // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A8[0x8];                                       // 0x00A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x00B0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_Select_Default;                             // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_C*                                CallFunc_FinishSpawningActor_ReturnValue;          // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_propToObject_ReturnValue;                 // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F9[0x3];                                       // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_food1                          CallFunc_propToObject_foodData;                    // 0x00FC(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 CallFunc_propToObject_object;                      // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_propToObject_isFood;                      // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_121[0x7];                                      // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_prop                           CallFunc_propToObject_propData;                    // 0x0128(0x0080)(HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_food_C*                           CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C1[0x7];                                      // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x01D0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E1[0x7];                                      // 0x01E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Select_Default_1;                           // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_C*                                CallFunc_asProp_return;                            // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_food_C*                           K2Node_DynamicCast_AsProp_Food;                    // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_201[0x7];                                      // 0x0201(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0208(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable;                                // 0x0004(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable_1;                              // 0x000C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable_2;                              // 0x0014(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable_3;                              // 0x001C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable_4;                              // 0x0024(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable_5;                              // 0x002C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F66[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_2;                               // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F67[0x3];                                     // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_3;                               // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_4;                               // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_5;                               // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F68[0x3];                                     // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0060(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_Select_Default;                             // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_C*                                CallFunc_FinishSpawningActor_ReturnValue;          // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_propToObject_ReturnValue;                 // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F69[0x3];                                     // 0x00A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_food1                          CallFunc_propToObject_foodData;                    // 0x00AC(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3F6A[0x4];                                     // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_propToObject_object;                      // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_propToObject_isFood;                      // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F6B[0x7];                                     // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_prop                           CallFunc_propToObject_propData;                    // 0x00D8(0x0080)(HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_food_C*                           CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F6C[0x7];                                     // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x0180(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F6D[0x7];                                     // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Select_Default_1;                           // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_C*                                CallFunc_asProp_return;                            // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_food_C*                           K2Node_DynamicCast_AsProp_Food;                    // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Prop_fishSteak_C_Cooked) == 0x000010, "Wrong alignment on Prop_fishSteak_C_Cooked");
-static_assert(sizeof(Prop_fishSteak_C_Cooked) == 0x000220, "Wrong size on Prop_fishSteak_C_Cooked");
+static_assert(sizeof(Prop_fishSteak_C_Cooked) == 0x0001C0, "Wrong size on Prop_fishSteak_C_Cooked");
 static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_int_Variable) == 0x000000, "Member 'Prop_fishSteak_C_Cooked::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_int_Variable_1) == 0x000004, "Member 'Prop_fishSteak_C_Cooked::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_name_Variable) == 0x000008, "Member 'Prop_fishSteak_C_Cooked::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_name_Variable_1) == 0x000010, "Member 'Prop_fishSteak_C_Cooked::Temp_name_Variable_1' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_name_Variable_2) == 0x000018, "Member 'Prop_fishSteak_C_Cooked::Temp_name_Variable_2' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_name_Variable_3) == 0x000020, "Member 'Prop_fishSteak_C_Cooked::Temp_name_Variable_3' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_name_Variable_4) == 0x000028, "Member 'Prop_fishSteak_C_Cooked::Temp_name_Variable_4' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_name_Variable_5) == 0x000030, "Member 'Prop_fishSteak_C_Cooked::Temp_name_Variable_5' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_name_Variable_6) == 0x000038, "Member 'Prop_fishSteak_C_Cooked::Temp_name_Variable_6' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_name_Variable_7) == 0x000040, "Member 'Prop_fishSteak_C_Cooked::Temp_name_Variable_7' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_name_Variable_8) == 0x000048, "Member 'Prop_fishSteak_C_Cooked::Temp_name_Variable_8' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_name_Variable_9) == 0x000050, "Member 'Prop_fishSteak_C_Cooked::Temp_name_Variable_9' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_name_Variable_10) == 0x000058, "Member 'Prop_fishSteak_C_Cooked::Temp_name_Variable_10' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_name_Variable_11) == 0x000060, "Member 'Prop_fishSteak_C_Cooked::Temp_name_Variable_11' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_name_Variable_12) == 0x000068, "Member 'Prop_fishSteak_C_Cooked::Temp_name_Variable_12' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_name_Variable_13) == 0x000070, "Member 'Prop_fishSteak_C_Cooked::Temp_name_Variable_13' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_name_Variable_14) == 0x000078, "Member 'Prop_fishSteak_C_Cooked::Temp_name_Variable_14' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_int_Variable_2) == 0x000080, "Member 'Prop_fishSteak_C_Cooked::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000084, "Member 'Prop_fishSteak_C_Cooked::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_Add_IntInt_ReturnValue) == 0x000088, "Member 'Prop_fishSteak_C_Cooked::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_int_Variable_3) == 0x00008C, "Member 'Prop_fishSteak_C_Cooked::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000090, "Member 'Prop_fishSteak_C_Cooked::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_Add_IntInt_ReturnValue_1) == 0x000094, "Member 'Prop_fishSteak_C_Cooked::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_int_Variable_4) == 0x000098, "Member 'Prop_fishSteak_C_Cooked::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_int_Variable_5) == 0x00009C, "Member 'Prop_fishSteak_C_Cooked::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x0000A0, "Member 'Prop_fishSteak_C_Cooked::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_Add_IntInt_ReturnValue_2) == 0x0000A4, "Member 'Prop_fishSteak_C_Cooked::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_GetTransform_ReturnValue) == 0x0000B0, "Member 'Prop_fishSteak_C_Cooked::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0000E0, "Member 'Prop_fishSteak_C_Cooked::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, K2Node_Select_Default) == 0x0000E8, "Member 'Prop_fishSteak_C_Cooked::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_FinishSpawningActor_ReturnValue) == 0x0000F0, "Member 'Prop_fishSteak_C_Cooked::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_propToObject_ReturnValue) == 0x0000F8, "Member 'Prop_fishSteak_C_Cooked::CallFunc_propToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_propToObject_foodData) == 0x0000FC, "Member 'Prop_fishSteak_C_Cooked::CallFunc_propToObject_foodData' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_propToObject_object) == 0x000118, "Member 'Prop_fishSteak_C_Cooked::CallFunc_propToObject_object' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_propToObject_isFood) == 0x000120, "Member 'Prop_fishSteak_C_Cooked::CallFunc_propToObject_isFood' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_propToObject_propData) == 0x000128, "Member 'Prop_fishSteak_C_Cooked::CallFunc_propToObject_propData' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x0001A8, "Member 'Prop_fishSteak_C_Cooked::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x0001B0, "Member 'Prop_fishSteak_C_Cooked::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x0001B8, "Member 'Prop_fishSteak_C_Cooked::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_IsValidClass_ReturnValue) == 0x0001C0, "Member 'Prop_fishSteak_C_Cooked::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x0001C8, "Member 'Prop_fishSteak_C_Cooked::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, K2Node_DynamicCast_AsInt_Player) == 0x0001D0, "Member 'Prop_fishSteak_C_Cooked::K2Node_DynamicCast_AsInt_Player' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, K2Node_DynamicCast_bSuccess) == 0x0001E0, "Member 'Prop_fishSteak_C_Cooked::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, K2Node_Select_Default_1) == 0x0001E8, "Member 'Prop_fishSteak_C_Cooked::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_asProp_return) == 0x0001F0, "Member 'Prop_fishSteak_C_Cooked::CallFunc_asProp_return' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, K2Node_DynamicCast_AsProp_Food) == 0x0001F8, "Member 'Prop_fishSteak_C_Cooked::K2Node_DynamicCast_AsProp_Food' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, K2Node_DynamicCast_bSuccess_1) == 0x000200, "Member 'Prop_fishSteak_C_Cooked::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_Conv_NameToString_ReturnValue) == 0x000208, "Member 'Prop_fishSteak_C_Cooked::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_name_Variable) == 0x000004, "Member 'Prop_fishSteak_C_Cooked::Temp_name_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_name_Variable_1) == 0x00000C, "Member 'Prop_fishSteak_C_Cooked::Temp_name_Variable_1' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_name_Variable_2) == 0x000014, "Member 'Prop_fishSteak_C_Cooked::Temp_name_Variable_2' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_name_Variable_3) == 0x00001C, "Member 'Prop_fishSteak_C_Cooked::Temp_name_Variable_3' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_name_Variable_4) == 0x000024, "Member 'Prop_fishSteak_C_Cooked::Temp_name_Variable_4' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_name_Variable_5) == 0x00002C, "Member 'Prop_fishSteak_C_Cooked::Temp_name_Variable_5' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_int_Variable_1) == 0x000034, "Member 'Prop_fishSteak_C_Cooked::Temp_int_Variable_1' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000038, "Member 'Prop_fishSteak_C_Cooked::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_Add_IntInt_ReturnValue) == 0x00003C, "Member 'Prop_fishSteak_C_Cooked::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_int_Variable_2) == 0x000040, "Member 'Prop_fishSteak_C_Cooked::Temp_int_Variable_2' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x000044, "Member 'Prop_fishSteak_C_Cooked::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_Add_IntInt_ReturnValue_1) == 0x000048, "Member 'Prop_fishSteak_C_Cooked::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_int_Variable_3) == 0x00004C, "Member 'Prop_fishSteak_C_Cooked::Temp_int_Variable_3' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_int_Variable_4) == 0x000050, "Member 'Prop_fishSteak_C_Cooked::Temp_int_Variable_4' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, Temp_int_Variable_5) == 0x000054, "Member 'Prop_fishSteak_C_Cooked::Temp_int_Variable_5' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x000058, "Member 'Prop_fishSteak_C_Cooked::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_Add_IntInt_ReturnValue_2) == 0x00005C, "Member 'Prop_fishSteak_C_Cooked::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_GetTransform_ReturnValue) == 0x000060, "Member 'Prop_fishSteak_C_Cooked::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000090, "Member 'Prop_fishSteak_C_Cooked::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, K2Node_Select_Default) == 0x000098, "Member 'Prop_fishSteak_C_Cooked::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_FinishSpawningActor_ReturnValue) == 0x0000A0, "Member 'Prop_fishSteak_C_Cooked::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_propToObject_ReturnValue) == 0x0000A8, "Member 'Prop_fishSteak_C_Cooked::CallFunc_propToObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_propToObject_foodData) == 0x0000AC, "Member 'Prop_fishSteak_C_Cooked::CallFunc_propToObject_foodData' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_propToObject_object) == 0x0000C8, "Member 'Prop_fishSteak_C_Cooked::CallFunc_propToObject_object' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_propToObject_isFood) == 0x0000D0, "Member 'Prop_fishSteak_C_Cooked::CallFunc_propToObject_isFood' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_propToObject_propData) == 0x0000D8, "Member 'Prop_fishSteak_C_Cooked::CallFunc_propToObject_propData' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000158, "Member 'Prop_fishSteak_C_Cooked::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000160, "Member 'Prop_fishSteak_C_Cooked::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2) == 0x000168, "Member 'Prop_fishSteak_C_Cooked::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_IsValidClass_ReturnValue) == 0x000170, "Member 'Prop_fishSteak_C_Cooked::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x000178, "Member 'Prop_fishSteak_C_Cooked::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, K2Node_DynamicCast_AsInt_Player) == 0x000180, "Member 'Prop_fishSteak_C_Cooked::K2Node_DynamicCast_AsInt_Player' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, K2Node_DynamicCast_bSuccess) == 0x000190, "Member 'Prop_fishSteak_C_Cooked::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, K2Node_Select_Default_1) == 0x000198, "Member 'Prop_fishSteak_C_Cooked::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, CallFunc_asProp_return) == 0x0001A0, "Member 'Prop_fishSteak_C_Cooked::CallFunc_asProp_return' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, K2Node_DynamicCast_AsProp_Food) == 0x0001A8, "Member 'Prop_fishSteak_C_Cooked::K2Node_DynamicCast_AsProp_Food' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Cooked, K2Node_DynamicCast_bSuccess_1) == 0x0001B0, "Member 'Prop_fishSteak_C_Cooked::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
 
 // Function prop_fishSteak.prop_fishSteak_C.Init
-// 0x0084 (0x0084 - 0x0000)
+// 0x003C (0x003C - 0x0000)
 struct Prop_fishSteak_C_Init final
 {
 public:
@@ -145,19 +123,10 @@ public:
 	class FName                                   Temp_name_Variable_3;                              // 0x001C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Temp_name_Variable_4;                              // 0x0024(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Temp_name_Variable_5;                              // 0x002C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_6;                              // 0x0034(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_7;                              // 0x003C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_8;                              // 0x0044(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_9;                              // 0x004C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_10;                             // 0x0054(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_11;                             // 0x005C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_12;                             // 0x0064(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_13;                             // 0x006C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_14;                             // 0x0074(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_Select_Default;                             // 0x007C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_Select_Default;                             // 0x0034(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_fishSteak_C_Init) == 0x000004, "Wrong alignment on Prop_fishSteak_C_Init");
-static_assert(sizeof(Prop_fishSteak_C_Init) == 0x000084, "Wrong size on Prop_fishSteak_C_Init");
+static_assert(sizeof(Prop_fishSteak_C_Init) == 0x00003C, "Wrong size on Prop_fishSteak_C_Init");
 static_assert(offsetof(Prop_fishSteak_C_Init, Temp_int_Variable) == 0x000000, "Member 'Prop_fishSteak_C_Init::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(Prop_fishSteak_C_Init, Temp_name_Variable) == 0x000004, "Member 'Prop_fishSteak_C_Init::Temp_name_Variable' has a wrong offset!");
 static_assert(offsetof(Prop_fishSteak_C_Init, Temp_name_Variable_1) == 0x00000C, "Member 'Prop_fishSteak_C_Init::Temp_name_Variable_1' has a wrong offset!");
@@ -165,16 +134,7 @@ static_assert(offsetof(Prop_fishSteak_C_Init, Temp_name_Variable_2) == 0x000014,
 static_assert(offsetof(Prop_fishSteak_C_Init, Temp_name_Variable_3) == 0x00001C, "Member 'Prop_fishSteak_C_Init::Temp_name_Variable_3' has a wrong offset!");
 static_assert(offsetof(Prop_fishSteak_C_Init, Temp_name_Variable_4) == 0x000024, "Member 'Prop_fishSteak_C_Init::Temp_name_Variable_4' has a wrong offset!");
 static_assert(offsetof(Prop_fishSteak_C_Init, Temp_name_Variable_5) == 0x00002C, "Member 'Prop_fishSteak_C_Init::Temp_name_Variable_5' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Init, Temp_name_Variable_6) == 0x000034, "Member 'Prop_fishSteak_C_Init::Temp_name_Variable_6' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Init, Temp_name_Variable_7) == 0x00003C, "Member 'Prop_fishSteak_C_Init::Temp_name_Variable_7' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Init, Temp_name_Variable_8) == 0x000044, "Member 'Prop_fishSteak_C_Init::Temp_name_Variable_8' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Init, Temp_name_Variable_9) == 0x00004C, "Member 'Prop_fishSteak_C_Init::Temp_name_Variable_9' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Init, Temp_name_Variable_10) == 0x000054, "Member 'Prop_fishSteak_C_Init::Temp_name_Variable_10' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Init, Temp_name_Variable_11) == 0x00005C, "Member 'Prop_fishSteak_C_Init::Temp_name_Variable_11' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Init, Temp_name_Variable_12) == 0x000064, "Member 'Prop_fishSteak_C_Init::Temp_name_Variable_12' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Init, Temp_name_Variable_13) == 0x00006C, "Member 'Prop_fishSteak_C_Init::Temp_name_Variable_13' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Init, Temp_name_Variable_14) == 0x000074, "Member 'Prop_fishSteak_C_Init::Temp_name_Variable_14' has a wrong offset!");
-static_assert(offsetof(Prop_fishSteak_C_Init, K2Node_Select_Default) == 0x00007C, "Member 'Prop_fishSteak_C_Init::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(Prop_fishSteak_C_Init, K2Node_Select_Default) == 0x000034, "Member 'Prop_fishSteak_C_Init::K2Node_Select_Default' has a wrong offset!");
 
 }
 

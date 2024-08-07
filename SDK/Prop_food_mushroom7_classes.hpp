@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_food_mushroom7.prop_food_mushroom7_C
-// 0x0008 (0x03E0 - 0x03D8)
+// 0x0008 (0x03D0 - 0x03C8)
 class AProp_food_mushroom7_C final : public AProp_food_mushroom_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_food_mushroom7_C;              // 0x03D8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_food_mushroom7_C;              // 0x03C8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_prop_food_mushroom7(int32 EntryPoint);
@@ -40,8 +40,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_food_mushroom7_C) == 0x000008, "Wrong alignment on AProp_food_mushroom7_C");
-static_assert(sizeof(AProp_food_mushroom7_C) == 0x0003E0, "Wrong size on AProp_food_mushroom7_C");
-static_assert(offsetof(AProp_food_mushroom7_C, UberGraphFrame_Prop_food_mushroom7_C) == 0x0003D8, "Member 'AProp_food_mushroom7_C::UberGraphFrame_Prop_food_mushroom7_C' has a wrong offset!");
+static_assert(sizeof(AProp_food_mushroom7_C) == 0x0003D0, "Wrong size on AProp_food_mushroom7_C");
+static_assert(offsetof(AProp_food_mushroom7_C, UberGraphFrame_Prop_food_mushroom7_C) == 0x0003C8, "Member 'AProp_food_mushroom7_C::UberGraphFrame_Prop_food_mushroom7_C' has a wrong offset!");
 
 }
 

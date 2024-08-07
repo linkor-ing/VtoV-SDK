@@ -10,7 +10,6 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 
 
@@ -18,98 +17,45 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass NewBlueprint.NewBlueprint_C
-// 0x0108 (0x0328 - 0x0220)
-class NewBlueprint::ANewBlueprint_C final : public AActor
+// 0x0080 (0x02A0 - 0x0220)
+class ANewBlueprint_C final : public AActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   bone27;                                            // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   bone26;                                            // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   bone25;                                            // 0x0238(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   bone24;                                            // 0x0240(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   bone23;                                            // 0x0248(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   bone22;                                            // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   bone21;                                            // 0x0258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   bone20;                                            // 0x0260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   bone19;                                            // 0x0268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   bone18;                                            // 0x0270(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   bone17;                                            // 0x0278(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   bone16;                                            // 0x0280(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   bone15;                                            // 0x0288(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   bone14;                                            // 0x0290(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   bone13;                                            // 0x0298(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   bone12;                                            // 0x02A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   bone11;                                            // 0x02A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   bone10;                                            // 0x02B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   bone9;                                             // 0x02B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   bone8;                                             // 0x02C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   bone7;                                             // 0x02C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   bone6;                                             // 0x02D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   bone5;                                             // 0x02D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   bone4;                                             // 0x02E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Bone3;                                             // 0x02E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Bone2;                                             // 0x02F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Bone1;                                             // 0x02F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Bone;                                              // 0x0300(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0308(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Timeline_0_a_D28C2A534E9EBCA575B73E8CB4FA5469;     // 0x0310(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Timeline_0__Direction_D28C2A534E9EBCA575B73E8CB4FA5469; // 0x0314(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_315[0x3];                                      // 0x0315(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Timeline_0;                                        // 0x0318(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          NewVar_0;                                          // 0x0320(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0220(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class FString                                 String;                                            // 0x0228(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 NewVar_0;                                          // 0x0238(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          NewVar_1;                                          // 0x0248(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2074[0x7];                                     // 0x0249(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         Files;                                             // 0x0250(0x0010)(Edit, BlueprintVisible)
+	TArray<class FString>                         Names;                                             // 0x0260(0x0010)(Edit, BlueprintVisible)
+	TArray<class FString>                         Paths;                                             // 0x0270(0x0010)(Edit, BlueprintVisible)
+	TArray<class FString>                         Strings;                                           // 0x0280(0x0010)(Edit, BlueprintVisible)
+	TArray<class FString>                         Keys;                                              // 0x0290(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void Timeline_0__FinishedFunc();
-	void Timeline_0__UpdateFunc();
-	void ReceiveBeginPlay();
-	void ExecuteUbergraph_NewBlueprint(int32 EntryPoint);
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BlueprintGeneratedClass NewBlueprint.NewBlueprint_C", true, "NewBlueprint_C">();
+		return StaticBPGeneratedClassImpl<"NewBlueprint_C">();
 	}
-	static class NewBlueprint::ANewBlueprint_C* GetDefaultObj()
+	static class ANewBlueprint_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<NewBlueprint::ANewBlueprint_C>();
+		return GetDefaultObjImpl<ANewBlueprint_C>();
 	}
 };
-static_assert(alignof(NewBlueprint::ANewBlueprint_C) == 0x000008, "Wrong alignment on NewBlueprint::ANewBlueprint_C");
-static_assert(sizeof(NewBlueprint::ANewBlueprint_C) == 0x000328, "Wrong size on NewBlueprint::ANewBlueprint_C");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, UberGraphFrame) == 0x000220, "Member 'NewBlueprint::ANewBlueprint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone27) == 0x000228, "Member 'NewBlueprint::ANewBlueprint_C::bone27' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone26) == 0x000230, "Member 'NewBlueprint::ANewBlueprint_C::bone26' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone25) == 0x000238, "Member 'NewBlueprint::ANewBlueprint_C::bone25' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone24) == 0x000240, "Member 'NewBlueprint::ANewBlueprint_C::bone24' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone23) == 0x000248, "Member 'NewBlueprint::ANewBlueprint_C::bone23' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone22) == 0x000250, "Member 'NewBlueprint::ANewBlueprint_C::bone22' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone21) == 0x000258, "Member 'NewBlueprint::ANewBlueprint_C::bone21' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone20) == 0x000260, "Member 'NewBlueprint::ANewBlueprint_C::bone20' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone19) == 0x000268, "Member 'NewBlueprint::ANewBlueprint_C::bone19' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone18) == 0x000270, "Member 'NewBlueprint::ANewBlueprint_C::bone18' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone17) == 0x000278, "Member 'NewBlueprint::ANewBlueprint_C::bone17' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone16) == 0x000280, "Member 'NewBlueprint::ANewBlueprint_C::bone16' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone15) == 0x000288, "Member 'NewBlueprint::ANewBlueprint_C::bone15' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone14) == 0x000290, "Member 'NewBlueprint::ANewBlueprint_C::bone14' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone13) == 0x000298, "Member 'NewBlueprint::ANewBlueprint_C::bone13' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone12) == 0x0002A0, "Member 'NewBlueprint::ANewBlueprint_C::bone12' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone11) == 0x0002A8, "Member 'NewBlueprint::ANewBlueprint_C::bone11' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone10) == 0x0002B0, "Member 'NewBlueprint::ANewBlueprint_C::bone10' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone9) == 0x0002B8, "Member 'NewBlueprint::ANewBlueprint_C::bone9' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone8) == 0x0002C0, "Member 'NewBlueprint::ANewBlueprint_C::bone8' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone7) == 0x0002C8, "Member 'NewBlueprint::ANewBlueprint_C::bone7' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone6) == 0x0002D0, "Member 'NewBlueprint::ANewBlueprint_C::bone6' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone5) == 0x0002D8, "Member 'NewBlueprint::ANewBlueprint_C::bone5' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, bone4) == 0x0002E0, "Member 'NewBlueprint::ANewBlueprint_C::bone4' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, Bone3) == 0x0002E8, "Member 'NewBlueprint::ANewBlueprint_C::Bone3' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, Bone2) == 0x0002F0, "Member 'NewBlueprint::ANewBlueprint_C::Bone2' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, Bone1) == 0x0002F8, "Member 'NewBlueprint::ANewBlueprint_C::Bone1' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, Bone) == 0x000300, "Member 'NewBlueprint::ANewBlueprint_C::Bone' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, DefaultSceneRoot) == 0x000308, "Member 'NewBlueprint::ANewBlueprint_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, Timeline_0_a_D28C2A534E9EBCA575B73E8CB4FA5469) == 0x000310, "Member 'NewBlueprint::ANewBlueprint_C::Timeline_0_a_D28C2A534E9EBCA575B73E8CB4FA5469' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, Timeline_0__Direction_D28C2A534E9EBCA575B73E8CB4FA5469) == 0x000314, "Member 'NewBlueprint::ANewBlueprint_C::Timeline_0__Direction_D28C2A534E9EBCA575B73E8CB4FA5469' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, Timeline_0) == 0x000318, "Member 'NewBlueprint::ANewBlueprint_C::Timeline_0' has a wrong offset!");
-static_assert(offsetof(NewBlueprint::ANewBlueprint_C, NewVar_0) == 0x000320, "Member 'NewBlueprint::ANewBlueprint_C::NewVar_0' has a wrong offset!");
+static_assert(alignof(ANewBlueprint_C) == 0x000008, "Wrong alignment on ANewBlueprint_C");
+static_assert(sizeof(ANewBlueprint_C) == 0x0002A0, "Wrong size on ANewBlueprint_C");
+static_assert(offsetof(ANewBlueprint_C, DefaultSceneRoot) == 0x000220, "Member 'ANewBlueprint_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(offsetof(ANewBlueprint_C, String) == 0x000228, "Member 'ANewBlueprint_C::String' has a wrong offset!");
+static_assert(offsetof(ANewBlueprint_C, NewVar_0) == 0x000238, "Member 'ANewBlueprint_C::NewVar_0' has a wrong offset!");
+static_assert(offsetof(ANewBlueprint_C, NewVar_1) == 0x000248, "Member 'ANewBlueprint_C::NewVar_1' has a wrong offset!");
+static_assert(offsetof(ANewBlueprint_C, Files) == 0x000250, "Member 'ANewBlueprint_C::Files' has a wrong offset!");
+static_assert(offsetof(ANewBlueprint_C, Names) == 0x000260, "Member 'ANewBlueprint_C::Names' has a wrong offset!");
+static_assert(offsetof(ANewBlueprint_C, Paths) == 0x000270, "Member 'ANewBlueprint_C::Paths' has a wrong offset!");
+static_assert(offsetof(ANewBlueprint_C, Strings) == 0x000280, "Member 'ANewBlueprint_C::Strings' has a wrong offset!");
+static_assert(offsetof(ANewBlueprint_C, Keys) == 0x000290, "Member 'ANewBlueprint_C::Keys' has a wrong offset!");
 
 }
 

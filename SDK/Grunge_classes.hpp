@@ -36,12 +36,11 @@ public:
 	void Sound();
 	void UserConstructionScript();
 	void SetMat();
-	void Clean(class AProp_sponge_C* Sponge, float Sub, bool NoSound);
+	void Clean(class AProp_sponge_C* Sponge, float Sub);
 	void SkipPreDelete(bool* Skip);
 	void IgnoreSave(bool* Param_IgnoreSave);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
-	void GatherDataFromKey(bool* Gather);
 
 public:
 	static class UClass* StaticClass()

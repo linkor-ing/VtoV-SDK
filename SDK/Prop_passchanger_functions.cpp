@@ -37,19 +37,19 @@ void AProp_passchanger_C::ExecuteUbergraph_prop_passchanger(int32 EntryPoint)
 }
 
 
-// Function prop_passchanger.prop_passchanger_C.playerHandUse_LMB
+// Function prop_passchanger.prop_passchanger_C.playerHandUse_RMB
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_passchanger_C::PlayerHandUse_LMB(class AMainPlayer_C* Player)
+void AProp_passchanger_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("prop_passchanger_C", "playerHandUse_LMB");
+		Func = Class->GetFunction("prop_passchanger_C", "playerHandUse_RMB");
 
-	Params::Prop_passchanger_C_PlayerHandUse_LMB Parms{};
+	Params::Prop_passchanger_C_PlayerHandUse_RMB Parms{};
 
 	Parms.Player = Player;
 

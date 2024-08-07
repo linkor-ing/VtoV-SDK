@@ -19,24 +19,25 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_3cats.prop_3cats_C
-// 0x0020 (0x0398 - 0x0378)
+// 0x0020 (0x0388 - 0x0368)
 class AProp_3cats_C final : public AProp_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_3cats_C;                       // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPointLightComponent*                   PointLight;                                        // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         A_a_E242AECD400018D07DE48597EB675DC4;              // 0x0388(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            A__Direction_E242AECD400018D07DE48597EB675DC4;     // 0x038C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_38D[0x3];                                      // 0x038D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     A;                                                 // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B8C[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_3cats_C;                       // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPointLightComponent*                   PointLight;                                        // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         A_a_E242AECD400018D07DE48597EB675DC4;              // 0x0378(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            A__Direction_E242AECD400018D07DE48597EB675DC4;     // 0x037C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B8D[0x3];                                     // 0x037D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     A;                                                 // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_3cats(int32 EntryPoint);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
 	void A__UpdateFunc();
 	void A__FinishedFunc();
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 
 public:
 	static class UClass* StaticClass()
@@ -49,12 +50,12 @@ public:
 	}
 };
 static_assert(alignof(AProp_3cats_C) == 0x000008, "Wrong alignment on AProp_3cats_C");
-static_assert(sizeof(AProp_3cats_C) == 0x000398, "Wrong size on AProp_3cats_C");
-static_assert(offsetof(AProp_3cats_C, UberGraphFrame_Prop_3cats_C) == 0x000378, "Member 'AProp_3cats_C::UberGraphFrame_Prop_3cats_C' has a wrong offset!");
-static_assert(offsetof(AProp_3cats_C, PointLight) == 0x000380, "Member 'AProp_3cats_C::PointLight' has a wrong offset!");
-static_assert(offsetof(AProp_3cats_C, A_a_E242AECD400018D07DE48597EB675DC4) == 0x000388, "Member 'AProp_3cats_C::A_a_E242AECD400018D07DE48597EB675DC4' has a wrong offset!");
-static_assert(offsetof(AProp_3cats_C, A__Direction_E242AECD400018D07DE48597EB675DC4) == 0x00038C, "Member 'AProp_3cats_C::A__Direction_E242AECD400018D07DE48597EB675DC4' has a wrong offset!");
-static_assert(offsetof(AProp_3cats_C, A) == 0x000390, "Member 'AProp_3cats_C::A' has a wrong offset!");
+static_assert(sizeof(AProp_3cats_C) == 0x000388, "Wrong size on AProp_3cats_C");
+static_assert(offsetof(AProp_3cats_C, UberGraphFrame_Prop_3cats_C) == 0x000368, "Member 'AProp_3cats_C::UberGraphFrame_Prop_3cats_C' has a wrong offset!");
+static_assert(offsetof(AProp_3cats_C, PointLight) == 0x000370, "Member 'AProp_3cats_C::PointLight' has a wrong offset!");
+static_assert(offsetof(AProp_3cats_C, A_a_E242AECD400018D07DE48597EB675DC4) == 0x000378, "Member 'AProp_3cats_C::A_a_E242AECD400018D07DE48597EB675DC4' has a wrong offset!");
+static_assert(offsetof(AProp_3cats_C, A__Direction_E242AECD400018D07DE48597EB675DC4) == 0x00037C, "Member 'AProp_3cats_C::A__Direction_E242AECD400018D07DE48597EB675DC4' has a wrong offset!");
+static_assert(offsetof(AProp_3cats_C, A) == 0x000380, "Member 'AProp_3cats_C::A' has a wrong offset!");
 
 }
 

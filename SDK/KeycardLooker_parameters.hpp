@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "Struct_settings_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Struct_save_structs.hpp"
+#include "Struct_settings_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -45,14 +45,14 @@ static_assert(sizeof(KeycardLooker_C_StuffUpgraded) == 0x000008, "Wrong size on 
 static_assert(offsetof(KeycardLooker_C_StuffUpgraded, GameMode) == 0x000000, "Member 'KeycardLooker_C_StuffUpgraded::GameMode' has a wrong offset!");
 
 // Function keycardLooker.keycardLooker_C.settingsApplied
-// 0x00F0 (0x00F0 - 0x0000)
+// 0x00CC (0x00CC - 0x0000)
 struct KeycardLooker_C_SettingsApplied final
 {
 public:
-	struct FStruct_settings                       Settings;                                          // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FStruct_settings                       Settings;                                          // 0x0000(0x00CC)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(KeycardLooker_C_SettingsApplied) == 0x000008, "Wrong alignment on KeycardLooker_C_SettingsApplied");
-static_assert(sizeof(KeycardLooker_C_SettingsApplied) == 0x0000F0, "Wrong size on KeycardLooker_C_SettingsApplied");
+static_assert(alignof(KeycardLooker_C_SettingsApplied) == 0x000004, "Wrong alignment on KeycardLooker_C_SettingsApplied");
+static_assert(sizeof(KeycardLooker_C_SettingsApplied) == 0x0000CC, "Wrong size on KeycardLooker_C_SettingsApplied");
 static_assert(offsetof(KeycardLooker_C_SettingsApplied, Settings) == 0x000000, "Member 'KeycardLooker_C_SettingsApplied::Settings' has a wrong offset!");
 
 // Function keycardLooker.keycardLooker_C.AnyKey
@@ -79,21 +79,6 @@ static_assert(alignof(KeycardLooker_C_ApplyColor) == 0x000004, "Wrong alignment 
 static_assert(sizeof(KeycardLooker_C_ApplyColor) == 0x000010, "Wrong size on KeycardLooker_C_ApplyColor");
 static_assert(offsetof(KeycardLooker_C_ApplyColor, Color) == 0x000000, "Member 'KeycardLooker_C_ApplyColor::Color' has a wrong offset!");
 
-// Function keycardLooker.keycardLooker_C.texturePickerApply
-// 0x0018 (0x0018 - 0x0000)
-struct KeycardLooker_C_TexturePickerApply final
-{
-public:
-	class UUmg_texturePicker_C*                   Picker;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Param_Index;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(KeycardLooker_C_TexturePickerApply) == 0x000008, "Wrong alignment on KeycardLooker_C_TexturePickerApply");
-static_assert(sizeof(KeycardLooker_C_TexturePickerApply) == 0x000018, "Wrong size on KeycardLooker_C_TexturePickerApply");
-static_assert(offsetof(KeycardLooker_C_TexturePickerApply, Picker) == 0x000000, "Member 'KeycardLooker_C_TexturePickerApply::Picker' has a wrong offset!");
-static_assert(offsetof(KeycardLooker_C_TexturePickerApply, Texture) == 0x000008, "Member 'KeycardLooker_C_TexturePickerApply::Texture' has a wrong offset!");
-static_assert(offsetof(KeycardLooker_C_TexturePickerApply, Param_Index) == 0x000010, "Member 'KeycardLooker_C_TexturePickerApply::Param_Index' has a wrong offset!");
-
 // Function keycardLooker.keycardLooker_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
 struct KeycardLooker_C_ReceiveTick final
@@ -106,61 +91,55 @@ static_assert(sizeof(KeycardLooker_C_ReceiveTick) == 0x000004, "Wrong size on Ke
 static_assert(offsetof(KeycardLooker_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'KeycardLooker_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function keycardLooker.keycardLooker_C.ExecuteUbergraph_keycardLooker
-// 0x0208 (0x0208 - 0x0000)
+// 0x01D0 (0x01D0 - 0x0000)
 struct KeycardLooker_C_ExecuteUbergraph_keycardLooker final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4380[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0010(0x00F0)(HasGetValueTypeHash)
-	struct FKey                                   K2Node_Event_key;                                  // 0x0100(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed;                              // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_119[0x3];                                      // 0x0119(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Event_color;                                // 0x011C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUmg_texturePicker_C*                   K2Node_Event_picker;                               // 0x0130(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_Event_texture;                              // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_index;                                // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_144[0x4];                                      // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_151[0x7];                                      // 0x0151(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_getObjectFromKey_Output;                  // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_keycard_C*                        K2Node_DynamicCast_AsProp_Keycard;                 // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_169[0x3];                                      // 0x0169(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x016C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult;       // 0x017C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_K2_SetActorLocation_ReturnValue;          // 0x0204(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsOverlappingActor_ReturnValue;           // 0x0205(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0010(0x00CC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4381[0x4];                                     // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   K2Node_Event_key;                                  // 0x00E0(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed;                              // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4382[0x3];                                     // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           K2Node_Event_color;                                // 0x00FC(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4383[0x4];                                     // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4384[0x7];                                     // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_getObjectFromKey_Output;                  // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_keycard_C*                        K2Node_DynamicCast_AsProp_Keycard;                 // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4385[0x3];                                     // 0x0131(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0134(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult;       // 0x0144(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_K2_SetActorLocation_ReturnValue;          // 0x01CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsOverlappingActor_ReturnValue;           // 0x01CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(KeycardLooker_C_ExecuteUbergraph_keycardLooker) == 0x000008, "Wrong alignment on KeycardLooker_C_ExecuteUbergraph_keycardLooker");
-static_assert(sizeof(KeycardLooker_C_ExecuteUbergraph_keycardLooker) == 0x000208, "Wrong size on KeycardLooker_C_ExecuteUbergraph_keycardLooker");
+static_assert(sizeof(KeycardLooker_C_ExecuteUbergraph_keycardLooker) == 0x0001D0, "Wrong size on KeycardLooker_C_ExecuteUbergraph_keycardLooker");
 static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, EntryPoint) == 0x000000, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::EntryPoint' has a wrong offset!");
 static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, Temp_bool_Has_Been_Initd_Variable) == 0x000005, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
 static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, K2Node_Event_gamemode) == 0x000008, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::K2Node_Event_gamemode' has a wrong offset!");
 static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, K2Node_Event_settings) == 0x000010, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::K2Node_Event_settings' has a wrong offset!");
-static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, K2Node_Event_key) == 0x000100, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::K2Node_Event_key' has a wrong offset!");
-static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, K2Node_Event_pressed) == 0x000118, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::K2Node_Event_pressed' has a wrong offset!");
-static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, K2Node_Event_color) == 0x00011C, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::K2Node_Event_color' has a wrong offset!");
-static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, K2Node_Event_picker) == 0x000130, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::K2Node_Event_picker' has a wrong offset!");
-static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, K2Node_Event_texture) == 0x000138, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::K2Node_Event_texture' has a wrong offset!");
-static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, K2Node_Event_index) == 0x000140, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000148, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, Temp_bool_IsClosed_Variable) == 0x000150, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, CallFunc_getObjectFromKey_Output) == 0x000158, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::CallFunc_getObjectFromKey_Output' has a wrong offset!");
-static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, K2Node_DynamicCast_AsProp_Keycard) == 0x000160, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::K2Node_DynamicCast_AsProp_Keycard' has a wrong offset!");
-static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, K2Node_DynamicCast_bSuccess) == 0x000168, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x00016C, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, K2Node_Event_DeltaSeconds) == 0x000178, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, CallFunc_K2_SetActorLocation_SweepHitResult) == 0x00017C, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::CallFunc_K2_SetActorLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, CallFunc_K2_SetActorLocation_ReturnValue) == 0x000204, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::CallFunc_K2_SetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, CallFunc_IsOverlappingActor_ReturnValue) == 0x000205, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::CallFunc_IsOverlappingActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, K2Node_Event_key) == 0x0000E0, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::K2Node_Event_key' has a wrong offset!");
+static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, K2Node_Event_pressed) == 0x0000F8, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::K2Node_Event_pressed' has a wrong offset!");
+static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, K2Node_Event_color) == 0x0000FC, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::K2Node_Event_color' has a wrong offset!");
+static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000110, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, Temp_bool_IsClosed_Variable) == 0x000118, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::Temp_bool_IsClosed_Variable' has a wrong offset!");
+static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, CallFunc_getObjectFromKey_Output) == 0x000120, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::CallFunc_getObjectFromKey_Output' has a wrong offset!");
+static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, K2Node_DynamicCast_AsProp_Keycard) == 0x000128, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::K2Node_DynamicCast_AsProp_Keycard' has a wrong offset!");
+static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, K2Node_DynamicCast_bSuccess) == 0x000130, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000134, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, K2Node_Event_DeltaSeconds) == 0x000140, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, CallFunc_K2_SetActorLocation_SweepHitResult) == 0x000144, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::CallFunc_K2_SetActorLocation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, CallFunc_K2_SetActorLocation_ReturnValue) == 0x0001CC, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::CallFunc_K2_SetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(KeycardLooker_C_ExecuteUbergraph_keycardLooker, CallFunc_IsOverlappingActor_ReturnValue) == 0x0001CD, "Member 'KeycardLooker_C_ExecuteUbergraph_keycardLooker::CallFunc_IsOverlappingActor_ReturnValue' has a wrong offset!");
 
 }
 

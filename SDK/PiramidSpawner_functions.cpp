@@ -210,26 +210,5 @@ void APiramidSpawner_C::GetTriggerData(struct FStruct_triggerSave* Data)
 		*Data = std::move(Parms.Data);
 }
 
-
-// Function piramidSpawner.piramidSpawner_C.gatherDataFromKeyT
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void APiramidSpawner_C::GatherDataFromKeyT(bool* Gather)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("piramidSpawner_C", "gatherDataFromKeyT");
-
-	Params::PiramidSpawner_C_GatherDataFromKeyT Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Gather != nullptr)
-		*Gather = Parms.Gather;
-}
-
 }
 

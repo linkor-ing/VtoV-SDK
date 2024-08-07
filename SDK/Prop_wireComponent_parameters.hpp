@@ -22,10 +22,10 @@ struct Prop_wireComponent_C_ExecuteUbergraph_prop_wireComponent final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D09[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AWire_C*                                K2Node_Event_wire;                                 // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_side;                                 // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D0A[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AWire_C*                                K2Node_Event_wire_2;                               // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AWire_C*                                K2Node_Event_wire_1;                               // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_side_1;                               // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -77,26 +77,24 @@ static_assert(sizeof(Prop_wireComponent_C_WirePass) == 0x000008, "Wrong size on 
 static_assert(offsetof(Prop_wireComponent_C_WirePass, Wire) == 0x000000, "Member 'Prop_wireComponent_C_WirePass::Wire' has a wrong offset!");
 
 // Function prop_wireComponent.prop_wireComponent_C.lookAt
-// 0x00B8 (0x00B8 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct Prop_wireComponent_C_LookAt final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D0B[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_wireComponent_C_LookAt) == 0x000008, "Wrong alignment on Prop_wireComponent_C_LookAt");
-static_assert(sizeof(Prop_wireComponent_C_LookAt) == 0x0000B8, "Wrong size on Prop_wireComponent_C_LookAt");
+static_assert(sizeof(Prop_wireComponent_C_LookAt) == 0x0000B0, "Wrong size on Prop_wireComponent_C_LookAt");
 static_assert(offsetof(Prop_wireComponent_C_LookAt, Player) == 0x000000, "Member 'Prop_wireComponent_C_LookAt::Player' has a wrong offset!");
 static_assert(offsetof(Prop_wireComponent_C_LookAt, Param_Hit) == 0x000008, "Member 'Prop_wireComponent_C_LookAt::Param_Hit' has a wrong offset!");
 static_assert(offsetof(Prop_wireComponent_C_LookAt, Return) == 0x000090, "Member 'Prop_wireComponent_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(Prop_wireComponent_C_LookAt, Text) == 0x000098, "Member 'Prop_wireComponent_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(Prop_wireComponent_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'Prop_wireComponent_C_LookAt::boundObjectReplace' has a wrong offset!");
-static_assert(offsetof(Prop_wireComponent_C_LookAt, Number) == 0x0000B0, "Member 'Prop_wireComponent_C_LookAt::Number' has a wrong offset!");
 
 }
 

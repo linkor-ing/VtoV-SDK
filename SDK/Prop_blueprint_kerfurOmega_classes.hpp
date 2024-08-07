@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_blueprint_kerfurOmega.prop_blueprint_kerfurOmega_C
-// 0x0000 (0x03C8 - 0x03C8)
+// 0x0000 (0x03B8 - 0x03B8)
 class AProp_blueprint_kerfurOmega_C final : public AProp_blueprint_C
 {
 public:
@@ -35,7 +35,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_blueprint_kerfurOmega_C) == 0x000008, "Wrong alignment on AProp_blueprint_kerfurOmega_C");
-static_assert(sizeof(AProp_blueprint_kerfurOmega_C) == 0x0003C8, "Wrong size on AProp_blueprint_kerfurOmega_C");
+static_assert(sizeof(AProp_blueprint_kerfurOmega_C) == 0x0003B8, "Wrong size on AProp_blueprint_kerfurOmega_C");
 
 }
 

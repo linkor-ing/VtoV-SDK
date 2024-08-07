@@ -10,75 +10,74 @@
 
 #include "Basic.hpp"
 
-#include "Struct_mObject_structs.hpp"
-#include "Struct_achievement_structs.hpp"
-#include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Struct_save_structs.hpp"
 #include "Struct_event_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "Struct_achievement_structs.hpp"
 #include "Enum_objectType_structs.hpp"
+#include "Struct_mObject_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function saveSlot.saveSlot_C.save
-// 0x0120 (0x0120 - 0x0000)
+// 0x0130 (0x0130 - 0x0000)
 struct SaveSlot_C_Save final
 {
 public:
-	bool                                          CallFunc_saveToSlot_ReturnValue;                   // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<uint8>                                 CallFunc_getCode_ByteArray;                        // 0x0008(0x0010)(ReferenceParm)
-	int32                                         CallFunc_maxDay_OutputPin;                         // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<uint8>                                 CallFunc_getCode_ByteArray;                        // 0x0000(0x0010)(ReferenceParm)
+	bool                                          CallFunc_saveToSlot_ReturnValue;                   // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4029[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_maxDay_OutputPin;                         // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue_1;        // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_402A[0x2];                                     // 0x0026(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_402B[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStaticMeshComponent*                   CallFunc_Array_Get_Item;                           // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_402C[0x8];                                     // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0040(0x0030)(IsPlainOldData, NoDestructor)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_402D[0x4];                                     // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<uint8>                                 CallFunc_getShot_ByteArray;                        // 0x0078(0x0010)(ReferenceParm)
-	class FString                                 CallFunc_gameVer_version;                          // 0x0088(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FStruct_mObject                        CallFunc_Array_Get_Item_1;                         // 0x0098(0x0010)(HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_AA[0x6];                                       // 0x00AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x00B0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	struct FTransform                             CallFunc_GetTransform_ReturnValue_1;               // 0x00E0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0114(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_115[0x3];                                      // 0x0115(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Clamp_ReturnValue;                        // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue_1;        // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_402E[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_gameVer_version;                          // 0x0090(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FStruct_mObject                        CallFunc_Array_Get_Item_1;                         // 0x00A0(0x0010)(HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_402F[0xE];                                     // 0x00B2(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x00C0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_GetTransform_ReturnValue_1;               // 0x00F0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_Clamp_ReturnValue;                        // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(SaveSlot_C_Save) == 0x000010, "Wrong alignment on SaveSlot_C_Save");
-static_assert(sizeof(SaveSlot_C_Save) == 0x000120, "Wrong size on SaveSlot_C_Save");
-static_assert(offsetof(SaveSlot_C_Save, CallFunc_saveToSlot_ReturnValue) == 0x000000, "Member 'SaveSlot_C_Save::CallFunc_saveToSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Save, CallFunc_getCode_ByteArray) == 0x000008, "Member 'SaveSlot_C_Save::CallFunc_getCode_ByteArray' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Save, CallFunc_maxDay_OutputPin) == 0x000018, "Member 'SaveSlot_C_Save::CallFunc_maxDay_OutputPin' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Save, CallFunc_EqualEqual_NameName_ReturnValue) == 0x00001C, "Member 'SaveSlot_C_Save::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
+static_assert(sizeof(SaveSlot_C_Save) == 0x000130, "Wrong size on SaveSlot_C_Save");
+static_assert(offsetof(SaveSlot_C_Save, CallFunc_getCode_ByteArray) == 0x000000, "Member 'SaveSlot_C_Save::CallFunc_getCode_ByteArray' has a wrong offset!");
+static_assert(offsetof(SaveSlot_C_Save, CallFunc_saveToSlot_ReturnValue) == 0x000010, "Member 'SaveSlot_C_Save::CallFunc_saveToSlot_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SaveSlot_C_Save, CallFunc_maxDay_OutputPin) == 0x000014, "Member 'SaveSlot_C_Save::CallFunc_maxDay_OutputPin' has a wrong offset!");
+static_assert(offsetof(SaveSlot_C_Save, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'SaveSlot_C_Save::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(SaveSlot_C_Save, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'SaveSlot_C_Save::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SaveSlot_C_Save, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'SaveSlot_C_Save::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Save, Temp_int_Array_Index_Variable) == 0x000024, "Member 'SaveSlot_C_Save::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Save, CallFunc_EqualEqual_NameName_ReturnValue_1) == 0x000028, "Member 'SaveSlot_C_Save::CallFunc_EqualEqual_NameName_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(SaveSlot_C_Save, CallFunc_Less_IntInt_ReturnValue) == 0x000024, "Member 'SaveSlot_C_Save::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SaveSlot_C_Save, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000025, "Member 'SaveSlot_C_Save::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SaveSlot_C_Save, Temp_int_Array_Index_Variable) == 0x000028, "Member 'SaveSlot_C_Save::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(SaveSlot_C_Save, CallFunc_Array_Get_Item) == 0x000030, "Member 'SaveSlot_C_Save::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(SaveSlot_C_Save, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x000040, "Member 'SaveSlot_C_Save::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SaveSlot_C_Save, CallFunc_Array_Add_ReturnValue) == 0x000070, "Member 'SaveSlot_C_Save::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SaveSlot_C_Save, CallFunc_getShot_ByteArray) == 0x000078, "Member 'SaveSlot_C_Save::CallFunc_getShot_ByteArray' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Save, CallFunc_gameVer_version) == 0x000088, "Member 'SaveSlot_C_Save::CallFunc_gameVer_version' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Save, CallFunc_Array_Get_Item_1) == 0x000098, "Member 'SaveSlot_C_Save::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Save, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000A8, "Member 'SaveSlot_C_Save::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Save, CallFunc_IsEmpty_ReturnValue) == 0x0000A9, "Member 'SaveSlot_C_Save::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Save, CallFunc_GetTransform_ReturnValue) == 0x0000B0, "Member 'SaveSlot_C_Save::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Save, CallFunc_GetTransform_ReturnValue_1) == 0x0000E0, "Member 'SaveSlot_C_Save::CallFunc_GetTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Save, Temp_int_Loop_Counter_Variable) == 0x000110, "Member 'SaveSlot_C_Save::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Save, CallFunc_Less_IntInt_ReturnValue) == 0x000114, "Member 'SaveSlot_C_Save::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Save, CallFunc_Clamp_ReturnValue) == 0x000118, "Member 'SaveSlot_C_Save::CallFunc_Clamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Save, CallFunc_Add_IntInt_ReturnValue) == 0x00011C, "Member 'SaveSlot_C_Save::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SaveSlot_C_Save, CallFunc_EqualEqual_NameName_ReturnValue_1) == 0x000088, "Member 'SaveSlot_C_Save::CallFunc_EqualEqual_NameName_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(SaveSlot_C_Save, CallFunc_gameVer_version) == 0x000090, "Member 'SaveSlot_C_Save::CallFunc_gameVer_version' has a wrong offset!");
+static_assert(offsetof(SaveSlot_C_Save, CallFunc_Array_Get_Item_1) == 0x0000A0, "Member 'SaveSlot_C_Save::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(SaveSlot_C_Save, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000B0, "Member 'SaveSlot_C_Save::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SaveSlot_C_Save, CallFunc_IsEmpty_ReturnValue) == 0x0000B1, "Member 'SaveSlot_C_Save::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SaveSlot_C_Save, CallFunc_GetTransform_ReturnValue) == 0x0000C0, "Member 'SaveSlot_C_Save::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SaveSlot_C_Save, CallFunc_GetTransform_ReturnValue_1) == 0x0000F0, "Member 'SaveSlot_C_Save::CallFunc_GetTransform_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(SaveSlot_C_Save, CallFunc_Clamp_ReturnValue) == 0x000120, "Member 'SaveSlot_C_Save::CallFunc_Clamp_ReturnValue' has a wrong offset!");
 
 // Function saveSlot.saveSlot_C.settime
 // 0x0090 (0x0090 - 0x0000)
@@ -93,29 +92,29 @@ public:
 	bool                                          D;                                                 // 0x001B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          M;                                                 // 0x001C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          H;                                                 // 0x001D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E[0x2];                                       // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4030[0x2];                                     // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   N;                                                 // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E[0x2];                                       // 0x002E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4031[0x2];                                     // 0x002E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   CallFunc_Array_Get_Item;                           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4032[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_event                          CallFunc_GetDataTableRowFromName_OutRow;           // 0x003C(0x0014)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4033[0x3];                                     // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_conv_ReturnValue;                         // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4034[0x3];                                     // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4035[0x3];                                     // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_conv_ReturnValue_1;                       // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4036[0x4];                                     // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue_1;            // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -204,26 +203,25 @@ struct SaveSlot_C_PrAdvanc final
 {
 public:
 	class FName                                   InputPin;                                          // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          DisablePopup;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Finished;                                          // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          Finished;                                          // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4037[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   Param_Name;                                        // 0x000C(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   A;                                                 // 0x0014(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          S;                                                 // 0x001C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4038[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Ind;                                               // 0x0020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4039[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_achievement                    CallFunc_GetDataTableRowFromName_OutRow;           // 0x0028(0x0050)(HasGetValueTypeHash)
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_403A[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0080(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_Get_Item;                           // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_92[0x2];                                       // 0x0092(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_Get_Item;                           // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_403B[0x2];                                     // 0x0092(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_1;        // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0099(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9A[0x2];                                       // 0x009A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          Temp_bool_Variable;                                // 0x0098(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_1;        // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_403C[0x2];                                     // 0x009A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -232,8 +230,7 @@ public:
 static_assert(alignof(SaveSlot_C_PrAdvanc) == 0x000008, "Wrong alignment on SaveSlot_C_PrAdvanc");
 static_assert(sizeof(SaveSlot_C_PrAdvanc) == 0x0000B0, "Wrong size on SaveSlot_C_PrAdvanc");
 static_assert(offsetof(SaveSlot_C_PrAdvanc, InputPin) == 0x000000, "Member 'SaveSlot_C_PrAdvanc::InputPin' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_PrAdvanc, DisablePopup) == 0x000008, "Member 'SaveSlot_C_PrAdvanc::DisablePopup' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_PrAdvanc, Finished) == 0x000009, "Member 'SaveSlot_C_PrAdvanc::Finished' has a wrong offset!");
+static_assert(offsetof(SaveSlot_C_PrAdvanc, Finished) == 0x000008, "Member 'SaveSlot_C_PrAdvanc::Finished' has a wrong offset!");
 static_assert(offsetof(SaveSlot_C_PrAdvanc, Param_Name) == 0x00000C, "Member 'SaveSlot_C_PrAdvanc::Param_Name' has a wrong offset!");
 static_assert(offsetof(SaveSlot_C_PrAdvanc, A) == 0x000014, "Member 'SaveSlot_C_PrAdvanc::A' has a wrong offset!");
 static_assert(offsetof(SaveSlot_C_PrAdvanc, S) == 0x00001C, "Member 'SaveSlot_C_PrAdvanc::S' has a wrong offset!");
@@ -241,11 +238,11 @@ static_assert(offsetof(SaveSlot_C_PrAdvanc, Ind) == 0x000020, "Member 'SaveSlot_
 static_assert(offsetof(SaveSlot_C_PrAdvanc, CallFunc_GetDataTableRowFromName_OutRow) == 0x000028, "Member 'SaveSlot_C_PrAdvanc::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
 static_assert(offsetof(SaveSlot_C_PrAdvanc, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000078, "Member 'SaveSlot_C_PrAdvanc::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SaveSlot_C_PrAdvanc, CallFunc_Conv_NameToString_ReturnValue) == 0x000080, "Member 'SaveSlot_C_PrAdvanc::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_PrAdvanc, CallFunc_Array_Get_Item) == 0x000090, "Member 'SaveSlot_C_PrAdvanc::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_PrAdvanc, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000091, "Member 'SaveSlot_C_PrAdvanc::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SaveSlot_C_PrAdvanc, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000090, "Member 'SaveSlot_C_PrAdvanc::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SaveSlot_C_PrAdvanc, CallFunc_Array_Get_Item) == 0x000091, "Member 'SaveSlot_C_PrAdvanc::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(SaveSlot_C_PrAdvanc, CallFunc_Array_Add_ReturnValue) == 0x000094, "Member 'SaveSlot_C_PrAdvanc::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_PrAdvanc, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x000098, "Member 'SaveSlot_C_PrAdvanc::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_PrAdvanc, Temp_bool_Variable) == 0x000099, "Member 'SaveSlot_C_PrAdvanc::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(SaveSlot_C_PrAdvanc, Temp_bool_Variable) == 0x000098, "Member 'SaveSlot_C_PrAdvanc::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(SaveSlot_C_PrAdvanc, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x000099, "Member 'SaveSlot_C_PrAdvanc::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(SaveSlot_C_PrAdvanc, CallFunc_Array_Add_ReturnValue_1) == 0x00009C, "Member 'SaveSlot_C_PrAdvanc::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(SaveSlot_C_PrAdvanc, CallFunc_Array_Add_ReturnValue_2) == 0x0000A0, "Member 'SaveSlot_C_PrAdvanc::CallFunc_Array_Add_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(SaveSlot_C_PrAdvanc, CallFunc_Array_Find_ReturnValue) == 0x0000A4, "Member 'SaveSlot_C_PrAdvanc::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
@@ -268,11 +265,11 @@ struct SaveSlot_C_GetSigObj final
 {
 public:
 	Enum_objectType                               Key;                                               // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_403D[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Value;                                             // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         N;                                                 // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	Enum_objectType                               Temp_byte_Variable;                                // 0x000C(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_403E[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x0010(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Map_Find_Value;                           // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -305,10 +302,10 @@ public:
 	class FName                                   CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FStruct_event                          CallFunc_GetDataTableRowFromName_OutRow;           // 0x0040(0x0014)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_403F[0x3];                                     // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4040[0x3];                                     // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Max_ReturnValue;                          // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(SaveSlot_C_MaxDay) == 0x000008, "Wrong alignment on SaveSlot_C_MaxDay");
@@ -329,20 +326,17 @@ static_assert(offsetof(SaveSlot_C_MaxDay, CallFunc_Less_IntInt_ReturnValue) == 0
 static_assert(offsetof(SaveSlot_C_MaxDay, CallFunc_Max_ReturnValue) == 0x000060, "Member 'SaveSlot_C_MaxDay::CallFunc_Max_ReturnValue' has a wrong offset!");
 
 // Function saveSlot.saveSlot_C.saveToSlot
-// 0x0020 (0x0020 - 0x0000)
+// 0x0002 (0x0002 - 0x0000)
 struct SaveSlot_C_SaveToSlot final
 {
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_VectorToString_ReturnValue;          // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SaveGameToSlot_ReturnValue;               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_SaveGameToSlot_ReturnValue;               // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SaveSlot_C_SaveToSlot) == 0x000008, "Wrong alignment on SaveSlot_C_SaveToSlot");
-static_assert(sizeof(SaveSlot_C_SaveToSlot) == 0x000020, "Wrong size on SaveSlot_C_SaveToSlot");
+static_assert(alignof(SaveSlot_C_SaveToSlot) == 0x000001, "Wrong alignment on SaveSlot_C_SaveToSlot");
+static_assert(sizeof(SaveSlot_C_SaveToSlot) == 0x000002, "Wrong size on SaveSlot_C_SaveToSlot");
 static_assert(offsetof(SaveSlot_C_SaveToSlot, ReturnValue) == 0x000000, "Member 'SaveSlot_C_SaveToSlot::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_SaveToSlot, CallFunc_Conv_VectorToString_ReturnValue) == 0x000008, "Member 'SaveSlot_C_SaveToSlot::CallFunc_Conv_VectorToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_SaveToSlot, CallFunc_SaveGameToSlot_ReturnValue) == 0x000018, "Member 'SaveSlot_C_SaveToSlot::CallFunc_SaveGameToSlot_ReturnValue' has a wrong offset!");
+static_assert(offsetof(SaveSlot_C_SaveToSlot, CallFunc_SaveGameToSlot_ReturnValue) == 0x000001, "Member 'SaveSlot_C_SaveToSlot::CallFunc_SaveGameToSlot_ReturnValue' has a wrong offset!");
 
 // Function saveSlot.saveSlot_C.reset_printerObjects
 // 0x0280 (0x0280 - 0x0000)
@@ -353,14 +347,14 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4041[0x4];                                     // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           Temp_struct_Variable_1;                            // 0x00D0(0x00C0)(ConstParm, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_191[0xF];                                      // 0x0191(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4042[0xF];                                     // 0x0191(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           CallFunc_Array_Get_Item;                           // 0x01A0(0x00C0)(HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0264(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_265[0x3];                                      // 0x0265(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4043[0x3];                                     // 0x0265(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 K2Node_ClassDynamicCast_AsPrinted_Object;          // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ClassDynamicCast_bSuccess;                  // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -385,7 +379,7 @@ struct SaveSlot_C_CleanGrime final
 public:
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0000(0x0030)(IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_31[0xF];                                       // 0x0031(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4044[0xF];                                     // 0x0031(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           K2Node_MakeStruct_struct_save;                     // 0x0040(0x00C0)(HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0104(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -397,172 +391,6 @@ static_assert(offsetof(SaveSlot_C_CleanGrime, CallFunc_Array_IsValidIndex_Return
 static_assert(offsetof(SaveSlot_C_CleanGrime, K2Node_MakeStruct_struct_save) == 0x000040, "Member 'SaveSlot_C_CleanGrime::K2Node_MakeStruct_struct_save' has a wrong offset!");
 static_assert(offsetof(SaveSlot_C_CleanGrime, CallFunc_Array_Add_ReturnValue) == 0x000100, "Member 'SaveSlot_C_CleanGrime::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SaveSlot_C_CleanGrime, CallFunc_Array_Contains_ReturnValue) == 0x000104, "Member 'SaveSlot_C_CleanGrime::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-
-// Function saveSlot.saveSlot_C.setGameinst
-// 0x0008 (0x0008 - 0x0000)
-struct SaveSlot_C_SetGameinst final
-{
-public:
-	class UGameInst_C*                            Param_GameInst;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(SaveSlot_C_SetGameinst) == 0x000008, "Wrong alignment on SaveSlot_C_SetGameinst");
-static_assert(sizeof(SaveSlot_C_SetGameinst) == 0x000008, "Wrong size on SaveSlot_C_SetGameinst");
-static_assert(offsetof(SaveSlot_C_SetGameinst, Param_GameInst) == 0x000000, "Member 'SaveSlot_C_SetGameinst::Param_GameInst' has a wrong offset!");
-
-// Function saveSlot.saveSlot_C.regenerate
-// 0x0078 (0x0078 - 0x0000)
-struct SaveSlot_C_Regenerate final
-{
-public:
-	class FString                                 InputName;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class USaveSlot_C*                            Loaded;                                            // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USaveSlot_C*                            Regened;                                           // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 SavName;                                           // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	class USaveGame*                              CallFunc_LoadGameFromSlot_ReturnValue;             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USaveSlot_C*                            K2Node_DynamicCast_AsSave_Slot;                    // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SaveGameToSlot_ReturnValue;               // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue;           // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USaveSlot_C*                            CallFunc_CreateSaveGameObject_ReturnValue;         // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(SaveSlot_C_Regenerate) == 0x000008, "Wrong alignment on SaveSlot_C_Regenerate");
-static_assert(sizeof(SaveSlot_C_Regenerate) == 0x000078, "Wrong size on SaveSlot_C_Regenerate");
-static_assert(offsetof(SaveSlot_C_Regenerate, InputName) == 0x000000, "Member 'SaveSlot_C_Regenerate::InputName' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Regenerate, Loaded) == 0x000010, "Member 'SaveSlot_C_Regenerate::Loaded' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Regenerate, Regened) == 0x000018, "Member 'SaveSlot_C_Regenerate::Regened' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Regenerate, SavName) == 0x000020, "Member 'SaveSlot_C_Regenerate::SavName' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Regenerate, CallFunc_LoadGameFromSlot_ReturnValue) == 0x000030, "Member 'SaveSlot_C_Regenerate::CallFunc_LoadGameFromSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Regenerate, K2Node_DynamicCast_AsSave_Slot) == 0x000038, "Member 'SaveSlot_C_Regenerate::K2Node_DynamicCast_AsSave_Slot' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Regenerate, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'SaveSlot_C_Regenerate::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Regenerate, CallFunc_Array_Length_ReturnValue) == 0x000044, "Member 'SaveSlot_C_Regenerate::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Regenerate, CallFunc_Conv_IntToString_ReturnValue) == 0x000048, "Member 'SaveSlot_C_Regenerate::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Regenerate, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000058, "Member 'SaveSlot_C_Regenerate::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Regenerate, CallFunc_SaveGameToSlot_ReturnValue) == 0x000060, "Member 'SaveSlot_C_Regenerate::CallFunc_SaveGameToSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Regenerate, CallFunc_SpawnSoundAttached_ReturnValue) == 0x000068, "Member 'SaveSlot_C_Regenerate::CallFunc_SpawnSoundAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Regenerate, CallFunc_CreateSaveGameObject_ReturnValue) == 0x000070, "Member 'SaveSlot_C_Regenerate::CallFunc_CreateSaveGameObject_ReturnValue' has a wrong offset!");
-
-// Function saveSlot.saveSlot_C.Duplicate
-// 0x02A0 (0x02A0 - 0x0000)
-struct SaveSlot_C_Duplicate final
-{
-public:
-	class FString                                 Param_Name;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	int32                                         Inc;                                               // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 SaveName_plusone;                                  // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	class USaveSlot_C*                            Loaded;                                            // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 SaveName;                                          // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USaveGame*                              CallFunc_LoadGameFromSlot_ReturnValue;             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_1;                               // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USaveSlot_C*                            K2Node_DynamicCast_AsSave_Slot;                    // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_62[0x2];                                       // 0x0062(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6A[0x6];                                       // 0x006A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0070(0x0018)()
-	bool                                          CallFunc_DoesSaveGameExist_ReturnValue;            // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0090(0x0040)(HasGetValueTypeHash)
-	bool                                          Temp_bool_IsClosed_Variable;                       // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_DoesSaveGameExist_ReturnValue_1;          // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D2[0x2];                                       // 0x00D2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Len_ReturnValue;                          // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x00E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_GetSubstring_ReturnValue;                 // 0x00F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsNumeric_ReturnValue;                    // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_101[0x3];                                      // 0x0101(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_FindSubstring_ReturnValue;                // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0108(0x0040)(HasGetValueTypeHash)
-	bool                                          CallFunc_SaveGameToSlot_ReturnValue;               // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_149[0x7];                                      // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Left_ReturnValue;                         // 0x0150(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_164[0x4];                                      // 0x0164(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0168(0x0018)()
-	class FString                                 CallFunc_RightChop_ReturnValue;                    // 0x0180(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x0190(0x0040)(HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_2;          // 0x01D0(0x0018)()
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x01E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x01F8(0x0040)(HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_StringToInt_ReturnValue;             // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23C[0x4];                                      // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0240(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_254[0x4];                                      // 0x0254(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0258(0x0018)()
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0270(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0280(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0290(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(SaveSlot_C_Duplicate) == 0x000008, "Wrong alignment on SaveSlot_C_Duplicate");
-static_assert(sizeof(SaveSlot_C_Duplicate) == 0x0002A0, "Wrong size on SaveSlot_C_Duplicate");
-static_assert(offsetof(SaveSlot_C_Duplicate, Param_Name) == 0x000000, "Member 'SaveSlot_C_Duplicate::Param_Name' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, Inc) == 0x000010, "Member 'SaveSlot_C_Duplicate::Inc' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, SaveName_plusone) == 0x000018, "Member 'SaveSlot_C_Duplicate::SaveName_plusone' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, Loaded) == 0x000028, "Member 'SaveSlot_C_Duplicate::Loaded' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, SaveName) == 0x000030, "Member 'SaveSlot_C_Duplicate::SaveName' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, Temp_int_Variable) == 0x000040, "Member 'SaveSlot_C_Duplicate::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_LoadGameFromSlot_ReturnValue) == 0x000048, "Member 'SaveSlot_C_Duplicate::CallFunc_LoadGameFromSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, Temp_int_Variable_1) == 0x000050, "Member 'SaveSlot_C_Duplicate::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, K2Node_DynamicCast_AsSave_Slot) == 0x000058, "Member 'SaveSlot_C_Duplicate::K2Node_DynamicCast_AsSave_Slot' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'SaveSlot_C_Duplicate::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_Less_IntInt_ReturnValue) == 0x000061, "Member 'SaveSlot_C_Duplicate::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_Add_IntInt_ReturnValue) == 0x000064, "Member 'SaveSlot_C_Duplicate::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_Less_IntInt_ReturnValue_1) == 0x000068, "Member 'SaveSlot_C_Duplicate::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, Temp_bool_Has_Been_Initd_Variable) == 0x000069, "Member 'SaveSlot_C_Duplicate::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_Conv_StringToText_ReturnValue) == 0x000070, "Member 'SaveSlot_C_Duplicate::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_DoesSaveGameExist_ReturnValue) == 0x000088, "Member 'SaveSlot_C_Duplicate::CallFunc_DoesSaveGameExist_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, K2Node_MakeStruct_FormatArgumentData) == 0x000090, "Member 'SaveSlot_C_Duplicate::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, Temp_bool_IsClosed_Variable) == 0x0000D0, "Member 'SaveSlot_C_Duplicate::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_DoesSaveGameExist_ReturnValue_1) == 0x0000D1, "Member 'SaveSlot_C_Duplicate::CallFunc_DoesSaveGameExist_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000D4, "Member 'SaveSlot_C_Duplicate::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_Len_ReturnValue) == 0x0000D8, "Member 'SaveSlot_C_Duplicate::CallFunc_Len_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_Subtract_IntInt_ReturnValue) == 0x0000DC, "Member 'SaveSlot_C_Duplicate::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_Concat_StrStr_ReturnValue) == 0x0000E0, "Member 'SaveSlot_C_Duplicate::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_GetSubstring_ReturnValue) == 0x0000F0, "Member 'SaveSlot_C_Duplicate::CallFunc_GetSubstring_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_IsNumeric_ReturnValue) == 0x000100, "Member 'SaveSlot_C_Duplicate::CallFunc_IsNumeric_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_FindSubstring_ReturnValue) == 0x000104, "Member 'SaveSlot_C_Duplicate::CallFunc_FindSubstring_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, K2Node_MakeStruct_FormatArgumentData_1) == 0x000108, "Member 'SaveSlot_C_Duplicate::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_SaveGameToSlot_ReturnValue) == 0x000148, "Member 'SaveSlot_C_Duplicate::CallFunc_SaveGameToSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_Left_ReturnValue) == 0x000150, "Member 'SaveSlot_C_Duplicate::CallFunc_Left_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_Add_IntInt_ReturnValue_2) == 0x000160, "Member 'SaveSlot_C_Duplicate::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000168, "Member 'SaveSlot_C_Duplicate::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_RightChop_ReturnValue) == 0x000180, "Member 'SaveSlot_C_Duplicate::CallFunc_RightChop_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, K2Node_MakeStruct_FormatArgumentData_2) == 0x000190, "Member 'SaveSlot_C_Duplicate::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_Conv_StringToText_ReturnValue_2) == 0x0001D0, "Member 'SaveSlot_C_Duplicate::CallFunc_Conv_StringToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_Concat_StrStr_ReturnValue_1) == 0x0001E8, "Member 'SaveSlot_C_Duplicate::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, K2Node_MakeStruct_FormatArgumentData_3) == 0x0001F8, "Member 'SaveSlot_C_Duplicate::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_Conv_StringToInt_ReturnValue) == 0x000238, "Member 'SaveSlot_C_Duplicate::CallFunc_Conv_StringToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, K2Node_MakeArray_Array) == 0x000240, "Member 'SaveSlot_C_Duplicate::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_Add_IntInt_ReturnValue_3) == 0x000250, "Member 'SaveSlot_C_Duplicate::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_Format_ReturnValue) == 0x000258, "Member 'SaveSlot_C_Duplicate::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_Conv_IntToString_ReturnValue) == 0x000270, "Member 'SaveSlot_C_Duplicate::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_Conv_TextToString_ReturnValue) == 0x000280, "Member 'SaveSlot_C_Duplicate::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SaveSlot_C_Duplicate, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000290, "Member 'SaveSlot_C_Duplicate::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-
-// Function saveSlot.saveSlot_C.savePlayerOnly
-// 0x0001 (0x0001 - 0x0000)
-struct SaveSlot_C_SavePlayerOnly final
-{
-public:
-	bool                                          CallFunc_saveToSlot_ReturnValue;                   // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(SaveSlot_C_SavePlayerOnly) == 0x000001, "Wrong alignment on SaveSlot_C_SavePlayerOnly");
-static_assert(sizeof(SaveSlot_C_SavePlayerOnly) == 0x000001, "Wrong size on SaveSlot_C_SavePlayerOnly");
-static_assert(offsetof(SaveSlot_C_SavePlayerOnly, CallFunc_saveToSlot_ReturnValue) == 0x000000, "Member 'SaveSlot_C_SavePlayerOnly::CallFunc_saveToSlot_ReturnValue' has a wrong offset!");
 
 }
 

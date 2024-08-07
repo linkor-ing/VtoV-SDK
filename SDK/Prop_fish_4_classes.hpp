@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_fish_4.prop_fish_4_C
-// 0x0000 (0x03A0 - 0x03A0)
+// 0x0000 (0x0390 - 0x0390)
 class AProp_fish_4_C final : public AProp_fish_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_fish_4_C) == 0x000008, "Wrong alignment on AProp_fish_4_C");
-static_assert(sizeof(AProp_fish_4_C) == 0x0003A0, "Wrong size on AProp_fish_4_C");
+static_assert(sizeof(AProp_fish_4_C) == 0x000390, "Wrong size on AProp_fish_4_C");
 
 }
 

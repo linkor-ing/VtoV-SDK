@@ -34,7 +34,7 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	TArray<EObjectTypeQuery>                      O;                                                 // 0x0268(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          FlyAway;                                           // 0x0278(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_279[0x3];                                      // 0x0279(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D1A[0x3];                                     // 0x0279(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Init;                                              // 0x027C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Fly;                                               // 0x0288(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 

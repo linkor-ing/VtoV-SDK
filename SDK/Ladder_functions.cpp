@@ -42,9 +42,10 @@ void ALadder_C::ExecuteUbergraph_ladder(int32 EntryPoint)
 // Parameters:
 // class AMainPlayer_C*                    Param_Player                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ALadder_C::ActionOptionIndex(class AMainPlayer_C* Param_Player, const struct FHitResult& Hit, Enum_interactionActions Action)
+void ALadder_C::ActionOptionIndex(class AMainPlayer_C* Param_Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -55,6 +56,7 @@ void ALadder_C::ActionOptionIndex(class AMainPlayer_C* Param_Player, const struc
 
 	Parms.Param_Player = Param_Player;
 	Parms.Hit = std::move(Hit);
+	Parms.Param_Index = Param_Index;
 	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -189,30 +191,6 @@ void ALadder_C::AnyKey(const struct FKey& Param_Key, bool Pressed)
 }
 
 
-// Function ladder.ladder_C.texturePickerApply
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ALadder_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ladder_C", "texturePickerApply");
-
-	Params::Ladder_C_TexturePickerApply Parms{};
-
-	Parms.Picker = Picker;
-	Parms.Texture = Texture;
-	Parms.Param_Index = Param_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function ladder.ladder_C.applyColor
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -292,7 +270,7 @@ void ALadder_C::Unfocused()
 // Function ladder.ladder_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ALadder_C::SettingsApplied(const struct FStruct_settings& Settings)
 {
@@ -385,66 +363,6 @@ void ALadder_C::SignalDeleted()
 }
 
 
-// Function ladder.ladder_C.playerR
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Param_Player                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ALadder_C::PlayerR(class AMainPlayer_C* Param_Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ladder_C", "playerR");
-
-	Params::Ladder_C_PlayerR Parms{};
-
-	Parms.Param_Player = Param_Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ladder.ladder_C.playerHold
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Param_Player                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ALadder_C::PlayerHold(class AMainPlayer_C* Param_Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ladder_C", "playerHold");
-
-	Params::Ladder_C_PlayerHold Parms{};
-
-	Parms.Param_Player = Param_Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ladder.ladder_C.playerUnequip
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Param_Player                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ALadder_C::PlayerUnequip(class AMainPlayer_C* Param_Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ladder_C", "playerUnequip");
-
-	Params::Ladder_C_PlayerUnequip Parms{};
-
-	Parms.Param_Player = Param_Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function ladder.ladder_C.updateStrAgl
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -464,9 +382,8 @@ void ALadder_C::UpdateStrAgl()
 // Parameters:
 // class AMainPlayer_C*                    Param_Player                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ALadder_C::DamageByPlayer(class AMainPlayer_C* Param_Player, const struct FHitResult& Hit, float Damage)
+void ALadder_C::DamageByPlayer(class AMainPlayer_C* Param_Player, const struct FHitResult& Hit)
 {
 	static class UFunction* Func = nullptr;
 
@@ -477,7 +394,6 @@ void ALadder_C::DamageByPlayer(class AMainPlayer_C* Param_Player, const struct F
 
 	Parms.Param_Player = Param_Player;
 	Parms.Hit = std::move(Hit);
-	Parms.Damage = Damage;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -602,62 +518,6 @@ void ALadder_C::DriveDetached()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("ladder_C", "driveDetached");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ladder.ladder_C.hookTension
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AHook_C*                          Hook                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ALadder_C::HookTension(class AHook_C* Hook)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ladder_C", "hookTension");
-
-	Params::Ladder_C_HookTension Parms{};
-
-	Parms.Hook = Hook;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ladder.ladder_C.cleanSponge
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Clean                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AMainPlayer_C*                    Param_Player                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ALadder_C::CleanSponge(float Clean, class AMainPlayer_C* Param_Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ladder_C", "cleanSponge");
-
-	Params::Ladder_C_CleanSponge Parms{};
-
-	Parms.Clean = Clean;
-	Parms.Param_Player = Param_Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ladder.ladder_C.crafted
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ALadder_C::Crafted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ladder_C", "crafted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1081,23 +941,15 @@ void ALadder_C::PlayerHandUse_RMB(class AMainPlayer_C* Param_Player)
 
 // Function ladder.ladder_C.receivedPhyiscsDamage
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hot                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void ALadder_C::ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot)
+void ALadder_C::ReceivedPhyiscsDamage()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("ladder_C", "receivedPhyiscsDamage");
 
-	Params::Ladder_C_ReceivedPhyiscsDamage Parms{};
-
-	Parms.Damage = Damage;
-	Parms.Hot = std::move(Hot);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -1542,9 +1394,8 @@ void ALadder_C::NoRespawn(bool Param_NoRespawn, bool* Return)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ALadder_C::LookAt(class AMainPlayer_C* Param_Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
+void ALadder_C::LookAt(class AMainPlayer_C* Param_Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1566,9 +1417,6 @@ void ALadder_C::LookAt(class AMainPlayer_C* Param_Player, const struct FHitResul
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
 }
 
 
@@ -1593,30 +1441,6 @@ void ALadder_C::IsButtonUsed(bool* Failed)
 }
 
 
-// Function ladder.ladder_C.landedOn
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Param_Player                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IgnoreFallDamage                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ALadder_C::LandedOn(class AMainPlayer_C* Param_Player, bool* IgnoreFallDamage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ladder_C", "landedOn");
-
-	Params::Ladder_C_LandedOn Parms{};
-
-	Parms.Param_Player = Param_Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (IgnoreFallDamage != nullptr)
-		*IgnoreFallDamage = Parms.IgnoreFallDamage;
-}
-
-
 // Function ladder.ladder_C.getActionOptions
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1626,9 +1450,8 @@ void ALadder_C::LandedOn(class AMainPlayer_C* Param_Player, bool* IgnoreFallDama
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
-// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ALadder_C::GetActionOptions(class AMainPlayer_C* Param_Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
+void ALadder_C::GetActionOptions(class AMainPlayer_C* Param_Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1651,9 +1474,6 @@ void ALadder_C::GetActionOptions(class AMainPlayer_C* Param_Player, class UPrimi
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
-
-	if (Number != nullptr)
-		*Number = Parms.Number;
 }
 
 
@@ -1831,27 +1651,6 @@ void ALadder_C::SkipRadial(bool* Skip)
 
 	if (Skip != nullptr)
 		*Skip = Parms.Skip;
-}
-
-
-// Function ladder.ladder_C.getPriceMultiplier
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   PriceMult                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ALadder_C::GetPriceMultiplier(float* PriceMult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ladder_C", "getPriceMultiplier");
-
-	Params::Ladder_C_GetPriceMultiplier Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (PriceMult != nullptr)
-		*PriceMult = Parms.PriceMult;
 }
 
 }

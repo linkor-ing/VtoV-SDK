@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "Struct_mFloat_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Enum_interactionActions_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Struct_save_structs.hpp"
 #include "Struct_mString_structs.hpp"
-#include "CoreUObject_structs.hpp"
+#include "Struct_mFloat_structs.hpp"
 #include "Struct_mBool_structs.hpp"
 #include "Struct_mInt_structs.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -36,29 +36,30 @@ public:
 	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue_1;      // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_17[0x1];                                       // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3DC0[0x1];                                     // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_1;       // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakRotator_Roll_1;                      // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakRotator_Pitch_1;                     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakRotator_Yaw_1;                       // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FInterpTo_Constant_ReturnValue;           // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3DC1[0x3];                                     // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_FInterpTo_Constant_ReturnValue_1;         // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0034(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x0040(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_2;       // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue_2;      // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_CD[0x3];                                       // 0x00CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3DC2[0x3];                                     // 0x00CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_FInterpTo_Constant_ReturnValue_2;         // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x00D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D5[0x3];                                       // 0x00D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3DC3[0x3];                                     // 0x00D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class ANewBlueprint16_C*                      CallFunc_GetActorOfClass_ReturnValue;              // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit;                                  // 0x00E8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0171(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsChildActor_ReturnValue;                 // 0x0172(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         K2Node_Event_index;                                // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x0174(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0175(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsChildActor_ReturnValue;                 // 0x0176(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad) == 0x000008, "Wrong alignment on Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad");
 static_assert(sizeof(Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad) == 0x000178, "Wrong size on Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad");
@@ -86,9 +87,27 @@ static_assert(offsetof(Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad, CallF
 static_assert(offsetof(Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad, CallFunc_GetActorOfClass_ReturnValue) == 0x0000D8, "Member 'Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad::CallFunc_GetActorOfClass_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad, K2Node_Event_player) == 0x0000E0, "Member 'Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad::K2Node_Event_player' has a wrong offset!");
 static_assert(offsetof(Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad, K2Node_Event_hit) == 0x0000E8, "Member 'Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad, K2Node_Event_action) == 0x000170, "Member 'Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad, K2Node_SwitchEnum_CmpSuccess) == 0x000171, "Member 'Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad, CallFunc_IsChildActor_ReturnValue) == 0x000172, "Member 'Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad::CallFunc_IsChildActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad, K2Node_Event_index) == 0x000170, "Member 'Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad, K2Node_Event_action) == 0x000174, "Member 'Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad, K2Node_SwitchEnum_CmpSuccess) == 0x000175, "Member 'Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad, CallFunc_IsChildActor_ReturnValue) == 0x000176, "Member 'Prop_camera_bad_C_ExecuteUbergraph_prop_camera_bad::CallFunc_IsChildActor_ReturnValue' has a wrong offset!");
+
+// Function prop_camera_bad.prop_camera_bad_C.actionOptionIndex
+// 0x0098 (0x0098 - 0x0000)
+struct Prop_camera_bad_C_ActionOptionIndex final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_camera_bad_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_camera_bad_C_ActionOptionIndex");
+static_assert(sizeof(Prop_camera_bad_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_camera_bad_C_ActionOptionIndex");
+static_assert(offsetof(Prop_camera_bad_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_camera_bad_C_ActionOptionIndex::Player' has a wrong offset!");
+static_assert(offsetof(Prop_camera_bad_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_camera_bad_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_camera_bad_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_camera_bad_C_ActionOptionIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(Prop_camera_bad_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_camera_bad_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function prop_camera_bad.prop_camera_bad_C.setRot
 // 0x0094 (0x0094 - 0x0000)
@@ -110,12 +129,12 @@ struct Prop_camera_bad_C_SaveInit final
 public:
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0000(0x0018)()
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3DC4[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0040(0x0018)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3DC5[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -153,7 +172,7 @@ struct Prop_camera_bad_C_Capture final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3DC6[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneCaptureComponent2D*               K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_camera_bad_C_Capture) == 0x000008, "Wrong alignment on Prop_camera_bad_C_Capture");
@@ -169,10 +188,10 @@ public:
 	class UParticleSystem*                        Temp_object_Variable;                              // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystem*                        Temp_object_Variable_1;                            // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3DC7[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystem*                        Temp_object_Variable_2;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_1;                              // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3DC8[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystem*                        K2Node_Select_Default;                             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystem*                        K2Node_Select_Default_1;                           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -216,53 +235,35 @@ static_assert(alignof(Prop_camera_bad_C_Capture_light) == 0x000004, "Wrong align
 static_assert(sizeof(Prop_camera_bad_C_Capture_light) == 0x000004, "Wrong size on Prop_camera_bad_C_Capture_light");
 static_assert(offsetof(Prop_camera_bad_C_Capture_light, Avg) == 0x000000, "Member 'Prop_camera_bad_C_Capture_light::Avg' has a wrong offset!");
 
-// Function prop_camera_bad.prop_camera_bad_C.actionOptionIndex
-// 0x0098 (0x0098 - 0x0000)
-struct Prop_camera_bad_C_ActionOptionIndex final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_camera_bad_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_camera_bad_C_ActionOptionIndex");
-static_assert(sizeof(Prop_camera_bad_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_camera_bad_C_ActionOptionIndex");
-static_assert(offsetof(Prop_camera_bad_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_camera_bad_C_ActionOptionIndex::Player' has a wrong offset!");
-static_assert(offsetof(Prop_camera_bad_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_camera_bad_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_camera_bad_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_camera_bad_C_ActionOptionIndex::Action' has a wrong offset!");
-
 // Function prop_camera_bad.prop_camera_bad_C.lookAt
-// 0x0110 (0x0110 - 0x0000)
+// 0x0108 (0x0108 - 0x0000)
 struct Prop_camera_bad_C_LookAt final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3DC9[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00B8(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x00E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x00F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0100(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00B0(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x00D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x00E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x00F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_camera_bad_C_LookAt) == 0x000008, "Wrong alignment on Prop_camera_bad_C_LookAt");
-static_assert(sizeof(Prop_camera_bad_C_LookAt) == 0x000110, "Wrong size on Prop_camera_bad_C_LookAt");
+static_assert(sizeof(Prop_camera_bad_C_LookAt) == 0x000108, "Wrong size on Prop_camera_bad_C_LookAt");
 static_assert(offsetof(Prop_camera_bad_C_LookAt, Player) == 0x000000, "Member 'Prop_camera_bad_C_LookAt::Player' has a wrong offset!");
 static_assert(offsetof(Prop_camera_bad_C_LookAt, Param_Hit) == 0x000008, "Member 'Prop_camera_bad_C_LookAt::Param_Hit' has a wrong offset!");
 static_assert(offsetof(Prop_camera_bad_C_LookAt, Return) == 0x000090, "Member 'Prop_camera_bad_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(Prop_camera_bad_C_LookAt, Text) == 0x000098, "Member 'Prop_camera_bad_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(Prop_camera_bad_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'Prop_camera_bad_C_LookAt::boundObjectReplace' has a wrong offset!");
-static_assert(offsetof(Prop_camera_bad_C_LookAt, Number) == 0x0000B0, "Member 'Prop_camera_bad_C_LookAt::Number' has a wrong offset!");
-static_assert(offsetof(Prop_camera_bad_C_LookAt, CallFunc_MakeLiteralText_ReturnValue) == 0x0000B8, "Member 'Prop_camera_bad_C_LookAt::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_camera_bad_C_LookAt, CallFunc_Conv_TextToString_ReturnValue) == 0x0000D0, "Member 'Prop_camera_bad_C_LookAt::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_camera_bad_C_LookAt, CallFunc_Conv_TextToString_ReturnValue_1) == 0x0000E0, "Member 'Prop_camera_bad_C_LookAt::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_camera_bad_C_LookAt, CallFunc_Concat_StrStr_ReturnValue) == 0x0000F0, "Member 'Prop_camera_bad_C_LookAt::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_camera_bad_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000100, "Member 'Prop_camera_bad_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_camera_bad_C_LookAt, CallFunc_MakeLiteralText_ReturnValue) == 0x0000B0, "Member 'Prop_camera_bad_C_LookAt::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_camera_bad_C_LookAt, CallFunc_Conv_TextToString_ReturnValue) == 0x0000C8, "Member 'Prop_camera_bad_C_LookAt::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_camera_bad_C_LookAt, CallFunc_Conv_TextToString_ReturnValue_1) == 0x0000D8, "Member 'Prop_camera_bad_C_LookAt::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_camera_bad_C_LookAt, CallFunc_Concat_StrStr_ReturnValue) == 0x0000E8, "Member 'Prop_camera_bad_C_LookAt::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_camera_bad_C_LookAt, CallFunc_Concat_StrStr_ReturnValue_1) == 0x0000F8, "Member 'Prop_camera_bad_C_LookAt::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
 
 // Function prop_camera_bad.prop_camera_bad_C.loadData
 // 0x0150 (0x0150 - 0x0000)
@@ -272,19 +273,19 @@ public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadData_return;                          // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3DCA[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mString                        CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	struct FStruct_mInt                           CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0010)(HasGetValueTypeHash)
 	class FString                                 CallFunc_Array_Get_Item_2;                         // 0x00E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x00F8(0x0018)()
 	int32                                         CallFunc_Array_Get_Item_3;                         // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3DCB[0x4];                                     // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mFloat                         CallFunc_Array_Get_Item_4;                         // 0x0118(0x0010)(HasGetValueTypeHash)
 	struct FStruct_mBool                          CallFunc_Array_Get_Item_5;                         // 0x0128(0x0010)(HasGetValueTypeHash)
 	float                                         CallFunc_Array_Get_Item_6;                         // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Get_Item_7;                         // 0x013C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_Get_Item_8;                         // 0x013D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_13E[0x2];                                      // 0x013E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3DCC[0x2];                                     // 0x013E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Array_Get_Item_9;                         // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_camera_bad_C_LoadData) == 0x000010, "Wrong alignment on Prop_camera_bad_C_LoadData");
@@ -354,7 +355,7 @@ static_assert(offsetof(Prop_camera_bad_C_GetData, K2Node_MakeArray_Array_7) == 0
 static_assert(offsetof(Prop_camera_bad_C_GetData, K2Node_SetFieldsInStruct_StructOut) == 0x000290, "Member 'Prop_camera_bad_C_GetData::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
 
 // Function prop_camera_bad.prop_camera_bad_C.getActionOptions
-// 0x0080 (0x0080 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct Prop_camera_bad_C_GetActionOptions final
 {
 public:
@@ -364,26 +365,17 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array_1;                          // 0x0060(0x0010)(ReferenceParm)
-	TArray<Enum_interactionActions>               K2Node_Select_Default;                             // 0x0070(0x0010)(ReferenceParm)
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
 };
 static_assert(alignof(Prop_camera_bad_C_GetActionOptions) == 0x000008, "Wrong alignment on Prop_camera_bad_C_GetActionOptions");
-static_assert(sizeof(Prop_camera_bad_C_GetActionOptions) == 0x000080, "Wrong size on Prop_camera_bad_C_GetActionOptions");
+static_assert(sizeof(Prop_camera_bad_C_GetActionOptions) == 0x000058, "Wrong size on Prop_camera_bad_C_GetActionOptions");
 static_assert(offsetof(Prop_camera_bad_C_GetActionOptions, Player) == 0x000000, "Member 'Prop_camera_bad_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Prop_camera_bad_C_GetActionOptions, Component) == 0x000008, "Member 'Prop_camera_bad_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Prop_camera_bad_C_GetActionOptions, Actor) == 0x000010, "Member 'Prop_camera_bad_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Prop_camera_bad_C_GetActionOptions, Options) == 0x000018, "Member 'Prop_camera_bad_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Prop_camera_bad_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Prop_camera_bad_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Prop_camera_bad_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Prop_camera_bad_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Prop_camera_bad_C_GetActionOptions, Number) == 0x000048, "Member 'Prop_camera_bad_C_GetActionOptions::Number' has a wrong offset!");
-static_assert(offsetof(Prop_camera_bad_C_GetActionOptions, Temp_bool_Variable) == 0x000049, "Member 'Prop_camera_bad_C_GetActionOptions::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_camera_bad_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Prop_camera_bad_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Prop_camera_bad_C_GetActionOptions, K2Node_MakeArray_Array_1) == 0x000060, "Member 'Prop_camera_bad_C_GetActionOptions::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(Prop_camera_bad_C_GetActionOptions, K2Node_Select_Default) == 0x000070, "Member 'Prop_camera_bad_C_GetActionOptions::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(Prop_camera_bad_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'Prop_camera_bad_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 }
 
