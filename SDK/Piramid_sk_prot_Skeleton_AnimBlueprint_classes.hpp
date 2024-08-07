@@ -20,22 +20,22 @@ namespace SDK
 {
 
 // AnimBlueprintGeneratedClass piramid_sk_prot_Skeleton_AnimBlueprint.piramid_sk_prot_Skeleton_AnimBlueprint_C
-// 0x3870 (0x3B30 - 0x02C0)
+// 0x3890 (0x3B50 - 0x02C0)
 class UPiramid_sk_prot_Skeleton_AnimBlueprint_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_2192[0x8];                                     // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B8[0x8];                                      // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x02C8(0x0030)()
 	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace_1;             // 0x02F8(0x0020)()
 	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace_1;             // 0x0318(0x0020)()
 	struct FAnimNode_CopyBone                     AnimGraphNode_CopyBone_2;                          // 0x0338(0x00F0)()
-	uint8                                         Pad_2193[0x8];                                     // 0x0428(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_428[0x8];                                      // 0x0428(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAnimNode_LookAt                       AnimGraphNode_LookAt_3;                            // 0x0430(0x01B0)()
 	struct FAnimNode_CCDIK                        AnimGraphNode_CCDIK_2;                             // 0x05E0(0x0180)()
 	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone_35;                       // 0x0760(0x0108)()
 	struct FAnimNode_CopyBone                     AnimGraphNode_CopyBone_1;                          // 0x0868(0x00F0)()
-	uint8                                         Pad_2194[0x8];                                     // 0x0958(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_958[0x8];                                      // 0x0958(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAnimNode_LookAt                       AnimGraphNode_LookAt_2;                            // 0x0960(0x01B0)()
 	struct FAnimNode_CCDIK                        AnimGraphNode_CCDIK_1;                             // 0x0B10(0x0180)()
 	struct FAnimNode_CopyBone                     AnimGraphNode_CopyBone;                            // 0x0C90(0x00F0)()
@@ -64,7 +64,7 @@ public:
 	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone_14;                       // 0x2550(0x0108)()
 	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone_13;                       // 0x2658(0x0108)()
 	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone_12;                       // 0x2760(0x0108)()
-	uint8                                         Pad_2195[0x8];                                     // 0x2868(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2868[0x8];                                     // 0x2868(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAnimNode_LookAt                       AnimGraphNode_LookAt;                              // 0x2870(0x01B0)()
 	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone_11;                       // 0x2A20(0x0108)()
 	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone_10;                       // 0x2B28(0x0108)()
@@ -100,62 +100,66 @@ public:
 	float                                         LegD_2;                                            // 0x3978(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	float                                         LegD_3;                                            // 0x397C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	float                                         StepSize;                                          // 0x3980(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         StepSpeed;                                         // 0x3984(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         StepHeight;                                        // 0x3988(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Moving_1;                                          // 0x398C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Moving_2;                                          // 0x398D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Moving_3;                                          // 0x398E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2196[0x1];                                     // 0x398F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             TransformHead_Base;                                // 0x3990(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	struct FTransform                             TransformHead_c;                                   // 0x39C0(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	struct FVector                                LegFin_1;                                          // 0x39F0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	struct FVector                                LegFin_2;                                          // 0x39FC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	struct FVector                                LegFin_3;                                          // 0x3A08(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	struct FFloatSpringState                      S1;                                                // 0x3A14(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FFloatSpringState                      S2;                                                // 0x3A1C(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	float                                         AngX;                                              // 0x3A24(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         AngY;                                              // 0x3A28(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               bodyRot;                                           // 0x3A2C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	struct FRotator                               FootHitA_1;                                        // 0x3A38(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn)
-	struct FRotator                               FootHitB_1;                                        // 0x3A44(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn)
-	struct FRotator                               FootRot_1;                                         // 0x3A50(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn)
-	struct FRotator                               FootHitA_2;                                        // 0x3A5C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn)
-	struct FRotator                               FootHitB_2;                                        // 0x3A68(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn)
-	struct FRotator                               FootRot_2;                                         // 0x3A74(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn)
-	struct FRotator                               FootHitA_3;                                        // 0x3A80(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn)
-	struct FRotator                               FootHitB_3;                                        // 0x3A8C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn)
-	struct FRotator                               FootRot_3;                                         // 0x3A98(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn)
-	struct FRotator                               Fingers_1;                                         // 0x3AA4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	struct FRotator                               Fingers_2;                                         // 0x3AB0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	struct FRotator                               Fingers_3;                                         // 0x3ABC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	class APiramidTest_C*                         Piramid;                                           // 0x3AC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               LookAt;                                            // 0x3AD0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	struct FVector                                LookAtLoc;                                         // 0x3ADC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         ARM_R;                                             // 0x3AE8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         ARM_L;                                             // 0x3AEC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFloatSpringState                      Sr1;                                               // 0x3AF0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FFloatSpringState                      Sr2;                                               // 0x3AF8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FVector                                Arm_R_lastLoc;                                     // 0x3B00(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Arm_L_lastLoc;                                     // 0x3B0C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         ArmUp;                                             // 0x3B18(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2197[0x4];                                     // 0x3B1C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APiramid2_C*                            Piramid2;                                          // 0x3B20(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         StepSize_modify;                                   // 0x3984(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         StepSpeed;                                         // 0x3988(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         StepSpeed_modify;                                  // 0x398C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         StepHeight;                                        // 0x3990(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         StepHeight_modify;                                 // 0x3994(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Moving_1;                                          // 0x3998(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Moving_2;                                          // 0x3999(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Moving_3;                                          // 0x399A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_399B[0x5];                                     // 0x399B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             TransformHead_Base;                                // 0x39A0(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FTransform                             TransformHead_c;                                   // 0x39D0(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FVector                                LegFin_1;                                          // 0x3A00(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FVector                                LegFin_2;                                          // 0x3A0C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FVector                                LegFin_3;                                          // 0x3A18(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FFloatSpringState                      S1;                                                // 0x3A24(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FFloatSpringState                      S2;                                                // 0x3A2C(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	float                                         AngX;                                              // 0x3A34(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Angy;                                              // 0x3A38(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               bodyRot;                                           // 0x3A3C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FRotator                               FootHitA_1;                                        // 0x3A48(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn)
+	struct FRotator                               FootHitB_1;                                        // 0x3A54(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn)
+	struct FRotator                               FootRot_1;                                         // 0x3A60(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn)
+	struct FRotator                               FootHitA_2;                                        // 0x3A6C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn)
+	struct FRotator                               FootHitB_2;                                        // 0x3A78(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn)
+	struct FRotator                               FootRot_2;                                         // 0x3A84(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn)
+	struct FRotator                               FootHitA_3;                                        // 0x3A90(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn)
+	struct FRotator                               FootHitB_3;                                        // 0x3A9C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn)
+	struct FRotator                               FootRot_3;                                         // 0x3AA8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, ExposeOnSpawn)
+	struct FRotator                               Fingers_1;                                         // 0x3AB4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FRotator                               Fingers_2;                                         // 0x3AC0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FRotator                               Fingers_3;                                         // 0x3ACC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class APiramidTest_C*                         Piramid;                                           // 0x3AD8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               LookAt;                                            // 0x3AE0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FVector                                LookAtLoc;                                         // 0x3AEC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         ARM_R;                                             // 0x3AF8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         ARM_L;                                             // 0x3AFC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFloatSpringState                      Sr1;                                               // 0x3B00(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FFloatSpringState                      Sr2;                                               // 0x3B08(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FVector                                Arm_R_lastLoc;                                     // 0x3B10(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Arm_L_lastLoc;                                     // 0x3B1C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         ArmUp;                                             // 0x3B28(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B2C[0x4];                                     // 0x3B2C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APiramid2_C*                            Piramid2;                                          // 0x3B30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                FivekZOffset;                                      // 0x3B38(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_piramid_sk_prot_Skeleton_AnimBlueprint(int32 EntryPoint);
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_piramid_sk_prot_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_DADCE16049230ACE030A2D99B6E77D13();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_piramid_sk_prot_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_CE69DF8A4803BA47CF12368C61163630();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_piramid_sk_prot_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_D130DBEB452F1617F91483ADCEE7FB15();
+	void BlueprintBeginPlay();
+	void BlueprintUpdateAnimation(float DeltaTimeX);
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_piramid_sk_prot_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_A56C94F94BD08D460BC67784D70F6B16();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_piramid_sk_prot_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_B74F64854CF0318BBBA6FFBE55E77402();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_piramid_sk_prot_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_7BC9D3214BE8D20FEDF556A8AC094DB7();
-	void BlueprintBeginPlay();
-	void BlueprintUpdateAnimation(float DeltaTimeX);
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_piramid_sk_prot_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_7C304A944ABF0A48545385B0C0317664();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_piramid_sk_prot_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_228BA82042B5F68138D521828499C154();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_piramid_sk_prot_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_3B9BC1D1480AFF3410BF5B98B52A3DC7();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_piramid_sk_prot_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_12E649E74747963A8381DD9E840896A1();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_piramid_sk_prot_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_20D59BE742D24C0B36A18E8AE5434722();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_piramid_sk_prot_Skeleton_AnimBlueprint_AnimGraphNode_ModifyBone_DADCE16049230ACE030A2D99B6E77D13();
 	struct FVector Offs(const struct FVector& Lerp, const struct FVector& Loc, float D, float* AlphaRot, float* FingersAlpha, float* AlphaEase);
 	void AnimGraph(struct FPoseLink* Param_AnimGraph);
 
@@ -170,7 +174,7 @@ public:
 	}
 };
 static_assert(alignof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C) == 0x000010, "Wrong alignment on UPiramid_sk_prot_Skeleton_AnimBlueprint_C");
-static_assert(sizeof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C) == 0x003B30, "Wrong size on UPiramid_sk_prot_Skeleton_AnimBlueprint_C");
+static_assert(sizeof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C) == 0x003B50, "Wrong size on UPiramid_sk_prot_Skeleton_AnimBlueprint_C");
 static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, UberGraphFrame) == 0x0002C0, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, AnimGraphNode_Root) == 0x0002C8, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::AnimGraphNode_Root' has a wrong offset!");
 static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, AnimGraphNode_LocalToComponentSpace_1) == 0x0002F8, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::AnimGraphNode_LocalToComponentSpace_1' has a wrong offset!");
@@ -243,44 +247,48 @@ static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, LegD_1) == 0x0
 static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, LegD_2) == 0x003978, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::LegD_2' has a wrong offset!");
 static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, LegD_3) == 0x00397C, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::LegD_3' has a wrong offset!");
 static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, StepSize) == 0x003980, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::StepSize' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, StepSpeed) == 0x003984, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::StepSpeed' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, StepHeight) == 0x003988, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::StepHeight' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Moving_1) == 0x00398C, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Moving_1' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Moving_2) == 0x00398D, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Moving_2' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Moving_3) == 0x00398E, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Moving_3' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, TransformHead_Base) == 0x003990, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::TransformHead_Base' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, TransformHead_c) == 0x0039C0, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::TransformHead_c' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, LegFin_1) == 0x0039F0, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::LegFin_1' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, LegFin_2) == 0x0039FC, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::LegFin_2' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, LegFin_3) == 0x003A08, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::LegFin_3' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, S1) == 0x003A14, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::S1' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, S2) == 0x003A1C, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::S2' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, AngX) == 0x003A24, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::AngX' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, AngY) == 0x003A28, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::AngY' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, bodyRot) == 0x003A2C, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::bodyRot' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, FootHitA_1) == 0x003A38, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::FootHitA_1' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, FootHitB_1) == 0x003A44, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::FootHitB_1' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, FootRot_1) == 0x003A50, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::FootRot_1' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, FootHitA_2) == 0x003A5C, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::FootHitA_2' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, FootHitB_2) == 0x003A68, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::FootHitB_2' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, FootRot_2) == 0x003A74, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::FootRot_2' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, FootHitA_3) == 0x003A80, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::FootHitA_3' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, FootHitB_3) == 0x003A8C, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::FootHitB_3' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, FootRot_3) == 0x003A98, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::FootRot_3' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Fingers_1) == 0x003AA4, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Fingers_1' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Fingers_2) == 0x003AB0, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Fingers_2' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Fingers_3) == 0x003ABC, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Fingers_3' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Piramid) == 0x003AC8, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Piramid' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, LookAt) == 0x003AD0, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::LookAt' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, LookAtLoc) == 0x003ADC, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::LookAtLoc' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, ARM_R) == 0x003AE8, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::ARM_R' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, ARM_L) == 0x003AEC, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::ARM_L' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Sr1) == 0x003AF0, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Sr1' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Sr2) == 0x003AF8, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Sr2' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Arm_R_lastLoc) == 0x003B00, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Arm_R_lastLoc' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Arm_L_lastLoc) == 0x003B0C, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Arm_L_lastLoc' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, ArmUp) == 0x003B18, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::ArmUp' has a wrong offset!");
-static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Piramid2) == 0x003B20, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Piramid2' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, StepSize_modify) == 0x003984, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::StepSize_modify' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, StepSpeed) == 0x003988, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::StepSpeed' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, StepSpeed_modify) == 0x00398C, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::StepSpeed_modify' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, StepHeight) == 0x003990, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::StepHeight' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, StepHeight_modify) == 0x003994, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::StepHeight_modify' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Moving_1) == 0x003998, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Moving_1' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Moving_2) == 0x003999, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Moving_2' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Moving_3) == 0x00399A, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Moving_3' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, TransformHead_Base) == 0x0039A0, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::TransformHead_Base' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, TransformHead_c) == 0x0039D0, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::TransformHead_c' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, LegFin_1) == 0x003A00, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::LegFin_1' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, LegFin_2) == 0x003A0C, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::LegFin_2' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, LegFin_3) == 0x003A18, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::LegFin_3' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, S1) == 0x003A24, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::S1' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, S2) == 0x003A2C, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::S2' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, AngX) == 0x003A34, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::AngX' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Angy) == 0x003A38, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Angy' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, bodyRot) == 0x003A3C, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::bodyRot' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, FootHitA_1) == 0x003A48, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::FootHitA_1' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, FootHitB_1) == 0x003A54, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::FootHitB_1' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, FootRot_1) == 0x003A60, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::FootRot_1' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, FootHitA_2) == 0x003A6C, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::FootHitA_2' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, FootHitB_2) == 0x003A78, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::FootHitB_2' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, FootRot_2) == 0x003A84, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::FootRot_2' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, FootHitA_3) == 0x003A90, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::FootHitA_3' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, FootHitB_3) == 0x003A9C, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::FootHitB_3' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, FootRot_3) == 0x003AA8, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::FootRot_3' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Fingers_1) == 0x003AB4, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Fingers_1' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Fingers_2) == 0x003AC0, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Fingers_2' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Fingers_3) == 0x003ACC, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Fingers_3' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Piramid) == 0x003AD8, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Piramid' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, LookAt) == 0x003AE0, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::LookAt' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, LookAtLoc) == 0x003AEC, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::LookAtLoc' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, ARM_R) == 0x003AF8, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::ARM_R' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, ARM_L) == 0x003AFC, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::ARM_L' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Sr1) == 0x003B00, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Sr1' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Sr2) == 0x003B08, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Sr2' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Arm_R_lastLoc) == 0x003B10, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Arm_R_lastLoc' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Arm_L_lastLoc) == 0x003B1C, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Arm_L_lastLoc' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, ArmUp) == 0x003B28, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::ArmUp' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, Piramid2) == 0x003B30, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::Piramid2' has a wrong offset!");
+static_assert(offsetof(UPiramid_sk_prot_Skeleton_AnimBlueprint_C, FivekZOffset) == 0x003B38, "Member 'UPiramid_sk_prot_Skeleton_AnimBlueprint_C::FivekZOffset' has a wrong offset!");
 
 }
 

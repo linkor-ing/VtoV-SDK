@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
-#include "UMG_structs.hpp"
 #include "InputCore_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
@@ -25,7 +25,7 @@ struct Umg_telescope_C_ExecuteUbergraph_umg_telescope final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_SetGamePaused_ReturnValue;                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2566[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FKey                                   K2Node_CustomEvent_key;                            // 0x0010(0x0018)(HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_hold;                           // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -35,7 +35,7 @@ public:
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue_3;          // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue_4;          // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue_5;          // 0x002E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2567[0x1];                                     // 0x002F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F[0x1];                                       // 0x002F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x0030(0x0008)(NoDestructor)
 };
 static_assert(alignof(Umg_telescope_C_ExecuteUbergraph_umg_telescope) == 0x000008, "Wrong alignment on Umg_telescope_C_ExecuteUbergraph_umg_telescope");

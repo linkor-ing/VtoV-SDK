@@ -21,7 +21,7 @@ namespace SDK
 class UCustomMeshComponent final : public UMeshComponent
 {
 public:
-	uint8                                         Pad_1930[0x18];                                    // 0x0478(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_478[0x18];                                     // 0x0478(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AddCustomMeshTriangles(const TArray<struct FCustomMeshTriangle>& Triangles);

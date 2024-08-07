@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 
@@ -19,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass umg_radarScreen.umg_radarScreen_C
-// 0x00D8 (0x0338 - 0x0260)
+// 0x00F0 (0x0350 - 0x0260)
 class UUmg_radarScreen_C final : public UUserWidget
 {
 public:
@@ -32,7 +33,7 @@ public:
 	class URichTextBlock*                         Rtxt_log_4;                                        // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UUmg_radar_C*                           Umg_radar;                                         // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          Active;                                            // 0x02A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E65[0x3];                                     // 0x02A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A1[0x3];                                      // 0x02A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Angle;                                             // 0x02A4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               Dynmat;                                            // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class AActor*>                         Scanned;                                           // 0x02B0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
@@ -46,9 +47,13 @@ public:
 	int32                                         PrevEnt;                                           // 0x0328(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          HasColors;                                         // 0x032C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          HasAlarm;                                          // 0x032D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E66[0x2];                                     // 0x032E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_32E[0x2];                                      // 0x032E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         SpdLevel;                                          // 0x0330(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Spd;                                               // 0x0334(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FLinearColor>                   SkipColors;                                        // 0x0338(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          SoundActive_ent;                                   // 0x0348(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          SoundActive_ping;                                  // 0x0349(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          SoundActive_alarm;                                 // 0x034A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_umg_radarScreen(int32 EntryPoint);
@@ -56,6 +61,7 @@ public:
 	void Upd();
 	void PowerChanged(bool Active_calc, bool Active_downl, bool Active_coords, bool Active_play, bool Active_light);
 	void GamemodeBeginPlay();
+	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void ApplyColor(const struct FLinearColor& Color);
 	void PropRenderer_finishProps();
 	void GamemodeMakeKeys();
@@ -79,7 +85,7 @@ public:
 	}
 };
 static_assert(alignof(UUmg_radarScreen_C) == 0x000008, "Wrong alignment on UUmg_radarScreen_C");
-static_assert(sizeof(UUmg_radarScreen_C) == 0x000338, "Wrong size on UUmg_radarScreen_C");
+static_assert(sizeof(UUmg_radarScreen_C) == 0x000350, "Wrong size on UUmg_radarScreen_C");
 static_assert(offsetof(UUmg_radarScreen_C, UberGraphFrame) == 0x000260, "Member 'UUmg_radarScreen_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UUmg_radarScreen_C, Image_78) == 0x000268, "Member 'UUmg_radarScreen_C::Image_78' has a wrong offset!");
 static_assert(offsetof(UUmg_radarScreen_C, Img_activated) == 0x000270, "Member 'UUmg_radarScreen_C::Img_activated' has a wrong offset!");
@@ -104,6 +110,10 @@ static_assert(offsetof(UUmg_radarScreen_C, HasColors) == 0x00032C, "Member 'UUmg
 static_assert(offsetof(UUmg_radarScreen_C, HasAlarm) == 0x00032D, "Member 'UUmg_radarScreen_C::HasAlarm' has a wrong offset!");
 static_assert(offsetof(UUmg_radarScreen_C, SpdLevel) == 0x000330, "Member 'UUmg_radarScreen_C::SpdLevel' has a wrong offset!");
 static_assert(offsetof(UUmg_radarScreen_C, Spd) == 0x000334, "Member 'UUmg_radarScreen_C::Spd' has a wrong offset!");
+static_assert(offsetof(UUmg_radarScreen_C, SkipColors) == 0x000338, "Member 'UUmg_radarScreen_C::SkipColors' has a wrong offset!");
+static_assert(offsetof(UUmg_radarScreen_C, SoundActive_ent) == 0x000348, "Member 'UUmg_radarScreen_C::SoundActive_ent' has a wrong offset!");
+static_assert(offsetof(UUmg_radarScreen_C, SoundActive_ping) == 0x000349, "Member 'UUmg_radarScreen_C::SoundActive_ping' has a wrong offset!");
+static_assert(offsetof(UUmg_radarScreen_C, SoundActive_alarm) == 0x00034A, "Member 'UUmg_radarScreen_C::SoundActive_alarm' has a wrong offset!");
 
 }
 

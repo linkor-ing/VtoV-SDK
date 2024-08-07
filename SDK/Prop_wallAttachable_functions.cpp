@@ -57,70 +57,6 @@ void AProp_wallAttachable_C::Dest(class AActor* DestroyedActor)
 }
 
 
-// Function prop_wallAttachable.prop_wallAttachable_C.setPropProps
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Param_Static                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Param_Frozen                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AProp_wallAttachable_C::SetPropProps(bool Param_Static, bool Param_Frozen, bool Active)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_wallAttachable_C", "setPropProps");
-
-	Params::Prop_wallAttachable_C_SetPropProps Parms{};
-
-	Parms.Param_Static = Param_Static;
-	Parms.Param_Frozen = Param_Frozen;
-	Parms.Active = Active;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop_wallAttachable.prop_wallAttachable_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_wallAttachable_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_wallAttachable_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop_wallAttachable.prop_wallAttachable_C.actionOptionIndex
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_wallAttachable_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_wallAttachable_C", "actionOptionIndex");
-
-	Params::Prop_wallAttachable_C_ActionOptionIndex Parms{};
-
-	Parms.Player = Player;
-	Parms.Param_Hit = std::move(Param_Hit);
-	Parms.Param_Index = Param_Index;
-	Parms.Action = Action;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function prop_wallAttachable.prop_wallAttachable_C.forceStick
 // (BlueprintCallable, BlueprintEvent)
 
@@ -198,6 +134,68 @@ void AProp_wallAttachable_C::TryStick(struct FHitResult* OutHit)
 }
 
 
+// Function prop_wallAttachable.prop_wallAttachable_C.actionOptionIndex
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_wallAttachable_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_wallAttachable_C", "actionOptionIndex");
+
+	Params::Prop_wallAttachable_C_ActionOptionIndex Parms{};
+
+	Parms.Player = Player;
+	Parms.Param_Hit = std::move(Param_Hit);
+	Parms.Action = Action;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_wallAttachable.prop_wallAttachable_C.setPropProps
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Param_Static                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Param_Frozen                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AProp_wallAttachable_C::SetPropProps(bool Param_Static, bool Param_Frozen, bool Active)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_wallAttachable_C", "setPropProps");
+
+	Params::Prop_wallAttachable_C_SetPropProps Parms{};
+
+	Parms.Param_Static = Param_Static;
+	Parms.Param_Frozen = Param_Frozen;
+	Parms.Active = Active;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_wallAttachable.prop_wallAttachable_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_wallAttachable_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_wallAttachable_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function prop_wallAttachable.prop_wallAttachable_C.lookAt
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -206,8 +204,9 @@ void AProp_wallAttachable_C::TryStick(struct FHitResult* OutHit)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_wallAttachable_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
+void AProp_wallAttachable_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -229,6 +228,9 @@ void AProp_wallAttachable_C::LookAt(class AMainPlayer_C* Player, const struct FH
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 }

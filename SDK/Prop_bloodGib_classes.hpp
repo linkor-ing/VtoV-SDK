@@ -18,17 +18,16 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_bloodGib.prop_bloodGib_C
-// 0x0008 (0x03C8 - 0x03C0)
+// 0x0008 (0x03D8 - 0x03D0)
 class AProp_bloodGib_C : public AProp_food_C
 {
 public:
-	uint8                                         Pad_3F27[0x4];                                     // 0x03BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_bloodGib_C;                    // 0x03C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_bloodGib_C;                    // 0x03D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_prop_bloodGib(int32 EntryPoint);
-	void ReceiveBeginPlay();
 	void BndEvt__prop_bloodGib_StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Param_Hit);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()
@@ -41,8 +40,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_bloodGib_C) == 0x000008, "Wrong alignment on AProp_bloodGib_C");
-static_assert(sizeof(AProp_bloodGib_C) == 0x0003C8, "Wrong size on AProp_bloodGib_C");
-static_assert(offsetof(AProp_bloodGib_C, UberGraphFrame_Prop_bloodGib_C) == 0x0003C0, "Member 'AProp_bloodGib_C::UberGraphFrame_Prop_bloodGib_C' has a wrong offset!");
+static_assert(sizeof(AProp_bloodGib_C) == 0x0003D8, "Wrong size on AProp_bloodGib_C");
+static_assert(offsetof(AProp_bloodGib_C, UberGraphFrame_Prop_bloodGib_C) == 0x0003D0, "Member 'AProp_bloodGib_C::UberGraphFrame_Prop_bloodGib_C' has a wrong offset!");
 
 }
 

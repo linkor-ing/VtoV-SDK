@@ -37,6 +37,76 @@ void AEriePlushLive_C::ExecuteUbergraph_eriePlushLive(int32 EntryPoint)
 }
 
 
+// Function eriePlushLive.eriePlushLive_C.setIgnoreSave
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Ignore                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AEriePlushLive_C::SetIgnoreSave(bool Ignore)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("eriePlushLive_C", "setIgnoreSave");
+
+	Params::EriePlushLive_C_SetIgnoreSave Parms{};
+
+	Parms.Ignore = Ignore;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function eriePlushLive.eriePlushLive_C.driveDetached
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AEriePlushLive_C::DriveDetached()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("eriePlushLive_C", "driveDetached");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function eriePlushLive.eriePlushLive_C.player_use
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+
+void AEriePlushLive_C::Player_use(class AMainPlayer_C* Player, const struct FHitResult& Hit)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("eriePlushLive_C", "player_use");
+
+	Params::EriePlushLive_C_Player_use Parms{};
+
+	Parms.Player = Player;
+	Parms.Hit = std::move(Hit);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function eriePlushLive.eriePlushLive_C.descend
+// (BlueprintCallable, BlueprintEvent)
+
+void AEriePlushLive_C::Descend()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("eriePlushLive_C", "descend");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function eriePlushLive.eriePlushLive_C.reduceRep
 // (BlueprintCallable, BlueprintEvent)
 
@@ -84,6 +154,26 @@ void AEriePlushLive_C::Throw()
 		Func = Class->GetFunction("eriePlushLive_C", "throw");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function eriePlushLive.eriePlushLive_C.kicked
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Kick                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AEriePlushLive_C::Kicked(bool Kick)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("eriePlushLive_C", "kicked");
+
+	Params::EriePlushLive_C_Kicked Parms{};
+
+	Parms.Kick = Kick;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -191,6 +281,26 @@ void AEriePlushLive_C::AddDamage(class AActor* Actor, float Damage, const struct
 }
 
 
+// Function eriePlushLive.eriePlushLive_C.sendName
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             Param_Name                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AEriePlushLive_C::SendName(class FName Param_Name)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("eriePlushLive_C", "sendName");
+
+	Params::EriePlushLive_C_SendName Parms{};
+
+	Parms.Param_Name = Param_Name;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function eriePlushLive.eriePlushLive_C.ReceiveDestroyed
 // (Event, Public, BlueprintEvent)
 
@@ -222,6 +332,20 @@ void AEriePlushLive_C::StealAnim(bool Condition)
 	Parms.Condition = Condition;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function eriePlushLive.eriePlushLive_C.broken
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AEriePlushLive_C::broken()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("eriePlushLive_C", "broken");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -292,10 +416,9 @@ void AEriePlushLive_C::StartMoving()
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AEriePlushLive_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action)
+void AEriePlushLive_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -306,7 +429,6 @@ void AEriePlushLive_C::ActionOptionIndex(class AMainPlayer_C* Player, const stru
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
-	Parms.Param_Index = Param_Index;
 	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -330,6 +452,62 @@ void AEriePlushLive_C::ReceiveTick(float DeltaSeconds)
 	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function eriePlushLive.eriePlushLive_C.hookTension
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AHook_C*                          Hook                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AEriePlushLive_C::HookTension(class AHook_C* Hook)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("eriePlushLive_C", "hookTension");
+
+	Params::EriePlushLive_C_HookTension Parms{};
+
+	Parms.Hook = Hook;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function eriePlushLive.eriePlushLive_C.cleanSponge
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Clean                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AEriePlushLive_C::CleanSponge(float Clean, class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("eriePlushLive_C", "cleanSponge");
+
+	Params::EriePlushLive_C_CleanSponge Parms{};
+
+	Parms.Clean = Clean;
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function eriePlushLive.eriePlushLive_C.crafted
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AEriePlushLive_C::Crafted()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("eriePlushLive_C", "crafted");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -729,15 +907,23 @@ void AEriePlushLive_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
 
 // Function eriePlushLive.eriePlushLive_C.receivedPhyiscsDamage
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hot                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void AEriePlushLive_C::ReceivedPhyiscsDamage()
+void AEriePlushLive_C::ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("eriePlushLive_C", "receivedPhyiscsDamage");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::EriePlushLive_C_ReceivedPhyiscsDamage Parms{};
+
+	Parms.Damage = Damage;
+	Parms.Hot = std::move(Hot);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -1037,6 +1223,66 @@ void AEriePlushLive_C::ImpactDamage(float Damage, const struct FHitResult& Hit, 
 }
 
 
+// Function eriePlushLive.eriePlushLive_C.playerR
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AEriePlushLive_C::PlayerR(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("eriePlushLive_C", "playerR");
+
+	Params::EriePlushLive_C_PlayerR Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function eriePlushLive.eriePlushLive_C.playerHold
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AEriePlushLive_C::PlayerHold(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("eriePlushLive_C", "playerHold");
+
+	Params::EriePlushLive_C_PlayerHold Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function eriePlushLive.eriePlushLive_C.playerUnequip
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AEriePlushLive_C::PlayerUnequip(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("eriePlushLive_C", "playerUnequip");
+
+	Params::EriePlushLive_C_PlayerUnequip Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function eriePlushLive.eriePlushLive_C.updateStrAgl
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -1056,8 +1302,9 @@ void AEriePlushLive_C::UpdateStrAgl()
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AEriePlushLive_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit)
+void AEriePlushLive_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1068,6 +1315,7 @@ void AEriePlushLive_C::DamageByPlayer(class AMainPlayer_C* Player, const struct 
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
+	Parms.Damage = Damage;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -1107,111 +1355,101 @@ void AEriePlushLive_C::broken_fire()
 }
 
 
-// Function eriePlushLive.eriePlushLive_C.broken
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AEriePlushLive_C::broken()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("eriePlushLive_C", "broken");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function eriePlushLive.eriePlushLive_C.sendName
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function eriePlushLive.eriePlushLive_C.OnCompleted_1AB22B384D90439DB9097998C64CBFCB
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             Param_Name                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AEriePlushLive_C::SendName(class FName Param_Name)
+void AEriePlushLive_C::OnCompleted_1AB22B384D90439DB9097998C64CBFCB(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("eriePlushLive_C", "sendName");
+		Func = Class->GetFunction("eriePlushLive_C", "OnCompleted_1AB22B384D90439DB9097998C64CBFCB");
 
-	Params::EriePlushLive_C_SendName Parms{};
+	Params::EriePlushLive_C_OnCompleted_1AB22B384D90439DB9097998C64CBFCB Parms{};
 
-	Parms.Param_Name = Param_Name;
+	Parms.NotifyName = NotifyName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function eriePlushLive.eriePlushLive_C.kicked
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function eriePlushLive.eriePlushLive_C.OnBlendOut_1AB22B384D90439DB9097998C64CBFCB
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Kick                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AEriePlushLive_C::Kicked(bool Kick)
+void AEriePlushLive_C::OnBlendOut_1AB22B384D90439DB9097998C64CBFCB(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("eriePlushLive_C", "kicked");
+		Func = Class->GetFunction("eriePlushLive_C", "OnBlendOut_1AB22B384D90439DB9097998C64CBFCB");
 
-	Params::EriePlushLive_C_Kicked Parms{};
+	Params::EriePlushLive_C_OnBlendOut_1AB22B384D90439DB9097998C64CBFCB Parms{};
 
-	Parms.Kick = Kick;
+	Parms.NotifyName = NotifyName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function eriePlushLive.eriePlushLive_C.player_use
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function eriePlushLive.eriePlushLive_C.OnInterrupted_1AB22B384D90439DB9097998C64CBFCB
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AEriePlushLive_C::Player_use(class AMainPlayer_C* Player, const struct FHitResult& Hit)
+void AEriePlushLive_C::OnInterrupted_1AB22B384D90439DB9097998C64CBFCB(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("eriePlushLive_C", "player_use");
+		Func = Class->GetFunction("eriePlushLive_C", "OnInterrupted_1AB22B384D90439DB9097998C64CBFCB");
 
-	Params::EriePlushLive_C_Player_use Parms{};
+	Params::EriePlushLive_C_OnInterrupted_1AB22B384D90439DB9097998C64CBFCB Parms{};
 
-	Parms.Player = Player;
-	Parms.Hit = std::move(Hit);
+	Parms.NotifyName = NotifyName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function eriePlushLive.eriePlushLive_C.driveDetached
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function eriePlushLive.eriePlushLive_C.OnNotifyBegin_1AB22B384D90439DB9097998C64CBFCB
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AEriePlushLive_C::DriveDetached()
+void AEriePlushLive_C::OnNotifyBegin_1AB22B384D90439DB9097998C64CBFCB(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("eriePlushLive_C", "driveDetached");
+		Func = Class->GetFunction("eriePlushLive_C", "OnNotifyBegin_1AB22B384D90439DB9097998C64CBFCB");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::EriePlushLive_C_OnNotifyBegin_1AB22B384D90439DB9097998C64CBFCB Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function eriePlushLive.eriePlushLive_C.setIgnoreSave
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function eriePlushLive.eriePlushLive_C.OnNotifyEnd_1AB22B384D90439DB9097998C64CBFCB
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Ignore                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AEriePlushLive_C::SetIgnoreSave(bool Ignore)
+void AEriePlushLive_C::OnNotifyEnd_1AB22B384D90439DB9097998C64CBFCB(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("eriePlushLive_C", "setIgnoreSave");
+		Func = Class->GetFunction("eriePlushLive_C", "OnNotifyEnd_1AB22B384D90439DB9097998C64CBFCB");
 
-	Params::EriePlushLive_C_SetIgnoreSave Parms{};
+	Params::EriePlushLive_C_OnNotifyEnd_1AB22B384D90439DB9097998C64CBFCB Parms{};
 
-	Parms.Ignore = Ignore;
+	Parms.NotifyName = NotifyName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -1825,6 +2063,20 @@ void AEriePlushLive_C::StealTimeline__FinishedFunc()
 }
 
 
+// Function eriePlushLive.eriePlushLive_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void AEriePlushLive_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("eriePlushLive_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function eriePlushLive.eriePlushLive_C.makeLoc
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -1944,8 +2196,9 @@ void AEriePlushLive_C::GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled)
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AEriePlushLive_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
+void AEriePlushLive_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1968,6 +2221,9 @@ void AEriePlushLive_C::GetActionOptions(class AMainPlayer_C* Player, class UPrim
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -2106,9 +2362,9 @@ void AEriePlushLive_C::ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return)
 // Function eriePlushLive.eriePlushLive_C.skipRadial
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Skip                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Param_Skip                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AEriePlushLive_C::SkipRadial(bool* Skip)
+void AEriePlushLive_C::SkipRadial(bool* Param_Skip)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2119,8 +2375,29 @@ void AEriePlushLive_C::SkipRadial(bool* Skip)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Skip != nullptr)
-		*Skip = Parms.Skip;
+	if (Param_Skip != nullptr)
+		*Param_Skip = Parms.Param_Skip;
+}
+
+
+// Function eriePlushLive.eriePlushLive_C.getPriceMultiplier
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   PriceMult                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AEriePlushLive_C::GetPriceMultiplier(float* PriceMult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("eriePlushLive_C", "getPriceMultiplier");
+
+	Params::EriePlushLive_C_GetPriceMultiplier Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PriceMult != nullptr)
+		*PriceMult = Parms.PriceMult;
 }
 
 
@@ -2219,8 +2496,9 @@ void AEriePlushLive_C::NoRespawn(bool Param_NoRespawn, bool* Return)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AEriePlushLive_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
+void AEriePlushLive_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2242,6 +2520,9 @@ void AEriePlushLive_C::LookAt(class AMainPlayer_C* Player, const struct FHitResu
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -2266,12 +2547,36 @@ void AEriePlushLive_C::IsButtonUsed(bool* Failed)
 }
 
 
+// Function eriePlushLive.eriePlushLive_C.landedOn
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IgnoreFallDamage                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AEriePlushLive_C::LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("eriePlushLive_C", "landedOn");
+
+	Params::EriePlushLive_C_LandedOn Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IgnoreFallDamage != nullptr)
+		*IgnoreFallDamage = Parms.IgnoreFallDamage;
+}
+
+
 // Function eriePlushLive.eriePlushLive_C.skipPreDelete
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Skip                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Param_Skip                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AEriePlushLive_C::SkipPreDelete(bool* Skip)
+void AEriePlushLive_C::SkipPreDelete(bool* Param_Skip)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2282,8 +2587,8 @@ void AEriePlushLive_C::SkipPreDelete(bool* Skip)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Skip != nullptr)
-		*Skip = Parms.Skip;
+	if (Param_Skip != nullptr)
+		*Param_Skip = Parms.Param_Skip;
 }
 
 
@@ -2350,6 +2655,27 @@ void AEriePlushLive_C::GetData(struct FStruct_save* Data)
 
 	if (Data != nullptr)
 		*Data = std::move(Parms.Data);
+}
+
+
+// Function eriePlushLive.eriePlushLive_C.gatherDataFromKey
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AEriePlushLive_C::GatherDataFromKey(bool* Gather)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("eriePlushLive_C", "gatherDataFromKey");
+
+	Params::EriePlushLive_C_GatherDataFromKey Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Gather != nullptr)
+		*Gather = Parms.Gather;
 }
 
 }

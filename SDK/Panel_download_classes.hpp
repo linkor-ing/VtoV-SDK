@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PanelBase_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PanelBase_classes.hpp"
 #include "Enum_interactionActions_structs.hpp"
 
 
@@ -45,7 +45,7 @@ public:
 	bool                                          Press_PFspd_1;                                     // 0x0308(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Press_PFspd_5;                                     // 0x0309(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Press_PFspd_15;                                    // 0x030A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30B4[0x5];                                     // 0x030B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30B[0x5];                                      // 0x030B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    Comp;                                              // 0x0310(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Press_save;                                        // 0x0318(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Press_del;                                         // 0x0319(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -54,7 +54,6 @@ public:
 public:
 	void ExecuteUbergraph_panel_download(int32 EntryPoint);
 	void Autosave();
-	void ReceiveBeginPlay();
 	void ReceiveTick(float DeltaSeconds);
 	void Event_scrollDown();
 	void ScrollUp();
@@ -64,12 +63,13 @@ public:
 	void Downloaded();
 	void Toggled_P();
 	void Toggled_F();
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
+	void ReceiveBeginPlay();
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
 	void GamemodeBeginPlay();
 	void IsButtonUsed(bool* Failed);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
 
 public:
 	static class UClass* StaticClass()

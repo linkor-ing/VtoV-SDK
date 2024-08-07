@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_kerfuroAcc_bow.prop_kerfuroAcc_bow_C
-// 0x0000 (0x0368 - 0x0368)
+// 0x0000 (0x0378 - 0x0378)
 class AProp_kerfuroAcc_bow_C final : public AProp_kerfuroAcc_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_kerfuroAcc_bow_C) == 0x000008, "Wrong alignment on AProp_kerfuroAcc_bow_C");
-static_assert(sizeof(AProp_kerfuroAcc_bow_C) == 0x000368, "Wrong size on AProp_kerfuroAcc_bow_C");
+static_assert(sizeof(AProp_kerfuroAcc_bow_C) == 0x000378, "Wrong size on AProp_kerfuroAcc_bow_C");
 
 }
 

@@ -11,52 +11,52 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Prop_wallAttachable_classes.hpp"
+#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass prop_camera_bad.prop_camera_bad_C
-// 0x0090 (0x0490 - 0x0400)
-class AProp_camera_bad_C : public AProp_wallAttachable_C
+// 0x00A0 (0x04B0 - 0x0410)
+#pragma pack(push, 0x1)
+class alignas(0x10) AProp_camera_bad_C : public AProp_wallAttachable_C
 {
 public:
-	uint8                                         Pad_3DBD[0x4];                                     // 0x03F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_camera_bad_C;                  // 0x03F8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UParticleSystemComponent*               Ligh;                                              // 0x0400(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USpotLightComponent*                    SpotLight;                                         // 0x0408(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               L;                                                 // 0x0410(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class URadarPointComponent_C*                 RadarPoint;                                        // 0x0418(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneCaptureComponent2D*               Cam_ir;                                            // 0x0420(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        Audio;                                             // 0x0428(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneCaptureComponent2D*               Cam;                                               // 0x0430(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UArrowComponent*                        Stick_0;                                           // 0x0438(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Head;                                              // 0x0440(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Rot_X;                                             // 0x0448(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Rot_Y;                                             // 0x044C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Index_Prop_camera_bad_C;                           // 0x0450(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DBE[0x4];                                     // 0x0454(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Nam;                                               // 0x0458(0x0018)(Edit, BlueprintVisible)
-	bool                                          Active;                                            // 0x0470(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Spec;                                              // 0x0471(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3DBF[0x2];                                     // 0x0472(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FIntPoint                              Res;                                               // 0x0474(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         UpdRate;                                           // 0x047C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Zoom;                                              // 0x0480(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsGood;                                            // 0x0484(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          IsIR;                                              // 0x0485(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          IgnoreMove;                                        // 0x0486(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          IsLight;                                           // 0x0487(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Hidden;                                            // 0x0488(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_405[0x3];                                      // 0x0405(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_camera_bad_C;                  // 0x0408(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPhysicsConstraintComponent*            PhysicsConstraint;                                 // 0x0410(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneCaptureComponent2D*               Cam_ir;                                            // 0x0418(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Ligh;                                              // 0x0420(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USpotLightComponent*                    SpotLight;                                         // 0x0428(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               L;                                                 // 0x0430(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UComp_radarPoint_C*                     RadarPoint;                                        // 0x0438(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        Audio;                                             // 0x0440(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneCaptureComponent2D*               Cam;                                               // 0x0448(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        Stick_0;                                           // 0x0450(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Head;                                              // 0x0458(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Rot_X;                                             // 0x0460(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Rot_Y;                                             // 0x0464(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Index_Prop_camera_bad_C;                           // 0x0468(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_46C[0x4];                                      // 0x046C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Nam;                                               // 0x0470(0x0018)(Edit, BlueprintVisible)
+	bool                                          Active;                                            // 0x0488(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Spec;                                              // 0x0489(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_48A[0x2];                                      // 0x048A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FIntPoint                              Res;                                               // 0x048C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         UpdRate;                                           // 0x0494(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Zoom;                                              // 0x0498(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsGood;                                            // 0x049C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          IsIR;                                              // 0x049D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          IgnoreMove;                                        // 0x049E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          IsLight;                                           // 0x049F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Hidden;                                            // 0x04A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_prop_camera_bad(int32 EntryPoint);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
 	void Move();
-	void ReceiveBeginPlay();
 	void SetRot();
 	void SaveInit();
 	void SetAngle(float Param_Rot_X, float Param_Rot_Y, float Param_Zoom);
@@ -64,11 +64,15 @@ public:
 	void Upd();
 	void GetInfo(struct FIntPoint* Param_Res, float* Param_UpdRate, float* Param_Rot_X, float* Param_Rot_Y, float* Param_Zoom);
 	void Capture_light();
+	void UpdState();
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
+	void ReceiveBeginPlay();
 	void UserConstructionScript();
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void Init();
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 
 public:
 	static class UClass* StaticClass()
@@ -80,32 +84,34 @@ public:
 		return GetDefaultObjImpl<AProp_camera_bad_C>();
 	}
 };
+#pragma pack(pop)
 static_assert(alignof(AProp_camera_bad_C) == 0x000010, "Wrong alignment on AProp_camera_bad_C");
-static_assert(sizeof(AProp_camera_bad_C) == 0x000490, "Wrong size on AProp_camera_bad_C");
-static_assert(offsetof(AProp_camera_bad_C, UberGraphFrame_Prop_camera_bad_C) == 0x0003F8, "Member 'AProp_camera_bad_C::UberGraphFrame_Prop_camera_bad_C' has a wrong offset!");
-static_assert(offsetof(AProp_camera_bad_C, Ligh) == 0x000400, "Member 'AProp_camera_bad_C::Ligh' has a wrong offset!");
-static_assert(offsetof(AProp_camera_bad_C, SpotLight) == 0x000408, "Member 'AProp_camera_bad_C::SpotLight' has a wrong offset!");
-static_assert(offsetof(AProp_camera_bad_C, L) == 0x000410, "Member 'AProp_camera_bad_C::L' has a wrong offset!");
-static_assert(offsetof(AProp_camera_bad_C, RadarPoint) == 0x000418, "Member 'AProp_camera_bad_C::RadarPoint' has a wrong offset!");
-static_assert(offsetof(AProp_camera_bad_C, Cam_ir) == 0x000420, "Member 'AProp_camera_bad_C::Cam_ir' has a wrong offset!");
-static_assert(offsetof(AProp_camera_bad_C, Audio) == 0x000428, "Member 'AProp_camera_bad_C::Audio' has a wrong offset!");
-static_assert(offsetof(AProp_camera_bad_C, Cam) == 0x000430, "Member 'AProp_camera_bad_C::Cam' has a wrong offset!");
-static_assert(offsetof(AProp_camera_bad_C, Stick_0) == 0x000438, "Member 'AProp_camera_bad_C::Stick_0' has a wrong offset!");
-static_assert(offsetof(AProp_camera_bad_C, Head) == 0x000440, "Member 'AProp_camera_bad_C::Head' has a wrong offset!");
-static_assert(offsetof(AProp_camera_bad_C, Rot_X) == 0x000448, "Member 'AProp_camera_bad_C::Rot_X' has a wrong offset!");
-static_assert(offsetof(AProp_camera_bad_C, Rot_Y) == 0x00044C, "Member 'AProp_camera_bad_C::Rot_Y' has a wrong offset!");
-static_assert(offsetof(AProp_camera_bad_C, Index_Prop_camera_bad_C) == 0x000450, "Member 'AProp_camera_bad_C::Index_Prop_camera_bad_C' has a wrong offset!");
-static_assert(offsetof(AProp_camera_bad_C, Nam) == 0x000458, "Member 'AProp_camera_bad_C::Nam' has a wrong offset!");
-static_assert(offsetof(AProp_camera_bad_C, Active) == 0x000470, "Member 'AProp_camera_bad_C::Active' has a wrong offset!");
-static_assert(offsetof(AProp_camera_bad_C, Spec) == 0x000471, "Member 'AProp_camera_bad_C::Spec' has a wrong offset!");
-static_assert(offsetof(AProp_camera_bad_C, Res) == 0x000474, "Member 'AProp_camera_bad_C::Res' has a wrong offset!");
-static_assert(offsetof(AProp_camera_bad_C, UpdRate) == 0x00047C, "Member 'AProp_camera_bad_C::UpdRate' has a wrong offset!");
-static_assert(offsetof(AProp_camera_bad_C, Zoom) == 0x000480, "Member 'AProp_camera_bad_C::Zoom' has a wrong offset!");
-static_assert(offsetof(AProp_camera_bad_C, IsGood) == 0x000484, "Member 'AProp_camera_bad_C::IsGood' has a wrong offset!");
-static_assert(offsetof(AProp_camera_bad_C, IsIR) == 0x000485, "Member 'AProp_camera_bad_C::IsIR' has a wrong offset!");
-static_assert(offsetof(AProp_camera_bad_C, IgnoreMove) == 0x000486, "Member 'AProp_camera_bad_C::IgnoreMove' has a wrong offset!");
-static_assert(offsetof(AProp_camera_bad_C, IsLight) == 0x000487, "Member 'AProp_camera_bad_C::IsLight' has a wrong offset!");
-static_assert(offsetof(AProp_camera_bad_C, Hidden) == 0x000488, "Member 'AProp_camera_bad_C::Hidden' has a wrong offset!");
+static_assert(sizeof(AProp_camera_bad_C) == 0x0004B0, "Wrong size on AProp_camera_bad_C");
+static_assert(offsetof(AProp_camera_bad_C, UberGraphFrame_Prop_camera_bad_C) == 0x000408, "Member 'AProp_camera_bad_C::UberGraphFrame_Prop_camera_bad_C' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, PhysicsConstraint) == 0x000410, "Member 'AProp_camera_bad_C::PhysicsConstraint' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, Cam_ir) == 0x000418, "Member 'AProp_camera_bad_C::Cam_ir' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, Ligh) == 0x000420, "Member 'AProp_camera_bad_C::Ligh' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, SpotLight) == 0x000428, "Member 'AProp_camera_bad_C::SpotLight' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, L) == 0x000430, "Member 'AProp_camera_bad_C::L' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, RadarPoint) == 0x000438, "Member 'AProp_camera_bad_C::RadarPoint' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, Audio) == 0x000440, "Member 'AProp_camera_bad_C::Audio' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, Cam) == 0x000448, "Member 'AProp_camera_bad_C::Cam' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, Stick_0) == 0x000450, "Member 'AProp_camera_bad_C::Stick_0' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, Head) == 0x000458, "Member 'AProp_camera_bad_C::Head' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, Rot_X) == 0x000460, "Member 'AProp_camera_bad_C::Rot_X' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, Rot_Y) == 0x000464, "Member 'AProp_camera_bad_C::Rot_Y' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, Index_Prop_camera_bad_C) == 0x000468, "Member 'AProp_camera_bad_C::Index_Prop_camera_bad_C' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, Nam) == 0x000470, "Member 'AProp_camera_bad_C::Nam' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, Active) == 0x000488, "Member 'AProp_camera_bad_C::Active' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, Spec) == 0x000489, "Member 'AProp_camera_bad_C::Spec' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, Res) == 0x00048C, "Member 'AProp_camera_bad_C::Res' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, UpdRate) == 0x000494, "Member 'AProp_camera_bad_C::UpdRate' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, Zoom) == 0x000498, "Member 'AProp_camera_bad_C::Zoom' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, IsGood) == 0x00049C, "Member 'AProp_camera_bad_C::IsGood' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, IsIR) == 0x00049D, "Member 'AProp_camera_bad_C::IsIR' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, IgnoreMove) == 0x00049E, "Member 'AProp_camera_bad_C::IgnoreMove' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, IsLight) == 0x00049F, "Member 'AProp_camera_bad_C::IsLight' has a wrong offset!");
+static_assert(offsetof(AProp_camera_bad_C, Hidden) == 0x0004A0, "Member 'AProp_camera_bad_C::Hidden' has a wrong offset!");
 
 }
 

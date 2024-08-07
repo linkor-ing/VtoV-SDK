@@ -37,6 +37,82 @@ void AUfoDropper_C::ExecuteUbergraph_ufoDropper(int32 EntryPoint)
 }
 
 
+// Function ufoDropper.ufoDropper_C.killKerfur
+// (BlueprintCallable, BlueprintEvent)
+
+void AUfoDropper_C::KillKerfur()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ufoDropper_C", "killKerfur");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ufoDropper.ufoDropper_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
+
+void AUfoDropper_C::ReceiveDestroyed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ufoDropper_C", "ReceiveDestroyed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ufoDropper.ufoDropper_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AUfoDropper_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ufoDropper_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ufoDropper.ufoDropper_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AUfoDropper_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ufoDropper_C", "ReceiveTick");
+
+	Params::UfoDropper_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ufoDropper.ufoDropper_C.forceDeploy
+// (BlueprintCallable, BlueprintEvent)
+
+void AUfoDropper_C::ForceDeploy()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ufoDropper_C", "forceDeploy");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function ufoDropper.ufoDropper_C.BndEvt__ufoDropper_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -118,6 +194,20 @@ void AUfoDropper_C::Timeline_0__FinishedFunc()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("ufoDropper_C", "Timeline_0__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ufoDropper.ufoDropper_C.activated
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AUfoDropper_C::Activated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ufoDropper_C", "activated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

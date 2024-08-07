@@ -73,15 +73,23 @@ void ARope_C::Microwave()
 
 // Function rope.rope_C.receivedPhyiscsDamage
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hot                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void ARope_C::ReceivedPhyiscsDamage()
+void ARope_C::ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("rope_C", "receivedPhyiscsDamage");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::Rope_C_ReceivedPhyiscsDamage Parms{};
+
+	Parms.Damage = Damage;
+	Parms.Hot = std::move(Hot);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -501,6 +509,62 @@ void ARope_C::Hooked(class AHook_C* Hook)
 }
 
 
+// Function rope.rope_C.crafted
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ARope_C::Crafted()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rope_C", "crafted");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function rope.rope_C.cleanSponge
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Clean                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ARope_C::CleanSponge(float Clean, class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rope_C", "cleanSponge");
+
+	Params::Rope_C_CleanSponge Parms{};
+
+	Parms.Clean = Clean;
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function rope.rope_C.hookTension
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AHook_C*                          Hook                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ARope_C::HookTension(class AHook_C* Hook)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rope_C", "hookTension");
+
+	Params::Rope_C_HookTension Parms{};
+
+	Parms.Hook = Hook;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function rope.rope_C.signalDeleted
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -566,7 +630,7 @@ void ARope_C::Unfoc()
 // Function rope.rope_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void ARope_C::SettingsApplied(const struct FStruct_settings& Settings)
 {
@@ -681,6 +745,30 @@ void ARope_C::ApplyColor(const struct FLinearColor& Color)
 }
 
 
+// Function rope.rope_C.texturePickerApply
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ARope_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rope_C", "texturePickerApply");
+
+	Params::Rope_C_TexturePickerApply Parms{};
+
+	Parms.Picker = Picker;
+	Parms.Texture = Texture;
+	Parms.Param_Index = Param_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function rope.rope_C.driveDetached
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -785,82 +873,6 @@ void ARope_C::broken_fire()
 }
 
 
-// Function rope.rope_C.thrown
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ARope_C::Thrown(class AMainPlayer_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("rope_C", "thrown");
-
-	Params::Rope_C_Thrown Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function rope.rope_C.damageByPlayer
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-
-void ARope_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("rope_C", "damageByPlayer");
-
-	Params::Rope_C_DamageByPlayer Parms{};
-
-	Parms.Player = Player;
-	Parms.Hit = std::move(Hit);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function rope.rope_C.updateStrAgl
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ARope_C::UpdateStrAgl()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("rope_C", "updateStrAgl");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function rope.rope_C.setIgnoreSave
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Ignore                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ARope_C::SetIgnoreSave(bool Ignore)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("rope_C", "setIgnoreSave");
-
-	Params::Rope_C_SetIgnoreSave Parms{};
-
-	Parms.Ignore = Ignore;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function rope.rope_C.ImpactDamage
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -907,17 +919,47 @@ void ARope_C::EnterWater(class AWaterVolume_C* Water)
 }
 
 
-// Function rope.rope_C.assign
-// (BlueprintCallable, BlueprintEvent)
+// Function rope.rope_C.thrown
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ARope_C::Assign()
+void ARope_C::Thrown(class AMainPlayer_C* Player)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("rope_C", "assign");
+		Func = Class->GetFunction("rope_C", "thrown");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::Rope_C_Thrown Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function rope.rope_C.damageByPlayer
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ARope_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rope_C", "damageByPlayer");
+
+	Params::Rope_C_DamageByPlayer Parms{};
+
+	Parms.Player = Player;
+	Parms.Hit = std::move(Hit);
+	Parms.Damage = Damage;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -926,10 +968,9 @@ void ARope_C::Assign()
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ARope_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action)
+void ARope_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -940,28 +981,81 @@ void ARope_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitRe
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
-	Parms.Param_Index = Param_Index;
 	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function rope.rope_C.d_a
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           DestroyedActor                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function rope.rope_C.updateStrAgl
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ARope_C::D_a(class AActor* DestroyedActor)
+void ARope_C::UpdateStrAgl()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("rope_C", "d_a");
+		Func = Class->GetFunction("rope_C", "updateStrAgl");
 
-	Params::Rope_C_D_a Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.DestroyedActor = DestroyedActor;
+
+// Function rope.rope_C.playerUnequip
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ARope_C::PlayerUnequip(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rope_C", "playerUnequip");
+
+	Params::Rope_C_PlayerUnequip Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function rope.rope_C.playerHold
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ARope_C::PlayerHold(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rope_C", "playerHold");
+
+	Params::Rope_C_PlayerHold Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function rope.rope_C.playerR
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ARope_C::PlayerR(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rope_C", "playerR");
+
+	Params::Rope_C_PlayerR Parms{};
+
+	Parms.Player = Player;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -982,6 +1076,26 @@ void ARope_C::LeaveWater(class AWaterVolume_C* Water)
 	Params::Rope_C_LeaveWater Parms{};
 
 	Parms.Water = Water;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function rope.rope_C.setIgnoreSave
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Ignore                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ARope_C::SetIgnoreSave(bool Ignore)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rope_C", "setIgnoreSave");
+
+	Params::Rope_C_SetIgnoreSave Parms{};
+
+	Parms.Ignore = Ignore;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -1055,6 +1169,54 @@ void ARope_C::LeaveWaterOrigin(class AWaterVolume_C* Water)
 }
 
 
+// Function rope.rope_C.assign
+// (BlueprintCallable, BlueprintEvent)
+
+void ARope_C::Assign()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rope_C", "assign");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function rope.rope_C.d_a
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           DestroyedActor                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ARope_C::D_a(class AActor* DestroyedActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rope_C", "d_a");
+
+	Params::Rope_C_D_a Parms{};
+
+	Parms.DestroyedActor = DestroyedActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function rope.rope_C.eaten
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ARope_C::Eaten()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rope_C", "eaten");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function rope.rope_C.d_b
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1070,6 +1232,26 @@ void ARope_C::D_b(class AActor* DestroyedActor)
 	Params::Rope_C_D_b Parms{};
 
 	Parms.DestroyedActor = DestroyedActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function rope.rope_C.virus
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Activate                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ARope_C::Virus(bool Activate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rope_C", "virus");
+
+	Params::Rope_C_Virus Parms{};
+
+	Parms.Activate = Activate;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -1092,20 +1274,6 @@ void ARope_C::Ignite(float Fuel)
 	Parms.Fuel = Fuel;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function rope.rope_C.eaten
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ARope_C::Eaten()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("rope_C", "eaten");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -1140,26 +1308,6 @@ void ARope_C::GamemodeBeginPlay()
 		Func = Class->GetFunction("rope_C", "gamemodeBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function rope.rope_C.virus
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Activate                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ARope_C::Virus(bool Activate)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("rope_C", "virus");
-
-	Params::Rope_C_Virus Parms{};
-
-	Parms.Activate = Activate;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -1241,21 +1389,59 @@ void ARope_C::PhysDestroyed()
 }
 
 
-// Function rope.rope_C.setKey
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function rope.rope_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// class FString                           Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ARope_C::SetKey(const class FString& Key)
+void ARope_C::ReceiveTick(float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("rope_C", "setKey");
+		Func = Class->GetFunction("rope_C", "ReceiveTick");
 
-	Params::Rope_C_SetKey Parms{};
+	Params::Rope_C_ReceiveTick Parms{};
 
-	Parms.Key = std::move(Key);
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function rope.rope_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ARope_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rope_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function rope.rope_C.setPropProps
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Static                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Frozen                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ARope_C::SetPropProps(bool Static, bool Frozen, bool Active)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rope_C", "setPropProps");
+
+	Params::Rope_C_SetPropProps Parms{};
+
+	Parms.Static = Static;
+	Parms.Frozen = Frozen;
+	Parms.Active = Active;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -1289,61 +1475,23 @@ void ARope_C::AddDamage(class AActor* Actor, float Damage, const struct FHitResu
 }
 
 
-// Function rope.rope_C.setPropProps
+// Function rope.rope_C.setKey
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Static                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Frozen                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FString                           Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void ARope_C::SetPropProps(bool Static, bool Frozen, bool Active)
+void ARope_C::SetKey(const class FString& Key)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("rope_C", "setPropProps");
+		Func = Class->GetFunction("rope_C", "setKey");
 
-	Params::Rope_C_SetPropProps Parms{};
+	Params::Rope_C_SetKey Parms{};
 
-	Parms.Static = Static;
-	Parms.Frozen = Frozen;
-	Parms.Active = Active;
+	Parms.Key = std::move(Key);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function rope.rope_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ARope_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("rope_C", "ReceiveTick");
-
-	Params::Rope_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function rope.rope_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ARope_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("rope_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -1510,6 +1658,27 @@ void ARope_C::SkipPreDelete(bool* Skip)
 }
 
 
+// Function rope.rope_C.gatherDataFromKey
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ARope_C::GatherDataFromKey(bool* Gather)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rope_C", "gatherDataFromKey");
+
+	Params::Rope_C_GatherDataFromKey Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Gather != nullptr)
+		*Gather = Parms.Gather;
+}
+
+
 // Function rope.rope_C.canBePutInContainer
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1605,8 +1774,9 @@ void ARope_C::NoRespawn(bool Param_NoRespawn, bool* Return)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ARope_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
+void ARope_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1628,6 +1798,9 @@ void ARope_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, 
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -1649,6 +1822,30 @@ void ARope_C::IsButtonUsed(bool* Failed)
 
 	if (Failed != nullptr)
 		*Failed = Parms.Failed;
+}
+
+
+// Function rope.rope_C.landedOn
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IgnoreFallDamage                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ARope_C::LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rope_C", "landedOn");
+
+	Params::Rope_C_LandedOn Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IgnoreFallDamage != nullptr)
+		*IgnoreFallDamage = Parms.IgnoreFallDamage;
 }
 
 
@@ -1687,8 +1884,9 @@ void ARope_C::DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** B
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ARope_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
+void ARope_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1711,6 +1909,9 @@ void ARope_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComp
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -1888,6 +2089,27 @@ void ARope_C::SkipRadial(bool* Skip)
 
 	if (Skip != nullptr)
 		*Skip = Parms.Skip;
+}
+
+
+// Function rope.rope_C.getPriceMultiplier
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   PriceMult                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ARope_C::GetPriceMultiplier(float* PriceMult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rope_C", "getPriceMultiplier");
+
+	Params::Rope_C_GetPriceMultiplier Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PriceMult != nullptr)
+		*PriceMult = Parms.PriceMult;
 }
 
 }

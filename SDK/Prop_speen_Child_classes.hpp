@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_speen_Child.prop_speen_Child_C
-// 0x0000 (0x0370 - 0x0370)
+// 0x0000 (0x0380 - 0x0380)
 class AProp_speen_Child_C final : public AProp_speen_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_speen_Child_C) == 0x000008, "Wrong alignment on AProp_speen_Child_C");
-static_assert(sizeof(AProp_speen_Child_C) == 0x000370, "Wrong size on AProp_speen_Child_C");
+static_assert(sizeof(AProp_speen_Child_C) == 0x000380, "Wrong size on AProp_speen_Child_C");
 
 }
 

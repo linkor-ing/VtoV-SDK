@@ -18,13 +18,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_fork.prop_fork_C
-// 0x0010 (0x0378 - 0x0368)
+// 0x0010 (0x0388 - 0x0378)
 class AProp_fork_C final : public AProp_C
 {
 public:
-	uint8                                         Pad_3874[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_fork_C;                        // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USphereComponent*                       Sphere;                                            // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_fork_C;                        // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USphereComponent*                       Sphere;                                            // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_fork(int32 EntryPoint);
@@ -41,9 +40,9 @@ public:
 	}
 };
 static_assert(alignof(AProp_fork_C) == 0x000008, "Wrong alignment on AProp_fork_C");
-static_assert(sizeof(AProp_fork_C) == 0x000378, "Wrong size on AProp_fork_C");
-static_assert(offsetof(AProp_fork_C, UberGraphFrame_Prop_fork_C) == 0x000368, "Member 'AProp_fork_C::UberGraphFrame_Prop_fork_C' has a wrong offset!");
-static_assert(offsetof(AProp_fork_C, Sphere) == 0x000370, "Member 'AProp_fork_C::Sphere' has a wrong offset!");
+static_assert(sizeof(AProp_fork_C) == 0x000388, "Wrong size on AProp_fork_C");
+static_assert(offsetof(AProp_fork_C, UberGraphFrame_Prop_fork_C) == 0x000378, "Member 'AProp_fork_C::UberGraphFrame_Prop_fork_C' has a wrong offset!");
+static_assert(offsetof(AProp_fork_C, Sphere) == 0x000380, "Member 'AProp_fork_C::Sphere' has a wrong offset!");
 
 }
 

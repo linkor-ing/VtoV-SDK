@@ -181,6 +181,62 @@ void AFossilhound_C::ReceiveBeginPlay()
 }
 
 
+// Function fossilhound.fossilhound_C.hookTension
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AHook_C*                          Hook                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AFossilhound_C::HookTension(class AHook_C* Hook)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("fossilhound_C", "hookTension");
+
+	Params::Fossilhound_C_HookTension Parms{};
+
+	Parms.Hook = Hook;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function fossilhound.fossilhound_C.cleanSponge
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Clean                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AFossilhound_C::CleanSponge(float Clean, class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("fossilhound_C", "cleanSponge");
+
+	Params::Fossilhound_C_CleanSponge Parms{};
+
+	Parms.Clean = Clean;
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function fossilhound.fossilhound_C.crafted
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AFossilhound_C::Crafted()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("fossilhound_C", "crafted");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function fossilhound.fossilhound_C.hooked
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -602,10 +658,9 @@ void AFossilhound_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AFossilhound_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action)
+void AFossilhound_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -616,7 +671,6 @@ void AFossilhound_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
-	Parms.Param_Index = Param_Index;
 	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -625,15 +679,23 @@ void AFossilhound_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct
 
 // Function fossilhound.fossilhound_C.receivedPhyiscsDamage
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hot                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void AFossilhound_C::ReceivedPhyiscsDamage()
+void AFossilhound_C::ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("fossilhound_C", "receivedPhyiscsDamage");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::Fossilhound_C_ReceivedPhyiscsDamage Parms{};
+
+	Parms.Damage = Damage;
+	Parms.Hot = std::move(Hot);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -1157,6 +1219,30 @@ bool AFossilhound_C::biteZone(TArray<class AActor*>* OutActors)
 }
 
 
+// Function fossilhound.fossilhound_C.filterPawns
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Object                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Pass                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AFossilhound_C::FilterPawns(const class AActor* Object, bool* Pass)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("fossilhound_C", "filterPawns");
+
+	Params::Fossilhound_C_FilterPawns Parms{};
+
+	Parms.Object = Object;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Pass != nullptr)
+		*Pass = Parms.Pass;
+}
+
+
 // Function fossilhound.fossilhound_C.getActionOptions
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1166,8 +1252,9 @@ bool AFossilhound_C::biteZone(TArray<class AActor*>* OutActors)
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AFossilhound_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
+void AFossilhound_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1190,6 +1277,9 @@ void AFossilhound_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimit
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -1367,6 +1457,27 @@ void AFossilhound_C::SkipRadial(bool* Skip)
 
 	if (Skip != nullptr)
 		*Skip = Parms.Skip;
+}
+
+
+// Function fossilhound.fossilhound_C.getPriceMultiplier
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   PriceMult                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AFossilhound_C::GetPriceMultiplier(float* PriceMult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("fossilhound_C", "getPriceMultiplier");
+
+	Params::Fossilhound_C_GetPriceMultiplier Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PriceMult != nullptr)
+		*PriceMult = Parms.PriceMult;
 }
 
 }

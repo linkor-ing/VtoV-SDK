@@ -30,7 +30,7 @@ public:
 	float                                         Lig_b_AC12800D44E26935E05D849CB645F745;            // 0x02B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Lig_a_AC12800D44E26935E05D849CB645F745;            // 0x02B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            Lig__Direction_AC12800D44E26935E05D849CB645F745;   // 0x02B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4331[0x7];                                     // 0x02B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B9[0x7];                                      // 0x02B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     Lig;                                               // 0x02C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<EObjectTypeQuery>                      Obj;                                               // 0x02C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UUmg_blur_C*                            blur;                                              // 0x02D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Struct_triggerSave_structs.hpp"
-#include "Engine_structs.hpp"
 #include "Struct_save_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -24,13 +24,13 @@ struct Trigger_box_C_ExecuteUbergraph_trigger_box final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F0E[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent;    // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F0F[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0028(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_Event_owner;                                // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -55,19 +55,6 @@ static_assert(offsetof(Trigger_box_C_ExecuteUbergraph_trigger_box, K2Node_Switch
 static_assert(offsetof(Trigger_box_C_ExecuteUbergraph_trigger_box, CallFunc_Array_IsValidIndex_ReturnValue) == 0x0000C5, "Member 'Trigger_box_C_ExecuteUbergraph_trigger_box::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Trigger_box_C_ExecuteUbergraph_trigger_box, CallFunc_Array_Contains_ReturnValue) == 0x0000C6, "Member 'Trigger_box_C_ExecuteUbergraph_trigger_box::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
 
-// Function trigger_box.trigger_box_C.runTrigger
-// 0x0010 (0x0010 - 0x0000)
-struct Trigger_box_C_RunTrigger final
-{
-public:
-	class AActor*                                 Param_Owner;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Param_Index;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Trigger_box_C_RunTrigger) == 0x000008, "Wrong alignment on Trigger_box_C_RunTrigger");
-static_assert(sizeof(Trigger_box_C_RunTrigger) == 0x000010, "Wrong size on Trigger_box_C_RunTrigger");
-static_assert(offsetof(Trigger_box_C_RunTrigger, Param_Owner) == 0x000000, "Member 'Trigger_box_C_RunTrigger::Param_Owner' has a wrong offset!");
-static_assert(offsetof(Trigger_box_C_RunTrigger, Param_Index) == 0x000008, "Member 'Trigger_box_C_RunTrigger::Param_Index' has a wrong offset!");
-
 // Function trigger_box.trigger_box_C.BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
 // 0x00A8 (0x00A8 - 0x0000)
 struct Trigger_box_C_BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature final
@@ -78,7 +65,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F10[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 static_assert(alignof(Trigger_box_C_BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on Trigger_box_C_BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
@@ -99,7 +86,7 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECollisionChannel                             CallFunc_Array_Get_Item;                           // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F11[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -112,6 +99,19 @@ static_assert(offsetof(Trigger_box_C_SetColls, CallFunc_Array_Get_Item) == 0x000
 static_assert(offsetof(Trigger_box_C_SetColls, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'Trigger_box_C_SetColls::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Trigger_box_C_SetColls, CallFunc_Less_IntInt_ReturnValue) == 0x000014, "Member 'Trigger_box_C_SetColls::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
+// Function trigger_box.trigger_box_C.runTrigger
+// 0x0010 (0x0010 - 0x0000)
+struct Trigger_box_C_RunTrigger final
+{
+public:
+	class AActor*                                 Param_Owner;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Param_Index;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Trigger_box_C_RunTrigger) == 0x000008, "Wrong alignment on Trigger_box_C_RunTrigger");
+static_assert(sizeof(Trigger_box_C_RunTrigger) == 0x000010, "Wrong size on Trigger_box_C_RunTrigger");
+static_assert(offsetof(Trigger_box_C_RunTrigger, Param_Owner) == 0x000000, "Member 'Trigger_box_C_RunTrigger::Param_Owner' has a wrong offset!");
+static_assert(offsetof(Trigger_box_C_RunTrigger, Param_Index) == 0x000008, "Member 'Trigger_box_C_RunTrigger::Param_Index' has a wrong offset!");
+
 // Function trigger_box.trigger_box_C.loadTriggerData
 // 0x0120 (0x0120 - 0x0000)
 struct Trigger_box_C_LoadTriggerData final
@@ -120,17 +120,17 @@ public:
 	struct FStruct_triggerSave                    Data;                                              // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00F0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadTriggerData_return;                   // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F12[0x2];                                     // 0x00F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F2[0x2];                                       // 0x00F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Get_Item;                           // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F13[0x3];                                     // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F9[0x3];                                       // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_Array_Get_Item_1;                         // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0101(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F14[0x2];                                     // 0x0102(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_102[0x2];                                      // 0x0102(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F15[0x3];                                     // 0x0109(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_109[0x3];                                      // 0x0109(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

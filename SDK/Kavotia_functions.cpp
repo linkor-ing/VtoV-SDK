@@ -211,6 +211,62 @@ void AKavotia_C::ReceiveBeginPlay()
 }
 
 
+// Function kavotia.kavotia_C.hookTension
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AHook_C*                          Hook                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AKavotia_C::HookTension(class AHook_C* Hook)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kavotia_C", "hookTension");
+
+	Params::Kavotia_C_HookTension Parms{};
+
+	Parms.Hook = Hook;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function kavotia.kavotia_C.cleanSponge
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Clean                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AKavotia_C::CleanSponge(float Clean, class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kavotia_C", "cleanSponge");
+
+	Params::Kavotia_C_CleanSponge Parms{};
+
+	Parms.Clean = Clean;
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function kavotia.kavotia_C.crafted
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AKavotia_C::Crafted()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kavotia_C", "crafted");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function kavotia.kavotia_C.hooked
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -632,10 +688,9 @@ void AKavotia_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AKavotia_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action)
+void AKavotia_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -646,7 +701,6 @@ void AKavotia_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHi
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
-	Parms.Param_Index = Param_Index;
 	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -655,15 +709,23 @@ void AKavotia_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHi
 
 // Function kavotia.kavotia_C.receivedPhyiscsDamage
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hot                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void AKavotia_C::ReceivedPhyiscsDamage()
+void AKavotia_C::ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("kavotia_C", "receivedPhyiscsDamage");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::Kavotia_C_ReceivedPhyiscsDamage Parms{};
+
+	Parms.Damage = Damage;
+	Parms.Hot = std::move(Hot);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -1410,8 +1472,9 @@ void AKavotia_C::Alert(class APawn* Param_LookingAt)
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AKavotia_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
+void AKavotia_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1434,6 +1497,9 @@ void AKavotia_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveC
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -1611,6 +1677,27 @@ void AKavotia_C::SkipRadial(bool* Skip)
 
 	if (Skip != nullptr)
 		*Skip = Parms.Skip;
+}
+
+
+// Function kavotia.kavotia_C.getPriceMultiplier
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   PriceMult                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AKavotia_C::GetPriceMultiplier(float* PriceMult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("kavotia_C", "getPriceMultiplier");
+
+	Params::Kavotia_C_GetPriceMultiplier Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PriceMult != nullptr)
+		*PriceMult = Parms.PriceMult;
 }
 
 }

@@ -37,6 +37,46 @@ void UUmg_spawnmenu_C::ExecuteUbergraph_umg_spawnmenu(int32 EntryPoint)
 }
 
 
+// Function umg_spawnmenu.umg_spawnmenu_C.BndEvt__umg_spawnmenu_checkbox_cat_mods_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    bIsChecked                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UUmg_spawnmenu_C::BndEvt__umg_spawnmenu_checkbox_cat_mods_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_spawnmenu_C", "BndEvt__umg_spawnmenu_checkbox_cat_mods_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature");
+
+	Params::Umg_spawnmenu_C_BndEvt__umg_spawnmenu_checkbox_cat_mods_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature Parms{};
+
+	Parms.bIsChecked = bIsChecked;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function umg_spawnmenu.umg_spawnmenu_C.BndEvt__umg_spawnmenu_checkbox_cat_tools_K2Node_ComponentBoundEvent_3_OnCheckBoxComponentStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    bIsChecked                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UUmg_spawnmenu_C::BndEvt__umg_spawnmenu_checkbox_cat_tools_K2Node_ComponentBoundEvent_3_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_spawnmenu_C", "BndEvt__umg_spawnmenu_checkbox_cat_tools_K2Node_ComponentBoundEvent_3_OnCheckBoxComponentStateChanged__DelegateSignature");
+
+	Params::Umg_spawnmenu_C_BndEvt__umg_spawnmenu_checkbox_cat_tools_K2Node_ComponentBoundEvent_3_OnCheckBoxComponentStateChanged__DelegateSignature Parms{};
+
+	Parms.bIsChecked = bIsChecked;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function umg_spawnmenu.umg_spawnmenu_C.BndEvt__umg_spawnmenu_checkbox_cat_wip_K2Node_ComponentBoundEvent_11_OnCheckBoxComponentStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass tentacleBall_hostile.tentacleBall_hostile_C
-// 0x0000 (0x05D0 - 0x05D0)
+// 0x0000 (0x05E0 - 0x05E0)
 class ATentacleBall_hostile_C final : public ATentacleBall_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(ATentacleBall_hostile_C) == 0x000010, "Wrong alignment on ATentacleBall_hostile_C");
-static_assert(sizeof(ATentacleBall_hostile_C) == 0x0005D0, "Wrong size on ATentacleBall_hostile_C");
+static_assert(sizeof(ATentacleBall_hostile_C) == 0x0005E0, "Wrong size on ATentacleBall_hostile_C");
 
 }
 

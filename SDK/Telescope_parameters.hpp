@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
 #include "Engine_structs.hpp"
 #include "InputCore_structs.hpp"
 
@@ -20,324 +20,343 @@ namespace SDK::Params
 {
 
 // Function telescope.telescope_C.ExecuteUbergraph_telescope
-// 0x0890 (0x0890 - 0x0000)
+// 0x0950 (0x0950 - 0x0000)
 struct Telescope_C_ExecuteUbergraph_telescope final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_25FE[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit;                                  // 0x0010(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_activate;                             // 0x009D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_static;                               // 0x009E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_frozen;                               // 0x009F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_active;                               // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_25FF[0x7];                                     // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Event_actor_1;                              // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_4;                             // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_7;                                // 0x00B4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                K2Node_Event_impact_1;                             // 0x013C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_skipSetting;                          // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2600[0x7];                                     // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 K2Node_Event_key_1;                                // 0x0150(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_14;                            // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_6;                                // 0x0168(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         K2Node_Event_damage_3;                             // 0x01F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_fuel;                                 // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_13;                            // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_12;                            // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_2;                             // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_location_1;                           // 0x020C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_11;                            // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_10;                            // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_9;                             // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_wheelDelta;                           // 0x0230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2601[0x4];                                     // 0x0234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_8;                             // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              K2Node_Event_mouse;                                // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_7;                             // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   K2Node_Event_key;                                  // 0x0250(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed;                              // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2602[0x3];                                     // 0x0269(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_temperature_1;                        // 0x026C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_temperature;                          // 0x0270(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_speed;                                // 0x0274(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_5;                                // 0x0280(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class FString                                 K2Node_Event_name_1;                               // 0x0308(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_volume;                               // 0x0318(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2603[0x4];                                     // 0x031C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x0320(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_location;                             // 0x0328(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_1;                             // 0x0334(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_clean;                                // 0x0338(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2604[0x7];                                     // 0x0339(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x0340(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_4;                                // 0x0348(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AHook_C*                                K2Node_Event_hook;                                 // 0x03D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x03D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_3;                                // 0x03E0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          K2Node_Event_kick;                                 // 0x0468(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2605[0x3];                                     // 0x0469(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_Event_name;                                 // 0x046C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2606[0x4];                                     // 0x0474(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x0478(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0480(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_2;                                // 0x0488(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class UTextureRenderTarget2D*                 CallFunc_CreateRenderTarget2D_ReturnValue;         // 0x0510(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUmg_telescope_C*                       CallFunc_Create_ReturnValue;                       // 0x0518(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetGamePaused_ReturnValue;                // 0x0520(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2607[0x7];                                     // 0x0521(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AWaterVolume_C*                         K2Node_Event_water;                                // 0x0528(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0530(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water_1;                              // 0x0538(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloat_ReturnValue;                  // 0x0540(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2608[0x4];                                     // 0x0544(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ATelescopeMars_C*                       K2Node_DynamicCast_AsTelescope_Mars;               // 0x0548(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0550(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2609[0x3];                                     // 0x0551(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0554(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0558(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x055C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0560(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x056C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_2;        // 0x05F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_DegSin_ReturnValue;                       // 0x05F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x05FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue;                         // 0x0600(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0604(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water_2;                              // 0x0608(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_3;        // 0x0610(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_260A[0x4];                                     // 0x0614(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AWaterVolume_C*                         K2Node_Event_water_3;                              // 0x0618(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0620(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Percent_FloatFloat_ReturnValue;           // 0x0624(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue_1;                     // 0x0628(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_1;       // 0x062C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_4;        // 0x0630(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_2;       // 0x0634(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_5;        // 0x0638(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_3;       // 0x063C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_6;        // 0x0640(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_4;       // 0x0644(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_7;        // 0x0648(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_5;       // 0x064C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_8;        // 0x0650(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_X;                            // 0x0654(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Y;                            // 0x0658(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Z;                            // 0x065C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_9;        // 0x0660(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue_1;                       // 0x0664(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x0668(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_10;       // 0x066C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_11;       // 0x0670(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_12;       // 0x0674(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_13;       // 0x0678(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_1;        // 0x067C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_2;        // 0x0680(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_14;       // 0x0684(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_15;       // 0x0688(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_3;        // 0x068C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_4;        // 0x0690(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_16;       // 0x0694(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_5;        // 0x0698(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_260B[0x4];                                     // 0x069C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         K2Node_MakeArray_Array;                            // 0x06A0(0x0010)(ReferenceParm)
-	float                                         CallFunc_RandomFloat_ReturnValue_1;                // 0x06B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x06B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Ease_ReturnValue;                         // 0x06B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue_2;                       // 0x06BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_6;       // 0x06C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Roll;                        // 0x06C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Pitch;                       // 0x06C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Yaw;                         // 0x06CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloat_ReturnValue_2;                // 0x06D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FInterpTo_ReturnValue;                    // 0x06D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Ease_ReturnValue_1;                       // 0x06D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_7;       // 0x06DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue_3;                       // 0x06E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FInterpTo_ReturnValue_1;                  // 0x06E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue_1;                // 0x06E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult_1;  // 0x06F4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         K2Node_Event_damage;                               // 0x077C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_1;                                // 0x0780(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AActor*                                 K2Node_Event_actor;                                // 0x0808(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_impact;                               // 0x0810(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_260C[0x4];                                     // 0x081C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0820(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0828(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x082C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0830(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_260D[0x3];                                     // 0x0831(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0834(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0838(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x083C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0840(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_260E[0x4];                                     // 0x0844(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0848(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0850(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class USceneComponent*>                CallFunc_GetChildrenComponents_Children;           // 0x0858(0x0010)(ReferenceParm, ContainsInstancedReference)
-	class USceneComponent*                        CallFunc_Array_Get_Item_1;                         // 0x0868(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0870(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_260F[0x4];                                     // 0x0874(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UChildActorComponent*                   K2Node_DynamicCast_AsChild_Actor_Component;        // 0x0878(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0880(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0881(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2610[0x2];                                     // 0x0882(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1; // 0x0884(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue_4;                       // 0x0888(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue_5;                       // 0x088C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_activate;                             // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_static;                               // 0x009A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_frozen;                               // 0x009B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_active;                               // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9D[0x3];                                       // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Event_actor_1;                              // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_6;                             // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_7;                                // 0x00AC(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                K2Node_Event_impact_1;                             // 0x0134(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_skipSetting;                          // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 K2Node_Event_key_1;                                // 0x0148(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_18;                            // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_6;                                // 0x0160(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         K2Node_Event_damage_5;                             // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_fuel;                                 // 0x01EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_4;                             // 0x01F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hot;                                  // 0x01F4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_27C[0x4];                                      // 0x027C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_17;                            // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_16;                            // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_3;                             // 0x0290(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_location_1;                           // 0x0294(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_15;                            // 0x02A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_14;                            // 0x02A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_13;                            // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_wheelDelta;                           // 0x02B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2BC[0x4];                                      // 0x02BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_12;                            // 0x02C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_Event_mouse;                                // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_11;                            // 0x02D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   K2Node_Event_key;                                  // 0x02D8(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed;                              // 0x02F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F1[0x3];                                      // 0x02F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_temperature_1;                        // 0x02F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_temperature;                          // 0x02F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_speed;                                // 0x02FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_10;                            // 0x0300(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_5;                                // 0x0308(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class FString                                 K2Node_Event_name_1;                               // 0x0390(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_volume;                               // 0x03A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3A4[0x4];                                      // 0x03A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_9;                             // 0x03A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_location;                             // 0x03B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_2;                             // 0x03BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_clean_1;                              // 0x03C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3C1[0x7];                                      // 0x03C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_8;                             // 0x03C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_4;                                // 0x03D0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AHook_C*                                K2Node_Event_hook_1;                               // 0x0458(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_clean;                                // 0x0460(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_464[0x4];                                      // 0x0464(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_7;                             // 0x0468(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AHook_C*                                K2Node_Event_hook;                                 // 0x0470(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x0478(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_3;                                // 0x0480(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          K2Node_Event_kick;                                 // 0x0508(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_509[0x3];                                      // 0x0509(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_Event_name;                                 // 0x050C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_514[0x4];                                      // 0x0514(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x0518(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x0520(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_2;                                // 0x0528(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         K2Node_Event_damage_1;                             // 0x05B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5B4[0x4];                                      // 0x05B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x05B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x05C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x05C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTextureRenderTarget2D*                 CallFunc_CreateRenderTarget2D_ReturnValue;         // 0x05D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUmg_telescope_C*                       CallFunc_Create_ReturnValue;                       // 0x05D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetGamePaused_ReturnValue;                // 0x05E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5E1[0x7];                                      // 0x05E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AWaterVolume_C*                         K2Node_Event_water;                                // 0x05E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x05F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterVolume_C*                         K2Node_Event_water_1;                              // 0x05F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloat_ReturnValue;                  // 0x0600(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_604[0x4];                                      // 0x0604(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ATelescopeMars_C*                       K2Node_DynamicCast_AsTelescope_Mars;               // 0x0608(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0610(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_611[0x3];                                      // 0x0611(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x0614(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0618(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x061C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0620(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x062C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_2;        // 0x06B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_DegSin_ReturnValue;                       // 0x06B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x06BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue;                         // 0x06C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x06C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterVolume_C*                         K2Node_Event_water_2;                              // 0x06C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_3;        // 0x06D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6D4[0x4];                                      // 0x06D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AWaterVolume_C*                         K2Node_Event_water_3;                              // 0x06D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue;                       // 0x06E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Percent_FloatFloat_ReturnValue;           // 0x06E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue_1;                     // 0x06E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_1;       // 0x06EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_4;        // 0x06F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_2;       // 0x06F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_5;        // 0x06F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_3;       // 0x06FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_6;        // 0x0700(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_4;       // 0x0704(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_7;        // 0x0708(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_5;       // 0x070C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_8;        // 0x0710(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_X;                            // 0x0714(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Y;                            // 0x0718(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Z;                            // 0x071C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_9;        // 0x0720(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue_1;                       // 0x0724(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x0728(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_10;       // 0x072C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_11;       // 0x0730(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_12;       // 0x0734(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_13;       // 0x0738(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_1;        // 0x073C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_2;        // 0x0740(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_14;       // 0x0744(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_15;       // 0x0748(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_3;        // 0x074C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_4;        // 0x0750(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_16;       // 0x0754(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_5;        // 0x0758(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_75C[0x4];                                      // 0x075C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         K2Node_MakeArray_Array;                            // 0x0760(0x0010)(ReferenceParm)
+	float                                         CallFunc_RandomFloat_ReturnValue_1;                // 0x0770(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0774(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Ease_ReturnValue;                         // 0x0778(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue_2;                       // 0x077C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_6;       // 0x0780(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Roll;                        // 0x0784(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Pitch;                       // 0x0788(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Yaw;                         // 0x078C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloat_ReturnValue_2;                // 0x0790(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FInterpTo_ReturnValue;                    // 0x0794(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Ease_ReturnValue_1;                       // 0x0798(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_7;       // 0x079C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue_3;                       // 0x07A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FInterpTo_ReturnValue_1;                  // 0x07A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue_1;                // 0x07A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult_1;  // 0x07B4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         K2Node_Event_damage;                               // 0x083C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_1;                                // 0x0840(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AActor*                                 K2Node_Event_actor;                                // 0x08C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_impact;                               // 0x08D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8DC[0x4];                                      // 0x08DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x08E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x08E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x08EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x08F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_8F1[0x3];                                      // 0x08F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x08F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x08F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x08FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0900(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_904[0x4];                                      // 0x0904(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0908(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0910(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class USceneComponent*>                CallFunc_GetChildrenComponents_Children;           // 0x0918(0x0010)(ReferenceParm, ContainsInstancedReference)
+	class USceneComponent*                        CallFunc_Array_Get_Item_1;                         // 0x0928(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0930(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_934[0x4];                                      // 0x0934(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UChildActorComponent*                   K2Node_DynamicCast_AsChild_Actor_Component;        // 0x0938(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0940(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0941(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_942[0x2];                                      // 0x0942(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1; // 0x0944(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue_4;                       // 0x0948(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue_5;                       // 0x094C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Telescope_C_ExecuteUbergraph_telescope) == 0x000008, "Wrong alignment on Telescope_C_ExecuteUbergraph_telescope");
-static_assert(sizeof(Telescope_C_ExecuteUbergraph_telescope) == 0x000890, "Wrong size on Telescope_C_ExecuteUbergraph_telescope");
+static_assert(sizeof(Telescope_C_ExecuteUbergraph_telescope) == 0x000950, "Wrong size on Telescope_C_ExecuteUbergraph_telescope");
 static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, EntryPoint) == 0x000000, "Member 'Telescope_C_ExecuteUbergraph_telescope::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player) == 0x000008, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player' has a wrong offset!");
 static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_hit) == 0x000010, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_index) == 0x000098, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_action) == 0x00009C, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_activate) == 0x00009D, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_activate' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_static) == 0x00009E, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_static' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_frozen) == 0x00009F, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_frozen' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_active) == 0x0000A0, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_active' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_actor_1) == 0x0000A8, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_actor_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_damage_4) == 0x0000B0, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_damage_4' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_hit_7) == 0x0000B4, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_hit_7' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_impact_1) == 0x00013C, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_impact_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_skipSetting) == 0x000148, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_skipSetting' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_key_1) == 0x000150, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_key_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_14) == 0x000160, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_14' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_hit_6) == 0x000168, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_hit_6' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_damage_3) == 0x0001F0, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_damage_3' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_fuel) == 0x0001F4, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_fuel' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_13) == 0x0001F8, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_13' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_12) == 0x000200, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_12' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_damage_2) == 0x000208, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_damage_2' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_location_1) == 0x00020C, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_location_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_11) == 0x000218, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_11' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_10) == 0x000220, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_10' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_9) == 0x000228, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_9' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_wheelDelta) == 0x000230, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_wheelDelta' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_8) == 0x000238, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_8' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_mouse) == 0x000240, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_mouse' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_7) == 0x000248, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_7' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_key) == 0x000250, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_key' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_pressed) == 0x000268, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_pressed' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_temperature_1) == 0x00026C, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_temperature_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_temperature) == 0x000270, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_temperature' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_speed) == 0x000274, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_speed' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_6) == 0x000278, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_6' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_hit_5) == 0x000280, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_hit_5' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_name_1) == 0x000308, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_name_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_volume) == 0x000318, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_volume' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_5) == 0x000320, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_5' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_location) == 0x000328, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_location' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_damage_1) == 0x000334, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_damage_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_clean) == 0x000338, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_clean' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_4) == 0x000340, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_4' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_hit_4) == 0x000348, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_hit_4' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_hook) == 0x0003D0, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_hook' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_3) == 0x0003D8, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_3' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_hit_3) == 0x0003E0, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_hit_3' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_kick) == 0x000468, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_kick' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_name) == 0x00046C, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_name' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_2) == 0x000478, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_2' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_1) == 0x000480, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_hit_2) == 0x000488, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_hit_2' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_CreateRenderTarget2D_ReturnValue) == 0x000510, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_CreateRenderTarget2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Create_ReturnValue) == 0x000518, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_SetGamePaused_ReturnValue) == 0x000520, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_SetGamePaused_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_water) == 0x000528, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_water' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_GetPlayerController_ReturnValue) == 0x000530, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_water_1) == 0x000538, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_water_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_RandomFloat_ReturnValue) == 0x000540, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_RandomFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_DynamicCast_AsTelescope_Mars) == 0x000548, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_DynamicCast_AsTelescope_Mars' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_DynamicCast_bSuccess) == 0x000550, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_DeltaSeconds) == 0x000554, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000558, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x00055C, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_MakeRotator_ReturnValue) == 0x000560, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_K2_SetRelativeRotation_SweepHitResult) == 0x00056C, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_K2_SetRelativeRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x0005F4, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_DegSin_ReturnValue) == 0x0005F8, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_DegSin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x0005FC, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Lerp_ReturnValue) == 0x000600, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000604, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_water_2) == 0x000608, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_water_2' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x000610, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_water_3) == 0x000618, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_water_3' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_FClamp_ReturnValue) == 0x000620, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Percent_FloatFloat_ReturnValue) == 0x000624, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Percent_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_FClamp_ReturnValue_1) == 0x000628, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_FClamp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_GetWorldDeltaSeconds_ReturnValue_1) == 0x00062C, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_GetWorldDeltaSeconds_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_4) == 0x000630, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_GetWorldDeltaSeconds_ReturnValue_2) == 0x000634, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_GetWorldDeltaSeconds_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_5) == 0x000638, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_GetWorldDeltaSeconds_ReturnValue_3) == 0x00063C, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_GetWorldDeltaSeconds_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_6) == 0x000640, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_GetWorldDeltaSeconds_ReturnValue_4) == 0x000644, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_GetWorldDeltaSeconds_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_7) == 0x000648, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_GetWorldDeltaSeconds_ReturnValue_5) == 0x00064C, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_GetWorldDeltaSeconds_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_8) == 0x000650, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_BreakVector_X) == 0x000654, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_BreakVector_Y) == 0x000658, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_BreakVector_Z) == 0x00065C, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_9) == 0x000660, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Lerp_ReturnValue_1) == 0x000664, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Lerp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x000668, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_10) == 0x00066C, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_11) == 0x000670, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_12) == 0x000674, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_13) == 0x000678, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_VictoryFloatPlusEquals_FloatOut_1) == 0x00067C, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_VictoryFloatPlusEquals_FloatOut_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_VictoryFloatPlusEquals_FloatOut_2) == 0x000680, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_VictoryFloatPlusEquals_FloatOut_2' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_14) == 0x000684, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_15) == 0x000688, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_VictoryFloatPlusEquals_FloatOut_3) == 0x00068C, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_VictoryFloatPlusEquals_FloatOut_3' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_VictoryFloatPlusEquals_FloatOut_4) == 0x000690, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_VictoryFloatPlusEquals_FloatOut_4' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_16) == 0x000694, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_VictoryFloatPlusEquals_FloatOut_5) == 0x000698, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_VictoryFloatPlusEquals_FloatOut_5' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_MakeArray_Array) == 0x0006A0, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_RandomFloat_ReturnValue_1) == 0x0006B0, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_RandomFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Array_Length_ReturnValue) == 0x0006B4, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Ease_ReturnValue) == 0x0006B8, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Ease_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Lerp_ReturnValue_2) == 0x0006BC, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Lerp_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_GetWorldDeltaSeconds_ReturnValue_6) == 0x0006C0, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_GetWorldDeltaSeconds_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_BreakRotator_Roll) == 0x0006C4, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_BreakRotator_Roll' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_BreakRotator_Pitch) == 0x0006C8, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_BreakRotator_Pitch' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_BreakRotator_Yaw) == 0x0006CC, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_BreakRotator_Yaw' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_RandomFloat_ReturnValue_2) == 0x0006D0, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_RandomFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_FInterpTo_ReturnValue) == 0x0006D4, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_FInterpTo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Ease_ReturnValue_1) == 0x0006D8, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Ease_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_GetWorldDeltaSeconds_ReturnValue_7) == 0x0006DC, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_GetWorldDeltaSeconds_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Lerp_ReturnValue_3) == 0x0006E0, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Lerp_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_FInterpTo_ReturnValue_1) == 0x0006E4, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_FInterpTo_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_MakeRotator_ReturnValue_1) == 0x0006E8, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_MakeRotator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_K2_SetRelativeRotation_SweepHitResult_1) == 0x0006F4, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_K2_SetRelativeRotation_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_damage) == 0x00077C, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_damage' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_hit_1) == 0x000780, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_hit_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_actor) == 0x000808, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_actor' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_impact) == 0x000810, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_impact' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000820, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, Temp_int_Array_Index_Variable) == 0x000828, "Member 'Telescope_C_ExecuteUbergraph_telescope::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, Temp_int_Loop_Counter_Variable) == 0x00082C, "Member 'Telescope_C_ExecuteUbergraph_telescope::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Less_IntInt_ReturnValue) == 0x000830, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Add_IntInt_ReturnValue) == 0x000834, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, Temp_int_Loop_Counter_Variable_1) == 0x000838, "Member 'Telescope_C_ExecuteUbergraph_telescope::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Add_IntInt_ReturnValue_1) == 0x00083C, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, Temp_int_Array_Index_Variable_1) == 0x000840, "Member 'Telescope_C_ExecuteUbergraph_telescope::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Array_Get_Item) == 0x000848, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000850, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_GetChildrenComponents_Children) == 0x000858, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_GetChildrenComponents_Children' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Array_Get_Item_1) == 0x000868, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Array_Length_ReturnValue_1) == 0x000870, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_DynamicCast_AsChild_Actor_Component) == 0x000878, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_DynamicCast_AsChild_Actor_Component' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_DynamicCast_bSuccess_1) == 0x000880, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Less_IntInt_ReturnValue_1) == 0x000881, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1) == 0x000884, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Lerp_ReturnValue_4) == 0x000888, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Lerp_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Lerp_ReturnValue_5) == 0x00088C, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Lerp_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_action) == 0x000098, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_activate) == 0x000099, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_activate' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_static) == 0x00009A, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_static' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_frozen) == 0x00009B, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_frozen' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_active) == 0x00009C, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_active' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_actor_1) == 0x0000A0, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_actor_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_damage_6) == 0x0000A8, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_damage_6' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_hit_7) == 0x0000AC, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_hit_7' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_impact_1) == 0x000134, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_impact_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_skipSetting) == 0x000140, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_skipSetting' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_key_1) == 0x000148, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_key_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_18) == 0x000158, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_18' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_hit_6) == 0x000160, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_hit_6' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_damage_5) == 0x0001E8, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_damage_5' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_fuel) == 0x0001EC, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_fuel' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_damage_4) == 0x0001F0, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_damage_4' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_hot) == 0x0001F4, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_hot' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_17) == 0x000280, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_17' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_16) == 0x000288, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_16' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_damage_3) == 0x000290, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_damage_3' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_location_1) == 0x000294, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_location_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_15) == 0x0002A0, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_15' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_14) == 0x0002A8, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_14' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_13) == 0x0002B0, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_13' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_wheelDelta) == 0x0002B8, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_wheelDelta' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_12) == 0x0002C0, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_12' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_mouse) == 0x0002C8, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_mouse' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_11) == 0x0002D0, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_11' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_key) == 0x0002D8, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_key' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_pressed) == 0x0002F0, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_pressed' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_temperature_1) == 0x0002F4, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_temperature_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_temperature) == 0x0002F8, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_temperature' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_speed) == 0x0002FC, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_speed' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_10) == 0x000300, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_10' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_hit_5) == 0x000308, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_hit_5' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_name_1) == 0x000390, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_name_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_volume) == 0x0003A0, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_volume' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_9) == 0x0003A8, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_9' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_location) == 0x0003B0, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_location' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_damage_2) == 0x0003BC, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_damage_2' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_clean_1) == 0x0003C0, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_clean_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_8) == 0x0003C8, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_8' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_hit_4) == 0x0003D0, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_hit_4' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_hook_1) == 0x000458, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_hook_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_clean) == 0x000460, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_clean' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_7) == 0x000468, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_7' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_hook) == 0x000470, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_hook' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_6) == 0x000478, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_6' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_hit_3) == 0x000480, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_hit_3' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_kick) == 0x000508, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_kick' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_name) == 0x00050C, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_name' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_5) == 0x000518, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_5' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_4) == 0x000520, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_4' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_hit_2) == 0x000528, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_hit_2' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_damage_1) == 0x0005B0, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_damage_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_3) == 0x0005B8, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_3' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_2) == 0x0005C0, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_2' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_player_1) == 0x0005C8, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_CreateRenderTarget2D_ReturnValue) == 0x0005D0, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_CreateRenderTarget2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Create_ReturnValue) == 0x0005D8, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_SetGamePaused_ReturnValue) == 0x0005E0, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_SetGamePaused_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_water) == 0x0005E8, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_water' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_GetPlayerController_ReturnValue) == 0x0005F0, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_water_1) == 0x0005F8, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_water_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_RandomFloat_ReturnValue) == 0x000600, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_RandomFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_DynamicCast_AsTelescope_Mars) == 0x000608, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_DynamicCast_AsTelescope_Mars' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_DynamicCast_bSuccess) == 0x000610, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_DeltaSeconds) == 0x000614, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000618, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x00061C, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_MakeRotator_ReturnValue) == 0x000620, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_K2_SetRelativeRotation_SweepHitResult) == 0x00062C, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_K2_SetRelativeRotation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x0006B4, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_DegSin_ReturnValue) == 0x0006B8, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_DegSin_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x0006BC, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Lerp_ReturnValue) == 0x0006C0, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Lerp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x0006C4, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_water_2) == 0x0006C8, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_water_2' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x0006D0, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_water_3) == 0x0006D8, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_water_3' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_FClamp_ReturnValue) == 0x0006E0, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_FClamp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Percent_FloatFloat_ReturnValue) == 0x0006E4, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Percent_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_FClamp_ReturnValue_1) == 0x0006E8, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_FClamp_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_GetWorldDeltaSeconds_ReturnValue_1) == 0x0006EC, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_GetWorldDeltaSeconds_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_4) == 0x0006F0, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_GetWorldDeltaSeconds_ReturnValue_2) == 0x0006F4, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_GetWorldDeltaSeconds_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_5) == 0x0006F8, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_GetWorldDeltaSeconds_ReturnValue_3) == 0x0006FC, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_GetWorldDeltaSeconds_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_6) == 0x000700, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_GetWorldDeltaSeconds_ReturnValue_4) == 0x000704, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_GetWorldDeltaSeconds_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_7) == 0x000708, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_GetWorldDeltaSeconds_ReturnValue_5) == 0x00070C, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_GetWorldDeltaSeconds_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_8) == 0x000710, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_BreakVector_X) == 0x000714, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_BreakVector_X' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_BreakVector_Y) == 0x000718, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_BreakVector_Y' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_BreakVector_Z) == 0x00071C, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_BreakVector_Z' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_9) == 0x000720, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Lerp_ReturnValue_1) == 0x000724, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Lerp_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x000728, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_10) == 0x00072C, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_10' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_11) == 0x000730, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_11' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_12) == 0x000734, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_12' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_13) == 0x000738, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_13' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_VictoryFloatPlusEquals_FloatOut_1) == 0x00073C, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_VictoryFloatPlusEquals_FloatOut_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_VictoryFloatPlusEquals_FloatOut_2) == 0x000740, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_VictoryFloatPlusEquals_FloatOut_2' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_14) == 0x000744, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_14' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_15) == 0x000748, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_15' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_VictoryFloatPlusEquals_FloatOut_3) == 0x00074C, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_VictoryFloatPlusEquals_FloatOut_3' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_VictoryFloatPlusEquals_FloatOut_4) == 0x000750, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_VictoryFloatPlusEquals_FloatOut_4' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Multiply_FloatFloat_ReturnValue_16) == 0x000754, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Multiply_FloatFloat_ReturnValue_16' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_VictoryFloatPlusEquals_FloatOut_5) == 0x000758, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_VictoryFloatPlusEquals_FloatOut_5' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_MakeArray_Array) == 0x000760, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_RandomFloat_ReturnValue_1) == 0x000770, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_RandomFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Array_Length_ReturnValue) == 0x000774, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Ease_ReturnValue) == 0x000778, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Ease_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Lerp_ReturnValue_2) == 0x00077C, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Lerp_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_GetWorldDeltaSeconds_ReturnValue_6) == 0x000780, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_GetWorldDeltaSeconds_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_BreakRotator_Roll) == 0x000784, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_BreakRotator_Roll' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_BreakRotator_Pitch) == 0x000788, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_BreakRotator_Pitch' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_BreakRotator_Yaw) == 0x00078C, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_BreakRotator_Yaw' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_RandomFloat_ReturnValue_2) == 0x000790, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_RandomFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_FInterpTo_ReturnValue) == 0x000794, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_FInterpTo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Ease_ReturnValue_1) == 0x000798, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Ease_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_GetWorldDeltaSeconds_ReturnValue_7) == 0x00079C, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_GetWorldDeltaSeconds_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Lerp_ReturnValue_3) == 0x0007A0, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Lerp_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_FInterpTo_ReturnValue_1) == 0x0007A4, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_FInterpTo_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_MakeRotator_ReturnValue_1) == 0x0007A8, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_MakeRotator_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_K2_SetRelativeRotation_SweepHitResult_1) == 0x0007B4, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_K2_SetRelativeRotation_SweepHitResult_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_damage) == 0x00083C, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_damage' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_hit_1) == 0x000840, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_hit_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_actor) == 0x0008C8, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_actor' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_Event_impact) == 0x0008D0, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_Event_impact' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x0008E0, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, Temp_int_Array_Index_Variable) == 0x0008E8, "Member 'Telescope_C_ExecuteUbergraph_telescope::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, Temp_int_Loop_Counter_Variable) == 0x0008EC, "Member 'Telescope_C_ExecuteUbergraph_telescope::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Less_IntInt_ReturnValue) == 0x0008F0, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Add_IntInt_ReturnValue) == 0x0008F4, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, Temp_int_Loop_Counter_Variable_1) == 0x0008F8, "Member 'Telescope_C_ExecuteUbergraph_telescope::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Add_IntInt_ReturnValue_1) == 0x0008FC, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, Temp_int_Array_Index_Variable_1) == 0x000900, "Member 'Telescope_C_ExecuteUbergraph_telescope::Temp_int_Array_Index_Variable_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Array_Get_Item) == 0x000908, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000910, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_GetChildrenComponents_Children) == 0x000918, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_GetChildrenComponents_Children' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Array_Get_Item_1) == 0x000928, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Array_Length_ReturnValue_1) == 0x000930, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_DynamicCast_AsChild_Actor_Component) == 0x000938, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_DynamicCast_AsChild_Actor_Component' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, K2Node_DynamicCast_bSuccess_1) == 0x000940, "Member 'Telescope_C_ExecuteUbergraph_telescope::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Less_IntInt_ReturnValue_1) == 0x000941, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1) == 0x000944, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Lerp_ReturnValue_4) == 0x000948, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Lerp_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ExecuteUbergraph_telescope, CallFunc_Lerp_ReturnValue_5) == 0x00094C, "Member 'Telescope_C_ExecuteUbergraph_telescope::CallFunc_Lerp_ReturnValue_5' has a wrong offset!");
 
 // Function telescope.telescope_C.actionOptionIndex
 // 0x0098 (0x0098 - 0x0000)
@@ -346,15 +365,13 @@ struct Telescope_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Telescope_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Telescope_C_ActionOptionIndex");
 static_assert(sizeof(Telescope_C_ActionOptionIndex) == 0x000098, "Wrong size on Telescope_C_ActionOptionIndex");
 static_assert(offsetof(Telescope_C_ActionOptionIndex, Player) == 0x000000, "Member 'Telescope_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(Telescope_C_ActionOptionIndex, Hit) == 0x000008, "Member 'Telescope_C_ActionOptionIndex::Hit' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Telescope_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(Telescope_C_ActionOptionIndex, Action) == 0x000094, "Member 'Telescope_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ActionOptionIndex, Action) == 0x000090, "Member 'Telescope_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function telescope.telescope_C.ImpactDamage
 // 0x00A8 (0x00A8 - 0x0000)
@@ -363,7 +380,7 @@ struct Telescope_C_ImpactDamage final
 public:
 	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_2611[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0090(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Impact;                                            // 0x0098(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -385,18 +402,53 @@ static_assert(alignof(Telescope_C_ReceiveTick) == 0x000004, "Wrong alignment on 
 static_assert(sizeof(Telescope_C_ReceiveTick) == 0x000004, "Wrong size on Telescope_C_ReceiveTick");
 static_assert(offsetof(Telescope_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'Telescope_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
+// Function telescope.telescope_C.playerR
+// 0x0008 (0x0008 - 0x0000)
+struct Telescope_C_PlayerR final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Telescope_C_PlayerR) == 0x000008, "Wrong alignment on Telescope_C_PlayerR");
+static_assert(sizeof(Telescope_C_PlayerR) == 0x000008, "Wrong size on Telescope_C_PlayerR");
+static_assert(offsetof(Telescope_C_PlayerR, Player) == 0x000000, "Member 'Telescope_C_PlayerR::Player' has a wrong offset!");
+
+// Function telescope.telescope_C.playerHold
+// 0x0008 (0x0008 - 0x0000)
+struct Telescope_C_PlayerHold final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Telescope_C_PlayerHold) == 0x000008, "Wrong alignment on Telescope_C_PlayerHold");
+static_assert(sizeof(Telescope_C_PlayerHold) == 0x000008, "Wrong size on Telescope_C_PlayerHold");
+static_assert(offsetof(Telescope_C_PlayerHold, Player) == 0x000000, "Member 'Telescope_C_PlayerHold::Player' has a wrong offset!");
+
+// Function telescope.telescope_C.playerUnequip
+// 0x0008 (0x0008 - 0x0000)
+struct Telescope_C_PlayerUnequip final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Telescope_C_PlayerUnequip) == 0x000008, "Wrong alignment on Telescope_C_PlayerUnequip");
+static_assert(sizeof(Telescope_C_PlayerUnequip) == 0x000008, "Wrong size on Telescope_C_PlayerUnequip");
+static_assert(offsetof(Telescope_C_PlayerUnequip, Player) == 0x000000, "Member 'Telescope_C_PlayerUnequip::Player' has a wrong offset!");
+
 // Function telescope.telescope_C.damageByPlayer
-// 0x0090 (0x0090 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct Telescope_C_DamageByPlayer final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         Damage;                                            // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Telescope_C_DamageByPlayer) == 0x000008, "Wrong alignment on Telescope_C_DamageByPlayer");
-static_assert(sizeof(Telescope_C_DamageByPlayer) == 0x000090, "Wrong size on Telescope_C_DamageByPlayer");
+static_assert(sizeof(Telescope_C_DamageByPlayer) == 0x000098, "Wrong size on Telescope_C_DamageByPlayer");
 static_assert(offsetof(Telescope_C_DamageByPlayer, Player) == 0x000000, "Member 'Telescope_C_DamageByPlayer::Player' has a wrong offset!");
 static_assert(offsetof(Telescope_C_DamageByPlayer, Hit) == 0x000008, "Member 'Telescope_C_DamageByPlayer::Hit' has a wrong offset!");
+static_assert(offsetof(Telescope_C_DamageByPlayer, Damage) == 0x000090, "Member 'Telescope_C_DamageByPlayer::Damage' has a wrong offset!");
 
 // Function telescope.telescope_C.thrown
 // 0x0008 (0x0008 - 0x0000)
@@ -443,6 +495,31 @@ static_assert(alignof(Telescope_C_Player_use) == 0x000008, "Wrong alignment on T
 static_assert(sizeof(Telescope_C_Player_use) == 0x000090, "Wrong size on Telescope_C_Player_use");
 static_assert(offsetof(Telescope_C_Player_use, Player) == 0x000000, "Member 'Telescope_C_Player_use::Player' has a wrong offset!");
 static_assert(offsetof(Telescope_C_Player_use, Hit) == 0x000008, "Member 'Telescope_C_Player_use::Hit' has a wrong offset!");
+
+// Function telescope.telescope_C.hookTension
+// 0x0008 (0x0008 - 0x0000)
+struct Telescope_C_HookTension final
+{
+public:
+	class AHook_C*                                Hook;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Telescope_C_HookTension) == 0x000008, "Wrong alignment on Telescope_C_HookTension");
+static_assert(sizeof(Telescope_C_HookTension) == 0x000008, "Wrong size on Telescope_C_HookTension");
+static_assert(offsetof(Telescope_C_HookTension, Hook) == 0x000000, "Member 'Telescope_C_HookTension::Hook' has a wrong offset!");
+
+// Function telescope.telescope_C.cleanSponge
+// 0x0010 (0x0010 - 0x0000)
+struct Telescope_C_CleanSponge final
+{
+public:
+	float                                         Clean;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          Player;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Telescope_C_CleanSponge) == 0x000008, "Wrong alignment on Telescope_C_CleanSponge");
+static_assert(sizeof(Telescope_C_CleanSponge) == 0x000010, "Wrong size on Telescope_C_CleanSponge");
+static_assert(offsetof(Telescope_C_CleanSponge, Clean) == 0x000000, "Member 'Telescope_C_CleanSponge::Clean' has a wrong offset!");
+static_assert(offsetof(Telescope_C_CleanSponge, Player) == 0x000008, "Member 'Telescope_C_CleanSponge::Player' has a wrong offset!");
 
 // Function telescope.telescope_C.hooked
 // 0x0008 (0x0008 - 0x0000)
@@ -651,6 +728,19 @@ static_assert(alignof(Telescope_C_PlayerHandUse_RMB) == 0x000008, "Wrong alignme
 static_assert(sizeof(Telescope_C_PlayerHandUse_RMB) == 0x000008, "Wrong size on Telescope_C_PlayerHandUse_RMB");
 static_assert(offsetof(Telescope_C_PlayerHandUse_RMB, Player) == 0x000000, "Member 'Telescope_C_PlayerHandUse_RMB::Player' has a wrong offset!");
 
+// Function telescope.telescope_C.receivedPhyiscsDamage
+// 0x008C (0x008C - 0x0000)
+struct Telescope_C_ReceivedPhyiscsDamage final
+{
+public:
+	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hot;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+static_assert(alignof(Telescope_C_ReceivedPhyiscsDamage) == 0x000004, "Wrong alignment on Telescope_C_ReceivedPhyiscsDamage");
+static_assert(sizeof(Telescope_C_ReceivedPhyiscsDamage) == 0x00008C, "Wrong size on Telescope_C_ReceivedPhyiscsDamage");
+static_assert(offsetof(Telescope_C_ReceivedPhyiscsDamage, Damage) == 0x000000, "Member 'Telescope_C_ReceivedPhyiscsDamage::Damage' has a wrong offset!");
+static_assert(offsetof(Telescope_C_ReceivedPhyiscsDamage, Hot) == 0x000004, "Member 'Telescope_C_ReceivedPhyiscsDamage::Hot' has a wrong offset!");
+
 // Function telescope.telescope_C.ignite
 // 0x0004 (0x0004 - 0x0000)
 struct Telescope_C_Ignite final
@@ -787,28 +877,31 @@ static_assert(sizeof(Telescope_C_EnterWater) == 0x000008, "Wrong size on Telesco
 static_assert(offsetof(Telescope_C_EnterWater, Water) == 0x000000, "Member 'Telescope_C_EnterWater::Water' has a wrong offset!");
 
 // Function telescope.telescope_C.lookAt
-// 0x00D8 (0x00D8 - 0x0000)
+// 0x00E0 (0x00E0 - 0x0000)
 struct Telescope_C_LookAt final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2612[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00B0(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00B8(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Telescope_C_LookAt) == 0x000008, "Wrong alignment on Telescope_C_LookAt");
-static_assert(sizeof(Telescope_C_LookAt) == 0x0000D8, "Wrong size on Telescope_C_LookAt");
+static_assert(sizeof(Telescope_C_LookAt) == 0x0000E0, "Wrong size on Telescope_C_LookAt");
 static_assert(offsetof(Telescope_C_LookAt, Player) == 0x000000, "Member 'Telescope_C_LookAt::Player' has a wrong offset!");
 static_assert(offsetof(Telescope_C_LookAt, Hit) == 0x000008, "Member 'Telescope_C_LookAt::Hit' has a wrong offset!");
 static_assert(offsetof(Telescope_C_LookAt, Return) == 0x000090, "Member 'Telescope_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(Telescope_C_LookAt, Text) == 0x000098, "Member 'Telescope_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(Telescope_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'Telescope_C_LookAt::boundObjectReplace' has a wrong offset!");
-static_assert(offsetof(Telescope_C_LookAt, CallFunc_MakeLiteralText_ReturnValue) == 0x0000B0, "Member 'Telescope_C_LookAt::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Telescope_C_LookAt, CallFunc_Conv_TextToString_ReturnValue) == 0x0000C8, "Member 'Telescope_C_LookAt::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Telescope_C_LookAt, Number) == 0x0000B0, "Member 'Telescope_C_LookAt::Number' has a wrong offset!");
+static_assert(offsetof(Telescope_C_LookAt, CallFunc_MakeLiteralText_ReturnValue) == 0x0000B8, "Member 'Telescope_C_LookAt::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Telescope_C_LookAt, CallFunc_Conv_TextToString_ReturnValue) == 0x0000D0, "Member 'Telescope_C_LookAt::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
 
 // Function telescope.telescope_C.isButtonUsed
 // 0x0001 (0x0001 - 0x0000)
@@ -867,8 +960,21 @@ static_assert(alignof(Telescope_C_CanBePutInContainer) == 0x000001, "Wrong align
 static_assert(sizeof(Telescope_C_CanBePutInContainer) == 0x000001, "Wrong size on Telescope_C_CanBePutInContainer");
 static_assert(offsetof(Telescope_C_CanBePutInContainer, Return) == 0x000000, "Member 'Telescope_C_CanBePutInContainer::Return' has a wrong offset!");
 
+// Function telescope.telescope_C.landedOn
+// 0x0010 (0x0010 - 0x0000)
+struct Telescope_C_LandedOn final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IgnoreFallDamage;                                  // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Telescope_C_LandedOn) == 0x000008, "Wrong alignment on Telescope_C_LandedOn");
+static_assert(sizeof(Telescope_C_LandedOn) == 0x000010, "Wrong size on Telescope_C_LandedOn");
+static_assert(offsetof(Telescope_C_LandedOn, Player) == 0x000000, "Member 'Telescope_C_LandedOn::Player' has a wrong offset!");
+static_assert(offsetof(Telescope_C_LandedOn, IgnoreFallDamage) == 0x000008, "Member 'Telescope_C_LandedOn::IgnoreFallDamage' has a wrong offset!");
+
 // Function telescope.telescope_C.getActionOptions
-// 0x0058 (0x0058 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct Telescope_C_GetActionOptions final
 {
 public:
@@ -878,17 +984,20 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
 };
 static_assert(alignof(Telescope_C_GetActionOptions) == 0x000008, "Wrong alignment on Telescope_C_GetActionOptions");
-static_assert(sizeof(Telescope_C_GetActionOptions) == 0x000058, "Wrong size on Telescope_C_GetActionOptions");
+static_assert(sizeof(Telescope_C_GetActionOptions) == 0x000060, "Wrong size on Telescope_C_GetActionOptions");
 static_assert(offsetof(Telescope_C_GetActionOptions, Player) == 0x000000, "Member 'Telescope_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Telescope_C_GetActionOptions, Component) == 0x000008, "Member 'Telescope_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Telescope_C_GetActionOptions, Actor) == 0x000010, "Member 'Telescope_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Telescope_C_GetActionOptions, Options) == 0x000018, "Member 'Telescope_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Telescope_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Telescope_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Telescope_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Telescope_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Telescope_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'Telescope_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Telescope_C_GetActionOptions, Number) == 0x000048, "Member 'Telescope_C_GetActionOptions::Number' has a wrong offset!");
+static_assert(offsetof(Telescope_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Telescope_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 // Function telescope.telescope_C.setPath
 // 0x0018 (0x0018 - 0x0000)
@@ -983,6 +1092,17 @@ public:
 static_assert(alignof(Telescope_C_SkipRadial) == 0x000001, "Wrong alignment on Telescope_C_SkipRadial");
 static_assert(sizeof(Telescope_C_SkipRadial) == 0x000001, "Wrong size on Telescope_C_SkipRadial");
 static_assert(offsetof(Telescope_C_SkipRadial, Skip) == 0x000000, "Member 'Telescope_C_SkipRadial::Skip' has a wrong offset!");
+
+// Function telescope.telescope_C.getPriceMultiplier
+// 0x0004 (0x0004 - 0x0000)
+struct Telescope_C_GetPriceMultiplier final
+{
+public:
+	float                                         PriceMult;                                         // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Telescope_C_GetPriceMultiplier) == 0x000004, "Wrong alignment on Telescope_C_GetPriceMultiplier");
+static_assert(sizeof(Telescope_C_GetPriceMultiplier) == 0x000004, "Wrong size on Telescope_C_GetPriceMultiplier");
+static_assert(offsetof(Telescope_C_GetPriceMultiplier, PriceMult) == 0x000000, "Member 'Telescope_C_GetPriceMultiplier::PriceMult' has a wrong offset!");
 
 }
 

@@ -34,11 +34,11 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         A_NewTrack_0_180E0F334655F141F9C735976D48A3D0;     // 0x0268(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            A__Direction_180E0F334655F141F9C735976D48A3D0;     // 0x026C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D70[0x3];                                     // 0x026D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_26D[0x3];                                      // 0x026D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     A;                                                 // 0x0270(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               Dynmat;                                            // 0x0278(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Appeared;                                          // 0x0280(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D71[0x3];                                     // 0x0281(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_281[0x3];                                      // 0x0281(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Delay;                                             // 0x0284(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
@@ -47,11 +47,14 @@ public:
 	void BndEvt__tardis_tardis_spawn_K2Node_ComponentBoundEvent_3_OnAudioFinished__DelegateSignature();
 	void BndEvt__tardis_Sphere_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 	void BndEvt__tardis_tardis_despawn_K2Node_ComponentBoundEvent_0_OnAudioFinished__DelegateSignature();
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
 	void Appear(bool Condition);
 	void ReceiveBeginPlay();
+	void PlayerR(class AMainPlayer_C* Player);
+	void PlayerHold(class AMainPlayer_C* Player);
+	void PlayerUnequip(class AMainPlayer_C* Player);
 	void UpdateStrAgl();
-	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit);
+	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage);
 	void Thrown(class AMainPlayer_C* Player);
 	void broken_fire();
 	void broken();
@@ -59,6 +62,9 @@ public:
 	void Kicked(bool Kick);
 	void Player_use(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void DriveDetached();
+	void HookTension(class AHook_C* Hook);
+	void CleanSponge(float Clean, class AMainPlayer_C* Player);
+	void Crafted();
 	void Hooked(class AHook_C* Hook);
 	void AttemptIgnite();
 	void PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
@@ -80,7 +86,7 @@ public:
 	void Exploded(float Damage, const struct FVector& Location);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
-	void ReceivedPhyiscsDamage();
+	void ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot);
 	void Microwave();
 	void Ignite(float Fuel);
 	void FireDamage(float Damage);
@@ -105,9 +111,10 @@ public:
 	void AsProp(class AProp_C** Return);
 	void CanPickup(bool* Return);
 	void NoRespawn(bool Param_NoRespawn, bool* Return);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
 	void IsButtonUsed(bool* Failed);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 	void SetPath(const TArray<struct FVector>& Path, bool* Return);
 	void GetOnlyKey(class FString* Key);
 	void ProcessKeys(bool* Return);
@@ -116,6 +123,7 @@ public:
 	void ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return);
 	void GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled);
 	void SkipRadial(bool* Skip);
+	void GetPriceMultiplier(float* PriceMult);
 
 public:
 	static class UClass* StaticClass()

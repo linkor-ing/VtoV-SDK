@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Struct_signalDataDynamic_structs.hpp"
-#include "Struct_signal_data2_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Struct_signalDataDynamic_structs.hpp"
+#include "Struct_signal_data1_structs.hpp"
 
 
 namespace SDK::Params
@@ -25,7 +25,7 @@ struct Umg_signalMenuSlot_C_ExecuteUbergraph_umg_signalMenuSlot final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2569[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_NameToText_ReturnValue;              // 0x0008(0x0018)()
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0020(0x0018)()
 	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0038(0x0018)()
@@ -52,11 +52,11 @@ struct Umg_signalMenuSlot_C_Spawn final
 {
 public:
 	int32                                         Decoded;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_256A[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  CallFunc_GetPlayerPawn_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_signal_data2                   CallFunc_nameToSignal_data;                        // 0x0010(0x01D0)(HasGetValueTypeHash)
+	struct FStruct_signal_data1                   CallFunc_nameToSignal_data;                        // 0x0010(0x01D0)(HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x01E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_256B[0x4];                                     // 0x01EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EC[0x4];                                      // 0x01EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_signalDataDynamic              CallFunc_signalToDynamic_dynamic;                  // 0x01F0(0x0070)(HasGetValueTypeHash)
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0260(0x0030)(IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -37,6 +37,34 @@ void ACentipedeHead_C::ExecuteUbergraph_centipedeHead(int32 EntryPoint)
 }
 
 
+// Function centipedeHead.centipedeHead_C.CustomEvent
+// (BlueprintCallable, BlueprintEvent)
+
+void ACentipedeHead_C::CustomEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("centipedeHead_C", "CustomEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function centipedeHead.centipedeHead_C.bbyoffste
+// (BlueprintCallable, BlueprintEvent)
+
+void ACentipedeHead_C::bbyoffste()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("centipedeHead_C", "bbyoffste");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function centipedeHead.centipedeHead_C.checkDoors
 // (BlueprintCallable, BlueprintEvent)
 
@@ -254,6 +282,32 @@ struct FRotator ACentipedeHead_C::Weqweqwewqe()
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+}
+
+
+// Function centipedeHead.centipedeHead_C.processAvailable
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<class AActor*>                   Array                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// TArray<class AActor*>                   A1                                                     (Parm, OutParm)
+
+void ACentipedeHead_C::ProcessAvailable(TArray<class AActor*>& Array, TArray<class AActor*>* A1)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("centipedeHead_C", "processAvailable");
+
+	Params::CentipedeHead_C_ProcessAvailable Parms{};
+
+	Parms.Array = std::move(Array);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Array = std::move(Parms.Array);
+
+	if (A1 != nullptr)
+		*A1 = std::move(Parms.A1);
 }
 
 }

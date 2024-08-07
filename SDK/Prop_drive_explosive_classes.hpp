@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_drive_explosive.prop_drive_explosive_C
-// 0x0008 (0x05D0 - 0x05C8)
+// 0x0008 (0x05E0 - 0x05D8)
 class AProp_drive_explosive_C final : public AProp_drive_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_drive_explosive_C;             // 0x05C8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_drive_explosive_C;             // 0x05D8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_prop_drive_explosive(int32 EntryPoint);
@@ -43,8 +43,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_drive_explosive_C) == 0x000008, "Wrong alignment on AProp_drive_explosive_C");
-static_assert(sizeof(AProp_drive_explosive_C) == 0x0005D0, "Wrong size on AProp_drive_explosive_C");
-static_assert(offsetof(AProp_drive_explosive_C, UberGraphFrame_Prop_drive_explosive_C) == 0x0005C8, "Member 'AProp_drive_explosive_C::UberGraphFrame_Prop_drive_explosive_C' has a wrong offset!");
+static_assert(sizeof(AProp_drive_explosive_C) == 0x0005E0, "Wrong size on AProp_drive_explosive_C");
+static_assert(offsetof(AProp_drive_explosive_C, UberGraphFrame_Prop_drive_explosive_C) == 0x0005D8, "Member 'AProp_drive_explosive_C::UberGraphFrame_Prop_drive_explosive_C' has a wrong offset!");
 
 }
 

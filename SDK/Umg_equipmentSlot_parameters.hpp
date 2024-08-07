@@ -22,7 +22,7 @@ struct Umg_equipmentSlot_C_ExecuteUbergraph_umg_equipmentSlot final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_263B[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_RemoveEquipment_return;                   // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -40,7 +40,7 @@ struct Umg_equipmentSlot_C_Init final
 {
 public:
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_263C[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class UTexture2D*                             CallFunc_propToIcon_Output;                        // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -56,7 +56,7 @@ struct Umg_equipmentSlot_C_Upd final
 {
 public:
 	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot;                     // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_263D[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_equipment                      CallFunc_Array_Get_Item;                           // 0x0010(0x00F0)(HasGetValueTypeHash)
 };
 static_assert(alignof(Umg_equipmentSlot_C_Upd) == 0x000010, "Wrong alignment on Umg_equipmentSlot_C_Upd");

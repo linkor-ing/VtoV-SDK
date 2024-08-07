@@ -51,7 +51,7 @@ public:
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0110(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x011C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x011D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_17F2[0x2];                                     // 0x011E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11E[0x2];                                      // 0x011E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0128(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -67,7 +67,7 @@ public:
 	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0184(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0190(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17F3[0x4];                                     // 0x019C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19C[0x4];                                      // 0x019C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_FloatToString_ReturnValue;           // 0x01A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Conv_FloatToString_ReturnValue_1;         // 0x01B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x01C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
@@ -81,7 +81,7 @@ public:
 	struct FHitResult                             K2Node_Event_hit;                                  // 0x0204(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FVector                                K2Node_Event_impact;                               // 0x028C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_skipSetting;                          // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_17F4[0x7];                                     // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_299[0x7];                                      // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x02A0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue;           // 0x02D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_InverseTransformLocation_ReturnValue;     // 0x02DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -91,10 +91,10 @@ public:
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x02F4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0300(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0301(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_17F5[0x2];                                     // 0x0302(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_302[0x2];                                      // 0x0302(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x0304(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0310(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_17F6[0x3];                                     // 0x0311(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_311[0x3];                                      // 0x0311(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_GetActorRightVector_ReturnValue;          // 0x0314(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTransform                             CallFunc_GetTransform_ReturnValue_1;               // 0x0320(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	struct FTransform                             CallFunc_GetTransform_ReturnValue_2;               // 0x0350(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
@@ -126,7 +126,7 @@ public:
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_4;         // 0x040B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x040C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x040D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_17F7[0x2];                                     // 0x040E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_40E[0x2];                                      // 0x040E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Lerp_ReturnValue_2;                       // 0x0410(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Lerp_ReturnValue_3;                       // 0x0414(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue_2;                 // 0x0418(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -157,25 +157,25 @@ public:
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x048C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0498(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Lerp_ReturnValue_6;                       // 0x04A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17F8[0x8];                                     // 0x04A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4A8[0x8];                                      // 0x04A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x04B0(0x0030)(IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_2;       // 0x04E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17F9[0x4];                                     // 0x04EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4EC[0x4];                                      // 0x04EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x04F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Lerp_ReturnValue_7;                       // 0x04F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17FA[0x4];                                     // 0x04FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4FC[0x4];                                      // 0x04FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ACustomPlank_C*                         CallFunc_FinishSpawningActor_ReturnValue;          // 0x0500(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_3;       // 0x0508(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x0514(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0520(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_2;           // 0x052C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17FB[0x8];                                     // 0x0538(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_538[0x8];                                      // 0x0538(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x0540(0x0030)(IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_3;           // 0x0570(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17FC[0x4];                                     // 0x057C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_57C[0x4];                                      // 0x057C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0580(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue_1;        // 0x0588(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_17FD[0x4];                                     // 0x0594(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_594[0x4];                                      // 0x0594(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ACustomPlank_C*                         CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0598(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue_2;              // 0x05A0(0x0030)(IsPlainOldData, NoDestructor)
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue_3;              // 0x05D0(0x0030)(IsPlainOldData, NoDestructor)
@@ -336,6 +336,17 @@ static_assert(offsetof(CustomPlank_C_ExecuteUbergraph_customPlank, CallFunc_Begi
 static_assert(offsetof(CustomPlank_C_ExecuteUbergraph_customPlank, CallFunc_FinishSpawningActor_ReturnValue_2) == 0x000610, "Member 'CustomPlank_C_ExecuteUbergraph_customPlank::CallFunc_FinishSpawningActor_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(CustomPlank_C_ExecuteUbergraph_customPlank, CallFunc_FinishSpawningActor_ReturnValue_3) == 0x000618, "Member 'CustomPlank_C_ExecuteUbergraph_customPlank::CallFunc_FinishSpawningActor_ReturnValue_3' has a wrong offset!");
 
+// Function customPlank.customPlank_C.Cut
+// 0x0088 (0x0088 - 0x0000)
+struct CustomPlank_C_Cut final
+{
+public:
+	struct FHitResult                             Param_Hit;                                         // 0x0000(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+static_assert(alignof(CustomPlank_C_Cut) == 0x000004, "Wrong alignment on CustomPlank_C_Cut");
+static_assert(sizeof(CustomPlank_C_Cut) == 0x000088, "Wrong size on CustomPlank_C_Cut");
+static_assert(offsetof(CustomPlank_C_Cut, Param_Hit) == 0x000000, "Member 'CustomPlank_C_Cut::Param_Hit' has a wrong offset!");
+
 // Function customPlank.customPlank_C.addDamage
 // 0x00A8 (0x00A8 - 0x0000)
 struct CustomPlank_C_AddDamage final
@@ -354,17 +365,6 @@ static_assert(offsetof(CustomPlank_C_AddDamage, Damage) == 0x000008, "Member 'Cu
 static_assert(offsetof(CustomPlank_C_AddDamage, Param_Hit) == 0x00000C, "Member 'CustomPlank_C_AddDamage::Param_Hit' has a wrong offset!");
 static_assert(offsetof(CustomPlank_C_AddDamage, Impact) == 0x000094, "Member 'CustomPlank_C_AddDamage::Impact' has a wrong offset!");
 static_assert(offsetof(CustomPlank_C_AddDamage, SkipSetting) == 0x0000A0, "Member 'CustomPlank_C_AddDamage::SkipSetting' has a wrong offset!");
-
-// Function customPlank.customPlank_C.Cut
-// 0x0088 (0x0088 - 0x0000)
-struct CustomPlank_C_Cut final
-{
-public:
-	struct FHitResult                             Param_Hit;                                         // 0x0000(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-static_assert(alignof(CustomPlank_C_Cut) == 0x000004, "Wrong alignment on CustomPlank_C_Cut");
-static_assert(sizeof(CustomPlank_C_Cut) == 0x000088, "Wrong size on CustomPlank_C_Cut");
-static_assert(offsetof(CustomPlank_C_Cut, Param_Hit) == 0x000000, "Member 'CustomPlank_C_Cut::Param_Hit' has a wrong offset!");
 
 // Function customPlank.customPlank_C.canBePutInContainer
 // 0x0001 (0x0001 - 0x0000)
@@ -413,24 +413,26 @@ static_assert(offsetof(CustomPlank_C_NoRespawn, Param_NoRespawn) == 0x000000, "M
 static_assert(offsetof(CustomPlank_C_NoRespawn, Return) == 0x000001, "Member 'CustomPlank_C_NoRespawn::Return' has a wrong offset!");
 
 // Function customPlank.customPlank_C.lookAt
-// 0x00B0 (0x00B0 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct CustomPlank_C_LookAt final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_17FE[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(CustomPlank_C_LookAt) == 0x000008, "Wrong alignment on CustomPlank_C_LookAt");
-static_assert(sizeof(CustomPlank_C_LookAt) == 0x0000B0, "Wrong size on CustomPlank_C_LookAt");
+static_assert(sizeof(CustomPlank_C_LookAt) == 0x0000B8, "Wrong size on CustomPlank_C_LookAt");
 static_assert(offsetof(CustomPlank_C_LookAt, Player) == 0x000000, "Member 'CustomPlank_C_LookAt::Player' has a wrong offset!");
 static_assert(offsetof(CustomPlank_C_LookAt, Param_Hit) == 0x000008, "Member 'CustomPlank_C_LookAt::Param_Hit' has a wrong offset!");
 static_assert(offsetof(CustomPlank_C_LookAt, Return) == 0x000090, "Member 'CustomPlank_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(CustomPlank_C_LookAt, Text) == 0x000098, "Member 'CustomPlank_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(CustomPlank_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'CustomPlank_C_LookAt::boundObjectReplace' has a wrong offset!");
+static_assert(offsetof(CustomPlank_C_LookAt, Number) == 0x0000B0, "Member 'CustomPlank_C_LookAt::Number' has a wrong offset!");
 
 // Function customPlank.customPlank_C.isButtonUsed
 // 0x0001 (0x0001 - 0x0000)

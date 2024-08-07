@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "AnimGraphRuntime_structs.hpp"
-#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -24,10 +24,10 @@ namespace SDK
 class UWendussy_dream_Skeleton_AnimBlueprint_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_1DFD[0x8];                                     // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B8[0x8];                                      // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace;               // 0x02C8(0x0020)()
-	uint8                                         Pad_1DFE[0x8];                                     // 0x02E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E8[0x8];                                      // 0x02E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAnimNode_LookAt                       AnimGraphNode_LookAt_2;                            // 0x02F0(0x01B0)()
 	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x04A0(0x0020)()
 	struct FAnimNode_LookAt                       AnimGraphNode_LookAt_1;                            // 0x04C0(0x01B0)()

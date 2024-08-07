@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass umg_cheatMenuSlot.umg_cheatMenuSlot_C
-// 0x0040 (0x02A0 - 0x0260)
+// 0x0048 (0x02A8 - 0x0260)
 class UUmg_cheatMenuSlot_C final : public UUserWidget
 {
 public:
@@ -26,9 +26,10 @@ public:
 	class UButton*                                Button_51;                                         // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             TextBlock_92;                                      // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                         Index_Umg_cheatMenuSlot_C;                         // 0x0278(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_2578[0x4];                                     // 0x027C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Name_Umg_cheatMenuSlot_C;                          // 0x0280(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class UUmg_cheatMenu_C*                       Parent;                                            // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	class FName                                   Name_Umg_cheatMenuSlot_C;                          // 0x027C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	uint8                                         Pad_284[0x4];                                      // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   DisplayName;                                       // 0x0288(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class UUmg_cheatMenu_C*                       Parent;                                            // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_umg_cheatMenuSlot(int32 EntryPoint);
@@ -46,13 +47,14 @@ public:
 	}
 };
 static_assert(alignof(UUmg_cheatMenuSlot_C) == 0x000008, "Wrong alignment on UUmg_cheatMenuSlot_C");
-static_assert(sizeof(UUmg_cheatMenuSlot_C) == 0x0002A0, "Wrong size on UUmg_cheatMenuSlot_C");
+static_assert(sizeof(UUmg_cheatMenuSlot_C) == 0x0002A8, "Wrong size on UUmg_cheatMenuSlot_C");
 static_assert(offsetof(UUmg_cheatMenuSlot_C, UberGraphFrame) == 0x000260, "Member 'UUmg_cheatMenuSlot_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UUmg_cheatMenuSlot_C, Button_51) == 0x000268, "Member 'UUmg_cheatMenuSlot_C::Button_51' has a wrong offset!");
 static_assert(offsetof(UUmg_cheatMenuSlot_C, TextBlock_92) == 0x000270, "Member 'UUmg_cheatMenuSlot_C::TextBlock_92' has a wrong offset!");
 static_assert(offsetof(UUmg_cheatMenuSlot_C, Index_Umg_cheatMenuSlot_C) == 0x000278, "Member 'UUmg_cheatMenuSlot_C::Index_Umg_cheatMenuSlot_C' has a wrong offset!");
-static_assert(offsetof(UUmg_cheatMenuSlot_C, Name_Umg_cheatMenuSlot_C) == 0x000280, "Member 'UUmg_cheatMenuSlot_C::Name_Umg_cheatMenuSlot_C' has a wrong offset!");
-static_assert(offsetof(UUmg_cheatMenuSlot_C, Parent) == 0x000298, "Member 'UUmg_cheatMenuSlot_C::Parent' has a wrong offset!");
+static_assert(offsetof(UUmg_cheatMenuSlot_C, Name_Umg_cheatMenuSlot_C) == 0x00027C, "Member 'UUmg_cheatMenuSlot_C::Name_Umg_cheatMenuSlot_C' has a wrong offset!");
+static_assert(offsetof(UUmg_cheatMenuSlot_C, DisplayName) == 0x000288, "Member 'UUmg_cheatMenuSlot_C::DisplayName' has a wrong offset!");
+static_assert(offsetof(UUmg_cheatMenuSlot_C, Parent) == 0x0002A0, "Member 'UUmg_cheatMenuSlot_C::Parent' has a wrong offset!");
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Struct_sound_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -23,7 +23,7 @@ struct FStruct_triggerSave final
 {
 public:
 	class UClass*                                 Class_34_E4935B654044FBAF31FF8AB5A0B3BC82;         // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EF5[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Transform_33_AB4FF62B42B0F5AFBCEABE887D331566;     // 0x0010(0x0030)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor)
 	class FString                                 Key_2_A2FB16CD4ACC0541A1B053BEAF0CDFDE;            // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	TArray<class FString>                         Object_keys_5_B1B46B6F4BB5A39423743583EE27C2E7;    // 0x0050(0x0010)(Edit, BlueprintVisible)

@@ -272,5 +272,26 @@ void ATentacleBallsFollower_C::GetTriggerData(struct FStruct_triggerSave* Data)
 		*Data = std::move(Parms.Data);
 }
 
+
+// Function tentacleBallsFollower.tentacleBallsFollower_C.gatherDataFromKeyT
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ATentacleBallsFollower_C::GatherDataFromKeyT(bool* Gather)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("tentacleBallsFollower_C", "gatherDataFromKeyT");
+
+	Params::TentacleBallsFollower_C_GatherDataFromKeyT Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Gather != nullptr)
+		*Gather = Parms.Gather;
+}
+
 }
 

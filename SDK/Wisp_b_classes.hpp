@@ -24,7 +24,7 @@ namespace SDK
 class AWisp_b_C final : public ACharacter
 {
 public:
-	uint8                                         Pad_23EC[0x8];                                     // 0x04B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B8[0x8];                                      // 0x04B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UParticleSystemComponent*               Eff_wisp;                                          // 0x04C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UPhysicsConstraintComponent*            PhysicsConstraint;                                 // 0x04D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -33,31 +33,33 @@ public:
 	class UPnormal_C*                             Pnormal;                                           // 0x04E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        Audio1;                                            // 0x04F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        Audio;                                             // 0x04F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class URadarPointComponent_C*                 RadarPoint;                                        // 0x0500(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UComp_radarPoint_C*                     RadarPoint;                                        // 0x0500(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UNavigationInvokerComponent*            NavigationInvoker;                                 // 0x0508(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UBillboardComponent*                    Arg;                                               // 0x0510(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UPointLightComponent*                   PointLight;                                        // 0x0518(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         A_a_EFD38E2C4F57FED0AA706CB80FA79380;              // 0x0520(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            A__Direction_EFD38E2C4F57FED0AA706CB80FA79380;     // 0x0524(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23ED[0x3];                                     // 0x0525(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_525[0x3];                                      // 0x0525(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     A;                                                 // 0x0528(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Ime;                                               // 0x0530(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Disappearing;                                      // 0x0534(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23EE[0x3];                                     // 0x0535(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_535[0x3];                                      // 0x0535(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<EObjectTypeQuery>                      Obj;                                               // 0x0538(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          Landed;                                            // 0x0548(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_wisp_b(int32 EntryPoint);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
 	void OnLanded(const struct FHitResult& Hit);
 	void ImpactDamage(float Damage, const struct FHitResult& Hit, class AActor* Actor, const struct FVector& Impact);
-	void EnterWater(class AWaterVolume_C* Water);
 	void ReceiveTick(float DeltaSeconds);
 	void Dir(bool Condition);
 	void ReceiveBeginPlay();
+	void PlayerR(class AMainPlayer_C* Player);
+	void PlayerHold(class AMainPlayer_C* Player);
+	void PlayerUnequip(class AMainPlayer_C* Player);
 	void UpdateStrAgl();
-	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit);
+	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage);
 	void Thrown(class AMainPlayer_C* Player);
 	void broken_fire();
 	void broken();
@@ -65,6 +67,9 @@ public:
 	void Kicked(bool Kick);
 	void Player_use(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void DriveDetached();
+	void HookTension(class AHook_C* Hook);
+	void CleanSponge(float Clean, class AMainPlayer_C* Player);
+	void Crafted();
 	void Hooked(class AHook_C* Hook);
 	void AttemptIgnite();
 	void PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
@@ -86,7 +91,7 @@ public:
 	void Exploded(float Damage, const struct FVector& Location);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
-	void ReceivedPhyiscsDamage();
+	void ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot);
 	void Microwave();
 	void Ignite(float Fuel);
 	void FireDamage(float Damage);
@@ -103,6 +108,7 @@ public:
 	void LeaveWaterOrigin(class AWaterVolume_C* Water);
 	void EnterWaterOrigin(class AWaterVolume_C* Water);
 	void LeaveWater(class AWaterVolume_C* Water);
+	void EnterWater(class AWaterVolume_C* Water);
 	void OnSuccess_DEFB4DE441E9C21ECE835CA322E706B9(EPathFollowingResult MovementResult);
 	void OnFail_DEFB4DE441E9C21ECE835CA322E706B9(EPathFollowingResult MovementResult);
 	void A__UpdateFunc();
@@ -112,9 +118,10 @@ public:
 	void AsProp(class AProp_C** Return);
 	void CanPickup(bool* Return);
 	void NoRespawn(bool Param_NoRespawn, bool* Return);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
 	void IsButtonUsed(bool* Failed);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 	void SetPath(const TArray<struct FVector>& Path, bool* Return);
 	void GetOnlyKey(class FString* Key);
 	void ProcessKeys(bool* Return);
@@ -123,6 +130,7 @@ public:
 	void ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return);
 	void GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled);
 	void SkipRadial(bool* Skip);
+	void GetPriceMultiplier(float* PriceMult);
 
 public:
 	static class UClass* StaticClass()

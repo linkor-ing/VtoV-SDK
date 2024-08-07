@@ -37,32 +37,6 @@ void ARelativeField_C::ExecuteUbergraph_relativeField(int32 EntryPoint)
 }
 
 
-// Function relativeField.relativeField_C.actionOptionIndex
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ARelativeField_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("relativeField_C", "actionOptionIndex");
-
-	Params::RelativeField_C_ActionOptionIndex Parms{};
-
-	Parms.Player = Player;
-	Parms.Param_Hit = std::move(Param_Hit);
-	Parms.Param_Index = Param_Index;
-	Parms.Action = Action;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function relativeField.relativeField_C.ReceiveHit
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -187,21 +161,45 @@ void ARelativeField_C::Upd()
 }
 
 
-// Function relativeField.relativeField_C.NewFunction_0
+// Function relativeField.relativeField_C.NewFunction_0_0
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UPrimitiveComponent*              Self2                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ARelativeField_C::NewFunction_0(class UPrimitiveComponent* Self2)
+void ARelativeField_C::NewFunction_0_0(class UPrimitiveComponent* Self2)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("relativeField_C", "NewFunction_0");
+		Func = Class->GetFunction("relativeField_C", "NewFunction_0_0");
 
-	Params::RelativeField_C_NewFunction_0 Parms{};
+	Params::RelativeField_C_NewFunction_0_0 Parms{};
 
 	Parms.Self2 = Self2;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function relativeField.relativeField_C.actionOptionIndex
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ARelativeField_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("relativeField_C", "actionOptionIndex");
+
+	Params::RelativeField_C_ActionOptionIndex Parms{};
+
+	Parms.Player = Player;
+	Parms.Param_Hit = std::move(Param_Hit);
+	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -230,8 +228,9 @@ void ARelativeField_C::UserConstructionScript()
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ARelativeField_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
+void ARelativeField_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -254,6 +253,9 @@ void ARelativeField_C::GetActionOptions(class AMainPlayer_C* Player, class UPrim
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 }

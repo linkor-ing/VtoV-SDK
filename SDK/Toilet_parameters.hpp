@@ -10,15 +10,28 @@
 
 #include "Basic.hpp"
 
-#include "Struct_save_structs.hpp"
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "Enum_interactionActions_structs.hpp"
 #include "Struct_mFloat_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
+#include "Struct_save_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
 {
+
+// Function toilet.toilet_C.landedOn
+// 0x0010 (0x0010 - 0x0000)
+struct Toilet_C_LandedOn final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IgnoreFallDamage;                                  // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Toilet_C_LandedOn) == 0x000008, "Wrong alignment on Toilet_C_LandedOn");
+static_assert(sizeof(Toilet_C_LandedOn) == 0x000010, "Wrong size on Toilet_C_LandedOn");
+static_assert(offsetof(Toilet_C_LandedOn, Player) == 0x000000, "Member 'Toilet_C_LandedOn::Player' has a wrong offset!");
+static_assert(offsetof(Toilet_C_LandedOn, IgnoreFallDamage) == 0x000008, "Member 'Toilet_C_LandedOn::IgnoreFallDamage' has a wrong offset!");
 
 // Function toilet.toilet_C.canBePutInContainer
 // 0x0001 (0x0001 - 0x0000)
@@ -67,28 +80,31 @@ static_assert(offsetof(Toilet_C_NoRespawn, Param_NoRespawn) == 0x000000, "Member
 static_assert(offsetof(Toilet_C_NoRespawn, Return) == 0x000001, "Member 'Toilet_C_NoRespawn::Return' has a wrong offset!");
 
 // Function toilet.toilet_C.lookAt
-// 0x00D8 (0x00D8 - 0x0000)
+// 0x00E0 (0x00E0 - 0x0000)
 struct Toilet_C_LookAt final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_431A[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00B0(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00B8(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Toilet_C_LookAt) == 0x000008, "Wrong alignment on Toilet_C_LookAt");
-static_assert(sizeof(Toilet_C_LookAt) == 0x0000D8, "Wrong size on Toilet_C_LookAt");
+static_assert(sizeof(Toilet_C_LookAt) == 0x0000E0, "Wrong size on Toilet_C_LookAt");
 static_assert(offsetof(Toilet_C_LookAt, Player) == 0x000000, "Member 'Toilet_C_LookAt::Player' has a wrong offset!");
 static_assert(offsetof(Toilet_C_LookAt, Hit) == 0x000008, "Member 'Toilet_C_LookAt::Hit' has a wrong offset!");
 static_assert(offsetof(Toilet_C_LookAt, Return) == 0x000090, "Member 'Toilet_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(Toilet_C_LookAt, Text) == 0x000098, "Member 'Toilet_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(Toilet_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'Toilet_C_LookAt::boundObjectReplace' has a wrong offset!");
-static_assert(offsetof(Toilet_C_LookAt, CallFunc_MakeLiteralText_ReturnValue) == 0x0000B0, "Member 'Toilet_C_LookAt::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Toilet_C_LookAt, CallFunc_Conv_TextToString_ReturnValue) == 0x0000C8, "Member 'Toilet_C_LookAt::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Toilet_C_LookAt, Number) == 0x0000B0, "Member 'Toilet_C_LookAt::Number' has a wrong offset!");
+static_assert(offsetof(Toilet_C_LookAt, CallFunc_MakeLiteralText_ReturnValue) == 0x0000B8, "Member 'Toilet_C_LookAt::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Toilet_C_LookAt, CallFunc_Conv_TextToString_ReturnValue) == 0x0000D0, "Member 'Toilet_C_LookAt::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
 
 // Function toilet.toilet_C.isButtonUsed
 // 0x0001 (0x0001 - 0x0000)
@@ -101,8 +117,30 @@ static_assert(alignof(Toilet_C_IsButtonUsed) == 0x000001, "Wrong alignment on To
 static_assert(sizeof(Toilet_C_IsButtonUsed) == 0x000001, "Wrong size on Toilet_C_IsButtonUsed");
 static_assert(offsetof(Toilet_C_IsButtonUsed, Failed) == 0x000000, "Member 'Toilet_C_IsButtonUsed::Failed' has a wrong offset!");
 
+// Function toilet.toilet_C.upd
+// 0x0004 (0x0004 - 0x0000)
+struct Toilet_C_Upd final
+{
+public:
+	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Toilet_C_Upd) == 0x000004, "Wrong alignment on Toilet_C_Upd");
+static_assert(sizeof(Toilet_C_Upd) == 0x000004, "Wrong size on Toilet_C_Upd");
+static_assert(offsetof(Toilet_C_Upd, CallFunc_FClamp_ReturnValue) == 0x000000, "Member 'Toilet_C_Upd::CallFunc_FClamp_ReturnValue' has a wrong offset!");
+
+// Function toilet.toilet_C.gatherDataFromKey
+// 0x0001 (0x0001 - 0x0000)
+struct Toilet_C_GatherDataFromKey final
+{
+public:
+	bool                                          Gather;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Toilet_C_GatherDataFromKey) == 0x000001, "Wrong alignment on Toilet_C_GatherDataFromKey");
+static_assert(sizeof(Toilet_C_GatherDataFromKey) == 0x000001, "Wrong size on Toilet_C_GatherDataFromKey");
+static_assert(offsetof(Toilet_C_GatherDataFromKey, Gather) == 0x000000, "Member 'Toilet_C_GatherDataFromKey::Gather' has a wrong offset!");
+
 // Function toilet.toilet_C.getActionOptions
-// 0x0058 (0x0058 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct Toilet_C_GetActionOptions final
 {
 public:
@@ -112,40 +150,41 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
 };
 static_assert(alignof(Toilet_C_GetActionOptions) == 0x000008, "Wrong alignment on Toilet_C_GetActionOptions");
-static_assert(sizeof(Toilet_C_GetActionOptions) == 0x000058, "Wrong size on Toilet_C_GetActionOptions");
+static_assert(sizeof(Toilet_C_GetActionOptions) == 0x000060, "Wrong size on Toilet_C_GetActionOptions");
 static_assert(offsetof(Toilet_C_GetActionOptions, Player) == 0x000000, "Member 'Toilet_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Toilet_C_GetActionOptions, Component) == 0x000008, "Member 'Toilet_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Toilet_C_GetActionOptions, Actor) == 0x000010, "Member 'Toilet_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Toilet_C_GetActionOptions, Options) == 0x000018, "Member 'Toilet_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Toilet_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Toilet_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Toilet_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Toilet_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Toilet_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'Toilet_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Toilet_C_GetActionOptions, Number) == 0x000048, "Member 'Toilet_C_GetActionOptions::Number' has a wrong offset!");
+static_assert(offsetof(Toilet_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Toilet_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 // Function toilet.toilet_C.getData
-// 0x0280 (0x0280 - 0x0000)
+// 0x0270 (0x0270 - 0x0000)
 struct Toilet_C_GetData final
 {
 public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(Parm, OutParm, HasGetValueTypeHash)
 	struct FStruct_save                           CallFunc_getData_data;                             // 0x00C0(0x00C0)(HasGetValueTypeHash)
 	TArray<float>                                 K2Node_MakeArray_Array;                            // 0x0180(0x0010)(ReferenceParm)
-	struct FStruct_mFloat                         CallFunc_Array_Get_Item;                           // 0x0190(0x0010)(HasGetValueTypeHash)
-	struct FStruct_mFloat                         K2Node_MakeStruct_struct_mFloat;                   // 0x01A0(0x0010)(HasGetValueTypeHash)
-	TArray<struct FStruct_mFloat>                 K2Node_MakeArray_Array_1;                          // 0x01B0(0x0010)(ReferenceParm)
-	struct FStruct_save                           K2Node_SetFieldsInStruct_StructOut;                // 0x01C0(0x00C0)(HasGetValueTypeHash)
+	struct FStruct_mFloat                         K2Node_MakeStruct_struct_mFloat;                   // 0x0190(0x0010)(HasGetValueTypeHash)
+	TArray<struct FStruct_mFloat>                 K2Node_MakeArray_Array_1;                          // 0x01A0(0x0010)(ReferenceParm)
+	struct FStruct_save                           K2Node_SetFieldsInStruct_StructOut;                // 0x01B0(0x00C0)(HasGetValueTypeHash)
 };
 static_assert(alignof(Toilet_C_GetData) == 0x000010, "Wrong alignment on Toilet_C_GetData");
-static_assert(sizeof(Toilet_C_GetData) == 0x000280, "Wrong size on Toilet_C_GetData");
+static_assert(sizeof(Toilet_C_GetData) == 0x000270, "Wrong size on Toilet_C_GetData");
 static_assert(offsetof(Toilet_C_GetData, Data) == 0x000000, "Member 'Toilet_C_GetData::Data' has a wrong offset!");
 static_assert(offsetof(Toilet_C_GetData, CallFunc_getData_data) == 0x0000C0, "Member 'Toilet_C_GetData::CallFunc_getData_data' has a wrong offset!");
 static_assert(offsetof(Toilet_C_GetData, K2Node_MakeArray_Array) == 0x000180, "Member 'Toilet_C_GetData::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Toilet_C_GetData, CallFunc_Array_Get_Item) == 0x000190, "Member 'Toilet_C_GetData::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Toilet_C_GetData, K2Node_MakeStruct_struct_mFloat) == 0x0001A0, "Member 'Toilet_C_GetData::K2Node_MakeStruct_struct_mFloat' has a wrong offset!");
-static_assert(offsetof(Toilet_C_GetData, K2Node_MakeArray_Array_1) == 0x0001B0, "Member 'Toilet_C_GetData::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(Toilet_C_GetData, K2Node_SetFieldsInStruct_StructOut) == 0x0001C0, "Member 'Toilet_C_GetData::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
+static_assert(offsetof(Toilet_C_GetData, K2Node_MakeStruct_struct_mFloat) == 0x000190, "Member 'Toilet_C_GetData::K2Node_MakeStruct_struct_mFloat' has a wrong offset!");
+static_assert(offsetof(Toilet_C_GetData, K2Node_MakeArray_Array_1) == 0x0001A0, "Member 'Toilet_C_GetData::K2Node_MakeArray_Array_1' has a wrong offset!");
+static_assert(offsetof(Toilet_C_GetData, K2Node_SetFieldsInStruct_StructOut) == 0x0001B0, "Member 'Toilet_C_GetData::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
 
 // Function toilet.toilet_C.loadData
 // 0x00E0 (0x00E0 - 0x0000)
@@ -155,9 +194,10 @@ public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadData_return;                          // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_431B[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mFloat                         CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	float                                         CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Array_Get_Item_2;                         // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Toilet_C_LoadData) == 0x000010, "Wrong alignment on Toilet_C_LoadData");
 static_assert(sizeof(Toilet_C_LoadData) == 0x0000E0, "Wrong size on Toilet_C_LoadData");
@@ -166,6 +206,7 @@ static_assert(offsetof(Toilet_C_LoadData, Return) == 0x0000C0, "Member 'Toilet_C
 static_assert(offsetof(Toilet_C_LoadData, CallFunc_loadData_return) == 0x0000C1, "Member 'Toilet_C_LoadData::CallFunc_loadData_return' has a wrong offset!");
 static_assert(offsetof(Toilet_C_LoadData, CallFunc_Array_Get_Item) == 0x0000C8, "Member 'Toilet_C_LoadData::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(Toilet_C_LoadData, CallFunc_Array_Get_Item_1) == 0x0000D8, "Member 'Toilet_C_LoadData::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(Toilet_C_LoadData, CallFunc_Array_Get_Item_2) == 0x0000DC, "Member 'Toilet_C_LoadData::CallFunc_Array_Get_Item_2' has a wrong offset!");
 
 // Function toilet.toilet_C.ignoreSave
 // 0x0001 (0x0001 - 0x0000)
@@ -225,17 +266,52 @@ static_assert(sizeof(Toilet_C_Thrown) == 0x000008, "Wrong size on Toilet_C_Throw
 static_assert(offsetof(Toilet_C_Thrown, Player) == 0x000000, "Member 'Toilet_C_Thrown::Player' has a wrong offset!");
 
 // Function toilet.toilet_C.damageByPlayer
-// 0x0090 (0x0090 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct Toilet_C_DamageByPlayer final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         Damage;                                            // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Toilet_C_DamageByPlayer) == 0x000008, "Wrong alignment on Toilet_C_DamageByPlayer");
-static_assert(sizeof(Toilet_C_DamageByPlayer) == 0x000090, "Wrong size on Toilet_C_DamageByPlayer");
+static_assert(sizeof(Toilet_C_DamageByPlayer) == 0x000098, "Wrong size on Toilet_C_DamageByPlayer");
 static_assert(offsetof(Toilet_C_DamageByPlayer, Player) == 0x000000, "Member 'Toilet_C_DamageByPlayer::Player' has a wrong offset!");
 static_assert(offsetof(Toilet_C_DamageByPlayer, Hit) == 0x000008, "Member 'Toilet_C_DamageByPlayer::Hit' has a wrong offset!");
+static_assert(offsetof(Toilet_C_DamageByPlayer, Damage) == 0x000090, "Member 'Toilet_C_DamageByPlayer::Damage' has a wrong offset!");
+
+// Function toilet.toilet_C.playerUnequip
+// 0x0008 (0x0008 - 0x0000)
+struct Toilet_C_PlayerUnequip final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Toilet_C_PlayerUnequip) == 0x000008, "Wrong alignment on Toilet_C_PlayerUnequip");
+static_assert(sizeof(Toilet_C_PlayerUnequip) == 0x000008, "Wrong size on Toilet_C_PlayerUnequip");
+static_assert(offsetof(Toilet_C_PlayerUnequip, Player) == 0x000000, "Member 'Toilet_C_PlayerUnequip::Player' has a wrong offset!");
+
+// Function toilet.toilet_C.playerHold
+// 0x0008 (0x0008 - 0x0000)
+struct Toilet_C_PlayerHold final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Toilet_C_PlayerHold) == 0x000008, "Wrong alignment on Toilet_C_PlayerHold");
+static_assert(sizeof(Toilet_C_PlayerHold) == 0x000008, "Wrong size on Toilet_C_PlayerHold");
+static_assert(offsetof(Toilet_C_PlayerHold, Player) == 0x000000, "Member 'Toilet_C_PlayerHold::Player' has a wrong offset!");
+
+// Function toilet.toilet_C.playerR
+// 0x0008 (0x0008 - 0x0000)
+struct Toilet_C_PlayerR final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Toilet_C_PlayerR) == 0x000008, "Wrong alignment on Toilet_C_PlayerR");
+static_assert(sizeof(Toilet_C_PlayerR) == 0x000008, "Wrong size on Toilet_C_PlayerR");
+static_assert(offsetof(Toilet_C_PlayerR, Player) == 0x000000, "Member 'Toilet_C_PlayerR::Player' has a wrong offset!");
 
 // Function toilet.toilet_C.actionOptionIndex
 // 0x0098 (0x0098 - 0x0000)
@@ -244,85 +320,171 @@ struct Toilet_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Toilet_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Toilet_C_ActionOptionIndex");
 static_assert(sizeof(Toilet_C_ActionOptionIndex) == 0x000098, "Wrong size on Toilet_C_ActionOptionIndex");
 static_assert(offsetof(Toilet_C_ActionOptionIndex, Player) == 0x000000, "Member 'Toilet_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(Toilet_C_ActionOptionIndex, Hit) == 0x000008, "Member 'Toilet_C_ActionOptionIndex::Hit' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Toilet_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ActionOptionIndex, Action) == 0x000094, "Member 'Toilet_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ActionOptionIndex, Action) == 0x000090, "Member 'Toilet_C_ActionOptionIndex::Action' has a wrong offset!");
+
+// Function toilet.toilet_C.cleanSponge
+// 0x0010 (0x0010 - 0x0000)
+struct Toilet_C_CleanSponge final
+{
+public:
+	float                                         Param_Clean;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          Player;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Toilet_C_CleanSponge) == 0x000008, "Wrong alignment on Toilet_C_CleanSponge");
+static_assert(sizeof(Toilet_C_CleanSponge) == 0x000010, "Wrong size on Toilet_C_CleanSponge");
+static_assert(offsetof(Toilet_C_CleanSponge, Param_Clean) == 0x000000, "Member 'Toilet_C_CleanSponge::Param_Clean' has a wrong offset!");
+static_assert(offsetof(Toilet_C_CleanSponge, Player) == 0x000008, "Member 'Toilet_C_CleanSponge::Player' has a wrong offset!");
 
 // Function toilet.toilet_C.ExecuteUbergraph_toilet
-// 0x0260 (0x0260 - 0x0000)
+// 0x0350 (0x0350 - 0x0000)
 struct Toilet_C_ExecuteUbergraph_toilet final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_431C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot;                     // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_2;                                // 0x0020(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          K2Node_Event_kick;                                 // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_431D[0x3];                                     // 0x00A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_Event_name;                                 // 0x00AC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_431E[0x4];                                     // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_1;                                // 0x00C8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_431F[0x3];                                     // 0x0151(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatMinusEquals_FloatOut;         // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4320[0x4];                                     // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USave_main_C*                           CallFunc_getMainSave_save_main;                    // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0174(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x0175(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4321[0xA];                                     // 0x0176(0x000A)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0180(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4322[0x7];                                     // 0x01B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWendussy_C*                            CallFunc_FinishSpawningActor_ReturnValue;          // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x01D0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x025C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_progressAdvancement_finished;             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_progressAdvancement_name;                 // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_7;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_2;                                // 0x0018(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          K2Node_Event_kick;                                 // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_Event_name;                                 // 0x00A4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_1;                                // 0x00C0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         K2Node_Event_damage;                               // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_169[0x3];                                      // 0x0169(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatMinusEquals_FloatOut;         // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_174[0x4];                                      // 0x0174(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USave_main_C*                           CallFunc_getMainSave_save_main;                    // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_18C[0x4];                                      // 0x018C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0190(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1C1[0x7];                                      // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x01D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1D2[0x6];                                      // 0x01D2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class AWendussy_C*                            CallFunc_FinishSpawningActor_ReturnValue;          // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E4[0x4];                                      // 0x01E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x01F0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_279[0x7];                                      // 0x0279(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot;                     // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_clean;                                // 0x0288(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_28C[0x4];                                      // 0x028C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x0298(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x029C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x029D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_29E[0x2];                                      // 0x029E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x02A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x02A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x02A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x02B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x02C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x02CC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x02D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x02E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x02F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x02F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x02FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0300(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0304(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0310(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x031C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_1;        // 0x0320(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0324(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_325[0x3];                                      // 0x0325(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0328(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_VectorVector_ReturnValue;        // 0x0334(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_335[0x3];                                      // 0x0335(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x0338(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0344(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatMinusEquals_FloatOut_1;       // 0x0348(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x034C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Toilet_C_ExecuteUbergraph_toilet) == 0x000010, "Wrong alignment on Toilet_C_ExecuteUbergraph_toilet");
-static_assert(sizeof(Toilet_C_ExecuteUbergraph_toilet) == 0x000260, "Wrong size on Toilet_C_ExecuteUbergraph_toilet");
+static_assert(sizeof(Toilet_C_ExecuteUbergraph_toilet) == 0x000350, "Wrong size on Toilet_C_ExecuteUbergraph_toilet");
 static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, EntryPoint) == 0x000000, "Member 'Toilet_C_ExecuteUbergraph_toilet::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_getSaveSlot_saveSlot) == 0x000008, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_getSaveSlot_saveSlot' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, Temp_int_Variable) == 0x000010, "Member 'Toilet_C_ExecuteUbergraph_toilet::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x000014, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_player_3) == 0x000018, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_player_3' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_hit_2) == 0x000020, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_hit_2' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_kick) == 0x0000A8, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_kick' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_name) == 0x0000AC, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_name' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_player_2) == 0x0000B8, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_player_2' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_player_1) == 0x0000C0, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_hit_1) == 0x0000C8, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_hit_1' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000150, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000154, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_VictoryFloatMinusEquals_FloatOut) == 0x000158, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_VictoryFloatMinusEquals_FloatOut' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_getMainSave_save_main) == 0x000160, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_getMainSave_save_main' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000168, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_Add_IntInt_ReturnValue) == 0x000170, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000174, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000175, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_GetTransform_ReturnValue) == 0x000180, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_BooleanAND_ReturnValue) == 0x0001B0, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0001B8, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_FinishSpawningActor_ReturnValue) == 0x0001C0, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_player) == 0x0001C8, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_hit) == 0x0001D0, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_index) == 0x000258, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_action) == 0x00025C, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_progressAdvancement_finished) == 0x000004, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_progressAdvancement_finished' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_progressAdvancement_name) == 0x000008, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_progressAdvancement_name' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_player_7) == 0x000010, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_player_7' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_hit_2) == 0x000018, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_hit_2' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_kick) == 0x0000A0, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_kick' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_name) == 0x0000A4, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_name' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_player_6) == 0x0000B0, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_player_6' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_player_5) == 0x0000B8, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_player_5' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_hit_1) == 0x0000C0, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_hit_1' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_damage) == 0x000148, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_damage' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_player_4) == 0x000150, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_player_4' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_player_3) == 0x000158, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_player_3' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_player_2) == 0x000160, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_player_2' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000168, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x00016C, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_VictoryFloatMinusEquals_FloatOut) == 0x000170, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_VictoryFloatMinusEquals_FloatOut' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_getMainSave_save_main) == 0x000178, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_getMainSave_save_main' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000180, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_Add_IntInt_ReturnValue) == 0x000188, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_GetTransform_ReturnValue) == 0x000190, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0001C0, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0001C8, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x0001D0, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_BooleanAND_ReturnValue) == 0x0001D1, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_FinishSpawningActor_ReturnValue) == 0x0001D8, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, Temp_int_Variable) == 0x0001E0, "Member 'Toilet_C_ExecuteUbergraph_toilet::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_player_1) == 0x0001E8, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_hit) == 0x0001F0, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_action) == 0x000278, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_getSaveSlot_saveSlot) == 0x000280, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_getSaveSlot_saveSlot' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_clean) == 0x000288, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_clean' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, K2Node_Event_player) == 0x000290, "Member 'Toilet_C_ExecuteUbergraph_toilet::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x000298, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_BreakHitResult_bBlockingHit) == 0x00029C, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_BreakHitResult_bInitialOverlap) == 0x00029D, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_BreakHitResult_Time) == 0x0002A0, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_BreakHitResult_Distance) == 0x0002A4, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_BreakHitResult_Location) == 0x0002A8, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_BreakHitResult_ImpactPoint) == 0x0002B4, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_BreakHitResult_Normal) == 0x0002C0, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_BreakHitResult_ImpactNormal) == 0x0002CC, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_BreakHitResult_PhysMat) == 0x0002D8, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_BreakHitResult_HitActor) == 0x0002E0, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_BreakHitResult_HitComponent) == 0x0002E8, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_BreakHitResult_HitBoneName) == 0x0002F0, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_BreakHitResult_HitItem) == 0x0002F8, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_BreakHitResult_ElementIndex) == 0x0002FC, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_BreakHitResult_FaceIndex) == 0x000300, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_BreakHitResult_TraceStart) == 0x000304, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_BreakHitResult_TraceEnd) == 0x000310, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00031C, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_VictoryFloatPlusEquals_FloatOut_1) == 0x000320, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_VictoryFloatPlusEquals_FloatOut_1' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_Less_FloatFloat_ReturnValue) == 0x000324, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000328, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_NotEqual_VectorVector_ReturnValue) == 0x000334, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_NotEqual_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_VLerp_ReturnValue) == 0x000338, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_VLerp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_RandomFloatInRange_ReturnValue) == 0x000344, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_VictoryFloatMinusEquals_FloatOut_1) == 0x000348, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_VictoryFloatMinusEquals_FloatOut_1' has a wrong offset!");
+static_assert(offsetof(Toilet_C_ExecuteUbergraph_toilet, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x00034C, "Member 'Toilet_C_ExecuteUbergraph_toilet::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
 
 }
 

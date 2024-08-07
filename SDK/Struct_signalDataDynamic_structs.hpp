@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Enum_freq_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Struct_byteImage_structs.hpp"
-#include "Enum_freq_structs.hpp"
 #include "Enum_quality_structs.hpp"
 #include "Enum_objectType_structs.hpp"
 
@@ -27,13 +27,13 @@ struct FStruct_signalDataDynamic final
 public:
 	class FString                                 Name_15_4DC53B564EDE34E0A8A16A92BD26B4AD;          // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	int32                                         Level_8_986E7CB3437BFD9FC9F6DF824C794EA8;          // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F9E[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Id_26_DD9E8AA643A0BF449C8D1E8993752C16;            // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	float                                         Size_4_C0BC00CB4E2BC1C588F54A9817B305BC;           // 0x0028(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Decoded_5_A9CAC26F480C342A406FFFB77DD0AB68;        // 0x002C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FDateTime                              Date_12_F50EB15345B9D56ABE75F0BEF6FBD1E1;          // 0x0030(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsCopy_18_CDA9083D42C1928C15981B83A970D261;        // 0x0038(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F9F[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Polarity_21_0FB3FE464F37A2FB75F40DB7178528EC;      // 0x003C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              SignalLocation_36_9224BE954D1F5B5B6E90B987873DA5E4; // 0x0040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Object_29_E761FBB84E89C2B5F7FEC98F5EB54F9E;        // 0x0048(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

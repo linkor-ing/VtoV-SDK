@@ -18,14 +18,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_food_soap.prop_food_soap_C
-// 0x0018 (0x03D8 - 0x03C0)
+// 0x0018 (0x03E8 - 0x03D0)
 class AProp_food_soap_C final : public AProp_food_C
 {
 public:
-	uint8                                         Pad_3F54[0x4];                                     // 0x03BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_food_soap_C;                   // 0x03C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   StaticMesh1;                                       // 0x03C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Foam;                                              // 0x03D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_food_soap_C;                   // 0x03D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UStaticMeshComponent*                   StaticMesh1;                                       // 0x03D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Foam;                                              // 0x03E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_food_soap(int32 EntryPoint);
@@ -45,10 +44,10 @@ public:
 	}
 };
 static_assert(alignof(AProp_food_soap_C) == 0x000008, "Wrong alignment on AProp_food_soap_C");
-static_assert(sizeof(AProp_food_soap_C) == 0x0003D8, "Wrong size on AProp_food_soap_C");
-static_assert(offsetof(AProp_food_soap_C, UberGraphFrame_Prop_food_soap_C) == 0x0003C0, "Member 'AProp_food_soap_C::UberGraphFrame_Prop_food_soap_C' has a wrong offset!");
-static_assert(offsetof(AProp_food_soap_C, StaticMesh1) == 0x0003C8, "Member 'AProp_food_soap_C::StaticMesh1' has a wrong offset!");
-static_assert(offsetof(AProp_food_soap_C, Foam) == 0x0003D0, "Member 'AProp_food_soap_C::Foam' has a wrong offset!");
+static_assert(sizeof(AProp_food_soap_C) == 0x0003E8, "Wrong size on AProp_food_soap_C");
+static_assert(offsetof(AProp_food_soap_C, UberGraphFrame_Prop_food_soap_C) == 0x0003D0, "Member 'AProp_food_soap_C::UberGraphFrame_Prop_food_soap_C' has a wrong offset!");
+static_assert(offsetof(AProp_food_soap_C, StaticMesh1) == 0x0003D8, "Member 'AProp_food_soap_C::StaticMesh1' has a wrong offset!");
+static_assert(offsetof(AProp_food_soap_C, Foam) == 0x0003E0, "Member 'AProp_food_soap_C::Foam' has a wrong offset!");
 
 }
 

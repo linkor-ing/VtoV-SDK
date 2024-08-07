@@ -232,5 +232,77 @@ void ULib_obj_C::Obj_pawn(class UObject* __WorldContext, TArray<EObjectTypeQuery
 		*Obj = std::move(Parms.Obj);
 }
 
+
+// Function lib_obj.lib_obj_C.obj_dynPhysPawn
+// (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<EObjectTypeQuery>                Obj                                                    (Parm, OutParm)
+
+void ULib_obj_C::Obj_dynPhysPawn(class UObject* __WorldContext, TArray<EObjectTypeQuery>* Obj)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("lib_obj_C", "obj_dynPhysPawn");
+
+	Params::Lib_obj_C_Obj_dynPhysPawn Parms{};
+
+	Parms.__WorldContext = __WorldContext;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	if (Obj != nullptr)
+		*Obj = std::move(Parms.Obj);
+}
+
+
+// Function lib_obj.lib_obj_C.obj_physPawn
+// (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<EObjectTypeQuery>                Obj                                                    (Parm, OutParm)
+
+void ULib_obj_C::Obj_physPawn(class UObject* __WorldContext, TArray<EObjectTypeQuery>* Obj)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("lib_obj_C", "obj_physPawn");
+
+	Params::Lib_obj_C_Obj_physPawn Parms{};
+
+	Parms.__WorldContext = __WorldContext;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	if (Obj != nullptr)
+		*Obj = std::move(Parms.Obj);
+}
+
+
+// Function lib_obj.lib_obj_C.obj_statDynPawn
+// (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<EObjectTypeQuery>                Obj                                                    (Parm, OutParm)
+
+void ULib_obj_C::Obj_statDynPawn(class UObject* __WorldContext, TArray<EObjectTypeQuery>* Obj)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("lib_obj_C", "obj_statDynPawn");
+
+	Params::Lib_obj_C_Obj_statDynPawn Parms{};
+
+	Parms.__WorldContext = __WorldContext;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	if (Obj != nullptr)
+		*Obj = std::move(Parms.Obj);
+}
+
 }
 

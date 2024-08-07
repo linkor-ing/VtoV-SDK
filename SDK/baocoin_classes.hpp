@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK
@@ -34,9 +34,12 @@ public:
 	void ExecuteUbergraph_baocoin(int32 EntryPoint);
 	void ReceiveTick(float DeltaSeconds);
 	void BndEvt__baocoin_Sphere_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
+	void PlayerR(class AMainPlayer_C* Player);
+	void PlayerHold(class AMainPlayer_C* Player);
+	void PlayerUnequip(class AMainPlayer_C* Player);
 	void UpdateStrAgl();
-	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit);
+	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage);
 	void Thrown(class AMainPlayer_C* Player);
 	void broken_fire();
 	void broken();
@@ -44,6 +47,9 @@ public:
 	void Kicked(bool Kick);
 	void Player_use(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void DriveDetached();
+	void HookTension(class AHook_C* Hook);
+	void CleanSponge(float Clean, class AMainPlayer_C* Player);
+	void Crafted();
 	void Hooked(class AHook_C* Hook);
 	void AttemptIgnite();
 	void PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
@@ -65,7 +71,7 @@ public:
 	void Exploded(float Damage, const struct FVector& Location);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
-	void ReceivedPhyiscsDamage();
+	void ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot);
 	void Microwave();
 	void Ignite(float Fuel);
 	void FireDamage(float Damage);
@@ -88,10 +94,11 @@ public:
 	void AsProp(class AProp_C** Return);
 	void CanPickup(bool* Return);
 	void NoRespawn(bool Param_NoRespawn, bool* Return);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
 	void IsButtonUsed(bool* Failed);
+	void LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage);
 	void GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 	void SetPath(const TArray<struct FVector>& Path, bool* Return);
 	void GetOnlyKey(class FString* Key);
 	void ProcessKeys(bool* Return);
@@ -99,6 +106,7 @@ public:
 	void GetKey(class FString* Key);
 	void ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return);
 	void SkipRadial(bool* Skip);
+	void GetPriceMultiplier(float* PriceMult);
 
 public:
 	static class UClass* StaticClass()

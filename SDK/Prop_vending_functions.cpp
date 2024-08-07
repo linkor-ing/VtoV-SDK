@@ -159,8 +159,9 @@ void AProp_vending_C::UserConstructionScript()
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_vending_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
+void AProp_vending_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -182,6 +183,9 @@ void AProp_vending_C::LookAt(class AMainPlayer_C* Player, const struct FHitResul
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -194,8 +198,9 @@ void AProp_vending_C::LookAt(class AMainPlayer_C* Player, const struct FHitResul
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_vending_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
+void AProp_vending_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -218,6 +223,9 @@ void AProp_vending_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimi
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 }

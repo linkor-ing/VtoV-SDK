@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Struct_save_structs.hpp"
 #include "Struct_settings_structs.hpp"
+#include "Struct_save_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
@@ -20,30 +20,51 @@ namespace SDK::Params
 {
 
 // Function ui_arcade_invaders.ui_arcade_invaders_C.ExecuteUbergraph_ui_arcade_invaders
-// 0x0118 (0x0118 - 0x0000)
+// 0x0150 (0x0150 - 0x0000)
 struct Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2664[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          CallFunc_getMainPlayer_AsMain_Player;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0018(0x00CC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2665[0x4];                                     // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   K2Node_Event_key;                                  // 0x00E8(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed;                              // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2666[0x3];                                     // 0x0101(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Event_color;                                // 0x0104(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0018(0x00F0)(HasGetValueTypeHash)
+	struct FKey                                   K2Node_Event_key;                                  // 0x0108(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed;                              // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_121[0x3];                                      // 0x0121(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           K2Node_Event_color;                                // 0x0124(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_134[0x4];                                      // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUmg_texturePicker_C*                   K2Node_Event_picker;                               // 0x0138(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_Event_texture;                              // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_index;                                // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders) == 0x000008, "Wrong alignment on Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders");
-static_assert(sizeof(Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders) == 0x000118, "Wrong size on Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders");
+static_assert(sizeof(Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders) == 0x000150, "Wrong size on Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders");
 static_assert(offsetof(Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders, EntryPoint) == 0x000000, "Member 'Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders, CallFunc_getMainPlayer_AsMain_Player) == 0x000008, "Member 'Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders::CallFunc_getMainPlayer_AsMain_Player' has a wrong offset!");
 static_assert(offsetof(Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders, K2Node_Event_gamemode) == 0x000010, "Member 'Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders::K2Node_Event_gamemode' has a wrong offset!");
 static_assert(offsetof(Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders, K2Node_Event_settings) == 0x000018, "Member 'Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders::K2Node_Event_settings' has a wrong offset!");
-static_assert(offsetof(Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders, K2Node_Event_key) == 0x0000E8, "Member 'Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders::K2Node_Event_key' has a wrong offset!");
-static_assert(offsetof(Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders, K2Node_Event_pressed) == 0x000100, "Member 'Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders::K2Node_Event_pressed' has a wrong offset!");
-static_assert(offsetof(Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders, K2Node_Event_color) == 0x000104, "Member 'Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders::K2Node_Event_color' has a wrong offset!");
+static_assert(offsetof(Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders, K2Node_Event_key) == 0x000108, "Member 'Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders::K2Node_Event_key' has a wrong offset!");
+static_assert(offsetof(Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders, K2Node_Event_pressed) == 0x000120, "Member 'Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders::K2Node_Event_pressed' has a wrong offset!");
+static_assert(offsetof(Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders, K2Node_Event_color) == 0x000124, "Member 'Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders::K2Node_Event_color' has a wrong offset!");
+static_assert(offsetof(Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders, K2Node_Event_picker) == 0x000138, "Member 'Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders::K2Node_Event_picker' has a wrong offset!");
+static_assert(offsetof(Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders, K2Node_Event_texture) == 0x000140, "Member 'Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders::K2Node_Event_texture' has a wrong offset!");
+static_assert(offsetof(Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders, K2Node_Event_index) == 0x000148, "Member 'Ui_arcade_invaders_C_ExecuteUbergraph_ui_arcade_invaders::K2Node_Event_index' has a wrong offset!");
+
+// Function ui_arcade_invaders.ui_arcade_invaders_C.texturePickerApply
+// 0x0018 (0x0018 - 0x0000)
+struct Ui_arcade_invaders_C_TexturePickerApply final
+{
+public:
+	class UUmg_texturePicker_C*                   Picker;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Param_Index;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Ui_arcade_invaders_C_TexturePickerApply) == 0x000008, "Wrong alignment on Ui_arcade_invaders_C_TexturePickerApply");
+static_assert(sizeof(Ui_arcade_invaders_C_TexturePickerApply) == 0x000018, "Wrong size on Ui_arcade_invaders_C_TexturePickerApply");
+static_assert(offsetof(Ui_arcade_invaders_C_TexturePickerApply, Picker) == 0x000000, "Member 'Ui_arcade_invaders_C_TexturePickerApply::Picker' has a wrong offset!");
+static_assert(offsetof(Ui_arcade_invaders_C_TexturePickerApply, Texture) == 0x000008, "Member 'Ui_arcade_invaders_C_TexturePickerApply::Texture' has a wrong offset!");
+static_assert(offsetof(Ui_arcade_invaders_C_TexturePickerApply, Param_Index) == 0x000010, "Member 'Ui_arcade_invaders_C_TexturePickerApply::Param_Index' has a wrong offset!");
 
 // Function ui_arcade_invaders.ui_arcade_invaders_C.applyColor
 // 0x0010 (0x0010 - 0x0000)
@@ -70,14 +91,14 @@ static_assert(offsetof(Ui_arcade_invaders_C_AnyKey, Key) == 0x000000, "Member 'U
 static_assert(offsetof(Ui_arcade_invaders_C_AnyKey, Pressed) == 0x000018, "Member 'Ui_arcade_invaders_C_AnyKey::Pressed' has a wrong offset!");
 
 // Function ui_arcade_invaders.ui_arcade_invaders_C.settingsApplied
-// 0x00CC (0x00CC - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct Ui_arcade_invaders_C_SettingsApplied final
 {
 public:
-	struct FStruct_settings                       Settings;                                          // 0x0000(0x00CC)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       Settings;                                          // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(Ui_arcade_invaders_C_SettingsApplied) == 0x000004, "Wrong alignment on Ui_arcade_invaders_C_SettingsApplied");
-static_assert(sizeof(Ui_arcade_invaders_C_SettingsApplied) == 0x0000CC, "Wrong size on Ui_arcade_invaders_C_SettingsApplied");
+static_assert(alignof(Ui_arcade_invaders_C_SettingsApplied) == 0x000008, "Wrong alignment on Ui_arcade_invaders_C_SettingsApplied");
+static_assert(sizeof(Ui_arcade_invaders_C_SettingsApplied) == 0x0000F0, "Wrong size on Ui_arcade_invaders_C_SettingsApplied");
 static_assert(offsetof(Ui_arcade_invaders_C_SettingsApplied, Settings) == 0x000000, "Member 'Ui_arcade_invaders_C_SettingsApplied::Settings' has a wrong offset!");
 
 // Function ui_arcade_invaders.ui_arcade_invaders_C.stuffUpgraded

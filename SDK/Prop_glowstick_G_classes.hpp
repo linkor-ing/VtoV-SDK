@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_glowstick_G.prop_glowstick_G_C
-// 0x0000 (0x03F0 - 0x03F0)
+// 0x0000 (0x0400 - 0x0400)
 class AProp_glowstick_G_C final : public AProp_glowstick_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_glowstick_G_C) == 0x000010, "Wrong alignment on AProp_glowstick_G_C");
-static_assert(sizeof(AProp_glowstick_G_C) == 0x0003F0, "Wrong size on AProp_glowstick_G_C");
+static_assert(sizeof(AProp_glowstick_G_C) == 0x000400, "Wrong size on AProp_glowstick_G_C");
 
 }
 

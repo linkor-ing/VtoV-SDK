@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK
@@ -46,46 +46,49 @@ public:
 	class UUmg_telescope_C*                       Widget;                                            // 0x02B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMarsStruct_build_Skeleton_AnimBlueprint_C* Anim;                                              // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Looking;                                           // 0x02C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_25F8[0x3];                                     // 0x02C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C9[0x3];                                      // 0x02C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Rot;                                               // 0x02CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         buildStatus_1;                                     // 0x02D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         buildStatus_2;                                     // 0x02D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         buildStatus_3;                                     // 0x02D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_25F9[0x4];                                     // 0x02DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DC[0x4];                                      // 0x02DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               Dynmat_deco;                                       // 0x02E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               Dynmat_lights_1;                                   // 0x02E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               Dynmat_lights_2;                                   // 0x02F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               Dynmat_body;                                       // 0x02F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Fast;                                              // 0x0300(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Reset;                                             // 0x0301(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_25FA[0x2];                                     // 0x0302(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_302[0x2];                                      // 0x0302(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         A;                                                 // 0x0304(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         B;                                                 // 0x0308(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Move_up;                                           // 0x030C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Move_right;                                        // 0x030D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Move_zoomIn;                                       // 0x030E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_25FB[0x1];                                     // 0x030F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30F[0x1];                                      // 0x030F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Rot_Z;                                             // 0x0310(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Rot_Y;                                             // 0x0314(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Rot_zoom;                                          // 0x0318(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Move_down;                                         // 0x031C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Move_left;                                         // 0x031D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Move_zoomOut;                                      // 0x031E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_25FC[0x1];                                     // 0x031F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31F[0x1];                                      // 0x031F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Speed;                                             // 0x0320(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_25FD[0x4];                                     // 0x032C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_32C[0x4];                                      // 0x032C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ATelescopeMars_C*                       O_mars;                                            // 0x0330(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ATelescope_moon_C*                      O_moon;                                            // 0x0338(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               Dynmat;                                            // 0x0340(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_telescope(int32 EntryPoint);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
 	void ImpactDamage(float Damage, const struct FHitResult& Hit, class AActor* Actor, const struct FVector& Impact);
 	void ReceiveTick(float DeltaSeconds);
 	void ReceiveBeginPlay();
+	void PlayerR(class AMainPlayer_C* Player);
+	void PlayerHold(class AMainPlayer_C* Player);
+	void PlayerUnequip(class AMainPlayer_C* Player);
 	void UpdateStrAgl();
-	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit);
+	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage);
 	void Thrown(class AMainPlayer_C* Player);
 	void broken_fire();
 	void broken();
@@ -93,6 +96,9 @@ public:
 	void Kicked(bool Kick);
 	void Player_use(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void DriveDetached();
+	void HookTension(class AHook_C* Hook);
+	void CleanSponge(float Clean, class AMainPlayer_C* Player);
+	void Crafted();
 	void Hooked(class AHook_C* Hook);
 	void AttemptIgnite();
 	void PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
@@ -114,7 +120,7 @@ public:
 	void Exploded(float Damage, const struct FVector& Location);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
-	void ReceivedPhyiscsDamage();
+	void ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot);
 	void Microwave();
 	void Ignite(float Fuel);
 	void FireDamage(float Damage);
@@ -132,13 +138,14 @@ public:
 	void EnterWaterOrigin(class AWaterVolume_C* Water);
 	void LeaveWater(class AWaterVolume_C* Water);
 	void EnterWater(class AWaterVolume_C* Water);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
 	void IsButtonUsed(bool* Failed);
 	void NoRespawn(bool Param_NoRespawn, bool* Return);
 	void CanPickup(bool* Return);
 	void AsProp(class AProp_C** Return);
 	void CanBePutInContainer(bool* Return);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 	void SetPath(const TArray<struct FVector>& Path, bool* Return);
 	void GetOnlyKey(class FString* Key);
 	void ProcessKeys(bool* Return);
@@ -147,6 +154,7 @@ public:
 	void ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return);
 	void GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled);
 	void SkipRadial(bool* Skip);
+	void GetPriceMultiplier(float* PriceMult);
 
 public:
 	static class UClass* StaticClass()

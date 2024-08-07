@@ -20,14 +20,14 @@ struct Umg_settingsSlot_gotoAssets_C_ExecuteUbergraph_umg_settingsSlot_gotoAsset
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2097[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_userAssetFolder_path;                     // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetAssetFolder_path;                      // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Umg_settingsSlot_gotoAssets_C_ExecuteUbergraph_umg_settingsSlot_gotoAssets) == 0x000008, "Wrong alignment on Umg_settingsSlot_gotoAssets_C_ExecuteUbergraph_umg_settingsSlot_gotoAssets");
 static_assert(sizeof(Umg_settingsSlot_gotoAssets_C_ExecuteUbergraph_umg_settingsSlot_gotoAssets) == 0x000028, "Wrong size on Umg_settingsSlot_gotoAssets_C_ExecuteUbergraph_umg_settingsSlot_gotoAssets");
 static_assert(offsetof(Umg_settingsSlot_gotoAssets_C_ExecuteUbergraph_umg_settingsSlot_gotoAssets, EntryPoint) == 0x000000, "Member 'Umg_settingsSlot_gotoAssets_C_ExecuteUbergraph_umg_settingsSlot_gotoAssets::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Umg_settingsSlot_gotoAssets_C_ExecuteUbergraph_umg_settingsSlot_gotoAssets, CallFunc_userAssetFolder_path) == 0x000008, "Member 'Umg_settingsSlot_gotoAssets_C_ExecuteUbergraph_umg_settingsSlot_gotoAssets::CallFunc_userAssetFolder_path' has a wrong offset!");
+static_assert(offsetof(Umg_settingsSlot_gotoAssets_C_ExecuteUbergraph_umg_settingsSlot_gotoAssets, CallFunc_GetAssetFolder_path) == 0x000008, "Member 'Umg_settingsSlot_gotoAssets_C_ExecuteUbergraph_umg_settingsSlot_gotoAssets::CallFunc_GetAssetFolder_path' has a wrong offset!");
 static_assert(offsetof(Umg_settingsSlot_gotoAssets_C_ExecuteUbergraph_umg_settingsSlot_gotoAssets, CallFunc_Concat_StrStr_ReturnValue) == 0x000018, "Member 'Umg_settingsSlot_gotoAssets_C_ExecuteUbergraph_umg_settingsSlot_gotoAssets::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
 
 }

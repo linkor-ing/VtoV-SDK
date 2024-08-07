@@ -22,7 +22,7 @@ namespace SDK
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ANewBlueprint5_C::ExecuteUbergraph_NewBlueprint5(int32 EntryPoint)
+void NewBlueprint5::ANewBlueprint5_C::ExecuteUbergraph_NewBlueprint5(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
@@ -40,7 +40,7 @@ void ANewBlueprint5_C::ExecuteUbergraph_NewBlueprint5(int32 EntryPoint)
 // Function NewBlueprint5.NewBlueprint5_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
-void ANewBlueprint5_C::ReceiveBeginPlay()
+void NewBlueprint5::ANewBlueprint5_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
@@ -56,7 +56,7 @@ void ANewBlueprint5_C::ReceiveBeginPlay()
 // Parameters:
 // float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ANewBlueprint5_C::ReceiveTick(float DeltaSeconds)
+void NewBlueprint5::ANewBlueprint5_C::ReceiveTick(float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
@@ -74,7 +74,7 @@ void ANewBlueprint5_C::ReceiveTick(float DeltaSeconds)
 // Function NewBlueprint5.NewBlueprint5_C.UserConstructionScript
 // (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ANewBlueprint5_C::UserConstructionScript()
+void NewBlueprint5::ANewBlueprint5_C::UserConstructionScript()
 {
 	static class UFunction* Func = nullptr;
 

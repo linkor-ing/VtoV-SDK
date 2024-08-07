@@ -211,6 +211,30 @@ void UUmg_paperDraw_C::ApplyColor(const struct FLinearColor& Param_Color)
 }
 
 
+// Function umg_paperDraw.umg_paperDraw_C.texturePickerApply
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UUmg_paperDraw_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_paperDraw_C", "texturePickerApply");
+
+	Params::Umg_paperDraw_C_TexturePickerApply Parms{};
+
+	Parms.Picker = Picker;
+	Parms.Texture = Texture;
+	Parms.Param_Index = Param_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function umg_paperDraw.umg_paperDraw_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -484,7 +508,7 @@ void UUmg_paperDraw_C::BndEvt__umg_paperDraw_slider_H_K2Node_ComponentBoundEvent
 // Function umg_paperDraw.umg_paperDraw_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void UUmg_paperDraw_C::SettingsApplied(const struct FStruct_settings& Settings)
 {

@@ -135,6 +135,318 @@ void AMainGamemode_C::ExecuteUbergraph_mainGamemode(int32 EntryPoint)
 }
 
 
+// Function mainGamemode.mainGamemode_C.ticker_lakeMonsert
+// (BlueprintCallable, BlueprintEvent)
+
+void AMainGamemode_C::Ticker_lakeMonsert()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "ticker_lakeMonsert");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function mainGamemode.mainGamemode_C.ticker_lockerhead
+// (BlueprintCallable, BlueprintEvent)
+
+void AMainGamemode_C::Ticker_lockerhead()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "ticker_lockerhead");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function mainGamemode.mainGamemode_C.CustomEvent_3
+// (BlueprintCallable, BlueprintEvent)
+
+void AMainGamemode_C::CustomEvent_3()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "CustomEvent_3");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function mainGamemode.mainGamemode_C.ticker_radiotowerPoof
+// (BlueprintCallable, BlueprintEvent)
+
+void AMainGamemode_C::Ticker_radiotowerPoof()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "ticker_radiotowerPoof");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function mainGamemode.mainGamemode_C.CustomEvent_1
+// (BlueprintCallable, BlueprintEvent)
+
+void AMainGamemode_C::CustomEvent_1()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "CustomEvent_1");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function mainGamemode.mainGamemode_C.CustomEvent_2
+// (BlueprintCallable, BlueprintEvent)
+
+void AMainGamemode_C::CustomEvent_2()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "CustomEvent_2");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function mainGamemode.mainGamemode_C.CustomEvent
+// (BlueprintCallable, BlueprintEvent)
+
+void AMainGamemode_C::CustomEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "CustomEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function mainGamemode.mainGamemode_C.flowerSpawner
+// (BlueprintCallable, BlueprintEvent)
+
+void AMainGamemode_C::FlowerSpawner()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "flowerSpawner");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function mainGamemode.mainGamemode_C.gorelockertest
+// (BlueprintCallable, BlueprintEvent)
+
+void AMainGamemode_C::Gorelockertest()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "gorelockertest");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function mainGamemode.mainGamemode_C.CustomEvent_4
+// (BlueprintCallable, BlueprintEvent)
+
+void AMainGamemode_C::CustomEvent_4()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "CustomEvent_4");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function mainGamemode.mainGamemode_C.CustomEvent_5
+// (BlueprintCallable, BlueprintEvent)
+
+void AMainGamemode_C::CustomEvent_5()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "CustomEvent_5");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function mainGamemode.mainGamemode_C.CustomEvent_6
+// (BlueprintCallable, BlueprintEvent)
+
+void AMainGamemode_C::CustomEvent_6()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "CustomEvent_6");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function mainGamemode.mainGamemode_C.CustomEvent_7
+// (BlueprintCallable, BlueprintEvent)
+
+void AMainGamemode_C::CustomEvent_7()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "CustomEvent_7");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function mainGamemode.mainGamemode_C.tickerFunguy
+// (BlueprintCallable, BlueprintEvent)
+
+void AMainGamemode_C::TickerFunguy()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "tickerFunguy");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function mainGamemode.mainGamemode_C.tickerBody
+// (BlueprintCallable, BlueprintEvent)
+
+void AMainGamemode_C::TickerBody()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "tickerBody");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function mainGamemode.mainGamemode_C.CustomEvent_10
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<uint8>                           DownloadedContent                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// EDownloadToMemoryResult                 Param_Result                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AMainGamemode_C::CustomEvent_10(const TArray<uint8>& DownloadedContent, EDownloadToMemoryResult Param_Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "CustomEvent_10");
+
+	Params::MainGamemode_C_CustomEvent_10 Parms{};
+
+	Parms.DownloadedContent = std::move(DownloadedContent);
+	Parms.Param_Result = Param_Result;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function mainGamemode.mainGamemode_C.CustomEvent_9
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   BytesReceived                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   ContentLength                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AMainGamemode_C::CustomEvent_9(const int32 BytesReceived, const int32 ContentLength)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "CustomEvent_9");
+
+	Params::MainGamemode_C_CustomEvent_9 Parms{};
+
+	Parms.BytesReceived = BytesReceived;
+	Parms.ContentLength = ContentLength;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function mainGamemode.mainGamemode_C.Completed
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<uint8>                           DownloadedContent                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// EDownloadToMemoryResult                 Param_Result                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AMainGamemode_C::Completed(const TArray<uint8>& DownloadedContent, EDownloadToMemoryResult Param_Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "Completed");
+
+	Params::MainGamemode_C_Completed Parms{};
+
+	Parms.DownloadedContent = std::move(DownloadedContent);
+	Parms.Param_Result = Param_Result;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function mainGamemode.mainGamemode_C.process
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   BytesReceived                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   ContentLength                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AMainGamemode_C::Process(const int32 BytesReceived, const int32 ContentLength)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "process");
+
+	Params::MainGamemode_C_Process Parms{};
+
+	Parms.BytesReceived = BytesReceived;
+	Parms.ContentLength = ContentLength;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function mainGamemode.mainGamemode_C.CustomEvent_8
+// (BlueprintCallable, BlueprintEvent)
+
+void AMainGamemode_C::CustomEvent_8()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "CustomEvent_8");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function mainGamemode.mainGamemode_C.checkATV
 // (BlueprintCallable, BlueprintEvent)
 
@@ -158,34 +470,6 @@ void AMainGamemode_C::Chk1()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("mainGamemode_C", "chk1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function mainGamemode.mainGamemode_C.ticker_lockerhead
-// (BlueprintCallable, BlueprintEvent)
-
-void AMainGamemode_C::Ticker_lockerhead()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("mainGamemode_C", "ticker_lockerhead");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function mainGamemode.mainGamemode_C.ticker_radiotowerPoof
-// (BlueprintCallable, BlueprintEvent)
-
-void AMainGamemode_C::Ticker_radiotowerPoof()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("mainGamemode_C", "ticker_radiotowerPoof");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -292,8 +576,9 @@ void AMainGamemode_C::AAA(bool bSuccess)
 // Parameters:
 // struct FVector                          NewLocation                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FRotator                         NewRotation                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Flash                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AMainGamemode_C::Photo(const struct FVector& NewLocation, const struct FRotator& NewRotation)
+void AMainGamemode_C::Photo(const struct FVector& NewLocation, const struct FRotator& NewRotation, bool Flash)
 {
 	static class UFunction* Func = nullptr;
 
@@ -304,6 +589,7 @@ void AMainGamemode_C::Photo(const struct FVector& NewLocation, const struct FRot
 
 	Parms.NewLocation = std::move(NewLocation);
 	Parms.NewRotation = std::move(NewRotation);
+	Parms.Flash = Flash;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -332,7 +618,7 @@ void AMainGamemode_C::SeVis(class UUserWidget* Target)
 // Function mainGamemode.mainGamemode_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void AMainGamemode_C::SettingsApplied(const struct FStruct_settings& Settings)
 {
@@ -368,8 +654,9 @@ void AMainGamemode_C::Autosave()
 // Parameters:
 // class AActor*                           Param_bed                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    DropItem                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IgnoreRagdoll                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AMainGamemode_C::Sleep(class AActor* Param_bed, bool DropItem)
+void AMainGamemode_C::Sleep(class AActor* Param_bed, bool DropItem, bool IgnoreRagdoll)
 {
 	static class UFunction* Func = nullptr;
 
@@ -380,6 +667,7 @@ void AMainGamemode_C::Sleep(class AActor* Param_bed, bool DropItem)
 
 	Parms.Param_bed = Param_bed;
 	Parms.DropItem = DropItem;
+	Parms.IgnoreRagdoll = IgnoreRagdoll;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -506,6 +794,30 @@ void AMainGamemode_C::ReceiveBeginPlay()
 		Func = Class->GetFunction("mainGamemode_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function mainGamemode.mainGamemode_C.texturePickerApply
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AMainGamemode_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "texturePickerApply");
+
+	Params::MainGamemode_C_TexturePickerApply Parms{};
+
+	Parms.Picker = Picker;
+	Parms.Texture = Texture;
+	Parms.Param_Index = Param_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -687,9 +999,9 @@ void AMainGamemode_C::GetCurrentSObject(struct FStruct_spaceObject* Data)
 // Function mainGamemode.mainGamemode_C.getSignalData
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_signal_data2             Data                                                   (Parm, OutParm, HasGetValueTypeHash)
+// struct FStruct_signal_data1             Data                                                   (Parm, OutParm, HasGetValueTypeHash)
 
-void AMainGamemode_C::GetSignalData(struct FStruct_signal_data2* Data)
+void AMainGamemode_C::GetSignalData(struct FStruct_signal_data1* Data)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1573,13 +1885,11 @@ void AMainGamemode_C::GetRadioStations()
 // Parameters:
 // class FString                           Param_Name                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 // bool                                    SkipMessages                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FStruct_customMesh               Mesh1                                                  (Parm, OutParm, HasGetValueTypeHash)
-// class UTexture2D*                       Tex1                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTexture2D*                       Tex_pbr1                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ImportConfig                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FStruct_multisectionCustomMesh   MultisectionMesh                                       (Parm, OutParm, HasGetValueTypeHash)
 // bool                                    Succ                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UTexture2D*                       Tex_normal1                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AMainGamemode_C::LoadPrinterMesh(const class FString& Param_Name, bool SkipMessages, struct FStruct_customMesh* Mesh1, class UTexture2D** Tex1, class UTexture2D** Tex_pbr1, bool* Succ, class UTexture2D** Tex_normal1)
+void AMainGamemode_C::LoadPrinterMesh(const class FString& Param_Name, bool SkipMessages, bool ImportConfig, struct FStruct_multisectionCustomMesh* MultisectionMesh, bool* Succ)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1590,23 +1900,15 @@ void AMainGamemode_C::LoadPrinterMesh(const class FString& Param_Name, bool Skip
 
 	Parms.Param_Name = std::move(Param_Name);
 	Parms.SkipMessages = SkipMessages;
+	Parms.ImportConfig = ImportConfig;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Mesh1 != nullptr)
-		*Mesh1 = std::move(Parms.Mesh1);
-
-	if (Tex1 != nullptr)
-		*Tex1 = Parms.Tex1;
-
-	if (Tex_pbr1 != nullptr)
-		*Tex_pbr1 = Parms.Tex_pbr1;
+	if (MultisectionMesh != nullptr)
+		*MultisectionMesh = std::move(Parms.MultisectionMesh);
 
 	if (Succ != nullptr)
 		*Succ = Parms.Succ;
-
-	if (Tex_normal1 != nullptr)
-		*Tex_normal1 = Parms.Tex_normal1;
 }
 
 
@@ -1631,15 +1933,15 @@ void AMainGamemode_C::LaunchServerMinigame(class UUmg_serverMinigame_C** Output_
 }
 
 
-// Function mainGamemode.mainGamemode_C.spawnBadSun
+// Function mainGamemode.mainGamemode_C.Spawn Bad Sun
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void AMainGamemode_C::SpawnBadSun()
+void AMainGamemode_C::Spawn_Bad_Sun()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("mainGamemode_C", "spawnBadSun");
+		Func = Class->GetFunction("mainGamemode_C", "Spawn Bad Sun");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1775,6 +2077,266 @@ void AMainGamemode_C::Chckcy()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("mainGamemode_C", "chckcy");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function mainGamemode.mainGamemode_C.openPicker
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<class UTexture2D*>               TexArray                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class AActor*                           ObjectApplyTo                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AMainGamemode_C::OpenPicker(TArray<class UTexture2D*>& TexArray, class AActor* ObjectApplyTo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "openPicker");
+
+	Params::MainGamemode_C_OpenPicker Parms{};
+
+	Parms.TexArray = std::move(TexArray);
+	Parms.ObjectApplyTo = ObjectApplyTo;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	TexArray = std::move(Parms.TexArray);
+}
+
+
+// Function mainGamemode.mainGamemode_C.addEffect
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             Effect                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Strength                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Param_Time                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IncrementStrength                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IncrementTime                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AMainGamemode_C::AddEffect(class FName Effect, float Strength, float Param_Time, bool IncrementStrength, bool IncrementTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "addEffect");
+
+	Params::MainGamemode_C_AddEffect Parms{};
+
+	Parms.Effect = Effect;
+	Parms.Strength = Strength;
+	Parms.Param_Time = Param_Time;
+	Parms.IncrementStrength = IncrementStrength;
+	Parms.IncrementTime = IncrementTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function mainGamemode.mainGamemode_C.setGatherers
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AMainGamemode_C::SetGatherers()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "setGatherers");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function mainGamemode.mainGamemode_C.findBuriedArea
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector                          Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AburiedItemsArea_C*               Array_Element                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AMainGamemode_C::FindBuriedArea(const struct FVector& Location, class AburiedItemsArea_C** Array_Element)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "findBuriedArea");
+
+	Params::MainGamemode_C_FindBuriedArea Parms{};
+
+	Parms.Location = std::move(Location);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Array_Element != nullptr)
+		*Array_Element = Parms.Array_Element;
+}
+
+
+// Function mainGamemode.mainGamemode_C.calculateAreaError
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   ErrorMargin                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AMainGamemode_C::CalculateAreaError(int32* ErrorMargin)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "calculateAreaError");
+
+	Params::MainGamemode_C_CalculateAreaError Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ErrorMargin != nullptr)
+		*ErrorMargin = Parms.ErrorMargin;
+}
+
+
+// Function mainGamemode.mainGamemode_C.calculateAreaError_0
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   ErrorMargin                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AMainGamemode_C::CalculateAreaError_0(int32* ErrorMargin)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "calculateAreaError_0");
+
+	Params::MainGamemode_C_CalculateAreaError_0 Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ErrorMargin != nullptr)
+		*ErrorMargin = Parms.ErrorMargin;
+}
+
+
+// Function mainGamemode.mainGamemode_C.NewFunction_0
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    NewParam                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AMainGamemode_C::NewFunction_0(bool* NewParam)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "NewFunction_0");
+
+	Params::MainGamemode_C_NewFunction_0 Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (NewParam != nullptr)
+		*NewParam = Parms.NewParam;
+}
+
+
+// Function mainGamemode.mainGamemode_C.getList
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                           Downloaded                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void AMainGamemode_C::GetList(const class FString& Downloaded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "getList");
+
+	Params::MainGamemode_C_GetList Parms{};
+
+	Parms.Downloaded = std::move(Downloaded);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function mainGamemode.mainGamemode_C.returnList
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                           T3_2                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+// class FString                           T3_1                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+// class FString                           T2_2                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+// class FString                           T2_1                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+// class FString                           T1_2                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+// class FString                           T1_1                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+// class FString                           B_B                                                    (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+// class FString                           B_A                                                    (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+// class FString                           Former                                                 (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+
+void AMainGamemode_C::ReturnList(class FString* T3_2, class FString* T3_1, class FString* T2_2, class FString* T2_1, class FString* T1_2, class FString* T1_1, class FString* B_B, class FString* B_A, class FString* Former)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "returnList");
+
+	Params::MainGamemode_C_ReturnList Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (T3_2 != nullptr)
+		*T3_2 = std::move(Parms.T3_2);
+
+	if (T3_1 != nullptr)
+		*T3_1 = std::move(Parms.T3_1);
+
+	if (T2_2 != nullptr)
+		*T2_2 = std::move(Parms.T2_2);
+
+	if (T2_1 != nullptr)
+		*T2_1 = std::move(Parms.T2_1);
+
+	if (T1_2 != nullptr)
+		*T1_2 = std::move(Parms.T1_2);
+
+	if (T1_1 != nullptr)
+		*T1_1 = std::move(Parms.T1_1);
+
+	if (B_B != nullptr)
+		*B_B = std::move(Parms.B_B);
+
+	if (B_A != nullptr)
+		*B_A = std::move(Parms.B_A);
+
+	if (Former != nullptr)
+		*Former = std::move(Parms.Former);
+}
+
+
+// Function mainGamemode.mainGamemode_C.getList_0
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                           Downloaded                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void AMainGamemode_C::GetList_0(const class FString& Downloaded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "getList_0");
+
+	Params::MainGamemode_C_GetList_0 Parms{};
+
+	Parms.Downloaded = std::move(Downloaded);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function mainGamemode.mainGamemode_C.NewFunction_1
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void AMainGamemode_C::NewFunction_1()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("mainGamemode_C", "NewFunction_1");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

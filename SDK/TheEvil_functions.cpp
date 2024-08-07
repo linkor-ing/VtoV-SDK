@@ -37,20 +37,6 @@ void ATheEvil_C::ExecuteUbergraph_theEvil(int32 EntryPoint)
 }
 
 
-// Function theEvil.theEvil_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ATheEvil_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("theEvil_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function theEvil.theEvil_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -89,6 +75,20 @@ void ATheEvil_C::CheckForEvil(bool* Evil)
 
 	if (Evil != nullptr)
 		*Evil = Parms.Evil;
+}
+
+
+// Function theEvil.theEvil_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ATheEvil_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("theEvil_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

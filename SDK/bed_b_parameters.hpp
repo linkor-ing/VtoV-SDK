@@ -17,7 +17,7 @@ namespace SDK::Params
 {
 
 // Function bed_b.bed_b_C.getActionOptions
-// 0x0048 (0x0048 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct bed_b_C_GetActionOptions final
 {
 public:
@@ -27,15 +27,17 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(bed_b_C_GetActionOptions) == 0x000008, "Wrong alignment on bed_b_C_GetActionOptions");
-static_assert(sizeof(bed_b_C_GetActionOptions) == 0x000048, "Wrong size on bed_b_C_GetActionOptions");
+static_assert(sizeof(bed_b_C_GetActionOptions) == 0x000050, "Wrong size on bed_b_C_GetActionOptions");
 static_assert(offsetof(bed_b_C_GetActionOptions, Player) == 0x000000, "Member 'bed_b_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(bed_b_C_GetActionOptions, Component) == 0x000008, "Member 'bed_b_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(bed_b_C_GetActionOptions, Actor) == 0x000010, "Member 'bed_b_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(bed_b_C_GetActionOptions, Options) == 0x000018, "Member 'bed_b_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(bed_b_C_GetActionOptions, Options_enum) == 0x000028, "Member 'bed_b_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(bed_b_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'bed_b_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
+static_assert(offsetof(bed_b_C_GetActionOptions, Number) == 0x000048, "Member 'bed_b_C_GetActionOptions::Number' has a wrong offset!");
 
 }
 

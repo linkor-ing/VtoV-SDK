@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass umg_settings.umg_settings_C
-// 0x0410 (0x0670 - 0x0260)
+// 0x0450 (0x06B0 - 0x0260)
 class UUmg_settings_C final : public UUserWidget
 {
 public:
@@ -73,60 +73,63 @@ public:
 	class UUmg_settingsSlot_C*                    Umg_grabUp;                                        // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UUmg_settingsSlot_C*                    Umg_GReport;                                       // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UUmg_settingsSlot_C*                    Umg_GShowhovertext;                                // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_ratio_C*              Umg_MsettingsSlot_ratio;                           // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_panelFps;                                      // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_RAntiAliasing;                                 // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_REffects;                                      // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_resetAction;                                   // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_RFoliage;                                      // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_RPostprocessing;                               // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_RScreenresolution;                             // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_RShadDist;                                     // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_RShading;                                      // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_RShadows;                                      // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_RSharpness;                                    // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_Rsshadows;                                     // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_RTextures;                                     // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_RTMapperQ;                                     // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_RUpsample;                                     // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_RViewdisance;                                  // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_DeleteInvalidMeshes_C* Umg_settingsSlot_DeleteInvalidMeshes;              // 0x0470(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_funny_C*              Umg_settingsSlot_funny;                            // 0x0478(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_gotoAssets_C*         Umg_settingsSlot_gotoAssets;                       // 0x0480(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_refreshAssets_C*      Umg_settingsSlot_refreshAssets_97;                 // 0x0488(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_regenerateSav_C*      Umg_settingsSlot_regenerateSav;                    // 0x0490(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_windowed_C*           Umg_settingsSlot_windowed;                         // 0x0498(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_Vautores;                                      // 0x04A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_VColorfilter;                                  // 0x04A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_VContranst;                                    // 0x04B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_VDefaultFOV;                                   // 0x04B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_VDisableborders;                               // 0x04C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_VDisableborders_1;                             // 0x04C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_VFPS;                                          // 0x04D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_VGamma;                                        // 0x04D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_Vhue;                                          // 0x04E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_VMBlur;                                        // 0x04E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_VMirror;                                       // 0x04F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_volLight;                                      // 0x04F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_VPanelFOV;                                     // 0x0500(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_VSaturation;                                   // 0x0508(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_VSunrays;                                      // 0x0510(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_VtonemFilm;                                    // 0x0518(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_VUpscale;                                      // 0x0520(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UUmg_settingsSlot_C*                    Umg_VVSync;                                        // 0x0528(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USave_main_C*                           Sav;                                               // 0x0530(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_settings                       SettingsCopy;                                      // 0x0538(0x00CC)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_20CF[0x4];                                     // 0x0604(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UUmg_settingsSlot_C*>            Sliders;                                           // 0x0608(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	TArray<class UUmg_settingsSlot_C*>            V_slots;                                           // 0x0618(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	TArray<class UUmg_settingsSlot_C*>            M_slots;                                           // 0x0628(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	TArray<class UUmg_settingsSlot_C*>            G_slots;                                           // 0x0638(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	TArray<class UUmg_settingsSlot_C*>            R_slots;                                           // 0x0648(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	TArray<class UUmg_settingsSlot_C*>            A_slots;                                           // 0x0658(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	bool                                          HasMult;                                           // 0x0668(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          HasAdds;                                           // 0x0669(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_20D0[0x2];                                     // 0x066A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Answer;                                            // 0x066C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_HDRen;                                         // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_HDRgam;                                        // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_HDRoutput;                                     // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_ratio_C*              Umg_MsettingsSlot_ratio;                           // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_panelFps;                                      // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_RAntiAliasing;                                 // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_REffects;                                      // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_resetAction;                                   // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_RFoliage;                                      // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_RPostprocessing;                               // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_RScreenresolution;                             // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_RShadDist;                                     // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_RShading;                                      // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_RShadows;                                      // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_RSharpness;                                    // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_Rsshadows;                                     // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_RTextures;                                     // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_RTMapperQ;                                     // 0x0470(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_RUpsample;                                     // 0x0478(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_RViewdisance;                                  // 0x0480(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_assetFolder_C*        Umg_settingsSlot_assetFolder;                      // 0x0488(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_DeleteInvalidMeshes_C* Umg_settingsSlot_DeleteInvalidMeshes;              // 0x0490(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_funny_C*              Umg_settingsSlot_funny;                            // 0x0498(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_gotoAssets_C*         Umg_settingsSlot_gotoAssets;                       // 0x04A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_refreshAssets_C*      Umg_settingsSlot_refreshAssets_97;                 // 0x04A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_regenerateSav_C*      Umg_settingsSlot_regenerateSav;                    // 0x04B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_windowed_C*           Umg_settingsSlot_windowed;                         // 0x04B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_Vautores;                                      // 0x04C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_VColorfilter;                                  // 0x04C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_VContranst;                                    // 0x04D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_VDefaultFOV;                                   // 0x04D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_VDisableborders;                               // 0x04E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_VDisableborders_1;                             // 0x04E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_VFPS;                                          // 0x04F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_VGamma;                                        // 0x04F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_Vhue;                                          // 0x0500(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_VMBlur;                                        // 0x0508(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_VMirror;                                       // 0x0510(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_volLight;                                      // 0x0518(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_VPanelFOV;                                     // 0x0520(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_VSaturation;                                   // 0x0528(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_VSunrays;                                      // 0x0530(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_VtonemFilm;                                    // 0x0538(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_VUpscale;                                      // 0x0540(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UUmg_settingsSlot_C*                    Umg_VVSync;                                        // 0x0548(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USave_main_C*                           Sav;                                               // 0x0550(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       SettingsCopy;                                      // 0x0558(0x00F0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	TArray<class UUmg_settingsSlot_C*>            Sliders;                                           // 0x0648(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	TArray<class UUmg_settingsSlot_C*>            V_slots;                                           // 0x0658(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	TArray<class UUmg_settingsSlot_C*>            M_slots;                                           // 0x0668(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	TArray<class UUmg_settingsSlot_C*>            G_slots;                                           // 0x0678(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	TArray<class UUmg_settingsSlot_C*>            R_slots;                                           // 0x0688(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	TArray<class UUmg_settingsSlot_C*>            A_slots;                                           // 0x0698(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	bool                                          HasMult;                                           // 0x06A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          HasAdds;                                           // 0x06A9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6AA[0x2];                                      // 0x06AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Answer;                                            // 0x06AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_umg_settings(int32 EntryPoint);
@@ -162,7 +165,7 @@ public:
 	}
 };
 static_assert(alignof(UUmg_settings_C) == 0x000008, "Wrong alignment on UUmg_settings_C");
-static_assert(sizeof(UUmg_settings_C) == 0x000670, "Wrong size on UUmg_settings_C");
+static_assert(sizeof(UUmg_settings_C) == 0x0006B0, "Wrong size on UUmg_settings_C");
 static_assert(offsetof(UUmg_settings_C, UberGraphFrame) == 0x000260, "Member 'UUmg_settings_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UUmg_settings_C, Button_80) == 0x000268, "Member 'UUmg_settings_C::Button_80' has a wrong offset!");
 static_assert(offsetof(UUmg_settings_C, button_apply) == 0x000270, "Member 'UUmg_settings_C::button_apply' has a wrong offset!");
@@ -212,58 +215,62 @@ static_assert(offsetof(UUmg_settings_C, Umg_GplShadow) == 0x0003C8, "Member 'UUm
 static_assert(offsetof(UUmg_settings_C, Umg_grabUp) == 0x0003D0, "Member 'UUmg_settings_C::Umg_grabUp' has a wrong offset!");
 static_assert(offsetof(UUmg_settings_C, Umg_GReport) == 0x0003D8, "Member 'UUmg_settings_C::Umg_GReport' has a wrong offset!");
 static_assert(offsetof(UUmg_settings_C, Umg_GShowhovertext) == 0x0003E0, "Member 'UUmg_settings_C::Umg_GShowhovertext' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_MsettingsSlot_ratio) == 0x0003E8, "Member 'UUmg_settings_C::Umg_MsettingsSlot_ratio' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_panelFps) == 0x0003F0, "Member 'UUmg_settings_C::Umg_panelFps' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_RAntiAliasing) == 0x0003F8, "Member 'UUmg_settings_C::Umg_RAntiAliasing' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_REffects) == 0x000400, "Member 'UUmg_settings_C::Umg_REffects' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_resetAction) == 0x000408, "Member 'UUmg_settings_C::Umg_resetAction' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_RFoliage) == 0x000410, "Member 'UUmg_settings_C::Umg_RFoliage' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_RPostprocessing) == 0x000418, "Member 'UUmg_settings_C::Umg_RPostprocessing' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_RScreenresolution) == 0x000420, "Member 'UUmg_settings_C::Umg_RScreenresolution' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_RShadDist) == 0x000428, "Member 'UUmg_settings_C::Umg_RShadDist' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_RShading) == 0x000430, "Member 'UUmg_settings_C::Umg_RShading' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_RShadows) == 0x000438, "Member 'UUmg_settings_C::Umg_RShadows' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_RSharpness) == 0x000440, "Member 'UUmg_settings_C::Umg_RSharpness' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_Rsshadows) == 0x000448, "Member 'UUmg_settings_C::Umg_Rsshadows' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_RTextures) == 0x000450, "Member 'UUmg_settings_C::Umg_RTextures' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_RTMapperQ) == 0x000458, "Member 'UUmg_settings_C::Umg_RTMapperQ' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_RUpsample) == 0x000460, "Member 'UUmg_settings_C::Umg_RUpsample' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_RViewdisance) == 0x000468, "Member 'UUmg_settings_C::Umg_RViewdisance' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_settingsSlot_DeleteInvalidMeshes) == 0x000470, "Member 'UUmg_settings_C::Umg_settingsSlot_DeleteInvalidMeshes' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_settingsSlot_funny) == 0x000478, "Member 'UUmg_settings_C::Umg_settingsSlot_funny' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_settingsSlot_gotoAssets) == 0x000480, "Member 'UUmg_settings_C::Umg_settingsSlot_gotoAssets' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_settingsSlot_refreshAssets_97) == 0x000488, "Member 'UUmg_settings_C::Umg_settingsSlot_refreshAssets_97' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_settingsSlot_regenerateSav) == 0x000490, "Member 'UUmg_settings_C::Umg_settingsSlot_regenerateSav' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_settingsSlot_windowed) == 0x000498, "Member 'UUmg_settings_C::Umg_settingsSlot_windowed' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_Vautores) == 0x0004A0, "Member 'UUmg_settings_C::Umg_Vautores' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_VColorfilter) == 0x0004A8, "Member 'UUmg_settings_C::Umg_VColorfilter' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_VContranst) == 0x0004B0, "Member 'UUmg_settings_C::Umg_VContranst' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_VDefaultFOV) == 0x0004B8, "Member 'UUmg_settings_C::Umg_VDefaultFOV' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_VDisableborders) == 0x0004C0, "Member 'UUmg_settings_C::Umg_VDisableborders' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_VDisableborders_1) == 0x0004C8, "Member 'UUmg_settings_C::Umg_VDisableborders_1' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_VFPS) == 0x0004D0, "Member 'UUmg_settings_C::Umg_VFPS' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_VGamma) == 0x0004D8, "Member 'UUmg_settings_C::Umg_VGamma' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_Vhue) == 0x0004E0, "Member 'UUmg_settings_C::Umg_Vhue' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_VMBlur) == 0x0004E8, "Member 'UUmg_settings_C::Umg_VMBlur' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_VMirror) == 0x0004F0, "Member 'UUmg_settings_C::Umg_VMirror' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_volLight) == 0x0004F8, "Member 'UUmg_settings_C::Umg_volLight' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_VPanelFOV) == 0x000500, "Member 'UUmg_settings_C::Umg_VPanelFOV' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_VSaturation) == 0x000508, "Member 'UUmg_settings_C::Umg_VSaturation' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_VSunrays) == 0x000510, "Member 'UUmg_settings_C::Umg_VSunrays' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_VtonemFilm) == 0x000518, "Member 'UUmg_settings_C::Umg_VtonemFilm' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_VUpscale) == 0x000520, "Member 'UUmg_settings_C::Umg_VUpscale' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Umg_VVSync) == 0x000528, "Member 'UUmg_settings_C::Umg_VVSync' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Sav) == 0x000530, "Member 'UUmg_settings_C::Sav' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, SettingsCopy) == 0x000538, "Member 'UUmg_settings_C::SettingsCopy' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Sliders) == 0x000608, "Member 'UUmg_settings_C::Sliders' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, V_slots) == 0x000618, "Member 'UUmg_settings_C::V_slots' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, M_slots) == 0x000628, "Member 'UUmg_settings_C::M_slots' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, G_slots) == 0x000638, "Member 'UUmg_settings_C::G_slots' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, R_slots) == 0x000648, "Member 'UUmg_settings_C::R_slots' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, A_slots) == 0x000658, "Member 'UUmg_settings_C::A_slots' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, HasMult) == 0x000668, "Member 'UUmg_settings_C::HasMult' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, HasAdds) == 0x000669, "Member 'UUmg_settings_C::HasAdds' has a wrong offset!");
-static_assert(offsetof(UUmg_settings_C, Answer) == 0x00066C, "Member 'UUmg_settings_C::Answer' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_HDRen) == 0x0003E8, "Member 'UUmg_settings_C::Umg_HDRen' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_HDRgam) == 0x0003F0, "Member 'UUmg_settings_C::Umg_HDRgam' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_HDRoutput) == 0x0003F8, "Member 'UUmg_settings_C::Umg_HDRoutput' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_MsettingsSlot_ratio) == 0x000400, "Member 'UUmg_settings_C::Umg_MsettingsSlot_ratio' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_panelFps) == 0x000408, "Member 'UUmg_settings_C::Umg_panelFps' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_RAntiAliasing) == 0x000410, "Member 'UUmg_settings_C::Umg_RAntiAliasing' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_REffects) == 0x000418, "Member 'UUmg_settings_C::Umg_REffects' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_resetAction) == 0x000420, "Member 'UUmg_settings_C::Umg_resetAction' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_RFoliage) == 0x000428, "Member 'UUmg_settings_C::Umg_RFoliage' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_RPostprocessing) == 0x000430, "Member 'UUmg_settings_C::Umg_RPostprocessing' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_RScreenresolution) == 0x000438, "Member 'UUmg_settings_C::Umg_RScreenresolution' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_RShadDist) == 0x000440, "Member 'UUmg_settings_C::Umg_RShadDist' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_RShading) == 0x000448, "Member 'UUmg_settings_C::Umg_RShading' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_RShadows) == 0x000450, "Member 'UUmg_settings_C::Umg_RShadows' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_RSharpness) == 0x000458, "Member 'UUmg_settings_C::Umg_RSharpness' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_Rsshadows) == 0x000460, "Member 'UUmg_settings_C::Umg_Rsshadows' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_RTextures) == 0x000468, "Member 'UUmg_settings_C::Umg_RTextures' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_RTMapperQ) == 0x000470, "Member 'UUmg_settings_C::Umg_RTMapperQ' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_RUpsample) == 0x000478, "Member 'UUmg_settings_C::Umg_RUpsample' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_RViewdisance) == 0x000480, "Member 'UUmg_settings_C::Umg_RViewdisance' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_settingsSlot_assetFolder) == 0x000488, "Member 'UUmg_settings_C::Umg_settingsSlot_assetFolder' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_settingsSlot_DeleteInvalidMeshes) == 0x000490, "Member 'UUmg_settings_C::Umg_settingsSlot_DeleteInvalidMeshes' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_settingsSlot_funny) == 0x000498, "Member 'UUmg_settings_C::Umg_settingsSlot_funny' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_settingsSlot_gotoAssets) == 0x0004A0, "Member 'UUmg_settings_C::Umg_settingsSlot_gotoAssets' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_settingsSlot_refreshAssets_97) == 0x0004A8, "Member 'UUmg_settings_C::Umg_settingsSlot_refreshAssets_97' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_settingsSlot_regenerateSav) == 0x0004B0, "Member 'UUmg_settings_C::Umg_settingsSlot_regenerateSav' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_settingsSlot_windowed) == 0x0004B8, "Member 'UUmg_settings_C::Umg_settingsSlot_windowed' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_Vautores) == 0x0004C0, "Member 'UUmg_settings_C::Umg_Vautores' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_VColorfilter) == 0x0004C8, "Member 'UUmg_settings_C::Umg_VColorfilter' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_VContranst) == 0x0004D0, "Member 'UUmg_settings_C::Umg_VContranst' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_VDefaultFOV) == 0x0004D8, "Member 'UUmg_settings_C::Umg_VDefaultFOV' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_VDisableborders) == 0x0004E0, "Member 'UUmg_settings_C::Umg_VDisableborders' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_VDisableborders_1) == 0x0004E8, "Member 'UUmg_settings_C::Umg_VDisableborders_1' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_VFPS) == 0x0004F0, "Member 'UUmg_settings_C::Umg_VFPS' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_VGamma) == 0x0004F8, "Member 'UUmg_settings_C::Umg_VGamma' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_Vhue) == 0x000500, "Member 'UUmg_settings_C::Umg_Vhue' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_VMBlur) == 0x000508, "Member 'UUmg_settings_C::Umg_VMBlur' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_VMirror) == 0x000510, "Member 'UUmg_settings_C::Umg_VMirror' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_volLight) == 0x000518, "Member 'UUmg_settings_C::Umg_volLight' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_VPanelFOV) == 0x000520, "Member 'UUmg_settings_C::Umg_VPanelFOV' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_VSaturation) == 0x000528, "Member 'UUmg_settings_C::Umg_VSaturation' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_VSunrays) == 0x000530, "Member 'UUmg_settings_C::Umg_VSunrays' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_VtonemFilm) == 0x000538, "Member 'UUmg_settings_C::Umg_VtonemFilm' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_VUpscale) == 0x000540, "Member 'UUmg_settings_C::Umg_VUpscale' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Umg_VVSync) == 0x000548, "Member 'UUmg_settings_C::Umg_VVSync' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Sav) == 0x000550, "Member 'UUmg_settings_C::Sav' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, SettingsCopy) == 0x000558, "Member 'UUmg_settings_C::SettingsCopy' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Sliders) == 0x000648, "Member 'UUmg_settings_C::Sliders' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, V_slots) == 0x000658, "Member 'UUmg_settings_C::V_slots' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, M_slots) == 0x000668, "Member 'UUmg_settings_C::M_slots' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, G_slots) == 0x000678, "Member 'UUmg_settings_C::G_slots' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, R_slots) == 0x000688, "Member 'UUmg_settings_C::R_slots' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, A_slots) == 0x000698, "Member 'UUmg_settings_C::A_slots' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, HasMult) == 0x0006A8, "Member 'UUmg_settings_C::HasMult' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, HasAdds) == 0x0006A9, "Member 'UUmg_settings_C::HasAdds' has a wrong offset!");
+static_assert(offsetof(UUmg_settings_C, Answer) == 0x0006AC, "Member 'UUmg_settings_C::Answer' has a wrong offset!");
 
 }
 

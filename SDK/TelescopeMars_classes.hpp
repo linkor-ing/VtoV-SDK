@@ -33,38 +33,42 @@ public:
 	float                                         buildStatus_3;                                     // 0x0290(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         A;                                                 // 0x0294(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         B;                                                 // 0x0298(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_257A[0x4];                                     // 0x029C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29C[0x4];                                      // 0x029C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMarsStruct_build_Skeleton_AnimBlueprint_C* Anim;                                              // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Rot_0;                                             // 0x02A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Looking;                                           // 0x02AC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Fast;                                              // 0x02AD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Reset;                                             // 0x02AE(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_257B[0x1];                                     // 0x02AF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2AF[0x1];                                      // 0x02AF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class ATelescope_C*                           Telescope;                                         // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_telescopeMars(int32 EntryPoint);
 	void broken();
 	void broken_fire();
+	void LookAtCam(bool Play);
 	void Thrown(class AMainPlayer_C* Player);
-	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit);
+	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage);
 	void UpdateStrAgl();
 	void DriveDetached();
+	void PlayerUnequip(class AMainPlayer_C* Player);
+	void PlayerHold(class AMainPlayer_C* Player);
+	void LaunchBuild(bool Param_Fast);
+	void PlayerR(class AMainPlayer_C* Player);
 	void ReceiveTick(float DeltaSeconds);
 	void SendName(class FName Param_Name);
-	void LaunchBuild(bool Param_Fast);
 	void ReceiveBeginPlay();
-	void Kicked(bool Kick);
-	void LookAtCam(bool Play);
 	void Player_use(class AMainPlayer_C* Player, const struct FHitResult& Hit);
+	void Kicked(bool Kick);
 	void UpdMats();
 	void CreateDynmats();
 	void CanBePutInContainer(bool* Return);
 	void AsProp(class AProp_C** Return);
 	void CanPickup(bool* Return);
 	void NoRespawn(bool Param_NoRespawn, bool* Return);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
 	void IsButtonUsed(bool* Failed);
+	void LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage);
 
 public:
 	static class UClass* StaticClass()

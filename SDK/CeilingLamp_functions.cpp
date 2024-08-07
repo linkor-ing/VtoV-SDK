@@ -37,6 +37,40 @@ void ACeilingLamp_C::ExecuteUbergraph_ceilingLamp(int32 EntryPoint)
 }
 
 
+// Function ceilingLamp.ceilingLamp_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
+
+void ACeilingLamp_C::ReceiveDestroyed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ceilingLamp_C", "ReceiveDestroyed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ceilingLamp.ceilingLamp_C.blink
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Weight                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACeilingLamp_C::blink(float Weight)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ceilingLamp_C", "blink");
+
+	Params::CeilingLamp_C_blink Parms{};
+
+	Parms.Weight = Weight;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function ceilingLamp.ceilingLamp_C.off
 // (BlueprintCallable, BlueprintEvent)
 
@@ -259,6 +293,27 @@ void ACeilingLamp_C::GetTriggerData(struct FStruct_triggerSave* Data)
 
 	if (Data != nullptr)
 		*Data = std::move(Parms.Data);
+}
+
+
+// Function ceilingLamp.ceilingLamp_C.gatherDataFromKeyT
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ACeilingLamp_C::GatherDataFromKeyT(bool* Gather)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ceilingLamp_C", "gatherDataFromKeyT");
+
+	Params::CeilingLamp_C_GatherDataFromKeyT Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Gather != nullptr)
+		*Gather = Parms.Gather;
 }
 
 }

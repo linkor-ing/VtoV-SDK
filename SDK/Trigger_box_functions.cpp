@@ -37,28 +37,6 @@ void ATrigger_box_C::ExecuteUbergraph_trigger_box(int32 EntryPoint)
 }
 
 
-// Function trigger_box.trigger_box_C.runTrigger
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Param_Owner                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ATrigger_box_C::RunTrigger(class AActor* Param_Owner, int32 Param_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("trigger_box_C", "runTrigger");
-
-	Params::Trigger_box_C_RunTrigger Parms{};
-
-	Parms.Param_Owner = Param_Owner;
-	Parms.Param_Index = Param_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function trigger_box.trigger_box_C.BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -100,6 +78,28 @@ void ATrigger_box_C::SetColls()
 		Func = Class->GetFunction("trigger_box_C", "setColls");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function trigger_box.trigger_box_C.runTrigger
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Param_Owner                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ATrigger_box_C::RunTrigger(class AActor* Param_Owner, int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("trigger_box_C", "runTrigger");
+
+	Params::Trigger_box_C_RunTrigger Parms{};
+
+	Parms.Param_Owner = Param_Owner;
+	Parms.Param_Index = Param_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass umg_cheatMenu.umg_cheatMenu_C
-// 0x00B8 (0x0318 - 0x0260)
+// 0x00F8 (0x0358 - 0x0260)
 class UUmg_cheatMenu_C final : public UUserWidget
 {
 public:
@@ -41,9 +41,9 @@ public:
 	class UScrollBox*                             ScrollBox_places;                                  // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UScrollBox*                             ScrollBox_signals;                                 // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                        WidgetSwitcher_72;                                 // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<class FText>                           Cheats;                                            // 0x02F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<float>                                 Ws;                                                // 0x0300(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	float                                         Sum;                                               // 0x0310(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMap<class FName, class FText>                Cheats;                                            // 0x02F0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<float>                                 Ws;                                                // 0x0340(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	float                                         Sum;                                               // 0x0350(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_umg_cheatMenu(int32 EntryPoint);
@@ -55,7 +55,7 @@ public:
 	void BndEvt__Etb_hash_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
 	void BndEvt__EditableTextBox_forceSignal_1_K2Node_ComponentBoundEvent_0_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
 	void Construct();
-	void Cheat(int32 Type);
+	void Cheat(int32 Type, class FName Param_Name);
 
 public:
 	static class UClass* StaticClass()
@@ -68,7 +68,7 @@ public:
 	}
 };
 static_assert(alignof(UUmg_cheatMenu_C) == 0x000008, "Wrong alignment on UUmg_cheatMenu_C");
-static_assert(sizeof(UUmg_cheatMenu_C) == 0x000318, "Wrong size on UUmg_cheatMenu_C");
+static_assert(sizeof(UUmg_cheatMenu_C) == 0x000358, "Wrong size on UUmg_cheatMenu_C");
 static_assert(offsetof(UUmg_cheatMenu_C, UberGraphFrame) == 0x000260, "Member 'UUmg_cheatMenu_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UUmg_cheatMenu_C, button_cheats) == 0x000268, "Member 'UUmg_cheatMenu_C::button_cheats' has a wrong offset!");
 static_assert(offsetof(UUmg_cheatMenu_C, button_events) == 0x000270, "Member 'UUmg_cheatMenu_C::button_events' has a wrong offset!");
@@ -88,8 +88,8 @@ static_assert(offsetof(UUmg_cheatMenu_C, ScrollBox_places) == 0x0002D8, "Member 
 static_assert(offsetof(UUmg_cheatMenu_C, ScrollBox_signals) == 0x0002E0, "Member 'UUmg_cheatMenu_C::ScrollBox_signals' has a wrong offset!");
 static_assert(offsetof(UUmg_cheatMenu_C, WidgetSwitcher_72) == 0x0002E8, "Member 'UUmg_cheatMenu_C::WidgetSwitcher_72' has a wrong offset!");
 static_assert(offsetof(UUmg_cheatMenu_C, Cheats) == 0x0002F0, "Member 'UUmg_cheatMenu_C::Cheats' has a wrong offset!");
-static_assert(offsetof(UUmg_cheatMenu_C, Ws) == 0x000300, "Member 'UUmg_cheatMenu_C::Ws' has a wrong offset!");
-static_assert(offsetof(UUmg_cheatMenu_C, Sum) == 0x000310, "Member 'UUmg_cheatMenu_C::Sum' has a wrong offset!");
+static_assert(offsetof(UUmg_cheatMenu_C, Ws) == 0x000340, "Member 'UUmg_cheatMenu_C::Ws' has a wrong offset!");
+static_assert(offsetof(UUmg_cheatMenu_C, Sum) == 0x000350, "Member 'UUmg_cheatMenu_C::Sum' has a wrong offset!");
 
 }
 

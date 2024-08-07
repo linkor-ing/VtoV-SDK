@@ -22,7 +22,7 @@ struct FStruct_subtitle final
 {
 public:
 	Enum_char                                     Character_2_C183393D473B3F53F8AA318AC077A7E8;      // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EE4[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             Sound_5_D68BDDFE4DFC2A88B0903986FAA78FE8;          // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   Text_8_93842A6142E23EC456AF06AF63B52A9A;           // 0x0010(0x0018)(Edit, BlueprintVisible)
 };

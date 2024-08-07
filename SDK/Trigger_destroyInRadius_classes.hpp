@@ -26,7 +26,7 @@ public:
 	class USphereComponent*                       Sphere;                                            // 0x0290(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	TArray<class UClass*>                         Filter;                                            // 0x0298(0x0010)(Edit, BlueprintVisible)
 	float                                         Radius;                                            // 0x02A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3A5D[0x4];                                     // 0x02AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2AC[0x4];                                      // 0x02AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<EObjectTypeQuery>                      Obj;                                               // 0x02B0(0x0010)(Edit, BlueprintVisible)
 
 public:

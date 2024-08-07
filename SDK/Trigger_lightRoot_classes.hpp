@@ -27,7 +27,7 @@ public:
 	TArray<class AAmbLigh_C*>                     Ambs;                                              // 0x02A0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
 	bool                                          IsActive;                                          // 0x02B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Active;                                            // 0x02B1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2FE0[0x6];                                     // 0x02B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B2[0x6];                                      // 0x02B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         Lights_keys;                                       // 0x02B8(0x0010)(Edit, BlueprintVisible)
 	TArray<class FString>                         Ambs_keys;                                         // 0x02C8(0x0010)(Edit, BlueprintVisible)
 	bool                                          buffIsActive;                                      // 0x02D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)

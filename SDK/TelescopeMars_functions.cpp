@@ -65,6 +65,26 @@ void ATelescopeMars_C::broken_fire()
 }
 
 
+// Function telescopeMars.telescopeMars_C.lookAtCam
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Play                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ATelescopeMars_C::LookAtCam(bool Play)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("telescopeMars_C", "lookAtCam");
+
+	Params::TelescopeMars_C_LookAtCam Parms{};
+
+	Parms.Play = Play;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function telescopeMars.telescopeMars_C.thrown
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -90,8 +110,9 @@ void ATelescopeMars_C::Thrown(class AMainPlayer_C* Player)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ATelescopeMars_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit)
+void ATelescopeMars_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage)
 {
 	static class UFunction* Func = nullptr;
 
@@ -102,6 +123,7 @@ void ATelescopeMars_C::DamageByPlayer(class AMainPlayer_C* Player, const struct 
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
+	Parms.Damage = Damage;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -132,6 +154,86 @@ void ATelescopeMars_C::DriveDetached()
 		Func = Class->GetFunction("telescopeMars_C", "driveDetached");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function telescopeMars.telescopeMars_C.playerUnequip
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ATelescopeMars_C::PlayerUnequip(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("telescopeMars_C", "playerUnequip");
+
+	Params::TelescopeMars_C_PlayerUnequip Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function telescopeMars.telescopeMars_C.playerHold
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ATelescopeMars_C::PlayerHold(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("telescopeMars_C", "playerHold");
+
+	Params::TelescopeMars_C_PlayerHold Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function telescopeMars.telescopeMars_C.launchBuild
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Param_Fast                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ATelescopeMars_C::LaunchBuild(bool Param_Fast)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("telescopeMars_C", "launchBuild");
+
+	Params::TelescopeMars_C_LaunchBuild Parms{};
+
+	Parms.Param_Fast = Param_Fast;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function telescopeMars.telescopeMars_C.playerR
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ATelescopeMars_C::PlayerR(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("telescopeMars_C", "playerR");
+
+	Params::TelescopeMars_C_PlayerR Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -175,26 +277,6 @@ void ATelescopeMars_C::SendName(class FName Param_Name)
 }
 
 
-// Function telescopeMars.telescopeMars_C.launchBuild
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Param_Fast                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ATelescopeMars_C::LaunchBuild(bool Param_Fast)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("telescopeMars_C", "launchBuild");
-
-	Params::TelescopeMars_C_LaunchBuild Parms{};
-
-	Parms.Param_Fast = Param_Fast;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function telescopeMars.telescopeMars_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
@@ -206,46 +288,6 @@ void ATelescopeMars_C::ReceiveBeginPlay()
 		Func = Class->GetFunction("telescopeMars_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function telescopeMars.telescopeMars_C.kicked
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Kick                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ATelescopeMars_C::Kicked(bool Kick)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("telescopeMars_C", "kicked");
-
-	Params::TelescopeMars_C_Kicked Parms{};
-
-	Parms.Kick = Kick;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function telescopeMars.telescopeMars_C.lookAtCam
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Play                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ATelescopeMars_C::LookAtCam(bool Play)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("telescopeMars_C", "lookAtCam");
-
-	Params::TelescopeMars_C_LookAtCam Parms{};
-
-	Parms.Play = Play;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -266,6 +308,26 @@ void ATelescopeMars_C::Player_use(class AMainPlayer_C* Player, const struct FHit
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function telescopeMars.telescopeMars_C.kicked
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Kick                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ATelescopeMars_C::Kicked(bool Kick)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("telescopeMars_C", "kicked");
+
+	Params::TelescopeMars_C_Kicked Parms{};
+
+	Parms.Kick = Kick;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -394,8 +456,9 @@ void ATelescopeMars_C::NoRespawn(bool Param_NoRespawn, bool* Return)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ATelescopeMars_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
+void ATelescopeMars_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -417,6 +480,9 @@ void ATelescopeMars_C::LookAt(class AMainPlayer_C* Player, const struct FHitResu
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -438,6 +504,30 @@ void ATelescopeMars_C::IsButtonUsed(bool* Failed)
 
 	if (Failed != nullptr)
 		*Failed = Parms.Failed;
+}
+
+
+// Function telescopeMars.telescopeMars_C.landedOn
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IgnoreFallDamage                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ATelescopeMars_C::LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("telescopeMars_C", "landedOn");
+
+	Params::TelescopeMars_C_LandedOn Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IgnoreFallDamage != nullptr)
+		*IgnoreFallDamage = Parms.IgnoreFallDamage;
 }
 
 }

@@ -42,10 +42,9 @@ void AProp_cockroachNest_C::ExecuteUbergraph_prop_cockroachNest(int32 EntryPoint
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_cockroachNest_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action)
+void AProp_cockroachNest_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -56,24 +55,9 @@ void AProp_cockroachNest_C::ActionOptionIndex(class AMainPlayer_C* Player, const
 
 	Parms.Player = Player;
 	Parms.Param_Hit = std::move(Param_Hit);
-	Parms.Param_Index = Param_Index;
 	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop_cockroachNest.prop_cockroachNest_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_cockroachNest_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_cockroachNest_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -91,6 +75,20 @@ void AProp_cockroachNest_C::GamemodeBeginPlay()
 }
 
 
+// Function prop_cockroachNest.prop_cockroachNest_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_cockroachNest_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_cockroachNest_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function prop_cockroachNest.prop_cockroachNest_C.getActionOptions
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -100,8 +98,9 @@ void AProp_cockroachNest_C::GamemodeBeginPlay()
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_cockroachNest_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
+void AProp_cockroachNest_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -124,6 +123,9 @@ void AProp_cockroachNest_C::GetActionOptions(class AMainPlayer_C* Player, class 
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 }

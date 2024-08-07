@@ -10,7 +10,6 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Prop_cookingFood_classes.hpp"
 
 
@@ -18,17 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_food_potato.prop_food_potato_C
-// 0x0008 (0x03D0 - 0x03C8)
+// 0x0000 (0x03F8 - 0x03F8)
 class AProp_food_potato_C final : public AProp_cookingFood_C
 {
 public:
-	uint8                                         Pad_38A1[0x4];                                     // 0x03C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_food_potato_C;                 // 0x03C8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-
-public:
-	void ExecuteUbergraph_prop_food_potato(int32 EntryPoint);
 	void Cooked();
-	void Slice(bool Clean);
 
 public:
 	static class UClass* StaticClass()
@@ -41,8 +34,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_food_potato_C) == 0x000008, "Wrong alignment on AProp_food_potato_C");
-static_assert(sizeof(AProp_food_potato_C) == 0x0003D0, "Wrong size on AProp_food_potato_C");
-static_assert(offsetof(AProp_food_potato_C, UberGraphFrame_Prop_food_potato_C) == 0x0003C8, "Member 'AProp_food_potato_C::UberGraphFrame_Prop_food_potato_C' has a wrong offset!");
+static_assert(sizeof(AProp_food_potato_C) == 0x0003F8, "Wrong size on AProp_food_potato_C");
 
 }
 

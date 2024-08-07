@@ -20,34 +20,33 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_wMannequin.prop_wMannequin_C
-// 0x0058 (0x03C0 - 0x0368)
+// 0x0058 (0x03D0 - 0x0378)
 class AProp_wMannequin_C : public AProp_C
 {
 public:
-	uint8                                         Pad_27A0[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_wMannequin_C;                  // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USphereComponent*                       Sphere;                                            // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 SkeletalMesh;                                      // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class AChildPawn_C*                           Pawn;                                              // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FVector>                        Path;                                              // 0x0388(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                         Ind;                                               // 0x0398(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Looking;                                           // 0x039C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_27A1[0x3];                                     // 0x039D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                PathPoint;                                         // 0x03A0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                ProjPoint;                                         // 0x03AC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Angry;                                             // 0x03B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_27A2[0x3];                                     // 0x03B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Speed;                                             // 0x03BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_wMannequin_C;                  // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USphereComponent*                       Sphere;                                            // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 SkeletalMesh;                                      // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class AChildPawn_C*                           Pawn;                                              // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FVector>                        Path;                                              // 0x0398(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         Ind;                                               // 0x03A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Looking;                                           // 0x03AC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3AD[0x3];                                      // 0x03AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                PathPoint;                                         // 0x03B0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                ProjPoint;                                         // 0x03BC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Angry;                                             // 0x03C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3C9[0x3];                                      // 0x03C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Speed;                                             // 0x03CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_wMannequin(int32 EntryPoint);
-	void FireDamage(float Damage);
-	void ReceiveDestroyed();
 	void Upd(class UNavigationPath* AffectedPath, ENavPathEvent PathEvent);
-	void ReceiveBeginPlay();
 	void ReceiveTick(float DeltaSeconds);
 	void OnSuccess_8AF90BF14EEA5E13962F0D85A5B30679(EPathFollowingResult MovementResult);
 	void OnFail_8AF90BF14EEA5E13962F0D85A5B30679(EPathFollowingResult MovementResult);
+	void FireDamage(float Damage);
+	void ReceiveDestroyed();
+	void ReceiveBeginPlay();
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
 
@@ -62,18 +61,18 @@ public:
 	}
 };
 static_assert(alignof(AProp_wMannequin_C) == 0x000008, "Wrong alignment on AProp_wMannequin_C");
-static_assert(sizeof(AProp_wMannequin_C) == 0x0003C0, "Wrong size on AProp_wMannequin_C");
-static_assert(offsetof(AProp_wMannequin_C, UberGraphFrame_Prop_wMannequin_C) == 0x000368, "Member 'AProp_wMannequin_C::UberGraphFrame_Prop_wMannequin_C' has a wrong offset!");
-static_assert(offsetof(AProp_wMannequin_C, Sphere) == 0x000370, "Member 'AProp_wMannequin_C::Sphere' has a wrong offset!");
-static_assert(offsetof(AProp_wMannequin_C, SkeletalMesh) == 0x000378, "Member 'AProp_wMannequin_C::SkeletalMesh' has a wrong offset!");
-static_assert(offsetof(AProp_wMannequin_C, Pawn) == 0x000380, "Member 'AProp_wMannequin_C::Pawn' has a wrong offset!");
-static_assert(offsetof(AProp_wMannequin_C, Path) == 0x000388, "Member 'AProp_wMannequin_C::Path' has a wrong offset!");
-static_assert(offsetof(AProp_wMannequin_C, Ind) == 0x000398, "Member 'AProp_wMannequin_C::Ind' has a wrong offset!");
-static_assert(offsetof(AProp_wMannequin_C, Looking) == 0x00039C, "Member 'AProp_wMannequin_C::Looking' has a wrong offset!");
-static_assert(offsetof(AProp_wMannequin_C, PathPoint) == 0x0003A0, "Member 'AProp_wMannequin_C::PathPoint' has a wrong offset!");
-static_assert(offsetof(AProp_wMannequin_C, ProjPoint) == 0x0003AC, "Member 'AProp_wMannequin_C::ProjPoint' has a wrong offset!");
-static_assert(offsetof(AProp_wMannequin_C, Angry) == 0x0003B8, "Member 'AProp_wMannequin_C::Angry' has a wrong offset!");
-static_assert(offsetof(AProp_wMannequin_C, Speed) == 0x0003BC, "Member 'AProp_wMannequin_C::Speed' has a wrong offset!");
+static_assert(sizeof(AProp_wMannequin_C) == 0x0003D0, "Wrong size on AProp_wMannequin_C");
+static_assert(offsetof(AProp_wMannequin_C, UberGraphFrame_Prop_wMannequin_C) == 0x000378, "Member 'AProp_wMannequin_C::UberGraphFrame_Prop_wMannequin_C' has a wrong offset!");
+static_assert(offsetof(AProp_wMannequin_C, Sphere) == 0x000380, "Member 'AProp_wMannequin_C::Sphere' has a wrong offset!");
+static_assert(offsetof(AProp_wMannequin_C, SkeletalMesh) == 0x000388, "Member 'AProp_wMannequin_C::SkeletalMesh' has a wrong offset!");
+static_assert(offsetof(AProp_wMannequin_C, Pawn) == 0x000390, "Member 'AProp_wMannequin_C::Pawn' has a wrong offset!");
+static_assert(offsetof(AProp_wMannequin_C, Path) == 0x000398, "Member 'AProp_wMannequin_C::Path' has a wrong offset!");
+static_assert(offsetof(AProp_wMannequin_C, Ind) == 0x0003A8, "Member 'AProp_wMannequin_C::Ind' has a wrong offset!");
+static_assert(offsetof(AProp_wMannequin_C, Looking) == 0x0003AC, "Member 'AProp_wMannequin_C::Looking' has a wrong offset!");
+static_assert(offsetof(AProp_wMannequin_C, PathPoint) == 0x0003B0, "Member 'AProp_wMannequin_C::PathPoint' has a wrong offset!");
+static_assert(offsetof(AProp_wMannequin_C, ProjPoint) == 0x0003BC, "Member 'AProp_wMannequin_C::ProjPoint' has a wrong offset!");
+static_assert(offsetof(AProp_wMannequin_C, Angry) == 0x0003C8, "Member 'AProp_wMannequin_C::Angry' has a wrong offset!");
+static_assert(offsetof(AProp_wMannequin_C, Speed) == 0x0003CC, "Member 'AProp_wMannequin_C::Speed' has a wrong offset!");
 
 }
 

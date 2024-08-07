@@ -10,38 +10,49 @@
 
 #include "Basic.hpp"
 
-#include "Enum_interactionActions_structs.hpp"
-#include "Struct_food1_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Struct_crafting_structs.hpp"
+#include "Struct_food1_structs.hpp"
 #include "Struct_prop_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function prop_food_mushroom.prop_food_mushroom_C.ExecuteUbergraph_prop_food_mushroom
-// 0x00A0 (0x00A0 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F18[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x0010(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_clean;                                // 0x009D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_GetAttachParentActor_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x0020(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_clean;                                // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsSimulatingPhysics_ReturnValue;          // 0x00AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_progressAdvancement_finished;             // 0x00AB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class FName                                   CallFunc_progressAdvancement_name;                 // 0x00AC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsChildActor_ReturnValue;                 // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom) == 0x000008, "Wrong alignment on Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom");
-static_assert(sizeof(Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom) == 0x0000A0, "Wrong size on Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom");
+static_assert(sizeof(Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom) == 0x0000B8, "Wrong size on Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom");
 static_assert(offsetof(Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom, EntryPoint) == 0x000000, "Member 'Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom, K2Node_Event_player) == 0x000008, "Member 'Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom, K2Node_Event_hit) == 0x000010, "Member 'Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom, K2Node_Event_index) == 0x000098, "Member 'Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom, K2Node_Event_action) == 0x00009C, "Member 'Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom, K2Node_Event_clean) == 0x00009D, "Member 'Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom::K2Node_Event_clean' has a wrong offset!");
+static_assert(offsetof(Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom, CallFunc_GetAttachParentActor_ReturnValue) == 0x000008, "Member 'Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom::CallFunc_GetAttachParentActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom, K2Node_Event_player) == 0x000018, "Member 'Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom, K2Node_Event_hit) == 0x000020, "Member 'Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom, K2Node_Event_action) == 0x0000A8, "Member 'Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom, K2Node_Event_clean) == 0x0000A9, "Member 'Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom::K2Node_Event_clean' has a wrong offset!");
+static_assert(offsetof(Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom, CallFunc_IsSimulatingPhysics_ReturnValue) == 0x0000AA, "Member 'Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom::CallFunc_IsSimulatingPhysics_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom, CallFunc_progressAdvancement_finished) == 0x0000AB, "Member 'Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom::CallFunc_progressAdvancement_finished' has a wrong offset!");
+static_assert(offsetof(Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom, CallFunc_progressAdvancement_name) == 0x0000AC, "Member 'Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom::CallFunc_progressAdvancement_name' has a wrong offset!");
+static_assert(offsetof(Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom, CallFunc_IsChildActor_ReturnValue) == 0x0000B4, "Member 'Prop_food_mushroom_C_ExecuteUbergraph_prop_food_mushroom::CallFunc_IsChildActor_ReturnValue' has a wrong offset!");
 
 // Function prop_food_mushroom.prop_food_mushroom_C.actionOptionIndex
 // 0x0098 (0x0098 - 0x0000)
@@ -50,18 +61,16 @@ struct Prop_food_mushroom_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_food_mushroom_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_food_mushroom_C_ActionOptionIndex");
 static_assert(sizeof(Prop_food_mushroom_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_food_mushroom_C_ActionOptionIndex");
 static_assert(offsetof(Prop_food_mushroom_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_food_mushroom_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(Prop_food_mushroom_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_food_mushroom_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_food_mushroom_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_food_mushroom_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(Prop_food_mushroom_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_food_mushroom_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(Prop_food_mushroom_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_food_mushroom_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function prop_food_mushroom.prop_food_mushroom_C.Cut
-// 0x0240 (0x0240 - 0x0000)
+// 0x0250 (0x0250 - 0x0000)
 struct Prop_food_mushroom_C_Cut final
 {
 public:
@@ -69,28 +78,28 @@ public:
 	int32                                         Temp_int_Variable;                                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_1;                               // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F19[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F1A[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F1B[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           K2Node_MakeArray_Array;                            // 0x0038(0x0010)(ReferenceParm)
 	int32                                         Temp_int_Variable_2;                               // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F1C[0x8];                                     // 0x0058(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_58[0x8];                                       // 0x0058(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0060(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	int32                                         Temp_int_Variable_3;                               // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F1D[0x4];                                     // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AProp_C*                                CallFunc_FinishSpawningActor_ReturnValue;          // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F1E[0x3];                                     // 0x00A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A9[0x3];                                       // 0x00A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AProp_food_C*                           CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -98,36 +107,37 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_Array_Get_Item;                           // 0x00D4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F1F[0x3];                                     // 0x00DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_DD[0x3];                                       // 0x00DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_crafting                       CallFunc_GetDataTableRowFromName_OutRow;           // 0x00E0(0x0040)(HasGetValueTypeHash)
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F20[0x7];                                     // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_121[0x7];                                      // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Array_Get_Item_1;                         // 0x0128(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Array_Get_Item_2;                         // 0x0138(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue;            // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F21[0x3];                                     // 0x0149(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_149[0x3];                                      // 0x0149(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x014C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_propToObject_ReturnValue;                 // 0x0154(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F22[0x3];                                     // 0x0155(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_155[0x3];                                      // 0x0155(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_food1                          CallFunc_propToObject_foodData;                    // 0x0158(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 CallFunc_propToObject_object;                      // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_propToObject_isFood;                      // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F23[0x7];                                     // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_prop                           CallFunc_propToObject_propData;                    // 0x0180(0x0080)(HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0204(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F24[0x3];                                     // 0x0205(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_205[0x3];                                      // 0x0205(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2; // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F25[0x7];                                     // 0x0211(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_211[0x7];                                      // 0x0211(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue_2;        // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x0220(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F26[0x7];                                     // 0x0231(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_231[0x7];                                      // 0x0231(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AProp_C*                                CallFunc_asProp_return;                            // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_NameToString_ReturnValue_1;          // 0x0240(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_food_mushroom_C_Cut) == 0x000010, "Wrong alignment on Prop_food_mushroom_C_Cut");
-static_assert(sizeof(Prop_food_mushroom_C_Cut) == 0x000240, "Wrong size on Prop_food_mushroom_C_Cut");
+static_assert(sizeof(Prop_food_mushroom_C_Cut) == 0x000250, "Wrong size on Prop_food_mushroom_C_Cut");
 static_assert(offsetof(Prop_food_mushroom_C_Cut, Names) == 0x000000, "Member 'Prop_food_mushroom_C_Cut::Names' has a wrong offset!");
 static_assert(offsetof(Prop_food_mushroom_C_Cut, Temp_int_Variable) == 0x000010, "Member 'Prop_food_mushroom_C_Cut::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(Prop_food_mushroom_C_Cut, Temp_int_Variable_1) == 0x000014, "Member 'Prop_food_mushroom_C_Cut::Temp_int_Variable_1' has a wrong offset!");
@@ -174,6 +184,7 @@ static_assert(offsetof(Prop_food_mushroom_C_Cut, CallFunc_FinishSpawningActor_Re
 static_assert(offsetof(Prop_food_mushroom_C_Cut, K2Node_DynamicCast_AsInt_Player) == 0x000220, "Member 'Prop_food_mushroom_C_Cut::K2Node_DynamicCast_AsInt_Player' has a wrong offset!");
 static_assert(offsetof(Prop_food_mushroom_C_Cut, K2Node_DynamicCast_bSuccess) == 0x000230, "Member 'Prop_food_mushroom_C_Cut::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(Prop_food_mushroom_C_Cut, CallFunc_asProp_return) == 0x000238, "Member 'Prop_food_mushroom_C_Cut::CallFunc_asProp_return' has a wrong offset!");
+static_assert(offsetof(Prop_food_mushroom_C_Cut, CallFunc_Conv_NameToString_ReturnValue_1) == 0x000240, "Member 'Prop_food_mushroom_C_Cut::CallFunc_Conv_NameToString_ReturnValue_1' has a wrong offset!");
 
 // Function prop_food_mushroom.prop_food_mushroom_C.slice
 // 0x0001 (0x0001 - 0x0000)

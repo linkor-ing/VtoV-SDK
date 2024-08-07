@@ -190,5 +190,26 @@ void IInt_ttrigger_C::SetActiveTrigger(class AActor* SentFrom, bool Active)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function int_ttrigger.int_ttrigger_C.gatherDataFromKeyT
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void IInt_ttrigger_C::GatherDataFromKeyT(bool* Gather)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("int_ttrigger_C", "gatherDataFromKeyT");
+
+	Params::Int_ttrigger_C_GatherDataFromKeyT Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Gather != nullptr)
+		*Gather = Parms.Gather;
+}
+
 }
 

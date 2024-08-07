@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "Struct_stats_structs.hpp"
+#include "Struct_achievement_structs.hpp"
 #include "Struct_save_structs.hpp"
 #include "Struct_keybind_structs.hpp"
-#include "Struct_achievement_structs.hpp"
-#include "Struct_stats_structs.hpp"
 
 
 namespace SDK::Params
@@ -25,10 +25,10 @@ struct Umg_settingsSlot_regenerateSav_C_ExecuteUbergraph_umg_settingsSlot_regene
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_208F[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_DeleteGameInSlot_ReturnValue;             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2090[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         K2Node_LowEntry_LocalVariable_Value__Object;       // 0x0018(0x0010)(ReferenceParm)
 	TArray<int32>                                 K2Node_LowEntry_LocalVariable_Value__1_Object;     // 0x0028(0x0010)(ReferenceParm)
 	TArray<class FName>                           K2Node_LowEntry_LocalVariable_Value__2_Object;     // 0x0038(0x0010)(ReferenceParm)

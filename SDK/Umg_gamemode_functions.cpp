@@ -261,6 +261,30 @@ void UUmg_gamemode_C::BndEvt__button_exit_K2Node_ComponentBoundEvent_0_OnButtonC
 }
 
 
+// Function umg_gamemode.umg_gamemode_C.texturePickerApply
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UUmg_gamemode_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_gamemode_C", "texturePickerApply");
+
+	Params::Umg_gamemode_C_TexturePickerApply Parms{};
+
+	Parms.Picker = Picker;
+	Parms.Texture = Texture;
+	Parms.Param_Index = Param_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function umg_gamemode.umg_gamemode_C.applyColor
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -362,7 +386,7 @@ void UUmg_gamemode_C::Unfocused()
 // Function umg_gamemode.umg_gamemode_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void UUmg_gamemode_C::SettingsApplied(const struct FStruct_settings& Settings)
 {

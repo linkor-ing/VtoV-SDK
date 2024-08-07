@@ -18,18 +18,17 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass bed_b.bed_b_C
-// 0x0020 (0x0388 - 0x0368)
+// 0x0020 (0x0398 - 0x0378)
 class Abed_b_C final : public AProp_C
 {
 public:
-	uint8                                         Pad_4339[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UStaticMeshComponent*                   N4;                                                // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   N3;                                                // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   N2;                                                // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   N1;                                                // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   N4;                                                // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   N3;                                                // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   N2;                                                // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   N1;                                                // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 
 public:
 	static class UClass* StaticClass()
@@ -42,11 +41,11 @@ public:
 	}
 };
 static_assert(alignof(Abed_b_C) == 0x000008, "Wrong alignment on Abed_b_C");
-static_assert(sizeof(Abed_b_C) == 0x000388, "Wrong size on Abed_b_C");
-static_assert(offsetof(Abed_b_C, N4) == 0x000368, "Member 'Abed_b_C::N4' has a wrong offset!");
-static_assert(offsetof(Abed_b_C, N3) == 0x000370, "Member 'Abed_b_C::N3' has a wrong offset!");
-static_assert(offsetof(Abed_b_C, N2) == 0x000378, "Member 'Abed_b_C::N2' has a wrong offset!");
-static_assert(offsetof(Abed_b_C, N1) == 0x000380, "Member 'Abed_b_C::N1' has a wrong offset!");
+static_assert(sizeof(Abed_b_C) == 0x000398, "Wrong size on Abed_b_C");
+static_assert(offsetof(Abed_b_C, N4) == 0x000378, "Member 'Abed_b_C::N4' has a wrong offset!");
+static_assert(offsetof(Abed_b_C, N3) == 0x000380, "Member 'Abed_b_C::N3' has a wrong offset!");
+static_assert(offsetof(Abed_b_C, N2) == 0x000388, "Member 'Abed_b_C::N2' has a wrong offset!");
+static_assert(offsetof(Abed_b_C, N1) == 0x000390, "Member 'Abed_b_C::N1' has a wrong offset!");
 
 }
 

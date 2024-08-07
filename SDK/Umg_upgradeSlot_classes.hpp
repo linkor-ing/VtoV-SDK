@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass umg_upgradeSlot.umg_upgradeSlot_C
-// 0x0070 (0x02D0 - 0x0260)
+// 0x0078 (0x02D8 - 0x0260)
 class UUmg_upgradeSlot_C final : public UUserWidget
 {
 public:
@@ -29,13 +29,15 @@ public:
 	class UTextBlock*                             Text_lvl;                                          // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             Text_name;                                         // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             Text_price;                                        // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	int32                                         Index_Umg_upgradeSlot_C;                           // 0x0298(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_27E2[0x4];                                     // 0x029C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Name_Umg_upgradeSlot_C;                            // 0x02A0(0x0018)(Edit, BlueprintVisible)
-	int32                                         Price;                                             // 0x02B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_27E3[0x4];                                     // 0x02BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               Dynmat;                                            // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         MaxLvl;                                            // 0x02C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTextBlock*                             Text_priceAcc;                                     // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	int32                                         Index_Umg_upgradeSlot_C;                           // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A4[0x4];                                      // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Name_Umg_upgradeSlot_C;                            // 0x02A8(0x0018)(Edit, BlueprintVisible)
+	int32                                         Price;                                             // 0x02C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C4[0x4];                                      // 0x02C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               Dynmat;                                            // 0x02C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         MaxLvl;                                            // 0x02D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         LevelAccumulation;                                 // 0x02D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_umg_upgradeSlot(int32 EntryPoint);
@@ -43,6 +45,8 @@ public:
 	void BndEvt__button_upgDownloadSpd_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
 	void Construct();
 	void Upd();
+	int32 GetPrice();
+	void UpdPrice();
 
 public:
 	static class UClass* StaticClass()
@@ -55,7 +59,7 @@ public:
 	}
 };
 static_assert(alignof(UUmg_upgradeSlot_C) == 0x000008, "Wrong alignment on UUmg_upgradeSlot_C");
-static_assert(sizeof(UUmg_upgradeSlot_C) == 0x0002D0, "Wrong size on UUmg_upgradeSlot_C");
+static_assert(sizeof(UUmg_upgradeSlot_C) == 0x0002D8, "Wrong size on UUmg_upgradeSlot_C");
 static_assert(offsetof(UUmg_upgradeSlot_C, UberGraphFrame) == 0x000260, "Member 'UUmg_upgradeSlot_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UUmg_upgradeSlot_C, button_upgDown) == 0x000268, "Member 'UUmg_upgradeSlot_C::button_upgDown' has a wrong offset!");
 static_assert(offsetof(UUmg_upgradeSlot_C, button_upgUp) == 0x000270, "Member 'UUmg_upgradeSlot_C::button_upgUp' has a wrong offset!");
@@ -63,11 +67,13 @@ static_assert(offsetof(UUmg_upgradeSlot_C, Img_bar) == 0x000278, "Member 'UUmg_u
 static_assert(offsetof(UUmg_upgradeSlot_C, Text_lvl) == 0x000280, "Member 'UUmg_upgradeSlot_C::Text_lvl' has a wrong offset!");
 static_assert(offsetof(UUmg_upgradeSlot_C, Text_name) == 0x000288, "Member 'UUmg_upgradeSlot_C::Text_name' has a wrong offset!");
 static_assert(offsetof(UUmg_upgradeSlot_C, Text_price) == 0x000290, "Member 'UUmg_upgradeSlot_C::Text_price' has a wrong offset!");
-static_assert(offsetof(UUmg_upgradeSlot_C, Index_Umg_upgradeSlot_C) == 0x000298, "Member 'UUmg_upgradeSlot_C::Index_Umg_upgradeSlot_C' has a wrong offset!");
-static_assert(offsetof(UUmg_upgradeSlot_C, Name_Umg_upgradeSlot_C) == 0x0002A0, "Member 'UUmg_upgradeSlot_C::Name_Umg_upgradeSlot_C' has a wrong offset!");
-static_assert(offsetof(UUmg_upgradeSlot_C, Price) == 0x0002B8, "Member 'UUmg_upgradeSlot_C::Price' has a wrong offset!");
-static_assert(offsetof(UUmg_upgradeSlot_C, Dynmat) == 0x0002C0, "Member 'UUmg_upgradeSlot_C::Dynmat' has a wrong offset!");
-static_assert(offsetof(UUmg_upgradeSlot_C, MaxLvl) == 0x0002C8, "Member 'UUmg_upgradeSlot_C::MaxLvl' has a wrong offset!");
+static_assert(offsetof(UUmg_upgradeSlot_C, Text_priceAcc) == 0x000298, "Member 'UUmg_upgradeSlot_C::Text_priceAcc' has a wrong offset!");
+static_assert(offsetof(UUmg_upgradeSlot_C, Index_Umg_upgradeSlot_C) == 0x0002A0, "Member 'UUmg_upgradeSlot_C::Index_Umg_upgradeSlot_C' has a wrong offset!");
+static_assert(offsetof(UUmg_upgradeSlot_C, Name_Umg_upgradeSlot_C) == 0x0002A8, "Member 'UUmg_upgradeSlot_C::Name_Umg_upgradeSlot_C' has a wrong offset!");
+static_assert(offsetof(UUmg_upgradeSlot_C, Price) == 0x0002C0, "Member 'UUmg_upgradeSlot_C::Price' has a wrong offset!");
+static_assert(offsetof(UUmg_upgradeSlot_C, Dynmat) == 0x0002C8, "Member 'UUmg_upgradeSlot_C::Dynmat' has a wrong offset!");
+static_assert(offsetof(UUmg_upgradeSlot_C, MaxLvl) == 0x0002D0, "Member 'UUmg_upgradeSlot_C::MaxLvl' has a wrong offset!");
+static_assert(offsetof(UUmg_upgradeSlot_C, LevelAccumulation) == 0x0002D4, "Member 'UUmg_upgradeSlot_C::LevelAccumulation' has a wrong offset!");
 
 }
 

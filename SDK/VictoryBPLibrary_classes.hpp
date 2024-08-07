@@ -101,7 +101,7 @@ static_assert(sizeof(UTKMathFunctionLibrary) == 0x000028, "Wrong size on UTKMath
 class URamaVictoryPluginCreateProcessPipe final : public UObject
 {
 public:
-	uint8                                         Pad_D5D[0x10];                                     // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x10];                                      // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ClosePipe();
@@ -127,7 +127,7 @@ static_assert(sizeof(URamaVictoryPluginCreateProcessPipe) == 0x000038, "Wrong si
 class UVictoryTMapComp final : public UActorComponent
 {
 public:
-	uint8                                         Pad_D5F[0x230];                                    // 0x00B0(0x0230)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B0[0x230];                                     // 0x00B0(0x0230)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void Int_Float__AddPair(int32 Key, float Value);

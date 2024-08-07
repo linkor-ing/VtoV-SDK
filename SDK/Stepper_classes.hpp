@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "Enum_interactionActions_structs.hpp"
 #include "AIModule_structs.hpp"
 
 
@@ -25,14 +25,14 @@ namespace SDK
 class AStepper_C final : public ACharacter
 {
 public:
-	uint8                                         Pad_3B0F[0x8];                                     // 0x04B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B8[0x8];                                      // 0x04B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UStaticMeshComponent*                   StaticMesh;                                        // 0x04C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UNavigationInvokerComponent*            NavigationInvoker;                                 // 0x04D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         Step;                                              // 0x04D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                LastStep;                                          // 0x04DC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                WalkTo;                                            // 0x04E8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B10[0x4];                                     // 0x04F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4F4[0x4];                                      // 0x04F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVector>                        WalkPath;                                          // 0x04F8(0x0010)(Edit, BlueprintVisible)
 	int32                                         Ind;                                               // 0x0508(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Volume;                                            // 0x050C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -41,38 +41,17 @@ public:
 	bool                                          Walking;                                           // 0x0528(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void PlayerHandMouseWheel(class AMainPlayer_C* Player, float WheelDelta);
-	void PlayerHandMouse(class AMainPlayer_C* Player, const struct FVector2D& Mouse);
-	void PlayerHandAnyKey(class AMainPlayer_C* Player, const struct FKey& Param_Key, bool Pressed);
-	void MicrowaveElec();
-	void AddTemperature(float Temperature);
-	void AccumulateTemperature(float Temperature, float Speed);
-	void ActionName(class AMainPlayer_C* Player, const struct FHitResult& Hit, const class FString& Param_Name);
-	void Stepped(float Param_Volume);
-	void PlayerLookAway(class AMainPlayer_C* Player);
-	void ReachedByExplosion(const struct FVector& Location, float Damage);
-	void bitten();
-	void Slice(bool Clean);
-	void PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
-	void AttemptIgnite();
-	void Hooked(class AHook_C* Hook);
-	void Set_ignoreSave_trigger(bool NewParam);
-	void CordPlugged(class ACord_C* Cord, class ACordSocket_C* Socket);
-	void CordUnplugged(class ACord_C* Cord, class ACordSocket_C* Socket);
-	void SetActiveTrigger(class AActor* SentFrom, bool Active);
-	void ReceiveTick(float DeltaSeconds);
-	void RunTrigger(class AActor* Param_Owner, int32 Param_Index);
-	void Run();
-	void ExecuteUbergraph_stepper(int32 EntryPoint);
+	void GetPriceMultiplier(float* PriceMult);
 	void SkipRadial(bool* Skip);
 	void GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 	void SetPath(const TArray<struct FVector>& Path, bool* Return);
 	void ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return);
 	void GetKey(class FString* Param_Key);
 	void CanBeUsedHold(bool* Return);
 	void ProcessKeys(bool* Return);
 	void GetOnlyKey(class FString* Param_Key);
+	void GatherDataFromKeyT(bool* Gather);
 	void IgnoreSave_trigger(bool* Ignore);
 	void LoadTriggerData(const struct FStruct_triggerSave& Data, bool* Return);
 	void GetTriggerData(struct FStruct_triggerSave* Data);
@@ -98,14 +77,40 @@ public:
 	void FireDamage(float Damage);
 	void Ignite(float Fuel);
 	void Microwave();
-	void ReceivedPhyiscsDamage();
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
+	void ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 	void Exploded(float Damage, const struct FVector& Location);
 	void ExtinguishFire();
 	void PlayerHandRelease_RMB(class AMainPlayer_C* Player);
 	void PlayerHandRelease_LMB(class AMainPlayer_C* Player);
+	void PlayerHandMouseWheel(class AMainPlayer_C* Player, float WheelDelta);
+	void PlayerHandMouse(class AMainPlayer_C* Player, const struct FVector2D& Mouse);
+	void PlayerHandAnyKey(class AMainPlayer_C* Player, const struct FKey& Param_Key, bool Pressed);
+	void MicrowaveElec();
+	void AddTemperature(float Temperature);
+	void AccumulateTemperature(float Temperature, float Speed);
+	void ActionName(class AMainPlayer_C* Player, const struct FHitResult& Hit, const class FString& Param_Name);
+	void Stepped(float Param_Volume);
+	void PlayerLookAway(class AMainPlayer_C* Player);
+	void ReachedByExplosion(const struct FVector& Location, float Damage);
+	void bitten();
+	void Slice(bool Clean);
+	void PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
+	void AttemptIgnite();
+	void Hooked(class AHook_C* Hook);
+	void Crafted();
+	void CleanSponge(float Clean, class AMainPlayer_C* Player);
+	void HookTension(class AHook_C* Hook);
+	void Set_ignoreSave_trigger(bool NewParam);
+	void CordPlugged(class ACord_C* Cord, class ACordSocket_C* Socket);
+	void CordUnplugged(class ACord_C* Cord, class ACordSocket_C* Socket);
+	void SetActiveTrigger(class AActor* SentFrom, bool Active);
+	void ReceiveTick(float DeltaSeconds);
+	void RunTrigger(class AActor* Param_Owner, int32 Param_Index);
+	void Run();
+	void ExecuteUbergraph_stepper(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

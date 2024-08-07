@@ -10,175 +10,191 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
+#include "Struct_settings_structs.hpp"
 #include "Struct_save_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Enum_interactionActions_structs.hpp"
 #include "Struct_triggerSave_structs.hpp"
-#include "Struct_settings_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "InputCore_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function triggerBase.triggerBase_C.ExecuteUbergraph_triggerBase
-// 0x05E8 (0x05E8 - 0x0000)
+// 0x06C8 (0x06C8 - 0x0000)
 struct TriggerBase_C_ExecuteUbergraph_triggerBase final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EF6[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0010(0x00CC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EF7[0x4];                                     // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   K2Node_Event_key_2;                                // 0x00E0(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed_1;                            // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EF8[0x3];                                     // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Event_color;                                // 0x00FC(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_4;                             // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_5;                                // 0x0110(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AActor*                                 K2Node_Event_actor_1;                              // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_impact_1;                             // 0x01A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EF9[0x4];                                     // 0x01AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AWaterVolume_C*                         K2Node_Event_water_3;                              // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water_2;                              // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water_1;                              // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water;                                // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_activate;                             // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_static;                               // 0x01D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_frozen;                               // 0x01D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_active_1;                             // 0x01D3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EFA[0x4];                                     // 0x01D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Event_actor;                                // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_3;                             // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_4;                                // 0x01E4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                K2Node_Event_impact;                               // 0x026C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_skipSetting;                          // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EFB[0x7];                                     // 0x0279(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 K2Node_Event_key_1;                                // 0x0280(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_11;                            // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_3;                                // 0x0298(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         K2Node_Event_damage_2;                             // 0x0320(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_fuel;                                 // 0x0324(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_10;                            // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_2;                                // 0x0330(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index_1;                              // 0x03B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x03BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EFC[0x3];                                     // 0x03BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_9;                             // 0x03C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_8;                             // 0x03C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_1;                             // 0x03D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_location_1;                           // 0x03D4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_7;                             // 0x03E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x03E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x03F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_wheelDelta;                           // 0x03F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EFD[0x4];                                     // 0x03FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x0400(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              K2Node_Event_mouse;                                // 0x0408(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0410(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   K2Node_Event_key;                                  // 0x0418(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed;                              // 0x0430(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2EFE[0x3];                                     // 0x0431(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_temperature_1;                        // 0x0434(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_temperature;                          // 0x0438(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_speed;                                // 0x043C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x0440(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_1;                                // 0x0448(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class FString                                 K2Node_Event_name;                                 // 0x04D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_volume;                               // 0x04E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EFF[0x4];                                     // 0x04E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x04E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_location;                             // 0x04F0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage;                               // 0x04FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_clean;                                // 0x0500(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F00[0x7];                                     // 0x0501(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0508(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x0510(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AHook_C*                                K2Node_Event_hook;                                 // 0x0598(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_NewParam;                             // 0x05A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F01[0x7];                                     // 0x05A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ACord_C*                                K2Node_Event_cord_1;                               // 0x05A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ACordSocket_C*                          K2Node_Event_socket_1;                             // 0x05B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ACord_C*                                K2Node_Event_cord;                                 // 0x05B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ACordSocket_C*                          K2Node_Event_socket;                               // 0x05C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_Event_sentFrom;                             // 0x05C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_active;                               // 0x05D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F02[0x7];                                     // 0x05D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Event_owner;                                // 0x05D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_index;                                // 0x05E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0010(0x00F0)(HasGetValueTypeHash)
+	struct FKey                                   K2Node_Event_key_2;                                // 0x0100(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed_1;                            // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_119[0x3];                                      // 0x0119(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           K2Node_Event_color;                                // 0x011C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUmg_texturePicker_C*                   K2Node_Event_picker;                               // 0x0130(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_Event_texture;                              // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_index_1;                              // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_5;                             // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_5;                                // 0x0148(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AActor*                                 K2Node_Event_actor_1;                              // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_impact_1;                             // 0x01D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E4[0x4];                                      // 0x01E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AWaterVolume_C*                         K2Node_Event_water_3;                              // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterVolume_C*                         K2Node_Event_water_2;                              // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterVolume_C*                         K2Node_Event_water_1;                              // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterVolume_C*                         K2Node_Event_water;                                // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_activate;                             // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_static;                               // 0x0209(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_frozen;                               // 0x020A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_active_1;                             // 0x020B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_20C[0x4];                                      // 0x020C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Event_actor;                                // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_4;                             // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_4;                                // 0x021C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                K2Node_Event_impact;                               // 0x02A4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_skipSetting;                          // 0x02B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2B1[0x7];                                      // 0x02B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 K2Node_Event_key_1;                                // 0x02B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_12;                            // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_3;                                // 0x02D0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         K2Node_Event_damage_3;                             // 0x0358(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_fuel;                                 // 0x035C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_2;                             // 0x0360(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hot;                                  // 0x0364(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_3EC[0x4];                                      // 0x03EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_11;                            // 0x03F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_2;                                // 0x03F8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x0480(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_481[0x7];                                      // 0x0481(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_10;                            // 0x0488(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_9;                             // 0x0490(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_1;                             // 0x0498(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_location_1;                           // 0x049C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_8;                             // 0x04A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_7;                             // 0x04B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x04B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_wheelDelta;                           // 0x04C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4C4[0x4];                                      // 0x04C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x04C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_Event_mouse;                                // 0x04D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x04D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   K2Node_Event_key;                                  // 0x04E0(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed;                              // 0x04F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4F9[0x3];                                      // 0x04F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_temperature_1;                        // 0x04FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_temperature;                          // 0x0500(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_speed;                                // 0x0504(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0508(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_1;                                // 0x0510(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class FString                                 K2Node_Event_name;                                 // 0x0598(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_volume;                               // 0x05A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5AC[0x4];                                      // 0x05AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x05B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_location;                             // 0x05B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage;                               // 0x05C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_clean_1;                              // 0x05C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5C9[0x7];                                      // 0x05C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x05D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x05D8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AHook_C*                                K2Node_Event_hook_1;                               // 0x0660(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_clean;                                // 0x0668(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_66C[0x4];                                      // 0x066C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0670(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AHook_C*                                K2Node_Event_hook;                                 // 0x0678(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_NewParam;                             // 0x0680(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_681[0x7];                                      // 0x0681(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ACord_C*                                K2Node_Event_cord_1;                               // 0x0688(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ACordSocket_C*                          K2Node_Event_socket_1;                             // 0x0690(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ACord_C*                                K2Node_Event_cord;                                 // 0x0698(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ACordSocket_C*                          K2Node_Event_socket;                               // 0x06A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_Event_sentFrom;                             // 0x06A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_active;                               // 0x06B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6B1[0x7];                                      // 0x06B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Event_owner;                                // 0x06B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_index;                                // 0x06C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(TriggerBase_C_ExecuteUbergraph_triggerBase) == 0x000008, "Wrong alignment on TriggerBase_C_ExecuteUbergraph_triggerBase");
-static_assert(sizeof(TriggerBase_C_ExecuteUbergraph_triggerBase) == 0x0005E8, "Wrong size on TriggerBase_C_ExecuteUbergraph_triggerBase");
+static_assert(sizeof(TriggerBase_C_ExecuteUbergraph_triggerBase) == 0x0006C8, "Wrong size on TriggerBase_C_ExecuteUbergraph_triggerBase");
 static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, EntryPoint) == 0x000000, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::EntryPoint' has a wrong offset!");
 static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_gamemode) == 0x000008, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_gamemode' has a wrong offset!");
 static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_settings) == 0x000010, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_settings' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_key_2) == 0x0000E0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_key_2' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_pressed_1) == 0x0000F8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_pressed_1' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_color) == 0x0000FC, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_color' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_damage_4) == 0x00010C, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_damage_4' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_hit_5) == 0x000110, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_hit_5' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_actor_1) == 0x000198, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_actor_1' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_impact_1) == 0x0001A0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_impact_1' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_water_3) == 0x0001B0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_water_3' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_water_2) == 0x0001B8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_water_2' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_water_1) == 0x0001C0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_water_1' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_water) == 0x0001C8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_water' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_activate) == 0x0001D0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_activate' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_static) == 0x0001D1, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_static' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_frozen) == 0x0001D2, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_frozen' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_active_1) == 0x0001D3, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_active_1' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_actor) == 0x0001D8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_actor' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_damage_3) == 0x0001E0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_damage_3' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_hit_4) == 0x0001E4, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_hit_4' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_impact) == 0x00026C, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_impact' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_skipSetting) == 0x000278, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_skipSetting' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_key_1) == 0x000280, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_key_1' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player_11) == 0x000290, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player_11' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_hit_3) == 0x000298, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_hit_3' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_damage_2) == 0x000320, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_damage_2' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_fuel) == 0x000324, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_fuel' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player_10) == 0x000328, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player_10' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_hit_2) == 0x000330, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_hit_2' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_index_1) == 0x0003B8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_index_1' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_action) == 0x0003BC, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player_9) == 0x0003C0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player_9' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player_8) == 0x0003C8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player_8' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_damage_1) == 0x0003D0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_damage_1' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_location_1) == 0x0003D4, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_location_1' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player_7) == 0x0003E0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player_7' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player_6) == 0x0003E8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player_6' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player_5) == 0x0003F0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player_5' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_wheelDelta) == 0x0003F8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_wheelDelta' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player_4) == 0x000400, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player_4' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_mouse) == 0x000408, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_mouse' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player_3) == 0x000410, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player_3' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_key) == 0x000418, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_key' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_pressed) == 0x000430, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_pressed' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_temperature_1) == 0x000434, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_temperature_1' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_temperature) == 0x000438, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_temperature' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_speed) == 0x00043C, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_speed' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player_2) == 0x000440, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player_2' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_hit_1) == 0x000448, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_hit_1' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_name) == 0x0004D0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_name' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_volume) == 0x0004E0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_volume' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player_1) == 0x0004E8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_location) == 0x0004F0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_location' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_damage) == 0x0004FC, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_damage' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_clean) == 0x000500, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_clean' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player) == 0x000508, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_hit) == 0x000510, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_hook) == 0x000598, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_hook' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_NewParam) == 0x0005A0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_NewParam' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_cord_1) == 0x0005A8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_cord_1' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_socket_1) == 0x0005B0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_socket_1' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_cord) == 0x0005B8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_cord' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_socket) == 0x0005C0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_socket' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_sentFrom) == 0x0005C8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_sentFrom' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_active) == 0x0005D0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_active' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_owner) == 0x0005D8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_owner' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_index) == 0x0005E0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_key_2) == 0x000100, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_key_2' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_pressed_1) == 0x000118, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_pressed_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_color) == 0x00011C, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_color' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_picker) == 0x000130, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_picker' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_texture) == 0x000138, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_texture' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_index_1) == 0x000140, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_index_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_damage_5) == 0x000144, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_damage_5' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_hit_5) == 0x000148, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_hit_5' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_actor_1) == 0x0001D0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_actor_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_impact_1) == 0x0001D8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_impact_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_water_3) == 0x0001E8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_water_3' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_water_2) == 0x0001F0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_water_2' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_water_1) == 0x0001F8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_water_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_water) == 0x000200, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_water' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_activate) == 0x000208, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_activate' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_static) == 0x000209, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_static' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_frozen) == 0x00020A, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_frozen' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_active_1) == 0x00020B, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_active_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_actor) == 0x000210, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_actor' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_damage_4) == 0x000218, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_damage_4' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_hit_4) == 0x00021C, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_hit_4' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_impact) == 0x0002A4, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_impact' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_skipSetting) == 0x0002B0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_skipSetting' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_key_1) == 0x0002B8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_key_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player_12) == 0x0002C8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player_12' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_hit_3) == 0x0002D0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_hit_3' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_damage_3) == 0x000358, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_damage_3' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_fuel) == 0x00035C, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_fuel' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_damage_2) == 0x000360, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_damage_2' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_hot) == 0x000364, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_hot' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player_11) == 0x0003F0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player_11' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_hit_2) == 0x0003F8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_hit_2' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_action) == 0x000480, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player_10) == 0x000488, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player_10' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player_9) == 0x000490, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player_9' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_damage_1) == 0x000498, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_damage_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_location_1) == 0x00049C, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_location_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player_8) == 0x0004A8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player_8' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player_7) == 0x0004B0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player_7' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player_6) == 0x0004B8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player_6' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_wheelDelta) == 0x0004C0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_wheelDelta' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player_5) == 0x0004C8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player_5' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_mouse) == 0x0004D0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_mouse' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player_4) == 0x0004D8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player_4' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_key) == 0x0004E0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_key' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_pressed) == 0x0004F8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_pressed' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_temperature_1) == 0x0004FC, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_temperature_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_temperature) == 0x000500, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_temperature' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_speed) == 0x000504, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_speed' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player_3) == 0x000508, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player_3' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_hit_1) == 0x000510, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_hit_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_name) == 0x000598, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_name' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_volume) == 0x0005A8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_volume' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player_2) == 0x0005B0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player_2' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_location) == 0x0005B8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_location' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_damage) == 0x0005C4, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_damage' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_clean_1) == 0x0005C8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_clean_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player_1) == 0x0005D0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_hit) == 0x0005D8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_hook_1) == 0x000660, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_hook_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_clean) == 0x000668, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_clean' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_player) == 0x000670, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_hook) == 0x000678, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_hook' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_NewParam) == 0x000680, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_NewParam' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_cord_1) == 0x000688, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_cord_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_socket_1) == 0x000690, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_socket_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_cord) == 0x000698, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_cord' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_socket) == 0x0006A0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_socket' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_sentFrom) == 0x0006A8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_sentFrom' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_active) == 0x0006B0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_active' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_owner) == 0x0006B8, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_owner' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ExecuteUbergraph_triggerBase, K2Node_Event_index) == 0x0006C0, "Member 'TriggerBase_C_ExecuteUbergraph_triggerBase::K2Node_Event_index' has a wrong offset!");
 
 // Function triggerBase.triggerBase_C.runTrigger
 // 0x0010 (0x0010 - 0x0000)
@@ -242,6 +258,31 @@ public:
 static_assert(alignof(TriggerBase_C_Set_ignoreSave_trigger) == 0x000001, "Wrong alignment on TriggerBase_C_Set_ignoreSave_trigger");
 static_assert(sizeof(TriggerBase_C_Set_ignoreSave_trigger) == 0x000001, "Wrong size on TriggerBase_C_Set_ignoreSave_trigger");
 static_assert(offsetof(TriggerBase_C_Set_ignoreSave_trigger, NewParam) == 0x000000, "Member 'TriggerBase_C_Set_ignoreSave_trigger::NewParam' has a wrong offset!");
+
+// Function triggerBase.triggerBase_C.hookTension
+// 0x0008 (0x0008 - 0x0000)
+struct TriggerBase_C_HookTension final
+{
+public:
+	class AHook_C*                                Hook;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(TriggerBase_C_HookTension) == 0x000008, "Wrong alignment on TriggerBase_C_HookTension");
+static_assert(sizeof(TriggerBase_C_HookTension) == 0x000008, "Wrong size on TriggerBase_C_HookTension");
+static_assert(offsetof(TriggerBase_C_HookTension, Hook) == 0x000000, "Member 'TriggerBase_C_HookTension::Hook' has a wrong offset!");
+
+// Function triggerBase.triggerBase_C.cleanSponge
+// 0x0010 (0x0010 - 0x0000)
+struct TriggerBase_C_CleanSponge final
+{
+public:
+	float                                         Clean;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          Player;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(TriggerBase_C_CleanSponge) == 0x000008, "Wrong alignment on TriggerBase_C_CleanSponge");
+static_assert(sizeof(TriggerBase_C_CleanSponge) == 0x000010, "Wrong size on TriggerBase_C_CleanSponge");
+static_assert(offsetof(TriggerBase_C_CleanSponge, Clean) == 0x000000, "Member 'TriggerBase_C_CleanSponge::Clean' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_CleanSponge, Player) == 0x000008, "Member 'TriggerBase_C_CleanSponge::Player' has a wrong offset!");
 
 // Function triggerBase.triggerBase_C.hooked
 // 0x0008 (0x0008 - 0x0000)
@@ -457,15 +498,26 @@ struct TriggerBase_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(TriggerBase_C_ActionOptionIndex) == 0x000008, "Wrong alignment on TriggerBase_C_ActionOptionIndex");
 static_assert(sizeof(TriggerBase_C_ActionOptionIndex) == 0x000098, "Wrong size on TriggerBase_C_ActionOptionIndex");
 static_assert(offsetof(TriggerBase_C_ActionOptionIndex, Player) == 0x000000, "Member 'TriggerBase_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(TriggerBase_C_ActionOptionIndex, Hit) == 0x000008, "Member 'TriggerBase_C_ActionOptionIndex::Hit' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'TriggerBase_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_ActionOptionIndex, Action) == 0x000094, "Member 'TriggerBase_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ActionOptionIndex, Action) == 0x000090, "Member 'TriggerBase_C_ActionOptionIndex::Action' has a wrong offset!");
+
+// Function triggerBase.triggerBase_C.receivedPhyiscsDamage
+// 0x008C (0x008C - 0x0000)
+struct TriggerBase_C_ReceivedPhyiscsDamage final
+{
+public:
+	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hot;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+static_assert(alignof(TriggerBase_C_ReceivedPhyiscsDamage) == 0x000004, "Wrong alignment on TriggerBase_C_ReceivedPhyiscsDamage");
+static_assert(sizeof(TriggerBase_C_ReceivedPhyiscsDamage) == 0x00008C, "Wrong size on TriggerBase_C_ReceivedPhyiscsDamage");
+static_assert(offsetof(TriggerBase_C_ReceivedPhyiscsDamage, Damage) == 0x000000, "Member 'TriggerBase_C_ReceivedPhyiscsDamage::Damage' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ReceivedPhyiscsDamage, Hot) == 0x000004, "Member 'TriggerBase_C_ReceivedPhyiscsDamage::Hot' has a wrong offset!");
 
 // Function triggerBase.triggerBase_C.ignite
 // 0x0004 (0x0004 - 0x0000)
@@ -609,7 +661,7 @@ struct TriggerBase_C_ImpactDamage final
 public:
 	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_2F03[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0090(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Impact;                                            // 0x0098(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -619,6 +671,21 @@ static_assert(offsetof(TriggerBase_C_ImpactDamage, Damage) == 0x000000, "Member 
 static_assert(offsetof(TriggerBase_C_ImpactDamage, Hit) == 0x000004, "Member 'TriggerBase_C_ImpactDamage::Hit' has a wrong offset!");
 static_assert(offsetof(TriggerBase_C_ImpactDamage, Actor) == 0x000090, "Member 'TriggerBase_C_ImpactDamage::Actor' has a wrong offset!");
 static_assert(offsetof(TriggerBase_C_ImpactDamage, Impact) == 0x000098, "Member 'TriggerBase_C_ImpactDamage::Impact' has a wrong offset!");
+
+// Function triggerBase.triggerBase_C.texturePickerApply
+// 0x0018 (0x0018 - 0x0000)
+struct TriggerBase_C_TexturePickerApply final
+{
+public:
+	class UUmg_texturePicker_C*                   Picker;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Param_Index;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(TriggerBase_C_TexturePickerApply) == 0x000008, "Wrong alignment on TriggerBase_C_TexturePickerApply");
+static_assert(sizeof(TriggerBase_C_TexturePickerApply) == 0x000018, "Wrong size on TriggerBase_C_TexturePickerApply");
+static_assert(offsetof(TriggerBase_C_TexturePickerApply, Picker) == 0x000000, "Member 'TriggerBase_C_TexturePickerApply::Picker' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_TexturePickerApply, Texture) == 0x000008, "Member 'TriggerBase_C_TexturePickerApply::Texture' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_TexturePickerApply, Param_Index) == 0x000010, "Member 'TriggerBase_C_TexturePickerApply::Param_Index' has a wrong offset!");
 
 // Function triggerBase.triggerBase_C.applyColor
 // 0x0010 (0x0010 - 0x0000)
@@ -645,14 +712,14 @@ static_assert(offsetof(TriggerBase_C_AnyKey, Param_Key) == 0x000000, "Member 'Tr
 static_assert(offsetof(TriggerBase_C_AnyKey, Pressed) == 0x000018, "Member 'TriggerBase_C_AnyKey::Pressed' has a wrong offset!");
 
 // Function triggerBase.triggerBase_C.settingsApplied
-// 0x00CC (0x00CC - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct TriggerBase_C_SettingsApplied final
 {
 public:
-	struct FStruct_settings                       Settings;                                          // 0x0000(0x00CC)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       Settings;                                          // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(TriggerBase_C_SettingsApplied) == 0x000004, "Wrong alignment on TriggerBase_C_SettingsApplied");
-static_assert(sizeof(TriggerBase_C_SettingsApplied) == 0x0000CC, "Wrong size on TriggerBase_C_SettingsApplied");
+static_assert(alignof(TriggerBase_C_SettingsApplied) == 0x000008, "Wrong alignment on TriggerBase_C_SettingsApplied");
+static_assert(sizeof(TriggerBase_C_SettingsApplied) == 0x0000F0, "Wrong size on TriggerBase_C_SettingsApplied");
 static_assert(offsetof(TriggerBase_C_SettingsApplied, Settings) == 0x000000, "Member 'TriggerBase_C_SettingsApplied::Settings' has a wrong offset!");
 
 // Function triggerBase.triggerBase_C.stuffUpgraded
@@ -667,80 +734,169 @@ static_assert(sizeof(TriggerBase_C_StuffUpgraded) == 0x000008, "Wrong size on Tr
 static_assert(offsetof(TriggerBase_C_StuffUpgraded, GameMode) == 0x000000, "Member 'TriggerBase_C_StuffUpgraded::GameMode' has a wrong offset!");
 
 // Function triggerBase.triggerBase_C.UserConstructionScript
-// 0x0078 (0x0078 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct TriggerBase_C_UserConstructionScript final
 {
 public:
 	int32                                         Temp_int_Variable;                                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F04[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F05[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_getKey_key;                               // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_Array_Get_Item_1;                         // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F06[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects;                  // 0x0048(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F07[0x6];                                     // 0x005A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_getKey_key_1;                             // 0x0060(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystemComponent*               CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_Array_Get_Item_1;                         // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects;                  // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_getKey_key;                               // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_getKey_key_1;                             // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(TriggerBase_C_UserConstructionScript) == 0x000008, "Wrong alignment on TriggerBase_C_UserConstructionScript");
-static_assert(sizeof(TriggerBase_C_UserConstructionScript) == 0x000078, "Wrong size on TriggerBase_C_UserConstructionScript");
+static_assert(sizeof(TriggerBase_C_UserConstructionScript) == 0x000080, "Wrong size on TriggerBase_C_UserConstructionScript");
 static_assert(offsetof(TriggerBase_C_UserConstructionScript, Temp_int_Variable) == 0x000000, "Member 'TriggerBase_C_UserConstructionScript::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_UserConstructionScript, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'TriggerBase_C_UserConstructionScript::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue_1) == 0x00000C, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_Array_Get_Item) == 0x000010, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_Less_IntInt_ReturnValue) == 0x00001C, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_UserConstructionScript, Temp_int_Array_Index_Variable) == 0x000020, "Member 'TriggerBase_C_UserConstructionScript::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_getKey_key) == 0x000028, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_getKey_key' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_Array_Get_Item_1) == 0x000038, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue_1) == 0x000040, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_UserConstructionScript, K2Node_DynamicCast_AsInt_Objects) == 0x000048, "Member 'TriggerBase_C_UserConstructionScript::K2Node_DynamicCast_AsInt_Objects' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_UserConstructionScript, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'TriggerBase_C_UserConstructionScript::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_Less_IntInt_ReturnValue_1) == 0x000059, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_getKey_key_1) == 0x000060, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_getKey_key_1' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_Array_Add_ReturnValue) == 0x000070, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue_2) == 0x000074, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_UserConstructionScript, Temp_int_Array_Index_Variable) == 0x000008, "Member 'TriggerBase_C_UserConstructionScript::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_UserConstructionScript, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'TriggerBase_C_UserConstructionScript::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue_1) == 0x000010, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_Array_Get_Item) == 0x000018, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_Less_IntInt_ReturnValue) == 0x000024, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_Array_Get_Item_1) == 0x000028, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue_1) == 0x000030, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_UserConstructionScript, K2Node_DynamicCast_AsInt_Objects) == 0x000038, "Member 'TriggerBase_C_UserConstructionScript::K2Node_DynamicCast_AsInt_Objects' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_UserConstructionScript, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'TriggerBase_C_UserConstructionScript::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_Less_IntInt_ReturnValue_1) == 0x000049, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_getKey_key) == 0x000050, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_getKey_key' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_Array_Add_ReturnValue) == 0x000060, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_getKey_key_1) == 0x000068, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_getKey_key_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue_2) == 0x000078, "Member 'TriggerBase_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
 
 // Function triggerBase.triggerBase_C.runAll
-// 0x0040 (0x0040 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct TriggerBase_C_RunAll final
 {
 public:
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Get_Item;                           // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F08[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_Array_Get_Item_1;                         // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F09[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IInt_ttrigger_C>       K2Node_DynamicCast_AsInt_Ttrigger;                 // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         AllIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IInt_ttrigger_C>       K2Node_DynamicCast_AsInt_Ttrigger;                 // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Get_Item_1;                         // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_Array_Get_Item_2;                         // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IInt_ttrigger_C>       K2Node_DynamicCast_AsInt_Ttrigger_1;               // 0x0060(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(TriggerBase_C_RunAll) == 0x000008, "Wrong alignment on TriggerBase_C_RunAll");
-static_assert(sizeof(TriggerBase_C_RunAll) == 0x000040, "Wrong size on TriggerBase_C_RunAll");
-static_assert(offsetof(TriggerBase_C_RunAll, Temp_int_Array_Index_Variable) == 0x000000, "Member 'TriggerBase_C_RunAll::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_RunAll, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'TriggerBase_C_RunAll::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_RunAll, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'TriggerBase_C_RunAll::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_RunAll, CallFunc_Array_Get_Item) == 0x00000C, "Member 'TriggerBase_C_RunAll::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_RunAll, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'TriggerBase_C_RunAll::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_RunAll, CallFunc_Array_Get_Item_1) == 0x000018, "Member 'TriggerBase_C_RunAll::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_RunAll, CallFunc_Less_IntInt_ReturnValue) == 0x000020, "Member 'TriggerBase_C_RunAll::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_RunAll, K2Node_DynamicCast_AsInt_Ttrigger) == 0x000028, "Member 'TriggerBase_C_RunAll::K2Node_DynamicCast_AsInt_Ttrigger' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_RunAll, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'TriggerBase_C_RunAll::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(sizeof(TriggerBase_C_RunAll) == 0x000078, "Wrong size on TriggerBase_C_RunAll");
+static_assert(offsetof(TriggerBase_C_RunAll, AllIndex) == 0x000000, "Member 'TriggerBase_C_RunAll::AllIndex' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_RunAll, Temp_int_Array_Index_Variable) == 0x000004, "Member 'TriggerBase_C_RunAll::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_RunAll, CallFunc_Less_IntInt_ReturnValue) == 0x000008, "Member 'TriggerBase_C_RunAll::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_RunAll, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'TriggerBase_C_RunAll::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_RunAll, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'TriggerBase_C_RunAll::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_RunAll, Temp_int_Array_Index_Variable_1) == 0x000014, "Member 'TriggerBase_C_RunAll::Temp_int_Array_Index_Variable_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_RunAll, Temp_int_Loop_Counter_Variable_1) == 0x000018, "Member 'TriggerBase_C_RunAll::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_RunAll, CallFunc_Array_Get_Item) == 0x000020, "Member 'TriggerBase_C_RunAll::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_RunAll, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'TriggerBase_C_RunAll::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_RunAll, K2Node_DynamicCast_AsInt_Ttrigger) == 0x000030, "Member 'TriggerBase_C_RunAll::K2Node_DynamicCast_AsInt_Ttrigger' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_RunAll, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'TriggerBase_C_RunAll::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_RunAll, CallFunc_Less_IntInt_ReturnValue_1) == 0x000041, "Member 'TriggerBase_C_RunAll::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_RunAll, CallFunc_Add_IntInt_ReturnValue_1) == 0x000044, "Member 'TriggerBase_C_RunAll::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_RunAll, CallFunc_Array_Get_Item_1) == 0x000048, "Member 'TriggerBase_C_RunAll::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_RunAll, CallFunc_Array_Length_ReturnValue_1) == 0x00004C, "Member 'TriggerBase_C_RunAll::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_RunAll, CallFunc_Array_Get_Item_2) == 0x000050, "Member 'TriggerBase_C_RunAll::CallFunc_Array_Get_Item_2' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_RunAll, CallFunc_Less_IntInt_ReturnValue_2) == 0x000058, "Member 'TriggerBase_C_RunAll::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_RunAll, K2Node_DynamicCast_AsInt_Ttrigger_1) == 0x000060, "Member 'TriggerBase_C_RunAll::K2Node_DynamicCast_AsInt_Ttrigger_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_RunAll, K2Node_DynamicCast_bSuccess_1) == 0x000070, "Member 'TriggerBase_C_RunAll::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+
+// Function triggerBase.triggerBase_C.showConnections
+// 0x0100 (0x0100 - 0x0000)
+struct TriggerBase_C_ShowConnections final
+{
+public:
+	bool                                          Enable;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           Temp_struct_Variable;                              // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable_1;                            // 0x0014(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable_2;                            // 0x0024(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable_3;                            // 0x0034(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable_4;                            // 0x0044(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_58[0x8];                                       // 0x0058(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             Temp_struct_Variable_5;                            // 0x0060(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystemComponent*               CallFunc_AddComponent_ReturnValue;                 // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable_6;                            // 0x00AC(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Get_Item;                           // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UParticleSystemComponent*               CallFunc_Array_Get_Item_1;                         // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x00D0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_E5[0x3];                                       // 0x00E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_EC[0x4];                                       // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_Array_Get_Item_2;                         // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x00FD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(TriggerBase_C_ShowConnections) == 0x000010, "Wrong alignment on TriggerBase_C_ShowConnections");
+static_assert(sizeof(TriggerBase_C_ShowConnections) == 0x000100, "Wrong size on TriggerBase_C_ShowConnections");
+static_assert(offsetof(TriggerBase_C_ShowConnections, Enable) == 0x000000, "Member 'TriggerBase_C_ShowConnections::Enable' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, Temp_struct_Variable) == 0x000004, "Member 'TriggerBase_C_ShowConnections::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, Temp_struct_Variable_1) == 0x000014, "Member 'TriggerBase_C_ShowConnections::Temp_struct_Variable_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, Temp_struct_Variable_2) == 0x000024, "Member 'TriggerBase_C_ShowConnections::Temp_struct_Variable_2' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, Temp_struct_Variable_3) == 0x000034, "Member 'TriggerBase_C_ShowConnections::Temp_struct_Variable_3' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, Temp_struct_Variable_4) == 0x000044, "Member 'TriggerBase_C_ShowConnections::Temp_struct_Variable_4' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, Temp_int_Variable) == 0x000054, "Member 'TriggerBase_C_ShowConnections::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, Temp_struct_Variable_5) == 0x000060, "Member 'TriggerBase_C_ShowConnections::Temp_struct_Variable_5' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, CallFunc_Add_IntInt_ReturnValue) == 0x000090, "Member 'TriggerBase_C_ShowConnections::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, CallFunc_AddComponent_ReturnValue) == 0x000098, "Member 'TriggerBase_C_ShowConnections::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, Temp_int_Array_Index_Variable) == 0x0000A0, "Member 'TriggerBase_C_ShowConnections::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, Temp_int_Loop_Counter_Variable) == 0x0000A4, "Member 'TriggerBase_C_ShowConnections::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000A8, "Member 'TriggerBase_C_ShowConnections::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, Temp_struct_Variable_6) == 0x0000AC, "Member 'TriggerBase_C_ShowConnections::Temp_struct_Variable_6' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, CallFunc_Array_Get_Item) == 0x0000BC, "Member 'TriggerBase_C_ShowConnections::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, Temp_int_Variable_1) == 0x0000C0, "Member 'TriggerBase_C_ShowConnections::Temp_int_Variable_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, CallFunc_Array_Get_Item_1) == 0x0000C8, "Member 'TriggerBase_C_ShowConnections::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, K2Node_Select_Default) == 0x0000D0, "Member 'TriggerBase_C_ShowConnections::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, CallFunc_Array_Length_ReturnValue) == 0x0000E0, "Member 'TriggerBase_C_ShowConnections::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, CallFunc_Less_IntInt_ReturnValue) == 0x0000E4, "Member 'TriggerBase_C_ShowConnections::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, CallFunc_Array_Add_ReturnValue) == 0x0000E8, "Member 'TriggerBase_C_ShowConnections::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, CallFunc_Array_Get_Item_2) == 0x0000F0, "Member 'TriggerBase_C_ShowConnections::CallFunc_Array_Get_Item_2' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, CallFunc_Array_Length_ReturnValue_1) == 0x0000F8, "Member 'TriggerBase_C_ShowConnections::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000FC, "Member 'TriggerBase_C_ShowConnections::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_ShowConnections, CallFunc_Array_IsValidIndex_ReturnValue) == 0x0000FD, "Member 'TriggerBase_C_ShowConnections::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
 
 // Function triggerBase.triggerBase_C.getTriggerData
 // 0x0230 (0x0230 - 0x0000)
@@ -751,7 +907,7 @@ public:
 	TArray<class FString>                         Keys;                                              // 0x00F0(0x0010)(Edit, BlueprintVisible)
 	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0100(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F0A[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_138[0x8];                                      // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_triggerSave                    K2Node_MakeStruct_struct_triggerSave;              // 0x0140(0x00F0)(HasGetValueTypeHash)
 };
 static_assert(alignof(TriggerBase_C_GetTriggerData) == 0x000010, "Wrong alignment on TriggerBase_C_GetTriggerData");
@@ -790,32 +946,31 @@ static_assert(offsetof(TriggerBase_C_IgnoreSave_trigger, Ignore) == 0x000000, "M
 static_assert(offsetof(TriggerBase_C_IgnoreSave_trigger, CallFunc_IsChildActor_ReturnValue) == 0x000001, "Member 'TriggerBase_C_IgnoreSave_trigger::CallFunc_IsChildActor_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TriggerBase_C_IgnoreSave_trigger, CallFunc_BooleanOR_ReturnValue) == 0x000002, "Member 'TriggerBase_C_IgnoreSave_trigger::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
+// Function triggerBase.triggerBase_C.gatherDataFromKeyT
+// 0x0001 (0x0001 - 0x0000)
+struct TriggerBase_C_GatherDataFromKeyT final
+{
+public:
+	bool                                          Gather;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(TriggerBase_C_GatherDataFromKeyT) == 0x000001, "Wrong alignment on TriggerBase_C_GatherDataFromKeyT");
+static_assert(sizeof(TriggerBase_C_GatherDataFromKeyT) == 0x000001, "Wrong size on TriggerBase_C_GatherDataFromKeyT");
+static_assert(offsetof(TriggerBase_C_GatherDataFromKeyT, Gather) == 0x000000, "Member 'TriggerBase_C_GatherDataFromKeyT::Gather' has a wrong offset!");
+
 // Function triggerBase.triggerBase_C.GetKey
-// 0x0048 (0x0048 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct TriggerBase_C_GetKey final
 {
 public:
 	class FString                                 Param_Key;                                         // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<uint8>                                 CallFunc_GenerateRandomBytes_ByteArray;            // 0x0018(0x0010)(ReferenceParm)
-	class FString                                 CallFunc_BytesToBase64Url_ReturnValue;             // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	const class AActor*                           Temp_object_Variable;                              // 0x0010(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_generateKey_keyOut;                       // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(TriggerBase_C_GetKey) == 0x000008, "Wrong alignment on TriggerBase_C_GetKey");
-static_assert(sizeof(TriggerBase_C_GetKey) == 0x000048, "Wrong size on TriggerBase_C_GetKey");
+static_assert(sizeof(TriggerBase_C_GetKey) == 0x000028, "Wrong size on TriggerBase_C_GetKey");
 static_assert(offsetof(TriggerBase_C_GetKey, Param_Key) == 0x000000, "Member 'TriggerBase_C_GetKey::Param_Key' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_GetKey, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000010, "Member 'TriggerBase_C_GetKey::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_GetKey, CallFunc_GenerateRandomBytes_ByteArray) == 0x000018, "Member 'TriggerBase_C_GetKey::CallFunc_GenerateRandomBytes_ByteArray' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_GetKey, CallFunc_BytesToBase64Url_ReturnValue) == 0x000028, "Member 'TriggerBase_C_GetKey::CallFunc_BytesToBase64Url_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_GetKey, CallFunc_Array_Add_ReturnValue) == 0x000038, "Member 'TriggerBase_C_GetKey::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_GetKey, CallFunc_Array_Add_ReturnValue_1) == 0x00003C, "Member 'TriggerBase_C_GetKey::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_GetKey, CallFunc_Array_Find_ReturnValue) == 0x000040, "Member 'TriggerBase_C_GetKey::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_GetKey, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000044, "Member 'TriggerBase_C_GetKey::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TriggerBase_C_GetKey, CallFunc_IsEmpty_ReturnValue) == 0x000045, "Member 'TriggerBase_C_GetKey::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_GetKey, Temp_object_Variable) == 0x000010, "Member 'TriggerBase_C_GetKey::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_GetKey, CallFunc_generateKey_keyOut) == 0x000018, "Member 'TriggerBase_C_GetKey::CallFunc_generateKey_keyOut' has a wrong offset!");
 
 // Function triggerBase.triggerBase_C.toolboxFix
 // 0x0010 (0x0010 - 0x0000)
@@ -847,14 +1002,14 @@ struct TriggerBase_C_ProcessKeys final
 {
 public:
 	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F0B[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Array_Get_Item;                           // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F0C[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_getObjectFromKey_Output;                  // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -897,7 +1052,7 @@ static_assert(offsetof(TriggerBase_C_SetPath, Path) == 0x000000, "Member 'Trigge
 static_assert(offsetof(TriggerBase_C_SetPath, Return) == 0x000010, "Member 'TriggerBase_C_SetPath::Return' has a wrong offset!");
 
 // Function triggerBase.triggerBase_C.getActionOptions
-// 0x0048 (0x0048 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct TriggerBase_C_GetActionOptions final
 {
 public:
@@ -907,15 +1062,17 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(TriggerBase_C_GetActionOptions) == 0x000008, "Wrong alignment on TriggerBase_C_GetActionOptions");
-static_assert(sizeof(TriggerBase_C_GetActionOptions) == 0x000048, "Wrong size on TriggerBase_C_GetActionOptions");
+static_assert(sizeof(TriggerBase_C_GetActionOptions) == 0x000050, "Wrong size on TriggerBase_C_GetActionOptions");
 static_assert(offsetof(TriggerBase_C_GetActionOptions, Player) == 0x000000, "Member 'TriggerBase_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(TriggerBase_C_GetActionOptions, Component) == 0x000008, "Member 'TriggerBase_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(TriggerBase_C_GetActionOptions, Actor) == 0x000010, "Member 'TriggerBase_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(TriggerBase_C_GetActionOptions, Options) == 0x000018, "Member 'TriggerBase_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(TriggerBase_C_GetActionOptions, Options_enum) == 0x000028, "Member 'TriggerBase_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(TriggerBase_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'TriggerBase_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
+static_assert(offsetof(TriggerBase_C_GetActionOptions, Number) == 0x000048, "Member 'TriggerBase_C_GetActionOptions::Number' has a wrong offset!");
 
 // Function triggerBase.triggerBase_C.gascanFuel
 // 0x0010 (0x0010 - 0x0000)
@@ -940,6 +1097,17 @@ public:
 static_assert(alignof(TriggerBase_C_SkipRadial) == 0x000001, "Wrong alignment on TriggerBase_C_SkipRadial");
 static_assert(sizeof(TriggerBase_C_SkipRadial) == 0x000001, "Wrong size on TriggerBase_C_SkipRadial");
 static_assert(offsetof(TriggerBase_C_SkipRadial, Skip) == 0x000000, "Member 'TriggerBase_C_SkipRadial::Skip' has a wrong offset!");
+
+// Function triggerBase.triggerBase_C.getPriceMultiplier
+// 0x0004 (0x0004 - 0x0000)
+struct TriggerBase_C_GetPriceMultiplier final
+{
+public:
+	float                                         PriceMult;                                         // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(TriggerBase_C_GetPriceMultiplier) == 0x000004, "Wrong alignment on TriggerBase_C_GetPriceMultiplier");
+static_assert(sizeof(TriggerBase_C_GetPriceMultiplier) == 0x000004, "Wrong size on TriggerBase_C_GetPriceMultiplier");
+static_assert(offsetof(TriggerBase_C_GetPriceMultiplier, PriceMult) == 0x000000, "Member 'TriggerBase_C_GetPriceMultiplier::PriceMult' has a wrong offset!");
 
 // Function triggerBase.triggerBase_C.dreamInv
 // 0x0018 (0x0018 - 0x0000)

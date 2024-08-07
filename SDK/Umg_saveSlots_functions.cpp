@@ -37,6 +37,62 @@ void UUmg_saveSlots_C::ExecuteUbergraph_umg_saveSlots(int32 EntryPoint)
 }
 
 
+// Function umg_saveSlots.umg_saveSlots_C.updateList
+// (BlueprintCallable, BlueprintEvent)
+
+void UUmg_saveSlots_C::UpdateList()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_saveSlots_C", "updateList");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function umg_saveSlots.umg_saveSlots_C.BndEvt__umg_saveSlots_button_updatelist_K2Node_ComponentBoundEvent_13_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UUmg_saveSlots_C::BndEvt__umg_saveSlots_button_updatelist_K2Node_ComponentBoundEvent_13_OnButtonClickedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_saveSlots_C", "BndEvt__umg_saveSlots_button_updatelist_K2Node_ComponentBoundEvent_13_OnButtonClickedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function umg_saveSlots.umg_saveSlots_C.BndEvt__umg_saveSlots_button_duplicate_K2Node_ComponentBoundEvent_12_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UUmg_saveSlots_C::BndEvt__umg_saveSlots_button_duplicate_K2Node_ComponentBoundEvent_12_OnButtonClickedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_saveSlots_C", "BndEvt__umg_saveSlots_button_duplicate_K2Node_ComponentBoundEvent_12_OnButtonClickedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function umg_saveSlots.umg_saveSlots_C.BndEvt__umg_saveSlots_button_openSaveDir_K2Node_ComponentBoundEvent_10_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UUmg_saveSlots_C::BndEvt__umg_saveSlots_button_openSaveDir_K2Node_ComponentBoundEvent_10_OnButtonClickedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_saveSlots_C", "BndEvt__umg_saveSlots_button_openSaveDir_K2Node_ComponentBoundEvent_10_OnButtonClickedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function umg_saveSlots.umg_saveSlots_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -275,6 +331,44 @@ class FText UUmg_saveSlots_C::FindSBMap(const class FString& Param_Name)
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+}
+
+
+// Function umg_saveSlots.umg_saveSlots_C.loadSlots
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UUmg_saveSlots_C::LoadSlots()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_saveSlots_C", "loadSlots");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function umg_saveSlots.umg_saveSlots_C.getSaveObject
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FString                           ItemToFind                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash)
+// class USaveSlot_C*                      Output                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UUmg_saveSlots_C::GetSaveObject(const class FString& ItemToFind, class USaveSlot_C** Output)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_saveSlots_C", "getSaveObject");
+
+	Params::Umg_saveSlots_C_GetSaveObject Parms{};
+
+	Parms.ItemToFind = std::move(ItemToFind);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Output != nullptr)
+		*Output = Parms.Output;
 }
 
 }

@@ -29,7 +29,7 @@ public:
 	class UTextBlock*                             TextBlock_name;                                    // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UUmg_UI_C*                              Owner;                                             // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                         ID;                                                // 0x0288(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_31FC[0x4];                                     // 0x028C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28C[0x4];                                      // 0x028C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Name_Umg_objectActionButton_C;                     // 0x0290(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class FText                                   Overlay;                                           // 0x02A0(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 	class FText                                   FinalName;                                         // 0x02B8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)

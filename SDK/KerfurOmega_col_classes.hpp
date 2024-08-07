@@ -19,12 +19,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass kerfurOmega_col.kerfurOmega_col_C
-// 0x0010 (0x0810 - 0x0800)
-class AKerfurOmega_col_C : public AKerfurOmega_C
+// 0x0020 (0x0850 - 0x0830)
+#pragma pack(push, 0x1)
+class alignas(0x10) AKerfurOmega_col_C : public AKerfurOmega_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_KerfurOmega_col_C;                  // 0x07F8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FVector                                HSV;                                               // 0x0800(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_KerfurOmega_col_C;                  // 0x0830(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FVector                                HSV;                                               // 0x0838(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_kerfurOmega_col(int32 EntryPoint);
@@ -45,10 +46,11 @@ public:
 		return GetDefaultObjImpl<AKerfurOmega_col_C>();
 	}
 };
+#pragma pack(pop)
 static_assert(alignof(AKerfurOmega_col_C) == 0x000010, "Wrong alignment on AKerfurOmega_col_C");
-static_assert(sizeof(AKerfurOmega_col_C) == 0x000810, "Wrong size on AKerfurOmega_col_C");
-static_assert(offsetof(AKerfurOmega_col_C, UberGraphFrame_KerfurOmega_col_C) == 0x0007F8, "Member 'AKerfurOmega_col_C::UberGraphFrame_KerfurOmega_col_C' has a wrong offset!");
-static_assert(offsetof(AKerfurOmega_col_C, HSV) == 0x000800, "Member 'AKerfurOmega_col_C::HSV' has a wrong offset!");
+static_assert(sizeof(AKerfurOmega_col_C) == 0x000850, "Wrong size on AKerfurOmega_col_C");
+static_assert(offsetof(AKerfurOmega_col_C, UberGraphFrame_KerfurOmega_col_C) == 0x000830, "Member 'AKerfurOmega_col_C::UberGraphFrame_KerfurOmega_col_C' has a wrong offset!");
+static_assert(offsetof(AKerfurOmega_col_C, HSV) == 0x000838, "Member 'AKerfurOmega_col_C::HSV' has a wrong offset!");
 
 }
 

@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass umg_help.umg_help_C
-// 0x0170 (0x03D0 - 0x0260)
+// 0x0190 (0x03F0 - 0x0260)
 class UUmg_help_C final : public UUserWidget
 {
 public:
@@ -34,11 +34,10 @@ public:
 	TArray<class UUmg_settingsSlot_C*>            Sliders;                                           // 0x02A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	TArray<class UUmg_settingsSlot_C*>            V_slots;                                           // 0x02B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	TArray<class UUmg_settingsSlot_C*>            S_slots;                                           // 0x02C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	struct FStruct_settings                       SettingsCopy;                                      // 0x02D0(0x00CC)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2164[0x4];                                     // 0x039C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UUmg_helpButton_C*>              HelpButtons;                                       // 0x03A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	class UUmg_helpButton_C*                      Active;                                            // 0x03B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   SearchTxt;                                         // 0x03B8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FStruct_settings                       SettingsCopy;                                      // 0x02D0(0x00F0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	TArray<class UUmg_helpButton_C*>              HelpButtons;                                       // 0x03C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	class UUmg_helpButton_C*                      Active;                                            // 0x03D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   SearchTxt;                                         // 0x03D8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_umg_help(int32 EntryPoint);
@@ -61,7 +60,7 @@ public:
 	}
 };
 static_assert(alignof(UUmg_help_C) == 0x000008, "Wrong alignment on UUmg_help_C");
-static_assert(sizeof(UUmg_help_C) == 0x0003D0, "Wrong size on UUmg_help_C");
+static_assert(sizeof(UUmg_help_C) == 0x0003F0, "Wrong size on UUmg_help_C");
 static_assert(offsetof(UUmg_help_C, UberGraphFrame) == 0x000260, "Member 'UUmg_help_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UUmg_help_C, button_exit) == 0x000268, "Member 'UUmg_help_C::button_exit' has a wrong offset!");
 static_assert(offsetof(UUmg_help_C, Helpbox) == 0x000270, "Member 'UUmg_help_C::Helpbox' has a wrong offset!");
@@ -74,9 +73,9 @@ static_assert(offsetof(UUmg_help_C, Sliders) == 0x0002A0, "Member 'UUmg_help_C::
 static_assert(offsetof(UUmg_help_C, V_slots) == 0x0002B0, "Member 'UUmg_help_C::V_slots' has a wrong offset!");
 static_assert(offsetof(UUmg_help_C, S_slots) == 0x0002C0, "Member 'UUmg_help_C::S_slots' has a wrong offset!");
 static_assert(offsetof(UUmg_help_C, SettingsCopy) == 0x0002D0, "Member 'UUmg_help_C::SettingsCopy' has a wrong offset!");
-static_assert(offsetof(UUmg_help_C, HelpButtons) == 0x0003A0, "Member 'UUmg_help_C::HelpButtons' has a wrong offset!");
-static_assert(offsetof(UUmg_help_C, Active) == 0x0003B0, "Member 'UUmg_help_C::Active' has a wrong offset!");
-static_assert(offsetof(UUmg_help_C, SearchTxt) == 0x0003B8, "Member 'UUmg_help_C::SearchTxt' has a wrong offset!");
+static_assert(offsetof(UUmg_help_C, HelpButtons) == 0x0003C0, "Member 'UUmg_help_C::HelpButtons' has a wrong offset!");
+static_assert(offsetof(UUmg_help_C, Active) == 0x0003D0, "Member 'UUmg_help_C::Active' has a wrong offset!");
+static_assert(offsetof(UUmg_help_C, SearchTxt) == 0x0003D8, "Member 'UUmg_help_C::SearchTxt' has a wrong offset!");
 
 }
 

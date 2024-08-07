@@ -139,10 +139,34 @@ void APortal_C::ApplyColor(const struct FLinearColor& Color)
 }
 
 
+// Function portal.portal_C.texturePickerApply
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APortal_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("portal_C", "texturePickerApply");
+
+	Params::Portal_C_TexturePickerApply Parms{};
+
+	Parms.Picker = Picker;
+	Parms.Texture = Texture;
+	Parms.Param_Index = Param_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function portal.portal_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void APortal_C::SettingsApplied(const struct FStruct_settings& Settings)
 {

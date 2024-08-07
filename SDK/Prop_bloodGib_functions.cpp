@@ -37,20 +37,6 @@ void AProp_bloodGib_C::ExecuteUbergraph_prop_bloodGib(int32 EntryPoint)
 }
 
 
-// Function prop_bloodGib.prop_bloodGib_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_bloodGib_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_bloodGib_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_bloodGib.prop_bloodGib_C.BndEvt__prop_bloodGib_StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -76,6 +62,20 @@ void AProp_bloodGib_C::BndEvt__prop_bloodGib_StaticMesh_K2Node_ComponentBoundEve
 	Parms.Param_Hit = std::move(Param_Hit);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_bloodGib.prop_bloodGib_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_bloodGib_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_bloodGib_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

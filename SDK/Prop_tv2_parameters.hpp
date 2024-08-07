@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Enum_interactionActions_structs.hpp"
-#include "Engine_structs.hpp"
 #include "Struct_tv_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -25,127 +25,108 @@ struct Prop_tv2_C_ExecuteUbergraph_prop_tv2 final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          CallFunc_getMainPlayer_AsMain_Player;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_setActiveInterface_return;                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3A38[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 K2Node_CustomEvent_OpenedUrl;                      // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FStruct_tv                             K2Node_CustomEvent_data;                           // 0x0030(0x0028)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_pausePlayer;                    // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3A39[0x3];                                     // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Pause_ReturnValue;                        // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3A3A[0x3];                                     // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const class FString& OpenedUrl)> K2Node_CreateDelegate_OutputDelegate;              // 0x0068(0x0010)(ZeroConstructor, NoDestructor)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_2;        // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3A3B[0x4];                                     // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_3;        // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3A3C[0x7];                                     // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_4;        // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3A3D[0x3];                                     // 0x00B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_tv                             CallFunc_Array_Get_Item;                           // 0x00C8(0x0028)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          CallFunc_getMainPlayer_AsMain_Player;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_setActiveInterface_return;                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 K2Node_CustomEvent_OpenedUrl;                      // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FStruct_tv                             K2Node_CustomEvent_data;                           // 0x0038(0x0028)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_pausePlayer;                    // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Pause_ReturnValue;                        // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6D[0x3];                                       // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_2;        // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_3;        // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_4;        // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A5[0x3];                                       // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_tv                             CallFunc_Array_Get_Item;                           // 0x00B8(0x0028)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const class FString& OpenedUrl)> K2Node_CreateDelegate_OutputDelegate;              // 0x00E4(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_Play_ReturnValue;                         // 0x00F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x00F5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3A3E[0x2];                                     // 0x00F6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F6[0x2];                                       // 0x00F6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x00FC(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_3A3F[0x4];                                     // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x0118(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x01A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x01A5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3A40[0x2];                                     // 0x01A6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_LastIndex_ReturnValue_1;            // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue_1;       // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Get_Item_1;                         // 0x01B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_LowEntry_LocalVariable_Value__Object;       // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3A41[0x4];                                     // 0x01BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_tv                             CallFunc_Array_Get_Item_2;                         // 0x01C0(0x0028)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_OpenFile_ReturnValue;                     // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_OpenUrl_ReturnValue;                      // 0x01E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x01EA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3A42[0x5];                                     // 0x01EB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_FC[0x4];                                       // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x0108(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x0191(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_192[0x2];                                      // 0x0192(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_LastIndex_ReturnValue_1;            // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue_1;       // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x019C(0x0010)(ZeroConstructor, NoDestructor)
+	int32                                         CallFunc_Array_Get_Item_1;                         // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_LowEntry_LocalVariable_Value__Object;       // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1B4[0x4];                                      // 0x01B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_tv                             CallFunc_Array_Get_Item_2;                         // 0x01B8(0x0028)(ZeroConstructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1E9[0x3];                                      // 0x01E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x01EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_OpenFile_ReturnValue;                     // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_OpenUrl_ReturnValue;                      // 0x01F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Prop_tv2_C_ExecuteUbergraph_prop_tv2) == 0x000008, "Wrong alignment on Prop_tv2_C_ExecuteUbergraph_prop_tv2");
 static_assert(sizeof(Prop_tv2_C_ExecuteUbergraph_prop_tv2) == 0x0001F8, "Wrong size on Prop_tv2_C_ExecuteUbergraph_prop_tv2");
 static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, EntryPoint) == 0x000000, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, Temp_int_Array_Index_Variable) == 0x000004, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000008, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_getMainPlayer_AsMain_Player) == 0x000010, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_getMainPlayer_AsMain_Player' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_setActiveInterface_return) == 0x000018, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_setActiveInterface_return' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, K2Node_CustomEvent_OpenedUrl) == 0x000020, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::K2Node_CustomEvent_OpenedUrl' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, K2Node_CustomEvent_data) == 0x000030, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::K2Node_CustomEvent_data' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, K2Node_CustomEvent_pausePlayer) == 0x000058, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::K2Node_CustomEvent_pausePlayer' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, Temp_int_Loop_Counter_Variable) == 0x00005C, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Add_IntInt_ReturnValue) == 0x000060, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Pause_ReturnValue) == 0x000064, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Pause_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, K2Node_CreateDelegate_OutputDelegate) == 0x000068, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000078, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x000080, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_getMainGamemode_AsMain_Gamemode_2) == 0x000088, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_getMainGamemode_AsMain_Gamemode_2' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, Temp_int_Variable) == 0x000090, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_getMainGamemode_AsMain_Gamemode_3) == 0x000098, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_getMainGamemode_AsMain_Gamemode_3' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, K2Node_SwitchEnum_CmpSuccess) == 0x0000A0, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_getMainGamemode_AsMain_Gamemode_4) == 0x0000A8, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_getMainGamemode_AsMain_Gamemode_4' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Array_Length_ReturnValue) == 0x0000B0, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Less_IntInt_ReturnValue) == 0x0000B4, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Array_LastIndex_ReturnValue) == 0x0000B8, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_RandomIntegerInRange_ReturnValue) == 0x0000BC, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Array_Length_ReturnValue_1) == 0x0000C0, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Percent_IntInt_ReturnValue) == 0x0000C4, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Array_Get_Item) == 0x0000C8, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000F0, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, Temp_int_Variable) == 0x000008, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000010, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_getMainPlayer_AsMain_Player) == 0x000018, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_getMainPlayer_AsMain_Player' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_setActiveInterface_return) == 0x000020, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_setActiveInterface_return' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, K2Node_CustomEvent_OpenedUrl) == 0x000028, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::K2Node_CustomEvent_OpenedUrl' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, K2Node_CustomEvent_data) == 0x000038, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::K2Node_CustomEvent_data' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, K2Node_CustomEvent_pausePlayer) == 0x000060, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::K2Node_CustomEvent_pausePlayer' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, Temp_int_Loop_Counter_Variable) == 0x000064, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Add_IntInt_ReturnValue) == 0x000068, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Pause_ReturnValue) == 0x00006C, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Pause_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000070, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x000078, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_getMainGamemode_AsMain_Gamemode_2) == 0x000080, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_getMainGamemode_AsMain_Gamemode_2' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_getMainGamemode_AsMain_Gamemode_3) == 0x000088, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_getMainGamemode_AsMain_Gamemode_3' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, K2Node_SwitchEnum_CmpSuccess) == 0x000090, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_getMainGamemode_AsMain_Gamemode_4) == 0x000098, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_getMainGamemode_AsMain_Gamemode_4' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Array_Length_ReturnValue) == 0x0000A0, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Less_IntInt_ReturnValue) == 0x0000A4, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Array_LastIndex_ReturnValue) == 0x0000A8, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_RandomIntegerInRange_ReturnValue) == 0x0000AC, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Array_Length_ReturnValue_1) == 0x0000B0, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Percent_IntInt_ReturnValue) == 0x0000B4, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Array_Get_Item) == 0x0000B8, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000E0, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, K2Node_CreateDelegate_OutputDelegate) == 0x0000E4, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Play_ReturnValue) == 0x0000F4, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Play_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Array_IsValidIndex_ReturnValue) == 0x0000F5, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Array_Add_ReturnValue) == 0x0000F8, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000FC, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, K2Node_Event_player) == 0x000110, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, K2Node_Event_hit) == 0x000118, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, K2Node_Event_index) == 0x0001A0, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, K2Node_Event_action) == 0x0001A4, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, K2Node_SwitchEnum_CmpSuccess_1) == 0x0001A5, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Array_LastIndex_ReturnValue_1) == 0x0001A8, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Array_LastIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_RandomIntegerInRange_ReturnValue_1) == 0x0001AC, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_RandomIntegerInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Array_Find_ReturnValue) == 0x0001B0, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Array_Get_Item_1) == 0x0001B4, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, K2Node_LowEntry_LocalVariable_Value__Object) == 0x0001B8, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::K2Node_LowEntry_LocalVariable_Value__Object' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Array_Get_Item_2) == 0x0001C0, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_OpenFile_ReturnValue) == 0x0001E8, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_OpenFile_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_OpenUrl_ReturnValue) == 0x0001E9, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_OpenUrl_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Array_RemoveItem_ReturnValue) == 0x0001EA, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0001F0, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-
-// Function prop_tv2.prop_tv2_C.actionOptionIndex
-// 0x0098 (0x0098 - 0x0000)
-struct Prop_tv2_C_ActionOptionIndex final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_tv2_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_tv2_C_ActionOptionIndex");
-static_assert(sizeof(Prop_tv2_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_tv2_C_ActionOptionIndex");
-static_assert(offsetof(Prop_tv2_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_tv2_C_ActionOptionIndex::Player' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_tv2_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_tv2_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_tv2_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, K2Node_Event_player) == 0x000100, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, K2Node_Event_hit) == 0x000108, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, K2Node_Event_action) == 0x000190, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, K2Node_SwitchEnum_CmpSuccess_1) == 0x000191, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Array_LastIndex_ReturnValue_1) == 0x000194, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Array_LastIndex_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_RandomIntegerInRange_ReturnValue_1) == 0x000198, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_RandomIntegerInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, K2Node_CreateDelegate_OutputDelegate_1) == 0x00019C, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Array_Get_Item_1) == 0x0001AC, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, K2Node_LowEntry_LocalVariable_Value__Object) == 0x0001B0, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::K2Node_LowEntry_LocalVariable_Value__Object' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Array_Get_Item_2) == 0x0001B8, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Array_Get_Item_2' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0001E0, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Array_RemoveItem_ReturnValue) == 0x0001E8, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_Array_Find_ReturnValue) == 0x0001EC, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_OpenFile_ReturnValue) == 0x0001F0, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_OpenFile_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ExecuteUbergraph_prop_tv2, CallFunc_OpenUrl_ReturnValue) == 0x0001F1, "Member 'Prop_tv2_C_ExecuteUbergraph_prop_tv2::CallFunc_OpenUrl_ReturnValue' has a wrong offset!");
 
 // Function prop_tv2.prop_tv2_C.openLink
 // 0x0030 (0x0030 - 0x0000)
@@ -171,8 +152,23 @@ static_assert(alignof(Prop_tv2_C_Opened) == 0x000008, "Wrong alignment on Prop_t
 static_assert(sizeof(Prop_tv2_C_Opened) == 0x000010, "Wrong size on Prop_tv2_C_Opened");
 static_assert(offsetof(Prop_tv2_C_Opened, OpenedUrl) == 0x000000, "Member 'Prop_tv2_C_Opened::OpenedUrl' has a wrong offset!");
 
+// Function prop_tv2.prop_tv2_C.actionOptionIndex
+// 0x0098 (0x0098 - 0x0000)
+struct Prop_tv2_C_ActionOptionIndex final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_tv2_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_tv2_C_ActionOptionIndex");
+static_assert(sizeof(Prop_tv2_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_tv2_C_ActionOptionIndex");
+static_assert(offsetof(Prop_tv2_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_tv2_C_ActionOptionIndex::Player' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_tv2_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_tv2_C_ActionOptionIndex::Action' has a wrong offset!");
+
 // Function prop_tv2.prop_tv2_C.getActionOptions
-// 0x0058 (0x0058 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct Prop_tv2_C_GetActionOptions final
 {
 public:
@@ -182,17 +178,20 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
 };
 static_assert(alignof(Prop_tv2_C_GetActionOptions) == 0x000008, "Wrong alignment on Prop_tv2_C_GetActionOptions");
-static_assert(sizeof(Prop_tv2_C_GetActionOptions) == 0x000058, "Wrong size on Prop_tv2_C_GetActionOptions");
+static_assert(sizeof(Prop_tv2_C_GetActionOptions) == 0x000060, "Wrong size on Prop_tv2_C_GetActionOptions");
 static_assert(offsetof(Prop_tv2_C_GetActionOptions, Player) == 0x000000, "Member 'Prop_tv2_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Prop_tv2_C_GetActionOptions, Component) == 0x000008, "Member 'Prop_tv2_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Prop_tv2_C_GetActionOptions, Actor) == 0x000010, "Member 'Prop_tv2_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Prop_tv2_C_GetActionOptions, Options) == 0x000018, "Member 'Prop_tv2_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Prop_tv2_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Prop_tv2_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Prop_tv2_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Prop_tv2_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Prop_tv2_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'Prop_tv2_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_GetActionOptions, Number) == 0x000048, "Member 'Prop_tv2_C_GetActionOptions::Number' has a wrong offset!");
+static_assert(offsetof(Prop_tv2_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Prop_tv2_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 }
 

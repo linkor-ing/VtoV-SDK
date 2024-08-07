@@ -19,14 +19,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_clipboard_paper_fp.prop_clipboard_paper_fp_C
-// 0x0008 (0x03A0 - 0x0398)
+// 0x0008 (0x03B0 - 0x03A8)
 class AProp_clipboard_paper_fp_C final : public AProp_clipboard_paper_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_clipboard_paper_fp_C;          // 0x0398(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_clipboard_paper_fp_C;          // 0x03A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
 	void ExecuteUbergraph_prop_clipboard_paper_fp(int32 EntryPoint);
 
@@ -41,8 +41,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_clipboard_paper_fp_C) == 0x000008, "Wrong alignment on AProp_clipboard_paper_fp_C");
-static_assert(sizeof(AProp_clipboard_paper_fp_C) == 0x0003A0, "Wrong size on AProp_clipboard_paper_fp_C");
-static_assert(offsetof(AProp_clipboard_paper_fp_C, UberGraphFrame_Prop_clipboard_paper_fp_C) == 0x000398, "Member 'AProp_clipboard_paper_fp_C::UberGraphFrame_Prop_clipboard_paper_fp_C' has a wrong offset!");
+static_assert(sizeof(AProp_clipboard_paper_fp_C) == 0x0003B0, "Wrong size on AProp_clipboard_paper_fp_C");
+static_assert(offsetof(AProp_clipboard_paper_fp_C, UberGraphFrame_Prop_clipboard_paper_fp_C) == 0x0003A8, "Member 'AProp_clipboard_paper_fp_C::UberGraphFrame_Prop_clipboard_paper_fp_C' has a wrong offset!");
 
 }
 

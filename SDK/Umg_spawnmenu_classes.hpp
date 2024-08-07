@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass umg_spawnmenu.umg_spawnmenu_C
-// 0x00E8 (0x0348 - 0x0260)
+// 0x00F8 (0x0358 - 0x0260)
 class UUmg_spawnmenu_C final : public UUserWidget
 {
 public:
@@ -31,32 +31,36 @@ public:
 	class UCheckBox*                              Checkbox_cat_ents;                                 // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCheckBox*                              Checkbox_cat_food;                                 // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCheckBox*                              Checkbox_cat_misc;                                 // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCheckBox*                              Checkbox_cat_props;                                // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCheckBox*                              Checkbox_cat_signals;                              // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCheckBox*                              Checkbox_cat_wip;                                  // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCheckBox*                              CheckBox_spoiler;                                  // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UGridPanel*                             GridPanel_148;                                     // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_134;                                         // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScrollBox*                             ScrollBox_34;                                      // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UEditableTextBox*                       Textbox_search;                                    // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Txt_name;                                          // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<class UUmg_spawnmenuSlot_C*>           Slo;                                               // 0x02E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	int32                                         Settype;                                           // 0x02F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3328[0x4];                                     // 0x02F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 Spec;                                              // 0x02F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Is;                                                // 0x0300(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3329[0x4];                                     // 0x0304(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Search;                                            // 0x0308(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	bool                                          Searching;                                         // 0x0318(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_332A[0x3];                                     // 0x0319(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Ind;                                               // 0x031C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ShowSpoilers;                                      // 0x0320(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_332B[0x7];                                     // 0x0321(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<Enum_spawnmenuCats>                    CategoriesActive;                                  // 0x0328(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<bool>                                  Hs;                                                // 0x0338(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UCheckBox*                              Checkbox_cat_mods;                                 // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCheckBox*                              Checkbox_cat_props;                                // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCheckBox*                              Checkbox_cat_signals;                              // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCheckBox*                              Checkbox_cat_tools;                                // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCheckBox*                              Checkbox_cat_wip;                                  // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCheckBox*                              CheckBox_spoiler;                                  // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UGridPanel*                             GridPanel_148;                                     // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_134;                                         // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScrollBox*                             ScrollBox_34;                                      // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UEditableTextBox*                       Textbox_search;                                    // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Txt_name;                                          // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TArray<class UUmg_spawnmenuSlot_C*>           Slo;                                               // 0x02F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	int32                                         Settype;                                           // 0x0300(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_304[0x4];                                      // 0x0304(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 Spec;                                              // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Is;                                                // 0x0310(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_314[0x4];                                      // 0x0314(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Search;                                            // 0x0318(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	bool                                          Searching;                                         // 0x0328(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_329[0x3];                                      // 0x0329(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Ind;                                               // 0x032C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ShowSpoilers;                                      // 0x0330(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_331[0x7];                                      // 0x0331(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<Enum_spawnmenuCats>                    CategoriesActive;                                  // 0x0338(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<bool>                                  Hs;                                                // 0x0348(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_umg_spawnmenu(int32 EntryPoint);
+	void BndEvt__umg_spawnmenu_checkbox_cat_mods_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
+	void BndEvt__umg_spawnmenu_checkbox_cat_tools_K2Node_ComponentBoundEvent_3_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
 	void BndEvt__umg_spawnmenu_checkbox_cat_wip_K2Node_ComponentBoundEvent_11_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
 	void BndEvt__umg_spawnmenu_checkbox_cat_signals_K2Node_ComponentBoundEvent_10_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
 	void BndEvt__umg_spawnmenu_checkbox_cat_props_K2Node_ComponentBoundEvent_9_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
@@ -84,7 +88,7 @@ public:
 	}
 };
 static_assert(alignof(UUmg_spawnmenu_C) == 0x000008, "Wrong alignment on UUmg_spawnmenu_C");
-static_assert(sizeof(UUmg_spawnmenu_C) == 0x000348, "Wrong size on UUmg_spawnmenu_C");
+static_assert(sizeof(UUmg_spawnmenu_C) == 0x000358, "Wrong size on UUmg_spawnmenu_C");
 static_assert(offsetof(UUmg_spawnmenu_C, UberGraphFrame) == 0x000260, "Member 'UUmg_spawnmenu_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UUmg_spawnmenu_C, Button_search) == 0x000268, "Member 'UUmg_spawnmenu_C::Button_search' has a wrong offset!");
 static_assert(offsetof(UUmg_spawnmenu_C, Canvas_hovertext) == 0x000270, "Member 'UUmg_spawnmenu_C::Canvas_hovertext' has a wrong offset!");
@@ -92,25 +96,27 @@ static_assert(offsetof(UUmg_spawnmenu_C, Checkbox_cat_dynamic) == 0x000278, "Mem
 static_assert(offsetof(UUmg_spawnmenu_C, Checkbox_cat_ents) == 0x000280, "Member 'UUmg_spawnmenu_C::Checkbox_cat_ents' has a wrong offset!");
 static_assert(offsetof(UUmg_spawnmenu_C, Checkbox_cat_food) == 0x000288, "Member 'UUmg_spawnmenu_C::Checkbox_cat_food' has a wrong offset!");
 static_assert(offsetof(UUmg_spawnmenu_C, Checkbox_cat_misc) == 0x000290, "Member 'UUmg_spawnmenu_C::Checkbox_cat_misc' has a wrong offset!");
-static_assert(offsetof(UUmg_spawnmenu_C, Checkbox_cat_props) == 0x000298, "Member 'UUmg_spawnmenu_C::Checkbox_cat_props' has a wrong offset!");
-static_assert(offsetof(UUmg_spawnmenu_C, Checkbox_cat_signals) == 0x0002A0, "Member 'UUmg_spawnmenu_C::Checkbox_cat_signals' has a wrong offset!");
-static_assert(offsetof(UUmg_spawnmenu_C, Checkbox_cat_wip) == 0x0002A8, "Member 'UUmg_spawnmenu_C::Checkbox_cat_wip' has a wrong offset!");
-static_assert(offsetof(UUmg_spawnmenu_C, CheckBox_spoiler) == 0x0002B0, "Member 'UUmg_spawnmenu_C::CheckBox_spoiler' has a wrong offset!");
-static_assert(offsetof(UUmg_spawnmenu_C, GridPanel_148) == 0x0002B8, "Member 'UUmg_spawnmenu_C::GridPanel_148' has a wrong offset!");
-static_assert(offsetof(UUmg_spawnmenu_C, Image_134) == 0x0002C0, "Member 'UUmg_spawnmenu_C::Image_134' has a wrong offset!");
-static_assert(offsetof(UUmg_spawnmenu_C, ScrollBox_34) == 0x0002C8, "Member 'UUmg_spawnmenu_C::ScrollBox_34' has a wrong offset!");
-static_assert(offsetof(UUmg_spawnmenu_C, Textbox_search) == 0x0002D0, "Member 'UUmg_spawnmenu_C::Textbox_search' has a wrong offset!");
-static_assert(offsetof(UUmg_spawnmenu_C, Txt_name) == 0x0002D8, "Member 'UUmg_spawnmenu_C::Txt_name' has a wrong offset!");
-static_assert(offsetof(UUmg_spawnmenu_C, Slo) == 0x0002E0, "Member 'UUmg_spawnmenu_C::Slo' has a wrong offset!");
-static_assert(offsetof(UUmg_spawnmenu_C, Settype) == 0x0002F0, "Member 'UUmg_spawnmenu_C::Settype' has a wrong offset!");
-static_assert(offsetof(UUmg_spawnmenu_C, Spec) == 0x0002F8, "Member 'UUmg_spawnmenu_C::Spec' has a wrong offset!");
-static_assert(offsetof(UUmg_spawnmenu_C, Is) == 0x000300, "Member 'UUmg_spawnmenu_C::Is' has a wrong offset!");
-static_assert(offsetof(UUmg_spawnmenu_C, Search) == 0x000308, "Member 'UUmg_spawnmenu_C::Search' has a wrong offset!");
-static_assert(offsetof(UUmg_spawnmenu_C, Searching) == 0x000318, "Member 'UUmg_spawnmenu_C::Searching' has a wrong offset!");
-static_assert(offsetof(UUmg_spawnmenu_C, Ind) == 0x00031C, "Member 'UUmg_spawnmenu_C::Ind' has a wrong offset!");
-static_assert(offsetof(UUmg_spawnmenu_C, ShowSpoilers) == 0x000320, "Member 'UUmg_spawnmenu_C::ShowSpoilers' has a wrong offset!");
-static_assert(offsetof(UUmg_spawnmenu_C, CategoriesActive) == 0x000328, "Member 'UUmg_spawnmenu_C::CategoriesActive' has a wrong offset!");
-static_assert(offsetof(UUmg_spawnmenu_C, Hs) == 0x000338, "Member 'UUmg_spawnmenu_C::Hs' has a wrong offset!");
+static_assert(offsetof(UUmg_spawnmenu_C, Checkbox_cat_mods) == 0x000298, "Member 'UUmg_spawnmenu_C::Checkbox_cat_mods' has a wrong offset!");
+static_assert(offsetof(UUmg_spawnmenu_C, Checkbox_cat_props) == 0x0002A0, "Member 'UUmg_spawnmenu_C::Checkbox_cat_props' has a wrong offset!");
+static_assert(offsetof(UUmg_spawnmenu_C, Checkbox_cat_signals) == 0x0002A8, "Member 'UUmg_spawnmenu_C::Checkbox_cat_signals' has a wrong offset!");
+static_assert(offsetof(UUmg_spawnmenu_C, Checkbox_cat_tools) == 0x0002B0, "Member 'UUmg_spawnmenu_C::Checkbox_cat_tools' has a wrong offset!");
+static_assert(offsetof(UUmg_spawnmenu_C, Checkbox_cat_wip) == 0x0002B8, "Member 'UUmg_spawnmenu_C::Checkbox_cat_wip' has a wrong offset!");
+static_assert(offsetof(UUmg_spawnmenu_C, CheckBox_spoiler) == 0x0002C0, "Member 'UUmg_spawnmenu_C::CheckBox_spoiler' has a wrong offset!");
+static_assert(offsetof(UUmg_spawnmenu_C, GridPanel_148) == 0x0002C8, "Member 'UUmg_spawnmenu_C::GridPanel_148' has a wrong offset!");
+static_assert(offsetof(UUmg_spawnmenu_C, Image_134) == 0x0002D0, "Member 'UUmg_spawnmenu_C::Image_134' has a wrong offset!");
+static_assert(offsetof(UUmg_spawnmenu_C, ScrollBox_34) == 0x0002D8, "Member 'UUmg_spawnmenu_C::ScrollBox_34' has a wrong offset!");
+static_assert(offsetof(UUmg_spawnmenu_C, Textbox_search) == 0x0002E0, "Member 'UUmg_spawnmenu_C::Textbox_search' has a wrong offset!");
+static_assert(offsetof(UUmg_spawnmenu_C, Txt_name) == 0x0002E8, "Member 'UUmg_spawnmenu_C::Txt_name' has a wrong offset!");
+static_assert(offsetof(UUmg_spawnmenu_C, Slo) == 0x0002F0, "Member 'UUmg_spawnmenu_C::Slo' has a wrong offset!");
+static_assert(offsetof(UUmg_spawnmenu_C, Settype) == 0x000300, "Member 'UUmg_spawnmenu_C::Settype' has a wrong offset!");
+static_assert(offsetof(UUmg_spawnmenu_C, Spec) == 0x000308, "Member 'UUmg_spawnmenu_C::Spec' has a wrong offset!");
+static_assert(offsetof(UUmg_spawnmenu_C, Is) == 0x000310, "Member 'UUmg_spawnmenu_C::Is' has a wrong offset!");
+static_assert(offsetof(UUmg_spawnmenu_C, Search) == 0x000318, "Member 'UUmg_spawnmenu_C::Search' has a wrong offset!");
+static_assert(offsetof(UUmg_spawnmenu_C, Searching) == 0x000328, "Member 'UUmg_spawnmenu_C::Searching' has a wrong offset!");
+static_assert(offsetof(UUmg_spawnmenu_C, Ind) == 0x00032C, "Member 'UUmg_spawnmenu_C::Ind' has a wrong offset!");
+static_assert(offsetof(UUmg_spawnmenu_C, ShowSpoilers) == 0x000330, "Member 'UUmg_spawnmenu_C::ShowSpoilers' has a wrong offset!");
+static_assert(offsetof(UUmg_spawnmenu_C, CategoriesActive) == 0x000338, "Member 'UUmg_spawnmenu_C::CategoriesActive' has a wrong offset!");
+static_assert(offsetof(UUmg_spawnmenu_C, Hs) == 0x000348, "Member 'UUmg_spawnmenu_C::Hs' has a wrong offset!");
 
 }
 

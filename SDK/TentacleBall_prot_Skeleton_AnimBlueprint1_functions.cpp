@@ -65,6 +65,40 @@ void UTentacleBall_prot_Skeleton_AnimBlueprint1_C::EvaluateGraphExposedInputs_Ex
 }
 
 
+// Function tentacleBall_prot_Skeleton_AnimBlueprint1.tentacleBall_prot_Skeleton_AnimBlueprint1_C.BlueprintBeginPlay
+// (Event, Public, BlueprintEvent)
+
+void UTentacleBall_prot_Skeleton_AnimBlueprint1_C::BlueprintBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("tentacleBall_prot_Skeleton_AnimBlueprint1_C", "BlueprintBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function tentacleBall_prot_Skeleton_AnimBlueprint1.tentacleBall_prot_Skeleton_AnimBlueprint1_C.BlueprintUpdateAnimation
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaTimeX                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UTentacleBall_prot_Skeleton_AnimBlueprint1_C::BlueprintUpdateAnimation(float DeltaTimeX)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("tentacleBall_prot_Skeleton_AnimBlueprint1_C", "BlueprintUpdateAnimation");
+
+	Params::TentacleBall_prot_Skeleton_AnimBlueprint1_C_BlueprintUpdateAnimation Parms{};
+
+	Parms.DeltaTimeX = DeltaTimeX;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function tentacleBall_prot_Skeleton_AnimBlueprint1.tentacleBall_prot_Skeleton_AnimBlueprint1_C.EvaluateGraphExposedInputs_ExecuteUbergraph_tentacleBall_prot_Skeleton_AnimBlueprint1_AnimGraphNode_ModifyBone_86D98CF04F2587CE50A03D86C52A90BB
 // (BlueprintEvent)
 
@@ -107,40 +141,6 @@ void UTentacleBall_prot_Skeleton_AnimBlueprint1_C::EvaluateGraphExposedInputs_Ex
 }
 
 
-// Function tentacleBall_prot_Skeleton_AnimBlueprint1.tentacleBall_prot_Skeleton_AnimBlueprint1_C.BlueprintBeginPlay
-// (Event, Public, BlueprintEvent)
-
-void UTentacleBall_prot_Skeleton_AnimBlueprint1_C::BlueprintBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("tentacleBall_prot_Skeleton_AnimBlueprint1_C", "BlueprintBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function tentacleBall_prot_Skeleton_AnimBlueprint1.tentacleBall_prot_Skeleton_AnimBlueprint1_C.BlueprintUpdateAnimation
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaTimeX                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UTentacleBall_prot_Skeleton_AnimBlueprint1_C::BlueprintUpdateAnimation(float DeltaTimeX)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("tentacleBall_prot_Skeleton_AnimBlueprint1_C", "BlueprintUpdateAnimation");
-
-	Params::TentacleBall_prot_Skeleton_AnimBlueprint1_C_BlueprintUpdateAnimation Parms{};
-
-	Parms.DeltaTimeX = DeltaTimeX;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function tentacleBall_prot_Skeleton_AnimBlueprint1.tentacleBall_prot_Skeleton_AnimBlueprint1_C.EvaluateGraphExposedInputs_ExecuteUbergraph_tentacleBall_prot_Skeleton_AnimBlueprint1_AnimGraphNode_ModifyBone_0D34365A425CB21B7F38D39234C43E0D
 // (BlueprintEvent)
 
@@ -178,6 +178,20 @@ void UTentacleBall_prot_Skeleton_AnimBlueprint1_C::EvaluateGraphExposedInputs_Ex
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("tentacleBall_prot_Skeleton_AnimBlueprint1_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_tentacleBall_prot_Skeleton_AnimBlueprint1_AnimGraphNode_ControlRig_2A81A0E64A17AF524DEB6D94D8B88992");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function tentacleBall_prot_Skeleton_AnimBlueprint1.tentacleBall_prot_Skeleton_AnimBlueprint1_C.resetFeets
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UTentacleBall_prot_Skeleton_AnimBlueprint1_C::ResetFeets()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("tentacleBall_prot_Skeleton_AnimBlueprint1_C", "resetFeets");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -19,21 +19,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass actorChipPile.actorChipPile_C
-// 0x0040 (0x0260 - 0x0220)
-class AActorChipPile_C final : public AActor
+// 0x0048 (0x0268 - 0x0220)
+class AActorChipPile_C : public AActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   StaticMesh2;                                       // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh1;                                       // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0238(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	int32                                         Type;                                              // 0x0240(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_3533[0x4];                                     // 0x0244(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Ignore;                                            // 0x0248(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	bool                                          Spwnd;                                             // 0x0258(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Collision;                                         // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	int32                                         Type;                                              // 0x0238(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	uint8                                         Pad_23C[0x4];                                      // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Ignore;                                            // 0x0240(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	bool                                          Spwnd;                                             // 0x0250(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_251[0x7];                                      // 0x0251(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 Pile;                                              // 0x0258(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Clump;                                             // 0x0260(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_actorChipPile(int32 EntryPoint);
+	void AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Hit, const struct FVector& Impact, bool SkipSetting);
 	void SetIgnoreSave(bool Param_Ignore);
 	void ImpactDamage(float Damage, const struct FHitResult& Hit, class AActor* Actor, const struct FVector& Impact);
 	void EnterWaterOrigin(class AWaterVolume_C* Water);
@@ -43,15 +46,18 @@ public:
 	void LeaveWater(class AWaterVolume_C* Water);
 	void Virus(bool Activate);
 	void SetPropProps(bool Static, bool Frozen, bool Active);
-	void AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Hit, const struct FVector& Impact, bool SkipSetting);
 	void SetKey(const class FString& Key);
 	void PhysDestroyed();
 	void PhysPreDestroyed();
 	void DigUp();
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
+	void Unhook();
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
 	void ReceiveBeginPlay();
+	void PlayerR(class AMainPlayer_C* Player);
+	void PlayerHold(class AMainPlayer_C* Player);
+	void PlayerUnequip(class AMainPlayer_C* Player);
 	void UpdateStrAgl();
-	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit);
+	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage);
 	void Thrown(class AMainPlayer_C* Player);
 	void broken_fire();
 	void broken();
@@ -59,6 +65,9 @@ public:
 	void Kicked(bool Kick);
 	void Player_use(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void DriveDetached();
+	void HookTension(class AHook_C* Hook);
+	void CleanSponge(float Clean, class AMainPlayer_C* Player);
+	void Crafted();
 	void Hooked(class AHook_C* Hook);
 	void AttemptIgnite();
 	void PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
@@ -80,12 +89,11 @@ public:
 	void Exploded(float Damage, const struct FVector& Location);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
-	void ReceivedPhyiscsDamage();
+	void ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot);
 	void Microwave();
 	void Ignite(float Fuel);
 	void FireDamage(float Damage);
 	void SteppedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
-	void Unhook();
 	void UserConstructionScript();
 	void Init();
 	class AProp_garbageClump_C* ToClump();
@@ -94,9 +102,10 @@ public:
 	void AsProp(class AProp_C** Return);
 	void CanPickup(bool* Return);
 	void NoRespawn(bool Param_NoRespawn, bool* Return);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
 	void IsButtonUsed(bool* Failed);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 	void SetPath(const TArray<struct FVector>& Path, bool* Return);
 	void GetOnlyKey(class FString* Key);
 	void ProcessKeys(bool* Return);
@@ -105,10 +114,12 @@ public:
 	void ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return);
 	void GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled);
 	void SkipRadial(bool* Skip);
+	void GetPriceMultiplier(float* PriceMult);
 	void SkipPreDelete(bool* Skip);
 	void IgnoreSave(bool* Param_IgnoreSave);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
+	void GatherDataFromKey(bool* Gather);
 
 public:
 	static class UClass* StaticClass()
@@ -121,14 +132,15 @@ public:
 	}
 };
 static_assert(alignof(AActorChipPile_C) == 0x000008, "Wrong alignment on AActorChipPile_C");
-static_assert(sizeof(AActorChipPile_C) == 0x000260, "Wrong size on AActorChipPile_C");
+static_assert(sizeof(AActorChipPile_C) == 0x000268, "Wrong size on AActorChipPile_C");
 static_assert(offsetof(AActorChipPile_C, UberGraphFrame) == 0x000220, "Member 'AActorChipPile_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AActorChipPile_C, StaticMesh2) == 0x000228, "Member 'AActorChipPile_C::StaticMesh2' has a wrong offset!");
-static_assert(offsetof(AActorChipPile_C, StaticMesh1) == 0x000230, "Member 'AActorChipPile_C::StaticMesh1' has a wrong offset!");
-static_assert(offsetof(AActorChipPile_C, StaticMesh) == 0x000238, "Member 'AActorChipPile_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(AActorChipPile_C, Type) == 0x000240, "Member 'AActorChipPile_C::Type' has a wrong offset!");
-static_assert(offsetof(AActorChipPile_C, Ignore) == 0x000248, "Member 'AActorChipPile_C::Ignore' has a wrong offset!");
-static_assert(offsetof(AActorChipPile_C, Spwnd) == 0x000258, "Member 'AActorChipPile_C::Spwnd' has a wrong offset!");
+static_assert(offsetof(AActorChipPile_C, StaticMesh) == 0x000228, "Member 'AActorChipPile_C::StaticMesh' has a wrong offset!");
+static_assert(offsetof(AActorChipPile_C, Collision) == 0x000230, "Member 'AActorChipPile_C::Collision' has a wrong offset!");
+static_assert(offsetof(AActorChipPile_C, Type) == 0x000238, "Member 'AActorChipPile_C::Type' has a wrong offset!");
+static_assert(offsetof(AActorChipPile_C, Ignore) == 0x000240, "Member 'AActorChipPile_C::Ignore' has a wrong offset!");
+static_assert(offsetof(AActorChipPile_C, Spwnd) == 0x000250, "Member 'AActorChipPile_C::Spwnd' has a wrong offset!");
+static_assert(offsetof(AActorChipPile_C, Pile) == 0x000258, "Member 'AActorChipPile_C::Pile' has a wrong offset!");
+static_assert(offsetof(AActorChipPile_C, Clump) == 0x000260, "Member 'AActorChipPile_C::Clump' has a wrong offset!");
 
 }
 

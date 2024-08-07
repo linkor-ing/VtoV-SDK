@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
 #include "Engine_structs.hpp"
 #include "InputCore_structs.hpp"
 
@@ -20,7 +20,7 @@ namespace SDK::Params
 {
 
 // Function tardis.tardis_C.ExecuteUbergraph_tardis
-// 0x0700 (0x0700 - 0x0000)
+// 0x07C0 (0x07C0 - 0x0000)
 struct Tardis_C_ExecuteUbergraph_tardis final
 {
 public:
@@ -36,13 +36,13 @@ public:
 	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_2; // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_3; // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D72[0x3];                                     // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_damage_4;                             // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_damage_6;                             // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit_7;                                // 0x0034(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_2D73[0x4];                                     // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_Event_actor_1;                              // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                K2Node_Event_impact_1;                             // 0x00C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D74[0x4];                                     // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AWaterVolume_C*                         K2Node_Event_water_3;                              // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AWaterVolume_C*                         K2Node_Event_water_2;                              // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AWaterVolume_C*                         K2Node_Event_water_1;                              // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -51,93 +51,103 @@ public:
 	bool                                          K2Node_Event_static;                               // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_frozen;                               // 0x00FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_active;                               // 0x00FB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D75[0x4];                                     // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_FC[0x4];                                       // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_Event_actor;                                // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_3;                             // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_5;                             // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit_6;                                // 0x010C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FVector                                K2Node_Event_impact;                               // 0x0194(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_skipSetting;                          // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D76[0x7];                                     // 0x01A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A1[0x7];                                      // 0x01A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 K2Node_Event_key_1;                                // 0x01A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_14;                            // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_18;                            // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit_5;                                // 0x01C0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         K2Node_Event_damage_2;                             // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_4;                             // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_fuel;                                 // 0x024C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_13;                            // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_12;                            // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_1;                             // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_location_1;                           // 0x0264(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_11;                            // 0x0270(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_10;                            // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_9;                             // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_wheelDelta;                           // 0x0288(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D77[0x4];                                     // 0x028C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_8;                             // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              K2Node_Event_mouse;                                // 0x0298(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_7;                             // 0x02A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   K2Node_Event_key;                                  // 0x02A8(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed;                              // 0x02C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D78[0x3];                                     // 0x02C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_temperature_1;                        // 0x02C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_temperature;                          // 0x02C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_speed;                                // 0x02CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x02D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_4;                                // 0x02D8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class FString                                 K2Node_Event_name_1;                               // 0x0360(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_volume;                               // 0x0370(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D79[0x4];                                     // 0x0374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x0378(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_location;                             // 0x0380(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage;                               // 0x038C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_clean;                                // 0x0390(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D7A[0x7];                                     // 0x0391(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x0398(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_3;                                // 0x03A0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AHook_C*                                K2Node_Event_hook;                                 // 0x0428(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0430(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_2;                                // 0x0438(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          K2Node_Event_kick;                                 // 0x04C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D7B[0x3];                                     // 0x04C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_Event_name;                                 // 0x04C4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D7C[0x4];                                     // 0x04CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x04D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x04D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_1;                                // 0x04E0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          K2Node_CustomEvent_Condition;                      // 0x0568(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D7D[0x7];                                     // 0x0569(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0570(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0578(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x0580(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x0608(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x060C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x060D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_IsClosed_Variable;                       // 0x060E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D7E[0x1];                                     // 0x060F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetTimeAlive_ReturnValue;                 // 0x0610(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0614(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x0620(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D7F[0x4];                                     // 0x0624(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0628(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_DegCos_ReturnValue;                       // 0x0630(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0634(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0638(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_2;        // 0x063C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue_1;             // 0x0640(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x0644(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_4; // 0x0648(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue;                         // 0x064C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue_1;                       // 0x0650(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue_2;                       // 0x0654(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent;    // 0x0658(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x0660(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x0668(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x0670(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x0674(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D80[0x3];                                     // 0x0675(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0678(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         K2Node_Event_damage_3;                             // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hot;                                  // 0x0254(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_2DC[0x4];                                      // 0x02DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_17;                            // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_16;                            // 0x02E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_2;                             // 0x02F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_location_1;                           // 0x02F4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_15;                            // 0x0300(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_14;                            // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_13;                            // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_wheelDelta;                           // 0x0318(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31C[0x4];                                      // 0x031C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_12;                            // 0x0320(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_Event_mouse;                                // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_11;                            // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   K2Node_Event_key;                                  // 0x0338(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed;                              // 0x0350(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_351[0x3];                                      // 0x0351(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_temperature_1;                        // 0x0354(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_temperature;                          // 0x0358(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_speed;                                // 0x035C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_10;                            // 0x0360(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_4;                                // 0x0368(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class FString                                 K2Node_Event_name_1;                               // 0x03F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_volume;                               // 0x0400(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_404[0x4];                                      // 0x0404(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_9;                             // 0x0408(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_location;                             // 0x0410(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_1;                             // 0x041C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_clean_1;                              // 0x0420(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_421[0x7];                                      // 0x0421(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_8;                             // 0x0428(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_3;                                // 0x0430(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AHook_C*                                K2Node_Event_hook_1;                               // 0x04B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_clean;                                // 0x04C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4C4[0x4];                                      // 0x04C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_7;                             // 0x04C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AHook_C*                                K2Node_Event_hook;                                 // 0x04D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x04D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_2;                                // 0x04E0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          K2Node_Event_kick;                                 // 0x0568(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_569[0x3];                                      // 0x0569(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_Event_name;                                 // 0x056C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_574[0x4];                                      // 0x0574(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x0578(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x0580(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_1;                                // 0x0588(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         K2Node_Event_damage;                               // 0x0610(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_614[0x4];                                      // 0x0614(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0618(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x0620(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0628(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_Condition;                      // 0x0630(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_631[0x7];                                      // 0x0631(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0638(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0640(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x0648(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x06D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x06D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_IsClosed_Variable;                       // 0x06D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6D3[0x1];                                      // 0x06D3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetTimeAlive_ReturnValue;                 // 0x06D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x06D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x06E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x06E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_DegCos_ReturnValue;                       // 0x06F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x06F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x06F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_2;        // 0x06FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue_1;             // 0x0700(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x0704(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_4; // 0x0708(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue;                         // 0x070C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue_1;                       // 0x0710(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue_2;                       // 0x0714(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent;    // 0x0718(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x0720(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x0728(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x0730(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x0734(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_735[0x3];                                      // 0x0735(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0738(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 static_assert(alignof(Tardis_C_ExecuteUbergraph_tardis) == 0x000008, "Wrong alignment on Tardis_C_ExecuteUbergraph_tardis");
-static_assert(sizeof(Tardis_C_ExecuteUbergraph_tardis) == 0x000700, "Wrong size on Tardis_C_ExecuteUbergraph_tardis");
+static_assert(sizeof(Tardis_C_ExecuteUbergraph_tardis) == 0x0007C0, "Wrong size on Tardis_C_ExecuteUbergraph_tardis");
 static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, EntryPoint) == 0x000000, "Member 'Tardis_C_ExecuteUbergraph_tardis::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_FClamp_ReturnValue) == 0x000004, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_FClamp_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000008, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
@@ -150,7 +160,7 @@ static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_Subtract_Float
 static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_2) == 0x000024, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_3) == 0x000028, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_3' has a wrong offset!");
 static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_SwitchEnum_CmpSuccess) == 0x00002C, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_damage_4) == 0x000030, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_damage_4' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_damage_6) == 0x000030, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_damage_6' has a wrong offset!");
 static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_hit_7) == 0x000034, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_hit_7' has a wrong offset!");
 static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_actor_1) == 0x0000C0, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_actor_1' has a wrong offset!");
 static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_impact_1) == 0x0000C8, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_impact_1' has a wrong offset!");
@@ -163,77 +173,85 @@ static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_static) ==
 static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_frozen) == 0x0000FA, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_frozen' has a wrong offset!");
 static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_active) == 0x0000FB, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_active' has a wrong offset!");
 static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_actor) == 0x000100, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_actor' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_damage_3) == 0x000108, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_damage_3' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_damage_5) == 0x000108, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_damage_5' has a wrong offset!");
 static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_hit_6) == 0x00010C, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_hit_6' has a wrong offset!");
 static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_impact) == 0x000194, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_impact' has a wrong offset!");
 static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_skipSetting) == 0x0001A0, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_skipSetting' has a wrong offset!");
 static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_key_1) == 0x0001A8, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_key_1' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_14) == 0x0001B8, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_14' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_18) == 0x0001B8, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_18' has a wrong offset!");
 static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_hit_5) == 0x0001C0, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_hit_5' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_damage_2) == 0x000248, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_damage_2' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_damage_4) == 0x000248, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_damage_4' has a wrong offset!");
 static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_fuel) == 0x00024C, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_fuel' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_13) == 0x000250, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_13' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_12) == 0x000258, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_12' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_damage_1) == 0x000260, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_damage_1' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_location_1) == 0x000264, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_location_1' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_11) == 0x000270, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_11' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_10) == 0x000278, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_10' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_9) == 0x000280, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_9' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_wheelDelta) == 0x000288, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_wheelDelta' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_8) == 0x000290, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_8' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_mouse) == 0x000298, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_mouse' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_7) == 0x0002A0, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_7' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_key) == 0x0002A8, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_key' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_pressed) == 0x0002C0, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_pressed' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_temperature_1) == 0x0002C4, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_temperature_1' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_temperature) == 0x0002C8, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_temperature' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_speed) == 0x0002CC, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_speed' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_6) == 0x0002D0, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_6' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_hit_4) == 0x0002D8, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_hit_4' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_name_1) == 0x000360, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_name_1' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_volume) == 0x000370, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_volume' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_5) == 0x000378, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_5' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_location) == 0x000380, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_location' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_damage) == 0x00038C, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_damage' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_clean) == 0x000390, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_clean' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_4) == 0x000398, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_4' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_hit_3) == 0x0003A0, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_hit_3' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_hook) == 0x000428, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_hook' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_3) == 0x000430, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_3' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_hit_2) == 0x000438, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_hit_2' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_kick) == 0x0004C0, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_kick' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_name) == 0x0004C4, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_name' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_2) == 0x0004D0, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_2' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_1) == 0x0004D8, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_hit_1) == 0x0004E0, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_hit_1' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_CustomEvent_Condition) == 0x000568, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_CustomEvent_Condition' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000570, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player) == 0x000578, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_hit) == 0x000580, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_index) == 0x000608, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_action) == 0x00060C, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, Temp_bool_Has_Been_Initd_Variable) == 0x00060D, "Member 'Tardis_C_ExecuteUbergraph_tardis::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, Temp_bool_IsClosed_Variable) == 0x00060E, "Member 'Tardis_C_ExecuteUbergraph_tardis::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_GetTimeAlive_ReturnValue) == 0x000610, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_GetTimeAlive_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000614, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000620, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000628, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_DegCos_ReturnValue) == 0x000630, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_DegCos_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_Add_FloatFloat_ReturnValue) == 0x000634, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000638, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x00063C, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x000640, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x000644, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_4) == 0x000648, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_Lerp_ReturnValue) == 0x00064C, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_Lerp_ReturnValue_1) == 0x000650, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_Lerp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_Lerp_ReturnValue_2) == 0x000654, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_Lerp_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_ComponentBoundEvent_OverlappedComponent) == 0x000658, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_ComponentBoundEvent_OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_ComponentBoundEvent_OtherActor) == 0x000660, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_ComponentBoundEvent_OtherComp) == 0x000668, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_ComponentBoundEvent_OtherBodyIndex) == 0x000670, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_ComponentBoundEvent_OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_ComponentBoundEvent_bFromSweep) == 0x000674, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_ComponentBoundEvent_bFromSweep' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_ComponentBoundEvent_SweepResult) == 0x000678, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_ComponentBoundEvent_SweepResult' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_damage_3) == 0x000250, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_damage_3' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_hot) == 0x000254, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_hot' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_17) == 0x0002E0, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_17' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_16) == 0x0002E8, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_16' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_damage_2) == 0x0002F0, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_damage_2' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_location_1) == 0x0002F4, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_location_1' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_15) == 0x000300, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_15' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_14) == 0x000308, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_14' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_13) == 0x000310, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_13' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_wheelDelta) == 0x000318, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_wheelDelta' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_12) == 0x000320, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_12' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_mouse) == 0x000328, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_mouse' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_11) == 0x000330, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_11' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_key) == 0x000338, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_key' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_pressed) == 0x000350, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_pressed' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_temperature_1) == 0x000354, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_temperature_1' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_temperature) == 0x000358, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_temperature' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_speed) == 0x00035C, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_speed' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_10) == 0x000360, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_10' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_hit_4) == 0x000368, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_hit_4' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_name_1) == 0x0003F0, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_name_1' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_volume) == 0x000400, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_volume' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_9) == 0x000408, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_9' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_location) == 0x000410, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_location' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_damage_1) == 0x00041C, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_damage_1' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_clean_1) == 0x000420, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_clean_1' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_8) == 0x000428, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_8' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_hit_3) == 0x000430, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_hit_3' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_hook_1) == 0x0004B8, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_hook_1' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_clean) == 0x0004C0, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_clean' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_7) == 0x0004C8, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_7' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_hook) == 0x0004D0, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_hook' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_6) == 0x0004D8, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_6' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_hit_2) == 0x0004E0, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_hit_2' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_kick) == 0x000568, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_kick' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_name) == 0x00056C, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_name' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_5) == 0x000578, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_5' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_4) == 0x000580, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_4' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_hit_1) == 0x000588, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_hit_1' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_damage) == 0x000610, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_damage' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_3) == 0x000618, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_3' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_2) == 0x000620, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_2' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player_1) == 0x000628, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_CustomEvent_Condition) == 0x000630, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_CustomEvent_Condition' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000638, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_player) == 0x000640, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_hit) == 0x000648, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_Event_action) == 0x0006D0, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, Temp_bool_Has_Been_Initd_Variable) == 0x0006D1, "Member 'Tardis_C_ExecuteUbergraph_tardis::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, Temp_bool_IsClosed_Variable) == 0x0006D2, "Member 'Tardis_C_ExecuteUbergraph_tardis::Temp_bool_IsClosed_Variable' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_GetTimeAlive_ReturnValue) == 0x0006D4, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_GetTimeAlive_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0006D8, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x0006E4, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x0006E8, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_DegCos_ReturnValue) == 0x0006F0, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_DegCos_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_Add_FloatFloat_ReturnValue) == 0x0006F4, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0006F8, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x0006FC, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x000700, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x000704, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_4) == 0x000708, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_Lerp_ReturnValue) == 0x00070C, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_Lerp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_Lerp_ReturnValue_1) == 0x000710, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_Lerp_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, CallFunc_Lerp_ReturnValue_2) == 0x000714, "Member 'Tardis_C_ExecuteUbergraph_tardis::CallFunc_Lerp_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_ComponentBoundEvent_OverlappedComponent) == 0x000718, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_ComponentBoundEvent_OverlappedComponent' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_ComponentBoundEvent_OtherActor) == 0x000720, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_ComponentBoundEvent_OtherComp) == 0x000728, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_ComponentBoundEvent_OtherBodyIndex) == 0x000730, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_ComponentBoundEvent_OtherBodyIndex' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_ComponentBoundEvent_bFromSweep) == 0x000734, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_ComponentBoundEvent_bFromSweep' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ExecuteUbergraph_tardis, K2Node_ComponentBoundEvent_SweepResult) == 0x000738, "Member 'Tardis_C_ExecuteUbergraph_tardis::K2Node_ComponentBoundEvent_SweepResult' has a wrong offset!");
 
 // Function tardis.tardis_C.BndEvt__tardis_Sphere_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
 // 0x00A8 (0x00A8 - 0x0000)
@@ -245,7 +263,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D81[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 static_assert(alignof(Tardis_C_BndEvt__tardis_Sphere_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on Tardis_C_BndEvt__tardis_Sphere_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
@@ -264,15 +282,13 @@ struct Tardis_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Tardis_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Tardis_C_ActionOptionIndex");
 static_assert(sizeof(Tardis_C_ActionOptionIndex) == 0x000098, "Wrong size on Tardis_C_ActionOptionIndex");
 static_assert(offsetof(Tardis_C_ActionOptionIndex, Player) == 0x000000, "Member 'Tardis_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(Tardis_C_ActionOptionIndex, Hit) == 0x000008, "Member 'Tardis_C_ActionOptionIndex::Hit' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Tardis_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(Tardis_C_ActionOptionIndex, Action) == 0x000094, "Member 'Tardis_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ActionOptionIndex, Action) == 0x000090, "Member 'Tardis_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function tardis.tardis_C.appear
 // 0x0001 (0x0001 - 0x0000)
@@ -285,18 +301,53 @@ static_assert(alignof(Tardis_C_Appear) == 0x000001, "Wrong alignment on Tardis_C
 static_assert(sizeof(Tardis_C_Appear) == 0x000001, "Wrong size on Tardis_C_Appear");
 static_assert(offsetof(Tardis_C_Appear, Condition) == 0x000000, "Member 'Tardis_C_Appear::Condition' has a wrong offset!");
 
+// Function tardis.tardis_C.playerR
+// 0x0008 (0x0008 - 0x0000)
+struct Tardis_C_PlayerR final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Tardis_C_PlayerR) == 0x000008, "Wrong alignment on Tardis_C_PlayerR");
+static_assert(sizeof(Tardis_C_PlayerR) == 0x000008, "Wrong size on Tardis_C_PlayerR");
+static_assert(offsetof(Tardis_C_PlayerR, Player) == 0x000000, "Member 'Tardis_C_PlayerR::Player' has a wrong offset!");
+
+// Function tardis.tardis_C.playerHold
+// 0x0008 (0x0008 - 0x0000)
+struct Tardis_C_PlayerHold final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Tardis_C_PlayerHold) == 0x000008, "Wrong alignment on Tardis_C_PlayerHold");
+static_assert(sizeof(Tardis_C_PlayerHold) == 0x000008, "Wrong size on Tardis_C_PlayerHold");
+static_assert(offsetof(Tardis_C_PlayerHold, Player) == 0x000000, "Member 'Tardis_C_PlayerHold::Player' has a wrong offset!");
+
+// Function tardis.tardis_C.playerUnequip
+// 0x0008 (0x0008 - 0x0000)
+struct Tardis_C_PlayerUnequip final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Tardis_C_PlayerUnequip) == 0x000008, "Wrong alignment on Tardis_C_PlayerUnequip");
+static_assert(sizeof(Tardis_C_PlayerUnequip) == 0x000008, "Wrong size on Tardis_C_PlayerUnequip");
+static_assert(offsetof(Tardis_C_PlayerUnequip, Player) == 0x000000, "Member 'Tardis_C_PlayerUnequip::Player' has a wrong offset!");
+
 // Function tardis.tardis_C.damageByPlayer
-// 0x0090 (0x0090 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct Tardis_C_DamageByPlayer final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         Damage;                                            // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Tardis_C_DamageByPlayer) == 0x000008, "Wrong alignment on Tardis_C_DamageByPlayer");
-static_assert(sizeof(Tardis_C_DamageByPlayer) == 0x000090, "Wrong size on Tardis_C_DamageByPlayer");
+static_assert(sizeof(Tardis_C_DamageByPlayer) == 0x000098, "Wrong size on Tardis_C_DamageByPlayer");
 static_assert(offsetof(Tardis_C_DamageByPlayer, Player) == 0x000000, "Member 'Tardis_C_DamageByPlayer::Player' has a wrong offset!");
 static_assert(offsetof(Tardis_C_DamageByPlayer, Hit) == 0x000008, "Member 'Tardis_C_DamageByPlayer::Hit' has a wrong offset!");
+static_assert(offsetof(Tardis_C_DamageByPlayer, Damage) == 0x000090, "Member 'Tardis_C_DamageByPlayer::Damage' has a wrong offset!");
 
 // Function tardis.tardis_C.thrown
 // 0x0008 (0x0008 - 0x0000)
@@ -343,6 +394,31 @@ static_assert(alignof(Tardis_C_Player_use) == 0x000008, "Wrong alignment on Tard
 static_assert(sizeof(Tardis_C_Player_use) == 0x000090, "Wrong size on Tardis_C_Player_use");
 static_assert(offsetof(Tardis_C_Player_use, Player) == 0x000000, "Member 'Tardis_C_Player_use::Player' has a wrong offset!");
 static_assert(offsetof(Tardis_C_Player_use, Hit) == 0x000008, "Member 'Tardis_C_Player_use::Hit' has a wrong offset!");
+
+// Function tardis.tardis_C.hookTension
+// 0x0008 (0x0008 - 0x0000)
+struct Tardis_C_HookTension final
+{
+public:
+	class AHook_C*                                Hook;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Tardis_C_HookTension) == 0x000008, "Wrong alignment on Tardis_C_HookTension");
+static_assert(sizeof(Tardis_C_HookTension) == 0x000008, "Wrong size on Tardis_C_HookTension");
+static_assert(offsetof(Tardis_C_HookTension, Hook) == 0x000000, "Member 'Tardis_C_HookTension::Hook' has a wrong offset!");
+
+// Function tardis.tardis_C.cleanSponge
+// 0x0010 (0x0010 - 0x0000)
+struct Tardis_C_CleanSponge final
+{
+public:
+	float                                         Clean;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          Player;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Tardis_C_CleanSponge) == 0x000008, "Wrong alignment on Tardis_C_CleanSponge");
+static_assert(sizeof(Tardis_C_CleanSponge) == 0x000010, "Wrong size on Tardis_C_CleanSponge");
+static_assert(offsetof(Tardis_C_CleanSponge, Clean) == 0x000000, "Member 'Tardis_C_CleanSponge::Clean' has a wrong offset!");
+static_assert(offsetof(Tardis_C_CleanSponge, Player) == 0x000008, "Member 'Tardis_C_CleanSponge::Player' has a wrong offset!");
 
 // Function tardis.tardis_C.hooked
 // 0x0008 (0x0008 - 0x0000)
@@ -551,6 +627,19 @@ static_assert(alignof(Tardis_C_PlayerHandUse_RMB) == 0x000008, "Wrong alignment 
 static_assert(sizeof(Tardis_C_PlayerHandUse_RMB) == 0x000008, "Wrong size on Tardis_C_PlayerHandUse_RMB");
 static_assert(offsetof(Tardis_C_PlayerHandUse_RMB, Player) == 0x000000, "Member 'Tardis_C_PlayerHandUse_RMB::Player' has a wrong offset!");
 
+// Function tardis.tardis_C.receivedPhyiscsDamage
+// 0x008C (0x008C - 0x0000)
+struct Tardis_C_ReceivedPhyiscsDamage final
+{
+public:
+	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hot;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+static_assert(alignof(Tardis_C_ReceivedPhyiscsDamage) == 0x000004, "Wrong alignment on Tardis_C_ReceivedPhyiscsDamage");
+static_assert(sizeof(Tardis_C_ReceivedPhyiscsDamage) == 0x00008C, "Wrong size on Tardis_C_ReceivedPhyiscsDamage");
+static_assert(offsetof(Tardis_C_ReceivedPhyiscsDamage, Damage) == 0x000000, "Member 'Tardis_C_ReceivedPhyiscsDamage::Damage' has a wrong offset!");
+static_assert(offsetof(Tardis_C_ReceivedPhyiscsDamage, Hot) == 0x000004, "Member 'Tardis_C_ReceivedPhyiscsDamage::Hot' has a wrong offset!");
+
 // Function tardis.tardis_C.ignite
 // 0x0004 (0x0004 - 0x0000)
 struct Tardis_C_Ignite final
@@ -693,7 +782,7 @@ struct Tardis_C_ImpactDamage final
 public:
 	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_2D82[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0090(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Impact;                                            // 0x0098(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -751,24 +840,26 @@ static_assert(offsetof(Tardis_C_NoRespawn, Param_NoRespawn) == 0x000000, "Member
 static_assert(offsetof(Tardis_C_NoRespawn, Return) == 0x000001, "Member 'Tardis_C_NoRespawn::Return' has a wrong offset!");
 
 // Function tardis.tardis_C.lookAt
-// 0x00B0 (0x00B0 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct Tardis_C_LookAt final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D83[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Tardis_C_LookAt) == 0x000008, "Wrong alignment on Tardis_C_LookAt");
-static_assert(sizeof(Tardis_C_LookAt) == 0x0000B0, "Wrong size on Tardis_C_LookAt");
+static_assert(sizeof(Tardis_C_LookAt) == 0x0000B8, "Wrong size on Tardis_C_LookAt");
 static_assert(offsetof(Tardis_C_LookAt, Player) == 0x000000, "Member 'Tardis_C_LookAt::Player' has a wrong offset!");
 static_assert(offsetof(Tardis_C_LookAt, Hit) == 0x000008, "Member 'Tardis_C_LookAt::Hit' has a wrong offset!");
 static_assert(offsetof(Tardis_C_LookAt, Return) == 0x000090, "Member 'Tardis_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(Tardis_C_LookAt, Text) == 0x000098, "Member 'Tardis_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(Tardis_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'Tardis_C_LookAt::boundObjectReplace' has a wrong offset!");
+static_assert(offsetof(Tardis_C_LookAt, Number) == 0x0000B0, "Member 'Tardis_C_LookAt::Number' has a wrong offset!");
 
 // Function tardis.tardis_C.isButtonUsed
 // 0x0001 (0x0001 - 0x0000)
@@ -781,8 +872,21 @@ static_assert(alignof(Tardis_C_IsButtonUsed) == 0x000001, "Wrong alignment on Ta
 static_assert(sizeof(Tardis_C_IsButtonUsed) == 0x000001, "Wrong size on Tardis_C_IsButtonUsed");
 static_assert(offsetof(Tardis_C_IsButtonUsed, Failed) == 0x000000, "Member 'Tardis_C_IsButtonUsed::Failed' has a wrong offset!");
 
+// Function tardis.tardis_C.landedOn
+// 0x0010 (0x0010 - 0x0000)
+struct Tardis_C_LandedOn final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IgnoreFallDamage;                                  // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Tardis_C_LandedOn) == 0x000008, "Wrong alignment on Tardis_C_LandedOn");
+static_assert(sizeof(Tardis_C_LandedOn) == 0x000010, "Wrong size on Tardis_C_LandedOn");
+static_assert(offsetof(Tardis_C_LandedOn, Player) == 0x000000, "Member 'Tardis_C_LandedOn::Player' has a wrong offset!");
+static_assert(offsetof(Tardis_C_LandedOn, IgnoreFallDamage) == 0x000008, "Member 'Tardis_C_LandedOn::IgnoreFallDamage' has a wrong offset!");
+
 // Function tardis.tardis_C.getActionOptions
-// 0x0048 (0x0048 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct Tardis_C_GetActionOptions final
 {
 public:
@@ -792,15 +896,17 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Tardis_C_GetActionOptions) == 0x000008, "Wrong alignment on Tardis_C_GetActionOptions");
-static_assert(sizeof(Tardis_C_GetActionOptions) == 0x000048, "Wrong size on Tardis_C_GetActionOptions");
+static_assert(sizeof(Tardis_C_GetActionOptions) == 0x000050, "Wrong size on Tardis_C_GetActionOptions");
 static_assert(offsetof(Tardis_C_GetActionOptions, Player) == 0x000000, "Member 'Tardis_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Tardis_C_GetActionOptions, Component) == 0x000008, "Member 'Tardis_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Tardis_C_GetActionOptions, Actor) == 0x000010, "Member 'Tardis_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Tardis_C_GetActionOptions, Options) == 0x000018, "Member 'Tardis_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Tardis_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Tardis_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Tardis_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Tardis_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
+static_assert(offsetof(Tardis_C_GetActionOptions, Number) == 0x000048, "Member 'Tardis_C_GetActionOptions::Number' has a wrong offset!");
 
 // Function tardis.tardis_C.setPath
 // 0x0018 (0x0018 - 0x0000)
@@ -895,6 +1001,17 @@ public:
 static_assert(alignof(Tardis_C_SkipRadial) == 0x000001, "Wrong alignment on Tardis_C_SkipRadial");
 static_assert(sizeof(Tardis_C_SkipRadial) == 0x000001, "Wrong size on Tardis_C_SkipRadial");
 static_assert(offsetof(Tardis_C_SkipRadial, Skip) == 0x000000, "Member 'Tardis_C_SkipRadial::Skip' has a wrong offset!");
+
+// Function tardis.tardis_C.getPriceMultiplier
+// 0x0004 (0x0004 - 0x0000)
+struct Tardis_C_GetPriceMultiplier final
+{
+public:
+	float                                         PriceMult;                                         // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Tardis_C_GetPriceMultiplier) == 0x000004, "Wrong alignment on Tardis_C_GetPriceMultiplier");
+static_assert(sizeof(Tardis_C_GetPriceMultiplier) == 0x000004, "Wrong size on Tardis_C_GetPriceMultiplier");
+static_assert(offsetof(Tardis_C_GetPriceMultiplier, PriceMult) == 0x000000, "Member 'Tardis_C_GetPriceMultiplier::PriceMult' has a wrong offset!");
 
 }
 

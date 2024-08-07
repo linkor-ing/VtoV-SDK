@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "InputCore_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK::Params
@@ -26,7 +26,7 @@ struct Int_objects_C_ImpactDamage final
 public:
 	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_1DD4[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0090(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Impact;                                            // 0x0098(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -242,8 +242,21 @@ static_assert(alignof(Int_objects_C_Ignite) == 0x000004, "Wrong alignment on Int
 static_assert(sizeof(Int_objects_C_Ignite) == 0x000004, "Wrong size on Int_objects_C_Ignite");
 static_assert(offsetof(Int_objects_C_Ignite, Fuel) == 0x000000, "Member 'Int_objects_C_Ignite::Fuel' has a wrong offset!");
 
+// Function int_objects.int_objects_C.receivedPhyiscsDamage
+// 0x008C (0x008C - 0x0000)
+struct Int_objects_C_ReceivedPhyiscsDamage final
+{
+public:
+	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hot;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+static_assert(alignof(Int_objects_C_ReceivedPhyiscsDamage) == 0x000004, "Wrong alignment on Int_objects_C_ReceivedPhyiscsDamage");
+static_assert(sizeof(Int_objects_C_ReceivedPhyiscsDamage) == 0x00008C, "Wrong size on Int_objects_C_ReceivedPhyiscsDamage");
+static_assert(offsetof(Int_objects_C_ReceivedPhyiscsDamage, Damage) == 0x000000, "Member 'Int_objects_C_ReceivedPhyiscsDamage::Damage' has a wrong offset!");
+static_assert(offsetof(Int_objects_C_ReceivedPhyiscsDamage, Hot) == 0x000004, "Member 'Int_objects_C_ReceivedPhyiscsDamage::Hot' has a wrong offset!");
+
 // Function int_objects.int_objects_C.getActionOptions
-// 0x0048 (0x0048 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct Int_objects_C_GetActionOptions final
 {
 public:
@@ -253,15 +266,17 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Int_objects_C_GetActionOptions) == 0x000008, "Wrong alignment on Int_objects_C_GetActionOptions");
-static_assert(sizeof(Int_objects_C_GetActionOptions) == 0x000048, "Wrong size on Int_objects_C_GetActionOptions");
+static_assert(sizeof(Int_objects_C_GetActionOptions) == 0x000050, "Wrong size on Int_objects_C_GetActionOptions");
 static_assert(offsetof(Int_objects_C_GetActionOptions, Player) == 0x000000, "Member 'Int_objects_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Int_objects_C_GetActionOptions, Component) == 0x000008, "Member 'Int_objects_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Int_objects_C_GetActionOptions, Actor) == 0x000010, "Member 'Int_objects_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Int_objects_C_GetActionOptions, Options) == 0x000018, "Member 'Int_objects_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Int_objects_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Int_objects_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Int_objects_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Int_objects_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
+static_assert(offsetof(Int_objects_C_GetActionOptions, Number) == 0x000048, "Member 'Int_objects_C_GetActionOptions::Number' has a wrong offset!");
 
 // Function int_objects.int_objects_C.actionOptionIndex
 // 0x0098 (0x0098 - 0x0000)
@@ -270,15 +285,13 @@ struct Int_objects_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Int_objects_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Int_objects_C_ActionOptionIndex");
 static_assert(sizeof(Int_objects_C_ActionOptionIndex) == 0x000098, "Wrong size on Int_objects_C_ActionOptionIndex");
 static_assert(offsetof(Int_objects_C_ActionOptionIndex, Player) == 0x000000, "Member 'Int_objects_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(Int_objects_C_ActionOptionIndex, Hit) == 0x000008, "Member 'Int_objects_C_ActionOptionIndex::Hit' has a wrong offset!");
-static_assert(offsetof(Int_objects_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Int_objects_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(Int_objects_C_ActionOptionIndex, Action) == 0x000094, "Member 'Int_objects_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(Int_objects_C_ActionOptionIndex, Action) == 0x000090, "Member 'Int_objects_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function int_objects.int_objects_C.playerHandUse_RMB
 // 0x0008 (0x0008 - 0x0000)
@@ -510,6 +523,42 @@ public:
 static_assert(alignof(Int_objects_C_SkipRadial) == 0x000001, "Wrong alignment on Int_objects_C_SkipRadial");
 static_assert(sizeof(Int_objects_C_SkipRadial) == 0x000001, "Wrong size on Int_objects_C_SkipRadial");
 static_assert(offsetof(Int_objects_C_SkipRadial, Skip) == 0x000000, "Member 'Int_objects_C_SkipRadial::Skip' has a wrong offset!");
+
+// Function int_objects.int_objects_C.cleanSponge
+// 0x0010 (0x0010 - 0x0000)
+struct Int_objects_C_CleanSponge final
+{
+public:
+	float                                         Clean;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          Player;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Int_objects_C_CleanSponge) == 0x000008, "Wrong alignment on Int_objects_C_CleanSponge");
+static_assert(sizeof(Int_objects_C_CleanSponge) == 0x000010, "Wrong size on Int_objects_C_CleanSponge");
+static_assert(offsetof(Int_objects_C_CleanSponge, Clean) == 0x000000, "Member 'Int_objects_C_CleanSponge::Clean' has a wrong offset!");
+static_assert(offsetof(Int_objects_C_CleanSponge, Player) == 0x000008, "Member 'Int_objects_C_CleanSponge::Player' has a wrong offset!");
+
+// Function int_objects.int_objects_C.hookTension
+// 0x0008 (0x0008 - 0x0000)
+struct Int_objects_C_HookTension final
+{
+public:
+	class AHook_C*                                Hook;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Int_objects_C_HookTension) == 0x000008, "Wrong alignment on Int_objects_C_HookTension");
+static_assert(sizeof(Int_objects_C_HookTension) == 0x000008, "Wrong size on Int_objects_C_HookTension");
+static_assert(offsetof(Int_objects_C_HookTension, Hook) == 0x000000, "Member 'Int_objects_C_HookTension::Hook' has a wrong offset!");
+
+// Function int_objects.int_objects_C.getPriceMultiplier
+// 0x0004 (0x0004 - 0x0000)
+struct Int_objects_C_GetPriceMultiplier final
+{
+public:
+	float                                         PriceMult;                                         // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Int_objects_C_GetPriceMultiplier) == 0x000004, "Wrong alignment on Int_objects_C_GetPriceMultiplier");
+static_assert(sizeof(Int_objects_C_GetPriceMultiplier) == 0x000004, "Wrong size on Int_objects_C_GetPriceMultiplier");
+static_assert(offsetof(Int_objects_C_GetPriceMultiplier, PriceMult) == 0x000000, "Member 'Int_objects_C_GetPriceMultiplier::PriceMult' has a wrong offset!");
 
 }
 

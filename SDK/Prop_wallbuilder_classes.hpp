@@ -19,41 +19,39 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_wallbuilder.prop_wallbuilder_C
-// 0x00A8 (0x0410 - 0x0368)
+// 0x00A8 (0x0420 - 0x0378)
 class AProp_wallbuilder_C : public AProp_C
 {
 public:
-	uint8                                         Pad_3B98[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_wallbuilder_C;                 // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   Rot;                                               // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh2;                                       // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh1;                                       // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Cube;                                              // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBillboardComponent*                    Pivot_B;                                           // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBillboardComponent*                    Pivot_A;                                           // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          Editing;                                           // 0x03A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3B99[0x3];                                     // 0x03A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                Prev;                                              // 0x03A4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                PrevVec;                                           // 0x03B0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Len;                                               // 0x03BC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UNametagComponent_C*                    VisTextComp;                                       // 0x03C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsHit;                                             // 0x03D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          IsHeld;                                            // 0x03D1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3B9A[0x2];                                     // 0x03D2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Shape;                                             // 0x03D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                FirstNorm;                                         // 0x03D8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                FirstHit;                                          // 0x03E4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CentralMode;                                       // 0x03F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Cheat;                                             // 0x03F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3B9B[0x2];                                     // 0x03F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                PrevLoc;                                           // 0x03F4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                PreNorm;                                           // 0x0400(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Material;                                          // 0x040C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_wallbuilder_C;                 // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UStaticMeshComponent*                   Rot;                                               // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh2;                                       // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh1;                                       // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Cube;                                              // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    Pivot_B;                                           // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    Pivot_A;                                           // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          Editing;                                           // 0x03B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3B1[0x3];                                      // 0x03B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                Prev;                                              // 0x03B4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                PrevVec;                                           // 0x03C0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Len;                                               // 0x03CC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UComp_nametag_C*                        VisTextComp;                                       // 0x03D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsHit;                                             // 0x03E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          IsHeld;                                            // 0x03E1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3E2[0x2];                                      // 0x03E2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Shape;                                             // 0x03E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                FirstNorm;                                         // 0x03E8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                FirstHit;                                          // 0x03F4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CentralMode;                                       // 0x0400(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Cheat;                                             // 0x0401(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_402[0x2];                                      // 0x0402(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                PrevLoc;                                           // 0x0404(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                PreNorm;                                           // 0x0410(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Material;                                          // 0x041C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_wallbuilder(int32 EntryPoint);
 	void ReceiveTick(float DeltaSeconds);
-	void ReceiveBeginPlay();
 	void OnCompleted_8882420E4F2CF57684C98A8A5539FB1C(class FName NotifyName);
 	void OnBlendOut_8882420E4F2CF57684C98A8A5539FB1C(class FName NotifyName);
 	void OnInterrupted_8882420E4F2CF57684C98A8A5539FB1C(class FName NotifyName);
@@ -64,8 +62,9 @@ public:
 	void EditShape();
 	void SetRot(const struct FVector& Vector);
 	void EditMat();
-	void PlayerHandRelease_LMB(class AMainPlayer_C* Player);
+	void ReceiveBeginPlay();
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
+	void PlayerHandRelease_LMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 	void Init();
 
@@ -80,29 +79,29 @@ public:
 	}
 };
 static_assert(alignof(AProp_wallbuilder_C) == 0x000008, "Wrong alignment on AProp_wallbuilder_C");
-static_assert(sizeof(AProp_wallbuilder_C) == 0x000410, "Wrong size on AProp_wallbuilder_C");
-static_assert(offsetof(AProp_wallbuilder_C, UberGraphFrame_Prop_wallbuilder_C) == 0x000368, "Member 'AProp_wallbuilder_C::UberGraphFrame_Prop_wallbuilder_C' has a wrong offset!");
-static_assert(offsetof(AProp_wallbuilder_C, Rot) == 0x000370, "Member 'AProp_wallbuilder_C::Rot' has a wrong offset!");
-static_assert(offsetof(AProp_wallbuilder_C, StaticMesh2) == 0x000378, "Member 'AProp_wallbuilder_C::StaticMesh2' has a wrong offset!");
-static_assert(offsetof(AProp_wallbuilder_C, StaticMesh1) == 0x000380, "Member 'AProp_wallbuilder_C::StaticMesh1' has a wrong offset!");
-static_assert(offsetof(AProp_wallbuilder_C, Cube) == 0x000388, "Member 'AProp_wallbuilder_C::Cube' has a wrong offset!");
-static_assert(offsetof(AProp_wallbuilder_C, Pivot_B) == 0x000390, "Member 'AProp_wallbuilder_C::Pivot_B' has a wrong offset!");
-static_assert(offsetof(AProp_wallbuilder_C, Pivot_A) == 0x000398, "Member 'AProp_wallbuilder_C::Pivot_A' has a wrong offset!");
-static_assert(offsetof(AProp_wallbuilder_C, Editing) == 0x0003A0, "Member 'AProp_wallbuilder_C::Editing' has a wrong offset!");
-static_assert(offsetof(AProp_wallbuilder_C, Prev) == 0x0003A4, "Member 'AProp_wallbuilder_C::Prev' has a wrong offset!");
-static_assert(offsetof(AProp_wallbuilder_C, PrevVec) == 0x0003B0, "Member 'AProp_wallbuilder_C::PrevVec' has a wrong offset!");
-static_assert(offsetof(AProp_wallbuilder_C, Len) == 0x0003BC, "Member 'AProp_wallbuilder_C::Len' has a wrong offset!");
-static_assert(offsetof(AProp_wallbuilder_C, VisTextComp) == 0x0003C8, "Member 'AProp_wallbuilder_C::VisTextComp' has a wrong offset!");
-static_assert(offsetof(AProp_wallbuilder_C, IsHit) == 0x0003D0, "Member 'AProp_wallbuilder_C::IsHit' has a wrong offset!");
-static_assert(offsetof(AProp_wallbuilder_C, IsHeld) == 0x0003D1, "Member 'AProp_wallbuilder_C::IsHeld' has a wrong offset!");
-static_assert(offsetof(AProp_wallbuilder_C, Shape) == 0x0003D4, "Member 'AProp_wallbuilder_C::Shape' has a wrong offset!");
-static_assert(offsetof(AProp_wallbuilder_C, FirstNorm) == 0x0003D8, "Member 'AProp_wallbuilder_C::FirstNorm' has a wrong offset!");
-static_assert(offsetof(AProp_wallbuilder_C, FirstHit) == 0x0003E4, "Member 'AProp_wallbuilder_C::FirstHit' has a wrong offset!");
-static_assert(offsetof(AProp_wallbuilder_C, CentralMode) == 0x0003F0, "Member 'AProp_wallbuilder_C::CentralMode' has a wrong offset!");
-static_assert(offsetof(AProp_wallbuilder_C, Cheat) == 0x0003F1, "Member 'AProp_wallbuilder_C::Cheat' has a wrong offset!");
-static_assert(offsetof(AProp_wallbuilder_C, PrevLoc) == 0x0003F4, "Member 'AProp_wallbuilder_C::PrevLoc' has a wrong offset!");
-static_assert(offsetof(AProp_wallbuilder_C, PreNorm) == 0x000400, "Member 'AProp_wallbuilder_C::PreNorm' has a wrong offset!");
-static_assert(offsetof(AProp_wallbuilder_C, Material) == 0x00040C, "Member 'AProp_wallbuilder_C::Material' has a wrong offset!");
+static_assert(sizeof(AProp_wallbuilder_C) == 0x000420, "Wrong size on AProp_wallbuilder_C");
+static_assert(offsetof(AProp_wallbuilder_C, UberGraphFrame_Prop_wallbuilder_C) == 0x000378, "Member 'AProp_wallbuilder_C::UberGraphFrame_Prop_wallbuilder_C' has a wrong offset!");
+static_assert(offsetof(AProp_wallbuilder_C, Rot) == 0x000380, "Member 'AProp_wallbuilder_C::Rot' has a wrong offset!");
+static_assert(offsetof(AProp_wallbuilder_C, StaticMesh2) == 0x000388, "Member 'AProp_wallbuilder_C::StaticMesh2' has a wrong offset!");
+static_assert(offsetof(AProp_wallbuilder_C, StaticMesh1) == 0x000390, "Member 'AProp_wallbuilder_C::StaticMesh1' has a wrong offset!");
+static_assert(offsetof(AProp_wallbuilder_C, Cube) == 0x000398, "Member 'AProp_wallbuilder_C::Cube' has a wrong offset!");
+static_assert(offsetof(AProp_wallbuilder_C, Pivot_B) == 0x0003A0, "Member 'AProp_wallbuilder_C::Pivot_B' has a wrong offset!");
+static_assert(offsetof(AProp_wallbuilder_C, Pivot_A) == 0x0003A8, "Member 'AProp_wallbuilder_C::Pivot_A' has a wrong offset!");
+static_assert(offsetof(AProp_wallbuilder_C, Editing) == 0x0003B0, "Member 'AProp_wallbuilder_C::Editing' has a wrong offset!");
+static_assert(offsetof(AProp_wallbuilder_C, Prev) == 0x0003B4, "Member 'AProp_wallbuilder_C::Prev' has a wrong offset!");
+static_assert(offsetof(AProp_wallbuilder_C, PrevVec) == 0x0003C0, "Member 'AProp_wallbuilder_C::PrevVec' has a wrong offset!");
+static_assert(offsetof(AProp_wallbuilder_C, Len) == 0x0003CC, "Member 'AProp_wallbuilder_C::Len' has a wrong offset!");
+static_assert(offsetof(AProp_wallbuilder_C, VisTextComp) == 0x0003D8, "Member 'AProp_wallbuilder_C::VisTextComp' has a wrong offset!");
+static_assert(offsetof(AProp_wallbuilder_C, IsHit) == 0x0003E0, "Member 'AProp_wallbuilder_C::IsHit' has a wrong offset!");
+static_assert(offsetof(AProp_wallbuilder_C, IsHeld) == 0x0003E1, "Member 'AProp_wallbuilder_C::IsHeld' has a wrong offset!");
+static_assert(offsetof(AProp_wallbuilder_C, Shape) == 0x0003E4, "Member 'AProp_wallbuilder_C::Shape' has a wrong offset!");
+static_assert(offsetof(AProp_wallbuilder_C, FirstNorm) == 0x0003E8, "Member 'AProp_wallbuilder_C::FirstNorm' has a wrong offset!");
+static_assert(offsetof(AProp_wallbuilder_C, FirstHit) == 0x0003F4, "Member 'AProp_wallbuilder_C::FirstHit' has a wrong offset!");
+static_assert(offsetof(AProp_wallbuilder_C, CentralMode) == 0x000400, "Member 'AProp_wallbuilder_C::CentralMode' has a wrong offset!");
+static_assert(offsetof(AProp_wallbuilder_C, Cheat) == 0x000401, "Member 'AProp_wallbuilder_C::Cheat' has a wrong offset!");
+static_assert(offsetof(AProp_wallbuilder_C, PrevLoc) == 0x000404, "Member 'AProp_wallbuilder_C::PrevLoc' has a wrong offset!");
+static_assert(offsetof(AProp_wallbuilder_C, PreNorm) == 0x000410, "Member 'AProp_wallbuilder_C::PreNorm' has a wrong offset!");
+static_assert(offsetof(AProp_wallbuilder_C, Material) == 0x00041C, "Member 'AProp_wallbuilder_C::Material' has a wrong offset!");
 
 }
 

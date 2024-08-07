@@ -82,7 +82,7 @@ void AEffect_lsd_C::GamemodeBeginPlay()
 // Function effect_lsd.effect_lsd_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void AEffect_lsd_C::SettingsApplied(const struct FStruct_settings& Settings)
 {
@@ -167,6 +167,30 @@ void AEffect_lsd_C::ReceiveBeginPlay()
 }
 
 
+// Function effect_lsd.effect_lsd_C.texturePickerApply
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AEffect_lsd_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("effect_lsd_C", "texturePickerApply");
+
+	Params::Effect_lsd_C_TexturePickerApply Parms{};
+
+	Parms.Picker = Picker;
+	Parms.Texture = Texture;
+	Parms.Param_Index = Param_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function effect_lsd.effect_lsd_C.applyColor
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -218,10 +242,10 @@ void AEffect_lsd_C::GamemodeMakeKeys()
 // Function effect_lsd.effect_lsd_C.AnyKey
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// struct FKey                             Param_Key                                              (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // bool                                    Pressed                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AEffect_lsd_C::AnyKey(const struct FKey& Key, bool Pressed)
+void AEffect_lsd_C::AnyKey(const struct FKey& Param_Key, bool Pressed)
 {
 	static class UFunction* Func = nullptr;
 
@@ -230,7 +254,7 @@ void AEffect_lsd_C::AnyKey(const struct FKey& Key, bool Pressed)
 
 	Params::Effect_lsd_C_AnyKey Parms{};
 
-	Parms.Key = std::move(Key);
+	Parms.Param_Key = std::move(Param_Key);
 	Parms.Pressed = Pressed;
 
 	UObject::ProcessEvent(Func, &Parms);

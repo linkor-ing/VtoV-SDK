@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "Struct_spaceObject_structs.hpp"
-#include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Enum_quality_structs.hpp"
 #include "Struct_signalDataDynamic_structs.hpp"
-#include "Enum_freq_structs.hpp"
+#include "Engine_structs.hpp"
+#include "Enum_objectType_structs.hpp"
+#include "Struct_spaceObject_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
-#include "Enum_objectType_structs.hpp"
+#include "Enum_freq_structs.hpp"
 #include "Enum_difficulty_structs.hpp"
 
 
@@ -54,16 +54,16 @@ public:
 	class UTextBlock*                             Text_sQuality;                                     // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             Text_SSize;                                        // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	float                                         Alpha;                                             // 0x0318(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2131[0x4];                                     // 0x031C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31C[0x4];                                      // 0x031C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             Signal_image;                                      // 0x0320(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               Dynmat_image;                                      // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             Singal_sound;                                      // 0x0330(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   Signal_text;                                       // 0x0338(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 	float                                         Duration;                                          // 0x0350(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2132[0x4];                                     // 0x0354(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_354[0x4];                                      // 0x0354(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APanel_download_C*                      Panel;                                             // 0x0358(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Decoder;                                           // 0x0360(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2133[0x4];                                     // 0x0364(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_364[0x4];                                      // 0x0364(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_spaceObject                    Data;                                              // 0x0368(0x0068)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	class UTextureRenderTarget2D*                 Prev;                                              // 0x03D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCanvas*                                Canv;                                              // 0x03D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -76,19 +76,19 @@ public:
 	float                                         PoFilter_data;                                     // 0x03FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Active_poFIlter;                                   // 0x0400(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Active_frFilter;                                   // 0x0401(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2134[0x6];                                     // 0x0402(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_402[0x6];                                      // 0x0402(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               Dynmat_frequency;                                  // 0x0408(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               Dynmat_polarity;                                   // 0x0410(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DownloadSpeed;                                     // 0x0418(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2135[0x4];                                     // 0x041C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_41C[0x4];                                      // 0x041C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_signalDataDynamic              DownloadData;                                      // 0x0420(0x0070)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	float                                         NoiseScale;                                        // 0x0490(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Active;                                            // 0x0494(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2136[0x3];                                     // 0x0495(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_495[0x3];                                      // 0x0495(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         PrecMult;                                          // 0x0498(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Downloading;                                       // 0x049C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         NosigA;                                            // 0x04A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2137[0x4];                                     // 0x04A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4A4[0x4];                                      // 0x04A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APanel_download_tutorial3_C*            Tutor;                                             // 0x04A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Rain;                                              // 0x04B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Diff_download;                                     // 0x04B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -98,6 +98,7 @@ public:
 	int32                                         I;                                                 // 0x04C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AMainGamemode_C*                        GameMode;                                          // 0x04C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Tst;                                               // 0x04D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          SoundActive_blip;                                  // 0x04D1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_umg_signalDownload(int32 EntryPoint);
@@ -108,6 +109,7 @@ public:
 	void SignalDeleted();
 	void RepeatPlay();
 	void PlaySignal();
+	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void ApplyColor(const struct FLinearColor& Color);
 	void PropRenderer_finishProps();
 	void GamemodeMakeKeys();
@@ -195,6 +197,7 @@ static_assert(offsetof(UUmg_signalDownload_C, PolarityDir) == 0x0004C0, "Member 
 static_assert(offsetof(UUmg_signalDownload_C, I) == 0x0004C4, "Member 'UUmg_signalDownload_C::I' has a wrong offset!");
 static_assert(offsetof(UUmg_signalDownload_C, GameMode) == 0x0004C8, "Member 'UUmg_signalDownload_C::GameMode' has a wrong offset!");
 static_assert(offsetof(UUmg_signalDownload_C, Tst) == 0x0004D0, "Member 'UUmg_signalDownload_C::Tst' has a wrong offset!");
+static_assert(offsetof(UUmg_signalDownload_C, SoundActive_blip) == 0x0004D1, "Member 'UUmg_signalDownload_C::SoundActive_blip' has a wrong offset!");
 
 }
 

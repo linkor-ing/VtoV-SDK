@@ -37,6 +37,20 @@ void AWaterVolume_C::ExecuteUbergraph_waterVolume(int32 EntryPoint)
 }
 
 
+// Function waterVolume.waterVolume_C.Init
+// (BlueprintCallable, BlueprintEvent)
+
+void AWaterVolume_C::Init()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("waterVolume_C", "Init");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function waterVolume.waterVolume_C.gamemodeBeginPlay
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -116,7 +130,7 @@ void AWaterVolume_C::Unfoc()
 // Function waterVolume.waterVolume_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void AWaterVolume_C::SettingsApplied(const struct FStruct_settings& Settings)
 {
@@ -226,6 +240,30 @@ void AWaterVolume_C::ApplyColor(const struct FLinearColor& Color)
 	Params::WaterVolume_C_ApplyColor Parms{};
 
 	Parms.Color = std::move(Color);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function waterVolume.waterVolume_C.texturePickerApply
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AWaterVolume_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("waterVolume_C", "texturePickerApply");
+
+	Params::WaterVolume_C_TexturePickerApply Parms{};
+
+	Parms.Picker = Picker;
+	Parms.Texture = Texture;
+	Parms.Param_Index = Param_Index;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -341,8 +379,10 @@ void AWaterVolume_C::UserConstructionScript()
 // class AActor*                           Self2                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USoundBase*                       Sound                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Effect                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FVector                          Loc                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          Scale                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AWaterVolume_C::SoundSurface(class AActor* Self2, class USoundBase* Sound, bool Effect)
+void AWaterVolume_C::SoundSurface(class AActor* Self2, class USoundBase* Sound, bool Effect, const struct FVector& Loc, const struct FVector& Scale)
 {
 	static class UFunction* Func = nullptr;
 
@@ -354,6 +394,8 @@ void AWaterVolume_C::SoundSurface(class AActor* Self2, class USoundBase* Sound, 
 	Parms.Self2 = Self2;
 	Parms.Sound = Sound;
 	Parms.Effect = Effect;
+	Parms.Loc = std::move(Loc);
+	Parms.Scale = std::move(Scale);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -396,6 +438,40 @@ void AWaterVolume_C::NewFunction_0(bool Condition)
 	Parms.Condition = Condition;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function waterVolume.waterVolume_C.freeze
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Param_Frozen                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AWaterVolume_C::Freeze(bool Param_Frozen)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("waterVolume_C", "freeze");
+
+	Params::WaterVolume_C_Freeze Parms{};
+
+	Parms.Param_Frozen = Param_Frozen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function waterVolume.waterVolume_C.updateWaterData
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void AWaterVolume_C::UpdateWaterData()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("waterVolume_C", "updateWaterData");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

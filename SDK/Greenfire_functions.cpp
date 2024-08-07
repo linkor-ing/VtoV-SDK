@@ -17,6 +17,498 @@
 namespace SDK
 {
 
+// Function greenfire.greenfire_C.getPriceMultiplier
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   PriceMult                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AGreenfire_C::GetPriceMultiplier(float* PriceMult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "getPriceMultiplier");
+
+	Params::Greenfire_C_GetPriceMultiplier Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PriceMult != nullptr)
+		*PriceMult = Parms.PriceMult;
+}
+
+
+// Function greenfire.greenfire_C.skipRadial
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Skip                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AGreenfire_C::SkipRadial(bool* Skip)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "skipRadial");
+
+	Params::Greenfire_C_SkipRadial Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Skip != nullptr)
+		*Skip = Parms.Skip;
+}
+
+
+// Function greenfire.greenfire_C.toolboxFix
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AProp_toolbox_C*                  Toolbox                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AGreenfire_C::ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "toolboxFix");
+
+	Params::Greenfire_C_ToolboxFix Parms{};
+
+	Parms.Toolbox = Toolbox;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return != nullptr)
+		*Return = Parms.Return;
+}
+
+
+// Function greenfire.greenfire_C.GetKey
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                           Key                                                    (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+
+void AGreenfire_C::GetKey(class FString* Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "GetKey");
+
+	Params::Greenfire_C_GetKey Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Key != nullptr)
+		*Key = std::move(Parms.Key);
+}
+
+
+// Function greenfire.greenfire_C.canBeUsedHold
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AGreenfire_C::CanBeUsedHold(bool* Return)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "canBeUsedHold");
+
+	Params::Greenfire_C_CanBeUsedHold Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return != nullptr)
+		*Return = Parms.Return;
+}
+
+
+// Function greenfire.greenfire_C.processKeys
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AGreenfire_C::ProcessKeys(bool* Return)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "processKeys");
+
+	Params::Greenfire_C_ProcessKeys Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return != nullptr)
+		*Return = Parms.Return;
+}
+
+
+// Function greenfire.greenfire_C.getOnlyKey
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                           Key                                                    (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+
+void AGreenfire_C::GetOnlyKey(class FString* Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "getOnlyKey");
+
+	Params::Greenfire_C_GetOnlyKey Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Key != nullptr)
+		*Key = std::move(Parms.Key);
+}
+
+
+// Function greenfire.greenfire_C.setPath
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<struct FVector>                  Path                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AGreenfire_C::SetPath(const TArray<struct FVector>& Path, bool* Return)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "setPath");
+
+	Params::Greenfire_C_SetPath Parms{};
+
+	Parms.Path = std::move(Path);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return != nullptr)
+		*Return = Parms.Return;
+}
+
+
+// Function greenfire.greenfire_C.getActionOptions
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class FString>                   Options                                                (Parm, OutParm)
+// TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
+// TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AGreenfire_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "getActionOptions");
+
+	Params::Greenfire_C_GetActionOptions Parms{};
+
+	Parms.Player = Player;
+	Parms.Component = Component;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Options != nullptr)
+		*Options = std::move(Parms.Options);
+
+	if (Options_enum != nullptr)
+		*Options_enum = std::move(Parms.Options_enum);
+
+	if (OptionsNamesOverlay != nullptr)
+		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
+}
+
+
+// Function greenfire.greenfire_C.gascanFuel
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AProp_gascan_C*                   Gascan                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Fueled                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AGreenfire_C::GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "gascanFuel");
+
+	Params::Greenfire_C_GascanFuel Parms{};
+
+	Parms.Gascan = Gascan;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Fueled != nullptr)
+		*Fueled = Parms.Fueled;
+}
+
+
+// Function greenfire.greenfire_C.ImpactDamage
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          Impact                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AGreenfire_C::ImpactDamage(float Damage, const struct FHitResult& Hit, class AActor* Actor, const struct FVector& Impact)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "ImpactDamage");
+
+	Params::Greenfire_C_ImpactDamage Parms{};
+
+	Parms.Damage = Damage;
+	Parms.Hit = std::move(Hit);
+	Parms.Actor = Actor;
+	Parms.Impact = std::move(Impact);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function greenfire.greenfire_C.enterWater
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AWaterVolume_C*                   Water                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AGreenfire_C::EnterWater(class AWaterVolume_C* Water)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "enterWater");
+
+	Params::Greenfire_C_EnterWater Parms{};
+
+	Parms.Water = Water;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function greenfire.greenfire_C.leaveWater
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AWaterVolume_C*                   Water                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AGreenfire_C::LeaveWater(class AWaterVolume_C* Water)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "leaveWater");
+
+	Params::Greenfire_C_LeaveWater Parms{};
+
+	Parms.Water = Water;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function greenfire.greenfire_C.enterWaterOrigin
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AWaterVolume_C*                   Water                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AGreenfire_C::EnterWaterOrigin(class AWaterVolume_C* Water)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "enterWaterOrigin");
+
+	Params::Greenfire_C_EnterWaterOrigin Parms{};
+
+	Parms.Water = Water;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function greenfire.greenfire_C.leaveWaterOrigin
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AWaterVolume_C*                   Water                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AGreenfire_C::LeaveWaterOrigin(class AWaterVolume_C* Water)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "leaveWaterOrigin");
+
+	Params::Greenfire_C_LeaveWaterOrigin Parms{};
+
+	Parms.Water = Water;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function greenfire.greenfire_C.eaten
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AGreenfire_C::Eaten()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "eaten");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function greenfire.greenfire_C.virus
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Activate                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AGreenfire_C::Virus(bool Activate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "virus");
+
+	Params::Greenfire_C_Virus Parms{};
+
+	Parms.Activate = Activate;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function greenfire.greenfire_C.setPropProps
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Static                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Frozen                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AGreenfire_C::SetPropProps(bool Static, bool Frozen, bool Active)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "setPropProps");
+
+	Params::Greenfire_C_SetPropProps Parms{};
+
+	Parms.Static = Static;
+	Parms.Frozen = Frozen;
+	Parms.Active = Active;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function greenfire.greenfire_C.addDamage
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// struct FVector                          Impact                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    SkipSetting                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AGreenfire_C::AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Hit, const struct FVector& Impact, bool SkipSetting)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "addDamage");
+
+	Params::Greenfire_C_AddDamage Parms{};
+
+	Parms.Actor = Actor;
+	Parms.Damage = Damage;
+	Parms.Hit = std::move(Hit);
+	Parms.Impact = std::move(Impact);
+	Parms.SkipSetting = SkipSetting;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function greenfire.greenfire_C.setKey
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                           Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void AGreenfire_C::SetKey(const class FString& Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "setKey");
+
+	Params::Greenfire_C_SetKey Parms{};
+
+	Parms.Key = std::move(Key);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function greenfire.greenfire_C.physDestroyed
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AGreenfire_C::PhysDestroyed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "physDestroyed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function greenfire.greenfire_C.physPreDestroyed
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AGreenfire_C::PhysPreDestroyed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "physPreDestroyed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function greenfire.greenfire_C.digUp
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AGreenfire_C::DigUp()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "digUp");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function greenfire.greenfire_C.unhook
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -109,15 +601,23 @@ void AGreenfire_C::Microwave()
 
 // Function greenfire.greenfire_C.receivedPhyiscsDamage
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hot                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void AGreenfire_C::ReceivedPhyiscsDamage()
+void AGreenfire_C::ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("greenfire_C", "receivedPhyiscsDamage");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::Greenfire_C_ReceivedPhyiscsDamage Parms{};
+
+	Parms.Damage = Damage;
+	Parms.Hot = std::move(Hot);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -126,10 +626,9 @@ void AGreenfire_C::ReceivedPhyiscsDamage()
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AGreenfire_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action)
+void AGreenfire_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -140,7 +639,6 @@ void AGreenfire_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct F
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
-	Parms.Param_Index = Param_Index;
 	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -549,6 +1047,62 @@ void AGreenfire_C::Hooked(class AHook_C* Hook)
 }
 
 
+// Function greenfire.greenfire_C.crafted
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AGreenfire_C::Crafted()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "crafted");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function greenfire.greenfire_C.cleanSponge
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Clean                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AGreenfire_C::CleanSponge(float Clean, class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "cleanSponge");
+
+	Params::Greenfire_C_CleanSponge Parms{};
+
+	Parms.Clean = Clean;
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function greenfire.greenfire_C.hookTension
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AHook_C*                          Hook                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AGreenfire_C::HookTension(class AHook_C* Hook)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("greenfire_C", "hookTension");
+
+	Params::Greenfire_C_HookTension Parms{};
+
+	Parms.Hook = Hook;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function greenfire.greenfire_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -628,473 +1182,6 @@ void AGreenfire_C::ExecuteUbergraph_greenfire(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function greenfire.greenfire_C.skipRadial
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Skip                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AGreenfire_C::SkipRadial(bool* Skip)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("greenfire_C", "skipRadial");
-
-	Params::Greenfire_C_SkipRadial Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Skip != nullptr)
-		*Skip = Parms.Skip;
-}
-
-
-// Function greenfire.greenfire_C.toolboxFix
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AProp_toolbox_C*                  Toolbox                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AGreenfire_C::ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("greenfire_C", "toolboxFix");
-
-	Params::Greenfire_C_ToolboxFix Parms{};
-
-	Parms.Toolbox = Toolbox;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Return != nullptr)
-		*Return = Parms.Return;
-}
-
-
-// Function greenfire.greenfire_C.GetKey
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                           Key                                                    (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-
-void AGreenfire_C::GetKey(class FString* Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("greenfire_C", "GetKey");
-
-	Params::Greenfire_C_GetKey Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Key != nullptr)
-		*Key = std::move(Parms.Key);
-}
-
-
-// Function greenfire.greenfire_C.canBeUsedHold
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AGreenfire_C::CanBeUsedHold(bool* Return)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("greenfire_C", "canBeUsedHold");
-
-	Params::Greenfire_C_CanBeUsedHold Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Return != nullptr)
-		*Return = Parms.Return;
-}
-
-
-// Function greenfire.greenfire_C.processKeys
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AGreenfire_C::ProcessKeys(bool* Return)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("greenfire_C", "processKeys");
-
-	Params::Greenfire_C_ProcessKeys Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Return != nullptr)
-		*Return = Parms.Return;
-}
-
-
-// Function greenfire.greenfire_C.getOnlyKey
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                           Key                                                    (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-
-void AGreenfire_C::GetOnlyKey(class FString* Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("greenfire_C", "getOnlyKey");
-
-	Params::Greenfire_C_GetOnlyKey Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Key != nullptr)
-		*Key = std::move(Parms.Key);
-}
-
-
-// Function greenfire.greenfire_C.setPath
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<struct FVector>                  Path                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AGreenfire_C::SetPath(const TArray<struct FVector>& Path, bool* Return)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("greenfire_C", "setPath");
-
-	Params::Greenfire_C_SetPath Parms{};
-
-	Parms.Path = std::move(Path);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Return != nullptr)
-		*Return = Parms.Return;
-}
-
-
-// Function greenfire.greenfire_C.getActionOptions
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class FString>                   Options                                                (Parm, OutParm)
-// TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
-// TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
-
-void AGreenfire_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("greenfire_C", "getActionOptions");
-
-	Params::Greenfire_C_GetActionOptions Parms{};
-
-	Parms.Player = Player;
-	Parms.Component = Component;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Options != nullptr)
-		*Options = std::move(Parms.Options);
-
-	if (Options_enum != nullptr)
-		*Options_enum = std::move(Parms.Options_enum);
-
-	if (OptionsNamesOverlay != nullptr)
-		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
-}
-
-
-// Function greenfire.greenfire_C.gascanFuel
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AProp_gascan_C*                   Gascan                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Fueled                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AGreenfire_C::GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("greenfire_C", "gascanFuel");
-
-	Params::Greenfire_C_GascanFuel Parms{};
-
-	Parms.Gascan = Gascan;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Fueled != nullptr)
-		*Fueled = Parms.Fueled;
-}
-
-
-// Function greenfire.greenfire_C.ImpactDamage
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          Impact                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AGreenfire_C::ImpactDamage(float Damage, const struct FHitResult& Hit, class AActor* Actor, const struct FVector& Impact)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("greenfire_C", "ImpactDamage");
-
-	Params::Greenfire_C_ImpactDamage Parms{};
-
-	Parms.Damage = Damage;
-	Parms.Hit = std::move(Hit);
-	Parms.Actor = Actor;
-	Parms.Impact = std::move(Impact);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function greenfire.greenfire_C.enterWater
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AWaterVolume_C*                   Water                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AGreenfire_C::EnterWater(class AWaterVolume_C* Water)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("greenfire_C", "enterWater");
-
-	Params::Greenfire_C_EnterWater Parms{};
-
-	Parms.Water = Water;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function greenfire.greenfire_C.leaveWater
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AWaterVolume_C*                   Water                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AGreenfire_C::LeaveWater(class AWaterVolume_C* Water)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("greenfire_C", "leaveWater");
-
-	Params::Greenfire_C_LeaveWater Parms{};
-
-	Parms.Water = Water;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function greenfire.greenfire_C.enterWaterOrigin
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AWaterVolume_C*                   Water                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AGreenfire_C::EnterWaterOrigin(class AWaterVolume_C* Water)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("greenfire_C", "enterWaterOrigin");
-
-	Params::Greenfire_C_EnterWaterOrigin Parms{};
-
-	Parms.Water = Water;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function greenfire.greenfire_C.leaveWaterOrigin
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AWaterVolume_C*                   Water                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AGreenfire_C::LeaveWaterOrigin(class AWaterVolume_C* Water)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("greenfire_C", "leaveWaterOrigin");
-
-	Params::Greenfire_C_LeaveWaterOrigin Parms{};
-
-	Parms.Water = Water;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function greenfire.greenfire_C.eaten
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AGreenfire_C::Eaten()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("greenfire_C", "eaten");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function greenfire.greenfire_C.virus
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Activate                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AGreenfire_C::Virus(bool Activate)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("greenfire_C", "virus");
-
-	Params::Greenfire_C_Virus Parms{};
-
-	Parms.Activate = Activate;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function greenfire.greenfire_C.setPropProps
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Static                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Frozen                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AGreenfire_C::SetPropProps(bool Static, bool Frozen, bool Active)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("greenfire_C", "setPropProps");
-
-	Params::Greenfire_C_SetPropProps Parms{};
-
-	Parms.Static = Static;
-	Parms.Frozen = Frozen;
-	Parms.Active = Active;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function greenfire.greenfire_C.addDamage
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// struct FVector                          Impact                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    SkipSetting                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AGreenfire_C::AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Hit, const struct FVector& Impact, bool SkipSetting)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("greenfire_C", "addDamage");
-
-	Params::Greenfire_C_AddDamage Parms{};
-
-	Parms.Actor = Actor;
-	Parms.Damage = Damage;
-	Parms.Hit = std::move(Hit);
-	Parms.Impact = std::move(Impact);
-	Parms.SkipSetting = SkipSetting;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function greenfire.greenfire_C.setKey
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                           Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void AGreenfire_C::SetKey(const class FString& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("greenfire_C", "setKey");
-
-	Params::Greenfire_C_SetKey Parms{};
-
-	Parms.Key = std::move(Key);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function greenfire.greenfire_C.physDestroyed
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AGreenfire_C::PhysDestroyed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("greenfire_C", "physDestroyed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function greenfire.greenfire_C.physPreDestroyed
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AGreenfire_C::PhysPreDestroyed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("greenfire_C", "physPreDestroyed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function greenfire.greenfire_C.digUp
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AGreenfire_C::DigUp()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("greenfire_C", "digUp");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

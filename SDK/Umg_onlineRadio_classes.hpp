@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Struct_tv_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Struct_tv_structs.hpp"
 #include "UMG_classes.hpp"
 #include "Enum_playlist_structs.hpp"
 
@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass umg_onlineRadio.umg_onlineRadio_C
-// 0x00D0 (0x0330 - 0x0260)
+// 0x00D8 (0x0338 - 0x0260)
 class UUmg_onlineRadio_C final : public UUserWidget
 {
 public:
@@ -28,24 +28,26 @@ public:
 	class UButton*                                Button_104;                                        // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UButton*                                button_play;                                       // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UButton*                                Button_refresh;                                    // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UButton*                                button_stop;                                       // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScrollBox*                             ScrollBox_list;                                    // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USlider*                                Slider_volume;                                     // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Txt_playType;                                      // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Txt_station;                                       // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Txt_status;                                        // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Txt_volume;                                        // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<class FString>                         Stations;                                          // 0x02B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class UUmg_radioStSlot_C*>             Slots;                                             // 0x02C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	class FString                                 ActiveStationUrl;                                  // 0x02D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	class FString                                 ActiveName;                                        // 0x02E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	class AProp_radio_internet_C*                 Radio;                                             // 0x02F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsUrl;                                             // 0x0300(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2715[0x7];                                     // 0x0301(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_tv                             Data;                                              // 0x0308(0x0028)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	class UButton*                                Button_skip;                                       // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UButton*                                button_stop;                                       // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScrollBox*                             ScrollBox_list;                                    // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USlider*                                Slider_volume;                                     // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Txt_playType;                                      // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Txt_station;                                       // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Txt_status;                                        // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Txt_volume;                                        // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TArray<class FString>                         Stations;                                          // 0x02C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class UUmg_radioStSlot_C*>             Slots;                                             // 0x02D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	class FString                                 ActiveStationUrl;                                  // 0x02E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	class FString                                 ActiveName;                                        // 0x02F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	class AProp_radio_internet_C*                 Radio;                                             // 0x0300(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsUrl;                                             // 0x0308(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_309[0x7];                                      // 0x0309(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_tv                             Data;                                              // 0x0310(0x0028)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_umg_onlineRadio(int32 EntryPoint);
+	void BndEvt__umg_onlineRadio_Button_skip_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature();
 	void BndEvt__umg_onlineRadio_Button_104_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature();
 	void BndEvt__umg_onlineRadio_Button_refresh_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature();
 	void BndEvt__umg_onlineRadio_Slider_volume_K2Node_ComponentBoundEvent_3_OnFloatValueChangedEvent__DelegateSignature(float Value);
@@ -69,25 +71,26 @@ public:
 	}
 };
 static_assert(alignof(UUmg_onlineRadio_C) == 0x000008, "Wrong alignment on UUmg_onlineRadio_C");
-static_assert(sizeof(UUmg_onlineRadio_C) == 0x000330, "Wrong size on UUmg_onlineRadio_C");
+static_assert(sizeof(UUmg_onlineRadio_C) == 0x000338, "Wrong size on UUmg_onlineRadio_C");
 static_assert(offsetof(UUmg_onlineRadio_C, UberGraphFrame) == 0x000260, "Member 'UUmg_onlineRadio_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UUmg_onlineRadio_C, Button_104) == 0x000268, "Member 'UUmg_onlineRadio_C::Button_104' has a wrong offset!");
 static_assert(offsetof(UUmg_onlineRadio_C, button_play) == 0x000270, "Member 'UUmg_onlineRadio_C::button_play' has a wrong offset!");
 static_assert(offsetof(UUmg_onlineRadio_C, Button_refresh) == 0x000278, "Member 'UUmg_onlineRadio_C::Button_refresh' has a wrong offset!");
-static_assert(offsetof(UUmg_onlineRadio_C, button_stop) == 0x000280, "Member 'UUmg_onlineRadio_C::button_stop' has a wrong offset!");
-static_assert(offsetof(UUmg_onlineRadio_C, ScrollBox_list) == 0x000288, "Member 'UUmg_onlineRadio_C::ScrollBox_list' has a wrong offset!");
-static_assert(offsetof(UUmg_onlineRadio_C, Slider_volume) == 0x000290, "Member 'UUmg_onlineRadio_C::Slider_volume' has a wrong offset!");
-static_assert(offsetof(UUmg_onlineRadio_C, Txt_playType) == 0x000298, "Member 'UUmg_onlineRadio_C::Txt_playType' has a wrong offset!");
-static_assert(offsetof(UUmg_onlineRadio_C, Txt_station) == 0x0002A0, "Member 'UUmg_onlineRadio_C::Txt_station' has a wrong offset!");
-static_assert(offsetof(UUmg_onlineRadio_C, Txt_status) == 0x0002A8, "Member 'UUmg_onlineRadio_C::Txt_status' has a wrong offset!");
-static_assert(offsetof(UUmg_onlineRadio_C, Txt_volume) == 0x0002B0, "Member 'UUmg_onlineRadio_C::Txt_volume' has a wrong offset!");
-static_assert(offsetof(UUmg_onlineRadio_C, Stations) == 0x0002B8, "Member 'UUmg_onlineRadio_C::Stations' has a wrong offset!");
-static_assert(offsetof(UUmg_onlineRadio_C, Slots) == 0x0002C8, "Member 'UUmg_onlineRadio_C::Slots' has a wrong offset!");
-static_assert(offsetof(UUmg_onlineRadio_C, ActiveStationUrl) == 0x0002D8, "Member 'UUmg_onlineRadio_C::ActiveStationUrl' has a wrong offset!");
-static_assert(offsetof(UUmg_onlineRadio_C, ActiveName) == 0x0002E8, "Member 'UUmg_onlineRadio_C::ActiveName' has a wrong offset!");
-static_assert(offsetof(UUmg_onlineRadio_C, Radio) == 0x0002F8, "Member 'UUmg_onlineRadio_C::Radio' has a wrong offset!");
-static_assert(offsetof(UUmg_onlineRadio_C, IsUrl) == 0x000300, "Member 'UUmg_onlineRadio_C::IsUrl' has a wrong offset!");
-static_assert(offsetof(UUmg_onlineRadio_C, Data) == 0x000308, "Member 'UUmg_onlineRadio_C::Data' has a wrong offset!");
+static_assert(offsetof(UUmg_onlineRadio_C, Button_skip) == 0x000280, "Member 'UUmg_onlineRadio_C::Button_skip' has a wrong offset!");
+static_assert(offsetof(UUmg_onlineRadio_C, button_stop) == 0x000288, "Member 'UUmg_onlineRadio_C::button_stop' has a wrong offset!");
+static_assert(offsetof(UUmg_onlineRadio_C, ScrollBox_list) == 0x000290, "Member 'UUmg_onlineRadio_C::ScrollBox_list' has a wrong offset!");
+static_assert(offsetof(UUmg_onlineRadio_C, Slider_volume) == 0x000298, "Member 'UUmg_onlineRadio_C::Slider_volume' has a wrong offset!");
+static_assert(offsetof(UUmg_onlineRadio_C, Txt_playType) == 0x0002A0, "Member 'UUmg_onlineRadio_C::Txt_playType' has a wrong offset!");
+static_assert(offsetof(UUmg_onlineRadio_C, Txt_station) == 0x0002A8, "Member 'UUmg_onlineRadio_C::Txt_station' has a wrong offset!");
+static_assert(offsetof(UUmg_onlineRadio_C, Txt_status) == 0x0002B0, "Member 'UUmg_onlineRadio_C::Txt_status' has a wrong offset!");
+static_assert(offsetof(UUmg_onlineRadio_C, Txt_volume) == 0x0002B8, "Member 'UUmg_onlineRadio_C::Txt_volume' has a wrong offset!");
+static_assert(offsetof(UUmg_onlineRadio_C, Stations) == 0x0002C0, "Member 'UUmg_onlineRadio_C::Stations' has a wrong offset!");
+static_assert(offsetof(UUmg_onlineRadio_C, Slots) == 0x0002D0, "Member 'UUmg_onlineRadio_C::Slots' has a wrong offset!");
+static_assert(offsetof(UUmg_onlineRadio_C, ActiveStationUrl) == 0x0002E0, "Member 'UUmg_onlineRadio_C::ActiveStationUrl' has a wrong offset!");
+static_assert(offsetof(UUmg_onlineRadio_C, ActiveName) == 0x0002F0, "Member 'UUmg_onlineRadio_C::ActiveName' has a wrong offset!");
+static_assert(offsetof(UUmg_onlineRadio_C, Radio) == 0x000300, "Member 'UUmg_onlineRadio_C::Radio' has a wrong offset!");
+static_assert(offsetof(UUmg_onlineRadio_C, IsUrl) == 0x000308, "Member 'UUmg_onlineRadio_C::IsUrl' has a wrong offset!");
+static_assert(offsetof(UUmg_onlineRadio_C, Data) == 0x000310, "Member 'UUmg_onlineRadio_C::Data' has a wrong offset!");
 
 }
 

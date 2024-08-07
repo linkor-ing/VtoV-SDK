@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Struct_propDynamic_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "Struct_propDynamic_structs.hpp"
 #include "Struct_prop_structs.hpp"
 #include "Enum_interactionActions_structs.hpp"
 
@@ -21,14 +21,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop.prop_C
-// 0x0148 (0x0368 - 0x0220)
-#pragma pack(push, 0x1)
-class alignas(0x08) AProp_C : public AActor
+// 0x0158 (0x0378 - 0x0220)
+class AProp_C : public AActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UPropThrown_C*                          PropThrown;                                        // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPhysicsImpactComponent_C*              PhysicsImpact;                                     // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UComp_physicsImpact_C*                  PhysicsImpact;                                     // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0238(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Name_Prop_C;                                       // 0x0240(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	struct FStruct_propDynamic                    Dynamic;                                           // 0x0248(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)
@@ -39,39 +38,50 @@ public:
 	bool                                          IgnoreSav;                                         // 0x02F3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          IngoreFix;                                         // 0x02F4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Sleep;                                             // 0x02F5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3730[0x2];                                     // 0x02F6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F6[0x2];                                      // 0x02F6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Key;                                               // 0x02F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_             Hit;                                               // 0x0308(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             Unhooked;                                          // 0x0318(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class UFlammable_C*                           FlameBase;                                         // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFlammable_C*                           FlameBase;                                         // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CustomShadows;                                     // 0x0330(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3731[0x7];                                     // 0x0331(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_331[0x7];                                      // 0x0331(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Nametag;                                           // 0x0338(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	class UNametagComponent_C*                    NametagComponent;                                  // 0x0348(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UComp_nametag_C*                        NametagComponent;                                  // 0x0348(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_             TakenByPlayer;                                     // 0x0350(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          ReturnLookAt;                                      // 0x0360(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          DoCastShadow;                                      // 0x0361(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_362[0x6];                                      // 0x0362(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             Awoken;                                            // 0x0368(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void Hit__DelegateSignature();
 	void Unhooked__DelegateSignature();
 	void TakenByPlayer__DelegateSignature(class AProp_C* Prop);
+	void Awoken__DelegateSignature();
 	void ExecuteUbergraph_prop(int32 EntryPoint);
+	void Awake();
 	void ImpactDamageCPP(float Damage, const struct FHitResult& Param_Hit, class AActor* Actor, const struct FVector& Impact);
 	void ExtinguishFire();
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
+	void EnteredTheWater();
+	void ExitTheWater();
 	void Ignite(float Fuel);
 	void FireDamage(float Damage);
 	void Hittedd123(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Param_Hit);
 	void SetKey(const class FString& Param_Key);
 	void SetIgnoreSave(bool Ignore);
+	void ImpactSquishCPP(class UPrimitiveComponent* Component);
 	void AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Param_Hit, const struct FVector& Impact, bool SkipSetting);
 	void SetPropProps(bool Param_Static, bool Param_Frozen, bool Active);
 	void ReceiveDestroyed();
 	void ReceiveBeginPlay();
 	void GamemodeBeginPlay();
 	void SettingsApplied(const struct FStruct_settings& Settings);
+	void PlayerR(class AMainPlayer_C* Player);
+	void PlayerHold(class AMainPlayer_C* Player);
+	void PlayerUnequip(class AMainPlayer_C* Player);
 	void UpdateStrAgl();
-	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit);
+	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, float Damage);
 	void Thrown(class AMainPlayer_C* Player);
 	void broken_fire();
 	void broken();
@@ -79,6 +89,7 @@ public:
 	void Kicked(bool Kick);
 	void Player_use(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit);
 	void DriveDetached();
+	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void ApplyColor(const struct FLinearColor& Color);
 	void PropRenderer_finishProps();
 	void GamemodeMakeKeys();
@@ -89,6 +100,9 @@ public:
 	void StuffUpgraded(class AMainGamemode_C* GameMode);
 	void SignalSaved();
 	void SignalDeleted();
+	void HookTension(class AHook_C* Hook);
+	void CleanSponge(float Clean, class AMainPlayer_C* Player);
+	void Crafted();
 	void Hooked(class AHook_C* Hook);
 	void AttemptIgnite();
 	void PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit);
@@ -109,7 +123,7 @@ public:
 	void Exploded(float Damage, const struct FVector& Location);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
-	void ReceivedPhyiscsDamage();
+	void ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot);
 	void Microwave();
 	void SteppedOn(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit);
 	void Unhook();
@@ -123,9 +137,6 @@ public:
 	void LeaveWater(class AWaterVolume_C* Water);
 	void EnterWater(class AWaterVolume_C* Water);
 	void ImpactDamage(float Damage, const struct FHitResult& Param_Hit, class AActor* Actor, const struct FVector& Impact);
-	void ImpactSquishCPP(class UPrimitiveComponent* Component);
-	void ExitTheWater();
-	void EnteredTheWater();
 	void UserConstructionScript();
 	void Init();
 	void Afterplay();
@@ -135,12 +146,14 @@ public:
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void IgnoreSave(bool* Param_IgnoreSave);
 	void SkipPreDelete(bool* Skip);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void GatherDataFromKey(bool* Gather);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
 	void IsButtonUsed(bool* Failed);
 	void NoRespawn(bool Param_NoRespawn, bool* Return);
 	void CanPickup(bool* Return);
 	void AsProp(class AProp_C** Return);
 	void CanBePutInContainer(bool* Return);
+	void LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage);
 	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base);
 	void GetKey(class FString* Param_Key);
 	void ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return);
@@ -148,9 +161,10 @@ public:
 	void ProcessKeys(bool* Return);
 	void GetOnlyKey(class FString* Param_Key);
 	void SetPath(const TArray<struct FVector>& Path, bool* Return);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 	void GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled);
 	void SkipRadial(bool* Skip);
+	void GetPriceMultiplier(float* PriceMult);
 
 public:
 	static class UClass* StaticClass()
@@ -162,9 +176,8 @@ public:
 		return GetDefaultObjImpl<AProp_C>();
 	}
 };
-#pragma pack(pop)
 static_assert(alignof(AProp_C) == 0x000008, "Wrong alignment on AProp_C");
-static_assert(sizeof(AProp_C) == 0x000368, "Wrong size on AProp_C");
+static_assert(sizeof(AProp_C) == 0x000378, "Wrong size on AProp_C");
 static_assert(offsetof(AProp_C, UberGraphFrame) == 0x000220, "Member 'AProp_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AProp_C, PropThrown) == 0x000228, "Member 'AProp_C::PropThrown' has a wrong offset!");
 static_assert(offsetof(AProp_C, PhysicsImpact) == 0x000230, "Member 'AProp_C::PhysicsImpact' has a wrong offset!");
@@ -187,6 +200,8 @@ static_assert(offsetof(AProp_C, Nametag) == 0x000338, "Member 'AProp_C::Nametag'
 static_assert(offsetof(AProp_C, NametagComponent) == 0x000348, "Member 'AProp_C::NametagComponent' has a wrong offset!");
 static_assert(offsetof(AProp_C, TakenByPlayer) == 0x000350, "Member 'AProp_C::TakenByPlayer' has a wrong offset!");
 static_assert(offsetof(AProp_C, ReturnLookAt) == 0x000360, "Member 'AProp_C::ReturnLookAt' has a wrong offset!");
+static_assert(offsetof(AProp_C, DoCastShadow) == 0x000361, "Member 'AProp_C::DoCastShadow' has a wrong offset!");
+static_assert(offsetof(AProp_C, Awoken) == 0x000368, "Member 'AProp_C::Awoken' has a wrong offset!");
 
 }
 

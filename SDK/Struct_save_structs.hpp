@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "Struct_mClass_structs.hpp"
-#include "CoreUObject_structs.hpp"
+#include "Struct_mVector_structs.hpp"
 #include "Struct_mBool_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Struct_mFloat_structs.hpp"
 #include "Struct_mInt_structs.hpp"
 #include "Struct_mString_structs.hpp"
 #include "Struct_signalDataDynamic_structs.hpp"
-#include "Struct_mVector_structs.hpp"
+#include "Struct_mClass_structs.hpp"
 
 
 namespace SDK
@@ -29,7 +29,7 @@ struct FStruct_save final
 {
 public:
 	class UClass*                                 Class_3_5267A5ED44C89294283B8CBBEC685F8A;          // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FA0[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Transform_8_9DFFF09E48141807687A338593998A8A;      // 0x0010(0x0030)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor)
 	class FString                                 Key_44_B7A233344901C6E374869B97AEC5A257;           // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	TArray<struct FStruct_mBool>                  bools_12_1EE56AD54E30A7ED1CB618AA037E80B4;         // 0x0050(0x0010)(Edit, BlueprintVisible)

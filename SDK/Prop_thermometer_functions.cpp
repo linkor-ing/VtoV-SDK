@@ -56,5 +56,25 @@ void AProp_thermometer_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function prop_thermometer.prop_thermometer_C.playerHandUse_LMB
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_thermometer_C::PlayerHandUse_LMB(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_thermometer_C", "playerHandUse_LMB");
+
+	Params::Prop_thermometer_C_PlayerHandUse_LMB Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
 }
 

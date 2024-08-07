@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ufoDropper_body.ufoDropper_body_C
-// 0x0000 (0x02A8 - 0x02A8)
+// 0x0000 (0x02B8 - 0x02B8)
 class AUfoDropper_body_C final : public AUfoDropper_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AUfoDropper_body_C) == 0x000008, "Wrong alignment on AUfoDropper_body_C");
-static_assert(sizeof(AUfoDropper_body_C) == 0x0002A8, "Wrong size on AUfoDropper_body_C");
+static_assert(sizeof(AUfoDropper_body_C) == 0x0002B8, "Wrong size on AUfoDropper_body_C");
 
 }
 

@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass umg_credits.umg_credits_C
-// 0x02A8 (0x0508 - 0x0260)
+// 0x02C8 (0x0528 - 0x0260)
 class UUmg_credits_C final : public UUserWidget
 {
 public:
@@ -43,20 +43,19 @@ public:
 	TArray<class UUmg_settingsSlot_C*>            Sliders;                                           // 0x02E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	TArray<class UUmg_settingsSlot_C*>            V_slots;                                           // 0x02F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	TArray<class UUmg_settingsSlot_C*>            S_slots;                                           // 0x0308(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	struct FStruct_settings                       SettingsCopy;                                      // 0x0318(0x00CC)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2172[0x4];                                     // 0x03E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Txt_adv;                                           // 0x03E8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   Txt_trans;                                         // 0x0400(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   Txt_tools;                                         // 0x0418(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   Txt_res;                                           // 0x0430(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   Txt_p3;                                            // 0x0448(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   Txt_p2;                                            // 0x0460(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   Txt_p1;                                            // 0x0478(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   Txt_music;                                         // 0x0490(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   Txt_help;                                          // 0x04A8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   Txt_formP3;                                        // 0x04C0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   Text_contr;                                        // 0x04D8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   Text_va;                                           // 0x04F0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FStruct_settings                       SettingsCopy;                                      // 0x0318(0x00F0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	class FText                                   Txt_adv;                                           // 0x0408(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   Txt_trans;                                         // 0x0420(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   Txt_tools;                                         // 0x0438(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   Txt_res;                                           // 0x0450(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   Txt_p3;                                            // 0x0468(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   Txt_p2;                                            // 0x0480(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   Txt_p1;                                            // 0x0498(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   Txt_music;                                         // 0x04B0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   Txt_help;                                          // 0x04C8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   Txt_formP3;                                        // 0x04E0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   Text_contr;                                        // 0x04F8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   Text_va;                                           // 0x0510(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_umg_credits(int32 EntryPoint);
@@ -88,7 +87,7 @@ public:
 	}
 };
 static_assert(alignof(UUmg_credits_C) == 0x000008, "Wrong alignment on UUmg_credits_C");
-static_assert(sizeof(UUmg_credits_C) == 0x000508, "Wrong size on UUmg_credits_C");
+static_assert(sizeof(UUmg_credits_C) == 0x000528, "Wrong size on UUmg_credits_C");
 static_assert(offsetof(UUmg_credits_C, UberGraphFrame) == 0x000260, "Member 'UUmg_credits_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UUmg_credits_C, button_adv) == 0x000268, "Member 'UUmg_credits_C::button_adv' has a wrong offset!");
 static_assert(offsetof(UUmg_credits_C, button_contribution) == 0x000270, "Member 'UUmg_credits_C::button_contribution' has a wrong offset!");
@@ -110,18 +109,18 @@ static_assert(offsetof(UUmg_credits_C, Sliders) == 0x0002E8, "Member 'UUmg_credi
 static_assert(offsetof(UUmg_credits_C, V_slots) == 0x0002F8, "Member 'UUmg_credits_C::V_slots' has a wrong offset!");
 static_assert(offsetof(UUmg_credits_C, S_slots) == 0x000308, "Member 'UUmg_credits_C::S_slots' has a wrong offset!");
 static_assert(offsetof(UUmg_credits_C, SettingsCopy) == 0x000318, "Member 'UUmg_credits_C::SettingsCopy' has a wrong offset!");
-static_assert(offsetof(UUmg_credits_C, Txt_adv) == 0x0003E8, "Member 'UUmg_credits_C::Txt_adv' has a wrong offset!");
-static_assert(offsetof(UUmg_credits_C, Txt_trans) == 0x000400, "Member 'UUmg_credits_C::Txt_trans' has a wrong offset!");
-static_assert(offsetof(UUmg_credits_C, Txt_tools) == 0x000418, "Member 'UUmg_credits_C::Txt_tools' has a wrong offset!");
-static_assert(offsetof(UUmg_credits_C, Txt_res) == 0x000430, "Member 'UUmg_credits_C::Txt_res' has a wrong offset!");
-static_assert(offsetof(UUmg_credits_C, Txt_p3) == 0x000448, "Member 'UUmg_credits_C::Txt_p3' has a wrong offset!");
-static_assert(offsetof(UUmg_credits_C, Txt_p2) == 0x000460, "Member 'UUmg_credits_C::Txt_p2' has a wrong offset!");
-static_assert(offsetof(UUmg_credits_C, Txt_p1) == 0x000478, "Member 'UUmg_credits_C::Txt_p1' has a wrong offset!");
-static_assert(offsetof(UUmg_credits_C, Txt_music) == 0x000490, "Member 'UUmg_credits_C::Txt_music' has a wrong offset!");
-static_assert(offsetof(UUmg_credits_C, Txt_help) == 0x0004A8, "Member 'UUmg_credits_C::Txt_help' has a wrong offset!");
-static_assert(offsetof(UUmg_credits_C, Txt_formP3) == 0x0004C0, "Member 'UUmg_credits_C::Txt_formP3' has a wrong offset!");
-static_assert(offsetof(UUmg_credits_C, Text_contr) == 0x0004D8, "Member 'UUmg_credits_C::Text_contr' has a wrong offset!");
-static_assert(offsetof(UUmg_credits_C, Text_va) == 0x0004F0, "Member 'UUmg_credits_C::Text_va' has a wrong offset!");
+static_assert(offsetof(UUmg_credits_C, Txt_adv) == 0x000408, "Member 'UUmg_credits_C::Txt_adv' has a wrong offset!");
+static_assert(offsetof(UUmg_credits_C, Txt_trans) == 0x000420, "Member 'UUmg_credits_C::Txt_trans' has a wrong offset!");
+static_assert(offsetof(UUmg_credits_C, Txt_tools) == 0x000438, "Member 'UUmg_credits_C::Txt_tools' has a wrong offset!");
+static_assert(offsetof(UUmg_credits_C, Txt_res) == 0x000450, "Member 'UUmg_credits_C::Txt_res' has a wrong offset!");
+static_assert(offsetof(UUmg_credits_C, Txt_p3) == 0x000468, "Member 'UUmg_credits_C::Txt_p3' has a wrong offset!");
+static_assert(offsetof(UUmg_credits_C, Txt_p2) == 0x000480, "Member 'UUmg_credits_C::Txt_p2' has a wrong offset!");
+static_assert(offsetof(UUmg_credits_C, Txt_p1) == 0x000498, "Member 'UUmg_credits_C::Txt_p1' has a wrong offset!");
+static_assert(offsetof(UUmg_credits_C, Txt_music) == 0x0004B0, "Member 'UUmg_credits_C::Txt_music' has a wrong offset!");
+static_assert(offsetof(UUmg_credits_C, Txt_help) == 0x0004C8, "Member 'UUmg_credits_C::Txt_help' has a wrong offset!");
+static_assert(offsetof(UUmg_credits_C, Txt_formP3) == 0x0004E0, "Member 'UUmg_credits_C::Txt_formP3' has a wrong offset!");
+static_assert(offsetof(UUmg_credits_C, Text_contr) == 0x0004F8, "Member 'UUmg_credits_C::Text_contr' has a wrong offset!");
+static_assert(offsetof(UUmg_credits_C, Text_va) == 0x000510, "Member 'UUmg_credits_C::Text_va' has a wrong offset!");
 
 }
 

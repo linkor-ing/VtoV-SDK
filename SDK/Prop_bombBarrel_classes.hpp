@@ -19,17 +19,18 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_bombBarrel.prop_bombBarrel_C
-// 0x0018 (0x0380 - 0x0368)
+// 0x0018 (0x0390 - 0x0378)
 class AProp_bombBarrel_C final : public AProp_C
 {
 public:
-	uint8                                         Pad_3EBA[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_bombBarrel_C;                  // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FVector                                Impact;                                            // 0x0370(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_bombBarrel_C;                  // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FVector                                Impact;                                            // 0x0380(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_bombBarrel(int32 EntryPoint);
 	void BndEvt__prop_bombBarrel_StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Param_Hit);
+	void AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Param_Hit, const struct FVector& Param_Impact, bool SkipSetting);
+	void FireDamage(float Damage);
 	void broken_fire();
 	void broken();
 
@@ -44,9 +45,9 @@ public:
 	}
 };
 static_assert(alignof(AProp_bombBarrel_C) == 0x000008, "Wrong alignment on AProp_bombBarrel_C");
-static_assert(sizeof(AProp_bombBarrel_C) == 0x000380, "Wrong size on AProp_bombBarrel_C");
-static_assert(offsetof(AProp_bombBarrel_C, UberGraphFrame_Prop_bombBarrel_C) == 0x000368, "Member 'AProp_bombBarrel_C::UberGraphFrame_Prop_bombBarrel_C' has a wrong offset!");
-static_assert(offsetof(AProp_bombBarrel_C, Impact) == 0x000370, "Member 'AProp_bombBarrel_C::Impact' has a wrong offset!");
+static_assert(sizeof(AProp_bombBarrel_C) == 0x000390, "Wrong size on AProp_bombBarrel_C");
+static_assert(offsetof(AProp_bombBarrel_C, UberGraphFrame_Prop_bombBarrel_C) == 0x000378, "Member 'AProp_bombBarrel_C::UberGraphFrame_Prop_bombBarrel_C' has a wrong offset!");
+static_assert(offsetof(AProp_bombBarrel_C, Impact) == 0x000380, "Member 'AProp_bombBarrel_C::Impact' has a wrong offset!");
 
 }
 

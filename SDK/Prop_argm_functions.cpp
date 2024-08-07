@@ -37,32 +37,6 @@ void AProp_argm_C::ExecuteUbergraph_prop_argm(int32 EntryPoint)
 }
 
 
-// Function prop_argm.prop_argm_C.actionOptionIndex
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_argm_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_argm_C", "actionOptionIndex");
-
-	Params::Prop_argm_C_ActionOptionIndex Parms{};
-
-	Parms.Player = Player;
-	Parms.Param_Hit = std::move(Param_Hit);
-	Parms.Param_Index = Param_Index;
-	Parms.Action = Action;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function prop_argm.prop_argm_C.runTrigger
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -251,17 +225,48 @@ void AProp_argm_C::GetTriggerData(struct FStruct_triggerSave* Data)
 }
 
 
-// Function prop_argm.prop_argm_C.propRenderer_finishProps
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function prop_argm.prop_argm_C.gatherDataFromKeyT
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AProp_argm_C::PropRenderer_finishProps()
+void AProp_argm_C::GatherDataFromKeyT(bool* Gather)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("prop_argm_C", "propRenderer_finishProps");
+		Func = Class->GetFunction("prop_argm_C", "gatherDataFromKeyT");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::Prop_argm_C_GatherDataFromKeyT Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Gather != nullptr)
+		*Gather = Parms.Gather;
+}
+
+
+// Function prop_argm.prop_argm_C.actionOptionIndex
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_argm_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_argm_C", "actionOptionIndex");
+
+	Params::Prop_argm_C_ActionOptionIndex Parms{};
+
+	Parms.Player = Player;
+	Parms.Param_Hit = std::move(Param_Hit);
+	Parms.Action = Action;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -279,6 +284,20 @@ void AProp_argm_C::GamemodeBeginPlay()
 }
 
 
+// Function prop_argm.prop_argm_C.propRenderer_finishProps
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AProp_argm_C::PropRenderer_finishProps()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_argm_C", "propRenderer_finishProps");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function prop_argm.prop_argm_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
@@ -288,6 +307,20 @@ void AProp_argm_C::UserConstructionScript()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("prop_argm_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function prop_argm.prop_argm_C.Init
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AProp_argm_C::Init()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_argm_C", "Init");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -335,20 +368,6 @@ void AProp_argm_C::GetData(struct FStruct_save* Data)
 
 	if (Data != nullptr)
 		*Data = std::move(Parms.Data);
-}
-
-
-// Function prop_argm.prop_argm_C.Init
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AProp_argm_C::Init()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_argm_C", "Init");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

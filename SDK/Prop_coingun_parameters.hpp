@@ -23,7 +23,7 @@ struct Prop_coingun_C_ExecuteUbergraph_prop_coingun final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B4D[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<EObjectTypeQuery>                      CallFunc_obj_statDynPhys_obj;                      // 0x0010(0x0010)(ReferenceParm)
 	struct FVector                                CallFunc_arm_start;                                // 0x0020(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -33,14 +33,14 @@ public:
 	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue;    // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x00D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B4E[0x1];                                     // 0x00D3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D3[0x1];                                       // 0x00D3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x00DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x00E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x00F4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0100(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B4F[0x4];                                     // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0120(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -50,16 +50,19 @@ public:
 	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x013C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0148(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B50[0x4];                                     // 0x0154(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_154[0x4];                                      // 0x0154(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x0158(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B51[0x7];                                     // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_IsChildActor_ReturnValue;                 // 0x0169(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_16A[0x6];                                      // 0x016A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class AProp_C*                                CallFunc_asProp_return;                            // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_DoesImplementInterface_ReturnValue;       // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0179(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B52[0x2];                                     // 0x017A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17A[0x2];                                      // 0x017A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_sellObject_points;                        // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_sellObject_sold;                          // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_DoesImplementInterface_ReturnValue;       // 0x0181(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0182(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Prop_coingun_C_ExecuteUbergraph_prop_coingun) == 0x000008, "Wrong alignment on Prop_coingun_C_ExecuteUbergraph_prop_coingun");
 static_assert(sizeof(Prop_coingun_C_ExecuteUbergraph_prop_coingun) == 0x000188, "Wrong size on Prop_coingun_C_ExecuteUbergraph_prop_coingun");
@@ -90,47 +93,50 @@ static_assert(offsetof(Prop_coingun_C_ExecuteUbergraph_prop_coingun, CallFunc_Br
 static_assert(offsetof(Prop_coingun_C_ExecuteUbergraph_prop_coingun, CallFunc_BreakHitResult_TraceEnd) == 0x000148, "Member 'Prop_coingun_C_ExecuteUbergraph_prop_coingun::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
 static_assert(offsetof(Prop_coingun_C_ExecuteUbergraph_prop_coingun, K2Node_DynamicCast_AsInt_Player) == 0x000158, "Member 'Prop_coingun_C_ExecuteUbergraph_prop_coingun::K2Node_DynamicCast_AsInt_Player' has a wrong offset!");
 static_assert(offsetof(Prop_coingun_C_ExecuteUbergraph_prop_coingun, K2Node_DynamicCast_bSuccess) == 0x000168, "Member 'Prop_coingun_C_ExecuteUbergraph_prop_coingun::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_coingun_C_ExecuteUbergraph_prop_coingun, CallFunc_IsChildActor_ReturnValue) == 0x000169, "Member 'Prop_coingun_C_ExecuteUbergraph_prop_coingun::CallFunc_IsChildActor_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_coingun_C_ExecuteUbergraph_prop_coingun, CallFunc_asProp_return) == 0x000170, "Member 'Prop_coingun_C_ExecuteUbergraph_prop_coingun::CallFunc_asProp_return' has a wrong offset!");
-static_assert(offsetof(Prop_coingun_C_ExecuteUbergraph_prop_coingun, CallFunc_DoesImplementInterface_ReturnValue) == 0x000178, "Member 'Prop_coingun_C_ExecuteUbergraph_prop_coingun::CallFunc_DoesImplementInterface_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_coingun_C_ExecuteUbergraph_prop_coingun, CallFunc_Not_PreBool_ReturnValue) == 0x000178, "Member 'Prop_coingun_C_ExecuteUbergraph_prop_coingun::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_coingun_C_ExecuteUbergraph_prop_coingun, CallFunc_IsValid_ReturnValue) == 0x000179, "Member 'Prop_coingun_C_ExecuteUbergraph_prop_coingun::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_coingun_C_ExecuteUbergraph_prop_coingun, CallFunc_sellObject_points) == 0x00017C, "Member 'Prop_coingun_C_ExecuteUbergraph_prop_coingun::CallFunc_sellObject_points' has a wrong offset!");
 static_assert(offsetof(Prop_coingun_C_ExecuteUbergraph_prop_coingun, CallFunc_sellObject_sold) == 0x000180, "Member 'Prop_coingun_C_ExecuteUbergraph_prop_coingun::CallFunc_sellObject_sold' has a wrong offset!");
+static_assert(offsetof(Prop_coingun_C_ExecuteUbergraph_prop_coingun, CallFunc_DoesImplementInterface_ReturnValue) == 0x000181, "Member 'Prop_coingun_C_ExecuteUbergraph_prop_coingun::CallFunc_DoesImplementInterface_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_coingun_C_ExecuteUbergraph_prop_coingun, CallFunc_BooleanAND_ReturnValue) == 0x000182, "Member 'Prop_coingun_C_ExecuteUbergraph_prop_coingun::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function prop_coingun.prop_coingun_C.sell
-// 0x0140 (0x0140 - 0x0000)
+// 0x0130 (0x0130 - 0x0000)
 struct Prop_coingun_C_Sell final
 {
 public:
 	int32                                         Param_Index;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B53[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    Comp;                                              // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   C;                                                 // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B54[0x8];                                     // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             T;                                                 // 0x0020(0x0030)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor)
 	int32                                         P;                                                 // 0x0050(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B55[0x4];                                     // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStaticMeshComponent*                   K2Node_DynamicCast_AsStatic_Mesh_Component;        // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B56[0x3];                                     // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_rnd_ReturnValue;                          // 0x0064(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0070(0x0030)(IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class Abaocoin_C*                             CallFunc_FinishSpawningActor_ReturnValue;          // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_rnd_ReturnValue_1;                        // 0x00B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B57[0x4];                                     // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x00C0(0x0030)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_RandomUnitVector_ReturnValue;             // 0x00F0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B58[0x4];                                     // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0108(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B59[0x4];                                     // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class Abaocoin_C*                             CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0120(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_VictoryIntMinusEquals_IntOut;             // 0x012C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RandomUnitVector_ReturnValue;             // 0x00F8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_104[0x4];                                      // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class Abaocoin_C*                             CallFunc_FinishSpawningActor_ReturnValue_1;        // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0110(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x011C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_VictoryIntMinusEquals_IntOut;             // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x012C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x012D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Prop_coingun_C_Sell) == 0x000010, "Wrong alignment on Prop_coingun_C_Sell");
-static_assert(sizeof(Prop_coingun_C_Sell) == 0x000140, "Wrong size on Prop_coingun_C_Sell");
+static_assert(sizeof(Prop_coingun_C_Sell) == 0x000130, "Wrong size on Prop_coingun_C_Sell");
 static_assert(offsetof(Prop_coingun_C_Sell, Param_Index) == 0x000000, "Member 'Prop_coingun_C_Sell::Param_Index' has a wrong offset!");
 static_assert(offsetof(Prop_coingun_C_Sell, Comp) == 0x000008, "Member 'Prop_coingun_C_Sell::Comp' has a wrong offset!");
 static_assert(offsetof(Prop_coingun_C_Sell, C) == 0x000010, "Member 'Prop_coingun_C_Sell::C' has a wrong offset!");
@@ -144,13 +150,14 @@ static_assert(offsetof(Prop_coingun_C_Sell, CallFunc_BeginDeferredActorSpawnFrom
 static_assert(offsetof(Prop_coingun_C_Sell, CallFunc_FinishSpawningActor_ReturnValue) == 0x0000A8, "Member 'Prop_coingun_C_Sell::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_coingun_C_Sell, CallFunc_rnd_ReturnValue_1) == 0x0000B0, "Member 'Prop_coingun_C_Sell::CallFunc_rnd_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(Prop_coingun_C_Sell, CallFunc_MakeTransform_ReturnValue_1) == 0x0000C0, "Member 'Prop_coingun_C_Sell::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_coingun_C_Sell, CallFunc_RandomUnitVector_ReturnValue) == 0x0000F0, "Member 'Prop_coingun_C_Sell::CallFunc_RandomUnitVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_coingun_C_Sell, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x000100, "Member 'Prop_coingun_C_Sell::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_coingun_C_Sell, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000108, "Member 'Prop_coingun_C_Sell::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_coingun_C_Sell, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000118, "Member 'Prop_coingun_C_Sell::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_coingun_C_Sell, CallFunc_Add_VectorVector_ReturnValue) == 0x000120, "Member 'Prop_coingun_C_Sell::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_coingun_C_Sell, CallFunc_VictoryIntMinusEquals_IntOut) == 0x00012C, "Member 'Prop_coingun_C_Sell::CallFunc_VictoryIntMinusEquals_IntOut' has a wrong offset!");
-static_assert(offsetof(Prop_coingun_C_Sell, CallFunc_Less_IntInt_ReturnValue) == 0x000130, "Member 'Prop_coingun_C_Sell::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_coingun_C_Sell, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1) == 0x0000F0, "Member 'Prop_coingun_C_Sell::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_coingun_C_Sell, CallFunc_RandomUnitVector_ReturnValue) == 0x0000F8, "Member 'Prop_coingun_C_Sell::CallFunc_RandomUnitVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_coingun_C_Sell, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000108, "Member 'Prop_coingun_C_Sell::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_coingun_C_Sell, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000110, "Member 'Prop_coingun_C_Sell::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_coingun_C_Sell, CallFunc_Add_VectorVector_ReturnValue) == 0x00011C, "Member 'Prop_coingun_C_Sell::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_coingun_C_Sell, CallFunc_VictoryIntMinusEquals_IntOut) == 0x000128, "Member 'Prop_coingun_C_Sell::CallFunc_VictoryIntMinusEquals_IntOut' has a wrong offset!");
+static_assert(offsetof(Prop_coingun_C_Sell, CallFunc_Less_IntInt_ReturnValue) == 0x00012C, "Member 'Prop_coingun_C_Sell::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_coingun_C_Sell, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00012D, "Member 'Prop_coingun_C_Sell::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function prop_coingun.prop_coingun_C.rnd
 // 0x00C0 (0x00C0 - 0x0000)
@@ -161,11 +168,11 @@ public:
 	class UPrimitiveComponent*                    C;                                                 // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                ReturnValue;                                       // 0x0010(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B5A[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_GetComponentBounds_Origin;                // 0x0020(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetComponentBounds_BoxExtent;             // 0x002C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetComponentBounds_SphereRadius;          // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B5B[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0040(0x0030)(IsPlainOldData, NoDestructor)
 	struct FBoxSphereBounds                       CallFunc_GetBounds_ReturnValue;                    // 0x0070(0x001C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_Subtract_VectorFloat_ReturnValue;         // 0x008C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

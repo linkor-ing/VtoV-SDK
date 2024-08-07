@@ -10,135 +10,98 @@
 
 #include "Basic.hpp"
 
-#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
-#include "Engine_classes.hpp"
+#include "Actor_save_classes.hpp"
+#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass serverBox.serverBox_C
-// 0x0120 (0x0340 - 0x0220)
-class AServerBox_C final : public AActor
+// 0x0128 (0x0370 - 0x0248)
+class AServerBox_C final : public AActor_save_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBillboardComponent*                    KerfFix;                                           // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Cube;                                              // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        Scene;                                             // 0x0238(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNavModifierComponent*                  NavModifier;                                       // 0x0240(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               Eff;                                               // 0x0248(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBillboardComponent*                    Cen;                                               // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UTextRenderComponent*                   TextRender;                                        // 0x0260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        Server_snd;                                        // 0x0268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        Server_loop;                                       // 0x0270(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBillboardComponent*                    Billboard;                                         // 0x0278(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USvtarget_C*                            Svtarget;                                          // 0x0280(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBillboardComponent*                    Fol;                                               // 0x0288(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh1;                                       // 0x0290(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBillboardComponent*                    SlideIn;                                           // 0x0298(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          Box;                                               // 0x02A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Timeline_0_a_215457444A34B8940068F5890644831F;     // 0x02A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Timeline_0__Direction_215457444A34B8940068F5890644831F; // 0x02AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D84[0x3];                                     // 0x02AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Timeline_0;                                        // 0x02B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Move_a_12A75AAB4761D8FA2D00F2BDAF7A5FAC;           // 0x02B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Move__Direction_12A75AAB4761D8FA2D00F2BDAF7A5FAC;  // 0x02BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D85[0x3];                                     // 0x02BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Move;                                              // 0x02C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 Name_ServerBox_C;                                  // 0x02C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          broken_0;                                          // 0x02D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D86[0x3];                                     // 0x02D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Type;                                              // 0x02DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_             Fixed;                                             // 0x02E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FTransform                             AR;                                                // 0x02F0(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	class UStaticMeshComponent*                   Disc;                                              // 0x0320(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Resisnant;                                         // 0x0328(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D87[0x3];                                     // 0x0329(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ResTime;                                           // 0x032C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         DishIndex;                                         // 0x0330(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	bool                                          IsSuper;                                           // 0x0334(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Active;                                            // 0x0335(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Calc;                                              // 0x0336(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame_ServerBox_C;                        // 0x0248(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UStaticMeshComponent*                   Cube;                                              // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNavigationInvokerComponent*            NavigationInvoker;                                 // 0x0258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    KerfFix;                                           // 0x0260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNavModifierComponent*                  NavModifier;                                       // 0x0268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               Eff;                                               // 0x0270(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    Cen;                                               // 0x0278(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0280(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UTextRenderComponent*                   TextRender;                                        // 0x0288(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        Server_snd;                                        // 0x0290(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        Server_loop;                                       // 0x0298(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    Billboard;                                         // 0x02A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USvtarget_C*                            Svtarget;                                          // 0x02A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    Fol;                                               // 0x02B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh1;                                       // 0x02B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    SlideIn;                                           // 0x02C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Box;                                               // 0x02C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Timeline_0_a_215457444A34B8940068F5890644831F;     // 0x02D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline_0__Direction_215457444A34B8940068F5890644831F; // 0x02D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D5[0x3];                                      // 0x02D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Timeline_0;                                        // 0x02D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Move_a_12A75AAB4761D8FA2D00F2BDAF7A5FAC;           // 0x02E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Move__Direction_12A75AAB4761D8FA2D00F2BDAF7A5FAC;  // 0x02E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2E5[0x3];                                      // 0x02E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Move;                                              // 0x02E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 Name_ServerBox_C;                                  // 0x02F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          broken_0;                                          // 0x0300(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_301[0x3];                                      // 0x0301(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Type;                                              // 0x0304(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_             Fixed;                                             // 0x0308(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	uint8                                         Pad_318[0x8];                                      // 0x0318(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             AR;                                                // 0x0320(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class UStaticMeshComponent*                   Disc;                                              // 0x0350(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Resisnant;                                         // 0x0358(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_359[0x3];                                      // 0x0359(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ResTime;                                           // 0x035C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         DishIndex;                                         // 0x0360(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	bool                                          IsSuper;                                           // 0x0364(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Active;                                            // 0x0365(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Calc;                                              // 0x0366(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void Fixed__DelegateSignature();
 	void ExecuteUbergraph_serverBox(int32 EntryPoint);
 	void PowerChanged(bool Active_calc, bool Active_downl, bool Active_coords, bool Active_play, bool Active_light);
 	void ReceiveBeginPlay();
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
-	void Virus(bool Activate);
-	void SetPropProps(bool Static, bool Frozen, bool Param_Active);
-	void AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Hit, const struct FVector& Impact, bool SkipSetting);
+	void GamemodePreLoad();
+	void AnyKey(const struct FKey& Param_Key, bool Pressed);
+	void GamemodeMakeKeys();
 	void Res();
-	void SetKey(const class FString& Key);
-	void PhysDestroyed();
+	void PropRenderer_finishProps();
+	void ApplyColor(const struct FLinearColor& Color);
 	void BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void ImpactDamage(float Damage, const struct FHitResult& Hit, class AActor* Actor, const struct FVector& Impact);
-	void EnterWater(class AWaterVolume_C* Water);
-	void LeaveWater(class AWaterVolume_C* Water);
-	void PhysPreDestroyed();
-	void DigUp();
+	void SignalDeleted();
+	void SignalSaved();
+	void StuffUpgraded(class AMainGamemode_C* GameMode);
+	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
+	void DriveDetached();
 	void GamemodeBeginPlay();
-	void EnterWaterOrigin(class AWaterVolume_C* Water);
-	void LeaveWaterOrigin(class AWaterVolume_C* Water);
-	void Eaten();
-	void Unhook();
+	void Unfoc();
+	void SettingsApplied(const struct FStruct_settings& Settings);
+	void Unfocused();
+	void Player_use(class AMainPlayer_C* Player, const struct FHitResult& Hit);
+	void PlayerR(class AMainPlayer_C* Player);
+	void PlayerHold(class AMainPlayer_C* Player);
+	void PlayerUnequip(class AMainPlayer_C* Player);
 	void UpdateStrAgl();
-	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit);
+	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage);
 	void Thrown(class AMainPlayer_C* Player);
 	void broken_fire();
 	void broken();
 	void SendName(class FName Param_Name);
 	void Kicked(bool Kick);
-	void Player_use(class AMainPlayer_C* Player, const struct FHitResult& Hit);
-	void DriveDetached();
-	void ApplyColor(const struct FLinearColor& Color);
-	void PropRenderer_finishProps();
-	void GamemodeMakeKeys();
-	void AnyKey(const struct FKey& Key, bool Pressed);
-	void GamemodePreLoad();
-	void Unfocused();
-	void SettingsApplied(const struct FStruct_settings& Settings);
-	void Unfoc();
-	void StuffUpgraded(class AMainGamemode_C* GameMode);
-	void SignalSaved();
-	void SignalDeleted();
-	void SetIgnoreSave(bool Ignore);
-	void Hooked(class AHook_C* Hook);
-	void AttemptIgnite();
-	void PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
-	void Slice(bool Clean);
-	void bitten();
-	void ReachedByExplosion(const struct FVector& Location, float Damage);
-	void PlayerLookAway(class AMainPlayer_C* Player);
-	void Stepped(float Volume);
-	void ActionName(class AMainPlayer_C* Player, const struct FHitResult& Hit, const class FString& Param_Name);
-	void AccumulateTemperature(float Temperature, float Speed);
-	void AddTemperature(float Temperature);
-	void MicrowaveElec();
-	void PlayerHandAnyKey(class AMainPlayer_C* Player, const struct FKey& Key, bool Pressed);
-	void PlayerHandMouse(class AMainPlayer_C* Player, const struct FVector2D& Mouse);
-	void PlayerHandMouseWheel(class AMainPlayer_C* Player, float WheelDelta);
-	void PlayerHandRelease_LMB(class AMainPlayer_C* Player);
-	void PlayerHandRelease_RMB(class AMainPlayer_C* Player);
-	void ExtinguishFire();
-	void Exploded(float Damage, const struct FVector& Location);
-	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
-	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
-	void ReceivedPhyiscsDamage();
-	void Microwave();
-	void Ignite(float Fuel);
-	void FireDamage(float Damage);
-	void SteppedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void Timeline_0__UpdateFunc();
 	void Timeline_0__FinishedFunc();
 	void Move__UpdateFunc();
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
 	void Move__FinishedFunc();
-	void UserConstructionScript();
 	void SetActive(bool bNewActive);
 	void breakServer();
 	void Fix();
@@ -146,25 +109,18 @@ public:
 	void break_type(int32 Param_Type);
 	void Visual(bool Param_Active);
 	void IsButtonUsed(bool* Failed);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
 	void NoRespawn(bool Param_NoRespawn, bool* Return);
 	void CanPickup(bool* Return);
 	void AsProp(class AProp_C** Return);
 	void CanBePutInContainer(bool* Return);
+	void LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage);
 	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base);
-	void IgnoreSave(bool* Param_IgnoreSave);
+	void UserConstructionScript();
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
-	void SkipPreDelete(bool* Skip);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
-	void SetPath(const TArray<struct FVector>& Path, bool* Return);
-	void GetOnlyKey(class FString* Key);
-	void ProcessKeys(bool* Return);
-	void CanBeUsedHold(bool* Return);
-	void GetKey(class FString* Key);
-	void ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return);
-	void GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled);
-	void SkipRadial(bool* Skip);
+	void GatherDataFromKey(bool* Gather);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 
 public:
 	static class UClass* StaticClass()
@@ -177,42 +133,42 @@ public:
 	}
 };
 static_assert(alignof(AServerBox_C) == 0x000010, "Wrong alignment on AServerBox_C");
-static_assert(sizeof(AServerBox_C) == 0x000340, "Wrong size on AServerBox_C");
-static_assert(offsetof(AServerBox_C, UberGraphFrame) == 0x000220, "Member 'AServerBox_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, KerfFix) == 0x000228, "Member 'AServerBox_C::KerfFix' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, Cube) == 0x000230, "Member 'AServerBox_C::Cube' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, Scene) == 0x000238, "Member 'AServerBox_C::Scene' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, NavModifier) == 0x000240, "Member 'AServerBox_C::NavModifier' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, Eff) == 0x000248, "Member 'AServerBox_C::Eff' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, Cen) == 0x000250, "Member 'AServerBox_C::Cen' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, StaticMesh) == 0x000258, "Member 'AServerBox_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, TextRender) == 0x000260, "Member 'AServerBox_C::TextRender' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, Server_snd) == 0x000268, "Member 'AServerBox_C::Server_snd' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, Server_loop) == 0x000270, "Member 'AServerBox_C::Server_loop' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, Billboard) == 0x000278, "Member 'AServerBox_C::Billboard' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, Svtarget) == 0x000280, "Member 'AServerBox_C::Svtarget' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, Fol) == 0x000288, "Member 'AServerBox_C::Fol' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, StaticMesh1) == 0x000290, "Member 'AServerBox_C::StaticMesh1' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, SlideIn) == 0x000298, "Member 'AServerBox_C::SlideIn' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, Box) == 0x0002A0, "Member 'AServerBox_C::Box' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, Timeline_0_a_215457444A34B8940068F5890644831F) == 0x0002A8, "Member 'AServerBox_C::Timeline_0_a_215457444A34B8940068F5890644831F' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, Timeline_0__Direction_215457444A34B8940068F5890644831F) == 0x0002AC, "Member 'AServerBox_C::Timeline_0__Direction_215457444A34B8940068F5890644831F' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, Timeline_0) == 0x0002B0, "Member 'AServerBox_C::Timeline_0' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, Move_a_12A75AAB4761D8FA2D00F2BDAF7A5FAC) == 0x0002B8, "Member 'AServerBox_C::Move_a_12A75AAB4761D8FA2D00F2BDAF7A5FAC' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, Move__Direction_12A75AAB4761D8FA2D00F2BDAF7A5FAC) == 0x0002BC, "Member 'AServerBox_C::Move__Direction_12A75AAB4761D8FA2D00F2BDAF7A5FAC' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, Move) == 0x0002C0, "Member 'AServerBox_C::Move' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, Name_ServerBox_C) == 0x0002C8, "Member 'AServerBox_C::Name_ServerBox_C' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, broken_0) == 0x0002D8, "Member 'AServerBox_C::broken_0' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, Type) == 0x0002DC, "Member 'AServerBox_C::Type' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, Fixed) == 0x0002E0, "Member 'AServerBox_C::Fixed' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, AR) == 0x0002F0, "Member 'AServerBox_C::AR' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, Disc) == 0x000320, "Member 'AServerBox_C::Disc' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, Resisnant) == 0x000328, "Member 'AServerBox_C::Resisnant' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, ResTime) == 0x00032C, "Member 'AServerBox_C::ResTime' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, DishIndex) == 0x000330, "Member 'AServerBox_C::DishIndex' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, IsSuper) == 0x000334, "Member 'AServerBox_C::IsSuper' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, Active) == 0x000335, "Member 'AServerBox_C::Active' has a wrong offset!");
-static_assert(offsetof(AServerBox_C, Calc) == 0x000336, "Member 'AServerBox_C::Calc' has a wrong offset!");
+static_assert(sizeof(AServerBox_C) == 0x000370, "Wrong size on AServerBox_C");
+static_assert(offsetof(AServerBox_C, UberGraphFrame_ServerBox_C) == 0x000248, "Member 'AServerBox_C::UberGraphFrame_ServerBox_C' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, Cube) == 0x000250, "Member 'AServerBox_C::Cube' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, NavigationInvoker) == 0x000258, "Member 'AServerBox_C::NavigationInvoker' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, KerfFix) == 0x000260, "Member 'AServerBox_C::KerfFix' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, NavModifier) == 0x000268, "Member 'AServerBox_C::NavModifier' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, Eff) == 0x000270, "Member 'AServerBox_C::Eff' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, Cen) == 0x000278, "Member 'AServerBox_C::Cen' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, StaticMesh) == 0x000280, "Member 'AServerBox_C::StaticMesh' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, TextRender) == 0x000288, "Member 'AServerBox_C::TextRender' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, Server_snd) == 0x000290, "Member 'AServerBox_C::Server_snd' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, Server_loop) == 0x000298, "Member 'AServerBox_C::Server_loop' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, Billboard) == 0x0002A0, "Member 'AServerBox_C::Billboard' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, Svtarget) == 0x0002A8, "Member 'AServerBox_C::Svtarget' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, Fol) == 0x0002B0, "Member 'AServerBox_C::Fol' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, StaticMesh1) == 0x0002B8, "Member 'AServerBox_C::StaticMesh1' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, SlideIn) == 0x0002C0, "Member 'AServerBox_C::SlideIn' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, Box) == 0x0002C8, "Member 'AServerBox_C::Box' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, Timeline_0_a_215457444A34B8940068F5890644831F) == 0x0002D0, "Member 'AServerBox_C::Timeline_0_a_215457444A34B8940068F5890644831F' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, Timeline_0__Direction_215457444A34B8940068F5890644831F) == 0x0002D4, "Member 'AServerBox_C::Timeline_0__Direction_215457444A34B8940068F5890644831F' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, Timeline_0) == 0x0002D8, "Member 'AServerBox_C::Timeline_0' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, Move_a_12A75AAB4761D8FA2D00F2BDAF7A5FAC) == 0x0002E0, "Member 'AServerBox_C::Move_a_12A75AAB4761D8FA2D00F2BDAF7A5FAC' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, Move__Direction_12A75AAB4761D8FA2D00F2BDAF7A5FAC) == 0x0002E4, "Member 'AServerBox_C::Move__Direction_12A75AAB4761D8FA2D00F2BDAF7A5FAC' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, Move) == 0x0002E8, "Member 'AServerBox_C::Move' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, Name_ServerBox_C) == 0x0002F0, "Member 'AServerBox_C::Name_ServerBox_C' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, broken_0) == 0x000300, "Member 'AServerBox_C::broken_0' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, Type) == 0x000304, "Member 'AServerBox_C::Type' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, Fixed) == 0x000308, "Member 'AServerBox_C::Fixed' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, AR) == 0x000320, "Member 'AServerBox_C::AR' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, Disc) == 0x000350, "Member 'AServerBox_C::Disc' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, Resisnant) == 0x000358, "Member 'AServerBox_C::Resisnant' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, ResTime) == 0x00035C, "Member 'AServerBox_C::ResTime' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, DishIndex) == 0x000360, "Member 'AServerBox_C::DishIndex' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, IsSuper) == 0x000364, "Member 'AServerBox_C::IsSuper' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, Active) == 0x000365, "Member 'AServerBox_C::Active' has a wrong offset!");
+static_assert(offsetof(AServerBox_C, Calc) == 0x000366, "Member 'AServerBox_C::Calc' has a wrong offset!");
 
 }
 

@@ -27,7 +27,7 @@ public:
 	class UArrowComponent*                        Arrow;                                             // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0238(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	int32                                         Type;                                              // 0x0240(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D3F[0x4];                                     // 0x0244(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_244[0x4];                                      // 0x0244(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<class UClass*, float>                    PoisonFoods;                                       // 0x0248(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TMap<class UClass*, float>                    GoodFoods;                                         // 0x0298(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          IsGood;                                            // 0x02E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)

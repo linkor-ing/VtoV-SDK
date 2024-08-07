@@ -26,20 +26,19 @@ public:
 	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class AActor* DestroyedActor)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E23[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AWire_C*                                K2Node_Event_wire;                                 // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_side;                                 // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E24[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_CustomEvent_DestroyedActor;                 // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit;                                  // 0x0040(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00CE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2E25[0x1];                                     // 0x00CF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_CB[0x1];                                       // 0x00CB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button) == 0x000008, "Wrong alignment on Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button");
 static_assert(sizeof(Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button) == 0x0000D8, "Wrong size on Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button");
@@ -52,12 +51,11 @@ static_assert(offsetof(Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireCom
 static_assert(offsetof(Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button, K2Node_CustomEvent_DestroyedActor) == 0x000030, "Member 'Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button::K2Node_CustomEvent_DestroyedActor' has a wrong offset!");
 static_assert(offsetof(Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button, K2Node_Event_player) == 0x000038, "Member 'Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button::K2Node_Event_player' has a wrong offset!");
 static_assert(offsetof(Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button, K2Node_Event_hit) == 0x000040, "Member 'Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button, K2Node_Event_index) == 0x0000C8, "Member 'Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button, K2Node_Event_action) == 0x0000CC, "Member 'Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button, K2Node_SwitchEnum_CmpSuccess) == 0x0000CD, "Member 'Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button, CallFunc_IsValid_ReturnValue) == 0x0000CE, "Member 'Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button, K2Node_Event_DeltaSeconds) == 0x0000D0, "Member 'Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button, CallFunc_Subtract_IntInt_ReturnValue) == 0x0000D4, "Member 'Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button, K2Node_Event_action) == 0x0000C8, "Member 'Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button, K2Node_SwitchEnum_CmpSuccess) == 0x0000C9, "Member 'Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button, CallFunc_IsValid_ReturnValue) == 0x0000CA, "Member 'Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button, K2Node_Event_DeltaSeconds) == 0x0000CC, "Member 'Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button, CallFunc_Subtract_IntInt_ReturnValue) == 0x0000D0, "Member 'Prop_wireComponent_button_C_ExecuteUbergraph_prop_wireComponent_button::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
 
 // Function prop_wireComponent_button.prop_wireComponent_button_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -69,23 +67,6 @@ public:
 static_assert(alignof(Prop_wireComponent_button_C_ReceiveTick) == 0x000004, "Wrong alignment on Prop_wireComponent_button_C_ReceiveTick");
 static_assert(sizeof(Prop_wireComponent_button_C_ReceiveTick) == 0x000004, "Wrong size on Prop_wireComponent_button_C_ReceiveTick");
 static_assert(offsetof(Prop_wireComponent_button_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'Prop_wireComponent_button_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
-
-// Function prop_wireComponent_button.prop_wireComponent_button_C.actionOptionIndex
-// 0x0098 (0x0098 - 0x0000)
-struct Prop_wireComponent_button_C_ActionOptionIndex final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_wireComponent_button_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_wireComponent_button_C_ActionOptionIndex");
-static_assert(sizeof(Prop_wireComponent_button_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_wireComponent_button_C_ActionOptionIndex");
-static_assert(offsetof(Prop_wireComponent_button_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_wireComponent_button_C_ActionOptionIndex::Player' has a wrong offset!");
-static_assert(offsetof(Prop_wireComponent_button_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_wireComponent_button_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_wireComponent_button_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_wireComponent_button_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(Prop_wireComponent_button_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_wireComponent_button_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function prop_wireComponent_button.prop_wireComponent_button_C.Dest
 // 0x0008 (0x0008 - 0x0000)
@@ -111,8 +92,23 @@ static_assert(sizeof(Prop_wireComponent_button_C_WireConnected) == 0x000010, "Wr
 static_assert(offsetof(Prop_wireComponent_button_C_WireConnected, Param_Wire) == 0x000000, "Member 'Prop_wireComponent_button_C_WireConnected::Param_Wire' has a wrong offset!");
 static_assert(offsetof(Prop_wireComponent_button_C_WireConnected, Side) == 0x000008, "Member 'Prop_wireComponent_button_C_WireConnected::Side' has a wrong offset!");
 
+// Function prop_wireComponent_button.prop_wireComponent_button_C.actionOptionIndex
+// 0x0098 (0x0098 - 0x0000)
+struct Prop_wireComponent_button_C_ActionOptionIndex final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_wireComponent_button_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_wireComponent_button_C_ActionOptionIndex");
+static_assert(sizeof(Prop_wireComponent_button_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_wireComponent_button_C_ActionOptionIndex");
+static_assert(offsetof(Prop_wireComponent_button_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_wireComponent_button_C_ActionOptionIndex::Player' has a wrong offset!");
+static_assert(offsetof(Prop_wireComponent_button_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_wireComponent_button_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_wireComponent_button_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_wireComponent_button_C_ActionOptionIndex::Action' has a wrong offset!");
+
 // Function prop_wireComponent_button.prop_wireComponent_button_C.getActionOptions
-// 0x0058 (0x0058 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct Prop_wireComponent_button_C_GetActionOptions final
 {
 public:
@@ -122,17 +118,20 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
 };
 static_assert(alignof(Prop_wireComponent_button_C_GetActionOptions) == 0x000008, "Wrong alignment on Prop_wireComponent_button_C_GetActionOptions");
-static_assert(sizeof(Prop_wireComponent_button_C_GetActionOptions) == 0x000058, "Wrong size on Prop_wireComponent_button_C_GetActionOptions");
+static_assert(sizeof(Prop_wireComponent_button_C_GetActionOptions) == 0x000060, "Wrong size on Prop_wireComponent_button_C_GetActionOptions");
 static_assert(offsetof(Prop_wireComponent_button_C_GetActionOptions, Player) == 0x000000, "Member 'Prop_wireComponent_button_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Prop_wireComponent_button_C_GetActionOptions, Component) == 0x000008, "Member 'Prop_wireComponent_button_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Prop_wireComponent_button_C_GetActionOptions, Actor) == 0x000010, "Member 'Prop_wireComponent_button_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Prop_wireComponent_button_C_GetActionOptions, Options) == 0x000018, "Member 'Prop_wireComponent_button_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Prop_wireComponent_button_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Prop_wireComponent_button_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Prop_wireComponent_button_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Prop_wireComponent_button_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Prop_wireComponent_button_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'Prop_wireComponent_button_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Prop_wireComponent_button_C_GetActionOptions, Number) == 0x000048, "Member 'Prop_wireComponent_button_C_GetActionOptions::Number' has a wrong offset!");
+static_assert(offsetof(Prop_wireComponent_button_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Prop_wireComponent_button_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 }
 

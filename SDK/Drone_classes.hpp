@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
+#include "Enum_signalResponse_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "Struct_signalDataDynamic_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "Struct_save_structs.hpp"
-#include "Enum_signalResponse_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "Struct_storeOrder_structs.hpp"
-#include "Struct_signalDataDynamic_structs.hpp"
 #include "Enum_emailChars_structs.hpp"
+#include "Struct_storeOrder1_structs.hpp"
 
 
 namespace SDK
@@ -31,7 +31,7 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UStaticMeshComponent*                   Papr;                                              // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   Ibox;                                              // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class URadarPointComponent_C*                 RadarPoint;                                        // 0x0238(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UComp_radarPoint_C*                     RadarPoint;                                        // 0x0238(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   Dbox;                                              // 0x0240(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   Box;                                               // 0x0248(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UBillboardComponent*                    Grab;                                              // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -44,49 +44,49 @@ public:
 	class UArrowComponent*                        Look;                                              // 0x0288(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         Grabbing_a_5DE43C7843105A70E80DA19897C1BFEA;       // 0x0290(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            Grabbing__Direction_5DE43C7843105A70E80DA19897C1BFEA; // 0x0294(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_27B3[0x3];                                     // 0x0295(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_295[0x3];                                      // 0x0295(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     Grabbing;                                          // 0x0298(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FVector>                        Points;                                            // 0x02A0(0x0010)(Edit, BlueprintVisible)
 	int32                                         Ind;                                               // 0x02B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Point;                                             // 0x02B4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Flying;                                            // 0x02C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_27B4[0x4];                                     // 0x02C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C4[0x4];                                      // 0x02C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Pickup;                                            // 0x02C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Dir;                                               // 0x02D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_27B5[0x7];                                     // 0x02D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D1[0x7];                                      // 0x02D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDrone_sk_Skeleton_AnimBlueprint_C*     Inst;                                              // 0x02D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                VecGrab;                                           // 0x02E0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsGrabbing;                                        // 0x02EC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Pickedup;                                          // 0x02ED(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_27B6[0x2];                                     // 0x02EE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          PickedUp;                                          // 0x02ED(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2EE[0x2];                                      // 0x02EE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class ADroneSellBox_C*                        SellBox;                                           // 0x02F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Damping;                                           // 0x02F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Speed;                                             // 0x02FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Pitch;                                             // 0x0300(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Dist;                                              // 0x0304(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_storeOrder                     Order;                                             // 0x0308(0x0018)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	struct FStruct_storeOrder1                    Order;                                             // 0x0308(0x0018)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	bool                                          HasOrder;                                          // 0x0320(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_27B7[0x7];                                     // 0x0321(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_321[0x7];                                      // 0x0321(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 OrderDrop;                                         // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          HoldsOrder;                                        // 0x0330(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Active;                                            // 0x0331(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_27B8[0x6];                                     // 0x0332(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_332[0x6];                                      // 0x0332(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class ADroneSpline_C*                         Spline;                                            // 0x0338(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FStruct_signalDataDynamic>      SellBox_data;                                      // 0x0340(0x0010)(Edit, BlueprintVisible)
 	struct FVector                                PickupLoc;                                         // 0x0350(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         PickupRot;                                         // 0x035C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 SellBox_info;                                      // 0x0360(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	struct FVector                                VecForce;                                          // 0x0370(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_27B9[0x4];                                     // 0x037C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_37C[0x4];                                      // 0x037C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 LastSpawn;                                         // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_27BA[0x8];                                     // 0x0388(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_388[0x8];                                      // 0x0388(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           Data;                                              // 0x0390(0x00C0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                          HasIteembox;                                       // 0x0450(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          CalledError;                                       // 0x0451(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_drone(int32 EntryPoint);
-	void SendShop(const struct FStruct_storeOrder& Param_Order);
+	void SendShop(const struct FStruct_storeOrder1& Param_Order);
 	void ReceiveBeginPlay();
 	void Set_ignoreSave_trigger(bool NewParam);
 	void CordPlugged(class ACord_C* Cord, class ACordSocket_C* Socket);
@@ -109,6 +109,7 @@ public:
 	void GetTriggerData(struct FStruct_triggerSave* Param_Data);
 	void LoadTriggerData(const struct FStruct_triggerSave& Param_Data, bool* Return);
 	void IgnoreSave_trigger(bool* Ignore);
+	void GatherDataFromKeyT(bool* Gather);
 
 public:
 	static class UClass* StaticClass()
@@ -148,7 +149,7 @@ static_assert(offsetof(ADrone_C, Dir) == 0x0002D0, "Member 'ADrone_C::Dir' has a
 static_assert(offsetof(ADrone_C, Inst) == 0x0002D8, "Member 'ADrone_C::Inst' has a wrong offset!");
 static_assert(offsetof(ADrone_C, VecGrab) == 0x0002E0, "Member 'ADrone_C::VecGrab' has a wrong offset!");
 static_assert(offsetof(ADrone_C, IsGrabbing) == 0x0002EC, "Member 'ADrone_C::IsGrabbing' has a wrong offset!");
-static_assert(offsetof(ADrone_C, Pickedup) == 0x0002ED, "Member 'ADrone_C::Pickedup' has a wrong offset!");
+static_assert(offsetof(ADrone_C, PickedUp) == 0x0002ED, "Member 'ADrone_C::PickedUp' has a wrong offset!");
 static_assert(offsetof(ADrone_C, SellBox) == 0x0002F0, "Member 'ADrone_C::SellBox' has a wrong offset!");
 static_assert(offsetof(ADrone_C, Damping) == 0x0002F8, "Member 'ADrone_C::Damping' has a wrong offset!");
 static_assert(offsetof(ADrone_C, Speed) == 0x0002FC, "Member 'ADrone_C::Speed' has a wrong offset!");

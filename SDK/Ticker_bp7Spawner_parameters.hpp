@@ -24,25 +24,27 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F75[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UGameInst_C*                            CallFunc_getMainGameInstance_AsGame_Inst;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F76[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0024(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F77[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetRandomPointInNavigableRadius_RandomLocation; // 0x0034(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_GetRandomPointInNavigableRadius_ReturnValue; // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F78[0xE];                                     // 0x0042(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0050(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_LowEntry_LocalVariable_Value__Object;       // 0x0088(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Vector_Distance_ReturnValue;              // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ANewBlueprint7_C*                       CallFunc_FinishSpawningActor_ReturnValue;          // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                K2Node_LowEntry_LocalVariable_Value__Object;       // 0x0044(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0050(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Vector_Distance_ReturnValue;              // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0060(0x0030)(IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class NewBlueprint7::ANewBlueprint7_C*        CallFunc_FinishSpawningActor_ReturnValue;          // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner) == 0x000010, "Wrong alignment on Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner");
 static_assert(sizeof(Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner) == 0x0000B0, "Wrong size on Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner");
@@ -58,12 +60,13 @@ static_assert(offsetof(Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner, C
 static_assert(offsetof(Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner, CallFunc_K2_GetRandomPointInNavigableRadius_RandomLocation) == 0x000034, "Member 'Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner::CallFunc_K2_GetRandomPointInNavigableRadius_RandomLocation' has a wrong offset!");
 static_assert(offsetof(Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner, CallFunc_K2_GetRandomPointInNavigableRadius_ReturnValue) == 0x000040, "Member 'Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner::CallFunc_K2_GetRandomPointInNavigableRadius_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner, CallFunc_BooleanOR_ReturnValue) == 0x000041, "Member 'Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner, CallFunc_MakeTransform_ReturnValue) == 0x000050, "Member 'Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000080, "Member 'Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner, K2Node_LowEntry_LocalVariable_Value__Object) == 0x000088, "Member 'Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner::K2Node_LowEntry_LocalVariable_Value__Object' has a wrong offset!");
-static_assert(offsetof(Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner, CallFunc_Vector_Distance_ReturnValue) == 0x000094, "Member 'Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner::CallFunc_Vector_Distance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner, CallFunc_FinishSpawningActor_ReturnValue) == 0x000098, "Member 'Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0000A0, "Member 'Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner, K2Node_LowEntry_LocalVariable_Value__Object) == 0x000044, "Member 'Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner::K2Node_LowEntry_LocalVariable_Value__Object' has a wrong offset!");
+static_assert(offsetof(Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner, CallFunc_Add_VectorVector_ReturnValue) == 0x000050, "Member 'Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner, CallFunc_Vector_Distance_ReturnValue) == 0x00005C, "Member 'Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner::CallFunc_Vector_Distance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner, CallFunc_MakeTransform_ReturnValue) == 0x000060, "Member 'Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000090, "Member 'Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000098, "Member 'Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner, CallFunc_FinishSpawningActor_ReturnValue) == 0x0000A0, "Member 'Ticker_bp7Spawner_C_ExecuteUbergraph_ticker_bp7Spawner::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
 
 // Function ticker_bp7Spawner.ticker_bp7Spawner_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)

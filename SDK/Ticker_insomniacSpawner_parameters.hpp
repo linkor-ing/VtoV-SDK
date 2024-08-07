@@ -23,10 +23,10 @@ struct Ticker_insomniacSpawner_C_ExecuteUbergraph_ticker_insomniacSpawner final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F26[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(class AActor* DestroyedActor)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameInst_C*                            CallFunc_getMainGameInstance_AsGame_Inst;          // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_CustomEvent_DestroyedActor;                 // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -34,9 +34,9 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0033(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_trySpawnInsomniac_canSpawn;               // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F27[0x3];                                     // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_trySpawnInsomniac_loc;                    // 0x0038(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1F28[0xC];                                     // 0x0044(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_44[0xC];                                       // 0x0044(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0050(0x0030)(IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AInsomniac_C*                           CallFunc_FinishSpawningActor_ReturnValue;          // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -50,7 +50,6 @@ static_assert(offsetof(Ticker_insomniacSpawner_C_ExecuteUbergraph_ticker_insomni
 static_assert(offsetof(Ticker_insomniacSpawner_C_ExecuteUbergraph_ticker_insomniacSpawner, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x000004, "Member 'Ticker_insomniacSpawner_C_ExecuteUbergraph_ticker_insomniacSpawner::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Ticker_insomniacSpawner_C_ExecuteUbergraph_ticker_insomniacSpawner, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'Ticker_insomniacSpawner_C_ExecuteUbergraph_ticker_insomniacSpawner::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(Ticker_insomniacSpawner_C_ExecuteUbergraph_ticker_insomniacSpawner, K2Node_Event_DeltaSeconds) == 0x000018, "Member 'Ticker_insomniacSpawner_C_ExecuteUbergraph_ticker_insomniacSpawner::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(Ticker_insomniacSpawner_C_ExecuteUbergraph_ticker_insomniacSpawner, CallFunc_RandomFloatInRange_ReturnValue) == 0x00001C, "Member 'Ticker_insomniacSpawner_C_ExecuteUbergraph_ticker_insomniacSpawner::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Ticker_insomniacSpawner_C_ExecuteUbergraph_ticker_insomniacSpawner, CallFunc_getMainGameInstance_AsGame_Inst) == 0x000020, "Member 'Ticker_insomniacSpawner_C_ExecuteUbergraph_ticker_insomniacSpawner::CallFunc_getMainGameInstance_AsGame_Inst' has a wrong offset!");
 static_assert(offsetof(Ticker_insomniacSpawner_C_ExecuteUbergraph_ticker_insomniacSpawner, K2Node_CustomEvent_DestroyedActor) == 0x000028, "Member 'Ticker_insomniacSpawner_C_ExecuteUbergraph_ticker_insomniacSpawner::K2Node_CustomEvent_DestroyedActor' has a wrong offset!");
 static_assert(offsetof(Ticker_insomniacSpawner_C_ExecuteUbergraph_ticker_insomniacSpawner, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000030, "Member 'Ticker_insomniacSpawner_C_ExecuteUbergraph_ticker_insomniacSpawner::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");

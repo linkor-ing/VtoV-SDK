@@ -18,17 +18,16 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_timeclock.prop_timeclock_C
-// 0x0020 (0x0388 - 0x0368)
+// 0x0020 (0x0398 - 0x0378)
 class AProp_timeclock_C final : public AProp_C
 {
 public:
-	uint8                                         Pad_38F3[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_timeclock_C;                   // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UAudioComponent*                        TimeFast;                                          // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         A_a_3422C41A480536959E6D7EA61A6C7686;              // 0x0378(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            A__Direction_3422C41A480536959E6D7EA61A6C7686;     // 0x037C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_38F4[0x3];                                     // 0x037D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     A;                                                 // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_timeclock_C;                   // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UAudioComponent*                        TimeFast;                                          // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         A_a_3422C41A480536959E6D7EA61A6C7686;              // 0x0388(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            A__Direction_3422C41A480536959E6D7EA61A6C7686;     // 0x038C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_38D[0x3];                                      // 0x038D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     A;                                                 // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_timeclock(int32 EntryPoint);
@@ -47,12 +46,12 @@ public:
 	}
 };
 static_assert(alignof(AProp_timeclock_C) == 0x000008, "Wrong alignment on AProp_timeclock_C");
-static_assert(sizeof(AProp_timeclock_C) == 0x000388, "Wrong size on AProp_timeclock_C");
-static_assert(offsetof(AProp_timeclock_C, UberGraphFrame_Prop_timeclock_C) == 0x000368, "Member 'AProp_timeclock_C::UberGraphFrame_Prop_timeclock_C' has a wrong offset!");
-static_assert(offsetof(AProp_timeclock_C, TimeFast) == 0x000370, "Member 'AProp_timeclock_C::TimeFast' has a wrong offset!");
-static_assert(offsetof(AProp_timeclock_C, A_a_3422C41A480536959E6D7EA61A6C7686) == 0x000378, "Member 'AProp_timeclock_C::A_a_3422C41A480536959E6D7EA61A6C7686' has a wrong offset!");
-static_assert(offsetof(AProp_timeclock_C, A__Direction_3422C41A480536959E6D7EA61A6C7686) == 0x00037C, "Member 'AProp_timeclock_C::A__Direction_3422C41A480536959E6D7EA61A6C7686' has a wrong offset!");
-static_assert(offsetof(AProp_timeclock_C, A) == 0x000380, "Member 'AProp_timeclock_C::A' has a wrong offset!");
+static_assert(sizeof(AProp_timeclock_C) == 0x000398, "Wrong size on AProp_timeclock_C");
+static_assert(offsetof(AProp_timeclock_C, UberGraphFrame_Prop_timeclock_C) == 0x000378, "Member 'AProp_timeclock_C::UberGraphFrame_Prop_timeclock_C' has a wrong offset!");
+static_assert(offsetof(AProp_timeclock_C, TimeFast) == 0x000380, "Member 'AProp_timeclock_C::TimeFast' has a wrong offset!");
+static_assert(offsetof(AProp_timeclock_C, A_a_3422C41A480536959E6D7EA61A6C7686) == 0x000388, "Member 'AProp_timeclock_C::A_a_3422C41A480536959E6D7EA61A6C7686' has a wrong offset!");
+static_assert(offsetof(AProp_timeclock_C, A__Direction_3422C41A480536959E6D7EA61A6C7686) == 0x00038C, "Member 'AProp_timeclock_C::A__Direction_3422C41A480536959E6D7EA61A6C7686' has a wrong offset!");
+static_assert(offsetof(AProp_timeclock_C, A) == 0x000390, "Member 'AProp_timeclock_C::A' has a wrong offset!");
 
 }
 

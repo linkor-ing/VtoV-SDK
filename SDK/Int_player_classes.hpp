@@ -24,7 +24,7 @@ public:
 	void DriveDetached();
 	void IsButtonUsed(bool* Failed);
 	void Player_use(class AMainPlayer_C* Player, const struct FHitResult& Hit);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
 	void NoRespawn(bool Param_NoRespawn, bool* Return);
 	void CanPickup(bool* Return);
 	void AsProp(class AProp_C** Return);
@@ -34,8 +34,12 @@ public:
 	void CanBePutInContainer(bool* Return);
 	void broken_fire();
 	void Thrown(class AMainPlayer_C* Player);
-	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit);
+	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage);
 	void UpdateStrAgl();
+	void PlayerUnequip(class AMainPlayer_C* Player);
+	void PlayerHold(class AMainPlayer_C* Player);
+	void PlayerR(class AMainPlayer_C* Player);
+	void LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage);
 
 public:
 	static class UClass* StaticClass()

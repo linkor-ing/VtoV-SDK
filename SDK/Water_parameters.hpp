@@ -90,7 +90,7 @@ public:
 	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ABuoyancyManager*                       Manager;                                           // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1058[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BuoyancyManager_GetBuoyancyComponentManager) == 0x000008, "Wrong alignment on BuoyancyManager_GetBuoyancyComponentManager");
 static_assert(sizeof(BuoyancyManager_GetBuoyancyComponentManager) == 0x000018, "Wrong size on BuoyancyManager_GetBuoyancyComponentManager");
@@ -298,7 +298,7 @@ struct WaterSubsystem_PrintToWaterLog final
 public:
 	class FString                                 Message;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bWarning;                                          // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_106F[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(WaterSubsystem_PrintToWaterLog) == 0x000008, "Wrong alignment on WaterSubsystem_PrintToWaterLog");
 static_assert(sizeof(WaterSubsystem_PrintToWaterLog) == 0x000018, "Wrong size on WaterSubsystem_PrintToWaterLog");

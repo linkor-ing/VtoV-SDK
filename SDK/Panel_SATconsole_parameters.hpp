@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Enum_interactionActions_structs.hpp"
-#include "Engine_structs.hpp"
 #include "Struct_save_structs.hpp"
+#include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
@@ -27,34 +27,34 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0004(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_1;    // 0x0010(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_30E7[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_2;    // 0x0028(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_30E8[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameInst_C*                            CallFunc_getMainGameInstance_AsGame_Inst;          // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30E9[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent;    // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30EA[0x3];                                     // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0068(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit;                                  // 0x0100(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x018C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x018D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x018E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x018F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0198(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x01A4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x01B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x01BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x018A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x018B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0194(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x01A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x01AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x01B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C4[0x4];                                      // 0x01C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x01D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -88,17 +88,16 @@ static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, K2N
 static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x0000F0, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
 static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, K2Node_Event_player) == 0x0000F8, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::K2Node_Event_player' has a wrong offset!");
 static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, K2Node_Event_hit) == 0x000100, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, K2Node_Event_index) == 0x000188, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, K2Node_Event_action) == 0x00018C, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, K2Node_SwitchEnum_CmpSuccess) == 0x00018D, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, CallFunc_BreakHitResult_bBlockingHit) == 0x00018E, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, CallFunc_BreakHitResult_bInitialOverlap) == 0x00018F, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, CallFunc_BreakHitResult_Time) == 0x000190, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, CallFunc_BreakHitResult_Distance) == 0x000194, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, CallFunc_BreakHitResult_Location) == 0x000198, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, CallFunc_BreakHitResult_ImpactPoint) == 0x0001A4, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, CallFunc_BreakHitResult_Normal) == 0x0001B0, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, CallFunc_BreakHitResult_ImpactNormal) == 0x0001BC, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, K2Node_Event_action) == 0x000188, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, K2Node_SwitchEnum_CmpSuccess) == 0x000189, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, CallFunc_BreakHitResult_bBlockingHit) == 0x00018A, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, CallFunc_BreakHitResult_bInitialOverlap) == 0x00018B, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, CallFunc_BreakHitResult_Time) == 0x00018C, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, CallFunc_BreakHitResult_Distance) == 0x000190, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, CallFunc_BreakHitResult_Location) == 0x000194, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, CallFunc_BreakHitResult_ImpactPoint) == 0x0001A0, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, CallFunc_BreakHitResult_Normal) == 0x0001AC, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, CallFunc_BreakHitResult_ImpactNormal) == 0x0001B8, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
 static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, CallFunc_BreakHitResult_PhysMat) == 0x0001C8, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
 static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, CallFunc_BreakHitResult_HitActor) == 0x0001D0, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
 static_assert(offsetof(Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole, CallFunc_BreakHitResult_HitComponent) == 0x0001D8, "Member 'Panel_SATconsole_C_ExecuteUbergraph_panel_SATconsole::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
@@ -124,7 +123,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30EB[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 static_assert(alignof(Panel_SATconsole_C_BndEvt__updName_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on Panel_SATconsole_C_BndEvt__updName_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
@@ -171,32 +170,18 @@ static_assert(offsetof(Panel_SATconsole_C_Alert, CallFunc_getMainGamemode_AsMain
 static_assert(offsetof(Panel_SATconsole_C_Alert, CallFunc_Greater_IntInt_ReturnValue) == 0x000030, "Member 'Panel_SATconsole_C_Alert::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function panel_SATconsole.panel_SATconsole_C.con
-// 0x0088 (0x0088 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct Panel_SATconsole_C_Con final
 {
 public:
-	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_GetDisplayName_ReturnValue_1;             // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x0060(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30EC[0x7];                                     // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Panel_SATconsole_C_Con) == 0x000008, "Wrong alignment on Panel_SATconsole_C_Con");
-static_assert(sizeof(Panel_SATconsole_C_Con) == 0x000088, "Wrong size on Panel_SATconsole_C_Con");
-static_assert(offsetof(Panel_SATconsole_C_Con, CallFunc_GetDisplayName_ReturnValue) == 0x000000, "Member 'Panel_SATconsole_C_Con::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_Con, CallFunc_GetDisplayName_ReturnValue_1) == 0x000010, "Member 'Panel_SATconsole_C_Con::CallFunc_GetDisplayName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_Con, CallFunc_Concat_StrStr_ReturnValue) == 0x000020, "Member 'Panel_SATconsole_C_Con::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_Con, CallFunc_Conv_TextToString_ReturnValue) == 0x000030, "Member 'Panel_SATconsole_C_Con::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_Con, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000040, "Member 'Panel_SATconsole_C_Con::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_Con, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000050, "Member 'Panel_SATconsole_C_Con::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_Con, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000060, "Member 'Panel_SATconsole_C_Con::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_Con, CallFunc_IsValid_ReturnValue) == 0x000070, "Member 'Panel_SATconsole_C_Con::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_Con, CallFunc_Conv_TextToString_ReturnValue_1) == 0x000078, "Member 'Panel_SATconsole_C_Con::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
+static_assert(sizeof(Panel_SATconsole_C_Con) == 0x000018, "Wrong size on Panel_SATconsole_C_Con");
+static_assert(offsetof(Panel_SATconsole_C_Con, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'Panel_SATconsole_C_Con::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Panel_SATconsole_C_Con, CallFunc_Conv_TextToString_ReturnValue) == 0x000008, "Member 'Panel_SATconsole_C_Con::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
 
 // Function panel_SATconsole.panel_SATconsole_C.actionOptionIndex
 // 0x0098 (0x0098 - 0x0000)
@@ -205,15 +190,13 @@ struct Panel_SATconsole_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Panel_SATconsole_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Panel_SATconsole_C_ActionOptionIndex");
 static_assert(sizeof(Panel_SATconsole_C_ActionOptionIndex) == 0x000098, "Wrong size on Panel_SATconsole_C_ActionOptionIndex");
 static_assert(offsetof(Panel_SATconsole_C_ActionOptionIndex, Player) == 0x000000, "Member 'Panel_SATconsole_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(Panel_SATconsole_C_ActionOptionIndex, Hit) == 0x000008, "Member 'Panel_SATconsole_C_ActionOptionIndex::Hit' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Panel_SATconsole_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_ActionOptionIndex, Action) == 0x000094, "Member 'Panel_SATconsole_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(Panel_SATconsole_C_ActionOptionIndex, Action) == 0x000090, "Member 'Panel_SATconsole_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function panel_SATconsole.panel_SATconsole_C.isButtonUsed
 // 0x0001 (0x0001 - 0x0000)
@@ -234,19 +217,20 @@ public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30ED[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30EE[0x2];                                     // 0x00B2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B3[0x1];                                       // 0x00B3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x00BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x00C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x00D4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x00E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_30EF[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EC[0x4];                                       // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0100(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -256,11 +240,11 @@ public:
 	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x011C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0128(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_30F0[0x4];                                     // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_134[0x4];                                      // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UPrimitiveComponent*>            K2Node_MakeArray_Array;                            // 0x0138(0x0010)(ConstParm, ReferenceParm, ContainsInstancedReference)
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0148(0x0018)()
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_30F1[0x7];                                     // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0168(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Panel_SATconsole_C_LookAt) == 0x000008, "Wrong alignment on Panel_SATconsole_C_LookAt");
@@ -270,8 +254,9 @@ static_assert(offsetof(Panel_SATconsole_C_LookAt, Hit) == 0x000008, "Member 'Pan
 static_assert(offsetof(Panel_SATconsole_C_LookAt, Return) == 0x000090, "Member 'Panel_SATconsole_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(Panel_SATconsole_C_LookAt, Text) == 0x000098, "Member 'Panel_SATconsole_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(Panel_SATconsole_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'Panel_SATconsole_C_LookAt::boundObjectReplace' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_LookAt, CallFunc_BreakHitResult_bBlockingHit) == 0x0000B0, "Member 'Panel_SATconsole_C_LookAt::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_LookAt, CallFunc_BreakHitResult_bInitialOverlap) == 0x0000B1, "Member 'Panel_SATconsole_C_LookAt::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(Panel_SATconsole_C_LookAt, Number) == 0x0000B0, "Member 'Panel_SATconsole_C_LookAt::Number' has a wrong offset!");
+static_assert(offsetof(Panel_SATconsole_C_LookAt, CallFunc_BreakHitResult_bBlockingHit) == 0x0000B1, "Member 'Panel_SATconsole_C_LookAt::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(Panel_SATconsole_C_LookAt, CallFunc_BreakHitResult_bInitialOverlap) == 0x0000B2, "Member 'Panel_SATconsole_C_LookAt::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
 static_assert(offsetof(Panel_SATconsole_C_LookAt, CallFunc_BreakHitResult_Time) == 0x0000B4, "Member 'Panel_SATconsole_C_LookAt::CallFunc_BreakHitResult_Time' has a wrong offset!");
 static_assert(offsetof(Panel_SATconsole_C_LookAt, CallFunc_BreakHitResult_Distance) == 0x0000B8, "Member 'Panel_SATconsole_C_LookAt::CallFunc_BreakHitResult_Distance' has a wrong offset!");
 static_assert(offsetof(Panel_SATconsole_C_LookAt, CallFunc_BreakHitResult_Location) == 0x0000BC, "Member 'Panel_SATconsole_C_LookAt::CallFunc_BreakHitResult_Location' has a wrong offset!");
@@ -292,6 +277,32 @@ static_assert(offsetof(Panel_SATconsole_C_LookAt, CallFunc_MakeLiteralText_Retur
 static_assert(offsetof(Panel_SATconsole_C_LookAt, CallFunc_Array_Contains_ReturnValue) == 0x000160, "Member 'Panel_SATconsole_C_LookAt::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Panel_SATconsole_C_LookAt, CallFunc_Conv_TextToString_ReturnValue) == 0x000168, "Member 'Panel_SATconsole_C_LookAt::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
 
+// Function panel_SATconsole.panel_SATconsole_C.getActionOptions
+// 0x0060 (0x0060 - 0x0000)
+struct Panel_SATconsole_C_GetActionOptions final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    Component;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
+	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
+	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
+};
+static_assert(alignof(Panel_SATconsole_C_GetActionOptions) == 0x000008, "Wrong alignment on Panel_SATconsole_C_GetActionOptions");
+static_assert(sizeof(Panel_SATconsole_C_GetActionOptions) == 0x000060, "Wrong size on Panel_SATconsole_C_GetActionOptions");
+static_assert(offsetof(Panel_SATconsole_C_GetActionOptions, Player) == 0x000000, "Member 'Panel_SATconsole_C_GetActionOptions::Player' has a wrong offset!");
+static_assert(offsetof(Panel_SATconsole_C_GetActionOptions, Component) == 0x000008, "Member 'Panel_SATconsole_C_GetActionOptions::Component' has a wrong offset!");
+static_assert(offsetof(Panel_SATconsole_C_GetActionOptions, Actor) == 0x000010, "Member 'Panel_SATconsole_C_GetActionOptions::Actor' has a wrong offset!");
+static_assert(offsetof(Panel_SATconsole_C_GetActionOptions, Options) == 0x000018, "Member 'Panel_SATconsole_C_GetActionOptions::Options' has a wrong offset!");
+static_assert(offsetof(Panel_SATconsole_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Panel_SATconsole_C_GetActionOptions::Options_enum' has a wrong offset!");
+static_assert(offsetof(Panel_SATconsole_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Panel_SATconsole_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
+static_assert(offsetof(Panel_SATconsole_C_GetActionOptions, Number) == 0x000048, "Member 'Panel_SATconsole_C_GetActionOptions::Number' has a wrong offset!");
+static_assert(offsetof(Panel_SATconsole_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Panel_SATconsole_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+
 // Function panel_SATconsole.panel_SATconsole_C.dreamInv
 // 0x0018 (0x0018 - 0x0000)
 struct Panel_SATconsole_C_DreamInv final
@@ -304,29 +315,6 @@ static_assert(alignof(Panel_SATconsole_C_DreamInv) == 0x000008, "Wrong alignment
 static_assert(sizeof(Panel_SATconsole_C_DreamInv) == 0x000018, "Wrong size on Panel_SATconsole_C_DreamInv");
 static_assert(offsetof(Panel_SATconsole_C_DreamInv, Invv) == 0x000000, "Member 'Panel_SATconsole_C_DreamInv::Invv' has a wrong offset!");
 static_assert(offsetof(Panel_SATconsole_C_DreamInv, Base) == 0x000010, "Member 'Panel_SATconsole_C_DreamInv::Base' has a wrong offset!");
-
-// Function panel_SATconsole.panel_SATconsole_C.getActionOptions
-// 0x0058 (0x0058 - 0x0000)
-struct Panel_SATconsole_C_GetActionOptions final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    Component;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
-	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
-	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
-};
-static_assert(alignof(Panel_SATconsole_C_GetActionOptions) == 0x000008, "Wrong alignment on Panel_SATconsole_C_GetActionOptions");
-static_assert(sizeof(Panel_SATconsole_C_GetActionOptions) == 0x000058, "Wrong size on Panel_SATconsole_C_GetActionOptions");
-static_assert(offsetof(Panel_SATconsole_C_GetActionOptions, Player) == 0x000000, "Member 'Panel_SATconsole_C_GetActionOptions::Player' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_GetActionOptions, Component) == 0x000008, "Member 'Panel_SATconsole_C_GetActionOptions::Component' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_GetActionOptions, Actor) == 0x000010, "Member 'Panel_SATconsole_C_GetActionOptions::Actor' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_GetActionOptions, Options) == 0x000018, "Member 'Panel_SATconsole_C_GetActionOptions::Options' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Panel_SATconsole_C_GetActionOptions::Options_enum' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Panel_SATconsole_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Panel_SATconsole_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'Panel_SATconsole_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 }
 

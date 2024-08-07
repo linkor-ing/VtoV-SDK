@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
+#include "Enum_controllerType_structs.hpp"
 #include "Enum_difficulty_structs.hpp"
 
 
@@ -18,7 +19,7 @@ namespace SDK
 {
 
 // UserDefinedStruct struct_settings.struct_settings
-// 0x00CC (0x00CC - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct FStruct_settings final
 {
 public:
@@ -38,14 +39,14 @@ public:
 	int32                                         S_music_46_B735D49F4B2692030AFE57B5FB29DE19;       // 0x0034(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          M_hovertext_50_966DCEC84A9DAB33328BD29ECF13A6C8;   // 0x0038(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          M_colorF_52_AB4FB4784D361A35A224479D4903CD8D;      // 0x0039(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3340[0x2];                                     // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A[0x2];                                       // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         M_mouseSm_59_5BF973664F8FDBF12CA98990A8A42055;     // 0x003C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         M_mouseSPD_60_F82B13AF41C393E8139C8C95A116A4AD;    // 0x0040(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         M_fps_63_9768EF8143893BEACF7D268A9DD2A42A;         // 0x0044(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          M_vsync_66_4C2DC30B42F2DB76DE45B7AEF8BCCB15;       // 0x0048(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          M_physSnd_68_9AA2D7574BB82B462C8EE5A623EE2D88;     // 0x0049(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          M_disBorders_71_7D2F15644EB19D6D7F3A798F4A67E856;  // 0x004A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3341[0x1];                                     // 0x004B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B[0x1];                                       // 0x004B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FIntPoint                              M_asRatio_75_6047628647620F6CF832358A25EC631C;     // 0x004C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          M_invertX_77_632FFB1B471BFBAB3E8A18B54041575C;     // 0x0054(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          M_invertY_82_BC77C1224441909EB7EA9CBCF362890A;     // 0x0055(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -60,7 +61,7 @@ public:
 	bool                                          DisableReportFees_104_16EDFDAC4F03CFD35DA953B434877784; // 0x0067(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          DisableAchivPopups_106_5F435BC14BCE1EAB13F72E80E4481902; // 0x0068(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          MirrorMode_109_14F5C0FF4197477ADA92D88C1E18A399;   // 0x0069(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3342[0x2];                                     // 0x006A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6A[0x2];                                       // 0x006A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         MotionBlur_a_112_F428A3A74DE7BCBB34D35E8253977C6B; // 0x006C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Upscale_114_585154EE4EB0C6B9C0489BAB057DAB73;      // 0x0070(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Saturation_121_34BCC35C4D6F29387654DF84B57D29F4;   // 0x0074(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -72,13 +73,13 @@ public:
 	bool                                          Autoscreenshot_132_ACA01B754F83DFEEF4AE7284CBCA8320; // 0x0086(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          E_dmgInd_135_665715B143B3E27057BC29A6AC22B84A;     // 0x0087(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          V_sshadows_137_12FD4C5740B34BFB762DDDA996F2884D;   // 0x0088(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3343[0x3];                                     // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Hue_140_EC5129524737D60D2BBBBA8462C8434B;          // 0x008C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         MaxRoaches_143_0EE6F8114F7A60C5CA1E38845BC821BD;   // 0x0090(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReplaceRoaches_146_8F179E814359C55025D4688D65F2F2DE; // 0x0094(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          M_boundingbox_148_1013F4384CCBA0EA3901A9B9CC99D4B7; // 0x0095(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          NewSigNotif_150_8B2252F143F9596E19A8CF985B303FE4;  // 0x0096(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3344[0x1];                                     // 0x0097(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_97[0x1];                                       // 0x0097(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         TonemapperFilm_153_3490B249412BCF6B0F1CB8BB16D54252; // 0x0098(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          DisableSpoil_155_B0D3640C49FB9051652C099C074E0B4B; // 0x009C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          DisableTolerance_157_81E70C15431BBBD0671BDB882121A5AF; // 0x009D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -87,24 +88,30 @@ public:
 	bool                                          AtvTirePropCollide_164_14AE11984E5E385BB120F68662E38E53; // 0x00A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          ActionMenuIndex_165_F58E77AB4899D79B884D53A4F402C2DF; // 0x00A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Funny_168_D9B8A1CD48C713DB9BEC9D8472DEA12F;        // 0x00A2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3345[0x1];                                     // 0x00A3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A3[0x1];                                       // 0x00A3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         PanelFps_170_2C990F604D8AC1FEE3B9A4933F6C312F;     // 0x00A4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         ShadowDist_173_245848BF428EF76A8046A5B4260E75D1;   // 0x00A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          GrabKeepUp_175_0DCB5970481F31B9559AD5B46B9B3257;   // 0x00AC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3346[0x3];                                     // 0x00AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_AD[0x3];                                       // 0x00AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         HeadbobStr_180_39FAFB214CE2B6F87996639486C313E2;   // 0x00B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         HeadbobTilt_181_8F513EFC40E97B386CE24B891BC436B0;  // 0x00B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          RadialSelectMenu_183_A10E98CC49A28E7BD11C7CA9F530E7EA; // 0x00B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          ArirRepDebug_185_97E37D0D472315C88724B99A548EB95F; // 0x00B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3347[0x2];                                     // 0x00BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BA[0x2];                                       // 0x00BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Daylength_188_0F721A65449230C6261EDC9A6812ACC8;    // 0x00BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Upsample_191_C2B2FDD548FEDB880590F488F41B14EE;     // 0x00C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3348[0x3];                                     // 0x00C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C1[0x3];                                       // 0x00C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Sharpness_193_F2B4E32F4B0853BD4620668DF5A97391;    // 0x00C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         TonemapperQ_195_C2B68288414352A7A48BE48F488A2067;  // 0x00C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Enablehdr_197_6479A3CA4B04DEB3F8BC89ACF6FC932C;    // 0x00CC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_CD[0x3];                                       // 0x00CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         HdrGamut_202_B78A166742A682B77417C4B7E7E6E957;     // 0x00D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         HdrOutput_203_A16D674F4CE2E423A2FF77965947B7F2;    // 0x00D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CustomAssetFolder_206_A737DC344CF1BB99CD0E9DB13D992123; // 0x00D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	Enum_controllerType                           ControllerType_209_853B1B0B47D8ED921597E1BFA837FE76; // 0x00E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FStruct_settings) == 0x000004, "Wrong alignment on FStruct_settings");
-static_assert(sizeof(FStruct_settings) == 0x0000CC, "Wrong size on FStruct_settings");
+static_assert(alignof(FStruct_settings) == 0x000008, "Wrong alignment on FStruct_settings");
+static_assert(sizeof(FStruct_settings) == 0x0000F0, "Wrong size on FStruct_settings");
 static_assert(offsetof(FStruct_settings, V_resolution_21_395E4C2845DFA89D8A4FAC9CA460EC85) == 0x000000, "Member 'FStruct_settings::V_resolution_21_395E4C2845DFA89D8A4FAC9CA460EC85' has a wrong offset!");
 static_assert(offsetof(FStruct_settings, V_viewDistance_22_6F5E3CAB4AC5220216D263AC9987650C) == 0x000004, "Member 'FStruct_settings::V_viewDistance_22_6F5E3CAB4AC5220216D263AC9987650C' has a wrong offset!");
 static_assert(offsetof(FStruct_settings, V_AA_23_9F75EDB240341717FFAB149EDC2E6064) == 0x000008, "Member 'FStruct_settings::V_AA_23_9F75EDB240341717FFAB149EDC2E6064' has a wrong offset!");
@@ -176,6 +183,11 @@ static_assert(offsetof(FStruct_settings, Daylength_188_0F721A65449230C6261EDC9A6
 static_assert(offsetof(FStruct_settings, Upsample_191_C2B2FDD548FEDB880590F488F41B14EE) == 0x0000C0, "Member 'FStruct_settings::Upsample_191_C2B2FDD548FEDB880590F488F41B14EE' has a wrong offset!");
 static_assert(offsetof(FStruct_settings, Sharpness_193_F2B4E32F4B0853BD4620668DF5A97391) == 0x0000C4, "Member 'FStruct_settings::Sharpness_193_F2B4E32F4B0853BD4620668DF5A97391' has a wrong offset!");
 static_assert(offsetof(FStruct_settings, TonemapperQ_195_C2B68288414352A7A48BE48F488A2067) == 0x0000C8, "Member 'FStruct_settings::TonemapperQ_195_C2B68288414352A7A48BE48F488A2067' has a wrong offset!");
+static_assert(offsetof(FStruct_settings, Enablehdr_197_6479A3CA4B04DEB3F8BC89ACF6FC932C) == 0x0000CC, "Member 'FStruct_settings::Enablehdr_197_6479A3CA4B04DEB3F8BC89ACF6FC932C' has a wrong offset!");
+static_assert(offsetof(FStruct_settings, HdrGamut_202_B78A166742A682B77417C4B7E7E6E957) == 0x0000D0, "Member 'FStruct_settings::HdrGamut_202_B78A166742A682B77417C4B7E7E6E957' has a wrong offset!");
+static_assert(offsetof(FStruct_settings, HdrOutput_203_A16D674F4CE2E423A2FF77965947B7F2) == 0x0000D4, "Member 'FStruct_settings::HdrOutput_203_A16D674F4CE2E423A2FF77965947B7F2' has a wrong offset!");
+static_assert(offsetof(FStruct_settings, CustomAssetFolder_206_A737DC344CF1BB99CD0E9DB13D992123) == 0x0000D8, "Member 'FStruct_settings::CustomAssetFolder_206_A737DC344CF1BB99CD0E9DB13D992123' has a wrong offset!");
+static_assert(offsetof(FStruct_settings, ControllerType_209_853B1B0B47D8ED921597E1BFA837FE76) == 0x0000E8, "Member 'FStruct_settings::ControllerType_209_853B1B0B47D8ED921597E1BFA837FE76' has a wrong offset!");
 
 }
 

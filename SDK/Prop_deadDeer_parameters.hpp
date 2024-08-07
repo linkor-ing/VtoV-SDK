@@ -23,23 +23,23 @@ struct Prop_deadDeer_C_ExecuteUbergraph_prop_deadDeer final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class AActor* DestroyedActor)> K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_3F62[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_CustomEvent_DestroyedActor;                 // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F63[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue;              // 0x0028(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_ProjectPointToNavigation_ProjectedLocation; // 0x0034(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_ProjectPointToNavigation_ReturnValue;  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F64[0x3];                                     // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F65[0x8];                                     // 0x0048(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_48[0x8];                                       // 0x0048(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0050(0x0030)(IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ADeer_ded_C*                            CallFunc_FinishSpawningActor_ReturnValue;          // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x009A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Prop_deadDeer_C_ExecuteUbergraph_prop_deadDeer) == 0x000010, "Wrong alignment on Prop_deadDeer_C_ExecuteUbergraph_prop_deadDeer");
@@ -57,8 +57,8 @@ static_assert(offsetof(Prop_deadDeer_C_ExecuteUbergraph_prop_deadDeer, CallFunc_
 static_assert(offsetof(Prop_deadDeer_C_ExecuteUbergraph_prop_deadDeer, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000080, "Member 'Prop_deadDeer_C_ExecuteUbergraph_prop_deadDeer::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_deadDeer_C_ExecuteUbergraph_prop_deadDeer, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000088, "Member 'Prop_deadDeer_C_ExecuteUbergraph_prop_deadDeer::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
 static_assert(offsetof(Prop_deadDeer_C_ExecuteUbergraph_prop_deadDeer, CallFunc_FinishSpawningActor_ReturnValue) == 0x000090, "Member 'Prop_deadDeer_C_ExecuteUbergraph_prop_deadDeer::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_deadDeer_C_ExecuteUbergraph_prop_deadDeer, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000098, "Member 'Prop_deadDeer_C_ExecuteUbergraph_prop_deadDeer::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_deadDeer_C_ExecuteUbergraph_prop_deadDeer, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000099, "Member 'Prop_deadDeer_C_ExecuteUbergraph_prop_deadDeer::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_deadDeer_C_ExecuteUbergraph_prop_deadDeer, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000098, "Member 'Prop_deadDeer_C_ExecuteUbergraph_prop_deadDeer::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_deadDeer_C_ExecuteUbergraph_prop_deadDeer, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000099, "Member 'Prop_deadDeer_C_ExecuteUbergraph_prop_deadDeer::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_deadDeer_C_ExecuteUbergraph_prop_deadDeer, CallFunc_BooleanOR_ReturnValue) == 0x00009A, "Member 'Prop_deadDeer_C_ExecuteUbergraph_prop_deadDeer::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 // Function prop_deadDeer.prop_deadDeer_C.D

@@ -37,6 +37,68 @@ void UUmg_laptop_C::ExecuteUbergraph_umg_laptop(int32 EntryPoint)
 }
 
 
+// Function umg_laptop.umg_laptop_C.BndEvt__umg_laptop_button_shopCat_ess_K2Node_ComponentBoundEvent_37_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UUmg_laptop_C::BndEvt__umg_laptop_button_shopCat_ess_K2Node_ComponentBoundEvent_37_OnButtonClickedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_laptop_C", "BndEvt__umg_laptop_button_shopCat_ess_K2Node_ComponentBoundEvent_37_OnButtonClickedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function umg_laptop.umg_laptop_C.BndEvt__umg_laptop_EditableTextBox_search_K2Node_ComponentBoundEvent_36_OnEditableTextBoxChangedEvent__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// class FText                             Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UUmg_laptop_C::BndEvt__umg_laptop_EditableTextBox_search_K2Node_ComponentBoundEvent_36_OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_laptop_C", "BndEvt__umg_laptop_EditableTextBox_search_K2Node_ComponentBoundEvent_36_OnEditableTextBoxChangedEvent__DelegateSignature");
+
+	Params::Umg_laptop_C_BndEvt__umg_laptop_EditableTextBox_search_K2Node_ComponentBoundEvent_36_OnEditableTextBoxChangedEvent__DelegateSignature Parms{};
+
+	Parms.Text = std::move(Text);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function umg_laptop.umg_laptop_C.BndEvt__umg_laptop_Button_130_K2Node_ComponentBoundEvent_41_OnButtonReleasedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UUmg_laptop_C::BndEvt__umg_laptop_Button_130_K2Node_ComponentBoundEvent_41_OnButtonReleasedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_laptop_C", "BndEvt__umg_laptop_Button_130_K2Node_ComponentBoundEvent_41_OnButtonReleasedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function umg_laptop.umg_laptop_C.BndEvt__umg_laptop_Button_130_K2Node_ComponentBoundEvent_40_OnButtonPressedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UUmg_laptop_C::BndEvt__umg_laptop_Button_130_K2Node_ComponentBoundEvent_40_OnButtonPressedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_laptop_C", "BndEvt__umg_laptop_Button_130_K2Node_ComponentBoundEvent_40_OnButtonPressedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function umg_laptop.umg_laptop_C.BndEvt__umg_laptop_Slider_camZ_K2Node_ComponentBoundEvent_35_OnMouseCaptureBeginEvent__DelegateSignature
 // (BlueprintEvent)
 
@@ -659,6 +721,30 @@ void UUmg_laptop_C::BndEvt__button_tab_upgrades_K2Node_ComponentBoundEvent_0_OnB
 }
 
 
+// Function umg_laptop.umg_laptop_C.texturePickerApply
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UUmg_laptop_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_laptop_C", "texturePickerApply");
+
+	Params::Umg_laptop_C_TexturePickerApply Parms{};
+
+	Parms.Picker = Picker;
+	Parms.Texture = Texture;
+	Parms.Param_Index = Param_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function umg_laptop.umg_laptop_C.applyColor
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -760,7 +846,7 @@ void UUmg_laptop_C::Unfocused()
 // Function umg_laptop.umg_laptop_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void UUmg_laptop_C::SettingsApplied(const struct FStruct_settings& Settings)
 {
@@ -973,9 +1059,10 @@ void UUmg_laptop_C::GenStoreCart()
 // Function umg_laptop.umg_laptop_C.makeAnOrder
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_storeOrder               NewItem                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+// struct FStruct_storeOrder1              NewItem                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+// bool                                    Automatic                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UUmg_laptop_C::MakeAnOrder(const struct FStruct_storeOrder& NewItem)
+void UUmg_laptop_C::MakeAnOrder(const struct FStruct_storeOrder1& NewItem, bool Automatic)
 {
 	static class UFunction* Func = nullptr;
 
@@ -985,6 +1072,7 @@ void UUmg_laptop_C::MakeAnOrder(const struct FStruct_storeOrder& NewItem)
 	Params::Umg_laptop_C_MakeAnOrder Parms{};
 
 	Parms.NewItem = std::move(NewItem);
+	Parms.Automatic = Automatic;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -1131,7 +1219,7 @@ void UUmg_laptop_C::ViewPhoto(int32 Param_PicId)
 
 
 // Function umg_laptop.umg_laptop_C.updCategory
-// (Public, BlueprintCallable, BlueprintEvent)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // Enum_shopCats                           Param_CurrentShopCategory                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                             Param_CurrentSubcategory                               (BlueprintVisible, BlueprintReadOnly, Parm)
@@ -1255,9 +1343,9 @@ void UUmg_laptop_C::RemoveStoreCart(int32 Param_Index)
 // Function umg_laptop.umg_laptop_C.addOrderCart
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_storeOrder               NewItem                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+// struct FStruct_storeOrder1              NewItem                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 
-void UUmg_laptop_C::AddOrderCart(const struct FStruct_storeOrder& NewItem)
+void UUmg_laptop_C::AddOrderCart(const struct FStruct_storeOrder1& NewItem)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1295,6 +1383,68 @@ void UUmg_laptop_C::AddPhoto()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("umg_laptop_C", "addPhoto");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function umg_laptop.umg_laptop_C.generateStore
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UUmg_laptop_C::GenerateStore()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_laptop_C", "generateStore");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function umg_laptop.umg_laptop_C.lookAtStoreDesc
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUmg_shopSlot_C*                  Param_HoveredStoreSlot                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UUmg_laptop_C::LookAtStoreDesc(class UUmg_shopSlot_C* Param_HoveredStoreSlot)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_laptop_C", "lookAtStoreDesc");
+
+	Params::Umg_laptop_C_LookAtStoreDesc Parms{};
+
+	Parms.Param_HoveredStoreSlot = Param_HoveredStoreSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function umg_laptop.umg_laptop_C.filterStore
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UUmg_laptop_C::FilterStore()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_laptop_C", "filterStore");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function umg_laptop.umg_laptop_C.updateFavourites
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UUmg_laptop_C::UpdateFavourites()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_laptop_C", "updateFavourites");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

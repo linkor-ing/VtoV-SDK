@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Struct_save_structs.hpp"
 #include "Struct_settings_structs.hpp"
+#include "Struct_save_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
@@ -20,58 +20,79 @@ namespace SDK::Params
 {
 
 // Function umg_gamemode.umg_gamemode_C.ExecuteUbergraph_umg_gamemode
-// 0x0178 (0x0178 - 0x0000)
+// 0x01B0 (0x01B0 - 0x0000)
 struct Umg_gamemode_C_ExecuteUbergraph_umg_gamemode final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_216A[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0010(0x00CC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_216B[0x4];                                     // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   K2Node_Event_key;                                  // 0x00E0(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed;                              // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_216C[0x3];                                     // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Event_color;                                // 0x00FC(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_216D[0x4];                                     // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_2;        // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_3;        // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_hasAchievement_ReturnValue;               // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_216E[0x7];                                     // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_4;        // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_hasAchievement_ReturnValue_1;             // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_216F[0x7];                                     // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_5;        // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_6;        // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_7;        // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_hasAchievement_ReturnValue_2;             // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2170[0x7];                                     // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_8;        // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0010(0x00F0)(HasGetValueTypeHash)
+	struct FKey                                   K2Node_Event_key;                                  // 0x0100(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed;                              // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_119[0x3];                                      // 0x0119(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           K2Node_Event_color;                                // 0x011C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUmg_texturePicker_C*                   K2Node_Event_picker;                               // 0x0130(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_Event_texture;                              // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_index;                                // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_144[0x4];                                      // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_2;        // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_3;        // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_hasAchievement_ReturnValue;               // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_171[0x7];                                      // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_4;        // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_hasAchievement_ReturnValue_1;             // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_181[0x7];                                      // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_5;        // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_6;        // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_7;        // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_hasAchievement_ReturnValue_2;             // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1A1[0x7];                                      // 0x01A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_8;        // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode) == 0x000008, "Wrong alignment on Umg_gamemode_C_ExecuteUbergraph_umg_gamemode");
-static_assert(sizeof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode) == 0x000178, "Wrong size on Umg_gamemode_C_ExecuteUbergraph_umg_gamemode");
+static_assert(sizeof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode) == 0x0001B0, "Wrong size on Umg_gamemode_C_ExecuteUbergraph_umg_gamemode");
 static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, EntryPoint) == 0x000000, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, K2Node_Event_gamemode) == 0x000008, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::K2Node_Event_gamemode' has a wrong offset!");
 static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, K2Node_Event_settings) == 0x000010, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::K2Node_Event_settings' has a wrong offset!");
-static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, K2Node_Event_key) == 0x0000E0, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::K2Node_Event_key' has a wrong offset!");
-static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, K2Node_Event_pressed) == 0x0000F8, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::K2Node_Event_pressed' has a wrong offset!");
-static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, K2Node_Event_color) == 0x0000FC, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::K2Node_Event_color' has a wrong offset!");
-static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000110, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_GetPlayerController_ReturnValue) == 0x000118, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x000120, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
-static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_getMainGamemode_AsMain_Gamemode_2) == 0x000128, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_getMainGamemode_AsMain_Gamemode_2' has a wrong offset!");
-static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_getMainGamemode_AsMain_Gamemode_3) == 0x000130, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_getMainGamemode_AsMain_Gamemode_3' has a wrong offset!");
-static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_hasAchievement_ReturnValue) == 0x000138, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_hasAchievement_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_getMainGamemode_AsMain_Gamemode_4) == 0x000140, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_getMainGamemode_AsMain_Gamemode_4' has a wrong offset!");
-static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_hasAchievement_ReturnValue_1) == 0x000148, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_hasAchievement_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_getMainGamemode_AsMain_Gamemode_5) == 0x000150, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_getMainGamemode_AsMain_Gamemode_5' has a wrong offset!");
-static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_getMainGamemode_AsMain_Gamemode_6) == 0x000158, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_getMainGamemode_AsMain_Gamemode_6' has a wrong offset!");
-static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_getMainGamemode_AsMain_Gamemode_7) == 0x000160, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_getMainGamemode_AsMain_Gamemode_7' has a wrong offset!");
-static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_hasAchievement_ReturnValue_2) == 0x000168, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_hasAchievement_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_getMainGamemode_AsMain_Gamemode_8) == 0x000170, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_getMainGamemode_AsMain_Gamemode_8' has a wrong offset!");
+static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, K2Node_Event_key) == 0x000100, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::K2Node_Event_key' has a wrong offset!");
+static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, K2Node_Event_pressed) == 0x000118, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::K2Node_Event_pressed' has a wrong offset!");
+static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, K2Node_Event_color) == 0x00011C, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::K2Node_Event_color' has a wrong offset!");
+static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, K2Node_Event_picker) == 0x000130, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::K2Node_Event_picker' has a wrong offset!");
+static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, K2Node_Event_texture) == 0x000138, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::K2Node_Event_texture' has a wrong offset!");
+static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, K2Node_Event_index) == 0x000140, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000148, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_GetPlayerController_ReturnValue) == 0x000150, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x000158, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
+static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_getMainGamemode_AsMain_Gamemode_2) == 0x000160, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_getMainGamemode_AsMain_Gamemode_2' has a wrong offset!");
+static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_getMainGamemode_AsMain_Gamemode_3) == 0x000168, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_getMainGamemode_AsMain_Gamemode_3' has a wrong offset!");
+static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_hasAchievement_ReturnValue) == 0x000170, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_hasAchievement_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_getMainGamemode_AsMain_Gamemode_4) == 0x000178, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_getMainGamemode_AsMain_Gamemode_4' has a wrong offset!");
+static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_hasAchievement_ReturnValue_1) == 0x000180, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_hasAchievement_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_getMainGamemode_AsMain_Gamemode_5) == 0x000188, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_getMainGamemode_AsMain_Gamemode_5' has a wrong offset!");
+static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_getMainGamemode_AsMain_Gamemode_6) == 0x000190, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_getMainGamemode_AsMain_Gamemode_6' has a wrong offset!");
+static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_getMainGamemode_AsMain_Gamemode_7) == 0x000198, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_getMainGamemode_AsMain_Gamemode_7' has a wrong offset!");
+static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_hasAchievement_ReturnValue_2) == 0x0001A0, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_hasAchievement_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_gamemode_C_ExecuteUbergraph_umg_gamemode, CallFunc_getMainGamemode_AsMain_Gamemode_8) == 0x0001A8, "Member 'Umg_gamemode_C_ExecuteUbergraph_umg_gamemode::CallFunc_getMainGamemode_AsMain_Gamemode_8' has a wrong offset!");
+
+// Function umg_gamemode.umg_gamemode_C.texturePickerApply
+// 0x0018 (0x0018 - 0x0000)
+struct Umg_gamemode_C_TexturePickerApply final
+{
+public:
+	class UUmg_texturePicker_C*                   Picker;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Param_Index;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Umg_gamemode_C_TexturePickerApply) == 0x000008, "Wrong alignment on Umg_gamemode_C_TexturePickerApply");
+static_assert(sizeof(Umg_gamemode_C_TexturePickerApply) == 0x000018, "Wrong size on Umg_gamemode_C_TexturePickerApply");
+static_assert(offsetof(Umg_gamemode_C_TexturePickerApply, Picker) == 0x000000, "Member 'Umg_gamemode_C_TexturePickerApply::Picker' has a wrong offset!");
+static_assert(offsetof(Umg_gamemode_C_TexturePickerApply, Texture) == 0x000008, "Member 'Umg_gamemode_C_TexturePickerApply::Texture' has a wrong offset!");
+static_assert(offsetof(Umg_gamemode_C_TexturePickerApply, Param_Index) == 0x000010, "Member 'Umg_gamemode_C_TexturePickerApply::Param_Index' has a wrong offset!");
 
 // Function umg_gamemode.umg_gamemode_C.applyColor
 // 0x0010 (0x0010 - 0x0000)
@@ -98,14 +119,14 @@ static_assert(offsetof(Umg_gamemode_C_AnyKey, Key) == 0x000000, "Member 'Umg_gam
 static_assert(offsetof(Umg_gamemode_C_AnyKey, Pressed) == 0x000018, "Member 'Umg_gamemode_C_AnyKey::Pressed' has a wrong offset!");
 
 // Function umg_gamemode.umg_gamemode_C.settingsApplied
-// 0x00CC (0x00CC - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct Umg_gamemode_C_SettingsApplied final
 {
 public:
-	struct FStruct_settings                       Settings;                                          // 0x0000(0x00CC)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       Settings;                                          // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(Umg_gamemode_C_SettingsApplied) == 0x000004, "Wrong alignment on Umg_gamemode_C_SettingsApplied");
-static_assert(sizeof(Umg_gamemode_C_SettingsApplied) == 0x0000CC, "Wrong size on Umg_gamemode_C_SettingsApplied");
+static_assert(alignof(Umg_gamemode_C_SettingsApplied) == 0x000008, "Wrong alignment on Umg_gamemode_C_SettingsApplied");
+static_assert(sizeof(Umg_gamemode_C_SettingsApplied) == 0x0000F0, "Wrong size on Umg_gamemode_C_SettingsApplied");
 static_assert(offsetof(Umg_gamemode_C_SettingsApplied, Settings) == 0x000000, "Member 'Umg_gamemode_C_SettingsApplied::Settings' has a wrong offset!");
 
 // Function umg_gamemode.umg_gamemode_C.stuffUpgraded
@@ -125,7 +146,7 @@ struct Umg_gamemode_C_SetDesc final
 {
 public:
 	int32                                         Param_Index;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2171[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Array_Get_Item;                           // 0x0008(0x0018)()
 };
 static_assert(alignof(Umg_gamemode_C_SetDesc) == 0x000008, "Wrong alignment on Umg_gamemode_C_SetDesc");

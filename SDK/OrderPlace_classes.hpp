@@ -25,7 +25,7 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SpawnOrder(const struct FStruct_storeOrder& Order);
+	void SpawnOrder(const struct FStruct_storeOrder1& Order);
 
 public:
 	static class UClass* StaticClass()

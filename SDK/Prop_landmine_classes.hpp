@@ -18,23 +18,22 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_landmine.prop_landmine_C
-// 0x0028 (0x0390 - 0x0368)
+// 0x0028 (0x03A0 - 0x0378)
 class AProp_landmine_C final : public AProp_C
 {
 public:
-	uint8                                         Pad_38FD[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_landmine_C;                    // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   Cylinder;                                          // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBillboardComponent*                    Billboard;                                         // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        Audio;                                             // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          Active;                                            // 0x0388(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_landmine_C;                    // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UStaticMeshComponent*                   Cylinder;                                          // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    Billboard;                                         // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        Audio;                                             // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          Active;                                            // 0x0398(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_prop_landmine(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void SetPropProps(bool Param_Static, bool Param_Frozen, bool Param_Active);
 	void BndEvt__prop_landmine_Cylinder_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 	void BndEvt__prop_landmine_Cylinder_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+	void ReceiveBeginPlay();
+	void SetPropProps(bool Param_Static, bool Param_Frozen, bool Param_Active);
 	void Init();
 	void CanPickup(bool* Return);
 
@@ -49,12 +48,12 @@ public:
 	}
 };
 static_assert(alignof(AProp_landmine_C) == 0x000008, "Wrong alignment on AProp_landmine_C");
-static_assert(sizeof(AProp_landmine_C) == 0x000390, "Wrong size on AProp_landmine_C");
-static_assert(offsetof(AProp_landmine_C, UberGraphFrame_Prop_landmine_C) == 0x000368, "Member 'AProp_landmine_C::UberGraphFrame_Prop_landmine_C' has a wrong offset!");
-static_assert(offsetof(AProp_landmine_C, Cylinder) == 0x000370, "Member 'AProp_landmine_C::Cylinder' has a wrong offset!");
-static_assert(offsetof(AProp_landmine_C, Billboard) == 0x000378, "Member 'AProp_landmine_C::Billboard' has a wrong offset!");
-static_assert(offsetof(AProp_landmine_C, Audio) == 0x000380, "Member 'AProp_landmine_C::Audio' has a wrong offset!");
-static_assert(offsetof(AProp_landmine_C, Active) == 0x000388, "Member 'AProp_landmine_C::Active' has a wrong offset!");
+static_assert(sizeof(AProp_landmine_C) == 0x0003A0, "Wrong size on AProp_landmine_C");
+static_assert(offsetof(AProp_landmine_C, UberGraphFrame_Prop_landmine_C) == 0x000378, "Member 'AProp_landmine_C::UberGraphFrame_Prop_landmine_C' has a wrong offset!");
+static_assert(offsetof(AProp_landmine_C, Cylinder) == 0x000380, "Member 'AProp_landmine_C::Cylinder' has a wrong offset!");
+static_assert(offsetof(AProp_landmine_C, Billboard) == 0x000388, "Member 'AProp_landmine_C::Billboard' has a wrong offset!");
+static_assert(offsetof(AProp_landmine_C, Audio) == 0x000390, "Member 'AProp_landmine_C::Audio' has a wrong offset!");
+static_assert(offsetof(AProp_landmine_C, Active) == 0x000398, "Member 'AProp_landmine_C::Active' has a wrong offset!");
 
 }
 

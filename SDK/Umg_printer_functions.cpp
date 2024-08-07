@@ -37,6 +37,34 @@ void UUmg_printer_C::ExecuteUbergraph_umg_printer(int32 EntryPoint)
 }
 
 
+// Function umg_printer.umg_printer_C.BndEvt__umg_printer_button_config_1_K2Node_ComponentBoundEvent_8_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UUmg_printer_C::BndEvt__umg_printer_button_config_1_K2Node_ComponentBoundEvent_8_OnButtonClickedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_printer_C", "BndEvt__umg_printer_button_config_1_K2Node_ComponentBoundEvent_8_OnButtonClickedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function umg_printer.umg_printer_C.BndEvt__umg_printer_button_config_K2Node_ComponentBoundEvent_7_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UUmg_printer_C::BndEvt__umg_printer_button_config_K2Node_ComponentBoundEvent_7_OnButtonClickedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_printer_C", "BndEvt__umg_printer_button_config_K2Node_ComponentBoundEvent_7_OnButtonClickedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function umg_printer.umg_printer_C.BndEvt__umg_printer_Button_printCheat_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
 
@@ -46,6 +74,20 @@ void UUmg_printer_C::BndEvt__umg_printer_Button_printCheat_K2Node_ComponentBound
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("umg_printer_C", "BndEvt__umg_printer_Button_printCheat_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function umg_printer.umg_printer_C.Open
+// (BlueprintCallable, BlueprintEvent)
+
+void UUmg_printer_C::Open()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_printer_C", "Open");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,6 +181,34 @@ void UUmg_printer_C::BndEvt__umg_printer_combobox_filterNorm_K2Node_ComponentBou
 }
 
 
+// Function umg_printer.umg_printer_C.BndEvt__umg_printer_Button_refresh_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UUmg_printer_C::BndEvt__umg_printer_Button_refresh_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_printer_C", "BndEvt__umg_printer_Button_refresh_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function umg_printer.umg_printer_C.quit
+// (BlueprintCallable, BlueprintEvent)
+
+void UUmg_printer_C::Quit()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_printer_C", "quit");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function umg_printer.umg_printer_C.BndEvt__umg_printer_Button_print_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
 
@@ -187,48 +257,6 @@ void UUmg_printer_C::Construct()
 }
 
 
-// Function umg_printer.umg_printer_C.quit
-// (BlueprintCallable, BlueprintEvent)
-
-void UUmg_printer_C::Quit()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("umg_printer_C", "quit");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function umg_printer.umg_printer_C.BndEvt__umg_printer_Button_refresh_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
-// (BlueprintEvent)
-
-void UUmg_printer_C::BndEvt__umg_printer_Button_refresh_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("umg_printer_C", "BndEvt__umg_printer_Button_refresh_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function umg_printer.umg_printer_C.Open
-// (BlueprintCallable, BlueprintEvent)
-
-void UUmg_printer_C::Open()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("umg_printer_C", "Open");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function umg_printer.umg_printer_C.gen
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -269,16 +297,22 @@ struct FEventReply UUmg_printer_C::OnKeyDown(const struct FGeometry& MyGeometry,
 
 
 // Function umg_printer.umg_printer_C.Info
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<struct FVector>                  TotalVerts                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UUmg_printer_C::Info()
+void UUmg_printer_C::Info(const TArray<struct FVector>& TotalVerts)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("umg_printer_C", "Info");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::Umg_printer_C_Info Parms{};
+
+	Parms.TotalVerts = std::move(TotalVerts);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -327,6 +361,67 @@ void UUmg_printer_C::NameToMaterial(const class FString& Param_Name, uint8* Mat)
 
 	if (Mat != nullptr)
 		*Mat = Parms.Mat;
+}
+
+
+// Function umg_printer.umg_printer_C.prepareCfg
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                           Cfg                                                    (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+
+void UUmg_printer_C::PrepareCfg(class FString* Cfg)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_printer_C", "prepareCfg");
+
+	Params::Umg_printer_C_PrepareCfg Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Cfg != nullptr)
+		*Cfg = std::move(Parms.Cfg);
+}
+
+
+// Function umg_printer.umg_printer_C.gatherConfig
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FStruct_multisectionCustomMesh   Struct_multisectionCustomMesh                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+
+void UUmg_printer_C::GatherConfig(const struct FStruct_multisectionCustomMesh& Struct_multisectionCustomMesh)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_printer_C", "gatherConfig");
+
+	Params::Umg_printer_C_GatherConfig Parms{};
+
+	Parms.Struct_multisectionCustomMesh = std::move(Struct_multisectionCustomMesh);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function umg_printer.umg_printer_C.createConfig
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    SkipCheck                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UUmg_printer_C::CreateConfig(bool SkipCheck)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_printer_C", "createConfig");
+
+	Params::Umg_printer_C_CreateConfig Parms{};
+
+	Parms.SkipCheck = SkipCheck;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

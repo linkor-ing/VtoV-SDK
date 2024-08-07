@@ -51,20 +51,6 @@ void AProp_wireComponent_piston_C::Tick()
 }
 
 
-// Function prop_wireComponent_piston.prop_wireComponent_piston_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_wireComponent_piston_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_wireComponent_piston_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_wireComponent_piston.prop_wireComponent_piston_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -102,6 +88,20 @@ void AProp_wireComponent_piston_C::WirePass(class AWire_C* Wire)
 	Parms.Wire = Wire;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_wireComponent_piston.prop_wireComponent_piston_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_wireComponent_piston_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_wireComponent_piston_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass umg_gamemode.umg_gamemode_C
-// 0x0170 (0x03D0 - 0x0260)
+// 0x0190 (0x03F0 - 0x0260)
 class UUmg_gamemode_C final : public UUserWidget
 {
 public:
@@ -38,9 +38,8 @@ public:
 	TArray<class UUmg_settingsSlot_C*>            Sliders;                                           // 0x02C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	TArray<class UUmg_settingsSlot_C*>            V_slots;                                           // 0x02D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	TArray<class UUmg_settingsSlot_C*>            S_slots;                                           // 0x02E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	struct FStruct_settings                       SettingsCopy;                                      // 0x02F0(0x00CC)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2169[0x4];                                     // 0x03BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FText>                           Desc;                                              // 0x03C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FStruct_settings                       SettingsCopy;                                      // 0x02F0(0x00F0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	TArray<class FText>                           Desc;                                              // 0x03E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_umg_gamemode(int32 EntryPoint);
@@ -60,6 +59,7 @@ public:
 	void BndEvt__button_g_storyMode_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature();
 	void BndEvt__button_g_tutor_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();
 	void BndEvt__button_exit_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
+	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void ApplyColor(const struct FLinearColor& Color);
 	void PropRenderer_finishProps();
 	void GamemodeMakeKeys();
@@ -85,7 +85,7 @@ public:
 	}
 };
 static_assert(alignof(UUmg_gamemode_C) == 0x000008, "Wrong alignment on UUmg_gamemode_C");
-static_assert(sizeof(UUmg_gamemode_C) == 0x0003D0, "Wrong size on UUmg_gamemode_C");
+static_assert(sizeof(UUmg_gamemode_C) == 0x0003F0, "Wrong size on UUmg_gamemode_C");
 static_assert(offsetof(UUmg_gamemode_C, UberGraphFrame) == 0x000260, "Member 'UUmg_gamemode_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UUmg_gamemode_C, button_exit) == 0x000268, "Member 'UUmg_gamemode_C::button_exit' has a wrong offset!");
 static_assert(offsetof(UUmg_gamemode_C, button_g_ambience) == 0x000270, "Member 'UUmg_gamemode_C::button_g_ambience' has a wrong offset!");
@@ -102,7 +102,7 @@ static_assert(offsetof(UUmg_gamemode_C, Sliders) == 0x0002C0, "Member 'UUmg_game
 static_assert(offsetof(UUmg_gamemode_C, V_slots) == 0x0002D0, "Member 'UUmg_gamemode_C::V_slots' has a wrong offset!");
 static_assert(offsetof(UUmg_gamemode_C, S_slots) == 0x0002E0, "Member 'UUmg_gamemode_C::S_slots' has a wrong offset!");
 static_assert(offsetof(UUmg_gamemode_C, SettingsCopy) == 0x0002F0, "Member 'UUmg_gamemode_C::SettingsCopy' has a wrong offset!");
-static_assert(offsetof(UUmg_gamemode_C, Desc) == 0x0003C0, "Member 'UUmg_gamemode_C::Desc' has a wrong offset!");
+static_assert(offsetof(UUmg_gamemode_C, Desc) == 0x0003E0, "Member 'UUmg_gamemode_C::Desc' has a wrong offset!");
 
 }
 

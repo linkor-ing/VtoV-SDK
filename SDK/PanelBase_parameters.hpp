@@ -10,118 +10,134 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "Struct_save_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "Enum_interactionActions_structs.hpp"
-#include "InputCore_structs.hpp"
 #include "Struct_settings_structs.hpp"
+#include "Struct_save_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
+#include "InputCore_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function panelBase.panelBase_C.ExecuteUbergraph_panelBase
-// 0x07C8 (0x07C8 - 0x0000)
+// 0x08D0 (0x08D0 - 0x0000)
 struct PanelBase_C_ExecuteUbergraph_panelBase final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_307E[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
 	struct FKey                                   K2Node_Event_key_2;                                // 0x0028(0x0018)(HasGetValueTypeHash)
 	bool                                          K2Node_Event_pressed_1;                            // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_307F[0x3];                                     // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           K2Node_Event_color;                                // 0x0044(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_4;                             // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_7;                                // 0x0058(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AActor*                                 K2Node_Event_actor_1;                              // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_impact_1;                             // 0x00E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3080[0x4];                                     // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AWaterVolume_C*                         K2Node_Event_water_3;                              // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water_2;                              // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water_1;                              // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water;                                // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_static;                               // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_frozen;                               // 0x0119(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_active;                               // 0x011A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3081[0x5];                                     // 0x011B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Event_actor;                                // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_3;                             // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_6;                                // 0x012C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                K2Node_Event_impact;                               // 0x01B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_skipSetting;                          // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3082[0x7];                                     // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 K2Node_Event_key_1;                                // 0x01C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_14;                            // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_5;                                // 0x01E0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         K2Node_Event_damage_2;                             // 0x0268(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_fuel;                                 // 0x026C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_13;                            // 0x0270(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_4;                                // 0x0278(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x0300(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x0304(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3083[0x3];                                     // 0x0305(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_12;                            // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_11;                            // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_1;                             // 0x0318(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_location_1;                           // 0x031C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_10;                            // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_9;                             // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_8;                             // 0x0338(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_wheelDelta;                           // 0x0340(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3084[0x4];                                     // 0x0344(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_7;                             // 0x0348(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              K2Node_Event_mouse;                                // 0x0350(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x0358(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   K2Node_Event_key;                                  // 0x0360(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed;                              // 0x0378(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3085[0x3];                                     // 0x0379(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_temperature_1;                        // 0x037C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_temperature;                          // 0x0380(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_speed;                                // 0x0384(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x0388(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_3;                                // 0x0390(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class FString                                 K2Node_Event_name_1;                               // 0x0418(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_volume;                               // 0x0428(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3086[0x4];                                     // 0x042C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x0430(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_location;                             // 0x0438(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage;                               // 0x0444(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_clean;                                // 0x0448(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3087[0x7];                                     // 0x0449(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0450(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_2;                                // 0x0458(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AHook_C*                                K2Node_Event_hook;                                 // 0x04E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x04E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_1;                                // 0x04F0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          K2Node_Event_kick;                                 // 0x0578(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3088[0x3];                                     // 0x0579(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_Event_name;                                 // 0x057C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3089[0x4];                                     // 0x0584(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0588(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0590(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x0598(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          K2Node_Event_activate;                             // 0x0620(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_308A[0x7];                                     // 0x0621(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUserWidget*                            CallFunc_GetUserWidgetObject_ReturnValue;          // 0x0628(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0630(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0638(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x063C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0640(0x00CC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x070C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0710(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0714(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x079C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x07A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x07B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Vector_Distance_ReturnValue;              // 0x07BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x07C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUmg_texturePicker_C*                   K2Node_Event_picker;                               // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_Event_texture;                              // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_index;                                // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_6;                             // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_7;                                // 0x0070(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AActor*                                 K2Node_Event_actor_1;                              // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_impact_1;                             // 0x0100(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AWaterVolume_C*                         K2Node_Event_water_3;                              // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterVolume_C*                         K2Node_Event_water_2;                              // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterVolume_C*                         K2Node_Event_water_1;                              // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterVolume_C*                         K2Node_Event_water;                                // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_static;                               // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_frozen;                               // 0x0131(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_active;                               // 0x0132(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_133[0x5];                                      // 0x0133(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Event_actor;                                // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_5;                             // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_6;                                // 0x0144(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                K2Node_Event_impact;                               // 0x01CC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_skipSetting;                          // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1D9[0x7];                                      // 0x01D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 K2Node_Event_key_1;                                // 0x01E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_18;                            // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_5;                                // 0x01F8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         K2Node_Event_damage_4;                             // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_fuel;                                 // 0x0284(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_3;                             // 0x0288(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hot;                                  // 0x028C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_314[0x4];                                      // 0x0314(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_17;                            // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_4;                                // 0x0320(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x03A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3A9[0x7];                                      // 0x03A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_16;                            // 0x03B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_15;                            // 0x03B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_2;                             // 0x03C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_location_1;                           // 0x03C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_14;                            // 0x03D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_13;                            // 0x03D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_12;                            // 0x03E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_wheelDelta;                           // 0x03E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3EC[0x4];                                      // 0x03EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_11;                            // 0x03F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_Event_mouse;                                // 0x03F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_10;                            // 0x0400(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   K2Node_Event_key;                                  // 0x0408(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed;                              // 0x0420(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_421[0x3];                                      // 0x0421(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_temperature_1;                        // 0x0424(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_temperature;                          // 0x0428(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_speed;                                // 0x042C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_9;                             // 0x0430(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_3;                                // 0x0438(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class FString                                 K2Node_Event_name_1;                               // 0x04C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_volume;                               // 0x04D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4D4[0x4];                                      // 0x04D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_8;                             // 0x04D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_location;                             // 0x04E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_1;                             // 0x04EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_clean_1;                              // 0x04F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4F1[0x7];                                      // 0x04F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_7;                             // 0x04F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_2;                                // 0x0500(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AHook_C*                                K2Node_Event_hook_1;                               // 0x0588(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_clean;                                // 0x0590(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_594[0x4];                                      // 0x0594(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x0598(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AHook_C*                                K2Node_Event_hook;                                 // 0x05A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x05A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_1;                                // 0x05B0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          K2Node_Event_kick;                                 // 0x0638(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_639[0x3];                                      // 0x0639(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_Event_name;                                 // 0x063C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_644[0x4];                                      // 0x0644(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x0648(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0650(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x0658(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         K2Node_Event_damage;                               // 0x06E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6E4[0x4];                                      // 0x06E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x06E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x06F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x06F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_activate;                             // 0x0700(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_701[0x7];                                      // 0x0701(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUserWidget*                            CallFunc_GetUserWidgetObject_ReturnValue;          // 0x0708(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0710(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0718(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x071C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0720(0x00F0)(HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0810(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0814(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0818(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x08A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8AC[0x4];                                      // 0x08AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x08B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x08B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Vector_Distance_ReturnValue;              // 0x08C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x08C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(PanelBase_C_ExecuteUbergraph_panelBase) == 0x000008, "Wrong alignment on PanelBase_C_ExecuteUbergraph_panelBase");
-static_assert(sizeof(PanelBase_C_ExecuteUbergraph_panelBase) == 0x0007C8, "Wrong size on PanelBase_C_ExecuteUbergraph_panelBase");
+static_assert(sizeof(PanelBase_C_ExecuteUbergraph_panelBase) == 0x0008D0, "Wrong size on PanelBase_C_ExecuteUbergraph_panelBase");
 static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, EntryPoint) == 0x000000, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::EntryPoint' has a wrong offset!");
 static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_gamemode) == 0x000018, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_gamemode' has a wrong offset!");
@@ -129,89 +145,100 @@ static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_K2_SetTi
 static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_key_2) == 0x000028, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_key_2' has a wrong offset!");
 static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_pressed_1) == 0x000040, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_pressed_1' has a wrong offset!");
 static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_color) == 0x000044, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_color' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_damage_4) == 0x000054, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_damage_4' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_hit_7) == 0x000058, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_hit_7' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_actor_1) == 0x0000E0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_actor_1' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_impact_1) == 0x0000E8, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_impact_1' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_water_3) == 0x0000F8, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_water_3' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_water_2) == 0x000100, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_water_2' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_water_1) == 0x000108, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_water_1' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_water) == 0x000110, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_water' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_static) == 0x000118, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_static' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_frozen) == 0x000119, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_frozen' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_active) == 0x00011A, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_active' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_actor) == 0x000120, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_actor' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_damage_3) == 0x000128, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_damage_3' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_hit_6) == 0x00012C, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_hit_6' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_impact) == 0x0001B4, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_impact' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_skipSetting) == 0x0001C0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_skipSetting' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_key_1) == 0x0001C8, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_key_1' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_14) == 0x0001D8, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_14' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_hit_5) == 0x0001E0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_hit_5' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_damage_2) == 0x000268, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_damage_2' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_fuel) == 0x00026C, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_fuel' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_13) == 0x000270, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_13' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_hit_4) == 0x000278, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_hit_4' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_index) == 0x000300, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_action) == 0x000304, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_12) == 0x000308, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_12' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_11) == 0x000310, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_11' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_damage_1) == 0x000318, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_damage_1' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_location_1) == 0x00031C, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_location_1' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_10) == 0x000328, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_10' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_9) == 0x000330, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_9' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_8) == 0x000338, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_8' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_wheelDelta) == 0x000340, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_wheelDelta' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_7) == 0x000348, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_7' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_mouse) == 0x000350, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_mouse' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_6) == 0x000358, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_6' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_key) == 0x000360, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_key' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_pressed) == 0x000378, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_pressed' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_temperature_1) == 0x00037C, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_temperature_1' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_temperature) == 0x000380, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_temperature' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_speed) == 0x000384, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_speed' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_5) == 0x000388, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_5' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_hit_3) == 0x000390, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_hit_3' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_name_1) == 0x000418, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_name_1' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_volume) == 0x000428, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_volume' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_4) == 0x000430, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_4' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_location) == 0x000438, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_location' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_damage) == 0x000444, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_damage' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_clean) == 0x000448, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_clean' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_3) == 0x000450, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_3' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_hit_2) == 0x000458, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_hit_2' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_hook) == 0x0004E0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_hook' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_2) == 0x0004E8, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_2' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_hit_1) == 0x0004F0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_hit_1' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_kick) == 0x000578, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_kick' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_name) == 0x00057C, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_name' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_1) == 0x000588, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player) == 0x000590, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_hit) == 0x000598, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_activate) == 0x000620, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_activate' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_GetUserWidgetObject_ReturnValue) == 0x000628, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_GetUserWidgetObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000630, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_RandomFloatInRange_ReturnValue) == 0x000638, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x00063C, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_settings) == 0x000640, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_settings' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00070C, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000710, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x000714, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00079C, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x0007A8, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x0007B0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_Vector_Distance_ReturnValue) == 0x0007BC, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_Vector_Distance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0007C0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_picker) == 0x000058, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_picker' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_texture) == 0x000060, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_texture' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_index) == 0x000068, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_damage_6) == 0x00006C, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_damage_6' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_hit_7) == 0x000070, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_hit_7' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_actor_1) == 0x0000F8, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_actor_1' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_impact_1) == 0x000100, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_impact_1' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_water_3) == 0x000110, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_water_3' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_water_2) == 0x000118, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_water_2' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_water_1) == 0x000120, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_water_1' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_water) == 0x000128, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_water' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_static) == 0x000130, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_static' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_frozen) == 0x000131, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_frozen' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_active) == 0x000132, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_active' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_actor) == 0x000138, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_actor' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_damage_5) == 0x000140, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_damage_5' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_hit_6) == 0x000144, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_hit_6' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_impact) == 0x0001CC, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_impact' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_skipSetting) == 0x0001D8, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_skipSetting' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_key_1) == 0x0001E0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_key_1' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_18) == 0x0001F0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_18' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_hit_5) == 0x0001F8, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_hit_5' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_damage_4) == 0x000280, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_damage_4' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_fuel) == 0x000284, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_fuel' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_damage_3) == 0x000288, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_damage_3' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_hot) == 0x00028C, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_hot' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_17) == 0x000318, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_17' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_hit_4) == 0x000320, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_hit_4' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_action) == 0x0003A8, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_16) == 0x0003B0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_16' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_15) == 0x0003B8, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_15' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_damage_2) == 0x0003C0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_damage_2' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_location_1) == 0x0003C4, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_location_1' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_14) == 0x0003D0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_14' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_13) == 0x0003D8, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_13' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_12) == 0x0003E0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_12' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_wheelDelta) == 0x0003E8, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_wheelDelta' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_11) == 0x0003F0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_11' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_mouse) == 0x0003F8, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_mouse' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_10) == 0x000400, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_10' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_key) == 0x000408, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_key' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_pressed) == 0x000420, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_pressed' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_temperature_1) == 0x000424, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_temperature_1' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_temperature) == 0x000428, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_temperature' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_speed) == 0x00042C, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_speed' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_9) == 0x000430, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_9' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_hit_3) == 0x000438, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_hit_3' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_name_1) == 0x0004C0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_name_1' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_volume) == 0x0004D0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_volume' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_8) == 0x0004D8, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_8' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_location) == 0x0004E0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_location' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_damage_1) == 0x0004EC, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_damage_1' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_clean_1) == 0x0004F0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_clean_1' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_7) == 0x0004F8, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_7' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_hit_2) == 0x000500, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_hit_2' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_hook_1) == 0x000588, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_hook_1' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_clean) == 0x000590, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_clean' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_6) == 0x000598, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_6' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_hook) == 0x0005A0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_hook' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_5) == 0x0005A8, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_5' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_hit_1) == 0x0005B0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_hit_1' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_kick) == 0x000638, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_kick' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_name) == 0x00063C, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_name' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_4) == 0x000648, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_4' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_3) == 0x000650, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_3' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_hit) == 0x000658, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_damage) == 0x0006E0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_damage' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_2) == 0x0006E8, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_2' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player_1) == 0x0006F0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_player) == 0x0006F8, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_activate) == 0x000700, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_activate' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_GetUserWidgetObject_ReturnValue) == 0x000708, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_GetUserWidgetObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000710, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_RandomFloatInRange_ReturnValue) == 0x000718, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x00071C, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, K2Node_Event_settings) == 0x000720, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::K2Node_Event_settings' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000810, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000814, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x000818, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0008A0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x0008B0, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x0008B8, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_Vector_Distance_ReturnValue) == 0x0008C4, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_Vector_Distance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ExecuteUbergraph_panelBase, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0008C8, "Member 'PanelBase_C_ExecuteUbergraph_panelBase::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function panelBase.panelBase_C.settingsApplied
-// 0x00CC (0x00CC - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct PanelBase_C_SettingsApplied final
 {
 public:
-	struct FStruct_settings                       Settings;                                          // 0x0000(0x00CC)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       Settings;                                          // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PanelBase_C_SettingsApplied) == 0x000004, "Wrong alignment on PanelBase_C_SettingsApplied");
-static_assert(sizeof(PanelBase_C_SettingsApplied) == 0x0000CC, "Wrong size on PanelBase_C_SettingsApplied");
+static_assert(alignof(PanelBase_C_SettingsApplied) == 0x000008, "Wrong alignment on PanelBase_C_SettingsApplied");
+static_assert(sizeof(PanelBase_C_SettingsApplied) == 0x0000F0, "Wrong size on PanelBase_C_SettingsApplied");
 static_assert(offsetof(PanelBase_C_SettingsApplied, Settings) == 0x000000, "Member 'PanelBase_C_SettingsApplied::Settings' has a wrong offset!");
 
 // Function panelBase.panelBase_C.virus
@@ -225,18 +252,53 @@ static_assert(alignof(PanelBase_C_Virus) == 0x000001, "Wrong alignment on PanelB
 static_assert(sizeof(PanelBase_C_Virus) == 0x000001, "Wrong size on PanelBase_C_Virus");
 static_assert(offsetof(PanelBase_C_Virus, Activate) == 0x000000, "Member 'PanelBase_C_Virus::Activate' has a wrong offset!");
 
+// Function panelBase.panelBase_C.playerR
+// 0x0008 (0x0008 - 0x0000)
+struct PanelBase_C_PlayerR final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PanelBase_C_PlayerR) == 0x000008, "Wrong alignment on PanelBase_C_PlayerR");
+static_assert(sizeof(PanelBase_C_PlayerR) == 0x000008, "Wrong size on PanelBase_C_PlayerR");
+static_assert(offsetof(PanelBase_C_PlayerR, Player) == 0x000000, "Member 'PanelBase_C_PlayerR::Player' has a wrong offset!");
+
+// Function panelBase.panelBase_C.playerHold
+// 0x0008 (0x0008 - 0x0000)
+struct PanelBase_C_PlayerHold final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PanelBase_C_PlayerHold) == 0x000008, "Wrong alignment on PanelBase_C_PlayerHold");
+static_assert(sizeof(PanelBase_C_PlayerHold) == 0x000008, "Wrong size on PanelBase_C_PlayerHold");
+static_assert(offsetof(PanelBase_C_PlayerHold, Player) == 0x000000, "Member 'PanelBase_C_PlayerHold::Player' has a wrong offset!");
+
+// Function panelBase.panelBase_C.playerUnequip
+// 0x0008 (0x0008 - 0x0000)
+struct PanelBase_C_PlayerUnequip final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PanelBase_C_PlayerUnequip) == 0x000008, "Wrong alignment on PanelBase_C_PlayerUnequip");
+static_assert(sizeof(PanelBase_C_PlayerUnequip) == 0x000008, "Wrong size on PanelBase_C_PlayerUnequip");
+static_assert(offsetof(PanelBase_C_PlayerUnequip, Player) == 0x000000, "Member 'PanelBase_C_PlayerUnequip::Player' has a wrong offset!");
+
 // Function panelBase.panelBase_C.damageByPlayer
-// 0x0090 (0x0090 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct PanelBase_C_DamageByPlayer final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         Damage;                                            // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PanelBase_C_DamageByPlayer) == 0x000008, "Wrong alignment on PanelBase_C_DamageByPlayer");
-static_assert(sizeof(PanelBase_C_DamageByPlayer) == 0x000090, "Wrong size on PanelBase_C_DamageByPlayer");
+static_assert(sizeof(PanelBase_C_DamageByPlayer) == 0x000098, "Wrong size on PanelBase_C_DamageByPlayer");
 static_assert(offsetof(PanelBase_C_DamageByPlayer, Player) == 0x000000, "Member 'PanelBase_C_DamageByPlayer::Player' has a wrong offset!");
 static_assert(offsetof(PanelBase_C_DamageByPlayer, Hit) == 0x000008, "Member 'PanelBase_C_DamageByPlayer::Hit' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_DamageByPlayer, Damage) == 0x000090, "Member 'PanelBase_C_DamageByPlayer::Damage' has a wrong offset!");
 
 // Function panelBase.panelBase_C.thrown
 // 0x0008 (0x0008 - 0x0000)
@@ -283,6 +345,31 @@ static_assert(alignof(PanelBase_C_Player_use) == 0x000008, "Wrong alignment on P
 static_assert(sizeof(PanelBase_C_Player_use) == 0x000090, "Wrong size on PanelBase_C_Player_use");
 static_assert(offsetof(PanelBase_C_Player_use, Player) == 0x000000, "Member 'PanelBase_C_Player_use::Player' has a wrong offset!");
 static_assert(offsetof(PanelBase_C_Player_use, Hit) == 0x000008, "Member 'PanelBase_C_Player_use::Hit' has a wrong offset!");
+
+// Function panelBase.panelBase_C.hookTension
+// 0x0008 (0x0008 - 0x0000)
+struct PanelBase_C_HookTension final
+{
+public:
+	class AHook_C*                                Hook;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PanelBase_C_HookTension) == 0x000008, "Wrong alignment on PanelBase_C_HookTension");
+static_assert(sizeof(PanelBase_C_HookTension) == 0x000008, "Wrong size on PanelBase_C_HookTension");
+static_assert(offsetof(PanelBase_C_HookTension, Hook) == 0x000000, "Member 'PanelBase_C_HookTension::Hook' has a wrong offset!");
+
+// Function panelBase.panelBase_C.cleanSponge
+// 0x0010 (0x0010 - 0x0000)
+struct PanelBase_C_CleanSponge final
+{
+public:
+	float                                         Clean;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          Player;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PanelBase_C_CleanSponge) == 0x000008, "Wrong alignment on PanelBase_C_CleanSponge");
+static_assert(sizeof(PanelBase_C_CleanSponge) == 0x000010, "Wrong size on PanelBase_C_CleanSponge");
+static_assert(offsetof(PanelBase_C_CleanSponge, Clean) == 0x000000, "Member 'PanelBase_C_CleanSponge::Clean' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_CleanSponge, Player) == 0x000008, "Member 'PanelBase_C_CleanSponge::Player' has a wrong offset!");
 
 // Function panelBase.panelBase_C.hooked
 // 0x0008 (0x0008 - 0x0000)
@@ -498,15 +585,26 @@ struct PanelBase_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PanelBase_C_ActionOptionIndex) == 0x000008, "Wrong alignment on PanelBase_C_ActionOptionIndex");
 static_assert(sizeof(PanelBase_C_ActionOptionIndex) == 0x000098, "Wrong size on PanelBase_C_ActionOptionIndex");
 static_assert(offsetof(PanelBase_C_ActionOptionIndex, Player) == 0x000000, "Member 'PanelBase_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(PanelBase_C_ActionOptionIndex, Hit) == 0x000008, "Member 'PanelBase_C_ActionOptionIndex::Hit' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'PanelBase_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_ActionOptionIndex, Action) == 0x000094, "Member 'PanelBase_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ActionOptionIndex, Action) == 0x000090, "Member 'PanelBase_C_ActionOptionIndex::Action' has a wrong offset!");
+
+// Function panelBase.panelBase_C.receivedPhyiscsDamage
+// 0x008C (0x008C - 0x0000)
+struct PanelBase_C_ReceivedPhyiscsDamage final
+{
+public:
+	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hot;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+static_assert(alignof(PanelBase_C_ReceivedPhyiscsDamage) == 0x000004, "Wrong alignment on PanelBase_C_ReceivedPhyiscsDamage");
+static_assert(sizeof(PanelBase_C_ReceivedPhyiscsDamage) == 0x00008C, "Wrong size on PanelBase_C_ReceivedPhyiscsDamage");
+static_assert(offsetof(PanelBase_C_ReceivedPhyiscsDamage, Damage) == 0x000000, "Member 'PanelBase_C_ReceivedPhyiscsDamage::Damage' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_ReceivedPhyiscsDamage, Hot) == 0x000004, "Member 'PanelBase_C_ReceivedPhyiscsDamage::Hot' has a wrong offset!");
 
 // Function panelBase.panelBase_C.ignite
 // 0x0004 (0x0004 - 0x0000)
@@ -639,7 +737,7 @@ struct PanelBase_C_ImpactDamage final
 public:
 	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_308B[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0090(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Impact;                                            // 0x0098(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -649,6 +747,21 @@ static_assert(offsetof(PanelBase_C_ImpactDamage, Damage) == 0x000000, "Member 'P
 static_assert(offsetof(PanelBase_C_ImpactDamage, Hit) == 0x000004, "Member 'PanelBase_C_ImpactDamage::Hit' has a wrong offset!");
 static_assert(offsetof(PanelBase_C_ImpactDamage, Actor) == 0x000090, "Member 'PanelBase_C_ImpactDamage::Actor' has a wrong offset!");
 static_assert(offsetof(PanelBase_C_ImpactDamage, Impact) == 0x000098, "Member 'PanelBase_C_ImpactDamage::Impact' has a wrong offset!");
+
+// Function panelBase.panelBase_C.texturePickerApply
+// 0x0018 (0x0018 - 0x0000)
+struct PanelBase_C_TexturePickerApply final
+{
+public:
+	class UUmg_texturePicker_C*                   Picker;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Param_Index;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PanelBase_C_TexturePickerApply) == 0x000008, "Wrong alignment on PanelBase_C_TexturePickerApply");
+static_assert(sizeof(PanelBase_C_TexturePickerApply) == 0x000018, "Wrong size on PanelBase_C_TexturePickerApply");
+static_assert(offsetof(PanelBase_C_TexturePickerApply, Picker) == 0x000000, "Member 'PanelBase_C_TexturePickerApply::Picker' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_TexturePickerApply, Texture) == 0x000008, "Member 'PanelBase_C_TexturePickerApply::Texture' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_TexturePickerApply, Param_Index) == 0x000010, "Member 'PanelBase_C_TexturePickerApply::Param_Index' has a wrong offset!");
 
 // Function panelBase.panelBase_C.applyColor
 // 0x0010 (0x0010 - 0x0000)
@@ -704,19 +817,20 @@ public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_308C[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_308D[0x2];                                     // 0x00B2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B3[0x1];                                       // 0x00B3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x00BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x00C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x00D4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x00E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_308E[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EC[0x4];                                       // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0100(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -737,8 +851,9 @@ static_assert(offsetof(PanelBase_C_LookAt, Hit) == 0x000008, "Member 'PanelBase_
 static_assert(offsetof(PanelBase_C_LookAt, Return) == 0x000090, "Member 'PanelBase_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(PanelBase_C_LookAt, Text) == 0x000098, "Member 'PanelBase_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(PanelBase_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'PanelBase_C_LookAt::boundObjectReplace' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_LookAt, CallFunc_BreakHitResult_bBlockingHit) == 0x0000B0, "Member 'PanelBase_C_LookAt::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_LookAt, CallFunc_BreakHitResult_bInitialOverlap) == 0x0000B1, "Member 'PanelBase_C_LookAt::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_LookAt, Number) == 0x0000B0, "Member 'PanelBase_C_LookAt::Number' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_LookAt, CallFunc_BreakHitResult_bBlockingHit) == 0x0000B1, "Member 'PanelBase_C_LookAt::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_LookAt, CallFunc_BreakHitResult_bInitialOverlap) == 0x0000B2, "Member 'PanelBase_C_LookAt::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
 static_assert(offsetof(PanelBase_C_LookAt, CallFunc_BreakHitResult_Time) == 0x0000B4, "Member 'PanelBase_C_LookAt::CallFunc_BreakHitResult_Time' has a wrong offset!");
 static_assert(offsetof(PanelBase_C_LookAt, CallFunc_BreakHitResult_Distance) == 0x0000B8, "Member 'PanelBase_C_LookAt::CallFunc_BreakHitResult_Distance' has a wrong offset!");
 static_assert(offsetof(PanelBase_C_LookAt, CallFunc_BreakHitResult_Location) == 0x0000BC, "Member 'PanelBase_C_LookAt::CallFunc_BreakHitResult_Location' has a wrong offset!");
@@ -814,6 +929,19 @@ public:
 static_assert(alignof(PanelBase_C_CanBePutInContainer) == 0x000001, "Wrong alignment on PanelBase_C_CanBePutInContainer");
 static_assert(sizeof(PanelBase_C_CanBePutInContainer) == 0x000001, "Wrong size on PanelBase_C_CanBePutInContainer");
 static_assert(offsetof(PanelBase_C_CanBePutInContainer, Return) == 0x000000, "Member 'PanelBase_C_CanBePutInContainer::Return' has a wrong offset!");
+
+// Function panelBase.panelBase_C.landedOn
+// 0x0010 (0x0010 - 0x0000)
+struct PanelBase_C_LandedOn final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IgnoreFallDamage;                                  // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(PanelBase_C_LandedOn) == 0x000008, "Wrong alignment on PanelBase_C_LandedOn");
+static_assert(sizeof(PanelBase_C_LandedOn) == 0x000010, "Wrong size on PanelBase_C_LandedOn");
+static_assert(offsetof(PanelBase_C_LandedOn, Player) == 0x000000, "Member 'PanelBase_C_LandedOn::Player' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_LandedOn, IgnoreFallDamage) == 0x000008, "Member 'PanelBase_C_LandedOn::IgnoreFallDamage' has a wrong offset!");
 
 // Function panelBase.panelBase_C.GetKey
 // 0x0048 (0x0048 - 0x0000)
@@ -902,7 +1030,7 @@ static_assert(offsetof(PanelBase_C_SetPath, Path) == 0x000000, "Member 'PanelBas
 static_assert(offsetof(PanelBase_C_SetPath, Return) == 0x000010, "Member 'PanelBase_C_SetPath::Return' has a wrong offset!");
 
 // Function panelBase.panelBase_C.getActionOptions
-// 0x0058 (0x0058 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct PanelBase_C_GetActionOptions final
 {
 public:
@@ -912,17 +1040,20 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	TArray<class FString>                         K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
 };
 static_assert(alignof(PanelBase_C_GetActionOptions) == 0x000008, "Wrong alignment on PanelBase_C_GetActionOptions");
-static_assert(sizeof(PanelBase_C_GetActionOptions) == 0x000058, "Wrong size on PanelBase_C_GetActionOptions");
+static_assert(sizeof(PanelBase_C_GetActionOptions) == 0x000060, "Wrong size on PanelBase_C_GetActionOptions");
 static_assert(offsetof(PanelBase_C_GetActionOptions, Player) == 0x000000, "Member 'PanelBase_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(PanelBase_C_GetActionOptions, Component) == 0x000008, "Member 'PanelBase_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(PanelBase_C_GetActionOptions, Actor) == 0x000010, "Member 'PanelBase_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(PanelBase_C_GetActionOptions, Options) == 0x000018, "Member 'PanelBase_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(PanelBase_C_GetActionOptions, Options_enum) == 0x000028, "Member 'PanelBase_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(PanelBase_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'PanelBase_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(PanelBase_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'PanelBase_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_GetActionOptions, Number) == 0x000048, "Member 'PanelBase_C_GetActionOptions::Number' has a wrong offset!");
+static_assert(offsetof(PanelBase_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'PanelBase_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 // Function panelBase.panelBase_C.gascanFuel
 // 0x0010 (0x0010 - 0x0000)
@@ -947,6 +1078,17 @@ public:
 static_assert(alignof(PanelBase_C_SkipRadial) == 0x000001, "Wrong alignment on PanelBase_C_SkipRadial");
 static_assert(sizeof(PanelBase_C_SkipRadial) == 0x000001, "Wrong size on PanelBase_C_SkipRadial");
 static_assert(offsetof(PanelBase_C_SkipRadial, Skip) == 0x000000, "Member 'PanelBase_C_SkipRadial::Skip' has a wrong offset!");
+
+// Function panelBase.panelBase_C.getPriceMultiplier
+// 0x0004 (0x0004 - 0x0000)
+struct PanelBase_C_GetPriceMultiplier final
+{
+public:
+	float                                         PriceMult;                                         // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PanelBase_C_GetPriceMultiplier) == 0x000004, "Wrong alignment on PanelBase_C_GetPriceMultiplier");
+static_assert(sizeof(PanelBase_C_GetPriceMultiplier) == 0x000004, "Wrong size on PanelBase_C_GetPriceMultiplier");
+static_assert(offsetof(PanelBase_C_GetPriceMultiplier, PriceMult) == 0x000000, "Member 'PanelBase_C_GetPriceMultiplier::PriceMult' has a wrong offset!");
 
 // Function panelBase.panelBase_C.dreamInv
 // 0x0018 (0x0018 - 0x0000)

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_eriePlush_superEater.prop_eriePlush_superEater_C
-// 0x0000 (0x03B8 - 0x03B8)
+// 0x0000 (0x03C8 - 0x03C8)
 class AProp_eriePlush_superEater_C final : public AProp_eriePlush_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_eriePlush_superEater_C) == 0x000008, "Wrong alignment on AProp_eriePlush_superEater_C");
-static_assert(sizeof(AProp_eriePlush_superEater_C) == 0x0003B8, "Wrong size on AProp_eriePlush_superEater_C");
+static_assert(sizeof(AProp_eriePlush_superEater_C) == 0x0003C8, "Wrong size on AProp_eriePlush_superEater_C");
 
 }
 

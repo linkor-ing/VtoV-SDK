@@ -10,22 +10,23 @@
 
 #include "Basic.hpp"
 
+#include "Prop_glowstick_classes.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Prop_glowstick_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass prop_glowstick_rb.prop_glowstick_rb_C
-// 0x0020 (0x0410 - 0x03F0)
+// 0x0030 (0x0430 - 0x0400)
 class AProp_glowstick_rb_C final : public AProp_glowstick_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_glowstick_rb_C;                // 0x03F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FLinearColor                           Color;                                             // 0x03F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               Dynmat;                                            // 0x0408(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_glowstick_rb_C;                // 0x0400(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FLinearColor                           Color;                                             // 0x0408(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               Dynmat;                                            // 0x0418(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         A_0;                                               // 0x0420(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_glowstick_rb(int32 EntryPoint);
@@ -43,10 +44,11 @@ public:
 	}
 };
 static_assert(alignof(AProp_glowstick_rb_C) == 0x000010, "Wrong alignment on AProp_glowstick_rb_C");
-static_assert(sizeof(AProp_glowstick_rb_C) == 0x000410, "Wrong size on AProp_glowstick_rb_C");
-static_assert(offsetof(AProp_glowstick_rb_C, UberGraphFrame_Prop_glowstick_rb_C) == 0x0003F0, "Member 'AProp_glowstick_rb_C::UberGraphFrame_Prop_glowstick_rb_C' has a wrong offset!");
-static_assert(offsetof(AProp_glowstick_rb_C, Color) == 0x0003F8, "Member 'AProp_glowstick_rb_C::Color' has a wrong offset!");
-static_assert(offsetof(AProp_glowstick_rb_C, Dynmat) == 0x000408, "Member 'AProp_glowstick_rb_C::Dynmat' has a wrong offset!");
+static_assert(sizeof(AProp_glowstick_rb_C) == 0x000430, "Wrong size on AProp_glowstick_rb_C");
+static_assert(offsetof(AProp_glowstick_rb_C, UberGraphFrame_Prop_glowstick_rb_C) == 0x000400, "Member 'AProp_glowstick_rb_C::UberGraphFrame_Prop_glowstick_rb_C' has a wrong offset!");
+static_assert(offsetof(AProp_glowstick_rb_C, Color) == 0x000408, "Member 'AProp_glowstick_rb_C::Color' has a wrong offset!");
+static_assert(offsetof(AProp_glowstick_rb_C, Dynmat) == 0x000418, "Member 'AProp_glowstick_rb_C::Dynmat' has a wrong offset!");
+static_assert(offsetof(AProp_glowstick_rb_C, A_0) == 0x000420, "Member 'AProp_glowstick_rb_C::A_0' has a wrong offset!");
 
 }
 

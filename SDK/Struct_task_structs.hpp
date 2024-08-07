@@ -20,7 +20,7 @@ struct FStruct_task final
 {
 public:
 	bool                                          Active_31_240F3F9E4F17346B449C3F81FC81AEA8;        // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1DA0[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Points_7_6DD8FF16419714EB5D548B976F625F36;         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Level_0_16_88D206694129CF344988FCBE97D2746D;       // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Level_1_17_DA0C9B2A415A9C3965B9CE94924FA2BF;       // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -36,7 +36,7 @@ public:
 	TArray<class FString>                         Completed_55_59373DAE4879C220F1CD918227B6F25A;     // 0x0058(0x0010)(Edit, BlueprintVisible)
 	bool                                          SignalsCompleted_47_4B7E5DDC4743C673697C9C826EF0DA7C; // 0x0068(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          ReportCompleted_48_CBA311754F4EEF5950721CB961EE4DA2; // 0x0069(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1DA1[0x2];                                     // 0x006A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6A[0x2];                                       // 0x006A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Fails_51_26566E3641B156F3F6AB08B9355882ED;         // 0x006C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(FStruct_task) == 0x000008, "Wrong alignment on FStruct_task");

@@ -99,6 +99,66 @@ void ASticker_C::GamemodeBeginPlay()
 }
 
 
+// Function sticker.sticker_C.playerR
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ASticker_C::PlayerR(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("sticker_C", "playerR");
+
+	Params::Sticker_C_PlayerR Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function sticker.sticker_C.playerHold
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ASticker_C::PlayerHold(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("sticker_C", "playerHold");
+
+	Params::Sticker_C_PlayerHold Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function sticker.sticker_C.playerUnequip
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ASticker_C::PlayerUnequip(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("sticker_C", "playerUnequip");
+
+	Params::Sticker_C_PlayerUnequip Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function sticker.sticker_C.updateStrAgl
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -118,8 +178,9 @@ void ASticker_C::UpdateStrAgl()
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ASticker_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit)
+void ASticker_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage)
 {
 	static class UFunction* Func = nullptr;
 
@@ -130,6 +191,7 @@ void ASticker_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitRe
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
+	Parms.Damage = Damage;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -259,6 +321,30 @@ void ASticker_C::DriveDetached()
 }
 
 
+// Function sticker.sticker_C.texturePickerApply
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ASticker_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("sticker_C", "texturePickerApply");
+
+	Params::Sticker_C_TexturePickerApply Parms{};
+
+	Parms.Picker = Picker;
+	Parms.Texture = Texture;
+	Parms.Param_Index = Param_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function sticker.sticker_C.applyColor
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -360,7 +446,7 @@ void ASticker_C::Unfocused()
 // Function sticker.sticker_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void ASticker_C::SettingsApplied(const struct FStruct_settings& Settings)
 {
@@ -540,6 +626,30 @@ void ASticker_C::NoRespawn(bool Param_NoRespawn, bool* Return)
 }
 
 
+// Function sticker.sticker_C.actionOptionIndex
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ASticker_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("sticker_C", "actionOptionIndex");
+
+	Params::Sticker_C_ActionOptionIndex Parms{};
+
+	Parms.Player = Player;
+	Parms.Hit = std::move(Hit);
+	Parms.Action = Action;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function sticker.sticker_C.lookAt
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -548,8 +658,9 @@ void ASticker_C::NoRespawn(bool Param_NoRespawn, bool* Return)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ASticker_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
+void ASticker_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -571,6 +682,9 @@ void ASticker_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hi
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -592,6 +706,30 @@ void ASticker_C::IsButtonUsed(bool* Failed)
 
 	if (Failed != nullptr)
 		*Failed = Parms.Failed;
+}
+
+
+// Function sticker.sticker_C.landedOn
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IgnoreFallDamage                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ASticker_C::LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("sticker_C", "landedOn");
+
+	Params::Sticker_C_LandedOn Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IgnoreFallDamage != nullptr)
+		*IgnoreFallDamage = Parms.IgnoreFallDamage;
 }
 
 
@@ -618,32 +756,6 @@ void ASticker_C::DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C*
 
 	if (Base != nullptr)
 		*Base = Parms.Base;
-}
-
-
-// Function sticker.sticker_C.actionOptionIndex
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ASticker_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("sticker_C", "actionOptionIndex");
-
-	Params::Sticker_C_ActionOptionIndex Parms{};
-
-	Parms.Player = Player;
-	Parms.Hit = std::move(Hit);
-	Parms.Param_Index = Param_Index;
-	Parms.Action = Action;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -706,27 +818,6 @@ void ASticker_C::GetData(struct FStruct_save* Data)
 }
 
 
-// Function sticker.sticker_C.processKeys
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ASticker_C::ProcessKeys(bool* Return)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("sticker_C", "processKeys");
-
-	Params::Sticker_C_ProcessKeys Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Return != nullptr)
-		*Return = Parms.Return;
-}
-
-
 // Function sticker.sticker_C.getActionOptions
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -736,8 +827,9 @@ void ASticker_C::ProcessKeys(bool* Return)
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ASticker_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Param_Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
+void ASticker_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Param_Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -760,6 +852,30 @@ void ASticker_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveC
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
+}
+
+
+// Function sticker.sticker_C.processKeys
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ASticker_C::ProcessKeys(bool* Return)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("sticker_C", "processKeys");
+
+	Params::Sticker_C_ProcessKeys Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 }

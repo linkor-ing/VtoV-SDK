@@ -24,11 +24,11 @@ namespace SDK
 class AKillerwisp_C final : public ACharacter
 {
 public:
-	uint8                                         Pad_2507[0x8];                                     // 0x04B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B8[0x8];                                      // 0x04B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UParticleSystemComponent*               Eff_L;                                             // 0x04C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               Eff_R;                                             // 0x04D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class URadarPointComponent_C*                 RadarPoint;                                        // 0x04D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UComp_radarPoint_C*                     RadarPoint;                                        // 0x04D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               Gl1;                                               // 0x04E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               Gl2;                                               // 0x04E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               Gl3;                                               // 0x04F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -58,30 +58,30 @@ public:
 	class UPointLightComponent*                   PointLight;                                        // 0x05B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         Ssens_a_A2D6199444429C39EE561C840501680B;          // 0x05B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            Ssens__Direction_A2D6199444429C39EE561C840501680B; // 0x05BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2508[0x3];                                     // 0x05BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5BD[0x3];                                      // 0x05BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     Ssens;                                             // 0x05C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         A_a_8D1677464B505243AE98468269142831;              // 0x05C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            A__Direction_8D1677464B505243AE98468269142831;     // 0x05CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2509[0x3];                                     // 0x05CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5CD[0x3];                                      // 0x05CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     A;                                                 // 0x05D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          TryGrab;                                           // 0x05D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_250A[0x7];                                     // 0x05D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5D9[0x7];                                      // 0x05D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AProp_bloodGib_C*                       G1;                                                // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AProp_bloodGib_C*                       G2;                                                // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AProp_bloodGib_C*                       G3;                                                // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AProp_bloodGib_C*                       G4;                                                // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Grab;                                              // 0x0600(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_250B[0x7];                                     // 0x0601(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_601[0x7];                                      // 0x0601(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UKillerWispAnim1_Skeleton_AnimBlueprint_C* Anim;                                              // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  Target;                                            // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Killed;                                            // 0x0618(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Gathered;                                          // 0x0619(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_250C[0x6];                                     // 0x061A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_61A[0x6];                                      // 0x061A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class APiramidTest_C*                         Piram;                                             // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                One323123122131321322;                             // 0x0628(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Rendered;                                          // 0x0634(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          PlayerDamaged;                                     // 0x0635(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_250D[0x2];                                     // 0x0636(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_636[0x2];                                      // 0x0636(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<EObjectTypeQuery>                      Obj;                                               // 0x0638(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class APiramid2_C*                            Piram2;                                            // 0x0648(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -100,6 +100,8 @@ public:
 	void Walk();
 	void Stretch(bool Forward);
 	void ReceiveBeginPlay();
+	void OnSuccess_8F96843848D18C8955C1FE8DF9577D6D(EPathFollowingResult MovementResult);
+	void OnFail_8F96843848D18C8955C1FE8DF9577D6D(EPathFollowingResult MovementResult);
 	void OnCompleted_D920F109479EA9C2B43293A8547D1BCE(class FName NotifyName);
 	void OnBlendOut_D920F109479EA9C2B43293A8547D1BCE(class FName NotifyName);
 	void OnInterrupted_D920F109479EA9C2B43293A8547D1BCE(class FName NotifyName);
@@ -119,8 +121,6 @@ public:
 	void OnInterrupted_3621BC3D4D928A7F549D9B84E8756B55(class FName NotifyName);
 	void OnNotifyBegin_3621BC3D4D928A7F549D9B84E8756B55(class FName NotifyName);
 	void OnNotifyEnd_3621BC3D4D928A7F549D9B84E8756B55(class FName NotifyName);
-	void OnSuccess_8F96843848D18C8955C1FE8DF9577D6D(EPathFollowingResult MovementResult);
-	void OnFail_8F96843848D18C8955C1FE8DF9577D6D(EPathFollowingResult MovementResult);
 	void Ssens__UpdateFunc();
 	void Ssens__FinishedFunc();
 	void A__UpdateFunc();

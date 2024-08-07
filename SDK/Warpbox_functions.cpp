@@ -17,6 +17,277 @@
 namespace SDK
 {
 
+// Function warpbox.warpbox_C.dreamInv
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<struct FStruct_save>             Invv                                                   (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class ADreamBase_C*                     Base                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AWarpbox_C::DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("warpbox_C", "dreamInv");
+
+	Params::Warpbox_C_DreamInv Parms{};
+
+	Parms.Invv = std::move(Invv);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Invv = std::move(Parms.Invv);
+
+	if (Base != nullptr)
+		*Base = Parms.Base;
+}
+
+
+// Function warpbox.warpbox_C.landedOn
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IgnoreFallDamage                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AWarpbox_C::LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("warpbox_C", "landedOn");
+
+	Params::Warpbox_C_LandedOn Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IgnoreFallDamage != nullptr)
+		*IgnoreFallDamage = Parms.IgnoreFallDamage;
+}
+
+
+// Function warpbox.warpbox_C.canBePutInContainer
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AWarpbox_C::CanBePutInContainer(bool* Return)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("warpbox_C", "canBePutInContainer");
+
+	Params::Warpbox_C_CanBePutInContainer Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return != nullptr)
+		*Return = Parms.Return;
+}
+
+
+// Function warpbox.warpbox_C.isButtonUsed
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Failed                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AWarpbox_C::IsButtonUsed(bool* Failed)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("warpbox_C", "isButtonUsed");
+
+	Params::Warpbox_C_IsButtonUsed Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Failed != nullptr)
+		*Failed = Parms.Failed;
+}
+
+
+// Function warpbox.warpbox_C.lookAt
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AWarpbox_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("warpbox_C", "lookAt");
+
+	Params::Warpbox_C_LookAt Parms{};
+
+	Parms.Player = Player;
+	Parms.Hit = std::move(Hit);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return != nullptr)
+		*Return = Parms.Return;
+
+	if (Text != nullptr)
+		*Text = std::move(Parms.Text);
+
+	if (boundObjectReplace != nullptr)
+		*boundObjectReplace = Parms.boundObjectReplace;
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
+}
+
+
+// Function warpbox.warpbox_C.noRespawn
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Param_NoRespawn                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AWarpbox_C::NoRespawn(bool Param_NoRespawn, bool* Return)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("warpbox_C", "noRespawn");
+
+	Params::Warpbox_C_NoRespawn Parms{};
+
+	Parms.Param_NoRespawn = Param_NoRespawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return != nullptr)
+		*Return = Parms.Return;
+}
+
+
+// Function warpbox.warpbox_C.canPickup
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AWarpbox_C::CanPickup(bool* Return)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("warpbox_C", "canPickup");
+
+	Params::Warpbox_C_CanPickup Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return != nullptr)
+		*Return = Parms.Return;
+}
+
+
+// Function warpbox.warpbox_C.asProp
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AProp_C*                          Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AWarpbox_C::AsProp(class AProp_C** Return)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("warpbox_C", "asProp");
+
+	Params::Warpbox_C_AsProp Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return != nullptr)
+		*Return = Parms.Return;
+}
+
+
+// Function warpbox.warpbox_C.getActionOptions
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class FString>                   Options                                                (Parm, OutParm)
+// TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
+// TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AWarpbox_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("warpbox_C", "getActionOptions");
+
+	Params::Warpbox_C_GetActionOptions Parms{};
+
+	Parms.Player = Player;
+	Parms.Component = Component;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Options != nullptr)
+		*Options = std::move(Parms.Options);
+
+	if (Options_enum != nullptr)
+		*Options_enum = std::move(Parms.Options_enum);
+
+	if (OptionsNamesOverlay != nullptr)
+		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
+}
+
+
+// Function warpbox.warpbox_C.form
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AWarpbox_C::Form()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("warpbox_C", "form");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function warpbox.warpbox_C.getData
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FStruct_save                     Data                                                   (Parm, OutParm, HasGetValueTypeHash)
+
+void AWarpbox_C::GetData(struct FStruct_save* Data)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("warpbox_C", "getData");
+
+	Params::Warpbox_C_GetData Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Data != nullptr)
+		*Data = std::move(Parms.Data);
+}
+
+
 // Function warpbox.warpbox_C.PlaySound
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -370,6 +641,30 @@ void AWarpbox_C::ApplyColor(const struct FLinearColor& Color)
 }
 
 
+// Function warpbox.warpbox_C.texturePickerApply
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUmg_texturePicker_C*             Picker                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AWarpbox_C::TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("warpbox_C", "texturePickerApply");
+
+	Params::Warpbox_C_TexturePickerApply Parms{};
+
+	Parms.Picker = Picker;
+	Parms.Texture = Texture;
+	Parms.Param_Index = Param_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function warpbox.warpbox_C.driveDetached
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -499,8 +794,9 @@ void AWarpbox_C::Thrown(class AMainPlayer_C* Player)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AWarpbox_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit)
+void AWarpbox_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage)
 {
 	static class UFunction* Func = nullptr;
 
@@ -511,6 +807,7 @@ void AWarpbox_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitRe
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
+	Parms.Damage = Damage;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -527,6 +824,66 @@ void AWarpbox_C::UpdateStrAgl()
 		Func = Class->GetFunction("warpbox_C", "updateStrAgl");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function warpbox.warpbox_C.playerUnequip
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AWarpbox_C::PlayerUnequip(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("warpbox_C", "playerUnequip");
+
+	Params::Warpbox_C_PlayerUnequip Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function warpbox.warpbox_C.playerHold
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AWarpbox_C::PlayerHold(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("warpbox_C", "playerHold");
+
+	Params::Warpbox_C_PlayerHold Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function warpbox.warpbox_C.playerR
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AWarpbox_C::PlayerR(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("warpbox_C", "playerR");
+
+	Params::Warpbox_C_PlayerR Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -611,7 +968,7 @@ void AWarpbox_C::GamemodeBeginPlay()
 // Function warpbox.warpbox_C.settingsApplied
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FStruct_settings                 Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
 void AWarpbox_C::SettingsApplied(const struct FStruct_settings& Settings)
 {
@@ -633,10 +990,9 @@ void AWarpbox_C::SettingsApplied(const struct FStruct_settings& Settings)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AWarpbox_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action)
+void AWarpbox_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -647,7 +1003,6 @@ void AWarpbox_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHi
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
-	Parms.Param_Index = Param_Index;
 	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -671,245 +1026,6 @@ void AWarpbox_C::ExecuteUbergraph_warpbox(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function warpbox.warpbox_C.dreamInv
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<struct FStruct_save>             Invv                                                   (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// class ADreamBase_C*                     Base                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AWarpbox_C::DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("warpbox_C", "dreamInv");
-
-	Params::Warpbox_C_DreamInv Parms{};
-
-	Parms.Invv = std::move(Invv);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Invv = std::move(Parms.Invv);
-
-	if (Base != nullptr)
-		*Base = Parms.Base;
-}
-
-
-// Function warpbox.warpbox_C.canBePutInContainer
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AWarpbox_C::CanBePutInContainer(bool* Return)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("warpbox_C", "canBePutInContainer");
-
-	Params::Warpbox_C_CanBePutInContainer Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Return != nullptr)
-		*Return = Parms.Return;
-}
-
-
-// Function warpbox.warpbox_C.isButtonUsed
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Failed                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AWarpbox_C::IsButtonUsed(bool* Failed)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("warpbox_C", "isButtonUsed");
-
-	Params::Warpbox_C_IsButtonUsed Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Failed != nullptr)
-		*Failed = Parms.Failed;
-}
-
-
-// Function warpbox.warpbox_C.lookAt
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AWarpbox_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("warpbox_C", "lookAt");
-
-	Params::Warpbox_C_LookAt Parms{};
-
-	Parms.Player = Player;
-	Parms.Hit = std::move(Hit);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Return != nullptr)
-		*Return = Parms.Return;
-
-	if (Text != nullptr)
-		*Text = std::move(Parms.Text);
-
-	if (boundObjectReplace != nullptr)
-		*boundObjectReplace = Parms.boundObjectReplace;
-}
-
-
-// Function warpbox.warpbox_C.noRespawn
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Param_NoRespawn                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AWarpbox_C::NoRespawn(bool Param_NoRespawn, bool* Return)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("warpbox_C", "noRespawn");
-
-	Params::Warpbox_C_NoRespawn Parms{};
-
-	Parms.Param_NoRespawn = Param_NoRespawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Return != nullptr)
-		*Return = Parms.Return;
-}
-
-
-// Function warpbox.warpbox_C.canPickup
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AWarpbox_C::CanPickup(bool* Return)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("warpbox_C", "canPickup");
-
-	Params::Warpbox_C_CanPickup Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Return != nullptr)
-		*Return = Parms.Return;
-}
-
-
-// Function warpbox.warpbox_C.asProp
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AProp_C*                          Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AWarpbox_C::AsProp(class AProp_C** Return)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("warpbox_C", "asProp");
-
-	Params::Warpbox_C_AsProp Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Return != nullptr)
-		*Return = Parms.Return;
-}
-
-
-// Function warpbox.warpbox_C.getActionOptions
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class FString>                   Options                                                (Parm, OutParm)
-// TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
-// TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
-
-void AWarpbox_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("warpbox_C", "getActionOptions");
-
-	Params::Warpbox_C_GetActionOptions Parms{};
-
-	Parms.Player = Player;
-	Parms.Component = Component;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Options != nullptr)
-		*Options = std::move(Parms.Options);
-
-	if (Options_enum != nullptr)
-		*Options_enum = std::move(Parms.Options_enum);
-
-	if (OptionsNamesOverlay != nullptr)
-		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
-}
-
-
-// Function warpbox.warpbox_C.form
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AWarpbox_C::Form()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("warpbox_C", "form");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function warpbox.warpbox_C.getData
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FStruct_save                     Data                                                   (Parm, OutParm, HasGetValueTypeHash)
-
-void AWarpbox_C::GetData(struct FStruct_save* Data)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("warpbox_C", "getData");
-
-	Params::Warpbox_C_GetData Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Data != nullptr)
-		*Data = std::move(Parms.Data);
 }
 
 }

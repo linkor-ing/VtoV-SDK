@@ -26,14 +26,14 @@ public:
 	class UBoxComponent*                          Box;                                               // 0x0290(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	TArray<ECollisionChannel>                     Colls;                                             // 0x0298(0x0010)(Edit, BlueprintVisible)
 	bool                                          IsActive;                                          // 0x02A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F0D[0x7];                                     // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A9[0x7];                                      // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UClass*>                         Filter;                                            // 0x02B0(0x0010)(Edit, BlueprintVisible)
 
 public:
 	void ExecuteUbergraph_trigger_box(int32 EntryPoint);
-	void RunTrigger(class AActor* Param_Owner, int32 Param_Index);
 	void BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 	void SetColls();
+	void RunTrigger(class AActor* Param_Owner, int32 Param_Index);
 	void GamemodeBeginPlay();
 	void LoadTriggerData(const struct FStruct_triggerSave& Data, bool* Return);
 	void GetTriggerData(struct FStruct_triggerSave* Data);

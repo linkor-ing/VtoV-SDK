@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass tentacleBallsFollower.tentacleBallsFollower_C
-// 0x0070 (0x0290 - 0x0220)
+// 0x0078 (0x0298 - 0x0220)
 class ATentacleBallsFollower_C final : public AActor
 {
 public:
@@ -34,8 +34,9 @@ public:
 	struct FVector                                LastPoint;                                         // 0x0270(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Dir;                                               // 0x027C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Passed;                                            // 0x0288(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2CEE[0x3];                                     // 0x0289(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_289[0x3];                                      // 0x0289(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ResumeEvent;                                       // 0x028C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          AllowFollow;                                       // 0x0290(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_tentacleBallsFollower(int32 EntryPoint);
@@ -51,6 +52,7 @@ public:
 	void IgnoreSave_trigger(bool* Ignore);
 	void LoadTriggerData(const struct FStruct_triggerSave& Data, bool* Return);
 	void GetTriggerData(struct FStruct_triggerSave* Data);
+	void GatherDataFromKeyT(bool* Gather);
 
 public:
 	static class UClass* StaticClass()
@@ -63,7 +65,7 @@ public:
 	}
 };
 static_assert(alignof(ATentacleBallsFollower_C) == 0x000008, "Wrong alignment on ATentacleBallsFollower_C");
-static_assert(sizeof(ATentacleBallsFollower_C) == 0x000290, "Wrong size on ATentacleBallsFollower_C");
+static_assert(sizeof(ATentacleBallsFollower_C) == 0x000298, "Wrong size on ATentacleBallsFollower_C");
 static_assert(offsetof(ATentacleBallsFollower_C, UberGraphFrame) == 0x000220, "Member 'ATentacleBallsFollower_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ATentacleBallsFollower_C, Resume) == 0x000228, "Member 'ATentacleBallsFollower_C::Resume' has a wrong offset!");
 static_assert(offsetof(ATentacleBallsFollower_C, Follow) == 0x000230, "Member 'ATentacleBallsFollower_C::Follow' has a wrong offset!");
@@ -76,6 +78,7 @@ static_assert(offsetof(ATentacleBallsFollower_C, LastPoint) == 0x000270, "Member
 static_assert(offsetof(ATentacleBallsFollower_C, Dir) == 0x00027C, "Member 'ATentacleBallsFollower_C::Dir' has a wrong offset!");
 static_assert(offsetof(ATentacleBallsFollower_C, Passed) == 0x000288, "Member 'ATentacleBallsFollower_C::Passed' has a wrong offset!");
 static_assert(offsetof(ATentacleBallsFollower_C, ResumeEvent) == 0x00028C, "Member 'ATentacleBallsFollower_C::ResumeEvent' has a wrong offset!");
+static_assert(offsetof(ATentacleBallsFollower_C, AllowFollow) == 0x000290, "Member 'ATentacleBallsFollower_C::AllowFollow' has a wrong offset!");
 
 }
 

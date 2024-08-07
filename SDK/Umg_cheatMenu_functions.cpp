@@ -177,8 +177,9 @@ void UUmg_cheatMenu_C::Construct()
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             Param_Name                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUmg_cheatMenu_C::Cheat(int32 Type)
+void UUmg_cheatMenu_C::Cheat(int32 Type, class FName Param_Name)
 {
 	static class UFunction* Func = nullptr;
 
@@ -188,6 +189,7 @@ void UUmg_cheatMenu_C::Cheat(int32 Type)
 	Params::Umg_cheatMenu_C_Cheat Parms{};
 
 	Parms.Type = Type;
+	Parms.Param_Name = Param_Name;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

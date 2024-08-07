@@ -24,30 +24,35 @@ class ARadiotower_C final : public AActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UParticleSystemComponent*               ParticleSystem2;                                   // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               ParticleSystem;                                    // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               ParticleSystem1;                                   // 0x0238(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               ParticleSystem3;                                   // 0x0240(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Top;                                               // 0x0248(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UInstancedStaticMeshComponent*          Segm_w;                                            // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UInstancedStaticMeshComponent*          Segm_r;                                            // 0x0258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Found;                                             // 0x0260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   ChildActor;                                        // 0x0268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class URectLightComponent*                    RectLight;                                         // 0x0270(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class URectLightComponent*                    RectLight;                                         // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               ParticleSystem3;                                   // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               ParticleSystem2;                                   // 0x0238(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               ParticleSystem;                                    // 0x0240(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               ParticleSystem1;                                   // 0x0248(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Top;                                               // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UInstancedStaticMeshComponent*          Segm_w;                                            // 0x0258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UInstancedStaticMeshComponent*          Segm_r;                                            // 0x0260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Found;                                             // 0x0268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   ChildActor;                                        // 0x0270(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UBillboardComponent*                    Vis;                                               // 0x0278(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   Rend;                                              // 0x0280(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UBoxComponent*                          Fix;                                               // 0x0288(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0290(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsBroken;                                          // 0x0298(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_299[0x3];                                      // 0x0299(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Height;                                            // 0x029C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_radiotower(int32 EntryPoint);
 	void breakdown();
 	void blinking();
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
 	void ReceiveBeginPlay();
+	void PlayerR(class AMainPlayer_C* Player);
+	void PlayerHold(class AMainPlayer_C* Player);
+	void PlayerUnequip(class AMainPlayer_C* Player);
 	void UpdateStrAgl();
-	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit);
+	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage);
 	void Thrown(class AMainPlayer_C* Player);
 	void broken_fire();
 	void broken();
@@ -55,6 +60,9 @@ public:
 	void Kicked(bool Kick);
 	void Player_use(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void DriveDetached();
+	void HookTension(class AHook_C* Hook);
+	void CleanSponge(float Clean, class AMainPlayer_C* Player);
+	void Crafted();
 	void Hooked(class AHook_C* Hook);
 	void AttemptIgnite();
 	void PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
@@ -76,7 +84,7 @@ public:
 	void Exploded(float Damage, const struct FVector& Location);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
-	void ReceivedPhyiscsDamage();
+	void ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot);
 	void Microwave();
 	void Ignite(float Fuel);
 	void FireDamage(float Damage);
@@ -95,16 +103,19 @@ public:
 	void LeaveWater(class AWaterVolume_C* Water);
 	void EnterWater(class AWaterVolume_C* Water);
 	void ImpactDamage(float Damage, const struct FHitResult& Hit, class AActor* Actor, const struct FVector& Impact);
+	void UserConstructionScript();
 	void Visligh(bool bNewVisibility);
 	void SetHidden(bool NewHidden);
+	void SetHeight();
 	void CanBePutInContainer(bool* Return);
 	void AsProp(class AProp_C** Return);
 	void CanPickup(bool* Return);
 	void NoRespawn(bool Param_NoRespawn, bool* Return);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
 	void IsButtonUsed(bool* Failed);
+	void LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage);
 	void GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 	void SetPath(const TArray<struct FVector>& Path, bool* Return);
 	void GetOnlyKey(class FString* Key);
 	void ProcessKeys(bool* Return);
@@ -112,6 +123,7 @@ public:
 	void GetKey(class FString* Key);
 	void ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return);
 	void SkipRadial(bool* Skip);
+	void GetPriceMultiplier(float* PriceMult);
 
 public:
 	static class UClass* StaticClass()
@@ -126,21 +138,22 @@ public:
 static_assert(alignof(ARadiotower_C) == 0x000008, "Wrong alignment on ARadiotower_C");
 static_assert(sizeof(ARadiotower_C) == 0x0002A0, "Wrong size on ARadiotower_C");
 static_assert(offsetof(ARadiotower_C, UberGraphFrame) == 0x000220, "Member 'ARadiotower_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ARadiotower_C, ParticleSystem2) == 0x000228, "Member 'ARadiotower_C::ParticleSystem2' has a wrong offset!");
-static_assert(offsetof(ARadiotower_C, ParticleSystem) == 0x000230, "Member 'ARadiotower_C::ParticleSystem' has a wrong offset!");
-static_assert(offsetof(ARadiotower_C, ParticleSystem1) == 0x000238, "Member 'ARadiotower_C::ParticleSystem1' has a wrong offset!");
-static_assert(offsetof(ARadiotower_C, ParticleSystem3) == 0x000240, "Member 'ARadiotower_C::ParticleSystem3' has a wrong offset!");
-static_assert(offsetof(ARadiotower_C, Top) == 0x000248, "Member 'ARadiotower_C::Top' has a wrong offset!");
-static_assert(offsetof(ARadiotower_C, Segm_w) == 0x000250, "Member 'ARadiotower_C::Segm_w' has a wrong offset!");
-static_assert(offsetof(ARadiotower_C, Segm_r) == 0x000258, "Member 'ARadiotower_C::Segm_r' has a wrong offset!");
-static_assert(offsetof(ARadiotower_C, Found) == 0x000260, "Member 'ARadiotower_C::Found' has a wrong offset!");
-static_assert(offsetof(ARadiotower_C, ChildActor) == 0x000268, "Member 'ARadiotower_C::ChildActor' has a wrong offset!");
-static_assert(offsetof(ARadiotower_C, RectLight) == 0x000270, "Member 'ARadiotower_C::RectLight' has a wrong offset!");
+static_assert(offsetof(ARadiotower_C, RectLight) == 0x000228, "Member 'ARadiotower_C::RectLight' has a wrong offset!");
+static_assert(offsetof(ARadiotower_C, ParticleSystem3) == 0x000230, "Member 'ARadiotower_C::ParticleSystem3' has a wrong offset!");
+static_assert(offsetof(ARadiotower_C, ParticleSystem2) == 0x000238, "Member 'ARadiotower_C::ParticleSystem2' has a wrong offset!");
+static_assert(offsetof(ARadiotower_C, ParticleSystem) == 0x000240, "Member 'ARadiotower_C::ParticleSystem' has a wrong offset!");
+static_assert(offsetof(ARadiotower_C, ParticleSystem1) == 0x000248, "Member 'ARadiotower_C::ParticleSystem1' has a wrong offset!");
+static_assert(offsetof(ARadiotower_C, Top) == 0x000250, "Member 'ARadiotower_C::Top' has a wrong offset!");
+static_assert(offsetof(ARadiotower_C, Segm_w) == 0x000258, "Member 'ARadiotower_C::Segm_w' has a wrong offset!");
+static_assert(offsetof(ARadiotower_C, Segm_r) == 0x000260, "Member 'ARadiotower_C::Segm_r' has a wrong offset!");
+static_assert(offsetof(ARadiotower_C, Found) == 0x000268, "Member 'ARadiotower_C::Found' has a wrong offset!");
+static_assert(offsetof(ARadiotower_C, ChildActor) == 0x000270, "Member 'ARadiotower_C::ChildActor' has a wrong offset!");
 static_assert(offsetof(ARadiotower_C, Vis) == 0x000278, "Member 'ARadiotower_C::Vis' has a wrong offset!");
 static_assert(offsetof(ARadiotower_C, Rend) == 0x000280, "Member 'ARadiotower_C::Rend' has a wrong offset!");
 static_assert(offsetof(ARadiotower_C, Fix) == 0x000288, "Member 'ARadiotower_C::Fix' has a wrong offset!");
 static_assert(offsetof(ARadiotower_C, DefaultSceneRoot) == 0x000290, "Member 'ARadiotower_C::DefaultSceneRoot' has a wrong offset!");
 static_assert(offsetof(ARadiotower_C, IsBroken) == 0x000298, "Member 'ARadiotower_C::IsBroken' has a wrong offset!");
+static_assert(offsetof(ARadiotower_C, Height) == 0x00029C, "Member 'ARadiotower_C::Height' has a wrong offset!");
 
 }
 

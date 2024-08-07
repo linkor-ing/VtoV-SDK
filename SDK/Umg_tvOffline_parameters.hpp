@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "Struct_tv_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Struct_tv_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "UMG_structs.hpp"
 #include "InputCore_structs.hpp"
+#include "UMG_structs.hpp"
 #include "Enum_playlist_structs.hpp"
 
 
@@ -23,75 +23,74 @@ namespace SDK::Params
 {
 
 // Function umg_tvOffline.umg_tvOffline_C.ExecuteUbergraph_umg_tvOffline
-// 0x00F0 (0x00F0 - 0x0000)
+// 0x00E8 (0x00E8 - 0x0000)
 struct Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetValue_ReturnValue;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_playlist                                 Temp_byte_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_playlist                                 Temp_byte_Variable_1;                              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_playlist                                 Temp_byte_Variable_2;                              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_playlist                                 Temp_byte_Variable_3;                              // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2761[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AProp_tv2_C*                            K2Node_CustomEvent_radio;                          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          CallFunc_getMainPlayer_AsMain_Player;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x0020(0x0008)(NoDestructor)
-	float                                         K2Node_ComponentBoundEvent_Value_1;                // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2762[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimespan                              CallFunc_GetDuration_ReturnValue;                  // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0038(0x0018)()
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Play_ReturnValue;                         // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	Enum_playlist                                 Temp_byte_Variable_4;                              // 0x0055(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Pause_ReturnValue;                        // 0x0056(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2763[0x1];                                     // 0x0057(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue; // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0068(0x0018)()
-	Enum_playlist                                 K2Node_Select_Default;                             // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2764[0x7];                                     // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_setActiveInterface_return;                // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2765[0x3];                                     // 0x0091(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_ComponentBoundEvent_Value;                  // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0098(0x0038)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2766[0x4];                                     // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimespan                              CallFunc_GetTime_ReturnValue;                      // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetTotalSeconds_ReturnValue;              // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetTotalSeconds_ReturnValue_1;            // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_playlist                                 Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_playlist                                 Temp_byte_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_playlist                                 Temp_byte_Variable_2;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_playlist                                 Temp_byte_Variable_3;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_tv2_C*                            K2Node_CustomEvent_radio;                          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          CallFunc_getMainPlayer_AsMain_Player;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x0018(0x0008)(NoDestructor)
+	float                                         K2Node_ComponentBoundEvent_Value_1;                // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimespan                              CallFunc_GetDuration_ReturnValue;                  // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0030(0x0018)()
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Play_ReturnValue;                         // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	Enum_playlist                                 Temp_byte_Variable_4;                              // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Pause_ReturnValue;                        // 0x004E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4F[0x1];                                       // 0x004F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue; // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0060(0x0018)()
+	Enum_playlist                                 K2Node_Select_Default;                             // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_setActiveInterface_return;                // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_ComponentBoundEvent_Value;                  // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0090(0x0038)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_InDeltaTime;                          // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimespan                              CallFunc_GetTime_ReturnValue;                      // 0x00D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetTotalSeconds_ReturnValue;              // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetTotalSeconds_ReturnValue_1;            // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetValue_ReturnValue;                     // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline) == 0x000008, "Wrong alignment on Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline");
-static_assert(sizeof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline) == 0x0000F0, "Wrong size on Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline");
+static_assert(sizeof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline) == 0x0000E8, "Wrong size on Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline");
 static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, EntryPoint) == 0x000000, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_GetValue_ReturnValue) == 0x000004, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_GetValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, Temp_byte_Variable) == 0x000008, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, Temp_byte_Variable_1) == 0x000009, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, Temp_byte_Variable_2) == 0x00000A, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, Temp_byte_Variable_3) == 0x00000B, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, K2Node_CustomEvent_radio) == 0x000010, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::K2Node_CustomEvent_radio' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_getMainPlayer_AsMain_Player) == 0x000018, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_getMainPlayer_AsMain_Player' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, K2Node_Event_InFocusEvent) == 0x000020, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::K2Node_Event_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, K2Node_ComponentBoundEvent_Value_1) == 0x000028, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::K2Node_ComponentBoundEvent_Value_1' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_GetDuration_ReturnValue) == 0x000030, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_GetDuration_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_Conv_FloatToText_ReturnValue) == 0x000038, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000050, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_Play_ReturnValue) == 0x000054, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_Play_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, Temp_byte_Variable_4) == 0x000055, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_Pause_ReturnValue) == 0x000056, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_Pause_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x000058, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_Conv_StringToText_ReturnValue) == 0x000068, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, K2Node_Select_Default) == 0x000080, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000088, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_setActiveInterface_return) == 0x000090, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_setActiveInterface_return' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, K2Node_ComponentBoundEvent_Value) == 0x000094, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::K2Node_ComponentBoundEvent_Value' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, K2Node_Event_MyGeometry) == 0x000098, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, K2Node_Event_InDeltaTime) == 0x0000D0, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_GetTime_ReturnValue) == 0x0000D8, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_GetTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_GetTotalSeconds_ReturnValue) == 0x0000E0, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_GetTotalSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_GetTotalSeconds_ReturnValue_1) == 0x0000E4, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_GetTotalSeconds_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x0000E8, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, Temp_byte_Variable) == 0x000004, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, Temp_byte_Variable_1) == 0x000005, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, Temp_byte_Variable_2) == 0x000006, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::Temp_byte_Variable_2' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, Temp_byte_Variable_3) == 0x000007, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::Temp_byte_Variable_3' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, K2Node_CustomEvent_radio) == 0x000008, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::K2Node_CustomEvent_radio' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_getMainPlayer_AsMain_Player) == 0x000010, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_getMainPlayer_AsMain_Player' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, K2Node_Event_InFocusEvent) == 0x000018, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::K2Node_Event_InFocusEvent' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, K2Node_ComponentBoundEvent_Value_1) == 0x000020, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::K2Node_ComponentBoundEvent_Value_1' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_GetDuration_ReturnValue) == 0x000028, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_GetDuration_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_Conv_FloatToText_ReturnValue) == 0x000030, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000048, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_Play_ReturnValue) == 0x00004C, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_Play_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, Temp_byte_Variable_4) == 0x00004D, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::Temp_byte_Variable_4' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_Pause_ReturnValue) == 0x00004E, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_Pause_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x000050, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_Conv_StringToText_ReturnValue) == 0x000060, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, K2Node_Select_Default) == 0x000078, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000080, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_setActiveInterface_return) == 0x000088, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_setActiveInterface_return' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, K2Node_ComponentBoundEvent_Value) == 0x00008C, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::K2Node_ComponentBoundEvent_Value' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, K2Node_Event_MyGeometry) == 0x000090, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::K2Node_Event_MyGeometry' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, K2Node_Event_InDeltaTime) == 0x0000C8, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::K2Node_Event_InDeltaTime' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_GetTime_ReturnValue) == 0x0000D0, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_GetTime_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_GetTotalSeconds_ReturnValue) == 0x0000D8, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_GetTotalSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_GetTotalSeconds_ReturnValue_1) == 0x0000DC, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_GetTotalSeconds_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x0000E0, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline, CallFunc_GetValue_ReturnValue) == 0x0000E4, "Member 'Umg_tvOffline_C_ExecuteUbergraph_umg_tvOffline::CallFunc_GetValue_ReturnValue' has a wrong offset!");
 
 // Function umg_tvOffline.umg_tvOffline_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -157,7 +156,7 @@ struct Umg_tvOffline_C_Gen final
 public:
 	class FString                                 Param_Name;                                        // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable;                                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2767[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUmg_tvOfflineSlot_C*                   CallFunc_Create_ReturnValue;                       // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -170,7 +169,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2768[0x2];                                     // 0x0072(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_72[0x2];                                       // 0x0072(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -221,7 +220,7 @@ struct Umg_tvOffline_C_Select final
 public:
 	struct FStruct_tv                             Param_Data;                                        // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          PausePlayer;                                       // 0x0028(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2769[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0030(0x0018)()
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -283,7 +282,7 @@ public:
 	int32                                         CallFunc_BreakTimespan2_Minutes;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_BreakTimespan2_Seconds;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_BreakTimespan2_FractionNano;              // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_276A[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0020(0x0018)()
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0038(0x0018)()
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0050(0x0040)(HasGetValueTypeHash)
@@ -323,10 +322,10 @@ public:
 	int32                                         CallFunc_BreakTimespan_Milliseconds;               // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTimespan                              CallFunc_MakeTimespan_ReturnValue;                 // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetTotalSeconds_ReturnValue;              // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_276B[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimespan                              CallFunc_Multiply_TimespanFloat_ReturnValue;       // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Seek_ReturnValue;                         // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_276C[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_BreakTimespan_Days_1;                     // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_BreakTimespan_Hours_1;                    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_BreakTimespan_Minutes_1;                  // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

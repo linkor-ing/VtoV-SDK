@@ -19,8 +19,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass waterVolume.waterVolume_C
-// 0x0088 (0x02A8 - 0x0220)
-class AWaterVolume_C final : public AActor
+// 0x0098 (0x02B8 - 0x0220)
+class AWaterVolume_C : public AActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
@@ -38,11 +38,15 @@ public:
 	float                                         RiverForce;                                        // 0x0298(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Visible;                                           // 0x029C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          SurfaceOnly;                                       // 0x029D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_33CC[0x2];                                     // 0x029E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29E[0x2];                                      // 0x029E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         AmbienceVolume;                                    // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A4[0x4];                                      // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     InitMat;                                           // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Frozen;                                            // 0x02B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_waterVolume(int32 EntryPoint);
+	void Init();
 	void GamemodeBeginPlay();
 	void SignalDeleted();
 	void SignalSaved();
@@ -55,14 +59,17 @@ public:
 	void GamemodeMakeKeys();
 	void PropRenderer_finishProps();
 	void ApplyColor(const struct FLinearColor& Color);
+	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void ReceiveBeginPlay();
 	void BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 	void BndEvt__Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 	void ReceiveTick(float DeltaSeconds);
 	void UserConstructionScript();
-	void SoundSurface(class AActor* Self2, class USoundBase* Sound, bool Effect);
+	void SoundSurface(class AActor* Self2, class USoundBase* Sound, bool Effect, const struct FVector& Loc, const struct FVector& Scale);
 	void boy(class AActor* Self2);
 	void NewFunction_0(bool Condition);
+	void Freeze(bool Param_Frozen);
+	void UpdateWaterData();
 	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base);
 
 public:
@@ -76,7 +83,7 @@ public:
 	}
 };
 static_assert(alignof(AWaterVolume_C) == 0x000008, "Wrong alignment on AWaterVolume_C");
-static_assert(sizeof(AWaterVolume_C) == 0x0002A8, "Wrong size on AWaterVolume_C");
+static_assert(sizeof(AWaterVolume_C) == 0x0002B8, "Wrong size on AWaterVolume_C");
 static_assert(offsetof(AWaterVolume_C, UberGraphFrame) == 0x000220, "Member 'AWaterVolume_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AWaterVolume_C, LakeLoop) == 0x000228, "Member 'AWaterVolume_C::LakeLoop' has a wrong offset!");
 static_assert(offsetof(AWaterVolume_C, Box) == 0x000230, "Member 'AWaterVolume_C::Box' has a wrong offset!");
@@ -93,6 +100,8 @@ static_assert(offsetof(AWaterVolume_C, RiverForce) == 0x000298, "Member 'AWaterV
 static_assert(offsetof(AWaterVolume_C, Visible) == 0x00029C, "Member 'AWaterVolume_C::Visible' has a wrong offset!");
 static_assert(offsetof(AWaterVolume_C, SurfaceOnly) == 0x00029D, "Member 'AWaterVolume_C::SurfaceOnly' has a wrong offset!");
 static_assert(offsetof(AWaterVolume_C, AmbienceVolume) == 0x0002A0, "Member 'AWaterVolume_C::AmbienceVolume' has a wrong offset!");
+static_assert(offsetof(AWaterVolume_C, InitMat) == 0x0002A8, "Member 'AWaterVolume_C::InitMat' has a wrong offset!");
+static_assert(offsetof(AWaterVolume_C, Frozen) == 0x0002B0, "Member 'AWaterVolume_C::Frozen' has a wrong offset!");
 
 }
 

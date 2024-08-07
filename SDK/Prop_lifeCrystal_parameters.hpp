@@ -17,37 +17,42 @@ namespace SDK::Params
 {
 
 // Function prop_lifeCrystal.prop_lifeCrystal_C.ExecuteUbergraph_prop_lifeCrystal
-// 0x00B0 (0x00B0 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct Prop_lifeCrystal_C_ExecuteUbergraph_prop_lifeCrystal final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_38FC[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit;                                  // 0x0010(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AMainPlayer_C*                          CallFunc_getMainPlayer_AsMain_Player;              // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IInt_objects_C>        CallFunc_ignite_self_CastInput;                    // 0x00A0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_damage;                               // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          CallFunc_getMainPlayer_AsMain_Player;              // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IInt_objects_C>        CallFunc_ignite_self_CastInput;                    // 0x00A8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Prop_lifeCrystal_C_ExecuteUbergraph_prop_lifeCrystal) == 0x000008, "Wrong alignment on Prop_lifeCrystal_C_ExecuteUbergraph_prop_lifeCrystal");
-static_assert(sizeof(Prop_lifeCrystal_C_ExecuteUbergraph_prop_lifeCrystal) == 0x0000B0, "Wrong size on Prop_lifeCrystal_C_ExecuteUbergraph_prop_lifeCrystal");
+static_assert(sizeof(Prop_lifeCrystal_C_ExecuteUbergraph_prop_lifeCrystal) == 0x0000B8, "Wrong size on Prop_lifeCrystal_C_ExecuteUbergraph_prop_lifeCrystal");
 static_assert(offsetof(Prop_lifeCrystal_C_ExecuteUbergraph_prop_lifeCrystal, EntryPoint) == 0x000000, "Member 'Prop_lifeCrystal_C_ExecuteUbergraph_prop_lifeCrystal::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Prop_lifeCrystal_C_ExecuteUbergraph_prop_lifeCrystal, K2Node_Event_player) == 0x000008, "Member 'Prop_lifeCrystal_C_ExecuteUbergraph_prop_lifeCrystal::K2Node_Event_player' has a wrong offset!");
 static_assert(offsetof(Prop_lifeCrystal_C_ExecuteUbergraph_prop_lifeCrystal, K2Node_Event_hit) == 0x000010, "Member 'Prop_lifeCrystal_C_ExecuteUbergraph_prop_lifeCrystal::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_lifeCrystal_C_ExecuteUbergraph_prop_lifeCrystal, CallFunc_getMainPlayer_AsMain_Player) == 0x000098, "Member 'Prop_lifeCrystal_C_ExecuteUbergraph_prop_lifeCrystal::CallFunc_getMainPlayer_AsMain_Player' has a wrong offset!");
-static_assert(offsetof(Prop_lifeCrystal_C_ExecuteUbergraph_prop_lifeCrystal, CallFunc_ignite_self_CastInput) == 0x0000A0, "Member 'Prop_lifeCrystal_C_ExecuteUbergraph_prop_lifeCrystal::CallFunc_ignite_self_CastInput' has a wrong offset!");
+static_assert(offsetof(Prop_lifeCrystal_C_ExecuteUbergraph_prop_lifeCrystal, K2Node_Event_damage) == 0x000098, "Member 'Prop_lifeCrystal_C_ExecuteUbergraph_prop_lifeCrystal::K2Node_Event_damage' has a wrong offset!");
+static_assert(offsetof(Prop_lifeCrystal_C_ExecuteUbergraph_prop_lifeCrystal, CallFunc_getMainPlayer_AsMain_Player) == 0x0000A0, "Member 'Prop_lifeCrystal_C_ExecuteUbergraph_prop_lifeCrystal::CallFunc_getMainPlayer_AsMain_Player' has a wrong offset!");
+static_assert(offsetof(Prop_lifeCrystal_C_ExecuteUbergraph_prop_lifeCrystal, CallFunc_ignite_self_CastInput) == 0x0000A8, "Member 'Prop_lifeCrystal_C_ExecuteUbergraph_prop_lifeCrystal::CallFunc_ignite_self_CastInput' has a wrong offset!");
 
 // Function prop_lifeCrystal.prop_lifeCrystal_C.damageByPlayer
-// 0x0090 (0x0090 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct Prop_lifeCrystal_C_DamageByPlayer final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         Damage;                                            // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_lifeCrystal_C_DamageByPlayer) == 0x000008, "Wrong alignment on Prop_lifeCrystal_C_DamageByPlayer");
-static_assert(sizeof(Prop_lifeCrystal_C_DamageByPlayer) == 0x000090, "Wrong size on Prop_lifeCrystal_C_DamageByPlayer");
+static_assert(sizeof(Prop_lifeCrystal_C_DamageByPlayer) == 0x000098, "Wrong size on Prop_lifeCrystal_C_DamageByPlayer");
 static_assert(offsetof(Prop_lifeCrystal_C_DamageByPlayer, Player) == 0x000000, "Member 'Prop_lifeCrystal_C_DamageByPlayer::Player' has a wrong offset!");
 static_assert(offsetof(Prop_lifeCrystal_C_DamageByPlayer, Param_Hit) == 0x000008, "Member 'Prop_lifeCrystal_C_DamageByPlayer::Param_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_lifeCrystal_C_DamageByPlayer, Damage) == 0x000090, "Member 'Prop_lifeCrystal_C_DamageByPlayer::Damage' has a wrong offset!");
 
 }
 

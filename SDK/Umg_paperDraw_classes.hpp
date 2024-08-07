@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "InputCore_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "UMG_classes.hpp"
+#include "InputCore_structs.hpp"
+#include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -60,7 +60,7 @@ public:
 	struct FVector2D                              LastMousePos;                                      // 0x0360(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              LocalPos;                                          // 0x0368(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsDraw;                                            // 0x0370(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E92[0x7];                                     // 0x0371(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_371[0x7];                                      // 0x0371(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AProp_paper_drawable_C*                 PaperDraw;                                         // 0x0378(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCanvas*                                Canvas;                                            // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FDrawToRenderTargetContext             CanvasContext;                                     // 0x0388(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
@@ -69,7 +69,7 @@ public:
 	struct FVector2D                              CanvasSize;                                        // 0x03A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              ViewportSize;                                      // 0x03B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Erase;                                             // 0x03B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E93[0x3];                                     // 0x03B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B9[0x3];                                      // 0x03B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           Color;                                             // 0x03BC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         C_h;                                               // 0x03CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         C_s;                                               // 0x03D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -89,7 +89,7 @@ public:
 	float                                         CircularRadius;                                    // 0x0400(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          SunrayDraw;                                        // 0x0404(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          DelayDraw;                                         // 0x0405(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E94[0x2];                                     // 0x0406(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_406[0x2];                                      // 0x0406(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FKey                                   MouseKey;                                          // 0x0408(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	float                                         Jitter;                                            // 0x0420(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Size;                                              // 0x0424(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -110,6 +110,7 @@ public:
 	void GamemodeMakeKeys();
 	void PropRenderer_finishProps();
 	void ApplyColor(const struct FLinearColor& Param_Color);
+	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void AAA(bool bSuccess);
 	void BndEvt__umg_paperDraw_buttonExport_K2Node_ComponentBoundEvent_7_OnButtonClickedEvent__DelegateSignature();

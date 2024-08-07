@@ -22,7 +22,7 @@ struct FStruct_scientistSpecialResponse final
 {
 public:
 	Enum_emailChars                               Character_4_FEE61152409B1BE51BE8E4BE30CAE48A;      // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1DC4[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FText>                           Topics_8_068439474C483CFC2A6658B1C5A8163A;         // 0x0008(0x0010)(Edit, BlueprintVisible)
 	TArray<class FText>                           Messages_10_30F66A3D47E12D2DA28897B0F7191EC4;      // 0x0018(0x0010)(Edit, BlueprintVisible)
 };

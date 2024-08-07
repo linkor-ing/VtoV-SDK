@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass spaceRenderer.spaceRenderer_C
-// 0x0098 (0x02B8 - 0x0220)
+// 0x00A0 (0x02C0 - 0x0220)
 class ASpaceRenderer_C final : public AActor
 {
 public:
@@ -39,14 +39,15 @@ public:
 	struct FVector2D                              Coords;                                            // 0x0264(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              Coords_rot;                                        // 0x026C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsMoving;                                          // 0x0274(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_302B[0x3];                                     // 0x0275(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_275[0x3];                                      // 0x0275(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FStruct_signal_spawn>           Signals;                                           // 0x0278(0x0010)(Edit, BlueprintVisible)
 	class UMaterialInstanceDynamic*               Dynmat_signals;                                    // 0x0288(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         SensorSpd;                                         // 0x0290(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_302C[0x4];                                     // 0x0294(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_294[0x4];                                      // 0x0294(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UUmg_signal_C*>                  Signals_a;                                         // 0x0298(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	class ATriggerBase_C*                         Trigger_OnPinged;                                  // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ATriggerBase_C*                         Trigger_OnFound;                                   // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          SoundActive;                                       // 0x02B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_spaceRenderer(int32 EntryPoint);
@@ -72,7 +73,7 @@ public:
 	}
 };
 static_assert(alignof(ASpaceRenderer_C) == 0x000008, "Wrong alignment on ASpaceRenderer_C");
-static_assert(sizeof(ASpaceRenderer_C) == 0x0002B8, "Wrong size on ASpaceRenderer_C");
+static_assert(sizeof(ASpaceRenderer_C) == 0x0002C0, "Wrong size on ASpaceRenderer_C");
 static_assert(offsetof(ASpaceRenderer_C, UberGraphFrame) == 0x000220, "Member 'ASpaceRenderer_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ASpaceRenderer_C, Pings) == 0x000228, "Member 'ASpaceRenderer_C::Pings' has a wrong offset!");
 static_assert(offsetof(ASpaceRenderer_C, Corrds_loop) == 0x000230, "Member 'ASpaceRenderer_C::Corrds_loop' has a wrong offset!");
@@ -94,6 +95,7 @@ static_assert(offsetof(ASpaceRenderer_C, SensorSpd) == 0x000290, "Member 'ASpace
 static_assert(offsetof(ASpaceRenderer_C, Signals_a) == 0x000298, "Member 'ASpaceRenderer_C::Signals_a' has a wrong offset!");
 static_assert(offsetof(ASpaceRenderer_C, Trigger_OnPinged) == 0x0002A8, "Member 'ASpaceRenderer_C::Trigger_OnPinged' has a wrong offset!");
 static_assert(offsetof(ASpaceRenderer_C, Trigger_OnFound) == 0x0002B0, "Member 'ASpaceRenderer_C::Trigger_OnFound' has a wrong offset!");
+static_assert(offsetof(ASpaceRenderer_C, SoundActive) == 0x0002B8, "Member 'ASpaceRenderer_C::SoundActive' has a wrong offset!");
 
 }
 

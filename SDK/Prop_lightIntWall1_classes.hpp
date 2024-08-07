@@ -19,26 +19,26 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_lightIntWall1.prop_lightIntWall1_C
-// 0x0010 (0x0410 - 0x0400)
+// 0x0010 (0x0420 - 0x0410)
 class AProp_lightIntWall1_C : public AProp_wallAttachable_C
 {
 public:
-	uint8                                         Pad_3DAB[0x4];                                     // 0x03F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_lightIntWall1_C;               // 0x03F8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPointLightComponent*                   PointLight;                                        // 0x0400(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          Active;                                            // 0x0408(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_405[0x3];                                      // 0x0405(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_lightIntWall1_C;               // 0x0408(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPointLightComponent*                   PointLight;                                        // 0x0410(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          Active;                                            // 0x0418(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_prop_lightIntWall1(int32 EntryPoint);
 	void WirePass(class AWire_C* Wire);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
 	void WireDisconnected(class AWire_C* Wire, bool Side);
 	void WireConnected(class AWire_C* Wire, bool Side);
 	void Upd();
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
 	void UserConstructionScript();
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 
 public:
 	static class UClass* StaticClass()
@@ -51,10 +51,10 @@ public:
 	}
 };
 static_assert(alignof(AProp_lightIntWall1_C) == 0x000010, "Wrong alignment on AProp_lightIntWall1_C");
-static_assert(sizeof(AProp_lightIntWall1_C) == 0x000410, "Wrong size on AProp_lightIntWall1_C");
-static_assert(offsetof(AProp_lightIntWall1_C, UberGraphFrame_Prop_lightIntWall1_C) == 0x0003F8, "Member 'AProp_lightIntWall1_C::UberGraphFrame_Prop_lightIntWall1_C' has a wrong offset!");
-static_assert(offsetof(AProp_lightIntWall1_C, PointLight) == 0x000400, "Member 'AProp_lightIntWall1_C::PointLight' has a wrong offset!");
-static_assert(offsetof(AProp_lightIntWall1_C, Active) == 0x000408, "Member 'AProp_lightIntWall1_C::Active' has a wrong offset!");
+static_assert(sizeof(AProp_lightIntWall1_C) == 0x000420, "Wrong size on AProp_lightIntWall1_C");
+static_assert(offsetof(AProp_lightIntWall1_C, UberGraphFrame_Prop_lightIntWall1_C) == 0x000408, "Member 'AProp_lightIntWall1_C::UberGraphFrame_Prop_lightIntWall1_C' has a wrong offset!");
+static_assert(offsetof(AProp_lightIntWall1_C, PointLight) == 0x000410, "Member 'AProp_lightIntWall1_C::PointLight' has a wrong offset!");
+static_assert(offsetof(AProp_lightIntWall1_C, Active) == 0x000418, "Member 'AProp_lightIntWall1_C::Active' has a wrong offset!");
 
 }
 

@@ -19,63 +19,98 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass passwordLock.passwordLock_C
-// 0x0070 (0x02F8 - 0x0288)
+// 0x0118 (0x03A0 - 0x0288)
 class APasswordLock_C final : public ATriggerBase_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_PasswordLock_C;                     // 0x0288(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UParticleSystemComponent*               ParticleSystem3;                                   // 0x0290(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Cube;                                              // 0x0298(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class APasswordLock_C*                        Pair;                                              // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 Pair_key;                                          // 0x02A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          Active;                                            // 0x02B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F50[0x7];                                     // 0x02B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ADoor_C*                                Door;                                              // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 Door_key;                                          // 0x02C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          Entering;                                          // 0x02D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          EnterFalse;                                        // 0x02D9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          FLASE;                                             // 0x02DA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F51[0x5];                                     // 0x02DB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Password;                                          // 0x02E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          IsReset;                                           // 0x02F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Protected;                                         // 0x02F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UBoxComponent*                          Card;                                              // 0x0290(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        Audio;                                             // 0x0298(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Key_deny;                                          // 0x02A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Key_acc;                                           // 0x02A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Key_0;                                             // 0x02B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Key_9;                                             // 0x02B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Key_8;                                             // 0x02C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Key_7;                                             // 0x02C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Key_6;                                             // 0x02D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Key_5;                                             // 0x02D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Key_4;                                             // 0x02E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Key_3;                                             // 0x02E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Key_2;                                             // 0x02F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Key_1;                                             // 0x02F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    Keys_0;                                            // 0x0300(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               ParticleSystem3;                                   // 0x0308(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Cube;                                              // 0x0310(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class APasswordLock_C*                        Pair;                                              // 0x0318(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 Pair_key;                                          // 0x0320(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          Active;                                            // 0x0330(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_331[0x7];                                      // 0x0331(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ADoor_C*                                Door;                                              // 0x0338(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 Door_key;                                          // 0x0340(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          Entering;                                          // 0x0350(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          EnterFalse;                                        // 0x0351(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          FLASE;                                             // 0x0352(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_353[0x5];                                      // 0x0353(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Password;                                          // 0x0358(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          IsReset;                                           // 0x0368(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Protected;                                         // 0x0369(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_36A[0x6];                                      // 0x036A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UPrimitiveComponent*>            Keys_1;                                            // 0x0370(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	int32                                         Num;                                               // 0x0380(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsAcc;                                             // 0x0384(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          IsDeny;                                            // 0x0385(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_386[0x2];                                      // 0x0386(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 InPassword;                                        // 0x0388(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	bool                                          IsCard;                                            // 0x0398(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          IsFocused;                                         // 0x0399(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          ParticleSystemCrashesThisShitFuckYou;              // 0x039A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_passwordLock(int32 EntryPoint);
-	void Kicked(bool Kick);
+	void Unfocus();
+	void InputNumber(int32 Param_Num);
+	void PlayerAnykey(const struct FKey& Param_Key, bool Pressed);
+	void FocusOn();
+	void ReceiveBeginPlay();
 	void Open2();
-	void RunTrigger(class AActor* Param_Owner, int32 Param_Index);
 	void Reset();
-	void SendName(class FName Param_Name);
 	void DriveDetached();
-	void broken();
+	void PlayerR(class AMainPlayer_C* Player);
 	void Player_use(class AMainPlayer_C* Player, const struct FHitResult& Hit);
+	void Kicked(bool Kick);
+	void SendName(class FName Param_Name);
+	void broken();
 	void broken_fire();
-	void Thrown(class AMainPlayer_C* Player);
+	void PlayerHold(class AMainPlayer_C* Player);
 	void Open(bool Param_Active);
+	void Thrown(class AMainPlayer_C* Player);
+	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage);
+	void UpdateStrAgl();
 	void FalseEnterEvent();
 	void PowerChanged(bool Active_calc, bool Active_downl, bool Active_coords, bool Active_play, bool Active_light);
-	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit);
-	void ReceiveBeginPlay();
-	void UpdateStrAgl();
+	void PlayerUnequip(class AMainPlayer_C* Player);
 	void SetActive(bool IsPairCall);
 	void beep();
 	void Upd();
 	void IsButtonUsed(bool* Failed);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
 	void NoRespawn(bool Param_NoRespawn, bool* Return);
 	void CanPickup(bool* Return);
 	void AsProp(class AProp_C** Return);
 	void CanBePutInContainer(bool* Return);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
+	void LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage);
+	void PlayerLookAway(class AMainPlayer_C* Player);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
+	void RunTrigger(class AActor* Param_Owner, int32 Param_Index);
 	void GamemodeBeginPlay();
 	void UserConstructionScript();
 	void GetTriggerData(struct FStruct_triggerSave* Data);
 	void LoadTriggerData(const struct FStruct_triggerSave& Data, bool* Return);
 	void IgnoreSave_trigger(bool* Ignore);
-	void ProcessKeys(bool* Return);
+	void GatherDataFromKeyT(bool* Gather);
 	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void ProcessKeys(bool* Return);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 
 public:
 	static class UClass* StaticClass()
@@ -88,21 +123,44 @@ public:
 	}
 };
 static_assert(alignof(APasswordLock_C) == 0x000008, "Wrong alignment on APasswordLock_C");
-static_assert(sizeof(APasswordLock_C) == 0x0002F8, "Wrong size on APasswordLock_C");
+static_assert(sizeof(APasswordLock_C) == 0x0003A0, "Wrong size on APasswordLock_C");
 static_assert(offsetof(APasswordLock_C, UberGraphFrame_PasswordLock_C) == 0x000288, "Member 'APasswordLock_C::UberGraphFrame_PasswordLock_C' has a wrong offset!");
-static_assert(offsetof(APasswordLock_C, ParticleSystem3) == 0x000290, "Member 'APasswordLock_C::ParticleSystem3' has a wrong offset!");
-static_assert(offsetof(APasswordLock_C, Cube) == 0x000298, "Member 'APasswordLock_C::Cube' has a wrong offset!");
-static_assert(offsetof(APasswordLock_C, Pair) == 0x0002A0, "Member 'APasswordLock_C::Pair' has a wrong offset!");
-static_assert(offsetof(APasswordLock_C, Pair_key) == 0x0002A8, "Member 'APasswordLock_C::Pair_key' has a wrong offset!");
-static_assert(offsetof(APasswordLock_C, Active) == 0x0002B8, "Member 'APasswordLock_C::Active' has a wrong offset!");
-static_assert(offsetof(APasswordLock_C, Door) == 0x0002C0, "Member 'APasswordLock_C::Door' has a wrong offset!");
-static_assert(offsetof(APasswordLock_C, Door_key) == 0x0002C8, "Member 'APasswordLock_C::Door_key' has a wrong offset!");
-static_assert(offsetof(APasswordLock_C, Entering) == 0x0002D8, "Member 'APasswordLock_C::Entering' has a wrong offset!");
-static_assert(offsetof(APasswordLock_C, EnterFalse) == 0x0002D9, "Member 'APasswordLock_C::EnterFalse' has a wrong offset!");
-static_assert(offsetof(APasswordLock_C, FLASE) == 0x0002DA, "Member 'APasswordLock_C::FLASE' has a wrong offset!");
-static_assert(offsetof(APasswordLock_C, Password) == 0x0002E0, "Member 'APasswordLock_C::Password' has a wrong offset!");
-static_assert(offsetof(APasswordLock_C, IsReset) == 0x0002F0, "Member 'APasswordLock_C::IsReset' has a wrong offset!");
-static_assert(offsetof(APasswordLock_C, Protected) == 0x0002F1, "Member 'APasswordLock_C::Protected' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Card) == 0x000290, "Member 'APasswordLock_C::Card' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Audio) == 0x000298, "Member 'APasswordLock_C::Audio' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Key_deny) == 0x0002A0, "Member 'APasswordLock_C::Key_deny' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Key_acc) == 0x0002A8, "Member 'APasswordLock_C::Key_acc' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Key_0) == 0x0002B0, "Member 'APasswordLock_C::Key_0' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Key_9) == 0x0002B8, "Member 'APasswordLock_C::Key_9' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Key_8) == 0x0002C0, "Member 'APasswordLock_C::Key_8' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Key_7) == 0x0002C8, "Member 'APasswordLock_C::Key_7' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Key_6) == 0x0002D0, "Member 'APasswordLock_C::Key_6' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Key_5) == 0x0002D8, "Member 'APasswordLock_C::Key_5' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Key_4) == 0x0002E0, "Member 'APasswordLock_C::Key_4' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Key_3) == 0x0002E8, "Member 'APasswordLock_C::Key_3' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Key_2) == 0x0002F0, "Member 'APasswordLock_C::Key_2' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Key_1) == 0x0002F8, "Member 'APasswordLock_C::Key_1' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Keys_0) == 0x000300, "Member 'APasswordLock_C::Keys_0' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, ParticleSystem3) == 0x000308, "Member 'APasswordLock_C::ParticleSystem3' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Cube) == 0x000310, "Member 'APasswordLock_C::Cube' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Pair) == 0x000318, "Member 'APasswordLock_C::Pair' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Pair_key) == 0x000320, "Member 'APasswordLock_C::Pair_key' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Active) == 0x000330, "Member 'APasswordLock_C::Active' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Door) == 0x000338, "Member 'APasswordLock_C::Door' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Door_key) == 0x000340, "Member 'APasswordLock_C::Door_key' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Entering) == 0x000350, "Member 'APasswordLock_C::Entering' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, EnterFalse) == 0x000351, "Member 'APasswordLock_C::EnterFalse' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, FLASE) == 0x000352, "Member 'APasswordLock_C::FLASE' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Password) == 0x000358, "Member 'APasswordLock_C::Password' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, IsReset) == 0x000368, "Member 'APasswordLock_C::IsReset' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Protected) == 0x000369, "Member 'APasswordLock_C::Protected' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Keys_1) == 0x000370, "Member 'APasswordLock_C::Keys_1' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, Num) == 0x000380, "Member 'APasswordLock_C::Num' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, IsAcc) == 0x000384, "Member 'APasswordLock_C::IsAcc' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, IsDeny) == 0x000385, "Member 'APasswordLock_C::IsDeny' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, InPassword) == 0x000388, "Member 'APasswordLock_C::InPassword' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, IsCard) == 0x000398, "Member 'APasswordLock_C::IsCard' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, IsFocused) == 0x000399, "Member 'APasswordLock_C::IsFocused' has a wrong offset!");
+static_assert(offsetof(APasswordLock_C, ParticleSystemCrashesThisShitFuckYou) == 0x00039A, "Member 'APasswordLock_C::ParticleSystemCrashesThisShitFuckYou' has a wrong offset!");
 
 }
 

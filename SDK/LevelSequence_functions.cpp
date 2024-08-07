@@ -126,6 +126,157 @@ class UObject* ULevelSequence::FindMetaDataByClass(TSubclassOf<class UObject> In
 }
 
 
+// Function LevelSequence.LevelSequenceDirector.GetBoundActor
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FMovieSceneObjectBindingID       ObjectBinding                                          (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class AActor* ULevelSequenceDirector::GetBoundActor(const struct FMovieSceneObjectBindingID& ObjectBinding)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LevelSequenceDirector", "GetBoundActor");
+
+	Params::LevelSequenceDirector_GetBoundActor Parms{};
+
+	Parms.ObjectBinding = std::move(ObjectBinding);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function LevelSequence.LevelSequenceDirector.GetBoundActors
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FMovieSceneObjectBindingID       ObjectBinding                                          (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<class AActor*>                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+
+TArray<class AActor*> ULevelSequenceDirector::GetBoundActors(const struct FMovieSceneObjectBindingID& ObjectBinding)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LevelSequenceDirector", "GetBoundActors");
+
+	Params::LevelSequenceDirector_GetBoundActors Parms{};
+
+	Parms.ObjectBinding = std::move(ObjectBinding);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function LevelSequence.LevelSequenceDirector.GetBoundObject
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FMovieSceneObjectBindingID       ObjectBinding                                          (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UObject* ULevelSequenceDirector::GetBoundObject(const struct FMovieSceneObjectBindingID& ObjectBinding)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LevelSequenceDirector", "GetBoundObject");
+
+	Params::LevelSequenceDirector_GetBoundObject Parms{};
+
+	Parms.ObjectBinding = std::move(ObjectBinding);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function LevelSequence.LevelSequenceDirector.GetBoundObjects
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FMovieSceneObjectBindingID       ObjectBinding                                          (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<class UObject*>                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+
+TArray<class UObject*> ULevelSequenceDirector::GetBoundObjects(const struct FMovieSceneObjectBindingID& ObjectBinding)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LevelSequenceDirector", "GetBoundObjects");
+
+	Params::LevelSequenceDirector_GetBoundObjects Parms{};
+
+	Parms.ObjectBinding = std::move(ObjectBinding);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function LevelSequence.LevelSequenceDirector.GetSequence
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UMovieSceneSequence*              ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UMovieSceneSequence* ULevelSequenceDirector::GetSequence()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LevelSequenceDirector", "GetSequence");
+
+	Params::LevelSequenceDirector_GetSequence Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function LevelSequence.LevelSequenceDirector.OnCreated
+// (Event, Public, BlueprintEvent)
+
+void ULevelSequenceDirector::OnCreated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LevelSequenceDirector", "OnCreated");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function LevelSequence.LevelSequenceBurnInOptions.SetBurnIn
 // (Final, Native, Public, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -148,6 +299,67 @@ void ULevelSequenceBurnInOptions::SetBurnIn(const struct FSoftClassPath& InBurnI
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class ULevelSequence*                   LevelSequence                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FMovieSceneSequencePlaybackSettingsSettings                                               (Parm, NoDestructor, NativeAccessSpecifierPublic)
+// class ALevelSequenceActor*              OutActor                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class ULevelSequencePlayer*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class ULevelSequencePlayer* ULevelSequencePlayer::CreateLevelSequencePlayer(class UObject* WorldContextObject, class ULevelSequence* LevelSequence, const struct FMovieSceneSequencePlaybackSettings& Settings, class ALevelSequenceActor** OutActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("LevelSequencePlayer", "CreateLevelSequencePlayer");
+
+	Params::LevelSequencePlayer_CreateLevelSequencePlayer Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.LevelSequence = LevelSequence;
+	Parms.Settings = std::move(Settings);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutActor != nullptr)
+		*OutActor = Parms.OutActor;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function LevelSequence.LevelSequencePlayer.GetActiveCameraComponent
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UCameraComponent*                 ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UCameraComponent* ULevelSequencePlayer::GetActiveCameraComponent() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LevelSequencePlayer", "GetActiveCameraComponent");
+
+	Params::LevelSequencePlayer_GetActiveCameraComponent Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -631,218 +843,6 @@ TSubclassOf<class ULevelSequenceBurnInInitSettings> ULevelSequenceBurnIn::GetSet
 		Func = Class->GetFunction("LevelSequenceBurnIn", "GetSettingsClass");
 
 	Params::LevelSequenceBurnIn_GetSettingsClass Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function LevelSequence.LevelSequenceDirector.GetBoundActor
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// struct FMovieSceneObjectBindingID       ObjectBinding                                          (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class AActor* ULevelSequenceDirector::GetBoundActor(const struct FMovieSceneObjectBindingID& ObjectBinding)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceDirector", "GetBoundActor");
-
-	Params::LevelSequenceDirector_GetBoundActor Parms{};
-
-	Parms.ObjectBinding = std::move(ObjectBinding);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function LevelSequence.LevelSequenceDirector.GetBoundActors
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// struct FMovieSceneObjectBindingID       ObjectBinding                                          (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<class AActor*>                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-
-TArray<class AActor*> ULevelSequenceDirector::GetBoundActors(const struct FMovieSceneObjectBindingID& ObjectBinding)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceDirector", "GetBoundActors");
-
-	Params::LevelSequenceDirector_GetBoundActors Parms{};
-
-	Parms.ObjectBinding = std::move(ObjectBinding);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function LevelSequence.LevelSequenceDirector.GetBoundObject
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// struct FMovieSceneObjectBindingID       ObjectBinding                                          (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UObject* ULevelSequenceDirector::GetBoundObject(const struct FMovieSceneObjectBindingID& ObjectBinding)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceDirector", "GetBoundObject");
-
-	Params::LevelSequenceDirector_GetBoundObject Parms{};
-
-	Parms.ObjectBinding = std::move(ObjectBinding);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function LevelSequence.LevelSequenceDirector.GetBoundObjects
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// struct FMovieSceneObjectBindingID       ObjectBinding                                          (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<class UObject*>                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-
-TArray<class UObject*> ULevelSequenceDirector::GetBoundObjects(const struct FMovieSceneObjectBindingID& ObjectBinding)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceDirector", "GetBoundObjects");
-
-	Params::LevelSequenceDirector_GetBoundObjects Parms{};
-
-	Parms.ObjectBinding = std::move(ObjectBinding);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function LevelSequence.LevelSequenceDirector.GetSequence
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UMovieSceneSequence*              ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UMovieSceneSequence* ULevelSequenceDirector::GetSequence()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceDirector", "GetSequence");
-
-	Params::LevelSequenceDirector_GetSequence Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function LevelSequence.LevelSequenceDirector.OnCreated
-// (Event, Public, BlueprintEvent)
-
-void ULevelSequenceDirector::OnCreated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceDirector", "OnCreated");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class ULevelSequence*                   LevelSequence                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FMovieSceneSequencePlaybackSettingsSettings                                               (Parm, NoDestructor, NativeAccessSpecifierPublic)
-// class ALevelSequenceActor*              OutActor                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class ULevelSequencePlayer*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class ULevelSequencePlayer* ULevelSequencePlayer::CreateLevelSequencePlayer(class UObject* WorldContextObject, class ULevelSequence* LevelSequence, const struct FMovieSceneSequencePlaybackSettings& Settings, class ALevelSequenceActor** OutActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LevelSequencePlayer", "CreateLevelSequencePlayer");
-
-	Params::LevelSequencePlayer_CreateLevelSequencePlayer Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-	Parms.LevelSequence = LevelSequence;
-	Parms.Settings = std::move(Settings);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutActor != nullptr)
-		*OutActor = Parms.OutActor;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function LevelSequence.LevelSequencePlayer.GetActiveCameraComponent
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class UCameraComponent*                 ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UCameraComponent* ULevelSequencePlayer::GetActiveCameraComponent() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequencePlayer", "GetActiveCameraComponent");
-
-	Params::LevelSequencePlayer_GetActiveCameraComponent Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

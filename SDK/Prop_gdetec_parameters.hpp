@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Enum_interactionActions_structs.hpp"
-#include "Engine_structs.hpp"
 #include "Struct_save_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Struct_mBool_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -26,90 +26,71 @@ struct Prop_gdetec_C_ExecuteUbergraph_prop_gdetec final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3907[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3908[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundBase*                             Temp_object_Variable;                              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable_1;                            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3909[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundBase*                             K2Node_Select_Default;                             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent_1;  // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor_1;           // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp_1;            // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex_1;       // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_390A[0x3];                                     // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0058(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent;    // 0x00E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_390B[0x3];                                     // 0x0101(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Percent_FloatFloat_ReturnValue;           // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x010C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x010D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_390C[0x2];                                     // 0x010E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0110(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_390D[0x4];                                     // 0x011C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x0128(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x01B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x01B5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             K2Node_Select_Default;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent_1;  // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor_1;           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp_1;            // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex_1;       // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0048(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent;    // 0x00D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x00E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F1[0x3];                                       // 0x00F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Percent_FloatFloat_ReturnValue;           // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00FD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_FE[0x2];                                       // 0x00FE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0100(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x0118(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A1[0x7];                                      // 0x01A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec) == 0x000008, "Wrong alignment on Prop_gdetec_C_ExecuteUbergraph_prop_gdetec");
 static_assert(sizeof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec) == 0x0001B8, "Wrong size on Prop_gdetec_C_ExecuteUbergraph_prop_gdetec");
 static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, EntryPoint) == 0x000000, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_Event_player) == 0x000008, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, Temp_bool_Variable) == 0x000010, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, Temp_object_Variable) == 0x000018, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, Temp_object_Variable_1) == 0x000020, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_Event_DeltaSeconds) == 0x000028, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_Select_Default) == 0x000030, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_ComponentBoundEvent_OverlappedComponent_1) == 0x000038, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_ComponentBoundEvent_OverlappedComponent_1' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_ComponentBoundEvent_OtherActor_1) == 0x000040, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_ComponentBoundEvent_OtherActor_1' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_ComponentBoundEvent_OtherComp_1) == 0x000048, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_ComponentBoundEvent_OtherComp_1' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_ComponentBoundEvent_OtherBodyIndex_1) == 0x000050, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_ComponentBoundEvent_OtherBodyIndex_1' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_ComponentBoundEvent_bFromSweep) == 0x000054, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_ComponentBoundEvent_bFromSweep' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_ComponentBoundEvent_SweepResult) == 0x000058, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_ComponentBoundEvent_SweepResult' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_ComponentBoundEvent_OverlappedComponent) == 0x0000E0, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_ComponentBoundEvent_OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_ComponentBoundEvent_OtherActor) == 0x0000E8, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_ComponentBoundEvent_OtherComp) == 0x0000F0, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_ComponentBoundEvent_OtherBodyIndex) == 0x0000F8, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_ComponentBoundEvent_OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, CallFunc_Array_Add_ReturnValue) == 0x0000FC, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, CallFunc_Array_RemoveItem_ReturnValue) == 0x000100, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x000104, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, CallFunc_Percent_FloatFloat_ReturnValue) == 0x000108, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::CallFunc_Percent_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, CallFunc_Greater_FloatFloat_ReturnValue) == 0x00010C, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, CallFunc_Not_PreBool_ReturnValue) == 0x00010D, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000110, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_Event_player_1) == 0x000120, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_Event_hit) == 0x000128, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_Event_index) == 0x0001B0, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_Event_action) == 0x0001B4, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_SwitchEnum_CmpSuccess) == 0x0001B5, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-
-// Function prop_gdetec.prop_gdetec_C.actionOptionIndex
-// 0x0098 (0x0098 - 0x0000)
-struct Prop_gdetec_C_ActionOptionIndex final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_gdetec_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_gdetec_C_ActionOptionIndex");
-static_assert(sizeof(Prop_gdetec_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_gdetec_C_ActionOptionIndex");
-static_assert(offsetof(Prop_gdetec_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_gdetec_C_ActionOptionIndex::Player' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_gdetec_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_gdetec_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_gdetec_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, Temp_bool_Variable) == 0x000004, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, Temp_object_Variable) == 0x000008, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, Temp_object_Variable_1) == 0x000010, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::Temp_object_Variable_1' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_Event_DeltaSeconds) == 0x000018, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_Select_Default) == 0x000020, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_ComponentBoundEvent_OverlappedComponent_1) == 0x000028, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_ComponentBoundEvent_OverlappedComponent_1' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_ComponentBoundEvent_OtherActor_1) == 0x000030, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_ComponentBoundEvent_OtherActor_1' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_ComponentBoundEvent_OtherComp_1) == 0x000038, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_ComponentBoundEvent_OtherComp_1' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_ComponentBoundEvent_OtherBodyIndex_1) == 0x000040, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_ComponentBoundEvent_OtherBodyIndex_1' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_ComponentBoundEvent_bFromSweep) == 0x000044, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_ComponentBoundEvent_bFromSweep' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_ComponentBoundEvent_SweepResult) == 0x000048, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_ComponentBoundEvent_SweepResult' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_ComponentBoundEvent_OverlappedComponent) == 0x0000D0, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_ComponentBoundEvent_OverlappedComponent' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_ComponentBoundEvent_OtherActor) == 0x0000D8, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_ComponentBoundEvent_OtherComp) == 0x0000E0, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_ComponentBoundEvent_OtherBodyIndex) == 0x0000E8, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_ComponentBoundEvent_OtherBodyIndex' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, CallFunc_Array_Add_ReturnValue) == 0x0000EC, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, CallFunc_Array_RemoveItem_ReturnValue) == 0x0000F0, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x0000F4, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, CallFunc_Percent_FloatFloat_ReturnValue) == 0x0000F8, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::CallFunc_Percent_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0000FC, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, CallFunc_Not_PreBool_ReturnValue) == 0x0000FD, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000100, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_Event_player_1) == 0x000110, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_Event_hit) == 0x000118, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_Event_action) == 0x0001A0, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_Event_player) == 0x0001A8, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ExecuteUbergraph_prop_gdetec, K2Node_SwitchEnum_CmpSuccess) == 0x0001B0, "Member 'Prop_gdetec_C_ExecuteUbergraph_prop_gdetec::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function prop_gdetec.prop_gdetec_C.BndEvt__Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature
 // 0x0020 (0x0020 - 0x0000)
@@ -138,7 +119,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_390E[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 static_assert(alignof(Prop_gdetec_C_BndEvt__Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on Prop_gdetec_C_BndEvt__Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
@@ -162,65 +143,90 @@ static_assert(sizeof(Prop_gdetec_C_ReceiveTick) == 0x000004, "Wrong size on Prop
 static_assert(offsetof(Prop_gdetec_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'Prop_gdetec_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function prop_gdetec.prop_gdetec_C.upd
-// 0x0080 (0x0080 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct Prop_gdetec_C_Upd final
 {
 public:
-	float                                         Dist;                                              // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_390F[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Pns;                                               // 0x0008(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<float>                                 Strs;                                              // 0x0000(0x0010)(Edit, BlueprintVisible)
+	float                                         Dist;                                              // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Pns;                                               // 0x0018(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0034(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Round_ReturnValue;                        // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_closestActor_nearest;                     // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3910[0x2];                                     // 0x0052(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetDistanceTo_ReturnValue;                // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_2;             // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3911[0x2];                                     // 0x005A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3912[0x3];                                     // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPnormal_C*                             CallFunc_GetComponentByClass_ReturnValue;          // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_closestActor_nearest;                     // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPnormal_C*                             CallFunc_GetComponentByClass_ReturnValue;          // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x006D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6E[0x2];                                       // 0x006E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Array_Get_Item_1;                         // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetDistanceTo_ReturnValue;                // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Round_ReturnValue;                        // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x009D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_2;             // 0x009E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Prop_gdetec_C_Upd) == 0x000008, "Wrong alignment on Prop_gdetec_C_Upd");
-static_assert(sizeof(Prop_gdetec_C_Upd) == 0x000080, "Wrong size on Prop_gdetec_C_Upd");
-static_assert(offsetof(Prop_gdetec_C_Upd, Dist) == 0x000000, "Member 'Prop_gdetec_C_Upd::Dist' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_Upd, Pns) == 0x000008, "Member 'Prop_gdetec_C_Upd::Pns' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_Upd, Temp_int_Array_Index_Variable) == 0x000018, "Member 'Prop_gdetec_C_Upd::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_Upd, Temp_int_Loop_Counter_Variable) == 0x00001C, "Member 'Prop_gdetec_C_Upd::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'Prop_gdetec_C_Upd::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000024, "Member 'Prop_gdetec_C_Upd::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_FClamp_ReturnValue) == 0x000028, "Member 'Prop_gdetec_C_Upd::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x00002C, "Member 'Prop_gdetec_C_Upd::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x000030, "Member 'Prop_gdetec_C_Upd::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(sizeof(Prop_gdetec_C_Upd) == 0x0000A0, "Wrong size on Prop_gdetec_C_Upd");
+static_assert(offsetof(Prop_gdetec_C_Upd, Strs) == 0x000000, "Member 'Prop_gdetec_C_Upd::Strs' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, Dist) == 0x000010, "Member 'Prop_gdetec_C_Upd::Dist' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, Pns) == 0x000018, "Member 'Prop_gdetec_C_Upd::Pns' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, Temp_int_Array_Index_Variable) == 0x000028, "Member 'Prop_gdetec_C_Upd::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, Temp_int_Loop_Counter_Variable) == 0x00002C, "Member 'Prop_gdetec_C_Upd::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Add_IntInt_ReturnValue) == 0x000030, "Member 'Prop_gdetec_C_Upd::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000034, "Member 'Prop_gdetec_C_Upd::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000040, "Member 'Prop_gdetec_C_Upd::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Round_ReturnValue) == 0x000044, "Member 'Prop_gdetec_C_Upd::CallFunc_Round_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_closestActor_nearest) == 0x000048, "Member 'Prop_gdetec_C_Upd::CallFunc_closestActor_nearest' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Greater_IntInt_ReturnValue) == 0x000050, "Member 'Prop_gdetec_C_Upd::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_IsValid_ReturnValue) == 0x000051, "Member 'Prop_gdetec_C_Upd::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_GetDistanceTo_ReturnValue) == 0x000054, "Member 'Prop_gdetec_C_Upd::CallFunc_GetDistanceTo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000058, "Member 'Prop_gdetec_C_Upd::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Greater_IntInt_ReturnValue_2) == 0x000059, "Member 'Prop_gdetec_C_Upd::CallFunc_Greater_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Array_Length_ReturnValue) == 0x00005C, "Member 'Prop_gdetec_C_Upd::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Array_Get_Item) == 0x000060, "Member 'Prop_gdetec_C_Upd::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Less_IntInt_ReturnValue) == 0x000068, "Member 'Prop_gdetec_C_Upd::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Array_Add_ReturnValue) == 0x00006C, "Member 'Prop_gdetec_C_Upd::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_GetComponentByClass_ReturnValue) == 0x000070, "Member 'Prop_gdetec_C_Upd::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_IsValid_ReturnValue_1) == 0x000078, "Member 'Prop_gdetec_C_Upd::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_closestActor_nearest) == 0x000040, "Member 'Prop_gdetec_C_Upd::CallFunc_closestActor_nearest' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_IsValid_ReturnValue) == 0x000048, "Member 'Prop_gdetec_C_Upd::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Array_Get_Item) == 0x000050, "Member 'Prop_gdetec_C_Upd::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Array_Add_ReturnValue) == 0x000058, "Member 'Prop_gdetec_C_Upd::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_GetComponentByClass_ReturnValue) == 0x000060, "Member 'Prop_gdetec_C_Upd::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Array_Length_ReturnValue) == 0x000068, "Member 'Prop_gdetec_C_Upd::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_IsValid_ReturnValue_1) == 0x00006C, "Member 'Prop_gdetec_C_Upd::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Less_IntInt_ReturnValue) == 0x00006D, "Member 'Prop_gdetec_C_Upd::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Array_Find_ReturnValue) == 0x000070, "Member 'Prop_gdetec_C_Upd::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Array_Add_ReturnValue_1) == 0x000074, "Member 'Prop_gdetec_C_Upd::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Array_Get_Item_1) == 0x000078, "Member 'Prop_gdetec_C_Upd::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_GetDistanceTo_ReturnValue) == 0x00007C, "Member 'Prop_gdetec_C_Upd::CallFunc_GetDistanceTo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000080, "Member 'Prop_gdetec_C_Upd::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000084, "Member 'Prop_gdetec_C_Upd::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_FClamp_ReturnValue) == 0x000088, "Member 'Prop_gdetec_C_Upd::CallFunc_FClamp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x00008C, "Member 'Prop_gdetec_C_Upd::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x000090, "Member 'Prop_gdetec_C_Upd::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000094, "Member 'Prop_gdetec_C_Upd::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Round_ReturnValue) == 0x000098, "Member 'Prop_gdetec_C_Upd::CallFunc_Round_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Greater_IntInt_ReturnValue) == 0x00009C, "Member 'Prop_gdetec_C_Upd::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Greater_IntInt_ReturnValue_1) == 0x00009D, "Member 'Prop_gdetec_C_Upd::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_Upd, CallFunc_Greater_IntInt_ReturnValue_2) == 0x00009E, "Member 'Prop_gdetec_C_Upd::CallFunc_Greater_IntInt_ReturnValue_2' has a wrong offset!");
+
+// Function prop_gdetec.prop_gdetec_C.actionOptionIndex
+// 0x0098 (0x0098 - 0x0000)
+struct Prop_gdetec_C_ActionOptionIndex final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_gdetec_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_gdetec_C_ActionOptionIndex");
+static_assert(sizeof(Prop_gdetec_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_gdetec_C_ActionOptionIndex");
+static_assert(offsetof(Prop_gdetec_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_gdetec_C_ActionOptionIndex::Player' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_gdetec_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_gdetec_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function prop_gdetec.prop_gdetec_C.playerHandUse_RMB
 // 0x0008 (0x0008 - 0x0000)
@@ -241,7 +247,7 @@ public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadData_return;                          // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3913[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mBool                          CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -277,7 +283,7 @@ static_assert(offsetof(Prop_gdetec_C_GetData, K2Node_MakeArray_Array_1) == 0x000
 static_assert(offsetof(Prop_gdetec_C_GetData, K2Node_SetFieldsInStruct_StructOut) == 0x0001C0, "Member 'Prop_gdetec_C_GetData::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
 
 // Function prop_gdetec.prop_gdetec_C.getActionOptions
-// 0x0058 (0x0058 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct Prop_gdetec_C_GetActionOptions final
 {
 public:
@@ -287,17 +293,20 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
 };
 static_assert(alignof(Prop_gdetec_C_GetActionOptions) == 0x000008, "Wrong alignment on Prop_gdetec_C_GetActionOptions");
-static_assert(sizeof(Prop_gdetec_C_GetActionOptions) == 0x000058, "Wrong size on Prop_gdetec_C_GetActionOptions");
+static_assert(sizeof(Prop_gdetec_C_GetActionOptions) == 0x000060, "Wrong size on Prop_gdetec_C_GetActionOptions");
 static_assert(offsetof(Prop_gdetec_C_GetActionOptions, Player) == 0x000000, "Member 'Prop_gdetec_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Prop_gdetec_C_GetActionOptions, Component) == 0x000008, "Member 'Prop_gdetec_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Prop_gdetec_C_GetActionOptions, Actor) == 0x000010, "Member 'Prop_gdetec_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Prop_gdetec_C_GetActionOptions, Options) == 0x000018, "Member 'Prop_gdetec_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Prop_gdetec_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Prop_gdetec_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Prop_gdetec_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Prop_gdetec_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Prop_gdetec_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'Prop_gdetec_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_GetActionOptions, Number) == 0x000048, "Member 'Prop_gdetec_C_GetActionOptions::Number' has a wrong offset!");
+static_assert(offsetof(Prop_gdetec_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Prop_gdetec_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 }
 

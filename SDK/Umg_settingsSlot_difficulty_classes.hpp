@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Enum_difficulty_structs.hpp"
 #include "UMG_classes.hpp"
+#include "Enum_difficulty_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 

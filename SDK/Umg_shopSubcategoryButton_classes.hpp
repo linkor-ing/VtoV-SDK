@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Enum_shopCats_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Enum_shopCats_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 
@@ -29,7 +29,7 @@ public:
 	class UTextBlock*                             Textbox_name;                                      // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class FText                                   Subcategory;                                       // 0x0278(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 	Enum_shopCats                                 Category;                                          // 0x0290(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_19CA[0x7];                                     // 0x0291(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_291[0x7];                                      // 0x0291(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUmg_laptop_C*                          Owner;                                             // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:

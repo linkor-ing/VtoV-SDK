@@ -10,21 +10,21 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "Struct_save_structs.hpp"
-#include "UMG_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Struct_settings_structs.hpp"
-#include "Struct_signalDataDynamic_structs.hpp"
-#include "Struct_signal_data2_structs.hpp"
+#include "Struct_save_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "InputCore_structs.hpp"
+#include "UMG_structs.hpp"
+#include "Struct_signalDataDynamic_structs.hpp"
+#include "Struct_signal_data1_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function umg_signalPlay.umg_signalPlay_C.ExecuteUbergraph_umg_signalPlay
-// 0x05F8 (0x05F8 - 0x0000)
+// 0x0630 (0x0630 - 0x0000)
 struct Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay final
 {
 public:
@@ -34,123 +34,126 @@ public:
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29CB[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0018(0x00CC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29CC[0x4];                                     // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   K2Node_Event_key;                                  // 0x00E8(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed;                              // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29CD[0x3];                                     // 0x0101(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Event_color;                                // 0x0104(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0114(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29CE[0x3];                                     // 0x0115(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             K2Node_Select_Default_1;                           // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29CF[0x4];                                     // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue_1;    // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29D0[0x3];                                     // 0x0139(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(bool Active_calc, bool Active_downl, bool Active_coords, bool Active_play, bool Active_light)> K2Node_CreateDelegate_OutputDelegate;              // 0x013C(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_29D1[0x4];                                     // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTextureRenderTarget2D*                 CallFunc_CreateRenderTarget2D_ReturnValue;         // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<float>                                 CallFunc_GetChannelConstantQAtTime_OutConstantQ;   // 0x0158(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29D2[0x4];                                     // 0x016C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_1;         // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29D3[0x7];                                     // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_signalDataDynamic              CallFunc_Array_Get_Item;                           // 0x0188(0x0070)(HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29D4[0x7];                                     // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_signal_data2                   CallFunc_dynamicToSignal_data;                     // 0x0200(0x01D0)(HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x03D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_active_calc;                    // 0x03D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_active_downl;                   // 0x03D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_active_coords;                  // 0x03DA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_active_play;                    // 0x03DB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_active_light;                   // 0x03DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29D5[0x3];                                     // 0x03DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x03E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29D6[0x4];                                     // 0x03E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UConstantQNRT*                          CallFunc_getNRT_NewParam;                          // 0x03E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x03F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_CustomEvent_alpha;                          // 0x03F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Len_ReturnValue;                          // 0x03F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x03FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0400(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue_1;            // 0x0404(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0408(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x040C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue_2;            // 0x0410(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0414(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_1;               // 0x041C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Add_Vector2DVector2D_ReturnValue;         // 0x0424(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Add_Vector2DVector2D_ReturnValue_1;       // 0x042C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0434(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Array_Get_Item_1;                         // 0x0438(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x043C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Abs_ReturnValue;                          // 0x0440(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue_3;            // 0x0444(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x0448(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_2;               // 0x044C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_1;        // 0x0454(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Add_Vector2DVector2D_ReturnValue_2;       // 0x0458(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x0460(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Add_Vector2DVector2D_ReturnValue_3;       // 0x0464(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_MakeColor_ReturnValue;                    // 0x046C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x047C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<float>                                 CallFunc_GetNormalizedChannelConstantQAtTime_OutConstantQ; // 0x0480(0x0010)(ReferenceParm)
-	float                                         CallFunc_Array_Get_Item_2;                         // 0x0490(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0494(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1; // 0x0498(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x049C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29D7[0x3];                                     // 0x049D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Lerp_ReturnValue;                         // 0x04A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Round_ReturnValue;                        // 0x04A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_LeftChop_ReturnValue;                     // 0x04A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_RegexReplace_ReturnValue;                 // 0x04B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x04C8(0x0018)()
-	int32                                         K2Node_CustomEvent_vol;                            // 0x04E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Multiply_IntInt_ReturnValue;              // 0x04E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x04E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x04F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_1;                               // 0x0508(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29D8[0x4];                                     // 0x050C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0510(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0520(0x0018)()
-	class FText                                   K2Node_Select_Default_2;                           // 0x0538(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0550(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class UTextureRenderTarget2D*                 CallFunc_CreateRenderTarget2D_ReturnValue_1;       // 0x0560(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_2;         // 0x0568(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0570(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0574(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29D9[0x3];                                     // 0x0575(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0578(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_2;                               // 0x057C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue_1;                       // 0x0580(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_3;               // 0x0584(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29DA[0x4];                                     // 0x058C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundBase*                             K2Node_Select_Default_3;                           // 0x0590(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0598(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_2; // 0x059C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x05A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x05A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_MakeColor_ReturnValue_1;                  // 0x05A8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_MakeColor_ReturnValue_2;                  // 0x05B8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_GetDesiredSize_ReturnValue;               // 0x05C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x05D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_X;                          // 0x05D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_Y;                          // 0x05DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_2;        // 0x05E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FMax_ReturnValue;                         // 0x05E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_2;        // 0x05E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_4;               // 0x05EC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0018(0x00F0)(HasGetValueTypeHash)
+	struct FKey                                   K2Node_Event_key;                                  // 0x0108(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed;                              // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_121[0x3];                                      // 0x0121(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           K2Node_Event_color;                                // 0x0124(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_134[0x4];                                      // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUmg_texturePicker_C*                   K2Node_Event_picker;                               // 0x0138(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_Event_texture;                              // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_index;                                // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x014C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_14D[0x3];                                      // 0x014D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             K2Node_Select_Default_1;                           // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_15C[0x4];                                      // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue_1;    // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_171[0x3];                                      // 0x0171(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(bool Active_calc, bool Active_downl, bool Active_coords, bool Active_play, bool Active_light)> K2Node_CreateDelegate_OutputDelegate;              // 0x0174(0x0010)(ZeroConstructor, NoDestructor)
+	uint8                                         Pad_184[0x4];                                      // 0x0184(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTextureRenderTarget2D*                 CallFunc_CreateRenderTarget2D_ReturnValue;         // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<float>                                 CallFunc_GetChannelConstantQAtTime_OutConstantQ;   // 0x0190(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A4[0x4];                                      // 0x01A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_1;         // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1B1[0x7];                                      // 0x01B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_signalDataDynamic              CallFunc_Array_Get_Item;                           // 0x01C0(0x0070)(HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_231[0x7];                                      // 0x0231(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_signal_data1                   CallFunc_dynamicToSignal_data;                     // 0x0238(0x01D0)(HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x0408(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_active_calc;                    // 0x0410(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_active_downl;                   // 0x0411(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_active_coords;                  // 0x0412(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_active_play;                    // 0x0413(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_active_light;                   // 0x0414(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_415[0x3];                                      // 0x0415(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0418(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41C[0x4];                                      // 0x041C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UConstantQNRT*                          CallFunc_getNRT_NewParam;                          // 0x0420(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0428(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_CustomEvent_alpha;                          // 0x042C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Len_ReturnValue;                          // 0x0430(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0434(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0438(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue_1;            // 0x043C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0440(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0444(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue_2;            // 0x0448(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x044C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_1;               // 0x0454(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Add_Vector2DVector2D_ReturnValue;         // 0x045C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Add_Vector2DVector2D_ReturnValue_1;       // 0x0464(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x046C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Array_Get_Item_1;                         // 0x0470(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0474(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Abs_ReturnValue;                          // 0x0478(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue_3;            // 0x047C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x0480(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_2;               // 0x0484(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_1;        // 0x048C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Add_Vector2DVector2D_ReturnValue_2;       // 0x0490(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x0498(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Add_Vector2DVector2D_ReturnValue_3;       // 0x049C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_MakeColor_ReturnValue;                    // 0x04A4(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x04B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<float>                                 CallFunc_GetNormalizedChannelConstantQAtTime_OutConstantQ; // 0x04B8(0x0010)(ReferenceParm)
+	float                                         CallFunc_Array_Get_Item_2;                         // 0x04C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x04CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1; // 0x04D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x04D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4D5[0x3];                                      // 0x04D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Lerp_ReturnValue;                         // 0x04D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Round_ReturnValue;                        // 0x04DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_LeftChop_ReturnValue;                     // 0x04E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_RegexReplace_ReturnValue;                 // 0x04F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0500(0x0018)()
+	int32                                         K2Node_CustomEvent_vol;                            // 0x0518(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Multiply_IntInt_ReturnValue;              // 0x051C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0520(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0530(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x0540(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_544[0x4];                                      // 0x0544(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0548(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0558(0x0018)()
+	class FText                                   K2Node_Select_Default_2;                           // 0x0570(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0588(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UTextureRenderTarget2D*                 CallFunc_CreateRenderTarget2D_ReturnValue_1;       // 0x0598(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_2;         // 0x05A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x05A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x05AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5AD[0x3];                                      // 0x05AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x05B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_2;                               // 0x05B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue_1;                       // 0x05B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_3;               // 0x05BC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5C4[0x4];                                      // 0x05C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             K2Node_Select_Default_3;                           // 0x05C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x05D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_2; // 0x05D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x05D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x05DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_MakeColor_ReturnValue_1;                  // 0x05E0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_MakeColor_ReturnValue_2;                  // 0x05F0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_GetDesiredSize_ReturnValue;               // 0x0600(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0608(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_X;                          // 0x0610(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_Y;                          // 0x0614(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_2;        // 0x0618(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FMax_ReturnValue;                         // 0x061C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_2;        // 0x0620(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_4;               // 0x0624(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay) == 0x000008, "Wrong alignment on Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay");
-static_assert(sizeof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay) == 0x0005F8, "Wrong size on Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay");
+static_assert(sizeof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay) == 0x000630, "Wrong size on Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay");
 static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, EntryPoint) == 0x000000, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, Temp_int_Variable) == 0x000004, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, Temp_bool_Variable) == 0x000008, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::Temp_bool_Variable' has a wrong offset!");
@@ -159,102 +162,105 @@ static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, Temp_by
 static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_Select_Default) == 0x00000B, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_Event_gamemode) == 0x000010, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_Event_gamemode' has a wrong offset!");
 static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_Event_settings) == 0x000018, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_Event_settings' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_Event_key) == 0x0000E8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_Event_key' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_Event_pressed) == 0x000100, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_Event_pressed' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_Event_color) == 0x000104, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_Event_color' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000114, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_Select_Default_1) == 0x000118, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000120, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000128, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000130, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x000134, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_GreaterEqual_FloatFloat_ReturnValue_1) == 0x000138, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_GreaterEqual_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_CreateDelegate_OutputDelegate) == 0x00013C, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_CreateRenderTarget2D_ReturnValue) == 0x000150, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_CreateRenderTarget2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_GetChannelConstantQAtTime_OutConstantQ) == 0x000158, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_GetChannelConstantQAtTime_OutConstantQ' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Array_Length_ReturnValue) == 0x000168, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000170, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000178, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000180, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Array_Get_Item) == 0x000188, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Array_IsValidIndex_ReturnValue) == 0x0001F8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_dynamicToSignal_data) == 0x000200, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_dynamicToSignal_data' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x0003D0, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_CustomEvent_active_calc) == 0x0003D8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_CustomEvent_active_calc' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_CustomEvent_active_downl) == 0x0003D9, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_CustomEvent_active_downl' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_CustomEvent_active_coords) == 0x0003DA, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_CustomEvent_active_coords' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_CustomEvent_active_play) == 0x0003DB, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_CustomEvent_active_play' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_CustomEvent_active_light) == 0x0003DC, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_CustomEvent_active_light' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, Temp_int_Loop_Counter_Variable) == 0x0003E0, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_getNRT_NewParam) == 0x0003E8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_getNRT_NewParam' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Add_IntInt_ReturnValue) == 0x0003F0, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_CustomEvent_alpha) == 0x0003F4, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_CustomEvent_alpha' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Len_ReturnValue) == 0x0003F8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Len_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Conv_IntToFloat_ReturnValue) == 0x0003FC, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, Temp_int_Array_Index_Variable) == 0x000400, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x000404, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Add_IntInt_ReturnValue_1) == 0x000408, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x00040C, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Conv_IntToFloat_ReturnValue_2) == 0x000410, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Conv_IntToFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_MakeVector2D_ReturnValue) == 0x000414, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_MakeVector2D_ReturnValue_1) == 0x00041C, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_MakeVector2D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Add_Vector2DVector2D_ReturnValue) == 0x000424, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Add_Vector2DVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Add_Vector2DVector2D_ReturnValue_1) == 0x00042C, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Add_Vector2DVector2D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, Temp_int_Array_Index_Variable_1) == 0x000434, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Array_Get_Item_1) == 0x000438, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Add_IntInt_ReturnValue_2) == 0x00043C, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Abs_ReturnValue) == 0x000440, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Abs_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Conv_IntToFloat_ReturnValue_3) == 0x000444, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Conv_IntToFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x000448, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_MakeVector2D_ReturnValue_2) == 0x00044C, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_MakeVector2D_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x000454, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Add_Vector2DVector2D_ReturnValue_2) == 0x000458, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Add_Vector2DVector2D_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x000460, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Add_Vector2DVector2D_ReturnValue_3) == 0x000464, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Add_Vector2DVector2D_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_MakeColor_ReturnValue) == 0x00046C, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_MakeColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00047C, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_GetNormalizedChannelConstantQAtTime_OutConstantQ) == 0x000480, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_GetNormalizedChannelConstantQAtTime_OutConstantQ' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Array_Get_Item_2) == 0x000490, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Array_Length_ReturnValue_1) == 0x000494, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1) == 0x000498, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Less_IntInt_ReturnValue) == 0x00049C, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Lerp_ReturnValue) == 0x0004A0, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Round_ReturnValue) == 0x0004A4, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Round_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_LeftChop_ReturnValue) == 0x0004A8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_LeftChop_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_RegexReplace_ReturnValue) == 0x0004B8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_RegexReplace_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Conv_StringToText_ReturnValue) == 0x0004C8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_CustomEvent_vol) == 0x0004E0, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_CustomEvent_vol' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Multiply_IntInt_ReturnValue) == 0x0004E4, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Conv_IntToString_ReturnValue) == 0x0004E8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Concat_StrStr_ReturnValue) == 0x0004F8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, Temp_int_Variable_1) == 0x000508, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000510, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000520, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_Select_Default_2) == 0x000538, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Conv_TextToString_ReturnValue) == 0x000550, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_CreateRenderTarget2D_ReturnValue_1) == 0x000560, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_CreateRenderTarget2D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_GetDynamicMaterial_ReturnValue_2) == 0x000568, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_GetDynamicMaterial_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, Temp_int_Loop_Counter_Variable_1) == 0x000570, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Less_IntInt_ReturnValue_1) == 0x000574, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Add_IntInt_ReturnValue_3) == 0x000578, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, Temp_int_Variable_2) == 0x00057C, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Lerp_ReturnValue_1) == 0x000580, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Lerp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_MakeVector2D_ReturnValue_3) == 0x000584, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_MakeVector2D_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_Select_Default_3) == 0x000590, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_RandomFloatInRange_ReturnValue) == 0x000598, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_2) == 0x00059C, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x0005A0, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Add_FloatFloat_ReturnValue) == 0x0005A4, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_MakeColor_ReturnValue_1) == 0x0005A8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_MakeColor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_MakeColor_ReturnValue_2) == 0x0005B8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_MakeColor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_GetDesiredSize_ReturnValue) == 0x0005C8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_GetDesiredSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x0005D0, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_BreakVector2D_X) == 0x0005D8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_BreakVector2D_Y) == 0x0005DC, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Subtract_FloatFloat_ReturnValue_2) == 0x0005E0, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Subtract_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_FMax_ReturnValue) == 0x0005E4, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x0005E8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_MakeVector2D_ReturnValue_4) == 0x0005EC, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_MakeVector2D_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_Event_key) == 0x000108, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_Event_key' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_Event_pressed) == 0x000120, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_Event_pressed' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_Event_color) == 0x000124, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_Event_color' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_Event_picker) == 0x000138, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_Event_picker' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_Event_texture) == 0x000140, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_Event_texture' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_Event_index) == 0x000148, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x00014C, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_Select_Default_1) == 0x000150, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000158, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000160, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000168, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x00016C, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_GreaterEqual_FloatFloat_ReturnValue_1) == 0x000170, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_GreaterEqual_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_CreateDelegate_OutputDelegate) == 0x000174, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_CreateRenderTarget2D_ReturnValue) == 0x000188, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_CreateRenderTarget2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_GetChannelConstantQAtTime_OutConstantQ) == 0x000190, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_GetChannelConstantQAtTime_OutConstantQ' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Array_Length_ReturnValue) == 0x0001A0, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x0001A8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0001B0, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x0001B8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Array_Get_Item) == 0x0001C0, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000230, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_dynamicToSignal_data) == 0x000238, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_dynamicToSignal_data' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x000408, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_CustomEvent_active_calc) == 0x000410, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_CustomEvent_active_calc' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_CustomEvent_active_downl) == 0x000411, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_CustomEvent_active_downl' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_CustomEvent_active_coords) == 0x000412, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_CustomEvent_active_coords' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_CustomEvent_active_play) == 0x000413, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_CustomEvent_active_play' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_CustomEvent_active_light) == 0x000414, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_CustomEvent_active_light' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, Temp_int_Loop_Counter_Variable) == 0x000418, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_getNRT_NewParam) == 0x000420, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_getNRT_NewParam' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Add_IntInt_ReturnValue) == 0x000428, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_CustomEvent_alpha) == 0x00042C, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_CustomEvent_alpha' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Len_ReturnValue) == 0x000430, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Len_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000434, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, Temp_int_Array_Index_Variable) == 0x000438, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x00043C, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Add_IntInt_ReturnValue_1) == 0x000440, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000444, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Conv_IntToFloat_ReturnValue_2) == 0x000448, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Conv_IntToFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_MakeVector2D_ReturnValue) == 0x00044C, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_MakeVector2D_ReturnValue_1) == 0x000454, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_MakeVector2D_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Add_Vector2DVector2D_ReturnValue) == 0x00045C, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Add_Vector2DVector2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Add_Vector2DVector2D_ReturnValue_1) == 0x000464, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Add_Vector2DVector2D_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, Temp_int_Array_Index_Variable_1) == 0x00046C, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::Temp_int_Array_Index_Variable_1' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Array_Get_Item_1) == 0x000470, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Add_IntInt_ReturnValue_2) == 0x000474, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Abs_ReturnValue) == 0x000478, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Abs_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Conv_IntToFloat_ReturnValue_3) == 0x00047C, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Conv_IntToFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x000480, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_MakeVector2D_ReturnValue_2) == 0x000484, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_MakeVector2D_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x00048C, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Add_Vector2DVector2D_ReturnValue_2) == 0x000490, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Add_Vector2DVector2D_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x000498, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Add_Vector2DVector2D_ReturnValue_3) == 0x00049C, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Add_Vector2DVector2D_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_MakeColor_ReturnValue) == 0x0004A4, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_MakeColor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0004B4, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_GetNormalizedChannelConstantQAtTime_OutConstantQ) == 0x0004B8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_GetNormalizedChannelConstantQAtTime_OutConstantQ' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Array_Get_Item_2) == 0x0004C8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Array_Get_Item_2' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Array_Length_ReturnValue_1) == 0x0004CC, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1) == 0x0004D0, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Less_IntInt_ReturnValue) == 0x0004D4, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Lerp_ReturnValue) == 0x0004D8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Lerp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Round_ReturnValue) == 0x0004DC, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Round_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_LeftChop_ReturnValue) == 0x0004E0, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_LeftChop_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_RegexReplace_ReturnValue) == 0x0004F0, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_RegexReplace_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Conv_StringToText_ReturnValue) == 0x000500, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_CustomEvent_vol) == 0x000518, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_CustomEvent_vol' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Multiply_IntInt_ReturnValue) == 0x00051C, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Conv_IntToString_ReturnValue) == 0x000520, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Concat_StrStr_ReturnValue) == 0x000530, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, Temp_int_Variable_1) == 0x000540, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::Temp_int_Variable_1' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000548, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000558, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_Select_Default_2) == 0x000570, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Conv_TextToString_ReturnValue) == 0x000588, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_CreateRenderTarget2D_ReturnValue_1) == 0x000598, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_CreateRenderTarget2D_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_GetDynamicMaterial_ReturnValue_2) == 0x0005A0, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_GetDynamicMaterial_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, Temp_int_Loop_Counter_Variable_1) == 0x0005A8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Less_IntInt_ReturnValue_1) == 0x0005AC, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Add_IntInt_ReturnValue_3) == 0x0005B0, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, Temp_int_Variable_2) == 0x0005B4, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::Temp_int_Variable_2' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Lerp_ReturnValue_1) == 0x0005B8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Lerp_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_MakeVector2D_ReturnValue_3) == 0x0005BC, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_MakeVector2D_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, K2Node_Select_Default_3) == 0x0005C8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::K2Node_Select_Default_3' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_RandomFloatInRange_ReturnValue) == 0x0005D0, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_2) == 0x0005D4, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x0005D8, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Add_FloatFloat_ReturnValue) == 0x0005DC, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_MakeColor_ReturnValue_1) == 0x0005E0, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_MakeColor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_MakeColor_ReturnValue_2) == 0x0005F0, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_MakeColor_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_GetDesiredSize_ReturnValue) == 0x000600, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_GetDesiredSize_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000608, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_BreakVector2D_X) == 0x000610, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_BreakVector2D_X' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_BreakVector2D_Y) == 0x000614, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_BreakVector2D_Y' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Subtract_FloatFloat_ReturnValue_2) == 0x000618, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Subtract_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_FMax_ReturnValue) == 0x00061C, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_FMax_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x000620, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay, CallFunc_MakeVector2D_ReturnValue_4) == 0x000624, "Member 'Umg_signalPlay_C_ExecuteUbergraph_umg_signalPlay::CallFunc_MakeVector2D_ReturnValue_4' has a wrong offset!");
 
 // Function umg_signalPlay.umg_signalPlay_C.volChange
 // 0x0004 (0x0004 - 0x0000)
@@ -297,6 +303,21 @@ static_assert(offsetof(Umg_signalPlay_C_PowerChanged, Active_coords) == 0x000002
 static_assert(offsetof(Umg_signalPlay_C_PowerChanged, Active_play) == 0x000003, "Member 'Umg_signalPlay_C_PowerChanged::Active_play' has a wrong offset!");
 static_assert(offsetof(Umg_signalPlay_C_PowerChanged, Active_light) == 0x000004, "Member 'Umg_signalPlay_C_PowerChanged::Active_light' has a wrong offset!");
 
+// Function umg_signalPlay.umg_signalPlay_C.texturePickerApply
+// 0x0018 (0x0018 - 0x0000)
+struct Umg_signalPlay_C_TexturePickerApply final
+{
+public:
+	class UUmg_texturePicker_C*                   Picker;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Param_Index;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Umg_signalPlay_C_TexturePickerApply) == 0x000008, "Wrong alignment on Umg_signalPlay_C_TexturePickerApply");
+static_assert(sizeof(Umg_signalPlay_C_TexturePickerApply) == 0x000018, "Wrong size on Umg_signalPlay_C_TexturePickerApply");
+static_assert(offsetof(Umg_signalPlay_C_TexturePickerApply, Picker) == 0x000000, "Member 'Umg_signalPlay_C_TexturePickerApply::Picker' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_TexturePickerApply, Texture) == 0x000008, "Member 'Umg_signalPlay_C_TexturePickerApply::Texture' has a wrong offset!");
+static_assert(offsetof(Umg_signalPlay_C_TexturePickerApply, Param_Index) == 0x000010, "Member 'Umg_signalPlay_C_TexturePickerApply::Param_Index' has a wrong offset!");
+
 // Function umg_signalPlay.umg_signalPlay_C.applyColor
 // 0x0010 (0x0010 - 0x0000)
 struct Umg_signalPlay_C_ApplyColor final
@@ -322,14 +343,14 @@ static_assert(offsetof(Umg_signalPlay_C_AnyKey, Key) == 0x000000, "Member 'Umg_s
 static_assert(offsetof(Umg_signalPlay_C_AnyKey, Pressed) == 0x000018, "Member 'Umg_signalPlay_C_AnyKey::Pressed' has a wrong offset!");
 
 // Function umg_signalPlay.umg_signalPlay_C.settingsApplied
-// 0x00CC (0x00CC - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct Umg_signalPlay_C_SettingsApplied final
 {
 public:
-	struct FStruct_settings                       Settings;                                          // 0x0000(0x00CC)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       Settings;                                          // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(Umg_signalPlay_C_SettingsApplied) == 0x000004, "Wrong alignment on Umg_signalPlay_C_SettingsApplied");
-static_assert(sizeof(Umg_signalPlay_C_SettingsApplied) == 0x0000CC, "Wrong size on Umg_signalPlay_C_SettingsApplied");
+static_assert(alignof(Umg_signalPlay_C_SettingsApplied) == 0x000008, "Wrong alignment on Umg_signalPlay_C_SettingsApplied");
+static_assert(sizeof(Umg_signalPlay_C_SettingsApplied) == 0x0000F0, "Wrong size on Umg_signalPlay_C_SettingsApplied");
 static_assert(offsetof(Umg_signalPlay_C_SettingsApplied, Settings) == 0x000000, "Member 'Umg_signalPlay_C_SettingsApplied::Settings' has a wrong offset!");
 
 // Function umg_signalPlay.umg_signalPlay_C.stuffUpgraded
@@ -360,7 +381,7 @@ struct Umg_signalPlay_C_CreateList final
 {
 public:
 	int32                                         Temp_int_Variable;                                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29DB[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USignalSlot_C*                          CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -368,14 +389,14 @@ public:
 	class USignalSlot_C*                          CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29DC[0x3];                                     // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29DD[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29DE[0x4];                                     // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_signalDataDynamic              CallFunc_Array_Get_Item_1;                         // 0x0050(0x0070)(HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -404,29 +425,29 @@ struct Umg_signalPlay_C_SetListLoc final
 public:
 	int32                                         Temp_int_Variable;                                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29DF[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_1;                              // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29E0[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USignalSlot_C*                          CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29E1[0x2];                                     // 0x0026(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_26[0x2];                                       // 0x0026(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29E2[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Max_ReturnValue;                          // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29E3[0x2];                                     // 0x0046(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_46[0x2];                                       // 0x0046(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0048(0x0018)()
 };
 static_assert(alignof(Umg_signalPlay_C_SetListLoc) == 0x000008, "Wrong alignment on Umg_signalPlay_C_SetListLoc");
@@ -469,7 +490,7 @@ static_assert(offsetof(Umg_signalPlay_C_StopSounds, CallFunc_IsValid_ReturnValue
 struct Umg_signalPlay_C_CopySignal final
 {
 public:
-	struct FStruct_signal_data2                   Param_SingalPlayData;                              // 0x0000(0x01D0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FStruct_signal_data1                   Param_SingalPlayData;                              // 0x0000(0x01D0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	struct FStruct_signalDataDynamic              CallFunc_signalToDynamic_dynamic;                  // 0x01D0(0x0070)(HasGetValueTypeHash)
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FStruct_signalDataDynamic              K2Node_SetFieldsInStruct_StructOut;                // 0x0248(0x0070)(HasGetValueTypeHash)
@@ -490,7 +511,7 @@ struct Umg_signalPlay_C_SetCanvas final
 public:
 	bool                                          Param_VisMode;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29E4[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_1;                              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -499,14 +520,14 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_3;                              // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29E5[0x1];                                     // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17[0x1];                                       // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29E6[0x6];                                     // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     K2Node_Select_Default_1;                           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29E7[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTextureRenderTarget2D*                 K2Node_Select_Default_3;                           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCanvas*                                CallFunc_BeginDrawCanvasToRenderTarget_Canvas;     // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_BeginDrawCanvasToRenderTarget_Size;       // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -45,7 +45,7 @@ struct Umg_shopCartSlot_C_Upd final
 public:
 	class FText                                   Param_Name;                                        // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 	int32                                         Price;                                             // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EB6[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0020(0x0018)()
 };
 static_assert(alignof(Umg_shopCartSlot_C_Upd) == 0x000008, "Wrong alignment on Umg_shopCartSlot_C_Upd");

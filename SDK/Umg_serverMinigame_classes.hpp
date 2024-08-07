@@ -39,13 +39,13 @@ public:
 	struct FVector2D                              Lastloc;                                           // 0x02D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UUmg_serverMinigameSlott_C*>     Slots;                                             // 0x02D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	int32                                         I;                                                 // 0x02E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2864[0x4];                                     // 0x02EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2EC[0x4];                                      // 0x02EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<int32>                                 Probs;                                             // 0x02F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<int32>                                 Ins;                                               // 0x0300(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class AServerBox_C*                           Server;                                            // 0x0310(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Finished;                                          // 0x0318(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          IsActive;                                          // 0x0319(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2865[0x2];                                     // 0x031A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31A[0x2];                                      // 0x031A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Time;                                              // 0x031C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

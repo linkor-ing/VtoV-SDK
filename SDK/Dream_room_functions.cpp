@@ -37,6 +37,20 @@ void ADream_room_C::ExecuteUbergraph_dream_room(int32 EntryPoint)
 }
 
 
+// Function dream_room.dream_room_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ADream_room_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("dream_room_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function dream_room.dream_room_C.a__UpdateFunc
 // (BlueprintEvent)
 
@@ -60,20 +74,6 @@ void ADream_room_C::A__FinishedFunc()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("dream_room_C", "a__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function dream_room.dream_room_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ADream_room_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("dream_room_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

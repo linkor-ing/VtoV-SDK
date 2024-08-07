@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Enum_objectType_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Enum_objectType_structs.hpp"
 #include "Enum_freq_structs.hpp"
 #include "Enum_quality_structs.hpp"
 

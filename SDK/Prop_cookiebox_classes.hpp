@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_cookiebox.prop_cookiebox_C
-// 0x0000 (0x03E8 - 0x03E8)
+// 0x0000 (0x03F8 - 0x03F8)
 class AProp_cookiebox_C final : public AProp_container_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_cookiebox_C) == 0x000008, "Wrong alignment on AProp_cookiebox_C");
-static_assert(sizeof(AProp_cookiebox_C) == 0x0003E8, "Wrong size on AProp_cookiebox_C");
+static_assert(sizeof(AProp_cookiebox_C) == 0x0003F8, "Wrong size on AProp_cookiebox_C");
 
 }
 

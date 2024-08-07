@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "AnimGraphRuntime_structs.hpp"
 
 
 namespace SDK
@@ -23,7 +23,7 @@ namespace SDK
 class UFossilhound_Skeleton_AnimBlueprint_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_21B7[0x8];                                     // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B8[0x8];                                      // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer;                    // 0x02C8(0x00E8)()
 	struct FAnimNode_LayeredBoneBlend             AnimGraphNode_LayeredBoneBlend;                    // 0x03B0(0x00C0)()
@@ -33,7 +33,7 @@ public:
 	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose;                       // 0x0620(0x0028)()
 	struct FAnimNode_Slot                         AnimGraphNode_Slot;                                // 0x0648(0x0048)()
 	float                                         Run;                                               // 0x0690(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21B8[0x4];                                     // 0x0694(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_694[0x4];                                      // 0x0694(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFossilhound_C*                         Owner;                                             // 0x0698(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

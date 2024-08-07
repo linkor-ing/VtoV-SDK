@@ -23,10 +23,10 @@ struct FStruct_email final
 {
 public:
 	bool                                          New_14_5FB7784E4E60A05C8BC13ABD93D6EFDF;           // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_27FD[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             Pfp_2_286B75414BAC856FBED047B8BE9F0065;            // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	Enum_emailChars                               Username_18_778252D64AB06BB5D3FBC386EC59383F;      // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_27FE[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FIntVector                             Date_8_932438DD4158A22517E43E8DAD3BBC45;           // 0x0014(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   Topic_17_91E2F92C4DC4FF16CFAF539A3561F74B;         // 0x0020(0x0018)(Edit, BlueprintVisible)
 	class FText                                   Text_11_B74A8FDC40C1F46E42A9F382C0EFA6FF;          // 0x0038(0x0018)(Edit, BlueprintVisible)

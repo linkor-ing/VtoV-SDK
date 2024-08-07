@@ -19,18 +19,17 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_donut.prop_donut_C
-// 0x0008 (0x0370 - 0x0368)
+// 0x0008 (0x0380 - 0x0378)
 class AProp_donut_C final : public AProp_C
 {
 public:
-	uint8                                         Pad_331B[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_donut_C;                       // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_donut_C;                       // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_prop_donut(int32 EntryPoint);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 
 public:
 	static class UClass* StaticClass()
@@ -43,8 +42,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_donut_C) == 0x000008, "Wrong alignment on AProp_donut_C");
-static_assert(sizeof(AProp_donut_C) == 0x000370, "Wrong size on AProp_donut_C");
-static_assert(offsetof(AProp_donut_C, UberGraphFrame_Prop_donut_C) == 0x000368, "Member 'AProp_donut_C::UberGraphFrame_Prop_donut_C' has a wrong offset!");
+static_assert(sizeof(AProp_donut_C) == 0x000380, "Wrong size on AProp_donut_C");
+static_assert(offsetof(AProp_donut_C, UberGraphFrame_Prop_donut_C) == 0x000378, "Member 'AProp_donut_C::UberGraphFrame_Prop_donut_C' has a wrong offset!");
 
 }
 

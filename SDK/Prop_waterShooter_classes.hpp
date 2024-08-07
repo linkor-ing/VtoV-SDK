@@ -18,26 +18,26 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_waterShooter.prop_waterShooter_C
-// 0x0030 (0x0398 - 0x0368)
-class AProp_waterShooter_C final : public AProp_C
+// 0x0038 (0x03B0 - 0x0378)
+class AProp_waterShooter_C : public AProp_C
 {
 public:
-	uint8                                         Pad_3D7B[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_waterShooter_C;                // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	float                                         Level;                                             // 0x0370(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D7C[0x4];                                     // 0x0374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EObjectTypeQuery>                      Obj;                                               // 0x0378(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          Fire;                                              // 0x0388(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3D7D[0x7];                                     // 0x0389(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          Player;                                            // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_waterShooter_C;                // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	float                                         Level;                                             // 0x0380(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_384[0x4];                                      // 0x0384(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EObjectTypeQuery>                      Obj;                                               // 0x0388(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          Fire;                                              // 0x0398(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_399[0x7];                                      // 0x0399(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          Player;                                            // 0x03A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Wasting;                                           // 0x03A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_waterShooter(int32 EntryPoint);
 	void ReceiveTick(float DeltaSeconds);
-	void ReceiveBeginPlay();
 	void Get(float* Param_Level);
-	void PlayerHandRelease_LMB(class AMainPlayer_C* Param_Player);
+	void ReceiveBeginPlay();
 	void PlayerHandUse_LMB(class AMainPlayer_C* Param_Player);
+	void PlayerHandRelease_LMB(class AMainPlayer_C* Param_Player);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Param_Player);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
@@ -53,12 +53,13 @@ public:
 	}
 };
 static_assert(alignof(AProp_waterShooter_C) == 0x000008, "Wrong alignment on AProp_waterShooter_C");
-static_assert(sizeof(AProp_waterShooter_C) == 0x000398, "Wrong size on AProp_waterShooter_C");
-static_assert(offsetof(AProp_waterShooter_C, UberGraphFrame_Prop_waterShooter_C) == 0x000368, "Member 'AProp_waterShooter_C::UberGraphFrame_Prop_waterShooter_C' has a wrong offset!");
-static_assert(offsetof(AProp_waterShooter_C, Level) == 0x000370, "Member 'AProp_waterShooter_C::Level' has a wrong offset!");
-static_assert(offsetof(AProp_waterShooter_C, Obj) == 0x000378, "Member 'AProp_waterShooter_C::Obj' has a wrong offset!");
-static_assert(offsetof(AProp_waterShooter_C, Fire) == 0x000388, "Member 'AProp_waterShooter_C::Fire' has a wrong offset!");
-static_assert(offsetof(AProp_waterShooter_C, Player) == 0x000390, "Member 'AProp_waterShooter_C::Player' has a wrong offset!");
+static_assert(sizeof(AProp_waterShooter_C) == 0x0003B0, "Wrong size on AProp_waterShooter_C");
+static_assert(offsetof(AProp_waterShooter_C, UberGraphFrame_Prop_waterShooter_C) == 0x000378, "Member 'AProp_waterShooter_C::UberGraphFrame_Prop_waterShooter_C' has a wrong offset!");
+static_assert(offsetof(AProp_waterShooter_C, Level) == 0x000380, "Member 'AProp_waterShooter_C::Level' has a wrong offset!");
+static_assert(offsetof(AProp_waterShooter_C, Obj) == 0x000388, "Member 'AProp_waterShooter_C::Obj' has a wrong offset!");
+static_assert(offsetof(AProp_waterShooter_C, Fire) == 0x000398, "Member 'AProp_waterShooter_C::Fire' has a wrong offset!");
+static_assert(offsetof(AProp_waterShooter_C, Player) == 0x0003A0, "Member 'AProp_waterShooter_C::Player' has a wrong offset!");
+static_assert(offsetof(AProp_waterShooter_C, Wasting) == 0x0003A8, "Member 'AProp_waterShooter_C::Wasting' has a wrong offset!");
 
 }
 

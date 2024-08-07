@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Enum_tvStatus_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_classes.hpp"
 #include "SlateCore_structs.hpp"
 
@@ -41,7 +41,7 @@ public:
 	bool                                          SupportedUrl;                                      // 0x02D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	Enum_tvStatus                                 Status;                                            // 0x02D9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Offline;                                           // 0x02DA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_22C0[0x1];                                     // 0x02DB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DB[0x1];                                      // 0x02DB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Volume;                                            // 0x02DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

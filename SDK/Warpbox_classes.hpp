@@ -52,12 +52,23 @@ public:
 	bool                                          Anim;                                              // 0x0321(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Render;                                            // 0x0322(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          RenderPortal;                                      // 0x0323(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E02[0x4];                                     // 0x0324(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_324[0x4];                                      // 0x0324(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Name_Warpbox_C;                                    // 0x0328(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 NameTo;                                            // 0x0338(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	class APortal_phys_C*                         PhysPortal;                                        // 0x0348(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base);
+	void LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage);
+	void CanBePutInContainer(bool* Return);
+	void IsButtonUsed(bool* Failed);
+	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number);
+	void NoRespawn(bool Param_NoRespawn, bool* Return);
+	void CanPickup(bool* Return);
+	void AsProp(class AProp_C** Return);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
+	void Form();
+	void GetData(struct FStruct_save* Data);
 	void PlaySound(class USoundBase* NewSound);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void Upd();
@@ -78,6 +89,7 @@ public:
 	void GamemodeMakeKeys();
 	void PropRenderer_finishProps();
 	void ApplyColor(const struct FLinearColor& Color);
+	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void DriveDetached();
 	void Player_use(class AMainPlayer_C* Player, const struct FHitResult& Hit);
 	void Kicked(bool Kick);
@@ -85,25 +97,18 @@ public:
 	void broken();
 	void broken_fire();
 	void Thrown(class AMainPlayer_C* Player);
-	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit);
+	void DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage);
 	void UpdateStrAgl();
+	void PlayerUnequip(class AMainPlayer_C* Player);
+	void PlayerHold(class AMainPlayer_C* Player);
+	void PlayerR(class AMainPlayer_C* Player);
 	void ReceiveBeginPlay();
 	void Open(bool Param_Opened);
 	void BndEvt__tilebox_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 	void GamemodeBeginPlay();
 	void SettingsApplied(const struct FStruct_settings& Settings);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
 	void ExecuteUbergraph_warpbox(int32 EntryPoint);
-	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base);
-	void CanBePutInContainer(bool* Return);
-	void IsButtonUsed(bool* Failed);
-	void LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace);
-	void NoRespawn(bool Param_NoRespawn, bool* Return);
-	void CanPickup(bool* Return);
-	void AsProp(class AProp_C** Return);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
-	void Form();
-	void GetData(struct FStruct_save* Data);
 
 public:
 	static class UClass* StaticClass()

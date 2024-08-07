@@ -19,25 +19,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_rune.prop_rune_C
-// 0x0040 (0x03A8 - 0x0368)
+// 0x0040 (0x03B8 - 0x0378)
 class AProp_rune_C : public AProp_C
 {
 public:
-	uint8                                         Pad_38C0[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_rune_C;                        // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPnormal_C*                             Pnormal;                                           // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPointLightComponent*                   Light2;                                            // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPointLightComponent*                   Light;                                             // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	int32                                         Type;                                              // 0x0388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_38C1[0x4];                                     // 0x038C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	FMulticastInlineDelegateProperty_             Grabbed;                                           // 0x0390(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                          Active;                                            // 0x03A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_rune_C;                        // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPnormal_C*                             Pnormal;                                           // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPointLightComponent*                   Light2;                                            // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPointLightComponent*                   Light;                                             // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	int32                                         Type;                                              // 0x0398(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39C[0x4];                                      // 0x039C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             Grabbed;                                           // 0x03A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          Active;                                            // 0x03B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void Grabbed__DelegateSignature();
 	void ExecuteUbergraph_prop_rune(int32 EntryPoint);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
 	void SetActive(bool Param_Active);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
 	void UserConstructionScript();
 
 public:
@@ -51,14 +50,14 @@ public:
 	}
 };
 static_assert(alignof(AProp_rune_C) == 0x000008, "Wrong alignment on AProp_rune_C");
-static_assert(sizeof(AProp_rune_C) == 0x0003A8, "Wrong size on AProp_rune_C");
-static_assert(offsetof(AProp_rune_C, UberGraphFrame_Prop_rune_C) == 0x000368, "Member 'AProp_rune_C::UberGraphFrame_Prop_rune_C' has a wrong offset!");
-static_assert(offsetof(AProp_rune_C, Pnormal) == 0x000370, "Member 'AProp_rune_C::Pnormal' has a wrong offset!");
-static_assert(offsetof(AProp_rune_C, Light2) == 0x000378, "Member 'AProp_rune_C::Light2' has a wrong offset!");
-static_assert(offsetof(AProp_rune_C, Light) == 0x000380, "Member 'AProp_rune_C::Light' has a wrong offset!");
-static_assert(offsetof(AProp_rune_C, Type) == 0x000388, "Member 'AProp_rune_C::Type' has a wrong offset!");
-static_assert(offsetof(AProp_rune_C, Grabbed) == 0x000390, "Member 'AProp_rune_C::Grabbed' has a wrong offset!");
-static_assert(offsetof(AProp_rune_C, Active) == 0x0003A0, "Member 'AProp_rune_C::Active' has a wrong offset!");
+static_assert(sizeof(AProp_rune_C) == 0x0003B8, "Wrong size on AProp_rune_C");
+static_assert(offsetof(AProp_rune_C, UberGraphFrame_Prop_rune_C) == 0x000378, "Member 'AProp_rune_C::UberGraphFrame_Prop_rune_C' has a wrong offset!");
+static_assert(offsetof(AProp_rune_C, Pnormal) == 0x000380, "Member 'AProp_rune_C::Pnormal' has a wrong offset!");
+static_assert(offsetof(AProp_rune_C, Light2) == 0x000388, "Member 'AProp_rune_C::Light2' has a wrong offset!");
+static_assert(offsetof(AProp_rune_C, Light) == 0x000390, "Member 'AProp_rune_C::Light' has a wrong offset!");
+static_assert(offsetof(AProp_rune_C, Type) == 0x000398, "Member 'AProp_rune_C::Type' has a wrong offset!");
+static_assert(offsetof(AProp_rune_C, Grabbed) == 0x0003A0, "Member 'AProp_rune_C::Grabbed' has a wrong offset!");
+static_assert(offsetof(AProp_rune_C, Active) == 0x0003B0, "Member 'AProp_rune_C::Active' has a wrong offset!");
 
 }
 

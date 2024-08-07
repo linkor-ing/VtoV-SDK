@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass umg_keybinds.umg_keybinds_C
-// 0x0038 (0x0298 - 0x0260)
+// 0x0040 (0x02A0 - 0x0260)
 class UUmg_keybinds_C final : public UUserWidget
 {
 public:
@@ -26,8 +26,9 @@ public:
 	class UButton*                                button_exit;                                       // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_302;                                         // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UScrollBox*                             ScrollBox_slots;                                   // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<class UUmg_keybindSlot_C*>             Slots;                                             // 0x0280(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	class UUmg_settings_C*                        Settings;                                          // 0x0290(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUmg_settingsSlot_controller_C*         Umg_settingsSlot_controller;                       // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TArray<class UUmg_keybindSlot_C*>             Slots;                                             // 0x0288(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	class UUmg_settings_C*                        Settings;                                          // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_umg_keybinds(int32 EntryPoint);
@@ -36,6 +37,7 @@ public:
 	void Construct();
 	void BndEvt__button_exit_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
 	void SetIndex(int32 Param_Index);
+	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void ApplyColor(const struct FLinearColor& Color);
 	void PropRenderer_finishProps();
 	void GamemodeMakeKeys();
@@ -60,13 +62,14 @@ public:
 	}
 };
 static_assert(alignof(UUmg_keybinds_C) == 0x000008, "Wrong alignment on UUmg_keybinds_C");
-static_assert(sizeof(UUmg_keybinds_C) == 0x000298, "Wrong size on UUmg_keybinds_C");
+static_assert(sizeof(UUmg_keybinds_C) == 0x0002A0, "Wrong size on UUmg_keybinds_C");
 static_assert(offsetof(UUmg_keybinds_C, UberGraphFrame) == 0x000260, "Member 'UUmg_keybinds_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UUmg_keybinds_C, button_exit) == 0x000268, "Member 'UUmg_keybinds_C::button_exit' has a wrong offset!");
 static_assert(offsetof(UUmg_keybinds_C, Image_302) == 0x000270, "Member 'UUmg_keybinds_C::Image_302' has a wrong offset!");
 static_assert(offsetof(UUmg_keybinds_C, ScrollBox_slots) == 0x000278, "Member 'UUmg_keybinds_C::ScrollBox_slots' has a wrong offset!");
-static_assert(offsetof(UUmg_keybinds_C, Slots) == 0x000280, "Member 'UUmg_keybinds_C::Slots' has a wrong offset!");
-static_assert(offsetof(UUmg_keybinds_C, Settings) == 0x000290, "Member 'UUmg_keybinds_C::Settings' has a wrong offset!");
+static_assert(offsetof(UUmg_keybinds_C, Umg_settingsSlot_controller) == 0x000280, "Member 'UUmg_keybinds_C::Umg_settingsSlot_controller' has a wrong offset!");
+static_assert(offsetof(UUmg_keybinds_C, Slots) == 0x000288, "Member 'UUmg_keybinds_C::Slots' has a wrong offset!");
+static_assert(offsetof(UUmg_keybinds_C, Settings) == 0x000298, "Member 'UUmg_keybinds_C::Settings' has a wrong offset!");
 
 }
 

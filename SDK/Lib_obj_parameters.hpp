@@ -169,5 +169,56 @@ static_assert(offsetof(Lib_obj_C_Obj_pawn, Obj) == 0x000008, "Member 'Lib_obj_C_
 static_assert(offsetof(Lib_obj_C_Obj_pawn, Objs) == 0x000018, "Member 'Lib_obj_C_Obj_pawn::Objs' has a wrong offset!");
 static_assert(offsetof(Lib_obj_C_Obj_pawn, K2Node_MakeArray_Array) == 0x000028, "Member 'Lib_obj_C_Obj_pawn::K2Node_MakeArray_Array' has a wrong offset!");
 
+// Function lib_obj.lib_obj_C.obj_dynPhysPawn
+// 0x0038 (0x0038 - 0x0000)
+struct Lib_obj_C_Obj_dynPhysPawn final
+{
+public:
+	class UObject*                                __WorldContext;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<EObjectTypeQuery>                      Obj;                                               // 0x0008(0x0010)(Parm, OutParm)
+	TArray<EObjectTypeQuery>                      Objs;                                              // 0x0018(0x0010)(Edit, BlueprintVisible)
+	TArray<EObjectTypeQuery>                      K2Node_MakeArray_Array;                            // 0x0028(0x0010)(ReferenceParm)
+};
+static_assert(alignof(Lib_obj_C_Obj_dynPhysPawn) == 0x000008, "Wrong alignment on Lib_obj_C_Obj_dynPhysPawn");
+static_assert(sizeof(Lib_obj_C_Obj_dynPhysPawn) == 0x000038, "Wrong size on Lib_obj_C_Obj_dynPhysPawn");
+static_assert(offsetof(Lib_obj_C_Obj_dynPhysPawn, __WorldContext) == 0x000000, "Member 'Lib_obj_C_Obj_dynPhysPawn::__WorldContext' has a wrong offset!");
+static_assert(offsetof(Lib_obj_C_Obj_dynPhysPawn, Obj) == 0x000008, "Member 'Lib_obj_C_Obj_dynPhysPawn::Obj' has a wrong offset!");
+static_assert(offsetof(Lib_obj_C_Obj_dynPhysPawn, Objs) == 0x000018, "Member 'Lib_obj_C_Obj_dynPhysPawn::Objs' has a wrong offset!");
+static_assert(offsetof(Lib_obj_C_Obj_dynPhysPawn, K2Node_MakeArray_Array) == 0x000028, "Member 'Lib_obj_C_Obj_dynPhysPawn::K2Node_MakeArray_Array' has a wrong offset!");
+
+// Function lib_obj.lib_obj_C.obj_physPawn
+// 0x0038 (0x0038 - 0x0000)
+struct Lib_obj_C_Obj_physPawn final
+{
+public:
+	class UObject*                                __WorldContext;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<EObjectTypeQuery>                      Obj;                                               // 0x0008(0x0010)(Parm, OutParm)
+	TArray<EObjectTypeQuery>                      Objs;                                              // 0x0018(0x0010)(Edit, BlueprintVisible)
+	TArray<EObjectTypeQuery>                      K2Node_MakeArray_Array;                            // 0x0028(0x0010)(ReferenceParm)
+};
+static_assert(alignof(Lib_obj_C_Obj_physPawn) == 0x000008, "Wrong alignment on Lib_obj_C_Obj_physPawn");
+static_assert(sizeof(Lib_obj_C_Obj_physPawn) == 0x000038, "Wrong size on Lib_obj_C_Obj_physPawn");
+static_assert(offsetof(Lib_obj_C_Obj_physPawn, __WorldContext) == 0x000000, "Member 'Lib_obj_C_Obj_physPawn::__WorldContext' has a wrong offset!");
+static_assert(offsetof(Lib_obj_C_Obj_physPawn, Obj) == 0x000008, "Member 'Lib_obj_C_Obj_physPawn::Obj' has a wrong offset!");
+static_assert(offsetof(Lib_obj_C_Obj_physPawn, Objs) == 0x000018, "Member 'Lib_obj_C_Obj_physPawn::Objs' has a wrong offset!");
+static_assert(offsetof(Lib_obj_C_Obj_physPawn, K2Node_MakeArray_Array) == 0x000028, "Member 'Lib_obj_C_Obj_physPawn::K2Node_MakeArray_Array' has a wrong offset!");
+
+// Function lib_obj.lib_obj_C.obj_statDynPawn
+// 0x0038 (0x0038 - 0x0000)
+struct Lib_obj_C_Obj_statDynPawn final
+{
+public:
+	class UObject*                                __WorldContext;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<EObjectTypeQuery>                      Obj;                                               // 0x0008(0x0010)(Parm, OutParm)
+	TArray<EObjectTypeQuery>                      Objs;                                              // 0x0018(0x0010)(Edit, BlueprintVisible)
+	TArray<EObjectTypeQuery>                      K2Node_MakeArray_Array;                            // 0x0028(0x0010)(ReferenceParm)
+};
+static_assert(alignof(Lib_obj_C_Obj_statDynPawn) == 0x000008, "Wrong alignment on Lib_obj_C_Obj_statDynPawn");
+static_assert(sizeof(Lib_obj_C_Obj_statDynPawn) == 0x000038, "Wrong size on Lib_obj_C_Obj_statDynPawn");
+static_assert(offsetof(Lib_obj_C_Obj_statDynPawn, __WorldContext) == 0x000000, "Member 'Lib_obj_C_Obj_statDynPawn::__WorldContext' has a wrong offset!");
+static_assert(offsetof(Lib_obj_C_Obj_statDynPawn, Obj) == 0x000008, "Member 'Lib_obj_C_Obj_statDynPawn::Obj' has a wrong offset!");
+static_assert(offsetof(Lib_obj_C_Obj_statDynPawn, Objs) == 0x000018, "Member 'Lib_obj_C_Obj_statDynPawn::Objs' has a wrong offset!");
+static_assert(offsetof(Lib_obj_C_Obj_statDynPawn, K2Node_MakeArray_Array) == 0x000028, "Member 'Lib_obj_C_Obj_statDynPawn::K2Node_MakeArray_Array' has a wrong offset!");
+
 }
 

@@ -37,20 +37,6 @@ void AProp_radArgem_C::ExecuteUbergraph_prop_radArgem(int32 EntryPoint)
 }
 
 
-// Function prop_radArgem.prop_radArgem_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_radArgem_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_radArgem_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_radArgem.prop_radArgem_C.BndEvt__StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -116,6 +102,20 @@ void AProp_radArgem_C::Ht()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("prop_radArgem_C", "ht");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function prop_radArgem.prop_radArgem_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_radArgem_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_radArgem_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

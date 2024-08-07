@@ -12,9 +12,9 @@
 
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "ControlRig_structs.hpp"
-#include "AnimGraphRuntime_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "AnimGraphRuntime_structs.hpp"
+#include "ControlRig_structs.hpp"
 
 
 namespace SDK
@@ -25,7 +25,7 @@ namespace SDK
 class UTentacleBall_prot_Skeleton_AnimBlueprint1_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_2973[0x8];                                     // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B8[0x8];                                      // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimNode_LinkedInputPose              AnimGraphNode_LinkedInputPose;                     // 0x02C8(0x0118)()
 	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace_1;             // 0x03E0(0x0020)()
@@ -62,7 +62,7 @@ public:
 	struct FVector                                Point_t1_2;                                        // 0x1140(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Point_t1_3;                                        // 0x114C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                StepTarget_1;                                      // 0x1158(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2974[0x4];                                     // 0x1164(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1164[0x4];                                     // 0x1164(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  Pawn;                                              // 0x1168(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<EObjectTypeQuery>                      Obj;                                               // 0x1170(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class USkeletalMeshComponent*                 Comp;                                              // 0x1180(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -109,10 +109,10 @@ public:
 	bool                                          ActiveLeg_3;                                       // 0x12F6(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          ActiveLeg_4;                                       // 0x12F7(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          ActiveLeg_5;                                       // 0x12F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2975[0x3];                                     // 0x12F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12F9[0x3];                                     // 0x12F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CurrentLegID;                                      // 0x12FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Stay_1;                                            // 0x1300(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2976[0x3];                                     // 0x1301(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1301[0x3];                                     // 0x1301(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Stays;                                             // 0x1304(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Velocity;                                          // 0x1308(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Lastloc;                                           // 0x1314(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -134,13 +134,13 @@ public:
 	struct FRotator                               LookAtRot;                                         // 0x13E0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	struct FVector                                LookAtLocation;                                    // 0x13EC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Stay_2;                                            // 0x13F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2977[0x7];                                     // 0x13F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13F9[0x7];                                     // 0x13F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ATentacleBall_C*                        TentacleBall;                                      // 0x1400(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         LegTarg;                                           // 0x1408(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                TargLoc;                                           // 0x140C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               LookBodyRoot;                                      // 0x1418(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          StareAtPlayer;                                     // 0x1424(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2978[0x3];                                     // 0x1425(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1425[0x3];                                     // 0x1425(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         PlayerStareLerp;                                   // 0x1428(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         StepHeight;                                        // 0x142C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         LegHeight_1;                                       // 0x1430(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -150,19 +150,22 @@ public:
 	float                                         LegHeight_5;                                       // 0x1440(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               HeadLookRot;                                       // 0x1444(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	class AActor*                                 StareAtObject;                                     // 0x1450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Height;                                            // 0x1458(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Size;                                              // 0x145C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_tentacleBall_prot_Skeleton_AnimBlueprint1(int32 EntryPoint);
 	void BlueprintInitializeAnimation();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_tentacleBall_prot_Skeleton_AnimBlueprint1_AnimGraphNode_ModifyBone_4F8922784F91D52EF93B55933450C389();
+	void BlueprintBeginPlay();
+	void BlueprintUpdateAnimation(float DeltaTimeX);
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_tentacleBall_prot_Skeleton_AnimBlueprint1_AnimGraphNode_ModifyBone_86D98CF04F2587CE50A03D86C52A90BB();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_tentacleBall_prot_Skeleton_AnimBlueprint1_AnimGraphNode_ModifyBone_75389FF64311FBD94291E99D83589CD1();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_tentacleBall_prot_Skeleton_AnimBlueprint1_AnimGraphNode_ModifyBone_182AFD2D4FA390AF0D057FB3477BDD62();
-	void BlueprintBeginPlay();
-	void BlueprintUpdateAnimation(float DeltaTimeX);
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_tentacleBall_prot_Skeleton_AnimBlueprint1_AnimGraphNode_ModifyBone_0D34365A425CB21B7F38D39234C43E0D();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_tentacleBall_prot_Skeleton_AnimBlueprint1_AnimGraphNode_ModifyBone_4B5F4EEA4C8E928D8353EBA264BF202C();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_tentacleBall_prot_Skeleton_AnimBlueprint1_AnimGraphNode_ControlRig_2A81A0E64A17AF524DEB6D94D8B88992();
+	void ResetFeets();
 	void AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* Param_AnimGraph);
 
 public:
@@ -296,6 +299,8 @@ static_assert(offsetof(UTentacleBall_prot_Skeleton_AnimBlueprint1_C, LegHeight_4
 static_assert(offsetof(UTentacleBall_prot_Skeleton_AnimBlueprint1_C, LegHeight_5) == 0x001440, "Member 'UTentacleBall_prot_Skeleton_AnimBlueprint1_C::LegHeight_5' has a wrong offset!");
 static_assert(offsetof(UTentacleBall_prot_Skeleton_AnimBlueprint1_C, HeadLookRot) == 0x001444, "Member 'UTentacleBall_prot_Skeleton_AnimBlueprint1_C::HeadLookRot' has a wrong offset!");
 static_assert(offsetof(UTentacleBall_prot_Skeleton_AnimBlueprint1_C, StareAtObject) == 0x001450, "Member 'UTentacleBall_prot_Skeleton_AnimBlueprint1_C::StareAtObject' has a wrong offset!");
+static_assert(offsetof(UTentacleBall_prot_Skeleton_AnimBlueprint1_C, Height) == 0x001458, "Member 'UTentacleBall_prot_Skeleton_AnimBlueprint1_C::Height' has a wrong offset!");
+static_assert(offsetof(UTentacleBall_prot_Skeleton_AnimBlueprint1_C, Size) == 0x00145C, "Member 'UTentacleBall_prot_Skeleton_AnimBlueprint1_C::Size' has a wrong offset!");
 
 }
 

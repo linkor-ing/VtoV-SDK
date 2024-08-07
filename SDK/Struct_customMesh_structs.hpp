@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Struct_mVector_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK

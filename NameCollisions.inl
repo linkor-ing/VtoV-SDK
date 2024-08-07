@@ -8,3 +8,28 @@
 
 // FORWARD DECLARATIONS
 
+
+namespace NewBlueprint2 { class ANewBlueprint2_C; }
+
+namespace NewBlueprint4 { class ANewBlueprint4_C; }
+
+namespace NewBlueprint5 { class ANewBlueprint5_C; }
+
+namespace NewBlueprint3_0 { class ANewBlueprint3_C; }
+
+namespace NewBlueprint5_0 { class ANewBlueprint5_C; }
+
+namespace NewBlueprint7 { class ANewBlueprint7_C; }
+
+namespace NewBlueprint { class ANewBlueprint_C; }
+
+namespace NewBlueprint7_0 { class ANewBlueprint7_C; }
+
+namespace NewBlueprint2_0 { class ANewBlueprint2_C; }
+
+namespace NewBlueprint3 { class ANewBlueprint3_C; }
+
+namespace NewBlueprint_0 { class ANewBlueprint_C; }
+
+namespace NewBlueprint4_0 { class ANewBlueprint4_C; }
+

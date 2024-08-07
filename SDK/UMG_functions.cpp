@@ -17,6 +17,34 @@
 namespace SDK
 {
 
+// Function UMG.AsyncTaskDownloadImage.DownloadImage
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                           URL                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAsyncTaskDownloadImage*          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UAsyncTaskDownloadImage* UAsyncTaskDownloadImage::DownloadImage(const class FString& URL)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AsyncTaskDownloadImage", "DownloadImage");
+
+	Params::AsyncTaskDownloadImage_DownloadImage Parms{};
+
+	Parms.URL = std::move(URL);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function UMG.Widget.ForceLayoutPrepass
 // (Final, Native, Public, BlueprintCallable)
 
@@ -1592,6 +1620,182 @@ bool UWidget::IsVisible() const
 }
 
 
+// Function UMG.ListViewBase.RegenerateAllEntries
+// (Final, Native, Public, BlueprintCallable)
+
+void UListViewBase::RegenerateAllEntries()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListViewBase", "RegenerateAllEntries");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UMG.ListViewBase.RequestRefresh
+// (Final, Native, Public, BlueprintCallable)
+
+void UListViewBase::RequestRefresh()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListViewBase", "RequestRefresh");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UMG.ListViewBase.ScrollToBottom
+// (Final, Native, Public, BlueprintCallable)
+
+void UListViewBase::ScrollToBottom()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListViewBase", "ScrollToBottom");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UMG.ListViewBase.ScrollToTop
+// (Final, Native, Public, BlueprintCallable)
+
+void UListViewBase::ScrollToTop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListViewBase", "ScrollToTop");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UMG.ListViewBase.SetScrollbarVisibility
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// ESlateVisibility                        InVisibility                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UListViewBase::SetScrollbarVisibility(ESlateVisibility InVisibility)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListViewBase", "SetScrollbarVisibility");
+
+	Params::ListViewBase_SetScrollbarVisibility Parms{};
+
+	Parms.InVisibility = InVisibility;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UMG.ListViewBase.SetScrollOffset
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   InScrollOffset                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UListViewBase::SetScrollOffset(const float InScrollOffset)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListViewBase", "SetScrollOffset");
+
+	Params::ListViewBase_SetScrollOffset Parms{};
+
+	Parms.InScrollOffset = InScrollOffset;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UMG.ListViewBase.SetWheelScrollMultiplier
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   NewWheelScrollMultiplier                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UListViewBase::SetWheelScrollMultiplier(float NewWheelScrollMultiplier)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListViewBase", "SetWheelScrollMultiplier");
+
+	Params::ListViewBase_SetWheelScrollMultiplier Parms{};
+
+	Parms.NewWheelScrollMultiplier = NewWheelScrollMultiplier;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UMG.ListViewBase.GetDisplayedEntryWidgets
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const TArray<class UUserWidget*>        ReturnValue                                            (ConstParm, ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+const TArray<class UUserWidget*> UListViewBase::GetDisplayedEntryWidgets() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListViewBase", "GetDisplayedEntryWidgets");
+
+	Params::ListViewBase_GetDisplayedEntryWidgets Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function UMG.PanelWidget.AddChild
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -1854,6 +2058,578 @@ bool UPanelWidget::HasChild(class UWidget* Content) const
 }
 
 
+// Function UMG.ListView.AddItem
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                          Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UListView::AddItem(class UObject* Item)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "AddItem");
+
+	Params::ListView_AddItem Parms{};
+
+	Parms.Item = Item;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UMG.ListView.BP_CancelScrollIntoView
+// (Final, Native, Private, BlueprintCallable)
+
+void UListView::BP_CancelScrollIntoView()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "BP_CancelScrollIntoView");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UMG.ListView.BP_ClearSelection
+// (Final, Native, Private, BlueprintCallable)
+
+void UListView::BP_ClearSelection()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "BP_ClearSelection");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UMG.ListView.BP_NavigateToItem
+// (Final, Native, Private, BlueprintCallable)
+// Parameters:
+// class UObject*                          Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UListView::BP_NavigateToItem(class UObject* Item)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "BP_NavigateToItem");
+
+	Params::ListView_BP_NavigateToItem Parms{};
+
+	Parms.Item = Item;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UMG.ListView.BP_ScrollItemIntoView
+// (Final, Native, Private, BlueprintCallable)
+// Parameters:
+// class UObject*                          Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UListView::BP_ScrollItemIntoView(class UObject* Item)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "BP_ScrollItemIntoView");
+
+	Params::ListView_BP_ScrollItemIntoView Parms{};
+
+	Parms.Item = Item;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UMG.ListView.BP_SetItemSelection
+// (Final, Native, Private, BlueprintCallable)
+// Parameters:
+// class UObject*                          Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bSelected                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UListView::BP_SetItemSelection(class UObject* Item, bool bSelected)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "BP_SetItemSelection");
+
+	Params::ListView_BP_SetItemSelection Parms{};
+
+	Parms.Item = Item;
+	Parms.bSelected = bSelected;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UMG.ListView.BP_SetListItems
+// (Final, Native, Private, HasOutParams, BlueprintCallable)
+// Parameters:
+// TArray<class UObject*>                  InListItems                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UListView::BP_SetListItems(const TArray<class UObject*>& InListItems)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "BP_SetListItems");
+
+	Params::ListView_BP_SetListItems Parms{};
+
+	Parms.InListItems = std::move(InListItems);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UMG.ListView.BP_SetSelectedItem
+// (Final, Native, Private, BlueprintCallable)
+// Parameters:
+// class UObject*                          Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UListView::BP_SetSelectedItem(class UObject* Item)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "BP_SetSelectedItem");
+
+	Params::ListView_BP_SetSelectedItem Parms{};
+
+	Parms.Item = Item;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UMG.ListView.ClearListItems
+// (Final, Native, Public, BlueprintCallable)
+
+void UListView::ClearListItems()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "ClearListItems");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UMG.ListView.NavigateToIndex
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UListView::NavigateToIndex(int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "NavigateToIndex");
+
+	Params::ListView_NavigateToIndex Parms{};
+
+	Parms.Param_Index = Param_Index;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UMG.ListView.RemoveItem
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                          Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UListView::RemoveItem(class UObject* Item)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "RemoveItem");
+
+	Params::ListView_RemoveItem Parms{};
+
+	Parms.Item = Item;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UMG.ListView.ScrollIndexIntoView
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UListView::ScrollIndexIntoView(int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "ScrollIndexIntoView");
+
+	Params::ListView_ScrollIndexIntoView Parms{};
+
+	Parms.Param_Index = Param_Index;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UMG.ListView.SetSelectedIndex
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UListView::SetSelectedIndex(int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "SetSelectedIndex");
+
+	Params::ListView_SetSelectedIndex Parms{};
+
+	Parms.Param_Index = Param_Index;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UMG.ListView.SetSelectionMode
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// ESelectionMode                          Param_SelectionMode                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UListView::SetSelectionMode(ESelectionMode Param_SelectionMode)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "SetSelectionMode");
+
+	Params::ListView_SetSelectionMode Parms{};
+
+	Parms.Param_SelectionMode = Param_SelectionMode;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UMG.ListView.BP_GetNumItemsSelected
+// (Final, Native, Private, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UListView::BP_GetNumItemsSelected() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "BP_GetNumItemsSelected");
+
+	Params::ListView_BP_GetNumItemsSelected Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UMG.ListView.BP_GetSelectedItem
+// (Final, Native, Private, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UObject* UListView::BP_GetSelectedItem() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "BP_GetSelectedItem");
+
+	Params::ListView_BP_GetSelectedItem Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UMG.ListView.BP_GetSelectedItems
+// (Final, Native, Private, HasOutParams, BlueprintCallable, Const)
+// Parameters:
+// TArray<class UObject*>                  Items                                                  (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UListView::BP_GetSelectedItems(TArray<class UObject*>* Items) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "BP_GetSelectedItems");
+
+	Params::ListView_BP_GetSelectedItems Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (Items != nullptr)
+		*Items = std::move(Parms.Items);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UMG.ListView.BP_IsItemVisible
+// (Final, Native, Private, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UObject*                          Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UListView::BP_IsItemVisible(class UObject* Item) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "BP_IsItemVisible");
+
+	Params::ListView_BP_IsItemVisible Parms{};
+
+	Parms.Item = Item;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UMG.ListView.GetIndexForItem
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UObject*                          Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UListView::GetIndexForItem(class UObject* Item) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "GetIndexForItem");
+
+	Params::ListView_GetIndexForItem Parms{};
+
+	Parms.Item = Item;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UMG.ListView.GetItemAt
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UObject* UListView::GetItemAt(int32 Param_Index) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "GetItemAt");
+
+	Params::ListView_GetItemAt Parms{};
+
+	Parms.Param_Index = Param_Index;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UMG.ListView.GetListItems
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const TArray<class UObject*>            ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+const TArray<class UObject*> UListView::GetListItems() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "GetListItems");
+
+	Params::ListView_GetListItems Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UMG.ListView.GetNumItems
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UListView::GetNumItems() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "GetNumItems");
+
+	Params::ListView_GetNumItems Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UMG.ListView.IsRefreshPending
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UListView::IsRefreshPending() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "IsRefreshPending");
+
+	Params::ListView_IsRefreshPending Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function UMG.ContentWidget.SetContent
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -1925,34 +2701,6 @@ class UPanelSlot* UContentWidget::GetContentSlot() const
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UMG.AsyncTaskDownloadImage.DownloadImage
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class FString                           URL                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UAsyncTaskDownloadImage*          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UAsyncTaskDownloadImage* UAsyncTaskDownloadImage::DownloadImage(const class FString& URL)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AsyncTaskDownloadImage", "DownloadImage");
-
-	Params::AsyncTaskDownloadImage_DownloadImage Parms{};
-
-	Parms.URL = std::move(URL);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -6175,754 +6923,6 @@ class UObject* UUserObjectListEntryLibrary::GetListItemObject(TScriptInterface<c
 	Func->FunctionFlags |= 0x400;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UMG.ListViewBase.RegenerateAllEntries
-// (Final, Native, Public, BlueprintCallable)
-
-void UListViewBase::RegenerateAllEntries()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListViewBase", "RegenerateAllEntries");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UMG.ListViewBase.RequestRefresh
-// (Final, Native, Public, BlueprintCallable)
-
-void UListViewBase::RequestRefresh()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListViewBase", "RequestRefresh");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UMG.ListViewBase.ScrollToBottom
-// (Final, Native, Public, BlueprintCallable)
-
-void UListViewBase::ScrollToBottom()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListViewBase", "ScrollToBottom");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UMG.ListViewBase.ScrollToTop
-// (Final, Native, Public, BlueprintCallable)
-
-void UListViewBase::ScrollToTop()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListViewBase", "ScrollToTop");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UMG.ListViewBase.SetScrollbarVisibility
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// ESlateVisibility                        InVisibility                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UListViewBase::SetScrollbarVisibility(ESlateVisibility InVisibility)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListViewBase", "SetScrollbarVisibility");
-
-	Params::ListViewBase_SetScrollbarVisibility Parms{};
-
-	Parms.InVisibility = InVisibility;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UMG.ListViewBase.SetScrollOffset
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   InScrollOffset                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UListViewBase::SetScrollOffset(const float InScrollOffset)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListViewBase", "SetScrollOffset");
-
-	Params::ListViewBase_SetScrollOffset Parms{};
-
-	Parms.InScrollOffset = InScrollOffset;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UMG.ListViewBase.SetWheelScrollMultiplier
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   NewWheelScrollMultiplier                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UListViewBase::SetWheelScrollMultiplier(float NewWheelScrollMultiplier)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListViewBase", "SetWheelScrollMultiplier");
-
-	Params::ListViewBase_SetWheelScrollMultiplier Parms{};
-
-	Parms.NewWheelScrollMultiplier = NewWheelScrollMultiplier;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UMG.ListViewBase.GetDisplayedEntryWidgets
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const TArray<class UUserWidget*>        ReturnValue                                            (ConstParm, ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
-const TArray<class UUserWidget*> UListViewBase::GetDisplayedEntryWidgets() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListViewBase", "GetDisplayedEntryWidgets");
-
-	Params::ListViewBase_GetDisplayedEntryWidgets Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UMG.ListView.AddItem
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                          Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UListView::AddItem(class UObject* Item)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListView", "AddItem");
-
-	Params::ListView_AddItem Parms{};
-
-	Parms.Item = Item;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UMG.ListView.BP_CancelScrollIntoView
-// (Final, Native, Private, BlueprintCallable)
-
-void UListView::BP_CancelScrollIntoView()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListView", "BP_CancelScrollIntoView");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UMG.ListView.BP_ClearSelection
-// (Final, Native, Private, BlueprintCallable)
-
-void UListView::BP_ClearSelection()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListView", "BP_ClearSelection");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UMG.ListView.BP_NavigateToItem
-// (Final, Native, Private, BlueprintCallable)
-// Parameters:
-// class UObject*                          Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UListView::BP_NavigateToItem(class UObject* Item)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListView", "BP_NavigateToItem");
-
-	Params::ListView_BP_NavigateToItem Parms{};
-
-	Parms.Item = Item;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UMG.ListView.BP_ScrollItemIntoView
-// (Final, Native, Private, BlueprintCallable)
-// Parameters:
-// class UObject*                          Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UListView::BP_ScrollItemIntoView(class UObject* Item)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListView", "BP_ScrollItemIntoView");
-
-	Params::ListView_BP_ScrollItemIntoView Parms{};
-
-	Parms.Item = Item;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UMG.ListView.BP_SetItemSelection
-// (Final, Native, Private, BlueprintCallable)
-// Parameters:
-// class UObject*                          Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bSelected                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UListView::BP_SetItemSelection(class UObject* Item, bool bSelected)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListView", "BP_SetItemSelection");
-
-	Params::ListView_BP_SetItemSelection Parms{};
-
-	Parms.Item = Item;
-	Parms.bSelected = bSelected;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UMG.ListView.BP_SetListItems
-// (Final, Native, Private, HasOutParams, BlueprintCallable)
-// Parameters:
-// TArray<class UObject*>                  InListItems                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UListView::BP_SetListItems(const TArray<class UObject*>& InListItems)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListView", "BP_SetListItems");
-
-	Params::ListView_BP_SetListItems Parms{};
-
-	Parms.InListItems = std::move(InListItems);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UMG.ListView.BP_SetSelectedItem
-// (Final, Native, Private, BlueprintCallable)
-// Parameters:
-// class UObject*                          Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UListView::BP_SetSelectedItem(class UObject* Item)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListView", "BP_SetSelectedItem");
-
-	Params::ListView_BP_SetSelectedItem Parms{};
-
-	Parms.Item = Item;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UMG.ListView.ClearListItems
-// (Final, Native, Public, BlueprintCallable)
-
-void UListView::ClearListItems()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListView", "ClearListItems");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UMG.ListView.NavigateToIndex
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UListView::NavigateToIndex(int32 Param_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListView", "NavigateToIndex");
-
-	Params::ListView_NavigateToIndex Parms{};
-
-	Parms.Param_Index = Param_Index;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UMG.ListView.RemoveItem
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                          Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UListView::RemoveItem(class UObject* Item)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListView", "RemoveItem");
-
-	Params::ListView_RemoveItem Parms{};
-
-	Parms.Item = Item;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UMG.ListView.ScrollIndexIntoView
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UListView::ScrollIndexIntoView(int32 Param_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListView", "ScrollIndexIntoView");
-
-	Params::ListView_ScrollIndexIntoView Parms{};
-
-	Parms.Param_Index = Param_Index;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UMG.ListView.SetSelectedIndex
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UListView::SetSelectedIndex(int32 Param_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListView", "SetSelectedIndex");
-
-	Params::ListView_SetSelectedIndex Parms{};
-
-	Parms.Param_Index = Param_Index;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UMG.ListView.SetSelectionMode
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// ESelectionMode                          Param_SelectionMode                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UListView::SetSelectionMode(ESelectionMode Param_SelectionMode)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListView", "SetSelectionMode");
-
-	Params::ListView_SetSelectionMode Parms{};
-
-	Parms.Param_SelectionMode = Param_SelectionMode;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function UMG.ListView.BP_GetNumItemsSelected
-// (Final, Native, Private, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UListView::BP_GetNumItemsSelected() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListView", "BP_GetNumItemsSelected");
-
-	Params::ListView_BP_GetNumItemsSelected Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UMG.ListView.BP_GetSelectedItem
-// (Final, Native, Private, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UObject* UListView::BP_GetSelectedItem() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListView", "BP_GetSelectedItem");
-
-	Params::ListView_BP_GetSelectedItem Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UMG.ListView.BP_GetSelectedItems
-// (Final, Native, Private, HasOutParams, BlueprintCallable, Const)
-// Parameters:
-// TArray<class UObject*>                  Items                                                  (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UListView::BP_GetSelectedItems(TArray<class UObject*>* Items) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListView", "BP_GetSelectedItems");
-
-	Params::ListView_BP_GetSelectedItems Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (Items != nullptr)
-		*Items = std::move(Parms.Items);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UMG.ListView.BP_IsItemVisible
-// (Final, Native, Private, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class UObject*                          Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UListView::BP_IsItemVisible(class UObject* Item) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListView", "BP_IsItemVisible");
-
-	Params::ListView_BP_IsItemVisible Parms{};
-
-	Parms.Item = Item;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UMG.ListView.GetIndexForItem
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class UObject*                          Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UListView::GetIndexForItem(class UObject* Item) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListView", "GetIndexForItem");
-
-	Params::ListView_GetIndexForItem Parms{};
-
-	Parms.Item = Item;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UMG.ListView.GetItemAt
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UObject* UListView::GetItemAt(int32 Param_Index) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListView", "GetItemAt");
-
-	Params::ListView_GetItemAt Parms{};
-
-	Parms.Param_Index = Param_Index;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UMG.ListView.GetListItems
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const TArray<class UObject*>            ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-const TArray<class UObject*> UListView::GetListItems() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListView", "GetListItems");
-
-	Params::ListView_GetListItems Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UMG.ListView.GetNumItems
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UListView::GetNumItems() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListView", "GetNumItems");
-
-	Params::ListView_GetNumItems Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function UMG.ListView.IsRefreshPending
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UListView::IsRefreshPending() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ListView", "IsRefreshPending");
-
-	Params::ListView_IsRefreshPending Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 

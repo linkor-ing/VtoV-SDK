@@ -34,6 +34,7 @@ public:
 	void ExecuteUbergraph_umg_carmap(int32 EntryPoint);
 	void SettingsApplied(const struct FStruct_settings& Settings);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void ApplyColor(const struct FLinearColor& Color);
 	void PropRenderer_finishProps();
 	void GamemodeMakeKeys();

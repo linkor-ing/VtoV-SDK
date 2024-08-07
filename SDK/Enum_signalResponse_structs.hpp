@@ -15,7 +15,7 @@ namespace SDK
 {
 
 // UserDefinedEnum enum_signalResponse.enum_signalResponse
-// NumValues: 0x0009
+// NumValues: 0x000A
 enum class Enum_signalResponse : uint8
 {
 	NewEnumerator0                           = 0,
@@ -26,7 +26,8 @@ enum class Enum_signalResponse : uint8
 	NewEnumerator5                           = 5,
 	NewEnumerator6                           = 6,
 	NewEnumerator16                          = 7,
-	Enum_MAX                                 = 8,
+	NewEnumerator17                          = 8,
+	Enum_MAX                                 = 9,
 };
 
 }

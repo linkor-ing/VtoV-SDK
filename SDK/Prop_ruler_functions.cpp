@@ -37,20 +37,6 @@ void AProp_ruler_C::ExecuteUbergraph_prop_ruler(int32 EntryPoint)
 }
 
 
-// Function prop_ruler.prop_ruler_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_ruler_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_ruler_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_ruler.prop_ruler_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -68,6 +54,20 @@ void AProp_ruler_C::ReceiveTick(float DeltaSeconds)
 	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_ruler.prop_ruler_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_ruler_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_ruler_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

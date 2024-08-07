@@ -12,8 +12,8 @@
 
 #include "Struct_keybind_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "UMG_structs.hpp"
 #include "InputCore_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
@@ -26,7 +26,7 @@ struct Umg_keybindSlot_C_ExecuteUbergraph_umg_keybindSlot final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x0004(0x0008)(NoDestructor)
-	uint8                                         Pad_208C[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FStruct_keybind                        CallFunc_Array_Get_Item;                           // 0x0018(0x0030)(HasGetValueTypeHash)
 };
@@ -123,11 +123,11 @@ public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
 	bool                                          Temp_bool_Variable;                                // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_208D[0x3];                                     // 0x0161(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_161[0x3];                                      // 0x0161(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_PointerEvent_GetWheelDelta_ReturnValue;   // 0x0164(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FKey                                   Temp_struct_Variable;                              // 0x0168(0x0018)(HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_208E[0x7];                                     // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_181[0x7];                                      // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FKey                                   Temp_struct_Variable_1;                            // 0x0188(0x0018)(HasGetValueTypeHash)
 	struct FKey                                   K2Node_Select_Default;                             // 0x01A0(0x0018)(HasGetValueTypeHash)
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x01B8(0x00B8)()

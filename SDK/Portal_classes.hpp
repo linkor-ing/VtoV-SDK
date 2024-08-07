@@ -39,7 +39,7 @@ public:
 	struct FVector                                MeshOffset;                                        // 0x028C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CanRender;                                         // 0x0298(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          IsActive;                                          // 0x0299(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_207D[0x2];                                     // 0x029A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29A[0x2];                                      // 0x029A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         RenderDistance;                                    // 0x029C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
@@ -50,6 +50,7 @@ public:
 	void MakeRt();
 	void UserConstructionScript();
 	void ApplyColor(const struct FLinearColor& Color);
+	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void SettingsApplied(const struct FStruct_settings& Settings);
 	void ReceiveBeginPlay();
 	void ReceiveTick(float DeltaSeconds);

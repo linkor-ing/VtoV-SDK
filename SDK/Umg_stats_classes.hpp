@@ -11,7 +11,7 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Struct_signal_data2_structs.hpp"
+#include "Struct_signal_data1_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -72,9 +72,9 @@ public:
 	class UTextBlock*                             Txt_sigUnique;                                     // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             Txt_text;                                          // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	TArray<class UUmg_statsSlot_C*>               Slots;                                             // 0x03E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	struct FStruct_signal_data2                   DataSig;                                           // 0x03F0(0x01D0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FStruct_signal_data1                   DataSig;                                           // 0x03F0(0x01D0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	int32                                         SigView;                                           // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_20BC[0x4];                                     // 0x05C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5C4[0x4];                                      // 0x05C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             Sound;                                             // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        Aud;                                               // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UUmg_statsGlossSlot_C*>          GlossSlots;                                        // 0x05D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)

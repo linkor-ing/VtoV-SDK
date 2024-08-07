@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_wireComponent_bulb.prop_wireComponent_bulb_C
-// 0x0028 (0x0398 - 0x0370)
+// 0x0028 (0x03A8 - 0x0380)
 class AProp_wireComponent_bulb_C final : public AProp_wireComponent_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_wireComponent_bulb_C;          // 0x0370(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UParticleSystemComponent*               ParticleSystem;                                    // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBillboardComponent*                    Billboard;                                         // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPointLightComponent*                   PointLight;                                        // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	int32                                         Color;                                             // 0x0390(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_wireComponent_bulb_C;          // 0x0380(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UParticleSystemComponent*               ParticleSystem;                                    // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    Billboard;                                         // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPointLightComponent*                   PointLight;                                        // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	int32                                         Color;                                             // 0x03A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_wireComponent_bulb(int32 EntryPoint);
@@ -45,12 +45,12 @@ public:
 	}
 };
 static_assert(alignof(AProp_wireComponent_bulb_C) == 0x000008, "Wrong alignment on AProp_wireComponent_bulb_C");
-static_assert(sizeof(AProp_wireComponent_bulb_C) == 0x000398, "Wrong size on AProp_wireComponent_bulb_C");
-static_assert(offsetof(AProp_wireComponent_bulb_C, UberGraphFrame_Prop_wireComponent_bulb_C) == 0x000370, "Member 'AProp_wireComponent_bulb_C::UberGraphFrame_Prop_wireComponent_bulb_C' has a wrong offset!");
-static_assert(offsetof(AProp_wireComponent_bulb_C, ParticleSystem) == 0x000378, "Member 'AProp_wireComponent_bulb_C::ParticleSystem' has a wrong offset!");
-static_assert(offsetof(AProp_wireComponent_bulb_C, Billboard) == 0x000380, "Member 'AProp_wireComponent_bulb_C::Billboard' has a wrong offset!");
-static_assert(offsetof(AProp_wireComponent_bulb_C, PointLight) == 0x000388, "Member 'AProp_wireComponent_bulb_C::PointLight' has a wrong offset!");
-static_assert(offsetof(AProp_wireComponent_bulb_C, Color) == 0x000390, "Member 'AProp_wireComponent_bulb_C::Color' has a wrong offset!");
+static_assert(sizeof(AProp_wireComponent_bulb_C) == 0x0003A8, "Wrong size on AProp_wireComponent_bulb_C");
+static_assert(offsetof(AProp_wireComponent_bulb_C, UberGraphFrame_Prop_wireComponent_bulb_C) == 0x000380, "Member 'AProp_wireComponent_bulb_C::UberGraphFrame_Prop_wireComponent_bulb_C' has a wrong offset!");
+static_assert(offsetof(AProp_wireComponent_bulb_C, ParticleSystem) == 0x000388, "Member 'AProp_wireComponent_bulb_C::ParticleSystem' has a wrong offset!");
+static_assert(offsetof(AProp_wireComponent_bulb_C, Billboard) == 0x000390, "Member 'AProp_wireComponent_bulb_C::Billboard' has a wrong offset!");
+static_assert(offsetof(AProp_wireComponent_bulb_C, PointLight) == 0x000398, "Member 'AProp_wireComponent_bulb_C::PointLight' has a wrong offset!");
+static_assert(offsetof(AProp_wireComponent_bulb_C, Color) == 0x0003A0, "Member 'AProp_wireComponent_bulb_C::Color' has a wrong offset!");
 
 }
 

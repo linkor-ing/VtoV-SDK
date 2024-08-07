@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Enum_interactionActions_structs.hpp"
-#include "Struct_save_structs.hpp"
-#include "Engine_structs.hpp"
-#include "Struct_mInt_structs.hpp"
 #include "Struct_mObject_structs.hpp"
+#include "Engine_structs.hpp"
+#include "Struct_save_structs.hpp"
+#include "Struct_mInt_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
@@ -42,23 +42,23 @@ public:
 	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor_1;           // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp_1;            // 0x00E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex_1;       // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3990[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EC[0x4];                                       // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent;    // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x0100(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x010C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3991[0x3];                                     // 0x010D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10D[0x3];                                      // 0x010D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0110(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_IsSimulatingPhysics_ReturnValue;          // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3992[0x7];                                     // 0x0199(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_199[0x7];                                      // 0x0199(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player;                   // 0x01A0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_noRespawn_return;                         // 0x01B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3993[0x6];                                     // 0x01B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B2[0x6];                                      // 0x01B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IInt_save1_C>          K2Node_DynamicCast_AsInt_Save_1;                   // 0x01B8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3994[0x7];                                     // 0x01C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C9[0x7];                                      // 0x01C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           CallFunc_getData_data;                             // 0x01D0(0x00C0)(HasGetValueTypeHash)
 	TScriptInterface<class IInt_player_C>         K2Node_DynamicCast_AsInt_Player_1;                 // 0x0290(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x02A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -66,50 +66,50 @@ public:
 	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x02A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_DoesImplementInterface_ReturnValue;       // 0x02A3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x02A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3995[0x3];                                     // 0x02A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A5[0x3];                                      // 0x02A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x02A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x02B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3996[0x3];                                     // 0x02B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B1[0x3];                                      // 0x02B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x02B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_1;    // 0x02C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x02CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue_1;      // 0x02CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x02CE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3997[0x1];                                     // 0x02CF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2CF[0x1];                                      // 0x02CF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x02D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3998[0x4];                                     // 0x02D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D4[0x4];                                      // 0x02D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mObject                        CallFunc_Array_Get_Item;                           // 0x02D8(0x0010)(HasGetValueTypeHash)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x02E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3999[0x7];                                     // 0x02E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E9[0x7];                                      // 0x02E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mObject                        CallFunc_Array_Get_Item_1;                         // 0x02F0(0x0010)(HasGetValueTypeHash)
 	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0300(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_399A[0xC];                                     // 0x0304(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_304[0xC];                                      // 0x0304(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_save                           CallFunc_Array_Get_Item_2;                         // 0x0310(0x00C0)(HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x03D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_LastIndex_ReturnValue_1;            // 0x03D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_399B[0x4];                                     // 0x03DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3DC[0x4];                                      // 0x03DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue;          // 0x03E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x03E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IInt_save1_C>          K2Node_DynamicCast_AsInt_Save_1_1;                 // 0x03F0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0400(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_399C[0x7];                                     // 0x0401(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_401[0x7];                                      // 0x0401(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component;          // 0x0408(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x0410(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadData_return;                          // 0x0411(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_399D[0x6];                                     // 0x0412(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_412[0x6];                                      // 0x0412(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0418(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit;                                  // 0x0420(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x04A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x04AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x04AD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x04AE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_399E[0x1];                                     // 0x04AF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x04B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x04B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x04B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x04C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x04D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x04DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x04A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x04A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x04AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4AB[0x1];                                      // 0x04AB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x04AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x04B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x04B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x04C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x04CC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x04D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4E4[0x4];                                      // 0x04E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x04E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x04F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x04F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -183,16 +183,15 @@ static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, K2Nod
 static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, CallFunc_loadData_return) == 0x000411, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::CallFunc_loadData_return' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, K2Node_Event_player) == 0x000418, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::K2Node_Event_player' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, K2Node_Event_hit) == 0x000420, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, K2Node_Event_index) == 0x0004A8, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, K2Node_Event_action) == 0x0004AC, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, CallFunc_BreakHitResult_bBlockingHit) == 0x0004AD, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, CallFunc_BreakHitResult_bInitialOverlap) == 0x0004AE, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, CallFunc_BreakHitResult_Time) == 0x0004B0, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, CallFunc_BreakHitResult_Distance) == 0x0004B4, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, CallFunc_BreakHitResult_Location) == 0x0004B8, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, CallFunc_BreakHitResult_ImpactPoint) == 0x0004C4, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, CallFunc_BreakHitResult_Normal) == 0x0004D0, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, CallFunc_BreakHitResult_ImpactNormal) == 0x0004DC, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, K2Node_Event_action) == 0x0004A8, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, CallFunc_BreakHitResult_bBlockingHit) == 0x0004A9, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, CallFunc_BreakHitResult_bInitialOverlap) == 0x0004AA, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, CallFunc_BreakHitResult_Time) == 0x0004AC, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, CallFunc_BreakHitResult_Distance) == 0x0004B0, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, CallFunc_BreakHitResult_Location) == 0x0004B4, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, CallFunc_BreakHitResult_ImpactPoint) == 0x0004C0, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, CallFunc_BreakHitResult_Normal) == 0x0004CC, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, CallFunc_BreakHitResult_ImpactNormal) == 0x0004D8, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, CallFunc_BreakHitResult_PhysMat) == 0x0004E8, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, CallFunc_BreakHitResult_HitActor) == 0x0004F0, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, CallFunc_BreakHitResult_HitComponent) == 0x0004F8, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
@@ -205,23 +204,6 @@ static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, CallF
 static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, K2Node_SwitchEnum_CmpSuccess) == 0x00052C, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x00052D, "Member 'Prop_garbageBin_C_ExecuteUbergraph_prop_garbageBin::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
 
-// Function prop_garbageBin.prop_garbageBin_C.actionOptionIndex
-// 0x0098 (0x0098 - 0x0000)
-struct Prop_garbageBin_C_ActionOptionIndex final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_garbageBin_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_garbageBin_C_ActionOptionIndex");
-static_assert(sizeof(Prop_garbageBin_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_garbageBin_C_ActionOptionIndex");
-static_assert(offsetof(Prop_garbageBin_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_garbageBin_C_ActionOptionIndex::Player' has a wrong offset!");
-static_assert(offsetof(Prop_garbageBin_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_garbageBin_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_garbageBin_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_garbageBin_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(Prop_garbageBin_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_garbageBin_C_ActionOptionIndex::Action' has a wrong offset!");
-
 // Function prop_garbageBin.prop_garbageBin_C.BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
 // 0x00A8 (0x00A8 - 0x0000)
 struct Prop_garbageBin_C_BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature final
@@ -232,7 +214,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_399F[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 static_assert(alignof(Prop_garbageBin_C_BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on Prop_garbageBin_C_BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
@@ -274,32 +256,47 @@ static_assert(sizeof(Prop_garbageBin_C_FindSlot) == 0x000018, "Wrong size on Pro
 static_assert(offsetof(Prop_garbageBin_C_FindSlot, Temp_struct_Variable) == 0x000000, "Member 'Prop_garbageBin_C_FindSlot::Temp_struct_Variable' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBin_C_FindSlot, CallFunc_Array_Add_ReturnValue) == 0x000010, "Member 'Prop_garbageBin_C_FindSlot::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 
+// Function prop_garbageBin.prop_garbageBin_C.actionOptionIndex
+// 0x0098 (0x0098 - 0x0000)
+struct Prop_garbageBin_C_ActionOptionIndex final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_garbageBin_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_garbageBin_C_ActionOptionIndex");
+static_assert(sizeof(Prop_garbageBin_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_garbageBin_C_ActionOptionIndex");
+static_assert(offsetof(Prop_garbageBin_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_garbageBin_C_ActionOptionIndex::Player' has a wrong offset!");
+static_assert(offsetof(Prop_garbageBin_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_garbageBin_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_garbageBin_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_garbageBin_C_ActionOptionIndex::Action' has a wrong offset!");
+
 // Function prop_garbageBin.prop_garbageBin_C.loadData
-// 0x0100 (0x0100 - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct Prop_garbageBin_C_LoadData final
 {
 public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadData_return;                          // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_39A0[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FStruct_mInt                           CallFunc_Array_Get_Item;                           // 0x00D0(0x0010)(HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Get_Item_1;                         // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39A1[0x4];                                     // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_E5[0x3];                                       // 0x00E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Prop_garbageBin_C_LoadData) == 0x000010, "Wrong alignment on Prop_garbageBin_C_LoadData");
-static_assert(sizeof(Prop_garbageBin_C_LoadData) == 0x000100, "Wrong size on Prop_garbageBin_C_LoadData");
+static_assert(sizeof(Prop_garbageBin_C_LoadData) == 0x0000F0, "Wrong size on Prop_garbageBin_C_LoadData");
 static_assert(offsetof(Prop_garbageBin_C_LoadData, Data) == 0x000000, "Member 'Prop_garbageBin_C_LoadData::Data' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBin_C_LoadData, Return) == 0x0000C0, "Member 'Prop_garbageBin_C_LoadData::Return' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBin_C_LoadData, CallFunc_loadData_return) == 0x0000C1, "Member 'Prop_garbageBin_C_LoadData::CallFunc_loadData_return' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBin_C_LoadData, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x0000C8, "Member 'Prop_garbageBin_C_LoadData::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBin_C_LoadData, CallFunc_Array_Get_Item) == 0x0000D0, "Member 'Prop_garbageBin_C_LoadData::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBin_C_LoadData, CallFunc_Array_Get_Item_1) == 0x0000E0, "Member 'Prop_garbageBin_C_LoadData::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(Prop_garbageBin_C_LoadData, CallFunc_Less_IntInt_ReturnValue) == 0x0000E4, "Member 'Prop_garbageBin_C_LoadData::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBin_C_LoadData, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x0000E8, "Member 'Prop_garbageBin_C_LoadData::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
-static_assert(offsetof(Prop_garbageBin_C_LoadData, CallFunc_Less_IntInt_ReturnValue) == 0x0000F0, "Member 'Prop_garbageBin_C_LoadData::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function prop_garbageBin.prop_garbageBin_C.getData
 // 0x0270 (0x0270 - 0x0000)
@@ -323,24 +320,26 @@ static_assert(offsetof(Prop_garbageBin_C_GetData, K2Node_MakeArray_Array_1) == 0
 static_assert(offsetof(Prop_garbageBin_C_GetData, K2Node_SetFieldsInStruct_StructOut) == 0x0001B0, "Member 'Prop_garbageBin_C_GetData::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
 
 // Function prop_garbageBin.prop_garbageBin_C.lookAt
-// 0x00B0 (0x00B0 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct Prop_garbageBin_C_LookAt final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_39A2[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_garbageBin_C_LookAt) == 0x000008, "Wrong alignment on Prop_garbageBin_C_LookAt");
-static_assert(sizeof(Prop_garbageBin_C_LookAt) == 0x0000B0, "Wrong size on Prop_garbageBin_C_LookAt");
+static_assert(sizeof(Prop_garbageBin_C_LookAt) == 0x0000B8, "Wrong size on Prop_garbageBin_C_LookAt");
 static_assert(offsetof(Prop_garbageBin_C_LookAt, Player) == 0x000000, "Member 'Prop_garbageBin_C_LookAt::Player' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBin_C_LookAt, Param_Hit) == 0x000008, "Member 'Prop_garbageBin_C_LookAt::Param_Hit' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBin_C_LookAt, Return) == 0x000090, "Member 'Prop_garbageBin_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBin_C_LookAt, Text) == 0x000098, "Member 'Prop_garbageBin_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBin_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'Prop_garbageBin_C_LookAt::boundObjectReplace' has a wrong offset!");
+static_assert(offsetof(Prop_garbageBin_C_LookAt, Number) == 0x0000B0, "Member 'Prop_garbageBin_C_LookAt::Number' has a wrong offset!");
 
 // Function prop_garbageBin.prop_garbageBin_C.getActionOptions
 // 0x0088 (0x0088 - 0x0000)
@@ -353,12 +352,13 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	bool                                          Temp_bool_Variable;                                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_39A3[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
 	TArray<Enum_interactionActions>               K2Node_MakeArray_Array_1;                          // 0x0060(0x0010)(ReferenceParm)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_39A4[0x7];                                     // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<Enum_interactionActions>               K2Node_Select_Default;                             // 0x0078(0x0010)(ReferenceParm)
 };
 static_assert(alignof(Prop_garbageBin_C_GetActionOptions) == 0x000008, "Wrong alignment on Prop_garbageBin_C_GetActionOptions");
@@ -369,7 +369,8 @@ static_assert(offsetof(Prop_garbageBin_C_GetActionOptions, Actor) == 0x000010, "
 static_assert(offsetof(Prop_garbageBin_C_GetActionOptions, Options) == 0x000018, "Member 'Prop_garbageBin_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBin_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Prop_garbageBin_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBin_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Prop_garbageBin_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Prop_garbageBin_C_GetActionOptions, Temp_bool_Variable) == 0x000048, "Member 'Prop_garbageBin_C_GetActionOptions::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_garbageBin_C_GetActionOptions, Number) == 0x000048, "Member 'Prop_garbageBin_C_GetActionOptions::Number' has a wrong offset!");
+static_assert(offsetof(Prop_garbageBin_C_GetActionOptions, Temp_bool_Variable) == 0x000049, "Member 'Prop_garbageBin_C_GetActionOptions::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBin_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Prop_garbageBin_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBin_C_GetActionOptions, K2Node_MakeArray_Array_1) == 0x000060, "Member 'Prop_garbageBin_C_GetActionOptions::K2Node_MakeArray_Array_1' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBin_C_GetActionOptions, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000070, "Member 'Prop_garbageBin_C_GetActionOptions::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");

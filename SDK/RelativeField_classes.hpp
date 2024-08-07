@@ -10,39 +10,38 @@
 
 #include "Basic.hpp"
 
-#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Prop_classes.hpp"
+#include "Enum_interactionActions_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass relativeField.relativeField_C
-// 0x0068 (0x03D0 - 0x0368)
+// 0x0068 (0x03E0 - 0x0378)
 class ARelativeField_C final : public AProp_C
 {
 public:
-	uint8                                         Pad_377B[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_RelativeField_C;                    // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBoxComponent*                          Box;                                               // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         Objs;                                              // 0x0378(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	uint8                                         Pad_377C[0x8];                                     // 0x0388(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Prev;                                              // 0x0390(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Active;                                            // 0x03C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame_RelativeField_C;                    // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBoxComponent*                          Box;                                               // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         Objs;                                              // 0x0388(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	uint8                                         Pad_398[0x8];                                      // 0x0398(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             Prev;                                              // 0x03A0(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Active;                                            // 0x03D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_relativeField(int32 EntryPoint);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
 	void ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, const struct FHitResult& Param_Hit);
 	void BndEvt__relativeField_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 	void BndEvt__relativeField_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 	void ReceiveTick(float DeltaSeconds);
 	void Upd();
-	void NewFunction_0(class UPrimitiveComponent* Self2);
+	void NewFunction_0_0(class UPrimitiveComponent* Self2);
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
 	void UserConstructionScript();
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 
 public:
 	static class UClass* StaticClass()
@@ -55,12 +54,12 @@ public:
 	}
 };
 static_assert(alignof(ARelativeField_C) == 0x000010, "Wrong alignment on ARelativeField_C");
-static_assert(sizeof(ARelativeField_C) == 0x0003D0, "Wrong size on ARelativeField_C");
-static_assert(offsetof(ARelativeField_C, UberGraphFrame_RelativeField_C) == 0x000368, "Member 'ARelativeField_C::UberGraphFrame_RelativeField_C' has a wrong offset!");
-static_assert(offsetof(ARelativeField_C, Box) == 0x000370, "Member 'ARelativeField_C::Box' has a wrong offset!");
-static_assert(offsetof(ARelativeField_C, Objs) == 0x000378, "Member 'ARelativeField_C::Objs' has a wrong offset!");
-static_assert(offsetof(ARelativeField_C, Prev) == 0x000390, "Member 'ARelativeField_C::Prev' has a wrong offset!");
-static_assert(offsetof(ARelativeField_C, Active) == 0x0003C0, "Member 'ARelativeField_C::Active' has a wrong offset!");
+static_assert(sizeof(ARelativeField_C) == 0x0003E0, "Wrong size on ARelativeField_C");
+static_assert(offsetof(ARelativeField_C, UberGraphFrame_RelativeField_C) == 0x000378, "Member 'ARelativeField_C::UberGraphFrame_RelativeField_C' has a wrong offset!");
+static_assert(offsetof(ARelativeField_C, Box) == 0x000380, "Member 'ARelativeField_C::Box' has a wrong offset!");
+static_assert(offsetof(ARelativeField_C, Objs) == 0x000388, "Member 'ARelativeField_C::Objs' has a wrong offset!");
+static_assert(offsetof(ARelativeField_C, Prev) == 0x0003A0, "Member 'ARelativeField_C::Prev' has a wrong offset!");
+static_assert(offsetof(ARelativeField_C, Active) == 0x0003D0, "Member 'ARelativeField_C::Active' has a wrong offset!");
 
 }
 

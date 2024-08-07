@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Struct_signalDataDynamic_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 #include "SlateCore_structs.hpp"
@@ -38,7 +38,7 @@ public:
 	struct FStruct_signalDataDynamic              Data;                                              // 0x02B0(0x0070)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
 	class ALaptop_C*                              Laptop;                                            // 0x0320(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                         Ind;                                               // 0x0328(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_31A4[0x4];                                     // 0x032C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_32C[0x4];                                      // 0x032C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUmg_signalPlay_C*                      PlayInerf;                                         // 0x0330(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:

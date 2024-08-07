@@ -11,10 +11,51 @@
 #include "Basic.hpp"
 
 #include "Prop_cookingFood_classes.hpp"
+#include "Prop_cookingFood_parameters.hpp"
 
 
 namespace SDK
 {
+
+// Function prop_cookingFood.prop_cookingFood_C.ExecuteUbergraph_prop_cookingFood
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_cookingFood_C::ExecuteUbergraph_prop_cookingFood(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_cookingFood_C", "ExecuteUbergraph_prop_cookingFood");
+
+	Params::Prop_cookingFood_C_ExecuteUbergraph_prop_cookingFood Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_cookingFood.prop_cookingFood_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_cookingFood_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_cookingFood_C", "ReceiveTick");
+
+	Params::Prop_cookingFood_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
 
 // Function prop_cookingFood.prop_cookingFood_C.cooked
 // (Public, BlueprintCallable, BlueprintEvent)
@@ -27,6 +68,26 @@ void AProp_cookingFood_C::Cooked()
 		Func = Class->GetFunction("prop_cookingFood_C", "cooked");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function prop_cookingFood.prop_cookingFood_C.slice
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Clean                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AProp_cookingFood_C::Slice(bool Clean)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_cookingFood_C", "slice");
+
+	Params::Prop_cookingFood_C_Slice Parms{};
+
+	Parms.Clean = Clean;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "AnimGraphRuntime_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "AnimGraphRuntime_structs.hpp"
 
 
 namespace SDK
@@ -24,7 +24,7 @@ namespace SDK
 class UKel_lmao_Skeleton_AnimBlueprint_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_3532[0x8];                                     // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B8[0x8];                                      // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimNode_LinkedInputPose              AnimGraphNode_LinkedInputPose;                     // 0x02C8(0x0118)()
 	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace;               // 0x03E0(0x0020)()

@@ -92,5 +92,39 @@ void UUmg_upgradeSlot_C::Upd()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
+
+// Function umg_upgradeSlot.umg_upgradeSlot_C.getPrice
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+int32 UUmg_upgradeSlot_C::GetPrice()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_upgradeSlot_C", "getPrice");
+
+	Params::Umg_upgradeSlot_C_GetPrice Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function umg_upgradeSlot.umg_upgradeSlot_C.updPrice
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UUmg_upgradeSlot_C::UpdPrice()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_upgradeSlot_C", "updPrice");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
 }
 

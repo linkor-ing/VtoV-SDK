@@ -19,17 +19,17 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass tentacleBall.tentacleBall_C
-// 0x0110 (0x05D0 - 0x04C0)
+// 0x0120 (0x05E0 - 0x04C0)
 class ATentacleBall_C : public ACharacter
 {
 public:
-	uint8                                         Pad_299B[0x8];                                     // 0x04B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B8[0x8];                                      // 0x04B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UAudioComponent*                        TentacleBallTalk_Cue;                              // 0x04C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USphereComponent*                       Sphere;                                            // 0x04D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        Charging;                                          // 0x04D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               Eff_tentacleBallShootWindup;                       // 0x04E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class URadarPointComponent_C*                 RadarPoint;                                        // 0x04E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UComp_radarPoint_C*                     RadarPoint;                                        // 0x04E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UArrowComponent*                        Arrow1;                                            // 0x04F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        Loop;                                              // 0x04F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UPointLightComponent*                   PointLight3;                                       // 0x0500(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -40,31 +40,32 @@ public:
 	class USpringArmComponent*                    SpringArm;                                         // 0x0528(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         TalkLight_a_38C5231C4C139F7F4E6A59A6325E0599;      // 0x0530(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            TalkLight__Direction_38C5231C4C139F7F4E6A59A6325E0599; // 0x0534(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_299C[0x3];                                     // 0x0535(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_535[0x3];                                      // 0x0535(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     TalkLight;                                         // 0x0538(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Timeline_0_a_6E24E7B94934EAA7D765E79C57A60264;     // 0x0540(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            Timeline_0__Direction_6E24E7B94934EAA7D765E79C57A60264; // 0x0544(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_299D[0x3];                                     // 0x0545(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_545[0x3];                                      // 0x0545(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     Timeline_0;                                        // 0x0548(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         LookAtPlayer_a_CFB7EB1F4493740202865FB80020199F;   // 0x0550(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            LookAtPlayer__Direction_CFB7EB1F4493740202865FB80020199F; // 0x0554(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_299E[0x3];                                     // 0x0555(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_555[0x3];                                      // 0x0555(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     LookAtPlayer;                                      // 0x0558(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ATentacleBallsFollower_C*               Follower;                                          // 0x0560(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          IsHostile;                                         // 0x0568(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_299F[0x7];                                     // 0x0569(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_569[0x7];                                      // 0x0569(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class ATentacleBall_C*>                buddies;                                           // 0x0570(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
 	bool                                          Chasing;                                           // 0x0580(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29A0[0x7];                                     // 0x0581(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_581[0x7];                                      // 0x0581(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<EObjectTypeQuery>                      Obj;                                               // 0x0588(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          IsAnim;                                            // 0x0598(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29A1[0x7];                                     // 0x0599(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_599[0x7];                                      // 0x0599(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTentacleBall_prot_Skeleton_AnimBlueprint1_C* Anim;                                              // 0x05A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<EObjectTypeQuery>                      Obj2;                                              // 0x05A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          CanTalk;                                           // 0x05B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29A2[0x3];                                     // 0x05B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5B9[0x3];                                      // 0x05B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ITalk;                                             // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class AActor*>                         Ignores;                                           // 0x05C0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	float                                         Size;                                              // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_tentacleBall(int32 EntryPoint);
@@ -111,7 +112,7 @@ public:
 	}
 };
 static_assert(alignof(ATentacleBall_C) == 0x000010, "Wrong alignment on ATentacleBall_C");
-static_assert(sizeof(ATentacleBall_C) == 0x0005D0, "Wrong size on ATentacleBall_C");
+static_assert(sizeof(ATentacleBall_C) == 0x0005E0, "Wrong size on ATentacleBall_C");
 static_assert(offsetof(ATentacleBall_C, UberGraphFrame) == 0x0004C0, "Member 'ATentacleBall_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ATentacleBall_C, TentacleBallTalk_Cue) == 0x0004C8, "Member 'ATentacleBall_C::TentacleBallTalk_Cue' has a wrong offset!");
 static_assert(offsetof(ATentacleBall_C, Sphere) == 0x0004D0, "Member 'ATentacleBall_C::Sphere' has a wrong offset!");
@@ -146,6 +147,7 @@ static_assert(offsetof(ATentacleBall_C, Obj2) == 0x0005A8, "Member 'ATentacleBal
 static_assert(offsetof(ATentacleBall_C, CanTalk) == 0x0005B8, "Member 'ATentacleBall_C::CanTalk' has a wrong offset!");
 static_assert(offsetof(ATentacleBall_C, ITalk) == 0x0005BC, "Member 'ATentacleBall_C::ITalk' has a wrong offset!");
 static_assert(offsetof(ATentacleBall_C, Ignores) == 0x0005C0, "Member 'ATentacleBall_C::Ignores' has a wrong offset!");
+static_assert(offsetof(ATentacleBall_C, Size) == 0x0005D0, "Member 'ATentacleBall_C::Size' has a wrong offset!");
 
 }
 

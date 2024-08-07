@@ -19,26 +19,26 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_snack.prop_snack_C
-// 0x0020 (0x0388 - 0x0368)
+// 0x0020 (0x0398 - 0x0378)
 class AProp_snack_C : public AProp_C
 {
 public:
-	uint8                                         Pad_3A93[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_snack_C;                       // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	int32                                         Uses;                                              // 0x0370(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Food;                                              // 0x0374(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Trash;                                             // 0x0378(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Sleep_;                                            // 0x0380(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_snack_C;                       // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	int32                                         Uses;                                              // 0x0380(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Food;                                              // 0x0384(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Trash;                                             // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Sleep_;                                            // 0x0390(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Health;                                            // 0x0394(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_snack(int32 EntryPoint);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action);
-	void Eat(class AMainPlayer_C* P);
+	void Eat(class AMainPlayer_C* P, bool bypassNoHunger);
 	void Upd();
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 
 public:
 	static class UClass* StaticClass()
@@ -51,12 +51,13 @@ public:
 	}
 };
 static_assert(alignof(AProp_snack_C) == 0x000008, "Wrong alignment on AProp_snack_C");
-static_assert(sizeof(AProp_snack_C) == 0x000388, "Wrong size on AProp_snack_C");
-static_assert(offsetof(AProp_snack_C, UberGraphFrame_Prop_snack_C) == 0x000368, "Member 'AProp_snack_C::UberGraphFrame_Prop_snack_C' has a wrong offset!");
-static_assert(offsetof(AProp_snack_C, Uses) == 0x000370, "Member 'AProp_snack_C::Uses' has a wrong offset!");
-static_assert(offsetof(AProp_snack_C, Food) == 0x000374, "Member 'AProp_snack_C::Food' has a wrong offset!");
-static_assert(offsetof(AProp_snack_C, Trash) == 0x000378, "Member 'AProp_snack_C::Trash' has a wrong offset!");
-static_assert(offsetof(AProp_snack_C, Sleep_) == 0x000380, "Member 'AProp_snack_C::Sleep_' has a wrong offset!");
+static_assert(sizeof(AProp_snack_C) == 0x000398, "Wrong size on AProp_snack_C");
+static_assert(offsetof(AProp_snack_C, UberGraphFrame_Prop_snack_C) == 0x000378, "Member 'AProp_snack_C::UberGraphFrame_Prop_snack_C' has a wrong offset!");
+static_assert(offsetof(AProp_snack_C, Uses) == 0x000380, "Member 'AProp_snack_C::Uses' has a wrong offset!");
+static_assert(offsetof(AProp_snack_C, Food) == 0x000384, "Member 'AProp_snack_C::Food' has a wrong offset!");
+static_assert(offsetof(AProp_snack_C, Trash) == 0x000388, "Member 'AProp_snack_C::Trash' has a wrong offset!");
+static_assert(offsetof(AProp_snack_C, Sleep_) == 0x000390, "Member 'AProp_snack_C::Sleep_' has a wrong offset!");
+static_assert(offsetof(AProp_snack_C, Health) == 0x000394, "Member 'AProp_snack_C::Health' has a wrong offset!");
 
 }
 

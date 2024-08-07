@@ -65,20 +65,6 @@ void AProp_argy_C::Setmats()
 }
 
 
-// Function prop_argy.prop_argy_C.propRenderer_finishProps
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AProp_argy_C::PropRenderer_finishProps()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_argy_C", "propRenderer_finishProps");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_argy.prop_argy_C.gamemodeBeginPlay
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -88,6 +74,20 @@ void AProp_argy_C::GamemodeBeginPlay()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("prop_argy_C", "gamemodeBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function prop_argy.prop_argy_C.propRenderer_finishProps
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AProp_argy_C::PropRenderer_finishProps()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_argy_C", "propRenderer_finishProps");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_lightIntWall2.prop_lightIntWall2_C
-// 0x0000 (0x0410 - 0x0410)
+// 0x0000 (0x0420 - 0x0420)
 class AProp_lightIntWall2_C final : public AProp_lightIntWall1_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_lightIntWall2_C) == 0x000010, "Wrong alignment on AProp_lightIntWall2_C");
-static_assert(sizeof(AProp_lightIntWall2_C) == 0x000410, "Wrong size on AProp_lightIntWall2_C");
+static_assert(sizeof(AProp_lightIntWall2_C) == 0x000420, "Wrong size on AProp_lightIntWall2_C");
 
 }
 

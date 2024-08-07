@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ufoDropper.ufoDropper_C
-// 0x0088 (0x02A8 - 0x0220)
+// 0x0098 (0x02B8 - 0x0220)
 class AUfoDropper_C : public AActor
 {
 public:
@@ -32,24 +32,32 @@ public:
 	class UAudioComponent*                        Audio;                                             // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Timeline_0_vec_04370C7A430062B2B8AD5BA777A88AE7;   // 0x0260(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Timeline_0__Direction_04370C7A430062B2B8AD5BA777A88AE7; // 0x026C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2CC2[0x3];                                     // 0x026D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Timeline_0;                                        // 0x0270(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<EObjectTypeQuery>                      O;                                                 // 0x0278(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          FlyAway;                                           // 0x0288(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2CC3[0x3];                                     // 0x0289(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                Init;                                              // 0x028C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Fly;                                               // 0x0298(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2CC4[0x7];                                     // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 Drop;                                              // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Timeline_0_blinkWeight_04370C7A430062B2B8AD5BA777A88AE7; // 0x026C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline_0__Direction_04370C7A430062B2B8AD5BA777A88AE7; // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_271[0x7];                                      // 0x0271(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Timeline_0;                                        // 0x0278(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<EObjectTypeQuery>                      O;                                                 // 0x0280(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          FlyAway;                                           // 0x0290(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_291[0x3];                                      // 0x0291(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                Init;                                              // 0x0294(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Fly;                                               // 0x02A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2A1[0x7];                                      // 0x02A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 Drop;                                              // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Weight;                                            // 0x02B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_ufoDropper(int32 EntryPoint);
+	void KillKerfur();
+	void ReceiveDestroyed();
+	void ReceiveBeginPlay();
+	void ReceiveTick(float DeltaSeconds);
+	void ForceDeploy();
 	void BndEvt__ufoDropper_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 	void Timeline_0__drop__EventFunc();
 	void Timeline_0__turnoff__EventFunc();
 	void Timeline_0__UpdateFunc();
 	void Timeline_0__FinishedFunc();
+	void Activated();
 
 public:
 	static class UClass* StaticClass()
@@ -62,7 +70,7 @@ public:
 	}
 };
 static_assert(alignof(AUfoDropper_C) == 0x000008, "Wrong alignment on AUfoDropper_C");
-static_assert(sizeof(AUfoDropper_C) == 0x0002A8, "Wrong size on AUfoDropper_C");
+static_assert(sizeof(AUfoDropper_C) == 0x0002B8, "Wrong size on AUfoDropper_C");
 static_assert(offsetof(AUfoDropper_C, UberGraphFrame) == 0x000220, "Member 'AUfoDropper_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AUfoDropper_C, Box) == 0x000228, "Member 'AUfoDropper_C::Box' has a wrong offset!");
 static_assert(offsetof(AUfoDropper_C, ParticleSystem) == 0x000230, "Member 'AUfoDropper_C::ParticleSystem' has a wrong offset!");
@@ -72,13 +80,15 @@ static_assert(offsetof(AUfoDropper_C, Billboard) == 0x000248, "Member 'AUfoDropp
 static_assert(offsetof(AUfoDropper_C, Audio) == 0x000250, "Member 'AUfoDropper_C::Audio' has a wrong offset!");
 static_assert(offsetof(AUfoDropper_C, DefaultSceneRoot) == 0x000258, "Member 'AUfoDropper_C::DefaultSceneRoot' has a wrong offset!");
 static_assert(offsetof(AUfoDropper_C, Timeline_0_vec_04370C7A430062B2B8AD5BA777A88AE7) == 0x000260, "Member 'AUfoDropper_C::Timeline_0_vec_04370C7A430062B2B8AD5BA777A88AE7' has a wrong offset!");
-static_assert(offsetof(AUfoDropper_C, Timeline_0__Direction_04370C7A430062B2B8AD5BA777A88AE7) == 0x00026C, "Member 'AUfoDropper_C::Timeline_0__Direction_04370C7A430062B2B8AD5BA777A88AE7' has a wrong offset!");
-static_assert(offsetof(AUfoDropper_C, Timeline_0) == 0x000270, "Member 'AUfoDropper_C::Timeline_0' has a wrong offset!");
-static_assert(offsetof(AUfoDropper_C, O) == 0x000278, "Member 'AUfoDropper_C::O' has a wrong offset!");
-static_assert(offsetof(AUfoDropper_C, FlyAway) == 0x000288, "Member 'AUfoDropper_C::FlyAway' has a wrong offset!");
-static_assert(offsetof(AUfoDropper_C, Init) == 0x00028C, "Member 'AUfoDropper_C::Init' has a wrong offset!");
-static_assert(offsetof(AUfoDropper_C, Fly) == 0x000298, "Member 'AUfoDropper_C::Fly' has a wrong offset!");
-static_assert(offsetof(AUfoDropper_C, Drop) == 0x0002A0, "Member 'AUfoDropper_C::Drop' has a wrong offset!");
+static_assert(offsetof(AUfoDropper_C, Timeline_0_blinkWeight_04370C7A430062B2B8AD5BA777A88AE7) == 0x00026C, "Member 'AUfoDropper_C::Timeline_0_blinkWeight_04370C7A430062B2B8AD5BA777A88AE7' has a wrong offset!");
+static_assert(offsetof(AUfoDropper_C, Timeline_0__Direction_04370C7A430062B2B8AD5BA777A88AE7) == 0x000270, "Member 'AUfoDropper_C::Timeline_0__Direction_04370C7A430062B2B8AD5BA777A88AE7' has a wrong offset!");
+static_assert(offsetof(AUfoDropper_C, Timeline_0) == 0x000278, "Member 'AUfoDropper_C::Timeline_0' has a wrong offset!");
+static_assert(offsetof(AUfoDropper_C, O) == 0x000280, "Member 'AUfoDropper_C::O' has a wrong offset!");
+static_assert(offsetof(AUfoDropper_C, FlyAway) == 0x000290, "Member 'AUfoDropper_C::FlyAway' has a wrong offset!");
+static_assert(offsetof(AUfoDropper_C, Init) == 0x000294, "Member 'AUfoDropper_C::Init' has a wrong offset!");
+static_assert(offsetof(AUfoDropper_C, Fly) == 0x0002A0, "Member 'AUfoDropper_C::Fly' has a wrong offset!");
+static_assert(offsetof(AUfoDropper_C, Drop) == 0x0002A8, "Member 'AUfoDropper_C::Drop' has a wrong offset!");
+static_assert(offsetof(AUfoDropper_C, Weight) == 0x0002B0, "Member 'AUfoDropper_C::Weight' has a wrong offset!");
 
 }
 

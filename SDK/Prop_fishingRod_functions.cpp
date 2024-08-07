@@ -93,20 +93,6 @@ void AProp_fishingRod_C::Down()
 }
 
 
-// Function prop_fishingRod.prop_fishingRod_C.ReceiveDestroyed
-// (Event, Public, BlueprintEvent)
-
-void AProp_fishingRod_C::ReceiveDestroyed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_fishingRod_C", "ReceiveDestroyed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_fishingRod.prop_fishingRod_C.scrollDown
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -172,6 +158,20 @@ void AProp_fishingRod_C::Upd()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("prop_fishingRod_C", "upd");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function prop_fishingRod.prop_fishingRod_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
+
+void AProp_fishingRod_C::ReceiveDestroyed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_fishingRod_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

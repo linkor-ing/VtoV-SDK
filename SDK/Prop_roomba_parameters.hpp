@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Enum_interactionActions_structs.hpp"
-#include "Engine_structs.hpp"
 #include "Struct_save_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Struct_mBool_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -26,31 +26,30 @@ struct Prop_roomba_C_ExecuteUbergraph_prop_roomba final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4280[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit;                                  // 0x0010(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x009D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4281[0x2];                                     // 0x009E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4282[0x3];                                     // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Lerp_ReturnValue;                         // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4283[0x2];                                     // 0x00BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9A[0x2];                                       // 0x009A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Lerp_ReturnValue;                         // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_BA[0x6];                                       // 0x00BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x00CC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	float                                         CallFunc_BreakRotator_Roll;                        // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakRotator_Pitch;                       // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakRotator_Yaw;                         // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4284[0x4];                                     // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_HitComponent;           // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -59,7 +58,7 @@ public:
 	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x0194(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0195(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0196(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4285[0x1];                                     // 0x0197(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_197[0x1];                                      // 0x0197(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x01A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -81,11 +80,11 @@ public:
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x022C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_CustomEvent_play;                           // 0x0239(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4286[0x6];                                     // 0x023A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23A[0x6];                                      // 0x023A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class URoombaBrush_Skeleton_AnimBlueprint_C*  K2Node_DynamicCast_AsRoomba_Brush_Skeleton_Anim_Blueprint; // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4287[0x3];                                     // 0x0251(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_251[0x3];                                      // 0x0251(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0254(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -94,17 +93,17 @@ public:
 	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x0268(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VSize_ReturnValue;                        // 0x0274(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4288[0x3];                                     // 0x0279(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_279[0x3];                                      // 0x0279(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_1;       // 0x027C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FInterpTo_ReturnValue;                    // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0284(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4289[0x3];                                     // 0x0285(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_285[0x3];                                      // 0x0285(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0288(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_Conv_RotatorToVector_ReturnValue;         // 0x0294(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x02A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Vector_Distance_ReturnValue;              // 0x02AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x02B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_428A[0x3];                                     // 0x02B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B1[0x3];                                      // 0x02B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x02B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x02C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x02CC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -122,22 +121,22 @@ public:
 	float                                         CallFunc_BreakRotator_Yaw_2;                       // 0x032C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Abs_ReturnValue;                          // 0x0330(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0334(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_428B[0x3];                                     // 0x0335(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_335[0x3];                                      // 0x0335(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SelectFloat_ReturnValue_2;                // 0x0338(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SelectFloat_ReturnValue_3;                // 0x033C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0340(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_428C[0x3];                                     // 0x0341(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_341[0x3];                                      // 0x0341(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Conv_BoolToInt_ReturnValue;               // 0x0344(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0348(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_428D[0x4];                                     // 0x034C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34C[0x4];                                      // 0x034C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UPrimitiveComponent*>            K2Node_MakeArray_Array;                            // 0x0350(0x0010)(ReferenceParm, ContainsInstancedReference)
 	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0360(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0364(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_RandomBool_ReturnValue;                   // 0x0368(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_428E[0x3];                                     // 0x0369(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_369[0x3];                                      // 0x0369(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x036C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_RandomBool_ReturnValue_1;                 // 0x0370(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_428F[0x3];                                     // 0x0371(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_371[0x3];                                      // 0x0371(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SelectFloat_ReturnValue_4;                // 0x0374(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SelectFloat_ReturnValue_5;                // 0x0378(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x037C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -151,18 +150,17 @@ static_assert(sizeof(Prop_roomba_C_ExecuteUbergraph_prop_roomba) == 0x0003B8, "W
 static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, EntryPoint) == 0x000000, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, K2Node_Event_player) == 0x000008, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::K2Node_Event_player' has a wrong offset!");
 static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, K2Node_Event_hit) == 0x000010, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, K2Node_Event_index) == 0x000098, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, K2Node_Event_action) == 0x00009C, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, K2Node_SwitchEnum_CmpSuccess) == 0x00009D, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x0000A0, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, K2Node_SwitchEnum_CmpSuccess_1) == 0x0000A4, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, CallFunc_Lerp_ReturnValue) == 0x0000A8, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, Temp_int_Variable) == 0x0000AC, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, Temp_int_Loop_Counter_Variable) == 0x0000B0, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, CallFunc_Add_IntInt_ReturnValue) == 0x0000B4, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, CallFunc_Array_Length_ReturnValue) == 0x0000B8, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, CallFunc_Less_IntInt_ReturnValue) == 0x0000BC, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, CallFunc_Not_PreBool_ReturnValue) == 0x0000BD, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, K2Node_Event_action) == 0x000098, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, K2Node_SwitchEnum_CmpSuccess) == 0x000099, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x00009C, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, K2Node_SwitchEnum_CmpSuccess_1) == 0x0000A0, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
+static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, CallFunc_Lerp_ReturnValue) == 0x0000A4, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::CallFunc_Lerp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, Temp_int_Variable) == 0x0000A8, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, Temp_int_Loop_Counter_Variable) == 0x0000AC, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, CallFunc_Add_IntInt_ReturnValue) == 0x0000B0, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, CallFunc_Array_Length_ReturnValue) == 0x0000B4, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, CallFunc_Less_IntInt_ReturnValue) == 0x0000B8, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, CallFunc_Not_PreBool_ReturnValue) == 0x0000B9, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x0000C0, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
 static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, K2Node_Event_DeltaSeconds) == 0x0000C8, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::K2Node_Event_DeltaSeconds' has a wrong offset!");
 static_assert(offsetof(Prop_roomba_C_ExecuteUbergraph_prop_roomba, CallFunc_K2_GetActorRotation_ReturnValue) == 0x0000CC, "Member 'Prop_roomba_C_ExecuteUbergraph_prop_roomba::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
@@ -260,15 +258,13 @@ struct Prop_roomba_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_roomba_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_roomba_C_ActionOptionIndex");
 static_assert(sizeof(Prop_roomba_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_roomba_C_ActionOptionIndex");
 static_assert(offsetof(Prop_roomba_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_roomba_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(Prop_roomba_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_roomba_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_roomba_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_roomba_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(Prop_roomba_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_roomba_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(Prop_roomba_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_roomba_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function prop_roomba.prop_roomba_C.Sound
 // 0x0001 (0x0001 - 0x0000)
@@ -320,7 +316,7 @@ public:
 	bool                                          Temp_bool_Variable_1;                              // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ECollisionEnabled                             Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECollisionEnabled                             Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4290[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UActorComponent*                        K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECollisionEnabled                             K2Node_Select_Default_1;                           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -334,34 +330,37 @@ static_assert(offsetof(Prop_roomba_C_Upd, K2Node_Select_Default) == 0x000008, "M
 static_assert(offsetof(Prop_roomba_C_Upd, K2Node_Select_Default_1) == 0x000010, "Member 'Prop_roomba_C_Upd::K2Node_Select_Default_1' has a wrong offset!");
 
 // Function prop_roomba.prop_roomba_C.lookAt
-// 0x0110 (0x0110 - 0x0000)
+// 0x0118 (0x0118 - 0x0000)
 struct Prop_roomba_C_LookAt final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4291[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00B0(0x0018)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x00C8(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x00F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_SelectString_ReturnValue;                 // 0x0100(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x00B8(0x0018)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x00D0(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x00F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_SelectString_ReturnValue;                 // 0x0108(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_roomba_C_LookAt) == 0x000008, "Wrong alignment on Prop_roomba_C_LookAt");
-static_assert(sizeof(Prop_roomba_C_LookAt) == 0x000110, "Wrong size on Prop_roomba_C_LookAt");
+static_assert(sizeof(Prop_roomba_C_LookAt) == 0x000118, "Wrong size on Prop_roomba_C_LookAt");
 static_assert(offsetof(Prop_roomba_C_LookAt, Player) == 0x000000, "Member 'Prop_roomba_C_LookAt::Player' has a wrong offset!");
 static_assert(offsetof(Prop_roomba_C_LookAt, Param_Hit) == 0x000008, "Member 'Prop_roomba_C_LookAt::Param_Hit' has a wrong offset!");
 static_assert(offsetof(Prop_roomba_C_LookAt, Return) == 0x000090, "Member 'Prop_roomba_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(Prop_roomba_C_LookAt, Text) == 0x000098, "Member 'Prop_roomba_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(Prop_roomba_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'Prop_roomba_C_LookAt::boundObjectReplace' has a wrong offset!");
-static_assert(offsetof(Prop_roomba_C_LookAt, CallFunc_MakeLiteralText_ReturnValue) == 0x0000B0, "Member 'Prop_roomba_C_LookAt::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_roomba_C_LookAt, CallFunc_MakeLiteralText_ReturnValue_1) == 0x0000C8, "Member 'Prop_roomba_C_LookAt::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_roomba_C_LookAt, CallFunc_Conv_TextToString_ReturnValue) == 0x0000E0, "Member 'Prop_roomba_C_LookAt::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_roomba_C_LookAt, CallFunc_Conv_TextToString_ReturnValue_1) == 0x0000F0, "Member 'Prop_roomba_C_LookAt::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_roomba_C_LookAt, CallFunc_SelectString_ReturnValue) == 0x000100, "Member 'Prop_roomba_C_LookAt::CallFunc_SelectString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_roomba_C_LookAt, Number) == 0x0000B0, "Member 'Prop_roomba_C_LookAt::Number' has a wrong offset!");
+static_assert(offsetof(Prop_roomba_C_LookAt, CallFunc_MakeLiteralText_ReturnValue) == 0x0000B8, "Member 'Prop_roomba_C_LookAt::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_roomba_C_LookAt, CallFunc_MakeLiteralText_ReturnValue_1) == 0x0000D0, "Member 'Prop_roomba_C_LookAt::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_roomba_C_LookAt, CallFunc_Conv_TextToString_ReturnValue) == 0x0000E8, "Member 'Prop_roomba_C_LookAt::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_roomba_C_LookAt, CallFunc_Conv_TextToString_ReturnValue_1) == 0x0000F8, "Member 'Prop_roomba_C_LookAt::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_roomba_C_LookAt, CallFunc_SelectString_ReturnValue) == 0x000108, "Member 'Prop_roomba_C_LookAt::CallFunc_SelectString_ReturnValue' has a wrong offset!");
 
 // Function prop_roomba.prop_roomba_C.getData
 // 0x0280 (0x0280 - 0x0000)
@@ -394,7 +393,7 @@ public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadData_return;                          // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4292[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mBool                          CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -407,7 +406,7 @@ static_assert(offsetof(Prop_roomba_C_LoadData, CallFunc_Array_Get_Item) == 0x000
 static_assert(offsetof(Prop_roomba_C_LoadData, CallFunc_Array_Get_Item_1) == 0x0000D8, "Member 'Prop_roomba_C_LoadData::CallFunc_Array_Get_Item_1' has a wrong offset!");
 
 // Function prop_roomba.prop_roomba_C.getActionOptions
-// 0x0058 (0x0058 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct Prop_roomba_C_GetActionOptions final
 {
 public:
@@ -417,17 +416,20 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
 };
 static_assert(alignof(Prop_roomba_C_GetActionOptions) == 0x000008, "Wrong alignment on Prop_roomba_C_GetActionOptions");
-static_assert(sizeof(Prop_roomba_C_GetActionOptions) == 0x000058, "Wrong size on Prop_roomba_C_GetActionOptions");
+static_assert(sizeof(Prop_roomba_C_GetActionOptions) == 0x000060, "Wrong size on Prop_roomba_C_GetActionOptions");
 static_assert(offsetof(Prop_roomba_C_GetActionOptions, Player) == 0x000000, "Member 'Prop_roomba_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Prop_roomba_C_GetActionOptions, Component) == 0x000008, "Member 'Prop_roomba_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Prop_roomba_C_GetActionOptions, Actor) == 0x000010, "Member 'Prop_roomba_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Prop_roomba_C_GetActionOptions, Options) == 0x000018, "Member 'Prop_roomba_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Prop_roomba_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Prop_roomba_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Prop_roomba_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Prop_roomba_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Prop_roomba_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'Prop_roomba_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Prop_roomba_C_GetActionOptions, Number) == 0x000048, "Member 'Prop_roomba_C_GetActionOptions::Number' has a wrong offset!");
+static_assert(offsetof(Prop_roomba_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Prop_roomba_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 }
 

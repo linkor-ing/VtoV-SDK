@@ -10,117 +10,124 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
-#include "Struct_food1_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Struct_prop_structs.hpp"
+#include "UMG_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "Struct_food1_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function umg_spawnmenu.umg_spawnmenu_C.ExecuteUbergraph_umg_spawnmenu
-// 0x0210 (0x0210 - 0x0000)
+// 0x0218 (0x0218 - 0x0000)
 struct Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_332C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           CallFunc_GetDataTableRowNames_OutRowNames;         // 0x0008(0x0010)(ReferenceParm)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x002C(0x0038)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0028(0x0038)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_InDeltaTime;                          // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_GetDesiredSize_ReturnValue;               // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetMousePositionScaledByDPI_LocationX;    // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetMousePositionScaledByDPI_LocationY;    // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetMousePositionScaledByDPI_ReturnValue;  // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_332D[0x7];                                     // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0088(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   K2Node_ComponentBoundEvent_Text;                   // 0x0098(0x0018)(ConstParm)
 	struct FVector2D                              CallFunc_Subtract_Vector2DVector2D_ReturnValue;    // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Array_Get_Item;                           // 0x00CC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_Get_Item_1;                         // 0x00D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_332E[0x3];                                     // 0x00D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_food1                          CallFunc_GetDataTableRowFromName_OutRow;           // 0x00D8(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_332F[0x7];                                     // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_prop                           CallFunc_GetDataTableRowFromName_OutRow_1;         // 0x00F8(0x0080)(HasGetValueTypeHash)
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_hiddenSpawnMenu_hidden;                   // 0x0179(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_hiddenSpawnMenu_key;                      // 0x017A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x017B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_ComponentBoundEvent_bIsChecked_7;           // 0x017C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x017D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_ComponentBoundEvent_bIsChecked_6;           // 0x017E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_ComponentBoundEvent_bIsChecked_5;           // 0x017F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_ComponentBoundEvent_bIsChecked_4;           // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3330[0x3];                                     // 0x0181(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsChecked_9;           // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_ComponentBoundEvent_bIsChecked_8;           // 0x00CE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_ComponentBoundEvent_bIsChecked_7;           // 0x00CF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsChecked_6;           // 0x00D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D5[0x3];                                       // 0x00D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_Array_Get_Item;                           // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_food1                          CallFunc_GetDataTableRowFromName_OutRow;           // 0x00E0(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_prop                           CallFunc_GetDataTableRowFromName_OutRow_1;         // 0x0100(0x0080)(HasGetValueTypeHash)
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_hiddenSpawnMenu_hidden;                   // 0x0181(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_hiddenSpawnMenu_key;                      // 0x0182(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_ComponentBoundEvent_bIsChecked_5;           // 0x0183(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0184(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsChecked_3;           // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_ComponentBoundEvent_bIsChecked_4;           // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3331[0x2];                                     // 0x018A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_18A[0x2];                                      // 0x018A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsChecked_2;           // 0x0191(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_ComponentBoundEvent_bIsChecked_3;           // 0x0191(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_1;            // 0x0192(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_2;            // 0x0193(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsChecked_1;           // 0x0194(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0195(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3332[0x2];                                     // 0x0196(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          K2Node_ComponentBoundEvent_bIsChecked_2;           // 0x0193(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_2;            // 0x0194(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_3;            // 0x0195(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0196(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue_1;           // 0x0197(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_3;            // 0x019C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue_1;           // 0x019D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3333[0x2];                                     // 0x019E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue_2;           // 0x01A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3334[0x3];                                     // 0x01A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsChecked;             // 0x01AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue_3;           // 0x01AD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3335[0x2];                                     // 0x01AE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue_3;                  // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_4;            // 0x01B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_5;            // 0x01B5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue_4;           // 0x01B6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue_5;           // 0x01B7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	int32                                         CallFunc_Array_Add_ReturnValue_4;                  // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_4;            // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue_2;           // 0x01A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1A2[0x2];                                      // 0x01A2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_5;            // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue_3;           // 0x01A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1AA[0x2];                                      // 0x01AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue_3;                  // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_6;            // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_7;            // 0x01B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue_4;           // 0x01B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1B3[0x1];                                      // 0x01B3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue_4;                  // 0x01B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue_5;           // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1B9[0x3];                                      // 0x01B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue_5;                  // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_6;            // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue_6;           // 0x01C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3336[0x2];                                     // 0x01C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue_6;                  // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3337[0x7];                                     // 0x01C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUmg_spawnmenuSlot_C*                   CallFunc_Create_ReturnValue;                       // 0x01D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3338[0x4];                                     // 0x01DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGridSlot*                              CallFunc_AddChildToGrid_ReturnValue;               // 0x01E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_7;                  // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3339[0x4];                                     // 0x01EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<bool>                                  CallFunc_hiddens_hiddens;                          // 0x01F0(0x0010)(ReferenceParm)
-	class FString                                 CallFunc_hiddens_ReturnValue;                      // 0x0200(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	TArray<bool>                                  CallFunc_hiddens_hiddens;                          // 0x01C0(0x0010)(ReferenceParm)
+	class FString                                 CallFunc_hiddens_ReturnValue;                      // 0x01D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_Get_Item_1;                         // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_8;            // 0x01E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x01E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue_6;           // 0x01E3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_Array_Add_ReturnValue_6;                  // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsChecked_1;           // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue_7;           // 0x01E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1EA[0x2];                                      // 0x01EA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue_7;                  // 0x01EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsChecked;             // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x01F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1F2[0x2];                                      // 0x01F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue_8;           // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1F9[0x3];                                      // 0x01F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue_8;                  // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUmg_spawnmenuSlot_C*                   CallFunc_Create_ReturnValue;                       // 0x0200(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_9;                  // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_20C[0x4];                                      // 0x020C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGridSlot*                              CallFunc_AddChildToGrid_ReturnValue;               // 0x0210(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu) == 0x000008, "Wrong alignment on Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu");
-static_assert(sizeof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu) == 0x000210, "Wrong size on Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu");
+static_assert(sizeof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu) == 0x000218, "Wrong size on Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu");
 static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, EntryPoint) == 0x000000, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_GetDataTableRowNames_OutRowNames) == 0x000008, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_GetDataTableRowNames_OutRowNames' has a wrong offset!");
 static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, Temp_int_Variable) == 0x00001C, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Divide_IntInt_ReturnValue) == 0x000020, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Divide_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Percent_IntInt_ReturnValue) == 0x000028, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, K2Node_Event_MyGeometry) == 0x00002C, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, K2Node_Event_InDeltaTime) == 0x000064, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::K2Node_Event_InDeltaTime' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Divide_IntInt_ReturnValue) == 0x00001C, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Divide_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Percent_IntInt_ReturnValue) == 0x000024, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, K2Node_Event_MyGeometry) == 0x000028, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::K2Node_Event_MyGeometry' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, K2Node_Event_InDeltaTime) == 0x000060, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::K2Node_Event_InDeltaTime' has a wrong offset!");
 static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_GetPlayerController_ReturnValue) == 0x000068, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_GetDesiredSize_ReturnValue) == 0x000070, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_GetDesiredSize_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_GetMousePositionScaledByDPI_LocationX) == 0x000078, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_GetMousePositionScaledByDPI_LocationX' has a wrong offset!");
@@ -131,56 +138,87 @@ static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_
 static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, K2Node_ComponentBoundEvent_Text) == 0x000098, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::K2Node_ComponentBoundEvent_Text' has a wrong offset!");
 static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Subtract_Vector2DVector2D_ReturnValue) == 0x0000B0, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Subtract_Vector2DVector2D_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Conv_TextToString_ReturnValue) == 0x0000B8, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, Temp_int_Array_Index_Variable) == 0x0000C8, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_Get_Item) == 0x0000CC, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_Get_Item_1) == 0x0000D4, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_GetDataTableRowFromName_OutRow) == 0x0000D8, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0000F0, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_GetDataTableRowFromName_OutRow_1) == 0x0000F8, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_GetDataTableRowFromName_OutRow_1' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_GetDataTableRowFromName_ReturnValue_1) == 0x000178, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_GetDataTableRowFromName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_hiddenSpawnMenu_hidden) == 0x000179, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_hiddenSpawnMenu_hidden' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_hiddenSpawnMenu_key) == 0x00017A, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_hiddenSpawnMenu_key' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_BooleanOR_ReturnValue) == 0x00017B, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, K2Node_ComponentBoundEvent_bIsChecked_7) == 0x00017C, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::K2Node_ComponentBoundEvent_bIsChecked_7' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00017D, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, K2Node_ComponentBoundEvent_bIsChecked_6) == 0x00017E, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::K2Node_ComponentBoundEvent_bIsChecked_6' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, K2Node_ComponentBoundEvent_bIsChecked_5) == 0x00017F, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::K2Node_ComponentBoundEvent_bIsChecked_5' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, K2Node_ComponentBoundEvent_bIsChecked_4) == 0x000180, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::K2Node_ComponentBoundEvent_bIsChecked_4' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, Temp_int_Variable) == 0x0000C8, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, K2Node_ComponentBoundEvent_bIsChecked_9) == 0x0000CC, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::K2Node_ComponentBoundEvent_bIsChecked_9' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000CD, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, K2Node_ComponentBoundEvent_bIsChecked_8) == 0x0000CE, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::K2Node_ComponentBoundEvent_bIsChecked_8' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, K2Node_ComponentBoundEvent_bIsChecked_7) == 0x0000CF, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::K2Node_ComponentBoundEvent_bIsChecked_7' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, Temp_int_Array_Index_Variable) == 0x0000D0, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, K2Node_ComponentBoundEvent_bIsChecked_6) == 0x0000D4, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::K2Node_ComponentBoundEvent_bIsChecked_6' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_Get_Item) == 0x0000D8, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_GetDataTableRowFromName_OutRow) == 0x0000E0, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0000F8, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_GetDataTableRowFromName_OutRow_1) == 0x000100, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_GetDataTableRowFromName_OutRow_1' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_GetDataTableRowFromName_ReturnValue_1) == 0x000180, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_GetDataTableRowFromName_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_hiddenSpawnMenu_hidden) == 0x000181, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_hiddenSpawnMenu_hidden' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_hiddenSpawnMenu_key) == 0x000182, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_hiddenSpawnMenu_key' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, K2Node_ComponentBoundEvent_bIsChecked_5) == 0x000183, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::K2Node_ComponentBoundEvent_bIsChecked_5' has a wrong offset!");
 static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, Temp_int_Loop_Counter_Variable) == 0x000184, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, K2Node_ComponentBoundEvent_bIsChecked_3) == 0x000188, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::K2Node_ComponentBoundEvent_bIsChecked_3' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, K2Node_ComponentBoundEvent_bIsChecked_4) == 0x000188, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::K2Node_ComponentBoundEvent_bIsChecked_4' has a wrong offset!");
 static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Less_IntInt_ReturnValue) == 0x000189, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Add_IntInt_ReturnValue_1) == 0x00018C, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_MakeLiteralByte_ReturnValue) == 0x000190, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, K2Node_ComponentBoundEvent_bIsChecked_2) == 0x000191, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::K2Node_ComponentBoundEvent_bIsChecked_2' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, K2Node_ComponentBoundEvent_bIsChecked_3) == 0x000191, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::K2Node_ComponentBoundEvent_bIsChecked_3' has a wrong offset!");
 static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x000192, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x000193, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, K2Node_ComponentBoundEvent_bIsChecked_1) == 0x000194, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::K2Node_ComponentBoundEvent_bIsChecked_1' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_RemoveItem_ReturnValue) == 0x000195, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, K2Node_ComponentBoundEvent_bIsChecked_2) == 0x000193, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::K2Node_ComponentBoundEvent_bIsChecked_2' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x000194, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_MakeLiteralByte_ReturnValue_3) == 0x000195, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_MakeLiteralByte_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_RemoveItem_ReturnValue) == 0x000196, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_RemoveItem_ReturnValue_1) == 0x000197, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_RemoveItem_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_Add_ReturnValue) == 0x000198, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_MakeLiteralByte_ReturnValue_3) == 0x00019C, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_MakeLiteralByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_RemoveItem_ReturnValue_1) == 0x00019D, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_RemoveItem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_Add_ReturnValue_1) == 0x0001A0, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_RemoveItem_ReturnValue_2) == 0x0001A4, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_RemoveItem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_Add_ReturnValue_2) == 0x0001A8, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_Add_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, K2Node_ComponentBoundEvent_bIsChecked) == 0x0001AC, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::K2Node_ComponentBoundEvent_bIsChecked' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_RemoveItem_ReturnValue_3) == 0x0001AD, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_RemoveItem_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_Add_ReturnValue_3) == 0x0001B0, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_Add_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_MakeLiteralByte_ReturnValue_4) == 0x0001B4, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_MakeLiteralByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_MakeLiteralByte_ReturnValue_5) == 0x0001B5, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_MakeLiteralByte_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_RemoveItem_ReturnValue_4) == 0x0001B6, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_RemoveItem_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_RemoveItem_ReturnValue_5) == 0x0001B7, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_RemoveItem_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_Add_ReturnValue_4) == 0x0001B8, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_Add_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_Add_ReturnValue_1) == 0x00019C, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_MakeLiteralByte_ReturnValue_4) == 0x0001A0, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_MakeLiteralByte_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_RemoveItem_ReturnValue_2) == 0x0001A1, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_RemoveItem_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_Add_ReturnValue_2) == 0x0001A4, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_Add_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_MakeLiteralByte_ReturnValue_5) == 0x0001A8, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_MakeLiteralByte_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_RemoveItem_ReturnValue_3) == 0x0001A9, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_RemoveItem_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_Add_ReturnValue_3) == 0x0001AC, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_Add_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_MakeLiteralByte_ReturnValue_6) == 0x0001B0, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_MakeLiteralByte_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_MakeLiteralByte_ReturnValue_7) == 0x0001B1, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_MakeLiteralByte_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_RemoveItem_ReturnValue_4) == 0x0001B2, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_RemoveItem_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_Add_ReturnValue_4) == 0x0001B4, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_Add_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_RemoveItem_ReturnValue_5) == 0x0001B8, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_RemoveItem_ReturnValue_5' has a wrong offset!");
 static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_Add_ReturnValue_5) == 0x0001BC, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_Add_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_MakeLiteralByte_ReturnValue_6) == 0x0001C0, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_MakeLiteralByte_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_RemoveItem_ReturnValue_6) == 0x0001C1, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_RemoveItem_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_Add_ReturnValue_6) == 0x0001C4, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_Add_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_IsValidClass_ReturnValue) == 0x0001C8, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Create_ReturnValue) == 0x0001D0, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_SelectInt_ReturnValue) == 0x0001D8, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_AddChildToGrid_ReturnValue) == 0x0001E0, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_AddChildToGrid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_Add_ReturnValue_7) == 0x0001E8, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_Add_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_hiddens_hiddens) == 0x0001F0, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_hiddens_hiddens' has a wrong offset!");
-static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_hiddens_ReturnValue) == 0x000200, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_hiddens_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_hiddens_hiddens) == 0x0001C0, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_hiddens_hiddens' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_hiddens_ReturnValue) == 0x0001D0, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_hiddens_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_Get_Item_1) == 0x0001E0, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_MakeLiteralByte_ReturnValue_8) == 0x0001E1, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_MakeLiteralByte_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_BooleanOR_ReturnValue) == 0x0001E2, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_RemoveItem_ReturnValue_6) == 0x0001E3, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_RemoveItem_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_Add_ReturnValue_6) == 0x0001E4, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_Add_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, K2Node_ComponentBoundEvent_bIsChecked_1) == 0x0001E8, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::K2Node_ComponentBoundEvent_bIsChecked_1' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_RemoveItem_ReturnValue_7) == 0x0001E9, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_RemoveItem_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_Add_ReturnValue_7) == 0x0001EC, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_Add_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, K2Node_ComponentBoundEvent_bIsChecked) == 0x0001F0, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::K2Node_ComponentBoundEvent_bIsChecked' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_IsValidClass_ReturnValue) == 0x0001F1, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_SelectInt_ReturnValue) == 0x0001F4, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_RemoveItem_ReturnValue_8) == 0x0001F8, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_RemoveItem_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_Add_ReturnValue_8) == 0x0001FC, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_Add_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Create_ReturnValue) == 0x000200, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_Array_Add_ReturnValue_9) == 0x000208, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_Array_Add_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu, CallFunc_AddChildToGrid_ReturnValue) == 0x000210, "Member 'Umg_spawnmenu_C_ExecuteUbergraph_umg_spawnmenu::CallFunc_AddChildToGrid_ReturnValue' has a wrong offset!");
+
+// Function umg_spawnmenu.umg_spawnmenu_C.BndEvt__umg_spawnmenu_checkbox_cat_mods_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct Umg_spawnmenu_C_BndEvt__umg_spawnmenu_checkbox_cat_mods_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature final
+{
+public:
+	bool                                          bIsChecked;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Umg_spawnmenu_C_BndEvt__umg_spawnmenu_checkbox_cat_mods_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature) == 0x000001, "Wrong alignment on Umg_spawnmenu_C_BndEvt__umg_spawnmenu_checkbox_cat_mods_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature");
+static_assert(sizeof(Umg_spawnmenu_C_BndEvt__umg_spawnmenu_checkbox_cat_mods_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature) == 0x000001, "Wrong size on Umg_spawnmenu_C_BndEvt__umg_spawnmenu_checkbox_cat_mods_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature");
+static_assert(offsetof(Umg_spawnmenu_C_BndEvt__umg_spawnmenu_checkbox_cat_mods_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature, bIsChecked) == 0x000000, "Member 'Umg_spawnmenu_C_BndEvt__umg_spawnmenu_checkbox_cat_mods_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature::bIsChecked' has a wrong offset!");
+
+// Function umg_spawnmenu.umg_spawnmenu_C.BndEvt__umg_spawnmenu_checkbox_cat_tools_K2Node_ComponentBoundEvent_3_OnCheckBoxComponentStateChanged__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct Umg_spawnmenu_C_BndEvt__umg_spawnmenu_checkbox_cat_tools_K2Node_ComponentBoundEvent_3_OnCheckBoxComponentStateChanged__DelegateSignature final
+{
+public:
+	bool                                          bIsChecked;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Umg_spawnmenu_C_BndEvt__umg_spawnmenu_checkbox_cat_tools_K2Node_ComponentBoundEvent_3_OnCheckBoxComponentStateChanged__DelegateSignature) == 0x000001, "Wrong alignment on Umg_spawnmenu_C_BndEvt__umg_spawnmenu_checkbox_cat_tools_K2Node_ComponentBoundEvent_3_OnCheckBoxComponentStateChanged__DelegateSignature");
+static_assert(sizeof(Umg_spawnmenu_C_BndEvt__umg_spawnmenu_checkbox_cat_tools_K2Node_ComponentBoundEvent_3_OnCheckBoxComponentStateChanged__DelegateSignature) == 0x000001, "Wrong size on Umg_spawnmenu_C_BndEvt__umg_spawnmenu_checkbox_cat_tools_K2Node_ComponentBoundEvent_3_OnCheckBoxComponentStateChanged__DelegateSignature");
+static_assert(offsetof(Umg_spawnmenu_C_BndEvt__umg_spawnmenu_checkbox_cat_tools_K2Node_ComponentBoundEvent_3_OnCheckBoxComponentStateChanged__DelegateSignature, bIsChecked) == 0x000000, "Member 'Umg_spawnmenu_C_BndEvt__umg_spawnmenu_checkbox_cat_tools_K2Node_ComponentBoundEvent_3_OnCheckBoxComponentStateChanged__DelegateSignature::bIsChecked' has a wrong offset!");
 
 // Function umg_spawnmenu.umg_spawnmenu_C.BndEvt__umg_spawnmenu_checkbox_cat_wip_K2Node_ComponentBoundEvent_11_OnCheckBoxComponentStateChanged__DelegateSignature
 // 0x0001 (0x0001 - 0x0000)
@@ -301,13 +339,13 @@ struct Umg_spawnmenu_C_Spawn final
 public:
 	class FName                                   Param_Name;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Ype;                                               // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_333A[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 S1;                                                // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FStruct_prop                           Data;                                              // 0x0018(0x0080)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	class UClass*                                 S;                                                 // 0x0098(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         I;                                                 // 0x00A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   N;                                                 // 0x00A4(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_333B[0x4];                                     // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             A;                                                 // 0x00B0(0x0030)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor)
 	TArray<class AActor*>                         Temp_object_Variable;                              // 0x00E0(0x0010)(ConstParm, ReferenceParm)
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -317,7 +355,7 @@ public:
 	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x0110(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x011C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0128(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_333C[0x4];                                     // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_134[0x4];                                      // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  CallFunc_GetPlayerPawn_ReturnValue;                // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0140(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x014C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -325,14 +363,14 @@ public:
 	bool                                          CallFunc_SphereTraceSingle_ReturnValue;            // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x01E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x01E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_333D[0x1];                                     // 0x01E3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E3[0x1];                                      // 0x01E3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x01EC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x01F8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0204(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0210(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_333E[0x4];                                     // 0x021C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21C[0x4];                                      // 0x021C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0230(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -417,7 +455,7 @@ public:
 	int32                                         Temp_int_Variable;                                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_333F[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUmg_spawnmenuSlot_C*                   CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };

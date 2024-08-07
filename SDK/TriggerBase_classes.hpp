@@ -39,6 +39,9 @@ public:
 	void CordUnplugged(class ACord_C* Cord, class ACordSocket_C* Socket);
 	void CordPlugged(class ACord_C* Cord, class ACordSocket_C* Socket);
 	void Set_ignoreSave_trigger(bool NewParam);
+	void HookTension(class AHook_C* Hook);
+	void CleanSponge(float Clean, class AMainPlayer_C* Player);
+	void Crafted();
 	void Hooked(class AHook_C* Hook);
 	void AttemptIgnite();
 	void PlayerUsedOn(class AMainPlayer_C* Player, const struct FHitResult& Hit);
@@ -60,8 +63,8 @@ public:
 	void Exploded(float Damage, const struct FVector& Location);
 	void PlayerHandUse_LMB(class AMainPlayer_C* Player);
 	void PlayerHandUse_RMB(class AMainPlayer_C* Player);
-	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action);
-	void ReceivedPhyiscsDamage();
+	void ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action);
+	void ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot);
 	void Microwave();
 	void Ignite(float Fuel);
 	void FireDamage(float Damage);
@@ -80,6 +83,7 @@ public:
 	void LeaveWater(class AWaterVolume_C* Water);
 	void EnterWater(class AWaterVolume_C* Water);
 	void ImpactDamage(float Damage, const struct FHitResult& Hit, class AActor* Actor, const struct FVector& Impact);
+	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void ApplyColor(const struct FLinearColor& Color);
 	void PropRenderer_finishProps();
 	void GamemodeMakeKeys();
@@ -93,19 +97,22 @@ public:
 	void SignalSaved();
 	void SignalDeleted();
 	void UserConstructionScript();
-	void RunAll();
+	void RunAll(int32 AllIndex);
+	void ShowConnections(bool Enable);
 	void GetTriggerData(struct FStruct_triggerSave* Data);
 	void LoadTriggerData(const struct FStruct_triggerSave& Data, bool* Return);
 	void IgnoreSave_trigger(bool* Ignore);
+	void GatherDataFromKeyT(bool* Gather);
 	void GetKey(class FString* Param_Key);
 	void ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return);
 	void CanBeUsedHold(bool* Return);
 	void ProcessKeys(bool* Return);
 	void GetOnlyKey(class FString* Param_Key);
 	void SetPath(const TArray<struct FVector>& Path, bool* Return);
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 	void GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled);
 	void SkipRadial(bool* Skip);
+	void GetPriceMultiplier(float* PriceMult);
 	void DreamInv(TArray<struct FStruct_save>& Invv, class ADreamBase_C** Base);
 
 public:

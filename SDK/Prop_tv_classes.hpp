@@ -11,32 +11,31 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Prop_classes.hpp"
 #include "Enum_playlist_structs.hpp"
+#include "Prop_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass prop_tv.prop_tv_C
-// 0x0068 (0x03D0 - 0x0368)
+// 0x0068 (0x03E0 - 0x0378)
 class AProp_tv_C final : public AProp_C
 {
 public:
-	uint8                                         Pad_26AB[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_tv_C;                          // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UMediaSoundComponent*                   MediaSound;                                        // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UWidgetComponent*                       Widget;                                            // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               Dynmat;                                            // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTextureRenderTarget2D*                 Rt;                                                // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Playvid;                                           // 0x0390(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_26AC[0x7];                                     // 0x0391(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUmg_videobrowser_C*                    W;                                                 // 0x0398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMediaPlayer*                           MediaPlayer;                                       // 0x03A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 URL;                                               // 0x03A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	class UMediaTexture*                          MediaTexture;                                      // 0x03B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUmg_tvInterface_C*                     Interface;                                         // 0x03C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_playlist                                 PlayMode;                                          // 0x03C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_tv_C;                          // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UMediaSoundComponent*                   MediaSound;                                        // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UWidgetComponent*                       Widget;                                            // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               Dynmat;                                            // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTextureRenderTarget2D*                 Rt;                                                // 0x0398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Playvid;                                           // 0x03A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3A1[0x7];                                      // 0x03A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUmg_videobrowser_C*                    W;                                                 // 0x03A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMediaPlayer*                           MediaPlayer;                                       // 0x03B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 URL;                                               // 0x03B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	class UMediaTexture*                          MediaTexture;                                      // 0x03C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUmg_tvInterface_C*                     Interface;                                         // 0x03D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_playlist                                 PlayMode;                                          // 0x03D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_tv(int32 EntryPoint);
@@ -55,19 +54,19 @@ public:
 	}
 };
 static_assert(alignof(AProp_tv_C) == 0x000008, "Wrong alignment on AProp_tv_C");
-static_assert(sizeof(AProp_tv_C) == 0x0003D0, "Wrong size on AProp_tv_C");
-static_assert(offsetof(AProp_tv_C, UberGraphFrame_Prop_tv_C) == 0x000368, "Member 'AProp_tv_C::UberGraphFrame_Prop_tv_C' has a wrong offset!");
-static_assert(offsetof(AProp_tv_C, MediaSound) == 0x000370, "Member 'AProp_tv_C::MediaSound' has a wrong offset!");
-static_assert(offsetof(AProp_tv_C, Widget) == 0x000378, "Member 'AProp_tv_C::Widget' has a wrong offset!");
-static_assert(offsetof(AProp_tv_C, Dynmat) == 0x000380, "Member 'AProp_tv_C::Dynmat' has a wrong offset!");
-static_assert(offsetof(AProp_tv_C, Rt) == 0x000388, "Member 'AProp_tv_C::Rt' has a wrong offset!");
-static_assert(offsetof(AProp_tv_C, Playvid) == 0x000390, "Member 'AProp_tv_C::Playvid' has a wrong offset!");
-static_assert(offsetof(AProp_tv_C, W) == 0x000398, "Member 'AProp_tv_C::W' has a wrong offset!");
-static_assert(offsetof(AProp_tv_C, MediaPlayer) == 0x0003A0, "Member 'AProp_tv_C::MediaPlayer' has a wrong offset!");
-static_assert(offsetof(AProp_tv_C, URL) == 0x0003A8, "Member 'AProp_tv_C::URL' has a wrong offset!");
-static_assert(offsetof(AProp_tv_C, MediaTexture) == 0x0003B8, "Member 'AProp_tv_C::MediaTexture' has a wrong offset!");
-static_assert(offsetof(AProp_tv_C, Interface) == 0x0003C0, "Member 'AProp_tv_C::Interface' has a wrong offset!");
-static_assert(offsetof(AProp_tv_C, PlayMode) == 0x0003C8, "Member 'AProp_tv_C::PlayMode' has a wrong offset!");
+static_assert(sizeof(AProp_tv_C) == 0x0003E0, "Wrong size on AProp_tv_C");
+static_assert(offsetof(AProp_tv_C, UberGraphFrame_Prop_tv_C) == 0x000378, "Member 'AProp_tv_C::UberGraphFrame_Prop_tv_C' has a wrong offset!");
+static_assert(offsetof(AProp_tv_C, MediaSound) == 0x000380, "Member 'AProp_tv_C::MediaSound' has a wrong offset!");
+static_assert(offsetof(AProp_tv_C, Widget) == 0x000388, "Member 'AProp_tv_C::Widget' has a wrong offset!");
+static_assert(offsetof(AProp_tv_C, Dynmat) == 0x000390, "Member 'AProp_tv_C::Dynmat' has a wrong offset!");
+static_assert(offsetof(AProp_tv_C, Rt) == 0x000398, "Member 'AProp_tv_C::Rt' has a wrong offset!");
+static_assert(offsetof(AProp_tv_C, Playvid) == 0x0003A0, "Member 'AProp_tv_C::Playvid' has a wrong offset!");
+static_assert(offsetof(AProp_tv_C, W) == 0x0003A8, "Member 'AProp_tv_C::W' has a wrong offset!");
+static_assert(offsetof(AProp_tv_C, MediaPlayer) == 0x0003B0, "Member 'AProp_tv_C::MediaPlayer' has a wrong offset!");
+static_assert(offsetof(AProp_tv_C, URL) == 0x0003B8, "Member 'AProp_tv_C::URL' has a wrong offset!");
+static_assert(offsetof(AProp_tv_C, MediaTexture) == 0x0003C8, "Member 'AProp_tv_C::MediaTexture' has a wrong offset!");
+static_assert(offsetof(AProp_tv_C, Interface) == 0x0003D0, "Member 'AProp_tv_C::Interface' has a wrong offset!");
+static_assert(offsetof(AProp_tv_C, PlayMode) == 0x0003D8, "Member 'AProp_tv_C::PlayMode' has a wrong offset!");
 
 }
 

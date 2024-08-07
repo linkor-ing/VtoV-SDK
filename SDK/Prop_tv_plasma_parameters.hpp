@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Enum_interactionActions_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
@@ -24,16 +24,16 @@ struct Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3BF8[0xC];                                     // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0xC];                                        // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0010(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	struct FTransform                             CallFunc_TLerp_ReturnValue;                        // 0x0040(0x0030)(IsPlainOldData, NoDestructor)
 	struct FHitResult                             CallFunc_K2_SetActorTransform_SweepHitResult;      // 0x0070(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_SetActorTransform_ReturnValue;         // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3BF9[0x3];                                     // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F9[0x3];                                       // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             CallFunc_tryStick_OutHit;                          // 0x00FC(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0184(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0185(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3BFA[0x2];                                     // 0x0186(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_186[0x2];                                      // 0x0186(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0190(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -53,7 +53,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x028C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit_1;            // 0x028D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap_1;         // 0x028E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3BFB[0x1];                                     // 0x028F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28F[0x1];                                      // 0x028F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time_1;                    // 0x0290(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance_1;                // 0x0294(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Location_1;                // 0x0298(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -76,34 +76,33 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0310(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0311(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0312(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3BFC[0x1];                                     // 0x0313(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_313[0x1];                                      // 0x0313(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_GetActorUpVector_ReturnValue;             // 0x0314(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetActorRightVector_ReturnValue;          // 0x0320(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3BFD[0x4];                                     // 0x032C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_32C[0x4];                                      // 0x032C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit;                                  // 0x0338(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x03C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x03C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x03C5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_static;                               // 0x03C6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_frozen;                               // 0x03C7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_active;                               // 0x03C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsChildActor_ReturnValue;                 // 0x03C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3BFE[0x2];                                     // 0x03CA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x03CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x03D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x03DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x03E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x03F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Abs_ReturnValue;                          // 0x03F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SignOfFloat_ReturnValue;                  // 0x03FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0400(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3BFF[0x3];                                     // 0x0401(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x0404(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0408(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotationFromAxes_ReturnValue;         // 0x0414(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FRotator                               CallFunc_SelectRotator_ReturnValue;                // 0x0420(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3C00[0x4];                                     // 0x042C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x03C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x03C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_static;                               // 0x03C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_frozen;                               // 0x03C3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_active;                               // 0x03C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsChildActor_ReturnValue;                 // 0x03C5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3C6[0x2];                                      // 0x03C6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x03C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x03CC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x03D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x03E4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x03F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Abs_ReturnValue;                          // 0x03F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SignOfFloat_ReturnValue;                  // 0x03F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x03FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3FD[0x3];                                      // 0x03FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x0400(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0404(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotationFromAxes_ReturnValue;         // 0x0410(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_SelectRotator_ReturnValue;                // 0x041C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_428[0x8];                                      // 0x0428(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0430(0x0030)(IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma) == 0x000010, "Wrong alignment on Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma");
@@ -161,58 +160,25 @@ static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFun
 static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_GetActorRightVector_ReturnValue) == 0x000320, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_GetActorRightVector_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, K2Node_Event_player) == 0x000330, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::K2Node_Event_player' has a wrong offset!");
 static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, K2Node_Event_hit) == 0x000338, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, K2Node_Event_index) == 0x0003C0, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, K2Node_Event_action) == 0x0003C4, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0003C5, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, K2Node_Event_static) == 0x0003C6, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::K2Node_Event_static' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, K2Node_Event_frozen) == 0x0003C7, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::K2Node_Event_frozen' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, K2Node_Event_active) == 0x0003C8, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::K2Node_Event_active' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_IsChildActor_ReturnValue) == 0x0003C9, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_IsChildActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0003CC, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x0003D0, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x0003DC, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x0003E8, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_Dot_VectorVector_ReturnValue) == 0x0003F4, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_Abs_ReturnValue) == 0x0003F8, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_Abs_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_SignOfFloat_ReturnValue) == 0x0003FC, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_SignOfFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000400, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000404, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_MakeVector_ReturnValue) == 0x000408, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_MakeRotationFromAxes_ReturnValue) == 0x000414, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_MakeRotationFromAxes_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_SelectRotator_ReturnValue) == 0x000420, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_SelectRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, K2Node_Event_action) == 0x0003C0, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0003C1, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, K2Node_Event_static) == 0x0003C2, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::K2Node_Event_static' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, K2Node_Event_frozen) == 0x0003C3, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::K2Node_Event_frozen' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, K2Node_Event_active) == 0x0003C4, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::K2Node_Event_active' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_IsChildActor_ReturnValue) == 0x0003C5, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_IsChildActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0003C8, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x0003CC, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x0003D8, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x0003E4, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_Dot_VectorVector_ReturnValue) == 0x0003F0, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_Abs_ReturnValue) == 0x0003F4, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_Abs_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_SignOfFloat_ReturnValue) == 0x0003F8, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_SignOfFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x0003FC, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000400, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_MakeVector_ReturnValue) == 0x000404, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_MakeRotationFromAxes_ReturnValue) == 0x000410, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_MakeRotationFromAxes_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_SelectRotator_ReturnValue) == 0x00041C, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_SelectRotator_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma, CallFunc_MakeTransform_ReturnValue) == 0x000430, "Member 'Prop_tv_plasma_C_ExecuteUbergraph_prop_tv_plasma::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-
-// Function prop_tv_plasma.prop_tv_plasma_C.setPropProps
-// 0x0003 (0x0003 - 0x0000)
-struct Prop_tv_plasma_C_SetPropProps final
-{
-public:
-	bool                                          Param_Static;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Param_Frozen;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Active;                                            // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(Prop_tv_plasma_C_SetPropProps) == 0x000001, "Wrong alignment on Prop_tv_plasma_C_SetPropProps");
-static_assert(sizeof(Prop_tv_plasma_C_SetPropProps) == 0x000003, "Wrong size on Prop_tv_plasma_C_SetPropProps");
-static_assert(offsetof(Prop_tv_plasma_C_SetPropProps, Param_Static) == 0x000000, "Member 'Prop_tv_plasma_C_SetPropProps::Param_Static' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_SetPropProps, Param_Frozen) == 0x000001, "Member 'Prop_tv_plasma_C_SetPropProps::Param_Frozen' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_SetPropProps, Active) == 0x000002, "Member 'Prop_tv_plasma_C_SetPropProps::Active' has a wrong offset!");
-
-// Function prop_tv_plasma.prop_tv_plasma_C.actionOptionIndex
-// 0x0098 (0x0098 - 0x0000)
-struct Prop_tv_plasma_C_ActionOptionIndex final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_tv_plasma_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_tv_plasma_C_ActionOptionIndex");
-static_assert(sizeof(Prop_tv_plasma_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_tv_plasma_C_ActionOptionIndex");
-static_assert(offsetof(Prop_tv_plasma_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_tv_plasma_C_ActionOptionIndex::Player' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_tv_plasma_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Prop_tv_plasma_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_ActionOptionIndex, Action) == 0x000094, "Member 'Prop_tv_plasma_C_ActionOptionIndex::Action' has a wrong offset!");
 
 // Function prop_tv_plasma.prop_tv_plasma_C.tryStick
 // 0x0180 (0x0180 - 0x0000)
@@ -245,28 +211,60 @@ static_assert(offsetof(Prop_tv_plasma_C_TryStick, CallFunc_Add_VectorVector_Retu
 static_assert(offsetof(Prop_tv_plasma_C_TryStick, CallFunc_SphereTraceSingleForObjects_OutHit) == 0x0000F0, "Member 'Prop_tv_plasma_C_TryStick::CallFunc_SphereTraceSingleForObjects_OutHit' has a wrong offset!");
 static_assert(offsetof(Prop_tv_plasma_C_TryStick, CallFunc_SphereTraceSingleForObjects_ReturnValue) == 0x000178, "Member 'Prop_tv_plasma_C_TryStick::CallFunc_SphereTraceSingleForObjects_ReturnValue' has a wrong offset!");
 
+// Function prop_tv_plasma.prop_tv_plasma_C.actionOptionIndex
+// 0x0098 (0x0098 - 0x0000)
+struct Prop_tv_plasma_C_ActionOptionIndex final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_tv_plasma_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Prop_tv_plasma_C_ActionOptionIndex");
+static_assert(sizeof(Prop_tv_plasma_C_ActionOptionIndex) == 0x000098, "Wrong size on Prop_tv_plasma_C_ActionOptionIndex");
+static_assert(offsetof(Prop_tv_plasma_C_ActionOptionIndex, Player) == 0x000000, "Member 'Prop_tv_plasma_C_ActionOptionIndex::Player' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_ActionOptionIndex, Param_Hit) == 0x000008, "Member 'Prop_tv_plasma_C_ActionOptionIndex::Param_Hit' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_ActionOptionIndex, Action) == 0x000090, "Member 'Prop_tv_plasma_C_ActionOptionIndex::Action' has a wrong offset!");
+
+// Function prop_tv_plasma.prop_tv_plasma_C.setPropProps
+// 0x0003 (0x0003 - 0x0000)
+struct Prop_tv_plasma_C_SetPropProps final
+{
+public:
+	bool                                          Param_Static;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Param_Frozen;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Active;                                            // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Prop_tv_plasma_C_SetPropProps) == 0x000001, "Wrong alignment on Prop_tv_plasma_C_SetPropProps");
+static_assert(sizeof(Prop_tv_plasma_C_SetPropProps) == 0x000003, "Wrong size on Prop_tv_plasma_C_SetPropProps");
+static_assert(offsetof(Prop_tv_plasma_C_SetPropProps, Param_Static) == 0x000000, "Member 'Prop_tv_plasma_C_SetPropProps::Param_Static' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_SetPropProps, Param_Frozen) == 0x000001, "Member 'Prop_tv_plasma_C_SetPropProps::Param_Frozen' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_SetPropProps, Active) == 0x000002, "Member 'Prop_tv_plasma_C_SetPropProps::Active' has a wrong offset!");
+
 // Function prop_tv_plasma.prop_tv_plasma_C.lookAt
-// 0x00B0 (0x00B0 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct Prop_tv_plasma_C_LookAt final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Param_Hit;                                         // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3C01[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_tv_plasma_C_LookAt) == 0x000008, "Wrong alignment on Prop_tv_plasma_C_LookAt");
-static_assert(sizeof(Prop_tv_plasma_C_LookAt) == 0x0000B0, "Wrong size on Prop_tv_plasma_C_LookAt");
+static_assert(sizeof(Prop_tv_plasma_C_LookAt) == 0x0000B8, "Wrong size on Prop_tv_plasma_C_LookAt");
 static_assert(offsetof(Prop_tv_plasma_C_LookAt, Player) == 0x000000, "Member 'Prop_tv_plasma_C_LookAt::Player' has a wrong offset!");
 static_assert(offsetof(Prop_tv_plasma_C_LookAt, Param_Hit) == 0x000008, "Member 'Prop_tv_plasma_C_LookAt::Param_Hit' has a wrong offset!");
 static_assert(offsetof(Prop_tv_plasma_C_LookAt, Return) == 0x000090, "Member 'Prop_tv_plasma_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(Prop_tv_plasma_C_LookAt, Text) == 0x000098, "Member 'Prop_tv_plasma_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(Prop_tv_plasma_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'Prop_tv_plasma_C_LookAt::boundObjectReplace' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_LookAt, Number) == 0x0000B0, "Member 'Prop_tv_plasma_C_LookAt::Number' has a wrong offset!");
 
 // Function prop_tv_plasma.prop_tv_plasma_C.getActionOptions
-// 0x0058 (0x0058 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct Prop_tv_plasma_C_GetActionOptions final
 {
 public:
@@ -276,17 +274,20 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
-	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<Enum_interactionActions>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
 };
 static_assert(alignof(Prop_tv_plasma_C_GetActionOptions) == 0x000008, "Wrong alignment on Prop_tv_plasma_C_GetActionOptions");
-static_assert(sizeof(Prop_tv_plasma_C_GetActionOptions) == 0x000058, "Wrong size on Prop_tv_plasma_C_GetActionOptions");
+static_assert(sizeof(Prop_tv_plasma_C_GetActionOptions) == 0x000060, "Wrong size on Prop_tv_plasma_C_GetActionOptions");
 static_assert(offsetof(Prop_tv_plasma_C_GetActionOptions, Player) == 0x000000, "Member 'Prop_tv_plasma_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Prop_tv_plasma_C_GetActionOptions, Component) == 0x000008, "Member 'Prop_tv_plasma_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Prop_tv_plasma_C_GetActionOptions, Actor) == 0x000010, "Member 'Prop_tv_plasma_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Prop_tv_plasma_C_GetActionOptions, Options) == 0x000018, "Member 'Prop_tv_plasma_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Prop_tv_plasma_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Prop_tv_plasma_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Prop_tv_plasma_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Prop_tv_plasma_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
-static_assert(offsetof(Prop_tv_plasma_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000048, "Member 'Prop_tv_plasma_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_GetActionOptions, Number) == 0x000048, "Member 'Prop_tv_plasma_C_GetActionOptions::Number' has a wrong offset!");
+static_assert(offsetof(Prop_tv_plasma_C_GetActionOptions, K2Node_MakeArray_Array) == 0x000050, "Member 'Prop_tv_plasma_C_GetActionOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 }
 

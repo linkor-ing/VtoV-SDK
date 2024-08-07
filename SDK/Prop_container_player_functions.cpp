@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function prop_container_player.prop_container_player_C.extract
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_container_player_C::Extract(int32 Param_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_container_player_C", "extract");
-
-	Params::Prop_container_player_C_Extract Parms{};
-
-	Parms.Param_Index = Param_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function prop_container_player.prop_container_player_C.ignoreSave
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -55,6 +35,26 @@ void AProp_container_player_C::IgnoreSave(bool* Param_IgnoreSave)
 
 	if (Param_IgnoreSave != nullptr)
 		*Param_IgnoreSave = Parms.Param_IgnoreSave;
+}
+
+
+// Function prop_container_player.prop_container_player_C.extract
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_container_player_C::Extract(int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_container_player_C", "extract");
+
+	Params::Prop_container_player_C_Extract Parms{};
+
+	Parms.Param_Index = Param_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

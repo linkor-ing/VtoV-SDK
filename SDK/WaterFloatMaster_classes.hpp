@@ -30,7 +30,7 @@ public:
 	TArray<float>                                 ActorsDepth;                                       // 0x0250(0x0010)(Edit, BlueprintVisible)
 	TArray<class AActor*>                         Repeats;                                           // 0x0260(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	int32                                         Rivers;                                            // 0x0270(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2650[0x4];                                     // 0x0274(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_274[0x4];                                      // 0x0274(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<bool>                                  OriginInside;                                      // 0x0278(0x0010)(Edit, BlueprintVisible)
 	TArray<bool>                                  OriginComp;                                        // 0x0288(0x0010)(Edit, BlueprintVisible)
 	TArray<class AWaterVolume_C*>                 AllVolumes;                                        // 0x0298(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
@@ -49,6 +49,7 @@ public:
 	void ExecuteUbergraph_waterFloatMaster(int32 EntryPoint);
 	void ReceiveTick(float DeltaSeconds);
 	void GamemodeBeginPlay();
+	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void ApplyColor(const struct FLinearColor& Color);
 	void PropRenderer_finishProps();
 	void GamemodeMakeKeys();

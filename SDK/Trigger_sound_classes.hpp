@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Struct_sound_structs.hpp"
+#include "Engine_structs.hpp"
 #include "TriggerBase_classes.hpp"
 
 
@@ -26,7 +26,7 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_Trigger_sound_C;                    // 0x0288(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UAudioComponent*                        Audio;                                             // 0x0290(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                          SetSound;                                          // 0x0298(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B3B[0x7];                                     // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_299[0x7];                                      // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_sound                          Sound_data;                                        // 0x02A0(0x0018)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

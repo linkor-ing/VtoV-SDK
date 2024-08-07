@@ -81,32 +81,6 @@ void AProp_rdrone_C::CordPlugged(class ACord_C* Cord, class ACordSocket_C* Socke
 }
 
 
-// Function prop_rdrone.prop_rdrone_C.actionOptionIndex
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProp_rdrone_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_rdrone_C", "actionOptionIndex");
-
-	Params::Prop_rdrone_C_ActionOptionIndex Parms{};
-
-	Parms.Player = Player;
-	Parms.Param_Hit = std::move(Param_Hit);
-	Parms.Param_Index = Param_Index;
-	Parms.Action = Action;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function prop_rdrone.prop_rdrone_C.runTrigger
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -216,34 +190,6 @@ void AProp_rdrone_C::BndEvt__StaticMesh_K2Node_ComponentBoundEvent_0_ComponentHi
 	Parms.Param_Hit = std::move(Param_Hit);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function prop_rdrone.prop_rdrone_C.ReceiveDestroyed
-// (Event, Public, BlueprintEvent)
-
-void AProp_rdrone_C::ReceiveDestroyed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_rdrone_C", "ReceiveDestroyed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function prop_rdrone.prop_rdrone_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_rdrone_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_rdrone_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -391,6 +337,79 @@ void AProp_rdrone_C::GetTriggerData(struct FStruct_triggerSave* Data)
 }
 
 
+// Function prop_rdrone.prop_rdrone_C.gatherDataFromKeyT
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AProp_rdrone_C::GatherDataFromKeyT(bool* Gather)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_rdrone_C", "gatherDataFromKeyT");
+
+	Params::Prop_rdrone_C_GatherDataFromKeyT Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Gather != nullptr)
+		*Gather = Parms.Gather;
+}
+
+
+// Function prop_rdrone.prop_rdrone_C.actionOptionIndex
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProp_rdrone_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_rdrone_C", "actionOptionIndex");
+
+	Params::Prop_rdrone_C_ActionOptionIndex Parms{};
+
+	Parms.Player = Player;
+	Parms.Param_Hit = std::move(Param_Hit);
+	Parms.Action = Action;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_rdrone.prop_rdrone_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
+
+void AProp_rdrone_C::ReceiveDestroyed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_rdrone_C", "ReceiveDestroyed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function prop_rdrone.prop_rdrone_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_rdrone_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_rdrone_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function prop_rdrone.prop_rdrone_C.loadData
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -445,8 +464,9 @@ void AProp_rdrone_C::GetData(struct FStruct_save* Data)
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AProp_rdrone_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
+void AProp_rdrone_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -469,6 +489,9 @@ void AProp_rdrone_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimit
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 }

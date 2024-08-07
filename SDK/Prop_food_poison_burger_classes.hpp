@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_food_poison_burger.prop_food_poison_burger_C
-// 0x0000 (0x03D0 - 0x03D0)
+// 0x0000 (0x03E0 - 0x03E0)
 class AProp_food_poison_burger_C final : public AProp_food_poison_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_food_poison_burger_C) == 0x000008, "Wrong alignment on AProp_food_poison_burger_C");
-static_assert(sizeof(AProp_food_poison_burger_C) == 0x0003D0, "Wrong size on AProp_food_poison_burger_C");
+static_assert(sizeof(AProp_food_poison_burger_C) == 0x0003E0, "Wrong size on AProp_food_poison_burger_C");
 
 }
 

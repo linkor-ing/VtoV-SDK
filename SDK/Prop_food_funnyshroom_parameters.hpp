@@ -10,29 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-
 
 namespace SDK::Params
 {
 
 // Function prop_food_funnyshroom.prop_food_funnyshroom_C.ExecuteUbergraph_prop_food_funnyshroom
-// 0x0050 (0x0050 - 0x0000)
+// 0x0004 (0x0004 - 0x0000)
 struct Prop_food_funnyshroom_C_ExecuteUbergraph_prop_food_funnyshroom final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3CE7[0xC];                                     // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0010(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AEffect_lsd_C*                          CallFunc_FinishSpawningActor_ReturnValue;          // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Prop_food_funnyshroom_C_ExecuteUbergraph_prop_food_funnyshroom) == 0x000010, "Wrong alignment on Prop_food_funnyshroom_C_ExecuteUbergraph_prop_food_funnyshroom");
-static_assert(sizeof(Prop_food_funnyshroom_C_ExecuteUbergraph_prop_food_funnyshroom) == 0x000050, "Wrong size on Prop_food_funnyshroom_C_ExecuteUbergraph_prop_food_funnyshroom");
+static_assert(alignof(Prop_food_funnyshroom_C_ExecuteUbergraph_prop_food_funnyshroom) == 0x000004, "Wrong alignment on Prop_food_funnyshroom_C_ExecuteUbergraph_prop_food_funnyshroom");
+static_assert(sizeof(Prop_food_funnyshroom_C_ExecuteUbergraph_prop_food_funnyshroom) == 0x000004, "Wrong size on Prop_food_funnyshroom_C_ExecuteUbergraph_prop_food_funnyshroom");
 static_assert(offsetof(Prop_food_funnyshroom_C_ExecuteUbergraph_prop_food_funnyshroom, EntryPoint) == 0x000000, "Member 'Prop_food_funnyshroom_C_ExecuteUbergraph_prop_food_funnyshroom::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Prop_food_funnyshroom_C_ExecuteUbergraph_prop_food_funnyshroom, CallFunc_MakeTransform_ReturnValue) == 0x000010, "Member 'Prop_food_funnyshroom_C_ExecuteUbergraph_prop_food_funnyshroom::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_food_funnyshroom_C_ExecuteUbergraph_prop_food_funnyshroom, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000040, "Member 'Prop_food_funnyshroom_C_ExecuteUbergraph_prop_food_funnyshroom::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_food_funnyshroom_C_ExecuteUbergraph_prop_food_funnyshroom, CallFunc_FinishSpawningActor_ReturnValue) == 0x000048, "Member 'Prop_food_funnyshroom_C_ExecuteUbergraph_prop_food_funnyshroom::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
 
 }
 

@@ -41,24 +41,26 @@ static_assert(offsetof(Int_player_C_Player_use, Player) == 0x000000, "Member 'In
 static_assert(offsetof(Int_player_C_Player_use, Hit) == 0x000008, "Member 'Int_player_C_Player_use::Hit' has a wrong offset!");
 
 // Function int_player.int_player_C.lookAt
-// 0x00B0 (0x00B0 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct Int_player_C_LookAt final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Return;                                            // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2B39[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    boundObjectReplace;                                // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Number;                                            // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Int_player_C_LookAt) == 0x000008, "Wrong alignment on Int_player_C_LookAt");
-static_assert(sizeof(Int_player_C_LookAt) == 0x0000B0, "Wrong size on Int_player_C_LookAt");
+static_assert(sizeof(Int_player_C_LookAt) == 0x0000B8, "Wrong size on Int_player_C_LookAt");
 static_assert(offsetof(Int_player_C_LookAt, Player) == 0x000000, "Member 'Int_player_C_LookAt::Player' has a wrong offset!");
 static_assert(offsetof(Int_player_C_LookAt, Hit) == 0x000008, "Member 'Int_player_C_LookAt::Hit' has a wrong offset!");
 static_assert(offsetof(Int_player_C_LookAt, Return) == 0x000090, "Member 'Int_player_C_LookAt::Return' has a wrong offset!");
 static_assert(offsetof(Int_player_C_LookAt, Text) == 0x000098, "Member 'Int_player_C_LookAt::Text' has a wrong offset!");
 static_assert(offsetof(Int_player_C_LookAt, boundObjectReplace) == 0x0000A8, "Member 'Int_player_C_LookAt::boundObjectReplace' has a wrong offset!");
+static_assert(offsetof(Int_player_C_LookAt, Number) == 0x0000B0, "Member 'Int_player_C_LookAt::Number' has a wrong offset!");
 
 // Function int_player.int_player_C.noRespawn
 // 0x0002 (0x0002 - 0x0000)
@@ -140,17 +142,65 @@ static_assert(sizeof(Int_player_C_Thrown) == 0x000008, "Wrong size on Int_player
 static_assert(offsetof(Int_player_C_Thrown, Player) == 0x000000, "Member 'Int_player_C_Thrown::Player' has a wrong offset!");
 
 // Function int_player.int_player_C.damageByPlayer
-// 0x0090 (0x0090 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct Int_player_C_DamageByPlayer final
 {
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         Damage;                                            // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Int_player_C_DamageByPlayer) == 0x000008, "Wrong alignment on Int_player_C_DamageByPlayer");
-static_assert(sizeof(Int_player_C_DamageByPlayer) == 0x000090, "Wrong size on Int_player_C_DamageByPlayer");
+static_assert(sizeof(Int_player_C_DamageByPlayer) == 0x000098, "Wrong size on Int_player_C_DamageByPlayer");
 static_assert(offsetof(Int_player_C_DamageByPlayer, Player) == 0x000000, "Member 'Int_player_C_DamageByPlayer::Player' has a wrong offset!");
 static_assert(offsetof(Int_player_C_DamageByPlayer, Hit) == 0x000008, "Member 'Int_player_C_DamageByPlayer::Hit' has a wrong offset!");
+static_assert(offsetof(Int_player_C_DamageByPlayer, Damage) == 0x000090, "Member 'Int_player_C_DamageByPlayer::Damage' has a wrong offset!");
+
+// Function int_player.int_player_C.playerUnequip
+// 0x0008 (0x0008 - 0x0000)
+struct Int_player_C_PlayerUnequip final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Int_player_C_PlayerUnequip) == 0x000008, "Wrong alignment on Int_player_C_PlayerUnequip");
+static_assert(sizeof(Int_player_C_PlayerUnequip) == 0x000008, "Wrong size on Int_player_C_PlayerUnequip");
+static_assert(offsetof(Int_player_C_PlayerUnequip, Player) == 0x000000, "Member 'Int_player_C_PlayerUnequip::Player' has a wrong offset!");
+
+// Function int_player.int_player_C.playerHold
+// 0x0008 (0x0008 - 0x0000)
+struct Int_player_C_PlayerHold final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Int_player_C_PlayerHold) == 0x000008, "Wrong alignment on Int_player_C_PlayerHold");
+static_assert(sizeof(Int_player_C_PlayerHold) == 0x000008, "Wrong size on Int_player_C_PlayerHold");
+static_assert(offsetof(Int_player_C_PlayerHold, Player) == 0x000000, "Member 'Int_player_C_PlayerHold::Player' has a wrong offset!");
+
+// Function int_player.int_player_C.playerR
+// 0x0008 (0x0008 - 0x0000)
+struct Int_player_C_PlayerR final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Int_player_C_PlayerR) == 0x000008, "Wrong alignment on Int_player_C_PlayerR");
+static_assert(sizeof(Int_player_C_PlayerR) == 0x000008, "Wrong size on Int_player_C_PlayerR");
+static_assert(offsetof(Int_player_C_PlayerR, Player) == 0x000000, "Member 'Int_player_C_PlayerR::Player' has a wrong offset!");
+
+// Function int_player.int_player_C.landedOn
+// 0x0010 (0x0010 - 0x0000)
+struct Int_player_C_LandedOn final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IgnoreFallDamage;                                  // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Int_player_C_LandedOn) == 0x000008, "Wrong alignment on Int_player_C_LandedOn");
+static_assert(sizeof(Int_player_C_LandedOn) == 0x000010, "Wrong size on Int_player_C_LandedOn");
+static_assert(offsetof(Int_player_C_LandedOn, Player) == 0x000000, "Member 'Int_player_C_LandedOn::Player' has a wrong offset!");
+static_assert(offsetof(Int_player_C_LandedOn, IgnoreFallDamage) == 0x000008, "Member 'Int_player_C_LandedOn::IgnoreFallDamage' has a wrong offset!");
 
 }
 

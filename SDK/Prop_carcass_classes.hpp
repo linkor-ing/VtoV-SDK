@@ -17,12 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_carcass.prop_carcass_C
-// 0x0008 (0x0370 - 0x0368)
+// 0x0008 (0x0380 - 0x0378)
 class AProp_carcass_C final : public AProp_C
 {
 public:
-	uint8                                         Pad_38A0[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPhysicsConstraintComponent*            PhysicsConstraint;                                 // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPhysicsConstraintComponent*            PhysicsConstraint;                                 // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void IgnoreSave(bool* Param_IgnoreSave);
@@ -38,8 +37,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_carcass_C) == 0x000008, "Wrong alignment on AProp_carcass_C");
-static_assert(sizeof(AProp_carcass_C) == 0x000370, "Wrong size on AProp_carcass_C");
-static_assert(offsetof(AProp_carcass_C, PhysicsConstraint) == 0x000368, "Member 'AProp_carcass_C::PhysicsConstraint' has a wrong offset!");
+static_assert(sizeof(AProp_carcass_C) == 0x000380, "Wrong size on AProp_carcass_C");
+static_assert(offsetof(AProp_carcass_C, PhysicsConstraint) == 0x000378, "Member 'AProp_carcass_C::PhysicsConstraint' has a wrong offset!");
 
 }
 

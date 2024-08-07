@@ -219,6 +219,20 @@ void UUmg_menu_C::BndEvt__button_achiv_K2Node_ComponentBoundEvent_14_OnButtonCli
 }
 
 
+// Function umg_menu.umg_menu_C.FadeIn
+// (BlueprintCallable, BlueprintEvent)
+
+void UUmg_menu_C::FadeIn()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_menu_C", "FadeIn");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function umg_menu.umg_menu_C.Launch
 // (BlueprintCallable, BlueprintEvent)
 
@@ -298,20 +312,6 @@ void UUmg_menu_C::BndEvt__button_credits_K2Node_ComponentBoundEvent_1_OnButtonCl
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("umg_menu_C", "BndEvt__button_credits_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function umg_menu.umg_menu_C.FadeIn
-// (BlueprintCallable, BlueprintEvent)
-
-void UUmg_menu_C::FadeIn()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("umg_menu_C", "FadeIn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

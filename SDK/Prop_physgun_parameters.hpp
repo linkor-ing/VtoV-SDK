@@ -18,359 +18,354 @@ namespace SDK::Params
 {
 
 // Function prop_physgun.prop_physgun_C.ExecuteUbergraph_prop_physgun
-// 0x0A80 (0x0A80 - 0x0000)
+// 0x0A60 (0x0A60 - 0x0000)
 struct Prop_physgun_C_ExecuteUbergraph_prop_physgun final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EC0[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          CallFunc_getMainPlayer_AsMain_Player;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3EC1[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3EC2[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x0030(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x003C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0048(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0054(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FVector2D& MouseXY)> K2Node_CreateDelegate_OutputDelegate;              // 0x0060(0x0010)(ZeroConstructor, NoDestructor)
-	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3EC3[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         K2Node_MakeArray_Array;                            // 0x0080(0x0010)(ConstParm, ReferenceParm)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3EC4[0xF];                                     // 0x0091(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x00A0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x00D0(0x0030)(IsPlainOldData, NoDestructor)
-	struct FTransform                             CallFunc_MakeRelativeTransform_ReturnValue;        // 0x0100(0x0030)(IsPlainOldData, NoDestructor)
-	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue_1;     // 0x0130(0x0030)(IsPlainOldData, NoDestructor)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0160(0x0030)(IsPlainOldData, NoDestructor)
-	TDelegate<void(class AActor* DestroyedActor)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0190(0x0010)(ZeroConstructor, NoDestructor)
-	float                                         CallFunc_FMax_ReturnValue;                         // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatMinusEquals_FloatOut;         // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EC5[0x4];                                     // 0x01AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue_1;     // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue_1;      // 0x01B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x01C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x01D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_pressed_2;                      // 0x01DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3EC6[0x3];                                     // 0x01DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x01E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x01EC(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_3EC7[0x4];                                     // 0x0274(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          CallFunc_getMainPlayer_AsMain_Player_1;            // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          CallFunc_getMainPlayer_AsMain_Player_2;            // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              K2Node_CustomEvent_mouseXY;                        // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue;       // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_X;                          // 0x0298(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_Y;                          // 0x029C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x02A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x02A4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_AddWorldRotation_SweepHitResult;       // 0x02B0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue_2;     // 0x0338(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_pressed_1;                      // 0x0340(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3EC8[0x3];                                     // 0x0341(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetActorRightVector_ReturnValue;          // 0x0344(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_2;       // 0x0350(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue_2;      // 0x035C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x0368(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_3;       // 0x036C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SignOfFloat_ReturnValue;                  // 0x0378(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Dot_VectorVector_ReturnValue_1;           // 0x037C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Abs_ReturnValue;                          // 0x0380(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SignOfFloat_ReturnValue_1;                // 0x0384(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_DegAcos_ReturnValue;                      // 0x0388(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Abs_ReturnValue_1;                        // 0x038C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0390(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_DegAcos_ReturnValue_1;                    // 0x0394(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x0398(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_2;        // 0x039C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_3;        // 0x03A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(bool Pressed)>                 K2Node_CreateDelegate_OutputDelegate_2;            // 0x03A4(0x0010)(ZeroConstructor, NoDestructor)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue_1;                // 0x03B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FRotator                               CallFunc_Multiply_RotatorFloat_ReturnValue;        // 0x03C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_AddWorldRotation_SweepHitResult_1;     // 0x03CC(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_3EC9[0x4];                                     // 0x0454(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0458(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EComponentMobility                            Temp_byte_Variable;                                // 0x0460(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0461(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_pressed;                        // 0x0462(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3ECA[0x1];                                     // 0x0463(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0464(0x0010)(ZeroConstructor, NoDestructor)
-	EComponentMobility                            Temp_byte_Variable_1;                              // 0x0474(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3ECB[0xB];                                     // 0x0475(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_ComposeTransforms_ReturnValue;            // 0x0480(0x0030)(IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_SetActorTransform_SweepHitResult;      // 0x04B0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_K2_SetActorTransform_ReturnValue;         // 0x0538(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3ECC[0x3];                                     // 0x0539(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_K2_GetComponentRotation_ReturnValue;      // 0x053C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         CallFunc_BreakRotator_Roll;                        // 0x0548(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Pitch;                       // 0x054C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Yaw;                         // 0x0550(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x0554(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GridSnap_Float_ReturnValue;               // 0x0560(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Vector_SnappedToGrid_ReturnValue;         // 0x0564(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GridSnap_Float_ReturnValue_1;             // 0x0570(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult;       // 0x0574(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_K2_SetActorLocation_ReturnValue;          // 0x05FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3ECD[0x3];                                     // 0x05FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GridSnap_Float_ReturnValue_2;             // 0x0600(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0604(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3ECE[0x3];                                     // 0x0605(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue_2;                // 0x0608(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EComponentMobility                            K2Node_Select_Default;                             // 0x0614(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_SetActorRotation_ReturnValue;          // 0x0615(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3ECF[0x2];                                     // 0x0616(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentScale_ReturnValue;         // 0x0618(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorFloat_ReturnValue;         // 0x0624(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorFloat_ReturnValue;              // 0x0630(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(bool Pressed)>                 K2Node_CreateDelegate_OutputDelegate_4;            // 0x063C(0x0010)(ZeroConstructor, NoDestructor)
-	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit;         // 0x064C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue;    // 0x06D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3ED0[0x3];                                     // 0x06D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetActorScale3D_ReturnValue;              // 0x06D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x06E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x06E5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3ED1[0x2];                                     // 0x06E6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x06E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x06EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x06F0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x06FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0708(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0714(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0720(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0728(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0730(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0738(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0740(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x0744(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0748(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x074C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0758(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_X;                            // 0x0764(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Y;                            // 0x0768(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Z;                            // 0x076C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x0770(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3ED2[0x7];                                     // 0x0771(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0778(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0790(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_FloatToText_ReturnValue_1;           // 0x07A0(0x0018)()
-	class FText                                   CallFunc_Conv_FloatToText_ReturnValue_2;           // 0x07B8(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x07D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_2;          // 0x07E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x07F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0800(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0808(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component;          // 0x0818(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0820(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3ED3[0x7];                                     // 0x0821(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0828(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x0838(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x0848(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3ED4[0x7];                                     // 0x0849(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_4;              // 0x0850(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_5;              // 0x0860(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0870(0x0018)()
-	class AActor*                                 CallFunc_GetAttachParentActor_ReturnValue;         // 0x0888(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_7;                    // 0x0890(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3ED5[0x7];                                     // 0x0891(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_getAttachActorRoot_rootActor;             // 0x0898(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_C*                                K2Node_DynamicCast_AsProp;                         // 0x08A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x08A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3ED6[0x3];                                     // 0x08A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x08AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult; // 0x08B8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	TDelegate<void(bool Pressed)>                 K2Node_CreateDelegate_OutputDelegate_5;            // 0x0940(0x0010)(ZeroConstructor, NoDestructor)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0950(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_1;    // 0x095C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0968(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3ED7[0x3];                                     // 0x0969(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_2;    // 0x096C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_3;    // 0x0978(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_4;    // 0x0984(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0990(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetMass_ReturnValue;                      // 0x099C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x09A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x09AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_4;        // 0x09B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue;                       // 0x09B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_CustomEvent_DestroyedActor;                 // 0x09B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x09C0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_K2_AttachToComponent_ReturnValue_1;       // 0x0A48(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_8;                    // 0x0A49(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3ED8[0x2];                                     // 0x0A4A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_6;            // 0x0A4C(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_3ED9[0x4];                                     // 0x0A5C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue_1;        // 0x0A60(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component_1;        // 0x0A68(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0A70(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const struct FVector2D& MouseXY)> K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0030(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0060(0x0030)(IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_MakeRelativeTransform_ReturnValue;        // 0x0090(0x0030)(IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue_1;     // 0x00C0(0x0030)(IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x00F0(0x0030)(IsPlainOldData, NoDestructor)
+	TDelegate<void(class AActor* DestroyedActor)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0120(0x0010)(ZeroConstructor, NoDestructor)
+	float                                         CallFunc_FMax_ReturnValue;                         // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatMinusEquals_FloatOut;         // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_13C[0x4];                                      // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x0148(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0154(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0160(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_pressed_2;                      // 0x016C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_16D[0x3];                                      // 0x016D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0170(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x017C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_204[0x4];                                      // 0x0204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          CallFunc_getMainPlayer_AsMain_Player;              // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          CallFunc_getMainPlayer_AsMain_Player_1;            // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_CustomEvent_mouseXY;                        // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue;       // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_X;                          // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_Y;                          // 0x022C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0234(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FHitResult                             CallFunc_K2_AddWorldRotation_SweepHitResult;       // 0x0240(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue_1;     // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_pressed_1;                      // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D1[0x3];                                      // 0x02D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetActorRightVector_ReturnValue;          // 0x02D4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x02E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue_1;      // 0x02EC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x02F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_2;       // 0x02FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SignOfFloat_ReturnValue;                  // 0x0308(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Dot_VectorVector_ReturnValue_1;           // 0x030C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Abs_ReturnValue;                          // 0x0310(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SignOfFloat_ReturnValue_1;                // 0x0314(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_DegAcos_ReturnValue;                      // 0x0318(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Abs_ReturnValue_1;                        // 0x031C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0320(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_DegAcos_ReturnValue_1;                    // 0x0324(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x0328(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_2;        // 0x032C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue_2;     // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_3;        // 0x0338(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue_2;      // 0x033C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue_1;                // 0x0348(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_3;       // 0x0354(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_Multiply_RotatorFloat_ReturnValue;        // 0x0360(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x036C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_AddWorldRotation_SweepHitResult_1;     // 0x0378(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0400(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_40C[0x4];                                      // 0x040C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0410(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         K2Node_MakeArray_Array;                            // 0x0418(0x0010)(ConstParm, ReferenceParm)
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0428(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EComponentMobility                            Temp_byte_Variable;                                // 0x0430(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0431(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_pressed;                        // 0x0432(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_433[0x1];                                      // 0x0433(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(bool Pressed)>                 K2Node_CreateDelegate_OutputDelegate_2;            // 0x0434(0x0010)(ZeroConstructor, NoDestructor)
+	EComponentMobility                            Temp_byte_Variable_1;                              // 0x0444(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_445[0xB];                                      // 0x0445(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_ComposeTransforms_ReturnValue;            // 0x0450(0x0030)(IsPlainOldData, NoDestructor)
+	struct FHitResult                             CallFunc_K2_SetActorTransform_SweepHitResult;      // 0x0480(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_K2_SetActorTransform_ReturnValue;         // 0x0508(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_509[0x3];                                      // 0x0509(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               CallFunc_K2_GetComponentRotation_ReturnValue;      // 0x050C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_BreakRotator_Roll;                        // 0x0518(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Pitch;                       // 0x051C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Yaw;                         // 0x0520(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GridSnap_Float_ReturnValue;               // 0x0524(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x0528(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GridSnap_Float_ReturnValue_1;             // 0x0534(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Vector_SnappedToGrid_ReturnValue;         // 0x0538(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GridSnap_Float_ReturnValue_2;             // 0x0544(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult;       // 0x0548(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_K2_SetActorLocation_ReturnValue;          // 0x05D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5D1[0x3];                                      // 0x05D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue_2;                // 0x05D4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x05E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_K2_SetActorRotation_ReturnValue;          // 0x05E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EComponentMobility                            K2Node_Select_Default;                             // 0x05E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x05E3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_K2_GetComponentScale_ReturnValue;         // 0x05E4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorFloat_ReturnValue;         // 0x05F0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorFloat_ReturnValue;              // 0x05FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0608(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(bool Pressed)>                 K2Node_CreateDelegate_OutputDelegate_4;            // 0x0618(0x0010)(ZeroConstructor, NoDestructor)
+	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit;         // 0x0628(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue;    // 0x06B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6B1[0x3];                                      // 0x06B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetActorScale3D_ReturnValue;              // 0x06B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x06C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x06C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6C2[0x2];                                      // 0x06C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x06C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x06C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x06CC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x06D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x06E4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x06F0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6FC[0x4];                                      // 0x06FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0700(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0708(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0710(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0718(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0720(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x0724(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0728(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x072C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0738(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_X;                            // 0x0744(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Y;                            // 0x0748(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Z;                            // 0x074C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0750(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_751[0x7];                                      // 0x0751(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0758(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0770(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_FloatToText_ReturnValue_1;           // 0x0780(0x0018)()
+	class FText                                   CallFunc_Conv_FloatToText_ReturnValue_2;           // 0x0798(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x07B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_2;          // 0x07C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x07D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x07E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x07E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component;          // 0x07F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0800(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_801[0x7];                                      // 0x0801(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0808(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x0818(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0828(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_829[0x7];                                      // 0x0829(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_4;              // 0x0830(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_5;              // 0x0840(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0850(0x0018)()
+	class AActor*                                 CallFunc_GetAttachParentActor_ReturnValue;         // 0x0868(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x0870(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_871[0x7];                                      // 0x0871(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_getAttachActorRoot_rootActor;             // 0x0878(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_C*                                K2Node_DynamicCast_AsProp;                         // 0x0880(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0888(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_889[0x3];                                      // 0x0889(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x088C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FHitResult                             CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult; // 0x0898(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	TDelegate<void(bool Pressed)>                 K2Node_CreateDelegate_OutputDelegate_5;            // 0x0920(0x0010)(ZeroConstructor, NoDestructor)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0930(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_1;    // 0x093C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0948(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_949[0x3];                                      // 0x0949(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_2;    // 0x094C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_3;    // 0x0958(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_4;    // 0x0964(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0970(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetMass_ReturnValue;                      // 0x097C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x0980(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x098C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_4;        // 0x0990(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0994(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_CustomEvent_DestroyedActor;                 // 0x0998(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x09A0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue_1;       // 0x0A28(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x0A29(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A2A[0x2];                                      // 0x0A2A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_6;            // 0x0A2C(0x0010)(ZeroConstructor, NoDestructor)
+	uint8                                         Pad_A3C[0x4];                                      // 0x0A3C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue_1;        // 0x0A40(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_DynamicCast_AsPrimitive_Component_1;        // 0x0A48(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0A50(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Prop_physgun_C_ExecuteUbergraph_prop_physgun) == 0x000010, "Wrong alignment on Prop_physgun_C_ExecuteUbergraph_prop_physgun");
-static_assert(sizeof(Prop_physgun_C_ExecuteUbergraph_prop_physgun) == 0x000A80, "Wrong size on Prop_physgun_C_ExecuteUbergraph_prop_physgun");
+static_assert(sizeof(Prop_physgun_C_ExecuteUbergraph_prop_physgun) == 0x000A60, "Wrong size on Prop_physgun_C_ExecuteUbergraph_prop_physgun");
 static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, EntryPoint) == 0x000000, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_getMainPlayer_AsMain_Player) == 0x000008, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_getMainPlayer_AsMain_Player' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_Event_DeltaSeconds) == 0x000010, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_IsValid_ReturnValue) == 0x000014, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_Event_player_1) == 0x000018, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_IsValid_ReturnValue_1) == 0x000020, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000028, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GetActorForwardVector_ReturnValue) == 0x000030, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00003C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000048, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Add_VectorVector_ReturnValue) == 0x000054, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CreateDelegate_OutputDelegate) == 0x000060, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_Event_player_2) == 0x000070, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_Event_player_2' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_IsValid_ReturnValue_2) == 0x000078, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_MakeArray_Array) == 0x000080, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_IsValid_ReturnValue_3) == 0x000090, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GetTransform_ReturnValue) == 0x0000A0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x0000D0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_MakeRelativeTransform_ReturnValue) == 0x000100, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_MakeRelativeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetComponentToWorld_ReturnValue_1) == 0x000130, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetComponentToWorld_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_MakeTransform_ReturnValue) == 0x000160, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CreateDelegate_OutputDelegate_1) == 0x000190, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_FMax_ReturnValue) == 0x0001A0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x0001A4, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_VictoryFloatMinusEquals_FloatOut) == 0x0001A8, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_VictoryFloatMinusEquals_FloatOut' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GetPlayerCameraManager_ReturnValue_1) == 0x0001B0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GetPlayerCameraManager_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GetActorForwardVector_ReturnValue_1) == 0x0001B8, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GetActorForwardVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x0001C4, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x0001D0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CustomEvent_pressed_2) == 0x0001DC, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CustomEvent_pressed_2' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Add_VectorVector_ReturnValue_1) == 0x0001E0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x0001EC, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_getMainPlayer_AsMain_Player_1) == 0x000278, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_getMainPlayer_AsMain_Player_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_getMainPlayer_AsMain_Player_2) == 0x000280, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_getMainPlayer_AsMain_Player_2' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CustomEvent_mouseXY) == 0x000288, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CustomEvent_mouseXY' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Multiply_Vector2DFloat_ReturnValue) == 0x000290, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Multiply_Vector2DFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakVector2D_X) == 0x000298, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakVector2D_Y) == 0x00029C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0002A0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_MakeRotator_ReturnValue) == 0x0002A4, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_AddWorldRotation_SweepHitResult) == 0x0002B0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_AddWorldRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GetPlayerCameraManager_ReturnValue_2) == 0x000338, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GetPlayerCameraManager_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CustomEvent_pressed_1) == 0x000340, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CustomEvent_pressed_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GetActorRightVector_ReturnValue) == 0x000344, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GetActorRightVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Multiply_VectorFloat_ReturnValue_2) == 0x000350, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Multiply_VectorFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GetActorForwardVector_ReturnValue_2) == 0x00035C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GetActorForwardVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Dot_VectorVector_ReturnValue) == 0x000368, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Multiply_VectorFloat_ReturnValue_3) == 0x00036C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Multiply_VectorFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_SignOfFloat_ReturnValue) == 0x000378, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_SignOfFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Dot_VectorVector_ReturnValue_1) == 0x00037C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Dot_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Abs_ReturnValue) == 0x000380, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Abs_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_SignOfFloat_ReturnValue_1) == 0x000384, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_SignOfFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_DegAcos_ReturnValue) == 0x000388, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_DegAcos_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Abs_ReturnValue_1) == 0x00038C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Abs_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000390, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_DegAcos_ReturnValue_1) == 0x000394, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_DegAcos_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000398, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x00039C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x0003A0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CreateDelegate_OutputDelegate_2) == 0x0003A4, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_MakeRotator_ReturnValue_1) == 0x0003B4, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_MakeRotator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Multiply_RotatorFloat_ReturnValue) == 0x0003C0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Multiply_RotatorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_AddWorldRotation_SweepHitResult_1) == 0x0003CC, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_AddWorldRotation_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_Event_player) == 0x000458, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, Temp_byte_Variable) == 0x000460, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_IsValid_ReturnValue_4) == 0x000461, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CustomEvent_pressed) == 0x000462, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CustomEvent_pressed' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CreateDelegate_OutputDelegate_3) == 0x000464, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, Temp_byte_Variable_1) == 0x000474, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_ComposeTransforms_ReturnValue) == 0x000480, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_ComposeTransforms_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_SetActorTransform_SweepHitResult) == 0x0004B0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_SetActorTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_SetActorTransform_ReturnValue) == 0x000538, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_SetActorTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetComponentRotation_ReturnValue) == 0x00053C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetComponentRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakRotator_Roll) == 0x000548, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakRotator_Roll' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakRotator_Pitch) == 0x00054C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakRotator_Pitch' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakRotator_Yaw) == 0x000550, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakRotator_Yaw' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x000554, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GridSnap_Float_ReturnValue) == 0x000560, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GridSnap_Float_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Vector_SnappedToGrid_ReturnValue) == 0x000564, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Vector_SnappedToGrid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GridSnap_Float_ReturnValue_1) == 0x000570, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GridSnap_Float_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_SetActorLocation_SweepHitResult) == 0x000574, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_SetActorLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_SetActorLocation_ReturnValue) == 0x0005FC, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_SetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GridSnap_Float_ReturnValue_2) == 0x000600, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GridSnap_Float_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, Temp_bool_Variable) == 0x000604, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_MakeRotator_ReturnValue_2) == 0x000608, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_MakeRotator_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_Select_Default) == 0x000614, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_SetActorRotation_ReturnValue) == 0x000615, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_SetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetComponentScale_ReturnValue) == 0x000618, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetComponentScale_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Subtract_VectorFloat_ReturnValue) == 0x000624, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Subtract_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Add_VectorFloat_ReturnValue) == 0x000630, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Add_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CreateDelegate_OutputDelegate_4) == 0x00063C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_LineTraceSingleForObjects_OutHit) == 0x00064C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_LineTraceSingleForObjects_OutHit' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_LineTraceSingleForObjects_ReturnValue) == 0x0006D4, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_LineTraceSingleForObjects_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GetActorScale3D_ReturnValue) == 0x0006D8, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_bBlockingHit) == 0x0006E4, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_bInitialOverlap) == 0x0006E5, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_Time) == 0x0006E8, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_Distance) == 0x0006EC, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_Location) == 0x0006F0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_ImpactPoint) == 0x0006FC, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_Normal) == 0x000708, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_ImpactNormal) == 0x000714, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_PhysMat) == 0x000720, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_HitActor) == 0x000728, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_HitComponent) == 0x000730, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_HitBoneName) == 0x000738, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_HitItem) == 0x000740, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_ElementIndex) == 0x000744, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_FaceIndex) == 0x000748, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_TraceStart) == 0x00074C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_TraceEnd) == 0x000758, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakVector_X) == 0x000764, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakVector_Y) == 0x000768, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakVector_Z) == 0x00076C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_IsValid_ReturnValue_5) == 0x000770, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Conv_FloatToText_ReturnValue) == 0x000778, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Conv_TextToString_ReturnValue) == 0x000790, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Conv_FloatToText_ReturnValue_1) == 0x0007A0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Conv_FloatToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Conv_FloatToText_ReturnValue_2) == 0x0007B8, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Conv_FloatToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Conv_TextToString_ReturnValue_1) == 0x0007D0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Conv_TextToString_ReturnValue_2) == 0x0007E0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Conv_TextToString_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Concat_StrStr_ReturnValue) == 0x0007F0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000800, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000808, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_DynamicCast_AsPrimitive_Component) == 0x000818, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_DynamicCast_AsPrimitive_Component' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_DynamicCast_bSuccess) == 0x000820, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000828, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000838, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_IsValid_ReturnValue_6) == 0x000848, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Concat_StrStr_ReturnValue_4) == 0x000850, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Concat_StrStr_ReturnValue_5) == 0x000860, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Concat_StrStr_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Conv_StringToText_ReturnValue) == 0x000870, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GetAttachParentActor_ReturnValue) == 0x000888, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GetAttachParentActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_IsValid_ReturnValue_7) == 0x000890, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_getAttachActorRoot_rootActor) == 0x000898, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_getAttachActorRoot_rootActor' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_DynamicCast_AsProp) == 0x0008A0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_DynamicCast_AsProp' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_DynamicCast_bSuccess_1) == 0x0008A8, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetActorRotation_ReturnValue) == 0x0008AC, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult) == 0x0008B8, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CreateDelegate_OutputDelegate_5) == 0x000940, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000950, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x00095C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000968, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetComponentLocation_ReturnValue_2) == 0x00096C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetComponentLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetComponentLocation_ReturnValue_3) == 0x000978, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetComponentLocation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetComponentLocation_ReturnValue_4) == 0x000984, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetComponentLocation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000990, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GetMass_ReturnValue) == 0x00099C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GetMass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Normal_ReturnValue) == 0x0009A0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Normal_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x0009AC, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Multiply_FloatFloat_ReturnValue_4) == 0x0009B0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Multiply_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_FClamp_ReturnValue) == 0x0009B4, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CustomEvent_DestroyedActor) == 0x0009B8, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CustomEvent_DestroyedActor' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_SetRelativeTransform_SweepHitResult) == 0x0009C0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_SetRelativeTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_AttachToComponent_ReturnValue_1) == 0x000A48, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_AttachToComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_IsValid_ReturnValue_8) == 0x000A49, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_IsValid_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CreateDelegate_OutputDelegate_6) == 0x000A4C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetRootComponent_ReturnValue_1) == 0x000A60, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetRootComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_DynamicCast_AsPrimitive_Component_1) == 0x000A68, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_DynamicCast_AsPrimitive_Component_1' has a wrong offset!");
-static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_DynamicCast_bSuccess_2) == 0x000A70, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Not_PreBool_ReturnValue) == 0x000004, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_Event_player_2) == 0x000008, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_Event_player_2' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_Event_DeltaSeconds) == 0x000014, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_IsValid_ReturnValue_1) == 0x000028, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GetTransform_ReturnValue) == 0x000030, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x000060, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_MakeRelativeTransform_ReturnValue) == 0x000090, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_MakeRelativeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetComponentToWorld_ReturnValue_1) == 0x0000C0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetComponentToWorld_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_MakeTransform_ReturnValue) == 0x0000F0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CreateDelegate_OutputDelegate_1) == 0x000120, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_FMax_ReturnValue) == 0x000130, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_FMax_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x000134, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_VictoryFloatMinusEquals_FloatOut) == 0x000138, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_VictoryFloatMinusEquals_FloatOut' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000140, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GetActorForwardVector_ReturnValue) == 0x000148, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000154, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000160, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CustomEvent_pressed_2) == 0x00016C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CustomEvent_pressed_2' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Add_VectorVector_ReturnValue) == 0x000170, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x00017C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_getMainPlayer_AsMain_Player) == 0x000208, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_getMainPlayer_AsMain_Player' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_getMainPlayer_AsMain_Player_1) == 0x000210, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_getMainPlayer_AsMain_Player_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CustomEvent_mouseXY) == 0x000218, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CustomEvent_mouseXY' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Multiply_Vector2DFloat_ReturnValue) == 0x000220, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Multiply_Vector2DFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakVector2D_X) == 0x000228, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakVector2D_X' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakVector2D_Y) == 0x00022C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakVector2D_Y' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000230, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_MakeRotator_ReturnValue) == 0x000234, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_AddWorldRotation_SweepHitResult) == 0x000240, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_AddWorldRotation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GetPlayerCameraManager_ReturnValue_1) == 0x0002C8, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GetPlayerCameraManager_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CustomEvent_pressed_1) == 0x0002D0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CustomEvent_pressed_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GetActorRightVector_ReturnValue) == 0x0002D4, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GetActorRightVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x0002E0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GetActorForwardVector_ReturnValue_1) == 0x0002EC, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GetActorForwardVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Dot_VectorVector_ReturnValue) == 0x0002F8, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Multiply_VectorFloat_ReturnValue_2) == 0x0002FC, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Multiply_VectorFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_SignOfFloat_ReturnValue) == 0x000308, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_SignOfFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Dot_VectorVector_ReturnValue_1) == 0x00030C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Dot_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Abs_ReturnValue) == 0x000310, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Abs_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_SignOfFloat_ReturnValue_1) == 0x000314, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_SignOfFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_DegAcos_ReturnValue) == 0x000318, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_DegAcos_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Abs_ReturnValue_1) == 0x00031C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Abs_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000320, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_DegAcos_ReturnValue_1) == 0x000324, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_DegAcos_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000328, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x00032C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GetPlayerCameraManager_ReturnValue_2) == 0x000330, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GetPlayerCameraManager_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x000338, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GetActorForwardVector_ReturnValue_2) == 0x00033C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GetActorForwardVector_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_MakeRotator_ReturnValue_1) == 0x000348, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_MakeRotator_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Multiply_VectorFloat_ReturnValue_3) == 0x000354, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Multiply_VectorFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Multiply_RotatorFloat_ReturnValue) == 0x000360, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Multiply_RotatorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x00036C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_AddWorldRotation_SweepHitResult_1) == 0x000378, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_AddWorldRotation_SweepHitResult_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000400, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_Event_player_1) == 0x000410, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_MakeArray_Array) == 0x000418, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_Event_player) == 0x000428, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, Temp_byte_Variable) == 0x000430, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_IsValid_ReturnValue_2) == 0x000431, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CustomEvent_pressed) == 0x000432, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CustomEvent_pressed' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CreateDelegate_OutputDelegate_2) == 0x000434, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, Temp_byte_Variable_1) == 0x000444, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_ComposeTransforms_ReturnValue) == 0x000450, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_ComposeTransforms_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_SetActorTransform_SweepHitResult) == 0x000480, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_SetActorTransform_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_SetActorTransform_ReturnValue) == 0x000508, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_SetActorTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetComponentRotation_ReturnValue) == 0x00050C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetComponentRotation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakRotator_Roll) == 0x000518, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakRotator_Roll' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakRotator_Pitch) == 0x00051C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakRotator_Pitch' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakRotator_Yaw) == 0x000520, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakRotator_Yaw' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GridSnap_Float_ReturnValue) == 0x000524, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GridSnap_Float_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x000528, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GridSnap_Float_ReturnValue_1) == 0x000534, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GridSnap_Float_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Vector_SnappedToGrid_ReturnValue) == 0x000538, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Vector_SnappedToGrid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GridSnap_Float_ReturnValue_2) == 0x000544, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GridSnap_Float_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_SetActorLocation_SweepHitResult) == 0x000548, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_SetActorLocation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_SetActorLocation_ReturnValue) == 0x0005D0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_SetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_MakeRotator_ReturnValue_2) == 0x0005D4, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_MakeRotator_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, Temp_bool_Variable) == 0x0005E0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_SetActorRotation_ReturnValue) == 0x0005E1, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_SetActorRotation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_Select_Default) == 0x0005E2, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BooleanAND_ReturnValue) == 0x0005E3, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetComponentScale_ReturnValue) == 0x0005E4, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetComponentScale_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Subtract_VectorFloat_ReturnValue) == 0x0005F0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Subtract_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Add_VectorFloat_ReturnValue) == 0x0005FC, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Add_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CreateDelegate_OutputDelegate_3) == 0x000608, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CreateDelegate_OutputDelegate_4) == 0x000618, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_LineTraceSingleForObjects_OutHit) == 0x000628, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_LineTraceSingleForObjects_OutHit' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_LineTraceSingleForObjects_ReturnValue) == 0x0006B0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_LineTraceSingleForObjects_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GetActorScale3D_ReturnValue) == 0x0006B4, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_bBlockingHit) == 0x0006C0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_bInitialOverlap) == 0x0006C1, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_Time) == 0x0006C4, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_Distance) == 0x0006C8, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_Location) == 0x0006CC, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_ImpactPoint) == 0x0006D8, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_Normal) == 0x0006E4, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_ImpactNormal) == 0x0006F0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_PhysMat) == 0x000700, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_HitActor) == 0x000708, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_HitComponent) == 0x000710, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_HitBoneName) == 0x000718, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_HitItem) == 0x000720, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_ElementIndex) == 0x000724, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_FaceIndex) == 0x000728, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_TraceStart) == 0x00072C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakHitResult_TraceEnd) == 0x000738, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakVector_X) == 0x000744, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakVector_X' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakVector_Y) == 0x000748, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakVector_Y' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_BreakVector_Z) == 0x00074C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_BreakVector_Z' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_IsValid_ReturnValue_3) == 0x000750, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Conv_FloatToText_ReturnValue) == 0x000758, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Conv_TextToString_ReturnValue) == 0x000770, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Conv_FloatToText_ReturnValue_1) == 0x000780, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Conv_FloatToText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Conv_FloatToText_ReturnValue_2) == 0x000798, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Conv_FloatToText_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Conv_TextToString_ReturnValue_1) == 0x0007B0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Conv_TextToString_ReturnValue_2) == 0x0007C0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Conv_TextToString_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Concat_StrStr_ReturnValue) == 0x0007D0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetRootComponent_ReturnValue) == 0x0007E0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Concat_StrStr_ReturnValue_1) == 0x0007E8, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_DynamicCast_AsPrimitive_Component) == 0x0007F8, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_DynamicCast_AsPrimitive_Component' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_DynamicCast_bSuccess) == 0x000800, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000808, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000818, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_IsValid_ReturnValue_4) == 0x000828, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Concat_StrStr_ReturnValue_4) == 0x000830, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Concat_StrStr_ReturnValue_5) == 0x000840, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Concat_StrStr_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Conv_StringToText_ReturnValue) == 0x000850, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GetAttachParentActor_ReturnValue) == 0x000868, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GetAttachParentActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_IsValid_ReturnValue_5) == 0x000870, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_getAttachActorRoot_rootActor) == 0x000878, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_getAttachActorRoot_rootActor' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_DynamicCast_AsProp) == 0x000880, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_DynamicCast_AsProp' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_DynamicCast_bSuccess_1) == 0x000888, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetActorRotation_ReturnValue) == 0x00088C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult) == 0x000898, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CreateDelegate_OutputDelegate_5) == 0x000920, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000930, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x00093C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000948, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetComponentLocation_ReturnValue_2) == 0x00094C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetComponentLocation_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetComponentLocation_ReturnValue_3) == 0x000958, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetComponentLocation_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetComponentLocation_ReturnValue_4) == 0x000964, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetComponentLocation_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000970, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_GetMass_ReturnValue) == 0x00097C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_GetMass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Normal_ReturnValue) == 0x000980, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Normal_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x00098C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_Multiply_FloatFloat_ReturnValue_4) == 0x000990, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_Multiply_FloatFloat_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_FClamp_ReturnValue) == 0x000994, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_FClamp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CustomEvent_DestroyedActor) == 0x000998, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CustomEvent_DestroyedActor' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_SetRelativeTransform_SweepHitResult) == 0x0009A0, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_SetRelativeTransform_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_AttachToComponent_ReturnValue_1) == 0x000A28, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_AttachToComponent_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_IsValid_ReturnValue_6) == 0x000A29, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_CreateDelegate_OutputDelegate_6) == 0x000A2C, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, CallFunc_K2_GetRootComponent_ReturnValue_1) == 0x000A40, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::CallFunc_K2_GetRootComponent_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_DynamicCast_AsPrimitive_Component_1) == 0x000A48, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_DynamicCast_AsPrimitive_Component_1' has a wrong offset!");
+static_assert(offsetof(Prop_physgun_C_ExecuteUbergraph_prop_physgun, K2Node_DynamicCast_bSuccess_2) == 0x000A50, "Member 'Prop_physgun_C_ExecuteUbergraph_prop_physgun::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
 
 // Function prop_physgun.prop_physgun_C.Dest
 // 0x0008 (0x0008 - 0x0000)
@@ -438,17 +433,6 @@ static_assert(alignof(Prop_physgun_C_ReceiveTick) == 0x000004, "Wrong alignment 
 static_assert(sizeof(Prop_physgun_C_ReceiveTick) == 0x000004, "Wrong size on Prop_physgun_C_ReceiveTick");
 static_assert(offsetof(Prop_physgun_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'Prop_physgun_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
-// Function prop_physgun.prop_physgun_C.playerHandRelease_LMB
-// 0x0008 (0x0008 - 0x0000)
-struct Prop_physgun_C_PlayerHandRelease_LMB final
-{
-public:
-	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Prop_physgun_C_PlayerHandRelease_LMB) == 0x000008, "Wrong alignment on Prop_physgun_C_PlayerHandRelease_LMB");
-static_assert(sizeof(Prop_physgun_C_PlayerHandRelease_LMB) == 0x000008, "Wrong size on Prop_physgun_C_PlayerHandRelease_LMB");
-static_assert(offsetof(Prop_physgun_C_PlayerHandRelease_LMB, Player) == 0x000000, "Member 'Prop_physgun_C_PlayerHandRelease_LMB::Player' has a wrong offset!");
-
 // Function prop_physgun.prop_physgun_C.playerHandUse_RMB
 // 0x0008 (0x0008 - 0x0000)
 struct Prop_physgun_C_PlayerHandUse_RMB final
@@ -470,6 +454,17 @@ public:
 static_assert(alignof(Prop_physgun_C_PlayerHandUse_LMB) == 0x000008, "Wrong alignment on Prop_physgun_C_PlayerHandUse_LMB");
 static_assert(sizeof(Prop_physgun_C_PlayerHandUse_LMB) == 0x000008, "Wrong size on Prop_physgun_C_PlayerHandUse_LMB");
 static_assert(offsetof(Prop_physgun_C_PlayerHandUse_LMB, Player) == 0x000000, "Member 'Prop_physgun_C_PlayerHandUse_LMB::Player' has a wrong offset!");
+
+// Function prop_physgun.prop_physgun_C.playerHandRelease_LMB
+// 0x0008 (0x0008 - 0x0000)
+struct Prop_physgun_C_PlayerHandRelease_LMB final
+{
+public:
+	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_physgun_C_PlayerHandRelease_LMB) == 0x000008, "Wrong alignment on Prop_physgun_C_PlayerHandRelease_LMB");
+static_assert(sizeof(Prop_physgun_C_PlayerHandRelease_LMB) == 0x000008, "Wrong size on Prop_physgun_C_PlayerHandRelease_LMB");
+static_assert(offsetof(Prop_physgun_C_PlayerHandRelease_LMB, Player) == 0x000000, "Member 'Prop_physgun_C_PlayerHandRelease_LMB::Player' has a wrong offset!");
 
 }
 

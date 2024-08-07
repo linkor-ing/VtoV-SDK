@@ -86,7 +86,7 @@ void APropSpawner_editor_C::Spawn(class AActor** OutputPin)
 }
 
 
-// Function propSpawner_editor.propSpawner_editor_C.despawn
+// Function propSpawner_editor.propSpawner_editor_C.Despawn
 // (Public, BlueprintCallable, BlueprintEvent)
 
 void APropSpawner_editor_C::Despawn()
@@ -94,7 +94,7 @@ void APropSpawner_editor_C::Despawn()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("propSpawner_editor_C", "despawn");
+		Func = Class->GetFunction("propSpawner_editor_C", "Despawn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -37,6 +37,34 @@ void AActorChipPile_C::ExecuteUbergraph_actorChipPile(int32 EntryPoint)
 }
 
 
+// Function actorChipPile.actorChipPile_C.addDamage
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// struct FVector                          Impact                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    SkipSetting                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AActorChipPile_C::AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Hit, const struct FVector& Impact, bool SkipSetting)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("actorChipPile_C", "addDamage");
+
+	Params::ActorChipPile_C_AddDamage Parms{};
+
+	Parms.Actor = Actor;
+	Parms.Damage = Damage;
+	Parms.Hit = std::move(Hit);
+	Parms.Impact = std::move(Impact);
+	Parms.SkipSetting = SkipSetting;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function actorChipPile.actorChipPile_C.setIgnoreSave
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -221,34 +249,6 @@ void AActorChipPile_C::SetPropProps(bool Static, bool Frozen, bool Active)
 }
 
 
-// Function actorChipPile.actorChipPile_C.addDamage
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// struct FVector                          Impact                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    SkipSetting                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AActorChipPile_C::AddDamage(class AActor* Actor, float Damage, const struct FHitResult& Hit, const struct FVector& Impact, bool SkipSetting)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("actorChipPile_C", "addDamage");
-
-	Params::ActorChipPile_C_AddDamage Parms{};
-
-	Parms.Actor = Actor;
-	Parms.Damage = Damage;
-	Parms.Hit = std::move(Hit);
-	Parms.Impact = std::move(Impact);
-	Parms.SkipSetting = SkipSetting;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function actorChipPile.actorChipPile_C.setKey
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -311,15 +311,28 @@ void AActorChipPile_C::DigUp()
 }
 
 
+// Function actorChipPile.actorChipPile_C.unhook
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AActorChipPile_C::Unhook()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("actorChipPile_C", "unhook");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function actorChipPile.actorChipPile_C.actionOptionIndex
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AActorChipPile_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action)
+void AActorChipPile_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -330,7 +343,6 @@ void AActorChipPile_C::ActionOptionIndex(class AMainPlayer_C* Player, const stru
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
-	Parms.Param_Index = Param_Index;
 	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -348,6 +360,66 @@ void AActorChipPile_C::ReceiveBeginPlay()
 		Func = Class->GetFunction("actorChipPile_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function actorChipPile.actorChipPile_C.playerR
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AActorChipPile_C::PlayerR(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("actorChipPile_C", "playerR");
+
+	Params::ActorChipPile_C_PlayerR Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function actorChipPile.actorChipPile_C.playerHold
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AActorChipPile_C::PlayerHold(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("actorChipPile_C", "playerHold");
+
+	Params::ActorChipPile_C_PlayerHold Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function actorChipPile.actorChipPile_C.playerUnequip
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AActorChipPile_C::PlayerUnequip(class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("actorChipPile_C", "playerUnequip");
+
+	Params::ActorChipPile_C_PlayerUnequip Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -370,8 +442,9 @@ void AActorChipPile_C::UpdateStrAgl()
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AActorChipPile_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit)
+void AActorChipPile_C::DamageByPlayer(class AMainPlayer_C* Player, const struct FHitResult& Hit, float Damage)
 {
 	static class UFunction* Func = nullptr;
 
@@ -382,6 +455,7 @@ void AActorChipPile_C::DamageByPlayer(class AMainPlayer_C* Player, const struct 
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
+	Parms.Damage = Damage;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -506,6 +580,62 @@ void AActorChipPile_C::DriveDetached()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("actorChipPile_C", "driveDetached");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function actorChipPile.actorChipPile_C.hookTension
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AHook_C*                          Hook                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AActorChipPile_C::HookTension(class AHook_C* Hook)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("actorChipPile_C", "hookTension");
+
+	Params::ActorChipPile_C_HookTension Parms{};
+
+	Parms.Hook = Hook;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function actorChipPile.actorChipPile_C.cleanSponge
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Clean                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AActorChipPile_C::CleanSponge(float Clean, class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("actorChipPile_C", "cleanSponge");
+
+	Params::ActorChipPile_C_CleanSponge Parms{};
+
+	Parms.Clean = Clean;
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function actorChipPile.actorChipPile_C.crafted
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AActorChipPile_C::Crafted()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("actorChipPile_C", "crafted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -929,15 +1059,23 @@ void AActorChipPile_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
 
 // Function actorChipPile.actorChipPile_C.receivedPhyiscsDamage
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hot                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void AActorChipPile_C::ReceivedPhyiscsDamage()
+void AActorChipPile_C::ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("actorChipPile_C", "receivedPhyiscsDamage");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::ActorChipPile_C_ReceivedPhyiscsDamage Parms{};
+
+	Parms.Damage = Damage;
+	Parms.Hot = std::move(Hot);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -1014,20 +1152,6 @@ void AActorChipPile_C::SteppedOn(class AMainPlayer_C* Player, const struct FHitR
 	Parms.Hit = std::move(Hit);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function actorChipPile.actorChipPile_C.unhook
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AActorChipPile_C::Unhook()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("actorChipPile_C", "unhook");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -1188,8 +1312,9 @@ void AActorChipPile_C::NoRespawn(bool Param_NoRespawn, bool* Return)
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AActorChipPile_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
+void AActorChipPile_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1211,6 +1336,9 @@ void AActorChipPile_C::LookAt(class AMainPlayer_C* Player, const struct FHitResu
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -1235,6 +1363,30 @@ void AActorChipPile_C::IsButtonUsed(bool* Failed)
 }
 
 
+// Function actorChipPile.actorChipPile_C.landedOn
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IgnoreFallDamage                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AActorChipPile_C::LandedOn(class AMainPlayer_C* Player, bool* IgnoreFallDamage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("actorChipPile_C", "landedOn");
+
+	Params::ActorChipPile_C_LandedOn Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IgnoreFallDamage != nullptr)
+		*IgnoreFallDamage = Parms.IgnoreFallDamage;
+}
+
+
 // Function actorChipPile.actorChipPile_C.getActionOptions
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1244,8 +1396,9 @@ void AActorChipPile_C::IsButtonUsed(bool* Failed)
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AActorChipPile_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
+void AActorChipPile_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1268,6 +1421,9 @@ void AActorChipPile_C::GetActionOptions(class AMainPlayer_C* Player, class UPrim
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -1448,6 +1604,27 @@ void AActorChipPile_C::SkipRadial(bool* Skip)
 }
 
 
+// Function actorChipPile.actorChipPile_C.getPriceMultiplier
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   PriceMult                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AActorChipPile_C::GetPriceMultiplier(float* PriceMult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("actorChipPile_C", "getPriceMultiplier");
+
+	Params::ActorChipPile_C_GetPriceMultiplier Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PriceMult != nullptr)
+		*PriceMult = Parms.PriceMult;
+}
+
+
 // Function actorChipPile.actorChipPile_C.skipPreDelete
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1532,6 +1709,27 @@ void AActorChipPile_C::GetData(struct FStruct_save* Data)
 
 	if (Data != nullptr)
 		*Data = std::move(Parms.Data);
+}
+
+
+// Function actorChipPile.actorChipPile_C.gatherDataFromKey
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Gather                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AActorChipPile_C::GatherDataFromKey(bool* Gather)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("actorChipPile_C", "gatherDataFromKey");
+
+	Params::ActorChipPile_C_GatherDataFromKey Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Gather != nullptr)
+		*Gather = Parms.Gather;
 }
 
 }

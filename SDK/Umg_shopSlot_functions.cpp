@@ -37,15 +37,57 @@ void UUmg_shopSlot_C::ExecuteUbergraph_umg_shopSlot(int32 EntryPoint)
 }
 
 
-// Function umg_shopSlot.umg_shopSlot_C.BndEvt__Button_add_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
+// Function umg_shopSlot.umg_shopSlot_C.BndEvt__umg_shopSlot_button_fav_K2Node_ComponentBoundEvent_10_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
 
-void UUmg_shopSlot_C::BndEvt__Button_add_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
+void UUmg_shopSlot_C::BndEvt__umg_shopSlot_button_fav_K2Node_ComponentBoundEvent_10_OnButtonClickedEvent__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("umg_shopSlot_C", "BndEvt__Button_add_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
+		Func = Class->GetFunction("umg_shopSlot_C", "BndEvt__umg_shopSlot_button_fav_K2Node_ComponentBoundEvent_10_OnButtonClickedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function umg_shopSlot.umg_shopSlot_C.BndEvt__umg_shopSlot_Button_hover_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UUmg_shopSlot_C::BndEvt__umg_shopSlot_Button_hover_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_shopSlot_C", "BndEvt__umg_shopSlot_Button_hover_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function umg_shopSlot.umg_shopSlot_C.BndEvt__umg_shopSlot_Button_hover_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UUmg_shopSlot_C::BndEvt__umg_shopSlot_Button_hover_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_shopSlot_C", "BndEvt__umg_shopSlot_Button_hover_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function umg_shopSlot.umg_shopSlot_C.BndEvt__umg_shopSlot_Button_hover_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UUmg_shopSlot_C::BndEvt__umg_shopSlot_Button_hover_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_shopSlot_C", "BndEvt__umg_shopSlot_Button_hover_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -62,6 +104,46 @@ void UUmg_shopSlot_C::Construct()
 		Func = Class->GetFunction("umg_shopSlot_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function umg_shopSlot.umg_shopSlot_C.Filter
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FText                             Param_Name                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UUmg_shopSlot_C::Filter(const class FText& Param_Name)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_shopSlot_C", "Filter");
+
+	Params::Umg_shopSlot_C_Filter Parms{};
+
+	Parms.Param_Name = std::move(Param_Name);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function umg_shopSlot.umg_shopSlot_C.updFav
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USave_main_C*                     Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UUmg_shopSlot_C::UpdFav(class USave_main_C* Target)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_shopSlot_C", "updFav");
+
+	Params::Umg_shopSlot_C_UpdFav Parms{};
+
+	Parms.Target = Target;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

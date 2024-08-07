@@ -10,74 +10,79 @@
 
 #include "Basic.hpp"
 
+#include "Struct_settings_structs.hpp"
 #include "Struct_save_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "Struct_settings_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function umg_carmap.umg_carmap_C.ExecuteUbergraph_umg_carmap
-// 0x0248 (0x0248 - 0x0000)
+// 0x0288 (0x0288 - 0x0000)
 struct Umg_carmap_C_ExecuteUbergraph_umg_carmap final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2961[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FKey                                   K2Node_Event_key;                                  // 0x0018(0x0018)(HasGetValueTypeHash)
 	bool                                          K2Node_Event_pressed;                              // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2962[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           K2Node_Event_color;                                // 0x0034(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0044(0x0038)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2963[0x4];                                     // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2964[0x3];                                     // 0x0091(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetActorRightVector_ReturnValue;          // 0x0094(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x00A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x00AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x00B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue_1;      // 0x00C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x00D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Normal_ReturnValue_1;                     // 0x00DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2965[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUmg_carmapPoint_C*                     CallFunc_Array_Get_Item;                           // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AProp_beacon_C*                         CallFunc_Array_Get_Item_1;                         // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0100(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0108(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0114(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue_2;      // 0x0120(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_settings                       K2Node_Event_settings;                             // 0x012C(0x00CC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Normal_ReturnValue_2;                     // 0x01F8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetWindowSize_Success;                    // 0x0204(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2966[0x3];                                     // 0x0205(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetWindowSize_Width;                      // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetWindowSize_Height;                     // 0x020C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0214(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2967[0x3];                                     // 0x0219(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x021C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Dot_VectorVector_ReturnValue_1;           // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0224(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SignOfFloat_ReturnValue;                  // 0x022C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x0230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue;                         // 0x0234(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue_1;             // 0x023C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_1;               // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUmg_texturePicker_C*                   K2Node_Event_picker;                               // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_Event_texture;                              // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_index;                                // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x005C(0x0038)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_InDeltaTime;                          // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A9[0x3];                                       // 0x00A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetActorRightVector_ReturnValue;          // 0x00AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x00B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x00C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x00D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue_1;      // 0x00DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x00E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Normal_ReturnValue_1;                     // 0x00F4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_104[0x4];                                      // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUmg_carmapPoint_C*                     CallFunc_Array_Get_Item;                           // 0x0108(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_beacon_C*                         CallFunc_Array_Get_Item_1;                         // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0118(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0120(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x012C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue_2;      // 0x0138(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_144[0x4];                                      // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_settings                       K2Node_Event_settings;                             // 0x0148(0x00F0)(HasGetValueTypeHash)
+	struct FVector                                CallFunc_Normal_ReturnValue_2;                     // 0x0238(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetWindowSize_Success;                    // 0x0244(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_245[0x3];                                      // 0x0245(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetWindowSize_Width;                      // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetWindowSize_Height;                     // 0x024C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0254(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_259[0x3];                                      // 0x0259(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Dot_VectorVector_ReturnValue_1;           // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0264(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SignOfFloat_ReturnValue;                  // 0x026C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x0270(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue;                         // 0x0274(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue_1;             // 0x027C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_1;               // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Umg_carmap_C_ExecuteUbergraph_umg_carmap) == 0x000008, "Wrong alignment on Umg_carmap_C_ExecuteUbergraph_umg_carmap");
-static_assert(sizeof(Umg_carmap_C_ExecuteUbergraph_umg_carmap) == 0x000248, "Wrong size on Umg_carmap_C_ExecuteUbergraph_umg_carmap");
+static_assert(sizeof(Umg_carmap_C_ExecuteUbergraph_umg_carmap) == 0x000288, "Wrong size on Umg_carmap_C_ExecuteUbergraph_umg_carmap");
 static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, EntryPoint) == 0x000000, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
@@ -85,52 +90,55 @@ static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, K2Node_Event_ga
 static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, K2Node_Event_key) == 0x000018, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::K2Node_Event_key' has a wrong offset!");
 static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, K2Node_Event_pressed) == 0x000030, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::K2Node_Event_pressed' has a wrong offset!");
 static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, K2Node_Event_color) == 0x000034, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::K2Node_Event_color' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, K2Node_Event_MyGeometry) == 0x000044, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, K2Node_Event_InDeltaTime) == 0x00007C, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Array_Length_ReturnValue) == 0x000080, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000088, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Less_IntInt_ReturnValue) == 0x000090, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_GetActorRightVector_ReturnValue) == 0x000094, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_GetActorRightVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Multiply_VectorVector_ReturnValue) == 0x0000A0, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_GetActorForwardVector_ReturnValue) == 0x0000AC, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Normal_ReturnValue) == 0x0000B8, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Normal_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Multiply_VectorVector_ReturnValue_1) == 0x0000C4, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Multiply_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000D0, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Normal_ReturnValue_1) == 0x0000DC, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Normal_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, Temp_int_Array_Index_Variable) == 0x0000E8, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Array_Get_Item) == 0x0000F0, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Array_Get_Item_1) == 0x0000F8, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000100, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000108, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000114, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Multiply_VectorVector_ReturnValue_2) == 0x000120, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Multiply_VectorVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, K2Node_Event_settings) == 0x00012C, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::K2Node_Event_settings' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Normal_ReturnValue_2) == 0x0001F8, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Normal_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_GetWindowSize_Success) == 0x000204, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_GetWindowSize_Success' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_GetWindowSize_Width) == 0x000208, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_GetWindowSize_Width' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_GetWindowSize_Height) == 0x00020C, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_GetWindowSize_Height' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Dot_VectorVector_ReturnValue) == 0x000210, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000214, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000218, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x00021C, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Dot_VectorVector_ReturnValue_1) == 0x000220, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Dot_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_MakeVector2D_ReturnValue) == 0x000224, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_SignOfFloat_ReturnValue) == 0x00022C, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_SignOfFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_SelectFloat_ReturnValue) == 0x000230, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Lerp_ReturnValue) == 0x000234, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Add_FloatFloat_ReturnValue) == 0x000238, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x00023C, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_MakeVector2D_ReturnValue_1) == 0x000240, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_MakeVector2D_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, K2Node_Event_picker) == 0x000048, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::K2Node_Event_picker' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, K2Node_Event_texture) == 0x000050, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::K2Node_Event_texture' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, K2Node_Event_index) == 0x000058, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, K2Node_Event_MyGeometry) == 0x00005C, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::K2Node_Event_MyGeometry' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, K2Node_Event_InDeltaTime) == 0x000094, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::K2Node_Event_InDeltaTime' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Array_Length_ReturnValue) == 0x000098, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x0000A0, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Less_IntInt_ReturnValue) == 0x0000A8, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_GetActorRightVector_ReturnValue) == 0x0000AC, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_GetActorRightVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Multiply_VectorVector_ReturnValue) == 0x0000B8, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_GetActorForwardVector_ReturnValue) == 0x0000C4, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Normal_ReturnValue) == 0x0000D0, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Normal_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Multiply_VectorVector_ReturnValue_1) == 0x0000DC, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Multiply_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000E8, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Normal_ReturnValue_1) == 0x0000F4, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Normal_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, Temp_int_Array_Index_Variable) == 0x000100, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Array_Get_Item) == 0x000108, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Array_Get_Item_1) == 0x000110, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000118, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000120, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Subtract_VectorVector_ReturnValue) == 0x00012C, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Multiply_VectorVector_ReturnValue_2) == 0x000138, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Multiply_VectorVector_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, K2Node_Event_settings) == 0x000148, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::K2Node_Event_settings' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Normal_ReturnValue_2) == 0x000238, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Normal_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_GetWindowSize_Success) == 0x000244, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_GetWindowSize_Success' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_GetWindowSize_Width) == 0x000248, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_GetWindowSize_Width' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_GetWindowSize_Height) == 0x00024C, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_GetWindowSize_Height' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Dot_VectorVector_ReturnValue) == 0x000250, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000254, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000258, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x00025C, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Dot_VectorVector_ReturnValue_1) == 0x000260, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Dot_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_MakeVector2D_ReturnValue) == 0x000264, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_SignOfFloat_ReturnValue) == 0x00026C, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_SignOfFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_SelectFloat_ReturnValue) == 0x000270, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Lerp_ReturnValue) == 0x000274, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Lerp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Add_FloatFloat_ReturnValue) == 0x000278, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x00027C, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_ExecuteUbergraph_umg_carmap, CallFunc_MakeVector2D_ReturnValue_1) == 0x000280, "Member 'Umg_carmap_C_ExecuteUbergraph_umg_carmap::CallFunc_MakeVector2D_ReturnValue_1' has a wrong offset!");
 
 // Function umg_carmap.umg_carmap_C.settingsApplied
-// 0x00CC (0x00CC - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct Umg_carmap_C_SettingsApplied final
 {
 public:
-	struct FStruct_settings                       Settings;                                          // 0x0000(0x00CC)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       Settings;                                          // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(Umg_carmap_C_SettingsApplied) == 0x000004, "Wrong alignment on Umg_carmap_C_SettingsApplied");
-static_assert(sizeof(Umg_carmap_C_SettingsApplied) == 0x0000CC, "Wrong size on Umg_carmap_C_SettingsApplied");
+static_assert(alignof(Umg_carmap_C_SettingsApplied) == 0x000008, "Wrong alignment on Umg_carmap_C_SettingsApplied");
+static_assert(sizeof(Umg_carmap_C_SettingsApplied) == 0x0000F0, "Wrong size on Umg_carmap_C_SettingsApplied");
 static_assert(offsetof(Umg_carmap_C_SettingsApplied, Settings) == 0x000000, "Member 'Umg_carmap_C_SettingsApplied::Settings' has a wrong offset!");
 
 // Function umg_carmap.umg_carmap_C.Tick
@@ -145,6 +153,21 @@ static_assert(alignof(Umg_carmap_C_Tick) == 0x000004, "Wrong alignment on Umg_ca
 static_assert(sizeof(Umg_carmap_C_Tick) == 0x00003C, "Wrong size on Umg_carmap_C_Tick");
 static_assert(offsetof(Umg_carmap_C_Tick, MyGeometry) == 0x000000, "Member 'Umg_carmap_C_Tick::MyGeometry' has a wrong offset!");
 static_assert(offsetof(Umg_carmap_C_Tick, InDeltaTime) == 0x000038, "Member 'Umg_carmap_C_Tick::InDeltaTime' has a wrong offset!");
+
+// Function umg_carmap.umg_carmap_C.texturePickerApply
+// 0x0018 (0x0018 - 0x0000)
+struct Umg_carmap_C_TexturePickerApply final
+{
+public:
+	class UUmg_texturePicker_C*                   Picker;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Param_Index;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Umg_carmap_C_TexturePickerApply) == 0x000008, "Wrong alignment on Umg_carmap_C_TexturePickerApply");
+static_assert(sizeof(Umg_carmap_C_TexturePickerApply) == 0x000018, "Wrong size on Umg_carmap_C_TexturePickerApply");
+static_assert(offsetof(Umg_carmap_C_TexturePickerApply, Picker) == 0x000000, "Member 'Umg_carmap_C_TexturePickerApply::Picker' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_TexturePickerApply, Texture) == 0x000008, "Member 'Umg_carmap_C_TexturePickerApply::Texture' has a wrong offset!");
+static_assert(offsetof(Umg_carmap_C_TexturePickerApply, Param_Index) == 0x000010, "Member 'Umg_carmap_C_TexturePickerApply::Param_Index' has a wrong offset!");
 
 // Function umg_carmap.umg_carmap_C.applyColor
 // 0x0010 (0x0010 - 0x0000)
@@ -190,7 +213,7 @@ public:
 	int32                                         Temp_int_Variable;                                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2968[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUmg_carmapPoint_C*                     CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUmg_carmapPoint_C*                     CallFunc_Create_ReturnValue_1;                     // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_1;                               // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -199,19 +222,19 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AProp_beacon_C*                         CallFunc_Array_Get_Item;                           // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2969[0x3];                                     // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUmg_carmapPoint_C*                     CallFunc_Array_Get_Item_1;                         // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_296A[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_1;                   // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              Temp_struct_Variable;                              // 0x0080(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_296B[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUmg_carmapPoint_C*                     CallFunc_Array_Get_Item_2;                         // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)

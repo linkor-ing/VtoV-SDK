@@ -31,7 +31,7 @@ public:
 	struct FVector2D                              Size;                                              // 0x0038(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ClipX;                                             // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ClipY;                                             // 0x0041(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19BD[0x6];                                     // 0x0042(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_42[0x6];                                       // 0x0042(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(bpCodeLib_BoundingBox2D) == 0x000008, "Wrong alignment on bpCodeLib_BoundingBox2D");
 static_assert(sizeof(bpCodeLib_BoundingBox2D) == 0x000048, "Wrong size on bpCodeLib_BoundingBox2D");
@@ -45,8 +45,34 @@ static_assert(offsetof(bpCodeLib_BoundingBox2D, Size) == 0x000038, "Member 'bpCo
 static_assert(offsetof(bpCodeLib_BoundingBox2D, ClipX) == 0x000040, "Member 'bpCodeLib_BoundingBox2D::ClipX' has a wrong offset!");
 static_assert(offsetof(bpCodeLib_BoundingBox2D, ClipY) == 0x000041, "Member 'bpCodeLib_BoundingBox2D::ClipY' has a wrong offset!");
 
+// Function VotV.bpCodeLib.BoundingBox2DPoints
+// 0x0040 (0x0040 - 0x0000)
+struct bpCodeLib_BoundingBox2DPoints final
+{
+public:
+	class APlayerController*                      PlayerController;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FVector>                        Verts;                                             // 0x0008(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+	struct FVector2D                              Min;                                               // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Max;                                               // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Origin;                                            // 0x0028(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Size;                                              // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ClipX;                                             // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ClipY;                                             // 0x0039(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3A[0x6];                                       // 0x003A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(bpCodeLib_BoundingBox2DPoints) == 0x000008, "Wrong alignment on bpCodeLib_BoundingBox2DPoints");
+static_assert(sizeof(bpCodeLib_BoundingBox2DPoints) == 0x000040, "Wrong size on bpCodeLib_BoundingBox2DPoints");
+static_assert(offsetof(bpCodeLib_BoundingBox2DPoints, PlayerController) == 0x000000, "Member 'bpCodeLib_BoundingBox2DPoints::PlayerController' has a wrong offset!");
+static_assert(offsetof(bpCodeLib_BoundingBox2DPoints, Verts) == 0x000008, "Member 'bpCodeLib_BoundingBox2DPoints::Verts' has a wrong offset!");
+static_assert(offsetof(bpCodeLib_BoundingBox2DPoints, Min) == 0x000018, "Member 'bpCodeLib_BoundingBox2DPoints::Min' has a wrong offset!");
+static_assert(offsetof(bpCodeLib_BoundingBox2DPoints, Max) == 0x000020, "Member 'bpCodeLib_BoundingBox2DPoints::Max' has a wrong offset!");
+static_assert(offsetof(bpCodeLib_BoundingBox2DPoints, Origin) == 0x000028, "Member 'bpCodeLib_BoundingBox2DPoints::Origin' has a wrong offset!");
+static_assert(offsetof(bpCodeLib_BoundingBox2DPoints, Size) == 0x000030, "Member 'bpCodeLib_BoundingBox2DPoints::Size' has a wrong offset!");
+static_assert(offsetof(bpCodeLib_BoundingBox2DPoints, ClipX) == 0x000038, "Member 'bpCodeLib_BoundingBox2DPoints::ClipX' has a wrong offset!");
+static_assert(offsetof(bpCodeLib_BoundingBox2DPoints, ClipY) == 0x000039, "Member 'bpCodeLib_BoundingBox2DPoints::ClipY' has a wrong offset!");
+
 // Function VotV.bpCodeLib.boyoancy
-// 0x00A8 (0x00A8 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct bpCodeLib_boyoancy final
 {
 public:
@@ -62,9 +88,11 @@ public:
 	TArray<float>                                 RiversRadiusIn;                                    // 0x0078(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<float>                                 RiversRadiusOut;                                   // 0x0088(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<float>                                 RiversForce;                                       // 0x0098(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+	float                                         Damping;                                           // 0x00A8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(bpCodeLib_boyoancy) == 0x000008, "Wrong alignment on bpCodeLib_boyoancy");
-static_assert(sizeof(bpCodeLib_boyoancy) == 0x0000A8, "Wrong size on bpCodeLib_boyoancy");
+static_assert(sizeof(bpCodeLib_boyoancy) == 0x0000B0, "Wrong size on bpCodeLib_boyoancy");
 static_assert(offsetof(bpCodeLib_boyoancy, ActorsInWater) == 0x000000, "Member 'bpCodeLib_boyoancy::ActorsInWater' has a wrong offset!");
 static_assert(offsetof(bpCodeLib_boyoancy, ActorsSurface) == 0x000010, "Member 'bpCodeLib_boyoancy::ActorsSurface' has a wrong offset!");
 static_assert(offsetof(bpCodeLib_boyoancy, ActorsBoyoancy) == 0x000020, "Member 'bpCodeLib_boyoancy::ActorsBoyoancy' has a wrong offset!");
@@ -77,9 +105,10 @@ static_assert(offsetof(bpCodeLib_boyoancy, RiverSplines) == 0x000068, "Member 'b
 static_assert(offsetof(bpCodeLib_boyoancy, RiversRadiusIn) == 0x000078, "Member 'bpCodeLib_boyoancy::RiversRadiusIn' has a wrong offset!");
 static_assert(offsetof(bpCodeLib_boyoancy, RiversRadiusOut) == 0x000088, "Member 'bpCodeLib_boyoancy::RiversRadiusOut' has a wrong offset!");
 static_assert(offsetof(bpCodeLib_boyoancy, RiversForce) == 0x000098, "Member 'bpCodeLib_boyoancy::RiversForce' has a wrong offset!");
+static_assert(offsetof(bpCodeLib_boyoancy, Damping) == 0x0000A8, "Member 'bpCodeLib_boyoancy::Damping' has a wrong offset!");
 
 // Function VotV.bpCodeLib.boyoancyForce
-// 0x0018 (0x0018 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct bpCodeLib_boyoancyForce final
 {
 public:
@@ -88,14 +117,17 @@ public:
 	float                                         Surface;                                           // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         PowerDepth;                                        // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxPower;                                          // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Damping;                                           // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(bpCodeLib_boyoancyForce) == 0x000008, "Wrong alignment on bpCodeLib_boyoancyForce");
-static_assert(sizeof(bpCodeLib_boyoancyForce) == 0x000018, "Wrong size on bpCodeLib_boyoancyForce");
+static_assert(sizeof(bpCodeLib_boyoancyForce) == 0x000020, "Wrong size on bpCodeLib_boyoancyForce");
 static_assert(offsetof(bpCodeLib_boyoancyForce, Component) == 0x000000, "Member 'bpCodeLib_boyoancyForce::Component' has a wrong offset!");
 static_assert(offsetof(bpCodeLib_boyoancyForce, Param_boyoancyForce) == 0x000008, "Member 'bpCodeLib_boyoancyForce::Param_boyoancyForce' has a wrong offset!");
 static_assert(offsetof(bpCodeLib_boyoancyForce, Surface) == 0x00000C, "Member 'bpCodeLib_boyoancyForce::Surface' has a wrong offset!");
 static_assert(offsetof(bpCodeLib_boyoancyForce, PowerDepth) == 0x000010, "Member 'bpCodeLib_boyoancyForce::PowerDepth' has a wrong offset!");
 static_assert(offsetof(bpCodeLib_boyoancyForce, MaxPower) == 0x000014, "Member 'bpCodeLib_boyoancyForce::MaxPower' has a wrong offset!");
+static_assert(offsetof(bpCodeLib_boyoancyForce, Damping) == 0x000018, "Member 'bpCodeLib_boyoancyForce::Damping' has a wrong offset!");
 
 // Function VotV.bpCodeLib.canBoxFitInBox
 // 0x001C (0x001C - 0x0000)
@@ -105,7 +137,7 @@ public:
 	struct FVector                                big;                                               // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Small;                                             // 0x000C(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19BE[0x3];                                     // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(bpCodeLib_CanBoxFitInBox) == 0x000004, "Wrong alignment on bpCodeLib_CanBoxFitInBox");
 static_assert(sizeof(bpCodeLib_CanBoxFitInBox) == 0x00001C, "Wrong size on bpCodeLib_CanBoxFitInBox");
@@ -132,7 +164,7 @@ public:
 	TArray<struct FColor>                         Pixels_a;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FColor>                         Pixels_b;                                          // 0x0010(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	float                                         Result;                                            // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19BF[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(bpCodeLib_GetMotion) == 0x000008, "Wrong alignment on bpCodeLib_GetMotion");
 static_assert(sizeof(bpCodeLib_GetMotion) == 0x000028, "Wrong size on bpCodeLib_GetMotion");
@@ -168,7 +200,7 @@ struct bpCodeLib_MeshConvexVolume2 final
 public:
 	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Volume;                                            // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19C0[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(bpCodeLib_MeshConvexVolume2) == 0x000008, "Wrong alignment on bpCodeLib_MeshConvexVolume2");
 static_assert(sizeof(bpCodeLib_MeshConvexVolume2) == 0x000010, "Wrong size on bpCodeLib_MeshConvexVolume2");
@@ -184,7 +216,7 @@ public:
 	class UPrimitiveComponent*                    Component;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FHitResult                             Hit;                                               // 0x0010(0x0088)(Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	struct FVector                                Impact;                                            // 0x0098(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19C1[0x4];                                     // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             ImpactSound;                                       // 0x00A8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USoundBase*                             DamageSound;                                       // 0x00B0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USoundBase*                             DestroySound;                                      // 0x00B8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -196,10 +228,10 @@ public:
 	float                                         DamageResistance;                                  // 0x00DC(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Mass;                                              // 0x00E0(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IsHit;                                             // 0x00E4(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19C2[0x3];                                     // 0x00E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E5[0x3];                                       // 0x00E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DebugFloat1;                                       // 0x00E8(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          DebugBool1;                                        // 0x00EC(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19C3[0x3];                                     // 0x00ED(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_ED[0x3];                                       // 0x00ED(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(bpCodeLib_ProcessPhysImpact) == 0x000008, "Wrong alignment on bpCodeLib_ProcessPhysImpact");
 static_assert(sizeof(bpCodeLib_ProcessPhysImpact) == 0x0000F0, "Wrong size on bpCodeLib_ProcessPhysImpact");
@@ -265,7 +297,7 @@ public:
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	class UAudioComponent*                        Audio;                                             // 0x0090(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          CanScrape;                                         // 0x0098(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19C4[0x3];                                     // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Vol;                                               // 0x009C(0x0004)(Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(bpCodeLib_ScrapingMath) == 0x000008, "Wrong alignment on bpCodeLib_ScrapingMath");
@@ -283,7 +315,7 @@ struct bpCodeLib_StringEquation final
 public:
 	class FString                                 Equation;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Answer;                                            // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19C5[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(bpCodeLib_StringEquation) == 0x000008, "Wrong alignment on bpCodeLib_StringEquation");
 static_assert(sizeof(bpCodeLib_StringEquation) == 0x000018, "Wrong size on bpCodeLib_StringEquation");
@@ -350,7 +382,7 @@ public:
 	struct FVector                                Box;                                               // 0x0028(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Origin;                                            // 0x0034(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                boundingCenter;                                    // 0x0040(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19C6[0x4];                                     // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(bpCodeLib_VecBoundBox) == 0x000008, "Wrong alignment on bpCodeLib_VecBoundBox");
 static_assert(sizeof(bpCodeLib_VecBoundBox) == 0x000050, "Wrong size on bpCodeLib_VecBoundBox");
@@ -368,7 +400,7 @@ struct bpCodeLib_WeightedRandomV2 final
 public:
 	TArray<float>                                 Weights;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         Param_Index;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19C7[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(bpCodeLib_WeightedRandomV2) == 0x000008, "Wrong alignment on bpCodeLib_WeightedRandomV2");
 static_assert(sizeof(bpCodeLib_WeightedRandomV2) == 0x000018, "Wrong size on bpCodeLib_WeightedRandomV2");
@@ -425,10 +457,10 @@ struct CppInterface_ImpactDamageCPP final
 public:
 	float                                         Damage;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FHitResult                             Hit;                                               // 0x0004(0x0088)(Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19C8[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0090(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Impact;                                            // 0x0098(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19C9[0x4];                                     // 0x00A4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CppInterface_ImpactDamageCPP) == 0x000008, "Wrong alignment on CppInterface_ImpactDamageCPP");
 static_assert(sizeof(CppInterface_ImpactDamageCPP) == 0x0000A8, "Wrong size on CppInterface_ImpactDamageCPP");

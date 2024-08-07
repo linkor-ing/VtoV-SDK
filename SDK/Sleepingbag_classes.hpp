@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass sleepingbag.sleepingbag_C
-// 0x0000 (0x0378 - 0x0378)
+// 0x0000 (0x0388 - 0x0388)
 class ASleepingbag_C final : public Abed_C
 {
 public:
@@ -34,7 +34,7 @@ public:
 	}
 };
 static_assert(alignof(ASleepingbag_C) == 0x000008, "Wrong alignment on ASleepingbag_C");
-static_assert(sizeof(ASleepingbag_C) == 0x000378, "Wrong size on ASleepingbag_C");
+static_assert(sizeof(ASleepingbag_C) == 0x000388, "Wrong size on ASleepingbag_C");
 
 }
 

@@ -10,18 +10,18 @@
 
 #include "Basic.hpp"
 
-#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
 #include "Engine_structs.hpp"
-#include "AIModule_structs.hpp"
 #include "InputCore_structs.hpp"
+#include "AIModule_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function kavotia.kavotia_C.ExecuteUbergraph_kavotia
-// 0x0A00 (0x0A00 - 0x0000)
+// 0x0AA0 (0x0AA0 - 0x0000)
 struct Kavotia_C_ExecuteUbergraph_kavotia final
 {
 public:
@@ -56,36 +56,36 @@ public:
 	TDelegate<void(EPathFollowingResult MovementResult)> K2Node_CreateDelegate_OutputDelegate_10;           // 0x012C(0x0010)(ZeroConstructor, NoDestructor)
 	EPathFollowingResult                          K2Node_CustomEvent_MovementResult_1;               // 0x013C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPathFollowingResult                          K2Node_CustomEvent_MovementResult;                 // 0x013D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A68[0x2];                                     // 0x013E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13E[0x2];                                      // 0x013E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(EPathFollowingResult MovementResult)> K2Node_CreateDelegate_OutputDelegate_11;           // 0x0140(0x0010)(ZeroConstructor, NoDestructor)
 	EPathFollowingResult                          Temp_byte_Variable;                                // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A69[0x3];                                     // 0x0151(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_151[0x3];                                      // 0x0151(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_12;           // 0x0154(0x0010)(ZeroConstructor, NoDestructor)
 	int32                                         Temp_int_Variable_1;                               // 0x0164(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_13;           // 0x016C(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_2A6A[0x4];                                     // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17C[0x4];                                      // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0180(0x0008)(NoDestructor, HasGetValueTypeHash)
 	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0188(0x0010)(ConstParm, ReferenceParm)
 	int32                                         Temp_int_Variable_2;                               // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_14;           // 0x019C(0x0010)(ZeroConstructor, NoDestructor)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPathFollowingResult                          K2Node_CustomEvent_MovementResult_2;               // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A6B[0x3];                                     // 0x01B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B1[0x3];                                      // 0x01B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable_3;                               // 0x01B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class AActor*>                         Temp_object_Variable_1;                            // 0x01B8(0x0010)(ConstParm, ReferenceParm)
 	TDelegate<void(EPathFollowingResult MovementResult)> K2Node_CreateDelegate_OutputDelegate_15;           // 0x01C8(0x0010)(ZeroConstructor, NoDestructor)
 	EPathFollowingResult                          K2Node_CustomEvent_MovementResult_3;               // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A6C[0x3];                                     // 0x01D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D9[0x3];                                      // 0x01D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_4;                             // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_5;                             // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit_5;                                // 0x01EC(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_2A6D[0x4];                                     // 0x0274(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_274[0x4];                                      // 0x0274(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_Event_actor_1;                              // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                K2Node_Event_impact_1;                             // 0x0280(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A6E[0x4];                                     // 0x028C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28C[0x4];                                      // 0x028C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AWaterVolume_C*                         K2Node_Event_water_3;                              // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AWaterVolume_C*                         K2Node_Event_water_2;                              // 0x0298(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AWaterVolume_C*                         K2Node_Event_water_1;                              // 0x02A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -94,173 +94,179 @@ public:
 	bool                                          K2Node_Event_static;                               // 0x02B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_frozen;                               // 0x02B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_active;                               // 0x02B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A6F[0x4];                                     // 0x02B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B4[0x4];                                      // 0x02B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 K2Node_Event_key_1;                                // 0x02B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_11;                            // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_12;                            // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit_4;                                // 0x02D0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         K2Node_Event_damage_3;                             // 0x0358(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_4;                             // 0x0358(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_fuel;                                 // 0x035C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_10;                            // 0x0360(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_3;                                // 0x0368(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x03F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x03F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A70[0x3];                                     // 0x03F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_9;                             // 0x03F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_8;                             // 0x0400(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_2;                             // 0x0408(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_location_1;                           // 0x040C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_7;                             // 0x0418(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x0420(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x0428(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_wheelDelta;                           // 0x0430(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A71[0x4];                                     // 0x0434(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x0438(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              K2Node_Event_mouse;                                // 0x0440(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0448(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   K2Node_Event_key;                                  // 0x0450(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed;                              // 0x0468(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A72[0x3];                                     // 0x0469(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_temperature_1;                        // 0x046C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_temperature;                          // 0x0470(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_speed;                                // 0x0474(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x0478(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_2;                                // 0x0480(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class FString                                 K2Node_Event_name;                                 // 0x0508(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_volume;                               // 0x0518(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A73[0x4];                                     // 0x051C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0520(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_location;                             // 0x0528(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_1;                             // 0x0534(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_clean;                                // 0x0538(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A74[0x7];                                     // 0x0539(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0540(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_1;                                // 0x0548(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AHook_C*                                K2Node_Event_hook;                                 // 0x05D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x05D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A75[0x7];                                     // 0x05D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x05E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UKavotia_Skeleton_AnimBlueprint_C*      K2Node_DynamicCast_AsKavotia_Skeleton_Anim_Blueprint; // 0x05E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x05F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A76[0x3];                                     // 0x05F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EPathFollowingResult MovementResult)> K2Node_CreateDelegate_OutputDelegate_16;           // 0x05F4(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0604(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A77[0x3];                                     // 0x0605(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0608(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x060C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A78[0x3];                                     // 0x060D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0610(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x061C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A79[0x3];                                     // 0x061D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_17;           // 0x0620(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0630(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A7A[0x7];                                     // 0x0631(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  CallFunc_sensePawns_OutputPin;                     // 0x0638(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0640(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A7B[0xF];                                     // 0x0641(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0650(0x0030)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0680(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x068C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0698(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A7C[0x4];                                     // 0x06A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x06A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x06B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetComponentBounds_Origin;                // 0x06B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetComponentBounds_BoxExtent;             // 0x06C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetComponentBounds_SphereRadius;          // 0x06CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue;                         // 0x06D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RandomPointInBoundingBox_ReturnValue;     // 0x06D4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x06E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A7D[0x3];                                     // 0x06E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_18;           // 0x06E4(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_2A7E[0x4];                                     // 0x06F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_1;        // 0x06F8(0x0008)(NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x0700(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RandomUnitVector_ReturnValue;             // 0x070C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0718(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A7F[0x3];                                     // 0x0719(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x071C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x0728(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A80[0xC];                                     // 0x0734(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0740(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0770(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AKavotiaShot_C*                         CallFunc_FinishSpawningActor_ReturnValue;          // 0x0778(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<EObjectTypeQuery>                      CallFunc_obj_statDyn_obj;                          // 0x0780(0x0010)(ReferenceParm)
-	struct FVector                                CallFunc_walkLoc_RandomLocation;                   // 0x0790(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_19;           // 0x079C(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_2A81[0x4];                                     // 0x07AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAIAsyncTaskBlueprintProxy*             CallFunc_CreateMoveToProxyObject_ReturnValue;      // 0x07B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_2;        // 0x07B8(0x0008)(NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x07C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x07C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A82[0x2];                                     // 0x07C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x07C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_Select_Default;                             // 0x07C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x07D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A83[0x4];                                     // 0x07D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPlayMontageCallbackProxy*              CallFunc_CreateProxyObjectForPlayMontage_ReturnValue; // 0x07D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_3;        // 0x07E0(0x0008)(NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x07E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_1;       // 0x07E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x07EA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A84[0x5];                                     // 0x07EB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPlayMontageCallbackProxy*              CallFunc_CreateProxyObjectForPlayMontage_ReturnValue_1; // 0x07F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_7;                    // 0x07F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A85[0x3];                                     // 0x07F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x07FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAIAsyncTaskBlueprintProxy*             CallFunc_CreateMoveToProxyObject_ReturnValue_1;    // 0x0800(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_4;        // 0x0808(0x0008)(NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_8;                    // 0x0810(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0811(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A86[0x2];                                     // 0x0812(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0814(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x0818(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_3;         // 0x081C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_5;        // 0x0820(0x0008)(NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue_1;       // 0x0828(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x082C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A87[0x3];                                     // 0x082D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x0830(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0834(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A88[0x3];                                     // 0x0835(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0838(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit;         // 0x0844(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue;    // 0x08CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x08CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A89[0x2];                                     // 0x08CE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_4;         // 0x08D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A8A[0x4];                                     // 0x08D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Event_actor;                                // 0x08D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage;                               // 0x08E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x08E4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                K2Node_Event_impact;                               // 0x096C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_skipSetting;                          // 0x0978(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_9;                    // 0x0979(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_10;                   // 0x097A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_IsClosed_Variable;                       // 0x097B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EPathFollowingResult                          Temp_byte_Variable_1;                              // 0x097C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A8B[0x3];                                     // 0x097D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_5;         // 0x0980(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A8C[0x4];                                     // 0x0984(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ACharacter*                             CallFunc_GetPlayerCharacter_ReturnValue;           // 0x0988(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AKavotia_C*                             CallFunc_Array_Get_Item;                           // 0x0990(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0998(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x099C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A8D[0x3];                                     // 0x099D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x09A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A8E[0x4];                                     // 0x09AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EObjectTypeQuery>                      CallFunc_obj_statDyn_obj_1;                        // 0x09B0(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_SphereOverlapActors_OutActors;            // 0x09C0(0x0010)(ReferenceParm)
-	bool                                          CallFunc_SphereOverlapActors_ReturnValue;          // 0x09D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A8F[0x3];                                     // 0x09D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x09D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x09D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A90[0x7];                                     // 0x09D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_Array_Get_Item_1;                         // 0x09E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ADoor_C*                                K2Node_DynamicCast_AsDoor;                         // 0x09E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x09F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_damage_3;                             // 0x0360(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hot;                                  // 0x0364(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_3EC[0x4];                                      // 0x03EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_11;                            // 0x03F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_3;                                // 0x03F8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x0480(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_481[0x7];                                      // 0x0481(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_10;                            // 0x0488(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_9;                             // 0x0490(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_2;                             // 0x0498(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_location_1;                           // 0x049C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_8;                             // 0x04A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_7;                             // 0x04B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x04B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_wheelDelta;                           // 0x04C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4C4[0x4];                                      // 0x04C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x04C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_Event_mouse;                                // 0x04D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x04D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   K2Node_Event_key;                                  // 0x04E0(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed;                              // 0x04F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4F9[0x3];                                      // 0x04F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_temperature_1;                        // 0x04FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_temperature;                          // 0x0500(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_speed;                                // 0x0504(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0508(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_2;                                // 0x0510(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class FString                                 K2Node_Event_name;                                 // 0x0598(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_volume;                               // 0x05A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5AC[0x4];                                      // 0x05AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x05B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_location;                             // 0x05B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_1;                             // 0x05C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_clean_1;                              // 0x05C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5C9[0x7];                                      // 0x05C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x05D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_1;                                // 0x05D8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AHook_C*                                K2Node_Event_hook_1;                               // 0x0660(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_clean;                                // 0x0668(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_66C[0x4];                                      // 0x066C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x0670(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AHook_C*                                K2Node_Event_hook;                                 // 0x0678(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0680(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_681[0x7];                                      // 0x0681(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0688(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UKavotia_Skeleton_AnimBlueprint_C*      K2Node_DynamicCast_AsKavotia_Skeleton_Anim_Blueprint; // 0x0690(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0698(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_699[0x3];                                      // 0x0699(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(EPathFollowingResult MovementResult)> K2Node_CreateDelegate_OutputDelegate_16;           // 0x069C(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x06AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6AD[0x3];                                      // 0x06AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x06B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x06B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6B5[0x3];                                      // 0x06B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x06B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x06C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6C5[0x3];                                      // 0x06C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_17;           // 0x06C8(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x06D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6D9[0x7];                                      // 0x06D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  CallFunc_sensePawns_OutputPin;                     // 0x06E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x06E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6E9[0x7];                                      // 0x06E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x06F0(0x0030)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0720(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x072C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0738(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_744[0x4];                                      // 0x0744(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0748(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x0750(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetComponentBounds_Origin;                // 0x0754(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetComponentBounds_BoxExtent;             // 0x0760(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetComponentBounds_SphereRadius;          // 0x076C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue;                         // 0x0770(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RandomPointInBoundingBox_ReturnValue;     // 0x0774(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0780(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_781[0x3];                                      // 0x0781(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_18;           // 0x0784(0x0010)(ZeroConstructor, NoDestructor)
+	uint8                                         Pad_794[0x4];                                      // 0x0794(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_1;        // 0x0798(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x07A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RandomUnitVector_ReturnValue;             // 0x07AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x07B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_7B9[0x3];                                      // 0x07B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x07BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x07C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_7D4[0xC];                                      // 0x07D4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x07E0(0x0030)(IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0810(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AKavotiaShot_C*                         CallFunc_FinishSpawningActor_ReturnValue;          // 0x0818(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<EObjectTypeQuery>                      CallFunc_obj_statDyn_obj;                          // 0x0820(0x0010)(ReferenceParm)
+	struct FVector                                CallFunc_walkLoc_RandomLocation;                   // 0x0830(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_19;           // 0x083C(0x0010)(ZeroConstructor, NoDestructor)
+	uint8                                         Pad_84C[0x4];                                      // 0x084C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAIAsyncTaskBlueprintProxy*             CallFunc_CreateMoveToProxyObject_ReturnValue;      // 0x0850(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_2;        // 0x0858(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x0860(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x0861(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_862[0x2];                                      // 0x0862(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0864(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_Select_Default;                             // 0x0868(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0870(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_874[0x4];                                      // 0x0874(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPlayMontageCallbackProxy*              CallFunc_CreateProxyObjectForPlayMontage_ReturnValue; // 0x0878(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_3;        // 0x0880(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x0888(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue_1;       // 0x0889(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x088A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_88B[0x5];                                      // 0x088B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPlayMontageCallbackProxy*              CallFunc_CreateProxyObjectForPlayMontage_ReturnValue_1; // 0x0890(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_7;                    // 0x0898(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_899[0x3];                                      // 0x0899(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x089C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAIAsyncTaskBlueprintProxy*             CallFunc_CreateMoveToProxyObject_ReturnValue_1;    // 0x08A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_4;        // 0x08A8(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_8;                    // 0x08B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x08B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_8B2[0x2];                                      // 0x08B2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x08B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x08B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_3;         // 0x08BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_5;        // 0x08C0(0x0008)(NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue_1;       // 0x08C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x08CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_8CD[0x3];                                      // 0x08CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x08D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x08D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_8D5[0x3];                                      // 0x08D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x08D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit;         // 0x08E4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue;    // 0x096C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x096D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_96E[0x2];                                      // 0x096E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_4;         // 0x0970(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_974[0x4];                                      // 0x0974(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Event_actor;                                // 0x0978(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage;                               // 0x0980(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x0984(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                K2Node_Event_impact;                               // 0x0A0C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_skipSetting;                          // 0x0A18(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_9;                    // 0x0A19(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_10;                   // 0x0A1A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0A1B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EPathFollowingResult                          Temp_byte_Variable_1;                              // 0x0A1C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A1D[0x3];                                      // 0x0A1D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_5;         // 0x0A20(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A24[0x4];                                      // 0x0A24(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ACharacter*                             CallFunc_GetPlayerCharacter_ReturnValue;           // 0x0A28(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AKavotia_C*                             CallFunc_Array_Get_Item;                           // 0x0A30(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0A38(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0A3C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A3D[0x3];                                      // 0x0A3D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x0A40(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A4C[0x4];                                      // 0x0A4C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EObjectTypeQuery>                      CallFunc_obj_statDyn_obj_1;                        // 0x0A50(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_SphereOverlapActors_OutActors;            // 0x0A60(0x0010)(ReferenceParm)
+	bool                                          CallFunc_SphereOverlapActors_ReturnValue;          // 0x0A70(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A71[0x3];                                      // 0x0A71(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0A74(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0A78(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A79[0x7];                                      // 0x0A79(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_Array_Get_Item_1;                         // 0x0A80(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ADoor_C*                                K2Node_DynamicCast_AsDoor;                         // 0x0A88(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0A90(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Kavotia_C_ExecuteUbergraph_kavotia) == 0x000010, "Wrong alignment on Kavotia_C_ExecuteUbergraph_kavotia");
-static_assert(sizeof(Kavotia_C_ExecuteUbergraph_kavotia) == 0x000A00, "Wrong size on Kavotia_C_ExecuteUbergraph_kavotia");
+static_assert(sizeof(Kavotia_C_ExecuteUbergraph_kavotia) == 0x000AA0, "Wrong size on Kavotia_C_ExecuteUbergraph_kavotia");
 static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, EntryPoint) == 0x000000, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000004, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_CustomEvent_NotifyName_9) == 0x000010, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_CustomEvent_NotifyName_9' has a wrong offset!");
@@ -311,7 +317,7 @@ static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_CustomEvent_Mo
 static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, Temp_int_Loop_Counter_Variable) == 0x0001DC, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Add_IntInt_ReturnValue_2) == 0x0001E0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, Temp_int_Array_Index_Variable) == 0x0001E4, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_damage_4) == 0x0001E8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_damage_4' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_damage_5) == 0x0001E8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_damage_5' has a wrong offset!");
 static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_hit_5) == 0x0001EC, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_hit_5' has a wrong offset!");
 static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_actor_1) == 0x000278, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_actor_1' has a wrong offset!");
 static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_impact_1) == 0x000280, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_impact_1' has a wrong offset!");
@@ -324,135 +330,139 @@ static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_static) 
 static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_frozen) == 0x0002B2, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_frozen' has a wrong offset!");
 static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_active) == 0x0002B3, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_active' has a wrong offset!");
 static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_key_1) == 0x0002B8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_key_1' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player_11) == 0x0002C8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player_11' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player_12) == 0x0002C8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player_12' has a wrong offset!");
 static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_hit_4) == 0x0002D0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_hit_4' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_damage_3) == 0x000358, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_damage_3' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_damage_4) == 0x000358, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_damage_4' has a wrong offset!");
 static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_fuel) == 0x00035C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_fuel' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player_10) == 0x000360, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player_10' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_hit_3) == 0x000368, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_hit_3' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_index) == 0x0003F0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_action) == 0x0003F4, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player_9) == 0x0003F8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player_9' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player_8) == 0x000400, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player_8' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_damage_2) == 0x000408, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_damage_2' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_location_1) == 0x00040C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_location_1' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player_7) == 0x000418, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player_7' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player_6) == 0x000420, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player_6' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player_5) == 0x000428, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player_5' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_wheelDelta) == 0x000430, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_wheelDelta' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player_4) == 0x000438, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player_4' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_mouse) == 0x000440, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_mouse' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player_3) == 0x000448, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player_3' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_key) == 0x000450, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_key' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_pressed) == 0x000468, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_pressed' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_temperature_1) == 0x00046C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_temperature_1' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_temperature) == 0x000470, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_temperature' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_speed) == 0x000474, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_speed' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player_2) == 0x000478, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player_2' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_hit_2) == 0x000480, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_hit_2' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_name) == 0x000508, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_name' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_volume) == 0x000518, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_volume' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player_1) == 0x000520, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_location) == 0x000528, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_location' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_damage_1) == 0x000534, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_damage_1' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_clean) == 0x000538, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_clean' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player) == 0x000540, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_hit_1) == 0x000548, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_hit_1' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_hook) == 0x0005D0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_hook' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_K2_AttachToComponent_ReturnValue) == 0x0005D8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_GetAnimInstance_ReturnValue) == 0x0005E0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_GetAnimInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_DynamicCast_AsKavotia_Skeleton_Anim_Blueprint) == 0x0005E8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_DynamicCast_AsKavotia_Skeleton_Anim_Blueprint' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_DynamicCast_bSuccess) == 0x0005F0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_CreateDelegate_OutputDelegate_16) == 0x0005F4, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_CreateDelegate_OutputDelegate_16' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Not_PreBool_ReturnValue) == 0x000604, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_DeltaSeconds) == 0x000608, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_IsValid_ReturnValue) == 0x00060C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000610, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_IsValid_ReturnValue_1) == 0x00061C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_CreateDelegate_OutputDelegate_17) == 0x000620, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_CreateDelegate_OutputDelegate_17' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_IsValid_ReturnValue_2) == 0x000630, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_sensePawns_OutputPin) == 0x000638, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_sensePawns_OutputPin' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_IsValid_ReturnValue_3) == 0x000640, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x000650, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_BreakTransform_Location) == 0x000680, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_BreakTransform_Rotation) == 0x00068C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_BreakTransform_Scale) == 0x000698, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_K2_GetRootComponent_ReturnValue) == 0x0006A8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x0006B0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_GetComponentBounds_Origin) == 0x0006B4, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_GetComponentBounds_Origin' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_GetComponentBounds_BoxExtent) == 0x0006C0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_GetComponentBounds_BoxExtent' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_GetComponentBounds_SphereRadius) == 0x0006CC, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_GetComponentBounds_SphereRadius' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Lerp_ReturnValue) == 0x0006D0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomPointInBoundingBox_ReturnValue) == 0x0006D4, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomPointInBoundingBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_IsValid_ReturnValue_4) == 0x0006E0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_CreateDelegate_OutputDelegate_18) == 0x0006E4, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_CreateDelegate_OutputDelegate_18' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_K2_SetTimerDelegate_ReturnValue_1) == 0x0006F8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_K2_SetTimerDelegate_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_GetForwardVector_ReturnValue) == 0x000700, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomUnitVector_ReturnValue) == 0x00070C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomUnitVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, Temp_bool_Has_Been_Initd_Variable) == 0x000718, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_VLerp_ReturnValue) == 0x00071C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_VLerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x000728, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_MakeTransform_ReturnValue) == 0x000740, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000770, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_FinishSpawningActor_ReturnValue) == 0x000778, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_obj_statDyn_obj) == 0x000780, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_obj_statDyn_obj' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_walkLoc_RandomLocation) == 0x000790, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_walkLoc_RandomLocation' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_CreateDelegate_OutputDelegate_19) == 0x00079C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_CreateDelegate_OutputDelegate_19' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_CreateMoveToProxyObject_ReturnValue) == 0x0007B0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_CreateMoveToProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_K2_SetTimerDelegate_ReturnValue_2) == 0x0007B8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_K2_SetTimerDelegate_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_IsValid_ReturnValue_5) == 0x0007C0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x0007C1, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomIntegerInRange_ReturnValue) == 0x0007C4, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Select_Default) == 0x0007C8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomFloatInRange_ReturnValue) == 0x0007D0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_CreateProxyObjectForPlayMontage_ReturnValue) == 0x0007D8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_CreateProxyObjectForPlayMontage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_K2_SetTimerDelegate_ReturnValue_3) == 0x0007E0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_K2_SetTimerDelegate_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_IsValid_ReturnValue_6) == 0x0007E8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomBoolWithWeight_ReturnValue_1) == 0x0007E9, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomBoolWithWeight_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_BooleanAND_ReturnValue) == 0x0007EA, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_CreateProxyObjectForPlayMontage_ReturnValue_1) == 0x0007F0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_CreateProxyObjectForPlayMontage_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_IsValid_ReturnValue_7) == 0x0007F8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x0007FC, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_CreateMoveToProxyObject_ReturnValue_1) == 0x000800, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_CreateMoveToProxyObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_K2_SetTimerDelegate_ReturnValue_4) == 0x000808, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_K2_SetTimerDelegate_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_IsValid_ReturnValue_8) == 0x000810, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_IsValid_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Greater_IntInt_ReturnValue) == 0x000811, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Subtract_IntInt_ReturnValue) == 0x000814, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x000818, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomFloatInRange_ReturnValue_3) == 0x00081C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomFloatInRange_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_K2_SetTimerDelegate_ReturnValue_5) == 0x000820, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_K2_SetTimerDelegate_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomIntegerInRange_ReturnValue_1) == 0x000828, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomIntegerInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00082C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_MakeLiteralInt_ReturnValue) == 0x000830, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Less_IntInt_ReturnValue) == 0x000834, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000838, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_LineTraceSingleForObjects_OutHit) == 0x000844, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_LineTraceSingleForObjects_OutHit' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_LineTraceSingleForObjects_ReturnValue) == 0x0008CC, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_LineTraceSingleForObjects_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0008CD, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomFloatInRange_ReturnValue_4) == 0x0008D0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomFloatInRange_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_actor) == 0x0008D8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_actor' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_damage) == 0x0008E0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_damage' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_hit) == 0x0008E4, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_impact) == 0x00096C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_impact' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_skipSetting) == 0x000978, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_skipSetting' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_IsValid_ReturnValue_9) == 0x000979, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_IsValid_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_IsValid_ReturnValue_10) == 0x00097A, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_IsValid_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, Temp_bool_IsClosed_Variable) == 0x00097B, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, Temp_byte_Variable_1) == 0x00097C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomFloatInRange_ReturnValue_5) == 0x000980, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomFloatInRange_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_GetPlayerCharacter_ReturnValue) == 0x000988, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_GetPlayerCharacter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Array_Get_Item) == 0x000990, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Array_Length_ReturnValue) == 0x000998, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Less_IntInt_ReturnValue_1) == 0x00099C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x0009A0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_obj_statDyn_obj_1) == 0x0009B0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_obj_statDyn_obj_1' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_SphereOverlapActors_OutActors) == 0x0009C0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_SphereOverlapActors_OutActors' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_SphereOverlapActors_ReturnValue) == 0x0009D0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_SphereOverlapActors_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Array_Length_ReturnValue_1) == 0x0009D4, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Less_IntInt_ReturnValue_2) == 0x0009D8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Array_Get_Item_1) == 0x0009E0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_DynamicCast_AsDoor) == 0x0009E8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_DynamicCast_AsDoor' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_DynamicCast_bSuccess_1) == 0x0009F0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_damage_3) == 0x000360, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_damage_3' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_hot) == 0x000364, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_hot' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player_11) == 0x0003F0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player_11' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_hit_3) == 0x0003F8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_hit_3' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_action) == 0x000480, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player_10) == 0x000488, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player_10' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player_9) == 0x000490, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player_9' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_damage_2) == 0x000498, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_damage_2' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_location_1) == 0x00049C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_location_1' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player_8) == 0x0004A8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player_8' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player_7) == 0x0004B0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player_7' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player_6) == 0x0004B8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player_6' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_wheelDelta) == 0x0004C0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_wheelDelta' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player_5) == 0x0004C8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player_5' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_mouse) == 0x0004D0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_mouse' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player_4) == 0x0004D8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player_4' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_key) == 0x0004E0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_key' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_pressed) == 0x0004F8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_pressed' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_temperature_1) == 0x0004FC, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_temperature_1' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_temperature) == 0x000500, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_temperature' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_speed) == 0x000504, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_speed' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player_3) == 0x000508, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player_3' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_hit_2) == 0x000510, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_hit_2' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_name) == 0x000598, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_name' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_volume) == 0x0005A8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_volume' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player_2) == 0x0005B0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player_2' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_location) == 0x0005B8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_location' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_damage_1) == 0x0005C4, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_damage_1' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_clean_1) == 0x0005C8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_clean_1' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player_1) == 0x0005D0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_hit_1) == 0x0005D8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_hit_1' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_hook_1) == 0x000660, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_hook_1' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_clean) == 0x000668, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_clean' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_player) == 0x000670, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_hook) == 0x000678, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_hook' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000680, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_GetAnimInstance_ReturnValue) == 0x000688, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_GetAnimInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_DynamicCast_AsKavotia_Skeleton_Anim_Blueprint) == 0x000690, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_DynamicCast_AsKavotia_Skeleton_Anim_Blueprint' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_DynamicCast_bSuccess) == 0x000698, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_CreateDelegate_OutputDelegate_16) == 0x00069C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_CreateDelegate_OutputDelegate_16' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Not_PreBool_ReturnValue) == 0x0006AC, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_DeltaSeconds) == 0x0006B0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_IsValid_ReturnValue) == 0x0006B4, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x0006B8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_IsValid_ReturnValue_1) == 0x0006C4, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_CreateDelegate_OutputDelegate_17) == 0x0006C8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_CreateDelegate_OutputDelegate_17' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_IsValid_ReturnValue_2) == 0x0006D8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_sensePawns_OutputPin) == 0x0006E0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_sensePawns_OutputPin' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_IsValid_ReturnValue_3) == 0x0006E8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x0006F0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_BreakTransform_Location) == 0x000720, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_BreakTransform_Location' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_BreakTransform_Rotation) == 0x00072C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_BreakTransform_Rotation' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_BreakTransform_Scale) == 0x000738, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_BreakTransform_Scale' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000748, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x000750, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_GetComponentBounds_Origin) == 0x000754, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_GetComponentBounds_Origin' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_GetComponentBounds_BoxExtent) == 0x000760, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_GetComponentBounds_BoxExtent' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_GetComponentBounds_SphereRadius) == 0x00076C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_GetComponentBounds_SphereRadius' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Lerp_ReturnValue) == 0x000770, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Lerp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomPointInBoundingBox_ReturnValue) == 0x000774, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomPointInBoundingBox_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_IsValid_ReturnValue_4) == 0x000780, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_CreateDelegate_OutputDelegate_18) == 0x000784, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_CreateDelegate_OutputDelegate_18' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_K2_SetTimerDelegate_ReturnValue_1) == 0x000798, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_K2_SetTimerDelegate_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_GetForwardVector_ReturnValue) == 0x0007A0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomUnitVector_ReturnValue) == 0x0007AC, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomUnitVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, Temp_bool_Has_Been_Initd_Variable) == 0x0007B8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_VLerp_ReturnValue) == 0x0007BC, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_VLerp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x0007C8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_MakeTransform_ReturnValue) == 0x0007E0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000810, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_FinishSpawningActor_ReturnValue) == 0x000818, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_obj_statDyn_obj) == 0x000820, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_obj_statDyn_obj' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_walkLoc_RandomLocation) == 0x000830, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_walkLoc_RandomLocation' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_CreateDelegate_OutputDelegate_19) == 0x00083C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_CreateDelegate_OutputDelegate_19' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_CreateMoveToProxyObject_ReturnValue) == 0x000850, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_CreateMoveToProxyObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_K2_SetTimerDelegate_ReturnValue_2) == 0x000858, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_K2_SetTimerDelegate_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_IsValid_ReturnValue_5) == 0x000860, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x000861, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomIntegerInRange_ReturnValue) == 0x000864, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Select_Default) == 0x000868, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomFloatInRange_ReturnValue) == 0x000870, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_CreateProxyObjectForPlayMontage_ReturnValue) == 0x000878, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_CreateProxyObjectForPlayMontage_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_K2_SetTimerDelegate_ReturnValue_3) == 0x000880, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_K2_SetTimerDelegate_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_IsValid_ReturnValue_6) == 0x000888, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomBoolWithWeight_ReturnValue_1) == 0x000889, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomBoolWithWeight_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_BooleanAND_ReturnValue) == 0x00088A, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_CreateProxyObjectForPlayMontage_ReturnValue_1) == 0x000890, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_CreateProxyObjectForPlayMontage_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_IsValid_ReturnValue_7) == 0x000898, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x00089C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_CreateMoveToProxyObject_ReturnValue_1) == 0x0008A0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_CreateMoveToProxyObject_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_K2_SetTimerDelegate_ReturnValue_4) == 0x0008A8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_K2_SetTimerDelegate_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_IsValid_ReturnValue_8) == 0x0008B0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_IsValid_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Greater_IntInt_ReturnValue) == 0x0008B1, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Subtract_IntInt_ReturnValue) == 0x0008B4, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x0008B8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomFloatInRange_ReturnValue_3) == 0x0008BC, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomFloatInRange_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_K2_SetTimerDelegate_ReturnValue_5) == 0x0008C0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_K2_SetTimerDelegate_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomIntegerInRange_ReturnValue_1) == 0x0008C8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomIntegerInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0008CC, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_MakeLiteralInt_ReturnValue) == 0x0008D0, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Less_IntInt_ReturnValue) == 0x0008D4, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0008D8, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_LineTraceSingleForObjects_OutHit) == 0x0008E4, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_LineTraceSingleForObjects_OutHit' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_LineTraceSingleForObjects_ReturnValue) == 0x00096C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_LineTraceSingleForObjects_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00096D, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomFloatInRange_ReturnValue_4) == 0x000970, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomFloatInRange_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_actor) == 0x000978, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_actor' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_damage) == 0x000980, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_damage' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_hit) == 0x000984, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_impact) == 0x000A0C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_impact' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_Event_skipSetting) == 0x000A18, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_Event_skipSetting' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_IsValid_ReturnValue_9) == 0x000A19, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_IsValid_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_IsValid_ReturnValue_10) == 0x000A1A, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_IsValid_ReturnValue_10' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, Temp_bool_IsClosed_Variable) == 0x000A1B, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::Temp_bool_IsClosed_Variable' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, Temp_byte_Variable_1) == 0x000A1C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_RandomFloatInRange_ReturnValue_5) == 0x000A20, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_RandomFloatInRange_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_GetPlayerCharacter_ReturnValue) == 0x000A28, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_GetPlayerCharacter_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Array_Get_Item) == 0x000A30, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Array_Length_ReturnValue) == 0x000A38, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Less_IntInt_ReturnValue_1) == 0x000A3C, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x000A40, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_obj_statDyn_obj_1) == 0x000A50, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_obj_statDyn_obj_1' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_SphereOverlapActors_OutActors) == 0x000A60, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_SphereOverlapActors_OutActors' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_SphereOverlapActors_ReturnValue) == 0x000A70, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_SphereOverlapActors_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Array_Length_ReturnValue_1) == 0x000A74, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Less_IntInt_ReturnValue_2) == 0x000A78, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, CallFunc_Array_Get_Item_1) == 0x000A80, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_DynamicCast_AsDoor) == 0x000A88, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_DynamicCast_AsDoor' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ExecuteUbergraph_kavotia, K2Node_DynamicCast_bSuccess_1) == 0x000A90, "Member 'Kavotia_C_ExecuteUbergraph_kavotia::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
 
 // Function kavotia.kavotia_C.addDamage
 // 0x00A8 (0x00A8 - 0x0000)
@@ -483,6 +493,31 @@ public:
 static_assert(alignof(Kavotia_C_ReceiveTick) == 0x000004, "Wrong alignment on Kavotia_C_ReceiveTick");
 static_assert(sizeof(Kavotia_C_ReceiveTick) == 0x000004, "Wrong size on Kavotia_C_ReceiveTick");
 static_assert(offsetof(Kavotia_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'Kavotia_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+
+// Function kavotia.kavotia_C.hookTension
+// 0x0008 (0x0008 - 0x0000)
+struct Kavotia_C_HookTension final
+{
+public:
+	class AHook_C*                                Hook;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Kavotia_C_HookTension) == 0x000008, "Wrong alignment on Kavotia_C_HookTension");
+static_assert(sizeof(Kavotia_C_HookTension) == 0x000008, "Wrong size on Kavotia_C_HookTension");
+static_assert(offsetof(Kavotia_C_HookTension, Hook) == 0x000000, "Member 'Kavotia_C_HookTension::Hook' has a wrong offset!");
+
+// Function kavotia.kavotia_C.cleanSponge
+// 0x0010 (0x0010 - 0x0000)
+struct Kavotia_C_CleanSponge final
+{
+public:
+	float                                         Clean;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          Player;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Kavotia_C_CleanSponge) == 0x000008, "Wrong alignment on Kavotia_C_CleanSponge");
+static_assert(sizeof(Kavotia_C_CleanSponge) == 0x000010, "Wrong size on Kavotia_C_CleanSponge");
+static_assert(offsetof(Kavotia_C_CleanSponge, Clean) == 0x000000, "Member 'Kavotia_C_CleanSponge::Clean' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_CleanSponge, Player) == 0x000008, "Member 'Kavotia_C_CleanSponge::Player' has a wrong offset!");
 
 // Function kavotia.kavotia_C.hooked
 // 0x0008 (0x0008 - 0x0000)
@@ -698,15 +733,26 @@ struct Kavotia_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Kavotia_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Kavotia_C_ActionOptionIndex");
 static_assert(sizeof(Kavotia_C_ActionOptionIndex) == 0x000098, "Wrong size on Kavotia_C_ActionOptionIndex");
 static_assert(offsetof(Kavotia_C_ActionOptionIndex, Player) == 0x000000, "Member 'Kavotia_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(Kavotia_C_ActionOptionIndex, Hit) == 0x000008, "Member 'Kavotia_C_ActionOptionIndex::Hit' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Kavotia_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(Kavotia_C_ActionOptionIndex, Action) == 0x000094, "Member 'Kavotia_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ActionOptionIndex, Action) == 0x000090, "Member 'Kavotia_C_ActionOptionIndex::Action' has a wrong offset!");
+
+// Function kavotia.kavotia_C.receivedPhyiscsDamage
+// 0x008C (0x008C - 0x0000)
+struct Kavotia_C_ReceivedPhyiscsDamage final
+{
+public:
+	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hot;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+static_assert(alignof(Kavotia_C_ReceivedPhyiscsDamage) == 0x000004, "Wrong alignment on Kavotia_C_ReceivedPhyiscsDamage");
+static_assert(sizeof(Kavotia_C_ReceivedPhyiscsDamage) == 0x00008C, "Wrong size on Kavotia_C_ReceivedPhyiscsDamage");
+static_assert(offsetof(Kavotia_C_ReceivedPhyiscsDamage, Damage) == 0x000000, "Member 'Kavotia_C_ReceivedPhyiscsDamage::Damage' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_ReceivedPhyiscsDamage, Hot) == 0x000004, "Member 'Kavotia_C_ReceivedPhyiscsDamage::Hot' has a wrong offset!");
 
 // Function kavotia.kavotia_C.ignite
 // 0x0004 (0x0004 - 0x0000)
@@ -831,7 +877,7 @@ struct Kavotia_C_ImpactDamage final
 public:
 	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_2A91[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0090(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Impact;                                            // 0x0098(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -1003,7 +1049,7 @@ struct Kavotia_C_UpdateTarget final
 public:
 	class APawn*                                  Param_LookingAt;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A92[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Kavotia_C_UpdateTarget) == 0x000008, "Wrong alignment on Kavotia_C_UpdateTarget");
@@ -1024,14 +1070,14 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A93[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UClass*>                         K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
 	class APawn*                                  CallFunc_GetPlayerPawn_ReturnValue;                // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A94[0x3];                                     // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetDistanceTo_ReturnValue;                // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A95[0x7];                                     // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<EObjectTypeQuery>                      K2Node_MakeArray_Array_1;                          // 0x0070(0x0010)(ReferenceParm)
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0080(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x008C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1039,16 +1085,16 @@ public:
 	TArray<class AActor*>                         Temp_object_Variable_1;                            // 0x00A8(0x0010)(ConstParm, ReferenceParm)
 	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A96[0x4];                                     // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A97[0x3];                                     // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D1[0x3];                                       // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_GetComponentBounds_Origin;                // 0x00D4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetComponentBounds_BoxExtent;             // 0x00E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetComponentBounds_SphereRadius;          // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  K2Node_DynamicCast_AsPawn;                         // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A98[0x3];                                     // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F9[0x3];                                       // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x00FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0108(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetDistanceTo_ReturnValue_1;              // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1057,7 +1103,7 @@ public:
 	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x012C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A99[0x3];                                     // 0x0139(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_139[0x3];                                      // 0x0139(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x013C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_RandomPointInBoundingBox_ReturnValue;     // 0x0148(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit;         // 0x0154(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
@@ -1080,10 +1126,10 @@ public:
 	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0240(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0244(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0250(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A9A[0x4];                                     // 0x025C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25C[0x4];                                      // 0x025C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<EObjectTypeQuery>                      CallFunc_obj_pawn_obj;                             // 0x0260(0x0010)(ReferenceParm)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A9B[0x3];                                     // 0x0271(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_271[0x3];                                      // 0x0271(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0274(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class AActor*>                         CallFunc_SphereOverlapActors_OutActors;            // 0x0280(0x0010)(ReferenceParm)
 	bool                                          CallFunc_SphereOverlapActors_ReturnValue;          // 0x0290(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -1159,7 +1205,7 @@ struct Kavotia_C_WalkLoc final
 public:
 	struct FVector                                RandomLocation;                                    // 0x0000(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A9C[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0010(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloat_ReturnValue;                  // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1171,12 +1217,12 @@ public:
 	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue;              // 0x0044(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0050(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A9D[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0060(0x0010)(ConstParm, ReferenceParm)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0070(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x007C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A9E[0x3];                                     // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x008C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X;                            // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y;                            // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1190,18 +1236,18 @@ public:
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x00DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetRandomReachablePointInRadius_RandomLocation; // 0x00E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_GetRandomReachablePointInRadius_ReturnValue; // 0x00F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A9F[0x3];                                     // 0x00F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F5[0x3];                                       // 0x00F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_ProjectPointToNavigation_ProjectedLocation; // 0x00F8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_ProjectPointToNavigation_ReturnValue;  // 0x0104(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2AA0[0x3];                                     // 0x0105(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_105[0x3];                                      // 0x0105(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_5;        // 0x0108(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2AA1[0x4];                                     // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<EObjectTypeQuery>                      CallFunc_obj_statDyn_obj;                          // 0x0118(0x0010)(ReferenceParm)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_6;        // 0x0128(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             CallFunc_LineTraceSingleForObjects_OutHit;         // 0x0134(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_LineTraceSingleForObjects_ReturnValue;    // 0x01BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x01BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2AA2[0x2];                                     // 0x01BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BE[0x2];                                      // 0x01BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_7;        // 0x01C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetRandomReachablePointInRadius_RandomLocation_1; // 0x01CC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_GetRandomReachablePointInRadius_ReturnValue_1; // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -1264,7 +1310,7 @@ static_assert(offsetof(Kavotia_C_Alert, Param_LookingAt) == 0x000000, "Member 'K
 static_assert(offsetof(Kavotia_C_Alert, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'Kavotia_C_Alert::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function kavotia.kavotia_C.getActionOptions
-// 0x0048 (0x0048 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct Kavotia_C_GetActionOptions final
 {
 public:
@@ -1274,15 +1320,17 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Kavotia_C_GetActionOptions) == 0x000008, "Wrong alignment on Kavotia_C_GetActionOptions");
-static_assert(sizeof(Kavotia_C_GetActionOptions) == 0x000048, "Wrong size on Kavotia_C_GetActionOptions");
+static_assert(sizeof(Kavotia_C_GetActionOptions) == 0x000050, "Wrong size on Kavotia_C_GetActionOptions");
 static_assert(offsetof(Kavotia_C_GetActionOptions, Player) == 0x000000, "Member 'Kavotia_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Kavotia_C_GetActionOptions, Component) == 0x000008, "Member 'Kavotia_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Kavotia_C_GetActionOptions, Actor) == 0x000010, "Member 'Kavotia_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Kavotia_C_GetActionOptions, Options) == 0x000018, "Member 'Kavotia_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Kavotia_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Kavotia_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Kavotia_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Kavotia_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
+static_assert(offsetof(Kavotia_C_GetActionOptions, Number) == 0x000048, "Member 'Kavotia_C_GetActionOptions::Number' has a wrong offset!");
 
 // Function kavotia.kavotia_C.setPath
 // 0x0018 (0x0018 - 0x0000)
@@ -1377,6 +1425,17 @@ public:
 static_assert(alignof(Kavotia_C_SkipRadial) == 0x000001, "Wrong alignment on Kavotia_C_SkipRadial");
 static_assert(sizeof(Kavotia_C_SkipRadial) == 0x000001, "Wrong size on Kavotia_C_SkipRadial");
 static_assert(offsetof(Kavotia_C_SkipRadial, Skip) == 0x000000, "Member 'Kavotia_C_SkipRadial::Skip' has a wrong offset!");
+
+// Function kavotia.kavotia_C.getPriceMultiplier
+// 0x0004 (0x0004 - 0x0000)
+struct Kavotia_C_GetPriceMultiplier final
+{
+public:
+	float                                         PriceMult;                                         // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Kavotia_C_GetPriceMultiplier) == 0x000004, "Wrong alignment on Kavotia_C_GetPriceMultiplier");
+static_assert(sizeof(Kavotia_C_GetPriceMultiplier) == 0x000004, "Wrong size on Kavotia_C_GetPriceMultiplier");
+static_assert(offsetof(Kavotia_C_GetPriceMultiplier, PriceMult) == 0x000000, "Member 'Kavotia_C_GetPriceMultiplier::PriceMult' has a wrong offset!");
 
 }
 

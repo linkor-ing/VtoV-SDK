@@ -24,19 +24,19 @@ struct Prop_garbageBag_C_ExecuteUbergraph_prop_garbageBag final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetComponentVelocity_ReturnValue;         // 0x0004(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0010(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39DC[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0020(0x0030)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0004(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0010(0x0030)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_GetComponentVelocity_ReturnValue;         // 0x0040(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AProp_garbageClump_C*                   CallFunc_FinishSpawningActor_ReturnValue;          // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Prop_garbageBag_C_ExecuteUbergraph_prop_garbageBag) == 0x000010, "Wrong alignment on Prop_garbageBag_C_ExecuteUbergraph_prop_garbageBag");
 static_assert(sizeof(Prop_garbageBag_C_ExecuteUbergraph_prop_garbageBag) == 0x000060, "Wrong size on Prop_garbageBag_C_ExecuteUbergraph_prop_garbageBag");
 static_assert(offsetof(Prop_garbageBag_C_ExecuteUbergraph_prop_garbageBag, EntryPoint) == 0x000000, "Member 'Prop_garbageBag_C_ExecuteUbergraph_prop_garbageBag::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Prop_garbageBag_C_ExecuteUbergraph_prop_garbageBag, CallFunc_GetComponentVelocity_ReturnValue) == 0x000004, "Member 'Prop_garbageBag_C_ExecuteUbergraph_prop_garbageBag::CallFunc_GetComponentVelocity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_garbageBag_C_ExecuteUbergraph_prop_garbageBag, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000010, "Member 'Prop_garbageBag_C_ExecuteUbergraph_prop_garbageBag::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prop_garbageBag_C_ExecuteUbergraph_prop_garbageBag, CallFunc_MakeTransform_ReturnValue) == 0x000020, "Member 'Prop_garbageBag_C_ExecuteUbergraph_prop_garbageBag::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_garbageBag_C_ExecuteUbergraph_prop_garbageBag, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000004, "Member 'Prop_garbageBag_C_ExecuteUbergraph_prop_garbageBag::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_garbageBag_C_ExecuteUbergraph_prop_garbageBag, CallFunc_MakeTransform_ReturnValue) == 0x000010, "Member 'Prop_garbageBag_C_ExecuteUbergraph_prop_garbageBag::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_garbageBag_C_ExecuteUbergraph_prop_garbageBag, CallFunc_GetComponentVelocity_ReturnValue) == 0x000040, "Member 'Prop_garbageBag_C_ExecuteUbergraph_prop_garbageBag::CallFunc_GetComponentVelocity_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBag_C_ExecuteUbergraph_prop_garbageBag, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000050, "Member 'Prop_garbageBag_C_ExecuteUbergraph_prop_garbageBag::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBag_C_ExecuteUbergraph_prop_garbageBag, CallFunc_FinishSpawningActor_ReturnValue) == 0x000058, "Member 'Prop_garbageBag_C_ExecuteUbergraph_prop_garbageBag::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
 
@@ -48,7 +48,7 @@ public:
 	struct FStruct_save                           Data;                                              // 0x0000(0x00C0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Return;                                            // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_loadData_return;                          // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_39DD[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C2[0x6];                                       // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStruct_mInt                           CallFunc_Array_Get_Item;                           // 0x00C8(0x0010)(HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -80,6 +80,22 @@ static_assert(offsetof(Prop_garbageBag_C_GetData, K2Node_MakeArray_Array) == 0x0
 static_assert(offsetof(Prop_garbageBag_C_GetData, K2Node_MakeStruct_struct_mInt) == 0x000190, "Member 'Prop_garbageBag_C_GetData::K2Node_MakeStruct_struct_mInt' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBag_C_GetData, K2Node_MakeArray_Array_1) == 0x0001A0, "Member 'Prop_garbageBag_C_GetData::K2Node_MakeArray_Array_1' has a wrong offset!");
 static_assert(offsetof(Prop_garbageBag_C_GetData, K2Node_SetFieldsInStruct_StructOut) == 0x0001B0, "Member 'Prop_garbageBag_C_GetData::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
+
+// Function prop_garbageBag.prop_garbageBag_C.getPriceMultiplier
+// 0x000C (0x000C - 0x0000)
+struct Prop_garbageBag_C_GetPriceMultiplier final
+{
+public:
+	float                                         PriceMult;                                         // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Prop_garbageBag_C_GetPriceMultiplier) == 0x000004, "Wrong alignment on Prop_garbageBag_C_GetPriceMultiplier");
+static_assert(sizeof(Prop_garbageBag_C_GetPriceMultiplier) == 0x00000C, "Wrong size on Prop_garbageBag_C_GetPriceMultiplier");
+static_assert(offsetof(Prop_garbageBag_C_GetPriceMultiplier, PriceMult) == 0x000000, "Member 'Prop_garbageBag_C_GetPriceMultiplier::PriceMult' has a wrong offset!");
+static_assert(offsetof(Prop_garbageBag_C_GetPriceMultiplier, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000004, "Member 'Prop_garbageBag_C_GetPriceMultiplier::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Prop_garbageBag_C_GetPriceMultiplier, CallFunc_SelectFloat_ReturnValue) == 0x000008, "Member 'Prop_garbageBag_C_GetPriceMultiplier::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
 
 }
 

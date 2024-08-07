@@ -37,20 +37,6 @@ void AProp_ritualKnife_C::ExecuteUbergraph_prop_ritualKnife(int32 EntryPoint)
 }
 
 
-// Function prop_ritualKnife.prop_ritualKnife_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_ritualKnife_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_ritualKnife_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_ritualKnife.prop_ritualKnife_C.montageEvent
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -80,6 +66,20 @@ void AProp_ritualKnife_C::Upd()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("prop_ritualKnife_C", "upd");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function prop_ritualKnife.prop_ritualKnife_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_ritualKnife_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_ritualKnife_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

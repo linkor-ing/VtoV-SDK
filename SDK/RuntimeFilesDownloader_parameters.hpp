@@ -50,7 +50,7 @@ public:
 	TArray<uint8>                                 Result;                                            // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	class FString                                 Filename;                                          // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F69[0x7];                                      // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RuntimeFilesDownloaderLibrary_LoadFileToArray) == 0x000008, "Wrong alignment on RuntimeFilesDownloaderLibrary_LoadFileToArray");
 static_assert(sizeof(RuntimeFilesDownloaderLibrary_LoadFileToArray) == 0x000028, "Wrong size on RuntimeFilesDownloaderLibrary_LoadFileToArray");
@@ -66,7 +66,7 @@ public:
 	class FString                                 Result;                                            // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Filename;                                          // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F6A[0x7];                                      // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RuntimeFilesDownloaderLibrary_LoadFileToString) == 0x000008, "Wrong alignment on RuntimeFilesDownloaderLibrary_LoadFileToString");
 static_assert(sizeof(RuntimeFilesDownloaderLibrary_LoadFileToString) == 0x000028, "Wrong size on RuntimeFilesDownloaderLibrary_LoadFileToString");
@@ -82,7 +82,7 @@ public:
 	TArray<uint8>                                 bytes;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                 Filename;                                          // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F6B[0x7];                                      // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RuntimeFilesDownloaderLibrary_SaveArrayToFile) == 0x000008, "Wrong alignment on RuntimeFilesDownloaderLibrary_SaveArrayToFile");
 static_assert(sizeof(RuntimeFilesDownloaderLibrary_SaveArrayToFile) == 0x000028, "Wrong size on RuntimeFilesDownloaderLibrary_SaveArrayToFile");
@@ -98,7 +98,7 @@ public:
 	class FString                                 String;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Filename;                                          // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F6C[0x7];                                      // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RuntimeFilesDownloaderLibrary_SaveStringToFile) == 0x000008, "Wrong alignment on RuntimeFilesDownloaderLibrary_SaveStringToFile");
 static_assert(sizeof(RuntimeFilesDownloaderLibrary_SaveStringToFile) == 0x000028, "Wrong size on RuntimeFilesDownloaderLibrary_SaveStringToFile");
@@ -124,7 +124,7 @@ struct FileToMemoryDownloader_BP_DownloadFileToMemory final
 public:
 	class FString                                 URL;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F6E[0x4];                                      // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ContentType;                                       // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(int32 BytesReceived, int32 ContentLength)> OnProgress;                                        // 0x0028(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	TDelegate<void(TArray<uint8>& DownloadedContent, EDownloadToMemoryResult Result)> OnComplete;                                        // 0x0038(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
@@ -145,7 +145,7 @@ public:
 	class FString                                 URL;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 SavePath;                                          // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F70[0x4];                                      // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ContentType;                                       // 0x0028(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(int32 BytesReceived, int32 ContentLength)> OnProgress;                                        // 0x0038(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	TDelegate<void(EDownloadToStorageResult Result)> OnComplete;                                        // 0x0048(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)

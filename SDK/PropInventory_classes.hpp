@@ -25,22 +25,23 @@ public:
 	int32                                         Index_PropInventory_C;                             // 0x00B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         MaxVol;                                            // 0x00B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CurrVol;                                           // 0x00B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FA1[0x4];                                     // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStaticMeshComponent*                   Obj;                                               // 0x00C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Mass;                                              // 0x00C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FA2[0x4];                                     // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AProp_container_C*                      Owner;                                             // 0x00D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         OwnMass;                                           // 0x00D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FA3[0x4];                                     // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FStruct_lootWeighted>           RandomLoot;                                        // 0x00E0(0x0010)(Edit, BlueprintVisible)
 	bool                                          Infinite;                                          // 0x00F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Player;                                            // 0x00F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3FA4[0x2];                                     // 0x00F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F2[0x2];                                       // 0x00F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         VolumeMult;                                        // 0x00F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CustomVolume;                                      // 0x00F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FA5[0x4];                                     // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_FC[0x4];                                       // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UClass*>                         Filter;                                            // 0x0100(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                         NewVar_0;                                          // 0x0110(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         MaxLoot;                                           // 0x0114(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void Init(class UStaticMeshComponent* Target, class AProp_container_C* Param_Owner);
@@ -77,6 +78,7 @@ static_assert(offsetof(UPropInventory_C, VolumeMult) == 0x0000F4, "Member 'UProp
 static_assert(offsetof(UPropInventory_C, CustomVolume) == 0x0000F8, "Member 'UPropInventory_C::CustomVolume' has a wrong offset!");
 static_assert(offsetof(UPropInventory_C, Filter) == 0x000100, "Member 'UPropInventory_C::Filter' has a wrong offset!");
 static_assert(offsetof(UPropInventory_C, NewVar_0) == 0x000110, "Member 'UPropInventory_C::NewVar_0' has a wrong offset!");
+static_assert(offsetof(UPropInventory_C, MaxLoot) == 0x000114, "Member 'UPropInventory_C::MaxLoot' has a wrong offset!");
 
 }
 

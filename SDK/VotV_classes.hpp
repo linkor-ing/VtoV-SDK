@@ -23,8 +23,9 @@ class UbpCodeLib final : public UBlueprintFunctionLibrary
 {
 public:
 	static void BoundingBox2D(class APlayerController* PlayerController, class UPrimitiveComponent* Comp, TArray<struct FVector>* Verts, struct FVector2D* Min, struct FVector2D* Max, struct FVector2D* Origin, struct FVector2D* Size, bool* ClipX, bool* ClipY);
-	static void boyoancy(const TArray<class AActor*>& ActorsInWater, const TArray<float>& ActorsSurface, const TArray<float>& ActorsBoyoancy, const TArray<struct FTransform>& Boxes, const TArray<bool>& CenterUnderwaterCompare, TArray<bool>* CenterUnderwaterCopy, float PowerDepth, float MaxPower, const TArray<class USplineComponent*>& RiverSplines, const TArray<float>& RiversRadiusIn, const TArray<float>& RiversRadiusOut, const TArray<float>& RiversForce);
-	static void boyoancyForce(class UPrimitiveComponent* Component, float Param_boyoancyForce, float Surface, float PowerDepth, float MaxPower);
+	static void BoundingBox2DPoints(class APlayerController* PlayerController, const TArray<struct FVector>& Verts, struct FVector2D* Min, struct FVector2D* Max, struct FVector2D* Origin, struct FVector2D* Size, bool* ClipX, bool* ClipY);
+	static void boyoancy(const TArray<class AActor*>& ActorsInWater, const TArray<float>& ActorsSurface, const TArray<float>& ActorsBoyoancy, const TArray<struct FTransform>& Boxes, const TArray<bool>& CenterUnderwaterCompare, TArray<bool>* CenterUnderwaterCopy, float PowerDepth, float MaxPower, const TArray<class USplineComponent*>& RiverSplines, const TArray<float>& RiversRadiusIn, const TArray<float>& RiversRadiusOut, const TArray<float>& RiversForce, float Damping);
+	static void boyoancyForce(class UPrimitiveComponent* Component, float Param_boyoancyForce, float Surface, float PowerDepth, float MaxPower, float Damping);
 	static bool CanBoxFitInBox(const struct FVector& big, const struct FVector& Small);
 	static class FString GetMachineID();
 	static void GetMotion(const TArray<struct FColor>& Pixels_a, const TArray<struct FColor>& Pixels_b, float* Result);

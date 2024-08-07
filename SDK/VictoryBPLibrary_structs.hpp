@@ -84,7 +84,7 @@ public:
 	uint8                                         bShouldBeLoaded : 1;                               // 0x0028(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bShouldBeVisible : 1;                              // 0x0028(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bShouldBlockOnLoad : 1;                            // 0x0028(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_D44[0x3];                                      // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         LODIndex;                                          // 0x002C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FLevelStreamInstanceInfo) == 0x000004, "Wrong alignment on FLevelStreamInstanceInfo");
@@ -104,7 +104,7 @@ public:
 	class FString                                 KeyAsString;                                       // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FKey                                   Key;                                               // 0x0020(0x0018)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Scale;                                             // 0x0038(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D45[0x4];                                      // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FVictoryInputAxis) == 0x000008, "Wrong alignment on FVictoryInputAxis");
 static_assert(sizeof(FVictoryInputAxis) == 0x000040, "Wrong size on FVictoryInputAxis");
@@ -125,7 +125,7 @@ public:
 	uint8                                         bCtrl : 1;                                         // 0x0038(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bAlt : 1;                                          // 0x0038(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bCmd : 1;                                          // 0x0038(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_D46[0x7];                                      // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FVictoryInput) == 0x000008, "Wrong alignment on FVictoryInput");
 static_assert(sizeof(FVictoryInput) == 0x000040, "Wrong size on FVictoryInput");
@@ -140,7 +140,7 @@ struct FVictorySubtitleCue final
 public:
 	class FText                                   SubtitleText;                                      // 0x0000(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	float                                         Time;                                              // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D47[0x4];                                      // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FVictorySubtitleCue) == 0x000008, "Wrong alignment on FVictorySubtitleCue");
 static_assert(sizeof(FVictorySubtitleCue) == 0x000020, "Wrong size on FVictorySubtitleCue");

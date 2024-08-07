@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function prop_food_funnyshroom.prop_food_funnyshroom_C.ExecuteUbergraph_prop_food_funnyshroom
-// (Final, UbergraphFunction, HasDefaults)
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

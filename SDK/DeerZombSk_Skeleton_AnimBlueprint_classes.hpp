@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "AnimGraphRuntime_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "AnimGraphRuntime_structs.hpp"
 
 
 namespace SDK
@@ -24,7 +24,7 @@ namespace SDK
 class UDeerZombSk_Skeleton_AnimBlueprint_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_21C6[0x8];                                     // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B8[0x8];                                      // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimNode_SaveCachedPose               AnimGraphNode_SaveCachedPose;                      // 0x02C8(0x0158)()
 	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer;                    // 0x0420(0x00E8)()
@@ -36,7 +36,7 @@ public:
 	struct FAnimNode_LookAt                       AnimGraphNode_LookAt_1;                            // 0x0750(0x01B0)()
 	struct FAnimNode_LookAt                       AnimGraphNode_LookAt;                              // 0x0900(0x01B0)()
 	float                                         Alpha;                                             // 0x0AB0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21C7[0x4];                                     // 0x0AB4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_AB4[0x4];                                      // 0x0AB4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  Pawn;                                              // 0x0AB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                LookAt;                                            // 0x0AC0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               R;                                                 // 0x0ACC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)

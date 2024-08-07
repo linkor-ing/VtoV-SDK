@@ -37,27 +37,21 @@ void AWoodchipper_C::ExecuteUbergraph_woodchipper(int32 EntryPoint)
 }
 
 
-// Function woodchipper.woodchipper_C.actionOptionIndex
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function woodchipper.woodchipper_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AWoodchipper_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, int32 Param_Index, Enum_interactionActions Action)
+void AWoodchipper_C::ReceiveTick(float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("woodchipper_C", "actionOptionIndex");
+		Func = Class->GetFunction("woodchipper_C", "ReceiveTick");
 
-	Params::Woodchipper_C_ActionOptionIndex Parms{};
+	Params::Woodchipper_C_ReceiveTick Parms{};
 
-	Parms.Player = Player;
-	Parms.Param_Hit = std::move(Param_Hit);
-	Parms.Param_Index = Param_Index;
-	Parms.Action = Action;
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -100,20 +94,6 @@ void AWoodchipper_C::Startup(bool Param_Active)
 	Parms.Param_Active = Param_Active;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function woodchipper.woodchipper_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AWoodchipper_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("woodchipper_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -268,6 +248,58 @@ void AWoodchipper_C::DropTrash()
 }
 
 
+// Function woodchipper.woodchipper_C.checkActive
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AWoodchipper_C::CheckActive()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("woodchipper_C", "checkActive");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function woodchipper.woodchipper_C.actionOptionIndex
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Param_Hit                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AWoodchipper_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, Enum_interactionActions Action)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("woodchipper_C", "actionOptionIndex");
+
+	Params::Woodchipper_C_ActionOptionIndex Parms{};
+
+	Parms.Player = Player;
+	Parms.Param_Hit = std::move(Param_Hit);
+	Parms.Action = Action;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function woodchipper.woodchipper_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AWoodchipper_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("woodchipper_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function woodchipper.woodchipper_C.lookAt
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -276,8 +308,9 @@ void AWoodchipper_C::DropTrash()
 // bool                                    Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                           Text                                                   (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              boundObjectReplace                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AWoodchipper_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace)
+void AWoodchipper_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult& Param_Hit, bool* Return, class FString* Text, class UPrimitiveComponent** boundObjectReplace, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -299,6 +332,9 @@ void AWoodchipper_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult
 
 	if (boundObjectReplace != nullptr)
 		*boundObjectReplace = Parms.boundObjectReplace;
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -311,8 +347,9 @@ void AWoodchipper_C::LookAt(class AMainPlayer_C* Player, const struct FHitResult
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AWoodchipper_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
+void AWoodchipper_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -335,6 +372,33 @@ void AWoodchipper_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimit
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
+}
+
+
+// Function woodchipper.woodchipper_C.gascanFuel
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AProp_gascan_C*                   Gascan                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Fueled                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AWoodchipper_C::GascanFuel(class AProp_gascan_C* Gascan, bool* Fueled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("woodchipper_C", "gascanFuel");
+
+	Params::Woodchipper_C_GascanFuel Parms{};
+
+	Parms.Gascan = Gascan;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Fueled != nullptr)
+		*Fueled = Parms.Fueled;
 }
 
 }

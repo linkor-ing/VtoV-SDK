@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass umg_patronList.umg_patronList_C
-// 0x00B0 (0x0310 - 0x0260)
+// 0x0130 (0x0390 - 0x0260)
 class UUmg_patronList_C final : public UUserWidget
 {
 public:
@@ -35,11 +35,19 @@ public:
 	int32                                         Lines;                                             // 0x02E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   Text_boostyB;                                      // 0x02E8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FString                                 Text_bst;                                          // 0x0300(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	class FString                                 Downloaded;                                        // 0x0310(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	class FString                                 DW_tier32;                                         // 0x0320(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	class FString                                 DW_tier31;                                         // 0x0330(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	class FString                                 DW_tier22;                                         // 0x0340(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	class FString                                 DW_tier21;                                         // 0x0350(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	class FString                                 DW_tier12;                                         // 0x0360(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	class FString                                 DW_tier11;                                         // 0x0370(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	class FString                                 DW_boosty;                                         // 0x0380(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_umg_patronList(int32 EntryPoint);
+	void GeneratePatronList();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void Construct();
 
 public:
 	static class UClass* StaticClass()
@@ -52,7 +60,7 @@ public:
 	}
 };
 static_assert(alignof(UUmg_patronList_C) == 0x000008, "Wrong alignment on UUmg_patronList_C");
-static_assert(sizeof(UUmg_patronList_C) == 0x000310, "Wrong size on UUmg_patronList_C");
+static_assert(sizeof(UUmg_patronList_C) == 0x000390, "Wrong size on UUmg_patronList_C");
 static_assert(offsetof(UUmg_patronList_C, UberGraphFrame) == 0x000260, "Member 'UUmg_patronList_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UUmg_patronList_C, SizeBox_54) == 0x000268, "Member 'UUmg_patronList_C::SizeBox_54' has a wrong offset!");
 static_assert(offsetof(UUmg_patronList_C, Text_size) == 0x000270, "Member 'UUmg_patronList_C::Text_size' has a wrong offset!");
@@ -66,6 +74,14 @@ static_assert(offsetof(UUmg_patronList_C, A) == 0x0002E0, "Member 'UUmg_patronLi
 static_assert(offsetof(UUmg_patronList_C, Lines) == 0x0002E4, "Member 'UUmg_patronList_C::Lines' has a wrong offset!");
 static_assert(offsetof(UUmg_patronList_C, Text_boostyB) == 0x0002E8, "Member 'UUmg_patronList_C::Text_boostyB' has a wrong offset!");
 static_assert(offsetof(UUmg_patronList_C, Text_bst) == 0x000300, "Member 'UUmg_patronList_C::Text_bst' has a wrong offset!");
+static_assert(offsetof(UUmg_patronList_C, Downloaded) == 0x000310, "Member 'UUmg_patronList_C::Downloaded' has a wrong offset!");
+static_assert(offsetof(UUmg_patronList_C, DW_tier32) == 0x000320, "Member 'UUmg_patronList_C::DW_tier32' has a wrong offset!");
+static_assert(offsetof(UUmg_patronList_C, DW_tier31) == 0x000330, "Member 'UUmg_patronList_C::DW_tier31' has a wrong offset!");
+static_assert(offsetof(UUmg_patronList_C, DW_tier22) == 0x000340, "Member 'UUmg_patronList_C::DW_tier22' has a wrong offset!");
+static_assert(offsetof(UUmg_patronList_C, DW_tier21) == 0x000350, "Member 'UUmg_patronList_C::DW_tier21' has a wrong offset!");
+static_assert(offsetof(UUmg_patronList_C, DW_tier12) == 0x000360, "Member 'UUmg_patronList_C::DW_tier12' has a wrong offset!");
+static_assert(offsetof(UUmg_patronList_C, DW_tier11) == 0x000370, "Member 'UUmg_patronList_C::DW_tier11' has a wrong offset!");
+static_assert(offsetof(UUmg_patronList_C, DW_boosty) == 0x000380, "Member 'UUmg_patronList_C::DW_boosty' has a wrong offset!");
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Ticker_base_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
-#include "Ticker_base_classes.hpp"
 
 
 namespace SDK
@@ -25,7 +25,7 @@ class ATicker_yellowWispSpawner_C final : public ATicker_base_C
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_Ticker_yellowWispSpawner_C;         // 0x0238(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FVector                                P;                                                 // 0x0240(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EE5[0x4];                                     // 0x024C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24C[0x4];                                      // 0x024C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UPhysicalMaterial*>              Mats;                                              // 0x0250(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class UClass*>                         Deer;                                              // 0x0260(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 

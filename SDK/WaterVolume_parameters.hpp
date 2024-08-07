@@ -10,143 +10,160 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
+#include "Struct_settings_structs.hpp"
 #include "Struct_save_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "InputCore_structs.hpp"
-#include "Struct_settings_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function waterVolume.waterVolume_C.ExecuteUbergraph_waterVolume
-// 0x02A0 (0x02A0 - 0x0000)
+// 0x02F8 (0x02F8 - 0x0000)
 struct WaterVolume_C_ExecuteUbergraph_waterVolume final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_33CD[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundBase*                             Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_33CE[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent_1;  // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor_1;           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp_1;            // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex_1;       // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_33CF[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects;                  // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_33D0[0x3];                                     // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x004C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects_1;                // 0x0058(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_33D1[0x3];                                     // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakVector_X;                            // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Y;                            // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Z;                            // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_DoesImplementInterface_ReturnValue;       // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_33D2[0x3];                                     // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x007C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VSize_ReturnValue;                        // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsActorBeingDestroyed_ReturnValue;        // 0x0092(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_33D3[0x5];                                     // 0x0093(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent;    // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_33D4[0x3];                                     // 0x00B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x00B8(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects_2;                // 0x0140(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_DoesImplementInterface_ReturnValue_1;     // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_33D5[0x2];                                     // 0x0152(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetVelocity_ReturnValue_1;                // 0x0154(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VSize_ReturnValue_1;                      // 0x0164(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x0169(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x016A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_33D6[0x1];                                     // 0x016B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Event_color;                                // 0x016C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_33D7[0x4];                                     // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   K2Node_Event_key;                                  // 0x0180(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed;                              // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_33D8[0x3];                                     // 0x0199(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_settings                       K2Node_Event_settings;                             // 0x019C(0x00CC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable_1;                            // 0x0270(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             K2Node_Select_Default;                             // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_addObj_repeats;                           // 0x0290(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_removeObj_repeats;                        // 0x0291(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0292(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0293(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_1;                              // 0x0294(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsOverlappingActor_ReturnValue;           // 0x0295(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_33D9[0x2];                                     // 0x0296(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0298(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent_1;  // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor_1;           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp_1;            // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex_1;       // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects;                  // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x003C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects_1;                // 0x0048(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakVector_X;                            // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Y;                            // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Z;                            // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_DoesImplementInterface_ReturnValue;       // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x006C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VSize_ReturnValue;                        // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsActorBeingDestroyed_ReturnValue;        // 0x0082(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_83[0x5];                                       // 0x0083(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent;    // 0x0088(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A5[0x3];                                       // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x00A8(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	TScriptInterface<class IInt_objects_C>        K2Node_DynamicCast_AsInt_Objects_2;                // 0x0130(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_DoesImplementInterface_ReturnValue_1;     // 0x0141(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_142[0x2];                                      // 0x0142(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetVelocity_ReturnValue_1;                // 0x0144(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VSize_ReturnValue_1;                      // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_2;         // 0x0159(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x015A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x015B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_15C[0x4];                                      // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUmg_texturePicker_C*                   K2Node_Event_picker;                               // 0x0160(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_Event_texture;                              // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_index;                                // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Event_color;                                // 0x0174(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_184[0x4];                                      // 0x0184(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   K2Node_Event_key;                                  // 0x0188(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed;                              // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1A1[0x7];                                      // 0x01A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_settings                       K2Node_Event_settings;                             // 0x01A8(0x00F0)(HasGetValueTypeHash)
+	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x0298(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable;                              // 0x02A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x02A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode_1;        // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_addObj_repeats;                           // 0x02B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_removeObj_repeats;                        // 0x02B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x02BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x02BB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_1;                              // 0x02BC(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsOverlappingActor_ReturnValue;           // 0x02BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2BE[0x2];                                      // 0x02BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x02C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C4[0x4];                                      // 0x02C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             Temp_object_Variable_1;                            // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D1[0x7];                                      // 0x02D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             K2Node_Select_Default;                             // 0x02D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     CallFunc_GetMaterial_ReturnValue;                  // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue_1;                  // 0x02E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2E9[0x7];                                      // 0x02E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     CallFunc_GetMaterial_ReturnValue_1;                // 0x02F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WaterVolume_C_ExecuteUbergraph_waterVolume) == 0x000008, "Wrong alignment on WaterVolume_C_ExecuteUbergraph_waterVolume");
-static_assert(sizeof(WaterVolume_C_ExecuteUbergraph_waterVolume) == 0x0002A0, "Wrong size on WaterVolume_C_ExecuteUbergraph_waterVolume");
+static_assert(sizeof(WaterVolume_C_ExecuteUbergraph_waterVolume) == 0x0002F8, "Wrong size on WaterVolume_C_ExecuteUbergraph_waterVolume");
 static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, EntryPoint) == 0x000000, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, Temp_object_Variable) == 0x000008, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_Event_DeltaSeconds) == 0x000010, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_ComponentBoundEvent_OverlappedComponent_1) == 0x000018, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_ComponentBoundEvent_OverlappedComponent_1' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_ComponentBoundEvent_OtherActor_1) == 0x000020, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_ComponentBoundEvent_OtherActor_1' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_ComponentBoundEvent_OtherComp_1) == 0x000028, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_ComponentBoundEvent_OtherComp_1' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_ComponentBoundEvent_OtherBodyIndex_1) == 0x000030, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_ComponentBoundEvent_OtherBodyIndex_1' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_DynamicCast_AsInt_Objects) == 0x000038, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_DynamicCast_AsInt_Objects' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x00004C, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_DynamicCast_AsInt_Objects_1) == 0x000058, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_DynamicCast_AsInt_Objects_1' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_DynamicCast_bSuccess_1) == 0x000068, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_BreakVector_X) == 0x00006C, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_BreakVector_Y) == 0x000070, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_BreakVector_Z) == 0x000074, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_DoesImplementInterface_ReturnValue) == 0x000078, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_DoesImplementInterface_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_GetVelocity_ReturnValue) == 0x00007C, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_GetVelocity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_Array_Find_ReturnValue) == 0x000088, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_VSize_ReturnValue) == 0x00008C, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000090, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_Array_RemoveItem_ReturnValue) == 0x000091, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_IsActorBeingDestroyed_ReturnValue) == 0x000092, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_IsActorBeingDestroyed_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_ComponentBoundEvent_OverlappedComponent) == 0x000098, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_ComponentBoundEvent_OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_ComponentBoundEvent_OtherActor) == 0x0000A0, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_ComponentBoundEvent_OtherComp) == 0x0000A8, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_ComponentBoundEvent_OtherBodyIndex) == 0x0000B0, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_ComponentBoundEvent_OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_ComponentBoundEvent_bFromSweep) == 0x0000B4, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_ComponentBoundEvent_bFromSweep' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_ComponentBoundEvent_SweepResult) == 0x0000B8, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_ComponentBoundEvent_SweepResult' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_DynamicCast_AsInt_Objects_2) == 0x000140, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_DynamicCast_AsInt_Objects_2' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_DynamicCast_bSuccess_2) == 0x000150, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_DoesImplementInterface_ReturnValue_1) == 0x000151, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_DoesImplementInterface_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_GetVelocity_ReturnValue_1) == 0x000154, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_GetVelocity_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_Array_Add_ReturnValue) == 0x000160, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_VSize_ReturnValue_1) == 0x000164, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_VSize_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_Array_Contains_ReturnValue) == 0x000168, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_Greater_FloatFloat_ReturnValue_1) == 0x000169, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, Temp_bool_Variable) == 0x00016A, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_Event_color) == 0x00016C, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_Event_color' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_Event_key) == 0x000180, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_Event_key' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_Event_pressed) == 0x000198, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_Event_pressed' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_Event_settings) == 0x00019C, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_Event_settings' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_Event_gamemode) == 0x000268, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_Event_gamemode' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, Temp_object_Variable_1) == 0x000270, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000278, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_Select_Default) == 0x000280, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x000288, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_addObj_repeats) == 0x000290, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_addObj_repeats' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_removeObj_repeats) == 0x000291, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_removeObj_repeats' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_Not_PreBool_ReturnValue) == 0x000292, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_BooleanAND_ReturnValue) == 0x000293, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, Temp_bool_Variable_1) == 0x000294, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_IsOverlappingActor_ReturnValue) == 0x000295, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_IsOverlappingActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_Array_Add_ReturnValue_1) == 0x000298, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_Event_DeltaSeconds) == 0x000004, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_ComponentBoundEvent_OverlappedComponent_1) == 0x000008, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_ComponentBoundEvent_OverlappedComponent_1' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_ComponentBoundEvent_OtherActor_1) == 0x000010, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_ComponentBoundEvent_OtherActor_1' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_ComponentBoundEvent_OtherComp_1) == 0x000018, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_ComponentBoundEvent_OtherComp_1' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_ComponentBoundEvent_OtherBodyIndex_1) == 0x000020, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_ComponentBoundEvent_OtherBodyIndex_1' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_DynamicCast_AsInt_Objects) == 0x000028, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_DynamicCast_AsInt_Objects' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x00003C, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_DynamicCast_AsInt_Objects_1) == 0x000048, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_DynamicCast_AsInt_Objects_1' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_DynamicCast_bSuccess_1) == 0x000058, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_BreakVector_X) == 0x00005C, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_BreakVector_X' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_BreakVector_Y) == 0x000060, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_BreakVector_Y' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_BreakVector_Z) == 0x000064, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_BreakVector_Z' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_DoesImplementInterface_ReturnValue) == 0x000068, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_DoesImplementInterface_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_GetVelocity_ReturnValue) == 0x00006C, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_GetVelocity_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_Array_Find_ReturnValue) == 0x000078, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_VSize_ReturnValue) == 0x00007C, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_VSize_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000080, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_Array_RemoveItem_ReturnValue) == 0x000081, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_IsActorBeingDestroyed_ReturnValue) == 0x000082, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_IsActorBeingDestroyed_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_ComponentBoundEvent_OverlappedComponent) == 0x000088, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_ComponentBoundEvent_OverlappedComponent' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_ComponentBoundEvent_OtherActor) == 0x000090, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_ComponentBoundEvent_OtherComp) == 0x000098, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_ComponentBoundEvent_OtherBodyIndex) == 0x0000A0, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_ComponentBoundEvent_OtherBodyIndex' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_ComponentBoundEvent_bFromSweep) == 0x0000A4, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_ComponentBoundEvent_bFromSweep' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_ComponentBoundEvent_SweepResult) == 0x0000A8, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_ComponentBoundEvent_SweepResult' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_DynamicCast_AsInt_Objects_2) == 0x000130, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_DynamicCast_AsInt_Objects_2' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_DynamicCast_bSuccess_2) == 0x000140, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_DoesImplementInterface_ReturnValue_1) == 0x000141, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_DoesImplementInterface_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_GetVelocity_ReturnValue_1) == 0x000144, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_GetVelocity_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_VSize_ReturnValue_1) == 0x000150, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_VSize_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_Array_Add_ReturnValue) == 0x000154, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_Greater_FloatFloat_ReturnValue_1) == 0x000158, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_Greater_FloatFloat_ReturnValue_2) == 0x000159, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_Greater_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_Array_Contains_ReturnValue) == 0x00015A, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, Temp_bool_Variable) == 0x00015B, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_Event_picker) == 0x000160, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_Event_picker' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_Event_texture) == 0x000168, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_Event_texture' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_Event_index) == 0x000170, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_Event_color) == 0x000174, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_Event_color' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_Event_key) == 0x000188, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_Event_key' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_Event_pressed) == 0x0001A0, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_Event_pressed' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_Event_settings) == 0x0001A8, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_Event_settings' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_Event_gamemode) == 0x000298, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_Event_gamemode' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, Temp_object_Variable) == 0x0002A0, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x0002A8, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_getMainGamemode_AsMain_Gamemode_1) == 0x0002B0, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_getMainGamemode_AsMain_Gamemode_1' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_addObj_repeats) == 0x0002B8, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_addObj_repeats' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_removeObj_repeats) == 0x0002B9, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_removeObj_repeats' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_Not_PreBool_ReturnValue) == 0x0002BA, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_BooleanAND_ReturnValue) == 0x0002BB, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, Temp_bool_Variable_1) == 0x0002BC, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_IsOverlappingActor_ReturnValue) == 0x0002BD, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_IsOverlappingActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_Array_Add_ReturnValue_1) == 0x0002C0, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, Temp_object_Variable_1) == 0x0002C8, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::Temp_object_Variable_1' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_IsVisible_ReturnValue) == 0x0002D0, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, K2Node_Select_Default) == 0x0002D8, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_GetMaterial_ReturnValue) == 0x0002E0, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_IsVisible_ReturnValue_1) == 0x0002E8, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_IsVisible_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_ExecuteUbergraph_waterVolume, CallFunc_GetMaterial_ReturnValue_1) == 0x0002F0, "Member 'WaterVolume_C_ExecuteUbergraph_waterVolume::CallFunc_GetMaterial_ReturnValue_1' has a wrong offset!");
 
 // Function waterVolume.waterVolume_C.stuffUpgraded
 // 0x0008 (0x0008 - 0x0000)
@@ -160,14 +177,14 @@ static_assert(sizeof(WaterVolume_C_StuffUpgraded) == 0x000008, "Wrong size on Wa
 static_assert(offsetof(WaterVolume_C_StuffUpgraded, GameMode) == 0x000000, "Member 'WaterVolume_C_StuffUpgraded::GameMode' has a wrong offset!");
 
 // Function waterVolume.waterVolume_C.settingsApplied
-// 0x00CC (0x00CC - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct WaterVolume_C_SettingsApplied final
 {
 public:
-	struct FStruct_settings                       Settings;                                          // 0x0000(0x00CC)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       Settings;                                          // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(WaterVolume_C_SettingsApplied) == 0x000004, "Wrong alignment on WaterVolume_C_SettingsApplied");
-static_assert(sizeof(WaterVolume_C_SettingsApplied) == 0x0000CC, "Wrong size on WaterVolume_C_SettingsApplied");
+static_assert(alignof(WaterVolume_C_SettingsApplied) == 0x000008, "Wrong alignment on WaterVolume_C_SettingsApplied");
+static_assert(sizeof(WaterVolume_C_SettingsApplied) == 0x0000F0, "Wrong size on WaterVolume_C_SettingsApplied");
 static_assert(offsetof(WaterVolume_C_SettingsApplied, Settings) == 0x000000, "Member 'WaterVolume_C_SettingsApplied::Settings' has a wrong offset!");
 
 // Function waterVolume.waterVolume_C.AnyKey
@@ -194,6 +211,21 @@ static_assert(alignof(WaterVolume_C_ApplyColor) == 0x000004, "Wrong alignment on
 static_assert(sizeof(WaterVolume_C_ApplyColor) == 0x000010, "Wrong size on WaterVolume_C_ApplyColor");
 static_assert(offsetof(WaterVolume_C_ApplyColor, Color) == 0x000000, "Member 'WaterVolume_C_ApplyColor::Color' has a wrong offset!");
 
+// Function waterVolume.waterVolume_C.texturePickerApply
+// 0x0018 (0x0018 - 0x0000)
+struct WaterVolume_C_TexturePickerApply final
+{
+public:
+	class UUmg_texturePicker_C*                   Picker;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Param_Index;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WaterVolume_C_TexturePickerApply) == 0x000008, "Wrong alignment on WaterVolume_C_TexturePickerApply");
+static_assert(sizeof(WaterVolume_C_TexturePickerApply) == 0x000018, "Wrong size on WaterVolume_C_TexturePickerApply");
+static_assert(offsetof(WaterVolume_C_TexturePickerApply, Picker) == 0x000000, "Member 'WaterVolume_C_TexturePickerApply::Picker' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_TexturePickerApply, Texture) == 0x000008, "Member 'WaterVolume_C_TexturePickerApply::Texture' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_TexturePickerApply, Param_Index) == 0x000010, "Member 'WaterVolume_C_TexturePickerApply::Param_Index' has a wrong offset!");
+
 // Function waterVolume.waterVolume_C.BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
 // 0x00A8 (0x00A8 - 0x0000)
 struct WaterVolume_C_BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature final
@@ -204,7 +236,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_33DA[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 static_assert(alignof(WaterVolume_C_BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on WaterVolume_C_BndEvt__Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
@@ -258,34 +290,43 @@ static_assert(offsetof(WaterVolume_C_UserConstructionScript, CallFunc_GetScaledB
 static_assert(offsetof(WaterVolume_C_UserConstructionScript, CallFunc_Not_PreBool_ReturnValue) == 0x00000C, "Member 'WaterVolume_C_UserConstructionScript::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 // Function waterVolume.waterVolume_C.soundSurface
-// 0x0060 (0x0060 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct WaterVolume_C_SoundSurface final
 {
 public:
 	class AActor*                                 Self2;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             Sound;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Effect;                                            // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_33DB[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetActorUpVector_ReturnValue;             // 0x0014(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorBounds_Origin;                    // 0x0020(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorBounds_BoxExtent;                 // 0x002C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0038(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_ProjectPointOnToPlane_ReturnValue;        // 0x0044(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue_1;     // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                Loc;                                               // 0x0014(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Scale;                                             // 0x0020(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                P;                                                 // 0x002C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetActorBounds_Origin;                    // 0x003C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorBounds_BoxExtent;                 // 0x0048(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorUpVector_ReturnValue;             // 0x0054(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0060(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_ProjectPointOnToPlane_ReturnValue;        // 0x006C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue_1;     // 0x0080(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WaterVolume_C_SoundSurface) == 0x000008, "Wrong alignment on WaterVolume_C_SoundSurface");
-static_assert(sizeof(WaterVolume_C_SoundSurface) == 0x000060, "Wrong size on WaterVolume_C_SoundSurface");
+static_assert(sizeof(WaterVolume_C_SoundSurface) == 0x000088, "Wrong size on WaterVolume_C_SoundSurface");
 static_assert(offsetof(WaterVolume_C_SoundSurface, Self2) == 0x000000, "Member 'WaterVolume_C_SoundSurface::Self2' has a wrong offset!");
 static_assert(offsetof(WaterVolume_C_SoundSurface, Sound) == 0x000008, "Member 'WaterVolume_C_SoundSurface::Sound' has a wrong offset!");
 static_assert(offsetof(WaterVolume_C_SoundSurface, Effect) == 0x000010, "Member 'WaterVolume_C_SoundSurface::Effect' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_SoundSurface, CallFunc_GetActorUpVector_ReturnValue) == 0x000014, "Member 'WaterVolume_C_SoundSurface::CallFunc_GetActorUpVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_SoundSurface, CallFunc_GetActorBounds_Origin) == 0x000020, "Member 'WaterVolume_C_SoundSurface::CallFunc_GetActorBounds_Origin' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_SoundSurface, CallFunc_GetActorBounds_BoxExtent) == 0x00002C, "Member 'WaterVolume_C_SoundSurface::CallFunc_GetActorBounds_BoxExtent' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_SoundSurface, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000038, "Member 'WaterVolume_C_SoundSurface::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_SoundSurface, CallFunc_ProjectPointOnToPlane_ReturnValue) == 0x000044, "Member 'WaterVolume_C_SoundSurface::CallFunc_ProjectPointOnToPlane_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_SoundSurface, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000050, "Member 'WaterVolume_C_SoundSurface::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaterVolume_C_SoundSurface, CallFunc_SpawnEmitterAtLocation_ReturnValue_1) == 0x000058, "Member 'WaterVolume_C_SoundSurface::CallFunc_SpawnEmitterAtLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_SoundSurface, Loc) == 0x000014, "Member 'WaterVolume_C_SoundSurface::Loc' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_SoundSurface, Scale) == 0x000020, "Member 'WaterVolume_C_SoundSurface::Scale' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_SoundSurface, P) == 0x00002C, "Member 'WaterVolume_C_SoundSurface::P' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_SoundSurface, CallFunc_IsValid_ReturnValue) == 0x000038, "Member 'WaterVolume_C_SoundSurface::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_SoundSurface, CallFunc_GetActorBounds_Origin) == 0x00003C, "Member 'WaterVolume_C_SoundSurface::CallFunc_GetActorBounds_Origin' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_SoundSurface, CallFunc_GetActorBounds_BoxExtent) == 0x000048, "Member 'WaterVolume_C_SoundSurface::CallFunc_GetActorBounds_BoxExtent' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_SoundSurface, CallFunc_GetActorUpVector_ReturnValue) == 0x000054, "Member 'WaterVolume_C_SoundSurface::CallFunc_GetActorUpVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_SoundSurface, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000060, "Member 'WaterVolume_C_SoundSurface::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_SoundSurface, CallFunc_ProjectPointOnToPlane_ReturnValue) == 0x00006C, "Member 'WaterVolume_C_SoundSurface::CallFunc_ProjectPointOnToPlane_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_SoundSurface, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000078, "Member 'WaterVolume_C_SoundSurface::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_SoundSurface, CallFunc_SpawnEmitterAtLocation_ReturnValue_1) == 0x000080, "Member 'WaterVolume_C_SoundSurface::CallFunc_SpawnEmitterAtLocation_ReturnValue_1' has a wrong offset!");
 
 // Function waterVolume.waterVolume_C.boy
 // 0x0380 (0x0380 - 0x0000)
@@ -298,28 +339,28 @@ public:
 	float                                         R;                                                 // 0x0020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         M;                                                 // 0x0024(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                bounds_neg;                                        // 0x0028(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_33DC[0xC];                                     // 0x0034(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34[0xC];                                       // 0x0034(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Rans;                                              // 0x0040(0x0030)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor)
 	struct FVector                                Angv;                                              // 0x0070(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Linv;                                              // 0x007C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         B;                                                 // 0x0088(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Bounds;                                            // 0x008C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Origin;                                            // 0x0098(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_33DD[0x4];                                     // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    Push;                                              // 0x00A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_33DE[0x4];                                     // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_33DF[0x4];                                     // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStaticMeshComponent*                   K2Node_DynamicCast_AsStatic_Mesh_Component;        // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_33E0[0x7];                                     // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     CallFunc_GetMaterial_ReturnValue;                  // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetComponentBounds_Origin;                // 0x00E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetComponentBounds_BoxExtent;             // 0x00EC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetComponentBounds_SphereRadius;          // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_33E1[0x4];                                     // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_FC[0x4];                                       // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      CallFunc_GetPhysicalMaterial_ReturnValue;          // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_getBoyoancy_Value;                        // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FBoxSphereBounds                       CallFunc_GetBounds_ReturnValue;                    // 0x010C(0x001C)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -328,10 +369,10 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_33E2[0x3];                                     // 0x0139(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_139[0x3];                                      // 0x0139(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_MinOfFloatArray_IndexOfMinValue;          // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MinOfFloatArray_MinValue;                 // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_33E3[0x4];                                     // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_144[0x4];                                      // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARiverFlow_C*                           CallFunc_Array_Get_Item;                           // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARiverFlow_C*                           CallFunc_Array_Get_Item_1;                         // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -341,15 +382,15 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x017C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_33E4[0x3];                                     // 0x0189(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_189[0x3];                                      // 0x0189(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_33E5[0x3];                                     // 0x0191(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_191[0x3];                                      // 0x0191(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_33E6[0x3];                                     // 0x01A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A1[0x3];                                      // 0x01A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue_1;       // 0x01A4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X;                            // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y;                            // 0x01B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -362,7 +403,7 @@ public:
 	float                                         CallFunc_VSize_ReturnValue;                        // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue_2;                 // 0x01E4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_33E7[0x3];                                     // 0x01F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F1[0x3];                                      // 0x01F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_MakeVector_ReturnValue_3;                 // 0x01F4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue_4;                 // 0x0200(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue_5;                 // 0x020C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -374,7 +415,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_TransformLocation_ReturnValue;            // 0x025C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_33E8[0x3];                                     // 0x0269(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_269[0x3];                                      // 0x0269(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakVector_X_2;                          // 0x026C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y_2;                          // 0x0270(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z_2;                          // 0x0274(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -391,14 +432,14 @@ public:
 	struct FVector                                CallFunc_GetPhysicsAngularVelocityInDegrees_ReturnValue; // 0x02B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetComponentVelocity_ReturnValue;         // 0x02C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsSimulatingPhysics_ReturnValue;          // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_33E9[0xF];                                     // 0x02D1(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D1[0xF];                                      // 0x02D1(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x02E0(0x0030)(IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0310(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x031C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0328(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetMass_ReturnValue_1;                    // 0x0334(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_SelectRotator_ReturnValue;                // 0x0338(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_33EA[0xC];                                     // 0x0344(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_344[0xC];                                      // 0x0344(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0350(0x0030)(IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(WaterVolume_C_boy) == 0x000010, "Wrong alignment on WaterVolume_C_boy");
@@ -507,6 +548,77 @@ public:
 static_assert(alignof(WaterVolume_C_NewFunction_0) == 0x000001, "Wrong alignment on WaterVolume_C_NewFunction_0");
 static_assert(sizeof(WaterVolume_C_NewFunction_0) == 0x000001, "Wrong size on WaterVolume_C_NewFunction_0");
 static_assert(offsetof(WaterVolume_C_NewFunction_0, Condition) == 0x000000, "Member 'WaterVolume_C_NewFunction_0::Condition' has a wrong offset!");
+
+// Function waterVolume.waterVolume_C.freeze
+// 0x0002 (0x0002 - 0x0000)
+struct WaterVolume_C_Freeze final
+{
+public:
+	bool                                          Param_Frozen;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WaterVolume_C_Freeze) == 0x000001, "Wrong alignment on WaterVolume_C_Freeze");
+static_assert(sizeof(WaterVolume_C_Freeze) == 0x000002, "Wrong size on WaterVolume_C_Freeze");
+static_assert(offsetof(WaterVolume_C_Freeze, Param_Frozen) == 0x000000, "Member 'WaterVolume_C_Freeze::Param_Frozen' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_Freeze, CallFunc_Not_PreBool_ReturnValue) == 0x000001, "Member 'WaterVolume_C_Freeze::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+
+// Function waterVolume.waterVolume_C.updateWaterData
+// 0x00F0 (0x00F0 - 0x0000)
+struct WaterVolume_C_UpdateWaterData final
+{
+public:
+	class AWaterFloatMaster_C*                    M;                                                 // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Ind;                                               // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0020(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakVector_X;                            // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Y;                            // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Z;                            // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Find_ReturnValue_1;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0050(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0080(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x008C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0098(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x00B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x00C0(0x0030)(IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WaterVolume_C_UpdateWaterData) == 0x000010, "Wrong alignment on WaterVolume_C_UpdateWaterData");
+static_assert(sizeof(WaterVolume_C_UpdateWaterData) == 0x0000F0, "Wrong size on WaterVolume_C_UpdateWaterData");
+static_assert(offsetof(WaterVolume_C_UpdateWaterData, M) == 0x000000, "Member 'WaterVolume_C_UpdateWaterData::M' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_UpdateWaterData, Ind) == 0x000008, "Member 'WaterVolume_C_UpdateWaterData::Ind' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_UpdateWaterData, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'WaterVolume_C_UpdateWaterData::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_UpdateWaterData, Temp_int_Loop_Counter_Variable) == 0x000010, "Member 'WaterVolume_C_UpdateWaterData::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_UpdateWaterData, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'WaterVolume_C_UpdateWaterData::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_UpdateWaterData, CallFunc_Array_Get_Item) == 0x000018, "Member 'WaterVolume_C_UpdateWaterData::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_UpdateWaterData, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000020, "Member 'WaterVolume_C_UpdateWaterData::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_UpdateWaterData, CallFunc_Array_Find_ReturnValue) == 0x00002C, "Member 'WaterVolume_C_UpdateWaterData::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_UpdateWaterData, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000030, "Member 'WaterVolume_C_UpdateWaterData::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_UpdateWaterData, CallFunc_BreakVector_X) == 0x000034, "Member 'WaterVolume_C_UpdateWaterData::CallFunc_BreakVector_X' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_UpdateWaterData, CallFunc_BreakVector_Y) == 0x000038, "Member 'WaterVolume_C_UpdateWaterData::CallFunc_BreakVector_Y' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_UpdateWaterData, CallFunc_BreakVector_Z) == 0x00003C, "Member 'WaterVolume_C_UpdateWaterData::CallFunc_BreakVector_Z' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_UpdateWaterData, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'WaterVolume_C_UpdateWaterData::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_UpdateWaterData, CallFunc_Less_IntInt_ReturnValue) == 0x000044, "Member 'WaterVolume_C_UpdateWaterData::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_UpdateWaterData, CallFunc_Array_Find_ReturnValue_1) == 0x000048, "Member 'WaterVolume_C_UpdateWaterData::CallFunc_Array_Find_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_UpdateWaterData, CallFunc_GetTransform_ReturnValue) == 0x000050, "Member 'WaterVolume_C_UpdateWaterData::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_UpdateWaterData, CallFunc_BreakTransform_Location) == 0x000080, "Member 'WaterVolume_C_UpdateWaterData::CallFunc_BreakTransform_Location' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_UpdateWaterData, CallFunc_BreakTransform_Rotation) == 0x00008C, "Member 'WaterVolume_C_UpdateWaterData::CallFunc_BreakTransform_Rotation' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_UpdateWaterData, CallFunc_BreakTransform_Scale) == 0x000098, "Member 'WaterVolume_C_UpdateWaterData::CallFunc_BreakTransform_Scale' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_UpdateWaterData, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x0000A8, "Member 'WaterVolume_C_UpdateWaterData::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_UpdateWaterData, CallFunc_Multiply_VectorVector_ReturnValue) == 0x0000B0, "Member 'WaterVolume_C_UpdateWaterData::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WaterVolume_C_UpdateWaterData, CallFunc_MakeTransform_ReturnValue) == 0x0000C0, "Member 'WaterVolume_C_UpdateWaterData::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
 
 // Function waterVolume.waterVolume_C.dreamInv
 // 0x0018 (0x0018 - 0x0000)

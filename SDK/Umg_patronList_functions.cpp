@@ -37,6 +37,20 @@ void UUmg_patronList_C::ExecuteUbergraph_umg_patronList(int32 EntryPoint)
 }
 
 
+// Function umg_patronList.umg_patronList_C.generatePatronList
+// (BlueprintCallable, BlueprintEvent)
+
+void UUmg_patronList_C::GeneratePatronList()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_patronList_C", "generatePatronList");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function umg_patronList.umg_patronList_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -56,20 +70,6 @@ void UUmg_patronList_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTi
 	Parms.InDeltaTime = InDeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function umg_patronList.umg_patronList_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UUmg_patronList_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("umg_patronList_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

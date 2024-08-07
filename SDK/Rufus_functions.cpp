@@ -37,54 +37,6 @@ void ARufus_C::ExecuteUbergraph_rufus(int32 EntryPoint)
 }
 
 
-// Function rufus.rufus_C.physDestroyed
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ARufus_C::PhysDestroyed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("rufus_C", "physDestroyed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function rufus.rufus_C.physPreDestroyed
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ARufus_C::PhysPreDestroyed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("rufus_C", "physPreDestroyed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function rufus.rufus_C.enterWater
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AWaterVolume_C*                   Water                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ARufus_C::EnterWater(class AWaterVolume_C* Water)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("rufus_C", "enterWater");
-
-	Params::Rufus_C_EnterWater Parms{};
-
-	Parms.Water = Water;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function rufus.rufus_C.leaveWater
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -179,99 +131,21 @@ void ARufus_C::AddDamage(class AActor* Actor, float Damage, const struct FHitRes
 }
 
 
-// Function rufus.rufus_C.leaveWaterOrigin
+// Function rufus.rufus_C.enterWater
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AWaterVolume_C*                   Water                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ARufus_C::LeaveWaterOrigin(class AWaterVolume_C* Water)
+void ARufus_C::EnterWater(class AWaterVolume_C* Water)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("rufus_C", "leaveWaterOrigin");
+		Func = Class->GetFunction("rufus_C", "enterWater");
 
-	Params::Rufus_C_LeaveWaterOrigin Parms{};
+	Params::Rufus_C_EnterWater Parms{};
 
 	Parms.Water = Water;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function rufus.rufus_C.eaten
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ARufus_C::Eaten()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("rufus_C", "eaten");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function rufus.rufus_C.virus
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Activate                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ARufus_C::Virus(bool Activate)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("rufus_C", "virus");
-
-	Params::Rufus_C_Virus Parms{};
-
-	Parms.Activate = Activate;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function rufus.rufus_C.setPropProps
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Static                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Frozen                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ARufus_C::SetPropProps(bool Static, bool Frozen, bool Active)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("rufus_C", "setPropProps");
-
-	Params::Rufus_C_SetPropProps Parms{};
-
-	Parms.Static = Static;
-	Parms.Frozen = Frozen;
-	Parms.Active = Active;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function rufus.rufus_C.setKey
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                           Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void ARufus_C::SetKey(const class FString& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("rufus_C", "setKey");
-
-	Params::Rufus_C_SetKey Parms{};
-
-	Parms.Key = std::move(Key);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -320,6 +194,62 @@ void ARufus_C::ReceiveBeginPlay()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("rufus_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function rufus.rufus_C.hookTension
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AHook_C*                          Hook                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ARufus_C::HookTension(class AHook_C* Hook)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rufus_C", "hookTension");
+
+	Params::Rufus_C_HookTension Parms{};
+
+	Parms.Hook = Hook;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function rufus.rufus_C.cleanSponge
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Clean                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ARufus_C::CleanSponge(float Clean, class AMainPlayer_C* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rufus_C", "cleanSponge");
+
+	Params::Rufus_C_CleanSponge Parms{};
+
+	Parms.Clean = Clean;
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function rufus.rufus_C.crafted
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ARufus_C::Crafted()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rufus_C", "crafted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -746,10 +676,9 @@ void ARufus_C::PlayerHandUse_RMB(class AMainPlayer_C* Player)
 // Parameters:
 // class AMainPlayer_C*                    Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                       Hit                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Enum_interactionActions                 Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ARufus_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, int32 Param_Index, Enum_interactionActions Action)
+void ARufus_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitResult& Hit, Enum_interactionActions Action)
 {
 	static class UFunction* Func = nullptr;
 
@@ -760,7 +689,6 @@ void ARufus_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitR
 
 	Parms.Player = Player;
 	Parms.Hit = std::move(Hit);
-	Parms.Param_Index = Param_Index;
 	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -769,15 +697,23 @@ void ARufus_C::ActionOptionIndex(class AMainPlayer_C* Player, const struct FHitR
 
 // Function rufus.rufus_C.receivedPhyiscsDamage
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FHitResult                       Hot                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void ARufus_C::ReceivedPhyiscsDamage()
+void ARufus_C::ReceivedPhyiscsDamage(float Damage, const struct FHitResult& Hot)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("rufus_C", "receivedPhyiscsDamage");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::Rufus_C_ReceivedPhyiscsDamage Parms{};
+
+	Parms.Damage = Damage;
+	Parms.Hot = std::move(Hot);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -882,6 +818,132 @@ void ARufus_C::DigUp()
 		Func = Class->GetFunction("rufus_C", "digUp");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function rufus.rufus_C.physPreDestroyed
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ARufus_C::PhysPreDestroyed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rufus_C", "physPreDestroyed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function rufus.rufus_C.physDestroyed
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ARufus_C::PhysDestroyed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rufus_C", "physDestroyed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function rufus.rufus_C.setKey
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                           Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void ARufus_C::SetKey(const class FString& Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rufus_C", "setKey");
+
+	Params::Rufus_C_SetKey Parms{};
+
+	Parms.Key = std::move(Key);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function rufus.rufus_C.setPropProps
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Static                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Frozen                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ARufus_C::SetPropProps(bool Static, bool Frozen, bool Active)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rufus_C", "setPropProps");
+
+	Params::Rufus_C_SetPropProps Parms{};
+
+	Parms.Static = Static;
+	Parms.Frozen = Frozen;
+	Parms.Active = Active;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function rufus.rufus_C.virus
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Activate                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ARufus_C::Virus(bool Activate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rufus_C", "virus");
+
+	Params::Rufus_C_Virus Parms{};
+
+	Parms.Activate = Activate;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function rufus.rufus_C.eaten
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ARufus_C::Eaten()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rufus_C", "eaten");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function rufus.rufus_C.leaveWaterOrigin
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AWaterVolume_C*                   Water                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ARufus_C::LeaveWaterOrigin(class AWaterVolume_C* Water)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rufus_C", "leaveWaterOrigin");
+
+	Params::Rufus_C_LeaveWaterOrigin Parms{};
+
+	Parms.Water = Water;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -1120,8 +1182,9 @@ void ARufus_C::ToolboxFix(class AProp_toolbox_C* Toolbox, bool* Return)
 // TArray<class FString>                   Options                                                (Parm, OutParm)
 // TArray<Enum_interactionActions>         Options_enum                                           (Parm, OutParm)
 // TArray<class FText>                     OptionsNamesOverlay                                    (Parm, OutParm)
+// uint8                                   Number                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ARufus_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay)
+void ARufus_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1144,6 +1207,9 @@ void ARufus_C::GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveCom
 
 	if (OptionsNamesOverlay != nullptr)
 		*OptionsNamesOverlay = std::move(Parms.OptionsNamesOverlay);
+
+	if (Number != nullptr)
+		*Number = Parms.Number;
 }
 
 
@@ -1189,6 +1255,27 @@ void ARufus_C::SkipRadial(bool* Skip)
 
 	if (Skip != nullptr)
 		*Skip = Parms.Skip;
+}
+
+
+// Function rufus.rufus_C.getPriceMultiplier
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   PriceMult                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ARufus_C::GetPriceMultiplier(float* PriceMult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("rufus_C", "getPriceMultiplier");
+
+	Params::Rufus_C_GetPriceMultiplier Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PriceMult != nullptr)
+		*PriceMult = Parms.PriceMult;
 }
 
 }

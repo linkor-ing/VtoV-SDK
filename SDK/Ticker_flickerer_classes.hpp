@@ -30,6 +30,7 @@ public:
 	void ExecuteUbergraph_ticker_flickerer(int32 EntryPoint);
 	void GamemodeBeginPlay();
 	void ReceiveTick(float DeltaSeconds);
+	void TexturePickerApply(class UUmg_texturePicker_C* Picker, class UTexture2D* Texture, int32 Param_Index);
 	void ApplyColor(const struct FLinearColor& Color);
 	void PropRenderer_finishProps();
 	void GamemodeMakeKeys();

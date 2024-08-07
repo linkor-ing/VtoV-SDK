@@ -111,10 +111,10 @@ void UUmg_propInvSlor_C::BndEvt__Button_103_K2Node_ComponentBoundEvent_0_OnButto
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FString                           ItemToFind                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash)
-// float                                   Weight                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Param_Weight                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Param_Volume                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUmg_propInvSlor_C::Init(const class FString& ItemToFind, float Weight, float Volume)
+void UUmg_propInvSlor_C::Init(const class FString& ItemToFind, float Param_Weight, float Param_Volume)
 {
 	static class UFunction* Func = nullptr;
 
@@ -124,8 +124,8 @@ void UUmg_propInvSlor_C::Init(const class FString& ItemToFind, float Weight, flo
 	Params::Umg_propInvSlor_C_Init Parms{};
 
 	Parms.ItemToFind = std::move(ItemToFind);
-	Parms.Weight = Weight;
-	Parms.Volume = Volume;
+	Parms.Param_Weight = Param_Weight;
+	Parms.Param_Volume = Param_Volume;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -18,14 +18,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_crystal_explode.prop_crystal_explode_C
-// 0x0018 (0x0380 - 0x0368)
+// 0x0018 (0x0390 - 0x0378)
 class AProp_crystal_explode_C final : public AProp_C
 {
 public:
-	uint8                                         Pad_2E7E[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_crystal_explode_C;             // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class URadarPointComponent_C*                 RadarPoint;                                        // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPointLightComponent*                   PointLight;                                        // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_crystal_explode_C;             // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UComp_radarPoint_C*                     RadarPoint;                                        // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPointLightComponent*                   PointLight;                                        // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_prop_crystal_explode(int32 EntryPoint);
@@ -42,10 +41,10 @@ public:
 	}
 };
 static_assert(alignof(AProp_crystal_explode_C) == 0x000008, "Wrong alignment on AProp_crystal_explode_C");
-static_assert(sizeof(AProp_crystal_explode_C) == 0x000380, "Wrong size on AProp_crystal_explode_C");
-static_assert(offsetof(AProp_crystal_explode_C, UberGraphFrame_Prop_crystal_explode_C) == 0x000368, "Member 'AProp_crystal_explode_C::UberGraphFrame_Prop_crystal_explode_C' has a wrong offset!");
-static_assert(offsetof(AProp_crystal_explode_C, RadarPoint) == 0x000370, "Member 'AProp_crystal_explode_C::RadarPoint' has a wrong offset!");
-static_assert(offsetof(AProp_crystal_explode_C, PointLight) == 0x000378, "Member 'AProp_crystal_explode_C::PointLight' has a wrong offset!");
+static_assert(sizeof(AProp_crystal_explode_C) == 0x000390, "Wrong size on AProp_crystal_explode_C");
+static_assert(offsetof(AProp_crystal_explode_C, UberGraphFrame_Prop_crystal_explode_C) == 0x000378, "Member 'AProp_crystal_explode_C::UberGraphFrame_Prop_crystal_explode_C' has a wrong offset!");
+static_assert(offsetof(AProp_crystal_explode_C, RadarPoint) == 0x000380, "Member 'AProp_crystal_explode_C::RadarPoint' has a wrong offset!");
+static_assert(offsetof(AProp_crystal_explode_C, PointLight) == 0x000388, "Member 'AProp_crystal_explode_C::PointLight' has a wrong offset!");
 
 }
 

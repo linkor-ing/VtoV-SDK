@@ -10,375 +10,383 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
+#include "Struct_settings_structs.hpp"
 #include "Struct_save_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "UMG_structs.hpp"
 #include "ImageWriteQueue_structs.hpp"
 #include "InputCore_structs.hpp"
+#include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Struct_settings_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function umg_paperDraw.umg_paperDraw_C.ExecuteUbergraph_umg_paperDraw
-// 0x0620 (0x0620 - 0x0000)
+// 0x0650 (0x0650 - 0x0000)
 struct Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E95[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_1;                              // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E96[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(bool bSuccess)>                K2Node_CreateDelegate_OutputDelegate;              // 0x0014(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_1E97[0xC];                                     // 0x0024(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          Temp_bool_Variable_2;                              // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(bool bSuccess)>                K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
+	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FImageWriteOptions                     K2Node_MakeStruct_ImageWriteOptions;               // 0x0030(0x0060)(ContainsInstancedReference)
 	class FName                                   Temp_name_Variable;                                // 0x0090(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E98[0x3];                                     // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStruct_settings                       K2Node_Event_settings;                             // 0x009C(0x00CC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_GetViewportSize_ReturnValue;              // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_2;                              // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E99[0x3];                                     // 0x0171(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_ComponentBoundEvent_Value_5;                // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_ComponentBoundEvent_Value_4;                // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_ComponentBoundEvent_Value_3;                // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_3;                              // 0x0184(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E9A[0x3];                                     // 0x0185(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_1;       // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_1;        // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Percent_FloatFloat_ReturnValue;           // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_DegSin_ReturnValue;                       // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue_1;             // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 K2Node_ComponentBoundEvent_SelectedItem_2;         // 0x01A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	ESelectInfo                                   K2Node_ComponentBoundEvent_SelectionType_2;        // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E9B[0x3];                                     // 0x01B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_IntFloat_ReturnValue_1;          // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x01C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E9C[0x3];                                     // 0x01C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              Temp_struct_Variable;                              // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_2;       // 0x01D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_3;       // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_2;        // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_3;        // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_IntFloat_ReturnValue_2;          // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Percent_FloatFloat_ReturnValue_1;         // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_DegSin_ReturnValue_1;                     // 0x01EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue_2;             // 0x01F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess_1;                 // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E9D[0x3];                                     // 0x01F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              Temp_struct_Variable_1;                            // 0x01FC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0204(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_4;       // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_4;                              // 0x020C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E9E[0x3];                                     // 0x020D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_5;       // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              K2Node_Select_Default;                             // 0x0214(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_4;        // 0x021C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_IntFloat_ReturnValue_3;          // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_DegSin_ReturnValue_2;                     // 0x0224(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_5;        // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue_3;             // 0x022C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Percent_FloatFloat_ReturnValue_2;         // 0x0230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_2;          // 0x0234(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              Temp_struct_Variable_2;                            // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess_2;                 // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E9F[0x3];                                     // 0x0241(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x0244(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetSelectedIndex_ReturnValue;             // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EA0[0x4];                                     // 0x024C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 K2Node_ComponentBoundEvent_SelectedItem_1;         // 0x0250(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	ESelectInfo                                   K2Node_ComponentBoundEvent_SelectionType_1;        // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EA1[0x7];                                     // 0x0261(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 K2Node_ComponentBoundEvent_SelectedItem;           // 0x0268(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	ESelectInfo                                   K2Node_ComponentBoundEvent_SelectionType;          // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EA2[0x3];                                     // 0x0279(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetSelectedIndex_ReturnValue_1;           // 0x027C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetSelectedIndex_ReturnValue_2;           // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_X;                          // 0x0284(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_Y;                          // 0x0288(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Distance2D_ReturnValue;                   // 0x028C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0290(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EA3[0x3];                                     // 0x0291(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              CallFunc_Subtract_Vector2DVector2D_ReturnValue;    // 0x0294(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_X_1;                        // 0x029C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_Y_1;                        // 0x02A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              Temp_struct_Variable_3;                            // 0x02A4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x02AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_NotEqual_FloatFloat_ReturnValue;          // 0x02AD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EA4[0x2];                                     // 0x02AE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              CallFunc_ToRounded2D_ReturnValue;                  // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x02B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x02B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EA5[0x6];                                     // 0x02BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x02C0(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x02D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot;                     // 0x02E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x02F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0300(0x0018)()
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0318(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetComponentBounds_Origin;                // 0x0320(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetComponentBounds_BoxExtent;             // 0x032C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetComponentBounds_SphereRadius;          // 0x0338(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EA6[0x4];                                     // 0x033C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          CallFunc_getMainPlayer_AsMain_Player;              // 0x0340(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0348(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EA7[0xC];                                     // 0x0354(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0360(0x0030)(IsPlainOldData, NoDestructor)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0390(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_ComponentBoundEvent_Value_2;                // 0x0398(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EA8[0x4];                                     // 0x039C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AProp_C*                                CallFunc_FinishSpawningActor_ReturnValue;          // 0x03A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_3;         // 0x03A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_ComponentBoundEvent_Value_1;                // 0x03AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_3;          // 0x03B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x03B4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_GetRotated2D_ReturnValue;                 // 0x03BC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_6;       // 0x03C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SafeDivide_ReturnValue;                   // 0x03C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_ComponentBoundEvent_Value;                  // 0x03CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x03D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_isInBounds_ReturnValue;                   // 0x03D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_5;                              // 0x03D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x03D3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector2D                              K2Node_Select_Default_1;                           // 0x03D4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x03DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EA9[0x3];                                     // 0x03DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x03E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_ProjectDir_ReturnValue;                   // 0x03E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_bSuccess;                       // 0x03F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EAA[0x7];                                     // 0x03F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0400(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FDateTime                              CallFunc_Now_ReturnValue;                          // 0x0410(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0418(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_DateTime_ToString_String;                 // 0x0428(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CreateDirectory_ReturnValue;              // 0x0438(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EAB[0x7];                                     // 0x0439(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x0440(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_4;              // 0x0450(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0460(0x0018)()
-	int32                                         CallFunc_GetPrimaryMonitorResolution_Width;        // 0x0478(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetPrimaryMonitorResolution_Height;       // 0x047C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0480(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0488(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetMousePositionScaledByDPI_LocationX;    // 0x048C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetMousePositionScaledByDPI_LocationY;    // 0x0490(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetMousePositionScaledByDPI_ReturnValue;  // 0x0494(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EAC[0x3];                                     // 0x0495(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue_1;            // 0x0498(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_1;               // 0x049C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_2;               // 0x04A4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_X_2;                        // 0x04AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_Y_2;                        // 0x04B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_3;               // 0x04B4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_4;               // 0x04BC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_settings                       K2Node_Event_settings;                             // 0x00A0(0x00F0)(HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_GetViewportSize_ReturnValue;              // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_3;                              // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_199[0x3];                                      // 0x0199(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_ComponentBoundEvent_Value_5;                // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_ComponentBoundEvent_Value_4;                // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_ComponentBoundEvent_Value_3;                // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_1;       // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x01B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_1;        // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Percent_FloatFloat_ReturnValue;           // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_DegSin_ReturnValue;                       // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue_1;             // 0x01C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CC[0x4];                                      // 0x01CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 K2Node_ComponentBoundEvent_SelectedItem_2;         // 0x01D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	ESelectInfo                                   K2Node_ComponentBoundEvent_SelectionType_2;        // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E1[0x3];                                      // 0x01E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_IntFloat_ReturnValue_1;          // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x01EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1ED[0x3];                                      // 0x01ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              Temp_struct_Variable;                              // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_2;       // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              Temp_struct_Variable_1;                            // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_3;       // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_2;        // 0x020C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_3;        // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_IntFloat_ReturnValue_2;          // 0x0214(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Percent_FloatFloat_ReturnValue_1;         // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_DegSin_ReturnValue_1;                     // 0x021C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue_2;             // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x0224(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess_1;                 // 0x0228(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_4;                              // 0x0229(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_22A[0x2];                                      // 0x022A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x022C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_Select_Default;                             // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_4;       // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_5;       // 0x023C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_4;        // 0x0240(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut_5;        // 0x0244(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_IntFloat_ReturnValue_3;          // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Percent_FloatFloat_ReturnValue_2;         // 0x024C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_DegSin_ReturnValue_2;                     // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue_3;             // 0x0254(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_2;          // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess_2;                 // 0x025C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25D[0x3];                                      // 0x025D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              Temp_struct_Variable_2;                            // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x0268(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_26C[0x4];                                      // 0x026C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 K2Node_ComponentBoundEvent_SelectedItem_1;         // 0x0270(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	ESelectInfo                                   K2Node_ComponentBoundEvent_SelectionType_1;        // 0x0280(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_281[0x3];                                      // 0x0281(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetSelectedIndex_ReturnValue;             // 0x0284(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetSelectedIndex_ReturnValue_1;           // 0x0288(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_28C[0x4];                                      // 0x028C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 K2Node_ComponentBoundEvent_SelectedItem;           // 0x0290(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	ESelectInfo                                   K2Node_ComponentBoundEvent_SelectionType;          // 0x02A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A1[0x3];                                      // 0x02A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetSelectedIndex_ReturnValue_2;           // 0x02A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              Temp_struct_Variable_3;                            // 0x02A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_X;                          // 0x02B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_Y;                          // 0x02B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Distance2D_ReturnValue;                   // 0x02B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x02BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2BD[0x3];                                      // 0x02BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              CallFunc_Subtract_Vector2DVector2D_ReturnValue;    // 0x02C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_X_1;                        // 0x02C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_Y_1;                        // 0x02CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_NotEqual_FloatFloat_ReturnValue;          // 0x02D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x02D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D3[0x1];                                      // 0x02D3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              CallFunc_ToRounded2D_ReturnValue;                  // 0x02D4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x02DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2DD[0x3];                                      // 0x02DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x02E0(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x02F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class USaveSlot_C*                            CallFunc_getSaveSlot_saveSlot;                     // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0310(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0320(0x0018)()
+	bool                                          Temp_bool_Variable_5;                              // 0x0338(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_339[0x7];                                      // 0x0339(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0340(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetComponentBounds_Origin;                // 0x0348(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetComponentBounds_BoxExtent;             // 0x0354(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetComponentBounds_SphereRadius;          // 0x0360(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_Select_Default_1;                           // 0x0364(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x036C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_378[0x8];                                      // 0x0378(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0380(0x0030)(IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x03B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AProp_C*                                CallFunc_FinishSpawningActor_ReturnValue;          // 0x03B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          CallFunc_getMainPlayer_AsMain_Player;              // 0x03C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_ComponentBoundEvent_Value_2;                // 0x03C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_3;         // 0x03CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_ComponentBoundEvent_Value_1;                // 0x03D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_3;          // 0x03D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x03D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_GetRotated2D_ReturnValue;                 // 0x03E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_6;       // 0x03E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SafeDivide_ReturnValue;                   // 0x03EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_ComponentBoundEvent_Value;                  // 0x03F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x03F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_isInBounds_ReturnValue;                   // 0x03F5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x03F6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F7[0x1];                                      // 0x03F7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x03F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x0400(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_401[0x7];                                      // 0x0401(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_ProjectDir_ReturnValue;                   // 0x0408(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_bSuccess;                       // 0x0418(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_419[0x7];                                      // 0x0419(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0420(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0430(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CreateDirectory_ReturnValue;              // 0x0440(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_441[0x7];                                      // 0x0441(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDateTime                              CallFunc_Now_ReturnValue;                          // 0x0448(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_DateTime_ToString_String;                 // 0x0450(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x0460(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_4;              // 0x0470(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetPrimaryMonitorResolution_Width;        // 0x0480(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetPrimaryMonitorResolution_Height;       // 0x0484(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0488(0x0018)()
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x04A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue_1;            // 0x04A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_1;               // 0x04A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x04B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetMousePositionScaledByDPI_LocationX;    // 0x04B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetMousePositionScaledByDPI_LocationY;    // 0x04BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetMousePositionScaledByDPI_ReturnValue;  // 0x04C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4C1[0x3];                                      // 0x04C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x04C4(0x0038)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x04FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              K2Node_Select_Default_2;                           // 0x0500(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Event_color;                                // 0x0508(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              K2Node_Select_Default_3;                           // 0x0518(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_ToRounded2D_ReturnValue_1;                // 0x0520(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Subtract_Vector2DVector2D_ReturnValue_1;  // 0x0528(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   K2Node_Event_key;                                  // 0x0530(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed;                              // 0x0548(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EAD[0x3];                                     // 0x0549(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_VSize2D_ReturnValue;                      // 0x054C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Normal2D_ReturnValue;                     // 0x0550(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0558(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue;       // 0x055C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Add_Vector2DVector2D_ReturnValue;         // 0x0564(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              K2Node_Select_Default_4;                           // 0x056C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EAE[0x4];                                     // 0x0574(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0578(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x0580(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue_1;           // 0x0588(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                              CallFunc_GetTickSpaceGeometry_ReturnValue;         // 0x0590(0x0038)(ConstParm, IsPlainOldData, NoDestructor)
-	struct FVector2D                              CallFunc_GetPosition_ReturnValue;                  // 0x05C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_LocalToViewport_PixelPosition;            // 0x05D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_LocalToViewport_ViewportPosition;         // 0x05D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Subtract_Vector2DVector2D_ReturnValue_2;  // 0x05E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Divide_Vector2DFloat_ReturnValue;         // 0x05E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_GetRotated2D_ReturnValue_1;               // 0x05F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Add_Vector2DVector2D_ReturnValue_1;       // 0x05F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Add_Vector2DVector2D_ReturnValue_2;       // 0x0600(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Vector2DInterpTo_ReturnValue;             // 0x0608(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              K2Node_Select_Default_5;                           // 0x0610(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_2;               // 0x0500(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUmg_texturePicker_C*                   K2Node_Event_picker;                               // 0x0508(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_Event_texture;                              // 0x0510(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_index;                                // 0x0518(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_X_2;                        // 0x051C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_Y_2;                        // 0x0520(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Event_color;                                // 0x0524(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_3;               // 0x0534(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_4;               // 0x053C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_Select_Default_2;                           // 0x0544(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_Select_Default_3;                           // 0x054C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_554[0x4];                                      // 0x0554(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   K2Node_Event_key;                                  // 0x0558(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed;                              // 0x0570(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_571[0x3];                                      // 0x0571(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              CallFunc_ToRounded2D_ReturnValue_1;                // 0x0574(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Subtract_Vector2DVector2D_ReturnValue_1;  // 0x057C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VSize2D_ReturnValue;                      // 0x0584(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Normal2D_ReturnValue;                     // 0x0588(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0590(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue;       // 0x0594(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Add_Vector2DVector2D_ReturnValue;         // 0x059C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5A4[0x4];                                      // 0x05A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x05A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_Select_Default_4;                           // 0x05B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainGamemode_C*                        K2Node_Event_gamemode;                             // 0x05B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue_1;           // 0x05C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              CallFunc_GetTickSpaceGeometry_ReturnValue;         // 0x05C8(0x0038)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FVector2D                              CallFunc_GetPosition_ReturnValue;                  // 0x0600(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_LocalToViewport_PixelPosition;            // 0x0608(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_LocalToViewport_ViewportPosition;         // 0x0610(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Subtract_Vector2DVector2D_ReturnValue_2;  // 0x0618(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Divide_Vector2DFloat_ReturnValue;         // 0x0620(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_GetRotated2D_ReturnValue_1;               // 0x0628(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Add_Vector2DVector2D_ReturnValue_1;       // 0x0630(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Add_Vector2DVector2D_ReturnValue_2;       // 0x0638(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Vector2DInterpTo_ReturnValue;             // 0x0640(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_Select_Default_5;                           // 0x0648(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw) == 0x000010, "Wrong alignment on Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw");
-static_assert(sizeof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw) == 0x000620, "Wrong size on Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw");
+static_assert(sizeof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw) == 0x000650, "Wrong size on Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw");
 static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, EntryPoint) == 0x000000, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, Temp_bool_Variable) == 0x000004, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Add_FloatFloat_ReturnValue) == 0x000008, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, Temp_bool_Variable_1) == 0x00000C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::Temp_bool_Variable_1' has a wrong offset!");
 static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000010, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_CreateDelegate_OutputDelegate) == 0x000014, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, Temp_bool_Variable_2) == 0x000014, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::Temp_bool_Variable_2' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_MakeStruct_ImageWriteOptions) == 0x000030, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_MakeStruct_ImageWriteOptions' has a wrong offset!");
 static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, Temp_name_Variable) == 0x000090, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::Temp_name_Variable' has a wrong offset!");
 static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_IsValid_ReturnValue) == 0x000098, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Event_settings) == 0x00009C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Event_settings' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetViewportSize_ReturnValue) == 0x000168, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetViewportSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, Temp_bool_Variable_2) == 0x000170, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_Value_5) == 0x000174, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_Value_5' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_Value_4) == 0x000178, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_Value_4' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_Value_3) == 0x00017C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_Value_3' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000180, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, Temp_bool_Variable_3) == 0x000184, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000188, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetWorldDeltaSeconds_ReturnValue_1) == 0x00018C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetWorldDeltaSeconds_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x000190, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_VictoryFloatPlusEquals_FloatOut_1) == 0x000194, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_VictoryFloatPlusEquals_FloatOut_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000198, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Percent_FloatFloat_ReturnValue) == 0x00019C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Percent_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_DegSin_ReturnValue) == 0x0001A0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_DegSin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x0001A4, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_SelectedItem_2) == 0x0001A8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_SelectedItem_2' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_SelectionType_2) == 0x0001B8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_SelectionType_2' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0001BC, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Multiply_IntFloat_ReturnValue_1) == 0x0001C0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Multiply_IntFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_SwitchInteger_CmpSuccess) == 0x0001C4, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, Temp_struct_Variable) == 0x0001C8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_RandomFloatInRange_ReturnValue) == 0x0001D0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetWorldDeltaSeconds_ReturnValue_2) == 0x0001D4, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetWorldDeltaSeconds_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetWorldDeltaSeconds_ReturnValue_3) == 0x0001D8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetWorldDeltaSeconds_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_VictoryFloatPlusEquals_FloatOut_2) == 0x0001DC, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_VictoryFloatPlusEquals_FloatOut_2' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_VictoryFloatPlusEquals_FloatOut_3) == 0x0001E0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_VictoryFloatPlusEquals_FloatOut_3' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Multiply_IntFloat_ReturnValue_2) == 0x0001E4, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Multiply_IntFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Percent_FloatFloat_ReturnValue_1) == 0x0001E8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Percent_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_DegSin_ReturnValue_1) == 0x0001EC, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_DegSin_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Add_FloatFloat_ReturnValue_2) == 0x0001F0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Add_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x0001F4, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_SwitchInteger_CmpSuccess_1) == 0x0001F8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_SwitchInteger_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, Temp_struct_Variable_1) == 0x0001FC, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000204, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetWorldDeltaSeconds_ReturnValue_4) == 0x000208, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetWorldDeltaSeconds_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, Temp_bool_Variable_4) == 0x00020C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetWorldDeltaSeconds_ReturnValue_5) == 0x000210, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetWorldDeltaSeconds_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Select_Default) == 0x000214, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_VictoryFloatPlusEquals_FloatOut_4) == 0x00021C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_VictoryFloatPlusEquals_FloatOut_4' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Multiply_IntFloat_ReturnValue_3) == 0x000220, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Multiply_IntFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_DegSin_ReturnValue_2) == 0x000224, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_DegSin_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_VictoryFloatPlusEquals_FloatOut_5) == 0x000228, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_VictoryFloatPlusEquals_FloatOut_5' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Add_FloatFloat_ReturnValue_3) == 0x00022C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Add_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Percent_FloatFloat_ReturnValue_2) == 0x000230, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Percent_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Divide_FloatFloat_ReturnValue_2) == 0x000234, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, Temp_struct_Variable_2) == 0x000238, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_SwitchInteger_CmpSuccess_2) == 0x000240, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_SwitchInteger_CmpSuccess_2' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x000244, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetSelectedIndex_ReturnValue) == 0x000248, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetSelectedIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_SelectedItem_1) == 0x000250, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_SelectedItem_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_SelectionType_1) == 0x000260, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_SelectionType_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_SelectedItem) == 0x000268, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_SelectedItem' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_SelectionType) == 0x000278, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_SelectionType' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetSelectedIndex_ReturnValue_1) == 0x00027C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetSelectedIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetSelectedIndex_ReturnValue_2) == 0x000280, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetSelectedIndex_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_BreakVector2D_X) == 0x000284, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_BreakVector2D_Y) == 0x000288, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Distance2D_ReturnValue) == 0x00028C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Distance2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000290, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Subtract_Vector2DVector2D_ReturnValue) == 0x000294, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Subtract_Vector2DVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_BreakVector2D_X_1) == 0x00029C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_BreakVector2D_X_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_BreakVector2D_Y_1) == 0x0002A0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_BreakVector2D_Y_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, Temp_struct_Variable_3) == 0x0002A4, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::Temp_struct_Variable_3' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Less_FloatFloat_ReturnValue) == 0x0002AC, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x0002AD, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_ToRounded2D_ReturnValue) == 0x0002B0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_ToRounded2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_BooleanAND_ReturnValue) == 0x0002B8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_BooleanOR_ReturnValue) == 0x0002B9, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Conv_FloatToText_ReturnValue) == 0x0002C0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Conv_TextToString_ReturnValue) == 0x0002D8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_getSaveSlot_saveSlot) == 0x0002E8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_getSaveSlot_saveSlot' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Concat_StrStr_ReturnValue) == 0x0002F0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Conv_StringToText_ReturnValue) == 0x000300, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000318, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetComponentBounds_Origin) == 0x000320, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetComponentBounds_Origin' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetComponentBounds_BoxExtent) == 0x00032C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetComponentBounds_BoxExtent' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetComponentBounds_SphereRadius) == 0x000338, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetComponentBounds_SphereRadius' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_getMainPlayer_AsMain_Player) == 0x000340, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_getMainPlayer_AsMain_Player' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Add_VectorVector_ReturnValue) == 0x000348, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_MakeTransform_ReturnValue) == 0x000360, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000390, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_Value_2) == 0x000398, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_Value_2' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_FinishSpawningActor_ReturnValue) == 0x0003A0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_RandomFloatInRange_ReturnValue_3) == 0x0003A8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_RandomFloatInRange_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_Value_1) == 0x0003AC, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_Value_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Divide_FloatFloat_ReturnValue_3) == 0x0003B0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Divide_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_MakeVector2D_ReturnValue) == 0x0003B4, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetRotated2D_ReturnValue) == 0x0003BC, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetRotated2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetWorldDeltaSeconds_ReturnValue_6) == 0x0003C4, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetWorldDeltaSeconds_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_SafeDivide_ReturnValue) == 0x0003C8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_SafeDivide_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_Value) == 0x0003CC, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_Value' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Greater_FloatFloat_ReturnValue_1) == 0x0003D0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_isInBounds_ReturnValue) == 0x0003D1, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_isInBounds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, Temp_bool_Variable_5) == 0x0003D2, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::Temp_bool_Variable_5' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_BooleanAND_ReturnValue_1) == 0x0003D3, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Select_Default_1) == 0x0003D4, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_BooleanAND_ReturnValue_2) == 0x0003DC, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x0003E0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_ProjectDir_ReturnValue) == 0x0003E8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_ProjectDir_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_CustomEvent_bSuccess) == 0x0003F8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_CustomEvent_bSuccess' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000400, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Now_ReturnValue) == 0x000410, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Now_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000418, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_DateTime_ToString_String) == 0x000428, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_DateTime_ToString_String' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_CreateDirectory_ReturnValue) == 0x000438, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_CreateDirectory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000440, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Concat_StrStr_ReturnValue_4) == 0x000450, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000460, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetPrimaryMonitorResolution_Width) == 0x000478, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetPrimaryMonitorResolution_Width' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetPrimaryMonitorResolution_Height) == 0x00047C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetPrimaryMonitorResolution_Height' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetPlayerController_ReturnValue) == 0x000480, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000488, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetMousePositionScaledByDPI_LocationX) == 0x00048C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetMousePositionScaledByDPI_LocationX' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetMousePositionScaledByDPI_LocationY) == 0x000490, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetMousePositionScaledByDPI_LocationY' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetMousePositionScaledByDPI_ReturnValue) == 0x000494, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetMousePositionScaledByDPI_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x000498, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_MakeVector2D_ReturnValue_1) == 0x00049C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_MakeVector2D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_MakeVector2D_ReturnValue_2) == 0x0004A4, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_MakeVector2D_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_BreakVector2D_X_2) == 0x0004AC, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_BreakVector2D_X_2' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_BreakVector2D_Y_2) == 0x0004B0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_BreakVector2D_Y_2' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_MakeVector2D_ReturnValue_3) == 0x0004B4, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_MakeVector2D_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_MakeVector2D_ReturnValue_4) == 0x0004BC, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_MakeVector2D_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Event_settings) == 0x0000A0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Event_settings' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetViewportSize_ReturnValue) == 0x000190, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetViewportSize_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, Temp_bool_Variable_3) == 0x000198, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::Temp_bool_Variable_3' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_Value_5) == 0x00019C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_Value_5' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_Value_4) == 0x0001A0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_Value_4' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_Value_3) == 0x0001A4, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_Value_3' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x0001A8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x0001AC, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetWorldDeltaSeconds_ReturnValue_1) == 0x0001B0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetWorldDeltaSeconds_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x0001B4, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_VictoryFloatPlusEquals_FloatOut_1) == 0x0001B8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_VictoryFloatPlusEquals_FloatOut_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Multiply_IntFloat_ReturnValue) == 0x0001BC, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Percent_FloatFloat_ReturnValue) == 0x0001C0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Percent_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_DegSin_ReturnValue) == 0x0001C4, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_DegSin_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x0001C8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_SelectedItem_2) == 0x0001D0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_SelectedItem_2' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_SelectionType_2) == 0x0001E0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_SelectionType_2' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0001E4, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Multiply_IntFloat_ReturnValue_1) == 0x0001E8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Multiply_IntFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_SwitchInteger_CmpSuccess) == 0x0001EC, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, Temp_struct_Variable) == 0x0001F0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_RandomFloatInRange_ReturnValue) == 0x0001F8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetWorldDeltaSeconds_ReturnValue_2) == 0x0001FC, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetWorldDeltaSeconds_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, Temp_struct_Variable_1) == 0x000200, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::Temp_struct_Variable_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetWorldDeltaSeconds_ReturnValue_3) == 0x000208, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetWorldDeltaSeconds_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_VictoryFloatPlusEquals_FloatOut_2) == 0x00020C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_VictoryFloatPlusEquals_FloatOut_2' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_VictoryFloatPlusEquals_FloatOut_3) == 0x000210, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_VictoryFloatPlusEquals_FloatOut_3' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Multiply_IntFloat_ReturnValue_2) == 0x000214, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Multiply_IntFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Percent_FloatFloat_ReturnValue_1) == 0x000218, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Percent_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_DegSin_ReturnValue_1) == 0x00021C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_DegSin_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Add_FloatFloat_ReturnValue_2) == 0x000220, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Add_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x000224, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_SwitchInteger_CmpSuccess_1) == 0x000228, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_SwitchInteger_CmpSuccess_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, Temp_bool_Variable_4) == 0x000229, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::Temp_bool_Variable_4' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x00022C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Select_Default) == 0x000230, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetWorldDeltaSeconds_ReturnValue_4) == 0x000238, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetWorldDeltaSeconds_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetWorldDeltaSeconds_ReturnValue_5) == 0x00023C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetWorldDeltaSeconds_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_VictoryFloatPlusEquals_FloatOut_4) == 0x000240, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_VictoryFloatPlusEquals_FloatOut_4' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_VictoryFloatPlusEquals_FloatOut_5) == 0x000244, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_VictoryFloatPlusEquals_FloatOut_5' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Multiply_IntFloat_ReturnValue_3) == 0x000248, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Multiply_IntFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Percent_FloatFloat_ReturnValue_2) == 0x00024C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Percent_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_DegSin_ReturnValue_2) == 0x000250, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_DegSin_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Add_FloatFloat_ReturnValue_3) == 0x000254, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Add_FloatFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Divide_FloatFloat_ReturnValue_2) == 0x000258, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_SwitchInteger_CmpSuccess_2) == 0x00025C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_SwitchInteger_CmpSuccess_2' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, Temp_struct_Variable_2) == 0x000260, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::Temp_struct_Variable_2' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x000268, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_SelectedItem_1) == 0x000270, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_SelectedItem_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_SelectionType_1) == 0x000280, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_SelectionType_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetSelectedIndex_ReturnValue) == 0x000284, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetSelectedIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetSelectedIndex_ReturnValue_1) == 0x000288, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetSelectedIndex_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_SelectedItem) == 0x000290, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_SelectedItem' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_SelectionType) == 0x0002A0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_SelectionType' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetSelectedIndex_ReturnValue_2) == 0x0002A4, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetSelectedIndex_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, Temp_struct_Variable_3) == 0x0002A8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::Temp_struct_Variable_3' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_BreakVector2D_X) == 0x0002B0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_BreakVector2D_X' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_BreakVector2D_Y) == 0x0002B4, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_BreakVector2D_Y' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Distance2D_ReturnValue) == 0x0002B8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Distance2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0002BC, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Subtract_Vector2DVector2D_ReturnValue) == 0x0002C0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Subtract_Vector2DVector2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_BreakVector2D_X_1) == 0x0002C8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_BreakVector2D_X_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_BreakVector2D_Y_1) == 0x0002CC, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_BreakVector2D_Y_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Less_FloatFloat_ReturnValue) == 0x0002D0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x0002D1, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_BooleanAND_ReturnValue) == 0x0002D2, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_ToRounded2D_ReturnValue) == 0x0002D4, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_ToRounded2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_BooleanOR_ReturnValue) == 0x0002DC, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Conv_FloatToText_ReturnValue) == 0x0002E0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Conv_TextToString_ReturnValue) == 0x0002F8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_getSaveSlot_saveSlot) == 0x000308, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_getSaveSlot_saveSlot' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Concat_StrStr_ReturnValue) == 0x000310, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Conv_StringToText_ReturnValue) == 0x000320, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, Temp_bool_Variable_5) == 0x000338, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::Temp_bool_Variable_5' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000340, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetComponentBounds_Origin) == 0x000348, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetComponentBounds_Origin' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetComponentBounds_BoxExtent) == 0x000354, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetComponentBounds_BoxExtent' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetComponentBounds_SphereRadius) == 0x000360, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetComponentBounds_SphereRadius' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Select_Default_1) == 0x000364, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Add_VectorVector_ReturnValue) == 0x00036C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_MakeTransform_ReturnValue) == 0x000380, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0003B0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_FinishSpawningActor_ReturnValue) == 0x0003B8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_getMainPlayer_AsMain_Player) == 0x0003C0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_getMainPlayer_AsMain_Player' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_Value_2) == 0x0003C8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_Value_2' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_RandomFloatInRange_ReturnValue_3) == 0x0003CC, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_RandomFloatInRange_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_Value_1) == 0x0003D0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_Value_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Divide_FloatFloat_ReturnValue_3) == 0x0003D4, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Divide_FloatFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_MakeVector2D_ReturnValue) == 0x0003D8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetRotated2D_ReturnValue) == 0x0003E0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetRotated2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetWorldDeltaSeconds_ReturnValue_6) == 0x0003E8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetWorldDeltaSeconds_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_SafeDivide_ReturnValue) == 0x0003EC, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_SafeDivide_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_ComponentBoundEvent_Value) == 0x0003F0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_ComponentBoundEvent_Value' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Greater_FloatFloat_ReturnValue_1) == 0x0003F4, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_isInBounds_ReturnValue) == 0x0003F5, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_isInBounds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_BooleanAND_ReturnValue_1) == 0x0003F6, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x0003F8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_BooleanAND_ReturnValue_2) == 0x000400, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_ProjectDir_ReturnValue) == 0x000408, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_ProjectDir_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_CustomEvent_bSuccess) == 0x000418, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_CustomEvent_bSuccess' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000420, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000430, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_CreateDirectory_ReturnValue) == 0x000440, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_CreateDirectory_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Now_ReturnValue) == 0x000448, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Now_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_DateTime_ToString_String) == 0x000450, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_DateTime_ToString_String' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000460, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Concat_StrStr_ReturnValue_4) == 0x000470, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetPrimaryMonitorResolution_Width) == 0x000480, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetPrimaryMonitorResolution_Width' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetPrimaryMonitorResolution_Height) == 0x000484, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetPrimaryMonitorResolution_Height' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000488, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Conv_IntToFloat_ReturnValue) == 0x0004A0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x0004A4, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_MakeVector2D_ReturnValue_1) == 0x0004A8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_MakeVector2D_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetPlayerController_ReturnValue) == 0x0004B0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetMousePositionScaledByDPI_LocationX) == 0x0004B8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetMousePositionScaledByDPI_LocationX' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetMousePositionScaledByDPI_LocationY) == 0x0004BC, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetMousePositionScaledByDPI_LocationY' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetMousePositionScaledByDPI_ReturnValue) == 0x0004C0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetMousePositionScaledByDPI_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Event_MyGeometry) == 0x0004C4, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Event_MyGeometry' has a wrong offset!");
 static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Event_InDeltaTime) == 0x0004FC, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Select_Default_2) == 0x000500, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Event_color) == 0x000508, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Event_color' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Select_Default_3) == 0x000518, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_ToRounded2D_ReturnValue_1) == 0x000520, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_ToRounded2D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Subtract_Vector2DVector2D_ReturnValue_1) == 0x000528, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Subtract_Vector2DVector2D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Event_key) == 0x000530, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Event_key' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Event_pressed) == 0x000548, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Event_pressed' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_VSize2D_ReturnValue) == 0x00054C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_VSize2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Normal2D_ReturnValue) == 0x000550, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Normal2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_FClamp_ReturnValue) == 0x000558, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Multiply_Vector2DFloat_ReturnValue) == 0x00055C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Multiply_Vector2DFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Add_Vector2DVector2D_ReturnValue) == 0x000564, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Add_Vector2DVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Select_Default_4) == 0x00056C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000578, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Event_gamemode) == 0x000580, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Event_gamemode' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_SlotAsCanvasSlot_ReturnValue_1) == 0x000588, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_SlotAsCanvasSlot_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetTickSpaceGeometry_ReturnValue) == 0x000590, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetTickSpaceGeometry_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetPosition_ReturnValue) == 0x0005C8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetPosition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_LocalToViewport_PixelPosition) == 0x0005D0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_LocalToViewport_PixelPosition' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_LocalToViewport_ViewportPosition) == 0x0005D8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_LocalToViewport_ViewportPosition' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Subtract_Vector2DVector2D_ReturnValue_2) == 0x0005E0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Subtract_Vector2DVector2D_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Divide_Vector2DFloat_ReturnValue) == 0x0005E8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Divide_Vector2DFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetRotated2D_ReturnValue_1) == 0x0005F0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetRotated2D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Add_Vector2DVector2D_ReturnValue_1) == 0x0005F8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Add_Vector2DVector2D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Add_Vector2DVector2D_ReturnValue_2) == 0x000600, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Add_Vector2DVector2D_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Vector2DInterpTo_ReturnValue) == 0x000608, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Vector2DInterpTo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Select_Default_5) == 0x000610, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Select_Default_5' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_MakeVector2D_ReturnValue_2) == 0x000500, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_MakeVector2D_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Event_picker) == 0x000508, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Event_picker' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Event_texture) == 0x000510, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Event_texture' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Event_index) == 0x000518, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Event_index' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_BreakVector2D_X_2) == 0x00051C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_BreakVector2D_X_2' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_BreakVector2D_Y_2) == 0x000520, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_BreakVector2D_Y_2' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Event_color) == 0x000524, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Event_color' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_MakeVector2D_ReturnValue_3) == 0x000534, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_MakeVector2D_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_MakeVector2D_ReturnValue_4) == 0x00053C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_MakeVector2D_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Select_Default_2) == 0x000544, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Select_Default_3) == 0x00054C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Select_Default_3' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Event_key) == 0x000558, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Event_key' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Event_pressed) == 0x000570, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Event_pressed' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_ToRounded2D_ReturnValue_1) == 0x000574, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_ToRounded2D_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Subtract_Vector2DVector2D_ReturnValue_1) == 0x00057C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Subtract_Vector2DVector2D_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_VSize2D_ReturnValue) == 0x000584, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_VSize2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Normal2D_ReturnValue) == 0x000588, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Normal2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_FClamp_ReturnValue) == 0x000590, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_FClamp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Multiply_Vector2DFloat_ReturnValue) == 0x000594, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Multiply_Vector2DFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Add_Vector2DVector2D_ReturnValue) == 0x00059C, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Add_Vector2DVector2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x0005A8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Select_Default_4) == 0x0005B0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Select_Default_4' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Event_gamemode) == 0x0005B8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Event_gamemode' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_SlotAsCanvasSlot_ReturnValue_1) == 0x0005C0, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_SlotAsCanvasSlot_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetTickSpaceGeometry_ReturnValue) == 0x0005C8, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetTickSpaceGeometry_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetPosition_ReturnValue) == 0x000600, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetPosition_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_LocalToViewport_PixelPosition) == 0x000608, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_LocalToViewport_PixelPosition' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_LocalToViewport_ViewportPosition) == 0x000610, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_LocalToViewport_ViewportPosition' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Subtract_Vector2DVector2D_ReturnValue_2) == 0x000618, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Subtract_Vector2DVector2D_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Divide_Vector2DFloat_ReturnValue) == 0x000620, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Divide_Vector2DFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_GetRotated2D_ReturnValue_1) == 0x000628, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_GetRotated2D_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Add_Vector2DVector2D_ReturnValue_1) == 0x000630, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Add_Vector2DVector2D_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Add_Vector2DVector2D_ReturnValue_2) == 0x000638, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Add_Vector2DVector2D_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, CallFunc_Vector2DInterpTo_ReturnValue) == 0x000640, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::CallFunc_Vector2DInterpTo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw, K2Node_Select_Default_5) == 0x000648, "Member 'Umg_paperDraw_C_ExecuteUbergraph_umg_paperDraw::K2Node_Select_Default_5' has a wrong offset!");
 
 // Function umg_paperDraw.umg_paperDraw_C.stuffUpgraded
 // 0x0008 (0x0008 - 0x0000)
@@ -414,6 +422,21 @@ public:
 static_assert(alignof(Umg_paperDraw_C_ApplyColor) == 0x000004, "Wrong alignment on Umg_paperDraw_C_ApplyColor");
 static_assert(sizeof(Umg_paperDraw_C_ApplyColor) == 0x000010, "Wrong size on Umg_paperDraw_C_ApplyColor");
 static_assert(offsetof(Umg_paperDraw_C_ApplyColor, Param_Color) == 0x000000, "Member 'Umg_paperDraw_C_ApplyColor::Param_Color' has a wrong offset!");
+
+// Function umg_paperDraw.umg_paperDraw_C.texturePickerApply
+// 0x0018 (0x0018 - 0x0000)
+struct Umg_paperDraw_C_TexturePickerApply final
+{
+public:
+	class UUmg_texturePicker_C*                   Picker;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Param_Index;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Umg_paperDraw_C_TexturePickerApply) == 0x000008, "Wrong alignment on Umg_paperDraw_C_TexturePickerApply");
+static_assert(sizeof(Umg_paperDraw_C_TexturePickerApply) == 0x000018, "Wrong size on Umg_paperDraw_C_TexturePickerApply");
+static_assert(offsetof(Umg_paperDraw_C_TexturePickerApply, Picker) == 0x000000, "Member 'Umg_paperDraw_C_TexturePickerApply::Picker' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_TexturePickerApply, Texture) == 0x000008, "Member 'Umg_paperDraw_C_TexturePickerApply::Texture' has a wrong offset!");
+static_assert(offsetof(Umg_paperDraw_C_TexturePickerApply, Param_Index) == 0x000010, "Member 'Umg_paperDraw_C_TexturePickerApply::Param_Index' has a wrong offset!");
 
 // Function umg_paperDraw.umg_paperDraw_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -545,14 +568,14 @@ static_assert(sizeof(Umg_paperDraw_C_BndEvt__umg_paperDraw_slider_H_K2Node_Compo
 static_assert(offsetof(Umg_paperDraw_C_BndEvt__umg_paperDraw_slider_H_K2Node_ComponentBoundEvent_3_OnFloatValueChangedEvent__DelegateSignature, Value) == 0x000000, "Member 'Umg_paperDraw_C_BndEvt__umg_paperDraw_slider_H_K2Node_ComponentBoundEvent_3_OnFloatValueChangedEvent__DelegateSignature::Value' has a wrong offset!");
 
 // Function umg_paperDraw.umg_paperDraw_C.settingsApplied
-// 0x00CC (0x00CC - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct Umg_paperDraw_C_SettingsApplied final
 {
 public:
-	struct FStruct_settings                       Settings;                                          // 0x0000(0x00CC)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FStruct_settings                       Settings;                                          // 0x0000(0x00F0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(Umg_paperDraw_C_SettingsApplied) == 0x000004, "Wrong alignment on Umg_paperDraw_C_SettingsApplied");
-static_assert(sizeof(Umg_paperDraw_C_SettingsApplied) == 0x0000CC, "Wrong size on Umg_paperDraw_C_SettingsApplied");
+static_assert(alignof(Umg_paperDraw_C_SettingsApplied) == 0x000008, "Wrong alignment on Umg_paperDraw_C_SettingsApplied");
+static_assert(sizeof(Umg_paperDraw_C_SettingsApplied) == 0x0000F0, "Wrong size on Umg_paperDraw_C_SettingsApplied");
 static_assert(offsetof(Umg_paperDraw_C_SettingsApplied, Settings) == 0x000000, "Member 'Umg_paperDraw_C_SettingsApplied::Settings' has a wrong offset!");
 
 // Function umg_paperDraw.umg_paperDraw_C.OnMouseButtonDown
@@ -565,7 +588,7 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
 	bool                                          CallFunc_PointerEvent_IsMouseButtonDown_ReturnValue; // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x0161(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EAF[0x2];                                     // 0x0162(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_162[0x2];                                      // 0x0162(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              CallFunc_Subtract_Vector2DVector2D_ReturnValue;    // 0x0164(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetValue_ReturnValue;                     // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VSize2D_ReturnValue;                      // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -642,10 +665,10 @@ struct Umg_paperDraw_C_Init final
 public:
 	class AProp_paper_drawable_C*                 Param_PaperDraw;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Param_Angle;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EB0[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AProp_pencil_C*                         Pencil;                                            // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EB1[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Umg_paperDraw_C_Init) == 0x000008, "Wrong alignment on Umg_paperDraw_C_Init");
@@ -670,7 +693,7 @@ public:
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue_2;          // 0x0142(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue_3;          // 0x0143(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue_4;          // 0x0144(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EB2[0x3];                                     // 0x0145(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_145[0x3];                                      // 0x0145(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x0148(0x00B8)()
 };
 static_assert(alignof(Umg_paperDraw_C_OnKeyDown) == 0x000008, "Wrong alignment on Umg_paperDraw_C_OnKeyDown");
@@ -745,7 +768,7 @@ public:
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue_1;          // 0x0141(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue_2;          // 0x0142(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue_3;          // 0x0143(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EB3[0x4];                                     // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_144[0x4];                                      // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x0148(0x00B8)()
 };
 static_assert(alignof(Umg_paperDraw_C_OnKeyUp) == 0x000008, "Wrong alignment on Umg_paperDraw_C_OnKeyUp");
@@ -769,7 +792,7 @@ public:
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Distance2D_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EB4[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainPlayer_C*                          CallFunc_getMainPlayer_AsMain_Player;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_isInBounds_ReturnValue;                   // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -804,7 +827,7 @@ struct Umg_paperDraw_C_IsInBounds final
 {
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EB5[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)

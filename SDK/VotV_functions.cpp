@@ -72,6 +72,57 @@ void UbpCodeLib::BoundingBox2D(class APlayerController* PlayerController, class 
 }
 
 
+// Function VotV.bpCodeLib.BoundingBox2DPoints
+// (Final, Native, Static, Private, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class APlayerController*                PlayerController                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<struct FVector>                  Verts                                                  (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+// struct FVector2D                        Min                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector2D                        Max                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector2D                        Origin                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector2D                        Size                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ClipX                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ClipY                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UbpCodeLib::BoundingBox2DPoints(class APlayerController* PlayerController, const TArray<struct FVector>& Verts, struct FVector2D* Min, struct FVector2D* Max, struct FVector2D* Origin, struct FVector2D* Size, bool* ClipX, bool* ClipY)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("bpCodeLib", "BoundingBox2DPoints");
+
+	Params::bpCodeLib_BoundingBox2DPoints Parms{};
+
+	Parms.PlayerController = PlayerController;
+	Parms.Verts = std::move(Verts);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (Min != nullptr)
+		*Min = std::move(Parms.Min);
+
+	if (Max != nullptr)
+		*Max = std::move(Parms.Max);
+
+	if (Origin != nullptr)
+		*Origin = std::move(Parms.Origin);
+
+	if (Size != nullptr)
+		*Size = std::move(Parms.Size);
+
+	if (ClipX != nullptr)
+		*ClipX = Parms.ClipX;
+
+	if (ClipY != nullptr)
+		*ClipY = Parms.ClipY;
+}
+
+
 // Function VotV.bpCodeLib.boyoancy
 // (Final, Native, Static, Private, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -87,8 +138,9 @@ void UbpCodeLib::BoundingBox2D(class APlayerController* PlayerController, class 
 // TArray<float>                           RiversRadiusIn                                         (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 // TArray<float>                           RiversRadiusOut                                        (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 // TArray<float>                           RiversForce                                            (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+// float                                   Damping                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UbpCodeLib::boyoancy(const TArray<class AActor*>& ActorsInWater, const TArray<float>& ActorsSurface, const TArray<float>& ActorsBoyoancy, const TArray<struct FTransform>& Boxes, const TArray<bool>& CenterUnderwaterCompare, TArray<bool>* CenterUnderwaterCopy, float PowerDepth, float MaxPower, const TArray<class USplineComponent*>& RiverSplines, const TArray<float>& RiversRadiusIn, const TArray<float>& RiversRadiusOut, const TArray<float>& RiversForce)
+void UbpCodeLib::boyoancy(const TArray<class AActor*>& ActorsInWater, const TArray<float>& ActorsSurface, const TArray<float>& ActorsBoyoancy, const TArray<struct FTransform>& Boxes, const TArray<bool>& CenterUnderwaterCompare, TArray<bool>* CenterUnderwaterCopy, float PowerDepth, float MaxPower, const TArray<class USplineComponent*>& RiverSplines, const TArray<float>& RiversRadiusIn, const TArray<float>& RiversRadiusOut, const TArray<float>& RiversForce, float Damping)
 {
 	static class UFunction* Func = nullptr;
 
@@ -108,6 +160,7 @@ void UbpCodeLib::boyoancy(const TArray<class AActor*>& ActorsInWater, const TArr
 	Parms.RiversRadiusIn = std::move(RiversRadiusIn);
 	Parms.RiversRadiusOut = std::move(RiversRadiusOut);
 	Parms.RiversForce = std::move(RiversForce);
+	Parms.Damping = Damping;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -129,8 +182,9 @@ void UbpCodeLib::boyoancy(const TArray<class AActor*>& ActorsInWater, const TArr
 // float                                   Surface                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   PowerDepth                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   MaxPower                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   Damping                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UbpCodeLib::boyoancyForce(class UPrimitiveComponent* Component, float Param_boyoancyForce, float Surface, float PowerDepth, float MaxPower)
+void UbpCodeLib::boyoancyForce(class UPrimitiveComponent* Component, float Param_boyoancyForce, float Surface, float PowerDepth, float MaxPower, float Damping)
 {
 	static class UFunction* Func = nullptr;
 
@@ -144,6 +198,7 @@ void UbpCodeLib::boyoancyForce(class UPrimitiveComponent* Component, float Param
 	Parms.Surface = Surface;
 	Parms.PowerDepth = PowerDepth;
 	Parms.MaxPower = MaxPower;
+	Parms.Damping = Damping;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

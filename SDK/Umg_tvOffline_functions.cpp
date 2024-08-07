@@ -37,6 +37,20 @@ void UUmg_tvOffline_C::ExecuteUbergraph_umg_tvOffline(int32 EntryPoint)
 }
 
 
+// Function umg_tvOffline.umg_tvOffline_C.BndEvt__umg_tvOffline_Button_skip_K2Node_ComponentBoundEvent_8_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UUmg_tvOffline_C::BndEvt__umg_tvOffline_Button_skip_K2Node_ComponentBoundEvent_8_OnButtonClickedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_tvOffline_C", "BndEvt__umg_tvOffline_Button_skip_K2Node_ComponentBoundEvent_8_OnButtonClickedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function umg_tvOffline.umg_tvOffline_C.BndEvt__umg_tvOffline_Slider_playback_K2Node_ComponentBoundEvent_7_OnMouseCaptureEndEvent__DelegateSignature
 // (BlueprintEvent)
 

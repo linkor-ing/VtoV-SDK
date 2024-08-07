@@ -24,7 +24,7 @@ class ATrigger_fakeLmaos_C final : public ATriggerBase_C
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_Trigger_fakeLmaos_C;                // 0x0288(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	int32                                         DishID;                                            // 0x0290(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_43B2[0x4];                                     // 0x0294(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_294[0x4];                                      // 0x0294(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ADish_C*                                Dish;                                              // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

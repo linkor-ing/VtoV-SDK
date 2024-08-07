@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "SlateCore_structs.hpp"
 #include "Struct_email_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -50,10 +50,10 @@ public:
 	struct FStruct_email                          IsNew;                                             // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Len_ReturnValue;                          // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_27F2[0x4];                                     // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0068(0x0018)()
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_27F3[0x7];                                     // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x0088(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_SelectString_ReturnValue;                 // 0x0098(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x00A8(0x0018)()

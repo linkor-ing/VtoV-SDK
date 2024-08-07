@@ -32,17 +32,17 @@ static_assert(offsetof(Umg_shopSubcategoryButton_C_ExecuteUbergraph_umg_shopSubc
 struct Umg_shopSubcategoryButton_C_Upd final
 {
 public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Umg_shopSubcategoryButton_C_Upd) == 0x000001, "Wrong alignment on Umg_shopSubcategoryButton_C_Upd");
 static_assert(sizeof(Umg_shopSubcategoryButton_C_Upd) == 0x000005, "Wrong size on Umg_shopSubcategoryButton_C_Upd");
-static_assert(offsetof(Umg_shopSubcategoryButton_C_Upd, Temp_bool_Variable) == 0x000000, "Member 'Umg_shopSubcategoryButton_C_Upd::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Umg_shopSubcategoryButton_C_Upd, Temp_byte_Variable) == 0x000001, "Member 'Umg_shopSubcategoryButton_C_Upd::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Umg_shopSubcategoryButton_C_Upd, Temp_byte_Variable_1) == 0x000002, "Member 'Umg_shopSubcategoryButton_C_Upd::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(Umg_shopSubcategoryButton_C_Upd, Temp_byte_Variable) == 0x000000, "Member 'Umg_shopSubcategoryButton_C_Upd::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(Umg_shopSubcategoryButton_C_Upd, Temp_byte_Variable_1) == 0x000001, "Member 'Umg_shopSubcategoryButton_C_Upd::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(Umg_shopSubcategoryButton_C_Upd, Temp_bool_Variable) == 0x000002, "Member 'Umg_shopSubcategoryButton_C_Upd::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(Umg_shopSubcategoryButton_C_Upd, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000003, "Member 'Umg_shopSubcategoryButton_C_Upd::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Umg_shopSubcategoryButton_C_Upd, K2Node_Select_Default) == 0x000004, "Member 'Umg_shopSubcategoryButton_C_Upd::K2Node_Select_Default' has a wrong offset!");
 

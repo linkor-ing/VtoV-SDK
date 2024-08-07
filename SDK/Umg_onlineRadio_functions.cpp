@@ -37,6 +37,20 @@ void UUmg_onlineRadio_C::ExecuteUbergraph_umg_onlineRadio(int32 EntryPoint)
 }
 
 
+// Function umg_onlineRadio.umg_onlineRadio_C.BndEvt__umg_onlineRadio_Button_skip_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UUmg_onlineRadio_C::BndEvt__umg_onlineRadio_Button_skip_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("umg_onlineRadio_C", "BndEvt__umg_onlineRadio_Button_skip_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function umg_onlineRadio.umg_onlineRadio_C.BndEvt__umg_onlineRadio_Button_104_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
 

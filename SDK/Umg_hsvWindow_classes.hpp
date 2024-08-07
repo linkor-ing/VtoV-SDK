@@ -39,7 +39,7 @@ public:
 	class UTextBlock*                             Text_V;                                            // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class AActor*                                 Actor;                                             // 0x02D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           InColor;                                           // 0x02D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EB7[0x8];                                     // 0x02E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E8[0x8];                                      // 0x02E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector4                               Hsvm;                                              // 0x02F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_wAlien2.prop_wAlien2_C
-// 0x0000 (0x03C0 - 0x03C0)
+// 0x0000 (0x03D0 - 0x03D0)
 class AProp_wAlien2_C final : public AProp_wMannequin_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_wAlien2_C) == 0x000008, "Wrong alignment on AProp_wAlien2_C");
-static_assert(sizeof(AProp_wAlien2_C) == 0x0003C0, "Wrong size on AProp_wAlien2_C");
+static_assert(sizeof(AProp_wAlien2_C) == 0x0003D0, "Wrong size on AProp_wAlien2_C");
 
 }
 

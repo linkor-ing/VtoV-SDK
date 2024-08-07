@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Prop_container_classes.hpp"
 #include "Engine_structs.hpp"
+#include "Prop_container_classes.hpp"
 #include "Enum_interactionActions_structs.hpp"
 
 
@@ -19,15 +19,15 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_mailbox.prop_mailbox_C
-// 0x0010 (0x03F8 - 0x03E8)
+// 0x0010 (0x0408 - 0x03F8)
 class AProp_mailbox_C final : public AProp_container_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_mailbox_C;                     // 0x03E8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UNavModifierComponent*                  NavModifier;                                       // 0x03F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_mailbox_C;                     // 0x03F8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UNavModifierComponent*                  NavModifier;                                       // 0x0400(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay);
+	void GetActionOptions(class AMainPlayer_C* Player, class UPrimitiveComponent* Component, class AActor* Actor, TArray<class FString>* Options, TArray<Enum_interactionActions>* Options_enum, TArray<class FText>* OptionsNamesOverlay, uint8* Number);
 	void GetData(struct FStruct_save* Data);
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GamemodeBeginPlay();
@@ -46,9 +46,9 @@ public:
 	}
 };
 static_assert(alignof(AProp_mailbox_C) == 0x000008, "Wrong alignment on AProp_mailbox_C");
-static_assert(sizeof(AProp_mailbox_C) == 0x0003F8, "Wrong size on AProp_mailbox_C");
-static_assert(offsetof(AProp_mailbox_C, UberGraphFrame_Prop_mailbox_C) == 0x0003E8, "Member 'AProp_mailbox_C::UberGraphFrame_Prop_mailbox_C' has a wrong offset!");
-static_assert(offsetof(AProp_mailbox_C, NavModifier) == 0x0003F0, "Member 'AProp_mailbox_C::NavModifier' has a wrong offset!");
+static_assert(sizeof(AProp_mailbox_C) == 0x000408, "Wrong size on AProp_mailbox_C");
+static_assert(offsetof(AProp_mailbox_C, UberGraphFrame_Prop_mailbox_C) == 0x0003F8, "Member 'AProp_mailbox_C::UberGraphFrame_Prop_mailbox_C' has a wrong offset!");
+static_assert(offsetof(AProp_mailbox_C, NavModifier) == 0x000400, "Member 'AProp_mailbox_C::NavModifier' has a wrong offset!");
 
 }
 

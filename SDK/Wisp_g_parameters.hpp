@@ -10,18 +10,18 @@
 
 #include "Basic.hpp"
 
-#include "Enum_interactionActions_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Enum_interactionActions_structs.hpp"
 #include "Engine_structs.hpp"
-#include "AIModule_structs.hpp"
 #include "InputCore_structs.hpp"
+#include "AIModule_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function wisp_g.wisp_g_C.ExecuteUbergraph_wisp_g
-// 0x0900 (0x0900 - 0x0000)
+// 0x09A0 (0x09A0 - 0x0000)
 struct Wisp_g_C_ExecuteUbergraph_wisp_g final
 {
 public:
@@ -30,167 +30,173 @@ public:
 	float                                         CallFunc_Ease_ReturnValue;                         // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Lerp_ReturnValue;                         // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23A8[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Lerp_ReturnValue_1;                       // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(EPathFollowingResult MovementResult)> K2Node_CreateDelegate_OutputDelegate;              // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
 	EPathFollowingResult                          K2Node_CustomEvent_MovementResult_1;               // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPathFollowingResult                          K2Node_CustomEvent_MovementResult;                 // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23A9[0x2];                                     // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A[0x2];                                       // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(EPathFollowingResult MovementResult)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x003C(0x0010)(ZeroConstructor, NoDestructor)
 	EPathFollowingResult                          Temp_byte_Variable;                                // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23AA[0x3];                                     // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class UUmg_flashbang_C*                       CallFunc_Create_ReturnValue;                       // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_activate;                             // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_static;                               // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_frozen;                               // 0x006A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_active;                               // 0x006B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23AB[0x4];                                     // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_Event_actor_1;                              // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_4;                             // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_5;                             // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit_5;                                // 0x007C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FVector                                K2Node_Event_impact_1;                             // 0x0104(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_skipSetting;                          // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23AC[0x7];                                     // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 K2Node_Event_key_1;                                // 0x0118(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_11;                            // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_12;                            // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             K2Node_Event_hit_4;                                // 0x0130(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         K2Node_Event_damage_3;                             // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_4;                             // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_fuel;                                 // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_10;                            // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_3;                                // 0x01C8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         K2Node_Event_index;                                // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       K2Node_Event_action;                               // 0x0254(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23AD[0x3];                                     // 0x0255(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_9;                             // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_8;                             // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_2;                             // 0x0268(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_location_1;                           // 0x026C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_7;                             // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_wheelDelta;                           // 0x0290(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23AE[0x4];                                     // 0x0294(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x0298(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              K2Node_Event_mouse;                                // 0x02A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x02A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   K2Node_Event_key;                                  // 0x02B0(0x0018)(HasGetValueTypeHash)
-	bool                                          K2Node_Event_pressed;                              // 0x02C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23AF[0x3];                                     // 0x02C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_temperature_1;                        // 0x02CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_temperature;                          // 0x02D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_speed;                                // 0x02D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x02D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_2;                                // 0x02E0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class FString                                 K2Node_Event_name;                                 // 0x0368(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_volume;                               // 0x0378(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23B0[0x4];                                     // 0x037C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0380(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_location;                             // 0x0388(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage_1;                             // 0x0394(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_clean;                                // 0x0398(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23B1[0x7];                                     // 0x0399(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x03A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit_1;                                // 0x03A8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AHook_C*                                K2Node_Event_hook;                                 // 0x0430(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_Condition;                      // 0x0438(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23B2[0x3];                                     // 0x0439(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x043C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0440(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_VInterpTo_ReturnValue;                    // 0x0444(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0450(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         CallFunc_PerlinNoise1D_ReturnValue;                // 0x04D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_1;       // 0x04DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue_2;                       // 0x04E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x04E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x04E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x04EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x04F0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x04FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult_1;  // 0x0500(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AWaterVolume_C*                         K2Node_Event_water_3;                              // 0x0588(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water_2;                              // 0x0590(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AWaterVolume_C*                         K2Node_Event_water_1;                              // 0x0598(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_damage;                               // 0x05A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_hit;                                  // 0x05A4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_23B3[0x4];                                     // 0x062C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Event_actor;                                // 0x0630(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_impact;                               // 0x0638(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23B4[0x4];                                     // 0x0644(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  CallFunc_GetPlayerPawn_ReturnValue;                // 0x0648(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0650(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23B5[0x4];                                     // 0x065C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0660(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0668(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x066C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23B6[0x3];                                     // 0x066D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent_1;  // 0x0670(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor_1;           // 0x0678(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp_1;            // 0x0680(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex_1;       // 0x0688(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bFromSweep_1;           // 0x068C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23B7[0x3];                                     // 0x068D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult_1;          // 0x0690(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0718(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23B8[0x7];                                     // 0x0719(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMainPlayer_C*                          K2Node_DynamicCast_AsMain_Player;                  // 0x0720(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0728(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0729(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23B9[0x6];                                     // 0x072A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class AWaterVolume_C*                         K2Node_Event_water;                                // 0x0730(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x0738(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_WasRecentlyRendered_ReturnValue;          // 0x0739(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23BA[0x2];                                     // 0x073A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x073C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0740(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23BB[0x3];                                     // 0x0741(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x0744(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0750(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23BC[0x3];                                     // 0x0751(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue;              // 0x0754(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_ProjectPointToNavigation_ProjectedLocation; // 0x0760(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_ProjectPointToNavigation_ReturnValue;  // 0x076C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23BD[0x3];                                     // 0x076D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_3;         // 0x0770(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23BE[0x4];                                     // 0x0774(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent;    // 0x0778(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x0780(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x0788(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x0790(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x0794(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23BF[0x3];                                     // 0x0795(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0798(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                CallFunc_MakeVector_ReturnValue_2;                 // 0x0820(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23C0[0x4];                                     // 0x082C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ADoor_C*                                K2Node_DynamicCast_AsDoor;                         // 0x0830(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0838(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23C1[0x3];                                     // 0x0839(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x083C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue_4;         // 0x0848(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23C2[0x4];                                     // 0x084C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  K2Node_ComponentBoundEvent_Pawn;                   // 0x0850(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetRandomPointInNavigableRadius_RandomLocation; // 0x0858(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_GetRandomPointInNavigableRadius_ReturnValue; // 0x0864(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23C3[0x3];                                     // 0x0865(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_SelectVector_ReturnValue;                 // 0x0868(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23C4[0x4];                                     // 0x0874(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAIAsyncTaskBlueprintProxy*             CallFunc_CreateMoveToProxyObject_ReturnValue;      // 0x0878(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0880(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23C5[0x3];                                     // 0x0881(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x0884(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RandomPointInBoundingBox_ReturnValue;     // 0x0890(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_X;                            // 0x089C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Y;                            // 0x08A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Z;                            // 0x08A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue_3;                 // 0x08A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_ProjectPointToNavigation_ProjectedLocation_1; // 0x08B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_ProjectPointToNavigation_ReturnValue_1; // 0x08C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23C6[0xF];                                     // 0x08C1(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x08D0(0x0030)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_damage_3;                             // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hot;                                  // 0x01C4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_24C[0x4];                                      // 0x024C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_11;                            // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_3;                                // 0x0258(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	Enum_interactionActions                       K2Node_Event_action;                               // 0x02E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2E1[0x7];                                      // 0x02E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_10;                            // 0x02E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_9;                             // 0x02F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_2;                             // 0x02F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_location_1;                           // 0x02FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_8;                             // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_7;                             // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_6;                             // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_wheelDelta;                           // 0x0320(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_324[0x4];                                      // 0x0324(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_5;                             // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_Event_mouse;                                // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_4;                             // 0x0338(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   K2Node_Event_key;                                  // 0x0340(0x0018)(HasGetValueTypeHash)
+	bool                                          K2Node_Event_pressed;                              // 0x0358(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_359[0x3];                                      // 0x0359(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_temperature_1;                        // 0x035C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_temperature;                          // 0x0360(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_speed;                                // 0x0364(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMainPlayer_C*                          K2Node_Event_player_3;                             // 0x0368(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_2;                                // 0x0370(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class FString                                 K2Node_Event_name;                                 // 0x03F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_volume;                               // 0x0408(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_40C[0x4];                                      // 0x040C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_2;                             // 0x0410(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_location;                             // 0x0418(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage_1;                             // 0x0424(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_clean_1;                              // 0x0428(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_429[0x7];                                      // 0x0429(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player_1;                             // 0x0430(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit_1;                                // 0x0438(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AHook_C*                                K2Node_Event_hook_1;                               // 0x04C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_clean;                                // 0x04C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4CC[0x4];                                      // 0x04CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_Event_player;                               // 0x04D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AHook_C*                                K2Node_Event_hook;                                 // 0x04D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_Condition;                      // 0x04E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4E1[0x3];                                      // 0x04E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x04E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x04E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_VInterpTo_ReturnValue;                    // 0x04EC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x04F8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         CallFunc_PerlinNoise1D_ReturnValue;                // 0x0580(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue_1;       // 0x0584(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue_2;                       // 0x0588(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x058C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0590(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VictoryFloatPlusEquals_FloatOut;          // 0x0594(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0598(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x05A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult_1;  // 0x05A8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AWaterVolume_C*                         K2Node_Event_water_3;                              // 0x0630(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterVolume_C*                         K2Node_Event_water_2;                              // 0x0638(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AWaterVolume_C*                         K2Node_Event_water_1;                              // 0x0640(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_damage;                               // 0x0648(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_hit;                                  // 0x064C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                         Pad_6D4[0x4];                                      // 0x06D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Event_actor;                                // 0x06D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_impact;                               // 0x06E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6EC[0x4];                                      // 0x06EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  CallFunc_GetPlayerPawn_ReturnValue;                // 0x06F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x06F8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_704[0x4];                                      // 0x0704(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainGamemode_C*                        CallFunc_getMainGamemode_AsMain_Gamemode;          // 0x0708(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0710(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x0714(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_715[0x3];                                      // 0x0715(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent_1;  // 0x0718(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor_1;           // 0x0720(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp_1;            // 0x0728(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex_1;       // 0x0730(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bFromSweep_1;           // 0x0734(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_735[0x3];                                      // 0x0735(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult_1;          // 0x0738(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x07C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_7C1[0x7];                                      // 0x07C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          K2Node_DynamicCast_AsMain_Player;                  // 0x07C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x07D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x07D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_7D2[0x6];                                      // 0x07D2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class AWaterVolume_C*                         K2Node_Event_water;                                // 0x07D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RandomBoolWithWeight_ReturnValue;         // 0x07E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_WasRecentlyRendered_ReturnValue;          // 0x07E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_7E2[0x2];                                      // 0x07E2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x07E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x07E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_7E9[0x3];                                      // 0x07E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x07EC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x07F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_7F9[0x3];                                      // 0x07F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue;              // 0x07FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_ProjectPointToNavigation_ProjectedLocation; // 0x0808(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_ProjectPointToNavigation_ReturnValue;  // 0x0814(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_815[0x3];                                      // 0x0815(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_3;         // 0x0818(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_81C[0x4];                                      // 0x081C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent;    // 0x0820(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x0828(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x0830(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x0838(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x083C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_83D[0x3];                                      // 0x083D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0840(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_MakeVector_ReturnValue_2;                 // 0x08C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8D4[0x4];                                      // 0x08D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ADoor_C*                                K2Node_DynamicCast_AsDoor;                         // 0x08D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x08E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_8E1[0x3];                                      // 0x08E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x08E4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRange_ReturnValue_4;         // 0x08F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8F4[0x4];                                      // 0x08F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  K2Node_ComponentBoundEvent_Pawn;                   // 0x08F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetRandomPointInNavigableRadius_RandomLocation; // 0x0900(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_GetRandomPointInNavigableRadius_ReturnValue; // 0x090C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_90D[0x3];                                      // 0x090D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_SelectVector_ReturnValue;                 // 0x0910(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_91C[0x4];                                      // 0x091C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAIAsyncTaskBlueprintProxy*             CallFunc_CreateMoveToProxyObject_ReturnValue;      // 0x0920(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0928(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_929[0x3];                                      // 0x0929(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x092C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RandomPointInBoundingBox_ReturnValue;     // 0x0938(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_X;                            // 0x0944(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Y;                            // 0x0948(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Z;                            // 0x094C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue_3;                 // 0x0950(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_ProjectPointToNavigation_ProjectedLocation_1; // 0x095C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_ProjectPointToNavigation_ReturnValue_1; // 0x0968(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_969[0x7];                                      // 0x0969(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0970(0x0030)(IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(Wisp_g_C_ExecuteUbergraph_wisp_g) == 0x000010, "Wrong alignment on Wisp_g_C_ExecuteUbergraph_wisp_g");
-static_assert(sizeof(Wisp_g_C_ExecuteUbergraph_wisp_g) == 0x000900, "Wrong size on Wisp_g_C_ExecuteUbergraph_wisp_g");
+static_assert(sizeof(Wisp_g_C_ExecuteUbergraph_wisp_g) == 0x0009A0, "Wrong size on Wisp_g_C_ExecuteUbergraph_wisp_g");
 static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, EntryPoint) == 0x000000, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, Temp_struct_Variable) == 0x000004, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::Temp_struct_Variable' has a wrong offset!");
 static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_Ease_ReturnValue) == 0x000014, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_Ease_ReturnValue' has a wrong offset!");
@@ -210,119 +216,123 @@ static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_static) ==
 static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_frozen) == 0x00006A, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_frozen' has a wrong offset!");
 static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_active) == 0x00006B, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_active' has a wrong offset!");
 static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_actor_1) == 0x000070, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_actor_1' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_damage_4) == 0x000078, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_damage_4' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_damage_5) == 0x000078, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_damage_5' has a wrong offset!");
 static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_hit_5) == 0x00007C, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_hit_5' has a wrong offset!");
 static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_impact_1) == 0x000104, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_impact_1' has a wrong offset!");
 static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_skipSetting) == 0x000110, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_skipSetting' has a wrong offset!");
 static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_key_1) == 0x000118, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_key_1' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player_11) == 0x000128, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player_11' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player_12) == 0x000128, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player_12' has a wrong offset!");
 static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_hit_4) == 0x000130, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_hit_4' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_damage_3) == 0x0001B8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_damage_3' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_damage_4) == 0x0001B8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_damage_4' has a wrong offset!");
 static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_fuel) == 0x0001BC, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_fuel' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player_10) == 0x0001C0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player_10' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_hit_3) == 0x0001C8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_hit_3' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_index) == 0x000250, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_index' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_action) == 0x000254, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_action' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player_9) == 0x000258, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player_9' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player_8) == 0x000260, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player_8' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_damage_2) == 0x000268, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_damage_2' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_location_1) == 0x00026C, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_location_1' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player_7) == 0x000278, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player_7' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player_6) == 0x000280, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player_6' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player_5) == 0x000288, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player_5' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_wheelDelta) == 0x000290, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_wheelDelta' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player_4) == 0x000298, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player_4' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_mouse) == 0x0002A0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_mouse' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player_3) == 0x0002A8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player_3' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_key) == 0x0002B0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_key' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_pressed) == 0x0002C8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_pressed' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_temperature_1) == 0x0002CC, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_temperature_1' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_temperature) == 0x0002D0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_temperature' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_speed) == 0x0002D4, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_speed' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player_2) == 0x0002D8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player_2' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_hit_2) == 0x0002E0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_hit_2' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_name) == 0x000368, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_name' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_volume) == 0x000378, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_volume' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player_1) == 0x000380, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player_1' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_location) == 0x000388, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_location' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_damage_1) == 0x000394, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_damage_1' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_clean) == 0x000398, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_clean' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player) == 0x0003A0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_hit_1) == 0x0003A8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_hit_1' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_hook) == 0x000430, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_hook' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_CustomEvent_Condition) == 0x000438, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_CustomEvent_Condition' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_DeltaSeconds) == 0x00043C, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000440, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_VInterpTo_ReturnValue) == 0x000444, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_VInterpTo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x000450, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_PerlinNoise1D_ReturnValue) == 0x0004D8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_PerlinNoise1D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_GetWorldDeltaSeconds_ReturnValue_1) == 0x0004DC, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_GetWorldDeltaSeconds_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_Lerp_ReturnValue_2) == 0x0004E0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_Lerp_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0004E4, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_Add_FloatFloat_ReturnValue) == 0x0004E8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x0004EC, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_MakeVector_ReturnValue) == 0x0004F0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_RandomFloatInRange_ReturnValue) == 0x0004FC, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_K2_SetRelativeLocation_SweepHitResult_1) == 0x000500, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_K2_SetRelativeLocation_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_water_3) == 0x000588, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_water_3' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_water_2) == 0x000590, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_water_2' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_water_1) == 0x000598, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_water_1' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_damage) == 0x0005A0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_damage' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_hit) == 0x0005A4, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_hit' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_actor) == 0x000630, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_actor' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_impact) == 0x000638, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_impact' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_GetPlayerPawn_ReturnValue) == 0x000648, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_GetPlayerPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000650, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000660, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000668, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_NearlyEqual_FloatFloat_ReturnValue) == 0x00066C, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_NearlyEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_OverlappedComponent_1) == 0x000670, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_OverlappedComponent_1' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_OtherActor_1) == 0x000678, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_OtherActor_1' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_OtherComp_1) == 0x000680, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_OtherComp_1' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_OtherBodyIndex_1) == 0x000688, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_OtherBodyIndex_1' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_bFromSweep_1) == 0x00068C, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_bFromSweep_1' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_SweepResult_1) == 0x000690, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_SweepResult_1' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_Not_PreBool_ReturnValue) == 0x000718, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_DynamicCast_AsMain_Player) == 0x000720, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_DynamicCast_AsMain_Player' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_DynamicCast_bSuccess) == 0x000728, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_BooleanOR_ReturnValue) == 0x000729, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_water) == 0x000730, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_water' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x000738, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_WasRecentlyRendered_ReturnValue) == 0x000739, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_WasRecentlyRendered_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x00073C, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_Not_PreBool_ReturnValue_1) == 0x000740, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_MakeVector_ReturnValue_1) == 0x000744, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_BooleanAND_ReturnValue) == 0x000750, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_RotateAngleAxis_ReturnValue) == 0x000754, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_RotateAngleAxis_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_K2_ProjectPointToNavigation_ProjectedLocation) == 0x000760, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_K2_ProjectPointToNavigation_ProjectedLocation' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_K2_ProjectPointToNavigation_ReturnValue) == 0x00076C, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_K2_ProjectPointToNavigation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_RandomFloatInRange_ReturnValue_3) == 0x000770, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_RandomFloatInRange_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_OverlappedComponent) == 0x000778, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_OtherActor) == 0x000780, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_OtherComp) == 0x000788, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_OtherBodyIndex) == 0x000790, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_bFromSweep) == 0x000794, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_bFromSweep' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_SweepResult) == 0x000798, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_SweepResult' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_MakeVector_ReturnValue_2) == 0x000820, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_MakeVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_DynamicCast_AsDoor) == 0x000830, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_DynamicCast_AsDoor' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_DynamicCast_bSuccess_1) == 0x000838, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_Add_VectorVector_ReturnValue) == 0x00083C, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_RandomFloatInRange_ReturnValue_4) == 0x000848, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_RandomFloatInRange_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_Pawn) == 0x000850, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_Pawn' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_K2_GetRandomPointInNavigableRadius_RandomLocation) == 0x000858, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_K2_GetRandomPointInNavigableRadius_RandomLocation' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_K2_GetRandomPointInNavigableRadius_ReturnValue) == 0x000864, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_K2_GetRandomPointInNavigableRadius_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_SelectVector_ReturnValue) == 0x000868, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_SelectVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_CreateMoveToProxyObject_ReturnValue) == 0x000878, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_CreateMoveToProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_IsValid_ReturnValue) == 0x000880, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_Multiply_VectorVector_ReturnValue) == 0x000884, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_RandomPointInBoundingBox_ReturnValue) == 0x000890, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_RandomPointInBoundingBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_BreakVector_X) == 0x00089C, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_BreakVector_Y) == 0x0008A0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_BreakVector_Z) == 0x0008A4, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_MakeVector_ReturnValue_3) == 0x0008A8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_MakeVector_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_K2_ProjectPointToNavigation_ProjectedLocation_1) == 0x0008B4, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_K2_ProjectPointToNavigation_ProjectedLocation_1' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_K2_ProjectPointToNavigation_ReturnValue_1) == 0x0008C0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_K2_ProjectPointToNavigation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_MakeTransform_ReturnValue) == 0x0008D0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_damage_3) == 0x0001C0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_damage_3' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_hot) == 0x0001C4, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_hot' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player_11) == 0x000250, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player_11' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_hit_3) == 0x000258, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_hit_3' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_action) == 0x0002E0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_action' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player_10) == 0x0002E8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player_10' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player_9) == 0x0002F0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player_9' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_damage_2) == 0x0002F8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_damage_2' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_location_1) == 0x0002FC, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_location_1' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player_8) == 0x000308, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player_8' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player_7) == 0x000310, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player_7' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player_6) == 0x000318, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player_6' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_wheelDelta) == 0x000320, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_wheelDelta' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player_5) == 0x000328, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player_5' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_mouse) == 0x000330, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_mouse' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player_4) == 0x000338, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player_4' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_key) == 0x000340, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_key' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_pressed) == 0x000358, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_pressed' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_temperature_1) == 0x00035C, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_temperature_1' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_temperature) == 0x000360, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_temperature' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_speed) == 0x000364, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_speed' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player_3) == 0x000368, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player_3' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_hit_2) == 0x000370, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_hit_2' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_name) == 0x0003F8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_name' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_volume) == 0x000408, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_volume' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player_2) == 0x000410, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player_2' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_location) == 0x000418, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_location' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_damage_1) == 0x000424, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_damage_1' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_clean_1) == 0x000428, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_clean_1' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player_1) == 0x000430, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player_1' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_hit_1) == 0x000438, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_hit_1' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_hook_1) == 0x0004C0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_hook_1' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_clean) == 0x0004C8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_clean' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_player) == 0x0004D0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_player' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_hook) == 0x0004D8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_hook' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_CustomEvent_Condition) == 0x0004E0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_CustomEvent_Condition' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_DeltaSeconds) == 0x0004E4, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x0004E8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_VInterpTo_ReturnValue) == 0x0004EC, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_VInterpTo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x0004F8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_PerlinNoise1D_ReturnValue) == 0x000580, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_PerlinNoise1D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_GetWorldDeltaSeconds_ReturnValue_1) == 0x000584, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_GetWorldDeltaSeconds_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_Lerp_ReturnValue_2) == 0x000588, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_Lerp_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00058C, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_Add_FloatFloat_ReturnValue) == 0x000590, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_VictoryFloatPlusEquals_FloatOut) == 0x000594, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_VictoryFloatPlusEquals_FloatOut' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_MakeVector_ReturnValue) == 0x000598, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_RandomFloatInRange_ReturnValue) == 0x0005A4, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_K2_SetRelativeLocation_SweepHitResult_1) == 0x0005A8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_K2_SetRelativeLocation_SweepHitResult_1' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_water_3) == 0x000630, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_water_3' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_water_2) == 0x000638, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_water_2' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_water_1) == 0x000640, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_water_1' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_damage) == 0x000648, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_damage' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_hit) == 0x00064C, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_hit' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_actor) == 0x0006D8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_actor' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_impact) == 0x0006E0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_impact' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_GetPlayerPawn_ReturnValue) == 0x0006F0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_GetPlayerPawn_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0006F8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_getMainGamemode_AsMain_Gamemode) == 0x000708, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_getMainGamemode_AsMain_Gamemode' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000710, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_NearlyEqual_FloatFloat_ReturnValue) == 0x000714, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_NearlyEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_OverlappedComponent_1) == 0x000718, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_OverlappedComponent_1' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_OtherActor_1) == 0x000720, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_OtherActor_1' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_OtherComp_1) == 0x000728, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_OtherComp_1' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_OtherBodyIndex_1) == 0x000730, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_OtherBodyIndex_1' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_bFromSweep_1) == 0x000734, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_bFromSweep_1' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_SweepResult_1) == 0x000738, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_SweepResult_1' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_Not_PreBool_ReturnValue) == 0x0007C0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_DynamicCast_AsMain_Player) == 0x0007C8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_DynamicCast_AsMain_Player' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_DynamicCast_bSuccess) == 0x0007D0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_BooleanOR_ReturnValue) == 0x0007D1, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_Event_water) == 0x0007D8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_Event_water' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_RandomBoolWithWeight_ReturnValue) == 0x0007E0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_RandomBoolWithWeight_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_WasRecentlyRendered_ReturnValue) == 0x0007E1, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_WasRecentlyRendered_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x0007E4, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_Not_PreBool_ReturnValue_1) == 0x0007E8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_MakeVector_ReturnValue_1) == 0x0007EC, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_BooleanAND_ReturnValue) == 0x0007F8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_RotateAngleAxis_ReturnValue) == 0x0007FC, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_RotateAngleAxis_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_K2_ProjectPointToNavigation_ProjectedLocation) == 0x000808, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_K2_ProjectPointToNavigation_ProjectedLocation' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_K2_ProjectPointToNavigation_ReturnValue) == 0x000814, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_K2_ProjectPointToNavigation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_RandomFloatInRange_ReturnValue_3) == 0x000818, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_RandomFloatInRange_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_OverlappedComponent) == 0x000820, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_OverlappedComponent' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_OtherActor) == 0x000828, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_OtherComp) == 0x000830, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_OtherBodyIndex) == 0x000838, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_OtherBodyIndex' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_bFromSweep) == 0x00083C, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_bFromSweep' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_SweepResult) == 0x000840, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_SweepResult' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_MakeVector_ReturnValue_2) == 0x0008C8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_MakeVector_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_DynamicCast_AsDoor) == 0x0008D8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_DynamicCast_AsDoor' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_DynamicCast_bSuccess_1) == 0x0008E0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_Add_VectorVector_ReturnValue) == 0x0008E4, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_RandomFloatInRange_ReturnValue_4) == 0x0008F0, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_RandomFloatInRange_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, K2Node_ComponentBoundEvent_Pawn) == 0x0008F8, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::K2Node_ComponentBoundEvent_Pawn' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_K2_GetRandomPointInNavigableRadius_RandomLocation) == 0x000900, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_K2_GetRandomPointInNavigableRadius_RandomLocation' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_K2_GetRandomPointInNavigableRadius_ReturnValue) == 0x00090C, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_K2_GetRandomPointInNavigableRadius_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_SelectVector_ReturnValue) == 0x000910, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_SelectVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_CreateMoveToProxyObject_ReturnValue) == 0x000920, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_CreateMoveToProxyObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_IsValid_ReturnValue) == 0x000928, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_Multiply_VectorVector_ReturnValue) == 0x00092C, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_RandomPointInBoundingBox_ReturnValue) == 0x000938, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_RandomPointInBoundingBox_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_BreakVector_X) == 0x000944, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_BreakVector_X' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_BreakVector_Y) == 0x000948, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_BreakVector_Y' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_BreakVector_Z) == 0x00094C, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_BreakVector_Z' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_MakeVector_ReturnValue_3) == 0x000950, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_MakeVector_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_K2_ProjectPointToNavigation_ProjectedLocation_1) == 0x00095C, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_K2_ProjectPointToNavigation_ProjectedLocation_1' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_K2_ProjectPointToNavigation_ReturnValue_1) == 0x000968, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_K2_ProjectPointToNavigation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ExecuteUbergraph_wisp_g, CallFunc_MakeTransform_ReturnValue) == 0x000970, "Member 'Wisp_g_C_ExecuteUbergraph_wisp_g::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
 
 // Function wisp_g.wisp_g_C.BndEvt__wisp_w_PawnSensing_K2Node_ComponentBoundEvent_2_SeePawnDelegate__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -345,7 +355,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23C7[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 static_assert(alignof(Wisp_g_C_BndEvt__wisp_red_dooropener_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on Wisp_g_C_BndEvt__wisp_red_dooropener_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
@@ -378,7 +388,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23C8[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 static_assert(alignof(Wisp_g_C_BndEvt__wisp_red_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on Wisp_g_C_BndEvt__wisp_red_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
@@ -397,7 +407,7 @@ struct Wisp_g_C_ImpactDamage final
 public:
 	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	uint8                                         Pad_23C9[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0090(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Impact;                                            // 0x0098(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -462,6 +472,31 @@ public:
 static_assert(alignof(Wisp_g_C_Dir) == 0x000001, "Wrong alignment on Wisp_g_C_Dir");
 static_assert(sizeof(Wisp_g_C_Dir) == 0x000001, "Wrong size on Wisp_g_C_Dir");
 static_assert(offsetof(Wisp_g_C_Dir, Condition) == 0x000000, "Member 'Wisp_g_C_Dir::Condition' has a wrong offset!");
+
+// Function wisp_g.wisp_g_C.hookTension
+// 0x0008 (0x0008 - 0x0000)
+struct Wisp_g_C_HookTension final
+{
+public:
+	class AHook_C*                                Hook;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Wisp_g_C_HookTension) == 0x000008, "Wrong alignment on Wisp_g_C_HookTension");
+static_assert(sizeof(Wisp_g_C_HookTension) == 0x000008, "Wrong size on Wisp_g_C_HookTension");
+static_assert(offsetof(Wisp_g_C_HookTension, Hook) == 0x000000, "Member 'Wisp_g_C_HookTension::Hook' has a wrong offset!");
+
+// Function wisp_g.wisp_g_C.cleanSponge
+// 0x0010 (0x0010 - 0x0000)
+struct Wisp_g_C_CleanSponge final
+{
+public:
+	float                                         Clean;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMainPlayer_C*                          Player;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Wisp_g_C_CleanSponge) == 0x000008, "Wrong alignment on Wisp_g_C_CleanSponge");
+static_assert(sizeof(Wisp_g_C_CleanSponge) == 0x000010, "Wrong size on Wisp_g_C_CleanSponge");
+static_assert(offsetof(Wisp_g_C_CleanSponge, Clean) == 0x000000, "Member 'Wisp_g_C_CleanSponge::Clean' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_CleanSponge, Player) == 0x000008, "Member 'Wisp_g_C_CleanSponge::Player' has a wrong offset!");
 
 // Function wisp_g.wisp_g_C.hooked
 // 0x0008 (0x0008 - 0x0000)
@@ -677,15 +712,26 @@ struct Wisp_g_C_ActionOptionIndex final
 public:
 	class AMainPlayer_C*                          Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0008(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Param_Index;                                       // 0x0090(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	Enum_interactionActions                       Action;                                            // 0x0094(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_interactionActions                       Action;                                            // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Wisp_g_C_ActionOptionIndex) == 0x000008, "Wrong alignment on Wisp_g_C_ActionOptionIndex");
 static_assert(sizeof(Wisp_g_C_ActionOptionIndex) == 0x000098, "Wrong size on Wisp_g_C_ActionOptionIndex");
 static_assert(offsetof(Wisp_g_C_ActionOptionIndex, Player) == 0x000000, "Member 'Wisp_g_C_ActionOptionIndex::Player' has a wrong offset!");
 static_assert(offsetof(Wisp_g_C_ActionOptionIndex, Hit) == 0x000008, "Member 'Wisp_g_C_ActionOptionIndex::Hit' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ActionOptionIndex, Param_Index) == 0x000090, "Member 'Wisp_g_C_ActionOptionIndex::Param_Index' has a wrong offset!");
-static_assert(offsetof(Wisp_g_C_ActionOptionIndex, Action) == 0x000094, "Member 'Wisp_g_C_ActionOptionIndex::Action' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ActionOptionIndex, Action) == 0x000090, "Member 'Wisp_g_C_ActionOptionIndex::Action' has a wrong offset!");
+
+// Function wisp_g.wisp_g_C.receivedPhyiscsDamage
+// 0x008C (0x008C - 0x0000)
+struct Wisp_g_C_ReceivedPhyiscsDamage final
+{
+public:
+	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hot;                                               // 0x0004(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+static_assert(alignof(Wisp_g_C_ReceivedPhyiscsDamage) == 0x000004, "Wrong alignment on Wisp_g_C_ReceivedPhyiscsDamage");
+static_assert(sizeof(Wisp_g_C_ReceivedPhyiscsDamage) == 0x00008C, "Wrong size on Wisp_g_C_ReceivedPhyiscsDamage");
+static_assert(offsetof(Wisp_g_C_ReceivedPhyiscsDamage, Damage) == 0x000000, "Member 'Wisp_g_C_ReceivedPhyiscsDamage::Damage' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_ReceivedPhyiscsDamage, Hot) == 0x000004, "Member 'Wisp_g_C_ReceivedPhyiscsDamage::Hot' has a wrong offset!");
 
 // Function wisp_g.wisp_g_C.ignite
 // 0x0004 (0x0004 - 0x0000)
@@ -814,7 +860,7 @@ static_assert(offsetof(Wisp_g_C_UserConstructionScript, CallFunc_K2_GetComponent
 static_assert(offsetof(Wisp_g_C_UserConstructionScript, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x00000C, "Member 'Wisp_g_C_UserConstructionScript::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
 
 // Function wisp_g.wisp_g_C.getActionOptions
-// 0x0048 (0x0048 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct Wisp_g_C_GetActionOptions final
 {
 public:
@@ -824,15 +870,17 @@ public:
 	TArray<class FString>                         Options;                                           // 0x0018(0x0010)(Parm, OutParm)
 	TArray<Enum_interactionActions>               Options_enum;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<class FText>                           OptionsNamesOverlay;                               // 0x0038(0x0010)(Parm, OutParm)
+	uint8                                         Number;                                            // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Wisp_g_C_GetActionOptions) == 0x000008, "Wrong alignment on Wisp_g_C_GetActionOptions");
-static_assert(sizeof(Wisp_g_C_GetActionOptions) == 0x000048, "Wrong size on Wisp_g_C_GetActionOptions");
+static_assert(sizeof(Wisp_g_C_GetActionOptions) == 0x000050, "Wrong size on Wisp_g_C_GetActionOptions");
 static_assert(offsetof(Wisp_g_C_GetActionOptions, Player) == 0x000000, "Member 'Wisp_g_C_GetActionOptions::Player' has a wrong offset!");
 static_assert(offsetof(Wisp_g_C_GetActionOptions, Component) == 0x000008, "Member 'Wisp_g_C_GetActionOptions::Component' has a wrong offset!");
 static_assert(offsetof(Wisp_g_C_GetActionOptions, Actor) == 0x000010, "Member 'Wisp_g_C_GetActionOptions::Actor' has a wrong offset!");
 static_assert(offsetof(Wisp_g_C_GetActionOptions, Options) == 0x000018, "Member 'Wisp_g_C_GetActionOptions::Options' has a wrong offset!");
 static_assert(offsetof(Wisp_g_C_GetActionOptions, Options_enum) == 0x000028, "Member 'Wisp_g_C_GetActionOptions::Options_enum' has a wrong offset!");
 static_assert(offsetof(Wisp_g_C_GetActionOptions, OptionsNamesOverlay) == 0x000038, "Member 'Wisp_g_C_GetActionOptions::OptionsNamesOverlay' has a wrong offset!");
+static_assert(offsetof(Wisp_g_C_GetActionOptions, Number) == 0x000048, "Member 'Wisp_g_C_GetActionOptions::Number' has a wrong offset!");
 
 // Function wisp_g.wisp_g_C.setPath
 // 0x0018 (0x0018 - 0x0000)
@@ -927,6 +975,17 @@ public:
 static_assert(alignof(Wisp_g_C_SkipRadial) == 0x000001, "Wrong alignment on Wisp_g_C_SkipRadial");
 static_assert(sizeof(Wisp_g_C_SkipRadial) == 0x000001, "Wrong size on Wisp_g_C_SkipRadial");
 static_assert(offsetof(Wisp_g_C_SkipRadial, Skip) == 0x000000, "Member 'Wisp_g_C_SkipRadial::Skip' has a wrong offset!");
+
+// Function wisp_g.wisp_g_C.getPriceMultiplier
+// 0x0004 (0x0004 - 0x0000)
+struct Wisp_g_C_GetPriceMultiplier final
+{
+public:
+	float                                         PriceMult;                                         // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Wisp_g_C_GetPriceMultiplier) == 0x000004, "Wrong alignment on Wisp_g_C_GetPriceMultiplier");
+static_assert(sizeof(Wisp_g_C_GetPriceMultiplier) == 0x000004, "Wrong size on Wisp_g_C_GetPriceMultiplier");
+static_assert(offsetof(Wisp_g_C_GetPriceMultiplier, PriceMult) == 0x000000, "Member 'Wisp_g_C_GetPriceMultiplier::PriceMult' has a wrong offset!");
 
 }
 

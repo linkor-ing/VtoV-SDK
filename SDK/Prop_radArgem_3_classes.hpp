@@ -18,19 +18,19 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_radArgem_3.prop_radArgem_3_C
-// 0x0010 (0x03A8 - 0x0398)
+// 0x0010 (0x03B8 - 0x03A8)
 class AProp_radArgem_3_C final : public AProp_radArgem_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_radArgem_3_C;                  // 0x0398(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	bool                                          B;                                                 // 0x03A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_radArgem_3_C;                  // 0x03A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	bool                                          B;                                                 // 0x03B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_prop_radArgem_3(int32 EntryPoint);
 	void Ht();
-	void ReceiveBeginPlay();
 	void Set();
 	void GamemodeBeginPlay();
+	void ReceiveBeginPlay();
 	void LoadData(const struct FStruct_save& Data, bool* Return);
 	void GetData(struct FStruct_save* Data);
 
@@ -45,9 +45,9 @@ public:
 	}
 };
 static_assert(alignof(AProp_radArgem_3_C) == 0x000008, "Wrong alignment on AProp_radArgem_3_C");
-static_assert(sizeof(AProp_radArgem_3_C) == 0x0003A8, "Wrong size on AProp_radArgem_3_C");
-static_assert(offsetof(AProp_radArgem_3_C, UberGraphFrame_Prop_radArgem_3_C) == 0x000398, "Member 'AProp_radArgem_3_C::UberGraphFrame_Prop_radArgem_3_C' has a wrong offset!");
-static_assert(offsetof(AProp_radArgem_3_C, B) == 0x0003A0, "Member 'AProp_radArgem_3_C::B' has a wrong offset!");
+static_assert(sizeof(AProp_radArgem_3_C) == 0x0003B8, "Wrong size on AProp_radArgem_3_C");
+static_assert(offsetof(AProp_radArgem_3_C, UberGraphFrame_Prop_radArgem_3_C) == 0x0003A8, "Member 'AProp_radArgem_3_C::UberGraphFrame_Prop_radArgem_3_C' has a wrong offset!");
+static_assert(offsetof(AProp_radArgem_3_C, B) == 0x0003B0, "Member 'AProp_radArgem_3_C::B' has a wrong offset!");
 
 }
 

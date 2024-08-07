@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_slab_2.prop_slab_2_C
-// 0x0008 (0x0378 - 0x0370)
+// 0x0008 (0x0388 - 0x0380)
 class AProp_slab_2_C final : public AProp_slab_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_slab_2_C;                      // 0x0370(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_Prop_slab_2_C;                      // 0x0380(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_prop_slab_2(int32 EntryPoint);
@@ -39,8 +39,8 @@ public:
 	}
 };
 static_assert(alignof(AProp_slab_2_C) == 0x000008, "Wrong alignment on AProp_slab_2_C");
-static_assert(sizeof(AProp_slab_2_C) == 0x000378, "Wrong size on AProp_slab_2_C");
-static_assert(offsetof(AProp_slab_2_C, UberGraphFrame_Prop_slab_2_C) == 0x000370, "Member 'AProp_slab_2_C::UberGraphFrame_Prop_slab_2_C' has a wrong offset!");
+static_assert(sizeof(AProp_slab_2_C) == 0x000388, "Wrong size on AProp_slab_2_C");
+static_assert(offsetof(AProp_slab_2_C, UberGraphFrame_Prop_slab_2_C) == 0x000380, "Member 'AProp_slab_2_C::UberGraphFrame_Prop_slab_2_C' has a wrong offset!");
 
 }
 

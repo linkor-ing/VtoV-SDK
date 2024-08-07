@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass prop_cannedFood_3.prop_cannedFood_3_C
-// 0x0000 (0x0380 - 0x0380)
+// 0x0000 (0x0390 - 0x0390)
 class AProp_cannedFood_3_C final : public AProp_cannedFood_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(AProp_cannedFood_3_C) == 0x000008, "Wrong alignment on AProp_cannedFood_3_C");
-static_assert(sizeof(AProp_cannedFood_3_C) == 0x000380, "Wrong size on AProp_cannedFood_3_C");
+static_assert(sizeof(AProp_cannedFood_3_C) == 0x000390, "Wrong size on AProp_cannedFood_3_C");
 
 }
 

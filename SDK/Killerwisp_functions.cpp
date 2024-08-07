@@ -251,6 +251,46 @@ void AKillerwisp_C::ReceiveBeginPlay()
 }
 
 
+// Function killerwisp.killerwisp_C.OnSuccess_8F96843848D18C8955C1FE8DF9577D6D
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPathFollowingResult                    MovementResult                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AKillerwisp_C::OnSuccess_8F96843848D18C8955C1FE8DF9577D6D(EPathFollowingResult MovementResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("killerwisp_C", "OnSuccess_8F96843848D18C8955C1FE8DF9577D6D");
+
+	Params::Killerwisp_C_OnSuccess_8F96843848D18C8955C1FE8DF9577D6D Parms{};
+
+	Parms.MovementResult = MovementResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function killerwisp.killerwisp_C.OnFail_8F96843848D18C8955C1FE8DF9577D6D
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPathFollowingResult                    MovementResult                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AKillerwisp_C::OnFail_8F96843848D18C8955C1FE8DF9577D6D(EPathFollowingResult MovementResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("killerwisp_C", "OnFail_8F96843848D18C8955C1FE8DF9577D6D");
+
+	Params::Killerwisp_C_OnFail_8F96843848D18C8955C1FE8DF9577D6D Parms{};
+
+	Parms.MovementResult = MovementResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function killerwisp.killerwisp_C.OnCompleted_D920F109479EA9C2B43293A8547D1BCE
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -626,46 +666,6 @@ void AKillerwisp_C::OnNotifyEnd_3621BC3D4D928A7F549D9B84E8756B55(class FName Not
 	Params::Killerwisp_C_OnNotifyEnd_3621BC3D4D928A7F549D9B84E8756B55 Parms{};
 
 	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function killerwisp.killerwisp_C.OnSuccess_8F96843848D18C8955C1FE8DF9577D6D
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPathFollowingResult                    MovementResult                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AKillerwisp_C::OnSuccess_8F96843848D18C8955C1FE8DF9577D6D(EPathFollowingResult MovementResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("killerwisp_C", "OnSuccess_8F96843848D18C8955C1FE8DF9577D6D");
-
-	Params::Killerwisp_C_OnSuccess_8F96843848D18C8955C1FE8DF9577D6D Parms{};
-
-	Parms.MovementResult = MovementResult;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function killerwisp.killerwisp_C.OnFail_8F96843848D18C8955C1FE8DF9577D6D
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPathFollowingResult                    MovementResult                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AKillerwisp_C::OnFail_8F96843848D18C8955C1FE8DF9577D6D(EPathFollowingResult MovementResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("killerwisp_C", "OnFail_8F96843848D18C8955C1FE8DF9577D6D");
-
-	Params::Killerwisp_C_OnFail_8F96843848D18C8955C1FE8DF9577D6D Parms{};
-
-	Parms.MovementResult = MovementResult;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Struct_keybind_structs.hpp"
-#include "Struct_achievement_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Struct_achievement_structs.hpp"
+#include "Struct_keybind_structs.hpp"
 #include "Struct_settings_structs.hpp"
 
 
@@ -31,17 +31,18 @@ static_assert(sizeof(Save_main_C_Save) == 0x000001, "Wrong size on Save_main_C_S
 static_assert(offsetof(Save_main_C_Save, CallFunc_SaveGameToSlot_ReturnValue) == 0x000000, "Member 'Save_main_C_Save::CallFunc_SaveGameToSlot_ReturnValue' has a wrong offset!");
 
 // Function save_main.save_main_C.setDefaultSettings
-// 0x00D0 (0x00D0 - 0x0000)
+// 0x00F8 (0x00F8 - 0x0000)
 struct Save_main_C_SetDefaultSettings final
 {
 public:
 	int32                                         Type;                                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_settings                       Output;                                            // 0x0004(0x00CC)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStruct_settings                       Output;                                            // 0x0008(0x00F0)(Parm, OutParm, HasGetValueTypeHash)
 };
-static_assert(alignof(Save_main_C_SetDefaultSettings) == 0x000004, "Wrong alignment on Save_main_C_SetDefaultSettings");
-static_assert(sizeof(Save_main_C_SetDefaultSettings) == 0x0000D0, "Wrong size on Save_main_C_SetDefaultSettings");
+static_assert(alignof(Save_main_C_SetDefaultSettings) == 0x000008, "Wrong alignment on Save_main_C_SetDefaultSettings");
+static_assert(sizeof(Save_main_C_SetDefaultSettings) == 0x0000F8, "Wrong size on Save_main_C_SetDefaultSettings");
 static_assert(offsetof(Save_main_C_SetDefaultSettings, Type) == 0x000000, "Member 'Save_main_C_SetDefaultSettings::Type' has a wrong offset!");
-static_assert(offsetof(Save_main_C_SetDefaultSettings, Output) == 0x000004, "Member 'Save_main_C_SetDefaultSettings::Output' has a wrong offset!");
+static_assert(offsetof(Save_main_C_SetDefaultSettings, Output) == 0x000008, "Member 'Save_main_C_SetDefaultSettings::Output' has a wrong offset!");
 
 // Function save_main.save_main_C.saveKeybinds
 // 0x00D0 (0x00D0 - 0x0000)
@@ -51,7 +52,7 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3361[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UInputSettings*                         CallFunc_GetInputSettings_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UInputSettings*                         CallFunc_GetInputSettings_ReturnValue_1;           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UInputSettings*                         CallFunc_GetInputSettings_ReturnValue_2;           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -62,7 +63,7 @@ public:
 	struct FStruct_keybind                        CallFunc_Array_Get_Item_2;                         // 0x0070(0x0030)(HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3362[0x3];                                     // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A5[0x3];                                       // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FInputActionKeyMapping                 K2Node_MakeStruct_InputActionKeyMapping;           // 0x00A8(0x0028)()
 };
 static_assert(alignof(Save_main_C_SaveKeybinds) == 0x000008, "Wrong alignment on Save_main_C_SaveKeybinds");
@@ -100,9 +101,10 @@ static_assert(offsetof(Save_main_C_SetObjects, Param_Controller) == 0x000008, "M
 struct Save_main_C_ProgressAchievement final
 {
 public:
-	class FName                                   Achievement;                                       // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Achievement;                                       // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Popup;                                             // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3363[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          Autosave;                                          // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Ind;                                               // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FStruct_achievement                    CallFunc_GetDataTableRowFromName_OutRow;           // 0x0010(0x0050)(HasGetValueTypeHash)
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -111,7 +113,7 @@ public:
 	bool                                          CallFunc_Array_Get_Item;                           // 0x0063(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0068(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3364[0x3];                                     // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -121,6 +123,7 @@ static_assert(alignof(Save_main_C_ProgressAchievement) == 0x000008, "Wrong align
 static_assert(sizeof(Save_main_C_ProgressAchievement) == 0x000080, "Wrong size on Save_main_C_ProgressAchievement");
 static_assert(offsetof(Save_main_C_ProgressAchievement, Achievement) == 0x000000, "Member 'Save_main_C_ProgressAchievement::Achievement' has a wrong offset!");
 static_assert(offsetof(Save_main_C_ProgressAchievement, Popup) == 0x000008, "Member 'Save_main_C_ProgressAchievement::Popup' has a wrong offset!");
+static_assert(offsetof(Save_main_C_ProgressAchievement, Autosave) == 0x000009, "Member 'Save_main_C_ProgressAchievement::Autosave' has a wrong offset!");
 static_assert(offsetof(Save_main_C_ProgressAchievement, Ind) == 0x00000C, "Member 'Save_main_C_ProgressAchievement::Ind' has a wrong offset!");
 static_assert(offsetof(Save_main_C_ProgressAchievement, CallFunc_GetDataTableRowFromName_OutRow) == 0x000010, "Member 'Save_main_C_ProgressAchievement::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
 static_assert(offsetof(Save_main_C_ProgressAchievement, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000060, "Member 'Save_main_C_ProgressAchievement::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
@@ -133,6 +136,74 @@ static_assert(offsetof(Save_main_C_ProgressAchievement, CallFunc_Array_Add_Retur
 static_assert(offsetof(Save_main_C_ProgressAchievement, CallFunc_Array_Add_ReturnValue_2) == 0x000070, "Member 'Save_main_C_ProgressAchievement::CallFunc_Array_Add_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(Save_main_C_ProgressAchievement, CallFunc_Array_Find_ReturnValue) == 0x000074, "Member 'Save_main_C_ProgressAchievement::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Save_main_C_ProgressAchievement, CallFunc_Add_IntInt_ReturnValue) == 0x000078, "Member 'Save_main_C_ProgressAchievement::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+
+// Function save_main.save_main_C.addTreasure
+// 0x0020 (0x0020 - 0x0000)
+struct Save_main_C_AddTreasure final
+{
+public:
+	class FName                                   ItemToFind;                                        // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable;                                // 0x0008(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_Contains_ReturnValue_1;             // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Save_main_C_AddTreasure) == 0x000004, "Wrong alignment on Save_main_C_AddTreasure");
+static_assert(sizeof(Save_main_C_AddTreasure) == 0x000020, "Wrong size on Save_main_C_AddTreasure");
+static_assert(offsetof(Save_main_C_AddTreasure, ItemToFind) == 0x000000, "Member 'Save_main_C_AddTreasure::ItemToFind' has a wrong offset!");
+static_assert(offsetof(Save_main_C_AddTreasure, Temp_name_Variable) == 0x000008, "Member 'Save_main_C_AddTreasure::Temp_name_Variable' has a wrong offset!");
+static_assert(offsetof(Save_main_C_AddTreasure, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'Save_main_C_AddTreasure::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Save_main_C_AddTreasure, CallFunc_Array_AddUnique_ReturnValue) == 0x000014, "Member 'Save_main_C_AddTreasure::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Save_main_C_AddTreasure, CallFunc_Array_Length_ReturnValue_1) == 0x000018, "Member 'Save_main_C_AddTreasure::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Save_main_C_AddTreasure, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00001C, "Member 'Save_main_C_AddTreasure::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Save_main_C_AddTreasure, CallFunc_Array_Contains_ReturnValue) == 0x00001D, "Member 'Save_main_C_AddTreasure::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Save_main_C_AddTreasure, CallFunc_Array_Contains_ReturnValue_1) == 0x00001E, "Member 'Save_main_C_AddTreasure::CallFunc_Array_Contains_ReturnValue_1' has a wrong offset!");
+
+// Function save_main.save_main_C.addFish
+// 0x0020 (0x0020 - 0x0000)
+struct Save_main_C_AddFish final
+{
+public:
+	class FName                                   ItemToFind;                                        // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable;                                // 0x0008(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_Contains_ReturnValue_1;             // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Save_main_C_AddFish) == 0x000004, "Wrong alignment on Save_main_C_AddFish");
+static_assert(sizeof(Save_main_C_AddFish) == 0x000020, "Wrong size on Save_main_C_AddFish");
+static_assert(offsetof(Save_main_C_AddFish, ItemToFind) == 0x000000, "Member 'Save_main_C_AddFish::ItemToFind' has a wrong offset!");
+static_assert(offsetof(Save_main_C_AddFish, Temp_name_Variable) == 0x000008, "Member 'Save_main_C_AddFish::Temp_name_Variable' has a wrong offset!");
+static_assert(offsetof(Save_main_C_AddFish, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'Save_main_C_AddFish::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Save_main_C_AddFish, CallFunc_Array_AddUnique_ReturnValue) == 0x000014, "Member 'Save_main_C_AddFish::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Save_main_C_AddFish, CallFunc_Array_Length_ReturnValue_1) == 0x000018, "Member 'Save_main_C_AddFish::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Save_main_C_AddFish, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00001C, "Member 'Save_main_C_AddFish::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Save_main_C_AddFish, CallFunc_Array_Contains_ReturnValue) == 0x00001D, "Member 'Save_main_C_AddFish::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Save_main_C_AddFish, CallFunc_Array_Contains_ReturnValue_1) == 0x00001E, "Member 'Save_main_C_AddFish::CallFunc_Array_Contains_ReturnValue_1' has a wrong offset!");
+
+// Function save_main.save_main_C.addToFavourites
+// 0x0014 (0x0014 - 0x0000)
+struct Save_main_C_AddToFavourites final
+{
+public:
+	class FName                                   ItemToFind;                                        // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(Save_main_C_AddToFavourites) == 0x000004, "Wrong alignment on Save_main_C_AddToFavourites");
+static_assert(sizeof(Save_main_C_AddToFavourites) == 0x000014, "Wrong size on Save_main_C_AddToFavourites");
+static_assert(offsetof(Save_main_C_AddToFavourites, ItemToFind) == 0x000000, "Member 'Save_main_C_AddToFavourites::ItemToFind' has a wrong offset!");
+static_assert(offsetof(Save_main_C_AddToFavourites, CallFunc_Array_RemoveItem_ReturnValue) == 0x000008, "Member 'Save_main_C_AddToFavourites::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Save_main_C_AddToFavourites, CallFunc_Array_Add_ReturnValue) == 0x00000C, "Member 'Save_main_C_AddToFavourites::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Save_main_C_AddToFavourites, CallFunc_Array_Contains_ReturnValue) == 0x000010, "Member 'Save_main_C_AddToFavourites::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
 
 }
 

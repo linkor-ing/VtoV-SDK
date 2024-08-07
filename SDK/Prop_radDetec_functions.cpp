@@ -57,20 +57,6 @@ void AProp_radDetec_C::ReceiveTick(float DeltaSeconds)
 }
 
 
-// Function prop_radDetec.prop_radDetec_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProp_radDetec_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("prop_radDetec_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function prop_radDetec.prop_radDetec_C.detected
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -92,6 +78,20 @@ void AProp_radDetec_C::Detected(const struct FVector& Loc, float Dist, float Pow
 	Parms.Pow = Pow;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function prop_radDetec.prop_radDetec_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProp_radDetec_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("prop_radDetec_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }
